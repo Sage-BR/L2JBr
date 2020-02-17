@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Pailaka (Rune Castle) -->
+<instance id="80" maxWorlds="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/instance.xsd">
+	<time duration="60" empty="20" />
+	<locations>
+		<enter type="FIXED">
+			<location x="48221" y="-12239" z="-9131" />
+		</enter>
+		<exit type="ORIGIN" />
+	</locations>
+	<conditions>
+		<condition type="Party">
+			<param name="html" value="noParty.html" />
+		</condition>
+		<condition type="PartyLeader" />
+		<condition type="GroupMin">
+			<param name="limit" value="2" />
+		</condition>
+		<condition type="GroupMax">
+			<param name="limit" value="7" />
+		</condition>
+		<condition type="HasResidence">
+			<param name="id" value="1" />
+			<param name="type" value="CASTLE" />
+			<param name="html" value="noProperPledge.html" />
+		</condition>
+		<condition type="Quest">
+			<param name="id" value="727" />
+		</condition>
+		<condition type="Reenter">
+			<param name="html" value="hasReenter.html" />
+		</condition>
+		<condition type="Distance" />
+	</conditions>
+	<reenter apply="ON_FINISH">
+		<reset time="1440" /> <!-- 24 hours -->
+	</reenter>
+	<spawnlist>
+		<group>
+			<npc id="36562" x="49093" y="-12077" z="-9395" heading="0" />
+			<npc id="36563" x="49094" y="-12238" z="-9386" heading="0" />
+			<npc id="36564" x="49093" y="-12401" z="-9388" heading="0" />
+			<npc id="36565" x="49232" y="-12239" z="-9386" heading="0" />
+		</group>
+		<group name="monsters_first_wave" spawnByDefault="false">
+			<npc id="25659" x="50943" y="-12224" z="-9321" heading="32768" />
+			<npc id="25662" x="50343" y="-12552" z="-9388" heading="32768" />
+			<npc id="25662" x="50344" y="-12340" z="-9380" heading="32768" />
+			<npc id="25662" x="50341" y="-12134" z="-9381" heading="32768" />
+			<npc id="25662" x="50342" y="-11917" z="-9389" heading="32768" />
+			<npc id="25662" x="50476" y="-12461" z="-9392" heading="32768" />
+			<npc id="25662" x="50481" y="-12021" z="-9390" heading="32768" />
+			<npc id="25662" x="50605" y="-12407" z="-9392" heading="32768" />
+			<npc id="25662" x="50602" y="-12239" z="-9380" heading="32768" />
+			<npc id="25662" x="50606" y="-12054" z="-9390" heading="32768" />
+		</group>
+		<group name="monsters_second_wave" spawnByDefault="false">
+			<npc id="25660" x="50943" y="-12224" z="-9321" heading="32768" />
+			<npc id="25663" x="50343" y="-12552" z="-9388" heading="32768" />
+			<npc id="25663" x="50344" y="-12340" z="-9380" heading="32768" />
+			<npc id="25663" x="50341" y="-12134" z="-9381" heading="32768" />
+			<npc id="25663" x="50342" y="-11917" z="-9389" heading="32768" />
+			<npc id="25663" x="50476" y="-12461" z="-9392" heading="32768" />
+			<npc id="25663" x="50481" y="-12021" z="-9390" heading="32768" />
+			<npc id="25663" x="50605" y="-12407" z="-9392" heading="32768" />
+			<npc id="25663" x="50602" y="-12239" z="-9380" heading="32768" />
+			<npc id="25663" x="50606" y="-12054" z="-9390" heading="32768" />
+		</group>
+		<group name="monsters_third_wave" spawnByDefault="false">
+			<npc id="25661" x="50943" y="-12004" z="-9321" heading="32768" />
+			<npc id="25661" x="50943" y="-12475" z="-9321" heading="32768" />
+			<npc id="25664" x="50343" y="-12552" z="-9388" heading="32768" />
+			<npc id="25664" x="50344" y="-12340" z="-9380" heading="32768" />
+			<npc id="25664" x="50341" y="-12134" z="-9381" heading="32768" />
+			<npc id="25664" x="50342" y="-11917" z="-9389" heading="32768" />
+			<npc id="25664" x="50476" y="-12461" z="-9392" heading="32768" />
+			<npc id="25664" x="50481" y="-12021" z="-9390" heading="32768" />
+			<npc id="25664" x="50605" y="-12407" z="-9392" heading="32768" />
+			<npc id="25664" x="50602" y="-12239" z="-9380" heading="32768" />
+			<npc id="25664" x="50606" y="-12054" z="-9390" heading="32768" />
+		</group>
+	</spawnlist>
+</instance>

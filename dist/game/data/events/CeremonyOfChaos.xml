@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/events.xsd">
+	<event name="Ceremony of Chaos" class="org.l2jbr.gameserver.instancemanager.CeremonyOfChaosManager">
+		<variables>
+			<variable name="max_players" value="18" />
+			<variable name="max_arenas" value="5" />
+			<list type="SkillHolder" name="initial_buff">
+				<skill id="7115" level="1" /> <!-- Energy of Chaos -->
+			</list>
+			<list type="SkillHolder" name="end_buffs">
+				<skill id="9540" level="1" /> <!-- Mysterious Herb of Power -->
+				<skill id="9541" level="1" /> <!-- Mysterious Herb of Magic -->
+				<skill id="19102" level="1" /> <!-- Chaos Sympathy -->
+			</list>
+			<list type="Integer" name="instance_templates">
+				<value>224</value> <!-- CeremonyOfChaosArena1.xml -->
+				<value>225</value> <!-- CeremonyOfChaosArena2.xml -->
+				<value>226</value> <!-- CeremonyOfChaosArena3.xml -->
+				<value>227</value> <!-- CeremonyOfChaosArena4.xml -->
+			</list>
+		</variables>
+		<scheduler>
+			<!-- Schedule of the event period, usually one month long, executing onPeriodEnd at 00:00 -->
+			<schedule minute="00" hour="00" dayOfMonth="01" month="*" dayOfWeek="*">
+				<event name="#onPeriodEnd">
+					<arg type="String">Ceremony of Chaos has ended.</arg>
+				</event>
+			</schedule>
+
+			<!-- Schedule of the event start, usually Monday, Tuesday, Wednesday at 18:00 -->
+			<schedule name="start" minute="00" hour="18" dayOfMonth="*" month="*" dayOfWeek="1-3">
+				<event name="#onEventStart" />
+			</schedule>
+
+			<!-- Schedule of the event end, usually Tuesday, Wednesday, Thursday at 00:00 -->
+			<schedule name="end" minute="00" hour="00" dayOfMonth="*" month="*" dayOfWeek="2-4"> <!-- Tuesday, Wednesday, Thursday -->
+				<event name="#onEventEnd" />
+			</schedule>
+
+			<!-- 0 minutes, Match period begins: an invitation is sent out to every eligible character and appears on their interface and in their chat window. -->
+			<!-- 0-5 minutes, Registration Period: eligible players have 5 minutes to sign up. Registration can be canceled with no penalty during this time. Cancellation of any kind after this results in a penalty. -->
+			<schedule minute="00,15,30,45" hour="18-23" dayOfMonth="*" month="*" dayOfWeek="1-3" repeat="true">
+				<event name="#onRegistrationStart" />
+			</schedule>
+
+			<!-- 5-7 minutes, Entrance Waiting List: after the sign-up period ends, registered characters are notified that they will be moved to the arena after 2 minutes. -->
+			<schedule minute="05,20,35,50" hour="18-23" dayOfMonth="*" month="*" dayOfWeek="1-3" repeat="true">
+				<event name="#onRegistrationEnd" />
+			</schedule>
+
+			<!-- 7-8 minutes, Entrance and Preparation: you are moved to a random Ceremony of Chaos arena and have 60 seconds to prepare for battle. During this time, they are invisible to the enemy. -->
+			<schedule minute="07,22,37,52" hour="18-23" dayOfMonth="*" month="*" dayOfWeek="1-3" repeat="true">
+				<event name="#onPrepareForFight" />
+			</schedule>
+
+			<!-- 8-13:59 minutes, Battle: battle lasts a full 5 minutes. -->
+			<schedule minute="08,23,38,53" hour="18-23" dayOfMonth="*" month="*" dayOfWeek="1-3" repeat="true">
+				<event name="#onStartFight" />
+			</schedule>
+
+			<!-- Schedule of the event match registration end, usually every 20 min -->
+			<schedule name="stopFight" minute="14,29,44,59" hour="18-23" dayOfMonth="*" month="*" dayOfWeek="1-3" repeat="true">
+				<event name="#onEndFight" />
+			</schedule>
+
+			<!-- Attach condition to re-launch start if server boots up in between start - end -->
+			<conditionalSchedule>
+				<run name="start" if="BETWEEN">
+					<name>start</name>
+					<name>end</name>
+				</run>
+			</conditionalSchedule>
+		</scheduler>
+		<rewards>
+			<reward name="initial_items" type="NORMAL">
+				<item id="35991" min="1" max="1" chance="100" /> <!-- Ceremony of Chaos - Attack -->
+				<item id="35992" min="1" max="1" chance="100" /> <!-- Ceremony of Chaos - Magic -->
+				<item id="35993" min="1" max="1" chance="100" /> <!-- Ceremony of Chaos - Defense -->
+			</reward>
+		</rewards>
+	</event>
+</list>

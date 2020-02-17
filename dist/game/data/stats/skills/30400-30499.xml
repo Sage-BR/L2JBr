@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="30400" toLevel="2" name="Divine Wind">
+		<!-- Wind/ Holy Resistance +$s1. -->
+		<icon>icon.skill30400</icon>
+		<operateType>P</operateType>
+		<magicLvl>
+			<value level="1">85</value>
+			<value level="2">85</value>
+		</magicLvl>
+		<effects>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">10</value>
+					<value level="2">20</value>
+				</amount>
+				<attribute>WIND</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">10</value>
+					<value level="2">20</value>
+				</amount>
+				<attribute>HOLY</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30401" toLevel="2" name="Tenacity">
+		<!-- Max. HP +$s1, Speed +$s2. -->
+		<icon>icon.skill30401</icon>
+		<magicLvl>
+			<value level="1">85</value>
+			<value level="2">85</value>
+		</magicLvl>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="MaxHp">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Speed">
+				<amount>
+					<value level="1">4</value>
+					<value level="2">7</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30402" toLevel="2" name="Efficacy">
+		<!-- MP Consumption -$s1. -->
+		<icon>icon.skill30402</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="MagicMpCost">
+				<amount>
+					<value level="1">-1</value>
+					<value level="2">-2</value>
+				</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+			<effect name="MagicMpCost">
+				<amount>
+					<value level="1">-1</value>
+					<value level="2">-2</value>
+				</amount>
+				<mode>PER</mode>
+				<magicType>0</magicType>
+			</effect>
+			<effect name="MagicMpCost">
+				<amount>
+					<value level="1">-1</value>
+					<value level="2">-2</value>
+				</amount>
+				<mode>PER</mode>
+				<magicType>3</magicType>
+			</effect>
+		</effects>
+	</skill>
+</list>

@@ -1,0 +1,1223 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="11600" toLevel="1" name="Combat Frenzy">
+		<!-- For 5 min., clan members' Max HP +30%, P. Atk. +25%, M. Atk. +30%, and Magic Cancel Rate -40. A chance to add 8% Vampiric Rage effect. -->
+		<icon>icon.skill11600_2</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalType>BUFF_SPECIAL_AURA</abnormalType>
+		<abnormalTime>
+			<value fromLevel="1" toLevel="1">300</value>
+			<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1020">{base + (subIndex * 30)}</value>
+		</abnormalTime>
+		<affectRange>1000</affectRange>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>PLEDGE</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<mpConsume>140</mpConsume>
+		<mpInitialConsume>28</mpInitialConsume>
+		<hitTime>700</hitTime>
+		<coolTime>300</coolTime>
+		<effectPoint>687</effectPoint>
+		<reuseDelay>2000</reuseDelay>
+		<effects>
+			<effect name="MaxHp">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DispelBySlotProbability">
+				<dispel>DANCE_OF_BLADESTORM;SONG_OF_CHAMPION;SONG_OF_EARTH;SONG_OF_HUNTER;SONG_OF_LIFE;SONG_OF_MEDITATION;SONG_OF_RENEWAL;SONG_OF_VENGEANCE;SONG_OF_VITALITY;SONG_OF_WARDING;SONG_OF_WATER;SONG_OF_WIND;DANCE_OF_BERSERKER;DANCE_OF_CONCENTRATION;DANCE_OF_FIRE;DANCE_OF_FURY;DANCE_OF_INSPIRATION;DANCE_OF_MYSTIC;DANCE_OF_SIREN;DANCE_OF_VAMPIRE;DANCE_OF_WARRIOR;SONG_OF_PURIFICATION;WISPERING_OF_BATTLE;SONG_OF_WINDSTORM;MOTION_OF_DEFENCE;BUFF_UNICORN_SERAPHIM;BUFF_QUEEN_OF_CAT;KNIGHT_AURA;DMG_SHIELD;AVOID_UP</dispel>
+				<rate>100</rate>
+			</effect>
+			<effect name="BlockAbnormalSlot">
+				<slot>DANCE_OF_BLADESTORM;SONG_OF_CHAMPION;SONG_OF_EARTH;SONG_OF_HUNTER;SONG_OF_LIFE;SONG_OF_MEDITATION;SONG_OF_RENEWAL;SONG_OF_VENGEANCE;SONG_OF_VITALITY;SONG_OF_WARDING;SONG_OF_WATER;SONG_OF_WIND;DANCE_OF_BERSERKER;DANCE_OF_CONCENTRATION;DANCE_OF_FIRE;DANCE_OF_FURY;DANCE_OF_INSPIRATION;DANCE_OF_MYSTIC;DANCE_OF_SIREN;DANCE_OF_VAMPIRE;DANCE_OF_WARRIOR;SONG_OF_PURIFICATION;WISPERING_OF_BATTLE;SONG_OF_WINDSTORM;MOTION_OF_DEFENCE;BUFF_UNICORN_SERAPHIM;BUFF_QUEEN_OF_CAT;KNIGHT_AURA;DMG_SHIELD;AVOID_UP</slot>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MpRegen">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="ReduceCancel">
+				<amount>53</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicMpCost">
+				<amount>10</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+			<effect name="VampiricAttack">
+				<amount>9</amount>
+				<chance>30</chance>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11601" toLevel="1" name="Marching Frenzy">
+		<!-- For 5 min., clan members' Atk. Spd. +25%, Casting Spd. +25%, Speed +20, Damage Reflectionion +10%, and Skill Cooldown -10%. -->
+		<icon>icon.skill11601_2</icon>
+		<affectRange>1000</affectRange>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalType>ENCHANTER_MOD</abnormalType>
+		<abnormalTime>
+			<value fromLevel="1" toLevel="1">300</value>
+			<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1020">{base + (subIndex * 30)}</value>
+		</abnormalTime>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>PLEDGE</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<mpConsume>140</mpConsume>
+		<mpInitialConsume>28</mpInitialConsume>
+		<hitTime>700</hitTime>
+		<coolTime>300</coolTime>
+		<effectPoint>696</effectPoint>
+		<reuseDelay>2000</reuseDelay>
+		<effects>
+			<effect name="DispelBySlotProbability">
+				<dispel>DANCE_OF_BLADESTORM;SONG_OF_CHAMPION;SONG_OF_EARTH;SONG_OF_HUNTER;SONG_OF_LIFE;SONG_OF_MEDITATION;SONG_OF_RENEWAL;SONG_OF_VENGEANCE;SONG_OF_VITALITY;SONG_OF_WARDING;SONG_OF_WATER;SONG_OF_WIND;DANCE_OF_BERSERKER;DANCE_OF_CONCENTRATION;DANCE_OF_FIRE;DANCE_OF_FURY;DANCE_OF_INSPIRATION;DANCE_OF_MYSTIC;DANCE_OF_SIREN;DANCE_OF_VAMPIRE;DANCE_OF_WARRIOR;SONG_OF_PURIFICATION;WISPERING_OF_BATTLE;SONG_OF_WINDSTORM;MOTION_OF_DEFENCE;BUFF_UNICORN_SERAPHIM;BUFF_QUEEN_OF_CAT;KNIGHT_AURA;DMG_SHIELD;AVOID_UP</dispel>
+				<rate>100</rate>
+			</effect>
+			<effect name="BlockAbnormalSlot">
+				<slot>DANCE_OF_BLADESTORM;SONG_OF_CHAMPION;SONG_OF_EARTH;SONG_OF_HUNTER;SONG_OF_LIFE;SONG_OF_MEDITATION;SONG_OF_RENEWAL;SONG_OF_VENGEANCE;SONG_OF_VITALITY;SONG_OF_WARDING;SONG_OF_WATER;SONG_OF_WIND;DANCE_OF_BERSERKER;DANCE_OF_CONCENTRATION;DANCE_OF_FIRE;DANCE_OF_FURY;DANCE_OF_INSPIRATION;DANCE_OF_MYSTIC;DANCE_OF_SIREN;DANCE_OF_VAMPIRE;DANCE_OF_WARRIOR;SONG_OF_PURIFICATION;WISPERING_OF_BATTLE;SONG_OF_WINDSTORM;MOTION_OF_DEFENCE;BUFF_UNICORN_SERAPHIM;BUFF_QUEEN_OF_CAT;KNIGHT_AURA;DMG_SHIELD;AVOID_UP</slot>
+			</effect>
+			<effect name="PAtk">
+				<amount>8</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>11</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>3</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalEvasion">
+				<amount>-4</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>16</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>8</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DamageShield">
+				<amount>10</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11602" toLevel="1" name="Relax Frenzy">
+		<!-- For 5 min., clan members' HP Recovery +75%, MP Recovery +50%, and P. Evasion/ M. Evasion +5, and Skill MP Consumption -20%. -->
+		<icon>icon.skill11602_2</icon>
+		<affectRange>1000</affectRange>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalType>SYNERGY_IS</abnormalType>
+		<abnormalTime>
+			<value fromLevel="1" toLevel="1">300</value>
+			<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1020">{base + (subIndex * 30)}</value>
+		</abnormalTime>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>PLEDGE</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<mpConsume>140</mpConsume>
+		<mpInitialConsume>28</mpInitialConsume>
+		<hitTime>700</hitTime>
+		<coolTime>300</coolTime>
+		<effectPoint>696</effectPoint>
+		<reuseDelay>2000</reuseDelay>
+		<effects>
+			<effect name="DispelBySlotProbability">
+				<dispel>DANCE_OF_BLADESTORM;SONG_OF_CHAMPION;SONG_OF_EARTH;SONG_OF_HUNTER;SONG_OF_LIFE;SONG_OF_MEDITATION;SONG_OF_RENEWAL;SONG_OF_VENGEANCE;SONG_OF_VITALITY;SONG_OF_WARDING;SONG_OF_WATER;SONG_OF_WIND;DANCE_OF_BERSERKER;DANCE_OF_CONCENTRATION;DANCE_OF_FIRE;DANCE_OF_FURY;DANCE_OF_INSPIRATION;DANCE_OF_MYSTIC;DANCE_OF_SIREN;DANCE_OF_VAMPIRE;DANCE_OF_WARRIOR;SONG_OF_PURIFICATION;WISPERING_OF_BATTLE;SONG_OF_WINDSTORM;MOTION_OF_DEFENCE;BUFF_UNICORN_SERAPHIM;BUFF_QUEEN_OF_CAT;KNIGHT_AURA;DMG_SHIELD;AVOID_UP</dispel>
+				<rate>100</rate>
+			</effect>
+			<effect name="BlockAbnormalSlot">
+				<slot>DANCE_OF_BLADESTORM;SONG_OF_CHAMPION;SONG_OF_EARTH;SONG_OF_HUNTER;SONG_OF_LIFE;SONG_OF_MEDITATION;SONG_OF_RENEWAL;SONG_OF_VENGEANCE;SONG_OF_VITALITY;SONG_OF_WARDING;SONG_OF_WATER;SONG_OF_WIND;DANCE_OF_BERSERKER;DANCE_OF_CONCENTRATION;DANCE_OF_FIRE;DANCE_OF_FURY;DANCE_OF_INSPIRATION;DANCE_OF_MYSTIC;DANCE_OF_SIREN;DANCE_OF_VAMPIRE;DANCE_OF_WARRIOR;SONG_OF_PURIFICATION;WISPERING_OF_BATTLE;SONG_OF_WINDSTORM;MOTION_OF_DEFENCE;BUFF_UNICORN_SERAPHIM;BUFF_QUEEN_OF_CAT;KNIGHT_AURA;DMG_SHIELD;AVOID_UP</slot>
+			</effect>
+			<effect name="Speed">
+				<amount>20</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="PhysicalEvasion">
+				<amount>3</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="Accuracy">
+				<amount>4</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="HpRegen">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicMpCost">
+				<amount>10</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+			<effect name="MagicMpCost">
+				<amount>10</amount>
+				<mode>PER</mode>
+				<magicType>0</magicType>
+			</effect>
+			<effect name="MagicMpCost">
+				<amount>10</amount>
+				<mode>PER</mode>
+				<magicType>3</magicType>
+			</effect>
+			<effect name="Reuse">
+				<amount>10</amount>
+				<mode>PER</mode>
+				<magicType>0</magicType>
+			</effect>
+			<effect name="Reuse">
+				<amount>10</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11603" toLevel="7" name="Seal of Extortion">
+		<!-- For $s1, Heal received by the target and nearby enemies -$s2. -->
+		<icon>
+			<value level="1">icon.skill11559</value>
+			<value level="2">icon.skill11559</value>
+			<value level="3">icon.skill11559</value>
+			<value level="4">icon.skill1509</value>
+			<value level="5">icon.skill1509</value>
+			<value level="6">icon.skill1509</value>
+			<value level="7">icon.skill1509</value>
+		</icon>
+		<abnormalLvl>4</abnormalLvl> <!-- Custom -->
+		<abnormalTime>30</abnormalTime>
+		<abnormalType>LIMIT</abnormalType>
+		<activateRate>60</activateRate> <!-- Custom -->
+		<affectLimit>10-10</affectLimit> <!-- Custom -->
+		<affectRange>200</affectRange> <!-- Custom -->
+		<basicProperty>MAGIC</basicProperty> <!-- Guessed -->
+		<operateType>A2</operateType>
+		<targetType>ENEMY_ONLY</targetType>
+		<affectScope>RANGE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<mpConsume>
+			<value level="1">252</value>
+			<value level="2">278</value>
+			<value level="3">306</value>
+			<value level="4">332</value>
+			<value level="5">358</value>
+			<value level="6">384</value>
+			<value level="7">410</value>
+		</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<reuseDelay>60000</reuseDelay>
+		<isMagic>1</isMagic>
+		<effectPoint>
+			<value level="1">-379</value>
+			<value level="2">-379</value>
+			<value level="3">-379</value>
+			<value level="4">-679</value>
+			<value level="5">-679</value>
+			<value level="6">-679</value>
+			<value level="7">-679</value>
+		</effectPoint>
+		<isDebuff>true</isDebuff>
+		<effects>
+			<effect name="HealEffect">
+				<amount>
+					<value level="1">-80</value>
+					<value level="2">-80</value>
+					<value level="3">-85</value>
+					<value level="4">-85</value>
+					<value level="5">-85</value>
+					<value level="6">-90</value>
+					<value level="7">-90</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="LimitHp">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">-40</value>
+					<value level="5">-40</value>
+					<value level="6">-30</value>
+					<value level="7">-30</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="LimitMp">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">-40</value>
+					<value level="5">-40</value>
+					<value level="6">-30</value>
+					<value level="7">-30</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="LimitCp">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">-40</value>
+					<value level="5">-40</value>
+					<value level="6">-30</value>
+					<value level="7">-30</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11604" toLevel="9" name="Curse of Mortalize">
+		<!-- Removes Invincibility of target and nearby enemies during PvP. -->
+		<icon>icon.skill11604</icon>
+		<affectLimit>10-10</affectLimit> <!-- Custom -->
+		<affectRange>200</affectRange> <!-- Custom -->
+		<operateType>A1</operateType>
+		<targetType>ENEMY_ONLY</targetType>
+		<affectScope>RANGE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<magicLvl>
+			<value level="1">85</value>
+			<value level="2">90</value>
+			<value level="3">95</value>
+			<value level="4">99</value>
+			<value level="5">101</value>
+			<value level="6">103</value>
+			<value level="7">105</value>
+			<value level="8">107</value>
+			<value level="9">109</value>
+		</magicLvl>
+		<mpConsume>
+			<value level="1">252</value>
+			<value level="2">278</value>
+			<value level="3">306</value>
+			<value level="4">332</value>
+			<value level="5">358</value>
+			<value level="6">385</value>
+			<value level="7">412</value>
+			<value level="8">439</value>
+			<value level="9">466</value>
+		</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>2110</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>120000</reuseDelay>
+		<effectPoint>-2036</effectPoint>
+		<isMagic>1</isMagic>
+		<conditions>
+			<condition name="OpTargetPc" />
+		</conditions>
+		<effects>
+			<effect name="DispelBySlotProbability">
+				<dispel>INVINCIBILITY_SPECIAL;INVINCIBILITY</dispel>
+				<rate>100</rate>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11605" toLevel="1" name="Shield Song">
+		<!-- For 30 min., P. Def. +5%, 6 Attribute Def. +20, Bow/ Crossbow Resistance +10%, and Debuff Resistance +10%. -->
+		<icon>icon.skill11606new</icon>
+		<abnormalTime>
+			<value fromLevel="1" toLevel="1">1800</value>
+			<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1020">{base + (subIndex * 90)}</value>
+		</abnormalTime>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<mpConsume>83</mpConsume>
+		<hitTime>1000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>566</effectPoint>
+		<reuseDelay>30000</reuseDelay>
+		<effects>
+			<effect name="DefenceTrait">
+				<BOW>10</BOW>
+				<CROSSBOW>10</CROSSBOW>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="ResistAbnormalByCategory">
+				<amount>-10</amount>
+				<slot>DEBUFF</slot>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>20</amount>
+				<attribute>FIRE</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>20</amount>
+				<attribute>WATER</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>20</amount>
+				<attribute>WIND</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>20</amount>
+				<attribute>EARTH</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>20</amount>
+				<attribute>HOLY</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>20</amount>
+				<attribute>DARK</attribute>
+			</effect>
+			<effect name="DefenceCriticalDamage" fromLevel="1" toLevel="1" fromSubLevel="2001" toSubLevel="2020">
+				<amount>
+					<value fromLevel="1" toLevel="1" fromSubLevel="2001" toSubLevel="2020">{-1 - (subIndex - 1 * 0.5)}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11606" toLevel="1" name="Sword Waltz">
+		<!-- For 30 min., your P. Atk. and Atk. Spd. +15% and P. Critical Rate/ Speed +10. A chance to apply the Spectral Slash effect on the target when a basic attack is made. -->
+		<icon>icon.skill11605new</icon>
+		<abnormalTime>
+			<value fromLevel="1" toLevel="1">1800</value>
+			<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1020">{base + (subIndex * 90)}</value>
+		</abnormalTime>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<mpConsume>83</mpConsume>
+		<hitTime>1000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>566</effectPoint>
+		<reuseDelay>30000</reuseDelay>
+		<effects>
+			<effect name="PAtk">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Speed">
+				<amount>10</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="CriticalRate">
+				<amount>10</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="CallSkill">
+				<skillId>19435</skillId> <!-- Spectral Slash -->
+				<skillLevel>5</skillLevel>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11607" toLevel="1" name="Prevailing Song">
+		<!-- For 5 min., party members' Max HP +30%, P. Atk. +25%, M. Atk. +30%, and magic cancel rate -40. A chance to apply 8% Vampiric Rage effect. -->
+		<icon>icon.skill11607</icon>
+		<affectRange>1000</affectRange>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalType>BUFF_SPECIAL_AURA</abnormalType>
+		<abnormalTime>
+			<value fromLevel="1" toLevel="1">300</value>
+			<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1020">{base + (subIndex * 30)}</value>
+		</abnormalTime>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<mpConsume>140</mpConsume>
+		<hitTime>700</hitTime>
+		<coolTime>300</coolTime>
+		<reuseDelay>2000</reuseDelay>
+		<magicLvl>85</magicLvl>
+		<effectPoint>687</effectPoint>
+		<effects>
+			<effect name="MaxHp">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DispelBySlotProbability">
+				<dispel>DANCE_OF_BLADESTORM;SONG_OF_CHAMPION;SONG_OF_EARTH;SONG_OF_HUNTER;SONG_OF_LIFE;SONG_OF_MEDITATION;SONG_OF_RENEWAL;SONG_OF_VENGEANCE;SONG_OF_VITALITY;SONG_OF_WARDING;SONG_OF_WATER;SONG_OF_WIND;DANCE_OF_BERSERKER;DANCE_OF_CONCENTRATION;DANCE_OF_FIRE;DANCE_OF_FURY;DANCE_OF_INSPIRATION;DANCE_OF_MYSTIC;DANCE_OF_SIREN;DANCE_OF_VAMPIRE;DANCE_OF_WARRIOR;SONG_OF_PURIFICATION;WISPERING_OF_BATTLE;SONG_OF_WINDSTORM;MOTION_OF_DEFENCE;BUFF_UNICORN_SERAPHIM;BUFF_QUEEN_OF_CAT;KNIGHT_AURA;DMG_SHIELD;AVOID_UP</dispel>
+				<rate>100</rate>
+			</effect>
+			<effect name="BlockAbnormalSlot">
+				<slot>DANCE_OF_BLADESTORM;SONG_OF_CHAMPION;SONG_OF_EARTH;SONG_OF_HUNTER;SONG_OF_LIFE;SONG_OF_MEDITATION;SONG_OF_RENEWAL;SONG_OF_VENGEANCE;SONG_OF_VITALITY;SONG_OF_WARDING;SONG_OF_WATER;SONG_OF_WIND;DANCE_OF_BERSERKER;DANCE_OF_CONCENTRATION;DANCE_OF_FIRE;DANCE_OF_FURY;DANCE_OF_INSPIRATION;DANCE_OF_MYSTIC;DANCE_OF_SIREN;DANCE_OF_VAMPIRE;DANCE_OF_WARRIOR;SONG_OF_PURIFICATION;WISPERING_OF_BATTLE;SONG_OF_WINDSTORM;MOTION_OF_DEFENCE;BUFF_UNICORN_SERAPHIM;BUFF_QUEEN_OF_CAT;KNIGHT_AURA;DMG_SHIELD;AVOID_UP</slot>
+			</effect>
+			<effect name="PAtk">
+				<amount>25</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MpRegen">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="ReduceCancel">
+				<amount>-53</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicMpCost">
+				<amount>-10</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+			<effect name="VampiricAttack">
+				<amount>9</amount>
+				<chance>30</chance>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11608" toLevel="1" name="Daring Song">
+		<!-- For 5 min., party members' Atk. Spd. +25%, Casting Spd. +25%, Speed +20, Damage Reflectionion +10%, and Skill Cooldown -10%. -->
+		<icon>icon.skill11608</icon>
+		<affectRange>1000</affectRange>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalType>ENCHANTER_MOD</abnormalType>
+		<abnormalTime>
+			<value fromLevel="1" toLevel="1">300</value>
+			<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1020">{base + (subIndex * 30)}</value>
+		</abnormalTime>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<mpConsume>140</mpConsume>
+		<hitTime>700</hitTime>
+		<coolTime>300</coolTime>
+		<reuseDelay>2000</reuseDelay>
+		<magicLvl>85</magicLvl>
+		<effectPoint>696</effectPoint>
+		<effects>
+			<effect name="DispelBySlotProbability">
+				<dispel>DANCE_OF_BLADESTORM;SONG_OF_CHAMPION;SONG_OF_EARTH;SONG_OF_HUNTER;SONG_OF_LIFE;SONG_OF_MEDITATION;SONG_OF_RENEWAL;SONG_OF_VENGEANCE;SONG_OF_VITALITY;SONG_OF_WARDING;SONG_OF_WATER;SONG_OF_WIND;DANCE_OF_BERSERKER;DANCE_OF_CONCENTRATION;DANCE_OF_FIRE;DANCE_OF_FURY;DANCE_OF_INSPIRATION;DANCE_OF_MYSTIC;DANCE_OF_SIREN;DANCE_OF_VAMPIRE;DANCE_OF_WARRIOR;SONG_OF_PURIFICATION;WISPERING_OF_BATTLE;SONG_OF_WINDSTORM;MOTION_OF_DEFENCE;BUFF_UNICORN_SERAPHIM;BUFF_QUEEN_OF_CAT;KNIGHT_AURA;DMG_SHIELD;AVOID_UP</dispel>
+				<rate>100</rate>
+			</effect>
+			<effect name="BlockAbnormalSlot">
+				<slot>DANCE_OF_BLADESTORM;SONG_OF_CHAMPION;SONG_OF_EARTH;SONG_OF_HUNTER;SONG_OF_LIFE;SONG_OF_MEDITATION;SONG_OF_RENEWAL;SONG_OF_VENGEANCE;SONG_OF_VITALITY;SONG_OF_WARDING;SONG_OF_WATER;SONG_OF_WIND;DANCE_OF_BERSERKER;DANCE_OF_CONCENTRATION;DANCE_OF_FIRE;DANCE_OF_FURY;DANCE_OF_INSPIRATION;DANCE_OF_MYSTIC;DANCE_OF_SIREN;DANCE_OF_VAMPIRE;DANCE_OF_WARRIOR;SONG_OF_PURIFICATION;WISPERING_OF_BATTLE;SONG_OF_WINDSTORM;MOTION_OF_DEFENCE;BUFF_UNICORN_SERAPHIM;BUFF_QUEEN_OF_CAT;KNIGHT_AURA;DMG_SHIELD;AVOID_UP</slot>
+			</effect>
+			<effect name="Speed">
+				<amount>20</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicMpCost">
+				<amount>-10</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>25</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>25</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DamageShield">
+				<amount>10</amount>
+			</effect>
+			<effect name="Reuse">
+				<amount>-10</amount>
+				<mode>PER</mode>
+				<magicType>0</magicType>
+			</effect>
+			<effect name="Reuse">
+				<amount>-10</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11609" toLevel="1" name="Refreshing Song">
+		<!-- For 5 min., party members' HP Recovery +75%, MP Recovery +50%, and P. Evasion/ M. Evasion +5, and Skill MP Consumption -20%. -->
+		<icon>icon.skill11609</icon>
+		<affectRange>1000</affectRange>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalType>SYNERGY_IS</abnormalType>
+		<abnormalTime>
+			<value fromLevel="1" toLevel="1">300</value>
+			<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1020">{base + (subIndex * 30)}</value>
+		</abnormalTime>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<mpConsume>140</mpConsume>
+		<hitTime>700</hitTime>
+		<coolTime>300</coolTime>
+		<reuseDelay>2000</reuseDelay>
+		<magicLvl>85</magicLvl>
+		<effectPoint>696</effectPoint>
+		<effects>
+			<effect name="DispelBySlotProbability">
+				<dispel>DANCE_OF_BLADESTORM;SONG_OF_CHAMPION;SONG_OF_EARTH;SONG_OF_HUNTER;SONG_OF_LIFE;SONG_OF_MEDITATION;SONG_OF_RENEWAL;SONG_OF_VENGEANCE;SONG_OF_VITALITY;SONG_OF_WARDING;SONG_OF_WATER;SONG_OF_WIND;DANCE_OF_BERSERKER;DANCE_OF_CONCENTRATION;DANCE_OF_FIRE;DANCE_OF_FURY;DANCE_OF_INSPIRATION;DANCE_OF_MYSTIC;DANCE_OF_SIREN;DANCE_OF_VAMPIRE;DANCE_OF_WARRIOR;SONG_OF_PURIFICATION;WISPERING_OF_BATTLE;SONG_OF_WINDSTORM;MOTION_OF_DEFENCE;BUFF_UNICORN_SERAPHIM;BUFF_QUEEN_OF_CAT;KNIGHT_AURA;DMG_SHIELD;AVOID_UP</dispel>
+				<rate>100</rate>
+			</effect>
+			<effect name="BlockAbnormalSlot">
+				<slot>DANCE_OF_BLADESTORM;SONG_OF_CHAMPION;SONG_OF_EARTH;SONG_OF_HUNTER;SONG_OF_LIFE;SONG_OF_MEDITATION;SONG_OF_RENEWAL;SONG_OF_VENGEANCE;SONG_OF_VITALITY;SONG_OF_WARDING;SONG_OF_WATER;SONG_OF_WIND;DANCE_OF_BERSERKER;DANCE_OF_CONCENTRATION;DANCE_OF_FIRE;DANCE_OF_FURY;DANCE_OF_INSPIRATION;DANCE_OF_MYSTIC;DANCE_OF_SIREN;DANCE_OF_VAMPIRE;DANCE_OF_WARRIOR;SONG_OF_PURIFICATION;WISPERING_OF_BATTLE;SONG_OF_WINDSTORM;MOTION_OF_DEFENCE;BUFF_UNICORN_SERAPHIM;BUFF_QUEEN_OF_CAT;KNIGHT_AURA;DMG_SHIELD;AVOID_UP</slot>
+			</effect>
+			<effect name="PhysicalEvasion">
+				<amount>5</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicalEvasion">
+				<amount>5</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="HpRegen">
+				<amount>75</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MpRegen">
+				<amount>50</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicMpCost">
+				<amount>-20</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+			<effect name="MagicMpCost">
+				<amount>-20</amount>
+				<mode>PER</mode>
+				<magicType>0</magicType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11610" toLevel="1" name="Prevailing Dance">
+		<!-- For 5 min., party members' Max HP +30%, P. Atk. +25%, M. Atk. +30%, and magic cancel rate -40. A chance to apply 8% Vampiric Rage effect. -->
+		<icon>icon.skill11610</icon>
+		<affectRange>1000</affectRange>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalType>BUFF_SPECIAL_AURA</abnormalType>
+		<abnormalTime>
+			<value fromLevel="1" toLevel="1">300</value>
+			<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1020">{base + (subIndex * 30)}</value>
+		</abnormalTime>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<mpConsume>140</mpConsume>
+		<hitTime>700</hitTime>
+		<coolTime>300</coolTime>
+		<reuseDelay>2000</reuseDelay>
+		<magicLvl>85</magicLvl>
+		<effectPoint>687</effectPoint>
+		<effects>
+			<effect name="MaxHp">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DispelBySlotProbability">
+				<dispel>DANCE_OF_BLADESTORM;SONG_OF_CHAMPION;SONG_OF_EARTH;SONG_OF_HUNTER;SONG_OF_LIFE;SONG_OF_MEDITATION;SONG_OF_RENEWAL;SONG_OF_VENGEANCE;SONG_OF_VITALITY;SONG_OF_WARDING;SONG_OF_WATER;SONG_OF_WIND;DANCE_OF_BERSERKER;DANCE_OF_CONCENTRATION;DANCE_OF_FIRE;DANCE_OF_FURY;DANCE_OF_INSPIRATION;DANCE_OF_MYSTIC;DANCE_OF_SIREN;DANCE_OF_VAMPIRE;DANCE_OF_WARRIOR;SONG_OF_PURIFICATION;WISPERING_OF_BATTLE;SONG_OF_WINDSTORM;MOTION_OF_DEFENCE;BUFF_UNICORN_SERAPHIM;BUFF_QUEEN_OF_CAT;KNIGHT_AURA;DMG_SHIELD;AVOID_UP</dispel>
+				<rate>100</rate>
+			</effect>
+			<effect name="BlockAbnormalSlot">
+				<slot>DANCE_OF_BLADESTORM;SONG_OF_CHAMPION;SONG_OF_EARTH;SONG_OF_HUNTER;SONG_OF_LIFE;SONG_OF_MEDITATION;SONG_OF_RENEWAL;SONG_OF_VENGEANCE;SONG_OF_VITALITY;SONG_OF_WARDING;SONG_OF_WATER;SONG_OF_WIND;DANCE_OF_BERSERKER;DANCE_OF_CONCENTRATION;DANCE_OF_FIRE;DANCE_OF_FURY;DANCE_OF_INSPIRATION;DANCE_OF_MYSTIC;DANCE_OF_SIREN;DANCE_OF_VAMPIRE;DANCE_OF_WARRIOR;SONG_OF_PURIFICATION;WISPERING_OF_BATTLE;SONG_OF_WINDSTORM;MOTION_OF_DEFENCE;BUFF_UNICORN_SERAPHIM;BUFF_QUEEN_OF_CAT;KNIGHT_AURA;DMG_SHIELD;AVOID_UP</slot>
+			</effect>
+			<effect name="PAtk">
+				<amount>25</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MpRegen">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="ReduceCancel">
+				<amount>-53</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicMpCost">
+				<amount>-10</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+			<effect name="VampiricAttack">
+				<amount>9</amount>
+				<chance>30</chance>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11611" toLevel="1" name="Daring Dance">
+		<!-- For 5 min., party members' Atk. Spd. +25%, Casting Spd. +25%, Speed +20, Damage Reflectionion +10%, and Skill Cooldown -10%. -->
+		<icon>icon.skill11611</icon>
+		<affectRange>1000</affectRange>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalType>ENCHANTER_MOD</abnormalType>
+		<abnormalTime>
+			<value fromLevel="1" toLevel="1">300</value>
+			<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1020">{base + (subIndex * 30)}</value>
+		</abnormalTime>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<mpConsume>140</mpConsume>
+		<hitTime>700</hitTime>
+		<coolTime>300</coolTime>
+		<reuseDelay>2000</reuseDelay>
+		<magicLvl>85</magicLvl>
+		<effectPoint>696</effectPoint>
+		<effects>
+			<effect name="DispelBySlotProbability">
+				<dispel>DANCE_OF_BLADESTORM;SONG_OF_CHAMPION;SONG_OF_EARTH;SONG_OF_HUNTER;SONG_OF_LIFE;SONG_OF_MEDITATION;SONG_OF_RENEWAL;SONG_OF_VENGEANCE;SONG_OF_VITALITY;SONG_OF_WARDING;SONG_OF_WATER;SONG_OF_WIND;DANCE_OF_BERSERKER;DANCE_OF_CONCENTRATION;DANCE_OF_FIRE;DANCE_OF_FURY;DANCE_OF_INSPIRATION;DANCE_OF_MYSTIC;DANCE_OF_SIREN;DANCE_OF_VAMPIRE;DANCE_OF_WARRIOR;SONG_OF_PURIFICATION;WISPERING_OF_BATTLE;SONG_OF_WINDSTORM;MOTION_OF_DEFENCE;BUFF_UNICORN_SERAPHIM;BUFF_QUEEN_OF_CAT;KNIGHT_AURA;DMG_SHIELD;AVOID_UP</dispel>
+				<rate>100</rate>
+			</effect>
+			<effect name="BlockAbnormalSlot">
+				<slot>DANCE_OF_BLADESTORM;SONG_OF_CHAMPION;SONG_OF_EARTH;SONG_OF_HUNTER;SONG_OF_LIFE;SONG_OF_MEDITATION;SONG_OF_RENEWAL;SONG_OF_VENGEANCE;SONG_OF_VITALITY;SONG_OF_WARDING;SONG_OF_WATER;SONG_OF_WIND;DANCE_OF_BERSERKER;DANCE_OF_CONCENTRATION;DANCE_OF_FIRE;DANCE_OF_FURY;DANCE_OF_INSPIRATION;DANCE_OF_MYSTIC;DANCE_OF_SIREN;DANCE_OF_VAMPIRE;DANCE_OF_WARRIOR;SONG_OF_PURIFICATION;WISPERING_OF_BATTLE;SONG_OF_WINDSTORM;MOTION_OF_DEFENCE;BUFF_UNICORN_SERAPHIM;BUFF_QUEEN_OF_CAT;KNIGHT_AURA;DMG_SHIELD;AVOID_UP</slot>
+			</effect>
+			<effect name="Speed">
+				<amount>20</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicMpCost">
+				<amount>-10</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>25</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>25</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DamageShield">
+				<amount>10</amount>
+			</effect>
+			<effect name="Reuse">
+				<amount>-10</amount>
+				<mode>PER</mode>
+				<magicType>0</magicType>
+			</effect>
+			<effect name="Reuse">
+				<amount>-10</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11612" toLevel="1" name="Refreshing Dance">
+		<!-- For 5 min., party members' HP Recovery +75%, MP Recovery +50%, and P. Evasion/ M. Evasion +5, and Skill MP Consumption -20%. -->
+		<icon>icon.skill11612</icon>
+		<affectRange>1000</affectRange>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalType>SYNERGY_IS</abnormalType>
+		<abnormalTime>
+			<value fromLevel="1" toLevel="1">300</value>
+			<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1020">{base + (subIndex * 30)}</value>
+		</abnormalTime>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<mpConsume>140</mpConsume>
+		<hitTime>700</hitTime>
+		<coolTime>300</coolTime>
+		<reuseDelay>2000</reuseDelay>
+		<magicLvl>85</magicLvl>
+		<effectPoint>696</effectPoint>
+		<effects>
+			<effect name="DispelBySlotProbability">
+				<dispel>DANCE_OF_BLADESTORM;SONG_OF_CHAMPION;SONG_OF_EARTH;SONG_OF_HUNTER;SONG_OF_LIFE;SONG_OF_MEDITATION;SONG_OF_RENEWAL;SONG_OF_VENGEANCE;SONG_OF_VITALITY;SONG_OF_WARDING;SONG_OF_WATER;SONG_OF_WIND;DANCE_OF_BERSERKER;DANCE_OF_CONCENTRATION;DANCE_OF_FIRE;DANCE_OF_FURY;DANCE_OF_INSPIRATION;DANCE_OF_MYSTIC;DANCE_OF_SIREN;DANCE_OF_VAMPIRE;DANCE_OF_WARRIOR;SONG_OF_PURIFICATION;WISPERING_OF_BATTLE;SONG_OF_WINDSTORM;MOTION_OF_DEFENCE;BUFF_UNICORN_SERAPHIM;BUFF_QUEEN_OF_CAT;KNIGHT_AURA;DMG_SHIELD;AVOID_UP</dispel>
+				<rate>100</rate>
+			</effect>
+			<effect name="BlockAbnormalSlot">
+				<slot>DANCE_OF_BLADESTORM;SONG_OF_CHAMPION;SONG_OF_EARTH;SONG_OF_HUNTER;SONG_OF_LIFE;SONG_OF_MEDITATION;SONG_OF_RENEWAL;SONG_OF_VENGEANCE;SONG_OF_VITALITY;SONG_OF_WARDING;SONG_OF_WATER;SONG_OF_WIND;DANCE_OF_BERSERKER;DANCE_OF_CONCENTRATION;DANCE_OF_FIRE;DANCE_OF_FURY;DANCE_OF_INSPIRATION;DANCE_OF_MYSTIC;DANCE_OF_SIREN;DANCE_OF_VAMPIRE;DANCE_OF_WARRIOR;SONG_OF_PURIFICATION;WISPERING_OF_BATTLE;SONG_OF_WINDSTORM;MOTION_OF_DEFENCE;BUFF_UNICORN_SERAPHIM;BUFF_QUEEN_OF_CAT;KNIGHT_AURA;DMG_SHIELD;AVOID_UP</slot>
+			</effect>
+			<effect name="PhysicalEvasion">
+				<amount>5</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicalEvasion">
+				<amount>5</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="HpRegen">
+				<amount>75</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MpRegen">
+				<amount>50</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicMpCost">
+				<amount>-20</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+			<effect name="MagicMpCost">
+				<amount>-20</amount>
+				<mode>PER</mode>
+				<magicType>0</magicType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11613" toLevel="4" name="Song of Protection">
+		<!-- For $s1, increases your P. Def. +$s2 and M. Def. +$s3. Restores $s4 HP. -->
+		<icon>icon.skill11613</icon>
+		<abnormalLvl>1</abnormalLvl> <!-- Guessed -->
+		<abnormalTime>
+			<value fromLevel="1" toLevel="4">30</value>
+			<value fromLevel="3" toLevel="4" fromSubLevel="1001" toSubLevel="1010">{base + subIndex}</value>
+			<value fromLevel="3" toLevel="4" fromSubLevel="1011" toSubLevel="1020">{base + 10 + (subIndex - 10 * 0.5)}</value>
+		</abnormalTime>
+		<abnormalType>PD_UP_SPECIAL</abnormalType> <!-- Guessed -->
+		<abnormalVisualEffect>ULTIMATE_DEFENCE</abnormalVisualEffect>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<mpConsume>
+			<value level="1">319</value>
+			<value level="2">427</value>
+			<value level="3">534</value>
+			<value level="4">640</value>
+		</mpConsume>
+		<hitTime>3000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>689</effectPoint>
+		<reuseDelay>600000</reuseDelay>
+		<effects>
+			<effect name="Heal">
+				<power>
+					<value level="1">1000</value>
+					<value level="2">2000</value>
+					<value level="3">3000</value>
+					<value level="4">5000</value>
+				</power>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>5000</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>5000</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11614" toLevel="4" name="Battle Rhapsody Dance">
+		<!-- For $s1, increases your P. Atk./ M. Atk./ Atk. Spd./ Casting Spd. +$s2. -->
+		<icon>icon.skill11614</icon>
+		<abnormalTime>
+			<value fromLevel="1" toLevel="4">30</value>
+			<value fromLevel="3" toLevel="4" fromSubLevel="1001" toSubLevel="1010">{base + subIndex}</value>
+			<value fromLevel="3" toLevel="4" fromSubLevel="1011" toSubLevel="1020">{base + 10 + (subIndex - 10 * 0.5)}</value>
+		</abnormalTime>
+		<abnormalType>RHAPSODY</abnormalType>
+		<operateType>A2</operateType>
+		<isMagic>3</isMagic> <!-- Dance Skill -->
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<mpConsume>
+			<value level="1">319</value>
+			<value level="2">427</value>
+			<value level="3">534</value>
+			<value level="4">640</value>
+		</mpConsume>
+		<hitTime>3000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>687</effectPoint>
+		<reuseDelay>600000</reuseDelay>
+		<effects>
+			<effect name="PAtk">
+				<amount>
+					<value level="1">50</value>
+					<value level="2">60</value>
+					<value level="3">70</value>
+					<value level="4">100</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>
+					<value level="1">50</value>
+					<value level="2">60</value>
+					<value level="3">70</value>
+					<value level="4">100</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>
+					<value level="1">50</value>
+					<value level="2">60</value>
+					<value level="3">70</value>
+					<value level="4">100</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>
+					<value level="1">50</value>
+					<value level="2">60</value>
+					<value level="3">70</value>
+					<value level="4">100</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11615" toLevel="1" name="Battle Ditty">
+		<!-- For 30 min., selected party member's PvP Damage +10%, Attribute Attack +10, MP Recovery Bonus +10%. Consumes 10 Spirit Ore. -->
+		<icon>icon.skill11615</icon>
+		<abnormalTime>
+			<value fromLevel="1" toLevel="1">1800</value>
+			<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1020">{base + (subIndex * 90)}</value>
+		</abnormalTime>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalType>DITTY</abnormalType>
+		<itemConsumeCount>10</itemConsumeCount>
+		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
+		<operateType>A2</operateType>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+		<mpConsume>181</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>1000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>687</effectPoint>
+		<reuseDelay>2000</reuseDelay>
+		<conditions>
+			<condition name="TargetMyParty">
+				<includeMe>true</includeMe>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="MpRegen">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="AttackAttributeAdd"> <!-- Stat that increases all attack attribute -->
+				<amount>10</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11616" toLevel="1" name="Protective Ditty">
+		<!-- For 30 min., selected party member's Received PvP Damage -10%, Speed +10, HP Recovery Bonus +10%. Consumes 10 Spirit Ore. -->
+		<icon>icon.skill11616</icon>
+		<abnormalTime>
+			<value fromLevel="1" toLevel="1">1800</value>
+			<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1020">{base + (subIndex * 90)}</value>
+		</abnormalTime>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalType>DITTY</abnormalType>
+		<itemConsumeCount>10</itemConsumeCount>
+		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
+		<operateType>A2</operateType>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+		<mpConsume>181</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>1000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>687</effectPoint>
+		<reuseDelay>2000</reuseDelay>
+		<conditions>
+			<condition name="TargetMyParty">
+				<includeMe>true</includeMe>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="Speed">
+				<amount>4</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="HpRegen">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDefenceBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpMagicalSkillDefenceBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDefenceBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11617" toLevel="1" name="Command for Battle">
+		<!-- For 30 min., selected clan member's PvP Damage +10%, Attribute Attack +10, MP Recovery Bonus +10%. Consumes 10 Spirit Ore. -->
+		<icon>icon.skill11617</icon>
+		<abnormalTime>
+			<value fromLevel="1" toLevel="1">1800</value>
+			<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1020">{base + (subIndex * 90)}</value>
+		</abnormalTime>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalType>DITTY</abnormalType>
+		<itemConsumeCount>10</itemConsumeCount>
+		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
+		<operateType>A2</operateType>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+		<mpConsume>181</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>1000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>687</effectPoint>
+		<reuseDelay>2000</reuseDelay>
+		<conditions>
+			<condition name="TargetMyPledge" />
+		</conditions>
+		<effects>
+			<effect name="MpRegen">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="AttackAttribute">
+				<amount>10</amount>
+				<attribute>HOLY</attribute>
+			</effect>
+			<effect name="AttackAttribute">
+				<amount>10</amount>
+				<attribute>DARK</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11618" toLevel="1" name="Command for Defense">
+		<!-- For 30 min., selected clan member's Received PvP Damage -10%, Speed +10, HP Recovery Bonus +10%. Consumes 10 Spirit Ore. -->
+		<icon>icon.skill11618</icon>
+		<abnormalTime>
+			<value fromLevel="1" toLevel="1">1800</value>
+			<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1020">{base + (subIndex * 90)}</value>
+		</abnormalTime>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalType>DITTY</abnormalType>
+		<itemConsumeCount>10</itemConsumeCount>
+		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
+		<operateType>A2</operateType>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+		<mpConsume>181</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>1000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>687</effectPoint>
+		<reuseDelay>2000</reuseDelay>
+		<conditions>
+			<condition name="TargetMyPledge" />
+		</conditions>
+		<effects>
+			<effect name="Speed">
+				<amount>4</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="HpRegen">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDefenceBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpMagicalSkillDefenceBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDefenceBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11619" toLevel="1" name="Soul Ditty">
+		<!-- Increases entire party's P. Atk. by 3%, P. Critical Damage by 3%, Atk. Spd. by 2%, M. Atk. by 2%, Casting Spd. by 2%, P. Def. by 2%, M. Def. by 2%, and Skill Power by 2%. -->
+		<icon>icon.skill11529</icon>
+		<abnormalTime>1800</abnormalTime> <!-- Custom -->
+		<affectRange>1000</affectRange>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<affectLimit>10-10</affectLimit> <!-- Custom -->
+		<affectRange>1000</affectRange> <!-- Custom -->
+		<mpConsume>140</mpConsume>
+		<hitTime>700</hitTime>
+		<coolTime>300</coolTime>
+		<effectPoint>687</effectPoint>
+		<reuseDelay>2000</reuseDelay>
+		<effects>
+			<effect name="PAtk">
+				<amount>
+					<value level="1">3</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>
+					<value level="1">2</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>
+					<value level="1">2</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>
+					<value level="1">2</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>
+					<value level="1">2</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>
+					<value level="1">2</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="CriticalDamage">
+				<amount>
+					<value level="1">3</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalSkillPower">
+				<amount>
+					<value level="1">2</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11620" toLevel="10" name="Superior Shield Mastery">
+		<!-- Shield Def. Success Rate +$s1, Shield Def. +$s2. -->
+		<icon>icon.skill10003</icon>
+		<operateType>P</operateType>
+		<magicLvl>
+			<value level="1">85</value>
+			<value level="2">90</value>
+			<value level="3">95</value>
+			<value level="4">99</value>
+			<value level="5">100</value>
+			<value level="6">102</value>
+			<value level="7">104</value>
+			<value level="8">106</value>
+			<value level="9">108</value>
+			<value level="10">110</value>
+		</magicLvl>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="ShieldDefenceRate">
+				<amount>50</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="ShieldDefence">
+				<amount>
+					<value level="1">40</value>
+					<value level="2">45</value>
+					<value level="3">50</value>
+					<value level="4">55</value>
+					<value level="5">60</value>
+					<value level="6">65</value>
+					<value level="7">70</value>
+					<value level="8">75</value>
+					<value level="9">80</value>
+					<value level="10">85</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11621" toLevel="1" name="Blessing Barrier">
+		<!-- Creates a defense barrier that absorbs damage as much as 200% of your P. Def. for 10 sec. -->
+		<icon>icon.skill11621</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>10</abnormalTime>
+		<abnormalType>BARRIER</abnormalType>
+		<abnormalVisualEffect>ABSORB_SHIELD</abnormalVisualEffect>
+		<operateType>A2</operateType>
+		<mpConsume>114</mpConsume>
+		<magicLvl>99</magicLvl>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<reuseDelay>60000</reuseDelay>
+		<isMagic>4</isMagic>
+		<effects>
+			<effect name="AbsorbDamage">
+				<damage>20000</damage>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11622" toLevel="1" name="Blessing Barrier">
+		<!-- The barrier absorbs 20000 damage for 10 sec. -->
+		<icon>icon.skill11621</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>10</abnormalTime>
+		<abnormalType>BARRIER</abnormalType>
+		<abnormalVisualEffect>ABSORB_SHIELD</abnormalVisualEffect>
+		<operateType>A2</operateType>
+		<magicLvl>99</magicLvl>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+		<reuseDelay>30000</reuseDelay>
+		<isMagic>4</isMagic>
+		<effects>
+			<effect name="AbsorbDamage">
+				<damage>20000</damage>
+			</effect>
+		</effects>
+	</skill>
+</list>

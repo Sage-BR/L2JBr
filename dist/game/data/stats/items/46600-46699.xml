@@ -1,0 +1,1588 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
+	<item id="46600" name="Red Zubei" type="Armor">
+		<set name="icon" val="icon.armor_t56_u_i00" />
+		<set name="armor_type" val="MAGIC" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_commissionable" val="false" />
+		<stats>
+			<stat type="pDef">400.0</stat>
+		</stats>
+	</item>
+	<item id="46601" name="White Assassin Suit" type="Armor">
+		<set name="icon" val="icon.skill1802" />
+		<set name="armor_type" val="HEAVY" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_commissionable" val="false" />
+		<set name="bodypart" val="chest" />
+		<stats>
+			<stat type="pDef">400.0</stat>
+		</stats>
+	</item>
+	<item id="46602" name="Blue Dynasty Cloak" type="Armor">
+		<!-- Blue Dynasty Cloak. -->
+		<set name="icon" val="icon.vesper_cloack_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="220" />
+		<set name="bodypart" val="back" />
+		<cond msgId="2453">
+			<player cloakStatus="true" />
+		</cond>
+		<cond>
+			<player level="80" />
+		</cond>
+		<stats>
+			<stat type="pDef">50.0</stat>
+			<stat type="mDef">40.0</stat>
+		</stats>
+	</item>
+	<item id="46603" name="Blue Dynasty Armor Appearance Stone" type="EtcItem">
+		<!-- Changes the appearance of your entire armor into that of Blue Dynasty. Tops and one-pieces only. Modified armor can be restored to their original appearance with a Restoration Stone. -->
+		<set name="icon" val="BranchSys3.icon1.g_scrl_change_chest" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="default_action" val="SKILL_REDUCE" />
+	</item>
+	<item id="46604" name="Zubei Armor Appearance Stone" type="EtcItem">
+		<!-- Changes the appearance of your entire armor into that of Red Zubei. Tops and one-pieces only. Modified armor can be restored to their original appearance with a Restoration Stone. -->
+		<set name="icon" val="BranchSys3.icon1.g_scrl_change_chest" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="default_action" val="SKILL_REDUCE" />
+	</item>
+	<item id="46605" name="White Assassin Suit Appearance Stone" type="EtcItem">
+		<!-- Changes the appearance of your entire armor into that of the White Assassin Suit. Tops and one-pieces only. Modified armor can be restored to their original appearance with a Restoration Stone. -->
+		<set name="icon" val="BranchSys3.icon1.g_scrl_change_chest" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="immediate_effect" val="true" />
+		<set name="default_action" val="SKILL_REDUCE" />
+	</item>
+	<item id="46606" name="Blue Dynasty Circlet" type="Armor">
+		<!-- Blue Dynasty Circlet. Uses 2 Hair Accessory slots. -->
+		<set name="icon" val="icon.Accessary_angel_circlet_i00" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+	</item>
+	<item id="46607" name="Blue Dynasty Circlet" additionalName="STR" type="Armor">
+		<!-- Blue Dynasty Circlet. Uses 2 Hair Accessory slots. STR +3 when equipped. -->
+		<set name="icon" val="icon.Accessary_angel_circlet_i00" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<skills>
+			<skill id="9554" level="1" /> <!-- Hair Accessory: STR -->
+		</skills>
+	</item>
+	<item id="46608" name="Blue Dynasty Circlet" additionalName="DEX" type="Armor">
+		<!-- Blue Dynasty Circlet. Uses 2 Hair Accessory slots. DEX +3 when equipped. -->
+		<set name="icon" val="icon.Accessary_angel_circlet_i00" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<skills>
+			<skill id="9555" level="1" /> <!-- Hair Accessory: DEX -->
+		</skills>
+	</item>
+	<item id="46609" name="Blue Dynasty Circlet" additionalName="CON" type="Armor">
+		<!-- Blue Dynasty Circlet. Uses 2 Hair Accessory slots. CON +3 when equipped. -->
+		<set name="icon" val="icon.Accessary_angel_circlet_i00" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<skills>
+			<skill id="9556" level="1" /> <!-- Hair Accessory: CON -->
+		</skills>
+	</item>
+	<item id="46610" name="Blue Dynasty Circlet" additionalName="MEN" type="Armor">
+		<!-- Blue Dynasty Circlet. Uses 2 Hair Accessory slots. MEN +3 when equipped. -->
+		<set name="icon" val="icon.Accessary_angel_circlet_i00" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<skills>
+			<skill id="9557" level="1" /> <!-- Hair Accessory: MEN -->
+		</skills>
+	</item>
+	<item id="46611" name="Blue Dynasty Circlet" additionalName="INT" type="Armor">
+		<!-- Blue Dynasty Circlet. Uses 2 Hair Accessory slots. INT +3 when equipped. -->
+		<set name="icon" val="icon.Accessary_angel_circlet_i00" />
+			<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<skills>
+			<skill id="9558" level="1" /> <!-- Hair Accessory: INT -->
+		</skills>
+	</item>
+	<item id="46612" name="Blue Dynasty Circlet" additionalName="WIT" type="Armor">
+		<!-- Blue Dynasty Circlet. Uses 2 Hair Accessory slots. WIT +3 when equipped. -->
+		<set name="icon" val="icon.Accessary_angel_circlet_i00" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<skills>
+			<skill id="9559" level="1" /> <!-- Hair Accessory: WIT -->
+		</skills>
+	</item>
+	<item id="46613" name="Blue Dynasty Circlet" additionalName="Critical Rate" type="Armor">
+		<!-- Blue Dynasty Circlet. Uses 2 Hair Accessory slots. Critical Rate +50 when equipped. -->
+		<set name="icon" val="icon.Accessary_angel_circlet_i00" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<skills>
+			<skill id="9560" level="1" /> <!-- Hair Accessory: Critical Rate -->
+		</skills>
+	</item>
+	<item id="46614" name="Blue Dynasty Circlet" additionalName="Critical Damage" type="Armor">
+		<!-- Blue Dynasty Circlet. Uses 2 Hair Accessory slots. P. Critical Damage +90 and M. Critical Damage +68 when equipped. -->
+		<set name="icon" val="icon.Accessary_angel_circlet_i00" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<skills>
+			<skill id="9561" level="1" /> <!-- Hair Accessory: Critical Damage -->
+		</skills>
+	</item>
+	<item id="46615" name="Blue Dynasty Circlet" additionalName="P. Def." type="Armor">
+		<!-- Blue Dynasty Circlet. Uses 2 Hair Accessory slots. P. Def. +5% when equipped. -->
+		<set name="icon" val="icon.Accessary_angel_circlet_i00" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<skills>
+			<skill id="9562" level="1" /> <!-- Hair Accessory: P. Def. -->
+		</skills>
+	</item>
+	<item id="46616" name="Blue Dynasty Circlet" additionalName="M. Def." type="Armor">
+		<!-- Blue Dynasty Circlet. Uses 2 Hair Accessory slots. M. Def. +5% when equipped. -->
+		<set name="icon" val="icon.Accessary_angel_circlet_i00" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<skills>
+			<skill id="9563" level="1" /> <!-- Hair Accessory: M. Def. -->
+		</skills>
+	</item>
+	<item id="46617" name="Blue Dynasty Circlet" additionalName="Evasion" type="Armor">
+		<!-- Blue Dynasty Circlet. Uses 2 Hair Accessory slots. Evasion +5 when equipped. -->
+		<set name="icon" val="icon.Accessary_angel_circlet_i00" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<skills>
+			<skill id="9564" level="1" /> <!-- Hair Accessory: P. Evasion -->
+		</skills>
+	</item>
+	<item id="46618" name="Blue Dynasty Circlet" additionalName="P. Atk." type="Armor">
+		<!-- Blue Dynasty Circlet. Uses 2 Hair Accessory slots. P. Atk. +5% when equipped. -->
+		<set name="icon" val="icon.Accessary_angel_circlet_i00" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<skills>
+			<skill id="9565" level="1" /> <!-- Hair Accessory: P. Atk. -->
+		</skills>
+	</item>
+	<item id="46619" name="Blue Dynasty Circlet" additionalName="M. Atk." type="Armor">
+		<!-- Blue Dynasty Circlet. Uses 2 Hair Accessory slots. M. Atk. +10% when equipped. -->
+		<set name="icon" val="icon.Accessary_angel_circlet_i00" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<skills>
+			<skill id="9566" level="1" /> <!-- Hair Accessory: M. Atk. -->
+		</skills>
+	</item>
+	<item id="46620" name="Blue Dynasty Circlet" additionalName="Accuracy" type="Armor">
+		<!-- Blue Dynasty Circlet. Uses 2 Hair Accessory slots. Accuracy +5 when equipped. -->
+		<set name="icon" val="icon.Accessary_angel_circlet_i00" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<skills>
+			<skill id="9567" level="1" /> <!-- Hair Accessory: P. Accuracy -->
+		</skills>
+	</item>
+	<item id="46621" name="Shadow Blue Seal Bracelet" type="Armor">
+		<!-- Can summon Shadow Blue. -->
+		<set name="icon" val="icon.etc_rbracelet_aga_agit_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="weight" val="30" />
+		<set name="bodypart" val="lbracelet" />
+		<set name="material" val="SILVER" />
+		<set name="immediate_effect" val="true" />
+		<skills>
+			<skill id="13901" level="1" /> <!-- Shadow Blue -->
+		</skills>
+	</item>
+	<item id="46622" name="1,000,000,000 Adana" additionalName="Event" type="EtcItem">
+		<!-- Adena? No, this is Adana. Receive the Abundant Blessing buff from Miss Patch when in possession of this Adana. Lv. 85 or above. -->
+		<set name="icon" val="icon.fairy_adena_joke" />
+		<set name="weight" val="1" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+	</item>
+	<item id="46623" name="5,000,000,000 Adana" additionalName="Event" type="EtcItem">
+		<!-- Adena? No, this is Adana. Take it to Event Manager Miss Patch to exchange for a 30-day Armor Set (R-grade or above), or a Weapon (R-grade or above). Lv. 85 or above. -->
+		<set name="icon" val="icon.fairy_adena_joke" />
+		<set name="weight" val="1" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+	</item>
+	<item id="46624" name="Entrance Pass: Embryo Command Post" type="EtcItem">
+		<!-- Dimensional item. Extra pass to a daily instanced zone. Double-click to unbind the Embryo Command Post. Cannot be used if the instanced zone is not bound. Can be used only once a day outside of the instanced zone. -->
+		<set name="icon" val="icon.etc_bm_kalie_instantzone_re" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="1440" />
+	</item>
+	<item id="46625" name="Entrance Pass: Nightmare Kamaloka" additionalName="1-day" type="EtcItem">
+		<!-- Entrance Pass to Nightmare Kamaloka received from Captain Kurtiz. Double-click to reset cooldown to Nightmare Kamaloka. Can only be used once a day outside of the instance zone. -->
+		<set name="icon" val="icon.etc_ticket_red_i00" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="1440" />
+		<set name="handler" val="ItemSkills" />
+		<set name="reuse_delay" val="86400000" />
+	</item>
+	<item id="46626" name="Growth Accelerator Feed" additionalName="Mystic Tavern - Kelbim" type="EtcItem">
+		<!-- Feed for military dogs to accelerate growth. -->
+		<set name="icon" val="icon.etc_piece_bone_white_i00" />
+		<set name="is_depositable" val="false" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="etcitem_type" val="MATERIAL" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="46627" name="Blue Dynasty Circlet" additionalName="LUC" type="Armor">
+		<!-- Blue Dynasty Circlet. Uses 2 Hair Accessory slots. LUC +3 when equipped. -->
+		<set name="icon" val="icon.Accessary_angel_circlet_i00" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<skills>
+			<skill id="18048" level="1" /> <!-- Hair Accessory (LUC) -->
+		</skills>
+	</item>
+	<item id="46628" name="Blue Dynasty Circlet" additionalName="CHA" type="Armor">
+		<!-- Blue Dynasty Circlet. Uses 2 Hair Accessory slots. CHA +3 when equipped. -->
+		<set name="icon" val="icon.Accessary_angel_circlet_i00" />
+		<set name="bodypart" val="hair2" />
+		<set name="immediate_effect" val="true" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weight" val="10" />
+		<skills>
+			<skill id="18049" level="1" /> <!-- Hair Accessory (CHA) -->
+		</skills>
+	</item>
+	<item id="46629" name="Practice Stormbringer" type="Weapon">
+		<!-- Temporary practice weapon for learning about the Soul Crystal system. Very inefficient as a weapon. -->
+		<set name="icon" val="icon.weapon_stormbringer_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rhand" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="crystal_type" val="C" />
+		<set name="crystal_count" val="3274" />
+		<set name="weight" val="1520" />
+		<set name="enchant_enabled" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="ONE_HAND_SWORD" />
+		<stats>
+			<stat type="pAtk">107.0</stat>
+			<stat type="mAtk">68.0</stat>
+			<stat type="pAtkSpd">379.0</stat>
+			<stat type="rCrit">8.0</stat>
+		</stats>
+	</item>
+	<item id="46630" name="Twilight Necklace" additionalName="30-day" type="Armor">
+		<!-- Twilight Necklace. MP +58. -->
+		<set name="icon" val="icon.r2_necklace_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="crystal_type" val="R" />
+		<set name="weight" val="150" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="43200" />
+		<stats>
+			<stat type="mDef">142.0</stat>
+			<stat type="maxMp">58</stat>
+		</stats>
+	</item>
+	<item id="46631" name="Twilight Earring" additionalName="30-day" type="Armor">
+		<!-- Twilight Earring. MP +43. -->
+		<set name="icon" val="icon.r2_earring_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="crystal_type" val="R" />
+		<set name="weight" val="150" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="43200" />
+		<stats>
+			<stat type="mDef">107.0</stat>
+			<stat type="maxMp">43</stat>
+		</stats>
+	</item>
+	<item id="46632" name="Twilight Ring" additionalName="30-day" type="Armor">
+		<!-- Twilight Ring. MP +29. -->
+		<set name="icon" val="icon.r2_ring_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="crystal_type" val="R" />
+		<set name="weight" val="150" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="43200" />
+		<stats>
+			<stat type="mDef">71.0</stat>
+			<stat type="maxMp">29</stat>
+		</stats>
+	</item>
+	<item id="46633" name="Seraph Necklace" additionalName="30-day" type="Armor">
+		<!-- Seraph Necklace. MP +62. -->
+		<set name="icon" val="icon.r95_necklace_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="crystal_type" val="R95" />
+		<set name="weight" val="150" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="43200" />
+		<stats>
+			<stat type="mDef">161.0</stat>
+			<stat type="maxMp">62</stat>
+		</stats>
+	</item>
+	<item id="46634" name="Seraph Earring" additionalName="30-day" type="Armor">
+		<!-- Seraph Necklace. MP +46. -->
+		<set name="icon" val="icon.r95_earring_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="crystal_type" val="R95" />
+		<set name="weight" val="150" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="43200" />
+		<stats>
+			<stat type="mDef">121.0</stat>
+			<stat type="maxMp">46</stat>
+		</stats>
+	</item>
+	<item id="46635" name="Seraph Ring" additionalName="30-day" type="Armor">
+		<!-- Seraph Ring. MP +31. -->
+		<set name="icon" val="icon.r95_ring_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="crystal_type" val="R95" />
+		<set name="weight" val="150" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="43200" />
+		<stats>
+			<stat type="mDef">80.0</stat>
+			<stat type="maxMp">31</stat>
+		</stats>
+	</item>
+	<item id="46636" name="Eternal Necklace" additionalName="30-day" type="Armor">
+		<!-- Eternal Necklace. MP +65. -->
+		<set name="icon" val="icon.r991_necklace_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="crystal_type" val="R99" />
+		<set name="weight" val="150" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="43200" />
+		<stats>
+			<stat type="mDef">174.0</stat>
+			<stat type="maxMp">65</stat>
+		</stats>
+	</item>
+	<item id="46637" name="Eternal Earring" additionalName="30-day" type="Armor">
+		<!-- Eternal Earring. MP +49. -->
+		<set name="icon" val="icon.r991_earring_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="crystal_type" val="R99" />
+		<set name="weight" val="150" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="43200" />
+		<stats>
+			<stat type="mDef">130.0</stat>
+			<stat type="maxMp">49</stat>
+		</stats>
+	</item>
+	<item id="46638" name="Eternal Ring" additionalName="30-day" type="Armor">
+		<!-- Eternal Ring. MP +33. -->
+		<set name="icon" val="icon.r991_ring_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="crystal_type" val="R99" />
+		<set name="weight" val="150" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="43200" />
+		<stats>
+			<stat type="mDef">87.0</stat>
+			<stat type="maxMp">33</stat>
+		</stats>
+	</item>
+	<item id="46639" name="Roa's Lost Item" additionalName="Event" type="EtcItem">
+		<!-- Roa's lost item. Exchange it for Assistant Roa's Gift when you are lucky enough to run into NPC Roa. Can only exchange 1 item per day. -->
+		<set name="icon" val="icon.event_july_seven_park_i00" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+	</item>
+	<item id="46640" name="Assistant Roa's Gift" additionalName="Event" type="EtcItem">
+		<!-- Gift box full of Roa's love. Double-click to get a random gift from Roa. -->
+		<set name="icon" val="icon.etc_ev_draco_gift_box" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="46641" name="Entrance Pass: Crystal Caverns" type="EtcItem">
+		<!-- Double-click to reset cooldown to Crystal Cavern's Coral Garden, Steam Corridor, and Emerald Square. Can only be used once a day outside of the instance zone. Can enter twice each time it is used. -->
+		<set name="icon" val="icon.etc_ticket_red_i00" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="46642" name="Proof of Red" additionalName="Event" type="EtcItem">
+		<!-- Red Libra-exclusive item. A certificate given to those who complete requests of the Red Libra Merchants. It is used to change a dual class through Elder Green or exchange a weapon through Artisan Black. -->
+		<set name="icon" val="icon.event_mahum_memo" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="46643" name="Rudy" additionalName="Event" type="EtcItem">
+		<!-- Red Libra item. Oil made by Grocer Pink. Collect 1320 of these and take them to Grocer Pink to receive 10 Lv.5 Giant Dyes. -->
+		<set name="icon" val="icon.five_vairy_potion" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="46644" name="Red Libra Supplies Lv. 1" additionalName="Event" type="EtcItem">
+		<!-- Red Libra-exclusive item. A box that Bodyguard Blue gave in return for your help. Double-click to obtain one of various items at random. -->
+		<set name="icon" val="icon.event_mahum_coinbox" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="46645" name="Red Libra Supplies Lv. 2" additionalName="Event" type="EtcItem">
+		<!-- Red Libra-exclusive item. A box that Bodyguard Blue gave in return for your help. Double-click to obtain one of various items at random. -->
+		<set name="icon" val="icon.event_mahum_coinbox" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="46646" name="Red Libra Supplies Lv. 3" additionalName="Event" type="EtcItem">
+		<!-- Red Libra-exclusive item. A box that Bodyguard Blue gave in return for your help. Double-click to obtain one of various items at random. -->
+		<set name="icon" val="icon.event_mahum_coinbox" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="46647" name="Red Libra Supplies Lv. 4" additionalName="Event" type="EtcItem">
+		<!-- Red Libra-exclusive item. A box that Bodyguard Blue gave in return for your help. Double-click to obtain one of various items at random. -->
+		<set name="icon" val="icon.event_mahum_coinbox" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="46648" name="Red Libra Talisman - Resurrection" additionalName="Event" type="Armor">
+		<!-- Red Libra-exclusive item. When used, it resurrects all dead party members and additionally restores 100% XP. Cannot be used in Olympiad. -->
+		<set name="icon" val="BranchSys2.icon.g_giant_gem" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="weight" val="150" />
+	</item>
+	<item id="46649" name="Red Libra Talisman - Restoration" additionalName="Event" type="Armor">
+		<!-- Red Libra-exclusive item. When used, it restores all party members' HP/ MP/ CP completely and has a chance to dispel debuffs from them. Cannot be used in Olympiad. -->
+		<set name="icon" val="BranchSys2.icon.g_giant_gem" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="weight" val="150" />
+	</item>
+	<item id="46650" name="Red Libra Talisman - Cancel" additionalName="Event" type="Armor">
+		<!-- Red Libra-exclusive item. When used, it dispels debuffs from all party members and makes them immune to debuffs for 7 sec. Cannot be used in Olympiad. -->
+		<set name="icon" val="BranchSys2.icon.g_giant_gem" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="weight" val="150" />
+	</item>
+	<item id="46651" name="Red Libra Talisman - Speed" additionalName="Event" type="Armor">
+		<!-- Red Libra-exclusive item. When used, it increases all party members' Speed by 70 for 10 sec. Cannot be used in Olympiad. -->
+		<set name="icon" val="BranchSys2.icon.g_giant_gem" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="weight" val="150" />
+	</item>
+	<item id="46652" name="Red Libra Talisman - Resistance" additionalName="Event" type="Armor">
+		<!-- Red Libra-exclusive item. When equipped, it decreases damage received by 10%. Cannot be used in Olympiad. -->
+		<set name="icon" val="BranchSys2.icon.g_giant_gem" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="weight" val="150" />
+	</item>
+	<item id="46653" name="Elysium Shaper" additionalName="Event" type="Weapon">
+		<!-- Red Libra-exclusive item. A weapon widely used in Elysium. However, it cannot be enchanted in Aden. Cannot be used in Olympiad. -->
+		<set name="icon" val="icon.weapon_the_dagger_of_hero_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DAGGER" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="R" />
+		<set name="weight" val="500" />
+		<set name="soulshots" val="1" />
+		<set name="bodypart" val="rhand" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_sellable" val="false" />
+		<stats>
+			<stat type="pAtk">690.0</stat>
+			<stat type="mAtk">388.0</stat>
+			<stat type="pAtkSpd">433.0</stat>
+			<stat type="rCrit">12.0</stat>
+		</stats>
+	</item>
+	<item id="46654" name="Elysium Cutter" additionalName="Event" type="Weapon">
+		<!-- Red Libra-exclusive item. A weapon widely used in Elysium. However, it cannot be enchanted in Aden. Cannot be used in Olympiad. -->
+		<set name="icon" val="icon.weapon_the_sword_of_hero_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="R" />
+		<set name="weight" val="500" />
+		<set name="soulshots" val="1" />
+		<set name="bodypart" val="rhand" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_sellable" val="false" />
+		<stats>
+			<stat type="pAtk">770.0</stat>
+			<stat type="mAtk">388.0</stat>
+			<stat type="pAtkSpd">379.0</stat>
+			<stat type="rCrit">8.0</stat>
+		</stats>
+	</item>
+	<item id="46655" name="Elysium Slasher" additionalName="Event" type="Weapon">
+		<!-- Red Libra-exclusive item. A weapon widely used in Elysium. However, it cannot be enchanted in Aden. Cannot be used in Olympiad. -->
+		<set name="icon" val="icon.weapon_the_two_handed_sword_of_hero_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="R" />
+		<set name="weight" val="500" />
+		<set name="soulshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_sellable" val="false" />
+		<stats>
+			<stat type="pAtk">931.0</stat>
+			<stat type="mAtk">388.0</stat>
+			<stat type="pAtkSpd">325.0</stat>
+			<stat type="rCrit">8.0</stat>
+		</stats>
+	</item>
+	<item id="46656" name="Elysium Avenger" additionalName="Event" type="Weapon">
+		<!-- Red Libra-exclusive item. A weapon widely used in Elysium. However, it cannot be enchanted in Aden. Cannot be used in Olympiad. -->
+		<set name="icon" val="icon.weapon_the_axe_of_hero_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="R" />
+		<set name="weight" val="500" />
+		<set name="soulshots" val="1" />
+		<set name="bodypart" val="rhand" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_sellable" val="false" />
+		<stats>
+			<stat type="pAtk">770.0</stat>
+			<stat type="mAtk">388.0</stat>
+			<stat type="pAtkSpd">379.0</stat>
+			<stat type="accCombat">8.0</stat>
+			<stat type="rCrit">6.0</stat>
+		</stats>
+	</item>
+	<item id="46657" name="Elysium Fighter" additionalName="Event" type="Weapon">
+		<!-- Red Libra-exclusive item. A weapon widely used in Elysium. However, it cannot be enchanted in Aden. Cannot be used in Olympiad. -->
+		<set name="icon" val="icon.weapon_the_fist_of_hero_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUALFIST" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="R" />
+		<set name="weight" val="500" />
+		<set name="soulshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_sellable" val="false" />
+		<stats>
+			<stat type="pAtk">931.0</stat>
+			<stat type="mAtk">388.0</stat>
+			<stat type="pAtkSpd">325.0</stat>
+			<stat type="accCombat">8.0</stat>
+			<stat type="rCrit">6.0</stat>
+		</stats>
+	</item>
+	<item id="46658" name="Elysium Stormer" additionalName="Event" type="Weapon">
+		<!-- Red Libra-exclusive item. A weapon widely used in Elysium. However, it cannot be enchanted in Aden. Cannot be used in Olympiad. -->
+		<set name="icon" val="icon.weapon_the_pole_of_hero_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="POLE" />
+		<set name="damage_range" val="0;0;66;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="R" />
+		<set name="weight" val="500" />
+		<set name="soulshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="3599" level="1" /> <!-- Polearm Multi-attack -->
+		</skills>
+		<stats>
+			<stat type="pAtk">770.0</stat>
+			<stat type="mAtk">388.0</stat>
+			<stat type="pAtkSpd">325.0</stat>
+			<stat type="rCrit">8.0</stat>
+		</stats>
+	</item>
+	<item id="46659" name="Elysium Thrower" additionalName="Event" type="Weapon">
+		<!-- Red Libra-exclusive item. A weapon widely used in Elysium. However, it cannot be enchanted in Aden. Cannot be used in Olympiad. -->
+		<set name="icon" val="icon.weapon_the_bow_of_hero_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BOW" />
+		<set name="damage_range" val="0;0;10;0" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="R" />
+		<set name="weight" val="500" />
+		<set name="soulshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_sellable" val="false" />
+		<stats>
+			<stat type="pAtk">1521.0</stat>
+			<stat type="mAtk">388.0</stat>
+			<stat type="pAtkSpd">293.0</stat>
+			<stat type="rCrit">12.0</stat>
+		</stats>
+	</item>
+	<item id="46660" name="Elysium Shooter" additionalName="Event" type="Weapon">
+		<!-- Red Libra-exclusive item. A weapon widely used in Elysium. However, it cannot be enchanted in Aden. Cannot be used in Olympiad. -->
+		<set name="icon" val="icon.weapon_infinity_shooter_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="TWOHANDCROSSBOW" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="R" />
+		<set name="weight" val="500" />
+		<set name="soulshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_sellable" val="false" />
+		<stats>
+			<stat type="pAtk">1286.0</stat>
+			<stat type="mAtk">388.0</stat>
+			<stat type="pAtkSpd">325.0</stat>
+			<stat type="rCrit">12.0</stat>
+		</stats>
+	</item>
+	<item id="46661" name="Elysium Buster" additionalName="Event" type="Weapon">
+		<!-- Red Libra-exclusive item. A weapon widely used in Elysium. However, it cannot be enchanted in Aden. Cannot be used in Olympiad. -->
+		<set name="icon" val="icon.weapon_infinity_sword_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="R" />
+		<set name="weight" val="500" />
+		<set name="soulshots" val="1" />
+		<set name="bodypart" val="rhand" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_sellable" val="false" />
+		<stats>
+			<stat type="pAtk">643.0</stat>
+			<stat type="mAtk">481.0</stat>
+			<stat type="pAtkSpd">379.0</stat>
+			<stat type="rCrit">8.0</stat>
+		</stats>
+	</item>
+	<item id="46662" name="Elysium Caster" additionalName="Event" type="Weapon">
+		<!-- Red Libra-exclusive item. A weapon widely used in Elysium. However, it cannot be enchanted in Aden. Cannot be used in Olympiad. -->
+		<set name="icon" val="icon.weapon_the_mace_of_hero_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="R" />
+		<set name="weight" val="500" />
+		<set name="soulshots" val="1" />
+		<set name="bodypart" val="rhand" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_sellable" val="false" />
+		<stats>
+			<stat type="pAtk">643.0</stat>
+			<stat type="mAtk">481.0</stat>
+			<stat type="pAtkSpd">379.0</stat>
+			<stat type="accCombat">8.0</stat>
+			<stat type="rCrit">6.0</stat>
+		</stats>
+	</item>
+	<item id="46663" name="Elysium Retributer" additionalName="Event" type="Weapon">
+		<!-- Red Libra-exclusive item. A weapon widely used in Elysium. However, it cannot be enchanted in Aden. Cannot be used in Olympiad. -->
+		<set name="icon" val="icon.weapon_the_staff_of_hero_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="R" />
+		<set name="weight" val="500" />
+		<set name="soulshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_sellable" val="false" />
+		<stats>
+			<stat type="pAtk">776.0</stat>
+			<stat type="mAtk">518.0</stat>
+			<stat type="pAtkSpd">325.0</stat>
+			<stat type="accCombat">8.0</stat>
+			<stat type="accMagic">8.0</stat>
+			<stat type="rCrit">6.0</stat>
+		</stats>
+	</item>
+	<item id="46664" name="Elysium Dual Sword" additionalName="Event" type="Weapon">
+		<!-- Red Libra-exclusive item. A weapon widely used in Elysium. However, it cannot be enchanted in Aden. Cannot be used in Olympiad. -->
+		<set name="icon" val="icon.weapon_r_dualsword_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUAL" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="R" />
+		<set name="weight" val="500" />
+		<set name="soulshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_sellable" val="false" />
+		<stats>
+			<stat type="pAtk">931.0</stat>
+			<stat type="mAtk">388.0</stat>
+			<stat type="pAtkSpd">325.0</stat>
+			<stat type="rCrit">8.0</stat>
+		</stats>
+	</item>
+	<item id="46665" name="Elysium Dual Dagger" additionalName="Event" type="Weapon">
+		<!-- Red Libra-exclusive item. A weapon widely used in Elysium. However, it cannot be enchanted in Aden. Cannot be used in Olympiad. -->
+		<set name="icon" val="icon.weapon_r_dualdagger_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUALDAGGER" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="R" />
+		<set name="weight" val="500" />
+		<set name="soulshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_sellable" val="false" />
+		<stats>
+			<stat type="pAtk">792.0</stat>
+			<stat type="mAtk">388.0</stat>
+			<stat type="pAtkSpd">433.0</stat>
+			<stat type="rCrit">12.0</stat>
+		</stats>
+	</item>
+	<item id="46666" name="Elysium Dual Blunt Weapon" additionalName="Event" type="Weapon">
+		<!-- Red Libra-exclusive item. A weapon widely used in Elysium. However, it cannot be enchanted in Aden. Cannot be used in Olympiad. -->
+		<set name="icon" val="icon.weapon_r_dualblunt_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUALBLUNT" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="R" />
+		<set name="weight" val="500" />
+		<set name="soulshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_sellable" val="false" />
+		<stats>
+			<stat type="pAtk">931.0</stat>
+			<stat type="mAtk">388.0</stat>
+			<stat type="pAtkSpd">325.0</stat>
+			<stat type="accCombat">8.0</stat>
+			<stat type="rCrit">6.0</stat>
+		</stats>
+	</item>
+	<item id="46667" name="Lv.5 Giant Dye Pack" type="EtcItem">
+		<set name="icon" val="icon.five_vairy_potion" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+	</item>
+	<item id="46668" name="La Vie En Rose's Radiant Brooch" type="Armor">
+		<!-- Activates 5 jewel slots when equipped. Inventory Slots +12. -->
+		<set name="icon" val="icon.etc_bm_brooch_lavianrose_i03" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="weight" val="10" />
+		<skills>
+			<skill id="13659" level="1" /> <!-- La Vie En Rose's Radiant Brooch -->
+			<skill id="13924" level="1" /> <!-- La Vie En Rose's Radiant Brooch -->
+		</skills>
+		<stats>
+			<stat type="mDef">101.0</stat>
+		</stats>
+	</item>
+	<item id="46669" name="Radiant Brooch Fragment" type="EtcItem">
+		<!-- Main ingredient for making a La Vie En Rose's Radiant Brooch. -->
+		<set name="icon" val="icon.etc_bm_brooch_lavianrose_piece" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="46670" name="Vital Stone" additionalName="Lv. 1" type="Armor">
+		<!-- Vitality Bonus +3%. Effect does not stack with additional jewels of the same type. -->
+		<set name="icon" val="icon.etc_bm_jewel_vital" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="weight" val="5" />
+	</item>
+	<item id="46671" name="Vital Stone" additionalName="Lv. 2" type="Armor">
+		<!-- Vitality Bonus +6%. Effect does not stack with additional jewels of the same type. -->
+		<set name="icon" val="icon.etc_bm_jewel_vital" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="weight" val="5" />
+	</item>
+	<item id="46672" name="Vital Stone" additionalName="Lv. 3" type="Armor">
+		<!-- Vitality Bonus +12%. Effect does not stack with additional jewels of the same type. -->
+		<set name="icon" val="icon.etc_bm_jewel_vital" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="weight" val="5" />
+	</item>
+	<item id="46673" name="Vital Stone" additionalName="Lv. 4" type="Armor">
+		<!-- Vitality Bonus +20% and Vitality Point Consumption Speed -7%. Effect does not stack with additional jewels of the same type. -->
+		<set name="icon" val="icon.etc_bm_jewel_vital" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="weight" val="5" />
+	</item>
+	<item id="46674" name="Vital Stone" additionalName="Lv. 5" type="Armor">
+		<!-- Vitality Bonus +30% and Vitality Point Consumption Speed -15%. Effect does not stack with additional jewels of the same type. -->
+		<set name="icon" val="icon.etc_bm_jewel_vital" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="weight" val="5" />
+	</item>
+	<item id="46675" name="Garnet" additionalName="Lv. 1" type="Armor">
+		<!-- Debuff Resistance +3%. Effect does not stack with additional jewels of the same type. -->
+		<set name="icon" val="icon.etc_bm_jewel_garnet" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="weight" val="5" />
+		<skills>
+			<skill id="18566" level="1"/> <!-- Garnet -->
+		</skills>
+	</item>
+	<item id="46676" name="Garnet" additionalName="Lv. 2" type="Armor">
+		<!-- Debuff Resistance +6%. Effect does not stack with additional jewels of the same type. -->
+		<set name="icon" val="icon.etc_bm_jewel_garnet" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="weight" val="5" />
+		<skills>
+			<skill id="18566" level="2"/> <!-- Garnet -->
+		</skills>
+	</item>
+	<item id="46677" name="Garnet" additionalName="Lv. 3" type="Armor">
+		<!-- Debuff Resistance +12%. Effect does not stack with additional jewels of the same type. -->
+		<set name="icon" val="icon.etc_bm_jewel_garnet" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="weight" val="5" />
+		<skills>
+			<skill id="18566" level="3"/> <!-- Garnet -->
+		</skills>
+	</item>
+	<item id="46678" name="Garnet" additionalName="Lv. 4" type="Armor">
+		<!-- Debuff Resistance +20%. Effect does not stack with additional jewels of the same type. -->
+		<set name="icon" val="icon.etc_bm_jewel_garnet" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="weight" val="5" />
+		<skills>
+			<skill id="18566" level="4"/> <!-- Garnet -->
+		</skills>
+	</item>
+	<item id="46679" name="Garnet" additionalName="Lv. 5" type="Armor">
+		<!-- Debuff Resistance +30%. Cancels your debuffs. Effect does not stack with additional jewels of the same type. -->
+		<set name="icon" val="icon.etc_bm_jewel_garnet" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="weight" val="5" />
+		<skills>
+			<skill id="18566" level="5" /> <!-- Garnet -->
+			<skill id="18567" level="1" /> <!-- Garnet - Purge -->
+		</skills>
+	</item>
+	<item id="46680" name="Tanzanite" additionalName="Lv. 1" type="Armor">
+		<!-- Creates a protection shield that absorbs 5,000 damage for 5 sec. Effect does not stack with additional jewels of the same type. -->
+		<set name="icon" val="icon.etc_bm_jewel_tanzanite" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="weight" val="5" />
+		<skills>
+			<skill id="18565" level="1"/> <!-- Tanzanite - Barrier -->
+		</skills>
+	</item>
+	<item id="46681" name="Tanzanite" additionalName="Lv. 2" type="Armor">
+		<!-- Creates a protection shield that absorbs 10,000 damage for 5 sec. Effect does not stack with additional jewels of the same type. -->
+		<set name="icon" val="icon.etc_bm_jewel_tanzanite" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="weight" val="5" />
+		<skills>
+			<skill id="18565" level="2"/> <!-- Tanzanite - Barrier -->
+		</skills>
+	</item>
+	<item id="46682" name="Tanzanite" additionalName="Lv. 3" type="Armor">
+		<!-- Creates a protection shield that absorbs 15,000 damage for 10 sec. Effect does not stack with additional jewels of the same type. -->
+		<set name="icon" val="icon.etc_bm_jewel_tanzanite" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="weight" val="5" />
+		<skills>
+			<skill id="18565" level="3"/> <!-- Tanzanite - Barrier -->
+		</skills>
+	</item>
+	<item id="46683" name="Tanzanite" additionalName="Lv. 4" type="Armor">
+		<!-- Creates a protection shield that absorbs 30,000 damage for 10 sec. Effect does not stack with additional jewels of the same type. -->
+		<set name="icon" val="icon.etc_bm_jewel_tanzanite" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="weight" val="5" />
+		<skills>
+			<skill id="18565" level="4"/> <!-- Tanzanite - Barrier -->
+		</skills>
+	</item>
+	<item id="46684" name="Tanzanite" additionalName="Lv. 5" type="Armor">
+		<!-- Creates a protection shield that absorbs 50,000 damage for 15 sec. Effect does not stack with additional jewels of the same type. -->
+		<set name="icon" val="icon.etc_bm_jewel_tanzanite" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="weight" val="5" />
+		<skills>
+			<skill id="18565" level="5"/> <!-- Tanzanite - Barrier -->
+		</skills>
+	</item>
+	<item id="46685" name="La Vie En Rose's Vital Stone Box" type="EtcItem">
+		<!-- Double-click to acquire a Lv. 1 Vital Stone. -->
+		<set name="icon" val="icon.etc_bm_jewelbox_vital" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="true" />
+		<set name="is_mailable" val="true" />
+		<set name="is_commissionable" val="false" />
+		<capsuled_items>
+			<item id="26476" min="1" max="1" chance="100" /> <!-- Vital Stone - Lv. 1 -->
+		</capsuled_items>
+	</item>
+	<item id="46686" name="La Vie En Rose's Garnet Box" type="EtcItem">
+		<!-- Double-click to acquire a Lv. 1 Garnet. -->
+		<set name="icon" val="icon.etc_bm_jewelbox_garnet" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="true" />
+		<set name="is_mailable" val="true" />
+		<set name="is_commissionable" val="false" />
+		<capsuled_items>
+			<item id="26481" min="1" max="1" chance="100" /> <!-- Garnet - Lv. 1 -->
+		</capsuled_items>
+	</item>
+	<item id="46687" name="La Vie En Rose's Tanzanite Box" type="EtcItem">
+		<!-- Double-click to acquire a Lv. 1 Tanzanite. -->
+		<set name="icon" val="icon.etc_bm_jewelbox_tanzanite" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="true" />
+		<set name="is_mailable" val="true" />
+		<set name="is_commissionable" val="false" />
+		<capsuled_items>
+			<item id="26486" min="1" max="1" chance="100" /> <!-- Tanzanite - Lv. 1 -->
+		</capsuled_items>
+	</item>
+	<item id="46688" name="La Vie En Rose's Radiant Brooch Chest" type="EtcItem">
+		<!-- Double-click to acquire a La Vie En Rose's Radiant Brooch. -->
+		<set name="icon" val="icon.etc_pi_box_belief_pack" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="true" />
+		<set name="is_mailable" val="true" />
+		<set name="is_commissionable" val="false" />
+		<capsuled_items>
+			<item id="26474" min="1" max="1" chance="100" /> <!-- La Vie En Rose's Radiant Brooch -->
+		</capsuled_items>
+	</item>
+	<item id="46689" name="Shadai's Jewelry Box" type="EtcItem">
+		<!-- Double-click to acquire 1 of the La Vie En Rose's Jewelry Boxes. -->
+		<set name="icon" val="icon.etc_bm_jewelbox_main_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="is_clan_depositable" val="true" />
+		<set name="is_mailable" val="true" />
+		<set name="is_commissionable" val="false" />
+		<skills>
+			<skill id="18564" level="1" /> <!-- Shadai's Jewelry Box -->
+		</skills>
+	</item>
+	<item id="46690" name="Shadai's Shiny Jewelry Box" type="EtcItem">
+		<!-- Double-click to get 1 of the following: La Vie En Rose's Vital Stone Chest, La Vie En Rose's Garnet Chest, or La Vie En Rose's Tanzanite Chest. -->
+		<set name="icon" val="icon.etc_bm_jewelbox_shhadai" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="46691" name="Function Test Item" type="EtcItem">
+		<!-- Double-click to get 1 of the following: La Vie En Rose's Vital Stone Chest, La Vie En Rose's Garnet Chest, or La Vie En Rose's Tanzanite Chest. -->
+		<set name="icon" val="icon.etc_bm_jewelbox_shhadai" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="46692" name="Entrance Pass: Embryo Command Post" type="EtcItem">
+		<!-- Double-click to reset cooldown to Embryo Command Post. Can only be used once a day outside of the instance zone. -->
+		<set name="icon" val="icon.etc_ticket_red_i00" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="46693" name="Emperor Shunaiman's Shaper" additionalName="30-day" type="Weapon">
+		<!-- Dimensional Item. Emperor Shunaiman's Weapon. Can be used at all levels. Must use Soulshot (No-grade)/ Spiritshot/ Blessed Spiritshot. -->
+		<set name="icon" val="icon.npoint_weapon_dagger" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DAGGER" />
+		<set name="bodypart" val="rhand" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="500" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="43200" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="is_private_storeable" val="false" />
+		<skills>
+			<skill id="13925" level="1" /> <!-- Emperor Shunaiman's Authority -->
+		</skills>
+		<stats>
+			<stat type="pAtk">737</stat>
+			<stat type="mAtk">409</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkSpd">433</stat>
+			<stat type="randomDamage">5</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="46694" name="Emperor Shunaiman's Dicing Death" additionalName="30-day" type="Weapon">
+		<!-- Dimensional Item. Emperor Shunaiman's Weapon. Can be used at all levels. Must use Soulshot (No-grade)/ Spiritshot/ Blessed Spiritshot. -->
+		<set name="icon" val="icon.npoint_weapon_onehand_sword" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="500" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="43200" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="is_private_storeable" val="false" />
+		<skills>
+			<skill id="13925" level="1" /> <!-- Emperor Shunaiman's Authority -->
+		</skills>
+		<stats>
+			<stat type="pAtk">827</stat>
+			<stat type="mAtk">409</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="46695" name="Emperor Shunaiman's Slasher" additionalName="30-day" type="Weapon">
+		<!-- Dimensional Item. Emperor Shunaiman's Weapon. Can be used at all levels. Must use Soulshot (No-grade)/ Spiritshot/ Blessed Spiritshot. -->
+		<set name="icon" val="icon.npoint_weapon_twohand_sword" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="500" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="43200" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="is_private_storeable" val="false" />
+		<skills>
+			<skill id="13925" level="1" /> <!-- Emperor Shunaiman's Authority -->
+		</skills>
+		<stats>
+			<stat type="pAtk">1007</stat>
+			<stat type="mAtk">409</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="46696" name="Emperor Shunaiman's Avenger" additionalName="30-day" type="Weapon">
+		<!-- Dimensional Item. Emperor Shunaiman's Weapon. Can be used at all levels. Must use Soulshot (No-grade)/ Spiritshot/ Blessed Spiritshot. -->
+		<set name="icon" val="icon.npoint_weapon_onehand_blunt" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="rhand" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="500" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="43200" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="is_private_storeable" val="false" />
+		<skills>
+			<skill id="13925" level="1" /> <!-- Emperor Shunaiman's Authority -->
+		</skills>
+		<stats>
+			<stat type="pAtk">827</stat>
+			<stat type="mAtk">409</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="46697" name="Emperor Shunaiman's Fighter" additionalName="30-day" type="Weapon">
+		<!-- Dimensional Item. Emperor Shunaiman's Weapon. Can be used at all levels. Must use Soulshot (No-grade)/ Spiritshot/ Blessed Spiritshot. -->
+		<set name="icon" val="icon.npoint_weapon_fist" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUALFIST" />
+		<set name="bodypart" val="lrhand" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="500" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="43200" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="is_private_storeable" val="false" />
+		<skills>
+			<skill id="13925" level="1" /> <!-- Emperor Shunaiman's Authority -->
+		</skills>
+		<stats>
+			<stat type="pAtk">1007</stat>
+			<stat type="mAtk">409</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">5</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="46698" name="Emperor Shunaiman's Stormer" additionalName="30-day" type="Weapon">
+		<!-- Dimensional Item. Emperor Shunaiman's Weapon. Can be used at all levels. Must use Soulshot (No-grade)/ Spiritshot/ Blessed Spiritshot. -->
+		<set name="icon" val="icon.npoint_weapon_spear" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="POLE" />
+		<set name="bodypart" val="lrhand" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="BRONZE" />
+		<set name="weight" val="500" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="43200" />
+		<set name="is_private_storeable" val="false" />
+		<set name="damage_range" val="0;0;66;120" />
+		<skills>
+			<skill id="13925" level="1" /> <!-- Emperor Shunaiman's Authority -->
+			<skill id="13115" level="1" /> <!-- Polearm Multi-attack -->
+		</skills>
+		<stats>
+			<stat type="pAtk">827</stat>
+			<stat type="mAtk">409</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">80</stat>
+		</stats>
+	</item>
+	<item id="46699" name="Emperor Shunaiman's Thrower" additionalName="30-day" type="Weapon">
+		<!-- Dimensional Item. Emperor Shunaiman's Weapon. Can be used at all levels. Must use Soulshot (No-grade)/ Spiritshot/ Blessed Spiritshot. -->
+		<set name="icon" val="icon.npoint_weapon_bow" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BOW" />
+		<set name="bodypart" val="lrhand" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="500" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="43200" />
+		<set name="damage_range" val="0;0;10;0" />
+		<set name="is_private_storeable" val="false" />
+		<skills>
+			<skill id="13925" level="1" /> <!-- Emperor Shunaiman's Authority -->
+		</skills>
+		<stats>
+			<stat type="pAtk">1631</stat>
+			<stat type="mAtk">409</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkSpd">293</stat>
+			<stat type="randomDamage">5</stat>
+			<stat type="pAtkRange">500</stat>
+		</stats>
+	</item>
+</list>

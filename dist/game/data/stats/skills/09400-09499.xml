@@ -1,0 +1,4457 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="9400" toLevel="1" name="Squash Ring Pack">
+		<itemConsumeId>34819</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<staticReuse>true</staticReuse>
+		<isMagic>2</isMagic>
+		<reuseDelay>2000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="50">
+						<item id="34778" count="1" /> <!-- Squash Ring (Warrior) - Event -->
+					</item>
+					<item chance="50">
+						<item id="34831" count="1" /> <!-- Squash Ring (Wizard) - Event -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="9401" toLevel="1" name="Squash Earring Pack">
+		<itemConsumeId>34820</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<staticReuse>true</staticReuse>
+		<isMagic>2</isMagic>
+		<reuseDelay>2000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="50">
+						<item id="34779" count="1" /> <!-- Squash Earring (Warrior) - Event -->
+					</item>
+					<item chance="50">
+						<item id="34832" count="1" /> <!-- Squash Earring (Wizard) - Event -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="9402" toLevel="1" name="Squash Necklace Pack">
+		<itemConsumeId>34821</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<staticReuse>true</staticReuse>
+		<isMagic>2</isMagic>
+		<reuseDelay>2000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="100">
+						<item id="34780" count="1" /> <!-- Squash Necklace - Event -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="9403" toLevel="1" name="Pirate Elixir">
+		<!-- For 2 h., Vitality replenished if XP is gained through hunting. Buff remains even after death. -->
+		<icon>icon.etc_hot_spring_nectar_i00</icon>
+		<operateType>A2</operateType>
+		<reuseDelay>3600000</reuseDelay>
+		<effectPoint>100</effectPoint>
+		<abnormalType>VP_UP</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-2</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<abnormalLvl>8</abnormalLvl>
+		<abnormalTime>7200</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<staticReuse>true</staticReuse>
+		<abnormalVisualEffect>VP_UP</abnormalVisualEffect>
+		<isMagic>4</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CanRestoreVitalPoint" />
+			<condition name="CanUseVitalityConsumeItem" />
+			<condition name="OpCheckAbnormal">
+				<type>VP_UP</type>
+				<level>8</level>
+				<hasAbnormal>false</hasAbnormal>
+			</condition>
+		</conditions>
+	</skill>
+	<skill id="9404" toLevel="1" name="Wondrous Herb of Power">
+		<!-- For 1 min. 30 sec., P. Atk. +100%. -->
+		<icon>icon.etc_warrior_set_i00</icon>
+		<abnormalInstant>true</abnormalInstant>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>90</abnormalTime>
+		<abnormalType>PA_UP_HERB</abnormalType>
+		<abnormalVisualEffect>HERB_PA_UP</abnormalVisualEffect>
+		<effectPoint>100</effectPoint>
+		<hitTime>100</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>99</magicLvl>
+		<operateType>A2</operateType>
+		<reuseDelay>2000</reuseDelay>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="PAtk">
+				<amount>100</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="9405" toLevel="1" name="Wondrous Herb of Magic">
+		<!-- For 1 min. 30 sec., M. Atk. +400%. -->
+		<icon>icon.etc_magic_set_i00</icon>
+		<abnormalInstant>true</abnormalInstant>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>90</abnormalTime>
+		<abnormalType>MA_UP_HERB</abnormalType>
+		<abnormalVisualEffect>HERB_MA_UP</abnormalVisualEffect>
+		<effectPoint>100</effectPoint>
+		<hitTime>100</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>99</magicLvl>
+		<operateType>A2</operateType>
+		<reuseDelay>2000</reuseDelay>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="MAtk">
+				<amount>400</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="9406" toLevel="1" name="Ingredient and Hardener Pouch (R-grade)">
+		<itemConsumeId>34861</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<staticReuse>true</staticReuse>
+		<isMagic>2</isMagic>
+		<reuseDelay>2000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="3">
+						<item id="17526" count="1" /> <!-- Scroll: Enchant Weapon (R-grade) -->
+					</item>
+					<item chance="3">
+						<item id="17527" count="1" /> <!-- Scroll: Enchant Armor (R-grade) -->
+					</item>
+					<item chance="4">
+						<item id="19307" count="1" /> <!-- Corroded Giant's Arcsmith' Anvil -->
+					</item>
+					<item chance="4">
+						<item id="19308" count="1" /> <!-- Corroded Giant's Warsmith' Mold -->
+					</item>
+					<item chance="10">
+						<item id="19514" count="1" /> <!-- Corroded Ancient Warsmith' Holder -->
+					</item>
+					<item chance="10">
+						<item id="19515" count="1" /> <!-- Corroded Ancient Reorin's Mold -->
+					</item>
+					<item chance="10">
+						<item id="19516" count="1" /> <!-- Corroded Ancient Arcsmith' Anvil -->
+					</item>
+					<item chance="10">
+						<item id="19517" count="1" /> <!-- Corroded Ancient Warsmith' Mold -->
+					</item>
+					<item chance="7">
+						<item id="19518" count="1" /> <!-- Corroded Legendary Warsmith' Holder -->
+					</item>
+					<item chance="7">
+						<item id="19519" count="1" /> <!-- Corroded Legendary Reorin's Mold -->
+					</item>
+					<item chance="7">
+						<item id="19520" count="1" /> <!-- Corroded Legendary Arcsmith' Anvil -->
+					</item>
+					<item chance="7">
+						<item id="19521" count="1" /> <!-- Corroded Legendary Warsmith' Mold -->
+					</item>
+					<item chance="3">
+						<item id="9552" count="1" /> <!-- Fire Crystal -->
+					</item>
+					<item chance="3">
+						<item id="9553" count="1" /> <!-- Water Crystal -->
+					</item>
+					<item chance="3">
+						<item id="9554" count="1" /> <!-- Earth Crystal -->
+					</item>
+					<item chance="3">
+						<item id="9555" count="1" /> <!-- Wind Crystal -->
+					</item>
+					<item chance="3">
+						<item id="9556" count="1" /> <!-- Dark Crystal -->
+					</item>
+					<item chance="3">
+						<item id="9557" count="1" /> <!-- Holy Crystal -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="9407" toLevel="1" name="Release Agathion's Seal - Jang Heejin">
+		<!-- Releases Agathion's seal. -->
+		<icon>icon.etc_summon_aga_agit_i00</icon>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<hitTime>3000</hitTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="9408" toLevel="1" name="Release Agathion's Seal - Jang Hyuk">
+		<!-- Releases Agathion's seal. -->
+		<icon>icon.etc_summon_aga_agit_i00</icon>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<hitTime>3000</hitTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="9409" toLevel="1" name="Release Agathion's Seal - Kim Sooro">
+		<!-- Releases Agathion's seal. -->
+		<icon>icon.etc_summon_aga_agit_i00</icon>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<hitTime>3000</hitTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="9410" toLevel="1" name="Release Agathion's Seal - Park Jaebum">
+		<!-- Releases Agathion's seal. -->
+		<icon>icon.etc_summon_aga_agit_i00</icon>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<hitTime>3000</hitTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="9411" toLevel="1" name="Release Agathion's Seal - Kim Shinyoung">
+		<!-- Releases Agathion's seal. -->
+		<icon>icon.etc_summon_aga_agit_i00</icon>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<hitTime>3000</hitTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="9412" toLevel="1" name="Agathion Cute Trick - Jang Heejin">
+		<!-- See Agathion's cute trick. -->
+		<icon>icon.skill_agathion_cute</icon>
+		<operateType>A1</operateType>
+		<effectPoint>1</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<isMagic>2</isMagic>
+		<hitTime>3000</hitTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpNeedAgathion" />
+		</conditions>
+	</skill>
+	<skill id="9413" toLevel="1" name="Agathion Cute Trick - Jang Hyuk">
+		<!-- See Agathion's cute trick. -->
+		<icon>icon.skill_agathion_cute</icon>
+		<operateType>A1</operateType>
+		<effectPoint>1</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<isMagic>2</isMagic>
+		<hitTime>3800</hitTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpNeedAgathion" />
+		</conditions>
+	</skill>
+	<skill id="9414" toLevel="1" name="Agathion Cute Trick - Kim Sooro">
+		<!-- See Agathion's cute trick. -->
+		<icon>icon.skill_agathion_cute</icon>
+		<operateType>A1</operateType>
+		<effectPoint>1</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<isMagic>2</isMagic>
+		<hitTime>3400</hitTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpNeedAgathion" />
+		</conditions>
+	</skill>
+	<skill id="9415" toLevel="1" name="Agathion Cute Trick - Park Jaebum">
+		<!-- See Agathion's cute trick. -->
+		<icon>icon.skill_agathion_cute</icon>
+		<operateType>A1</operateType>
+		<effectPoint>1</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<isMagic>2</isMagic>
+		<hitTime>6200</hitTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpNeedAgathion" />
+		</conditions>
+	</skill>
+	<skill id="9416" toLevel="1" name="Agathion Cute Trick - Kim Shinyoung">
+		<!-- See Agathion's cute trick. -->
+		<icon>icon.skill_agathion_cute</icon>
+		<operateType>A1</operateType>
+		<effectPoint>1</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<isMagic>2</isMagic>
+		<hitTime>3700</hitTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpNeedAgathion" />
+		</conditions>
+	</skill>
+	<skill id="9417" toLevel="1" name="Dimension Keeper's Blue Box">
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>34927</itemConsumeId>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="15.28">
+						<item id="9546" count="1" /> <!-- Fire Stone -->
+					</item>
+					<item chance="15.28">
+						<item id="9547" count="1" /> <!-- Water Stone -->
+					</item>
+					<item chance="15.28">
+						<item id="9548" count="1" /> <!-- Earth Stone -->
+					</item>
+					<item chance="15.28">
+						<item id="9549" count="1" /> <!-- Wind Stone -->
+					</item>
+					<item chance="15.27">
+						<item id="9550" count="1" /> <!-- Dark Stone -->
+					</item>
+					<item chance="15.27">
+						<item id="9551" count="1" /> <!-- Holy Stone -->
+					</item>
+					<item chance="1.39">
+						<item id="9552" count="1" /> <!-- Fire Crystal -->
+					</item>
+					<item chance="1.39">
+						<item id="9553" count="1" /> <!-- Water Crystal -->
+					</item>
+					<item chance="1.39">
+						<item id="9554" count="1" /> <!-- Earth Crystal -->
+					</item>
+					<item chance="1.39">
+						<item id="9555" count="1" /> <!-- Wind Crystal -->
+					</item>
+					<item chance="1.39">
+						<item id="9556" count="1" /> <!-- Dark Crystal -->
+					</item>
+					<item chance="1.39">
+						<item id="9557" count="1" /> <!-- Holy Crystal -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="9418" toLevel="1" name="Dimension Keeper's Red Box">
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>34928</itemConsumeId>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="0.43">
+						<item id="17526" count="1" /> <!-- Scroll: Enchant Weapon (R-grade) -->
+					</item>
+					<item chance="2.79">
+						<item id="17527" count="1" /> <!-- Scroll: Enchant Armor (R-grade) -->
+					</item>
+					<item chance="14.56">
+						<item id="9546" count="1" /> <!-- Fire Stone -->
+					</item>
+					<item chance="14.56">
+						<item id="9547" count="1" /> <!-- Water Stone -->
+					</item>
+					<item chance="14.56">
+						<item id="9548" count="1" /> <!-- Earth Stone -->
+					</item>
+					<item chance="14.56">
+						<item id="9549" count="1" /> <!-- Wind Stone -->
+					</item>
+					<item chance="14.56">
+						<item id="9550" count="1" /> <!-- Dark Stone -->
+					</item>
+					<item chance="14.56">
+						<item id="9551" count="1" /> <!-- Holy Stone -->
+					</item>
+					<item chance="1.57">
+						<item id="9552" count="1" /> <!-- Fire Crystal -->
+					</item>
+					<item chance="1.57">
+						<item id="9553" count="1" /> <!-- Water Crystal -->
+					</item>
+					<item chance="1.57">
+						<item id="9554" count="1" /> <!-- Earth Crystal -->
+					</item>
+					<item chance="1.57">
+						<item id="9555" count="1" /> <!-- Wind Crystal -->
+					</item>
+					<item chance="1.57">
+						<item id="9556" count="1" /> <!-- Dark Crystal -->
+					</item>
+					<item chance="1.57">
+						<item id="9557" count="1" /> <!-- Holy Crystal -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="9419" toLevel="1" name="Dimension Keeper's Golden Box">
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>34929</itemConsumeId>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="0.08">
+						<item id="19447" count="1" /> <!-- Blessed Scroll: Enchant Weapon (R-grade) -->
+					</item>
+					<item chance="0.23">
+						<item id="19448" count="1" /> <!-- Blessed Scroll: Enchant Armor (R-grade) -->
+					</item>
+					<item chance="0.77">
+						<item id="17526" count="1" /> <!-- Scroll: Enchant Weapon (R-grade) -->
+					</item>
+					<item chance="3.28">
+						<item id="17527" count="1" /> <!-- Scroll: Enchant Armor (R-grade) -->
+					</item>
+					<item chance="14.22">
+						<item id="9546" count="1" /> <!-- Fire Stone -->
+					</item>
+					<item chance="14.22">
+						<item id="9547" count="1" /> <!-- Water Stone -->
+					</item>
+					<item chance="14.22">
+						<item id="9548" count="1" /> <!-- Earth Stone -->
+					</item>
+					<item chance="14.22">
+						<item id="9549" count="1" /> <!-- Wind Stone -->
+					</item>
+					<item chance="14.22">
+						<item id="9550" count="1" /> <!-- Dark Stone -->
+					</item>
+					<item chance="14.22">
+						<item id="9551" count="1" /> <!-- Holy Stone -->
+					</item>
+					<item chance="1.72">
+						<item id="9552" count="1" /> <!-- Fire Crystal -->
+					</item>
+					<item chance="1.72">
+						<item id="9553" count="1" /> <!-- Water Crystal -->
+					</item>
+					<item chance="1.72">
+						<item id="9554" count="1" /> <!-- Earth Crystal -->
+					</item>
+					<item chance="1.72">
+						<item id="9555" count="1" /> <!-- Wind Crystal -->
+					</item>
+					<item chance="1.72">
+						<item id="9556" count="1" /> <!-- Dark Crystal -->
+					</item>
+					<item chance="1.72">
+						<item id="9557" count="1" /> <!-- Holy Crystal -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="9420" toLevel="1" name="Dimension Traveler's Blue Box">
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>34930</itemConsumeId>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="13.3">
+						<item id="34649" count="2" /> <!-- Fire Stone Fragment -->
+					</item>
+					<item chance="13.3">
+						<item id="34650" count="2" /> <!-- Water Stone Fragment -->
+					</item>
+					<item chance="13.3">
+						<item id="34651" count="2" /> <!-- Wind Stone Fragment -->
+					</item>
+					<item chance="13.3">
+						<item id="34652" count="2" /> <!-- Earth Stone Fragment -->
+					</item>
+					<item chance="13.3">
+						<item id="34653" count="2" /> <!-- Holy Stone Fragment -->
+					</item>
+					<item chance="13.3">
+						<item id="34654" count="2" /> <!-- Dark Stone Fragment -->
+					</item>
+					<item chance="3.4">
+						<item id="9546" count="1" /> <!-- Fire Stone -->
+					</item>
+					<item chance="3.4">
+						<item id="9547" count="1" /> <!-- Water Stone -->
+					</item>
+					<item chance="3.4">
+						<item id="9548" count="1" /> <!-- Earth Stone -->
+					</item>
+					<item chance="3.4">
+						<item id="9549" count="1" /> <!-- Wind Stone -->
+					</item>
+					<item chance="3.3">
+						<item id="9550" count="1" /> <!-- Dark Stone -->
+					</item>
+					<item chance="3.3">
+						<item id="9551" count="1" /> <!-- Holy Stone -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="9421" toLevel="1" name="Dimension Traveler's Red Box">
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>34931</itemConsumeId>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="12.82">
+						<item id="34649" count="2" /> <!-- Fire Stone Fragment -->
+					</item>
+					<item chance="12.82">
+						<item id="34650" count="2" /> <!-- Water Stone Fragment -->
+					</item>
+					<item chance="12.82">
+						<item id="34651" count="2" /> <!-- Wind Stone Fragment -->
+					</item>
+					<item chance="12.82">
+						<item id="34652" count="2" /> <!-- Earth Stone Fragment -->
+					</item>
+					<item chance="12.82">
+						<item id="34653" count="2" /> <!-- Holy Stone Fragment -->
+					</item>
+					<item chance="12.82">
+						<item id="34654" count="2" /> <!-- Dark Stone Fragment -->
+					</item>
+					<item chance="3.21">
+						<item id="9546" count="1" /> <!-- Fire Stone -->
+					</item>
+					<item chance="3.21">
+						<item id="9547" count="1" /> <!-- Water Stone -->
+					</item>
+					<item chance="3.21">
+						<item id="9548" count="1" /> <!-- Earth Stone -->
+					</item>
+					<item chance="3.21">
+						<item id="9549" count="1" /> <!-- Wind Stone -->
+					</item>
+					<item chance="3.21">
+						<item id="9550" count="1" /> <!-- Dark Stone -->
+					</item>
+					<item chance="3.21">
+						<item id="9551" count="1" /> <!-- Holy Stone -->
+					</item>
+					<item chance="0.64">
+						<item id="9552" count="1" /> <!-- Fire Crystal -->
+					</item>
+					<item chance="0.64">
+						<item id="9553" count="1" /> <!-- Water Crystal -->
+					</item>
+					<item chance="0.64">
+						<item id="9554" count="1" /> <!-- Earth Crystal -->
+					</item>
+					<item chance="0.64">
+						<item id="9555" count="1" /> <!-- Wind Crystal -->
+					</item>
+					<item chance="0.63">
+						<item id="9556" count="1" /> <!-- Dark Crystal -->
+					</item>
+					<item chance="0.63">
+						<item id="9557" count="1" /> <!-- Holy Crystal -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="9422" toLevel="1" name="Dimension Traveler's Golden Box">
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>34932</itemConsumeId>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="0.18">
+						<item id="17526" count="1" /> <!-- Scroll: Enchant Weapon (R-grade) -->
+					</item>
+					<item chance="2.5">
+						<item id="17527" count="1" /> <!-- Scroll: Enchant Armor (R-grade) -->
+					</item>
+					<item chance="12.48">
+						<item id="34649" count="1" /> <!-- Fire Stone Fragment -->
+					</item>
+					<item chance="12.48">
+						<item id="34650" count="1" /> <!-- Water Stone Fragment -->
+					</item>
+					<item chance="12.48">
+						<item id="34651" count="1" /> <!-- Wind Stone Fragment -->
+					</item>
+					<item chance="12.48">
+						<item id="34652" count="1" /> <!-- Earth Stone Fragment -->
+					</item>
+					<item chance="12.48">
+						<item id="34653" count="1" /> <!-- Holy Stone Fragment -->
+					</item>
+					<item chance="12.48">
+						<item id="34654" count="1" /> <!-- Dark Stone Fragment -->
+					</item>
+					<item chance="3.12">
+						<item id="9546" count="1" /> <!-- Fire Stone -->
+					</item>
+					<item chance="3.12">
+						<item id="9547" count="1" /> <!-- Water Stone -->
+					</item>
+					<item chance="3.12">
+						<item id="9548" count="1" /> <!-- Earth Stone -->
+					</item>
+					<item chance="3.12">
+						<item id="9549" count="1" /> <!-- Wind Stone -->
+					</item>
+					<item chance="3.12">
+						<item id="9550" count="1" /> <!-- Dark Stone -->
+					</item>
+					<item chance="3.12">
+						<item id="9551" count="1" /> <!-- Holy Stone -->
+					</item>
+					<item chance="0.62">
+						<item id="9552" count="1" /> <!-- Fire Crystal -->
+					</item>
+					<item chance="0.62">
+						<item id="9553" count="1" /> <!-- Water Crystal -->
+					</item>
+					<item chance="0.62">
+						<item id="9554" count="1" /> <!-- Earth Crystal -->
+					</item>
+					<item chance="0.62">
+						<item id="9555" count="1" /> <!-- Wind Crystal -->
+					</item>
+					<item chance="0.62">
+						<item id="9556" count="1" /> <!-- Dark Crystal -->
+					</item>
+					<item chance="0.62">
+						<item id="9557" count="1" /> <!-- Holy Crystal -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="9423" toLevel="1" name="Campaign Reward Pouch">
+		<itemConsumeId>34933</itemConsumeId>
+		<itemConsumeCount>0</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="87.5">
+						<item id="33520" count="1" /> <!-- Scroll: Enchant Armor (R-grade) - Campaign -->
+					</item>
+					<item chance="12.5">
+						<item id="33519" count="1" /> <!-- Scroll: Enchant Weapon (R-grade) - Campaign -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="9424" toLevel="1" name="Campaign Reward Pouch">
+		<itemConsumeId>34934</itemConsumeId>
+		<itemConsumeCount>0</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="87.5">
+						<item id="33520" count="1" /> <!-- Scroll: Enchant Armor (R-grade) - Campaign -->
+					</item>
+					<item chance="12.5">
+						<item id="33519" count="1" /> <!-- Scroll: Enchant Weapon (R-grade) - Campaign -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="9425" toLevel="1" name="Lv. 2 Giant Dye Pack">
+		<itemConsumeId>34934</itemConsumeId>
+		<itemConsumeCount>0</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="16.6">
+						<item id="17643" count="1" /> <!-- Lv. 2 Giant STR Dye - STR +4/ DEX -3 -->
+					</item>
+					<item chance="16.6">
+						<item id="17644" count="1" /> <!-- Lv. 2 Giant DEX Dye - DEX +4/ CON -3 -->
+					</item>
+					<item chance="16.6">
+						<item id="17645" count="1" /> <!-- Lv. 2 Giant CON Dye - CON +4/ STR -3 -->
+					</item>
+					<item chance="16.6">
+						<item id="17646" count="1" /> <!-- Lv. 2 Giant INT Dye - INT +4/ WIT -3 -->
+					</item>
+					<item chance="16.6">
+						<item id="17647" count="1" /> <!-- Lv. 2 Giant WIT Dye - WIT +4/ MEN -3 -->
+					</item>
+					<item chance="17">
+						<item id="17648" count="1" /> <!-- Lv. 2 Giant MEN Dye - MEN +4/ INT -3 -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="9426" toLevel="1" name="Lv. 2 Legendary Dye Pack">
+		<itemConsumeId>34934</itemConsumeId>
+		<itemConsumeCount>0</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="16.6">
+						<item id="17655" count="1" /> <!-- Lv. 2 Legendary STR Dye - STR +4/ DEX -2/ Fire Resistance +10 -->
+					</item>
+					<item chance="16.6">
+						<item id="17656" count="1" /> <!-- Lv. 2 Legendary DEX Dye - DEX +4/ CON -2/ Earth Resistance +10 -->
+					</item>
+					<item chance="16.6">
+						<item id="17657" count="1" /> <!-- Lv. 2 Legendary CON Dye - CON +4/ STR -2/ Dark Resistance +10 -->
+					</item>
+					<item chance="16.6">
+						<item id="17658" count="1" /> <!-- Lv. 2 Legendary INT Dye - INT +4/ WIT -2/ Water Resistance +10 -->
+					</item>
+					<item chance="16.6">
+						<item id="17659" count="1" /> <!-- Lv. 2 Legendary WIT Dye - WIT +4/ MEN -2/ Wind Resistance +10 -->
+					</item>
+					<item chance="17">
+						<item id="17660" count="1" /> <!-- Lv. 2 Legendary MEN Dye - MEN +4/ INT -2/ Holy Resistance +10 -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="9427" toLevel="1" name="Lv. 2 Ancient Dye Pack">
+		<itemConsumeId>34934</itemConsumeId>
+		<itemConsumeCount>0</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="16.6">
+						<item id="17649" count="1" /> <!-- Lv. 2 Ancient STR Dye - STR +4/ DEX -3/ Fire Resistance +10 -->
+					</item>
+					<item chance="16.6">
+						<item id="17650" count="1" /> <!-- Lv. 2 Ancient DEX Dye - DEX +4/ CON -3/ Earth Resistance +10 -->
+					</item>
+					<item chance="16.6">
+						<item id="17651" count="1" /> <!-- Lv. 2 Ancient CON Dye - CON +4/ STR -3/ Dark Resistance +10 -->
+					</item>
+					<item chance="16.6">
+						<item id="17652" count="1" /> <!-- Lv. 2 Ancient INT Dye - INT +4/ WIT -3/ Water Resistance +10 -->
+					</item>
+					<item chance="16.6">
+						<item id="17653" count="1" /> <!-- Lv. 2 Ancient WIT Dye - WIT +4/ MEN -3/ Wind Resistance +10 -->
+					</item>
+					<item chance="17">
+						<item id="17654" count="1" /> <!-- Lv. 2 Ancient MEN Dye - MEN +4/ INT -3/ Holy Resistance +10 -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="9428" toLevel="1" name="Lv. 3 Giant Dye Pack">
+		<itemConsumeId>34934</itemConsumeId>
+		<itemConsumeCount>0</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="16.6">
+						<item id="17661" count="1" /> <!-- Lv. 3 Giant STR Dye - STR +5/ DEX -4 -->
+					</item>
+					<item chance="16.6">
+						<item id="17662" count="1" /> <!-- Lv. 3 Giant DEX Dye - DEX +5/ CON -4 -->
+					</item>
+					<item chance="16.6">
+						<item id="17663" count="1" /> <!-- Lv. 3 Giant CON Dye - CON +5/ STR -4 -->
+					</item>
+					<item chance="16.6">
+						<item id="17664" count="1" /> <!-- Lv. 3 Giant INT Dye - INT +5/ WIT -4 -->
+					</item>
+					<item chance="16.6">
+						<item id="17665" count="1" /> <!-- Lv. 3 Giant WIT Dye - WIT +5/ MEN -4 -->
+					</item>
+					<item chance="17">
+						<item id="17666" count="1" /> <!-- Lv. 3 Giant MEN Dye - MEN +5/ INT -4 -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="9429" toLevel="1" name="Lv. 3 Legendary Dye Pack">
+		<itemConsumeId>34934</itemConsumeId>
+		<itemConsumeCount>0</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="16.6">
+						<item id="17673" count="1" /> <!-- Lv. 3 Legendary STR Dye - STR +5/ DEX -3/ Fire Resistance +15 -->
+					</item>
+					<item chance="16.6">
+						<item id="17674" count="1" /> <!-- Lv. 3 Legendary DEX Dye - DEX +5/ CON -3/ Earth Resistance +15 -->
+					</item>
+					<item chance="16.6">
+						<item id="17675" count="1" /> <!-- Lv. 3 Legendary CON Dye - CON +5/ STR -3/ Dark Resistance +15 -->
+					</item>
+					<item chance="16.6">
+						<item id="17676" count="1" /> <!-- Lv. 3 Legendary INT Dye - INT +5/ WIT -3/ Water Resistance +15 -->
+					</item>
+					<item chance="16.6">
+						<item id="17677" count="1" /> <!-- Lv. 3 Legendary WIT Dye - WIT +5/ MEN -3/ Wind Resistance +15 -->
+					</item>
+					<item chance="17">
+						<item id="17678" count="1" /> <!-- Lv. 3 Legendary MEN Dye - MEN +5/ INT -3/ Holy Resistance +15 -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="9430" toLevel="1" name="Lv. 3 Ancient Dye Pack">
+		<itemConsumeId>34934</itemConsumeId>
+		<itemConsumeCount>0</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="16.6">
+						<item id="17667" count="1" /> <!-- Lv. 3 Ancient STR Dye - STR +5/ DEX -4/ Fire Resistance +15 -->
+					</item>
+					<item chance="16.6">
+						<item id="17668" count="1" /> <!-- Lv. 3 Ancient DEX Dye - DEX +5/ CON -4/ Earth Resistance +15 -->
+					</item>
+					<item chance="16.6">
+						<item id="17669" count="1" /> <!-- Lv. 3 Ancient CON Dye - CON +5/ STR -4/ Dark Resistance +15 -->
+					</item>
+					<item chance="16.6">
+						<item id="17670" count="1" /> <!-- Lv. 3 Ancient INT Dye - INT +5/ WIT -4/ Water Resistance +15 -->
+					</item>
+					<item chance="16.6">
+						<item id="17671" count="1" /> <!-- Lv. 3 Ancient WIT Dye - WIT +5/ MEN -4/ Wind Resistance +15 -->
+					</item>
+					<item chance="17">
+						<item id="17672" count="1" /> <!-- Lv. 3 Ancient MEN Dye - MEN +5/ INT -4/ Holy Resistance +15 -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="9431" toLevel="1" name="Lv. 4 Giant Dye Pack">
+		<itemConsumeId>34934</itemConsumeId>
+		<itemConsumeCount>0</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="16.6">
+						<item id="17679" count="1" /> <!-- Lv. 4 Giant STR Dye - STR +5/ DEX -2 -->
+					</item>
+					<item chance="16.6">
+						<item id="17680" count="1" /> <!-- Lv. 4 Giant DEX Dye - DEX +5/ CON -2 -->
+					</item>
+					<item chance="16.6">
+						<item id="17681" count="1" /> <!-- Lv. 4 Giant CON Dye - CON +5/ STR -2 -->
+					</item>
+					<item chance="16.6">
+						<item id="17682" count="1" /> <!-- Lv. 4 Giant INT Dye - INT +5/ WIT -2 -->
+					</item>
+					<item chance="16.6">
+						<item id="17683" count="1" /> <!-- Lv. 4 Giant WIT Dye - WIT +5/ MEN -2 -->
+					</item>
+					<item chance="17">
+						<item id="17684" count="1" /> <!-- Lv. 4 Giant MEN Dye - MEN +5/ INT -2 -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="9432" toLevel="1" name="Lv. 4 Legendary Dye Pack">
+		<itemConsumeId>34934</itemConsumeId>
+		<itemConsumeCount>0</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="16.6">
+						<item id="17691" count="1" /> <!-- Lv. 4 Legendary STR Dye - STR +5/ DEX -1/ Fire Resistance +20 -->
+					</item>
+					<item chance="16.6">
+						<item id="17692" count="1" /> <!-- Lv. 4 Legendary DEX Dye - DEX +5/ CON -1/ Earth Resistance +20 -->
+					</item>
+					<item chance="16.6">
+						<item id="17693" count="1" /> <!-- Lv. 4 Legendary CON Dye - CON +5/ STR -1/ Dark Resistance +20 -->
+					</item>
+					<item chance="16.6">
+						<item id="17694" count="1" /> <!-- Lv. 4 Legendary INT Dye - INT +5/ WIT -1/ Water Resistance +20 -->
+					</item>
+					<item chance="16.6">
+						<item id="17695" count="1" /> <!-- Lv. 4 Legendary WIT Dye - WIT +5/ MEN -1/ Wind Resistance +20 -->
+					</item>
+					<item chance="17">
+						<item id="17696" count="1" /> <!-- Lv. 4 Legendary MEN Dye - MEN +5/ INT -1/ Holy Resistance +20 -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="9433" toLevel="1" name="Lv. 4 Ancient Dye Pack">
+		<itemConsumeId>34934</itemConsumeId>
+		<itemConsumeCount>0</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="16.6">
+						<item id="17685" count="1" /> <!-- Lv. 4 Ancient STR Dye - STR +5/ DEX -2/ Fire Resistance +20 -->
+					</item>
+					<item chance="16.6">
+						<item id="17686" count="1" /> <!-- Lv. 4 Ancient DEX Dye - DEX +5/ CON -2/ Earth Resistance +20 -->
+					</item>
+					<item chance="16.6">
+						<item id="17687" count="1" /> <!-- Lv. 4 Ancient CON Dye - CON +5/ STR -2/ Dark Resistance +20 -->
+					</item>
+					<item chance="16.6">
+						<item id="17688" count="1" /> <!-- Lv. 4 Ancient INT Dye - INT +5/ WIT -2/ Water Resistance +20 -->
+					</item>
+					<item chance="16.6">
+						<item id="17689" count="1" /> <!-- Lv. 4 Ancient WIT Dye - WIT +5/ MEN -2/ Wind Resistance +20 -->
+					</item>
+					<item chance="17">
+						<item id="17690" count="1" /> <!-- Lv. 4 Ancient MEN Dye - MEN +5/ INT -2/ Holy Resistance +20 -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="9434" toLevel="1" name="Lv. 5 Giant Dye Pack">
+		<itemConsumeId>34934</itemConsumeId>
+		<itemConsumeCount>0</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="16.6">
+						<item id="17697" count="1" /> <!-- Lv. 5 Giant STR Dye - STR +5 -->
+					</item>
+					<item chance="16.6">
+						<item id="17698" count="1" /> <!-- Lv. 5 Giant DEX Dye - DEX +5 -->
+					</item>
+					<item chance="16.6">
+						<item id="17699" count="1" /> <!-- Lv. 5 Giant CON Dye - CON +5 -->
+					</item>
+					<item chance="16.6">
+						<item id="17700" count="1" /> <!-- Lv. 5 Giant INT Dye - INT +5 -->
+					</item>
+					<item chance="16.6">
+						<item id="17701" count="1" /> <!-- Lv. 5 Giant WIT Dye - Wit +5 -->
+					</item>
+					<item chance="17">
+						<item id="17702" count="1" /> <!-- Lv. 5 Giant MEN Dye - Men +5 -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="9435" toLevel="1" name="Lv. 5 Legendary Dye Pack">
+		<itemConsumeId>34934</itemConsumeId>
+		<itemConsumeCount>0</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="16.6">
+						<item id="17709" count="1" /> <!-- Lv. 5 Legendary STR Dye - STR +5/ DEX +1/ Fire Resistance +25 -->
+					</item>
+					<item chance="16.6">
+						<item id="17710" count="1" /> <!-- Lv. 5 Legendary DEX Dye - DEX +5/ CON +1/ Earth Resistance +25 -->
+					</item>
+					<item chance="16.6">
+						<item id="17711" count="1" /> <!-- Lv. 5 Legendary CON Dye - CON +5/ STR +1/ Dark Resistance +25 -->
+					</item>
+					<item chance="16.6">
+						<item id="17712" count="1" /> <!-- Lv. 5 Legendary INT Dye - INT +5/ WIT +1/ Water Resistance +25 -->
+					</item>
+					<item chance="16.6">
+						<item id="17713" count="1" /> <!-- Lv. 5 Legendary WIT Dye - WIT +5/ MEN +1/ Wind Resistance +25 -->
+					</item>
+					<item chance="17">
+						<item id="17714" count="1" /> <!-- Lv. 5 Legendary MEN Dye - MEN +5/ INT +1/ Holy Resistance +25 -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="9436" toLevel="1" name="Lv. 5 Ancient Dye Pack">
+		<itemConsumeId>34934</itemConsumeId>
+		<itemConsumeCount>0</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="16.6">
+						<item id="17703" count="1" /> <!-- Lv. 5 Ancient STR Dye - STR +5/ Fire Resistance +25 -->
+					</item>
+					<item chance="16.6">
+						<item id="17704" count="1" /> <!-- Lv. 5 Ancient DEX Dye - DEX +5/ Earth Resistance +25 -->
+					</item>
+					<item chance="16.6">
+						<item id="17705" count="1" /> <!-- Lv. 5 Ancient CON Dye - CON +5/ Dark Resistance +25 -->
+					</item>
+					<item chance="16.6">
+						<item id="17706" count="1" /> <!-- Lv. 5 Ancient INT Dye - INT +5/ Water Resistance +25 -->
+					</item>
+					<item chance="16.6">
+						<item id="17707" count="1" /> <!-- Lv. 5 Ancient WIT Dye - WIT +5/ Wind Resistance +25 -->
+					</item>
+					<item chance="17">
+						<item id="17708" count="1" /> <!-- Lv. 5 Ancient MEN Dye - MEN +5/ Holy Resistance +25 -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="9437" toLevel="1" name="Scroll of Escape Pack: Village">
+		<itemConsumeId>34948</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="8.7">
+						<item id="7117" count="1" /> <!-- Scroll of Escape - Talking Island Village -->
+					</item>
+					<item chance="8.3">
+						<item id="7122" count="1" /> <!-- Scroll of Escape - Gludin Village -->
+					</item>
+					<item chance="8.3">
+						<item id="7123" count="1" /> <!-- Scroll of Escape - Town of Gludio -->
+					</item>
+					<item chance="8.3">
+						<item id="7124" count="1" /> <!-- Scroll of Escape - Town of Dion -->
+					</item>
+					<item chance="8.3">
+						<item id="7126" count="1" /> <!-- Scroll of Escape - Town of Giran -->
+					</item>
+					<item chance="8.3">
+						<item id="7128" count="1" /> <!-- Scroll of Escape - Heine -->
+					</item>
+					<item chance="8.3">
+						<item id="7129" count="1" /> <!-- Scroll of Escape - Town of Oren -->
+					</item>
+					<item chance="8.3">
+						<item id="7131" count="1" /> <!-- Scroll of Escape - Hunter's Village -->
+					</item>
+					<item chance="8.3">
+						<item id="7132" count="1" /> <!-- Scroll of Escape - Town of Aden -->
+					</item>
+					<item chance="8.3">
+						<item id="7133" count="1" /> <!-- Scroll of Escape - Town of Goddard -->
+					</item>
+					<item chance="8.3">
+						<item id="7134" count="1" /> <!-- Scroll of Escape - Town of Rune -->
+					</item>
+					<item chance="8.3">
+						<item id="7135" count="1" /> <!-- Scroll of Escape - Town of Schuttgart -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="9438" toLevel="1" name="Letter Collector's Gift (9th Anniversary)">
+		<!-- For 1 h., Atk. Spd. +10%, Casting Spd. +10%, Max HP/ MP +10%, and Speed +10. -->
+		<icon>icon.shield_bread_i02</icon>
+		<operateType>A2</operateType>
+		<reuseDelay>1800000</reuseDelay>
+		<effectPoint>100</effectPoint>
+		<abnormalType>BR_EVENT_BUF1</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-3</specialLevel>
+		<magicLvl>-3</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>7200</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<staticReuse>true</staticReuse>
+		<abnormalVisualEffect>CHANGE_GRADE_B</abnormalVisualEffect>
+		<isMagic>4</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="9439" toLevel="1" name="Scroll: 10,000 Individual Fame">
+		<!-- Restores 10,000 Individual Fame. -->
+		<operateType>A1</operateType>
+		<hitTime>200</hitTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>35664</itemConsumeId> <!-- Scroll: 10,000 Individual Fame -->
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="GiveFame">
+				<fame>10000</fame>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="9440" toLevel="1" name="Scroll: 50,000 Individual Fame">
+		<!-- Restores 50,000 Individual Fame. -->
+		<operateType>A1</operateType>
+		<hitTime>200</hitTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>35665</itemConsumeId> <!-- Scroll: 50,000 Individual Fame -->
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="GiveFame">
+				<fame>50000</fame>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="9441" toLevel="1" name="Scroll: 100,000 Individual Fame">
+		<!-- Restores 100,000 Individual Fame. -->
+		<operateType>A1</operateType>
+		<hitTime>200</hitTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>35666</itemConsumeId> <!-- Scroll: 100,000 Individual Fame -->
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="GiveFame">
+				<fame>100000</fame>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="9442" toLevel="1" name="Trowel">
+		<!-- Gathers the Flame Flower. -->
+		<operateType>A1</operateType>
+		<castRange>40</castRange>
+		<hitTime>1000</hitTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>400</effectRange>
+		<reuseDelay>6000</reuseDelay>
+		<magicLvl>99</magicLvl>
+		<effectRange>400</effectRange>
+		<isMagic>2</isMagic>
+		<reuseDelay>6000</reuseDelay>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpTargetNpc">
+				<npcIds>
+					<item>33735</item>
+				</npcIds>
+			</condition>
+		</conditions>
+	</skill>
+	<skill id="9443" toLevel="1" name="Empty Hot Spring Water Bottle">
+		<!-- Gathers Water from the Hot Springs. -->
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<castRange>900</castRange>
+		<hitTime>5000</hitTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<reuseDelay>6000</reuseDelay>
+		<effectRange>1500</effectRange>
+		<itemConsumeId>34887</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<handler>ItemSkills</handler>
+		<cond msgId="113" addName="1">
+			<and>
+				<player insideZoneId="12017, 12018, 12019" />
+			</and>
+		</cond>
+		<effects>
+			<effect name="SummonNpc">
+				<npcId>27487</npcId>
+			</effect>
+			<effect name="Restoration">
+				<itemId>34888</itemId>
+				<itemCount>1</itemCount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="9444" toLevel="1" name="Helping Seed">
+		<!-- Summons the Helping Tree. -->
+		<operateType>A1</operateType>
+		<effectPoint>1</effectPoint>
+		<itemConsumeId>34961</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<effectRange>690</effectRange>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<castRange>230</castRange>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpCanNotUseAirship" />
+			<condition name="OpTargetNpc">
+				<npcIds>
+					<item>19293</item>
+				</npcIds>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="Restoration">
+				<itemId>34962</itemId>
+				<itemCount>1</itemCount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="9445" toLevel="1" name="Summoning Stone">
+		<!-- Summons Lanya. -->
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpCanNotUseAirship" />
+		</conditions>
+		<effects>
+			<effect name="SummonNpc">
+				<npcId>33696</npcId> <!-- Lanya -->
+				<singleInstance>true</singleInstance>
+				<despawnDelay>180000</despawnDelay>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="9446" toLevel="1" name="Scroll of Escape: Hot Springs">
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<hitTime>1000</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeId>34978</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpAlignment">
+				<affectType>CASTER</affectType>
+				<alignment>LAWFUL</alignment>
+			</condition>
+			<condition name="OpCanEscape" />
+		</conditions>
+		<effects>
+			<effect name="Teleport">
+				<x>155908</x>
+				<y>-105696</y>
+				<z>-2744</z>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="9447" toLevel="1" name="Scroll of Escape: Forge of the Gods">
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<hitTime>1000</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeId>34979</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpAlignment">
+				<affectType>CASTER</affectType>
+				<alignment>LAWFUL</alignment>
+			</condition>
+			<condition name="OpCanEscape" />
+		</conditions>
+		<effects>
+			<effect name="Teleport">
+				<x>176206</x>
+				<y>-116025</y>
+				<z>-3784</z>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="9448" toLevel="1" name="Scroll of Escape: Isle of Prayer">
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<hitTime>1000</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeId>34980</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpAlignment">
+				<affectType>CASTER</affectType>
+				<alignment>LAWFUL</alignment>
+			</condition>
+			<condition name="OpCanEscape" />
+		</conditions>
+		<effects>
+			<effect name="Teleport">
+				<x>159171</x>
+				<y>169261</y>
+				<z>-3712</z>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="9449" toLevel="1" name="Scroll of Escape: Aden Battlefield">
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<hitTime>1000</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeId>34981</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpAlignment">
+				<affectType>CASTER</affectType>
+				<alignment>LAWFUL</alignment>
+			</condition>
+			<condition name="OpCanEscape" />
+		</conditions>
+		<effects>
+			<effect name="Teleport">
+				<x>146730</x>
+				<y>14844</y>
+				<z>-1368</z>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="9450" toLevel="1" name="Scroll of Escape: Rune Battlefield">
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<hitTime>1000</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeId>34982</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpAlignment">
+				<affectType>CASTER</affectType>
+				<alignment>LAWFUL</alignment>
+			</condition>
+			<condition name="OpCanEscape" />
+		</conditions>
+		<effects>
+			<effect name="Teleport">
+				<x>22299</x>
+				<y>-49141</y>
+				<z>-1296</z>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="9451" toLevel="1" name="Item Skill: Warp">
+		<!-- Stuns and removes the targeting of nearby enemies and teleport forward. Cooldown is 24 sec. Consumes 10 Gemstones (B-grade). -->
+		<icon>icon.wizard_danger_warppow</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>1</abnormalTime>
+		<abnormalType>STUN</abnormalType>
+		<operateType>A2</operateType>
+		<hitTime>500</hitTime>
+		<reuseDelay>24000</reuseDelay>
+		<effectPoint>-687</effectPoint>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<activateRate>150</activateRate>
+		<magicLvl>85</magicLvl>
+		<trait>SHOCK</trait>
+		<affectRange>150</affectRange>
+		<affectLimit>6-12</affectLimit>
+		<staticReuse>true</staticReuse>
+		<isMagic>2</isMagic>
+		<isDebuff>true</isDebuff>
+		<targetType>SELF</targetType>
+		<affectScope>POINT_BLANK</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<itemConsumeId>2132</itemConsumeId> <!-- Gemstone B -->
+		<itemConsumeCount>10</itemConsumeCount>
+		<conditions>
+			<condition name="OpBlink">
+				<direction>FRONT</direction>
+				<range>600</range>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="Blink">
+				<!-- Teleport to Front -->
+				<angle>180</angle>
+				<range>600</range>
+			</effect>
+			<effect name="BlockActions">
+				<allowedSkills>10279;10517;10025;10776;11770;1904;11264;11093;13314;1912</allowedSkills>
+			</effect>
+			<effect name="TargetCancel">
+				<chance>100</chance>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="9452" toLevel="1" name="Item Skill: Dash">
+		<!-- For 10 sec., Speed +30, P. Evasion +7, and HP Recovery Bonus +7. Consumes 10 Gemstones (B-grade). -->
+		<icon>icon.rogue_shadow_dash</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>10</abnormalTime>
+		<abnormalType>SUPER_MOVE</abnormalType>
+		<operateType>A2</operateType>
+		<hitTime>500</hitTime>
+		<effectPoint>692</effectPoint>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>0</magicLvl>
+		<staticReuse>true</staticReuse>
+		<isMagic>2</isMagic>
+		<reuseDelay>90000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<itemConsumeId>2132</itemConsumeId> <!-- Gemstone B -->
+		<itemConsumeCount>10</itemConsumeCount>
+		<effects>
+			<effect name="Speed">
+				<amount>30</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="PhysicalEvasion">
+				<amount>7</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="HpRegen">
+				<amount>7</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="9453" toLevel="1" name="Item Skill: Undying Will">
+		<!-- Invincible for 5 sec. Can only be used when HP is 20% or below. Consumes 20 Gemstones (B-grade). -->
+		<icon>icon.race_orc_immortality</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>5</abnormalTime>
+		<abnormalType>RACE_ORC2</abnormalType>
+		<abnormalVisualEffect>INVINCIBILITY</abnormalVisualEffect>
+		<operateType>A2</operateType>
+		<hitTime>500</hitTime>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0.2</hitCancelTime>
+		<magicLvl>0</magicLvl>
+		<staticReuse>true</staticReuse>
+		<isMagic>2</isMagic>
+		<reuseDelay>480000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<itemConsumeId>2132</itemConsumeId> <!-- Gemstone B -->
+		<itemConsumeCount>20</itemConsumeCount>
+		<conditions>
+			<condition name="RemainHpPer">
+				<amount>20</amount>
+				<percentType>LESS</percentType>
+				<affectType>CASTER</affectType>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="DamageBlock">
+				<type>BLOCK_HP</type>
+			</effect>
+			<effect name="DamageBlock">
+				<type>BLOCK_MP</type>
+			</effect>
+			<effect name="DebuffBlock" />
+			<effect name="DispelByCategory">
+				<slot>DEBUFF</slot>
+				<rate>100</rate>
+				<max>10</max>
+			</effect>
+			<effect name="ResistDispelByCategory">
+				<amount>-100</amount>
+				<slot>ALL</slot>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="9454" toLevel="1" name="Item Skill: Silence">
+		<!-- For 5 sec., cannot use P. Atk./ M. Atk. Consumes 30 Gemstones (B-grade). -->
+		<icon>icon.song_of_silence</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>5</abnormalTime>
+		<abnormalType>SILENCE</abnormalType>
+		<abnormalVisualEffect>SILENCE</abnormalVisualEffect>
+		<operateType>A2</operateType>
+		<castRange>1000</castRange>
+		<hitTime>500</hitTime>
+		<reuseDelay>240000</reuseDelay>
+		<effectPoint>-1</effectPoint>
+		<basicProperty>MAGIC</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>1500</effectRange>
+		<activateRate>80</activateRate>
+		<magicLvl>85</magicLvl>
+		<trait>DERANGEMENT</trait>
+		<staticReuse>true</staticReuse>
+		<isMagic>2</isMagic>
+		<isDebuff>true</isDebuff>
+		<targetType>ENEMY_ONLY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<itemConsumeId>2132</itemConsumeId> <!-- Gemstone B -->
+		<itemConsumeCount>30</itemConsumeCount>
+		<effects>
+			<effect name="PhysicalMute" />
+			<effect name="Mute" />
+		</effects>
+	</skill>
+	<skill id="9455" toLevel="1" name="Item Skill: Disable Target">
+		<!-- For 5 sec., enemy cannot target you. Consumes 10 Gemstones (B-grade). -->
+		<icon>icon.notargetting</icon>
+		<abnormalLvl>0</abnormalLvl>
+		<abnormalTime>5</abnormalTime>
+		<abnormalType>MA_DOWN</abnormalType>
+		<abnormalVisualEffect>INVINCIBILITY</abnormalVisualEffect>
+		<operateType>A2</operateType>
+		<hitTime>800</hitTime>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0.2</hitCancelTime>
+		<activateRate>80</activateRate>
+		<magicLvl>0</magicLvl>
+		<staticReuse>true</staticReuse>
+		<reuseDelay>480000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<itemConsumeId>2132</itemConsumeId> <!-- Gemstone B -->
+		<itemConsumeCount>10</itemConsumeCount>
+		<effects>
+			<effect name="DisableTargeting" />
+		</effects>
+	</skill>
+	<skill id="9456" toLevel="3" name="Item Skill: Damage Reflection Resistance">
+		<!-- For $s1, Damage Reflection Resistance +$s2. -->
+		<icon>icon.active_damage_shield1</icon>
+		<abnormalLvl>
+			<value level="1">1</value>
+			<value level="2">2</value>
+			<value level="3">3</value>
+		</abnormalLvl>
+		<abnormalTime>300</abnormalTime>
+		<abnormalType>ABNORMAL_ITEM</abnormalType>
+		<operateType>A2</operateType>
+		<hitTime>4000</hitTime>
+		<reuseDelay>4000</reuseDelay>
+		<effectPoint>
+			<value level="1">379</value>
+			<value level="2">438</value>
+			<value level="3">495</value>
+		</effectPoint>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>
+			<value level="1">55</value>
+			<value level="2">64</value>
+			<value level="3">75</value>
+		</magicLvl>
+		<staticReuse>true</staticReuse>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="DamageShieldResist">
+				<amount>
+					<value level="1">10</value>
+					<value level="2">15</value>
+					<value level="3">20</value>
+				</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="9459" toLevel="1" name="Tauti's Wrath">
+		<!-- Tauti's Wrath. Inflicts 27557 damage and Knocks Down nearby enemies for 3 sec. -->
+		<icon>icon.weapon_tauti_one_hand_axe_i01</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>3</abnormalTime>
+		<abnormalType>KNOCKDOWN</abnormalType>
+		<abnormalVisualEffect>KNOCKDOWN</abnormalVisualEffect>
+		<activateRate>80</activateRate>
+		<operateType>A2</operateType>
+		<mpConsume>191</mpConsume>
+		<hitTime>1500</hitTime>
+		<coolTime>300</coolTime>
+		<reuseDelay>15000</reuseDelay>
+		<effectPoint>-687</effectPoint>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<lvlBonusRate>30</lvlBonusRate>
+		<magicLvl>99</magicLvl>
+		<trait>KNOCKDOWN</trait>
+		<affectRange>125</affectRange>
+		<affectLimit>5-12</affectLimit>
+		<staticReuse>true</staticReuse>
+		<isDebuff>true</isDebuff>
+		<targetType>SELF</targetType>
+		<affectScope>POINT_BLANK</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>27557</power>
+			</effect>
+			<effect name="KnockBack">
+				<distance>50</distance>
+				<speed>400</speed>
+				<knockDown>true</knockDown>
+			</effect>
+			<effect name="DefenceTrait">
+				<AIRBIND>100</AIRBIND>
+				<KNOCKBACK>100</KNOCKBACK>
+				<SLEEP>100</SLEEP>
+				<KNOCKDOWN>100</KNOCKDOWN>
+				<SHOCK>100</SHOCK>
+				<HOLD>100</HOLD>
+			</effect>
+			<effect name="BlockActions" />
+		</effects>
+	</skill>
+	<skill id="9460" toLevel="1" name="Frenzied Tauti's Authority">
+		<!-- Relies on Tauti's Authority to attack nearby enemies with 42645 power added to P. Attack, inflicting Knock Down. Consumes 4 Spirit Ore. -->
+		<icon>icon.tauti_weapon_one_hand_axe_high</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>3</abnormalTime>
+		<abnormalType>KNOCKDOWN</abnormalType>
+		<abnormalVisualEffect>KNOCKDOWN</abnormalVisualEffect>
+		<operateType>A2</operateType>
+		<mpConsume>279</mpConsume>
+		<hitTime>1500</hitTime>
+		<coolTime>300</coolTime>
+		<reuseDelay>15000</reuseDelay>
+		<effectPoint>-687</effectPoint>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<lvlBonusRate>30</lvlBonusRate>
+		<activateRate>80</activateRate>
+		<magicLvl>99</magicLvl>
+		<trait>KNOCKDOWN</trait>
+		<affectRange>125</affectRange>
+		<affectLimit>5-12</affectLimit>
+		<staticReuse>true</staticReuse>
+		<isDebuff>2</isDebuff>
+		<targetType>SELF</targetType>
+		<affectScope>POINT_BLANK</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<itemConsumeCount>4</itemConsumeCount>
+		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>42645</power>
+			</effect>
+			<effect name="KnockBack">
+				<distance>50</distance>
+				<speed>400</speed>
+				<knockDown>true</knockDown>
+			</effect>
+			<effect name="DefenceTrait">
+				<DERANGEMENT>100</DERANGEMENT>
+				<SLEEP>100</SLEEP>
+				<HOLD>100</HOLD>
+				<SHOCK>100</SHOCK>
+				<CHANGEBODY>100</CHANGEBODY>
+			</effect>
+			<effect name="BlockActions" />
+		</effects>
+	</skill>
+	<skill id="9461" toLevel="1" name="Scroll of Escape: Guillotine Fortress">
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<hitTime>20000</hitTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpAlignment">
+				<affectType>CASTER</affectType>
+				<alignment>LAWFUL</alignment>
+			</condition>
+			<condition name="OpCanEscape" />
+		</conditions>
+	</skill>
+	<skill id="9464" toLevel="1" name="Treasure Chest of the King of Aden">
+		<itemConsumeId>34918</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="9.58">
+						<item id="19447" count="1" /> <!-- Blessed Scroll: Enchant Weapon (R-grade) -->
+					</item>
+					<item chance="79.52">
+						<item id="19448" count="1" /> <!-- Blessed Scroll: Enchant Armor (R-grade) -->
+					</item>
+					<item chance="5.75">
+						<item id="19444" count="1" /> <!-- Unbind Scroll (R-grade) -->
+					</item>
+					<item chance="2.66">
+						<item id="19445" count="1" /> <!-- Unbind Scroll (R95-grade) -->
+					</item>
+					<item chance="2.13">
+						<item id="19446" count="1" /> <!-- Unbind Scroll (R99-grade) -->
+					</item>
+					<item chance="0.36">
+						<item id="35566" count="1" /> <!-- Dark Weapon Enhancement Stone -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="9465" toLevel="1" name="Bundle">
+		<itemConsumeId>34919</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="0.05">
+						<item id="35513" count="1" /> <!-- Recipe: Blessed Helios Shaper (60%) -->
+					</item>
+					<item chance="0.05">
+						<item id="35514" count="1" /> <!-- Recipe: Blessed Helios Cutter (60%) -->
+					</item>
+					<item chance="0.05">
+						<item id="35515" count="1" /> <!-- Recipe: Blessed Helios Slasher (60%) -->
+					</item>
+					<item chance="0.05">
+						<item id="35516" count="1" /> <!-- Recipe: Blessed Helios Avenger (60%) -->
+					</item>
+					<item chance="0.05">
+						<item id="35517" count="1" /> <!-- Recipe: Blessed Helios Fighter (60%) -->
+					</item>
+					<item chance="0.05">
+						<item id="35518" count="1" /> <!-- Recipe: Blessed Helios Stormer (60%) -->
+					</item>
+					<item chance="0.05">
+						<item id="35519" count="1" /> <!-- Recipe: Blessed Helios Thrower (60%) -->
+					</item>
+					<item chance="0.05">
+						<item id="35520" count="1" /> <!-- Recipe: Blessed Helios Shooter (60%) -->
+					</item>
+					<item chance="0.05">
+						<item id="35521" count="1" /> <!-- Recipe: Blessed Helios Buster (60%) -->
+					</item>
+					<item chance="0.05">
+						<item id="35522" count="1" /> <!-- Recipe: Blessed Helios Caster (60%) -->
+					</item>
+					<item chance="0.05">
+						<item id="35523" count="1" /> <!-- Recipe: Blessed Helios Retributer (60%) -->
+					</item>
+					<item chance="0.06">
+						<item id="35451" count="1" /> <!-- Recipe: Helios Shaper (60%) -->
+					</item>
+					<item chance="0.06">
+						<item id="35452" count="1" /> <!-- Recipe: Helios Cutter (60%) -->
+					</item>
+					<item chance="0.06">
+						<item id="35453" count="1" /> <!-- Recipe: Helios Slasher (60%) -->
+					</item>
+					<item chance="0.06">
+						<item id="35454" count="1" /> <!-- Recipe: Helios Avenger (60%) -->
+					</item>
+					<item chance="0.06">
+						<item id="35455" count="1" /> <!-- Recipe: Helios Fighter (60%) -->
+					</item>
+					<item chance="0.06">
+						<item id="35456" count="1" /> <!-- Recipe: Helios Stormer (60%) -->
+					</item>
+					<item chance="0.06">
+						<item id="35457" count="1" /> <!-- Recipe: Helios Thrower (60%) -->
+					</item>
+					<item chance="0.06">
+						<item id="35458" count="1" /> <!-- Recipe: Helios Shooter (60%) -->
+					</item>
+					<item chance="0.06">
+						<item id="35459" count="1" /> <!-- Recipe: Helios Buster (60%) -->
+					</item>
+					<item chance="0.06">
+						<item id="35460" count="1" /> <!-- Recipe: Helios Caster (60%) -->
+					</item>
+					<item chance="0.06">
+						<item id="35461" count="1" /> <!-- Recipe: Helios Retributer (60%) -->
+					</item>
+					<item chance="0.47">
+						<item id="35389" count="1" /> <!-- Blessed Helios Shaper Fragment -->
+					</item>
+					<item chance="0.47">
+						<item id="35390" count="1" /> <!-- Blessed Helios Cutter Fragment -->
+					</item>
+					<item chance="0.47">
+						<item id="35391" count="1" /> <!-- Blessed Helios Slasher Fragment -->
+					</item>
+					<item chance="0.47">
+						<item id="35392" count="1" /> <!-- Blessed Helios Avenger Fragment -->
+					</item>
+					<item chance="0.47">
+						<item id="35393" count="1" /> <!-- Blessed Helios Fighter Fragment -->
+					</item>
+					<item chance="0.47">
+						<item id="35394" count="1" /> <!-- Blessed Helios Stormer Fragment -->
+					</item>
+					<item chance="0.47">
+						<item id="35395" count="1" /> <!-- Blessed Helios Thrower Fragment -->
+					</item>
+					<item chance="0.47">
+						<item id="35396" count="1" /> <!-- Blessed Helios Shooter Fragment -->
+					</item>
+					<item chance="0.47">
+						<item id="35397" count="1" /> <!-- Blessed Helios Buster Fragment -->
+					</item>
+					<item chance="0.47">
+						<item id="35398" count="1" /> <!-- Blessed Helios Caster Fragment -->
+					</item>
+					<item chance="0.47">
+						<item id="35399" count="1" /> <!-- Blessed Helios Retributer Fragment -->
+					</item>
+					<item chance="0.19">
+						<item id="35327" count="3" /> <!-- Helios Shaper Fragment -->
+					</item>
+					<item chance="0.19">
+						<item id="35328" count="3" /> <!-- Helios Cutter Fragment -->
+					</item>
+					<item chance="0.19">
+						<item id="35329" count="3" /> <!-- Helios Slasher Fragment -->
+					</item>
+					<item chance="0.19">
+						<item id="35330" count="3" /> <!-- Helios Avenger Fragment -->
+					</item>
+					<item chance="0.19">
+						<item id="35331" count="3" /> <!-- Helios Fighter Fragment -->
+					</item>
+					<item chance="0.19">
+						<item id="35332" count="3" /> <!-- Helios Stormer Fragment -->
+					</item>
+					<item chance="0.19">
+						<item id="35333" count="3" /> <!-- Helios Thrower Fragment -->
+					</item>
+					<item chance="0.19">
+						<item id="35334" count="3" /> <!-- Helios Shooter Fragment -->
+					</item>
+					<item chance="0.19">
+						<item id="35335" count="3" /> <!-- Helios Buster Fragment -->
+					</item>
+					<item chance="0.19">
+						<item id="35336" count="3" /> <!-- Helios Caster Fragment -->
+					</item>
+					<item chance="0.19">
+						<item id="35337" count="3" /> <!-- Helios Retributer Fragment -->
+					</item>
+					<item chance="0.99">
+						<item id="35338" count="3" /> <!-- Eternal Helmet Ingredient -->
+					</item>
+					<item chance="0.37">
+						<item id="35339" count="3" /> <!-- Eternal Breastplate Ingredient -->
+					</item>
+					<item chance="0.4">
+						<item id="35340" count="3" /> <!-- Eternal Gaiter Ingredient -->
+					</item>
+					<item chance="0.99">
+						<item id="35341" count="3" /> <!-- Eternal Gauntlet Ingredient -->
+					</item>
+					<item chance="1.49">
+						<item id="35342" count="3" /> <!-- Eternal Boot Ingredient -->
+					</item>
+					<item chance="1.42">
+						<item id="35343" count="3" /> <!-- Eternal Shield Ingredient -->
+					</item>
+					<item chance="0.99">
+						<item id="35344" count="3" /> <!-- Eternal Leather Helmet Ingredient -->
+					</item>
+					<item chance="0.37">
+						<item id="35345" count="3" /> <!-- Eternal Leather Armor Ingredient -->
+					</item>
+					<item chance="0.4">
+						<item id="35346" count="3" /> <!-- Eternal Leather Legging Ingredient -->
+					</item>
+					<item chance="0.99">
+						<item id="35347" count="3" /> <!-- Eternal Leather Glove Ingredient -->
+					</item>
+					<item chance="1.49">
+						<item id="35348" count="3" /> <!-- Eternal Leather Boot Ingredient -->
+					</item>
+					<item chance="0.99">
+						<item id="35349" count="3" /> <!-- Eternal Circlet Ingredient -->
+					</item>
+					<item chance="0.37">
+						<item id="35350" count="3" /> <!-- Eternal Tunic Ingredient -->
+					</item>
+					<item chance="0.4">
+						<item id="35351" count="3" /> <!-- Eternal Stocking Ingredient -->
+					</item>
+					<item chance="0.99">
+						<item id="35352" count="3" /> <!-- Eternal Glove Ingredient -->
+					</item>
+					<item chance="1.49">
+						<item id="35353" count="3" /> <!-- Eternal Shoe Ingredient -->
+					</item>
+					<item chance="1.42">
+						<item id="35354" count="3" /> <!-- Eternal Sigil Ingredient -->
+					</item>
+					<item chance="1.43">
+						<item id="35355" count="3" /> <!-- Eternal Necklace Gem -->
+					</item>
+					<item chance="1.91">
+						<item id="35356" count="3" /> <!-- Eternal Earring Gem -->
+					</item>
+					<item chance="2.86">
+						<item id="35357" count="3" /> <!-- Eternal Ring Gem -->
+					</item>
+					<item chance="2.38">
+						<item id="35400" count="1" /> <!-- Blessed Eternal Helmet Ingredient -->
+					</item>
+					<item chance="0.89">
+						<item id="35401" count="1" /> <!-- Blessed Eternal Breastplate Ingredient -->
+					</item>
+					<item chance="0.95">
+						<item id="35402" count="1" /> <!-- Blessed Eternal Gaiter Ingredient -->
+					</item>
+					<item chance="2.38">
+						<item id="35403" count="1" /> <!-- Blessed Eternal Gauntlet Ingredient -->
+					</item>
+					<item chance="3.58">
+						<item id="35404" count="1" /> <!-- Blessed Eternal Boot Ingredient -->
+					</item>
+					<item chance="3.41">
+						<item id="35405" count="1" /> <!-- Blessed Eternal Shield Ingredient -->
+					</item>
+					<item chance="2.38">
+						<item id="35406" count="1" /> <!-- Blessed Eternal Leather Helmet Ingredient -->
+					</item>
+					<item chance="0.89">
+						<item id="35407" count="1" /> <!-- Blessed Eternal Leather Armor Ingredient -->
+					</item>
+					<item chance="0.95">
+						<item id="35408" count="1" /> <!-- Blessed Eternal Leather Legging Ingredient -->
+					</item>
+					<item chance="2.38">
+						<item id="35409" count="1" /> <!-- Blessed Eternal Leather Glove Ingredient -->
+					</item>
+					<item chance="3.58">
+						<item id="35410" count="1" /> <!-- Blessed Eternal Leather Boot Ingredient -->
+					</item>
+					<item chance="2.38">
+						<item id="35411" count="1" /> <!-- Blessed Eternal Circlet Ingredient -->
+					</item>
+					<item chance="0.89">
+						<item id="35412" count="1" /> <!-- Blessed Eternal Tunic Ingredient -->
+					</item>
+					<item chance="0.95">
+						<item id="35413" count="1" /> <!-- Blessed Eternal Stocking Ingredient -->
+					</item>
+					<item chance="2.38">
+						<item id="35414" count="1" /> <!-- Blessed Eternal Glove Ingredient -->
+					</item>
+					<item chance="3.58">
+						<item id="35415" count="1" /> <!-- Blessed Eternal Shoe Ingredient -->
+					</item>
+					<item chance="3.41">
+						<item id="35416" count="1" /> <!-- Blessed Eternal Sigil Ingredient -->
+					</item>
+					<item chance="3.43">
+						<item id="35417" count="1" /> <!-- Blessed Eternal Necklace Gem -->
+					</item>
+					<item chance="4.58">
+						<item id="35418" count="1" /> <!-- Blessed Eternal Earring Gem -->
+					</item>
+					<item chance="6.87">
+						<item id="35419" count="1" /> <!-- Blessed Eternal Ring Gem -->
+					</item>
+					<item chance="0.3">
+						<item id="35462" count="1" /> <!-- Recipe: Eternal Helmet (60%) -->
+					</item>
+					<item chance="0.12">
+						<item id="35464" count="1" /> <!-- Recipe: Eternal Gaiters (60%) -->
+					</item>
+					<item chance="0.11">
+						<item id="35463" count="1" /> <!-- Recipe: Eternal Breastplate (60%) -->
+					</item>
+					<item chance="0.3">
+						<item id="35465" count="1" /> <!-- Recipe: Eternal Gauntlets (60%) -->
+					</item>
+					<item chance="0.45">
+						<item id="35466" count="1" /> <!-- Recipe: Eternal Boots (60%) -->
+					</item>
+					<item chance="0.43">
+						<item id="35467" count="1" /> <!-- Recipe: Eternal Shield (60%) -->
+					</item>
+					<item chance="0.3">
+						<item id="35468" count="1" /> <!-- Recipe: Eternal Leather Helmet (60%) -->
+					</item>
+					<item chance="0.11">
+						<item id="35469" count="1" /> <!-- Recipe: Eternal Leather Armor (60%) -->
+					</item>
+					<item chance="0.12">
+						<item id="35470" count="1" /> <!-- Recipe: Eternal Leather Leggings (60%) -->
+					</item>
+					<item chance="0.3">
+						<item id="35471" count="1" /> <!-- Recipe: Eternal Leather Gloves (60%) -->
+					</item>
+					<item chance="0.45">
+						<item id="35472" count="1" /> <!-- Recipe: Eternal Leather Boots (60%) -->
+					</item>
+					<item chance="0.3">
+						<item id="35473" count="1" /> <!-- Recipe: Eternal Circlet (60%) -->
+					</item>
+					<item chance="0.11">
+						<item id="35474" count="1" /> <!-- Recipe: Eternal Tunic (60%) -->
+					</item>
+					<item chance="0.12">
+						<item id="35475" count="1" /> <!-- Recipe: Eternal Stockings (60%) -->
+					</item>
+					<item chance="0.3">
+						<item id="35476" count="1" /> <!-- Recipe: Eternal Gloves (60%) -->
+					</item>
+					<item chance="0.45">
+						<item id="35477" count="1" /> <!-- Recipe: Eternal Shoes (60%) -->
+					</item>
+					<item chance="0.43">
+						<item id="35478" count="1" /> <!-- Recipe: Eternal Sigil (60%) -->
+					</item>
+					<item chance="0.43">
+						<item id="35479" count="1" /> <!-- Recipe: Eternal Necklace (60%) -->
+					</item>
+					<item chance="0.57">
+						<item id="35480" count="1" /> <!-- Recipe: Eternal Earring (60%) -->
+					</item>
+					<item chance="0.8">
+						<item id="35481" count="1" /> <!-- Recipe: Eternal Ring (60%) -->
+					</item>
+					<item chance="0.24">
+						<item id="35524" count="1" /> <!-- Recipe: Blessed Eternal Helmet (60%) -->
+					</item>
+					<item chance="0.09">
+						<item id="35525" count="1" /> <!-- Recipe: Blessed Eternal Breastplate (60%) -->
+					</item>
+					<item chance="0.1">
+						<item id="35526" count="1" /> <!-- Recipe: Blessed Eternal Gaiters (60%) -->
+					</item>
+					<item chance="0.24">
+						<item id="35527" count="1" /> <!-- Recipe: Blessed Eternal Gauntlets (60%) -->
+					</item>
+					<item chance="0.36">
+						<item id="35528" count="1" /> <!-- Recipe: Blessed Eternal Boots (60%) -->
+					</item>
+					<item chance="0.34">
+						<item id="35529" count="1" /> <!-- Recipe: Blessed Eternal Shield (60%) -->
+					</item>
+					<item chance="0.24">
+						<item id="35530" count="1" /> <!-- Recipe: Blessed Eternal Leather Helmet (60%) -->
+					</item>
+					<item chance="0.09">
+						<item id="35531" count="1" /> <!-- Recipe: Blessed Eternal Leather Armor (60%) -->
+					</item>
+					<item chance="0.1">
+						<item id="35532" count="1" /> <!-- Recipe: Blessed Eternal Leather Leggings (60%) -->
+					</item>
+					<item chance="0.24">
+						<item id="35533" count="1" /> <!-- Recipe: Blessed Eternal Leather Gloves (60%) -->
+					</item>
+					<item chance="0.36">
+						<item id="35534" count="1" /> <!-- Recipe: Blessed Eternal Leather Boots (60%) -->
+					</item>
+					<item chance="0.24">
+						<item id="35535" count="1" /> <!-- Recipe: Blessed Eternal Circlet (60%) -->
+					</item>
+					<item chance="0.09">
+						<item id="35536" count="1" /> <!-- Recipe: Blessed Eternal Tunic (60%) -->
+					</item>
+					<item chance="0.1">
+						<item id="35537" count="1" /> <!-- Recipe: Blessed Eternal Stockings (60%) -->
+					</item>
+					<item chance="0.24">
+						<item id="35538" count="1" /> <!-- Recipe: Blessed Eternal Gloves (60%) -->
+					</item>
+					<item chance="0.36">
+						<item id="35539" count="1" /> <!-- Recipe: Blessed Eternal Shoes (60%) -->
+					</item>
+					<item chance="0.34">
+						<item id="35540" count="1" /> <!-- Recipe: Blessed Eternal Sigil (60%) -->
+					</item>
+					<item chance="0.34">
+						<item id="35541" count="1" /> <!-- Recipe: Blessed Eternal Necklace (60%) -->
+					</item>
+					<item chance="0.46">
+						<item id="35542" count="1" /> <!-- Recipe: Blessed Eternal Earring (60%) -->
+					</item>
+					<item chance="0.69">
+						<item id="35543" count="1" /> <!-- Recipe: Blessed Eternal Ring (60%) -->
+					</item>
+					<item chance="0.47">
+						<item id="17526" count="1" /> <!-- Scroll: Enchant Weapon (R-grade) -->
+					</item>
+					<item chance="3.02">
+						<item id="17527" count="2" /> <!-- Scroll: Enchant Armor (R-grade) -->
+					</item>
+					<item chance="0.38">
+						<item id="9552" count="5" /> <!-- Fire Crystal -->
+					</item>
+					<item chance="0.38">
+						<item id="9553" count="5" /> <!-- Water Crystal -->
+					</item>
+					<item chance="0.38">
+						<item id="9554" count="5" /> <!-- Earth Crystal -->
+					</item>
+					<item chance="0.38">
+						<item id="9555" count="5" /> <!-- Wind Crystal -->
+					</item>
+					<item chance="0.38">
+						<item id="9556" count="5" /> <!-- Dark Crystal -->
+					</item>
+					<item chance="0.38">
+						<item id="9557" count="5" /> <!-- Holy Crystal -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="9466" toLevel="1" name="Treasure Chest of the King of Rune">
+		<itemConsumeId>34920</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="9.58">
+						<item id="19447" count="1" /> <!-- Blessed Scroll: Enchant Weapon (R-grade) -->
+					</item>
+					<item chance="79.52">
+						<item id="19448" count="1" /> <!-- Blessed Scroll: Enchant Armor (R-grade) -->
+					</item>
+					<item chance="5.75">
+						<item id="19444" count="1" /> <!-- Unbind Scroll (R-grade) -->
+					</item>
+					<item chance="2.66">
+						<item id="19445" count="1" /> <!-- Unbind Scroll (R95-grade) -->
+					</item>
+					<item chance="2.13">
+						<item id="19446" count="1" /> <!-- Unbind Scroll (R99-grade) -->
+					</item>
+					<item chance="0.36">
+						<item id="35566" count="1" /> <!-- Dark Weapon Enhancement Stone -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="9467" toLevel="1" name="Contaminated Draco Egg">
+		<itemConsumeId>34863</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<reuseDelay>10000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="30">
+						<item id="34864" count="1" /> <!-- Small Draco Egg -->
+					</item>
+					<item chance="30">
+						<item id="34865" count="1" /> <!-- Large Draco Egg -->
+					</item>
+					<item chance="40">
+						<item id="34866" count="1" /> <!-- Shattered Egg Shell -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="9468" toLevel="1" name="Small Draco Egg">
+		<operateType>A1</operateType>
+		<hitTime>1500</hitTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>1.5</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>34864</itemConsumeId> <!-- Small Draco Egg -->
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpCanNotUseAirship" />
+			<condition name="OpPeacezone" />
+		</conditions>
+		<effects>
+			<effect name="SummonNpc">
+				<npcId>19257</npcId> <!-- Small Draco Egg -->
+				<npcCount>1</npcCount>
+				<despawnDelay>180000</despawnDelay>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="9469" toLevel="1" name="Large Draco Egg">
+		<operateType>A1</operateType>
+		<hitTime>1500</hitTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>1.5</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>34865</itemConsumeId> <!-- Large Draco Egg -->
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpCanNotUseAirship" />
+			<condition name="OpPeacezone" />
+		</conditions>
+		<effects>
+			<effect name="SummonNpc">
+				<npcId>19258</npcId> <!-- Large Draco Egg -->
+				<npcCount>1</npcCount>
+				<despawnDelay>180000</despawnDelay>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="9470" toLevel="1" name="Draco's Gift">
+		<itemConsumeId>34867</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="0.005">
+						<item id="19444" count="1" /> <!-- Unbind Scroll (R-grade) -->
+					</item>
+					<item chance="2.67">
+						<item id="3936" count="1" /> <!-- Blessed Scroll of Resurrection -->
+					</item>
+					<item chance="0.142">
+						<item id="35735" count="1" /> <!-- Fire Stone (+150) - Event -->
+					</item>
+					<item chance="0.142">
+						<item id="35736" count="1" /> <!-- Water Stone (+150) - Event -->
+					</item>
+					<item chance="0.142">
+						<item id="35737" count="1" /> <!-- Earth Stone (+150) - Event -->
+					</item>
+					<item chance="0.142">
+						<item id="35738" count="1" /> <!-- Wind Stone (+150) - Event -->
+					</item>
+					<item chance="0.142">
+						<item id="35739" count="1" /> <!-- Dark Stone (+150) - Event -->
+					</item>
+					<item chance="0.142">
+						<item id="35740" count="1" /> <!-- Holy Stone (+150) - Event -->
+					</item>
+					<item chance="0.119">
+						<item id="30297" count="1" /> <!-- Superior Giant's Codex -->
+					</item>
+					<item chance="3.181">
+						<item id="19440" count="1" /> <!-- Gemstone (R-grade) -->
+					</item>
+					<item chance="43.49">
+						<item id="35743" count="1" /> <!-- Draco's Health Potion - Event -->
+					</item>
+					<item chance="43.49">
+						<item id="35744" count="1" /> <!-- Draco's Mana Potion - Event -->
+					</item>
+					<item chance="4.101">
+						<item id="22204" count="1" /> <!-- Attribute Stone Pack - Event -->
+					</item>
+					<item chance="1.242">
+						<item id="35742" count="1" /> <!-- Scroll: Reputation (Low-grade) -->
+					</item>
+					<item chance="0.366">
+						<item id="35755" count="1" /> <!-- Scroll: Reputation (Mid-grade) -->
+					</item>
+					<item chance="0.484">
+						<item id="30300" count="1" /> <!-- Superior Giant's Codex - Oblivion -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="9471" toLevel="1" name="Draco's Shiny Gift">
+		<itemConsumeId>34868</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="0.007">
+						<item id="36324" count="1" /> <!-- Draco's Shiny Accessory Pack - Event -->
+					</item>
+					<item chance="0.097">
+						<item id="19447" count="1" /> <!-- Blessed Scroll: Enchant Weapon (R-grade) -->
+					</item>
+					<item chance="0.145">
+						<item id="19448" count="1" /> <!-- Blessed Scroll: Enchant Armor (R-grade) -->
+					</item>
+					<item chance="0.013">
+						<item id="19445" count="1" /> <!-- Unbind Scroll (R95-grade) -->
+					</item>
+					<item chance="0.334">
+						<item id="35749" count="1" /> <!-- Weapon Attribute Change Crystal (R-grade) - Event -->
+					</item>
+					<item chance="22.776">
+						<item id="3936" count="1" /> <!-- Blessed Scroll of Resurrection -->
+					</item>
+					<item chance="1.938">
+						<item id="22205" count="1" /> <!-- Attribute Crystal Pack - Event -->
+					</item>
+					<item chance="0.116">
+						<item id="17709" count="1" /> <!-- Lv. 5 Legendary STR Dye - STR +5/ DEX +1/ Fire Resistance +25 -->
+					</item>
+					<item chance="0.116">
+						<item id="17710" count="1" /> <!-- Lv. 5 Legendary DEX Dye - DEX +5/ CON +1/ Earth Resistance +25 -->
+					</item>
+					<item chance="0.116">
+						<item id="17711" count="1" /> <!-- Lv. 5 Legendary CON Dye - CON +5/ STR +1/ Dark Resistance +25 -->
+					</item>
+					<item chance="0.116">
+						<item id="17712" count="1" /> <!-- Lv. 5 Legendary INT Dye - INT +5/ WIT +1/ Water Resistance +25 -->
+					</item>
+					<item chance="0.116">
+						<item id="17713" count="1" /> <!-- Lv. 5 Legendary WIT Dye - WIT +5/ MEN +1/ Wind Resistance +25 -->
+					</item>
+					<item chance="0.116">
+						<item id="17714" count="1" /> <!-- Lv. 5 Legendary MEN Dye - MEN +5/ INT +1/ Holy Resistance +25 -->
+					</item>
+					<item chance="35.35">
+						<item id="35743" count="5" /> <!-- Draco's Health Potion - Event -->
+					</item>
+					<item chance="35.35">
+						<item id="35744" count="5" /> <!-- Draco's Mana Potion - Event -->
+					</item>
+					<item chance="0.56">
+						<item id="35741" count="1" /> <!-- Scroll: PK (Low-grade) -->
+					</item>
+					<item chance="0.19">
+						<item id="35752" count="1" /> <!-- Scroll: PK (Mid-grade) -->
+					</item>
+					<item chance="0.121">
+						<item id="30298" count="1" /> <!-- Superior Giant's Codex - Mastery -->
+					</item>
+					<item chance="0.404">
+						<item id="30381" count="1" /> <!-- Lucky Enchant Stone: Weapon (R-grade) -->
+					</item>
+					<item chance="2.019">
+						<item id="30382" count="1" /> <!-- Lucky Enchant Stone: Armor (R-grade) -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="9472" toLevel="1" name="Release Agathion's Seal - Flame Spirit">
+		<!-- Releases Agathion's seal. -->
+		<icon>icon.etc_summon_aga_agit_i00</icon>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<hitTime>3000</hitTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="9473" toLevel="1" name="Deadman's Chest">
+		<itemConsumeId>35546</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="0.069">
+						<item id="35482" count="1" /> <!-- Recipe: Blessed Specter Shaper (60%) -->
+					</item>
+					<item chance="0.069">
+						<item id="35483" count="1" /> <!-- Recipe: Blessed Specter Cutter (60%) -->
+					</item>
+					<item chance="0.069">
+						<item id="35484" count="1" /> <!-- Recipe: Blessed Specter Slasher (60%) -->
+					</item>
+					<item chance="0.069">
+						<item id="35485" count="1" /> <!-- Recipe: Blessed Specter Avenger (60%) -->
+					</item>
+					<item chance="0.069">
+						<item id="35486" count="1" /> <!-- Recipe: Blessed Specter Fighter (60%) -->
+					</item>
+					<item chance="0.069">
+						<item id="35487" count="1" /> <!-- Recipe: Blessed Specter Stormer (60%) -->
+					</item>
+					<item chance="0.069">
+						<item id="35488" count="1" /> <!-- Recipe: Blessed Specter Thrower (60%) -->
+					</item>
+					<item chance="0.069">
+						<item id="35489" count="1" /> <!-- Recipe: Blessed Specter Shooter (60%) -->
+					</item>
+					<item chance="0.069">
+						<item id="35490" count="1" /> <!-- Recipe: Blessed Specter Buster (60%) -->
+					</item>
+					<item chance="0.069">
+						<item id="35491" count="1" /> <!-- Recipe: Blessed Specter Caster (60%) -->
+					</item>
+					<item chance="0.069">
+						<item id="35492" count="1" /> <!-- Recipe: Blessed Specter Retributer (60%) -->
+					</item>
+					<item chance="0.087">
+						<item id="35420" count="1" /> <!-- Recipe: Specter Shaper (60%) -->
+					</item>
+					<item chance="0.087">
+						<item id="35421" count="1" /> <!-- Recipe: Specter Cutter (60%) -->
+					</item>
+					<item chance="0.087">
+						<item id="35422" count="1" /> <!-- Recipe: Specter Slasher (60%) -->
+					</item>
+					<item chance="0.087">
+						<item id="35423" count="1" /> <!-- Recipe: Specter Avenger (60%) -->
+					</item>
+					<item chance="0.087">
+						<item id="35424" count="1" /> <!-- Recipe: Specter Fighter (60%) -->
+					</item>
+					<item chance="0.087">
+						<item id="35425" count="1" /> <!-- Recipe: Specter Stormer (60%) -->
+					</item>
+					<item chance="0.087">
+						<item id="35426" count="1" /> <!-- Recipe: Specter Thrower (60%) -->
+					</item>
+					<item chance="0.087">
+						<item id="35427" count="1" /> <!-- Recipe: Specter Shooter (60%) -->
+					</item>
+					<item chance="0.087">
+						<item id="35428" count="1" /> <!-- Recipe: Specter Buster (60%) -->
+					</item>
+					<item chance="0.087">
+						<item id="35429" count="1" /> <!-- Recipe: Specter Caster (60%) -->
+					</item>
+					<item chance="0.087">
+						<item id="35430" count="1" /> <!-- Recipe: Specter Retributer (60%) -->
+					</item>
+					<item chance="0.139">
+						<item id="35358" count="5" /> <!-- Blessed Specter Shaper Fragment -->
+					</item>
+					<item chance="0.139">
+						<item id="35359" count="5" /> <!-- Blessed Specter Cutter Fragment -->
+					</item>
+					<item chance="0.139">
+						<item id="35360" count="5" /> <!-- Blessed Specter Slasher Fragment -->
+					</item>
+					<item chance="0.139">
+						<item id="35361" count="5" /> <!-- Blessed Specter Avenger Fragment -->
+					</item>
+					<item chance="0.139">
+						<item id="35362" count="5" /> <!-- Blessed Specter Fighter Fragment -->
+					</item>
+					<item chance="0.139">
+						<item id="35363" count="5" /> <!-- Blessed Specter Stormer Fragment -->
+					</item>
+					<item chance="0.139">
+						<item id="35364" count="5" /> <!-- Blessed Specter Thrower Fragment -->
+					</item>
+					<item chance="0.139">
+						<item id="35365" count="5" /> <!-- Blessed Specter Shooter Fragment -->
+					</item>
+					<item chance="0.139">
+						<item id="35366" count="5" /> <!-- Blessed Specter Buster Fragment -->
+					</item>
+					<item chance="0.139">
+						<item id="35367" count="5" /> <!-- Blessed Specter Caster Fragment -->
+					</item>
+					<item chance="0.139">
+						<item id="35368" count="5" /> <!-- Blessed Specter Retributer Fragment -->
+					</item>
+					<item chance="0.174">
+						<item id="35296" count="5" /> <!-- Specter Shaper Fragment -->
+					</item>
+					<item chance="0.174">
+						<item id="35297" count="5" /> <!-- Specter Cutter Fragment -->
+					</item>
+					<item chance="0.174">
+						<item id="35298" count="5" /> <!-- Specter Slasher Fragment -->
+					</item>
+					<item chance="0.174">
+						<item id="35299" count="5" /> <!-- Specter Avenger Fragment -->
+					</item>
+					<item chance="0.174">
+						<item id="35300" count="5" /> <!-- Specter Fighter Fragment -->
+					</item>
+					<item chance="0.174">
+						<item id="35301" count="5" /> <!-- Specter Stormer Fragment -->
+					</item>
+					<item chance="0.174">
+						<item id="35302" count="5" /> <!-- Specter Thrower Fragment -->
+					</item>
+					<item chance="0.174">
+						<item id="35303" count="5" /> <!-- Specter Shooter Fragment -->
+					</item>
+					<item chance="0.174">
+						<item id="35304" count="5" /> <!-- Specter Buster Fragment -->
+					</item>
+					<item chance="0.174">
+						<item id="35305" count="5" /> <!-- Specter Caster Fragment -->
+					</item>
+					<item chance="0.174">
+						<item id="35306" count="5" /> <!-- Specter Retributer Fragment -->
+					</item>
+					<item chance="0.886">
+						<item id="35307" count="5" /> <!-- Seraph Helmet Ingredient -->
+					</item>
+					<item chance="0.332">
+						<item id="35308" count="5" /> <!-- Seraph Breastplate Ingredient -->
+					</item>
+					<item chance="0.354">
+						<item id="35309" count="5" /> <!-- Seraph Gaiter Ingredient -->
+					</item>
+					<item chance="0.886">
+						<item id="35310" count="5" /> <!-- Seraph Gauntlet Ingredient -->
+					</item>
+					<item chance="1.328">
+						<item id="35311" count="5" /> <!-- Seraph Boot Ingredient -->
+					</item>
+					<item chance="1.265">
+						<item id="35312" count="5" /> <!-- Seraph Shield Ingredient -->
+					</item>
+					<item chance="0.886">
+						<item id="35313" count="5" /> <!-- Seraph Leather Helmet Ingredient -->
+					</item>
+					<item chance="0.332">
+						<item id="35314" count="5" /> <!-- Seraph Leather Armor Ingredient -->
+					</item>
+					<item chance="0.354">
+						<item id="35315" count="5" /> <!-- Seraph Leather Legging Ingredient -->
+					</item>
+					<item chance="0.886">
+						<item id="35316" count="5" /> <!-- Seraph Leather Glove Ingredient -->
+					</item>
+					<item chance="1.328">
+						<item id="35317" count="5" /> <!-- Seraph Leather Boot Ingredient -->
+					</item>
+					<item chance="0.886">
+						<item id="35318" count="5" /> <!-- Seraph Circlet Ingredient -->
+					</item>
+					<item chance="0.332">
+						<item id="35319" count="5" /> <!-- Seraph Tunic Ingredient -->
+					</item>
+					<item chance="0.354">
+						<item id="35320" count="5" /> <!-- Seraph Stocking Ingredient -->
+					</item>
+					<item chance="0.886">
+						<item id="35321" count="5" /> <!-- Seraph Glove Ingredient -->
+					</item>
+					<item chance="1.328">
+						<item id="35322" count="5" /> <!-- Seraph Shoe Ingredient -->
+					</item>
+					<item chance="1.265">
+						<item id="35323" count="5" /> <!-- Seraph Sigil Ingredient -->
+					</item>
+					<item chance="1.275">
+						<item id="35324" count="5" /> <!-- Seraph Necklace Gem -->
+					</item>
+					<item chance="1.7">
+						<item id="35325" count="5" /> <!-- Seraph Earring Gem -->
+					</item>
+					<item chance="2.551">
+						<item id="35326" count="5" /> <!-- Seraph Ring Gem -->
+					</item>
+					<item chance="0.708">
+						<item id="35369" count="5" /> <!-- Blessed Seraph Helmet Ingredient -->
+					</item>
+					<item chance="0.266">
+						<item id="35370" count="5" /> <!-- Blessed Seraph Breastplate Ingredient -->
+					</item>
+					<item chance="0.283">
+						<item id="35371" count="5" /> <!-- Blessed Seraph Gaiter Ingredient -->
+					</item>
+					<item chance="0.708">
+						<item id="35372" count="5" /> <!-- Blessed Seraph Gauntlet Ingredient -->
+					</item>
+					<item chance="1.063">
+						<item id="35373" count="5" /> <!-- Blessed Seraph Boot Ingredient -->
+					</item>
+					<item chance="1.012">
+						<item id="35374" count="5" /> <!-- Blessed Seraph Shield Ingredient -->
+					</item>
+					<item chance="0.708">
+						<item id="35375" count="5" /> <!-- Blessed Seraph Leather Helmet Ingredient -->
+					</item>
+					<item chance="0.266">
+						<item id="35376" count="5" /> <!-- Blessed Seraph Leather Armor Ingredient -->
+					</item>
+					<item chance="0.283">
+						<item id="35377" count="5" /> <!-- Blessed Seraph Leather Legging Ingredient -->
+					</item>
+					<item chance="0.708">
+						<item id="35378" count="5" /> <!-- Blessed Seraph Leather Glove Ingredient -->
+					</item>
+					<item chance="1.063">
+						<item id="35379" count="5" /> <!-- Blessed Seraph Leather Boot Ingredient -->
+					</item>
+					<item chance="0.708">
+						<item id="35380" count="5" /> <!-- Blessed Seraph Circlet Ingredient -->
+					</item>
+					<item chance="0.266">
+						<item id="35381" count="5" /> <!-- Blessed Seraph Tunic Ingredient -->
+					</item>
+					<item chance="0.283">
+						<item id="35382" count="5" /> <!-- Blessed Seraph Stocking Ingredient -->
+					</item>
+					<item chance="0.708">
+						<item id="35383" count="5" /> <!-- Blessed Seraph Glove Ingredient -->
+					</item>
+					<item chance="1.063">
+						<item id="35384" count="5" /> <!-- Blessed Seraph Shoe Ingredient -->
+					</item>
+					<item chance="1.012">
+						<item id="35385" count="5" /> <!-- Blessed Seraph Sigil Ingredient -->
+					</item>
+					<item chance="1.02">
+						<item id="35386" count="5" /> <!-- Blessed Seraph Necklace Gem -->
+					</item>
+					<item chance="1.36">
+						<item id="35387" count="5" /> <!-- Blessed Seraph Earring Gem -->
+					</item>
+					<item chance="2.04">
+						<item id="35388" count="5" /> <!-- Blessed Seraph Ring Gem -->
+					</item>
+					<item chance="0.443">
+						<item id="35431" count="1" /> <!-- Recipe: Seraph Helmet (60%) -->
+					</item>
+					<item chance="0.166">
+						<item id="35432" count="1" /> <!-- Recipe: Seraph Breastplate (60%) -->
+					</item>
+					<item chance="0.177">
+						<item id="35433" count="1" /> <!-- Recipe: Seraph Gaiters (60%) -->
+					</item>
+					<item chance="0.443">
+						<item id="35434" count="1" /> <!-- Recipe: Seraph Gauntlets (60%) -->
+					</item>
+					<item chance="0.664">
+						<item id="35435" count="1" /> <!-- Recipe: Seraph Boots (60%) -->
+					</item>
+					<item chance="0.633">
+						<item id="35436" count="1" /> <!-- Recipe: Seraph Shield (60%) -->
+					</item>
+					<item chance="0.443">
+						<item id="35437" count="1" /> <!-- Recipe: Seraph Leather Helmet (60%) -->
+					</item>
+					<item chance="0.166">
+						<item id="35438" count="1" /> <!-- Recipe: Seraph Leather Armor (60%) -->
+					</item>
+					<item chance="0.177">
+						<item id="35439" count="1" /> <!-- Recipe: Seraph Leather Leggings (60%) -->
+					</item>
+					<item chance="0.443">
+						<item id="35440" count="1" /> <!-- Recipe: Seraph Leather Gloves (60%) -->
+					</item>
+					<item chance="0.664">
+						<item id="35441" count="1" /> <!-- Recipe: Seraph Leather Boots (60%) -->
+					</item>
+					<item chance="0.443">
+						<item id="35442" count="1" /> <!-- Recipe: Seraph Circlet (60%) -->
+					</item>
+					<item chance="0.166">
+						<item id="35443" count="1" /> <!-- Recipe: Seraph Tunic (60%) -->
+					</item>
+					<item chance="0.177">
+						<item id="35444" count="1" /> <!-- Recipe: Seraph Stockings (60%) -->
+					</item>
+					<item chance="0.443">
+						<item id="35445" count="1" /> <!-- Recipe: Seraph Gloves (60%) -->
+					</item>
+					<item chance="0.664">
+						<item id="35446" count="1" /> <!-- Recipe: Seraph Shoes (60%) -->
+					</item>
+					<item chance="0.633">
+						<item id="35447" count="1" /> <!-- Recipe: Seraph Sigil (60%) -->
+					</item>
+					<item chance="0.638">
+						<item id="35448" count="1" /> <!-- Recipe: Seraph Necklace (60%) -->
+					</item>
+					<item chance="0.85">
+						<item id="35449" count="1" /> <!-- Recipe: Seraph Earring (60%) -->
+					</item>
+					<item chance="1.275">
+						<item id="35450" count="1" /> <!-- Recipe: Seraph Ring (60%) -->
+					</item>
+					<item chance="0.354">
+						<item id="35493" count="1" /> <!-- Recipe: Blessed Seraph Helmet (60%) -->
+					</item>
+					<item chance="0.133">
+						<item id="35494" count="1" /> <!-- Recipe: Blessed Seraph Breastplate (60%) -->
+					</item>
+					<item chance="0.142">
+						<item id="35495" count="1" /> <!-- Recipe: Blessed Seraph Gaiters (60%) -->
+					</item>
+					<item chance="0.354">
+						<item id="35496" count="1" /> <!-- Recipe: Blessed Seraph Gauntlets (60%) -->
+					</item>
+					<item chance="0.531">
+						<item id="35497" count="1" /> <!-- Recipe: Blessed Seraph Boots (60%) -->
+					</item>
+					<item chance="0.506">
+						<item id="35498" count="1" /> <!-- Recipe: Blessed Seraph Shield (60%) -->
+					</item>
+					<item chance="0.354">
+						<item id="35499" count="1" /> <!-- Recipe: Blessed Seraph Leather Helmet (60%) -->
+					</item>
+					<item chance="0.133">
+						<item id="35500" count="1" /> <!-- Recipe: Blessed Seraph Leather Armor (60%) -->
+					</item>
+					<item chance="0.142">
+						<item id="35501" count="1" /> <!-- Recipe: Blessed Seraph Leather Leggings (60%) -->
+					</item>
+					<item chance="0.354">
+						<item id="35502" count="1" /> <!-- Recipe: Blessed Seraph Leather Gloves (60%) -->
+					</item>
+					<item chance="0.531">
+						<item id="35503" count="1" /> <!-- Recipe: Blessed Seraph Leather Boots (60%) -->
+					</item>
+					<item chance="0.354">
+						<item id="35504" count="1" /> <!-- Recipe: Blessed Seraph Circlet (60%) -->
+					</item>
+					<item chance="0.133">
+						<item id="35505" count="1" /> <!-- Recipe: Blessed Seraph Tunic (60%) -->
+					</item>
+					<item chance="0.142">
+						<item id="35506" count="1" /> <!-- Recipe: Blessed Seraph Stockings (60%) -->
+					</item>
+					<item chance="0.354">
+						<item id="35507" count="1" /> <!-- Recipe: Blessed Seraph Gloves (60%) -->
+					</item>
+					<item chance="0.531">
+						<item id="35508" count="1" /> <!-- Recipe: Blessed Seraph Shoes (60%) -->
+					</item>
+					<item chance="0.506">
+						<item id="35509" count="1" /> <!-- Recipe: Blessed Seraph Sigil (60%) -->
+					</item>
+					<item chance="0.51">
+						<item id="35510" count="1" /> <!-- Recipe: Blessed Seraph Necklace (60%) -->
+					</item>
+					<item chance="0.68">
+						<item id="35511" count="1" /> <!-- Recipe: Blessed Seraph Earring (60%) -->
+					</item>
+					<item chance="1.02">
+						<item id="35512" count="1" /> <!-- Recipe: Blessed Seraph Ring (60%) -->
+					</item>
+					<item chance="6.789">
+						<item id="34990" count="300" /> <!-- Corroded Weapon Fragment -->
+					</item>
+					<item chance="10.183">
+						<item id="34991" count="500" /> <!-- Corroded Armor Fragment -->
+					</item>
+					<item chance="25.455">
+						<item id="34992" count="200" /> <!-- Corroded Accessory Gem -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="9474" toLevel="1" name="Deadman's Chest">
+		<itemConsumeId>35547</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="0.04">
+						<item id="35420" count="1" /> <!-- Recipe: Specter Shaper (60%) -->
+					</item>
+					<item chance="0.04">
+						<item id="35421" count="1" /> <!-- Recipe: Specter Cutter (60%) -->
+					</item>
+					<item chance="0.04">
+						<item id="35422" count="1" /> <!-- Recipe: Specter Slasher (60%) -->
+					</item>
+					<item chance="0.04">
+						<item id="35423" count="1" /> <!-- Recipe: Specter Avenger (60%) -->
+					</item>
+					<item chance="0.04">
+						<item id="35424" count="1" /> <!-- Recipe: Specter Fighter (60%) -->
+					</item>
+					<item chance="0.04">
+						<item id="35425" count="1" /> <!-- Recipe: Specter Stormer (60%) -->
+					</item>
+					<item chance="0.04">
+						<item id="35426" count="1" /> <!-- Recipe: Specter Thrower (60%) -->
+					</item>
+					<item chance="0.04">
+						<item id="35427" count="1" /> <!-- Recipe: Specter Shooter (60%) -->
+					</item>
+					<item chance="0.04">
+						<item id="35428" count="1" /> <!-- Recipe: Specter Buster (60%) -->
+					</item>
+					<item chance="0.04">
+						<item id="35429" count="1" /> <!-- Recipe: Specter Caster (60%) -->
+					</item>
+					<item chance="0.04">
+						<item id="35430" count="1" /> <!-- Recipe: Specter Retributer (60%) -->
+					</item>
+					<item chance="0.081">
+						<item id="35296" count="5" /> <!-- Specter Shaper Fragment -->
+					</item>
+					<item chance="0.081">
+						<item id="35297" count="5" /> <!-- Specter Cutter Fragment -->
+					</item>
+					<item chance="0.081">
+						<item id="35298" count="5" /> <!-- Specter Slasher Fragment -->
+					</item>
+					<item chance="0.081">
+						<item id="35299" count="5" /> <!-- Specter Avenger Fragment -->
+					</item>
+					<item chance="0.081">
+						<item id="35300" count="5" /> <!-- Specter Fighter Fragment -->
+					</item>
+					<item chance="0.081">
+						<item id="35301" count="5" /> <!-- Specter Stormer Fragment -->
+					</item>
+					<item chance="0.081">
+						<item id="35302" count="5" /> <!-- Specter Thrower Fragment -->
+					</item>
+					<item chance="0.081">
+						<item id="35303" count="5" /> <!-- Specter Shooter Fragment -->
+					</item>
+					<item chance="0.081">
+						<item id="35304" count="5" /> <!-- Specter Buster Fragment -->
+					</item>
+					<item chance="0.081">
+						<item id="35305" count="5" /> <!-- Specter Caster Fragment -->
+					</item>
+					<item chance="0.081">
+						<item id="35306" count="5" /> <!-- Specter Retributer Fragment -->
+					</item>
+					<item chance="0.413">
+						<item id="35307" count="5" /> <!-- Seraph Helmet Ingredient -->
+					</item>
+					<item chance="0.155">
+						<item id="35308" count="5" /> <!-- Seraph Breastplate Ingredient -->
+					</item>
+					<item chance="0.165">
+						<item id="35309" count="5" /> <!-- Seraph Gaiter Ingredient -->
+					</item>
+					<item chance="0.413">
+						<item id="35310" count="5" /> <!-- Seraph Gauntlet Ingredient -->
+					</item>
+					<item chance="0.62">
+						<item id="35311" count="5" /> <!-- Seraph Boot Ingredient -->
+					</item>
+					<item chance="0.59">
+						<item id="35312" count="5" /> <!-- Seraph Shield Ingredient -->
+					</item>
+					<item chance="0.413">
+						<item id="35313" count="5" /> <!-- Seraph Leather Helmet Ingredient -->
+					</item>
+					<item chance="0.155">
+						<item id="35314" count="5" /> <!-- Seraph Leather Armor Ingredient -->
+					</item>
+					<item chance="0.165">
+						<item id="35315" count="5" /> <!-- Seraph Leather Legging Ingredient -->
+					</item>
+					<item chance="0.413">
+						<item id="35316" count="5" /> <!-- Seraph Leather Glove Ingredient -->
+					</item>
+					<item chance="0.62">
+						<item id="35317" count="5" /> <!-- Seraph Leather Boot Ingredient -->
+					</item>
+					<item chance="0.413">
+						<item id="35318" count="5" /> <!-- Seraph Circlet Ingredient -->
+					</item>
+					<item chance="0.155">
+						<item id="35319" count="5" /> <!-- Seraph Tunic Ingredient -->
+					</item>
+					<item chance="0.165">
+						<item id="35320" count="5" /> <!-- Seraph Stocking Ingredient -->
+					</item>
+					<item chance="0.413">
+						<item id="35321" count="5" /> <!-- Seraph Glove Ingredient -->
+					</item>
+					<item chance="0.62">
+						<item id="35322" count="5" /> <!-- Seraph Shoe Ingredient -->
+					</item>
+					<item chance="0.59">
+						<item id="35323" count="5" /> <!-- Seraph Sigil Ingredient -->
+					</item>
+					<item chance="0.595">
+						<item id="35324" count="5" /> <!-- Seraph Necklace Gem -->
+					</item>
+					<item chance="0.793">
+						<item id="35325" count="5" /> <!-- Seraph Earring Gem -->
+					</item>
+					<item chance="1.189">
+						<item id="35326" count="5" /> <!-- Seraph Ring Gem -->
+					</item>
+					<item chance="0.207">
+						<item id="35431" count="1" /> <!-- Recipe: Seraph Helmet (60%) -->
+					</item>
+					<item chance="0.077">
+						<item id="35432" count="1" /> <!-- Recipe: Seraph Breastplate (60%) -->
+					</item>
+					<item chance="0.083">
+						<item id="35433" count="1" /> <!-- Recipe: Seraph Gaiters (60%) -->
+					</item>
+					<item chance="0.207">
+						<item id="35434" count="1" /> <!-- Recipe: Seraph Gauntlets (60%) -->
+					</item>
+					<item chance="0.31">
+						<item id="35435" count="1" /> <!-- Recipe: Seraph Boots (60%) -->
+					</item>
+					<item chance="0.295">
+						<item id="35436" count="1" /> <!-- Recipe: Seraph Shield (60%) -->
+					</item>
+					<item chance="0.207">
+						<item id="35437" count="1" /> <!-- Recipe: Seraph Leather Helmet (60%) -->
+					</item>
+					<item chance="0.077">
+						<item id="35438" count="1" /> <!-- Recipe: Seraph Leather Armor (60%) -->
+					</item>
+					<item chance="0.083">
+						<item id="35439" count="1" /> <!-- Recipe: Seraph Leather Leggings (60%) -->
+					</item>
+					<item chance="0.207">
+						<item id="35440" count="1" /> <!-- Recipe: Seraph Leather Gloves (60%) -->
+					</item>
+					<item chance="0.31">
+						<item id="35441" count="1" /> <!-- Recipe: Seraph Leather Boots (60%) -->
+					</item>
+					<item chance="0.207">
+						<item id="35442" count="1" /> <!-- Recipe: Seraph Circlet (60%) -->
+					</item>
+					<item chance="0.077">
+						<item id="35443" count="1" /> <!-- Recipe: Seraph Tunic (60%) -->
+					</item>
+					<item chance="0.083">
+						<item id="35444" count="1" /> <!-- Recipe: Seraph Stockings (60%) -->
+					</item>
+					<item chance="0.207">
+						<item id="35445" count="1" /> <!-- Recipe: Seraph Gloves (60%) -->
+					</item>
+					<item chance="0.31">
+						<item id="35446" count="1" /> <!-- Recipe: Seraph Shoes (60%) -->
+					</item>
+					<item chance="0.295">
+						<item id="35447" count="1" /> <!-- Recipe: Seraph Sigil (60%) -->
+					</item>
+					<item chance="0.297">
+						<item id="35448" count="1" /> <!-- Recipe: Seraph Necklace (60%) -->
+					</item>
+					<item chance="0.396">
+						<item id="35449" count="1" /> <!-- Recipe: Seraph Earring (60%) -->
+					</item>
+					<item chance="0.595">
+						<item id="35450" count="1" /> <!-- Recipe: Seraph Ring (60%) -->
+					</item>
+					<item chance="15.83">
+						<item id="34990" count="60" /> <!-- Corroded Weapon Fragment -->
+					</item>
+					<item chance="29.68">
+						<item id="34991" count="80" /> <!-- Corroded Armor Fragment -->
+					</item>
+					<item chance="39.574">
+						<item id="34992" count="60" /> <!-- Corroded Accessory Gem -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="9475" toLevel="1" name="Engineer Zofan's Supply Box">
+		<itemConsumeId>35548</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="0.39">
+						<item id="17526" count="1" /> <!-- Scroll: Enchant Weapon (R-grade) -->
+					</item>
+					<item chance="5.19">
+						<item id="17527" count="1" /> <!-- Scroll: Enchant Armor (R-grade) -->
+					</item>
+					<item chance="0.04">
+						<item id="19447" count="1" /> <!-- Blessed Scroll: Enchant Weapon (R-grade) -->
+					</item>
+					<item chance="0.36">
+						<item id="19448" count="1" /> <!-- Blessed Scroll: Enchant Armor (R-grade) -->
+					</item>
+					<item chance="12.97">
+						<item id="9546" count="1" /> <!-- Fire Stone -->
+					</item>
+					<item chance="12.97">
+						<item id="9547" count="1" /> <!-- Water Stone -->
+					</item>
+					<item chance="12.97">
+						<item id="9548" count="1" /> <!-- Earth Stone -->
+					</item>
+					<item chance="12.97">
+						<item id="9549" count="1" /> <!-- Wind Stone -->
+					</item>
+					<item chance="12.97">
+						<item id="9550" count="1" /> <!-- Dark Stone -->
+					</item>
+					<item chance="12.97">
+						<item id="9551" count="1" /> <!-- Holy Stone -->
+					</item>
+					<item chance="3.24">
+						<item id="9552" count="1" /> <!-- Fire Crystal -->
+					</item>
+					<item chance="3.24">
+						<item id="9553" count="1" /> <!-- Water Crystal -->
+					</item>
+					<item chance="3.24">
+						<item id="9554" count="1" /> <!-- Earth Crystal -->
+					</item>
+					<item chance="3.24">
+						<item id="9555" count="1" /> <!-- Wind Crystal -->
+					</item>
+					<item chance="1.62">
+						<item id="9556" count="1" /> <!-- Dark Crystal -->
+					</item>
+					<item chance="1.62">
+						<item id="9557" count="1" /> <!-- Holy Crystal -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="9476" toLevel="1" name="Rebel's Supply Box">
+		<itemConsumeId>35549</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="0.0003">
+						<item id="35513" count="1" /> <!-- Recipe: Blessed Helios Shaper (60%) -->
+					</item>
+					<item chance="0.0003">
+						<item id="35514" count="1" /> <!-- Recipe: Blessed Helios Cutter (60%) -->
+					</item>
+					<item chance="0.0003">
+						<item id="35515" count="1" /> <!-- Recipe: Blessed Helios Slasher (60%) -->
+					</item>
+					<item chance="0.0003">
+						<item id="35516" count="1" /> <!-- Recipe: Blessed Helios Avenger (60%) -->
+					</item>
+					<item chance="0.0003">
+						<item id="35517" count="1" /> <!-- Recipe: Blessed Helios Fighter (60%) -->
+					</item>
+					<item chance="0.0003">
+						<item id="35518" count="1" /> <!-- Recipe: Blessed Helios Stormer (60%) -->
+					</item>
+					<item chance="0.0003">
+						<item id="35519" count="1" /> <!-- Recipe: Blessed Helios Thrower (60%) -->
+					</item>
+					<item chance="0.0003">
+						<item id="35520" count="1" /> <!-- Recipe: Blessed Helios Shooter (60%) -->
+					</item>
+					<item chance="0.0003">
+						<item id="35521" count="1" /> <!-- Recipe: Blessed Helios Buster (60%) -->
+					</item>
+					<item chance="0.0003">
+						<item id="35522" count="1" /> <!-- Recipe: Blessed Helios Caster (60%) -->
+					</item>
+					<item chance="0.0003">
+						<item id="35523" count="1" /> <!-- Recipe: Blessed Helios Retributer (60%) -->
+					</item>
+					<item chance="0.0003">
+						<item id="35451" count="1" /> <!-- Recipe: Helios Shaper (60%) -->
+					</item>
+					<item chance="0.0003">
+						<item id="35452" count="1" /> <!-- Recipe: Helios Cutter (60%) -->
+					</item>
+					<item chance="0.0003">
+						<item id="35453" count="1" /> <!-- Recipe: Helios Slasher (60%) -->
+					</item>
+					<item chance="0.0003">
+						<item id="35454" count="1" /> <!-- Recipe: Helios Avenger (60%) -->
+					</item>
+					<item chance="0.0003">
+						<item id="35455" count="1" /> <!-- Recipe: Helios Fighter (60%) -->
+					</item>
+					<item chance="0.0003">
+						<item id="35456" count="1" /> <!-- Recipe: Helios Stormer (60%) -->
+					</item>
+					<item chance="0.0003">
+						<item id="35457" count="1" /> <!-- Recipe: Helios Thrower (60%) -->
+					</item>
+					<item chance="0.0003">
+						<item id="35458" count="1" /> <!-- Recipe: Helios Shooter (60%) -->
+					</item>
+					<item chance="0.0003">
+						<item id="35459" count="1" /> <!-- Recipe: Helios Buster (60%) -->
+					</item>
+					<item chance="0.0003">
+						<item id="35460" count="1" /> <!-- Recipe: Helios Caster (60%) -->
+					</item>
+					<item chance="0.0003">
+						<item id="35461" count="1" /> <!-- Recipe: Helios Retributer (60%) -->
+					</item>
+					<item chance="0.0026">
+						<item id="35389" count="1" /> <!-- Blessed Helios Shaper Fragment -->
+					</item>
+					<item chance="0.0026">
+						<item id="35390" count="1" /> <!-- Blessed Helios Cutter Fragment -->
+					</item>
+					<item chance="0.0026">
+						<item id="35391" count="1" /> <!-- Blessed Helios Slasher Fragment -->
+					</item>
+					<item chance="0.0026">
+						<item id="35392" count="1" /> <!-- Blessed Helios Avenger Fragment -->
+					</item>
+					<item chance="0.0026">
+						<item id="35393" count="1" /> <!-- Blessed Helios Fighter Fragment -->
+					</item>
+					<item chance="0.0026">
+						<item id="35394" count="1" /> <!-- Blessed Helios Stormer Fragment -->
+					</item>
+					<item chance="0.0026">
+						<item id="35395" count="1" /> <!-- Blessed Helios Thrower Fragment -->
+					</item>
+					<item chance="0.0026">
+						<item id="35396" count="1" /> <!-- Blessed Helios Shooter Fragment -->
+					</item>
+					<item chance="0.0026">
+						<item id="35397" count="1" /> <!-- Blessed Helios Buster Fragment -->
+					</item>
+					<item chance="0.0026">
+						<item id="35398" count="1" /> <!-- Blessed Helios Caster Fragment -->
+					</item>
+					<item chance="0.0026">
+						<item id="35399" count="1" /> <!-- Blessed Helios Retributer Fragment -->
+					</item>
+					<item chance="0.0032">
+						<item id="35327" count="1" /> <!-- Helios Shaper Fragment -->
+					</item>
+					<item chance="0.0032">
+						<item id="35328" count="1" /> <!-- Helios Cutter Fragment -->
+					</item>
+					<item chance="0.0032">
+						<item id="35329" count="1" /> <!-- Helios Slasher Fragment -->
+					</item>
+					<item chance="0.0032">
+						<item id="35330" count="1" /> <!-- Helios Avenger Fragment -->
+					</item>
+					<item chance="0.0032">
+						<item id="35331" count="1" /> <!-- Helios Fighter Fragment -->
+					</item>
+					<item chance="0.0032">
+						<item id="35332" count="1" /> <!-- Helios Stormer Fragment -->
+					</item>
+					<item chance="0.0032">
+						<item id="35333" count="1" /> <!-- Helios Thrower Fragment -->
+					</item>
+					<item chance="0.0032">
+						<item id="35334" count="1" /> <!-- Helios Shooter Fragment -->
+					</item>
+					<item chance="0.0032">
+						<item id="35335" count="1" /> <!-- Helios Buster Fragment -->
+					</item>
+					<item chance="0.0032">
+						<item id="35336" count="1" /> <!-- Helios Caster Fragment -->
+					</item>
+					<item chance="0.0032">
+						<item id="35337" count="1" /> <!-- Helios Retributer Fragment -->
+					</item>
+					<item chance="0.0163">
+						<item id="35338" count="1" /> <!-- Eternal Helmet Ingredient -->
+					</item>
+					<item chance="0.0061">
+						<item id="35339" count="1" /> <!-- Eternal Breastplate Ingredient -->
+					</item>
+					<item chance="0.0065">
+						<item id="35340" count="1" /> <!-- Eternal Gaiter Ingredient -->
+					</item>
+					<item chance="0.0163">
+						<item id="35341" count="1" /> <!-- Eternal Gauntlet Ingredient -->
+					</item>
+					<item chance="0.0245">
+						<item id="35342" count="1" /> <!-- Eternal Boot Ingredient -->
+					</item>
+					<item chance="0.0233">
+						<item id="35343" count="1" /> <!-- Eternal Shield Ingredient -->
+					</item>
+					<item chance="0.0163">
+						<item id="35344" count="1" /> <!-- Eternal Leather Helmet Ingredient -->
+					</item>
+					<item chance="0.0061">
+						<item id="35345" count="1" /> <!-- Eternal Leather Armor Ingredient -->
+					</item>
+					<item chance="0.0065">
+						<item id="35346" count="1" /> <!-- Eternal Leather Legging Ingredient -->
+					</item>
+					<item chance="0.0163">
+						<item id="35347" count="1" /> <!-- Eternal Leather Glove Ingredient -->
+					</item>
+					<item chance="0.0245">
+						<item id="35348" count="1" /> <!-- Eternal Leather Boot Ingredient -->
+					</item>
+					<item chance="0.0163">
+						<item id="35349" count="1" /> <!-- Eternal Circlet Ingredient -->
+					</item>
+					<item chance="0.0061">
+						<item id="35350" count="1" /> <!-- Eternal Tunic Ingredient -->
+					</item>
+					<item chance="0.0065">
+						<item id="35351" count="1" /> <!-- Eternal Stocking Ingredient -->
+					</item>
+					<item chance="0.0163">
+						<item id="35352" count="1" /> <!-- Eternal Glove Ingredient -->
+					</item>
+					<item chance="0.0245">
+						<item id="35353" count="1" /> <!-- Eternal Shoe Ingredient -->
+					</item>
+					<item chance="0.0233">
+						<item id="35354" count="1" /> <!-- Eternal Sigil Ingredient -->
+					</item>
+					<item chance="0.0235">
+						<item id="35355" count="1" /> <!-- Eternal Necklace Gem -->
+					</item>
+					<item chance="0.0313">
+						<item id="35356" count="1" /> <!-- Eternal Earring Gem -->
+					</item>
+					<item chance="0.047">
+						<item id="35357" count="1" /> <!-- Eternal Ring Gem -->
+					</item>
+					<item chance="0.0131">
+						<item id="35400" count="1" /> <!-- Blessed Eternal Helmet Ingredient -->
+					</item>
+					<item chance="0.0049">
+						<item id="35401" count="1" /> <!-- Blessed Eternal Breastplate Ingredient -->
+					</item>
+					<item chance="0.0052">
+						<item id="35402" count="1" /> <!-- Blessed Eternal Gaiter Ingredient -->
+					</item>
+					<item chance="0.0131">
+						<item id="35403" count="1" /> <!-- Blessed Eternal Gauntlet Ingredient -->
+					</item>
+					<item chance="0.0196">
+						<item id="35404" count="1" /> <!-- Blessed Eternal Boot Ingredient -->
+					</item>
+					<item chance="0.0186">
+						<item id="35405" count="1" /> <!-- Blessed Eternal Shield Ingredient -->
+					</item>
+					<item chance="0.0131">
+						<item id="35406" count="1" /> <!-- Blessed Eternal Leather Helmet Ingredient -->
+					</item>
+					<item chance="0.0049">
+						<item id="35407" count="1" /> <!-- Blessed Eternal Leather Armor Ingredient -->
+					</item>
+					<item chance="0.0052">
+						<item id="35408" count="1" /> <!-- Blessed Eternal Leather Legging Ingredient -->
+					</item>
+					<item chance="0.0131">
+						<item id="35409" count="1" /> <!-- Blessed Eternal Leather Glove Ingredient -->
+					</item>
+					<item chance="0.0196">
+						<item id="35410" count="1" /> <!-- Blessed Eternal Leather Boot Ingredient -->
+					</item>
+					<item chance="0.0131">
+						<item id="35411" count="1" /> <!-- Blessed Eternal Circlet Ingredient -->
+					</item>
+					<item chance="0.0049">
+						<item id="35412" count="1" /> <!-- Blessed Eternal Tunic Ingredient -->
+					</item>
+					<item chance="0.0052">
+						<item id="35413" count="1" /> <!-- Blessed Eternal Stocking Ingredient -->
+					</item>
+					<item chance="0.0131">
+						<item id="35414" count="1" /> <!-- Blessed Eternal Glove Ingredient -->
+					</item>
+					<item chance="0.0196">
+						<item id="35415" count="1" /> <!-- Blessed Eternal Shoe Ingredient -->
+					</item>
+					<item chance="0.0186">
+						<item id="35416" count="1" /> <!-- Blessed Eternal Sigil Ingredient -->
+					</item>
+					<item chance="0.0188">
+						<item id="35417" count="1" /> <!-- Blessed Eternal Necklace Gem -->
+					</item>
+					<item chance="0.0251">
+						<item id="35418" count="1" /> <!-- Blessed Eternal Earring Gem -->
+					</item>
+					<item chance="0.0376">
+						<item id="35419" count="1" /> <!-- Blessed Eternal Ring Gem -->
+					</item>
+					<item chance="0.0016">
+						<item id="35462" count="1" /> <!-- Recipe: Eternal Helmet (60%) -->
+					</item>
+					<item chance="0.0006">
+						<item id="35463" count="1" /> <!-- Recipe: Eternal Breastplate (60%) -->
+					</item>
+					<item chance="0.0007">
+						<item id="35464" count="1" /> <!-- Recipe: Eternal Gaiters (60%) -->
+					</item>
+					<item chance="0.0016">
+						<item id="35465" count="1" /> <!-- Recipe: Eternal Gauntlets (60%) -->
+					</item>
+					<item chance="0.0024">
+						<item id="35466" count="1" /> <!-- Recipe: Eternal Boots (60%) -->
+					</item>
+					<item chance="0.0023">
+						<item id="35467" count="1" /> <!-- Recipe: Eternal Shield (60%) -->
+					</item>
+					<item chance="0.0016">
+						<item id="35468" count="1" /> <!-- Recipe: Eternal Leather Helmet (60%) -->
+					</item>
+					<item chance="0.0006">
+						<item id="35469" count="1" /> <!-- Recipe: Eternal Leather Armor (60%) -->
+					</item>
+					<item chance="0.0007">
+						<item id="35470" count="1" /> <!-- Recipe: Eternal Leather Leggings (60%) -->
+					</item>
+					<item chance="0.0016">
+						<item id="35471" count="1" /> <!-- Recipe: Eternal Leather Gloves (60%) -->
+					</item>
+					<item chance="0.0024">
+						<item id="35472" count="1" /> <!-- Recipe: Eternal Leather Boots (60%) -->
+					</item>
+					<item chance="0.0016">
+						<item id="35473" count="1" /> <!-- Recipe: Eternal Circlet (60%) -->
+					</item>
+					<item chance="0.0006">
+						<item id="35474" count="1" /> <!-- Recipe: Eternal Tunic (60%) -->
+					</item>
+					<item chance="0.0007">
+						<item id="35475" count="1" /> <!-- Recipe: Eternal Stockings (60%) -->
+					</item>
+					<item chance="0.0016">
+						<item id="35476" count="1" /> <!-- Recipe: Eternal Gloves (60%) -->
+					</item>
+					<item chance="0.0024">
+						<item id="35477" count="1" /> <!-- Recipe: Eternal Shoes (60%) -->
+					</item>
+					<item chance="0.0023">
+						<item id="35478" count="1" /> <!-- Recipe: Eternal Sigil (60%) -->
+					</item>
+					<item chance="0.0023">
+						<item id="35479" count="1" /> <!-- Recipe: Eternal Necklace (60%) -->
+					</item>
+					<item chance="0.0031">
+						<item id="35480" count="1" /> <!-- Recipe: Eternal Earring (60%) -->
+					</item>
+					<item chance="0.0047">
+						<item id="35481" count="1" /> <!-- Recipe: Eternal Ring (60%) -->
+					</item>
+					<item chance="0.0013">
+						<item id="35524" count="1" /> <!-- Recipe: Blessed Eternal Helmet (60%) -->
+					</item>
+					<item chance="0.0005">
+						<item id="35525" count="1" /> <!-- Recipe: Blessed Eternal Breastplate (60%) -->
+					</item>
+					<item chance="0.0005">
+						<item id="35526" count="1" /> <!-- Recipe: Blessed Eternal Gaiters (60%) -->
+					</item>
+					<item chance="0.0013">
+						<item id="35527" count="1" /> <!-- Recipe: Blessed Eternal Gauntlets (60%) -->
+					</item>
+					<item chance="0.002">
+						<item id="35528" count="1" /> <!-- Recipe: Blessed Eternal Boots (60%) -->
+					</item>
+					<item chance="0.0019">
+						<item id="35529" count="1" /> <!-- Recipe: Blessed Eternal Shield (60%) -->
+					</item>
+					<item chance="0.0013">
+						<item id="35530" count="1" /> <!-- Recipe: Blessed Eternal Leather Helmet (60%) -->
+					</item>
+					<item chance="0.0005">
+						<item id="35531" count="1" /> <!-- Recipe: Blessed Eternal Leather Armor (60%) -->
+					</item>
+					<item chance="0.0005">
+						<item id="35532" count="1" /> <!-- Recipe: Blessed Eternal Leather Leggings (60%) -->
+					</item>
+					<item chance="0.0013">
+						<item id="35533" count="1" /> <!-- Recipe: Blessed Eternal Leather Gloves (60%) -->
+					</item>
+					<item chance="0.002">
+						<item id="35534" count="1" /> <!-- Recipe: Blessed Eternal Leather Boots (60%) -->
+					</item>
+					<item chance="0.0013">
+						<item id="35535" count="1" /> <!-- Recipe: Blessed Eternal Circlet (60%) -->
+					</item>
+					<item chance="0.0005">
+						<item id="35536" count="1" /> <!-- Recipe: Blessed Eternal Tunic (60%) -->
+					</item>
+					<item chance="0.0005">
+						<item id="35537" count="1" /> <!-- Recipe: Blessed Eternal Stockings (60%) -->
+					</item>
+					<item chance="0.0013">
+						<item id="35538" count="1" /> <!-- Recipe: Blessed Eternal Gloves (60%) -->
+					</item>
+					<item chance="0.002">
+						<item id="35539" count="1" /> <!-- Recipe: Blessed Eternal Shoes (60%) -->
+					</item>
+					<item chance="0.0019">
+						<item id="35540" count="1" /> <!-- Recipe: Blessed Eternal Sigil (60%) -->
+					</item>
+					<item chance="0.0019">
+						<item id="35541" count="1" /> <!-- Recipe: Blessed Eternal Necklace (60%) -->
+					</item>
+					<item chance="0.0025">
+						<item id="35542" count="1" /> <!-- Recipe: Blessed Eternal Earring (60%) -->
+					</item>
+					<item chance="0.0038">
+						<item id="35543" count="1" /> <!-- Recipe: Blessed Eternal Ring (60%) -->
+					</item>
+					<item chance="16.537">
+						<item id="34990" count="1" /> <!-- Corroded Weapon Fragment -->
+					</item>
+					<item chance="41.3426">
+						<item id="34991" count="1" /> <!-- Corroded Armor Fragment -->
+					</item>
+					<item chance="41.3419">
+						<item id="34992" count="1" /> <!-- Corroded Accessory Gem -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="9477" toLevel="1" name="Aku's Supply Box">
+		<itemConsumeId>35550</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="0.0003">
+						<item id="35513" count="1" /> <!-- Recipe: Blessed Helios Shaper (60%) -->
+					</item>
+					<item chance="0.0003">
+						<item id="35514" count="1" /> <!-- Recipe: Blessed Helios Cutter (60%) -->
+					</item>
+					<item chance="0.0003">
+						<item id="35515" count="1" /> <!-- Recipe: Blessed Helios Slasher (60%) -->
+					</item>
+					<item chance="0.0003">
+						<item id="35516" count="1" /> <!-- Recipe: Blessed Helios Avenger (60%) -->
+					</item>
+					<item chance="0.0003">
+						<item id="35517" count="1" /> <!-- Recipe: Blessed Helios Fighter (60%) -->
+					</item>
+					<item chance="0.0003">
+						<item id="35518" count="1" /> <!-- Recipe: Blessed Helios Stormer (60%) -->
+					</item>
+					<item chance="0.0003">
+						<item id="35519" count="1" /> <!-- Recipe: Blessed Helios Thrower (60%) -->
+					</item>
+					<item chance="0.0003">
+						<item id="35520" count="1" /> <!-- Recipe: Blessed Helios Shooter (60%) -->
+					</item>
+					<item chance="0.0003">
+						<item id="35521" count="1" /> <!-- Recipe: Blessed Helios Buster (60%) -->
+					</item>
+					<item chance="0.0003">
+						<item id="35522" count="1" /> <!-- Recipe: Blessed Helios Caster (60%) -->
+					</item>
+					<item chance="0.0003">
+						<item id="35523" count="1" /> <!-- Recipe: Blessed Helios Retributer (60%) -->
+					</item>
+					<item chance="0.0003">
+						<item id="35451" count="1" /> <!-- Recipe: Helios Shaper (60%) -->
+					</item>
+					<item chance="0.0003">
+						<item id="35452" count="1" /> <!-- Recipe: Helios Cutter (60%) -->
+					</item>
+					<item chance="0.0003">
+						<item id="35453" count="1" /> <!-- Recipe: Helios Slasher (60%) -->
+					</item>
+					<item chance="0.0003">
+						<item id="35454" count="1" /> <!-- Recipe: Helios Avenger (60%) -->
+					</item>
+					<item chance="0.0003">
+						<item id="35455" count="1" /> <!-- Recipe: Helios Fighter (60%) -->
+					</item>
+					<item chance="0.0003">
+						<item id="35456" count="1" /> <!-- Recipe: Helios Stormer (60%) -->
+					</item>
+					<item chance="0.0003">
+						<item id="35457" count="1" /> <!-- Recipe: Helios Thrower (60%) -->
+					</item>
+					<item chance="0.0003">
+						<item id="35458" count="1" /> <!-- Recipe: Helios Shooter (60%) -->
+					</item>
+					<item chance="0.0003">
+						<item id="35459" count="1" /> <!-- Recipe: Helios Buster (60%) -->
+					</item>
+					<item chance="0.0003">
+						<item id="35460" count="1" /> <!-- Recipe: Helios Caster (60%) -->
+					</item>
+					<item chance="0.0003">
+						<item id="35461" count="1" /> <!-- Recipe: Helios Retributer (60%) -->
+					</item>
+					<item chance="0.0026">
+						<item id="35389" count="1" /> <!-- Blessed Helios Shaper Fragment -->
+					</item>
+					<item chance="0.0026">
+						<item id="35390" count="1" /> <!-- Blessed Helios Cutter Fragment -->
+					</item>
+					<item chance="0.0026">
+						<item id="35391" count="1" /> <!-- Blessed Helios Slasher Fragment -->
+					</item>
+					<item chance="0.0026">
+						<item id="35392" count="1" /> <!-- Blessed Helios Avenger Fragment -->
+					</item>
+					<item chance="0.0026">
+						<item id="35393" count="1" /> <!-- Blessed Helios Fighter Fragment -->
+					</item>
+					<item chance="0.0026">
+						<item id="35394" count="1" /> <!-- Blessed Helios Stormer Fragment -->
+					</item>
+					<item chance="0.0026">
+						<item id="35395" count="1" /> <!-- Blessed Helios Thrower Fragment -->
+					</item>
+					<item chance="0.0026">
+						<item id="35396" count="1" /> <!-- Blessed Helios Shooter Fragment -->
+					</item>
+					<item chance="0.0026">
+						<item id="35397" count="1" /> <!-- Blessed Helios Buster Fragment -->
+					</item>
+					<item chance="0.0026">
+						<item id="35398" count="1" /> <!-- Blessed Helios Caster Fragment -->
+					</item>
+					<item chance="0.0026">
+						<item id="35399" count="1" /> <!-- Blessed Helios Retributer Fragment -->
+					</item>
+					<item chance="0.0032">
+						<item id="35327" count="1" /> <!-- Helios Shaper Fragment -->
+					</item>
+					<item chance="0.0032">
+						<item id="35328" count="1" /> <!-- Helios Cutter Fragment -->
+					</item>
+					<item chance="0.0032">
+						<item id="35329" count="1" /> <!-- Helios Slasher Fragment -->
+					</item>
+					<item chance="0.0032">
+						<item id="35330" count="1" /> <!-- Helios Avenger Fragment -->
+					</item>
+					<item chance="0.0032">
+						<item id="35331" count="1" /> <!-- Helios Fighter Fragment -->
+					</item>
+					<item chance="0.0032">
+						<item id="35332" count="1" /> <!-- Helios Stormer Fragment -->
+					</item>
+					<item chance="0.0032">
+						<item id="35333" count="1" /> <!-- Helios Thrower Fragment -->
+					</item>
+					<item chance="0.0032">
+						<item id="35334" count="1" /> <!-- Helios Shooter Fragment -->
+					</item>
+					<item chance="0.0032">
+						<item id="35335" count="1" /> <!-- Helios Buster Fragment -->
+					</item>
+					<item chance="0.0032">
+						<item id="35336" count="1" /> <!-- Helios Caster Fragment -->
+					</item>
+					<item chance="0.0032">
+						<item id="35337" count="1" /> <!-- Helios Retributer Fragment -->
+					</item>
+					<item chance="0.0163">
+						<item id="35338" count="1" /> <!-- Eternal Helmet Ingredient -->
+					</item>
+					<item chance="0.0061">
+						<item id="35339" count="1" /> <!-- Eternal Breastplate Ingredient -->
+					</item>
+					<item chance="0.0065">
+						<item id="35340" count="1" /> <!-- Eternal Gaiter Ingredient -->
+					</item>
+					<item chance="0.0163">
+						<item id="35341" count="1" /> <!-- Eternal Gauntlet Ingredient -->
+					</item>
+					<item chance="0.0245">
+						<item id="35342" count="1" /> <!-- Eternal Boot Ingredient -->
+					</item>
+					<item chance="0.0233">
+						<item id="35343" count="1" /> <!-- Eternal Shield Ingredient -->
+					</item>
+					<item chance="0.0163">
+						<item id="35344" count="1" /> <!-- Eternal Leather Helmet Ingredient -->
+					</item>
+					<item chance="0.0061">
+						<item id="35345" count="1" /> <!-- Eternal Leather Armor Ingredient -->
+					</item>
+					<item chance="0.0065">
+						<item id="35346" count="1" /> <!-- Eternal Leather Legging Ingredient -->
+					</item>
+					<item chance="0.0163">
+						<item id="35347" count="1" /> <!-- Eternal Leather Glove Ingredient -->
+					</item>
+					<item chance="0.0245">
+						<item id="35348" count="1" /> <!-- Eternal Leather Boot Ingredient -->
+					</item>
+					<item chance="0.0163">
+						<item id="35349" count="1" /> <!-- Eternal Circlet Ingredient -->
+					</item>
+					<item chance="0.0061">
+						<item id="35350" count="1" /> <!-- Eternal Tunic Ingredient -->
+					</item>
+					<item chance="0.0065">
+						<item id="35351" count="1" /> <!-- Eternal Stocking Ingredient -->
+					</item>
+					<item chance="0.0163">
+						<item id="35352" count="1" /> <!-- Eternal Glove Ingredient -->
+					</item>
+					<item chance="0.0245">
+						<item id="35353" count="1" /> <!-- Eternal Shoe Ingredient -->
+					</item>
+					<item chance="0.0233">
+						<item id="35354" count="1" /> <!-- Eternal Sigil Ingredient -->
+					</item>
+					<item chance="0.0235">
+						<item id="35355" count="1" /> <!-- Eternal Necklace Gem -->
+					</item>
+					<item chance="0.0313">
+						<item id="35356" count="1" /> <!-- Eternal Earring Gem -->
+					</item>
+					<item chance="0.047">
+						<item id="35357" count="1" /> <!-- Eternal Ring Gem -->
+					</item>
+					<item chance="0.0131">
+						<item id="35400" count="1" /> <!-- Blessed Eternal Helmet Ingredient -->
+					</item>
+					<item chance="0.0049">
+						<item id="35401" count="1" /> <!-- Blessed Eternal Breastplate Ingredient -->
+					</item>
+					<item chance="0.0052">
+						<item id="35402" count="1" /> <!-- Blessed Eternal Gaiter Ingredient -->
+					</item>
+					<item chance="0.0131">
+						<item id="35403" count="1" /> <!-- Blessed Eternal Gauntlet Ingredient -->
+					</item>
+					<item chance="0.0196">
+						<item id="35404" count="1" /> <!-- Blessed Eternal Boot Ingredient -->
+					</item>
+					<item chance="0.0186">
+						<item id="35405" count="1" /> <!-- Blessed Eternal Shield Ingredient -->
+					</item>
+					<item chance="0.0131">
+						<item id="35406" count="1" /> <!-- Blessed Eternal Leather Helmet Ingredient -->
+					</item>
+					<item chance="0.0049">
+						<item id="35407" count="1" /> <!-- Blessed Eternal Leather Armor Ingredient -->
+					</item>
+					<item chance="0.0052">
+						<item id="35408" count="1" /> <!-- Blessed Eternal Leather Legging Ingredient -->
+					</item>
+					<item chance="0.0131">
+						<item id="35409" count="1" /> <!-- Blessed Eternal Leather Glove Ingredient -->
+					</item>
+					<item chance="0.0196">
+						<item id="35410" count="1" /> <!-- Blessed Eternal Leather Boot Ingredient -->
+					</item>
+					<item chance="0.0131">
+						<item id="35411" count="1" /> <!-- Blessed Eternal Circlet Ingredient -->
+					</item>
+					<item chance="0.0049">
+						<item id="35412" count="1" /> <!-- Blessed Eternal Tunic Ingredient -->
+					</item>
+					<item chance="0.0052">
+						<item id="35413" count="1" /> <!-- Blessed Eternal Stocking Ingredient -->
+					</item>
+					<item chance="0.0131">
+						<item id="35414" count="1" /> <!-- Blessed Eternal Glove Ingredient -->
+					</item>
+					<item chance="0.0196">
+						<item id="35415" count="1" /> <!-- Blessed Eternal Shoe Ingredient -->
+					</item>
+					<item chance="0.0186">
+						<item id="35416" count="1" /> <!-- Blessed Eternal Sigil Ingredient -->
+					</item>
+					<item chance="0.0188">
+						<item id="35417" count="1" /> <!-- Blessed Eternal Necklace Gem -->
+					</item>
+					<item chance="0.0251">
+						<item id="35418" count="1" /> <!-- Blessed Eternal Earring Gem -->
+					</item>
+					<item chance="0.0376">
+						<item id="35419" count="1" /> <!-- Blessed Eternal Ring Gem -->
+					</item>
+					<item chance="0.0016">
+						<item id="35462" count="1" /> <!-- Recipe: Eternal Helmet (60%) -->
+					</item>
+					<item chance="0.0006">
+						<item id="35463" count="1" /> <!-- Recipe: Eternal Breastplate (60%) -->
+					</item>
+					<item chance="0.0007">
+						<item id="35464" count="1" /> <!-- Recipe: Eternal Gaiters (60%) -->
+					</item>
+					<item chance="0.0016">
+						<item id="35465" count="1" /> <!-- Recipe: Eternal Gauntlets (60%) -->
+					</item>
+					<item chance="0.0024">
+						<item id="35466" count="1" /> <!-- Recipe: Eternal Boots (60%) -->
+					</item>
+					<item chance="0.0023">
+						<item id="35467" count="1" /> <!-- Recipe: Eternal Shield (60%) -->
+					</item>
+					<item chance="0.0016">
+						<item id="35468" count="1" /> <!-- Recipe: Eternal Leather Helmet (60%) -->
+					</item>
+					<item chance="0.0006">
+						<item id="35469" count="1" /> <!-- Recipe: Eternal Leather Armor (60%) -->
+					</item>
+					<item chance="0.0007">
+						<item id="35470" count="1" /> <!-- Recipe: Eternal Leather Leggings (60%) -->
+					</item>
+					<item chance="0.0016">
+						<item id="35471" count="1" /> <!-- Recipe: Eternal Leather Gloves (60%) -->
+					</item>
+					<item chance="0.0024">
+						<item id="35472" count="1" /> <!-- Recipe: Eternal Leather Boots (60%) -->
+					</item>
+					<item chance="0.0016">
+						<item id="35473" count="1" /> <!-- Recipe: Eternal Circlet (60%) -->
+					</item>
+					<item chance="0.0006">
+						<item id="35474" count="1" /> <!-- Recipe: Eternal Tunic (60%) -->
+					</item>
+					<item chance="0.0007">
+						<item id="35475" count="1" /> <!-- Recipe: Eternal Stockings (60%) -->
+					</item>
+					<item chance="0.0016">
+						<item id="35476" count="1" /> <!-- Recipe: Eternal Gloves (60%) -->
+					</item>
+					<item chance="0.0024">
+						<item id="35477" count="1" /> <!-- Recipe: Eternal Shoes (60%) -->
+					</item>
+					<item chance="0.0023">
+						<item id="35478" count="1" /> <!-- Recipe: Eternal Sigil (60%) -->
+					</item>
+					<item chance="0.0023">
+						<item id="35479" count="1" /> <!-- Recipe: Eternal Necklace (60%) -->
+					</item>
+					<item chance="0.0031">
+						<item id="35480" count="1" /> <!-- Recipe: Eternal Earring (60%) -->
+					</item>
+					<item chance="0.0047">
+						<item id="35481" count="1" /> <!-- Recipe: Eternal Ring (60%) -->
+					</item>
+					<item chance="0.0013">
+						<item id="35524" count="1" /> <!-- Recipe: Blessed Eternal Helmet (60%) -->
+					</item>
+					<item chance="0.0005">
+						<item id="35525" count="1" /> <!-- Recipe: Blessed Eternal Breastplate (60%) -->
+					</item>
+					<item chance="0.0005">
+						<item id="35526" count="1" /> <!-- Recipe: Blessed Eternal Gaiters (60%) -->
+					</item>
+					<item chance="0.0013">
+						<item id="35527" count="1" /> <!-- Recipe: Blessed Eternal Gauntlets (60%) -->
+					</item>
+					<item chance="0.002">
+						<item id="35528" count="1" /> <!-- Recipe: Blessed Eternal Boots (60%) -->
+					</item>
+					<item chance="0.0019">
+						<item id="35529" count="1" /> <!-- Recipe: Blessed Eternal Shield (60%) -->
+					</item>
+					<item chance="0.0013">
+						<item id="35530" count="1" /> <!-- Recipe: Blessed Eternal Leather Helmet (60%) -->
+					</item>
+					<item chance="0.0005">
+						<item id="35531" count="1" /> <!-- Recipe: Blessed Eternal Leather Armor (60%) -->
+					</item>
+					<item chance="0.0005">
+						<item id="35532" count="1" /> <!-- Recipe: Blessed Eternal Leather Leggings (60%) -->
+					</item>
+					<item chance="0.0013">
+						<item id="35533" count="1" /> <!-- Recipe: Blessed Eternal Leather Gloves (60%) -->
+					</item>
+					<item chance="0.002">
+						<item id="35534" count="1" /> <!-- Recipe: Blessed Eternal Leather Boots (60%) -->
+					</item>
+					<item chance="0.0013">
+						<item id="35535" count="1" /> <!-- Recipe: Blessed Eternal Circlet (60%) -->
+					</item>
+					<item chance="0.0005">
+						<item id="35536" count="1" /> <!-- Recipe: Blessed Eternal Tunic (60%) -->
+					</item>
+					<item chance="0.0005">
+						<item id="35537" count="1" /> <!-- Recipe: Blessed Eternal Stockings (60%) -->
+					</item>
+					<item chance="0.0013">
+						<item id="35538" count="1" /> <!-- Recipe: Blessed Eternal Gloves (60%) -->
+					</item>
+					<item chance="0.002">
+						<item id="35539" count="1" /> <!-- Recipe: Blessed Eternal Shoes (60%) -->
+					</item>
+					<item chance="0.0019">
+						<item id="35540" count="1" /> <!-- Recipe: Blessed Eternal Sigil (60%) -->
+					</item>
+					<item chance="0.0019">
+						<item id="35541" count="1" /> <!-- Recipe: Blessed Eternal Necklace (60%) -->
+					</item>
+					<item chance="0.0025">
+						<item id="35542" count="1" /> <!-- Recipe: Blessed Eternal Earring (60%) -->
+					</item>
+					<item chance="0.0038">
+						<item id="35543" count="1" /> <!-- Recipe: Blessed Eternal Ring (60%) -->
+					</item>
+					<item chance="16.537">
+						<item id="34990" count="1" /> <!-- Corroded Weapon Fragment -->
+					</item>
+					<item chance="41.3426">
+						<item id="34991" count="1" /> <!-- Corroded Armor Fragment -->
+					</item>
+					<item chance="41.3419">
+						<item id="34992" count="1" /> <!-- Corroded Accessory Gem -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="9478" toLevel="1" name="Chat Prohibition Active">
+		<!-- Blocks chat for a certain time. -->
+		<icon>icon.shutup</icon>
+		<operateType>A2</operateType>
+		<mpConsume>1</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>2000</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>180000</reuseDelay>
+		<effectPoint>-700</effectPoint>
+		<abnormalType>NOCHAT</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<effectRange>1400</effectRange>
+		<lvlBonusRate>20</lvlBonusRate>
+		<activateRate>100</activateRate>
+		<magicLvl>99</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>60</abnormalTime>
+		<trait>PARALYZE</trait>
+		<isDebuff>true</isDebuff>
+		<targetType>ENEMY_ONLY</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="9479" toLevel="1" name="Extra Pass">
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="9480" toLevel="1" name="Extra Pass">
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="9481" toLevel="1" name="Extra Pass">
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="9482" toLevel="1" name="Extra Pass">
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="9483" toLevel="1" name="Extra Pass">
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="9484" toLevel="1" name="Extra Pass">
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="9485" toLevel="1" name="Contaminated Draco Egg - Item Obtained">
+		<itemConsumeId>34863</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="30">
+						<item id="34864" count="1" /> <!-- Small Draco Egg -->
+					</item>
+					<item chance="30">
+						<item id="34865" count="1" /> <!-- Large Draco Egg -->
+					</item>
+					<item chance="40">
+						<item id="34866" count="1" /> <!-- Shattered Egg Shell -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="9486" toLevel="1" name="Chat Prohibited">
+		<!-- When standard attack results in a Critical, has a 10% chance of blocking the target's chat for a certain time. -->
+		<icon>icon.shutup</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+	</skill>
+	<skill id="9487" toLevel="1" name="Angel Cat's Blessing">
+		<!-- For 60 min., P. Atk. +5%, M. Atk. +20%, P. Def./ M. Def. +5%, Atk. Spd./ Casting Spd. +5%, Max HP/ MP +5%, and Acquired XP/ SP +30%. -->
+		<icon>icon.skilltransform4</icon>
+		<operateType>A2</operateType>
+		<reuseDelay>1800000</reuseDelay>
+		<effectPoint>1</effectPoint>
+		<abnormalType>BR_EVENT_BUF1</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>-3</magicLvl>
+		<abnormalLvl>2</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>4</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="9488" toLevel="1" name="Holiday Blessing Stage 1">
+		<!-- Holiday Blessing. For 10 min., P. Atk. +1%, M. Atk. +2%, and Vitality is replenished when XP is gained through hunting. -->
+		<icon>BranchSys.icon.br_xmas_reward_buff_i00</icon>
+		<operateType>A2</operateType>
+		<castRange>900</castRange>
+		<effectPoint>1</effectPoint>
+		<abnormalType>INSTANT_EV_BUFF1</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-2</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<effectRange>1400</effectRange>
+		<magicLvl>1</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>600</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<abnormalVisualEffect>VP_UP</abnormalVisualEffect>
+		<isMagic>2</isMagic>
+		<isDebuff>true</isDebuff>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="9489" toLevel="1" name="Holiday Blessing Stage 2">
+		<!-- Holiday Blessing. For 10 min., P. Atk. +2%, M. Atk. +4%, and Vitality is replenished when XP is gained through hunting. -->
+		<icon>BranchSys.icon.br_xmas_reward_buff_i00</icon>
+		<operateType>A2</operateType>
+		<castRange>900</castRange>
+		<effectPoint>1</effectPoint>
+		<abnormalType>INSTANT_EV_BUFF1</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-2</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<effectRange>1400</effectRange>
+		<magicLvl>1</magicLvl>
+		<abnormalLvl>3</abnormalLvl>
+		<abnormalTime>900</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<abnormalVisualEffect>VP_UP</abnormalVisualEffect>
+		<isMagic>2</isMagic>
+		<isDebuff>true</isDebuff>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="9490" toLevel="1" name="Holiday Blessing Stage 3">
+		<!-- Holiday Blessing. For 10 min., P. Atk. +3%, M. Atk. +6%, and Vitality is replenished when XP is gained through hunting. -->
+		<icon>BranchSys.icon.br_xmas_reward_buff_i00</icon>
+		<operateType>A2</operateType>
+		<castRange>900</castRange>
+		<effectPoint>1</effectPoint>
+		<abnormalType>INSTANT_EV_BUFF1</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-2</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<effectRange>1400</effectRange>
+		<magicLvl>1</magicLvl>
+		<abnormalLvl>5</abnormalLvl>
+		<abnormalTime>1200</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<abnormalVisualEffect>VP_UP</abnormalVisualEffect>
+		<isMagic>2</isMagic>
+		<isDebuff>true</isDebuff>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="9491" toLevel="1" name="Holiday Blessing Stage 4">
+		<!-- Holiday Blessing. For 10 min., P. Atk. +4%, M. Atk. +8%, and Vitality is replenished when XP is gained through hunting. -->
+		<icon>BranchSys.icon.br_xmas_reward_buff_i00</icon>
+		<operateType>A2</operateType>
+		<castRange>900</castRange>
+		<effectPoint>1</effectPoint>
+		<abnormalType>INSTANT_EV_BUFF1</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-2</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<effectRange>1400</effectRange>
+		<magicLvl>1</magicLvl>
+		<abnormalLvl>7</abnormalLvl>
+		<abnormalTime>1500</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<abnormalVisualEffect>VP_UP</abnormalVisualEffect>
+		<isMagic>2</isMagic>
+		<isDebuff>true</isDebuff>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="9492" toLevel="1" name="Holiday Blessing Stage 5">
+		<!-- Holiday Blessing. For 10 min., P. Atk. +5%, M. Atk. +10%, and Vitality is replenished when XP is gained through hunting. -->
+		<icon>BranchSys.icon.br_xmas_reward_buff_i00</icon>
+		<operateType>A2</operateType>
+		<castRange>900</castRange>
+		<effectPoint>1</effectPoint>
+		<abnormalType>INSTANT_EV_BUFF1</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-2</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<effectRange>1400</effectRange>
+		<magicLvl>1</magicLvl>
+		<abnormalLvl>9</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<abnormalVisualEffect>VP_UP</abnormalVisualEffect>
+		<isMagic>2</isMagic>
+		<isDebuff>true</isDebuff>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="9493" toLevel="1" name="Lingering Holiday Blessing Stage 1">
+		<!-- Feeling the lingering glow of the Holiday Blessing. Seems you need 3 h. to receive the Holiday Blessing Stage 1 again. -->
+		<icon>BranchSys.icon.br_xmas_reward_buff_i00</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>INSTANT_EV_BUFF1</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-2</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<abnormalLvl>2</abnormalLvl>
+		<abnormalTime>10800</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>2</isMagic>
+		<isDebuff>true</isDebuff>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="9494" toLevel="1" name="Lingering Holiday Blessing Stage 2">
+		<!-- Feeling the lingering glow of the Holiday Blessing. Seems you need 3 h. to receive the Holiday Blessing Stage 2 again. -->
+		<icon>BranchSys.icon.br_xmas_reward_buff_i00</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>INSTANT_EV_BUFF1</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-2</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<abnormalLvl>4</abnormalLvl>
+		<abnormalTime>10800</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>2</isMagic>
+		<isDebuff>true</isDebuff>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="9495" toLevel="1" name="Lingering Holiday Blessing Stage 3">
+		<!-- Feeling the lingering glow of the Holiday Blessing. Seems you need 3 h. to receive the Holiday Blessing Stage 3 again. -->
+		<icon>BranchSys.icon.br_xmas_reward_buff_i00</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>INSTANT_EV_BUFF1</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-2</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<abnormalLvl>6</abnormalLvl>
+		<abnormalTime>10800</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>2</isMagic>
+		<isDebuff>true</isDebuff>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="9496" toLevel="1" name="Lingering Holiday Blessing Stage 4">
+		<!-- Feeling the lingering glow of the Holiday Blessing. Seems you need 3 h. to receive the Holiday Blessing Stage 4 again. -->
+		<icon>BranchSys.icon.br_xmas_reward_buff_i00</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>INSTANT_EV_BUFF1</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-2</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<abnormalLvl>8</abnormalLvl>
+		<abnormalTime>10800</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>2</isMagic>
+		<isDebuff>true</isDebuff>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="9497" toLevel="1" name="Lingering Holiday Blessing Stage 5">
+		<!-- Feeling the lingering glow of the Holiday Blessing. Seems you need 3 h. to receive the Holiday Blessing Stage 5 again. -->
+		<icon>BranchSys.icon.br_xmas_reward_buff_i00</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>INSTANT_EV_BUFF1</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-2</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<abnormalLvl>10</abnormalLvl>
+		<abnormalTime>10800</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>2</isMagic>
+		<isDebuff>true</isDebuff>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="9498" toLevel="1" name="Santa Girl's Cloak">
+		<!-- P. Def. +50, and M. Def. +40. -->
+		<icon>icon.vesper_cloack_i00</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+	</skill>
+	<skill id="9499" toLevel="1" name="Antharas Pocket">
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>35704</itemConsumeId>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="16.7">
+						<item id="9552" count="1" /> <!-- Fire Crystal -->
+					</item>
+					<item chance="16.7">
+						<item id="9553" count="1" /> <!-- Water Crystal -->
+					</item>
+					<item chance="16.7">
+						<item id="9554" count="1" /> <!-- Earth Crystal -->
+					</item>
+					<item chance="16.7">
+						<item id="9555" count="1" /> <!-- Wind Crystal -->
+					</item>
+					<item chance="16.6">
+						<item id="9556" count="1" /> <!-- Dark Crystal -->
+					</item>
+					<item chance="16.6">
+						<item id="9557" count="1" /> <!-- Holy Crystal -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+</list>

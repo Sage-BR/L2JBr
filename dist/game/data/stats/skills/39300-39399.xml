@@ -1,0 +1,725 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="39330" toLevel="1" name="Summon Tersi's Guard Agathion">
+		<!-- Summons Tersi's Guard Agathion. -->
+		<operateType>A1</operateType>
+		<coolTime>500</coolTime>
+		<hitTime>3000</hitTime>
+		<isMagic>2</isMagic>
+		<magicLvl>85</magicLvl>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="SummonAgathion">
+				<npcId>13572</npcId> <!-- Tersi's Guard -->
+			</effect>
+		</effects>
+	</skill>
+	<skill id="39331" toLevel="11" name="Tersi's Guard Unique Ability">
+		<!-- Unique Ability activates only when +8 or higher robe set effects are active. As Agathion grows, P. Def. and Dagger / Dual Dagger/ Bow/ Crossbow Resistance increases. -->
+		<icon>icon.agathion_tersi_guard_1</icon>
+		<operateType>P</operateType>
+		<passiveConditions>
+			<condition name="OpSkillAcquire">
+				<!-- TODO: Enchant has to be higher than +8 13341 lvl 3-4-5 -->
+				<skillId>13341</skillId> <!-- Enchant Robe Armor Set + 6 (R-grade) -->
+				<hasLearned>true</hasLearned>
+			</condition>
+		</passiveConditions>
+		<effects>
+			<effect name="PhysicalDefence">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">321</value>
+					<value level="3">377</value>
+					<value level="4">445</value>
+					<value level="5">523</value>
+					<value level="6">615</value>
+					<value level="7">724</value>
+					<value level="8">851</value>
+					<value level="9">1002</value>
+					<value level="10">1179</value>
+					<value level="11">1387</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="DefenceTrait">
+				<DAGGER>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">0</value>
+					<value level="6">0</value>
+					<value level="7">1</value>
+					<value level="8">2</value>
+					<value level="9">3</value>
+					<value level="10">4</value>
+					<value level="11">5</value>
+				</DAGGER>
+				<DUALDAGGER>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">0</value>
+					<value level="6">0</value>
+					<value level="7">1</value>
+					<value level="8">2</value>
+					<value level="9">3</value>
+					<value level="10">4</value>
+					<value level="11">5</value>
+				</DUALDAGGER>
+				<BOW>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">0</value>
+					<value level="6">0</value>
+					<value level="7">1</value>
+					<value level="8">2</value>
+					<value level="9">3</value>
+					<value level="10">4</value>
+					<value level="11">5</value>
+				</BOW>
+				<CROSSBOW>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">0</value>
+					<value level="6">0</value>
+					<value level="7">1</value>
+					<value level="8">2</value>
+					<value level="9">3</value>
+					<value level="10">4</value>
+					<value level="11">5</value>
+				</CROSSBOW>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="39332" toLevel="11" name="Tersi's Guard Unique Ability">
+		<!-- Unique Ability activates only when +8 or higher robe set effects are active. As Agathion grows, P. Def. and Dagger/ Dual Dagger/ Bow/ Crossbow Resistance increases. -->
+		<icon>icon.agathion_tersi_guard_1</icon>
+		<operateType>P</operateType>
+		<!-- TODO: Enchant has to be higher than +8 13341 lvl 3-4-5 -->
+		<effects>
+			<effect name="PhysicalDefence">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">321</value>
+					<value level="3">377</value>
+					<value level="4">445</value>
+					<value level="5">523</value>
+					<value level="6">615</value>
+					<value level="7">724</value>
+					<value level="8">851</value>
+					<value level="9">1002</value>
+					<value level="10">1179</value>
+					<value level="11">1387</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="DefenceTrait">
+				<DAGGER>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">0</value>
+					<value level="6">0</value>
+					<value level="7">1</value>
+					<value level="8">2</value>
+					<value level="9">3</value>
+					<value level="10">4</value>
+					<value level="11">5</value>
+				</DAGGER>
+				<DUALDAGGER>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">0</value>
+					<value level="6">0</value>
+					<value level="7">1</value>
+					<value level="8">2</value>
+					<value level="9">3</value>
+					<value level="10">4</value>
+					<value level="11">5</value>
+				</DUALDAGGER>
+				<BOW>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">0</value>
+					<value level="6">0</value>
+					<value level="7">1</value>
+					<value level="8">2</value>
+					<value level="9">3</value>
+					<value level="10">4</value>
+					<value level="11">5</value>
+				</BOW>
+				<CROSSBOW>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">0</value>
+					<value level="6">0</value>
+					<value level="7">1</value>
+					<value level="8">2</value>
+					<value level="9">3</value>
+					<value level="10">4</value>
+					<value level="11">5</value>
+				</CROSSBOW>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="39333" toLevel="4" name="Tersi's Guard Special Ability">
+		<!-- As Agathion grows, Fixed Damage Resistance increases. -->
+		<icon>icon.agathion_tersi_guard_1</icon>
+		<operateType>P</operateType>
+	</skill>
+	<skill id="39334" toLevel="1" name="Red Libra Entrance Pass - Kartia Labyrinth (Lv. 95 Party)">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="39335" toLevel="1" name="Red Libra Entrance Pass - Crystal Prison (Baylor)">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="39336" toLevel="1" name="Red Libra Entrance Pass - Nightmare Kamaloka">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="39337" toLevel="1" name="Red Libra Entrance Pass - Embryo Command Post">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="39338" toLevel="1" name="Red Libra Entrance Pass - Altar of Shilen">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="39339" toLevel="1" name="Red Libra Entrance Pass - Fallen Emperor's Throne">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="39340" toLevel="1" name="Red Libra Entrance Pass - Fall of Etina">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="39341" toLevel="1" name="Fallen Emperor's Throne Entrance Pass">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="39342" toLevel="1" name="Fall of Etina Entrance Pass">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="39343" toLevel="1" name="Red Libra Specialty - Vitality Tonic">
+		<icon>icon.bm_freya_potion</icon>
+		<operateType>A1</operateType>
+		<reuseDelay>60000</reuseDelay>
+	</skill>
+	<skill id="39344" toLevel="1" name="Red Libra Specialty - Fishing XP Bonus">
+		<!-- When used, increases Successful Fishing XP by 50% for 1 h.. Applies to all bait. Can be stacked with Angler's Blessing. Will be deleted during maintenance on Wednesday, November 29th when the Red Libra Merchants leave. -->
+		<icon>BranchIcon.etc_sign_agathion_feed_blue_i00</icon>
+		<operateType>A1</operateType>
+		<isMagic>4</isMagic>
+		<coolTime>500</coolTime>
+		<reuseDelay>60000</reuseDelay>
+	</skill>
+	<skill id="39345" toLevel="1" name="Chronicle Token">
+		<!-- If stored in the inventory, increases P. Atk./ M. Atk./ P. Def./ M. Def./ Atk. Spd./ Casting Spd./ P./ M. Critical Rate/ Max HP&MP&CP by 5%, Acquired Acquired XP/ SP in Vitality state by 14%. -->
+		<icon>icon.etc_scroll_of_memory_i00</icon>
+		<operateType>P</operateType>
+	</skill>
+	<skill id="39346" toLevel="4" name="Red Libra Supply Items">
+		<operateType>A1</operateType>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+	</skill>
+	<skill id="39347" toLevel="1" name="Shining Dragon Attribute Tonic (XP)">
+		<!-- Increases Attack Attribute by 70, all Attribute Resistance by 70, and Acquired XP/ SP by 30% for 30 min. Buffs persist after death. Will be during maintenance on January 3rd, 2018. -->
+		<icon>icon.bm_dragon_posion_special</icon>
+		<operateType>A1</operateType>
+		<isMagic>4</isMagic>
+		<hitTime>1000</hitTime>
+		<reuseDelay>300000</reuseDelay>
+		<effectPoint>1</effectPoint>
+	</skill>
+	<skill id="39348" toLevel="1" name="Angler's Blessing (1-h.)">
+		<!-- Increases Acquired XP/ SP on successful fishing by 100% for 1 h.. Effect remains after death and cannot be forcibly removed. Will be deleted during maintenance on January 3rd, 2018. -->
+		<icon>icon.fishing_zone_ticket</icon>
+		<operateType>A1</operateType>
+		<isMagic>4</isMagic>
+		<coolTime>500</coolTime>
+		<reuseDelay>60000</reuseDelay>
+	</skill>
+	<skill id="39349" toLevel="2" name="Scroll: Enchant Freya Staff">
+		<!-- An enchant scroll for Freya Staff. Failure to enchant destroys the weapon. -->
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="39350" toLevel="3" name="Freya's Ice Rose">
+		<!-- Increases Max HP/ MP/ CP by $s2, P. Atk./ M. Atk./ P. Def./ M. Def. by $s3, Atk. Spd./ Casting Spd. by $s4, Speed by $s5, Attack Attribute/ Attribute Resistance by $s6, Damage by $s7, P./ M. Skill Power by $s8, Acquired XP/ SP by $s9, and decreases Damage Received by $s10 and Skill MP Consumption by $s11 for $s1. Buffs persist after death. -->
+		<icon>icon.bm_freya_ice_rose</icon>
+		<operateType>A1</operateType>
+		<isMagic>4</isMagic>
+		<hitTime>1000</hitTime>
+		<reuseDelay>300000</reuseDelay>
+		<effectPoint>1</effectPoint>
+		<blockedInOlympiad>true</blockedInOlympiad> <!-- Unconfirmed -->
+	</skill>
+	<skill id="39351" toLevel="1" name="Merkios' Altar Entrance Pass">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="39352" toLevel="1" name="Scroll: Enchant Blessed Lucien's Bracelet">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="39353" toLevel="1" name="Chronicle Support Box">
+		<operateType>A1</operateType>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+	</skill>
+	<skill id="39354" toLevel="1" name="Freya's Secret Box">
+		<operateType>A1</operateType>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+	</skill>
+	<skill id="39355" toLevel="1" name="Freya's Ice Rose - Event">
+		<!-- Increases Max HP/ MP/ CP by 30%, P. Atk./ M. Atk./ P. Def./ M. Def. by 30%, Atk. Spd./ Casting Spd. by 10%, Speed by 20, Attack Attribute/ Attribute Resistance by 100, Damage by 10%, P./ M. Skill Power by 10%, Acquired XP/ SP by 30%, and decreases Damage Received by 30 min.0 and Skill MP Consumption by 30 min.1 for 30 min. Buffs persist after death. -->
+		<icon>icon.bm_freya_ice_rose</icon>
+		<operateType>A1</operateType>
+		<isMagic>4</isMagic>
+		<hitTime>1000</hitTime>
+		<reuseDelay>300000</reuseDelay>
+		<effectPoint>1</effectPoint>
+		<blockedInOlympiad>true</blockedInOlympiad> <!-- Unconfirmed -->
+	</skill>
+	<skill id="39356" toLevel="1" name="Shining Dragon Attribute Tonic (XP)">
+		<!-- Increases Attack Attribute by 70, all Attribute Resistance by 70, and Acquired XP/ SP by 30% for 30 min. Buffs persist after death. -->
+		<icon>icon.bm_dragon_posion_special</icon>
+		<operateType>A1</operateType>
+		<isMagic>4</isMagic>
+		<hitTime>1000</hitTime>
+		<reuseDelay>300000</reuseDelay>
+		<effectPoint>1</effectPoint>
+	</skill>
+	<skill id="39357" toLevel="2" name="+9 Fallen Angel's Ring Box">
+		<!-- Use to obtain a Fallen Angel's Ring enchanted to +9. -->
+		<operateType>A1</operateType>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+	</skill>
+	<skill id="39358" toLevel="1" name="Scroll: Enchant Fallen Angel Accessory">
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>ITEM</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="39359" toLevel="3" name="Infinite Bliss">
+		<operateType>A1</operateType>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>2000</reuseDelay>
+	</skill>
+	<skill id="39360" toLevel="1" name="Lucky Herb Pouch">
+		<!-- A herb pouch filled with luck. For 5 min., increases P. Atk./ M. Atk./ Atk. Spd./ Casting Spd.. by 50% and Acquired XP/ SP by 10%. The effect disappears on restart. -->
+		<icon>icon.christmas_card_box2</icon>
+		<operateType>A1</operateType>
+		<effectPoint>100</effectPoint>
+	</skill>
+	<skill id="39361" toLevel="1" name="Forgotten Spellbook">
+		<operateType>A1</operateType>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>500</reuseDelay>
+	</skill>
+	<skill id="39362" toLevel="1" name="Bobsleigh Potion">
+		<!-- Becomes possessed by a legendary bobsleigher's soul for 30 min. Increases STR by 7, Vitality Bonus by 15%, Acquired XP/ SP by 15%. -->
+		<icon>icon.etc_oblivion_yellow_i00</icon>
+		<operateType>A1</operateType>
+		<isMagic>4</isMagic>
+		<reuseDelay>1000</reuseDelay>
+	</skill>
+	<skill id="39363" toLevel="1" name="Figure Skating Potion">
+		<!-- Becomes possessed by a legendary figure skater's soul for 30 min. Increases CON/ MEN by 7, Vitality Bonus by 15%, Acquired XP/ SP by 15%. -->
+		<icon>icon.etc_oblivion_green_i00</icon>
+		<operateType>A1</operateType>
+		<isMagic>4</isMagic>
+		<reuseDelay>1000</reuseDelay>
+	</skill>
+	<skill id="39364" toLevel="1" name="Curling Potion">
+		<!-- Becomes possessed by a legendary curling athlete's soul for 30 min. Increases INT by 7, Vitality Bonus by 15%, Acquired XP/ SP by 15%. -->
+		<icon>icon.etc_oblivion_blue_i00</icon>
+		<operateType>A1</operateType>
+		<isMagic>4</isMagic>
+		<reuseDelay>1000</reuseDelay>
+	</skill>
+	<skill id="39365" toLevel="4" name="Summon Puppy">
+		<!-- Summons a White Dog, Pink Dog, or Golden Dog. -->
+		<operateType>A1</operateType>
+		<hitTime>3000</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>7000</reuseDelay>
+	</skill>
+	<skill id="39366" toLevel="2" name="Happy Dog's Lucky Pouch">
+		<operateType>A1</operateType>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>500</reuseDelay>
+	</skill>
+	<skill id="39367" toLevel="1" name="Extra Pass - Lurin's Fortress">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="39368" toLevel="1" name="Lucky Growth Rune">
+		<!-- When stored in the inventory, Hunting XP/ SP +20%, Vitality +20%. -->
+		<icon>icon.skill19226</icon>
+		<operateType>P</operateType>
+	</skill>
+	<skill id="39369" toLevel="1" name="Shilen's Scroll: Enchant Weapon (R-grade)">
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>ITEM</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="39370" toLevel="2" name="Gale Scroll">
+		<!-- A scroll to level-up as fast as the wind. Acquired XP/ SP +$s1. Remains active after death. Duration 10 min. Cooldown 9 min. -->
+		<icon>icon.scrl_of_storm</icon>
+		<operateType>A1</operateType>
+		<isMagic>4</isMagic>
+		<reuseDelay>540000</reuseDelay>
+	</skill>
+	<skill id="39371" toLevel="2" name="Raging Billow Scroll">
+		<!-- Increases Attack Attribute by $s2, all Attribute Resistance by $s3, and Acquired XP/ SP by $s4 for $s1. Buffs persist after death. -->
+		<icon>icon.etc_blesscharm_slay_val_i00</icon>
+		<operateType>A1</operateType>
+		<isMagic>4</isMagic>
+		<hitTime>1000</hitTime>
+		<reuseDelay>300000</reuseDelay>
+		<effectPoint>1</effectPoint>
+	</skill>
+	<skill id="39372" toLevel="1" name="Expertise Rune ALL">
+		<!-- When stored in the inventory, it enables you to equip with all grade items without any penalty. -->
+		<icon>icon.ev_charge_run</icon>
+		<operateType>P</operateType>
+	</skill>
+	<skill id="39373" toLevel="1" name="Special Growth Rune">
+		<!-- When stored in the inventory, Acquired XP/ SP +100%, Acquired XP/ SP +100% in Vitality state (excluding boss monsters). -->
+		<icon>icon.bm_sayha_rune</icon>
+		<operateType>P</operateType>
+	</skill>
+	<skill id="39374" toLevel="2" name="Transformation Skill">
+		<!-- Transforms you into a Snow Man, Scarecrow Jack, Tin Golem, Tow, Lure Tow, Heavy Tow, Warm Tow, White Dog, Pink Dog, or Golden Dog for $s1.\n<Alt +left click> to delete the buff. -->
+		<icon>icon.skill11540</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>10000</reuseDelay>
+		<effectPoint>1</effectPoint>
+	</skill>
+	<skill id="39375" toLevel="1" name="Orc's Gift Box">
+		<!-- Double-click to obtain an item. -->
+		<operateType>A1</operateType>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+	</skill>
+	<skill id="39376" toLevel="1" name="Scroll: Enchant Lady's Ornamental Silver Knife">
+		<!-- An enchant scroll for Lady's Ornamental Silver Knife. Failure to enchant destroys the weapon. -->
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="39377" toLevel="1" name="Mentee's Vitality Potion of Gratitude">
+		<operateType>A1</operateType>
+		<reuseDelay>10000</reuseDelay>
+	</skill>
+	<skill id="39378" toLevel="1" name="Lurin's Fortress Relic Box">
+		<operateType>A1</operateType>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>500</reuseDelay>
+	</skill>
+	<skill id="39379" toLevel="1" name="Energy of Dimensions">
+		<!-- Blessing given by the Dimensional Wizard to commemorate the victory in the Dimensional Space. Acquired XP/ SP +15% for 1 h. -->
+		<icon>icon.tersi_specter_seed</icon>
+		<operateType>A1</operateType>
+		<isMagic>4</isMagic>
+		<reuseDelay>3600000</reuseDelay>
+	</skill>
+	<skill id="39380" toLevel="1" name="Elysium Fried Fish - P. Atk.">
+		<icon>icon.fish_stew_buff</icon>
+		<operateType>A1</operateType>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>5000</reuseDelay>
+	</skill>
+	<skill id="39381" toLevel="1" name="Elysium Steamed Fish - M. Atk.">
+		<icon>icon.fish_stew_buff</icon>
+		<operateType>A1</operateType>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>5000</reuseDelay>
+	</skill>
+	<skill id="39382" toLevel="1" name="Elysium Grilled Fish - Combat Speed">
+		<icon>icon.fish_stew_buff</icon>
+		<operateType>A1</operateType>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>5000</reuseDelay>
+	</skill>
+	<skill id="39383" toLevel="1" name="Elysium Braised Fish - Max HP/ MP">
+		<icon>icon.fish_stew_buff</icon>
+		<operateType>A1</operateType>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>5000</reuseDelay>
+	</skill>
+	<skill id="39384" toLevel="2" name="Elysium Fried Fish - P. Atk.">
+		<!-- P. Atk. +$s1 for 30 min. Can be stacked with Honey Vitality Beer. -->
+		<icon>
+			<value level="1">icon.fishing_buff_p_dmg_1</value>
+			<value level="2">icon.fishing_buff_p_dmg_2</value>
+		</icon>
+		<operateType>A1</operateType>
+		<isMagic>4</isMagic>
+	</skill>
+	<skill id="39385" toLevel="2" name="Elysium Steamed Fish - M. Atk.">
+		<!-- M. Atk. +$s1 for 30 min. Can be stacked with Honey Vitality Beer. -->
+		<icon>
+			<value level="1">icon.fishing_buff_m_dmg_1</value>
+			<value level="2">icon.fishing_buff_m_dmg_2</value>
+		</icon>
+		<operateType>A1</operateType>
+		<isMagic>4</isMagic>
+	</skill>
+	<skill id="39386" toLevel="2" name="Elysium Grilled Fish - Combat Speed">
+		<!-- Atk. Spd./ Casting Spd. +$s1, Speed +$s2 for 30 min. Can be stacked with Honey Vitality Beer. -->
+		<icon>
+			<value level="1">icon.fishing_buff_pm_speed_1</value>
+			<value level="2">icon.fishing_buff_pm_speed_2</value>
+		</icon>
+		<operateType>A1</operateType>
+		<isMagic>4</isMagic>
+	</skill>
+	<skill id="39387" toLevel="2" name="Elysium Braised Fish - Max HP/ MP">
+		<!-- Max HP/ MP +$s1 for 30 min. Can be stacked with Honey Vitality Beer. -->
+		<icon>
+			<value level="1">icon.fishing_buff_hp_mp_1</value>
+			<value level="2">icon.fishing_buff_hp_mp_2</value>
+		</icon>
+		<operateType>A1</operateType>
+		<isMagic>4</isMagic>
+	</skill>
+	<skill id="39388" toLevel="1" name="Red Libra Entrance Pass - Krofin's Nest">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="39389" toLevel="1" name="Entrance Pass: Krofin's Nest">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="39390" toLevel="1" name="+8 Angel's Necklace Box">
+		<!-- Use it to obtain 1 +8 enchanted Angel's Necklace. -->
+		<operateType>A1</operateType>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>48941</itemConsumeId>
+		<magicLvl>1</magicLvl>
+		<mpConsume>398</mpConsume>
+		<reuseDelay>500</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>20</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="Restoration">
+				<items>
+					<itemId>48669</itemId>
+					<itemCount>1</itemCount>
+					<itemEnchantmentLevel>8</itemEnchantmentLevel>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="39391" toLevel="1" name="+8 Angel's Earring Box">
+		<!-- Use it to obtain 1 +8 enchanted Angel's Earring. -->
+		<operateType>A1</operateType>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>48942</itemConsumeId>
+		<magicLvl>1</magicLvl>
+		<mpConsume>398</mpConsume>
+		<reuseDelay>500</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>20</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="Restoration">
+				<items>
+					<itemId>48841</itemId>
+					<itemCount>1</itemCount>
+					<itemEnchantmentLevel>8</itemEnchantmentLevel>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="39392" toLevel="1" name="Stage 5 Soul Crystal Box">
+		<operateType>A1</operateType>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>500</reuseDelay>
+	</skill>
+	<skill id="39393" toLevel="1" name="Artifact Book Lv. 1">
+		<!-- Activates slots for 1 set of artifacts. -->
+		<icon>icon.artifact_book_00</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="ArtifactSlot">
+				<amount>1</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="39394" toLevel="1" name="Artifact Book Lv. 2">
+		<!-- Activates slots for 2 sets of artifacts. -->
+		<icon>icon.artifact_book_00</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>80</magicLvl>
+		<effects>
+			<effect name="ArtifactSlot">
+				<amount>2</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="39395" toLevel="1" name="Artifact Book Lv. 3">
+		<!-- Activates slots for 3 sets of artifacts. -->
+		<icon>icon.artifact_book_00</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>100</magicLvl>
+		<effects>
+			<effect name="ArtifactSlot">
+				<amount>3</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="39396" toLevel="1" name="Scroll of Escape - Atelia Refinery">
+		<operateType>A1</operateType>
+		<hitTime>1000</hitTime>
+	</skill>
+	<skill id="39397" toLevel="6" name="+5 Radiant Warrior's Circlet Box">
+		<operateType>A1</operateType>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>
+			<value level="1">0</value>
+			<value level="2">0</value>
+			<value level="3">0</value>
+			<value level="4">0</value>
+			<value level="5">48996</value>
+			<value level="6">48997</value>
+		</itemConsumeId>
+		<coolTime>500</coolTime>
+		<reuseDelay>500</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<hitTime>500</hitTime>
+		<hitCancelTime>0</hitCancelTime>
+		<effects>
+			<effect name="RestorationRandom" level="1">
+				<items>
+					<item chance="100">
+						<item id="48204" count="1" minEnchant="5" maxEnchant="5"/>
+					</item>
+				</items>
+			</effect>
+			<effect name="RestorationRandom" level="2">
+				<items>
+					<item chance="100">
+						<item id="48207" count="1" minEnchant="5" maxEnchant="5"/>
+					</item>
+				</items>
+			</effect>
+			<effect name="RestorationRandom" level="3">
+				<items>
+					<item chance="100">
+						<item id="48210" count="1" minEnchant="5" maxEnchant="5"/>
+					</item>
+				</items>
+			</effect>
+			<effect name="RestorationRandom" level="4">
+				<items>
+					<item chance="100">
+						<item id="48493" count="1" minEnchant="5" maxEnchant="5"/>
+					</item>
+				</items>
+			</effect>
+			<effect name="RestorationRandom" level="5">
+				<items>
+					<item chance="16.6">
+						<item id="17709" count="10" />
+					</item>
+					<item chance="17">
+						<item id="17710" count="10" />
+					</item>
+					<item chance="16.6">
+						<item id="17711" count="10" />
+					</item>
+					<item chance="16.6">
+						<item id="17712" count="10" />
+					</item>
+					<item chance="16.6">
+						<item id="17713" count="10" />
+					</item>
+					<item chance="16.6">
+						<item id="17714" count="10" />
+					</item>
+				</items>
+			</effect>
+			<effect name="RestorationRandom" level="6">
+				<items>
+					<item chance="16.6">
+						<item id="17691" count="10" />
+					</item> 
+					<item chance="17">
+						<item id="17692" count="10" />
+					</item> 
+					<item chance="16.6">
+						<item id="17693" count="10" />
+					</item> 
+					<item chance="16.6">
+						<item id="17694" count="10" />
+					</item> 
+					<item chance="16.6">
+						<item id="17695" count="10" />
+					</item> 
+					<item chance="16.6">
+						<item id="17696" count="10" />
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="39398" toLevel="1" name="Gold Trophy">
+		<operateType>A1</operateType>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>500</reuseDelay>
+	</skill>
+	<skill id="39399" toLevel="1" name="Soccer Ball Herb">
+		<!-- Contains the passion of the Soccer Ball Fairy who loves soccer. For 30 sec., P. Atk./ M. Atk./ P. Def/ M. Def/ Atk. Spd./ Casting Spd. +50% and transforms the appearance to Soccer Ball Afro Hair - White. -->
+		<icon>icon.ev_soccer_herb</icon>
+		<operateType>A1</operateType>
+	</skill>
+</list>

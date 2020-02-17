@@ -1,0 +1,1898 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="10300" toLevel="8" name="Last Attack">
+		<!-- Attacks target with $s1 Power added to P. Atk. Cuts regular monsters' HP down to $s2. Usable when target's HP is $s3 or below. Requires a sword, blunt, spear, fist, dual blunt, or dual sword. -->
+		<icon>icon.skill10300</icon>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>
+			<value level="1">90</value>
+			<value level="2">95</value>
+			<value level="3">99</value>
+			<value level="4">101</value>
+			<value level="5">103</value>
+			<value level="6">105</value>
+			<value level="7">107</value>
+			<value level="8">109</value>
+		</magicLvl>
+		<operateType>A1</operateType>
+		<mpConsume>
+			<value level="1">276</value>
+			<value level="2">297</value>
+			<value level="3">315</value>
+			<value level="4">333</value>
+			<value level="5">351</value>
+			<value level="6">369</value>
+			<value level="7">387</value>
+			<value level="8">405</value>
+		</mpConsume>
+		<nextAction>ATTACK</nextAction>
+		<castRange>40</castRange>
+		<effectRange>400</effectRange>
+		<hitTime>1690</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-700</effectPoint>
+		<reuseDelay>30000</reuseDelay>
+		<staticReuse>true</staticReuse>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="EquipWeapon">
+				<weaponType>
+					<item>DUAL</item>
+					<item>POLE</item>
+					<item>SWORD</item>
+					<item>BLUNT</item>
+					<item>DUALFIST</item>
+					<item>DUALBLUNT</item>
+				</weaponType>
+			</condition>
+		</conditions>
+		<targetConditions>
+			<condition name="RemainHpPer">
+				<amount>
+					<value fromLevel="1" toLevel="8">10</value>
+					<value fromLevel="2" toLevel="8" fromSubLevel="1001" toSubLevel="1009">{base + (subIndex -1)}</value>
+					<value fromLevel="2" toLevel="8" fromSubLevel="1010" toSubLevel="1012">19</value>
+					<value fromLevel="2" toLevel="8" fromSubLevel="1013" toSubLevel="1014">20</value>
+					<value fromLevel="2" toLevel="8" fromSubLevel="1015" toSubLevel="1016">21</value>
+					<value fromLevel="2" toLevel="8" fromSubLevel="1017" toSubLevel="1018">22</value>
+					<value fromLevel="2" toLevel="8" fromSubLevel="1019" toSubLevel="1020">23</value>
+				</amount>
+				<percentType>LESS</percentType>
+				<affectType>TARGET</affectType>
+			</condition>
+		</targetConditions>
+		<pveEffects>
+			<effect name="PhysicalAttack">
+				<power>
+					<value level="1">52746</value>
+					<value level="2">59601</value>
+					<value level="3">65085</value>
+					<value level="4">69414</value>
+					<value level="5">73352</value>
+					<value level="6">77290</value>
+					<value level="7">83198</value>
+					<value level="8">89106</value>
+				</power>
+			</effect>
+			<effect name="Lethal">
+				<fullLethal>100</fullLethal>
+			</effect>
+		</pveEffects>
+		<pvpEffects>
+			<effect name="PhysicalAttack">
+				<power>
+					<value level="1">52746</value>
+					<value level="2">59601</value>
+					<value level="3">65085</value>
+					<value level="4">69414</value>
+					<value level="5">73352</value>
+					<value level="6">77290</value>
+					<value level="7">83198</value>
+					<value level="8">89106</value>
+				</power>
+			</effect>
+		</pvpEffects>
+	</skill>
+	<skill id="10301" toLevel="2" name="Maximum Force Mastery">
+		<!-- Max Momentum increases up to $s1. -->
+		<icon>icon.skill11842</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="FocusEnergy">
+					<amount level="1">5</amount>
+					<amount level="2">10</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="10302" toLevel="4" name="Triple Sonic Slash">
+		<!-- Gathers Momentum to inflict $s1 damage onto the enemy, increasing the damage as Momentum is consumed. Damage +$s3 at max Momentum consumption of $s2. Requires a sword, blunt, spear, fist, dual blunt, or dual sword. -->
+		<icon>icon.skill10302</icon>
+		<operateType>A1</operateType>
+		<mpConsume>
+			<value level="1">98</value>
+			<value level="2">105</value>
+			<value level="3">112</value>
+			<value level="4">119</value>
+		</mpConsume>
+		<castRange>40</castRange>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-213</effectPoint>
+		<reuseDelay>10000</reuseDelay>
+	</skill>
+	<skill id="10303" toLevel="4" name="Superior Combat Master">
+		<!-- Max CP/ HP +$s1. -->
+		<icon>icon.skill0430</icon>
+		<magicLvl>
+			<value level="1">85</value>
+			<value level="2">90</value>
+			<value level="3">95</value>
+			<value level="4">99</value>
+		</magicLvl>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="MaxCp">
+				<amount>
+					<value level="1">2</value>
+					<value level="2">3</value>
+					<value level="3">4</value>
+					<value level="4">5</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>
+					<value level="1">2</value>
+					<value level="2">3</value>
+					<value level="3">4</value>
+					<value level="4">5</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="10304" toLevel="4" name="Superior Dual Sword Mastery">
+		<!-- When a dual sword or dual blunt is equipped, P. Atk. +$s1 and additional +$s2. -->
+		<icon>icon.skill11835</icon>
+		<magicLvl>
+			<value level="1">85</value>
+			<value level="2">90</value>
+			<value level="3">95</value>
+			<value level="4">99</value>
+		</magicLvl>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="PAtk">
+				<amount>
+					<value level="1">2</value>
+					<value level="2">3</value>
+					<value level="3">4</value>
+					<value level="4">5</value>
+				</amount>
+				<mode>PER</mode>
+				<weaponType>
+					<item>DUAL</item>
+					<item>DUALBLUNT</item>
+				</weaponType>
+			</effect>
+			<effect name="PAtk">
+				<amount>
+					<value level="1">709</value>
+					<value level="2">825</value>
+					<value level="3">982</value>
+					<value level="4">1190</value>
+				</amount>
+				<mode>DIFF</mode>
+				<weaponType>
+					<item>DUAL</item>
+					<item>DUALBLUNT</item>
+				</weaponType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="10305" toLevel="4" name="Broad Pull">
+		<!-- Spear Resistance -$s1. Pulls enemies from a large radius nearby. Requires a sword, blunt, spear, fist weapon, dual blunt, or dual sword. -->
+		<icon>icon.skill11833</icon>
+		<affectLimit>9-10</affectLimit>
+		<affectRange>900</affectRange>
+		<abnormalLvl>
+			<value level="1">1</value>
+			<value level="2">2</value>
+			<value level="3">3</value>
+			<value level="4">4</value>
+		</abnormalLvl>
+		<abnormalTime>10</abnormalTime>
+		<abnormalType>REAL_TARGET</abnormalType>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>POINT_BLANK</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<magicLvl>
+			<value level="1">85</value>
+			<value level="2">90</value>
+			<value level="3">95</value>
+			<value level="4">99</value>
+		</magicLvl>
+		<mpConsume>
+			<value level="1">62</value>
+			<value level="2">69</value>
+			<value level="3">76</value>
+			<value level="4">83</value>
+		</mpConsume>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>4000</reuseDelay>
+		<effectPoint>-436</effectPoint>
+		<isDebuff>true</isDebuff>
+		<conditions>
+			<condition name="EquipWeapon">
+				<weaponType>
+					<item>DUAL</item>
+					<item>POLE</item>
+					<item>SWORD</item>
+					<item>BLUNT</item>
+					<item>DUALFIST</item>
+					<item>DUALBLUNT</item>
+				</weaponType>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="DefenceTrait">
+				<POLE>
+					<value level="1">-10</value>
+					<value level="2">-12</value>
+					<value level="3">-15</value>
+					<value level="4">-20</value>
+				</POLE>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="10306" toLevel="4" name="Superior Polearm Mastery">
+		<!-- When a spear is equipped, P. Atk. +$s1 and additional P. Atk. $s2. Increases the number of possible targets by $s3. -->
+		<icon>icon.skill11836</icon>
+		<operateType>P</operateType>
+		<magicLvl>
+			<value level="1">85</value>
+			<value level="2">90</value>
+			<value level="3">95</value>
+			<value level="4">99</value>
+		</magicLvl>
+		<effects>
+			<effect name="PAtk">
+				<amount>
+					<value level="1">2</value>
+					<value level="2">3</value>
+					<value level="3">4</value>
+					<value level="4">5</value>
+				</amount>
+				<mode>PER</mode>
+				<weaponType>
+					<item>POLE</item>
+				</weaponType>
+			</effect>
+			<effect name="PAtk">
+				<amount>
+					<value level="1">583</value>
+					<value level="2">678</value>
+					<value level="3">807</value>
+					<value level="4">978</value>
+				</amount>
+				<mode>DIFF</mode>
+				<weaponType>
+					<item>POLE</item>
+				</weaponType>
+			</effect>
+			<effect name="HitNumber">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">1</value>
+					<value level="3">2</value>
+					<value level="4">2</value>
+				</amount>
+				<mode>DIFF</mode>
+				<weaponType>
+					<item>POLE</item>
+				</weaponType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="10307" toLevel="1" name="Fist of Fury">
+		<!-- Greatly increases Atk. Spd. Continuously consumes HP. Requires a sword, blunt, spear, fist weapon, dual blunt, or dual sword. -->
+		<icon>icon.skill10307new</icon>
+		<operateType>T</operateType>
+	</skill>
+	<skill id="10308" toLevel="2" name="Wild Roar">
+		<!-- Shouts loudly to invoke the power of the Bison. For $s1, increases P. Atk. and Critical Damage by $s2, Critical Rate by $s3, and decreases Atk. Spd. by $s4. Requires a sword, blunt weapon, spear, fist weapon, dual blunt weapon, or dual sword. -->
+		<icon>icon.skill11834</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>
+			<value fromLevel="1" toLevel="2">300</value>
+			<value fromLevel="1" toLevel="2" fromSubLevel="1001" toSubLevel="1020">{base + (subIndex * 15)}</value>
+		</abnormalTime>
+		<abnormalType>POSSESSION</abnormalType>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<magicLvl>85</magicLvl>
+		<mpConsume>40</mpConsume>
+		<hitTime>2000</hitTime>
+		<effectPoint>707</effectPoint>
+		<reuseDelay>30000</reuseDelay>
+		<conditions>
+			<condition name="EquipWeapon">
+				<weaponType>
+					<item>SWORD</item>
+					<item>BLUNT</item>
+					<item>DUAL</item>
+					<item>DUALFIST</item>
+					<item>POLE</item>
+					<item>DUALBLUNT</item>
+				</weaponType>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="PAtk">
+				<amount>45</amount>
+				<mode>PER</mode>
+				<weaponType>
+					<item>SWORD</item>
+					<item>BLUNT</item>
+					<item>DUAL</item>
+					<item>DUALFIST</item>
+					<item>POLE</item>
+					<item>DUALBLUNT</item>
+				</weaponType>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+				<weaponType>
+					<item>SWORD</item>
+					<item>BLUNT</item>
+					<item>DUAL</item>
+					<item>DUALFIST</item>
+					<item>POLE</item>
+					<item>DUALBLUNT</item>
+				</weaponType>
+			</effect>
+			<effect name="CriticalDamage">
+				<amount>45</amount>
+				<mode>PER</mode>
+				<weaponType>
+					<item>SWORD</item>
+					<item>BLUNT</item>
+					<item>DUAL</item>
+					<item>DUALFIST</item>
+					<item>POLE</item>
+					<item>DUALBLUNT</item>
+				</weaponType>
+			</effect>
+			<effect name="CriticalRate">
+				<amount>45</amount>
+				<mode>DIFF</mode>
+				<weaponType>
+					<item>SWORD</item>
+					<item>BLUNT</item>
+					<item>DUAL</item>
+					<item>DUALFIST</item>
+					<item>POLE</item>
+					<item>DUALBLUNT</item>
+				</weaponType>
+			</effect>
+			<effect name="DefenceCriticalDamage" fromLevel="1" toLevel="2" fromSubLevel="2001" toSubLevel="2020">
+				<amount>
+					<value fromLevel="1" toLevel="2" fromSubLevel="2001" toSubLevel="2020">{-1 - (subIndex - 1 * 0.5)}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="10309" toLevel="4" name="Superior Fist Weapon Mastery">
+		<!-- When a fist weapon is equipped, P. Atk. +$s1 and additional +$s2. -->
+		<icon>icon.skill11837</icon>
+		<magicLvl>
+			<value level="1">85</value>
+			<value level="2">90</value>
+			<value level="3">95</value>
+			<value level="4">99</value>
+		</magicLvl>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="PAtk">
+				<amount>
+					<value level="1">2</value>
+					<value level="2">3</value>
+					<value level="3">4</value>
+					<value level="4">5</value>
+				</amount>
+				<mode>PER</mode>
+				<weaponType>
+					<item>DUALFIST</item>
+				</weaponType>
+			</effect>
+			<effect name="PAtk">
+				<amount>
+					<value level="1">709</value>
+					<value level="2">825</value>
+					<value level="3">982</value>
+					<value level="4">1190</value>
+				</amount>
+				<mode>DIFF</mode>
+				<weaponType>
+					<item>DUALFIST</item>
+				</weaponType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="10310" toLevel="1" name="Primal Rage">
+		<!-- For 10 min., P. Atk. +15%. Requires a sword, blunt, spear, fist weapon, dual blunt, or dual sword. -->
+		<icon>icon.skill10310</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>600</abnormalTime>
+		<abnormalType>PA_UP</abnormalType>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<magicLvl>85</magicLvl>
+		<mpConsume>38</mpConsume>
+		<hitTime>1500</hitTime>
+		<effectPoint>235</effectPoint>
+		<reuseDelay>30000</reuseDelay>
+		<conditions>
+			<condition name="EquipWeapon">
+				<weaponType>
+					<item>SWORD</item>
+					<item>BLUNT</item>
+					<item>DUAL</item>
+					<item>DUALFIST</item>
+					<item>POLE</item>
+					<item>DUALBLUNT</item>
+				</weaponType>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="PAtk">
+				<amount>15</amount>
+				<mode>PER</mode>
+				<weaponType>
+					<item>SWORD</item>
+					<item> BLUNT</item>
+					<item> DUAL</item>
+					<item> DUALFIST</item>
+					<item> POLE</item>
+					<item> DUALBLUNT</item>
+				</weaponType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="10311" toLevel="4" name="Superior Two-handed Weapon Mastery">
+		<!-- When a two-handed sword or two-handed blunt is equipped, increases P. Atk. by $s1 and additionally by $s2. -->
+		<icon>icon.skill11838</icon>
+		<magicLvl>
+			<value level="1">85</value>
+			<value level="2">90</value>
+			<value level="3">95</value>
+			<value level="4">99</value>
+		</magicLvl>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="TwoHandedSwordBonus">
+				<pAtkAmount>
+					<value level="1">2</value>
+					<value level="2">3</value>
+					<value level="3">4</value>
+					<value level="4">5</value>
+				</pAtkAmount>
+				<pAtkmode>PER</pAtkmode>
+			</effect>
+			<effect name="TwoHandedBluntBonus">
+				<pAtkAmount>
+					<value level="1">2</value>
+					<value level="2">3</value>
+					<value level="3">4</value>
+					<value level="4">5</value>
+				</pAtkAmount>
+				<pAtkmode>PER</pAtkmode>
+			</effect>
+			<effect name="TwoHandedSwordBonus">
+				<pAtkAmount>
+					<value level="1">709</value>
+					<value level="2">825</value>
+					<value level="3">982</value>
+					<value level="4">1190</value>
+				</pAtkAmount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="TwoHandedBluntBonus">
+				<pAtkAmount>
+					<value level="1">709</value>
+					<value level="2">825</value>
+					<value level="3">982</value>
+					<value level="4">1190</value>
+				</pAtkAmount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="10312" toLevel="4" name="Crafting Mastery">
+		<!-- There is a small chance that the item quantity will double upon crafting. Critical level $s2. -->
+		<icon>icon.skill10312</icon>
+		<magicLvl>
+			<value level="1">85</value>
+			<value level="2">90</value>
+			<value level="3">95</value>
+			<value level="4">99</value>
+		</magicLvl>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="CraftingCritical">
+				<amount>
+					<value level="1">2.4</value>
+					<value level="2">3.8</value>
+					<value level="3">4.2</value>
+					<value level="4">5.4</value>
+				</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="10313" toLevel="4" name="Infinite Rush">
+		<!-- Charges forward to inflict Stun to the enemies in the front for $s1. Requires sword/ blunt/ spear/ fist weapon/ dual blunt/ dual sword weapon. -->
+		<icon>icon.skill10313</icon>
+		<abnormalLvl>8</abnormalLvl>
+		<abnormalTime>9</abnormalTime>
+		<abnormalType>STUN</abnormalType>
+		<abnormalVisualEffect>STUN</abnormalVisualEffect>
+		<activateRate>60</activateRate>
+		<affectLimit>5-12</affectLimit>
+		<basicProperty>PHYSICAL</basicProperty> <!-- Guessed -->
+		<effectRange>800</effectRange>
+		<fanRange>0;0;600;60</fanRange>
+		<lvlBonusRate>1</lvlBonusRate>
+		<magicLvl>
+			<value level="1">85</value>
+			<value level="2">90</value>
+			<value level="3">95</value>
+			<value level="4">99</value>
+		</magicLvl>
+		<nextAction>ATTACK</nextAction>
+		<operateType>A1</operateType>
+		<targetType>ENEMY</targetType>
+		<affectScope>FAN</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<trait>SHOCK</trait>
+		<mpConsume>
+			<value level="1">92</value>
+			<value level="2">98</value>
+			<value level="3">104</value>
+			<value level="4">110</value>
+		</mpConsume>
+		<castRange>600</castRange>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-669</effectPoint>
+		<isDebuff>true</isDebuff>
+		<conditions>
+			<condition name="EquipWeapon">
+				<weaponType>
+					<item>DUAL</item>
+					<item>SWORD</item>
+					<item>BLUNT</item>
+					<item>DUALFIST</item>
+					<item>POLE</item>
+					<item>DUALBLUNT</item>
+				</weaponType>
+			</condition>
+			<condition name="OpCheckCastRange">
+				<distance>200</distance>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="BlockActions">
+				<allowedSkills>10279;10517;10025;10776;11770;1904;11264;11093;13314;1912</allowedSkills>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="10314" toLevel="4" name="Disarmament">
+		<!-- Disarms enemies for $s1. and decreases their P. Atk./ M. Atk. by $s2. Requires a sword, blunt, spear, fist weapon, dual blunt, or dual sword. -->
+		<icon>icon.skill0485</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>5</abnormalTime>
+		<abnormalType>DISARM</abnormalType> <!-- Guessed -->
+		<abnormalVisualEffect>DOT_BLEEDING</abnormalVisualEffect> <!-- Guessed -->
+		<operateType>A2</operateType>
+		<trait>DISARM</trait>
+		<mpConsume>38</mpConsume>
+		<castRange>40</castRange>
+		<hitTime>1000</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>60000</reuseDelay>
+		<effectPoint>-341</effectPoint>
+		<abnormalTime>5</abnormalTime>
+		<isDebuff>true</isDebuff>
+		<activateRate>70</activateRate> <!-- Guessed -->
+		<basicProperty>PHYSICAL</basicProperty> <!-- Guessed -->
+		<lvlBonusRate>20</lvlBonusRate> <!-- Guessed -->
+		<magicCriticalRate>5</magicCriticalRate>
+		<conditions>
+			<condition name="EquipWeapon">
+				<weaponType>
+					<item>SWORD</item>
+					<item>BLUNT</item>
+					<item>POLE</item>
+					<item>DUALFIST</item>
+					<item>DUAL</item>
+					<item>DUALBLUNT</item>
+				</weaponType>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="Disarm">
+			</effect>
+			<effect name="PAtk">
+				<amount>-40</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>-40</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="10315" toLevel="2" name="Superior Polearm Mastery">
+		<!-- When a spear is equipped, P. Atk. +$s1 and additional P. Atk. +$s2. -->
+		<icon>icon.skill11836</icon>
+		<operateType>P</operateType>
+		<magicLvl>
+			<value level="1">85</value>
+			<value level="2">90</value>
+		</magicLvl>
+		<effects>
+			<effect name="PAtk">
+				<amount>
+					<value level="1">2</value>
+					<value level="2">3</value>
+				</amount>
+				<mode>PER</mode>
+				<weaponType>
+					<item>POLE</item>
+				</weaponType>
+			</effect>
+			<effect name="PAtk">
+				<amount>
+					<value level="1">583</value>
+					<value level="2">678</value>
+				</amount>
+				<mode>DIFF</mode>
+				<weaponType>
+					<item>POLE</item>
+				</weaponType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="10316" toLevel="4" name="Bloodthirst">
+		<!-- PvP P. Atk. +$s1. -->
+		<icon>icon.skill0193</icon>
+		<operateType>P</operateType>
+		<magicLvl>
+			<value level="1">85</value>
+			<value level="2">90</value>
+			<value level="3">95</value>
+			<value level="4">99</value>
+		</magicLvl>
+		<effects>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>
+					<value level="1">5</value>
+					<value level="2">6</value>
+					<value level="3">7</value>
+					<value level="4">8</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="10317" toLevel="4" name="Thunder Slasher">
+		<!-- Swings a spear to attack nearby enemies with $s1 Power added to P. Atk. and causes Stun for $s2. Requires a polearm to be equipped. Ignores Shield Defense. Over-hit and Critical are possible. -->
+		<icon>icon.skill10317new</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>5</abnormalTime>
+		<abnormalType>STUN</abnormalType>
+		<abnormalVisualEffect>STUN</abnormalVisualEffect>
+		<activateRate>50</activateRate>
+		<affectLimit>6-12</affectLimit>
+		<affectRange>150</affectRange>
+		<basicProperty>PHYSICAL</basicProperty> <!-- Guessed -->
+		<lvlBonusRate>1</lvlBonusRate>
+		<magicLvl>
+			<value level="1">85</value>
+			<value level="2">90</value>
+			<value level="3">95</value>
+			<value level="4">99</value>
+		</magicLvl>
+		<trait>SHOCK</trait>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>POINT_BLANK</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<mpConsume>
+			<value level="1">122</value>
+			<value level="2">124</value>
+			<value level="3">129</value>
+			<value level="4">133</value>
+		</mpConsume>
+		<hitTime>1390</hitTime>
+		<coolTime>200</coolTime>
+		<reuseDelay>15000</reuseDelay>
+		<effectPoint>
+			<value level="1">-92</value>
+			<value level="2">-94</value>
+			<value level="3">-97</value>
+			<value level="4">-99</value>
+		</effectPoint>
+		<isDebuff>true</isDebuff>
+		<conditions>
+			<condition name="EquipWeapon">
+				<weaponType>
+					<item>POLE</item>
+				</weaponType>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>
+					<value level="1">26003</value>
+					<value level="2">30494</value>
+					<value level="3">35883</value>
+					<value level="4">37680</value>
+				</power>
+				<ignoreShieldDefence>true</ignoreShieldDefence>
+				<criticalChance>15</criticalChance>
+			</effect>
+			<effect name="BlockActions">
+				<allowedSkills>10279;10517;10025;10776;11770;1904;11264;11093;13314;1912</allowedSkills>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="10318" toLevel="9" name="Sonic Flash">
+		<!-- Launches a wave of sword energy to inflict $s1 damage added to P. Atk., increasing the damage as Momentum is consumed. Can consume up to $s2. Requires a dual sword, sword, or blunt. Over-hit. Critical. -->
+		<icon>icon.skill10318new</icon>
+		<operateType>A1</operateType>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<magicLvl>
+			<value level="1">85</value>
+			<value level="2">90</value>
+			<value level="3">95</value>
+			<value level="4">99</value>
+			<value level="5">101</value>
+			<value level="6">103</value>
+			<value level="7">105</value>
+			<value level="8">107</value>
+			<value level="9">109</value>
+		</magicLvl>
+		<mpConsume>
+			<value level="1">98</value>
+			<value level="2">105</value>
+			<value level="3">112</value>
+			<value level="4">119</value>
+			<value level="5">126</value>
+			<value level="6">133</value>
+			<value level="7">140</value>
+			<value level="8">147</value>
+			<value level="9">154</value>
+		</mpConsume>
+		<nextAction>ATTACK</nextAction>
+		<castRange>600</castRange>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>
+			<value level="1">-183</value>
+			<value level="2">-188</value>
+			<value level="3">-193</value>
+			<value level="4">-198</value>
+			<value level="5">-203</value>
+			<value level="6">-208</value>
+			<value level="7">-213</value>
+			<value level="8">-218</value>
+			<value level="9">-223</value>
+		</effectPoint>
+		<reuseDelay>10000</reuseDelay>
+		<conditions>
+			<condition name="EquipWeapon">
+				<weaponType>
+					<item>SWORD</item>
+					<item>BLUNT</item>
+					<item>DUAL</item>
+				</weaponType>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="EnergyAttack">
+				<power>
+					<value level="1">17438</value>
+					<value level="2">20033</value>
+					<value level="3">22717</value>
+					<value level="4">25700</value>
+					<value level="5">27419</value>
+					<value level="6">28665</value>
+					<value level="7">29911</value>
+					<value level="8">31779</value>
+					<value level="9">33647</value>
+					<value fromLevel="3" toLevel="9" fromSubLevel="1001" toSubLevel="1020">{base + (base / 100 * subIndex)}</value>
+				</power>
+				<overHit>true</overHit>
+				<criticalChance>
+					<value fromLevel="1" toLevel="9">15</value>
+					<value fromLevel="3" toLevel="9" fromSubLevel="2001" toSubLevel="2020">{base + (base / 100 * subIndex)}</value>
+				</criticalChance>
+				<pDefMod>
+					<value fromLevel="1" toLevel="9">1</value>
+					<value fromLevel="3" toLevel="9" fromSubLevel="3001" toSubLevel="3020">{0.99 - 0.006 * (subIndex - 1)}</value>
+				</pDefMod>
+				<chargeConsume>3</chargeConsume>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="10319" toLevel="3" name="Duelist's Fury">
+		<!-- PvP Damage +$s1, Speed +$s2, Debuff Resistance +$s3. -->
+		<icon>icon.skll10319</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>30</abnormalTime>
+		<abnormalVisualEffect>DUELING</abnormalVisualEffect>
+		<abnormalType>DUELIST_SPIRIT</abnormalType>
+		<magicLvl>
+			<value level="1">90</value>
+			<value level="2">95</value>
+			<value level="3">99</value>
+		</magicLvl>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<hitTime>300</hitTime>
+		<reuseDelay>300000</reuseDelay>
+		<effectPoint>500</effectPoint>
+		<isTriggeredSkill>true</isTriggeredSkill>
+		<isMagic>4</isMagic>
+		<effects>
+			<effect name="Speed">
+				<amount>66</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>
+					<value level="1">20</value>
+					<value level="2">25</value>
+					<value level="3">30</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>
+					<value level="1">20</value>
+					<value level="2">25</value>
+					<value level="3">30</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="ResistAbnormalByCategory">
+				<amount>-90</amount>
+				<slot>DEBUFF</slot>
+			</effect>
+			<effect name="DuelistFury" />
+		</effects>
+	</skill>
+	<skill id="10320" toLevel="3" name="Faceoff">
+		<!-- Engages target in $s1:$s2 combat. Invulnerable to damage from other targets for $s3, and Duelist's Fury is applied, increasing PvP Damage by $s4, Speed by $s5, and Debuff Resistance by $s6. -->
+		<icon>icon.skll10319</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>30</abnormalTime>
+		<abnormalVisualEffect>DUELING</abnormalVisualEffect>
+		<operateType>A4</operateType>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<mpConsume>43</mpConsume>
+		<castRange>600</castRange>
+		<hitTime>300</hitTime>
+		<reuseDelay>600000</reuseDelay>
+		<effectPoint>-500</effectPoint>
+		<isDebuff>true</isDebuff>
+		<magicLvl>
+			<value level="1">90</value>
+			<value level="2">95</value>
+			<value level="3">99</value>
+		</magicLvl>
+		<conditions>
+			<condition name="OpTargetPc" />
+		</conditions>
+		<selfEffects>
+			<effect name="CallSkill">
+				<!-- Duelist's Fury -->
+				<skillId>10319</skillId> <!-- Duelist's Fury -->
+				<skillLevel>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+				</skillLevel>
+			</effect>
+		</selfEffects>
+		<effects>
+			<effect name="Faceoff" />
+		</effects>
+	</skill>
+	<skill id="10321" toLevel="9" name="Thunder Spear">
+		<!-- Throws a spear to inflict damage on the target and nearby enemies with $s1 Power added to P. Atk. Stun is inflicted for $s2. Requires a spear weapon. Over-hit. Critical. Ignores Shield Defense. Cancels target. -->
+		<icon>icon.skll10321</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>9</abnormalTime>
+		<abnormalType>STUN</abnormalType>
+		<abnormalVisualEffect>STUN</abnormalVisualEffect>
+		<activateRate>
+			<value fromLevel="1" toLevel="9">50</value>
+			<value fromLevel="3" toLevel="9" fromSubLevel="2001" toSubLevel="2020">{base + (base / 100 * subIndex)}</value>
+		</activateRate>
+		<affectLimit>6-12</affectLimit>
+		<affectRange>150</affectRange>
+		<basicProperty>PHYSICAL</basicProperty> <!-- Guessed -->
+		<lvlBonusRate>1</lvlBonusRate>
+		<magicLvl>
+			<value level="1">85</value>
+			<value level="2">90</value>
+			<value level="3">95</value>
+			<value level="4">99</value>
+			<value level="5">101</value>
+			<value level="6">103</value>
+			<value level="7">105</value>
+			<value level="8">107</value>
+			<value level="9">109</value>
+		</magicLvl>
+		<trait>SHOCK</trait>
+		<operateType>A2</operateType>
+		<targetType>TARGET</targetType>
+		<affectScope>RANGE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<mpConsume>
+			<value level="1">122</value>
+			<value level="2">124</value>
+			<value level="3">129</value>
+			<value level="4">133</value>
+			<value level="5">137</value>
+			<value level="6">141</value>
+			<value level="7">145</value>
+			<value level="8">149</value>
+			<value level="9">153</value>
+		</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>2500</hitTime>
+		<reuseDelay>30000</reuseDelay>
+		<effectPoint>-507</effectPoint>
+		<isDebuff>true</isDebuff>
+		<conditions>
+			<condition name="EquipWeapon">
+				<weaponType>
+					<item>POLE</item>
+				</weaponType>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>
+					<value level="1">22536</value>
+					<value level="2">26428</value>
+					<value level="3">29542</value>
+					<value level="4">32656</value>
+					<value level="5">35788</value>
+					<value level="6">37424</value>
+					<value level="7">39060</value>
+					<value level="8">41514</value>
+					<value level="9">43968</value>
+					<value fromLevel="3" toLevel="9" fromSubLevel="1001" toSubLevel="1020">{base + (base / 100 * subIndex)}</value>
+				</power>
+				<ignoreShieldDefence>true</ignoreShieldDefence>
+				<criticalChance>15</criticalChance>
+				<overHit>true</overHit>
+			</effect>
+			<effect name="BlockActions">
+				<allowedSkills>10279;10517;10025;10776;11770;1904;11264;11093;13314;1912</allowedSkills>
+			</effect>
+			<effect name="TargetCancel" />
+			<effect name="PhysicalDefence" fromLevel="3" toLevel="9" fromSubLevel="3001" toSubLevel="3020">
+				<amount>
+					<value fromLevel="3" toLevel="9" fromSubLevel="3001" toSubLevel="3020">{-0.6 - (0.4 * subIndex)}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="10322" toLevel="2" name="Wolf's Cry">
+		<!-- Shouts loudly to invoke the power of the Wolf. For $s1, P. Def. and M. Def. +$s2, Max HP +$s3, and Spd. +$s4. Requires a sword, blunt, spear, fist weapon, dual blunt, or dual sword. -->
+		<icon>icon.skll10320</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>
+			<value fromLevel="1" toLevel="2">300</value>
+			<value fromLevel="1" toLevel="2" fromSubLevel="1001" toSubLevel="1020">{base + (subIndex * 15)}</value>
+		</abnormalTime>
+		<abnormalType>POSSESSION</abnormalType>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<mpConsume>38</mpConsume>
+		<hitTime>2000</hitTime>
+		<effectPoint>707</effectPoint>
+		<reuseDelay>30000</reuseDelay>
+		<conditions>
+			<condition name="EquipWeapon">
+				<weaponType>
+					<item>SWORD</item>
+					<item>BLUNT</item>
+					<item>DUAL</item>
+					<item>DUALFIST</item>
+					<item>POLE</item>
+					<item>DUALBLUNT</item>
+				</weaponType>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="Speed">
+				<amount>20</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>50</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>50</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>25</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DefenceCriticalDamage" fromLevel="1" toLevel="2" fromSubLevel="2001" toSubLevel="2020">
+				<amount>
+					<value fromLevel="1" toLevel="2" fromSubLevel="2001" toSubLevel="2020">{-1 - (subIndex - 1 * 0.5)}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="10323" toLevel="1" name="Self Heal (Warrior)">
+		<!-- Recovers 10% of Max HP. -->
+		<operateType>A1</operateType>
+		<mpConsume>1</mpConsume>
+		<effectPoint>100</effectPoint>
+		<reuseDelay>5000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="HealPercent">
+				<power>10</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="10324" toLevel="3" name="Momentum Master">
+		<!-- Power of skills that consume Momentum +$s1. -->
+		<icon>icon.skill10324</icon>
+		<operateType>P</operateType>
+		<passiveConditions>
+			<condition name="OpCheckSkillList">
+				<skillIds>
+					<item>261</item> <!-- Triple Sonic Slash -->
+					<item>10258</item> <!-- Armor Destruction -->
+					<item>10260</item> <!-- Mega Strike -->
+					<item>10262</item> <!-- Power Bomber -->
+					<item>10265</item> <!-- Eruption -->
+					<item>10269</item> <!-- Jump Attack -->
+					<item>10318</item> <!-- Sonic Flash -->
+				</skillIds>
+				<affectType>CASTER</affectType>
+			</condition>
+		</passiveConditions>
+		<effects>
+			<effect name="PhysicalSkillPower">
+				<amount>
+					<value level="1">10</value>
+					<value level="2">15</value>
+					<value level="3">20</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="10325" toLevel="8" name="Dreadful Roar">
+		<!-- Cancels at least one buff of nearby enemies. Consumes 10 Soulstones. -->
+		<icon>icon.skill10325</icon>
+		<affectLimit>10-10</affectLimit>
+		<affectRange>180</affectRange>
+		<magicLvl>
+			<value level="1">97</value>
+			<value level="2">98</value>
+			<value level="3">99</value>
+			<value level="4">101</value>
+			<value level="5">103</value>
+			<value level="6">105</value>
+			<value level="7">107</value>
+			<value level="8">109</value>
+		</magicLvl>
+		<itemConsumeCount>10</itemConsumeCount>
+		<itemConsumeId>1785</itemConsumeId> <!-- Soulstones -->
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>POINT_BLANK</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<mpConsume>
+			<value level="1">149</value>
+			<value level="2">151</value>
+			<value level="3">154</value>
+			<value level="4">157</value>
+			<value level="5">160</value>
+			<value level="6">163</value>
+			<value level="7">166</value>
+			<value level="8">169</value>
+		</mpConsume>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-828</effectPoint>
+		<reuseDelay>120000</reuseDelay>
+		<effects>
+			<effect name="DispelByCategory">
+				<slot>BUFF</slot>
+				<rate>
+					<value fromLevel="1" toLevel="8">70</value>
+					<value fromLevel="2" toLevel="8" fromSubLevel="1001" toSubLevel="1020">{base + (base / 100 * subIndex)}</value>
+				</rate>
+				<max>2</max>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="10326" toLevel="3" name="Bloody Fury">
+		<!-- For $s1, P. Atk. +$s2, Skill Power +$s3, and HP Recovery is limited to $s4. -->
+		<icon>icon.skill10326</icon>
+		<abnormalLvl>
+			<value level="1">1</value>
+			<value level="2">2</value>
+			<value level="3">3</value>
+		</abnormalLvl>
+		<operateType>A2</operateType>
+		<mpConsume>
+			<value level="1">45</value>
+			<value level="2">50</value>
+			<value level="3">55</value>
+		</mpConsume>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<effectPoint>673</effectPoint>
+		<abnormalTime>30</abnormalTime>
+		<reuseDelay>180000</reuseDelay>
+		<effects>
+			<effect name="PAtk">
+				<amount>450</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="PhysicalSkillPower">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="ManaHealPercent">
+				<power>70</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="10327" toLevel="9" name="Momentum Flash">
+		<!-- Attacks target with $s1 Power added to P. Atk. Requires a dualsword/ sword/ blunt weapon/ fist weapon. Damage increases when using Momentum, which you can use up to $s2. Over-hit. Critical. -->
+		<icon>icon.skill10327</icon>
+		<operateType>A1</operateType>
+		<abnormalLvl>
+			<value level="1">1</value>
+			<value level="2">2</value>
+			<value level="3">3</value>
+			<value level="4">4</value>
+			<value level="5">5</value>
+			<value level="6">6</value>
+			<value level="7">7</value>
+			<value level="8">8</value>
+			<value level="9">9</value>
+		</abnormalLvl>
+		<mpConsume>
+			<value level="1">98</value>
+			<value level="2">105</value>
+			<value level="3">112</value>
+			<value level="4">119</value>
+			<value level="5">126</value>
+			<value level="6">133</value>
+			<value level="7">140</value>
+			<value level="8">147</value>
+			<value level="9">154</value>
+		</mpConsume>
+		<castRange>600</castRange>
+		<effectRange>600</effectRange>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>
+			<value level="1">85</value>
+			<value level="2">90</value>
+			<value level="3">95</value>
+			<value level="4">99</value>
+			<value level="5">101</value>
+			<value level="6">103</value>
+			<value level="7">105</value>
+			<value level="8">107</value>
+			<value level="9">109</value>
+		</magicLvl>
+		<effectPoint>
+			<value level="1">-183</value>
+			<value level="2">-188</value>
+			<value level="3">-193</value>
+			<value level="4">-198</value>
+			<value level="5">-193</value>
+			<value level="6">-193</value>
+			<value level="7">-198</value>
+			<value level="8">-198</value>
+			<value level="9">-198</value>
+		</effectPoint>
+		<reuseDelay>10000</reuseDelay>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="EquipWeapon">
+				<weaponType>
+					<item>SWORD</item>
+					<item>BLUNT</item>
+					<item>DAGGER</item>
+					<item>DUALFIST</item>
+				</weaponType>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>
+					<value level="1">17348</value>
+					<value level="2">20033</value>
+					<value level="3">22717</value>
+					<value level="4">25700</value>
+					<value level="5">27419</value>
+					<value level="6">28665</value>
+					<value level="7">29911</value>
+					<value level="8">31779</value>
+					<value level="9">33647</value>
+				</power>
+				<overHit>true</overHit>
+				<criticalChance>5</criticalChance>
+			</effect>
+			<effect name="EnergyAttack">
+				<chargeConsume>3</chargeConsume>
+				<criticalChance>15</criticalChance>
+				<power>
+					<value level="1">9180</value>
+					<value level="2">9710</value>
+					<value level="3">10250</value>
+					<value level="4">10810</value>
+					<value level="5">11400</value>
+					<value level="6">12000</value>
+					<value level="7">12620</value>
+					<value level="8">13270</value>
+					<value level="9">13930</value>
+				</power>
+				<overHit>true</overHit>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="10328" toLevel="3" name="Soul Berserker">
+		<!-- When equipped with a sword or blunt weapon, P. Atk. +$s1, P. Critical Damage +$s2, and P. Skill MP Consumption +$s3. -->
+		<icon>icon.skill10328</icon>
+		<magicLvl>
+			<value level="1">97</value>
+			<value level="2">98</value>
+			<value level="3">99</value>
+		</magicLvl>
+		<operateType>T</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="EquipWeapon">
+				<weaponType>
+					<item>SWORD</item>
+					<item>BLUNT</item>
+				</weaponType>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="PAtk">
+				<amount>
+					<value level="1">10</value>
+					<value level="2">12</value>
+					<value level="3">50</value>
+				</amount>
+				<mode>PER</mode>
+				<weaponType>
+					<item>SWORD</item>
+					<item> BLUNT</item>
+				</weaponType>
+			</effect>
+			<effect name="CriticalDamage">
+				<amount>
+					<value level="1">10</value>
+					<value level="2">12</value>
+					<value level="3">50</value>
+				</amount>
+				<mode>PER</mode>
+				<weaponType>
+					<item>SWORD</item>
+					<item> BLUNT</item>
+				</weaponType>
+			</effect>
+			<effect name="MagicMpCost">
+				<amount>10</amount>
+				<mode>PER</mode>
+				<magicType>0</magicType>
+				<weaponType>
+					<item>SWORD</item>
+					<item> BLUNT</item>
+				</weaponType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="10329" toLevel="1" name="Superior Blunt Weapon Mastery">
+		<!-- When a Blunt Weapon is equipped, P. Atk. +21%, and P. Critical Rate +60. -->
+		<icon>icon.skill10329</icon>
+		<magicLvl>85</magicLvl>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="PAtk">
+				<amount>21</amount>
+				<mode>PER</mode>
+				<weaponType>
+					<item>BLUNT</item>
+				</weaponType>
+			</effect>
+			<effect name="CriticalRate">
+				<amount>60</amount>
+				<mode>DIFF</mode>
+				<weaponType>
+					<item>BLUNT</item>
+				</weaponType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="10330" toLevel="9" name="Power Hammer Crush">
+		<!-- Attacks target with $s1 Power added to P. Atk. while ignoring $s2 of their P. Def. Stuns for $s3. Requires a blunt weapon. Over-hit. Critical. -->
+		<icon>icon.skill10330</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>5</abnormalTime>
+		<abnormalType>STUN</abnormalType>
+		<abnormalVisualEffect>STUN</abnormalVisualEffect>
+		<activateRate>
+			<value fromLevel="1" toLevel="9">60</value>
+			<value fromLevel="3" toLevel="9" fromSubLevel="2001" toSubLevel="2020">{base + (base / 100 * subIndex)}</value>
+		</activateRate>
+		<basicProperty>PHYSICAL</basicProperty> <!-- Guessed -->
+		<lvlBonusRate>1</lvlBonusRate>
+		<trait>SHOCK</trait>
+		<magicLvl>
+			<value level="1">85</value>
+			<value level="2">90</value>
+			<value level="3">95</value>
+			<value level="4">99</value>
+			<value level="5">101</value>
+			<value level="6">103</value>
+			<value level="7">105</value>
+			<value level="8">107</value>
+			<value level="9">109</value>
+		</magicLvl>
+		<operateType>A2</operateType>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<mpConsume>
+			<value level="1">92</value>
+			<value level="2">96</value>
+			<value level="3">101</value>
+			<value level="4">105</value>
+			<value level="5">109</value>
+			<value level="6">113</value>
+			<value level="7">117</value>
+			<value level="8">121</value>
+			<value level="9">125</value>
+		</mpConsume>
+		<castRange>40</castRange>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>7000</reuseDelay>
+		<effectPoint>-183</effectPoint>
+		<isDebuff>true</isDebuff>
+		<conditions>
+			<condition name="EquipWeapon">
+				<weaponType>
+					<item>BLUNT</item>
+				</weaponType>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>
+					<value level="1">18005</value>
+					<value level="2">22505</value>
+					<value level="3">27005</value>
+					<value level="4">30605</value>
+					<value level="5">32405</value>
+					<value level="6">34205</value>
+					<value level="7">36005</value>
+					<value level="8">38705</value>
+					<value level="9">41405</value>
+					<value fromLevel="3" toLevel="9" fromSubLevel="1001" toSubLevel="1020">{base + (base / 100 * subIndex)}</value>
+				</power>
+				<overHit>true</overHit>
+				<criticalChance>
+					<value fromLevel="1" toLevel="9">15</value>
+					<value fromLevel="3" toLevel="9" fromSubLevel="3001" toSubLevel="3020">{base + (base / 100 * subIndex)}</value>
+				</criticalChance>
+				<pDefMod>0.7</pDefMod>
+			</effect>
+			<effect name="BlockActions">
+				<allowedSkills>10279;10517;10025;10776;11770;1904;11264;11093;13314;1912</allowedSkills>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="10331" toLevel="1" name="Last Man Standing">
+		<!-- Engages target in 1:1 combat. All damage from the target is ignored. -->
+		<icon>icon.skill10331</icon>
+		<operateType>A2</operateType>
+		<mpConsume>43</mpConsume>
+		<castRange>600</castRange>
+		<hitTime>300</hitTime>
+		<reuseDelay>600000</reuseDelay>
+		<effectPoint>500</effectPoint>
+		<isDebuff>true</isDebuff>
+	</skill>
+	<skill id="10332" toLevel="1" name="Duelist Wrath">
+		<!-- Increases P. Atk. by 20% for 60 sec. when a dual sword/ dual blunt is equipped. Critical Rate of skills that consume Momentum greatly increases, and their Power increases by 20%. Consumes 5 Soulstones. -->
+		<icon>icon.skill10332</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>
+			<value fromLevel="1" toLevel="1">60</value>
+			<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1010">{base + subIndex}</value>
+			<value fromLevel="1" toLevel="1" fromSubLevel="1011" toSubLevel="1020">{base + 10 + (subIndex - 10 * 0.5)}</value>
+		</abnormalTime>
+		<abnormalType>SUPER_AVOID</abnormalType>
+		<abnormalVisualEffect>LONG_BLOW</abnormalVisualEffect>
+		<itemConsumeCount>5</itemConsumeCount>
+		<itemConsumeId>1785</itemConsumeId> <!-- Soulstones -->
+		<operateType>A2</operateType>
+		<mpConsume>64</mpConsume>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<effectPoint>673</effectPoint>
+		<reuseDelay>300000</reuseDelay>
+		<effects>
+			<effect name="PAtk">
+				<amount>20</amount>
+				<mode>PER</mode>
+				<weaponType>
+					<item>DUALBLUNT</item>
+					<item>DUAL</item>
+				</weaponType>
+			</effect>
+			<effect name="CriticalRate">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DefenceCriticalDamage" fromLevel="1" toLevel="1" fromSubLevel="2001" toSubLevel="2020">
+				<amount>
+					<value fromLevel="1" toLevel="1" fromSubLevel="2001" toSubLevel="2020">{-1 - (subIndex - 1 * 0.5)}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence" fromLevel="1" toLevel="1" fromSubLevel="3001" toSubLevel="3020">
+				<amount>
+					<value fromLevel="1" toLevel="1" fromSubLevel="3001" toSubLevel="3020">{0.6 + (0.4 * subIndex)}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="10333" toLevel="2" name="Winged Spear">
+		<!-- Equipping a spear increases attack by $s2 for $s1 Additionally, standard attack range +$s3 and the Stun state is inflicted at a $s4 chance if hit. Consumes $s5 Soulstones. -->
+		<icon>icon.skill10333</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>
+			<value fromLevel="1" toLevel="2">60</value>
+			<value fromLevel="1" toLevel="2" fromSubLevel="1001" toSubLevel="1010">{base + subIndex}</value>
+			<value fromLevel="1" toLevel="2" fromSubLevel="1011" toSubLevel="1020">{base + 10 + (subIndex - 10 * 0.5)}</value>
+		</abnormalTime>
+		<abnormalType>SUPER_AVOID</abnormalType>
+		<abnormalVisualEffect>LONG_BLOW</abnormalVisualEffect>
+		<itemConsumeCount>5</itemConsumeCount>
+		<itemConsumeId>1785</itemConsumeId> <!-- Soulstones -->
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<mpConsume>64</mpConsume>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<effectPoint>673</effectPoint>
+		<reuseDelay>300000</reuseDelay>
+		<effects>
+			<effect name="TriggerSkillByAttack">
+				<!-- Winged Spear - Stun -->
+				<attackerType>Creature</attackerType>
+				<minAttackerLevel>1</minAttackerLevel>
+				<maxAttackerLevel>127</maxAttackerLevel>
+				<minDamage>1</minDamage>
+				<chance>10</chance>
+				<targetType>ENEMY</targetType>
+				<affectScope>SINGLE</affectScope>
+				<isCritical>false</isCritical>
+				<allowWeapons>POLE</allowWeapons>
+				<skillId>10339</skillId> <!-- Winged Spear - Stun -->
+				<skillLevel>1</skillLevel>
+			</effect>
+			<effect name="TriggerSkillByAttack">
+				<!-- Winged Spear - Stun -->
+				<attackerType>Creature</attackerType>
+				<minAttackerLevel>1</minAttackerLevel>
+				<maxAttackerLevel>127</maxAttackerLevel>
+				<minDamage>1</minDamage>
+				<chance>10</chance>
+				<targetType>ENEMY</targetType>
+				<affectScope>SINGLE</affectScope>
+				<skillId>10339</skillId> <!-- Winged Spear - Stun -->
+				<skillLevel>1</skillLevel>
+				<allowWeapons>POLE</allowWeapons>
+				<isCritical>true</isCritical>
+			</effect>
+			<effect name="PAtk">
+				<amount>30</amount>
+				<mode>PER</mode>
+				<weaponType>
+					<item>POLE</item>
+				</weaponType>
+			</effect>
+			<effect name="PhysicalAttackRange">
+				<amount>80</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="DefenceCriticalDamage" fromLevel="1" toLevel="1" fromSubLevel="2001" toSubLevel="2020">
+				<amount>
+					<value fromLevel="1" toLevel="1" fromSubLevel="2001" toSubLevel="2020">{-1 - (subIndex - 1 * 0.5)}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence" fromLevel="1" toLevel="1" fromSubLevel="3001" toSubLevel="3020">
+				<amount>
+					<value fromLevel="1" toLevel="1" fromSubLevel="3001" toSubLevel="3020">{0.6 + (0.4 * subIndex)}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="10334" toLevel="2" name="Furious Slasher">
+		<!-- For $s1, increases P. Atk. by $s2 when a two-handed sword or two-handed blunt is equipped. Additionally attacks $s3 enemies at once with a standard attack. Consumes $s4 Soulstones. -->
+		<icon>icon.skill10334</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>
+			<value fromLevel="1" toLevel="2">60</value>
+			<value fromLevel="1" toLevel="2" fromSubLevel="1001" toSubLevel="1010">{base + subIndex}</value>
+			<value fromLevel="1" toLevel="2" fromSubLevel="1011" toSubLevel="1020">{base + 10 + (subIndex - 10 * 0.5)}</value>
+		</abnormalTime>
+		<abnormalType>SUPER_AVOID</abnormalType>
+		<abnormalVisualEffect>WIDE_SWORD</abnormalVisualEffect>
+		<itemConsumeCount>5</itemConsumeCount>
+		<itemConsumeId>1785</itemConsumeId> <!-- Soulstones -->
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<mpConsume>64</mpConsume>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<effectPoint>673</effectPoint>
+		<reuseDelay>300000</reuseDelay>
+		<effects>
+			<effect name="TwoHandedSwordBonus">
+				<pAtkAmount>30</pAtkAmount>
+				<pAtkmode>PER</pAtkmode>
+			</effect>
+			<effect name="TwoHandedBluntBonus">
+				<pAtkAmount>30</pAtkAmount>
+				<pAtkmode>PER</pAtkmode>
+			</effect>
+			<effect name="HitNumber">
+				<amount>5</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="DefenceCriticalDamage" fromLevel="1" toLevel="2" fromSubLevel="2001" toSubLevel="2020">
+				<amount>
+					<value fromLevel="1" toLevel="2" fromSubLevel="2001" toSubLevel="2020">{-1 - (subIndex - 1 * 0.5)}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence" fromLevel="1" toLevel="2" fromSubLevel="3001" toSubLevel="3020">
+				<amount>
+					<value fromLevel="1" toLevel="2" fromSubLevel="3001" toSubLevel="3020">{0.6 + (0.4 * subIndex)}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="10335" toLevel="2" name="Furious Fist">
+		<!-- Increases P. Atk. by $s2 and P. Critical Damage by $s3 for $s1 when a fist weapon is equipped. Has $s4 chance to decrease fist weapon Resistance by $s5 when striking. Consumes $s6 Soulstones. -->
+		<icon>icon.skill10335</icon>
+		<abnormalType>SUPER_AVOID</abnormalType>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>
+			<value fromLevel="1" toLevel="2">60</value>
+			<value fromLevel="1" toLevel="2" fromSubLevel="1001" toSubLevel="1010">{base + subIndex}</value>
+			<value fromLevel="1" toLevel="2" fromSubLevel="1011" toSubLevel="1020">{base + 10 + (subIndex - 10 * 0.5)}</value>
+		</abnormalTime>
+		<abnormalVisualEffect>BIG_FIST</abnormalVisualEffect>
+		<itemConsumeCount>5</itemConsumeCount>
+		<itemConsumeId>1785</itemConsumeId> <!-- Soulstones -->
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<mpConsume>64</mpConsume>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<effectPoint>673</effectPoint>
+		<reuseDelay>300000</reuseDelay>
+		<effects>
+			<effect name="TriggerSkillByAttack">
+				<!-- Punch Drunk -->
+				<attackerType>Creature</attackerType>
+				<minAttackerLevel>1</minAttackerLevel>
+				<maxAttackerLevel>127</maxAttackerLevel>
+				<minDamage>1</minDamage>
+				<chance>10</chance>
+				<targetType>ENEMY</targetType>
+				<affectScope>SINGLE</affectScope>
+				<isCritical>false</isCritical>
+				<allowWeapons>DUALFIST</allowWeapons>
+				<skillId>10338</skillId> <!-- Punch Drunk -->
+				<skillLevel>1</skillLevel>
+			</effect>
+			<effect name="TriggerSkillByAttack">
+				<!-- Punch Drunk -->
+				<attackerType>Creature</attackerType>
+				<minAttackerLevel>1</minAttackerLevel>
+				<maxAttackerLevel>127</maxAttackerLevel>
+				<minDamage>1</minDamage>
+				<chance>10</chance>
+				<targetType>ENEMY</targetType>
+				<affectScope>SINGLE</affectScope>
+				<skillId>10338</skillId> <!-- Punch Drunk -->
+				<skillLevel>1</skillLevel>
+				<allowWeapons>DUALFIST</allowWeapons>
+				<isCritical>true</isCritical>
+			</effect>
+			<effect name="PAtk">
+				<amount>30</amount>
+				<mode>PER</mode>
+				<weaponType>
+					<item>DUALFIST</item>
+				</weaponType>
+			</effect>
+			<effect name="CriticalDamage">
+				<amount>10</amount>
+				<mode>PER</mode>
+				<weaponType>
+					<item>DUALFIST</item>
+				</weaponType>
+			</effect>
+			<effect name="DefenceCriticalDamage" fromLevel="1" toLevel="2" fromSubLevel="2001" toSubLevel="2020">
+				<amount>
+					<value fromLevel="1" toLevel="2" fromSubLevel="2001" toSubLevel="2020">{-1 - (subIndex - 1 * 0.5)}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence" fromLevel="1" toLevel="2" fromSubLevel="3001" toSubLevel="3020">
+				<amount>
+					<value fromLevel="1" toLevel="2" fromSubLevel="3001" toSubLevel="3020">{0.6 + (0.4 * subIndex)}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="10336" toLevel="1" name="Infinity Rush">
+		<!-- Increases power when using the Rush Impact. -->
+		<icon>icon.skill10336</icon>
+		<operateType>P</operateType>
+	</skill>
+	<skill id="10337" toLevel="3" name="Infinity Rush">
+		<!-- P. Atk. +$s1 and P. Critical Damage +$s2. -->
+		<icon>icon.skill10336</icon>
+		<operateType>A2</operateType>
+		<effectPoint>2</effectPoint>
+		<isMagic>4</isMagic>
+	</skill>
+	<skill id="10338" toLevel="1" name="Punch Drunk">
+		<!-- Decreases target's resistance to fist weapons by 30%. -->
+		<icon>icon.skill10335</icon>
+		<abnormalType>REAL_TARGET</abnormalType>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>20</abnormalTime>
+		<operateType>A2</operateType>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<mpConsume>1</mpConsume>
+		<castRange>500</castRange>
+		<hitTime>100</hitTime>
+		<coolTime>100</coolTime>
+		<isMagic>4</isMagic>
+		<effectPoint>-687</effectPoint>
+		<isDebuff>true</isDebuff>
+		<effects>
+			<effect name="DefenceTrait">
+				<FIST>-30</FIST>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="10339" toLevel="1" name="Winged Spear - Stun">
+		<!-- Stuns target for 3 sec. -->
+		<icon>icon.skill10333</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>3</abnormalTime>
+		<abnormalType>STUN</abnormalType>
+		<abnormalVisualEffect>STUN</abnormalVisualEffect>
+		<activateRate>60</activateRate> <!-- Guessed -->
+		<isTriggeredSkill>true</isTriggeredSkill>
+		<lvlBonusRate>1</lvlBonusRate>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<mpConsume>1</mpConsume>
+		<castRange>500</castRange>
+		<hitTime>100</hitTime>
+		<coolTime>100</coolTime>
+		<isMagic>4</isMagic>
+		<effectPoint>-687</effectPoint>
+		<isDebuff>true</isDebuff>
+		<trait>SHOCK</trait>
+		<effects>
+			<effect name="BlockActions">
+				<allowedSkills>10279;10517;10025;10776;11770;1904;11264;11093;13314;1912</allowedSkills>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="10340" toLevel="5" name="Blade Slasher">
+		<!-- Attacks enemies in front with $s1 Power added to P. Atk. If the target is stunned, attacks with $s2 power. Can be used while a sword or blunt weapon is equipped. Consumes $s3 Soulstone. -->
+		<icon>
+			<value level="1">icon.skill10340</value>
+			<value level="2">icon.skill0526</value>
+			<value level="3">icon.skill0526</value>
+			<value level="4">icon.skill0526</value>
+			<value level="5">icon.skill0526</value>
+		</icon>
+		<itemConsumeCount>
+			<value level="1">1</value>
+			<value level="2">1</value>
+			<value level="3">1</value>
+			<value level="4">1</value>
+			<value level="5">1</value>
+		</itemConsumeCount>
+		<itemConsumeId>
+			<value level="1">1785</value>
+			<value level="2">1785</value>
+			<value level="3">1785</value>
+			<value level="4">1785</value>
+			<value level="5">1785</value>
+		</itemConsumeId>
+		<mpConsume>
+			<value level="1">233</value>
+			<value level="2">236</value>
+			<value level="3">239</value>
+			<value level="4">242</value>
+			<value level="5">245</value>
+		</mpConsume>
+		<magicLvl>
+			<value level="1">101</value>
+			<value level="2">103</value>
+			<value level="3">105</value>
+			<value level="4">107</value>
+			<value level="5">109</value>
+		</magicLvl>
+		<affectLimit>6-12</affectLimit>
+		<affectRange>150</affectRange>
+		<basicProperty>PHYSICAL</basicProperty>
+		<operateType>A1</operateType>
+		<fanRange>0;0;200;900</fanRange>
+		<castRange>40</castRange>
+		<hitTime>1000</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>10000</reuseDelay>
+		<effectPoint>-125</effectPoint>
+		<staticReuse>true</staticReuse>
+		<targetType>TARGET</targetType>
+		<affectScope>SQUARE_PB</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<nextAction>ATTACK</nextAction>
+		<conditions>
+			<condition name="EquipWeapon">
+				<weaponType>
+					<item>SWORD</item>
+					<item>BLUNT</item>
+				</weaponType>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>
+					<value level="1">16214</value>
+					<value level="2">17094</value>
+					<value level="3">17959</value>
+					<value level="4">19257</value>
+					<value level="5">20555</value>
+				</power>
+				<overHit>false</overHit>
+				<pDefMod>0.7</pDefMod>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="10341" toLevel="4" name="Summon Burning Mechanic Golem">
+		<!-- A Burning Mechanic Golem is summoned to fight with you. $s1 Crystal (R-grade) consumed. -->
+		<icon>icon.skill10341</icon>
+		<operateType>A1</operateType>
+		<coolTime>500</coolTime>
+		<hitTime>3500</hitTime>
+		<itemConsumeCount>
+			<value level="1">5</value>
+			<value level="2">5</value>
+			<value level="3">5</value>
+			<value level="4">5</value>
+		</itemConsumeCount>
+		<itemConsumeId>
+			<value level="1">17371</value>
+			<value level="2">17371</value>
+			<value level="3">17371</value>
+			<value level="4">17371</value>
+		</itemConsumeId>
+		<magicLvl>
+			<value level="1">99</value>
+			<value level="2">101</value>
+			<value level="3">103</value>
+			<value level="4">105</value>
+		</magicLvl>
+		<mpConsume>
+			<value level="1">173</value>
+			<value level="2">178</value>
+			<value level="3">185</value>
+			<value level="4">191</value>
+		</mpConsume>
+		<operateType>A1</operateType>
+		<coolTime>500</coolTime>
+		<reuseDelay>30000</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CanSummon" />
+		</conditions>
+		<effects>
+			<effect name="Summon">
+				<npcId>
+					<value level="1">15203</value>
+					<value level="2">12204</value>
+					<value level="3">15205</value>
+					<value level="4">15206</value>
+				</npcId>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="10342" toLevel="1" name="Angry Golem">
+		<!-- A buff that increases P. Atk. and Atk. Spd. is cast on yourself when standard attacks and skill attacks are made. -->
+		<icon>icon.skill10341</icon>
+		<operateType>P</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+	</skill>
+	<skill id="10343" toLevel="1" name="Angry Golem">
+		<!-- The Burning Mechanic Golem is enraged. P. Atk. +30%, Atk. Spd. +30%. -->
+		<icon>icon.skill10341</icon>
+		<operateType>A1</operateType>
+		<isMagic>4</isMagic>
+		<castRange>100</castRange>
+		<hitTime>500</hitTime>
+		<coolTime>100</coolTime>
+		<reuseDelay>30000</reuseDelay>
+		<effectPoint>-671</effectPoint>
+		<mpConsume>1</mpConsume>
+	</skill>
+</list>

@@ -1,0 +1,1566 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="28100" toLevel="12" name="Bountiful Resurrection">
+		<!-- Resurrects from death fully recovered. Buffs/ debuffs remain in death, but Noblesse Blessing and Lucky Charm disappear. -->
+		<icon>BranchIcon.Icon.accessary_sign_agathion_may_skill_i00</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<abnormalType>RESURRECTION_SPECIAL</abnormalType>
+		<abnormalTime>3600</abnormalTime>
+		<effectRange>1100</effectRange>
+		<staticReuse>true</staticReuse>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+		<blockedInOlympiad>true</blockedInOlympiad> <!-- Unconfirmed -->
+		<reuseDelay>
+			<value level="1">13500000</value>
+			<value level="2">12600000</value>
+			<value level="3">11700000</value>
+			<value level="4">10800000</value>
+			<value level="5">9900000</value>
+			<value level="6">9000000</value>
+			<value level="7">8100000</value>
+			<value level="8">7200000</value>
+			<value level="9">6300000</value>
+			<value level="10">5400000</value>
+			<value level="11">4500000</value>
+			<value level="12">3600000</value>
+		</reuseDelay>
+		<reuseDelayGroup>27355</reuseDelayGroup>
+		<effects>
+			<effect name="ResurrectionSpecial">
+				<power>100</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="28101" toLevel="12" name="Scorpion's Mass Exile">
+		<!-- Banishes enemies near target into another dimension. They become immobile and invincible against debuffs, skills, and standard attacks, and lose $s1 HP/ second. -->
+		<icon>BranchIcon.Icon.accessary_sign_agathion_oct_i00</icon>
+		<operateType>A2</operateType>
+		<trait>DEPORT</trait>
+		<castRange>600</castRange>
+		<hitTime>3000</hitTime>
+		<coolTime>500</coolTime>
+		<isMagic>1</isMagic>
+		<effectPoint>-687</effectPoint>
+		<isDebuff>true</isDebuff>
+		<trait>DEPORT</trait>
+		<abnormalType>DEPORT</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<hitCancelTime>1</hitCancelTime>
+		<effectRange>1100</effectRange>
+		<activateRate>80</activateRate>
+		<magicLvl>85</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>10</abnormalTime>
+		<affectRange>150</affectRange>
+		<affectLimit>10-10</affectLimit>
+		<abnormalVisualEffect>DEPORT</abnormalVisualEffect>
+		<targetType>ENEMY</targetType>
+		<affectScope>RANGE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<blockedInOlympiad>true</blockedInOlympiad> <!-- Unconfirmed -->
+		<reuseDelay>
+			<value level="1">118000</value>
+			<value level="2">110000</value>
+			<value level="3">102000</value>
+			<value level="4">94000</value>
+			<value level="5">86000</value>
+			<value level="6">78000</value>
+			<value level="7">70000</value>
+			<value level="8">62000</value>
+			<value level="9">54000</value>
+			<value level="10">46000</value>
+			<value level="11">38000</value>
+			<value level="12">30000</value>
+		</reuseDelay>
+		<reuseDelayGroup>27356</reuseDelayGroup>
+		<effects>
+			<effect name="BlockActions">
+				<allowedSkills>10279;10517;10025;10776;11770;1904;11264;11093;13314;1912</allowedSkills>
+			</effect>
+			<effect name="DamOverTime">
+				<power>282</power>
+				<ticks>1</ticks>
+			</effect>
+			<effect name="DamageBlock">
+				<type>BLOCK_HP</type>
+			</effect>
+			<effect name="DamageBlock">
+				<type>BLOCK_MP</type>
+			</effect>
+			<effect name="BuffBlock" />
+			<effect name="DebuffBlock" />
+		</effects>
+	</skill>
+	<skill id="28102" toLevel="12" name="Mass Binding Flood">
+		<!-- Immobilizes target and nearby enemies midair for $s1 and inflicts $s2 damage per second. -->
+		<icon>BranchIcon.Icon.accessary_sign_agathion_jan_i00</icon>
+		<operateType>A1</operateType>
+		<castRange>1100</castRange>
+		<hitTime>10000</hitTime>
+		<effectPoint>-707</effectPoint>
+		<abnormalTime>9</abnormalTime>
+		<isDebuff>true</isDebuff>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalType>AIRBIND</abnormalType>
+		<abnormalVisualEffect>AIRBIND</abnormalVisualEffect>
+		<basicProperty>NONE</basicProperty>
+		<trait>AIRBIND</trait>
+		<castRange>1100</castRange>
+		<effectRange>1100</effectRange>
+		<abnormalResists>STUN;TURN_FLEE</abnormalResists>
+		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelayGroup>11052</reuseDelayGroup>
+		<affectRange>150</affectRange>
+		<affectLimit>5-12</affectLimit>
+		<isMagic>1</isMagic>
+		<targetType>ENEMY</targetType>
+		<affectScope>RANGE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<blockedInOlympiad>true</blockedInOlympiad> <!-- Unconfirmed -->
+		<reuseDelay>
+			<value level="1">118000</value>
+			<value level="2">110000</value>
+			<value level="3">102000</value>
+			<value level="4">94000</value>
+			<value level="5">86000</value>
+			<value level="6">78000</value>
+			<value level="7">70000</value>
+			<value level="8">62000</value>
+			<value level="9">54000</value>
+			<value level="10">46000</value>
+			<value level="11">38000</value>
+			<value level="12">30000</value>
+		</reuseDelay>
+		<reuseDelayGroup>27357</reuseDelayGroup>
+		<conditions>
+			<condition name="OpCheckCrtEffect" />
+		</conditions>
+		<effects>
+			<effect name="AirBind" />
+			<effect name="BlockActions" />
+			<effect name="BlockControl" />
+			<effect name="DamOverTime">
+				<power>100</power>
+				<ticks>1</ticks>
+			</effect>
+			<effect name="DefenceTrait">
+				<HOLD>100</HOLD>
+				<DERANGEMENT>100</DERANGEMENT>
+				<SHOCK>100</SHOCK>
+				<KNOCKBACK>100</KNOCKBACK>
+				<CHANGEBODY>100</CHANGEBODY>
+				<KNOCKDOWN>100</KNOCKDOWN>
+				<SLEEP>100</SLEEP>
+				<AIRBIND>100</AIRBIND>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="28103" toLevel="12" name="Slippery Scale">
+		<!-- For $s1, defends against debuffs $s2 times. -->
+		<icon>BranchIcon.Icon.accessary_sign_agathion_feb_i00</icon>
+		<operateType>A2</operateType>
+		<hitTime>200</hitTime>
+		<effectPoint>2</effectPoint>
+		<abnormalType>RACE_KAMAEL1</abnormalType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>99</magicLvl>
+		<basicProperty>NONE</basicProperty>
+		<activateRate>0</activateRate>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<blockedInOlympiad>true</blockedInOlympiad> <!-- Unconfirmed -->
+		<reuseDelay>
+			<value level="1">2250000</value>
+			<value level="2">2100000</value>
+			<value level="3">1950000</value>
+			<value level="4">1800000</value>
+			<value level="5">1650000</value>
+			<value level="6">1500000</value>
+			<value level="7">1350000</value>
+			<value level="8">1200000</value>
+			<value level="9">1050000</value>
+			<value level="10">900000</value>
+			<value level="11">750000</value>
+			<value level="12">600000</value>
+		</reuseDelay>
+		<reuseDelayGroup>27358</reuseDelayGroup>
+		<effects>
+			<effect name="AbnormalShield">
+				<times>5</times>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="28104" toLevel="12" name="Archer's Call">
+		<!-- Summons all party members to you. -->
+		<icon>BranchIcon.Icon.accessary_sign_agathion_nov_i00</icon>
+		<operateType>A1</operateType>
+		<hitTime>15000</hitTime>
+		<effectPoint>467</effectPoint>
+		<isMagic>4</isMagic>
+		<effectRange>-2</effectRange>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>OTHERS</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<blockedInOlympiad>true</blockedInOlympiad> <!-- Unconfirmed -->
+		<reuseDelay>
+			<value level="1">6750000</value>
+			<value level="2">6300000</value>
+			<value level="3">5850000</value>
+			<value level="4">5400000</value>
+			<value level="5">4950000</value>
+			<value level="6">4500000</value>
+			<value level="7">4050000</value>
+			<value level="8">3600000</value>
+			<value level="9">3150000</value>
+			<value level="10">2700000</value>
+			<value level="11">2250000</value>
+			<value level="12">1800000</value>
+		</reuseDelay>
+		<reuseDelayGroup>27359</reuseDelayGroup>
+		<conditions>
+			<condition name="OpCallPc" />
+			<condition name="TargetMyParty">
+				<includeMe>false</includeMe>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="CallPc" />
+		</effects>
+	</skill>
+	<skill id="28105" toLevel="12" name="Exoskeletal Shield">
+		<!-- Reflects $s1 of received damage. -->
+		<icon>BranchIcon.Icon.accessary_sign_agathion_june_skill_i00</icon>
+		<operateType>A2</operateType>
+		<hitTime>1000</hitTime>
+		<effectPoint>379</effectPoint>
+		<abnormalType>DMG_SHIELD</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>60</abnormalTime>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<blockedInOlympiad>true</blockedInOlympiad> <!-- Unconfirmed -->
+		<reuseDelay>
+			<value level="1">4500000</value>
+			<value level="2">4200000</value>
+			<value level="3">3900000</value>
+			<value level="4">3600000</value>
+			<value level="5">3300000</value>
+			<value level="6">3000000</value>
+			<value level="7">2700000</value>
+			<value level="8">2400000</value>
+			<value level="9">2100000</value>
+			<value level="10">1800000</value>
+			<value level="11">1500000</value>
+			<value level="12">1200000</value>
+		</reuseDelay>
+		<reuseDelayGroup>27360</reuseDelayGroup>
+		<effects>
+			<effect name="DamageShield">
+				<amount>20</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="28106" toLevel="1" name="Summon Virgo Agathion">
+		<!-- Summons Agathion Virgo. -->
+		<icon>icon.etc_summon_aga_agit_i00</icon>
+		<operateType>A1</operateType>
+		<hitTime>3000</hitTime>
+		<isMagic>2</isMagic>
+		<magicLvl>85</magicLvl>
+		<targetType>SELF</targetType>
+		<targetScope>SINGLE</targetScope>
+		<effects>
+			<effect name="SummonAgathion">
+				<npcId>13512</npcId>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="28107" toLevel="1" name="Summon Capricorn Agathion">
+		<!-- Summons Agathion Capricorn. -->
+		<icon>icon.etc_summon_aga_agit_i00</icon>
+		<operateType>A1</operateType>
+		<hitTime>3000</hitTime>
+		<isMagic>2</isMagic>
+		<magicLvl>85</magicLvl>
+		<targetType>SELF</targetType>
+		<targetScope>SINGLE</targetScope>
+		<effects>
+			<effect name="SummonAgathion">
+				<npcId>13514</npcId>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="28108" toLevel="1" name="Summon Libra Agathion">
+		<!-- Summons Agathion Libra. -->
+		<icon>icon.etc_summon_aga_agit_i00</icon>
+		<operateType>A1</operateType>
+		<hitTime>3000</hitTime>
+		<isMagic>2</isMagic>
+		<magicLvl>85</magicLvl>
+		<targetType>SELF</targetType>
+		<targetScope>SINGLE</targetScope>
+		<effects>
+			<effect name="SummonAgathion">
+				<npcId>13517</npcId>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="28109" toLevel="1" name="Summon Aries Agathion">
+		<!-- Summons Agathion Aries. -->
+		<icon>icon.etc_summon_aga_agit_i00</icon>
+		<operateType>A1</operateType>
+		<hitTime>3000</hitTime>
+		<isMagic>2</isMagic>
+		<magicLvl>85</magicLvl>
+		<targetType>SELF</targetType>
+		<targetScope>SINGLE</targetScope>
+		<effects>
+			<effect name="SummonAgathion">
+				<npcId>13513</npcId>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="28110" toLevel="1" name="Summon Taurus Agathion">
+		<!-- Summons Agathion Taurus. -->
+		<icon>icon.etc_summon_aga_agit_i00</icon>
+		<operateType>A1</operateType>
+		<hitTime>3000</hitTime>
+		<isMagic>2</isMagic>
+		<magicLvl>85</magicLvl>
+		<targetType>SELF</targetType>
+		<targetScope>SINGLE</targetScope>
+		<effects>
+			<effect name="SummonAgathion">
+				<npcId>13520</npcId>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="28111" toLevel="1" name="Summon Leo Agathion">
+		<!-- Summons Agathion Leo. -->
+		<icon>icon.etc_summon_aga_agit_i00</icon>
+		<operateType>A1</operateType>
+		<hitTime>3000</hitTime>
+		<isMagic>2</isMagic>
+		<magicLvl>85</magicLvl>
+		<targetType>SELF</targetType>
+		<targetScope>SINGLE</targetScope>
+		<effects>
+			<effect name="SummonAgathion">
+				<npcId>13516</npcId>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="28112" toLevel="1" name="Summon Gemini Agathion">
+		<!-- Summons Agathion Gemini. -->
+		<icon>icon.etc_summon_aga_agit_i00</icon>
+		<operateType>A1</operateType>
+		<hitTime>3000</hitTime>
+		<isMagic>2</isMagic>
+		<magicLvl>85</magicLvl>
+		<targetType>SELF</targetType>
+		<targetScope>SINGLE</targetScope>
+		<effects>
+			<effect name="SummonAgathion">
+				<npcId>13515</npcId>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="28113" toLevel="1" name="Summon Scorpio Agathion">
+		<!-- Summons Agathion Scorpio. -->
+		<icon>icon.etc_summon_aga_agit_i00</icon>
+		<operateType>A1</operateType>
+		<hitTime>3000</hitTime>
+		<isMagic>2</isMagic>
+		<magicLvl>85</magicLvl>
+		<targetType>SELF</targetType>
+		<targetScope>SINGLE</targetScope>
+		<effects>
+			<effect name="SummonAgathion">
+				<npcId>13519</npcId>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="28114" toLevel="1" name="Summon Aquarius Agathion">
+		<!-- Summons Agathion Aquarius. -->
+		<icon>icon.etc_summon_aga_agit_i00</icon>
+		<operateType>A1</operateType>
+		<hitTime>3000</hitTime>
+		<isMagic>2</isMagic>
+		<magicLvl>85</magicLvl>
+		<targetType>SELF</targetType>
+		<targetScope>SINGLE</targetScope>
+		<effects>
+			<effect name="SummonAgathion">
+				<npcId>13510</npcId>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="28115" toLevel="1" name="Summon Pisces Agathion">
+		<!-- Summons Agathion Pisces. -->
+		<icon>icon.etc_summon_aga_agit_i00</icon>
+		<operateType>A1</operateType>
+		<hitTime>3000</hitTime>
+		<isMagic>2</isMagic>
+		<magicLvl>85</magicLvl>
+		<targetType>SELF</targetType>
+		<targetScope>SINGLE</targetScope>
+		<effects>
+			<effect name="SummonAgathion">
+				<npcId>13509</npcId>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="28116" toLevel="1" name="Summon Sagittarius Agathion">
+		<!-- Summons Agathion Sagittarius. -->
+		<icon>icon.etc_summon_aga_agit_i00</icon>
+		<operateType>A1</operateType>
+		<hitTime>3000</hitTime>
+		<isMagic>2</isMagic>
+		<magicLvl>85</magicLvl>
+		<targetType>SELF</targetType>
+		<targetScope>SINGLE</targetScope>
+		<effects>
+			<effect name="SummonAgathion">
+				<npcId>13518</npcId>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="28117" toLevel="1" name="Summon Cancer Agathion">
+		<!-- Summons Agathion Cancer. -->
+		<icon>icon.etc_summon_aga_agit_i00</icon>
+		<operateType>A1</operateType>
+		<hitTime>3000</hitTime>
+		<isMagic>2</isMagic>
+		<magicLvl>85</magicLvl>
+		<targetType>SELF</targetType>
+		<targetScope>SINGLE</targetScope>
+		<effects>
+			<effect name="SummonAgathion">
+				<npcId>13511</npcId>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="28118" toLevel="1" name="Summon Virgo Agathion">
+		<!-- Summons Agathion Virgo. -->
+		<icon>icon.etc_summon_aga_agit_i00</icon>
+		<operateType>A1</operateType>
+		<hitTime>3000</hitTime>
+		<isMagic>2</isMagic>
+		<magicLvl>85</magicLvl>
+		<targetType>SELF</targetType>
+		<targetScope>SINGLE</targetScope>
+		<effects>
+			<effect name="SummonAgathion">
+				<npcId>13553</npcId>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="28119" toLevel="1" name="Summon Capricorn Agathion">
+		<!-- Summons Agathion Capricorn. -->
+		<icon>icon.etc_summon_aga_agit_i00</icon>
+		<operateType>A1</operateType>
+		<hitTime>3000</hitTime>
+		<isMagic>2</isMagic>
+		<magicLvl>85</magicLvl>
+		<targetType>SELF</targetType>
+		<targetScope>SINGLE</targetScope>
+		<effects>
+			<effect name="SummonAgathion">
+				<npcId>13554</npcId>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="28120" toLevel="1" name="Summon Libra Agathion">
+		<!-- Summons Agathion Libra. -->
+		<icon>icon.etc_summon_aga_agit_i00</icon>
+		<operateType>A1</operateType>
+		<hitTime>3000</hitTime>
+		<isMagic>2</isMagic>
+		<magicLvl>85</magicLvl>
+		<targetType>SELF</targetType>
+		<targetScope>SINGLE</targetScope>
+		<effects>
+			<effect name="SummonAgathion">
+				<npcId>13555</npcId>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="28121" toLevel="1" name="Summon Aries Agathion">
+		<!-- Summons Agathion Aries. -->
+		<icon>icon.etc_summon_aga_agit_i00</icon>
+		<operateType>A1</operateType>
+		<hitTime>3000</hitTime>
+		<isMagic>2</isMagic>
+		<magicLvl>85</magicLvl>
+		<targetType>SELF</targetType>
+		<targetScope>SINGLE</targetScope>
+		<effects>
+			<effect name="SummonAgathion">
+				<npcId>13556</npcId>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="28122" toLevel="1" name="Summon Taurus Agathion">
+		<!-- Summons Agathion Taurus. -->
+		<icon>icon.etc_summon_aga_agit_i00</icon>
+		<operateType>A1</operateType>
+		<hitTime>3000</hitTime>
+		<isMagic>2</isMagic>
+		<magicLvl>85</magicLvl>
+		<targetType>SELF</targetType>
+		<targetScope>SINGLE</targetScope>
+		<effects>
+			<effect name="SummonAgathion">
+				<npcId>13557</npcId>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="28123" toLevel="1" name="Summon Leo Agathion">
+		<!-- Summons Agathion Leo. -->
+		<icon>icon.etc_summon_aga_agit_i00</icon>
+		<operateType>A1</operateType>
+		<hitTime>3000</hitTime>
+		<isMagic>2</isMagic>
+		<magicLvl>85</magicLvl>
+		<targetType>SELF</targetType>
+		<targetScope>SINGLE</targetScope>
+		<effects>
+			<effect name="SummonAgathion">
+				<npcId>13558</npcId>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="28124" toLevel="1" name="Summon Gemini Agathion">
+		<!-- Summons Agathion Gemini. -->
+		<icon>icon.etc_summon_aga_agit_i00</icon>
+		<operateType>A1</operateType>
+		<hitTime>3000</hitTime>
+		<isMagic>2</isMagic>
+		<magicLvl>85</magicLvl>
+		<targetType>SELF</targetType>
+		<targetScope>SINGLE</targetScope>
+		<effects>
+			<effect name="SummonAgathion">
+				<npcId>13559</npcId>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="28125" toLevel="1" name="Summon Scorpio Agathion">
+		<!-- Summons Agathion Scorpio. -->
+		<icon>icon.etc_summon_aga_agit_i00</icon>
+		<operateType>A1</operateType>
+		<hitTime>3000</hitTime>
+		<isMagic>2</isMagic>
+		<magicLvl>85</magicLvl>
+		<targetType>SELF</targetType>
+		<targetScope>SINGLE</targetScope>
+		<effects>
+			<effect name="SummonAgathion">
+				<npcId>13560</npcId>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="28126" toLevel="1" name="Summon Aquarius Agathion">
+		<!-- Summons Agathion Aquarius. -->
+		<icon>icon.etc_summon_aga_agit_i00</icon>
+		<operateType>A1</operateType>
+		<hitTime>3000</hitTime>
+		<isMagic>2</isMagic>
+		<magicLvl>85</magicLvl>
+		<targetType>SELF</targetType>
+		<targetScope>SINGLE</targetScope>
+		<effects>
+			<effect name="SummonAgathion">
+				<npcId>13561</npcId>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="28127" toLevel="1" name="Summon Pisces Agathion">
+		<!-- Summons Agathion Pisces. -->
+		<icon>icon.etc_summon_aga_agit_i00</icon>
+		<operateType>A1</operateType>
+		<hitTime>3000</hitTime>
+		<isMagic>2</isMagic>
+		<magicLvl>85</magicLvl>
+		<targetType>SELF</targetType>
+		<targetScope>SINGLE</targetScope>
+		<effects>
+			<effect name="SummonAgathion">
+				<npcId>13562</npcId>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="28128" toLevel="1" name="Summon Sagittarius Agathion">
+		<!-- Summons Agathion Sagittarius. -->
+		<icon>icon.etc_summon_aga_agit_i00</icon>
+		<operateType>A1</operateType>
+		<hitTime>3000</hitTime>
+		<isMagic>2</isMagic>
+		<magicLvl>85</magicLvl>
+		<targetType>SELF</targetType>
+		<targetScope>SINGLE</targetScope>
+		<effects>
+			<effect name="SummonAgathion">
+				<npcId>13563</npcId>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="28129" toLevel="1" name="Summon Cancer Agathion">
+		<!-- Summons Agathion Cancer. -->
+		<icon>icon.etc_summon_aga_agit_i00</icon>
+		<operateType>A1</operateType>
+		<hitTime>3000</hitTime>
+		<isMagic>2</isMagic>
+		<magicLvl>85</magicLvl>
+		<targetType>SELF</targetType>
+		<targetScope>SINGLE</targetScope>
+		<effects>
+			<effect name="SummonAgathion">
+				<npcId>13564</npcId>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="28130" toLevel="1" name="Summon Virgo Agathion">
+		<!-- Summons Agathion Virgo. -->
+		<icon>icon.etc_summon_aga_agit_i00</icon>
+		<operateType>A1</operateType>
+		<hitTime>3000</hitTime>
+		<isMagic>2</isMagic>
+		<magicLvl>85</magicLvl>
+		<targetType>SELF</targetType>
+		<targetScope>SINGLE</targetScope>
+		<effects>
+			<effect name="SummonAgathion">
+				<npcId>13591</npcId>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="28131" toLevel="1" name="Summon Capricorn Agathion">
+		<!-- Summons Agathion Capricorn. -->
+		<icon>icon.etc_summon_aga_agit_i00</icon>
+		<operateType>A1</operateType>
+		<hitTime>3000</hitTime>
+		<isMagic>2</isMagic>
+		<magicLvl>85</magicLvl>
+		<targetType>SELF</targetType>
+		<targetScope>SINGLE</targetScope>
+		<effects>
+			<effect name="SummonAgathion">
+				<npcId>13592</npcId>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="28132" toLevel="1" name="Summon Libra Agathion">
+		<!-- Summons Agathion Libra. -->
+		<icon>icon.etc_summon_aga_agit_i00</icon>
+		<operateType>A1</operateType>
+		<hitTime>3000</hitTime>
+		<isMagic>2</isMagic>
+		<magicLvl>85</magicLvl>
+		<targetType>SELF</targetType>
+		<targetScope>SINGLE</targetScope>
+		<effects>
+			<effect name="SummonAgathion">
+				<npcId>13593</npcId>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="28133" toLevel="1" name="Summon Aries Agathion">
+		<!-- Summons Agathion Aries. -->
+		<icon>icon.etc_summon_aga_agit_i00</icon>
+		<operateType>A1</operateType>
+		<hitTime>3000</hitTime>
+		<isMagic>2</isMagic>
+		<magicLvl>85</magicLvl>
+		<targetType>SELF</targetType>
+		<targetScope>SINGLE</targetScope>
+		<effects>
+			<effect name="SummonAgathion">
+				<npcId>13594</npcId>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="28134" toLevel="1" name="Summon Taurus Agathion">
+		<!-- Summons Agathion Taurus. -->
+		<icon>icon.etc_summon_aga_agit_i00</icon>
+		<operateType>A1</operateType>
+		<hitTime>3000</hitTime>
+		<isMagic>2</isMagic>
+		<magicLvl>85</magicLvl>
+		<targetType>SELF</targetType>
+		<targetScope>SINGLE</targetScope>
+		<effects>
+			<effect name="SummonAgathion">
+				<npcId>13595</npcId>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="28135" toLevel="1" name="Summon Leo Agathion">
+		<!-- Summons Agathion Leo. -->
+		<icon>icon.etc_summon_aga_agit_i00</icon>
+		<operateType>A1</operateType>
+		<hitTime>3000</hitTime>
+		<isMagic>2</isMagic>
+		<magicLvl>85</magicLvl>
+		<targetType>SELF</targetType>
+		<targetScope>SINGLE</targetScope>
+		<effects>
+			<effect name="SummonAgathion">
+				<npcId>13596</npcId>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="28136" toLevel="1" name="Summon Gemini Agathion">
+		<!-- Summons Agathion Gemini. -->
+		<icon>icon.etc_summon_aga_agit_i00</icon>
+		<operateType>A1</operateType>
+		<hitTime>3000</hitTime>
+		<isMagic>2</isMagic>
+		<magicLvl>85</magicLvl>
+		<targetType>SELF</targetType>
+		<targetScope>SINGLE</targetScope>
+		<effects>
+			<effect name="SummonAgathion">
+				<npcId>13597</npcId>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="28137" toLevel="1" name="Summon Scorpio Agathion">
+		<!-- Summons Agathion Scorpio. -->
+		<icon>icon.etc_summon_aga_agit_i00</icon>
+		<operateType>A1</operateType>
+		<hitTime>3000</hitTime>
+		<isMagic>2</isMagic>
+		<magicLvl>85</magicLvl>
+		<targetType>SELF</targetType>
+		<targetScope>SINGLE</targetScope>
+		<effects>
+			<effect name="SummonAgathion">
+				<npcId>13598</npcId>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="28138" toLevel="1" name="Summon Aquarius Agathion">
+		<!-- Summons Agathion Aquarius. -->
+		<icon>icon.etc_summon_aga_agit_i00</icon>
+		<operateType>A1</operateType>
+		<hitTime>3000</hitTime>
+		<isMagic>2</isMagic>
+		<magicLvl>85</magicLvl>
+		<targetType>SELF</targetType>
+		<targetScope>SINGLE</targetScope>
+		<effects>
+			<effect name="SummonAgathion">
+				<npcId>13599</npcId>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="28139" toLevel="1" name="Summon Pisces Agathion">
+		<!-- Summons Agathion Pisces. -->
+		<icon>icon.etc_summon_aga_agit_i00</icon>
+		<operateType>A1</operateType>
+		<hitTime>3000</hitTime>
+		<isMagic>2</isMagic>
+		<magicLvl>85</magicLvl>
+		<targetType>SELF</targetType>
+		<targetScope>SINGLE</targetScope>
+		<effects>
+			<effect name="SummonAgathion">
+				<npcId>13600</npcId>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="28140" toLevel="1" name="Summon Sagittarius Agathion">
+		<!-- Summons Agathion Sagittarius. -->
+		<icon>icon.etc_summon_aga_agit_i00</icon>
+		<operateType>A1</operateType>
+		<hitTime>3000</hitTime>
+		<isMagic>2</isMagic>
+		<magicLvl>85</magicLvl>
+		<targetType>SELF</targetType>
+		<targetScope>SINGLE</targetScope>
+		<effects>
+			<effect name="SummonAgathion">
+				<npcId>13601</npcId>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="28141" toLevel="1" name="Summon Cancer Agathion">
+		<!-- Summons Agathion Cancer. -->
+		<icon>icon.etc_summon_aga_agit_i00</icon>
+		<operateType>A1</operateType>
+		<hitTime>3000</hitTime>
+		<isMagic>2</isMagic>
+		<magicLvl>85</magicLvl>
+		<targetType>SELF</targetType>
+		<targetScope>SINGLE</targetScope>
+		<effects>
+			<effect name="SummonAgathion">
+				<npcId>13602</npcId>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="28142" toLevel="10" name="Sayha's Talisman">
+		<!-- P. Def. +$s1, M. Def. +$s2, Acquired XP/ SP +$s3. -->
+		<icon>icon.bm_sayhas_talisman</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<isMagic>3</isMagic>
+		<effects>
+			<effect name="PhysicalDefence">
+				<amount>
+					<value level="1">112</value>
+					<value level="2">225</value>
+					<value level="3">450</value>
+					<value level="4">676</value>
+					<value level="5">901</value>
+					<value level="6">1126</value>
+					<value level="7">1351</value>
+					<value level="8">1576</value>
+					<value level="9">1801</value>
+					<value level="10">2027</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>
+					<value level="1">74</value>
+					<value level="2">147</value>
+					<value level="3">294</value>
+					<value level="4">441</value>
+					<value level="5">589</value>
+					<value level="6">736</value>
+					<value level="7">833</value>
+					<value level="8">1030</value>
+					<value level="9">1178</value>
+					<value level="10">1325</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ExpModify">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+					<value level="4">5</value>
+					<value level="5">7</value>
+					<value level="6">10</value>
+					<value level="7">15</value>
+					<value level="8">20</value>
+					<value level="9">25</value>
+					<value level="10">30</value>
+				</amount>
+			</effect>
+			<effect name="SpModify">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+					<value level="4">5</value>
+					<value level="5">7</value>
+					<value level="6">10</value>
+					<value level="7">15</value>
+					<value level="8">20</value>
+					<value level="9">25</value>
+					<value level="10">30</value>
+				</amount>
+			</effect>
+			<effect name="HealEffect">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">0</value>
+					<value level="6">0</value>
+					<value level="7">0</value>
+					<value level="8">0</value>
+					<value level="9">5000</value>
+					<value level="10">7000</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="28143" toLevel="4" name="Sayha's Trust">
+		<!-- Skill Power +$s1, Skill Cooldown -$s2. -->
+		<icon>icon.bm_sayhas_talisman</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<isMagic>3</isMagic>
+		<effects>
+			<effect name="PhysicalSkillPower">
+				<amount>
+					<value level="1">2</value>
+					<value level="2">3</value>
+					<value level="3">5</value>
+					<value level="4">9</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalSkillPower">
+				<amount>
+					<value level="1">2</value>
+					<value level="2">3</value>
+					<value level="3">5</value>
+					<value level="4">9</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Reuse">
+				<amount>
+					<value level="1">-2</value>
+					<value level="2">-3</value>
+					<value level="3">-5</value>
+					<value level="4">-5</value>
+				</amount>
+				<mode>PER</mode>
+				<magicType>0</magicType>
+			</effect>
+			<effect name="Reuse">
+				<amount>
+					<value level="1">-2</value>
+					<value level="2">-3</value>
+					<value level="3">-5</value>
+					<value level="4">-5</value>
+				</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="28144" toLevel="4" name="Sayha's Protection">
+		<!-- For $s1, Damage Received -$s2. -->
+		<icon>
+			<value level="1">icon.sayhas_talisman_g_Lv1</value>
+			<value level="2">icon.sayhas_talisman_g_Lv2</value>
+			<value level="3">icon.sayhas_talisman_g_Lv3</value>
+			<value level="4">icon.sayhas_talisman_g_Lv4</value>
+		</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>45</abnormalTime>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<hitTime>300</hitTime>
+		<coolTime>300</coolTime>
+		<reuseDelay>
+			<value level="1">600000</value>
+			<value level="2">420000</value>
+			<value level="3">300000</value>
+			<value level="4">180000</value>
+		</reuseDelay>
+		<staticReuse>true</staticReuse>
+		<castRange>900</castRange>
+		<effectPoint>1</effectPoint>
+		<effects>
+			<effect name="DamageByAttack">
+				<amount>
+					<value level="1">-5</value>
+					<value level="2">-7</value>
+					<value level="3">-7</value>
+					<value level="4">-10</value>
+				</amount>
+				<type>PK</type>
+			</effect>
+			<effect name="DamageByAttack">
+				<amount>
+					<value level="1">-5</value>
+					<value level="2">-7</value>
+					<value level="3">-7</value>
+					<value level="4">-10</value>
+				</amount>
+				<type>ENEMY_ALL</type>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="28145" toLevel="4" name="Sayha's Encouragement">
+		<!-- For $s1, PvE Damage +$s2. -->
+		<icon>
+			<value level="1">icon.sayhas_talisman_pve_Lv1</value>
+			<value level="2">icon.sayhas_talisman_pve_Lv2</value>
+			<value level="3">icon.sayhas_talisman_pve_Lv3</value>
+			<value level="4">icon.sayhas_talisman_pve_Lv4</value>
+		</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>
+			<value level="1">180</value>
+			<value level="2">180</value>
+			<value level="3">300</value>
+			<value level="4">600</value>
+		</abnormalTime>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<hitTime>300</hitTime>
+		<coolTime>300</coolTime>
+		<reuseDelay>
+			<value level="1">600000</value>
+			<value level="2">420000</value>
+			<value level="3">300000</value>
+			<value level="4">180000</value>
+		</reuseDelay>
+		<staticReuse>true</staticReuse>
+		<castRange>900</castRange>
+		<effectPoint>1</effectPoint>
+		<effects>
+			<effect name="PveMagicalSkillDamageBonus">
+				<amount>
+					<value level="1">5</value>
+					<value level="2">8</value>
+					<value level="3">8</value>
+					<value level="4">10</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvePhysicalAttackDamageBonus">
+				<amount>
+					<value level="1">5</value>
+					<value level="2">8</value>
+					<value level="3">8</value>
+					<value level="4">10</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvePhysicalSkillDamageBonus">
+				<amount>
+					<value level="1">5</value>
+					<value level="2">8</value>
+					<value level="3">8</value>
+					<value level="4">10</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="28146" toLevel="4" name="Sayha's Anger">
+		<!-- For $s1, PvP Damage +$s2. -->
+		<icon>
+			<value level="1">icon.sayhas_talisman_pvp_Lv1</value>
+			<value level="2">icon.sayhas_talisman_pvp_Lv2</value>
+			<value level="3">icon.sayhas_talisman_pvp_Lv3</value>
+			<value level="4">icon.sayhas_talisman_pvp_Lv4</value>
+		</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>45</abnormalTime>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<hitTime>300</hitTime>
+		<coolTime>300</coolTime>
+		<reuseDelay>
+			<value level="1">600000</value>
+			<value level="2">420000</value>
+			<value level="3">300000</value>
+			<value level="4">180000</value>
+		</reuseDelay>
+		<staticReuse>true</staticReuse>
+		<castRange>900</castRange>
+		<effectPoint>1</effectPoint>
+		<effects>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>
+					<value level="1">8</value>
+					<value level="2">8</value>
+					<value level="3">12</value>
+					<value level="4">15</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>
+					<value level="1">8</value>
+					<value level="2">8</value>
+					<value level="3">12</value>
+					<value level="4">15</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>
+					<value level="1">8</value>
+					<value level="2">8</value>
+					<value level="3">12</value>
+					<value level="4">15</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="28147" toLevel="3" name="Sayha's Support">
+		<!-- Recovers HP by 20%, MP by 20%, and CP by 30%. -->
+		<icon>icon.bm_sayhas_talisman</icon>
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<hitTime>300</hitTime>
+		<coolTime>300</coolTime>
+		<reuseDelay>
+			<value level="1">1800000</value>
+			<value level="2">1200000</value>
+			<value level="3">360000</value>
+		</reuseDelay>
+		<staticReuse>true</staticReuse>
+		<effectPoint>10</effectPoint>
+		<effects>
+			<effect name="HealPercent">
+				<power>
+					<value level="1">20</value>
+					<value level="2">20</value>
+					<value level="3">30</value>
+				</power>
+			</effect>
+			<effect name="ManaHealPercent">
+				<power>
+					<value level="1">20</value>
+					<value level="2">20</value>
+					<value level="3">30</value>
+				</power>
+			</effect>
+			<effect name="CpHealPercent">
+				<power>
+					<value level="1">30</value>
+					<value level="2">30</value>
+					<value level="3">50</value>
+				</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="28148" toLevel="1" name="Fortune Talisman Pack">
+		<!-- Double-click to obtain either Sayha's Talisman or Venir's Talisman. -->
+		<operateType>A1</operateType>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+	</skill>
+	<skill id="28149" toLevel="10" name="Faint Attack Resistance">
+		<!-- Slightly resistant to Faint. -->
+		<icon>icon.skill4011</icon>
+		<operateType>P</operateType>
+	</skill>
+	<skill id="28150" toLevel="1" name="Mother Tree's Blessed Herbs">
+		<!-- Increases acquired XP and SP by 300% for 2 min. All party members. -->
+		<icon>BranchIcon.Icon.etc_g_bonus_herb_i00</icon>
+		<operateType>A1</operateType>
+		<isMagic>4</isMagic>
+		<hitTime>100</hitTime>
+		<reuseDelay>2000</reuseDelay>
+		<effectPoint>100</effectPoint>
+	</skill>
+	<skill id="28151" toLevel="4" name="Halloween Blessing">
+		<!-- Rico's Halloween buff. Acquired XP/ SP +$s1, P./ M. Atk. +$s2, Received Damage -$s3. You can receive a Halloween gift once the buff expires. -->
+		<icon>icon.event_halloween_pumpkin_i00</icon>
+		<operateType>A1</operateType>
+		<isMagic>4</isMagic>
+		<castRange>900</castRange>
+		<effectPoint>1</effectPoint>
+	</skill>
+	<skill id="28152" toLevel="1" name="Halloween Blessing">
+		<icon>icon.event_halloween_pumpkin_i00</icon>
+		<operateType>A1</operateType>
+		<isMagic>4</isMagic>
+		<effectPoint>1</effectPoint>
+	</skill>
+	<skill id="28153" toLevel="1" name="Halloween Gift">
+		<operateType>A1</operateType>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+	</skill>
+	<skill id="28154" toLevel="1" name="Talisman - Abundance Pack">
+		<icon>icon.event_hero_treasure_box_i00</icon>
+		<itemConsumeId>29077</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="7.45">
+						<item id="26418" count="1" /> <!-- Recipe: Talisman - Abundance Lv. 1 (High-grade) -->
+					</item>
+					<item chance="5.25">
+						<item id="26419" count="1" /> <!-- Recipe: Talisman - Abundance Lv. 2 (High-grade) -->
+					</item>
+					<item chance="4.25">
+						<item id="26420" count="1" /> <!-- Recipe: Talisman - Abundance Lv. 3 (High-grade) -->
+					</item>
+					<item chance="3.25">
+						<item id="26421" count="1" /> <!-- Recipe: Talisman - Abundance Lv. 4 (High-grade) -->
+					</item>
+					<item chance="7.45">
+						<item id="23833" count="1" /> <!-- Talisman - Abundance -->
+					</item>
+					<item chance="7.45">
+						<item id="23835" count="1" /> <!-- Talisman - Abundance -->
+					</item>
+					<item chance="7.45">
+						<item id="23834" count="1" /> <!-- Talisman - Abundance -->
+					</item>
+					<item chance="7.45">
+						<item id="23836" count="1" /> <!-- Talisman - Abundance -->
+					</item>
+					<item chance="7.45">
+						<item id="26338" count="1" /> <!-- Talisman - Abundance Lv. 1 (High-grade) -->
+					</item>
+					<item chance="5.25">
+						<item id="26339" count="1" /> <!-- Talisman - Abundance Lv. 2 (High-grade) -->
+					</item>
+					<item chance="4.25">
+						<item id="26340" count="1" /> <!-- Talisman - Abundance Lv. 3 (High-grade) -->
+					</item>
+					<item chance="3.25">
+						<item id="26341" count="1" /> <!-- Talisman - Abundance Lv. 4 (High-grade) -->
+					</item>
+					<item chance="7.45">
+						<item id="23839" count="1" /> <!-- Talisman - Conquerer -->
+					</item>
+					<item chance="7.45">
+						<item id="23837" count="1" /> <!-- Talisman - Hunter -->
+					</item>
+					<item chance="7.45">
+						<item id="23840" count="1" /> <!-- Talisman - Outlaw -->
+					</item>
+					<item chance="7.45">
+						<item id="23838" count="1" /> <!-- Talisman - Slaughterer -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="28155" toLevel="1" name="Wondrous Jewelry Box">
+		<operateType>A1</operateType>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+	</skill>
+	<skill id="28156" toLevel="12" name="Virgo Agathion Charm Pack">
+		<!-- Double-click to obtain a +3 Virgo Agathion Charm - Stage 1 (30-day). -->
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="28157" toLevel="12" name="Virgo Agathion Charm Pack">
+		<!-- Double-click to obtain a +3 Virgo Agathion Charm - Stage 1 (15-day). -->
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="28158" toLevel="1" name="Bonfire">
+		<operateType>A1</operateType>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>30000</reuseDelay>
+		<effectPoint>1</effectPoint>
+	</skill>
+	<skill id="28159" toLevel="1" name="Regular Dish">
+		<!-- STR/ DEX/ CON/ INT/ WIT/ MEN +1and XP/ SP +10% for 30 min. Cooldown is 5 min. -->
+		<icon>icon.etc_food_dish_i00</icon>
+		<operateType>A1</operateType>
+		<isMagic>4</isMagic>
+		<reuseDelay>5000</reuseDelay>
+	</skill>
+	<skill id="28160" toLevel="1" name="Match Sisters' Gift">
+		<operateType>A1</operateType>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+	</skill>
+	<skill id="28161" toLevel="1" name="Match Sisters' Gratitude">
+		<!-- For 30 min., XP/ SP +30%, Vitality Status Acquired XP/ SP +30%, P./ M. Atk. And P./ M. Def. +15%. -->
+		<icon>icon.etc_candle_white_i00</icon>
+		<operateType>A1</operateType>
+		<isMagic>4</isMagic>
+		<reuseDelay>5000</reuseDelay>
+	</skill>
+	<skill id="28162" toLevel="2" name="Cooking Ingredient">
+		<icon>
+			<value level="1">icon.skill11775</value>
+			<value level="2">icon.skill0000</value>
+		</icon>
+		<operateType>A1</operateType>
+		<castRange>100</castRange>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>3000</reuseDelay>
+		<effectPoint>-1</effectPoint>
+	</skill>
+	<skill id="28163" toLevel="1" name="Match Sisters' Blessing">
+		<!-- Blessing from helping the Match Sisters. For 2 h., increases Acquired XP/ SP by 150% and Acquired XP/ SP while fishing by 50%. -->
+		<icon>BranchSys.icon.br_xmas_miracle_i00</icon>
+		<operateType>A1</operateType>
+		<isMagic>4</isMagic>
+		<castRange>1200</castRange>
+	</skill>
+	<skill id="28164" toLevel="1" name="Freya's Charisma Potion">
+		<!-- Changes the appearance to that of a cat doll, and CHA +5 for 30 min. Cannot be stacked with Einhasad's CHA Potion or Maphr's Luck Potion. Cooldown is 5 min. Effect remains after death. Cannot be used in the Olympiad. -->
+		<icon>icon.bm_freya_charisma_potion1</icon>
+		<operateType>A1</operateType>
+		<isMagic>4</isMagic>
+		<reuseDelay>300000</reuseDelay>
+	</skill>
+	<skill id="28165" toLevel="1" name="Freya's Charisma Potion">
+		<!-- Changes the appearance to that of a panda doll, and CHA +5 for 30 min. Cannot be stacked with Einhasad's CHA Potion or Maphr's Luck Potion. Cooldown is 5 min. Effect remains after death. Cannot be used in the Olympiad. -->
+		<icon>icon.bm_freya_charisma_potion1</icon>
+		<operateType>A1</operateType>
+		<isMagic>4</isMagic>
+		<reuseDelay>300000</reuseDelay>
+	</skill>
+	<skill id="28166" toLevel="1" name="Freya's Heart-pounding Shopping Bag">
+		<!-- Double-click Freya's Heart-pounding Shopping Bag to obtain 1 Freya's Wind Scroll and 2 Freya's Recovery Potion. There is also a chance to additionally obtain one a Freya, Sirra, or Snowman Winter Card. -->
+		<operateType>A1</operateType>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+	</skill>
+	<skill id="28167" toLevel="3" name="Freya Winter Card">
+		<!-- Double-click to randomly obtain an item from a selection of rare items including rare accessories. -->
+		<operateType>A1</operateType>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+	</skill>
+	<skill id="28168" toLevel="1" name="Freya's Christmas Treasure Chest">
+		<!-- Double-click to obtain a random item. -->
+		<operateType>A1</operateType>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+	</skill>
+	<skill id="28169" toLevel="1" name="Low-grade Zodiac Agathion">
+		<operateType>A1</operateType>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>500</reuseDelay>
+	</skill>
+	<skill id="28170" toLevel="1" name="Mid-grade Zodiac Agathion">
+		<operateType>A1</operateType>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>500</reuseDelay>
+	</skill>
+	<skill id="28171" toLevel="1" name="High-grade Zodiac Agathion">
+		<icon>icon.bm_dragon_present_4</icon>
+		<itemConsumeId>29152</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<reuseDelay>500</reuseDelay>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="8.33333333">
+						<item id="24171" count="1" /> <!-- Agathion - Gemini Pack (High-grade) -->
+					</item>
+					<item chance="8.33333333">
+						<item id="24159" count="1" /> <!-- Agathion - Libra Pack (High-grade) -->
+					</item>
+					<item chance="8.33333333">
+						<item id="24177" count="1" /> <!-- Agathion - Aquarius Pack (High-grade) -->
+					</item>
+					<item chance="8.33333333">
+						<item id="24153" count="1" /> <!-- Agathion - Virgo Pack (High-grade) -->
+					</item>
+					<item chance="8.33333333">
+						<item id="24156" count="1" /> <!-- Agathion - Capricorn Pack (High-grade) -->
+					</item>
+					<item chance="8.33333333">
+						<item id="24168" count="1" /> <!-- Agathion - Leo Pack (High-grade) -->
+					</item>
+					<item chance="8.33333333">
+						<item id="24162" count="1" /> <!-- Agathion - Aries Pack (High-grade) -->
+					</item>
+					<item chance="8.33333333">
+						<item id="24186" count="1" /> <!-- Agathion - Cancer Pack (High-grade) -->
+					</item>
+					<item chance="8.33333333">
+						<item id="24180" count="1" /> <!-- Agathion - Pisces Pack (High-grade) -->
+					</item>
+					<item chance="8.33333333">
+						<item id="24174" count="1" /> <!-- Agathion - Scorpio Pack (High-grade) -->
+					</item>
+					<item chance="8.33333333">
+						<item id="24183" count="1" /> <!-- Agathion - Sagittarius Pack (High-grade) -->
+					</item>
+					<item chance="8.33333333">
+						<item id="24165" count="1" /> <!-- Agathion - Taurus Pack (High-grade) -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="28172" toLevel="1" name="High-grade Maphr's Rune">
+		<!-- Adena drop amount +300%, item drop rate and spoil acquisition rate +100%. -->
+		<icon>BranchSys3.lcon.g_rune_itemdrop_up</icon>
+		<operateType>P</operateType>
+	</skill>
+	<skill id="28173" toLevel="1" name="Blessing of Protection">
+		<!-- Has a high chance of resisting abnormal state attacks and keeps you safe from attacks by chaotic characters who are more than 10 levels apart from you. -->
+		<icon>icon.skill0194</icon>
+		<operateType>A1</operateType>
+		<castRange>700</castRange>
+	</skill>
+	<skill id="28174" toLevel="1" name="Mochi">
+		<operateType>A1</operateType>
+		<reuseDelay>60000</reuseDelay>
+	</skill>
+	<skill id="28175" toLevel="1" name="Lineage II Baseball Uniform Appearance Stone">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="28176" toLevel="1" name="Lineage II Baseball Cap Appearance Stone">
+		<icon>BranchSys3.Icon.g_shape_shifting_hair1</icon>
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="28177" toLevel="1" name="Light Imbued Treasure Chest">
+		<!-- Double-click to obtain a random item. -->
+		<operateType>A1</operateType>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+	</skill>
+	<skill id="28178" toLevel="1" name="Agathion Summon - Antharas">
+		<!-- Summons Agathion. -->
+		<icon>icon.etc_summon_aga_agit_i00</icon>
+		<operateType>A1</operateType>
+		<hitTime>3000</hitTime>
+	</skill>
+	<skill id="28179" toLevel="1" name="Antharas' Cute Tricks">
+		<!-- See the summoned spirit perform cute tricks. -->
+		<icon>icon.skill_agathion_cute</icon>
+		<operateType>A1</operateType>
+		<hitTime>3000</hitTime>
+	</skill>
+	<skill id="28180" toLevel="1" name="Stable Cloak Enchantment Scroll">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="28181" toLevel="1" name="High-grade Spirit Stone Pack - Legendary">
+		<operateType>A1</operateType>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+	</skill>
+	<skill id="28182" toLevel="1" name="High-grade Spirit Stone Pack - Cloak">
+		<operateType>A1</operateType>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+	</skill>
+	<skill id="28183" toLevel="1" name="Summon Agathion - Mermaid">
+		<!-- Summons Agathion. -->
+		<icon>icon.etc_summon_aga_agit_i00</icon>
+		<operateType>A1</operateType>
+		<hitTime>3000</hitTime>
+	</skill>
+	<skill id="28184" toLevel="1" name="Scroll: Enchant Mermaid Agathion">
+		<icon>icon.star_scrl_of_ench_ag</icon>
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="28185" toLevel="1" name="Master's Fishing Potion">
+		<!-- Increases Acquired XP/ SP while fishing by 50% for 1 h.. Effect remains after death and cannot be forcibly removed. -->
+		<icon>BranchIcon.etc_sign_agathion_feed_blue_i00</icon>
+		<operateType>A1</operateType>
+		<isMagic>4</isMagic>
+		<coolTime>500</coolTime>
+		<reuseDelay>60000</reuseDelay>
+	</skill>
+	<skill id="28186" toLevel="1" name="Golden Fishing Shot">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="28187" toLevel="1" name="Shining Fishing Box">
+		<!-- Double click to obtain one of various items with a random chance. -->
+		<operateType>A1</operateType>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+	</skill>
+	<skill id="28188" toLevel="5" name="Fishing Scroll: XP">
+		<operateType>A1</operateType>
+		<reuseDelay>5000</reuseDelay>
+	</skill>
+	<skill id="28189" toLevel="11" name="Mermaid Agathion Unique Ability">
+		<!-- Increases Acquired XP/ SP while fishing with growth of Agathion. -->
+		<icon>icon.agathion_base</icon>
+		<operateType>P</operateType>
+	</skill>
+	<skill id="28190" toLevel="4" name="Blessing of Mermaid">
+		<!-- Increases fishing XP/ SP by $s2 for $s1. -->
+		<icon>icon.skill_agathion_special</icon>
+		<operateType>A1</operateType>
+		<isMagic>4</isMagic>
+		<hitTime>1000</hitTime>
+		<reuseDelay>3600000</reuseDelay>
+		<effectPoint>379</effectPoint>
+	</skill>
+	<skill id="28191" toLevel="1" name="Ultimate Fortune Jewelry Box">
+		<!-- Double click to obtain one of Lucky Jewel Boxes. -->
+		<operateType>A1</operateType>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+	</skill>
+	<skill id="28192" toLevel="1" name="Equip or unequip New User Sprout">
+		<!-- New User Sprout disappears. -->
+		<icon>icon.s_newbie_user_display</icon>
+		<operateType>A1</operateType>
+		<effectPoint>1</effectPoint>
+	</skill>
+	<skill id="28193" toLevel="1" name="Equip or unequip Dormant User Sprout">
+		<!-- Dormant User Sprout disappears. -->
+		<icon>icon.s_dormant_user_display</icon>
+		<operateType>A1</operateType>
+		<effectPoint>1</effectPoint>
+	</skill>
+	<skill id="28194" toLevel="1" name="Suspicious Vault">
+		<!-- Double-click to obtain an item. -->
+		<icon>icon.bm_strongbox</icon>
+		<operateType>A1</operateType>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+	</skill>
+	<skill id="28195" toLevel="1" name="Vitality Beer">
+		<!-- Double click to recover a certain amount of Vitality. -->
+		<icon>icon.bm_honey_beer</icon>
+		<operateType>A1</operateType>
+		<reuseDelay>60000</reuseDelay>
+	</skill>
+	<skill id="28196" toLevel="3" name="Honey Vitality Beer">
+		<!-- CON/ MEN/ LUC/ CHA $s2 for $s1. If additional Honey Vitality Beer is used while the Buff is still in effect, the buff will stack up to Lv. 3. Can be used wth Fish Stew. -->
+		<icon>
+			<value level="1">icon.bm_royal_honey_beer_lv1</value>
+			<value level="2">icon.bm_royal_honey_beer_lv2</value>
+			<value level="3">icon.bm_royal_honey_beer_lv3</value>
+		</icon>
+		<operateType>A1</operateType>
+		<isMagic>4</isMagic>
+		<reuseDelay>5000</reuseDelay>
+	</skill>
+	<skill id="28197" toLevel="1" name="Teddy Bear Appearance Stone">
+		<!-- Changes appearance to teddy bear. -->
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="28198" toLevel="1" name="Cat Plushy Appearance Stone">
+		<!-- Changes appearance to cat plushy. -->
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="28199" toLevel="1" name="Panda Plushy Appearance Stone">
+		<!-- Changes appearance to panda plushy. -->
+		<operateType>A1</operateType>
+	</skill>
+</list>

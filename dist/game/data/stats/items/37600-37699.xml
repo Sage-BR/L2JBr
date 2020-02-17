@@ -1,0 +1,2241 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
+	<item id="37600" name="Weapon Coupon (A-grade)" type="EtcItem">
+		<!-- Take this to Snake in town to obtain a weapon (A-grade) for a small fee. Temporary event item. -->
+		<set name="icon" val="icon.etc_level_bustup_ticket_i02" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="37601" name="Armor Coupon (R-grade)" type="EtcItem">
+		<!-- Take this to Snake in town to obtain armor (R-grade) for a small fee. Temporary event item. -->
+		<set name="icon" val="icon.etc_level_bustup_ticket_i01" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="37602" name="Armor Coupon (R95-grade)" type="EtcItem">
+		<!-- Take this to Snake in town to obtain armor (R95-grade) for a small fee. Temporary event item. -->
+		<set name="icon" val="icon.etc_level_bustup_ticket_i01" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="37603" name="Armor Coupon (R99-grade)" type="EtcItem">
+		<!-- Take this to Snake in town to obtain armor (R99-grade) for a small fee. Temporary event item. -->
+		<set name="icon" val="icon.etc_level_bustup_ticket_i01" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="37604" name="Armor Coupon (S-grade)" type="EtcItem">
+		<!-- Take this to Snake in town to obtain armor (S-grade) for a small fee. Temporary event item. -->
+		<set name="icon" val="icon.etc_level_bustup_ticket_i01" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="37605" name="Armor Coupon (A-grade)" type="EtcItem">
+		<!-- Take this to Snake in town to obtain armor (A-grade) for a small fee. Temporary event item. -->
+		<set name="icon" val="icon.etc_level_bustup_ticket_i01" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="37606" name="Promise Cube Pack" additionalName="Event" type="EtcItem">
+		<!-- Double-click to acquire a Promise Cube (100-day). Cannot be used in the Olympiad. -->
+		<set name="icon" val="icon.etc_pi_gift_box_i01" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+	</item>
+	<item id="37607" name="Treasure Chest" additionalName="Western Winds" type="EtcItem">
+		<!-- Double-click to obtain either a hair accessory pack, pendant pack, enchant scroll pack, attribute stone pack, or ingredient pack. -->
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="weight" val="10" />
+		<set name="is_stackable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="37608" min="1" max="1" chance="10" /> <!-- Hair Accessory Pack - Western Winds -->
+			<item id="37609" min="1" max="1" chance="5" /> <!-- Pendant Pack - Western Winds -->
+			<item id="37612" min="1" max="1" chance="57" /> <!-- Ingredient Box - Western Winds -->
+			<item id="37611" min="1" max="1" chance="23" /> <!-- Attribute Stone Pack - Western Winds -->
+			<item id="37610" min="1" max="1" chance="5" /> <!-- Enchant Scroll Pack - Western Winds -->
+		</capsuled_items>
+	</item>
+	<item id="37608" name="Hair Accessory Pack" additionalName="Western Winds" type="EtcItem">
+		<!-- Double-click to obtain a hair accessory on which you can add a pendant. -->
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="34631" min="1" max="1" chance="8.33" /> <!-- Eyepatch -->
+			<item id="34630" min="1" max="1" chance="8.33" /> <!-- Outlaw's Eyepatch -->
+			<item id="34629" min="1" max="1" chance="8.33" /> <!-- Pirate's Eyepatch -->
+			<item id="8921" min="1" max="1" chance="8.33" /> <!-- Demon Circlet -->
+			<item id="6843" min="1" max="1" chance="8.33" /> <!-- Cat Ears -->
+			<item id="8565" min="1" max="1" chance="8.33" /> <!-- Romantic Chapeau -->
+			<item id="8920" min="1" max="1" chance="8.33" /> <!-- Angel Halo -->
+			<item id="34632" min="1" max="1" chance="8.33" /> <!-- Party Hat -->
+			<item id="7680" min="1" max="1" chance="8.33" /> <!-- Raccoon Ears -->
+			<item id="7683" min="1" max="1" chance="8.33" /> <!-- Rabbit Ears -->
+			<item id="34634" min="1" max="1" chance="8.33" /> <!-- Refined Devil Horn -->
+			<item id="34633" min="1" max="1" chance="8.37" /> <!-- Refined Angel Ring -->
+		</capsuled_items>
+	</item>
+	<item id="37609" name="Pendant Pack" additionalName="Western Winds" type="EtcItem">
+		<!-- Double-click to obtain a pendant. -->
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="35903" min="1" max="1" chance="7.14" /> <!-- CON Pendant -->
+			<item id="35904" min="1" max="1" chance="7.14" /> <!-- MEN Pendant -->
+			<item id="35905" min="1" max="1" chance="7.14" /> <!-- INT Pendant -->
+			<item id="35902" min="1" max="1" chance="7.14" /> <!-- DEX Pendant -->
+			<item id="35913" min="1" max="1" chance="7.14" /> <!-- M. Atk. Pendant -->
+			<item id="35910" min="1" max="1" chance="7.14" /> <!-- M. Def. Pendant -->
+			<item id="35906" min="1" max="1" chance="7.14" /> <!-- WIT Pendant -->
+			<item id="35901" min="1" max="1" chance="7.14" /> <!-- STR Pendant -->
+			<item id="35908" min="1" max="1" chance="7.14" /> <!-- Critical Damage Pendant -->
+			<item id="35914" min="1" max="1" chance="7.14" /> <!-- Accuracy Pendant -->
+			<item id="35911" min="1" max="1" chance="7.14" /> <!-- Evasion Pendant -->
+			<item id="35912" min="1" max="1" chance="7.14" /> <!-- P. Atk. Pendant -->
+			<item id="35909" min="1" max="1" chance="7.14" /> <!-- P. Def. Pendant -->
+			<item id="35907" min="1" max="1" chance="7.18" /> <!-- Critical Rate Pendant -->
+		</capsuled_items>
+	</item>
+	<item id="37610" name="Enchant Scroll Pack" additionalName="Western Winds" type="EtcItem">
+		<!-- Double-click to obtain an Enchant Scroll (S or R-grade), or have a low chance of receiving a Blessed Enchant Scroll. -->
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="19448" min="1" max="1" chance="10" /> <!-- Blessed Scroll: Enchant Armor (R-grade) -->
+			<item id="6578" min="1" max="1" chance="12" /> <!-- Blessed Scroll: Enchant Armor (S-grade) -->
+			<item id="19447" min="1" max="1" chance="6" /> <!-- Blessed Scroll: Enchant Weapon (R-grade) -->
+			<item id="6577" min="1" max="1" chance="8" /> <!-- Blessed Scroll: Enchant Weapon (S-grade) -->
+			<item id="17527" min="1" max="1" chance="16" /> <!-- Scroll: Enchant Armor (R-grade) -->
+			<item id="960" min="1" max="1" chance="26" /> <!-- Scroll: Enchant Armor (S-grade) -->
+			<item id="17526" min="1" max="1" chance="10" /> <!-- Scroll: Enchant Weapon (R-grade) -->
+			<item id="959" min="1" max="1" chance="12" /> <!-- Scroll: Enchant Weapon (S-grade) -->
+		</capsuled_items>
+	</item>
+	<item id="37611" name="Attribute Stone Pack" additionalName="Western Winds" type="EtcItem">
+		<!-- Double-click to obtain either an attribute stone or crystal. -->
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="9555" min="1" max="1" chance="6" /> <!-- Wind Crystal -->
+			<item id="9553" min="1" max="1" chance="6" /> <!-- Water Crystal -->
+			<item id="9554" min="1" max="1" chance="6" /> <!-- Earth Crystal -->
+			<item id="9552" min="1" max="1" chance="6" /> <!-- Fire Crystal -->
+			<item id="9557" min="1" max="1" chance="6" /> <!-- Holy Crystal -->
+			<item id="9556" min="1" max="1" chance="6" /> <!-- Dark Crystal -->
+			<item id="9549" min="1" max="1" chance="10.6" /> <!-- Wind Stone -->
+			<item id="9547" min="1" max="1" chance="10.6" /> <!-- Water Stone -->
+			<item id="9548" min="1" max="1" chance="10.6" /> <!-- Earth Stone -->
+			<item id="9546" min="1" max="1" chance="10.6" /> <!-- Fire Stone -->
+			<item id="9551" min="1" max="1" chance="10.6" /> <!-- Holy Stone -->
+			<item id="9550" min="1" max="1" chance="11" /> <!-- Dark Stone -->
+		</capsuled_items>
+	</item>
+	<item id="37612" name="Ingredient Box" additionalName="Western Winds" type="EtcItem">
+		<!-- Double-click to obtain either an Energy of Destruction or a crafting ingredient. -->
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="36557" min="1" max="1" chance="13" /> <!-- Accessory Gem -->
+			<item id="36558" min="1" max="1" chance="7" /> <!-- Accessory Gem (Mid-grade) -->
+			<item id="36559" min="1" max="1" chance="4" /> <!-- Accessory Gem (High-grade) -->
+			<item id="36562" min="1" max="1" chance="13" /> <!-- Greater Cokes -->
+			<item id="36563" min="1" max="1" chance="7" /> <!-- Synthetic Cokes -->
+			<item id="36564" min="1" max="1" chance="4" /> <!-- Greater Synthetic Cokes -->
+			<item id="36552" min="1" max="1" chance="13" /> <!-- Armor Fragment -->
+			<item id="36553" min="1" max="1" chance="7" /> <!-- Armor Fragment (Mid-grade) -->
+			<item id="36554" min="1" max="1" chance="4" /> <!-- Armor Fragment (High-grade) -->
+			<item id="36547" min="1" max="1" chance="13" /> <!-- Weapon Fragment -->
+			<item id="36548" min="1" max="1" chance="7" /> <!-- Weapon Fragment (Mid-grade) -->
+			<item id="36549" min="1" max="1" chance="4" /> <!-- Weapon Fragment (High-grade) -->
+			<item id="35562" min="1" max="1" chance="4" /> <!-- Energy of Destruction -->
+		</capsuled_items>
+	</item>
+	<item id="37613" name="Hero's Treasure Chest" additionalName="Western Winds" type="EtcItem">
+		<!-- Double-click to obtain either a Hero's Lucky Enchant Stone Pack, Hero's Giant Enchant Scroll Pack, Hero's Blessed Enchant Scroll Pack, Hero's Unbind Scroll Pack, Hero's Attribute Crystal Pack, PK Pack, Reputation Pack, Mysterious Shot Box, Kaliel's Energy Box, Soul Bottle Pack, or Spirit Stone Pack. -->
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="weight" val="10" />
+		<set name="is_stackable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="37623" min="1" max="1" chance="4.05" /> <!-- Soul Bottle Pack - Western Winds -->
+			<item id="37619" min="1" max="1" chance="6" /> <!-- PK Pack - Western Winds -->
+			<item id="37616" min="1" max="1" chance="4" /> <!-- Hero's Blessed Enchant Scroll Pack - Western Winds -->
+			<item id="37614" min="1" max="1" chance="6" /> <!-- Hero's Lucky Enchant Stone Pack - Western Winds -->
+			<item id="37618" min="1" max="1" chance="12" /> <!-- Hero's Attribute Crystal Pack - Western Winds -->
+			<item id="37615" min="1" max="1" chance="4" /> <!-- Hero's Giant Enchant Scroll Pack - Western Winds -->
+			<item id="37617" min="1" max="1" chance="7" /> <!-- Hero's Unbind Scroll Pack - Western Winds -->
+			<item id="37620" min="1" max="1" chance="8" /> <!-- Reputation Pack - Western Winds -->
+			<item id="37624" min="1" max="1" chance="20" /> <!-- Top-grade Life Stone Pack - Western Winds -->
+			<item id="37622" min="1" max="1" chance="5" /> <!-- Kaliel's Energy Box - Western Winds -->
+			<item id="37621" min="1" max="1" chance="23.95" /> <!-- Mysterious Shot Pack - Western Winds -->
+		</capsuled_items>
+	</item>
+	<item id="37614" name="Hero's Lucky Enchant Stone Pack" additionalName="Western Winds" type="EtcItem">
+		<!-- Double-click to obtain a Lucky Enchant Stone (S or R-grade). -->
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="33861" min="1" max="1" chance="20" /> <!-- Lucky Enchant Stone: Armor (R-grade) - Event -->
+			<item id="33860" min="1" max="1" chance="46" /> <!-- Lucky Enchant Stone: Armor (S-grade) - Event -->
+			<item id="33855" min="1" max="1" chance="10" /> <!-- Lucky Enchant Stone: Weapon (R-grade) - Event -->
+			<item id="33854" min="1" max="1" chance="24" /> <!-- Lucky Enchant Stone: Weapon (S-grade) - Event -->
+		</capsuled_items>
+	</item>
+	<item id="37615" name="Hero's Giant Enchant Scroll Pack" additionalName="Western Winds" type="EtcItem">
+		<!-- Double-click to obtain a Giant's Enchant Scroll (S or R-grade). -->
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="36390" min="1" max="1" chance="20" /> <!-- Giant's Scroll: Enchant Armor (S-grade) -->
+			<item id="36386" min="1" max="1" chance="46" /> <!-- Giant's Scroll: Enchant Weapon (R-grade) -->
+			<item id="36387" min="1" max="1" chance="10" /> <!-- Giant's Scroll: Enchant Weapon (S-grade) -->
+			<item id="36389" min="1" max="1" chance="24" /> <!-- Giant's Scroll: Enchant Armor (R-grade) -->
+		</capsuled_items>
+	</item>
+	<item id="37616" name="Hero's Blessed Enchant Scroll Pack" additionalName="Western Winds" type="EtcItem">
+		<!-- Double-click to obtain a Blessed Enchant Scroll (S or R-grade). -->
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="19448" min="1" max="1" chance="10" /> <!-- Blessed Scroll: Enchant Armor (R-grade) -->
+			<item id="6578" min="1" max="1" chance="24" /> <!-- Blessed Scroll: Enchant Armor (S-grade) -->
+			<item id="19447" min="1" max="1" chance="20" /> <!-- Blessed Scroll: Enchant Weapon (R-grade) -->
+			<item id="6577" min="1" max="1" chance="46" /> <!-- Blessed Scroll: Enchant Weapon (S-grade) -->
+		</capsuled_items>
+	</item>
+	<item id="37617" name="Hero's Unbind Scroll Pack" additionalName="Western Winds" type="EtcItem">
+		<!-- Double-click to obtain an Unbind Scroll (R, R95, or R99-grade). -->
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="19444" min="1" max="1" chance="50" /> <!-- Unbind Scroll (R-grade) -->
+			<item id="19445" min="1" max="1" chance="30" /> <!-- Unbind Scroll (R95-grade) -->
+			<item id="19446" min="1" max="1" chance="20" /> <!-- Unbind Scroll (R99-grade) -->
+		</capsuled_items>
+	</item>
+	<item id="37618" name="Hero's Attribute Crystal Pack" additionalName="Western Winds" type="EtcItem">
+		<!-- Double-click to obtain an attribute crystal, or either a Super 60 or Super 150 attribute Stone. -->
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="9555" min="1" max="1" chance="10.6" /> <!-- Wind Crystal -->
+			<item id="9553" min="1" max="1" chance="10.6" /> <!-- Water Crystal -->
+			<item id="9554" min="1" max="1" chance="10.6" /> <!-- Earth Crystal -->
+			<item id="9552" min="1" max="1" chance="10.6" /> <!-- Fire Crystal -->
+			<item id="9557" min="1" max="1" chance="10.6" /> <!-- Holy Crystal -->
+			<item id="9556" min="1" max="1" chance="11" /> <!-- Dark Crystal -->
+			<item id="33872" min="1" max="1" chance="2" /> <!-- Wind Stone (+150) - Event -->
+			<item id="33866" min="1" max="1" chance="4" /> <!-- Wind Stone (+60) - Event -->
+			<item id="33870" min="1" max="1" chance="2" /> <!-- Water Stone (+150) - Event -->
+			<item id="33864" min="1" max="1" chance="4" /> <!-- Water Stone (+60) - Event -->
+			<item id="33871" min="1" max="1" chance="2" /> <!-- Earth Stone (+150) - Event -->
+			<item id="33865" min="1" max="1" chance="4" /> <!-- Earth Stone (+60) - Event -->
+			<item id="33869" min="1" max="1" chance="2" /> <!-- Fire Stone (+150) - Event -->
+			<item id="33863" min="1" max="1" chance="4" /> <!-- Fire Stone (+60) - Event -->
+			<item id="33874" min="1" max="1" chance="2" /> <!-- Holy Stone (+150) - Event -->
+			<item id="33868" min="1" max="1" chance="4" /> <!-- Holy Stone (+60) - Event -->
+			<item id="33873" min="1" max="1" chance="2" /> <!-- Dark Stone (+150) - Event -->
+			<item id="33867" min="1" max="1" chance="4" /> <!-- Dark Stone (+60) - Event -->
+		</capsuled_items>
+	</item>
+	<item id="37619" name="PK Pack" additionalName="Western Winds" type="EtcItem">
+		<!-- Double-click to obtain a random Scroll: PK. -->
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="35753" min="1" max="1" chance="15" /> <!-- Scroll: PK (High-grade) -->
+			<item id="35754" min="1" max="1" chance="10" /> <!-- Scroll: PK (Top-grade) -->
+			<item id="35741" min="1" max="1" chance="50" /> <!-- Scroll: PK (Low-grade) -->
+			<item id="35752" min="1" max="1" chance="25" /> <!-- Scroll: PK (Mid-grade) -->
+		</capsuled_items>
+	</item>
+	<item id="37620" name="Reputation Pack" additionalName="Western Winds" type="EtcItem">
+		<!-- Double-click to obtain a random Scroll: Reputation. -->
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="35756" min="1" max="1" chance="15" /> <!-- Scroll: Reputation (High-grade) -->
+			<item id="35757" min="1" max="1" chance="10" /> <!-- Scroll: Reputation (Top-grade) -->
+			<item id="35742" min="1" max="1" chance="50" /> <!-- Scroll: Reputation (Low-grade) -->
+			<item id="35755" min="1" max="1" chance="25" /> <!-- Scroll: Reputation (Mid-grade) -->
+		</capsuled_items>
+	</item>
+	<item id="37621" name="Mysterious Shot Pack" additionalName="Western Winds" type="EtcItem">
+		<!-- Double-click to obtain either a Mysterious Soulshot or a Mysterious Blessed Spiritshot. -->
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="34616" min="3000" max="3000" chance="50" /> <!-- Mysterious Blessed Spiritshot (R-grade) - Event -->
+			<item id="34609" min="10000" max="10000" chance="50" /> <!-- Mysterious Soulshot (R-grade) - Event -->
+		</capsuled_items>
+	</item>
+	<item id="37622" name="Kaliel's Energy Box" additionalName="Western Winds" type="EtcItem">
+		<!-- Double-click to obtain one of Kaliel's Energies. -->
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="36184" min="1" max="1" chance="85" /> <!-- Kaliel's Energy - Annihilation -->
+			<item id="36185" min="1" max="1" chance="10" /> <!-- Kaliel's Energy - Hellfire -->
+			<item id="36186" min="1" max="1" chance="5" /> <!-- Kaliel's Energy - Desire -->
+		</capsuled_items>
+	</item>
+	<item id="37623" name="Soul Bottle Pack" additionalName="Western Winds" type="EtcItem">
+		<!-- Double-click to obtain either a Bottle of Antharas' Soul, or a Bottle of Valakas' Soul. -->
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="19465" min="1" max="1" chance="50" /> <!-- Bottle of Antharas' Soul -->
+			<item id="19466" min="1" max="1" chance="50" /> <!-- Bottle of Valakas' Soul -->
+		</capsuled_items>
+	</item>
+	<item id="37624" name="Top-grade Life Stone Pack" additionalName="Western Winds" type="EtcItem">
+		<!-- Double-click to obtain either a Spirit Stone, or a Life Stone Instilled with Giants' Power. -->
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="18571" min="1" max="1" chance="54" /> <!-- Top-grade Life Stone (R95-grade) -->
+			<item id="18576" min="1" max="1" chance="34" /> <!-- Top-grade Life Stone (R99-grade) -->
+			<item id="36731" min="1" max="1" chance="12" /> <!-- Life Stone Instilled with Giants' Power -->
+		</capsuled_items>
+	</item>
+	<item id="37625" name="Legendary Card: Frintezza" type="EtcItem">
+		<set name="icon" val="icon.card_devil_frintessa" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="CARD_EVENT" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="37626" name="Mysterious Blessed Spiritshot Pack (R-grade)" type="EtcItem">
+		<!-- The power of a high level spirit is bestowed on a weapon causing its M. Atk. to momentarily increase. Double-click to acquire 10,000 rounds of Mysterious Blessed Spiritshots. Can be used with R-grade weapons. -->
+		<set name="icon" val="icon.br_cash_pack_of_spiritshot_r_i00" />
+		<set name="weight" val="100" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="default_action" val="PEEL" />
+	</item>
+	<item id="37627" name="Mysterious Soulshot Pack (R-grade)" type="EtcItem">
+		<!-- The power of a high level spirit is bestowed on a weapon causing its M. Atk. to momentarily increase. Double-click to acquire 20,000 rounds of Mysterious Blessed Soulshots. Can be used with R-grade weapons. -->
+		<set name="icon" val="icon.br_cash_pack_of_soulshot_r_i00" />
+		<set name="weight" val="100" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="default_action" val="PEEL" />
+	</item>
+	<item id="37628" name="Cupid's Arrow" type="Weapon">
+		<!-- Throws a love-filled heart. Can use the active skill "Heart Shot.". Warning: When using on a monster, you can receive another player's attack. -->
+		<set name="icon" val="icon.bm_krono_bow" />
+		<set name="weapon_type" val="BOW" />
+		<set name="damage_range" val="0;0;10;0" />
+		<set name="immediate_effect" val="true" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weight" val="900" />
+		<stats>
+			<stat type="pAtk">1</stat>
+			<stat type="mAtk">1</stat>
+			<stat type="pAtkSpd">293</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">500</stat>
+			<stat type="randomDamage">1</stat>
+		</stats>
+	</item>
+	<item id="37629" name="Pig Lollipop" type="Weapon">
+		<!-- Magic lollipop with a cute piggy drawing on it. It makes a piggy squeal upon a strike. Can transform into a cute piggy for a certain amount of time. -->
+		<set name="icon" val="icon.bm_pig_candy" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="bodypart" val="rhand" />
+		<set name="default_action" val="EQUIP" />
+		<stats>
+			<stat type="pAtk">1</stat>
+			<stat type="mAtk">1</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="37630" name="Mysterious Shaper" additionalName="7-day" type="Weapon">
+		<!-- Weapon infused with mysterious power. Must use No-grade Soulshot/ Spiritshot/ Blessed Spiritshot. Cannot be used in the Olympiad. -->
+		<set name="icon" val="icon.bm_the_dagger_of_hero" />
+		<set name="weapon_type" val="DAGGER" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="500" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="rhand" />
+		<set name="time" val="10080" />
+		<skills>
+			<skill id="13547" level="1" /> <!-- Mysterious Shaper -->
+		</skills>
+		<stats>
+			<stat type="pAtk">881</stat>
+			<stat type="mAtk">521</stat>
+			<stat type="pAtkSpd">433</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="37631" name="Mysterious Cutter" additionalName="7-day" type="Weapon">
+		<!-- Weapon infused with mysterious power. Must use No-grade Soulshot/ Spiritshot/ Blessed Spiritshot. Cannot be used in the Olympiad. -->
+		<set name="icon" val="icon.bm_the_sword_of_hero" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="500" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="rhand" />
+		<set name="time" val="10080" />
+		<skills>
+			<skill id="13548" level="1" /> <!-- Mysterious Cutter -->
+		</skills>
+		<stats>
+			<stat type="pAtk">1007</stat>
+			<stat type="mAtk">521</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="37632" name="Mysterious Slasher" additionalName="7-day" type="Weapon">
+		<!-- Weapon infused with mysterious power. Must use No-grade Soulshot/ Spiritshot/ Blessed Spiritshot. Cannot be used in the Olympiad. -->
+		<set name="icon" val="icon.bm_the_two_handed_sword_of_hero" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="500" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="time" val="10080" />
+		<skills>
+			<skill id="13549" level="1" /> <!-- Mysterious Slasher -->
+		</skills>
+		<stats>
+			<stat type="pAtk">1225</stat>
+			<stat type="mAtk">521</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="37633" name="Mysterious Avenger" additionalName="7-day" type="Weapon">
+		<!-- Weapon infused with mysterious power. Must use No-grade Soulshot/ Spiritshot/ Blessed Spiritshot. Cannot be used in the Olympiad. -->
+		<set name="icon" val="icon.bm_the_axe_of_hero" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="500" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="rhand" />
+		<set name="time" val="10080" />
+		<skills>
+			<skill id="13550" level="1" /> <!-- Mysterious Avenger -->
+		</skills>
+		<stats>
+			<stat type="pAtk">1007</stat>
+			<stat type="mAtk">521</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="37634" name="Mysterious Fighter" additionalName="7-day" type="Weapon">
+		<!-- Weapon infused with mysterious power. Must use No-grade Soulshot/ Spiritshot/ Blessed Spiritshot. Cannot be used in the Olympiad. -->
+		<set name="icon" val="icon.bm_the_fist_of_hero" />
+		<set name="weapon_type" val="DUALFIST" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="500" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="time" val="10080" />
+		<skills>
+			<skill id="13551" level="1" /> <!-- Mysterious Fighter -->
+		</skills>
+		<stats>
+			<stat type="pAtk">1225</stat>
+			<stat type="mAtk">521</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="37635" name="Mysterious Stormer" additionalName="7-day" type="Weapon">
+		<!-- Weapon infused with mysterious power. Must use No-grade Soulshot/ Spiritshot/ Blessed Spiritshot. Cannot be used in the Olympiad. -->
+		<set name="icon" val="icon.bm_the_pole_of_hero" />
+		<set name="weapon_type" val="POLE" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="500" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="damage_range" val="0;0;66;120" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="time" val="10080" />
+		<skills>
+			<skill id="13115" level="1" /> <!-- Polearm Multi-attack -->
+			<skill id="13552" level="1" /> <!-- Mysterious Stormer -->
+		</skills>
+		<stats>
+			<stat type="pAtk">1007</stat>
+			<stat type="mAtk">521</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">80</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="37636" name="Mysterious Thrower" additionalName="7-day" type="Weapon">
+		<!-- Weapon infused with mysterious power. Must use No-grade Soulshot/ Spiritshot/ Blessed Spiritshot. Cannot be used in the Olympiad. -->
+		<set name="icon" val="icon.bm_the_bow_of_hero" />
+		<set name="weapon_type" val="BOW" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="500" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="damage_range" val="0;0;10;0" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="time" val="10080" />
+		<skills>
+			<skill id="13553" level="1" /> <!-- Mysterious Thrower -->
+		</skills>
+		<stats>
+			<stat type="pAtk">1983</stat>
+			<stat type="mAtk">521</stat>
+			<stat type="pAtkSpd">293</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">500</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="37637" name="Mysterious Shooter" additionalName="7-day" type="Weapon">
+		<!-- Weapon infused with mysterious power. Must use No-grade Soulshot/ Spiritshot/ Blessed Spiritshot. Cannot be used in the Olympiad. -->
+		<set name="icon" val="icon.bm_infinity_shooter" />
+		<set name="weapon_type" val="TWOHANDCROSSBOW" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="500" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="time" val="10080" />
+		<skills>
+			<skill id="13554" level="1" /> <!-- Mysterious Shooter -->
+		</skills>
+		<stats>
+			<stat type="pAtk">1786</stat>
+			<stat type="mAtk">521</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">400</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="37638" name="Mysterious Buster" additionalName="7-day" type="Weapon">
+		<!-- Weapon infused with mysterious power. Must use No-grade Soulshot/ Spiritshot/ Blessed Spiritshot. Cannot be used in the Olympiad. -->
+		<set name="icon" val="icon.bm_infinity_sword" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="500" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="rhand" />
+		<set name="time" val="10080" />
+		<skills>
+			<skill id="13555" level="1" /> <!-- Mysterious Buster -->
+		</skills>
+		<stats>
+			<stat type="pAtk">805</stat>
+			<stat type="mAtk">696</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="37639" name="Mysterious Caster" additionalName="7-day" type="Weapon">
+		<!-- Weapon infused with mysterious power. Must use No-grade Soulshot/ Spiritshot/ Blessed Spiritshot. Cannot be used in the Olympiad. -->
+		<set name="icon" val="icon.bm_the_mace_of_hero" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="500" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="rhand" />
+		<set name="time" val="10080" />
+		<skills>
+			<skill id="13556" level="1" /> <!-- Mysterious Caster -->
+		</skills>
+		<stats>
+			<stat type="pAtk">805</stat>
+			<stat type="mAtk">696</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="37640" name="Mysterious Retributer" additionalName="7-day" type="Weapon">
+		<!-- Weapon infused with mysterious power. Must use No-grade Soulshot/ Spiritshot/ Blessed Spiritshot. Cannot be used in the Olympiad. -->
+		<set name="icon" val="icon.bm_the_staff_of_hero" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="500" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="time" val="10080" />
+		<skills>
+			<skill id="13557" level="1" /> <!-- Mysterious Retributer -->
+		</skills>
+		<stats>
+			<stat type="pAtk">981</stat>
+			<stat type="mAtk">765</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="accMagic">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="37641" name="Mysterious Dual Sword" additionalName="7-day" type="Weapon">
+		<!-- Weapon infused with mysterious power. Must use No-grade Soulshot/ Spiritshot/ Blessed Spiritshot. Cannot be used in the Olympiad. -->
+		<set name="icon" val="icon.bm_r_dualsword" />
+		<set name="weapon_type" val="DUAL" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="500" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="time" val="10080" />
+		<skills>
+			<skill id="13558" level="1" /> <!-- Mysterious Dualsword -->
+		</skills>
+		<stats>
+			<stat type="pAtk">1225</stat>
+			<stat type="mAtk">521</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="37642" name="Mysterious Dual Dagger" additionalName="7-day" type="Weapon">
+		<!-- Weapon infused with mysterious power. Must use No-grade Soulshot/ Spiritshot/ Blessed Spiritshot. Cannot be used in the Olympiad. -->
+		<set name="icon" val="icon.bm_r_dualdagger" />
+		<set name="weapon_type" val="DUALDAGGER" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="500" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="time" val="10080" />
+		<skills>
+			<skill id="13559" level="1" /> <!-- Mysterious Dual Dagger -->
+		</skills>
+		<stats>
+			<stat type="pAtk">1007</stat>
+			<stat type="mAtk">521</stat>
+			<stat type="pAtkSpd">433</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="37643" name="Mysterious Dual Blunt" additionalName="7-day" type="Weapon">
+		<!-- Weapon infused with mysterious power. Must use No-grade Soulshot/ Spiritshot/ Blessed Spiritshot. Cannot be used in the Olympiad. -->
+		<set name="icon" val="icon.bm_r_dualblunt" />
+		<set name="weapon_type" val="DUALBLUNT" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="500" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="time" val="10080" />
+		<skills>
+			<skill id="13560" level="1" /> <!-- Mysterious Dual Blunt -->
+		</skills>
+		<stats>
+			<stat type="pAtk">1225</stat>
+			<stat type="mAtk">521</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="37644" name="Mysterious Shaper" additionalName="30-day" type="Weapon">
+		<!-- Weapon infused with mysterious power. Must use No-grade Soulshot/ Spiritshot/ Blessed Spiritshot. Cannot be used in the Olympiad. -->
+		<set name="icon" val="icon.bm_the_dagger_of_hero" />
+		<set name="weapon_type" val="DAGGER" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="500" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="rhand" />
+		<set name="time" val="43200" />
+		<skills>
+			<skill id="13547" level="1" /> <!-- Mysterious Shaper -->
+		</skills>
+		<stats>
+			<stat type="pAtk">881</stat>
+			<stat type="mAtk">521</stat>
+			<stat type="pAtkSpd">433</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="37645" name="Mysterious Cutter" additionalName="30-day" type="Weapon">
+		<!-- Weapon infused with mysterious power. Must use No-grade Soulshot/ Spiritshot/ Blessed Spiritshot. Cannot be used in the Olympiad. -->
+		<set name="icon" val="icon.bm_the_sword_of_hero" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="500" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="rhand" />
+		<set name="time" val="43200" />
+		<skills>
+			<skill id="13548" level="1" /> <!-- Mysterious Cutter -->
+		</skills>
+		<stats>
+			<stat type="pAtk">1007</stat>
+			<stat type="mAtk">521</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="37646" name="Mysterious Slasher" additionalName="30-day" type="Weapon">
+		<!-- Weapon infused with mysterious power. Must use No-grade Soulshot/ Spiritshot/ Blessed Spiritshot. Cannot be used in the Olympiad. -->
+		<set name="icon" val="icon.bm_the_two_handed_sword_of_hero" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="500" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="time" val="43200" />
+		<skills>
+			<skill id="13549" level="1" /> <!-- Mysterious Slasher -->
+		</skills>
+		<stats>
+			<stat type="pAtk">1225</stat>
+			<stat type="mAtk">521</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="37647" name="Mysterious Avenger" additionalName="30-day" type="Weapon">
+		<!-- Weapon infused with mysterious power. Must use No-grade Soulshot/ Spiritshot/ Blessed Spiritshot. Cannot be used in the Olympiad. -->
+		<set name="icon" val="icon.bm_the_axe_of_hero" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="500" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="rhand" />
+		<set name="time" val="43200" />
+		<skills>
+			<skill id="13550" level="1" /> <!-- Mysterious Avenger -->
+		</skills>
+		<stats>
+			<stat type="pAtk">1007</stat>
+			<stat type="mAtk">521</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="37648" name="Mysterious Fighter" additionalName="30-day" type="Weapon">
+		<!-- Weapon infused with mysterious power. Must use No-grade Soulshot/ Spiritshot/ Blessed Spiritshot. Cannot be used in the Olympiad. -->
+		<set name="icon" val="icon.bm_the_fist_of_hero" />
+		<set name="weapon_type" val="DUALFIST" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="500" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="time" val="43200" />
+		<skills>
+			<skill id="13551" level="1" /> <!-- Mysterious Fighter -->
+		</skills>
+		<stats>
+			<stat type="pAtk">1225</stat>
+			<stat type="mAtk">521</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="37649" name="Mysterious Stormer" additionalName="30-day" type="Weapon">
+		<!-- Weapon infused with mysterious power. Must use No-grade Soulshot/ Spiritshot/ Blessed Spiritshot. Cannot be used in the Olympiad. -->
+		<set name="icon" val="icon.bm_the_pole_of_hero" />
+		<set name="weapon_type" val="POLE" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="500" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="damage_range" val="0;0;66;120" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="time" val="43200" />
+		<skills>
+			<skill id="13115" level="1" /> <!-- Polearm Multi-attack -->
+			<skill id="13552" level="1" /> <!-- Mysterious Stormer -->
+		</skills>
+		<stats>
+			<stat type="pAtk">1007</stat>
+			<stat type="mAtk">521</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">80</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="37650" name="Mysterious Thrower" additionalName="30-day" type="Weapon">
+		<!-- Weapon infused with mysterious power. Must use No-grade Soulshot/ Spiritshot/ Blessed Spiritshot. Cannot be used in the Olympiad. -->
+		<set name="icon" val="icon.bm_the_bow_of_hero" />
+		<set name="weapon_type" val="BOW" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="500" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="damage_range" val="0;0;10;0" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="time" val="43200" />
+		<skills>
+			<skill id="13553" level="1" /> <!-- Mysterious Thrower -->
+		</skills>
+		<stats>
+			<stat type="pAtk">1983</stat>
+			<stat type="mAtk">521</stat>
+			<stat type="pAtkSpd">293</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">500</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="37651" name="Mysterious Shooter" additionalName="30-day" type="Weapon">
+		<!-- Weapon infused with mysterious power. Must use No-grade Soulshot/ Spiritshot/ Blessed Spiritshot. Cannot be used in the Olympiad. -->
+		<set name="icon" val="icon.bm_infinity_shooter" />
+		<set name="weapon_type" val="TWOHANDCROSSBOW" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="500" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="time" val="43200" />
+		<skills>
+			<skill id="13554" level="1" /> <!-- Mysterious Shooter -->
+		</skills>
+		<stats>
+			<stat type="pAtk">1786</stat>
+			<stat type="mAtk">521</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">400</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="37652" name="Mysterious Buster" additionalName="30-day" type="Weapon">
+		<!-- Weapon infused with mysterious power. Must use No-grade Soulshot/ Spiritshot/ Blessed Spiritshot. Cannot be used in the Olympiad. -->
+		<set name="icon" val="icon.bm_infinity_sword" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="500" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="rhand" />
+		<set name="time" val="43200" />
+		<skills>
+			<skill id="13555" level="1" /> <!-- Mysterious Buster -->
+		</skills>
+		<stats>
+			<stat type="pAtk">805</stat>
+			<stat type="mAtk">696</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="37653" name="Mysterious Caster" additionalName="30-day" type="Weapon">
+		<!-- Weapon infused with mysterious power. Must use No-grade Soulshot/ Spiritshot/ Blessed Spiritshot. Cannot be used in the Olympiad. -->
+		<set name="icon" val="icon.bm_the_mace_of_hero" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="500" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="rhand" />
+		<set name="time" val="43200" />
+		<skills>
+			<skill id="13556" level="1" /> <!-- Mysterious Caster -->
+		</skills>
+		<stats>
+			<stat type="pAtk">805</stat>
+			<stat type="mAtk">696</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="37654" name="Mysterious Retributer" additionalName="30-day" type="Weapon">
+		<!-- Weapon infused with mysterious power. Must use No-grade Soulshot/ Spiritshot/ Blessed Spiritshot. Cannot be used in the Olympiad. -->
+		<set name="icon" val="icon.bm_the_staff_of_hero" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="500" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="time" val="43200" />
+		<skills>
+			<skill id="13557" level="1" /> <!-- Mysterious Retributer -->
+		</skills>
+		<stats>
+			<stat type="pAtk">981</stat>
+			<stat type="mAtk">765</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="accMagic">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="37655" name="Mysterious Dual Sword" additionalName="30-day" type="Weapon">
+		<!-- Weapon infused with mysterious power. Must use No-grade Soulshot/ Spiritshot/ Blessed Spiritshot. Cannot be used in the Olympiad. -->
+		<set name="icon" val="icon.bm_r_dualsword" />
+		<set name="weapon_type" val="DUAL" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="500" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="time" val="43200" />
+		<skills>
+			<skill id="13558" level="1" /> <!-- Mysterious Dualsword -->
+		</skills>
+		<stats>
+			<stat type="pAtk">1225</stat>
+			<stat type="mAtk">521</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="37656" name="Mysterious Dual Dagger" additionalName="30-day" type="Weapon">
+		<!-- Weapon infused with mysterious power. Must use No-grade Soulshot/ Spiritshot/ Blessed Spiritshot. Cannot be used in the Olympiad. -->
+		<set name="icon" val="icon.bm_r_dualdagger" />
+		<set name="weapon_type" val="DUALDAGGER" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="500" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="time" val="43200" />
+		<skills>
+			<skill id="13559" level="1" /> <!-- Mysterious Dual Dagger -->
+		</skills>
+		<stats>
+			<stat type="pAtk">1007</stat>
+			<stat type="mAtk">521</stat>
+			<stat type="pAtkSpd">433</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="37657" name="Mysterious Dual Blunt" additionalName="30-day" type="Weapon">
+		<!-- Weapon infused with mysterious power. Must use No-grade Soulshot/ Spiritshot/ Blessed Spiritshot. Cannot be used in the Olympiad. -->
+		<set name="icon" val="icon.bm_r_dualblunt" />
+		<set name="weapon_type" val="DUALBLUNT" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="weight" val="500" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="time" val="43200" />
+		<skills>
+			<skill id="13560" level="1" /> <!-- Mysterious Dual Blunt -->
+		</skills>
+		<stats>
+			<stat type="pAtk">1225</stat>
+			<stat type="mAtk">521</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="37658" name="Mysterious Healthy Juice Pack (HP/ CP)" type="EtcItem">
+		<!-- Double-click to acquire 3 Mysterious Healthy Juices (HP/ CP). -->
+		<set name="icon" val="icon.etc_pi_gift_box_i00" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="default_action" val="PEEL" />
+	</item>
+	<item id="37659" name="Mysterious Healthy Juice (HP/ CP)" type="EtcItem">
+		<!-- Mysterious juice that momentarily replenishes 30,000 HP and CP. Cannot be used in the Olympiad or Ceremony of Chaos. -->
+		<set name="icon" val="icon.bm_health_juice_violet" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="POTION" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="60" />
+		<set name="reuse_delay" val="10000" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="for_npc" val="true" />
+		<set name="is_coc_restricted" val="true" />
+		<set name="commissionItemType" val="POTION" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_sellable" val="false" />
+		<cond addName="1" msgId="113">
+			<player flyMounted="false" />
+		</cond>
+		<skills>
+			<skill id="17152" level="1" /> <!-- Mysterious Healthy Juice -->
+		</skills>
+	</item>
+	<item id="37660" name="Magmeld's Instrument" type="Weapon">
+		<!-- Magmeld's special instrument. Can play lively music. -->
+		<set name="icon" val="icon.bm_magmeld" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="bodypart" val="lrhand" />
+		<set name="default_action" val="EQUIP" />
+		<stats>
+			<stat type="pAtk">1</stat>
+			<stat type="mAtk">1</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="37661" name="Refined Romantic Chapeau: Blue" type="Armor">
+		<!-- Refined blue romantic chapeau. Uses 2 hair accessory slots. -->
+		<set name="icon" val="icon.bm_romantic_chaperon_blue" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="weight" val="10" />
+	</item>
+	<item id="37662" name="Refined Romantic Chapeau: Gold" type="Armor">
+		<!-- Refined gold romantic chapeau. Uses 2 hair accessory slots. -->
+		<set name="icon" val="icon.bm_romantic_chaperon_gold" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="weight" val="10" />
+	</item>
+	<item id="37663" name="Refined Romantic Chapeau: Green" type="Armor">
+		<!-- Refined green romantic chapeau. Uses 2 hair accessory slots. -->
+		<set name="icon" val="icon.bm_romantic_chaperon_green" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="weight" val="10" />
+	</item>
+	<item id="37664" name="Refined Romantic Chapeau: Red" type="Armor">
+		<!-- Refined red romantic chapeau. Uses 2 hair accessory slots. -->
+		<set name="icon" val="icon.bm_romantic_chaperon_red" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="weight" val="10" />
+	</item>
+	<item id="37665" name="Refined Romantic Chapeau: Yellow" type="Armor">
+		<!-- Refined yellow romantic chapeau. Uses 2 hair accessory slots. -->
+		<set name="icon" val="icon.bm_romantic_chaperon_yellow" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="weight" val="10" />
+	</item>
+	<item id="37666" name="Rare Accessory Pack" type="EtcItem">
+		<!-- Double-click to acquire 30-day Blessed Antharas's Earring, Blessed Valakas's Necklace, Tauti's Ring, and Earth Wyrm Heart Ring. -->
+		<set name="icon" val="icon.etc_pi_box_love_pack" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+	</item>
+	<item id="37667" name="Blessed Antharas' Earring" additionalName="30-day" type="Armor">
+		<!-- Dimensional Item. MP +59, Bleed Resistance +50%, Bleed Atk./ Def. Success Rate +50%, Heal Amount +10%, Vampiric Rage Effect +4%, Stun/ Mental Atk.Resistance +40%, Stun/ Mental Attack Rate +40%, P./ M. Skill MP Consumption decreased, Earth/ Holy Attribute Resistance +30, CON +3, MEN +3, P./ M. Def. +15%. Active Skill: Cancels Stun and gives Stun Resistance for 5 secs. Effect does not stack with identical ones. -->
+		<set name="icon" val="icon.bm_earring_of_antaras" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rear;lear" />
+		<set name="crystal_type" val="R" />
+		<set name="weight" val="150" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="43200" />
+		<skills>
+			<skill id="13313" level="1" /> <!-- Blessed Antharas' Earring -->
+			<skill id="13314" level="1" /> <!-- Blessed Antharas' Earring -->
+		</skills>
+		<stats>
+			<stat type="mDef">170</stat>
+		</stats>
+	</item>
+	<item id="37668" name="Blessed Valakas' Necklace" additionalName="30-day" type="Armor">
+		<!-- Dimensional Item. HP +625, MP +79, M. Critical Rate +20, Sleep Resistance +50%, Sleep Atk. Rate +50%, P./ M. Skill Cooldown -10%, Wild Magic effect, Damage Reflection effect, Fire Attribute Resistance +30, Dark Attribute Resistance +20, STR +3, INT +3, P. Skill Power +5%, P. Atk. +10%, M. Atk. +20%, Damage Reflection 5%. Active Skill: Cancels Hold and gives Hold Resistance for 5 secs. -->
+		<set name="icon" val="icon.bm_necklace_of_valakas" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="neck" />
+		<set name="crystal_type" val="R" />
+		<set name="weight" val="150" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="43200" />
+		<skills>
+			<skill id="13315" level="1" /> <!-- Blessed Valakas' Necklace -->
+			<skill id="13316" level="1" /> <!-- Blessed Valakas' Necklace -->
+		</skills>
+		<stats>
+			<stat type="mDef">226</stat>
+		</stats>
+	</item>
+	<item id="37669" name="Tauti's Ring" additionalName="30-day" type="Armor">
+		<!-- Dimensional Item. Tauti's Ring. Fire/ Dark Resistance +25, MP +38, Critical Damage +15%, Skill Power +5%, PvP damage +5%, Paralysis/ Binding/ Banishment Resistance +10, Damage Reflect Resistance +5, Absorption Resistance +5, received PvP damage -5%, and critical +54 when a blunt is equipped. Even if you wear two identical rings, only the effects of one apply (excluding attributes/ M. Def.). -->
+		<set name="icon" val="icon.bm_tauti_ring" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rfinger;lfinger" />
+		<set name="crystal_type" val="R" />
+		<set name="weight" val="150" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="43200" />
+		<skills>
+			<skill id="8870" level="1" /> <!-- Tauti's Ring -->
+		</skills>
+		<stats>
+			<stat type="mDef">108</stat>
+		</stats>
+	</item>
+	<item id="37670" name="Earth Wyrm Heart Ring" additionalName="30-day" type="Armor">
+		<!-- Dimensional Item. MP +38, P./ M. Debuff Resistance +15, MP Regeneration +3, P. Critical Damage +20%, and P. Accuracy +5. Poison Resistance +50%, Poison Atk. Rate +50%, Knock Back, Knock Down, Pulling, Danger Zone Resistance +20%, Atk. Spd. and Casting Spd. +6%, and Wind/ Water Resistance +30. Can use skills that affect party members' Atk. Spd., Casting Spd., and Vampiric Rage. Can use Poison removal. Only one effect is applied when two identical rings are worn. -->
+		<set name="icon" val="icon.bm_ring_earthworm_heart" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rfinger;lfinger" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="R" />
+		<set name="weight" val="150" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="43200" />
+		<set name="is_oly_restricted" val="true" />
+		<skills>
+			<skill id="13317" level="1" /> <!-- Earth Wyrm Heart Ring -->
+			<skill id="13318" level="1" /> <!-- Earth Wyrm Heart Ring -->
+			<skill id="13319" level="1" /> <!-- Earth Wyrm Heart Ring -->
+		</skills>
+		<stats>
+			<stat type="mDef">108</stat>
+			<stat type="maxMp">38</stat>
+		</stats>
+	</item>
+	<item id="37671" name="Heavenly Recovery Potion" type="EtcItem">
+		<!-- When used, recovers 2500 HP and the remaining power is recovered as CP. There is no duration. Cannot be used in an auction house or the Olympiad. Can be shared within the same account through the Dimensional Merchant. -->
+		<set name="icon" val="icon.etc_recall_potion2" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="immediate_effect" val="true"/>
+		<set name="etcitem_type" val="POTION"/>
+		<set name="commissionItemType" val="POTION"/>
+		<set name="handler" val="ItemSkills"/>
+		<skills>
+			<skill id="17153" level="1"/> <!-- Heavenly Recovery Potion -->
+		</skills>
+	</item>
+	<item id="37672" name="Mysterious Friend Summon Bracelet" additionalName="30-day" type="Armor">
+		<!-- Bracelet that can summon another character. The summoning character and the summoned character must both be equipped with it and in the same party. 30-day. Cooldown is 60 min. Cannot be used in the Olympiad. Cannot be shared within the same account through the Dimensional Merchant. -->
+		<set name="icon" val="icon.bm_ring_of_friendship" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="43200" />
+	</item>
+	<item id="37673" name="Mysterious Friend Summon Bracelet Pack (30-day)" type="EtcItem">
+		<!-- Double-click to obtain 1 Mysterious Friend Summon Bracelet (30-day). -->
+		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="default_action" val="PEEL" />
+	</item>
+	<item id="37674" name="Scroll: Modify Demonic Sword Zariche" type="EtcItem">
+		<!-- A scroll that changes the appearance of a two-handed sword to that of Demonic Sword Zariche. Limited time item (30-day). -->
+		<set name="icon" val="icon.shape_shifting_zariche_i00" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="true" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="is_stackable" val="true" />
+		<skills>
+			<skill id="17164" level="1" /> <!-- Demonic Sword Zariche Appearance Stone -->
+		</skills>
+	</item>
+	<item id="37675" name="Scroll: Modify Blood Sword Akamanah" type="EtcItem">
+		<!-- A scroll that changes the appearance of a dual sword to that of Blood Sword Akamanah. Limited time item (30-day). -->
+		<set name="icon" val="icon.shape_shifting_aka_manaf_i00" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="true" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
+		<set name="is_stackable" val="true" />
+		<skills>
+			<skill id="17165" level="1" /> <!-- Blood Sword Akamanah Appearance Stone -->
+		</skills>
+	</item>
+	<item id="37676" name="Coin of Knowledge" type="EtcItem">
+		<!-- You are full of knowledge!. You can purchase useful items through the Adventurers' Guide. -->
+		<set name="icon" val="icon.int_coin_gm_i00" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="37677" name="GM's Buff Scroll" additionalName="P. Def." type="EtcItem">
+		<!-- When used, can receive the effects of 4 types of level 4 melodies, including Guardian's Harmony, and 3 types of sonatas, for 60 min. Cannot be used in the Olympiad or Ceremony of Chaos. Cooldown is 2 min. -->
+		<set name="icon" val="icon.buff_scroll_gm_i00" />
+		<set name="weight" val="120" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="SKILL_REDUCE" />
+	</item>
+	<item id="37678" name="GM's Buff Scroll" additionalName="P. Atk." type="EtcItem">
+		<!-- When used, can receive the effects of 4 types of level 4 melodies, including Berserker's Harmony, and 3 types of sonatas, for 60 min. Cannot be used in the Olympiad or Ceremony of Chaos. Cooldown is 2 min. -->
+		<set name="icon" val="icon.buff_scroll_gm_i00" />
+		<set name="weight" val="120" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="SKILL_REDUCE" />
+	</item>
+	<item id="37679" name="GM's Buff Scroll" additionalName="M. Atk." type="EtcItem">
+		<!-- When used, can receive the effects of 4 types of level 4 melodies, including Magician's Harmony, and 3 types of sonatas, for 60 min. Cannot be used in the Olympiad or Ceremony of Chaos. Cooldown is 2 min. -->
+		<set name="icon" val="icon.buff_scroll_gm_i00" />
+		<set name="weight" val="120" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="SKILL_REDUCE" />
+	</item>
+	<item id="37680" name="Transformation Scroll: Makeshift Bat" type="EtcItem">
+		<!-- Can change into the appearance of a Makeshift Bat for 30 min. Please note that a Makeshift Bat is extremely cute. -->
+		<set name="icon" val="icon.etc_scroll_white_i00" />
+		<set name="weight" val="120" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="SKILL_REDUCE" />
+	</item>
+	<item id="37681" name="Theamo's Talisman" additionalName="Not in Use" type="Armor">
+		<!-- Test Item -->
+		<set name="icon" val="icon.etc_talisman_i01" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_destroyable" val="false" />
+	</item>
+	<item id="37682" name="Theamo's Rune" additionalName="Not in Use" type="EtcItem">
+		<!-- Test Item -->
+		<set name="icon" val="br_cashtex.item.br_cash_rune_of_feather_i00" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="etcitem_type" val="ENCHT_ATTR_RUNE" />
+		<set name="is_destroyable" val="false" />
+	</item>
+	<item id="37683" name="Demonic Sword Zariche" additionalName="Appearance Modification" type="Weapon">
+		<!-- Demonic Sword Zariche skin. -->
+		<set name="icon" val="icon.weapon_unique_zariche_i00" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="crystal_type" val="D" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="soulshots" val="3" />
+		<set name="spiritshots" val="3" />
+		<set name="weight" val="10" />
+		<stats>
+			<stat type="pAtk">10</stat>
+			<stat type="mAtk">10</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="37684" name="Blood Sword Akamanah" additionalName="Appearance Modification" type="Weapon">
+		<!-- Blood Sword Akamanah skin. -->
+		<set name="icon" val="icon.weapon_dual_sword_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weapon_type" val="DUAL" />
+		<set name="crystal_type" val="D" />
+		<set name="weight" val="10" />
+		<set name="soulshots" val="3" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="spiritshots" val="3" />
+		<stats>
+			<stat type="pAtk">10</stat>
+			<stat type="mAtk">10</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="37685" name="Transformation Scroll: Lady Tow" type="EtcItem">
+		<!-- Can change into the appearance of a Lady Tow for 30 min. Please note that a Tow is extremely cute. -->
+		<set name="icon" val="icon.etc_scroll_white_i00" />
+		<set name="weight" val="120" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="SKILL_REDUCE" />
+	</item>
+	<item id="37686" name="Transformation Scroll: Angry Tow" type="EtcItem">
+		<!-- Can change into the appearance of a Angry Tow for 30 min. Please note that a Tow is extremely cute. -->
+		<set name="icon" val="icon.etc_scroll_white_i00" />
+		<set name="weight" val="120" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="SKILL_REDUCE" />
+	</item>
+	<item id="37687" name="Transformation Scroll: Sleepy Tow" type="EtcItem">
+		<!-- Can change into the appearance of a Sleepy Tow for 30 min. Please note that a Tow is extremely cute. -->
+		<set name="icon" val="icon.etc_scroll_white_i00" />
+		<set name="weight" val="120" />
+		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="SKILL_REDUCE" />
+	</item>
+	<item id="37688" name="Valentine Dagger" type="Weapon">
+		<!-- Modifies the appearance of a weapon. -->
+		<set name="icon" val="icon.ev_hallowinday_candy_i00" />
+		<set name="weapon_type" val="DAGGER" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="rhand" />
+		<set name="weight" val="500" />
+		<stats>
+			<stat type="pAtk">685</stat>
+			<stat type="mAtk">414</stat>
+			<stat type="pAtkSpd">433</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="37689" name="Valentine One-handed Sword" type="Weapon">
+		<!-- Modifies the appearance of a weapon. Valentine one-handed sword type. -->
+		<set name="icon" val="icon.ev_hallowinday_candy_i00" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="rhand" />
+		<set name="weight" val="500" />
+		<stats>
+			<stat type="pAtk">752</stat>
+			<stat type="mAtk">414</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="37690" name="Valentine Two-handed Sword" type="Weapon">
+		<!-- Modifies the appearance of a weapon. Valentine two-handed sword type. -->
+		<set name="icon" val="icon.ev_hallowinday_candy_i00" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weight" val="500" />
+		<stats>
+			<stat type="pAtk">916</stat>
+			<stat type="mAtk">414</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="37691" name="Valentine One-handed Blunt Weapon" type="Weapon">
+		<!-- Modifies the appearance of a weapon. Valentine one-handed blunt weapon type. -->
+		<set name="icon" val="icon.ev_hallowinday_candy_i00" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="rhand" />
+		<set name="weight" val="500" />
+		<stats>
+			<stat type="pAtk">752</stat>
+			<stat type="mAtk">414</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="37692" name="Valentine Fist Weapon" type="Weapon">
+		<!-- Modifies the appearance of a weapon. Valentine fist weapon type. -->
+		<set name="icon" val="icon.ev_hallowinday_candy_i00" />
+		<set name="weapon_type" val="DUALFIST" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weight" val="500" />
+		<stats>
+			<stat type="pAtk">916</stat>
+			<stat type="mAtk">414</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="37693" name="Valentine Spear" type="Weapon">
+		<!-- Modifies the appearance of a weapon. -->
+		<set name="icon" val="icon.ev_hallowinday_candy_i00" />
+		<set name="weapon_type" val="POLE" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="damage_range" val="0;0;66;120" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weight" val="500" />
+		<skills>
+			<skill id="3599" level="1" /> <!-- Polearm Multi-attack -->
+		</skills>
+		<stats>
+			<stat type="pAtk">752</stat>
+			<stat type="mAtk">414</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">80</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="37694" name="Valentine Bow" type="Weapon">
+		<!-- Modifies the appearance of a weapon. -->
+		<set name="icon" val="icon.ev_hallowinday_candy_i00" />
+		<set name="weapon_type" val="BOW" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weight" val="500" />
+		<stats>
+			<stat type="pAtk">1481</stat>
+			<stat type="mAtk">414</stat>
+			<stat type="pAtkSpd">293</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">500</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="37695" name="Valentine Crossbow" type="Weapon">
+		<!-- Modifies the appearance of a weapon. -->
+		<set name="icon" val="icon.ev_hallowinday_candy_i00" />
+		<set name="weapon_type" val="TWOHANDCROSSBOW" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weight" val="500" />
+		<stats>
+			<stat type="pAtk">1333</stat>
+			<stat type="mAtk">414</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkRange">400</stat>
+			<stat type="randomDamage">5</stat>
+		</stats>
+	</item>
+	<item id="37696" name="Valentine Magic Sword" type="Weapon">
+		<!-- Modifies the appearance of a weapon. Valentine magic sword type. -->
+		<set name="icon" val="icon.ev_hallowinday_candy_i00" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="rhand" />
+		<set name="weight" val="500" />
+		<stats>
+			<stat type="pAtk">602</stat>
+			<stat type="mAtk">486</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+	<item id="37697" name="Valentine One-handed Staff" type="Weapon">
+		<!-- Modifies the appearance of a weapon. Valentine one-handed staff type. -->
+		<set name="icon" val="icon.ev_hallowinday_candy_i00" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="rhand" />
+		<set name="weight" val="500" />
+		<stats>
+			<stat type="pAtk">602</stat>
+			<stat type="mAtk">486</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="37698" name="Valentine Two-handed Staff" type="Weapon">
+		<!-- Modifies the appearance of a weapon. Valentine two-handed staff type. -->
+		<set name="icon" val="icon.ev_hallowinday_candy_i00" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weight" val="500" />
+		<stats>
+			<stat type="pAtk">733</stat>
+			<stat type="mAtk">535</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">20</stat>
+		</stats>
+	</item>
+	<item id="37699" name="Valentine Dual Sword" type="Weapon">
+		<!-- Modifies the appearance of a weapon. -->
+		<set name="icon" val="icon.ev_hallowinday_candy_i00" />
+		<set name="weapon_type" val="DUAL" />
+		<set name="default_action" val="EQUIP" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="bodypart" val="lrhand" />
+		<set name="weight" val="500" />
+		<stats>
+			<stat type="pAtk">916</stat>
+			<stat type="mAtk">414</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkRange">40</stat>
+			<stat type="randomDamage">10</stat>
+		</stats>
+	</item>
+</list>

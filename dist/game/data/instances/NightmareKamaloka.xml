@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Nightmare Kamaloka -->
+<instance id="258" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/instance.xsd">
+	<time duration="60" empty="5" />
+	<locations>
+		<enter type="FIXED">
+			<location x="-42921" y="-16243" z="-12212" />
+		</enter>
+		<exit type="ORIGIN" />
+	</locations>
+	<conditions>
+		<condition type="Party" showMessageAndHtml="true">
+			<param name="html" value="condNoPartyLeader.html" />
+		</condition>
+		<condition type="PartyLeader" showMessageAndHtml="true">
+			<param name="html" value="condNoPartyLeader.html" />
+		</condition>
+		<condition type="GroupMin">
+			<param name="limit" value="2" />
+		</condition>
+		<condition type="GroupMax">
+			<param name="limit" value="7" />
+		</condition>
+		<condition type="Level">
+			<param name="min" value="99" />
+		</condition>
+		<condition type="Distance" />
+	</conditions>
+	<reenter apply="ON_FINISH">
+		<reset day="MONDAY" hour="6" minute="30" />
+		<reset day="TUESDAY" hour="6" minute="30" />
+		<reset day="WEDNESDAY" hour="6" minute="30" />
+		<reset day="THURSDAY" hour="6" minute="30" />
+		<reset day="FRIDAY" hour="6" minute="30" />
+		<reset day="SATURDAY" hour="6" minute="30" />
+		<reset day="SUNDAY" hour="6" minute="30" />
+	</reenter>
+	<doorlist>
+		<door id="18170002">
+			<openStatus default="close"/>
+		</door>
+		<door id="18170004">
+			<openStatus default="close"/>
+		</door>
+		<door id="18170006">
+			<openStatus default="close"/>
+		</door>
+		<door id="18170008">
+			<openStatus default="close"/>
+		</door>
+	</doorlist>
+	<spawnlist>
+		<group>
+			<npc id="18919" x="-42922" y="-16244" z="-12208" /> <!-- -->
+		</group>
+		<group name="BOSSES" spawnByDefault="false">
+			<npc id="26093" x="-43380" y="-16243" z="-12224" /> <!-- Mino -->
+			<npc id="26094" x="-45717" y="-16241" z="-11960"> <!-- Sola -->
+				<minions>
+					<minion id="26095" count="2" respawnTime="3min" /> <!-- Knife Maid -->
+				</minions>
+			</npc>
+			<npc id="26096" x="-48051" y="-16243" z="-11696"> <!-- Ariarc -->
+				<minions>
+					<minion id="26097" count="2" respawnTime="3min" /> <!-- Angel of Punishment -->
+					<minion id="26098" count="2" respawnTime="3min" /> <!-- Angel of Death -->
+				</minions>
+			</npc>
+			<npc id="26099" x="-50386" y="-16241" z="-11432"> <!-- Sirra -->
+				<minions>
+					<minion id="26100" count="2" respawnTime="3min" /> <!-- Sirra's Knight -->
+					<minion id="26101" count="2" respawnTime="3min" /> <!-- Sirra's Ice Golem -->
+				</minions>
+			</npc>
+			<npc id="26102" x="-54166" y="-16242" z="-10992"> <!-- Dark Rider -->
+				<minions>
+					<minion id="26103" count="2" respawnTime="3min" /> <!-- Berserk Dragon Warrior -->
+					<minion id="26104" count="2" respawnTime="3min" /> <!-- Berserk Dragon Wizard -->
+				</minions>
+			</npc>
+		</group>
+	</spawnlist>
+</instance>

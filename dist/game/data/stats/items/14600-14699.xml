@@ -1,0 +1,2344 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
+	<item id="14600" name="Schuttgart Dark Resistance Ring" type="Armor">
+		<!-- Ring given to the guardian of Schuttgart territory. Dark Resistance +12. Only one effect is applied even when wearing two earrings with the same effect. -->
+		<set name="icon" val="icon.accessary_inferno_ring_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rfinger;lfinger" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<skills>
+			<skill id="8387" level="1" /> <!-- Protection Ring - Schuttgart -->
+		</skills>
+		<stats>
+			<stat type="mDef">42</stat>
+			<stat type="maxMp">17</stat>
+			<stat type="darkRes">12</stat>
+		</stats>
+	</item>
+	<item id="14601" name="Ancient Cloak" additionalName="Kamaels Only" type="Armor">
+		<!-- Item that allows you to summon a Toy Knight. Hunger gauge lasts 5 hours. Cannot feed pet to refill hunger gauge. -->
+		<set name="icon" val="icon.vesper_cloack_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="back" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="CLOTH" />
+		<set name="weight" val="220" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_sellable" val="false" />
+		<cond msgId="2453">
+			<and>
+				<player races="KAMAEL" />
+				<player cloakStatus="true" />
+			</and>
+		</cond>
+		<cond>
+			<player level="80" />
+		</cond>
+		<stats>
+			<stat type="pDef">20</stat>
+		</stats>
+	</item>
+	<item id="14602" name="Ancient Cloak" type="Armor">
+		<!-- Item that allows you to summon a Spirit Shaman. Hunger gauge lasts 5 hours. -->
+		<set name="icon" val="icon.vesper_cloack_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="back" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="CLOTH" />
+		<set name="weight" val="220" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_sellable" val="false" />
+		<cond msgId="2453">
+			<and>
+				<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+				<player cloakStatus="true" />
+			</and>
+		</cond>
+		<cond>
+			<player level="80" />
+		</cond>
+		<stats>
+			<stat type="pDef">20</stat>
+		</stats>
+	</item>
+	<item id="14603" name="Sealed Ancient Cloak" type="EtcItem">
+		<!-- Sealed Ancient Cloak. The seal can be removed through the weavers Olf Kanore and Olf Adams. It cannot be worn before the seal is removed. Cannot be enchanted, augmented, or assigned an attribute. -->
+		<set name="icon" val="icon.sealed_vesper_cloack_i01" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="CLOTH" />
+		<set name="weight" val="220" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="crystal_type" val="S80" />
+		<set name="is_sellable" val="false" />
+		<stats>
+			<stat type="pDef">20</stat>
+		</stats>
+	</item>
+	<item id="14604" name="Red Talisman - Territory Guardian" type="Armor">
+		<!-- When used, Max CP is greatly increased and a certain amount of CP is greatly recovered. Only one effect is applied when you wear the same two talismans. Shadow Item. -->
+		<set name="icon" val="icon.etc_talisman_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="equip_reuse_delay" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="66" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="useSkillDisTime" val="6" />
+		<skills>
+			<skill id="8308" level="1" /> <!-- Red Talisman - Territory Guardian -->
+		</skills>
+	</item>
+	<item id="14605" name="Red Talisman - Territory Escort" type="Armor">
+		<!-- When used, Max CP is increased and a certain amount of CP is recovered. Only one effect is applied when you wear the same two talismans. Shadow Item. -->
+		<set name="icon" val="icon.etc_talisman_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="deco1" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="150" />
+		<set name="equip_reuse_delay" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="duration" val="66" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="useSkillDisTime" val="6" />
+		<skills>
+			<skill id="8309" level="1" /> <!-- Red Talisman - Territory Escort -->
+		</skills>
+	</item>
+	<item id="14606" name="Gracian Soldier Two-handed Sword" type="Weapon">
+		<!-- A Gracian Soldier's two-handed sword. -->
+		<set name="icon" val="icon.weapon_mon_gracia_soldier_sword_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="D" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="2180" />
+		<set name="soulshots" val="2" />
+		<set name="spiritshots" val="2" />
+		<set name="commissionItemType" val="TWO_HAND_SWORD" />
+		<set name="isAppearanceable" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<stats>
+			<stat type="pAtk">78</stat>
+			<stat type="mAtk">39</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="14607" name="Mark of Gracia" type="EtcItem">
+		<!-- Token given to new or dormant PC in Gracia server. It can be exchanged to an item through Token Exchanger. -->
+		<set name="icon" val="icon.etc_coins_silver_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="CLOTH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="14608" name="Ancient Cloak (Light Armor)" type="Armor">
+		<!-- Ancient Power Sealed Cloak. When the entire set of Vesper Noble is worn, the Sealed Cloak Slot will be open and one can now wear the cloak. The cloak is exclusively for Dagger Master and Bow Master excluding Kamaels. Cannot be enchanted, augmented, or assigned an attribute. -->
+		<set name="icon" val="icon.vesper_cloack_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="back" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="CLOTH" />
+		<set name="weight" val="220" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_sellable" val="false" />
+		<cond msgId="2453">
+			<and>
+				<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+				<player categoryType="ROGUE_CLOACK" />
+				<player cloakStatus="true" />
+			</and>
+		</cond>
+		<cond>
+			<player level="80" />
+		</cond>
+		<stats>
+			<stat type="pDef">20</stat>
+		</stats>
+	</item>
+	<item id="14609" name="Ancient Cloak" type="Armor">
+		<!-- Sealed cloak containing ancient power. When an armor set above the Dynasty level is worn, the Sealed Cloak Slot will be open so that the cloak can be equipped. Cannot be enchanted, augmented, or assigned an attribute. -->
+		<set name="icon" val="icon.vesper_cloack_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="back" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="CLOTH" />
+		<set name="weight" val="220" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_sellable" val="false" />
+		<cond msgId="2453">
+			<player cloakStatus="true" />
+		</cond>
+		<cond>
+			<player level="80" />
+		</cond>
+		<stats>
+			<stat type="pDef">20</stat>
+		</stats>
+	</item>
+	<item id="14610" name="Ancient Cloak (Robe)" type="Armor">
+		<!-- Ancient Power Sealed Cloak. When the entire set of Vesper Noble is worn, the Sealed Cloak Slot will be open and one can now wear the cloak. The cloak is exclusively for Healer, Enchanter, Summoner and Wizard excluding Kamaels. Cannot be enchanted, augmented, or assigned an attribute. -->
+		<set name="icon" val="icon.vesper_cloack_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="back" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="CLOTH" />
+		<set name="weight" val="220" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_sellable" val="false" />
+		<cond msgId="2453">
+			<and>
+				<player races="HUMAN,ELF,DARK_ELF,ORC,DWARF" />
+				<player categoryType="MAGE_CLOACK" />
+				<player cloakStatus="true" />
+			</and>
+		</cond>
+		<cond>
+			<player level="80" />
+		</cond>
+		<stats>
+			<stat type="pDef">20</stat>
+		</stats>
+	</item>
+	<item id="14611" name="Rudolph's Nose" type="Armor">
+		<!-- Rudolph's Nose. 14-day. -->
+		<set name="icon" val="icon.Accessory_nose_of_rudolph_mask_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="20160" />
+	</item>
+	<item id="14612" name="Holiday Red Sock" type="EtcItem">
+		<!-- Item needed to receive a gift from Santa who goes around each territory. -->
+		<set name="icon" val="icon.xmas_present_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="20" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="14613" name="Rock-Paper-Scissors Santa Hat" type="Armor">
+		<!-- When used, one can play rock-paper-scissors with Thomas D. Turkey in each territory. -->
+		<set name="icon" val="icon.accessory_santas_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="enchant_enabled" val="7" />
+		<set name="isAppearanceable" val="true" />
+		<set name="is_private_storeable" val="false" />
+		<skills>
+			<skill id="6098" level="1" /> <!-- Rock -->
+			<skill id="6099" level="1" /> <!-- Paper -->
+			<skill id="6097" level="1" /> <!-- Scissors -->
+		</skills>
+	</item>
+	<item id="14614" name="Santa's Buff Gift Set" type="EtcItem">
+		<!-- Santa's buff gift set. When used, can feel yourself becoming stronger by Santa's blessing for 1 hour. -->
+		<set name="icon" val="icon.etc_level_bustup_ticket_i01" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="POTION" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="5" />
+		<set name="reuse_delay" val="3000" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="for_npc" val="true" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="2856" level="1" /> <!-- Santa's Buff Gift Set -->
+		</skills>
+	</item>
+	<item id="14615" name="Holiday Scroll (Wizard)" type="EtcItem">
+		<!-- Scroll of Christmas Festival. When you drink it, you can feel the effect temporarily. -->
+		<set name="icon" val="icon.etc_level_bustup_ticket_i02" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="POTION" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="5" />
+		<set name="reuse_delay" val="3000" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="SCROLL_OTHER" />
+		<set name="for_npc" val="true" />
+		<skills>
+			<skill id="2857" level="1" /> <!-- Holiday Event - Enchant Scroll (Wizard) -->
+		</skills>
+	</item>
+	<item id="14616" name="Santa's Gift" type="EtcItem">
+		<!-- Gift from Santa Claus. Double-click this item to open it up and find out what is inside. -->
+		<set name="icon" val="icon.lucky_bag_box_i00" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="2858" level="1" /> <!-- Holiday Red Sock -->
+		</skills>
+	</item>
+	<item id="14617" name="Agathion - Rudolph" type="Armor">
+		<!-- The bracelet which can summon cute Rudolph Agathion. 14-day. -->
+		<set name="icon" val="icon.etc_rbracelet_aga_agit_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lbracelet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="20160" />
+		<skills>
+			<skill id="5537" level="1" /> <!-- Rudolph Cuteness Trick -->
+			<skill id="3425" level="1" /> <!-- Release Agathion's Seal - Rudolph -->
+			<skill id="3267" level="1" type="ON_UNEQUIP" /> <!-- Seal Agathion -->
+		</skills>
+	</item>
+	<item id="14618" name="Agathion - Rudolph" type="EtcItem">
+		<!-- The bracelet which can summon cute Rudolph Agathion. You can wear it only during the winter holidays. -->
+		<set name="icon" val="icon.etc_rbracelet_aga_agit_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="14619" name="Santa's Weapon Coupon" type="EtcItem">
+		<!-- Gift from Santa. It can be exchanged with a weapon through Cat of Christmas. -->
+		<set name="icon" val="icon.etc_level_bustup_ticket_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="20" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="14620" name="Santa's Weapon Coupon" type="EtcItem">
+		<!-- Gift from Santa. It can be exchanged with a weapon through Cat of Christmas. -->
+		<set name="icon" val="icon.etc_level_bustup_ticket_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="20" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="14621" name="Santa's Sirra Blade" type="Weapon">
+		<!-- Santa's Sirra Blade. -->
+		<set name="icon" val="icon.weapon_sirr_blade_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1300" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="180" />
+		<skills>
+			<skill id="8316" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8317" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8318" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8319" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8320" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8321" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8322" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8315" level="1" /> <!-- Santa's Blessed Weapon -->
+		</skills>
+		<stats>
+			<stat type="pAtk">51</stat>
+			<stat type="mAtk">38</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="14622" name="Santa's Sword of Ipos" type="Weapon">
+		<!-- Santa's Sword of Ipos. -->
+		<set name="icon" val="icon.weapon_sword_of_ipos_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;46;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="BONE" />
+		<set name="weight" val="1820" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="180" />
+		<skills>
+			<skill id="8316" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8317" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8318" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8319" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8320" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8321" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8322" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8315" level="1" /> <!-- Santa's Blessed Weapon -->
+		</skills>
+		<stats>
+			<stat type="pAtk">62</stat>
+			<stat type="mAtk">38</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="14623" name="Santa's Barakiel Axe" type="Weapon">
+		<!-- Santa's Barakiel Axe. -->
+		<set name="icon" val="icon.weapon_barakiel_axe_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="weight" val="1550" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="180" />
+		<skills>
+			<skill id="8316" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8317" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8318" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8319" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8320" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8321" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8322" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8315" level="1" /> <!-- Santa's Blessed Weapon -->
+		</skills>
+		<stats>
+			<stat type="pAtk">51</stat>
+			<stat type="mAtk">38</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="14624" name="Santa's Behemoth' Tuning Fork" type="Weapon">
+		<!-- Santa's Behemoth' Tuning Fork. -->
+		<set name="icon" val="icon.weapon_tuning_fork_of_behemoth_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1890" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="180" />
+		<skills>
+			<skill id="8316" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8317" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8318" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8319" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8320" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8321" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8322" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8315" level="1" /> <!-- Santa's Blessed Weapon -->
+		</skills>
+		<stats>
+			<stat type="pAtk">62</stat>
+			<stat type="mAtk">38</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">20</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="14625" name="Santa's Naga's Storm" type="Weapon">
+		<!-- Santa's Naga's Storm. -->
+		<set name="icon" val="icon.weapon_naga_storm_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DAGGER" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="weight" val="930" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="180" />
+		<skills>
+			<skill id="8316" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8317" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8318" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8319" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8320" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8321" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8322" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8315" level="1" /> <!-- Santa's Blessed Weapon -->
+		</skills>
+		<stats>
+			<stat type="pAtk">45</stat>
+			<stat type="mAtk">38</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkSpd">433</stat>
+			<stat type="randomDamage">5</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="14626" name="Santa's Tiphon Spear" type="Weapon">
+		<!-- Santa's Tiphon Spear. -->
+		<set name="icon" val="icon.weapon_tiphon_spear_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="POLE" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;66;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="CHRYSOLITE" />
+		<set name="weight" val="1820" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="180" />
+		<skills>
+			<skill id="8315" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8316" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8317" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8318" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8319" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8320" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8321" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8322" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="3599" level="1" /> <!-- Polearm Multi-attack -->
+		</skills>
+		<stats>
+			<stat type="pAtk">51</stat>
+			<stat type="mAtk">38</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">80</stat>
+		</stats>
+	</item>
+	<item id="14627" name="Santa's Shyeed Bow" type="Weapon">
+		<!-- Santa's Shyeed Bow. -->
+		<set name="icon" val="icon.weapon_shyid_bow_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BOW" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;10;0" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="ORIHARUKON" />
+		<set name="weight" val="1640" />
+		<set name="mp_consume" val="5" />
+		<set name="reuse_delay" val="820" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="180" />
+		<skills>
+			<skill id="8316" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8317" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8318" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8319" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8320" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8321" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8322" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8315" level="1" /> <!-- Santa's Blessed Weapon -->
+		</skills>
+		<stats>
+			<stat type="pAtk">116</stat>
+			<stat type="mAtk">42</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkSpd">227</stat>
+			<stat type="randomDamage">5</stat>
+			<stat type="pAtkRange">500</stat>
+		</stats>
+	</item>
+	<item id="14628" name="Santa's Sobekk Hurricane" type="Weapon">
+		<!-- Santa's Sobekk Hurricane. -->
+		<set name="icon" val="icon.weapon_sobekk_hurricane_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUALFIST" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;32;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="ADAMANTAITE" />
+		<set name="weight" val="1330" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="180" />
+		<skills>
+			<skill id="8316" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8317" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8318" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8319" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8320" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8321" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8322" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8315" level="1" /> <!-- Santa's Blessed Weapon -->
+		</skills>
+		<stats>
+			<stat type="pAtk">41</stat>
+			<stat type="mAtk">38</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">5</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="14629" name="Santa's Themis Tongue" type="Weapon">
+		<!-- Santa's Themis Tongue. -->
+		<set name="icon" val="icon.weapon_tongue_of_themis_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="ADAMANTAITE" />
+		<set name="weight" val="820" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_magic_weapon" val="true" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="180" />
+		<skills>
+			<skill id="8315" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8316" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8317" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8318" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8319" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8320" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8321" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8322" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="3047" level="1" /> <!-- Special Ability: Acumen -->
+		</skills>
+		<stats>
+			<stat type="pAtk">41</stat>
+			<stat type="mAtk">51</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="14630" name="Santa's Cabrio's Hand" type="Weapon">
+		<!-- Santa's Cabrio's Hand. -->
+		<set name="icon" val="icon.weapon_hand_of_cabrio_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1510" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_magic_weapon" val="true" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="180" />
+		<skills>
+			<skill id="8315" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8316" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8317" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8318" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8319" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8320" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8321" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8322" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="3047" level="1" /> <!-- Special Ability: Acumen -->
+		</skills>
+		<stats>
+			<stat type="pAtk">50</stat>
+			<stat type="mAtk">51</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="14631" name="Santa's Daimon Crystal" type="Weapon">
+		<!-- Santa's Daimon Crystal. -->
+		<set name="icon" val="icon.weapon_crystal_of_deamon_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="880" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_magic_weapon" val="true" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="180" />
+		<skills>
+			<skill id="8315" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8316" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8317" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8318" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8319" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8320" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8321" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8322" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="3047" level="1" /> <!-- Special Ability: Acumen -->
+		</skills>
+		<stats>
+			<stat type="pAtk">62</stat>
+			<stat type="mAtk">56</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">20</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="14632" name="Santa's ?clair Bijou" type="Weapon">
+		<!-- Kamael-exclusive Weapon: Santa's Sirra Blade Conversion -->
+		<set name="icon" val="icon.weapon_greed_stinger_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="RAPIER" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1300" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="180" />
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<skills>
+			<skill id="8315" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8316" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8317" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8318" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8319" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8320" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8321" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8322" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="3426" level="1" type="ON_ENCHANT" type_value="4" /> <!-- Maximum Ability -->
+		</skills>
+		<stats>
+			<stat type="pAtk">46</stat>
+			<stat type="mAtk">38</stat>
+			<stat type="rCrit">10</stat>
+			<stat type="accCombat">-1.5</stat>
+			<stat type="pAtkSpd">406</stat>
+			<stat type="randomDamage">40</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="14633" name="Santa's Screaming Vengeance" type="Weapon">
+		<!-- Kamael-exclusive Weapon: Santa's Shyeed Bow Conversion -->
+		<set name="icon" val="icon.weapon_soul_shooter_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="CROSSBOW" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1640" />
+		<set name="reuse_delay" val="400" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="180" />
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<skills>
+			<skill id="8316" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8317" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8318" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8319" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8320" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8321" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8322" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8315" level="1" /> <!-- Santa's Blessed Weapon -->
+		</skills>
+		<stats>
+			<stat type="pAtk">56</stat>
+			<stat type="mAtk">38</stat>
+			<stat type="rCrit">10</stat>
+			<stat type="accCombat">-1.5</stat>
+			<stat type="pAtkSpd">303</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">400</stat>
+		</stats>
+	</item>
+	<item id="14634" name="Santa's Durendal" type="Weapon">
+		<!-- Kamael-exclusive Weapon: Santa's Sword of Ipos Conversion -->
+		<set name="icon" val="icon.weapon_death_bringer_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="ANCIENTSWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1820" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="180" />
+		<cond msgId="1518">
+			<player races="KAMAEL" />
+		</cond>
+		<skills>
+			<skill id="8316" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8317" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8318" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8319" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8320" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8321" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8322" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8315" level="1" /> <!-- Santa's Blessed Weapon -->
+		</skills>
+		<stats>
+			<stat type="pAtk">65</stat>
+			<stat type="mAtk">38</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="accCombat">2</stat>
+			<stat type="pAtkSpd">350</stat>
+			<stat type="randomDamage">15</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="14635" name="Battle Reward Box (Low-grade)" type="EtcItem">
+		<!-- Something might happen when Double-clicked. -->
+		<set name="icon" val="icon.etc_treasure_box_i07" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<skills>
+			<skill id="2852" level="1" /> <!-- Duel Reward Box -->
+		</skills>
+	</item>
+	<item id="14636" name="Battle Reward Box (Mid-grade)" type="EtcItem">
+		<!-- Something might happen when Double-clicked. -->
+		<set name="icon" val="icon.etc_treasure_box_i06" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<skills>
+			<skill id="2853" level="1" /> <!-- Duel Reward Box -->
+		</skills>
+	</item>
+	<item id="14637" name="Battle Reward Box (High-grade)" type="EtcItem">
+		<!-- Something might happen when Double-clicked. -->
+		<set name="icon" val="icon.etc_treasure_box_i01" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<skills>
+			<skill id="2854" level="1" /> <!-- Duel Reward Box -->
+		</skills>
+	</item>
+	<item id="14638" name="Battle Reward Box (Top-grade)" type="EtcItem">
+		<!-- Something might happen when Double-clicked. -->
+		<set name="icon" val="icon.etc_treasure_box_i02" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<skills>
+			<skill id="2855" level="1" /> <!-- Duel Reward Box -->
+		</skills>
+	</item>
+	<item id="14639" name="Event - Claymore" type="EtcItem">
+		<!-- When Double-clicked, Claymore and 5 honey wheat cake can be acquired. -->
+		<set name="icon" val="icon.weapon_claymore_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="70" min="1" max="1" chance="100" /> <!-- Claymore -->
+			<item id="13421" min="5" max="5" chance="100" /> <!-- Honey Wheat Cake -->
+		</capsuled_items>
+	</item>
+	<item id="14640" name="Event - Bonebreaker" type="EtcItem">
+		<!-- When Double-clicked, Bonebreaker and 5 honey wheat cake can be acquired. -->
+		<set name="icon" val="icon.weapon_bonebreaker_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="159" min="1" max="1" chance="100" /> <!-- Bonebreaker -->
+			<item id="13421" min="5" max="5" chance="100" /> <!-- Honey Wheat Cake -->
+		</capsuled_items>
+	</item>
+	<item id="14641" name="Event - Atuba Hammer" type="EtcItem">
+		<!-- When Double-clicked, Atuba Hammer and 5 honey wheat cake can be acquired. -->
+		<set name="icon" val="icon.weapon_atuba_hammer_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="187" min="1" max="1" chance="100" /> <!-- Atuba Hammer -->
+			<item id="13421" min="5" max="5" chance="100" /> <!-- Honey Wheat Cake -->
+		</capsuled_items>
+	</item>
+	<item id="14642" name="Event - Ghost Staff" type="EtcItem">
+		<!-- When Double-clicked, Ghost Staff and 5 honey wheat cake can be acquired. -->
+		<set name="icon" val="icon.weapon_ghost_staff_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="188" min="1" max="1" chance="100" /> <!-- Ghost Staff -->
+			<item id="13421" min="5" max="5" chance="100" /> <!-- Honey Wheat Cake -->
+		</capsuled_items>
+	</item>
+	<item id="14643" name="Event - Staff of Life" type="EtcItem">
+		<!-- When Double-clicked, Staff of Life and 5 honey wheat cake can be acquired. -->
+		<set name="icon" val="icon.weapon_life_stick_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="189" min="1" max="1" chance="100" /> <!-- Staff of Life -->
+			<item id="13421" min="5" max="5" chance="100" /> <!-- Honey Wheat Cake -->
+		</capsuled_items>
+	</item>
+	<item id="14644" name="Event - Atuba Mace" type="EtcItem">
+		<!-- When Double-clicked, Atuba Mace and 5 honey wheat cake can be acquired. -->
+		<set name="icon" val="icon.weapon_atuba_mace_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="190" min="1" max="1" chance="100" /> <!-- Atuba Mace -->
+			<item id="13421" min="5" max="5" chance="100" /> <!-- Honey Wheat Cake -->
+		</capsuled_items>
+	</item>
+	<item id="14645" name="Event - Mithril Dagger" type="EtcItem">
+		<!-- When Double-clicked, Mithril Dagger and 5 honey wheat cake can be acquired. -->
+		<set name="icon" val="icon.weapon_mithril_dagger_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="225" min="1" max="1" chance="100" /> <!-- Mithril Dagger -->
+			<item id="13421" min="5" max="5" chance="100" /> <!-- Honey Wheat Cake -->
+		</capsuled_items>
+	</item>
+	<item id="14646" name="Event - Scallop Jamadhr" type="EtcItem">
+		<!-- When Double-clicked, Scallop Jamadhr and 5 honey wheat cake can be acquired. -->
+		<set name="icon" val="icon.weapon_scallop_jamadhr_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="262" min="1" max="1" chance="100" /> <!-- Scallop Jamadhr -->
+			<item id="13421" min="5" max="5" chance="100" /> <!-- Honey Wheat Cake -->
+		</capsuled_items>
+	</item>
+	<item id="14647" name="Event - Light Bow" type="EtcItem">
+		<!-- When Double-clicked, Light Bow and 5 honey wheat cake can be acquired. -->
+		<set name="icon" val="icon.weapon_cyclone_bow_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="280" min="1" max="1" chance="100" /> <!-- Light Bow -->
+			<item id="13421" min="5" max="5" chance="100" /> <!-- Honey Wheat Cake -->
+		</capsuled_items>
+	</item>
+	<item id="14648" name="Event - Glaive" type="EtcItem">
+		<!-- When Double-clicked, Glaive and 5 honey wheat cake can be acquired. -->
+		<set name="icon" val="icon.weapon_glaive_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="297" min="1" max="1" chance="100" /> <!-- Glaive -->
+			<item id="13421" min="5" max="5" chance="100" /> <!-- Honey Wheat Cake -->
+		</capsuled_items>
+	</item>
+	<item id="14649" name="Event - Elven Long Sword" type="EtcItem">
+		<!-- When Double-clicked, Elven Long Sword and 5 honey wheat cake can be acquired. -->
+		<set name="icon" val="icon.weapon_elven_long_sword_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="2499" min="1" max="1" chance="100" /> <!-- Elven Long Sword -->
+			<item id="13421" min="5" max="5" chance="100" /> <!-- Honey Wheat Cake -->
+		</capsuled_items>
+	</item>
+	<item id="14650" name="Event - Samurai Long Sword" type="EtcItem">
+		<!-- When Double-clicked, Samurai Long Sword and 3 honey wheat cake can be acquired. -->
+		<set name="icon" val="icon.weapon_samurai_longsword_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="135" min="1" max="1" chance="100" /> <!-- Samurai Long Sword -->
+			<item id="13421" min="3" max="3" chance="100" /> <!-- Honey Wheat Cake -->
+		</capsuled_items>
+	</item>
+	<item id="14651" name="Event - Deadman's Staff" type="EtcItem">
+		<!-- When Double-clicked, Deadman's Staff and 3 honey wheat cake can be acquired. -->
+		<set name="icon" val="icon.weapon_deadmans_staff_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="204" min="1" max="1" chance="100" /> <!-- Deadman's Staff -->
+			<item id="13421" min="3" max="3" chance="100" /> <!-- Honey Wheat Cake -->
+		</capsuled_items>
+	</item>
+	<item id="14652" name="Event - Ghoul's Staff" type="EtcItem">
+		<!-- When Double-clicked, Ghoul's Staff and 3 honey wheat cake can be acquired. -->
+		<set name="icon" val="icon.weapon_ghouls_staff_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="205" min="1" max="1" chance="100" /> <!-- Ghoul's Staff -->
+			<item id="13421" min="3" max="3" chance="100" /> <!-- Honey Wheat Cake -->
+		</capsuled_items>
+	</item>
+	<item id="14653" name="Event - Demon's Staff" type="EtcItem">
+		<!-- When Double-clicked, Demon's Staff and 3 honey wheat cake can be acquired. -->
+		<set name="icon" val="icon.weapon_demons_staff_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="206" min="1" max="1" chance="100" /> <!-- Demon's Staff -->
+			<item id="13421" min="3" max="3" chance="100" /> <!-- Honey Wheat Cake -->
+		</capsuled_items>
+	</item>
+	<item id="14654" name="Event - Crystal Dagger" type="EtcItem">
+		<!-- When Double-clicked, Crystal Dagger and 3 honey wheat cake can be acquired. -->
+		<set name="icon" val="icon.weapon_crystal_dagger_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="228" min="1" max="1" chance="100" /> <!-- Crystal Dagger -->
+			<item id="13421" min="3" max="3" chance="100" /> <!-- Honey Wheat Cake -->
+		</capsuled_items>
+	</item>
+	<item id="14655" name="Event - Great Pata" type="EtcItem">
+		<!-- When Double-clicked, Great Pata and 3 honey wheat cake can be acquired. -->
+		<set name="icon" val="icon.weapon_great_pata_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="266" min="1" max="1" chance="100" /> <!-- Great Pata -->
+			<item id="13421" min="3" max="3" chance="100" /> <!-- Honey Wheat Cake -->
+		</capsuled_items>
+	</item>
+	<item id="14656" name="Event - Eminence Bow" type="EtcItem">
+		<!-- When Double-clicked, Eminence Bow and 3 honey wheat cake can be acquired. -->
+		<set name="icon" val="icon.weapon_eminence_bow_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="286" min="1" max="1" chance="100" /> <!-- Eminence Bow -->
+			<item id="13421" min="3" max="3" chance="100" /> <!-- Honey Wheat Cake -->
+		</capsuled_items>
+	</item>
+	<item id="14657" name="Event - Orcish Poleaxe" type="EtcItem">
+		<!-- When Double-clicked, Orcish Poleaxe and 3 honey wheat cake can be acquired. -->
+		<set name="icon" val="icon.weapon_orcish_poleaxe_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="299" min="1" max="1" chance="100" /> <!-- Orcish Poleaxe -->
+			<item id="13421" min="3" max="3" chance="100" /> <!-- Honey Wheat Cake -->
+		</capsuled_items>
+	</item>
+	<item id="14658" name="Event - Yaksa Mace" type="EtcItem">
+		<!-- When Double-clicked, Yaksa Mace and 3 honey wheat cake can be acquired. -->
+		<set name="icon" val="icon.weapon_yaksa_mace_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="2503" min="1" max="1" chance="100" /> <!-- Yaksa Mace -->
+			<item id="13421" min="3" max="3" chance="100" /> <!-- Honey Wheat Cake -->
+		</capsuled_items>
+	</item>
+	<item id="14659" name="Event - Berserker Blade" type="EtcItem">
+		<!-- When Double-clicked, Berserker Blade and 3 honey wheat cake can be acquired. -->
+		<set name="icon" val="icon.weapon_berserker_blade_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="5286" min="1" max="1" chance="100" /> <!-- Berserker Blade -->
+			<item id="13421" min="3" max="3" chance="100" /> <!-- Honey Wheat Cake -->
+		</capsuled_items>
+	</item>
+	<item id="14660" name="Event - Ecliptic Sword" type="EtcItem">
+		<!-- When Double-clicked, Ecliptic Sword and 3 honey wheat cake can be acquired. -->
+		<set name="icon" val="icon.weapon_sword_of_eclipse_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="7888" min="1" max="1" chance="100" /> <!-- Ecliptic Sword -->
+			<item id="13421" min="3" max="3" chance="100" /> <!-- Honey Wheat Cake -->
+		</capsuled_items>
+	</item>
+	<item id="14661" name="Event - Ecliptic Axe" type="EtcItem">
+		<!-- When Double-clicked, Ecliptic Axe and 3 honey wheat cake can be acquired. -->
+		<set name="icon" val="icon.weapon_eclipse_axe_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="7891" min="1" max="1" chance="100" /> <!-- Ecliptic Axe -->
+			<item id="13421" min="3" max="3" chance="100" /> <!-- Honey Wheat Cake -->
+		</capsuled_items>
+	</item>
+	<item id="14662" name="Event - Dwarven Hammer" type="EtcItem">
+		<!-- When Double-clicked, Dwarven Hammer and 3 honey wheat cake can be acquired. -->
+		<set name="icon" val="icon.weapon_dwarven_hammer_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="7897" min="1" max="1" chance="100" /> <!-- Dwarven Hammer -->
+			<item id="13421" min="3" max="3" chance="100" /> <!-- Honey Wheat Cake -->
+		</capsuled_items>
+	</item>
+	<item id="14663" name="Event - Katana*Katana" type="EtcItem">
+		<!-- When Double-clicked, Katana*Katana and 3 honey wheat cake can be acquired. -->
+		<set name="icon" val="icon.weapon_dual_sword_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="2582" min="1" max="1" chance="100" /> <!-- Katana*Katana -->
+			<item id="13421" min="3" max="3" chance="100" /> <!-- Honey Wheat Cake -->
+		</capsuled_items>
+	</item>
+	<item id="14664" name="Gludio Resistance Earring" type="Armor">
+		<!-- Earring given to the guardian of Gludio territory. Stun Attack +15%, Bleed Resistance +15%, Water Resistance +8. Only one effect is applied when wearing the same two earrings. -->
+		<set name="icon" val="icon.accessary_inferno_earing_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rear;lear" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<skills>
+			<skill id="8348" level="1" /> <!-- Resistance Earring - Gludio -->
+		</skills>
+		<stats>
+			<stat type="mDef">63</stat>
+			<stat type="maxMp">25</stat>
+			<stat type="waterRes">8</stat>
+		</stats>
+	</item>
+	<item id="14665" name="Dion Resistance Earring" type="Armor">
+		<!-- Earring given to the guardian of Dion territory. Hold Attack +15%, Poison Resistance +15%, Holy Resistance +8. Only one effect is applied when wearing the same two earrings. -->
+		<set name="icon" val="icon.accessary_inferno_earing_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rear;lear" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<skills>
+			<skill id="8349" level="1" /> <!-- Resistance Earring - Dion -->
+		</skills>
+		<stats>
+			<stat type="mDef">63</stat>
+			<stat type="maxMp">25</stat>
+			<stat type="holyRes">8</stat>
+		</stats>
+	</item>
+	<item id="14666" name="Giran Resistance Earring" type="Armor">
+		<!-- Earring given to the guardian of Giran territory. Bleed Attack +15%, Paralysis Resistance +15%, Wind Resistance +8. Only one effect is applied when wearing the same two earrings. -->
+		<set name="icon" val="icon.accessary_inferno_earing_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rear;lear" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<skills>
+			<skill id="8350" level="1" /> <!-- Resistance Earring - Giran -->
+		</skills>
+		<stats>
+			<stat type="mDef">63</stat>
+			<stat type="maxMp">25</stat>
+			<stat type="windRes">8</stat>
+		</stats>
+	</item>
+	<item id="14667" name="Oren Resistance Earring" type="Armor">
+		<!-- Earring given to the guardian of Oren territory. Paralysis attack +15%, Hold Resistance +15%, Dark Resistance +8. Only one effect is applied when wearing the same two earrings. -->
+		<set name="icon" val="icon.accessary_inferno_earing_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rear;lear" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<skills>
+			<skill id="8351" level="1" /> <!-- Resistance Earring - Oren -->
+		</skills>
+		<stats>
+			<stat type="mDef">63</stat>
+			<stat type="maxMp">25</stat>
+			<stat type="darkRes">8</stat>
+		</stats>
+	</item>
+	<item id="14668" name="Aden Resistance Earring" type="Armor">
+		<!-- Earring given to the guardian of Aden territory. Mental Attack +15%, Stun Resistance +15%, Earth Resistance +8. Only one effect is applied when wearing two earrings with the same effect. -->
+		<set name="icon" val="icon.accessary_inferno_earing_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rear;lear" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<skills>
+			<skill id="8352" level="1" /> <!-- Resistance Earring - Aden -->
+		</skills>
+		<stats>
+			<stat type="mDef">63</stat>
+			<stat type="maxMp">25</stat>
+			<stat type="earthRes">8</stat>
+		</stats>
+	</item>
+	<item id="14669" name="Innadril Resistance Earring" type="Armor">
+		<!-- Earring given to the guardian of Innadril territory. Sleep Attack +15%, Stun Resistance +15%, Water Resistance +8. Only one effect is applied when wearing the same two earrings. -->
+		<set name="icon" val="icon.accessary_inferno_earing_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rear;lear" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<skills>
+			<skill id="8353" level="1" /> <!-- Resistance Earring - Innadril -->
+		</skills>
+		<stats>
+			<stat type="mDef">63</stat>
+			<stat type="maxMp">25</stat>
+			<stat type="waterRes">8</stat>
+		</stats>
+	</item>
+	<item id="14670" name="Goddard Resistance Earring" type="Armor">
+		<!-- Earring given to the guardian of Goddard territory. Stun Attack +15%, Sleep Resistance +15%, Fire Resistance +8. Only one effect is applied when wearing the same two earrings. -->
+		<set name="icon" val="icon.accessary_inferno_earing_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rear;lear" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<skills>
+			<skill id="8354" level="1" /> <!-- Resistance Earring - Goddard -->
+		</skills>
+		<stats>
+			<stat type="mDef">63</stat>
+			<stat type="maxMp">25</stat>
+			<stat type="fireRes">8</stat>
+		</stats>
+	</item>
+	<item id="14671" name="Rune Resistance Earring" type="Armor">
+		<!-- Earring given to the guardian of Rune territory. Poison Attack +15%, Hold Resistance +15%, Fire Resistance +8. Only one effect is applied when wearing the same two earrings. -->
+		<set name="icon" val="icon.accessary_inferno_earing_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rear;lear" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<skills>
+			<skill id="8355" level="1" /> <!-- Resistance Earring - Rune -->
+		</skills>
+		<stats>
+			<stat type="mDef">63</stat>
+			<stat type="maxMp">25</stat>
+			<stat type="fireRes">8</stat>
+		</stats>
+	</item>
+	<item id="14672" name="Schuttgart Resistance Earring" type="Armor">
+		<!-- Earring given to the guardian of Schuttgart. Hold attack +15%, Mental Resistance +15%, Wind Resistance +8. Only one effect is applied when two earrings with the same effect are equipped. -->
+		<set name="icon" val="icon.accessary_inferno_earing_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rear;lear" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<skills>
+			<skill id="8356" level="1" /> <!-- Resistance Earring - Schuttgart -->
+		</skills>
+		<stats>
+			<stat type="mDef">63</stat>
+			<stat type="maxMp">25</stat>
+			<stat type="windRes">8</stat>
+		</stats>
+	</item>
+	<item id="14673" name="Rudolph's Nose" type="EtcItem">
+		<!-- Rudolph's Nose. Can be used only during the Christmas season. -->
+		<set name="icon" val="icon.Accessory_nose_of_rudolph_mask_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="10" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="is_dropable" val="false" />
+	</item>
+	<item id="14674" name="Santa's Tallum Blade*Damascus" type="Weapon">
+		<!-- Santa's Tallum Blade*Damascus -->
+		<set name="icon" val="icon.weapon_dual_sword_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUAL" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1890" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="180" />
+		<skills>
+			<skill id="8315" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8316" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8317" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8318" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8319" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8320" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8321" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="8322" level="1" /> <!-- Santa's Blessed Weapon -->
+			<skill id="3045" level="17" type="ON_ENCHANT" type_value="4" /> <!-- Special Ability: Haste -->
+		</skills>
+		<stats>
+			<stat type="pAtk">61</stat>
+			<stat type="mAtk">51</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="14675" name="Agathion - Neolithica" type="Armor">
+		<!-- Bracelet that can summon an Agathion. Cannot receive the gift if the inventory and weight are full. -->
+		<set name="icon" val="icon.pi_high_agathion_bracelet_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lbracelet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="47520" />
+		<skills>
+			<skill id="8314" level="1" /> <!-- Release Agathion's Seal - Neolithica -->
+			<skill id="6124" level="1" /> <!-- Agathion Cute Trick - Neolithica -->
+			<skill id="8323" level="1" /> <!-- Notifier -->
+			<skill id="3267" level="1" type="ON_UNEQUIP" /> <!-- Seal Agathion -->
+		</skills>
+	</item>
+	<item id="14676" name="Agathion's New Year's Gift" type="EtcItem">
+		<!-- Agathion's New Year's gift. You can receive Agathion's gift by Double-clicking. -->
+		<set name="icon" val="icon.etc_pi_gift_box_i03" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="2865" level="1" /> <!-- Agathion's New Year's Gift 1 -->
+		</skills>
+	</item>
+	<item id="14677" name="Agathion's New Year's Gift" type="EtcItem">
+		<!-- Agathion's New Year's gift. You can receive Agathion's gift by Double-clicking. -->
+		<set name="icon" val="icon.etc_pi_gift_box_i03" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="2866" level="1" /> <!-- Agathion's New Year's Gift 2 -->
+		</skills>
+	</item>
+	<item id="14678" name="Neolithic Crystal (B-grade)" type="EtcItem">
+		<!-- If you bring it to the Dimensional Merchant, you can exchange a B-grade ordinary item for a Masterwork Item. -->
+		<set name="icon" val="icon.etc_warding_orb_blue_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+	</item>
+	<item id="14679" name="Neolithic Crystal (A-grade)" type="EtcItem">
+		<!-- If you bring it to the Dimensional Merchant, you can exchange an A-grade ordinary item for a Masterwork Item. -->
+		<set name="icon" val="icon.etc_warding_orb_green_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="20" />
+		<set name="is_stackable" val="true" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+	</item>
+	<item id="14680" name="Neolithic Crystal (S-grade)" type="EtcItem">
+		<!-- If you bring it to the Dimensional Merchant, you can exchange an S-grade ordinary item for a Masterwork Item. -->
+		<set name="icon" val="icon.etc_warding_orb_red_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="20" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="14681" name="Neolithic Crystal (S80-grade)" type="EtcItem">
+		<!-- If you bring it to the Dimensional Merchant, you can exchange a S80-grade ordinary item for a Masterwork Item. -->
+		<set name="icon" val="icon.etc_warding_orb_black_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="20" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="14682" name="Superior Elixir of Life (No-grade)" type="EtcItem">
+		<!-- Regenerates HP. Can only be used by characters level 19 or below upon themselves. Cooldown is 5 min. -->
+		<set name="icon" val="icon.etc_super_hp_potion_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ELIXIR" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="5" />
+		<set name="shared_reuse_group" val="1" />
+		<set name="reuse_delay" val="300000" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="Elixir" />
+		<set name="commissionItemType" val="POTION" />
+		<cond addName="1" msgId="113">
+			<player flyMounted="false" />
+		</cond>
+		<skills>
+			<skill id="2860" level="1" /> <!-- Superior Elixir of Life (No-grade) -->
+		</skills>
+	</item>
+	<item id="14683" name="Superior Elixir of Life (D-grade)" type="EtcItem">
+		<!-- Regenerates HP. Can only be used by characters level 20 - 39 upon themselves. Cooldown is 5 min. -->
+		<set name="icon" val="icon.etc_super_hp_potion_i01" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ELIXIR" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="5" />
+		<set name="shared_reuse_group" val="2" />
+		<set name="reuse_delay" val="300000" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="Elixir" />
+		<set name="crystal_type" val="D" />
+		<set name="commissionItemType" val="POTION" />
+		<cond addName="1" msgId="113">
+			<player flyMounted="false" />
+		</cond>
+		<skills>
+			<skill id="2860" level="2" /> <!-- Superior Elixir of Life (D-grade) -->
+		</skills>
+	</item>
+	<item id="14684" name="Superior Elixir of Life (C-grade)" type="EtcItem">
+		<!-- Regenerates HP. Can only be used by characters level 40 - 51 upon themselves. Cooldown is 5 min. -->
+		<set name="icon" val="icon.etc_super_hp_potion_i02" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ELIXIR" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="5" />
+		<set name="shared_reuse_group" val="3" />
+		<set name="reuse_delay" val="300000" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="Elixir" />
+		<set name="crystal_type" val="C" />
+		<set name="commissionItemType" val="POTION" />
+		<cond addName="1" msgId="113">
+			<player flyMounted="false" />
+		</cond>
+		<skills>
+			<skill id="2860" level="3" /> <!-- Superior Elixir of Life (C-grade) -->
+		</skills>
+	</item>
+	<item id="14685" name="Superior Elixir of Life (B-grade)" type="EtcItem">
+		<!-- Regenerates HP. Can only be used by characters level 52 - 60 upon themselves. Cooldown is 5 min. -->
+		<set name="icon" val="icon.etc_super_hp_potion_i03" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ELIXIR" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="5" />
+		<set name="shared_reuse_group" val="4" />
+		<set name="reuse_delay" val="300000" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="Elixir" />
+		<set name="crystal_type" val="B" />
+		<set name="commissionItemType" val="POTION" />
+		<cond addName="1" msgId="113">
+			<player flyMounted="false" />
+		</cond>
+		<skills>
+			<skill id="2860" level="4" /> <!-- Superior Elixir of Life (B-grade) -->
+		</skills>
+	</item>
+	<item id="14686" name="Superior Elixir of Life (A-grade)" type="EtcItem">
+		<!-- Regenerates HP. Can only be used by characters level 61 - 75 upon themselves. Cooldown is 5 min. -->
+		<set name="icon" val="icon.etc_super_hp_potion_i04" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ELIXIR" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="5" />
+		<set name="shared_reuse_group" val="5" />
+		<set name="reuse_delay" val="300000" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="Elixir" />
+		<set name="crystal_type" val="A" />
+		<set name="commissionItemType" val="POTION" />
+		<cond addName="1" msgId="113">
+			<player flyMounted="false" />
+		</cond>
+		<skills>
+			<skill id="2860" level="5" /> <!-- Superior Elixir of Life (A-grade) -->
+		</skills>
+	</item>
+	<item id="14687" name="Superior Elixir of Life (S-grade)" type="EtcItem">
+		<!-- Regenerates HP. Can only be used by characters level 76 - 84 upon themselves. Cooldown is 5 min. -->
+		<set name="icon" val="icon.etc_super_hp_potion_i05" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ELIXIR" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="5" />
+		<set name="shared_reuse_group" val="6" />
+		<set name="reuse_delay" val="300000" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="Elixir" />
+		<set name="crystal_type" val="S" />
+		<set name="is_coc_restricted" val="true" />
+		<set name="commissionItemType" val="POTION" />
+		<cond addName="1" msgId="113">
+			<player flyMounted="false" />
+		</cond>
+		<skills>
+			<skill id="2860" level="6" /> <!-- Superior Elixir of Life (S-grade) -->
+		</skills>
+	</item>
+	<item id="14688" name="Superior Elixir of Mind (No-grade)" type="EtcItem">
+		<!-- Regenerates MP. Can only be used by characters level 19 or below upon themselves. Cooldown is 5 min. -->
+		<set name="icon" val="icon.etc_super_mp_potion_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ELIXIR" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="5" />
+		<set name="shared_reuse_group" val="1" />
+		<set name="reuse_delay" val="300000" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="Elixir" />
+		<set name="commissionItemType" val="POTION" />
+		<cond addName="1" msgId="113">
+			<player flyMounted="false" />
+		</cond>
+		<skills>
+			<skill id="2861" level="1" /> <!-- Superior Elixir of Mind (No-grade) -->
+		</skills>
+	</item>
+	<item id="14689" name="Superior Elixir of Mind (D-grade)" type="EtcItem">
+		<!-- Regenerates MP. Can only be used by characters level 20 - 39 upon themselves. Cooldown is 5 min. -->
+		<set name="icon" val="icon.etc_super_mp_potion_i01" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ELIXIR" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="5" />
+		<set name="shared_reuse_group" val="2" />
+		<set name="reuse_delay" val="300000" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="Elixir" />
+		<set name="crystal_type" val="D" />
+		<set name="commissionItemType" val="POTION" />
+		<cond addName="1" msgId="113">
+			<player flyMounted="false" />
+		</cond>
+		<skills>
+			<skill id="2861" level="2" /> <!-- Superior Elixir of Mind (D-grade) -->
+		</skills>
+	</item>
+	<item id="14690" name="Superior Elixir of Mind (C-grade)" type="EtcItem">
+		<!-- Regenerates MP. Can only be used by characters between levels 40 and 51 upon themselves. Cooldown is 5 min. -->
+		<set name="icon" val="icon.etc_super_mp_potion_i02" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ELIXIR" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="5" />
+		<set name="shared_reuse_group" val="3" />
+		<set name="reuse_delay" val="300000" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="Elixir" />
+		<set name="crystal_type" val="C" />
+		<set name="commissionItemType" val="POTION" />
+		<cond addName="1" msgId="113">
+			<player flyMounted="false" />
+		</cond>
+		<skills>
+			<skill id="2861" level="3" /> <!-- Superior Elixir of Mind (C-grade) -->
+		</skills>
+	</item>
+	<item id="14691" name="Superior Elixir of Mind (B-grade)" type="EtcItem">
+		<!-- Regenerates MP. Can only be used by characters level 52 - 60 upon themselves. Cooldown is 5 min. -->
+		<set name="icon" val="icon.etc_super_mp_potion_i03" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ELIXIR" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="5" />
+		<set name="shared_reuse_group" val="4" />
+		<set name="reuse_delay" val="300000" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="Elixir" />
+		<set name="crystal_type" val="B" />
+		<set name="commissionItemType" val="POTION" />
+		<cond addName="1" msgId="113">
+			<player flyMounted="false" />
+		</cond>
+		<skills>
+			<skill id="2861" level="4" /> <!-- Superior Elixir of Mind (B-grade) -->
+		</skills>
+	</item>
+	<item id="14692" name="Superior Elixir of Mind (A-grade)" type="EtcItem">
+		<!-- Regenerates MP. Can only be used by characters level 61 - 75 upon themselves. Cooldown is 5 min. -->
+		<set name="icon" val="icon.etc_super_mp_potion_i04" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ELIXIR" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="5" />
+		<set name="shared_reuse_group" val="5" />
+		<set name="reuse_delay" val="300000" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="Elixir" />
+		<set name="crystal_type" val="A" />
+		<set name="commissionItemType" val="POTION" />
+		<cond addName="1" msgId="113">
+			<player flyMounted="false" />
+		</cond>
+		<skills>
+			<skill id="2861" level="5" /> <!-- Superior Elixir of Mind (A-grade) -->
+		</skills>
+	</item>
+	<item id="14693" name="Superior Elixir of Mind (S-grade)" type="EtcItem">
+		<!-- Regenerates MP. Can only be used by characters level 76 - 84 upon themselves. Cooldown is 5 min. -->
+		<set name="icon" val="icon.etc_super_mp_potion_i05" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ELIXIR" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="5" />
+		<set name="shared_reuse_group" val="6" />
+		<set name="reuse_delay" val="300000" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="Elixir" />
+		<set name="crystal_type" val="S" />
+		<set name="commissionItemType" val="POTION" />
+		<set name="is_coc_restricted" val="true" />
+		<cond addName="1" msgId="113">
+			<player flyMounted="false" />
+		</cond>
+		<skills>
+			<skill id="2861" level="6" /> <!-- Superior Elixir of Mind (S-grade) -->
+		</skills>
+	</item>
+	<item id="14694" name="Superior Elixir of CP (No-grade)" type="EtcItem">
+		<!-- Regenerates CP. Can only be used by characters level 19 or below upon themselves. Cooldown is 5 min. -->
+		<set name="icon" val="icon.etc_super_cp_potion_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ELIXIR" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="5" />
+		<set name="shared_reuse_group" val="7" />
+		<set name="reuse_delay" val="300000" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="Elixir" />
+		<set name="commissionItemType" val="POTION" />
+		<skills>
+			<skill id="2862" level="1" /> <!-- Superior Elixir of CP (No-grade) -->
+		</skills>
+	</item>
+	<item id="14695" name="Superior Elixir of CP (D-grade)" type="EtcItem">
+		<!-- Regenerates CP. Can only be used by characters level 20 - 39 upon themselves. Cooldown is 5 min. -->
+		<set name="icon" val="icon.etc_super_cp_potion_i01" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ELIXIR" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="5" />
+		<set name="shared_reuse_group" val="7" />
+		<set name="reuse_delay" val="300000" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="Elixir" />
+		<set name="crystal_type" val="D" />
+		<set name="commissionItemType" val="POTION" />
+		<skills>
+			<skill id="2862" level="2" /> <!-- Superior Elixir of CP (D-grade) -->
+		</skills>
+	</item>
+	<item id="14696" name="Superior Elixir of CP (C-grade)" type="EtcItem">
+		<!-- Regenerates CP. Can only be used by characters level 40 - 51 upon themselves. Cooldown is 5 min. -->
+		<set name="icon" val="icon.etc_super_cp_potion_i02" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ELIXIR" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="5" />
+		<set name="shared_reuse_group" val="7" />
+		<set name="reuse_delay" val="300000" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="Elixir" />
+		<set name="crystal_type" val="C" />
+		<set name="commissionItemType" val="POTION" />
+		<skills>
+			<skill id="2862" level="3" /> <!-- Superior Elixir of CP (C-grade) -->
+		</skills>
+	</item>
+	<item id="14697" name="Superior Elixir of CP (B-grade)" type="EtcItem">
+		<!-- Regenerates CP. Can only be used by characters level 52 - 60 upon themselves. Cooldown is 5 min. -->
+		<set name="icon" val="icon.etc_super_cp_potion_i03" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ELIXIR" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="5" />
+		<set name="shared_reuse_group" val="7" />
+		<set name="reuse_delay" val="300000" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="Elixir" />
+		<set name="crystal_type" val="B" />
+		<set name="commissionItemType" val="POTION" />
+		<skills>
+			<skill id="2862" level="4" /> <!-- Superior Elixir of CP (B-grade) -->
+		</skills>
+	</item>
+	<item id="14698" name="Superior Elixir of CP (A-grade)" type="EtcItem">
+		<!-- Regenerates CP. Can only be used by characters level 61 - 75 upon themselves. Cooldown is 5 min. -->
+		<set name="icon" val="icon.etc_super_cp_potion_i04" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ELIXIR" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="5" />
+		<set name="shared_reuse_group" val="7" />
+		<set name="reuse_delay" val="300000" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="Elixir" />
+		<set name="crystal_type" val="A" />
+		<set name="commissionItemType" val="POTION" />
+		<skills>
+			<skill id="2862" level="5" /> <!-- Superior Elixir of CP (A-grade) -->
+		</skills>
+	</item>
+	<item id="14699" name="Superior Elixir of CP (S-grade)" type="EtcItem">
+		<!-- Regenerates CP. Can only be used by characters level 76 - 84 upon themselves. Cooldown is 5 min. -->
+		<set name="icon" val="icon.etc_super_cp_potion_i05" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ELIXIR" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="5" />
+		<set name="shared_reuse_group" val="7" />
+		<set name="reuse_delay" val="300000" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="Elixir" />
+		<set name="crystal_type" val="S" />
+		<set name="is_coc_restricted" val="true" />
+		<set name="commissionItemType" val="POTION" />
+		<skills>
+			<skill id="2862" level="6" /> <!-- Superior Elixir of CP (S-grade) -->
+		</skills>
+	</item>
+</list>

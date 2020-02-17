@@ -1,0 +1,862 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="10800" toLevel="10" name="Superior Elemental Resistance">
+		<!-- Fire/ Water/ Wind/ Earth Resistance +$s1. STR +$s2. -->
+		<icon>icon.skill10044</icon>
+		<operateType>P</operateType>
+		<magicLvl>
+			<value level="1">85</value>
+			<value level="2">90</value>
+			<value level="3">95</value>
+			<value level="4">99</value>
+			<value level="5">100</value>
+			<value level="6">102</value>
+			<value level="7">104</value>
+			<value level="8">106</value>
+			<value level="9">108</value>
+			<value level="10">110</value>
+		</magicLvl>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">20</value>
+					<value level="2">22</value>
+					<value level="3">24</value>
+					<value level="4">26</value>
+					<value level="5">30</value>
+					<value level="6">32</value>
+					<value level="7">34</value>
+					<value level="8">36</value>
+					<value level="9">38</value>
+					<value level="10">40</value>
+				</amount>
+				<attribute>FIRE</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">20</value>
+					<value level="2">22</value>
+					<value level="3">24</value>
+					<value level="4">26</value>
+					<value level="5">30</value>
+					<value level="6">32</value>
+					<value level="7">34</value>
+					<value level="8">36</value>
+					<value level="9">38</value>
+					<value level="10">40</value>
+				</amount>
+				<attribute>WATER</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">20</value>
+					<value level="2">22</value>
+					<value level="3">24</value>
+					<value level="4">26</value>
+					<value level="5">30</value>
+					<value level="6">32</value>
+					<value level="7">34</value>
+					<value level="8">36</value>
+					<value level="9">38</value>
+					<value level="10">40</value>
+				</amount>
+				<attribute>WIND</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">20</value>
+					<value level="2">22</value>
+					<value level="3">24</value>
+					<value level="4">26</value>
+					<value level="5">30</value>
+					<value level="6">32</value>
+					<value level="7">34</value>
+					<value level="8">36</value>
+					<value level="9">38</value>
+					<value level="10">40</value>
+				</amount>
+				<attribute>EARTH</attribute>
+			</effect>
+			<effect name="StatUp">
+				<amount>2</amount>
+				<stat>STR</stat>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="10801" toLevel="10" name="Bullseye">
+		<!-- Decreases target's Bow/ Crossbow Resistance by $s1 and M. Def. by $s2. -->
+		<icon>icon.skill10801</icon>
+		<abnormalLvl>4</abnormalLvl>
+		<abnormalTime>20</abnormalTime>
+		<abnormalType>REAL_TARGET</abnormalType>
+		<abnormalVisualEffect>REAL_TARGET</abnormalVisualEffect>
+		<activateRate>
+			<value fromLevel="1" toLevel="10">70</value>
+			<value fromLevel="4" toLevel="10" fromSubLevel="1001" toSubLevel="1020">{base + (base / 100 * subIndex)}</value>
+		</activateRate>
+		<operateType>A2</operateType>
+		<magicLvl>
+			<value level="1">85</value>
+			<value level="2">88</value>
+			<value level="3">91</value>
+			<value level="4">94</value>
+			<value level="5">97</value>
+			<value level="6">101</value>
+			<value level="7">103</value>
+			<value level="8">105</value>
+			<value level="9">107</value>
+			<value level="10">109</value>
+		</magicLvl>
+		<mpConsume>
+			<value level="1">20</value>
+			<value level="2">21</value>
+			<value level="3">22</value>
+			<value level="4">23</value>
+			<value level="5">24</value>
+			<value level="6">25</value>
+			<value level="7">26</value>
+			<value level="8">27</value>
+			<value level="9">28</value>
+			<value level="10">29</value>
+		</mpConsume>
+		<castRange>1100</castRange>
+		<hitTime>500</hitTime>
+		<reuseDelay>10000</reuseDelay>
+		<effectPoint>
+			<value level="1">-689</value>
+			<value level="2">-696</value>
+			<value level="3">-702</value>
+			<value level="4">-707</value>
+			<value level="5">-711</value>
+			<value level="6">-715</value>
+			<value level="7">-719</value>
+			<value level="8">-723</value>
+			<value level="9">-727</value>
+			<value level="10">-731</value>
+		</effectPoint>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>
+			<value level="1">1100</value>
+			<value level="2">1400</value>
+			<value level="3">1400</value>
+			<value level="4">1400</value>
+			<value level="5">1400</value>
+			<value level="6">1400</value>
+			<value level="7">1400</value>
+			<value level="8">1400</value>
+			<value level="9">1400</value>
+			<value level="10">1400</value>
+		</effectRange>
+		<isDebuff>true</isDebuff>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="DefenceTrait">
+				<BOW>
+					<value level="1">-40</value>
+					<value level="2">-45</value>
+					<value level="3">-50</value>
+					<value level="4">-55</value>
+					<value level="5">-60</value>
+					<value level="6">-60</value>
+					<value level="7">-60</value>
+					<value level="8">-60</value>
+					<value level="9">-60</value>
+					<value level="10">-60</value>
+				</BOW>
+				<TWOHANDCROSSBOW>
+					<value level="1">-40</value>
+					<value level="2">-45</value>
+					<value level="3">-50</value>
+					<value level="4">-55</value>
+					<value level="5">-60</value>
+					<value level="6">-60</value>
+					<value level="7">-60</value>
+					<value level="8">-60</value>
+					<value level="9">-60</value>
+					<value level="10">-60</value>
+				</TWOHANDCROSSBOW>
+				<CROSSBOW>
+					<value level="1">-40</value>
+					<value level="2">-45</value>
+					<value level="3">-50</value>
+					<value level="4">-55</value>
+					<value level="5">-60</value>
+					<value level="6">-60</value>
+					<value level="7">-60</value>
+					<value level="8">-60</value>
+					<value level="9">-60</value>
+					<value level="10">-60</value>
+				</CROSSBOW>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>
+					<value level="1">-5</value>
+					<value level="2">-10</value>
+					<value level="3">-15</value>
+					<value level="4">-20</value>
+					<value level="5">-25</value>
+					<value level="6">-25</value>
+					<value level="7">-25</value>
+					<value level="8">-25</value>
+					<value level="9">-25</value>
+					<value level="10">-25</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence" fromLevel="4" toLevel="10" fromSubLevel="2001" toSubLevel="2020">
+				<amount>
+					<value fromLevel="4" toLevel="10" fromSubLevel="2001" toSubLevel="2020">{-0.6 - (0.4 * subIndex)}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Speed" fromLevel="4" toLevel="10" fromSubLevel="3001" toSubLevel="3020">
+				<amount>
+					<value fromLevel="4" toLevel="10" fromSubLevel="3001" toSubLevel="3020">{-2 * subIndex}</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="10802" toLevel="6" name="Mass Bullseye">
+		<!-- Decreases target's and nearby enemies' Bow/ Crossbow Resistance by $s1 and M. Def. by $s2. After a certain time, target explodes, suffering heavy damage. -->
+		<icon>icon.skill10782</icon>
+		<abnormalLvl>4</abnormalLvl>
+		<abnormalTime>20</abnormalTime>
+		<abnormalType>REAL_TARGET</abnormalType>
+		<abnormalVisualEffect>REAL_TARGET</abnormalVisualEffect>
+		<activateRate>
+			<value fromLevel="1" toLevel="6">100</value>
+			<value fromLevel="1" toLevel="6" fromSubLevel="2001" toSubLevel="2020">{base + (base / 100 * subIndex)}</value>
+		</activateRate>
+		<affectLimit>5-12</affectLimit>
+		<affectRange>400</affectRange>
+		<operateType>A2</operateType>
+		<magicLvl>
+			<value level="1">99</value>
+			<value level="2">101</value>
+			<value level="3">103</value>
+			<value level="4">105</value>
+			<value level="5">107</value>
+			<value level="6">109</value>
+		</magicLvl>
+		<mpConsume>93</mpConsume>
+		<castRange>1100</castRange>
+		<hitTime>3000</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>180000</reuseDelay>
+		<effectPoint>-714</effectPoint>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>1400</effectRange>
+		<isDebuff>true</isDebuff>
+		<targetType>ENEMY</targetType>
+		<affectScope>RANGE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<effects>
+			<effect name="DefenceTrait">
+				<BOW>-60</BOW>
+				<TWOHANDCROSSBOW>-60</TWOHANDCROSSBOW>
+				<CROSSBOW>-60</CROSSBOW>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>-25</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence" fromLevel="1" toLevel="6" fromSubLevel="2001" toSubLevel="2020">
+				<amount>
+					<value fromLevel="1" toLevel="6" fromSubLevel="2001" toSubLevel="2020">{-0.6 - (0.4 * subIndex)}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Speed" fromLevel="1" toLevel="6" fromSubLevel="3001" toSubLevel="3020">
+				<amount>
+					<value fromLevel="1" toLevel="6" fromSubLevel="3001" toSubLevel="3020">{-2 * subIndex}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+		<endEffects>
+			<effect name="CallSkill">
+				<skillId>10804</skillId> <!-- Bullseye -->
+				<skillLevel>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+					<value level="4">4</value>
+					<value level="5">4</value>
+					<value level="6">4</value>
+				</skillLevel>
+			</effect>
+		</endEffects>
+	</skill>
+	<skill id="10803" toLevel="6" name="Time Bomb">
+		<!-- Boom! -->
+		<icon>icon.skill0099</icon>
+		<operateType>A1</operateType>
+		<mpConsume>
+			<value level="1">0</value>
+			<value level="2">0</value>
+			<value level="3">0</value>
+			<value level="4">0</value>
+			<value level="5">39</value>
+			<value level="6">39</value>
+		</mpConsume>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>97</magicLvl>
+		<isDebuff>true</isDebuff>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="PhysicalAttackSaveHp">
+				<power>
+					<value level="1">30000</value>
+					<value level="2">33546</value>
+					<value level="3">35088</value>
+					<value level="4">36630</value>
+					<value level="5">38265</value>
+					<value level="6">39900</value>
+				</power>
+				<saveHp>10</saveHp>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="10804" toLevel="4" name="Bullseye">
+		<!-- Boom! -->
+		<icon>icon.skill0099</icon>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>97</magicLvl>
+		<isDebuff>true</isDebuff>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="PhysicalAttackSaveHp">
+				<power>
+					<value level="1">30000</value>
+					<value level="2">33546</value>
+					<value level="3">35088</value>
+					<value level="4">36630</value>
+				</power>
+				<saveHp>10</saveHp>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="10805" toLevel="4" name="Quick Charge">
+		<!-- Teleports $s1 grids forward. -->
+		<icon>icon.skill10805</icon>
+		<operateType>DA1</operateType>
+		<magicLvl>
+			<value level="1">89</value>
+			<value level="2">92</value>
+			<value level="3">95</value>
+			<value level="4">98</value>
+		</magicLvl>
+		<mpConsume>
+			<value level="1">41</value>
+			<value level="2">44</value>
+			<value level="3">46</value>
+			<value level="4">48</value>
+		</mpConsume>
+		<castRange>
+			<value level="1">500</value>
+			<value level="2">600</value>
+			<value level="3">700</value>
+			<value level="4">800</value>
+			<value fromLevel="3" toLevel="4" fromSubLevel="1001" toSubLevel="1020">{base + (10 * subIndex)}</value>
+		</castRange>
+		<effectRange>
+			<value level="1">1000</value>
+			<value level="2">1100</value>
+			<value level="3">1200</value>
+			<value level="4">1300</value>
+		</effectRange>
+		<hitTime>100</hitTime>
+		<coolTime>400</coolTime>
+		<reuseDelay>30000</reuseDelay>
+		<effectPoint>2</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<isDebuff>true</isDebuff>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpBlink">
+				<direction>FRONT</direction>
+				<range>
+					<value level="1">500</value>
+					<value level="2">600</value>
+					<value level="3">700</value>
+					<value level="4">800</value>
+				</range>
+			</condition>
+		</conditions>
+	</skill>
+	<skill id="10806" toLevel="6" name="Frost Trap">
+		<!-- Decreases Speed, Atk. Spd. and Casting Spd. -->
+		<icon>icon.skill0516</icon>
+		<operateType>A2</operateType>
+		<effectPoint>-2</effectPoint>
+		<abnormalType>ALL_SPEED_DOWN</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<lvlBonusRate>30</lvlBonusRate>
+		<activateRate>120</activateRate>
+		<magicLvl>
+			<value level="1">85</value>
+			<value level="2">101</value>
+			<value level="3">103</value>
+			<value level="4">105</value>
+			<value level="5">107</value>
+			<value level="6">109</value>
+		</magicLvl>
+		<abnormalLvl>3</abnormalLvl>
+		<abnormalTime>15</abnormalTime>
+		<affectRange>300</affectRange>
+		<effectRange>300</effectRange>
+		<affectLimit>5-12</affectLimit>
+		<isDebuff>true</isDebuff>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>POINT_BLANK</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<effects>
+			<effect name="Speed">
+				<amount>
+					<value level="1">-30</value>
+					<value level="2">-35</value>
+					<value level="3">-40</value>
+					<value level="4">-50</value>
+					<value level="5">-50</value> <!-- FIXME: AUTO GENERATED LEVEL -->
+					<value level="6">-50</value> <!-- FIXME: AUTO GENERATED LEVEL -->
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>
+					<value level="1">-30</value>
+					<value level="2">-35</value>
+					<value level="3">-40</value>
+					<value level="4">-50</value>
+					<value level="5">-50</value> <!-- FIXME: AUTO GENERATED LEVEL -->
+					<value level="6">-50</value> <!-- FIXME: AUTO GENERATED LEVEL -->
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>
+					<value level="1">-30</value>
+					<value level="2">-35</value>
+					<value level="3">-40</value>
+					<value level="4">-50</value>
+					<value level="5">-50</value> <!-- FIXME: AUTO GENERATED LEVEL -->
+					<value level="6">-50</value> <!-- FIXME: AUTO GENERATED LEVEL -->
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="10807" toLevel="6" name="Gravity Trap">
+		<!-- Inflicted with Hold and unable to move. -->
+		<icon>icon.skill0518</icon>
+		<operateType>A2</operateType>
+		<effectPoint>-2</effectPoint>
+		<abnormalType>ROOT_MAGICALLY</abnormalType>
+		<abnormalVisualEffect>ROOT</abnormalVisualEffect>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<lvlBonusRate>30</lvlBonusRate>
+		<activateRate>120</activateRate>
+		<magicLvl>
+			<value level="1">85</value>
+			<value level="2">101</value>
+			<value level="3">103</value>
+			<value level="4">105</value>
+			<value level="5">107</value>
+			<value level="6">109</value>
+		</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>15</abnormalTime>
+		<trait>HOLD</trait>
+		<affectRange>300</affectRange>
+		<affectLimit>5-12</affectLimit>
+		<isDebuff>true</isDebuff>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>POINT_BLANK</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<effects>
+			<effect name="Root" />
+			<effect name="DefenceTrait">
+				<HOLD>100</HOLD>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="10808" toLevel="4" name="Decoy Provocation">
+		<!-- Decoy's provocation. Cannot change target. -->
+		<operateType>A2</operateType>
+		<hitTime>1000</hitTime>
+		<effectPoint>-2</effectPoint>
+		<abnormalType>TARGET_LOCK</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<activateRate>0</activateRate>
+		<magicLvl>
+			<value level="1">99</value>
+			<value level="2">101</value>
+			<value level="3">103</value>
+			<value level="4">105</value>
+		</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>10</abnormalTime>
+		<affectRange>300</affectRange>
+		<affectLimit>5-12</affectLimit>
+		<isDebuff>true</isDebuff>
+		<targetType>SELF</targetType>
+		<affectScope>POINT_BLANK</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<effects>
+			<effect name="TargetMe" /> <!-- p_berserker ? -->
+		</effects>
+	</skill>
+	<skill id="10809" toLevel="1" name="Survival Movement">
+		<!-- P. Evasion +15. Disappears after 4 strikes. -->
+		<icon>icon.skill1087</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>1200</abnormalTime>
+		<abnormalType>SPECIAL_MOVE_UP</abnormalType>
+		<isTriggeredSkill>true</isTriggeredSkill>
+		<operateType>A2</operateType>
+		<reuseDelay>30000</reuseDelay>
+		<staticReuse>true</staticReuse>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<isMagic>4</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="PhysicalEvasion">
+				<amount>15</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="10810" toLevel="4" name="Sniping">
+		<!-- For $s1 when a bow or crossbow is equipped, P. Atk. +$s2, Atk. Spd. +$s3, and P. Def./ M. Def. +$s4. -->
+		<icon>icon.skill11870</icon>
+		<abnormalLvl>
+			<value level="1">1</value>
+			<value level="2">2</value>
+			<value level="3">3</value>
+			<value level="4">4</value>
+		</abnormalLvl>
+		<abnormalTime>
+			<value fromLevel="1" toLevel="4">1800</value>
+			<value fromLevel="3" toLevel="4" fromSubLevel="1001" toSubLevel="1020">{1800 + (subIndex * 90)}</value>
+		</abnormalTime>
+		<!-- TODO: abnormalType -->
+		<effectPoint>687</effectPoint>
+		<magicLvl>
+			<value level="1">85</value>
+			<value level="2">90</value>
+			<value level="3">95</value>
+			<value level="4">99</value>
+		</magicLvl>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<mpConsume>
+			<value level="1">62</value>
+			<value level="2">69</value>
+			<value level="3">76</value>
+			<value level="4">83</value>
+		</mpConsume>
+		<hitTime>1000</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>30000</reuseDelay>
+		<effects>
+			<effect name="PAtk">
+				<amount>
+					<value level="1">5</value>
+					<value level="2">6</value>
+					<value level="3">7</value>
+					<value level="4">10</value>
+				</amount>
+				<mode>PER</mode>
+				<weaponType>
+					<item>BOW</item>
+					<item>CROSSBOW</item>
+					<item>TWOHANDCROSSBOW</item>
+				</weaponType>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>
+					<value level="1">5</value>
+					<value level="2">6</value>
+					<value level="3">7</value>
+					<value level="4">10</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>
+					<value level="1">5</value>
+					<value level="2">6</value>
+					<value level="3">7</value>
+					<value level="4">10</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>
+					<value level="1">5</value>
+					<value level="2">6</value>
+					<value level="3">7</value>
+					<value level="4">10</value>
+				</amount>
+				<mode>PER</mode>
+				<weaponType>
+					<item>BOW</item>
+					<item>CROSSBOW</item>
+					<item>TWOHANDCROSSBOW</item>
+				</weaponType>
+			</effect>
+			<effect name="DefenceCriticalDamage" fromLevel="3" toLevel="4" fromSubLevel="2001" toSubLevel="2020">
+				<amount>
+					<value fromLevel="3" toLevel="4" fromSubLevel="2001" toSubLevel="2020">{-1 - (subIndex - 1 * 0.5)}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Speed" fromLevel="3" toLevel="4" fromSubLevel="3001" toSubLevel="3020">
+				<amount>
+					<value fromLevel="3" toLevel="4" fromSubLevel="3001" toSubLevel="3020">{2 * subIndex}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="10811" toLevel="4" name="Superior Hawk Mastery">
+		<!-- P. Atk. +$s1 when equipped with a bow or crossbow. -->
+		<icon>icon.skill10811</icon>
+		<magicLvl>
+			<value level="1">85</value>
+			<value level="2">90</value>
+			<value level="3">95</value>
+			<value level="4">99</value>
+		</magicLvl>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="PAtk">
+				<amount>
+					<value level="1">5</value>
+					<value level="2">6</value>
+					<value level="3">7</value>
+					<value level="4">10</value>
+				</amount>
+				<mode>PER</mode>
+				<weaponType>
+					<item>BOW</item>
+					<item>CROSSBOW</item>
+					<item>TWOHANDCROSSBOW</item>
+				</weaponType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="10812" toLevel="3" name="Sneak Shot">
+		<!-- Attacks distant target with $s1 Power added to P. Atk. Inflicts Stun when attacking from behind. Requires a bow/ crossbow. Over-hit. Critical. -->
+		<operateType>A1</operateType>
+		<mpConsume>
+			<value level="1">93</value>
+			<value level="2">96</value>
+			<value level="3">99</value>
+		</mpConsume>
+		<castRange>1100</castRange>
+		<hitTime>1800</hitTime>
+		<coolTime>250</coolTime>
+		<effectPoint>
+			<value level="1">-709</value>
+			<value level="2">-711</value>
+			<value level="3">-714</value>
+		</effectPoint>
+		<reuseDelay>30000</reuseDelay>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>
+					<value level="1">29176</value>
+					<value level="2">30726</value>
+					<value level="3">32277</value>
+				</power>
+				<overHit>true</overHit>
+				<criticalChance>15</criticalChance>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="10813" toLevel="3" name="Sneak Shot: Stun">
+		<!-- Stuns the enemy for $s1. Has a chance of canceling enemy's targeting. Requires a bow/ crossbow. Over-hit. -->
+		<operateType>A2</operateType>
+		<castRange>1100</castRange>
+		<reuseDelay>5000</reuseDelay>
+		<effectPoint>-70</effectPoint>
+		<abnormalTime>5</abnormalTime>
+		<isDebuff>true</isDebuff>
+	</skill>
+	<skill id="10856" toLevel="4" name="Rapid Fire Position">
+		<!-- For $s1 when a bow or crossbow is equipped, P. Atk. +$s2, chance of receiving an M. Critical Hit -$s3, and P. Skill Cooldown -$s4. -->
+		<icon>icon.skill11871</icon>
+		<abnormalLvl>
+			<value level="1">1</value>
+			<value level="2">2</value>
+			<value level="3">3</value>
+			<value level="4">4</value>
+		</abnormalLvl>
+		<abnormalTime>
+			<value fromLevel="1" toLevel="4">1800</value>
+			<value fromLevel="3" toLevel="4" fromSubLevel="1001" toSubLevel="1020">{1800 + (subIndex * 90)}</value>
+		</abnormalTime>
+		<!-- TODO: abnormalType -->
+		<magicLvl>
+			<value level="1">85</value>
+			<value level="2">90</value>
+			<value level="3">95</value>
+			<value level="4">99</value>
+		</magicLvl>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<mpConsume>
+			<value level="1">62</value>
+			<value level="2">69</value>
+			<value level="3">76</value>
+			<value level="4">83</value>
+		</mpConsume>
+		<hitTime>1000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>687</effectPoint>
+		<reuseDelay>30000</reuseDelay>
+		<effects>
+			<effect name="PAtk">
+				<amount>
+					<value level="1">5</value>
+					<value level="2">6</value>
+					<value level="3">7</value>
+					<value level="4">10</value>
+				</amount>
+				<mode>PER</mode>
+				<weaponType>
+					<item>BOW</item>
+					<item>CROSSBOW</item>
+					<item>TWOHANDCROSSBOW</item>
+				</weaponType>
+			</effect>
+			<effect name="DefenceCriticalRate">
+				<amount>
+					<value level="1">-5</value>
+					<value level="2">-7</value>
+					<value level="3">-10</value>
+					<value level="4">-15</value>
+				</amount>
+				<mode>PER</mode>
+				<weaponType>
+					<item>BOW</item>
+					<item>CROSSBOW</item>
+					<item>TWOHANDCROSSBOW</item>
+				</weaponType>
+			</effect>
+			<effect name="Reuse">
+				<amount>
+					<value level="1">-5</value>
+					<value level="2">-5</value>
+					<value level="3">-7</value>
+					<value level="4">-10</value>
+				</amount>
+				<mode>PER</mode>
+				<magicType>0</magicType>
+				<weaponType>
+					<item>BOW</item>
+					<item>CROSSBOW</item>
+					<item>TWOHANDCROSSBOW</item>
+				</weaponType>
+			</effect>
+			<effect name="DefenceCriticalDamage" fromLevel="3" toLevel="4" fromSubLevel="2001" toSubLevel="2020">
+				<amount>
+					<value fromLevel="3" toLevel="4" fromSubLevel="2001" toSubLevel="2020">{-1 - (subIndex - 1 * 0.5)}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Speed" fromLevel="3" toLevel="4" fromSubLevel="3001" toSubLevel="3020">
+				<amount>
+					<value fromLevel="3" toLevel="4" fromSubLevel="3001" toSubLevel="3020">{2 * subIndex}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="10857" toLevel="4" name="Superior Speed Mastery">
+		<!-- Speed +$s1. -->
+		<icon>icon.skill10857</icon>
+		<operateType>P</operateType>
+		<magicLvl>
+			<value level="1">85</value>
+			<value level="2">90</value>
+			<value level="3">95</value>
+			<value level="4">99</value>
+		</magicLvl>
+		<effects>
+			<effect name="Speed">
+				<amount>
+					<value level="1">10</value>
+					<value level="2">12</value>
+					<value level="3">15</value>
+					<value level="4">20</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="10858" toLevel="3" name="Retreating Shot">
+		<!-- Attacks target with $s1 Power added to P. Atk., cancels their targeting, and retreats $s2 grids backward. -->
+		<operateType>A1</operateType>
+		<mpConsume>
+			<value level="1">32</value>
+			<value level="2">33</value>
+			<value level="3">34</value>
+		</mpConsume>
+		<castRange>
+			<value level="1">400</value>
+			<value level="2">400</value>
+			<value level="3">450</value>
+		</castRange>
+		<hitTime>700</hitTime>
+		<effectPoint>
+			<value level="1">-702</value>
+			<value level="2">-707</value>
+			<value level="3">-711</value>
+		</effectPoint>
+		<reuseDelay>30000</reuseDelay>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>
+					<value level="1">29176</value>
+					<value level="2">30726</value>
+					<value level="3">32277</value>
+				</power>
+			</effect>
+			<effect name="TargetCancel" />
+		</effects>
+		<selfEffects>
+			<effect name="Blink">
+				<angle>0</angle> <!-- Teleport to Back -->
+				<range>400</range>
+			</effect>
+		</selfEffects>
+	</skill>
+</list>

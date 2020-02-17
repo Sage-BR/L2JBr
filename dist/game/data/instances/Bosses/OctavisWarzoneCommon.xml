@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Octavis Warzone -->
+<instance id="180" maxWorlds="20" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/instance.xsd">
+	<time duration="120" empty="5" /> <!-- TODO: Confir me -->
+	<removeBuffs type="ALL" />
+	<locations>
+		<enter type="FIXED">
+			<location x="210649" y="119107" z="-9994" />
+		</enter>
+		<exit type="ORIGIN" />
+	</locations>
+	<conditions>
+		<condition type="Party" showMessageAndHtml="true">
+			<param name="html" value="condNoGroup.html" />
+		</condition>
+		<condition type="CommandChannel" showMessageAndHtml="true">
+			<param name="html" value="condNoGroup.html" />
+		</condition>
+		<condition type="CommandChannelLeader" />
+		<condition type="GroupMin">
+			<param name="limit" value="7" />
+		</condition>
+		<condition type="GroupMax">
+			<param name="html" value="condBigGroup.html"/>
+			<param name="limit" value="35" />
+		</condition>
+		<condition type="Level" showMessageAndHtml="true">
+			<param name="html" value="condNoLevelCommon.html" />
+			<param name="min" value="95" />
+			<param name="max" value="99" />
+		</condition>
+		<condition type="Distance" />
+		<condition type="Reenter" />
+	</conditions>
+	<reenter apply="ON_FINISH">
+		<reset day="WEDNESDAY" hour="6" minute="30" />
+		<reset day="SATURDAY" hour="6" minute="30" />
+	</reenter>
+	<doorlist>
+		<door id="26210002" />
+		<door id="26210001" />
+		<door id="26210103" />
+		<door id="26210102" />
+		<door id="26210101" />
+		<door id="26210106" />
+		<door id="26210105" />
+		<door id="26210104" />
+	</doorlist>
+	<spawnlist>
+		<group>
+			<npc id="18984" x="209239" y="120576" z="-9933" />
+		</group>
+		<group name="STAGE_1" spawnByDefault="false">
+			<npc id="29192" x="207244" y="120579" z="-9992" heading="0" /> <!-- Octavis' Beast -->
+		</group>
+		<group name="STAGE_2" spawnByDefault="false">
+			<npc id="29193" x="207194" y="120573" z="-10008" heading="0" /> <!-- Octavis -->
+		</group>
+		<group name="STAGE_3" spawnByDefault="false">
+			<npc id="29194" x="207194" y="120573" z="-10008" heading="0" /> <!-- Octavis -->
+		</group>
+		<group name="magmeld4_2621_gmo1m1" spawnByDefault="false">
+			<npc id="22928" x="206519" y="118937" z="-9971" heading="12416" respawnTime="2min"> <!-- Octavis' Gladiator -->
+				<parameters>
+					<param name="Move_to_X" value="206681" />
+					<param name="Move_to_Y" value="119327" />
+					<param name="My_DoorName" value="26210101" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="magmeld4_2621_gmo2m1" spawnByDefault="false">
+			<npc id="22928" x="207865" y="118937" z="-9968" heading="19232" respawnTime="2min"> <!-- Octavis' Gladiator -->
+				<parameters>
+					<param name="Move_to_X" value="207724" />
+					<param name="Move_to_Y" value="119303" />
+					<param name="My_DoorName" value="26210102" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="magmeld4_2621_gmo3m1" spawnByDefault="false">
+			<npc id="22928" x="208829" y="119896" z="-9968" heading="28264" respawnTime="2min"> <!-- Octavis' Gladiator -->
+				<parameters>
+					<param name="Move_to_X" value="208472" />
+					<param name="Move_to_Y" value="120047" />
+					<param name="My_DoorName" value="26210103" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="magmeld4_2621_gmo4m1" spawnByDefault="false">
+			<npc id="22928" x="208825" y="121260" z="-9968" heading="-27456" respawnTime="2min"> <!-- Octavis' Gladiator -->
+				<parameters>
+					<param name="Move_to_X" value="208484" />
+					<param name="Move_to_Y" value="121110" />
+					<param name="My_DoorName" value="26210104" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="magmeld4_2621_gmo5m1" spawnByDefault="false">
+			<npc id="22928" x="207875" y="122209" z="-9968" heading="-21392" respawnTime="2min"> <!-- Octavis' Gladiator -->
+				<parameters>
+					<param name="Move_to_X" value="207730" />
+					<param name="Move_to_Y" value="121859" />
+					<param name="My_DoorName" value="26210105" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="magmeld4_2621_gmo6m1" spawnByDefault="false">
+			<npc id="22928" x="206507" y="122208" z="-9968" heading="-10856" respawnTime="2min"> <!-- Octavis' Gladiator -->
+				<parameters>
+					<param name="Move_to_X" value="206654" />
+					<param name="Move_to_Y" value="121865" />
+					<param name="My_DoorName" value="26210106" />
+				</parameters>
+			</npc>
+		</group>
+	</spawnlist>
+</instance>

@@ -1,0 +1,2184 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
+	<item id="13300" name="Feather of Blessing (Event)" type="EtcItem">
+		<!-- You can resurrect right away at the spot where you get killed if you have the Feather of Blessing. -->
+		<set name="icon" val="icon.blessed_feather_i00" />
+		<set name="material" val="LIQUID" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="allow_self_resurrection" val="true" />
+	</item>
+	<item id="13301" name="My Teleport Book (Event)" type="EtcItem">
+		<!-- Increases by 3 slots the free teleport list, which can remember designated locations. Can expand up to 9 slots. -->
+		<set name="icon" val="icon.bookmark_book_i00" />
+		<set name="default_action" val="CALL_SKILL" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="5" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<skills>
+			<skill id="2610" level="1" /> <!-- Register Bookmark (Event) -->
+		</skills>
+	</item>
+	<item id="13302" name="My Teleport Scroll (Event)" type="EtcItem">
+		<!-- Item that is consumed when moving to the remembered location. -->
+		<set name="icon" val="icon.bookmark_scroll_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="5" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_freightable" val="true" />
+	</item>
+	<item id="13303" name="White Weasel Minion Necklace (Event)" type="EtcItem">
+		<!-- Item that allows you to summon a Minion who temporarily casts warrior-type battle support magic. -->
+		<set name="icon" val="icon.pet_controler_i00" />
+		<set name="default_action" val="SKILL_MAINTAIN" />
+		<set name="etcitem_type" val="PET_COLLAR" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="handler" val="SummonItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_pure_stat}}}" />
+		<cond addName="1" msgId="113">
+			<player flyMounted="false" />
+		</cond>
+		<skills>
+			<skill id="2046" level="1" /> <!-- Summon Pet -->
+		</skills>
+	</item>
+	<item id="13304" name="Fairy Princess Minion Necklace (Event)" type="EtcItem">
+		<!-- Item that allows you to summon a Minion who temporarily casts Wizard-type battle buff. -->
+		<set name="icon" val="icon.pet_controler_i00" />
+		<set name="default_action" val="SKILL_MAINTAIN" />
+		<set name="etcitem_type" val="PET_COLLAR" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="handler" val="SummonItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_pure_stat}}}" />
+		<cond addName="1" msgId="113">
+			<player flyMounted="false" />
+		</cond>
+		<skills>
+			<skill id="2046" level="1" /> <!-- Summon Pet -->
+		</skills>
+	</item>
+	<item id="13305" name="Wild Beast Fighter Minion Necklace (Event)" type="EtcItem">
+		<!-- Item that allows you to summon a warrior-type battle Minion. -->
+		<set name="icon" val="icon.pet_controler_i01" />
+		<set name="default_action" val="SKILL_MAINTAIN" />
+		<set name="etcitem_type" val="PET_COLLAR" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="handler" val="SummonItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_pure_stat}}}" />
+		<cond addName="1" msgId="113">
+			<player flyMounted="false" />
+		</cond>
+		<skills>
+			<skill id="2046" level="1" /> <!-- Summon Pet -->
+		</skills>
+	</item>
+	<item id="13306" name="Fox Shaman Minion Necklace (Event)" type="EtcItem">
+		<!-- Item that allows you to summon a magician-type battle Minion. -->
+		<set name="icon" val="icon.pet_controler_i01" />
+		<set name="default_action" val="SKILL_MAINTAIN" />
+		<set name="etcitem_type" val="PET_COLLAR" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="handler" val="SummonItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="use_condition" val="{{uc_transmode_exclude;{tt_pure_stat}}}" />
+		<cond addName="1" msgId="113">
+			<player flyMounted="false" />
+		</cond>
+		<skills>
+			<skill id="2046" level="1" /> <!-- Summon Pet -->
+		</skills>
+	</item>
+	<item id="13307" name="Color Title (Event)" type="EtcItem">
+		<!-- Item that allows you to change a character's title color. You can change back to the original title color by using the "/ resetname" command after changing the title color. If there is no original title, the title will disappear. -->
+		<set name="icon" val="icon.color_name_i00" />
+		<set name="default_action" val="NICK_COLOR" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="5" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="handler" val="NicknameColor" />
+	</item>
+	<item id="13308" name="Mount - Darkmane Pacer (Event)" additionalName="7-day" type="Armor">
+		<!-- Can mount a Darkmane Pacer when equipped. 7-day. -->
+		<set name="icon" val="icon.etc_rbracelet_aga_agit_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lbracelet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="10080" />
+		<set name="is_destroyable" val="false" />
+		<skills>
+			<skill id="839" level="1" type="ON_UNEQUIP" /> <!-- Dismount -->
+			<skill id="8247" level="1" /> <!-- Ride Darkmane Pacer -->
+		</skills>
+	</item>
+	<item id="13309" name="Agathion - Love (Event)" additionalName="30-day" type="Armor">
+		<!-- Can summon an Love Agathion when equipped. 30-day. -->
+		<set name="icon" val="icon.etc_rbracelet_aga_agit_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lbracelet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="43200" />
+		<set name="is_destroyable" val="false" />
+		<skills>
+			<skill id="5763" level="1" /> <!-- Wink -->
+			<skill id="8245" level="1" /> <!-- Release Agathion's Seal - Love -->
+			<skill id="3267" level="1" type="ON_UNEQUIP" /> <!-- Seal Agathion -->
+		</skills>
+	</item>
+	<item id="13310" name="Kat the Cat Hat (Event)" additionalName="30-day" type="Armor">
+		<!-- Hat that looks like Kat the Cat. 30-day. -->
+		<set name="icon" val="icon.accessory_cat_the_cat_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="43200" />
+		<set name="is_destroyable" val="false" />
+	</item>
+	<item id="13311" name="Feline Queen Hat (Event)" additionalName="30-day" type="Armor">
+		<!-- Hat that looks like Feline Queen. 30-day. -->
+		<set name="icon" val="icon.accessory_queen_of_cat_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="43200" />
+		<set name="is_destroyable" val="false" />
+	</item>
+	<item id="13312" name="Monster Eye Hat (Event)" additionalName="30-day" type="Armor">
+		<!-- Hat that looks like a Monster Eye. 30-day. -->
+		<set name="icon" val="icon.accessory_monstereye_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="43200" />
+		<set name="is_destroyable" val="false" />
+	</item>
+	<item id="13313" name="Brown Bear Hat (Event)" additionalName="30-day" type="Armor">
+		<!-- Hat that looks like Brown Bear. 30-day. -->
+		<set name="icon" val="icon.accessory_brown_bear_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="43200" />
+		<set name="is_destroyable" val="false" />
+	</item>
+	<item id="13314" name="Fungus Hat (Event)" additionalName="30-day" type="Armor">
+		<!-- Hat that looks like Fungus. 30-day. -->
+		<set name="icon" val="icon.accessory_fungus_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="43200" />
+		<set name="is_destroyable" val="false" />
+	</item>
+	<item id="13315" name="Skull Hat (Event)" additionalName="30-day" type="Armor">
+		<!-- Hat that looks like a Skull. 30-day. -->
+		<set name="icon" val="icon.accessory_skeleton_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="43200" />
+		<set name="is_destroyable" val="false" />
+	</item>
+	<item id="13316" name="Ornithomimus Hat (Event)" additionalName="30-day" type="Armor">
+		<!-- Hat that looks like a Ornithomimus. 30-day. -->
+		<set name="icon" val="icon.accessory_ornithomimus_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="43200" />
+		<set name="is_destroyable" val="false" />
+	</item>
+	<item id="13317" name="Feline King Hat (Event)" additionalName="30-day" type="Armor">
+		<!-- Hat that looks like Feline King. 30-day. -->
+		<set name="icon" val="icon.accessory_king_of_cat_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="43200" />
+		<set name="is_destroyable" val="false" />
+	</item>
+	<item id="13318" name="Kai the Cat Hat (Event)" additionalName="30-day" type="Armor">
+		<!-- Hat that looks like Kai the Cat. 30-day. -->
+		<set name="icon" val="icon.accessory_chi_the_cat_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="43200" />
+		<set name="is_destroyable" val="false" />
+	</item>
+	<item id="13319" name="O Stick (Event)" additionalName="30-day" type="Weapon">
+		<!-- O-type stick. 30-day. -->
+		<set name="icon" val="icon.weapon_o_stick_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="43200" />
+		<set name="is_destroyable" val="false" />
+		<stats>
+			<stat type="pAtk">1</stat>
+			<stat type="mAtk">1</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="13320" name="X Stick (Event)" additionalName="30-day" type="Weapon">
+		<!-- X Stick. 30-day. -->
+		<set name="icon" val="icon.weapon_x_stick_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="43200" />
+		<set name="is_destroyable" val="false" />
+		<stats>
+			<stat type="pAtk">1</stat>
+			<stat type="mAtk">1</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="13321" name="Scissors Stick (Event)" additionalName="30-day" type="Weapon">
+		<!-- Scissor stick. 30-day. -->
+		<set name="icon" val="icon.weapon_scissors_stick_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="43200" />
+		<set name="is_destroyable" val="false" />
+		<stats>
+			<stat type="pAtk">1</stat>
+			<stat type="mAtk">1</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="13322" name="Rock Stick (Event)" additionalName="30-day" type="Weapon">
+		<!-- Rock stick. 30-day. -->
+		<set name="icon" val="icon.weapon_rock_stick_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="43200" />
+		<set name="is_destroyable" val="false" />
+		<stats>
+			<stat type="pAtk">1</stat>
+			<stat type="mAtk">1</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="13323" name="Paper Stick (Event)" additionalName="30-day" type="Weapon">
+		<!-- Paper stick. 30-day. -->
+		<set name="icon" val="icon.weapon_diver_stick_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="43200" />
+		<set name="is_destroyable" val="false" />
+		<stats>
+			<stat type="pAtk">1</stat>
+			<stat type="mAtk">1</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="13324" name="Pumpkin Transformation Stick (Event)" additionalName="30-day" type="Weapon">
+		<!-- Transformation stick that turns you into a pumpkin. 30-day. -->
+		<set name="icon" val="icon.weapon_pumpkin_stick_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="43200" />
+		<set name="is_destroyable" val="false" />
+		<skills>
+			<skill id="839" level="1" type="ON_UNEQUIP" /> <!-- Dismount -->
+			<skill id="8246" level="1" /> <!-- Transform Pumpkin Ghost -->
+		</skills>
+		<stats>
+			<stat type="pAtk">1</stat>
+			<stat type="mAtk">1</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="13325" name="Kat the Cat Hat (Event)" additionalName="7-day" type="Armor">
+		<!-- Hat that looks like Kat the Cat. 7-day. -->
+		<set name="icon" val="icon.accessory_cat_the_cat_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="10080" />
+		<set name="is_destroyable" val="false" />
+	</item>
+	<item id="13326" name="Feline Queen Hat (Event)" additionalName="7-day" type="Armor">
+		<!-- Hat that looks like Feline Queen. 7-day. -->
+		<set name="icon" val="icon.accessory_queen_of_cat_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="10080" />
+		<set name="is_destroyable" val="false" />
+	</item>
+	<item id="13327" name="Monster Eye Hat (Event)" additionalName="7-day" type="Armor">
+		<!-- Hat that looks like a Monster Eye. 7-day. -->
+		<set name="icon" val="icon.accessory_monstereye_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="10080" />
+		<set name="is_destroyable" val="false" />
+	</item>
+	<item id="13328" name="Brown Bear Hat (Event)" additionalName="7-day" type="Armor">
+		<!-- Hat that looks like Brown Bear. 7-day. -->
+		<set name="icon" val="icon.accessory_brown_bear_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="10080" />
+		<set name="is_destroyable" val="false" />
+	</item>
+	<item id="13329" name="Fungus Hat (Event)" additionalName="7-day" type="Armor">
+		<!-- Hat that looks like Fungus. 7-day. -->
+		<set name="icon" val="icon.accessory_fungus_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="10080" />
+		<set name="is_destroyable" val="false" />
+	</item>
+	<item id="13330" name="Skull Hat (Event)" additionalName="7-day" type="Armor">
+		<!-- Hat that looks like a Skull. 7-day. -->
+		<set name="icon" val="icon.accessory_skeleton_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="10080" />
+		<set name="is_destroyable" val="false" />
+	</item>
+	<item id="13331" name="Ornithomimus Hat (Event)" additionalName="7-day" type="Armor">
+		<!-- Hat that looks like a Ornithomimus. 7-day. -->
+		<set name="icon" val="icon.accessory_ornithomimus_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="10080" />
+		<set name="is_destroyable" val="false" />
+	</item>
+	<item id="13332" name="Feline King Hat (Event)" additionalName="7-day" type="Armor">
+		<!-- Hat that looks like Feline King. 7-day. -->
+		<set name="icon" val="icon.accessory_king_of_cat_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="10080" />
+		<set name="is_destroyable" val="false" />
+	</item>
+	<item id="13333" name="Kai the Cat Hat (Event)" additionalName="7-day" type="Armor">
+		<!-- Hat that looks like Kai the Cat. 7-day. -->
+		<set name="icon" val="icon.accessory_chi_the_cat_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="10080" />
+		<set name="is_destroyable" val="false" />
+	</item>
+	<item id="13334" name="O Stick (Event)" additionalName="7-day" type="Weapon">
+		<!-- O-type stick. 7-day. -->
+		<set name="icon" val="icon.weapon_o_stick_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="10080" />
+		<set name="is_destroyable" val="false" />
+		<stats>
+			<stat type="pAtk">1</stat>
+			<stat type="mAtk">1</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="13335" name="X Stick (Event)" additionalName="7-day" type="Weapon">
+		<!-- X Stick. 7-day. -->
+		<set name="icon" val="icon.weapon_x_stick_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="10080" />
+		<set name="is_destroyable" val="false" />
+		<stats>
+			<stat type="pAtk">1</stat>
+			<stat type="mAtk">1</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="13336" name="Scissors Stick (Event)" additionalName="7-day" type="Weapon">
+		<!-- Scissor stick. 7-day. -->
+		<set name="icon" val="icon.weapon_scissors_stick_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="10080" />
+		<set name="is_destroyable" val="false" />
+		<stats>
+			<stat type="pAtk">1</stat>
+			<stat type="mAtk">1</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="13337" name="Rock Stick (Event)" additionalName="7-day" type="Weapon">
+		<!-- Rock stick. 7-day. -->
+		<set name="icon" val="icon.weapon_rock_stick_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="10080" />
+		<set name="is_destroyable" val="false" />
+		<stats>
+			<stat type="pAtk">1</stat>
+			<stat type="mAtk">1</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="13338" name="Paper Stick (Event)" additionalName="7-day" type="Weapon">
+		<!-- Paper stick. 7-day. -->
+		<set name="icon" val="icon.weapon_diver_stick_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="10080" />
+		<set name="is_destroyable" val="false" />
+		<stats>
+			<stat type="pAtk">1</stat>
+			<stat type="mAtk">1</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="13339" name="Pumpkin Transformation Stick (Event)" additionalName="7-day" type="Weapon">
+		<!-- Pumpkin transformation stick. 7-day. -->
+		<set name="icon" val="icon.weapon_pumpkin_stick_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="10080" />
+		<set name="is_destroyable" val="false" />
+		<skills>
+			<skill id="839" level="1" type="ON_UNEQUIP" /> <!-- Dismount -->
+			<skill id="8246" level="1" /> <!-- Transform Pumpkin Ghost -->
+		</skills>
+		<stats>
+			<stat type="pAtk">1</stat>
+			<stat type="mAtk">1</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="13340" name="Agathion - Love (Event)" additionalName="7-day" type="Armor">
+		<!-- Seal bracelet that can summon a Love Agathion. 7-day. -->
+		<set name="icon" val="icon.etc_rbracelet_aga_agit_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lbracelet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="10080" />
+		<set name="is_destroyable" val="false" />
+		<skills>
+			<skill id="5763" level="1" /> <!-- Wink -->
+			<skill id="8245" level="1" /> <!-- Release Agathion's Seal - Love -->
+			<skill id="3267" level="1" type="ON_UNEQUIP" /> <!-- Seal Agathion -->
+		</skills>
+	</item>
+	<item id="13341" name="My Teleport Book Pack (Event)" type="EtcItem">
+		<!-- Wrapped Pack containing sheet of the Free Teleporter's Scroll. -->
+		<set name="icon" val="icon.etc_pi_gift_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="13301" min="1" max="1" chance="100" /> <!-- My Teleport Book (Event) -->
+		</capsuled_items>
+	</item>
+	<item id="13342" name="My Teleport Scroll 30-unit Pack (Event)" type="EtcItem">
+		<!-- Wrapped Pack containing 30 sheets of Free Teleporter's Spellbooks. -->
+		<set name="icon" val="icon.etc_pi_gift_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="13302" min="30" max="30" chance="100" /> <!-- My Teleport Scroll (Event) -->
+		</capsuled_items>
+	</item>
+	<item id="13343" name="Feather of Blessing 3-unit Pack (Event)" type="EtcItem">
+		<!-- Wrapped Pack containing 3 sheets of the Feather of Blessing. -->
+		<set name="icon" val="icon.etc_pi_gift_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="13300" min="3" max="3" chance="100" /> <!-- Feather of Blessing (Event) -->
+		</capsuled_items>
+	</item>
+	<item id="13344" name="Agathion - Love Pack (30-day) (Event)" type="EtcItem">
+		<!-- Dimensional Item Pack. A pack containing a Love Agathion Seal Bracelet (30-day). -->
+		<set name="icon" val="icon.etc_pi_gift_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="13309" min="1" max="1" chance="100" /> <!-- Agathion - Love (Event) - 30-day -->
+		</capsuled_items>
+	</item>
+	<item id="13345" name="Pumpkin Transformation Stick Pack (30-day) (Event)" type="EtcItem">
+		<!-- Wrapped Pack containing Pumpkin Transformation Stick (30-day). -->
+		<set name="icon" val="icon.etc_pi_gift_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="13324" min="1" max="1" chance="100" /> <!-- Pumpkin Transformation Stick (Event) - 30-day -->
+		</capsuled_items>
+	</item>
+	<item id="13346" name="Entrance Pass: Kamaloka 3-unit Pack (Event)" type="EtcItem">
+		<!-- Wrapped Pack containing 5 Sheets of Extra Entrances Passes each to Kamaloka (Hall of the Abyss), Near Kamaloka, and Kamaloka (Labyrinth of the Abyss). -->
+		<set name="icon" val="icon.etc_pi_gift_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="13297" min="5" max="5" chance="100" /> <!-- Extra Pass: Kamaloka (Hall of the Abyss) (Event) -->
+			<item id="13298" min="5" max="5" chance="100" /> <!-- Extra Pass: Near Kamaloka (Event) -->
+			<item id="13299" min="5" max="5" chance="100" /> <!-- Extra Pass: Kamaloka (Labyrinth of the Abyss) (Event) -->
+		</capsuled_items>
+	</item>
+	<item id="13347" name="Kat the Cat Hat Pack (30-day) (Event)" type="EtcItem">
+		<!-- Wrapped Pack containing Kat the Cat Hat (30-day). -->
+		<set name="icon" val="icon.etc_pi_gift_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="13310" min="1" max="1" chance="100" /> <!-- Kat the Cat Hat (Event) - 30-day -->
+		</capsuled_items>
+	</item>
+	<item id="13348" name="Feline Queen Hat Pack (30-day) (Event)" type="EtcItem">
+		<!-- Wrapped Pack containing Feline Queen Hat (30-day). -->
+		<set name="icon" val="icon.etc_pi_gift_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="13311" min="1" max="1" chance="100" /> <!-- Feline Queen Hat (Event) - 30-day -->
+		</capsuled_items>
+	</item>
+	<item id="13349" name="Monster Eye Hat Pack (30-day) (Event)" type="EtcItem">
+		<!-- Wrapped Pack containing Monster Eye Hat (30-day). -->
+		<set name="icon" val="icon.etc_pi_gift_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="13312" min="1" max="1" chance="100" /> <!-- Monster Eye Hat (Event) - 30-day -->
+		</capsuled_items>
+	</item>
+	<item id="13350" name="Brown Bear Hat Pack (30-day) (Event)" type="EtcItem">
+		<!-- Wrapped Pack containing Brown Bear Hat (30-day). -->
+		<set name="icon" val="icon.etc_pi_gift_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="13313" min="1" max="1" chance="100" /> <!-- Brown Bear Hat (Event) - 30-day -->
+		</capsuled_items>
+	</item>
+	<item id="13351" name="Fungus Hat Pack (30-day) (Event)" type="EtcItem">
+		<!-- Wrapped Pack containing Fungus Hat (30-day). -->
+		<set name="icon" val="icon.etc_pi_gift_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="13314" min="1" max="1" chance="100" /> <!-- Fungus Hat (Event) - 30-day -->
+		</capsuled_items>
+	</item>
+	<item id="13352" name="Skull Hat Pack (30-day) (Event)" type="EtcItem">
+		<!-- Wrapped Pack containing Skull Hat (30-day). -->
+		<set name="icon" val="icon.etc_pi_gift_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="13315" min="1" max="1" chance="100" /> <!-- Skull Hat (Event) - 30-day -->
+		</capsuled_items>
+	</item>
+	<item id="13353" name="Ornithomimus Hat Pack (30-day) (Event)" type="EtcItem">
+		<!-- Wrapped Pack containing Ornithomimus Hat (30-day). -->
+		<set name="icon" val="icon.etc_pi_gift_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="13316" min="1" max="1" chance="100" /> <!-- Ornithomimus Hat (Event) - 30-day -->
+		</capsuled_items>
+	</item>
+	<item id="13354" name="Feline King Hat Pack (30-day) (Event)" type="EtcItem">
+		<!-- Wrapped Pack containing Feline King Hat (30-day). -->
+		<set name="icon" val="icon.etc_pi_gift_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="13317" min="1" max="1" chance="100" /> <!-- Feline King Hat (Event) - 30-day -->
+		</capsuled_items>
+	</item>
+	<item id="13355" name="Kai the Cat Hat Pack (30-day) (Event)" type="EtcItem">
+		<!-- Wrapped Pack containing Kai the Cat Hat (30-day). -->
+		<set name="icon" val="icon.etc_pi_gift_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="13318" min="1" max="1" chance="100" /> <!-- Kai the Cat Hat (Event) - 30-day -->
+		</capsuled_items>
+	</item>
+	<item id="13356" name="OX Stick Pack (30-day) (Event)" type="EtcItem">
+		<!-- Wrapped Pack containing OX Stick (30-day). -->
+		<set name="icon" val="icon.etc_pi_gift_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="13319" min="1" max="1" chance="100" /> <!-- O Stick (Event) - 30-day -->
+			<item id="13320" min="1" max="1" chance="100" /> <!-- X Stick (Event) - 30-day -->
+		</capsuled_items>
+	</item>
+	<item id="13357" name="Rock-Paper-Scissors Stick Pack (30-day) (Event)" type="EtcItem">
+		<!-- Wrapped Pack containing Rock-Paper-Scissors Stick (30-day). -->
+		<set name="icon" val="icon.etc_pi_gift_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="13321" min="1" max="1" chance="100" /> <!-- Scissors Stick (Event) - 30-day -->
+			<item id="13322" min="1" max="1" chance="100" /> <!-- Rock Stick (Event) - 30-day -->
+			<item id="13323" min="1" max="1" chance="100" /> <!-- Paper Stick (Event) - 30-day -->
+		</capsuled_items>
+	</item>
+	<item id="13358" name="Darkmane Pacer Pack (7-day) (Event)" type="EtcItem">
+		<!-- Wrapped Pack containing bracelet that summons a Darkmane Pacer (7-day). -->
+		<set name="icon" val="icon.etc_pi_gift_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="13308" min="1" max="1" chance="100" /> <!-- Mount - Darkmane Pacer (Event) - 7-day -->
+		</capsuled_items>
+	</item>
+	<item id="13359" name="Color Title 3-unit Pack (Event)" type="EtcItem">
+		<!-- Wrapped Pack containing 3 sheets of Color Titles. -->
+		<set name="icon" val="icon.etc_pi_gift_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="13307" min="3" max="3" chance="100" /> <!-- Color Title (Event) -->
+		</capsuled_items>
+	</item>
+	<item id="13360" name="Color Title Pack (Event)" type="EtcItem">
+		<!-- Wrapped Pack containing sheets of Color Titles. -->
+		<set name="icon" val="icon.etc_pi_gift_box_i02" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="13307" min="1" max="1" chance="100" /> <!-- Color Title (Event) -->
+		</capsuled_items>
+	</item>
+	<item id="13361" name="My Teleport Scroll 10-unit Pack (Event)" type="EtcItem">
+		<!-- Wrapped Pack containing 10 sheets of Free Teleporter's Spellbooks. -->
+		<set name="icon" val="icon.etc_pi_gift_box_i02" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="13016" min="10" max="10" chance="100" /> <!-- My Teleport Scroll -->
+		</capsuled_items>
+	</item>
+	<item id="13362" name="Kamaloka (Hall of the Abyss) 15-unit Pack (Event)" type="EtcItem">
+		<!-- Wrapped Pack containing 15 Sheets of Extra Entrance Passes to Kamaloka (Hall of the Abyss). -->
+		<set name="icon" val="icon.etc_pi_gift_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="13297" min="15" max="15" chance="100" /> <!-- Extra Pass: Kamaloka (Hall of the Abyss) (Event) -->
+		</capsuled_items>
+	</item>
+	<item id="13363" name="Near Kamaloka 15-unit Pack (Event)" type="EtcItem">
+		<!-- Wrapped Pack containing 15 Sheets of Extra Entrance Passes to Near Kamaloka. -->
+		<set name="icon" val="icon.etc_pi_gift_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="13298" min="15" max="15" chance="100" /> <!-- Extra Pass: Near Kamaloka (Event) -->
+		</capsuled_items>
+	</item>
+	<item id="13364" name="Kamaloka (Labyrinth of the Abyss) 15-unit Pack (Event)" type="EtcItem">
+		<!-- Wrapped Pack containing 15 Sheets of Extra Entrance Passes to Kamaloka (Labyrinth of the Abyss). -->
+		<set name="icon" val="icon.etc_pi_gift_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="13299" min="15" max="15" chance="100" /> <!-- Extra Pass: Kamaloka (Labyrinth of the Abyss) (Event) -->
+		</capsuled_items>
+	</item>
+	<item id="13365" name="Kamaloka (Hall of the Abyss) 5-unit Pack (Event)" type="EtcItem">
+		<!-- Wrapped Pack containing 5 Sheets of Extra Entrance Passes to Kamaloka (Hall of the Abyss). -->
+		<set name="icon" val="icon.etc_pi_gift_box_i02" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="13297" min="5" max="5" chance="100" /> <!-- Extra Pass: Kamaloka (Hall of the Abyss) (Event) -->
+		</capsuled_items>
+	</item>
+	<item id="13366" name="Near Kamaloka 5-unit Pack (Event)" type="EtcItem">
+		<!-- Wrapped Pack containing 5 Sheets of Extra Entrance Passes to Near Kamaloka. -->
+		<set name="icon" val="icon.etc_pi_gift_box_i02" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="13298" min="5" max="5" chance="100" /> <!-- Extra Pass: Near Kamaloka (Event) -->
+		</capsuled_items>
+	</item>
+	<item id="13367" name="Kamaloka (Labyrinth of the Abyss) 5-unit Pack (Event)" type="EtcItem">
+		<!-- Wrapped Pack containing 5 Sheets of Extra Entrance Passes to Kamaloka (Labyrinth of the Abyss). -->
+		<set name="icon" val="icon.etc_pi_gift_box_i02" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="13299" min="5" max="5" chance="100" /> <!-- Extra Pass: Kamaloka (Labyrinth of the Abyss) (Event) -->
+		</capsuled_items>
+	</item>
+	<item id="13368" name="Feather of Blessing Pack (Event)" type="EtcItem">
+		<!-- Wrapped Pack containing sheets of the Feather of Blessing. -->
+		<set name="icon" val="icon.etc_pi_gift_box_i02" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="13300" min="1" max="1" chance="100" /> <!-- Feather of Blessing (Event) -->
+		</capsuled_items>
+	</item>
+	<item id="13369" name="Agathion- Love Pack (7-day) (Event)" type="EtcItem">
+		<!-- Dimensional Item Pack. A pack containing a Love Agathion Seal Bracelet (7-day). -->
+		<set name="icon" val="icon.etc_pi_gift_box_i02" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="13340" min="1" max="1" chance="100" /> <!-- Agathion - Love (Event) - 7-day -->
+		</capsuled_items>
+	</item>
+	<item id="13370" name="Pumpkin Transformation Stick Pack (7-day) (Event)" type="EtcItem">
+		<!-- Wrapped Pack containing Pumpkin Transformation Stick (7-day). -->
+		<set name="icon" val="icon.etc_pi_gift_box_i02" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="13339" min="1" max="1" chance="100" /> <!-- Pumpkin Transformation Stick (Event) - 7-day -->
+		</capsuled_items>
+	</item>
+	<item id="13371" name="Kat the Cat Hat Pack (7-day) (Event)" type="EtcItem">
+		<!-- Wrapped Pack containing Kat the Cat Hat (7-day). -->
+		<set name="icon" val="icon.etc_pi_gift_box_i02" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="13325" min="1" max="1" chance="100" /> <!-- Kat the Cat Hat (Event) - 7-day -->
+		</capsuled_items>
+	</item>
+	<item id="13372" name="Feline Queen Hat Pack (7-day) (Event)" type="EtcItem">
+		<!-- Wrapped Pack containing Feline Queen Hat (7-day). -->
+		<set name="icon" val="icon.etc_pi_gift_box_i02" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="13326" min="1" max="1" chance="100" /> <!-- Feline Queen Hat (Event) - 7-day -->
+		</capsuled_items>
+	</item>
+	<item id="13373" name="Monster Eye Hat Pack (7-day) (Event)" type="EtcItem">
+		<!-- Wrapped Pack containing Monster Eye Hat (7-day). -->
+		<set name="icon" val="icon.etc_pi_gift_box_i02" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="13327" min="1" max="1" chance="100" /> <!-- Monster Eye Hat (Event) - 7-day -->
+		</capsuled_items>
+	</item>
+	<item id="13374" name="Brown Bear Hat Pack (7-day) (Event)" type="EtcItem">
+		<!-- Wrapped Pack containing Brown Bear Hat (7-day). -->
+		<set name="icon" val="icon.etc_pi_gift_box_i02" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="13328" min="1" max="1" chance="100" /> <!-- Brown Bear Hat (Event) - 7-day -->
+		</capsuled_items>
+	</item>
+	<item id="13375" name="Fungus Hat Pack (7-day) (Event)" type="EtcItem">
+		<!-- Wrapped Pack containing Fungus Hat (7-day). -->
+		<set name="icon" val="icon.etc_pi_gift_box_i02" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="13329" min="1" max="1" chance="100" /> <!-- Fungus Hat (Event) - 7-day -->
+		</capsuled_items>
+	</item>
+	<item id="13376" name="Skull Hat Pack (7-day) (Event)" type="EtcItem">
+		<!-- Wrapped Pack containing Skull Hat (7-day). -->
+		<set name="icon" val="icon.etc_pi_gift_box_i02" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="13330" min="1" max="1" chance="100" /> <!-- Skull Hat (Event) - 7-day -->
+		</capsuled_items>
+	</item>
+	<item id="13377" name="Ornithomimus Hat Pack (7-day) (Event)" type="EtcItem">
+		<!-- Wrapped Pack containing Ornithomimus Hat (7-day). -->
+		<set name="icon" val="icon.etc_pi_gift_box_i02" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="13331" min="1" max="1" chance="100" /> <!-- Ornithomimus Hat (Event) - 7-day -->
+		</capsuled_items>
+	</item>
+	<item id="13378" name="Feline King Hat Pack (7-day) (Event)" type="EtcItem">
+		<!-- Wrapped Pack containing Feline King Hat (7-day). -->
+		<set name="icon" val="icon.etc_pi_gift_box_i02" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="13332" min="1" max="1" chance="100" /> <!-- Feline King Hat (Event) - 7-day -->
+		</capsuled_items>
+	</item>
+	<item id="13379" name="Kai the Cat Hat Pack (7-day) (Event)" type="EtcItem">
+		<!-- Wrapped Pack containing Kai the Cat Hat (7-day). -->
+		<set name="icon" val="icon.etc_pi_gift_box_i02" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="13333" min="1" max="1" chance="100" /> <!-- Kai the Cat Hat (Event) - 7-day -->
+		</capsuled_items>
+	</item>
+	<item id="13380" name="OX Stick Pack (7-day) (Event)" type="EtcItem">
+		<!-- Wrapped Pack containing OX Stick (7-day). -->
+		<set name="icon" val="icon.etc_pi_gift_box_i02" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="13334" min="1" max="1" chance="100" /> <!-- O Stick (Event) - 7-day -->
+			<item id="13335" min="1" max="1" chance="100" /> <!-- X Stick (Event) - 7-day -->
+		</capsuled_items>
+	</item>
+	<item id="13381" name="Rock-Paper-Scissors Stick Pack (7-day) (Event)" type="EtcItem">
+		<!-- Wrapped Pack containing Rock-Paper-Scissors Stick (7-day). -->
+		<set name="icon" val="icon.etc_pi_gift_box_i02" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="13336" min="1" max="1" chance="100" /> <!-- Scissors Stick (Event) - 7-day -->
+			<item id="13337" min="1" max="1" chance="100" /> <!-- Rock Stick (Event) - 7-day -->
+			<item id="13338" min="1" max="1" chance="100" /> <!-- Paper Stick (Event) - 7-day -->
+		</capsuled_items>
+	</item>
+	<item id="13382" name="Gran Kain's Gift Box (Event)" additionalName="30-day" type="EtcItem">
+		<!-- Wrapped Pack provides you with a free item once a day. 30 days. -->
+		<set name="icon" val="icon.special_cube_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ELIXIR" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="time" val="43200" />
+		<skills>
+			<skill id="2606" level="1" /> <!-- Gran Kain's Gift Box -->
+		</skills>
+	</item>
+	<item id="13383" name="Minion Coupon (5-hour) (Event)" type="EtcItem">
+		<!-- A coupon that can be exchanged for a necklace that allows you to summon a Minion (5-hour). -->
+		<set name="icon" val="icon.etc_ticket_red_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_freightable" val="true" />
+	</item>
+	<item id="13384" name="Minion Coupon 3-unit Pack (Event)" type="EtcItem">
+		<!-- Wrapped box containing ticket that can be exchanged for a necklace that allows you to summon a Minion (5-hour). -->
+		<set name="icon" val="icon.etc_pi_gift_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="13383" min="3" max="3" chance="100" /> <!-- Minion Coupon (5-hour) (Event) -->
+		</capsuled_items>
+	</item>
+	<item id="13385" name="Minion Coupon Pack (Event)" type="EtcItem">
+		<!-- Wrapped box containing coupon that can be exchanged for a necklace that allows you to summon a Minion (5-hour). -->
+		<set name="icon" val="icon.etc_pi_gift_box_i02" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<capsuled_items>
+			<item id="13383" min="1" max="1" chance="100" /> <!-- Minion Coupon (5-hour) (Event) -->
+		</capsuled_items>
+	</item>
+	<item id="13386" name="Blue Crystal of Fantasy" type="EtcItem">
+		<!-- Increases SP by 500 when used. Can be used at Lv. 76 or above. -->
+		<set name="icon" val="icon.etc_sp_crystal_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="10" />
+		<set name="reuse_delay" val="1000" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="crystal_type" val="S" />
+		<set name="is_private_storeable" val="false" />
+		<skills>
+			<skill id="2608" level="1" /> <!-- Blue Crystal of Fantasy -->
+		</skills>
+	</item>
+	<item id="13387" name="Fantasy Green Crystal" type="EtcItem">
+		<!-- Increases SP by 1000 when used. Can be used at Lv. 76 or above. -->
+		<set name="icon" val="icon.etc_sp_crystal_i02" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="10" />
+		<set name="reuse_delay" val="1000" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="crystal_type" val="S" />
+		<set name="is_private_storeable" val="false" />
+		<skills>
+			<skill id="2608" level="2" /> <!-- Fantasy Green Crystal -->
+		</skills>
+	</item>
+	<item id="13388" name="Fantasy Red Crystal" type="EtcItem">
+		<!-- Increases SP by 2000 when used. Can be used at Lv. 76 or above. -->
+		<set name="icon" val="icon.etc_sp_crystal_i01" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="10" />
+		<set name="reuse_delay" val="1000" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="crystal_type" val="S" />
+		<set name="is_private_storeable" val="false" />
+		<skills>
+			<skill id="2608" level="3" /> <!-- Fantasy Red Crystal -->
+		</skills>
+	</item>
+	<item id="13389" name="Kratei Scale Shirt" additionalName="CP" type="Armor">
+		<!-- Increases Max CP by 516 when over-enchanted to +4 or above. -->
+		<set name="icon" val="icon.etc_shirts_a_i04" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="underwear" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="CRYSTAL" />
+		<set name="weight" val="130" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="3453" level="1" type="ON_ENCHANT" type_value="4" /> <!-- Scale Shirt -->
+		</skills>
+		<stats>
+			<stat type="pDef">23</stat>
+		</stats>
+	</item>
+	<item id="13390" name="Kratei Mithril Shirt" additionalName="CP" type="Armor">
+		<!-- Increases Max CP by 672 when over-enchanted to +4 or above. -->
+		<set name="icon" val="icon.etc_shirts_s_i05" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="underwear" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="CRYSTAL" />
+		<set name="weight" val="130" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="3459" level="1" type="ON_ENCHANT" type_value="4" /> <!-- Mithril Shirt -->
+		</skills>
+		<stats>
+			<stat type="pDef">28</stat>
+		</stats>
+	</item>
+	<item id="13391" name="Kratei Striped Scale Shirt" additionalName="CP" type="Armor">
+		<!-- Increases Max CP by 564 when over-enchanted to +4 or above. -->
+		<set name="icon" val="icon.etc_stripe_shirts_a_i04" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="underwear" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="CRYSTAL" />
+		<set name="weight" val="130" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="3477" level="1" type="ON_ENCHANT" type_value="4" /> <!-- Striped Scale Shirt -->
+		</skills>
+		<stats>
+			<stat type="pDef">26</stat>
+		</stats>
+	</item>
+	<item id="13392" name="Kratei Striped Mithril Shirt" additionalName="CP" type="Armor">
+		<!-- Increases Max CP by 744 when over-enchanted to +4 or above. -->
+		<set name="icon" val="icon.etc_stripe_shirts_s_i05" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="underwear" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="CRYSTAL" />
+		<set name="weight" val="130" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="3483" level="1" type="ON_ENCHANT" type_value="4" /> <!-- Striped Mithril Shirt -->
+		</skills>
+		<stats>
+			<stat type="pDef">30</stat>
+		</stats>
+	</item>
+	<item id="13393" name="Shadow Item: Monkey Hat" type="Armor">
+		<!-- Cute Monkey Hat. Uses 2 hair accessory slots. -->
+		<set name="icon" val="icon.monkey_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="duration" val="100" />
+	</item>
+	<item id="13394" name="Shadow Item: Pig Hat" type="Armor">
+		<!-- Cute Pig Hat. Uses 2 hair accessory slots. -->
+		<set name="icon" val="icon.event_pig_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="duration" val="100" />
+	</item>
+	<item id="13395" name="Scroll of Escape - Talking Island Village" type="EtcItem">
+		<!-- Teleports you to Talking Island Village. -->
+		<set name="icon" val="icon.etc_scroll_of_return_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_private_storeable" val="false" />
+		<cond addName="1" msgId="113">
+			<player flyMounted="false" />
+		</cond>
+		<skills>
+			<skill id="2609" level="1" /> <!-- Scroll of Escape: Talking Island Village -->
+		</skills>
+	</item>
+	<item id="13396" name="Scroll of Escape - Elven Village" type="EtcItem">
+		<!-- Teleports you to the Elven Village. -->
+		<set name="icon" val="icon.etc_scroll_of_return_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_private_storeable" val="false" />
+		<cond addName="1" msgId="113">
+			<player flyMounted="false" />
+		</cond>
+		<skills>
+			<skill id="2609" level="2" /> <!-- Scroll of Escape: Elven Village -->
+		</skills>
+	</item>
+	<item id="13397" name="Scroll of Escape - Dark Elf Village" type="EtcItem">
+		<!-- Teleports you to the Dark Elf Village. -->
+		<set name="icon" val="icon.etc_scroll_of_return_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_private_storeable" val="false" />
+		<cond addName="1" msgId="113">
+			<player flyMounted="false" />
+		</cond>
+		<skills>
+			<skill id="2609" level="3" /> <!-- Scroll of Escape: Dark Elf Village -->
+		</skills>
+	</item>
+	<item id="13398" name="Scroll of Escape - Orc Village" type="EtcItem">
+		<!-- Teleports you to the Orc Village. -->
+		<set name="icon" val="icon.etc_scroll_of_return_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_private_storeable" val="false" />
+		<cond addName="1" msgId="113">
+			<player flyMounted="false" />
+		</cond>
+		<skills>
+			<skill id="2609" level="4" /> <!-- Scroll of Escape: Orc Village -->
+		</skills>
+	</item>
+	<item id="13399" name="Scroll of Escape - Dwarven Village" type="EtcItem">
+		<!-- Teleports you to Dwarven Village. -->
+		<set name="icon" val="icon.etc_scroll_of_return_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_private_storeable" val="false" />
+		<cond addName="1" msgId="113">
+			<player flyMounted="false" />
+		</cond>
+		<skills>
+			<skill id="2609" level="5" /> <!-- Scroll of Escape: Dwarven Village -->
+		</skills>
+	</item>
+</list>

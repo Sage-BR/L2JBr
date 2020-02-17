@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Crystal Caverns - Coral Garden -->
+<instance id="165" maxWorlds="80" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/instance.xsd">
+	<time duration="60" empty="3" />
+	<removeBuffs type="ALL" />
+	<locations>
+		<enter type="FIXED">
+			<location x="142003" y="214496" z="-11600" />
+		</enter>
+		<exit type="FIXED">
+			<location x="149364" y="173631" z="-920" />
+		</exit>
+	</locations>
+	<conditions>
+		<condition type="Party" showMessageAndHtml="true">
+			<param name="html" value="condNoParty.html" />
+		</condition>
+		<condition type="PartyLeader">
+			<param name="html" value="condNoPartyLeader.html" />
+		</condition>
+		<condition type="GroupMin">
+			<param name="limit" value="7" />
+		</condition>
+		<condition type="GroupMax">
+			<param name="limit" value="7" />
+		</condition>
+		<condition type="Level">
+			<param name="min" value="97" />
+		</condition>
+		<condition type="Distance" />
+		<condition type="Reenter">
+			<param name="instanceId" value="165" />
+		</condition>
+	</conditions>
+	<reenter apply="ON_FINISH">
+		<reset day="MONDAY" hour="6" minute="30" />
+		<reset day="TUESDAY" hour="6" minute="30" />
+		<reset day="WEDNESDAY" hour="6" minute="30" />
+		<reset day="THURSDAY" hour="6" minute="30" />
+		<reset day="FRIDAY" hour="6" minute="30" />
+		<reset day="SATURDAY" hour="6" minute="30" />
+		<reset day="SUNDAY" hour="6" minute="30" />
+	</reenter>
+	<doorlist>
+		<door id="24240021">
+			<openStatus default="close" />
+		</door>
+		<door id="24240024">
+			<openStatus default="open" />
+		</door>
+		<door id="24240025">
+			<openStatus default="open" />
+		</door>
+		<door id="24240026">
+			<openStatus default="close" />
+		</door>
+	</doorlist>
+	<spawnlist>
+		<group name="innadril24_2422_01m1">
+			<territories>
+				<territory name="innadril24_2422_01" minZ="-11812" maxZ="-11612">
+					<node x="140772" y="214027" />
+					<node x="141701" y="214024" />
+					<node x="141722" y="214971" />
+					<node x="140776" y="214973" />
+				</territory>
+			</territories>
+			<npc id="23017" respawnTime="2min" count="5" /> <!-- Punisher of Sins -->
+		</group>
+		<group name="innadril24_2422_02m1">
+			<territories>
+				<territory name="innadril24_2422_02" minZ="-11817" maxZ="-11617">
+					<node x="141288" y="215403" />
+					<node x="141740" y="215413" />
+					<node x="141887" y="215959" />
+					<node x="142400" y="216437" />
+					<node x="141647" y="216436" />
+					<node x="141288" y="216181" />
+				</territory>
+			</territories>
+			<npc id="23017" respawnTime="2min" count="4" /> <!-- Punisher of Sins -->
+		</group>
+		<group name="innadril24_2422_03m1">
+			<territories>
+				<territory name="innadril24_2422_03" minZ="-11819" maxZ="-11619">
+					<node x="140792" y="215411" />
+					<node x="141224" y="215411" />
+					<node x="141241" y="216166" />
+					<node x="140860" y="216435" />
+					<node x="140148" y="216438" />
+					<node x="140635" y="215920" />
+				</territory>
+			</territories>
+			<npc id="23017" respawnTime="2min" count="4" /> <!-- Punisher of Sins -->
+		</group>
+		<group name="innadril24_2422_04m1">
+			<territories>
+				<territory name="innadril24_2422_04" minZ="-11816" maxZ="-11616">
+					<node x="140113" y="216495" />
+					<node x="140842" y="216485" />
+					<node x="140659" y="216910" />
+					<node x="140646" y="217244" />
+					<node x="139829" y="217222" />
+					<node x="139829" y="217222" />
+					<node x="139852" y="216817" />
+				</territory>
+			</territories>
+			<npc id="23018" respawnTime="2min" count="3" /> <!-- Judge of Sins -->
+			<npc id="23019" respawnTime="5min" count="1" /> <!-- Arbitrator of Sins -->
+		</group>
+		<group name="innadril24_2422_05m1">
+			<territories>
+				<territory name="innadril24_2422_05" minZ="-11813" maxZ="-11613">
+					<node x="141670" y="216494" />
+					<node x="142425" y="216494" />
+					<node x="142638" y="216831" />
+					<node x="142692" y="217230" />
+					<node x="141859" y="217241" />
+					<node x="141840" y="216891" />
+				</territory>
+			</territories>
+			<npc id="23018" respawnTime="2min" count="3" /> <!-- Judge of Sins -->
+			<npc id="23019" respawnTime="5min" count="1" /> <!-- Arbitrator of Sins -->
+		</group>
+		<group name="innadril24_2422_06m1">
+			<territories>
+				<territory name="innadril24_2422_06" minZ="-11817" maxZ="-11617">
+					<node x="141856" y="217297" />
+					<node x="142687" y="217287" />
+					<node x="142550" y="217912" />
+					<node x="142020" y="218441" />
+					<node x="141567" y="218171" />
+					<node x="141810" y="217710" />
+				</territory>
+			</territories>
+			<npc id="23018" respawnTime="2min" count="3" /> <!-- Judge of Sins -->
+			<npc id="23019" respawnTime="5min" count="1" /> <!-- Arbitrator of Sins -->
+		</group>
+		<group name="innadril24_2422_07m1">
+			<territories>
+				<territory name="innadril24_2422_07" minZ="-11820" maxZ="-11620">
+					<node x="139832" y="217298" />
+					<node x="140644" y="217281" />
+					<node x="140695" y="217709" />
+					<node x="140919" y="218175" />
+					<node x="140469" y="218436" />
+					<node x="139940" y="217889" />
+				</territory>
+			</territories>
+			<npc id="23018" respawnTime="2min" count="3" /> <!-- Judge of Sins -->
+			<npc id="23019" respawnTime="5min" count="1" /> <!-- Arbitrator of Sins -->
+		</group>
+		<group name="innadril24_2422_08m1">
+			<territories>
+				<territory name="innadril24_2422_08" minZ="-11812" maxZ="-11612">
+					<node x="140506" y="218463" />
+					<node x="140950" y="218188" />
+					<node x="141244" y="218401" />
+					<node x="140675" y="218807" />
+				</territory>
+			</territories>
+			<npc id="23017" respawnTime="2min" count="3" /> <!-- Punisher of Sins -->
+		</group>
+		<group name="innadril24_2422_09m1">
+			<territories>
+				<territory name="innadril24_2422_09" minZ="-11829" maxZ="-11629">
+					<node x="141540" y="218183" />
+					<node x="142012" y="218480" />
+					<node x="141815" y="218808" />
+					<node x="141271" y="218405" />
+				</territory>
+			</territories>
+			<npc id="23017" respawnTime="2min" count="3" /> <!-- Punisher of Sins -->
+		</group>
+		<group name="innadril24_2422_10m1">
+			<territories>
+				<territory name="innadril24_2422_10" minZ="-11815" maxZ="-11615">
+					<node x="141261" y="218427" />
+					<node x="141798" y="218823" />
+					<node x="141732" y="219192" />
+					<node x="140779" y="219201" />
+					<node x="140713" y="218815" />
+				</territory>
+			</territories>
+			<npc id="23017" respawnTime="2min" count="3" /> <!-- Punisher of Sins -->
+			<npc id="23018" respawnTime="2min" count="3" /> <!-- Judge of Sins -->
+			<npc id="23019" respawnTime="5min" count="1" /> <!-- Arbitrator of Sins -->
+		</group>
+		<group name="innadril24_2422_11m1">
+			<territories>
+				<territory name="innadril24_2422_11" minZ="-11814" maxZ="-11614">
+					<node x="140749" y="219542" />
+					<node x="141733" y="219539" />
+					<node x="141721" y="220520" />
+					<node x="140746" y="220531" />
+				</territory>
+			</territories>
+			<npc id="23017" count="2" /> <!-- Punisher of Sins -->
+			<npc id="23018" count="2" /> <!-- Judge of Sins -->
+			<npc id="23019" count="2" /> <!-- Arbitrator of Sins -->
+		</group>
+		<group name="innadril24_2422_12m1">
+			<territories>
+				<territory name="innadril24_2422_12" minZ="-11815" maxZ="-11615">
+					<node x="142059" y="219549" />
+					<node x="143029" y="219542" />
+					<node x="143030" y="220520" />
+					<node x="142059" y="220531" />
+				</territory>
+			</territories>
+			<npc id="23017" count="2" /> <!-- Punisher of Sins -->
+			<npc id="23018" count="2" /> <!-- Judge of Sins -->
+			<npc id="23019" count="3" /> <!-- Arbitrator of Sins -->
+		</group>
+		<group name="innadril24_e2422_01m1">
+			<territories>
+				<territory name="innadril24_e2422_01" minZ="-11817" maxZ="-11617">
+					<node x="139388" y="217164" />
+					<node x="139588" y="217164" />
+					<node x="139588" y="217364" />
+					<node x="139388" y="217364" />
+				</territory>
+			</territories>
+			<npc id="19013" x="139488" y="217264" z="-11817" count="1" /> <!-- Crystalline Golem -->
+		</group>
+		<group name="innadril24_e2422_02m1">
+			<territories>
+				<territory name="innadril24_e2422_02" minZ="-11817" maxZ="-11617">
+					<node x="142908" y="217164" />
+					<node x="143108" y="217164" />
+					<node x="143108" y="217364" />
+					<node x="142908" y="217364" />
+				</territory>
+			</territories>
+			<npc id="19014" x="143008" y="217264" z="-11817" heading="32768" count="1" /> <!-- Crystalline Golem -->
+		</group>
+	</spawnlist>
+</instance>

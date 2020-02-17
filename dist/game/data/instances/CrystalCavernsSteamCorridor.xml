@@ -1,0 +1,694 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Crystal Caverns - Steam Corridor -->
+<instance id="164" maxWorlds="80" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/instance.xsd">
+	<time duration="60" empty="3" />
+	<removeBuffs type="ALL" />
+	<locations>
+		<enter type="FIXED">
+			<location x="144324" y="218207" z="-12000" />
+		</enter>
+		<exit type="FIXED">
+			<location x="149364" y="173631" z="-920" />
+		</exit>
+	</locations>
+	<conditions>
+		<condition type="Party" showMessageAndHtml="true">
+			<param name="html" value="condNoParty.html" />
+		</condition>
+		<condition type="PartyLeader">
+			<param name="html" value="condNoPartyLeader.html" />
+		</condition>
+		<condition type="GroupMin">
+			<param name="limit" value="7" />
+		</condition>
+		<condition type="GroupMax">
+			<param name="limit" value="7" />
+		</condition>
+		<condition type="Level">
+			<param name="min" value="97" />
+		</condition>
+		<condition type="Distance" />
+		<condition type="Reenter">
+			<param name="instanceId" value="164" />
+		</condition>
+	</conditions>
+	<reenter apply="ON_FINISH">
+		<reset day="MONDAY" hour="6" minute="30" />
+		<reset day="TUESDAY" hour="6" minute="30" />
+		<reset day="WEDNESDAY" hour="6" minute="30" />
+		<reset day="THURSDAY" hour="6" minute="30" />
+		<reset day="FRIDAY" hour="6" minute="30" />
+		<reset day="SATURDAY" hour="6" minute="30" />
+		<reset day="SUNDAY" hour="6" minute="30" />
+	</reenter>
+	<spawnlist>
+		<group name="innadril23_2422_01m1">
+			<territories>
+				<territory name="innadril23_2422_01" minZ="-12178" maxZ="-11678">
+					<node x="144778" y="217940" />
+					<node x="145497" y="217937" />
+					<node x="145510" y="218475" />
+					<node x="144781" y="218469" />
+				</territory>
+			</territories>
+			<npc id="19075" count="1"> <!-- Jewel Transparent 1 -->
+				<parameters>
+					<param name="Terri_ID" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23013" count="5"> <!-- Spirit Protector -->
+				<parameters>
+					<param name="Terri_ID" value="1" />
+				</parameters>
+			</npc>
+			<npc id="19161" x="145129" y="218189" z="-12136" count="1"> <!-- Fire Region -->
+				<parameters>
+					<param name="Limit_Time" value="30" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="innadril23_2422_02m1">
+			<territories>
+				<territory name="innadril23_2422_02" minZ="-12160" maxZ="-11660">
+					<node x="145563" y="217941" />
+					<node x="146353" y="217943" />
+					<node x="146357" y="218483" />
+					<node x="145572" y="218481" />
+				</territory>
+			</territories>
+			<npc id="19075" count="1"> <!-- Jewel Transparent 1 -->
+				<parameters>
+					<param name="Terri_ID" value="2" />
+				</parameters>
+			</npc>
+			<npc id="23013" count="4"> <!-- Spirit Protector -->
+				<parameters>
+					<param name="Terri_ID" value="2" />
+				</parameters>
+			</npc>
+			<npc id="23014" count="4"> <!-- Vicious Dueler -->
+				<parameters>
+					<param name="Terri_ID" value="2" />
+				</parameters>
+			</npc>
+			<npc id="19161" x="146016" y="218235" z="-12160" count="1"> <!-- Fire Region -->
+				<parameters>
+					<param name="Limit_Time" value="34" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="innadril23_2422_03m1">
+			<territories>
+				<territory name="innadril23_2422_03" minZ="-12167" maxZ="-11667">
+					<node x="146422" y="217935" />
+					<node x="147125" y="217942" />
+					<node x="147128" y="218482" />
+					<node x="146431" y="218475" />
+				</territory>
+			</territories>
+			<npc id="19075" count="1"> <!-- Jewel Transparent 1 -->
+				<parameters>
+					<param name="Terri_ID" value="3" />
+				</parameters>
+			</npc>
+			<npc id="23014" count="5"> <!-- Vicious Dueler -->
+				<parameters>
+					<param name="Terri_ID" value="3" />
+					<param name="last_checker" value="1" />
+					<param name="AreaTeleName" value="24_24_fire_telezone_01"/>
+				</parameters>
+			</npc>
+		</group>
+		<group name="innadril23_2422_03m2">
+			<territories>
+				<territory name="innadril23_2422_03" minZ="-12167" maxZ="-11667">
+					<node x="146422" y="217935" />
+					<node x="147125" y="217942" />
+					<node x="147128" y="218482" />
+					<node x="146431" y="218475" />
+				</territory>
+			</territories>
+			<npc id="19161" x="146875" y="218229" z="-12167" count="1"> <!-- Fire Region -->
+				<parameters>
+					<param name="Limit_Time" value="37" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="innadril23_2422_04m1">
+			<territories>
+				<territory name="innadril23_2422_04" minZ="-12160" maxZ="-11660">
+					<node x="147465" y="217937" />
+					<node x="148256" y="217938" />
+					<node x="148259" y="218478" />
+					<node x="147475" y="218477" />
+				</territory>
+			</territories>
+			<npc id="19075" count="1"> <!-- Jewel Transparent 1 -->
+				<parameters>
+					<param name="Terri_ID" value="4" />
+				</parameters>
+			</npc>
+			<npc id="23013" count="6"> <!-- Spirit Protector -->
+				<parameters>
+					<param name="Terri_ID" value="4" />
+				</parameters>
+			</npc>
+			<npc id="19161" x="147918" y="218230" z="-12160" count="1"> <!-- Fire Region -->
+				<parameters>
+					<param name="Limit_Time" value="60" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="innadril23_2422_05m1">
+			<territories>
+				<territory name="innadril23_2422_05" minZ="-12166" maxZ="-11666">
+					<node x="148258" y="217940" />
+					<node x="149048" y="217942" />
+					<node x="149051" y="218482" />
+					<node x="148267" y="218480" />
+				</territory>
+			</territories>
+			<npc id="19075" count="1"> <!-- Jewel Transparent 1 -->
+				<parameters>
+					<param name="Terri_ID" value="5" />
+				</parameters>
+			</npc>
+			<npc id="23014" count="10"> <!-- Vicious Dueler -->
+				<parameters>
+					<param name="Terri_ID" value="5" />
+				</parameters>
+			</npc>
+			<npc id="19161" x="148710" y="218233" z="-12166" count="1"> <!-- Fire Region -->
+				<parameters>
+					<param name="Limit_Time" value="64" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="innadril23_2422_06m1">
+			<territories>
+				<territory name="innadril23_2422_06" minZ="-12166" maxZ="-11666">
+					<node x="149027" y="217940" />
+					<node x="149818" y="217942" />
+					<node x="149821" y="218482" />
+					<node x="149037" y="218480" />
+				</territory>
+			</territories>
+			<npc id="19075" count="1"> <!-- Jewel Transparent 1 -->
+				<parameters>
+					<param name="Terri_ID" value="6" />
+				</parameters>
+			</npc>
+			<npc id="23014" count="12"> <!-- Vicious Dueler -->
+				<parameters>
+					<param name="Terri_ID" value="6" />
+					<param name="last_checker" value="1" />
+					<param name="AreaTeleName" value="24_24_fire_telezone_02"/>
+				</parameters>
+			</npc>
+		</group>
+		<group name="innadril23_2422_06m2">
+			<territories>
+				<territory name="innadril23_2422_06" minZ="-12166" maxZ="-11666">
+					<node x="149027" y="217940" />
+					<node x="149818" y="217942" />
+					<node x="149821" y="218482" />
+					<node x="149037" y="218480" />
+				</territory>
+			</territories>
+			<npc id="19161" x="149480" y="218233" z="-12166" count="1"> <!-- Fire Region -->
+				<parameters>
+					<param name="Limit_Time" value="67" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="innadril23_2422_07m1">
+			<territories>
+				<territory name="innadril23_2422_07" minZ="-12170" maxZ="-11670">
+					<node x="150145" y="217941" />
+					<node x="150856" y="217941" />
+					<node x="150859" y="218481" />
+					<node x="150155" y="218481" />
+				</territory>
+			</territories>
+			<npc id="19075" count="1"> <!-- Jewel Transparent 1 -->
+				<parameters>
+					<param name="Terri_ID" value="7" />
+				</parameters>
+			</npc>
+			<npc id="23013" count="5"> <!-- Spirit Protector -->
+				<parameters>
+					<param name="Terri_ID" value="7" />
+				</parameters>
+			</npc>
+			<npc id="23014" count="5"> <!-- Vicious Dueler -->
+				<parameters>
+					<param name="Terri_ID" value="7" />
+				</parameters>
+			</npc>
+			<npc id="19161" x="150598" y="218234" z="-12170" count="1"> <!-- Fire Region -->
+				<parameters>
+					<param name="Limit_Time" value="90" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="innadril23_2422_08m1">
+			<territories>
+				<territory name="innadril23_2422_08" minZ="-12170" maxZ="-11670">
+					<node x="150935" y="217936" />
+					<node x="151726" y="217942" />
+					<node x="151729" y="218482" />
+					<node x="150945" y="218476" />
+				</territory>
+			</territories>
+			<npc id="19075" count="1"> <!-- Jewel Transparent 1 -->
+				<parameters>
+					<param name="Terri_ID" value="8" />
+				</parameters>
+			</npc>
+			<npc id="23014" count="15"> <!-- Vicious Dueler -->
+				<parameters>
+					<param name="Terri_ID" value="8" />
+				</parameters>
+			</npc>
+			<npc id="19161" x="151388" y="218229" z="-12170" count="1"> <!-- Fire Region -->
+				<parameters>
+					<param name="Limit_Time" value="94" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="innadril23_2422_09m1">
+			<territories>
+				<territory name="innadril23_2422_09" minZ="-12170" maxZ="-11670">
+					<node x="151791" y="217952" />
+					<node x="152499" y="217939" />
+					<node x="152502" y="218479" />
+					<node x="151801" y="218492" />
+				</territory>
+			</territories>
+			<npc id="19075" count="1"> <!-- Jewel Transparent 1 -->
+				<parameters>
+					<param name="Terri_ID" value="9" />
+				</parameters>
+			</npc>
+			<npc id="23016" count="3"> <!-- Vicious Warrior -->
+				<parameters>
+					<param name="Terri_ID" value="9" />
+					<param name="last_checker" value="1" />
+					<param name="AreaTeleName" value="24_24_fire_telezone_03"/>
+				</parameters>
+			</npc>
+		</group>
+		<group name="innadril23_2422_09m2">
+			<territories>
+				<territory name="innadril23_2422_09" minZ="-12170" maxZ="-11670">
+					<node x="151791" y="217952" />
+					<node x="152499" y="217939" />
+					<node x="152502" y="218479" />
+					<node x="151801" y="218492" />
+				</territory>
+			</territories>
+			<npc id="19161" x="152244" y="218245" z="-12170" count="1"> <!-- Fire Region -->
+				<parameters>
+					<param name="Limit_Time" value="97" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="innadril23_2422_10m1">
+			<territories>
+				<territory name="innadril23_2422_10" minZ="-12166" maxZ="-11666">
+					<node x="145650" y="219795" />
+					<node x="146356" y="219796" />
+					<node x="146358" y="220337" />
+					<node x="145652" y="220331" />
+				</territory>
+			</territories>
+			<npc id="19075" count="1"> <!-- Jewel Transparent 1 -->
+				<parameters>
+					<param name="MobType" value="1" />
+					<param name="Terri_ID" value="10" />
+				</parameters>
+			</npc>
+			<npc id="23015" count="10"> <!-- Vicious Swordsman -->
+				<parameters>
+					<param name="Terri_ID" value="10" />
+				</parameters>
+			</npc>
+			<npc id="19161" x="145984" y="220051" z="-12166" count="1"> <!-- Fire Region -->
+				<parameters>
+					<param name="Limit_Time" value="120" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="innadril23_2422_11m1">
+			<territories>
+				<territory name="innadril23_2422_11" minZ="-12166" maxZ="-11666">
+					<node x="146468" y="219793" />
+					<node x="147174" y="219794" />
+					<node x="147176" y="220335" />
+					<node x="146470" y="220329" />
+				</territory>
+			</territories>
+			<npc id="19075" count="1"> <!-- Jewel Transparent 1 -->
+				<parameters>
+					<param name="MobType" value="1" />
+					<param name="Terri_ID" value="11" />
+				</parameters>
+			</npc>
+			<npc id="23015" count="15"> <!-- Vicious Swordsman -->
+				<parameters>
+					<param name="Terri_ID" value="11" />
+				</parameters>
+			</npc>
+			<npc id="19161" x="146802" y="220049" z="-12166" count="1"> <!-- Fire Region -->
+				<parameters>
+					<param name="Limit_Time" value="124" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="innadril23_2422_12m1">
+			<territories>
+				<territory name="innadril23_2422_12" minZ="-12166" maxZ="-11666">
+					<node x="147298" y="219800" />
+					<node x="148004" y="219801" />
+					<node x="148006" y="220342" />
+					<node x="147300" y="220336" />
+				</territory>
+			</territories>
+			<npc id="19075" count="1"> <!-- Jewel Transparent 1 -->
+				<parameters>
+					<param name="MobType" value="1" />
+					<param name="Terri_ID" value="12" />
+				</parameters>
+			</npc>
+			<npc id="23015" count="15"> <!-- Vicious Swordsman -->
+				<parameters>
+					<param name="Terri_ID" value="12" />
+					<param name="last_checker" value="1" />
+					<param name="AreaTeleName" value="24_24_fire_telezone_04"/>
+				</parameters>
+			</npc>
+			<npc id="23016" count="3"> <!-- Vicious Warrior -->
+				<parameters>
+					<param name="Terri_ID" value="12" />
+					<param name="last_checker" value="1" />
+					<param name="AreaTeleName" value="24_24_fire_telezone_04"/>
+				</parameters>
+			</npc>
+		</group>
+		<group name="innadril23_2422_12m2">
+			<territories>
+				<territory name="innadril23_2422_12" minZ="-12166" maxZ="-11666">
+					<node x="147298" y="219800" />
+					<node x="148004" y="219801" />
+					<node x="148006" y="220342" />
+					<node x="147300" y="220336" />
+				</territory>
+			</territories>
+			<npc id="19161" x="147632" y="220056" z="-12166" count="1"> <!-- Fire Region -->
+				<parameters>
+					<param name="Limit_Time" value="127" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="innadril23_2422_13m1">
+			<territories>
+				<territory name="innadril23_2422_13" minZ="-12165" maxZ="-11665">
+					<node x="148361" y="219796" />
+					<node x="149067" y="219797" />
+					<node x="149069" y="220338" />
+					<node x="148363" y="220332" />
+				</territory>
+			</territories>
+			<npc id="19075" count="1"> <!-- Jewel Transparent 1 -->
+				<parameters>
+					<param name="MobType" value="1" />
+					<param name="Terri_ID" value="13" />
+				</parameters>
+			</npc>
+			<npc id="23014" count="15"> <!-- Vicious Dueler -->
+				<parameters>
+					<param name="Terri_ID" value="13" />
+				</parameters>
+			</npc>
+			<npc id="23015" count="15"> <!-- Vicious Swordsman -->
+				<parameters>
+					<param name="Terri_ID" value="13" />
+				</parameters>
+			</npc>
+			<npc id="19161" x="148695" y="220052" z="-12165" count="1"> <!-- Fire Region -->
+				<parameters>
+					<param name="Limit_Time" value="150" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="innadril23_2422_14m1">
+			<territories>
+				<territory name="innadril23_2422_14" minZ="-12165" maxZ="-11665">
+					<node x="149095" y="219796" />
+					<node x="149801" y="219797" />
+					<node x="149803" y="220338" />
+					<node x="149097" y="220332" />
+				</territory>
+			</territories>
+			<npc id="19075" count="1"> <!-- Jewel Transparent 1 -->
+				<parameters>
+					<param name="MobType" value="1" />
+					<param name="Terri_ID" value="14" />
+				</parameters>
+			</npc>
+			<npc id="23014" count="17"> <!-- Vicious Dueler -->
+				<parameters>
+					<param name="Terri_ID" value="14" />
+				</parameters>
+			</npc>
+			<npc id="23015" count="17"> <!-- Vicious Swordsman -->
+				<parameters>
+					<param name="Terri_ID" value="14" />
+				</parameters>
+			</npc>
+			<npc id="19161" x="149429" y="220052" z="-12165" count="1"> <!-- Fire Region -->
+				<parameters>
+					<param name="Limit_Time" value="154" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="innadril23_2422_15m1">
+			<territories>
+				<territory name="innadril23_2422_15" minZ="-12165" maxZ="-11665">
+					<node x="149865" y="219798" />
+					<node x="150571" y="219799" />
+					<node x="150573" y="220340" />
+					<node x="149867" y="220334" />
+				</territory>
+			</territories>
+			<npc id="19075" count="1"> <!-- Jewel Transparent 1 -->
+				<parameters>
+					<param name="MobType" value="1" />
+					<param name="Terri_ID" value="15" />
+				</parameters>
+			</npc>
+			<npc id="23016" count="5"> <!-- Vicious Warrior -->
+				<parameters>
+					<param name="Terri_ID" value="15" />
+					<param name="last_checker" value="1" />
+					<param name="AreaTeleName" value="24_24_fire_telezone_05"/>
+				</parameters>
+			</npc>
+		</group>
+		<group name="innadril23_2422_15m2">
+			<territories>
+				<territory name="innadril23_2422_15" minZ="-12165" maxZ="-11665">
+					<node x="149865" y="219798" />
+					<node x="150571" y="219799" />
+					<node x="150573" y="220340" />
+					<node x="149867" y="220334" />
+				</territory>
+			</territories>
+			<npc id="19161" x="150199" y="220054" z="-12165" count="1"> <!-- Fire Region -->
+				<parameters>
+					<param name="Limit_Time" value="157" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="innadril23_2422_16m1">
+			<territories>
+				<territory name="innadril23_2422_16" minZ="-12160" maxZ="-11660">
+					<node x="149819" y="215314" />
+					<node x="150580" y="215309" />
+					<node x="150592" y="215840" />
+					<node x="149834" y="215842" />
+				</territory>
+			</territories>
+			<npc id="19075" count="1"> <!-- Jewel Transparent 1 -->
+				<parameters>
+					<param name="MobType" value="1" />
+					<param name="Terri_ID" value="16" />
+				</parameters>
+			</npc>
+			<npc id="23015" count="20"> <!-- Vicious Swordsman -->
+				<parameters>
+					<param name="Terri_ID" value="16" />
+				</parameters>
+			</npc>
+			<npc id="19161" x="150198" y="215606" z="-12160" count="1"> <!-- Fire Region -->
+				<parameters>
+					<param name="Limit_Time" value="180" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="innadril23_2422_17m1">
+			<territories>
+				<territory name="innadril23_2422_17" minZ="-12160" maxZ="-11660">
+					<node x="150589" y="215313" />
+					<node x="151350" y="215308" />
+					<node x="151362" y="215839" />
+					<node x="150604" y="215841" />
+				</territory>
+			</territories>
+			<npc id="19075" count="1"> <!-- Jewel Transparent 1 -->
+				<parameters>
+					<param name="MobType" value="1" />
+					<param name="Terri_ID" value="17" />
+				</parameters>
+			</npc>
+			<npc id="23016" count="5"> <!-- Vicious Warrior -->
+				<parameters>
+					<param name="Terri_ID" value="17" />
+				</parameters>
+			</npc>
+			<npc id="19161" x="150968" y="215605" z="-12160" count="1"> <!-- Fire Region -->
+				<parameters>
+					<param name="Limit_Time" value="184" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="innadril23_2422_18m1">
+			<territories>
+				<territory name="innadril23_2422_18" minZ="-12160" maxZ="-11660">
+					<node x="151375" y="215317" />
+					<node x="152136" y="215312" />
+					<node x="152148" y="215843" />
+					<node x="151390" y="215845" />
+				</territory>
+			</territories>
+			<npc id="19075" count="1"> <!-- Jewel Transparent 1 -->
+				<parameters>
+					<param name="MobType" value="1" />
+					<param name="Terri_ID" value="18" />
+				</parameters>
+			</npc>
+			<npc id="23015" count="20"> <!-- Vicious Swordsman -->
+				<parameters>
+					<param name="Terri_ID" value="18" />
+					<param name="last_checker" value="1" />
+					<param name="AreaTeleName" value="24_24_fire_telezone_05"/>
+				</parameters>
+			</npc>
+		</group>
+		<group name="innadril23_2422_18m2">
+			<territories>
+				<territory name="innadril23_2422_18" minZ="-12160" maxZ="-11660">
+					<node x="151375" y="215317" />
+					<node x="152136" y="215312" />
+					<node x="152148" y="215843" />
+					<node x="151390" y="215845" />
+				</territory>
+			</territories>
+			<npc id="19161" x="151754" y="215609" z="-12160" count="1"> <!-- Fire Region -->
+				<parameters>
+					<param name="Limit_Time" value="187" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="innadril23_mb2422m1">
+			<territories>
+				<territory name="innadril23_mb2422" minZ="-12140" maxZ="-11740">
+					<node x="154093" y="215667" />
+					<node x="153813" y="215602" />
+					<node x="153627" y="215436" />
+					<node x="153537" y="215291" />
+					<node x="153506" y="215131" />
+					<node x="153555" y="214913" />
+					<node x="153696" y="214713" />
+					<node x="153892" y="214590" />
+					<node x="154087" y="214538" />
+					<node x="154301" y="214602" />
+					<node x="154479" y="214720" />
+					<node x="154601" y="214903" />
+					<node x="154646" y="215119" />
+					<node x="154613" y="215288" />
+					<node x="154550" y="215411" />
+					<node x="154462" y="215527" />
+					<node x="154304" y="215624" />
+				</territory>
+			</territories>
+			<npc id="19161" x="154078" y="215125" z="-12140" respawnTime="1min" count="1" /> <!-- Fire Region -->
+		</group>
+		<group name="innadril23_mb2422_pt1m1" spawnByDefault="false">
+			<territories>
+				<territory name="innadril23_mb2422_pt1" minZ="-12145" maxZ="-11945">
+					<node x="146993" y="218107" />
+					<node x="147193" y="218107" />
+					<node x="147193" y="218307" />
+					<node x="146993" y="218307" />
+				</territory>
+			</territories>
+			<npc id="19077" x="147148" y="218208" z="-12112" heading="32624" respawnTime="1min" count="1" /> <!-- Jewel Transparent 2 -->
+		</group>
+		<group name="innadril23_mb2422_pt2m1" spawnByDefault="false">
+			<territories>
+				<territory name="innadril23_mb2422_pt2" minZ="-12147" maxZ="-11947">
+					<node x="149740" y="218107" />
+					<node x="149940" y="218107" />
+					<node x="149940" y="218307" />
+					<node x="149740" y="218307" />
+				</territory>
+			</territories>
+			<npc id="19077" x="149818" y="218208" z="-12096" heading="32496" respawnTime="1min" count="1" /> <!-- Jewel Transparent 2 -->
+		</group>
+		<group name="innadril23_mb2422_pt3m1" spawnByDefault="false">
+			<territories>
+				<territory name="innadril23_mb2422_pt3" minZ="-12141" maxZ="-11941">
+					<node x="152440" y="218104" />
+					<node x="152640" y="218104" />
+					<node x="152640" y="218304" />
+					<node x="152440" y="218304" />
+				</territory>
+			</territories>
+			<npc id="19077" x="152538" y="218208" z="-12096" heading="32552" respawnTime="1min" count="1" /> <!-- Jewel Transparent 2 -->
+		</group>
+		<group name="innadril23_mb2422_pt4m1" spawnByDefault="false">
+			<territories>
+				<territory name="innadril23_mb2422_pt4" minZ="-12146" maxZ="-11946">
+					<node x="147916" y="219968" />
+					<node x="148116" y="219968" />
+					<node x="148116" y="220168" />
+					<node x="147916" y="220168" />
+				</territory>
+			</territories>
+			<npc id="19077" x="148022" y="220069" z="-12112" heading="-32568" respawnTime="1min" count="1" /> <!-- Jewel Transparent 2 -->
+		</group>
+		<group name="innadril23_mb2422_pt5m1" spawnByDefault="false">
+			<territories>
+				<territory name="innadril23_mb2422_pt5" minZ="-12144" maxZ="-11944">
+					<node x="150613" y="219960" />
+					<node x="150813" y="219960" />
+					<node x="150813" y="220160" />
+					<node x="150613" y="220160" />
+				</territory>
+			</territories>
+			<npc id="19077" x="150699" y="220064" z="-12112" heading="-32696" respawnTime="1min" count="1" /> <!-- Jewel Transparent 2 -->
+		</group>
+		<group name="innadril23_mb2422_pt6m1" spawnByDefault="false">
+			<territories>
+				<territory name="innadril23_mb2422_pt6" minZ="-12143" maxZ="-11943">
+					<node x="152084" y="215474" />
+					<node x="152284" y="215474" />
+					<node x="152284" y="215674" />
+					<node x="152084" y="215674" />
+				</territory>
+			</territories>
+			<npc id="19077" x="152214" y="215586" z="-12112" heading="32568" respawnTime="1min" count="1" /> <!-- Jewel Transparent 2 -->
+		</group>
+	</spawnlist>
+</instance>

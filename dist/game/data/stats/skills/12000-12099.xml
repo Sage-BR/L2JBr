@@ -1,0 +1,3287 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="12000" toLevel="1" name="Heavy Hit">
+		<!-- Inflicts a powerful blow on target. -->
+		<icon>icon.skill10317</icon>
+		<operateType>A1</operateType>
+		<mpConsume>2</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>1000</hitTime>
+		<coolTime>300</coolTime>
+		<reuseDelay>10000</reuseDelay>
+		<effectPoint>-1</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>1400</effectRange>
+		<magicLvl>85</magicLvl>
+		<isMagic>1</isMagic>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpCheckAbnormal">
+				<type>KNOCKDOWN</type>
+				<level>1</level>
+				<hasAbnormal>true</hasAbnormal>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="MagicalAttack">
+				<power>104</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12001" toLevel="1" name="Glimmer Crystal">
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<affectRange>600</affectRange>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>RANGE</affectScope>
+		<affectObject>ALL</affectObject>
+		<itemConsumeId>17604</itemConsumeId> <!-- Glimmer Crystal -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<selfEffects>
+			<effect name="CallSkill">
+				<skillId>12011</skillId> <!-- Glimmer Crystal -->
+				<skillLevel>1</skillLevel>
+			</effect>
+		</selfEffects>
+	</skill>
+	<skill id="12002" toLevel="2" name="Glimmer">
+		<!-- A crystal extracted from the Source of Life. Can be used on a Cocoon in the Fairy Settlement. -->
+		<icon>
+			<value level="1">icon.skill0000</value>
+			<value level="2">icon.glimmer</value>
+		</icon>
+		<operateType>A1</operateType>
+		<castRange>150</castRange>
+		<hitTime>1000</hitTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<effectRange>300</effectRange>
+		<magicLvl>1</magicLvl>
+		<reuseDelay>5000</reuseDelay>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpTargetNpc">
+				<npcIds>
+					<item>32915</item>
+					<item>32916</item>
+					<item>32917</item>
+					<item>32918</item>
+					<item>32919</item>
+					<item>32920</item>
+					<item>33147</item>
+					<item>33148</item>
+					<item>32913</item>
+					<item>32914</item>
+					<item>33097</item>
+					<item>19393</item>
+					<item>19394</item>
+				</npcIds>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="Heal">
+				<power>2730</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12003" toLevel="1" name="Stronghold Fragment">
+		<!-- Bestows the authority to control the stronghold. -->
+		<icon>icon.etc_dragons_blood_i03</icon>
+		<operateType>A2</operateType>
+		<effectPoint>-2</effectPoint>
+		<abnormalType>PUBLIC_SLOT</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<effectRange>800</effectRange>
+		<magicLvl>85</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>60</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<staticReuse>true</staticReuse>
+		<abnormalVisualEffect>VP_KEEP</abnormalVisualEffect>
+		<isMagic>2</isMagic>
+		<castRange>300</castRange>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="12004" toLevel="1" name="Summon Detector">
+		<!-- Detect the relic. -->
+		<icon>icon.skill0324</icon>
+		<operateType>A1</operateType>
+		<hitTime>3000</hitTime>
+		<reuseDelay>30000</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>72</magicLvl>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>20</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SummonNpc">
+				<npcId>33156</npcId> <!-- Relic Detector -->
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12005" toLevel="1" name="Spray Insecticide">
+		<!-- Sprays medicine. -->
+		<icon>icon.bug_spray_a</icon>
+		<operateType>A2</operateType>
+		<castRange>150</castRange>
+		<hitTime>3000</hitTime>
+		<subordinationAbnormalType>POISON</subordinationAbnormalType>
+		<abnormalType>POISON</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<effectRange>400</effectRange>
+		<magicLvl>85</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>60</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<staticReuse>true</staticReuse>
+		<abnormalVisualEffect>VP_KEEP</abnormalVisualEffect>
+		<isMagic>2</isMagic>
+		<isDebuff>true</isDebuff>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="12006" toLevel="1" name="Spray Insecticide">
+		<!-- Sprays medicine. -->
+		<icon>icon.bug_spray_b</icon>
+		<operateType>A2</operateType>
+		<castRange>150</castRange>
+		<hitTime>3000</hitTime>
+		<subordinationAbnormalType>POISON</subordinationAbnormalType>
+		<abnormalType>POISON</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<effectRange>400</effectRange>
+		<magicLvl>85</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>60</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<staticReuse>true</staticReuse>
+		<abnormalVisualEffect>VP_KEEP</abnormalVisualEffect>
+		<isMagic>2</isMagic>
+		<isDebuff>true</isDebuff>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="12007" toLevel="1" name="Spray Insecticide">
+		<!-- Sprays medicine. -->
+		<icon>icon.bug_spray_c</icon>
+		<operateType>A2</operateType>
+		<castRange>150</castRange>
+		<hitTime>3000</hitTime>
+		<subordinationAbnormalType>POISON</subordinationAbnormalType>
+		<abnormalType>POISON</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<effectRange>400</effectRange>
+		<magicLvl>85</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>60</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<staticReuse>true</staticReuse>
+		<abnormalVisualEffect>VP_KEEP</abnormalVisualEffect>
+		<isMagic>2</isMagic>
+		<isDebuff>true</isDebuff>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="12008" toLevel="1" name="Orbis' Reflect Shield">
+		<!-- Conquers Medusa's Soul. -->
+		<icon>icon.skill3260</icon>
+		<operateType>A2</operateType>
+		<castRange>900</castRange>
+		<hitTime>800</hitTime>
+		<coolTime>1000</coolTime>
+		<reuseDelay>180000</reuseDelay>
+		<effectPoint>-687</effectPoint>
+		<abnormalType>PUBLIC_SLOT</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>1100</effectRange>
+		<activateRate>99</activateRate>
+		<magicLvl>1</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>1</abnormalTime>
+		<isDebuff>true</isDebuff>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpCheckClassList">
+				<classIds>
+					<item>PHOENIX_KNIGHT</item>
+					<item>HELL_KNIGHT</item>
+					<item>EVA_TEMPLAR</item>
+					<item>SHILLIEN_TEMPLAR</item>
+					<item>SIGEL_KNIGHT</item>
+				</classIds>
+				<affectType>CASTER</affectType>
+				<isWithin>true</isWithin>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="BlockActions" />
+		</effects>
+	</skill>
+	<skill id="12009" toLevel="1" name="Teredor Antidote">
+		<!-- Invincible against a terrible abnormal status. -->
+		<icon>icon.grima_poison</icon>
+		<operateType>A2</operateType>
+		<abnormalType>ABNORMAL_INVINCIBILITY</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<activateRate>0</activateRate>
+		<magicLvl>1</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>20</abnormalTime>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="DispelBySlot">
+				<dispel>POISON,7</dispel>
+			</effect>
+			<effect name="DebuffBlock" />
+		</effects>
+	</skill>
+	<skill id="12010" toLevel="1" name="Bonus Hall Key">
+		<operateType>A1</operateType>
+		<castRange>450</castRange>
+		<hitTime>500</hitTime>
+		<effectPoint>-1</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>500</effectRange>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>DOOR_TREASURE</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpUnlock" />
+		</conditions>
+	</skill>
+	<skill id="12011" toLevel="1" name="Glimmer Crystal">
+		<!-- can summon Magmeld's wisps at Anghell Waterfall -->
+		<operateType>A2</operateType>
+		<effectPoint>2</effectPoint>
+		<abnormalType>PUBLIC_SLOT</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>10</abnormalTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="12012" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18103</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17831" count="1" /> <!-- Bound Requiem Shaper -->
+					</item>
+					<item chance="1">
+						<item id="17967" count="1" /> <!-- Blessed Requiem Shaper -->
+					</item>
+					<item chance="4">
+						<item id="17290" count="1" /> <!-- Requiem Shaper -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12013" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18104</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17832" count="1" /> <!-- Bound Requiem Cutter -->
+					</item>
+					<item chance="1">
+						<item id="17968" count="1" /> <!-- Blessed Requiem Cutter -->
+					</item>
+					<item chance="4">
+						<item id="17291" count="1" /> <!-- Requiem Cutter -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12014" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18105</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17833" count="1" /> <!-- Bound Requiem Slasher -->
+					</item>
+					<item chance="1">
+						<item id="17969" count="1" /> <!-- Blessed Requiem Slasher -->
+					</item>
+					<item chance="4">
+						<item id="17292" count="1" /> <!-- Requiem Slasher -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12015" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18106</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17834" count="1" /> <!-- Bound Requiem Avenger -->
+					</item>
+					<item chance="1">
+						<item id="17970" count="1" /> <!-- Blessed Requiem Avenger -->
+					</item>
+					<item chance="4">
+						<item id="17293" count="1" /> <!-- Requiem Avenger -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12016" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18107</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17835" count="1" /> <!-- Bound Requiem Fighter -->
+					</item>
+					<item chance="1">
+						<item id="17971" count="1" /> <!-- Blessed Requiem Fighter -->
+					</item>
+					<item chance="4">
+						<item id="17294" count="1" /> <!-- Requiem Fighter -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12017" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18108</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17836" count="1" /> <!-- Bound Requiem Stormer -->
+					</item>
+					<item chance="1">
+						<item id="17972" count="1" /> <!-- Blessed Requiem Stormer -->
+					</item>
+					<item chance="4">
+						<item id="17295" count="1" /> <!-- Requiem Stormer -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12018" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18109</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17837" count="1" /> <!-- Bound Requiem Thrower -->
+					</item>
+					<item chance="1">
+						<item id="17973" count="1" /> <!-- Blessed Requiem Thrower -->
+					</item>
+					<item chance="4">
+						<item id="17296" count="1" /> <!-- Requiem Thrower -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12019" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18110</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17838" count="1" /> <!-- Bound Requiem Shooter -->
+					</item>
+					<item chance="1">
+						<item id="17974" count="1" /> <!-- Blessed Requiem Shooter -->
+					</item>
+					<item chance="4">
+						<item id="17297" count="1" /> <!-- Requiem Shooter -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12020" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18111</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17839" count="1" /> <!-- Bound Requiem Buster -->
+					</item>
+					<item chance="1">
+						<item id="17975" count="1" /> <!-- Blessed Requiem Buster -->
+					</item>
+					<item chance="4">
+						<item id="17298" count="1" /> <!-- Requiem Buster -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12021" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18112</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17840" count="1" /> <!-- Bound Requiem Caster -->
+					</item>
+					<item chance="1">
+						<item id="17976" count="1" /> <!-- Blessed Requiem Caster -->
+					</item>
+					<item chance="4">
+						<item id="17299" count="1" /> <!-- Requiem Caster -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12022" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18113</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17841" count="1" /> <!-- Bound Requiem Retributer -->
+					</item>
+					<item chance="1">
+						<item id="17977" count="1" /> <!-- Blessed Requiem Retributer -->
+					</item>
+					<item chance="4">
+						<item id="17300" count="1" /> <!-- Requiem Retributer -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12023" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18114</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17842" count="1" /> <!-- Bound Requiem Dual Sword -->
+					</item>
+					<item chance="1">
+						<item id="17978" count="1" /> <!-- Blessed Requiem Dual Sword -->
+					</item>
+					<item chance="4">
+						<item id="17301" count="1" /> <!-- Requiem Dual Sword -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12024" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18115</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17843" count="1" /> <!-- Bound Requiem Dual Dagger -->
+					</item>
+					<item chance="1">
+						<item id="17979" count="1" /> <!-- Blessed Requiem Dual Dagger -->
+					</item>
+					<item chance="4">
+						<item id="17302" count="1" /> <!-- Requiem Dual Dagger -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12025" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18116</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17844" count="1" /> <!-- Bound Requiem Dual Blunt Weapon -->
+					</item>
+					<item chance="1">
+						<item id="17980" count="1" /> <!-- Blessed Requiem Dual Blunt Weapon -->
+					</item>
+					<item chance="4">
+						<item id="17303" count="1" /> <!-- Requiem Dual Blunt Weapon -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12026" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18117</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17845" count="1" /> <!-- Bound Immortal Helmet - Heavy Armor -->
+					</item>
+					<item chance="1">
+						<item id="17981" count="1" /> <!-- Blessed Immortal Helmet - Heavy Armor -->
+					</item>
+					<item chance="4">
+						<item id="17304" count="1" /> <!-- Immortal Helmet - Heavy Armor -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12027" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18118</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17846" count="1" /> <!-- Bound Immortal Breastplate - Heavy Armor -->
+					</item>
+					<item chance="1">
+						<item id="17982" count="1" /> <!-- Blessed Immortal Breastplate - Heavy Armor -->
+					</item>
+					<item chance="4">
+						<item id="17305" count="1" /> <!-- Immortal Breastplate - Heavy Armor -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12028" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18119</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17847" count="1" /> <!-- Bound Immortal Gaiters - Heavy Armor -->
+					</item>
+					<item chance="1">
+						<item id="17983" count="1" /> <!-- Blessed Immortal Gaiters - Heavy Armor -->
+					</item>
+					<item chance="4">
+						<item id="17306" count="1" /> <!-- Immortal Gaiters - Heavy Armor -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12029" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18120</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17848" count="1" /> <!-- Bound Immortal Gauntlets - Heavy Armor -->
+					</item>
+					<item chance="1">
+						<item id="17984" count="1" /> <!-- Blessed Immortal Gauntlets - Heavy Armor -->
+					</item>
+					<item chance="4">
+						<item id="17307" count="1" /> <!-- Immortal Gauntlets - Heavy Armor -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12030" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18121</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17849" count="1" /> <!-- Bound Immortal Boots - Heavy Armor -->
+					</item>
+					<item chance="1">
+						<item id="17985" count="1" /> <!-- Blessed Immortal Boots - Heavy Armor -->
+					</item>
+					<item chance="4">
+						<item id="17308" count="1" /> <!-- Immortal Boots - Heavy Armor -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12031" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18122</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17850" count="1" /> <!-- Bound Immortal Shield - Heavy Armor -->
+					</item>
+					<item chance="1">
+						<item id="17986" count="1" /> <!-- Blessed Immortal Shield - Heavy Armor -->
+					</item>
+					<item chance="4">
+						<item id="17309" count="1" /> <!-- Immortal Shield - Heavy Armor -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12032" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18123</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17851" count="1" /> <!-- Bound Immortal Leather Helmet - Light Armor -->
+					</item>
+					<item chance="1">
+						<item id="17987" count="1" /> <!-- Blessed Immortal Leather Helmet - Light Armor -->
+					</item>
+					<item chance="4">
+						<item id="17310" count="1" /> <!-- Immortal Leather Helmet - Light Armor -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12033" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18124</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17852" count="1" /> <!-- Bound Immortal Leather Armor - Light Armor -->
+					</item>
+					<item chance="1">
+						<item id="17988" count="1" /> <!-- Blessed Immortal Leather Armor - Light Armor -->
+					</item>
+					<item chance="4">
+						<item id="17311" count="1" /> <!-- Immortal Leather Armor - Light Armor -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12034" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18125</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17853" count="1" /> <!-- Bound Immortal Leather Leggings - Light Armor -->
+					</item>
+					<item chance="1">
+						<item id="17989" count="1" /> <!-- Blessed Immortal Leather Leggings - Light Armor -->
+					</item>
+					<item chance="4">
+						<item id="17312" count="1" /> <!-- Immortal Leather Leggings - Light Armor -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12035" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18126</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17854" count="1" /> <!-- Bound Immortal Leather Gloves - Light Armor -->
+					</item>
+					<item chance="1">
+						<item id="17990" count="1" /> <!-- Blessed Immortal Leather Gloves - Light Armor -->
+					</item>
+					<item chance="4">
+						<item id="17313" count="1" /> <!-- Immortal Leather Gloves - Light Armor -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12036" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18127</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17855" count="1" /> <!-- Bound Immortal Leather Boots - Light Armor -->
+					</item>
+					<item chance="1">
+						<item id="17991" count="1" /> <!-- Blessed Immortal Leather Boots - Light Armor -->
+					</item>
+					<item chance="4">
+						<item id="17314" count="1" /> <!-- Immortal Leather Boots - Light Armor -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12037" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18128</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17856" count="1" /> <!-- Bound Immortal Circlet - Robe -->
+					</item>
+					<item chance="1">
+						<item id="17992" count="1" /> <!-- Blessed Immortal Circlet - Robe -->
+					</item>
+					<item chance="4">
+						<item id="17315" count="1" /> <!-- Immortal Circlet - Robe -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12038" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18129</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17857" count="1" /> <!-- Bound Immortal Tunic - Robe -->
+					</item>
+					<item chance="1">
+						<item id="17993" count="1" /> <!-- Blessed Immortal Tunic - Robe -->
+					</item>
+					<item chance="4">
+						<item id="17316" count="1" /> <!-- Immortal Tunic - Robe -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12039" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18130</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17858" count="1" /> <!-- Bound Immortal Stockings - Robe -->
+					</item>
+					<item chance="1">
+						<item id="17994" count="1" /> <!-- Blessed Immortal Stockings - Robe -->
+					</item>
+					<item chance="4">
+						<item id="17317" count="1" /> <!-- Immortal Stockings - Robe -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12040" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18131</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17859" count="1" /> <!-- Bound Immortal Gloves - Robe -->
+					</item>
+					<item chance="1">
+						<item id="17995" count="1" /> <!-- Blessed Immortal Gloves - Robe -->
+					</item>
+					<item chance="4">
+						<item id="17318" count="1" /> <!-- Immortal Gloves - Robe -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12041" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18132</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17860" count="1" /> <!-- Bound Immortal Shoes - Robe -->
+					</item>
+					<item chance="1">
+						<item id="17996" count="1" /> <!-- Blessed Immortal Shoes - Robe -->
+					</item>
+					<item chance="4">
+						<item id="17319" count="1" /> <!-- Immortal Shoes - Robe -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12042" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18133</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17861" count="1" /> <!-- Bound Immortal Sigil - Robe -->
+					</item>
+					<item chance="1">
+						<item id="17997" count="1" /> <!-- Blessed Immortal Sigil - Robe -->
+					</item>
+					<item chance="4">
+						<item id="17320" count="1" /> <!-- Immortal Sigil - Robe -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12043" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18134</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17862" count="1" /> <!-- Bound Immortal Necklace -->
+					</item>
+					<item chance="1">
+						<item id="17998" count="1" /> <!-- Blessed Immortal Necklace -->
+					</item>
+					<item chance="4">
+						<item id="17321" count="1" /> <!-- Immortal Necklace -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12044" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18135</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17863" count="1" /> <!-- Bound Immortal Earring -->
+					</item>
+					<item chance="1">
+						<item id="17999" count="1" /> <!-- Blessed Immortal Earring -->
+					</item>
+					<item chance="4">
+						<item id="17322" count="1" /> <!-- Immortal Earring -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12045" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18136</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17864" count="1" /> <!-- Bound Immortal Ring -->
+					</item>
+					<item chance="1">
+						<item id="18000" count="1" /> <!-- Blessed Immortal Ring -->
+					</item>
+					<item chance="4">
+						<item id="17323" count="1" /> <!-- Immortal Ring -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12046" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18137</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17865" count="1" /> <!-- Bound Apocalypse Shaper -->
+					</item>
+					<item chance="1">
+						<item id="18001" count="1" /> <!-- Blessed Apocalypse Shaper -->
+					</item>
+					<item chance="4">
+						<item id="17324" count="1" /> <!-- Apocalypse Shaper -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12047" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18138</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17866" count="1" /> <!-- Bound Apocalypse Cutter -->
+					</item>
+					<item chance="1">
+						<item id="18002" count="1" /> <!-- Blessed Apocalypse Cutter -->
+					</item>
+					<item chance="4">
+						<item id="17325" count="1" /> <!-- Apocalypse Cutter -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12048" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18139</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17867" count="1" /> <!-- Bound Apocalypse Slasher -->
+					</item>
+					<item chance="1">
+						<item id="18003" count="1" /> <!-- Blessed Apocalypse Slasher -->
+					</item>
+					<item chance="4">
+						<item id="17326" count="1" /> <!-- Apocalypse Slasher -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12049" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18140</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17868" count="1" /> <!-- Bound Apocalypse Avenger -->
+					</item>
+					<item chance="1">
+						<item id="18004" count="1" /> <!-- Blessed Apocalypse Avenger -->
+					</item>
+					<item chance="4">
+						<item id="17327" count="1" /> <!-- Apocalypse Avenger -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12050" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18141</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17869" count="1" /> <!-- Bound Apocalypse Fighter -->
+					</item>
+					<item chance="1">
+						<item id="18005" count="1" /> <!-- Blessed Apocalypse Fighter -->
+					</item>
+					<item chance="4">
+						<item id="17328" count="1" /> <!-- Apocalypse Fighter -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12051" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18142</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17870" count="1" /> <!-- Bound Apocalypse Stormer -->
+					</item>
+					<item chance="1">
+						<item id="18006" count="1" /> <!-- Blessed Apocalypse Stormer -->
+					</item>
+					<item chance="4">
+						<item id="17329" count="1" /> <!-- Apocalypse Stormer -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12052" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18143</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17871" count="1" /> <!-- Bound Apocalypse Thrower -->
+					</item>
+					<item chance="1">
+						<item id="18007" count="1" /> <!-- Blessed Apocalypse Thrower -->
+					</item>
+					<item chance="4">
+						<item id="17330" count="1" /> <!-- Apocalypse Thrower -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12053" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18144</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17872" count="1" /> <!-- Bound Apocalypse Shooter -->
+					</item>
+					<item chance="1">
+						<item id="18008" count="1" /> <!-- Blessed Apocalypse Shooter -->
+					</item>
+					<item chance="4">
+						<item id="17331" count="1" /> <!-- Apocalypse Shooter -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12054" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18145</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17873" count="1" /> <!-- Bound Apocalypse Buster -->
+					</item>
+					<item chance="1">
+						<item id="18009" count="1" /> <!-- Blessed Apocalypse Buster -->
+					</item>
+					<item chance="4">
+						<item id="17332" count="1" /> <!-- Apocalypse Buster -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12055" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18146</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17874" count="1" /> <!-- Bound Apocalypse Caster -->
+					</item>
+					<item chance="1">
+						<item id="18010" count="1" /> <!-- Blessed Apocalypse Caster -->
+					</item>
+					<item chance="4">
+						<item id="17333" count="1" /> <!-- Apocalypse Caster -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12056" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18147</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17875" count="1" /> <!-- Bound Apocalypse Retributer -->
+					</item>
+					<item chance="1">
+						<item id="18011" count="1" /> <!-- Blessed Apocalypse Retributer -->
+					</item>
+					<item chance="4">
+						<item id="17334" count="1" /> <!-- Apocalypse Retributer -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12057" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18148</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17876" count="1" /> <!-- Bound Apocalypse Dual Sword -->
+					</item>
+					<item chance="1">
+						<item id="18012" count="1" /> <!-- Blessed Apocalypse Dual Sword -->
+					</item>
+					<item chance="4">
+						<item id="17335" count="1" /> <!-- Apocalypse Dual Sword -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12058" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18149</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17877" count="1" /> <!-- Bound Apocalypse Dual Dagger -->
+					</item>
+					<item chance="1">
+						<item id="18013" count="1" /> <!-- Blessed Apocalypse Dual Dagger -->
+					</item>
+					<item chance="4">
+						<item id="17336" count="1" /> <!-- Apocalypse Dual Dagger -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12059" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18150</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17878" count="1" /> <!-- Bound Apocalypse Dual Blunt Weapon -->
+					</item>
+					<item chance="1">
+						<item id="18014" count="1" /> <!-- Blessed Apocalypse Dual Blunt Weapon -->
+					</item>
+					<item chance="4">
+						<item id="17337" count="1" /> <!-- Apocalypse Dual Blunt Weapon -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12060" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18151</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17879" count="1" /> <!-- Bound Twilight Helmet - Heavy Armor -->
+					</item>
+					<item chance="1">
+						<item id="18015" count="1" /> <!-- Blessed Twilight Helmet - Heavy Armor -->
+					</item>
+					<item chance="4">
+						<item id="17338" count="1" /> <!-- Twilight Helmet - Heavy Armor -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12061" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18152</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17880" count="1" /> <!-- Bound Twilight Breastplate - Heavy Armor -->
+					</item>
+					<item chance="1">
+						<item id="18016" count="1" /> <!-- Blessed Twilight Breastplate - Heavy Armor -->
+					</item>
+					<item chance="4">
+						<item id="17339" count="1" /> <!-- Twilight Breastplate - Heavy Armor -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12062" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18153</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17881" count="1" /> <!-- Bound Twilight Gaiters - Heavy Armor -->
+					</item>
+					<item chance="1">
+						<item id="18017" count="1" /> <!-- Blessed Twilight Gaiters - Heavy Armor -->
+					</item>
+					<item chance="4">
+						<item id="17340" count="1" /> <!-- Twilight Gaiters - Heavy Armor -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12063" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18154</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17882" count="1" /> <!-- Bound Twilight Gauntlets - Heavy Armor -->
+					</item>
+					<item chance="1">
+						<item id="18018" count="1" /> <!-- Blessed Twilight Gauntlets - Heavy Armor -->
+					</item>
+					<item chance="4">
+						<item id="17341" count="1" /> <!-- Twilight Gauntlets - Heavy Armor -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12064" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18155</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17883" count="1" /> <!-- Bound Twilight Boots - Heavy Armor -->
+					</item>
+					<item chance="1">
+						<item id="18019" count="1" /> <!-- Blessed Twilight Boots - Heavy Armor -->
+					</item>
+					<item chance="4">
+						<item id="17342" count="1" /> <!-- Twilight Boots - Heavy Armor -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12065" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18156</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17884" count="1" /> <!-- Bound Twilight Shield - Heavy Armor -->
+					</item>
+					<item chance="1">
+						<item id="18020" count="1" /> <!-- Blessed Twilight Shield - Heavy Armor -->
+					</item>
+					<item chance="4">
+						<item id="17343" count="1" /> <!-- Twilight Shield - Heavy Armor -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12066" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18157</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17885" count="1" /> <!-- Bound Twilight Leather Helmet - Light Armor -->
+					</item>
+					<item chance="1">
+						<item id="18021" count="1" /> <!-- Blessed Twilight Leather Helmet - Light Armor -->
+					</item>
+					<item chance="4">
+						<item id="17344" count="1" /> <!-- Twilight Leather Helmet - Light Armor -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12067" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18158</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17886" count="1" /> <!-- Bound Twilight Leather Armor - Light Armor -->
+					</item>
+					<item chance="1">
+						<item id="18022" count="1" /> <!-- Blessed Twilight Leather Armor - Light Armor -->
+					</item>
+					<item chance="4">
+						<item id="17345" count="1" /> <!-- Twilight Leather Armor - Light Armor -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12068" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18159</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17887" count="1" /> <!-- Bound Twilight Leather Leggings - Light Armor -->
+					</item>
+					<item chance="1">
+						<item id="18023" count="1" /> <!-- Blessed Twilight Leather Leggings - Light Armor -->
+					</item>
+					<item chance="4">
+						<item id="17346" count="1" /> <!-- Twilight Leather Leggings - Light Armor -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12069" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18160</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17888" count="1" /> <!-- Bound Twilight Leather Gloves - Light Armor -->
+					</item>
+					<item chance="1">
+						<item id="18024" count="1" /> <!-- Blessed Twilight Leather Gloves - Light Armor -->
+					</item>
+					<item chance="4">
+						<item id="17347" count="1" /> <!-- Twilight Leather Gloves - Light Armor -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12070" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18161</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17889" count="1" /> <!-- Bound Twilight Leather Boots - Light Armor -->
+					</item>
+					<item chance="1">
+						<item id="18025" count="1" /> <!-- Blessed Twilight Leather Boots - Light Armor -->
+					</item>
+					<item chance="4">
+						<item id="17348" count="1" /> <!-- Twilight Leather Boots - Light Armor -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12071" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18162</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17890" count="1" /> <!-- Bound Twilight Circlet - Robe -->
+					</item>
+					<item chance="1">
+						<item id="18026" count="1" /> <!-- Blessed Twilight Circlet - Robe -->
+					</item>
+					<item chance="4">
+						<item id="17349" count="1" /> <!-- Twilight Circlet - Robe -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12072" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18163</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17891" count="1" /> <!-- Bound Twilight Tunic - Robe -->
+					</item>
+					<item chance="1">
+						<item id="18027" count="1" /> <!-- Blessed Twilight Tunic - Robe -->
+					</item>
+					<item chance="4">
+						<item id="17350" count="1" /> <!-- Twilight Tunic - Robe -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12073" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18164</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17892" count="1" /> <!-- Bound Twilight Stockings - Robe -->
+					</item>
+					<item chance="1">
+						<item id="18028" count="1" /> <!-- Blessed Twilight Stockings - Robe -->
+					</item>
+					<item chance="4">
+						<item id="17351" count="1" /> <!-- Twilight Stockings - Robe -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12074" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18165</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17893" count="1" /> <!-- Bound Twilight Gloves - Robe -->
+					</item>
+					<item chance="1">
+						<item id="18029" count="1" /> <!-- Blessed Twilight Gloves - Robe -->
+					</item>
+					<item chance="4">
+						<item id="17352" count="1" /> <!-- Twilight Gloves - Robe -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12075" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18166</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17894" count="1" /> <!-- Bound Twilight Shoes - Robe -->
+					</item>
+					<item chance="1">
+						<item id="18030" count="1" /> <!-- Blessed Twilight Shoes - Robe -->
+					</item>
+					<item chance="4">
+						<item id="17353" count="1" /> <!-- Twilight Shoes - Robe -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12076" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18167</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17895" count="1" /> <!-- Bound Twilight Sigil - Robe -->
+					</item>
+					<item chance="1">
+						<item id="18031" count="1" /> <!-- Blessed Twilight Sigil - Robe -->
+					</item>
+					<item chance="4">
+						<item id="17354" count="1" /> <!-- Twilight Sigil - Robe -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12077" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18168</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17896" count="1" /> <!-- Bound Twilight Necklace -->
+					</item>
+					<item chance="1">
+						<item id="18032" count="1" /> <!-- Blessed Twilight Necklace -->
+					</item>
+					<item chance="4">
+						<item id="17355" count="1" /> <!-- Twilight Necklace -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12078" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18169</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17897" count="1" /> <!-- Bound Twilight Earring -->
+					</item>
+					<item chance="1">
+						<item id="18033" count="1" /> <!-- Blessed Twilight Earring -->
+					</item>
+					<item chance="4">
+						<item id="17356" count="1" /> <!-- Twilight Earring -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12079" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18170</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17898" count="1" /> <!-- Bound Twilight Ring -->
+					</item>
+					<item chance="1">
+						<item id="18034" count="1" /> <!-- Blessed Twilight Ring -->
+					</item>
+					<item chance="4">
+						<item id="17357" count="1" /> <!-- Twilight Ring -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12080" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18171</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17899" count="1" /> <!-- Bound Specter Shaper -->
+					</item>
+					<item chance="1">
+						<item id="18035" count="1" /> <!-- Blessed Specter Shaper -->
+					</item>
+					<item chance="4">
+						<item id="17382" count="1" /> <!-- Specter Shaper -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12081" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18172</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17900" count="1" /> <!-- Bound Specter Cutter -->
+					</item>
+					<item chance="1">
+						<item id="18036" count="1" /> <!-- Blessed Specter Cutter -->
+					</item>
+					<item chance="4">
+						<item id="17383" count="1" /> <!-- Specter Cutter -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12082" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18173</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17901" count="1" /> <!-- Bound Specter Slasher -->
+					</item>
+					<item chance="1">
+						<item id="18037" count="1" /> <!-- Blessed Specter Slasher -->
+					</item>
+					<item chance="4">
+						<item id="17384" count="1" /> <!-- Specter Slasher -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12083" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18174</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17902" count="1" /> <!-- Bound Specter Avenger -->
+					</item>
+					<item chance="1">
+						<item id="18038" count="1" /> <!-- Blessed Specter Avenger -->
+					</item>
+					<item chance="4">
+						<item id="17385" count="1" /> <!-- Specter Avenger -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12084" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18175</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17903" count="1" /> <!-- Bound Specter Fighter -->
+					</item>
+					<item chance="1">
+						<item id="18039" count="1" /> <!-- Blessed Specter Fighter -->
+					</item>
+					<item chance="4">
+						<item id="17386" count="1" /> <!-- Specter Fighter -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12085" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18176</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17904" count="1" /> <!-- Bound Specter Stormer -->
+					</item>
+					<item chance="1">
+						<item id="18040" count="1" /> <!-- Blessed Specter Stormer -->
+					</item>
+					<item chance="4">
+						<item id="17387" count="1" /> <!-- Specter Stormer -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12086" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18177</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17905" count="1" /> <!-- Bound Specter Thrower -->
+					</item>
+					<item chance="1">
+						<item id="18041" count="1" /> <!-- Blessed Specter Thrower -->
+					</item>
+					<item chance="4">
+						<item id="17388" count="1" /> <!-- Specter Thrower -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12087" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18178</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17906" count="1" /> <!-- Bound Specter Shooter -->
+					</item>
+					<item chance="1">
+						<item id="18042" count="1" /> <!-- Blessed Specter Shooter -->
+					</item>
+					<item chance="4">
+						<item id="17389" count="1" /> <!-- Specter Shooter -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12088" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18179</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17907" count="1" /> <!-- Bound Specter Buster -->
+					</item>
+					<item chance="1">
+						<item id="18043" count="1" /> <!-- Blessed Specter Buster -->
+					</item>
+					<item chance="4">
+						<item id="17390" count="1" /> <!-- Specter Buster -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12089" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18180</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17908" count="1" /> <!-- Bound Specter Caster -->
+					</item>
+					<item chance="1">
+						<item id="18044" count="1" /> <!-- Blessed Specter Caster -->
+					</item>
+					<item chance="4">
+						<item id="17391" count="1" /> <!-- Specter Caster -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12090" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18181</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17909" count="1" /> <!-- Bound Specter Retributer -->
+					</item>
+					<item chance="1">
+						<item id="18045" count="1" /> <!-- Blessed Specter Retributer -->
+					</item>
+					<item chance="4">
+						<item id="17392" count="1" /> <!-- Specter Retributer -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12091" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18182</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17910" count="1" /> <!-- Bound Specter Dual Sword -->
+					</item>
+					<item chance="1">
+						<item id="18046" count="1" /> <!-- Blessed Specter Dual Sword -->
+					</item>
+					<item chance="4">
+						<item id="17393" count="1" /> <!-- Specter Dual Sword -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12092" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18183</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17911" count="1" /> <!-- Bound Specter Dual Dagger -->
+					</item>
+					<item chance="1">
+						<item id="18047" count="1" /> <!-- Blessed Specter Dual Dagger -->
+					</item>
+					<item chance="4">
+						<item id="17394" count="1" /> <!-- Specter Dual Dagger -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12093" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18184</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17912" count="1" /> <!-- Bound Specter Dual Blunt Weapon -->
+					</item>
+					<item chance="1">
+						<item id="18048" count="1" /> <!-- Blessed Specter Dual Blunt Weapon -->
+					</item>
+					<item chance="4">
+						<item id="17395" count="1" /> <!-- Specter Dual Blunt Weapon -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12094" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18185</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17913" count="1" /> <!-- Bound Seraph Helmet - Heavy Armor -->
+					</item>
+					<item chance="1">
+						<item id="18049" count="1" /> <!-- Blessed Seraph Helmet - Heavy Armor -->
+					</item>
+					<item chance="4">
+						<item id="17396" count="1" /> <!-- Seraph Helmet - Heavy Armor -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12095" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18186</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17914" count="1" /> <!-- Bound Seraph Breastplate - Heavy Armor -->
+					</item>
+					<item chance="1">
+						<item id="18050" count="1" /> <!-- Blessed Seraph Breastplate - Heavy Armor -->
+					</item>
+					<item chance="4">
+						<item id="17397" count="1" /> <!-- Seraph Breastplate - Heavy Armor -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12096" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18187</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17915" count="1" /> <!-- Bound Seraph Gaiters - Heavy Armor -->
+					</item>
+					<item chance="1">
+						<item id="18051" count="1" /> <!-- Blessed Seraph Gaiters - Heavy Armor -->
+					</item>
+					<item chance="4">
+						<item id="17398" count="1" /> <!-- Seraph Gaiters - Heavy Armor -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12097" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18188</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17916" count="1" /> <!-- Bound Seraph Gauntlets - Heavy Armor -->
+					</item>
+					<item chance="1">
+						<item id="18052" count="1" /> <!-- Blessed Seraph Gauntlets - Heavy Armor -->
+					</item>
+					<item chance="4">
+						<item id="17399" count="1" /> <!-- Seraph Gauntlets - Heavy Armor -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12098" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18189</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17917" count="1" /> <!-- Bound Seraph Boots - Heavy Armor -->
+					</item>
+					<item chance="1">
+						<item id="18053" count="1" /> <!-- Blessed Seraph Boots - Heavy Armor -->
+					</item>
+					<item chance="4">
+						<item id="17400" count="1" /> <!-- Seraph Boots - Heavy Armor -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="12099" toLevel="1" name="Check Item">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>18190</itemConsumeId>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="17918" count="1" /> <!-- Bound Seraph Shield - Heavy Armor -->
+					</item>
+					<item chance="1">
+						<item id="18054" count="1" /> <!-- Blessed Seraph Shield - Heavy Armor -->
+					</item>
+					<item chance="4">
+						<item id="17401" count="1" /> <!-- Seraph Shield - Heavy Armor -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+</list>

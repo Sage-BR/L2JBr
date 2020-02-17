@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="20000" toLevel="1" name="Block Checker Search">
+		<!-- Open your mind and stare at the horizon, and you may find a hidden treasure chest. -->
+		<icon>BranchSys2.icon.br_s_search_treasure1_i00</icon>
+		<operateType>A1</operateType>
+		<effectPoint>1000</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<affectRange>200</affectRange>
+		<affectLimit>6-12</affectLimit>
+		<hitTime>1500</hitTime>
+		<reuseDelay>5000</reuseDelay>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>POINT_BLANK</affectScope>
+		<targetConditions>
+			<condition name="OpTargetNpc">
+				<npcIds>
+					<item>13097</item>
+				</npcIds>
+			</condition>
+		</targetConditions>
+	</skill>
+	<skill id="20001" toLevel="1" name="Block Checker Hammer Punch">
+		<!-- Slams the treasure chest down with a hammer to break it open. -->
+		<icon>BranchSys2.icon.br_s_hammerpunch_treasure1_i001</icon>
+		<operateType>A1</operateType>
+		<effectPoint>-1</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<effectRange>400</effectRange>
+		<magicLvl>85</magicLvl>
+		<hitTime>1000</hitTime>
+		<reuseDelay>60000</reuseDelay>
+		<castRange>40</castRange>
+		<isMagic>2</isMagic>
+		<targetType>DOOR_TREASURE</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpUnlock" />
+		</conditions>
+	</skill>
+	<skill id="20002" toLevel="1" name="Dragon Kick">
+		<!-- Powerful blow containing the power of a dragon. Attack targets with 3420 Power added to P. Atk. Over-hit. Critical. -->
+		<icon>icon.skill_transform_s_attack</icon>
+		<castRange>20</castRange>
+		<effectRange>400</effectRange>
+		<hitTime>2000</hitTime>
+		<magicLvl>85</magicLvl>
+		<operateType>A1</operateType>
+		<reuseDelay>7000</reuseDelay>
+		<mpConsume>55</mpConsume>
+		<effectPoint>-347</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<coolTime>167</coolTime>
+		<staticReuse>true</staticReuse>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="FatalBlow">
+				<power>3420</power>
+				<overHit>true</overHit>
+				<chanceBoost>200</chanceBoost>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="20003" toLevel="1" name="Dragon Slash">
+		<!-- Powerful blow containing the power of a dragon. Attack targets with 3420 Power added to P. Atk. Over-hit. Critical. -->
+		<icon>icon.skill_transform_s_attack</icon>
+		<castRange>20</castRange>
+		<effectRange>400</effectRange>
+		<hitTime>2000</hitTime>
+		<magicLvl>85</magicLvl>
+		<operateType>A1</operateType>
+		<reuseDelay>7000</reuseDelay>
+		<mpConsume>55</mpConsume>
+		<effectPoint>-348</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<coolTime>167</coolTime>
+		<staticReuse>true</staticReuse>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>3420</power>
+				<overHit>true</overHit>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="20004" toLevel="1" name="Dragon Dash">
+		<!-- Increases Speed by 100% for 5 sec. with a dragon's strength. -->
+		<icon>icon.skill_transform_buff</icon>
+		<abnormalTime>5</abnormalTime>
+		<operateType>A2</operateType>
+		<reuseDelay>25000</reuseDelay>
+		<mpConsume>38</mpConsume>
+		<effectPoint>689</effectPoint>
+		<abnormalType>SPEED_UP_SPECIAL</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<abnormalLvl>2</abnormalLvl>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="Speed">
+				<amount>100</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="20005" toLevel="1" name="Dragon Aura">
+		<!-- For 20 min., increases Critical Rate by 30% and Critical Damage by 35% with the power of a Dragon. -->
+		<icon>icon.skill_transform_buff</icon>
+		<abnormalTime>1200</abnormalTime>
+		<hitTime>4000</hitTime>
+		<operateType>A2</operateType>
+		<reuseDelay>1800000</reuseDelay>
+		<mpConsume>47</mpConsume>
+		<effectPoint>635</effectPoint>
+		<abnormalType>IMPROVE_CRT_RATE_DMG_UP</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>900</effectRange>
+		<magicLvl>70</magicLvl>
+		<abnormalLvl>3</abnormalLvl>
+		<isMagic>1</isMagic>
+		<castRange>400</castRange>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="CriticalRate">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="20006" toLevel="1" name="Soul Roar">
+		<!-- Instantly recovers Max HP/ CP by 15% and for 10 min., and increases your Max HP/ CP by 15%. -->
+		<icon>BranchSys2.icon.skill20006</icon>
+		<abnormalTime>600</abnormalTime>
+		<effectPoint>635</effectPoint>
+		<hitTime>1500</hitTime>
+		<magicLvl>62</magicLvl>
+		<operateType>A2</operateType>
+		<reuseDelay>240000</reuseDelay>
+		<mpConsume>58</mpConsume>
+		<abnormalType>MAX_HP_UP_K</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<abnormalLvl>1</abnormalLvl>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="CpHealPercent">
+				<power>15</power>
+			</effect>
+			<effect name="MaxHp">
+				<amount>15</amount>
+				<mode>PER</mode>
+				<heal>true</heal>
+			</effect>
+			<effect name="MaxCp">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="20007" toLevel="1" name="Block Invincibility">
+		<!-- For 2 min., HP/ MP Recovery Bonus increase, and Speed +5. You cannot receive the Celestial Aegis, Celestial Protection, or the Celestial Party Protection effect. -->
+		<icon>icon.skill11560</icon>
+		<abnormalLvl>9</abnormalLvl>
+		<abnormalTime>120</abnormalTime>
+		<abnormalType>BLOCK_INVINCIBILITY</abnormalType>
+		<operateType>A2</operateType>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<isMagic>1</isMagic>
+		<effectPoint>1</effectPoint>
+		<isDebuff>true</isDebuff>
+		<canBeDispelled>false</canBeDispelled>
+		<effects>
+			<effect name="Speed">
+				<amount>5</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="HpRegen">
+				<amount>1</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MpRegen">
+				<amount>1</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="BlockAbnormalSlot">
+				<slot>INVINCIBILITY_SPECIAL;BLOCK_INVINCIBILITY</slot>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="20008" toLevel="1" name="Clan Advent (Event)">
+		<!-- When the clan leader logs in, clan members' P. Atk./ P. Def./ M. Def. +5%, M. Atk. +6%, HP/ MP Recovery Bonus +5, and XP gain +100%. -->
+		<icon>icon.skill19009</icon>
+		<operateType>A2</operateType>
+		<effectPoint>100</effectPoint>
+	</skill>
+</list>

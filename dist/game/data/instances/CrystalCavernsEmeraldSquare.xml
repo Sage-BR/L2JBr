@@ -1,0 +1,2511 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Crystal Caverns - Emerald Square -->
+<instance id="163" maxWorlds="80" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/instance.xsd">
+	<time duration="60" empty="3" />
+	<removeBuffs type="ALL" />
+	<locations>
+		<enter type="FIXED">
+			<location x="144472" y="147830" z="-12000" />
+		</enter>
+		<exit type="FIXED">
+			<location x="149364" y="173631" z="-920" />
+		</exit>
+	</locations>
+	<conditions>
+		<condition type="Party" showMessageAndHtml="true">
+			<param name="html" value="condNoParty.html" />
+		</condition>
+		<condition type="PartyLeader">
+			<param name="html" value="condNoPartyLeader.html" />
+		</condition>
+		<condition type="GroupMin">
+			<param name="limit" value="7" />
+		</condition>
+		<condition type="GroupMax">
+			<param name="limit" value="7" />
+		</condition>
+		<condition type="Level">
+			<param name="min" value="97" />
+		</condition>
+		<condition type="Distance" />
+		<condition type="Reenter">
+			<param name="instanceId" value="163" />
+		</condition>
+	</conditions>
+	<reenter apply="ON_FINISH">
+		<reset day="MONDAY" hour="6" minute="30" />
+		<reset day="TUESDAY" hour="6" minute="30" />
+		<reset day="WEDNESDAY" hour="6" minute="30" />
+		<reset day="THURSDAY" hour="6" minute="30" />
+		<reset day="FRIDAY" hour="6" minute="30" />
+		<reset day="SATURDAY" hour="6" minute="30" />
+		<reset day="SUNDAY" hour="6" minute="30" />
+	</reenter>
+	<doorlist>
+		<door id="24220001" />
+		<door id="24220002" />
+		<door id="24220003" />
+		<door id="24220004" />
+		<door id="24220005" />
+		<door id="24220006" />
+		<door id="24220007" />
+	</doorlist>
+	<spawnlist>
+		<group name="innadrill22_2422_01tm1">
+			<territories>
+				<territory name="innadrill22_2422_01t" minZ="-12168" maxZ="-11968">
+					<node x="144396" y="147564" />
+					<node x="144596" y="147564" />
+					<node x="144596" y="147764" />
+					<node x="144396" y="147764" />
+				</territory>
+			</territories>
+			<npc id="19009" x="144496" y="147664" z="-12160" respawnTime="1min" count="1" /> <!-- Water Cannon -->
+		</group>
+		<group name="innadril22_2422_01m1">
+			<territories>
+				<territory name="innadril22_2422_01" minZ="-12121" maxZ="-11721">
+					<node x="144026" y="145766" />
+					<node x="144002" y="146454" />
+					<node x="143669" y="146723" />
+					<node x="142762" y="146554" />
+					<node x="142619" y="146480" />
+					<node x="141526" y="144782" />
+					<node x="144039" y="144064" />
+				</territory>
+			</territories>
+			<npc id="19008" x="143171" y="145717" z="-11995" heading="8856" count="1"> <!-- Water Cannon -->
+				<parameters>
+					<param name="base_id" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23010" x="143011" y="145678" z="-12002" respawnTime="2min" count="1"> <!-- Square Intruder -->
+				<parameters>
+					<param name="base_id" value="1" />
+					<param name="toX" value="143204" />
+					<param name="toY" value="145999" />
+					<param name="toZ" value="-12002" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23010" x="143011" y="145678" z="-12002" respawnTime="2min" count="1"> <!-- Square Intruder -->
+				<parameters>
+					<param name="base_id" value="1" />
+					<param name="toX" value="143204" />
+					<param name="toY" value="145999" />
+					<param name="toZ" value="-12002" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+			<npc id="23010" x="143169" y="145567" z="-12002" respawnTime="2min" count="1"> <!-- Square Intruder -->
+				<parameters>
+					<param name="base_id" value="1" />
+					<param name="toX" value="143417" />
+					<param name="toY" value="145812" />
+					<param name="toZ" value="-12002" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23010" x="143169" y="145567" z="-12002" respawnTime="2min" count="1"> <!-- Square Intruder -->
+				<parameters>
+					<param name="base_id" value="1" />
+					<param name="toX" value="143417" />
+					<param name="toY" value="145812" />
+					<param name="toZ" value="-12002" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="innadril22_2422_01m2">
+			<territories>
+				<territory name="innadril22_2422_01" minZ="-12121" maxZ="-11721">
+					<node x="144026" y="145766" />
+					<node x="144002" y="146454" />
+					<node x="143669" y="146723" />
+					<node x="142762" y="146554" />
+					<node x="142619" y="146480" />
+					<node x="141526" y="144782" />
+					<node x="144039" y="144064" />
+				</territory>
+			</territories>
+			<npc id="23010" x="143204" y="145999" z="-12002" respawnTime="2min" count="2" /> <!-- Square Intruder -->
+			<npc id="23010" x="143417" y="145812" z="-12002" respawnTime="2min" count="2" /> <!-- Square Intruder -->
+		</group>
+		<group name="innadril22_2422_01m3">
+			<territories>
+				<territory name="innadril22_2422_01" minZ="-12121" maxZ="-11721">
+					<node x="144026" y="145766" />
+					<node x="144002" y="146454" />
+					<node x="143669" y="146723" />
+					<node x="142762" y="146554" />
+					<node x="142619" y="146480" />
+					<node x="141526" y="144782" />
+					<node x="144039" y="144064" />
+				</territory>
+			</territories>
+			<npc id="19008" x="142676" y="144598" z="-11922" heading="14392" count="1"> <!-- Water Cannon -->
+				<parameters>
+					<param name="base_id" value="2" />
+					<param name="SupportMaker1" value="innadril22_2422_01m4" />
+					<param name="SupportMaker2" value="innadril22_2422_01m5" />
+					<param name="SupportMaker3" value="innadril22_2422_01m6" />
+					<param name="GlobalMap_ID" value="2422002" />
+				</parameters>
+			</npc>
+			<npc id="23012" x="142625" y="144939" z="-11883" heading="14392" count="1" /> <!-- Stronghold Protector -->
+			<npc id="23010" x="142425" y="144537" z="-11883" respawnTime="2min" count="1"> <!-- Square Intruder -->
+				<parameters>
+					<param name="base_id" value="2" />
+					<param name="toX" value="142625" />
+					<param name="toY" value="144939" />
+					<param name="toZ" value="-11883" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23010" x="142425" y="144537" z="-11883" respawnTime="2min" count="1"> <!-- Square Intruder -->
+				<parameters>
+					<param name="base_id" value="2" />
+					<param name="toX" value="142625" />
+					<param name="toY" value="144939" />
+					<param name="toZ" value="-11883" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+			<npc id="23010" x="142425" y="144537" z="-11883" respawnTime="2min" count="1"> <!-- Square Intruder -->
+				<parameters>
+					<param name="base_id" value="2" />
+					<param name="toX" value="142625" />
+					<param name="toY" value="144939" />
+					<param name="toZ" value="-11883" />
+					<param name="delay" value="3" />
+				</parameters>
+			</npc>
+			<npc id="23010" x="142826" y="144453" z="-11883" respawnTime="2min" count="1"> <!-- Square Intruder -->
+				<parameters>
+					<param name="base_id" value="2" />
+					<param name="toX" value="142900" />
+					<param name="toY" value="144839" />
+					<param name="toZ" value="-11883" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23010" x="142826" y="144453" z="-11883" respawnTime="2min" count="1"> <!-- Square Intruder -->
+				<parameters>
+					<param name="base_id" value="2" />
+					<param name="toX" value="142900" />
+					<param name="toY" value="144839" />
+					<param name="toZ" value="-11883" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+			<npc id="23010" x="142826" y="144453" z="-11883" respawnTime="2min" count="1"> <!-- Square Intruder -->
+				<parameters>
+					<param name="base_id" value="2" />
+					<param name="toX" value="142900" />
+					<param name="toY" value="144839" />
+					<param name="toZ" value="-11883" />
+					<param name="delay" value="3" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="innadril22_2422_02m1">
+			<territories>
+				<territory name="innadril22_2422_02" minZ="-12142" maxZ="-11742">
+					<node x="144398" y="142317" />
+					<node x="144652" y="144349" />
+					<node x="144084" y="144042" />
+					<node x="141526" y="144776" />
+					<node x="141550" y="143726" />
+					<node x="141834" y="143229" />
+					<node x="141976" y="139889" />
+					<node x="143238" y="139908" />
+					<node x="144014" y="142182" />
+				</territory>
+			</territories>
+			<npc id="19008" x="143583" y="143626" z="-11914" heading="19472" count="1"> <!-- Water Cannon -->
+				<parameters>
+					<param name="base_id" value="3" />
+					<param name="SupportMaker1" value="innadril22_2422_02m2" />
+					<param name="SupportMaker2" value="innadril22_2422_02m3" />
+					<param name="SupportMaker3" value="innadril22_2422_02m4" />
+					<param name="GlobalMap_ID" value="2422003" />
+				</parameters>
+			</npc>
+			<npc id="23012" x="143281" y="143701" z="-11902" heading="19472" count="1" /> <!-- Stronghold Protector -->
+			<npc id="23012" x="143479" y="143890" z="-11929" heading="19472" count="1" /> <!-- Stronghold Protector -->
+			<npc id="23010" x="143700" y="143469" z="-11897" respawnTime="2min" count="1"> <!-- Square Intruder -->
+				<parameters>
+					<param name="base_id" value="3" />
+					<param name="toX" value="143281" />
+					<param name="toY" value="143701" />
+					<param name="toZ" value="-11902" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23010" x="143700" y="143469" z="-11897" respawnTime="2min" count="1"> <!-- Square Intruder -->
+				<parameters>
+					<param name="base_id" value="3" />
+					<param name="toX" value="143281" />
+					<param name="toY" value="143701" />
+					<param name="toZ" value="-11902" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+			<npc id="23010" x="143700" y="143469" z="-11897" respawnTime="2min" count="1"> <!-- Square Intruder -->
+				<parameters>
+					<param name="base_id" value="3" />
+					<param name="toX" value="143281" />
+					<param name="toY" value="143701" />
+					<param name="toZ" value="-11902" />
+					<param name="delay" value="3" />
+				</parameters>
+			</npc>
+			<npc id="23010" x="143785" y="143717" z="-11918" respawnTime="2min" count="1"> <!-- Square Intruder -->
+				<parameters>
+					<param name="base_id" value="3" />
+					<param name="toX" value="143479" />
+					<param name="toY" value="143890" />
+					<param name="toZ" value="-11929" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23010" x="143785" y="143717" z="-11918" respawnTime="2min" count="1"> <!-- Square Intruder -->
+				<parameters>
+					<param name="base_id" value="3" />
+					<param name="toX" value="143479" />
+					<param name="toY" value="143890" />
+					<param name="toZ" value="-11929" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+			<npc id="23010" x="143785" y="143717" z="-11918" respawnTime="2min" count="1"> <!-- Square Intruder -->
+				<parameters>
+					<param name="base_id" value="3" />
+					<param name="toX" value="143479" />
+					<param name="toY" value="143890" />
+					<param name="toZ" value="-11929" />
+					<param name="delay" value="3" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="innadril22_2422_03m1">
+			<territories>
+				<territory name="innadril22_2422_03" minZ="-12075" maxZ="-11475">
+					<node x="144624" y="143212" />
+					<node x="145621" y="143212" />
+					<node x="145625" y="144208" />
+					<node x="144625" y="144210" />
+				</territory>
+			</territories>
+			<npc id="19008" x="145579" y="143743" z="-11808" heading="32528" count="1"> <!-- Water Cannon -->
+				<parameters>
+					<param name="base_id" value="4" />
+					<param name="SupportMaker1" value="innadril22_2422_03m2" />
+					<param name="SupportMaker2" value="innadril22_2422_03m3" />
+					<param name="SupportMaker3" value="innadril22_2422_03m4" />
+					<param name="GlobalMap_ID" value="2422004" />
+				</parameters>
+			</npc>
+			<npc id="23012" x="145218" y="143994" z="-11888" heading="32528" count="1" /> <!-- Stronghold Protector -->
+			<npc id="23012" x="145220" y="143858" z="-11888" heading="32528" count="1" /> <!-- Stronghold Protector -->
+			<npc id="23012" x="145204" y="143649" z="-11888" heading="32528" count="1" /> <!-- Stronghold Protector -->
+			<npc id="23012" x="145240" y="143518" z="-11880" heading="32528" count="1" /> <!-- Stronghold Protector -->
+			<npc id="23010" x="145519" y="144062" z="-11816" heading="32528" respawnTime="2min" count="1"> <!-- Square Intruder -->
+				<parameters>
+					<param name="base_id" value="4" />
+					<param name="toX" value="145095" />
+					<param name="toY" value="143525" />
+					<param name="toZ" value="-11904" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23010" x="145519" y="144062" z="-11816" heading="32528" respawnTime="2min" count="1"> <!-- Square Intruder -->
+				<parameters>
+					<param name="base_id" value="4" />
+					<param name="toX" value="145095" />
+					<param name="toY" value="143525" />
+					<param name="toZ" value="-11904" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+			<npc id="23010" x="145519" y="144062" z="-11816" heading="32528" respawnTime="2min" count="1"> <!-- Square Intruder -->
+				<parameters>
+					<param name="base_id" value="4" />
+					<param name="toX" value="145095" />
+					<param name="toY" value="143525" />
+					<param name="toZ" value="-11904" />
+					<param name="delay" value="3" />
+				</parameters>
+			</npc>
+			<npc id="23010" x="145558" y="143437" z="-11816" heading="32528" respawnTime="2min" count="1"> <!-- Square Intruder -->
+				<parameters>
+					<param name="base_id" value="4" />
+					<param name="toX" value="145081" />
+					<param name="toY" value="143928" />
+					<param name="toZ" value="-11895" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23010" x="145558" y="143437" z="-11816" heading="32528" respawnTime="2min" count="1"> <!-- Square Intruder -->
+				<parameters>
+					<param name="base_id" value="4" />
+					<param name="toX" value="145081" />
+					<param name="toY" value="143928" />
+					<param name="toZ" value="-11895" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+			<npc id="23010" x="145558" y="143437" z="-11816" heading="32528" respawnTime="2min" count="1"> <!-- Square Intruder -->
+				<parameters>
+					<param name="base_id" value="4" />
+					<param name="toX" value="145081" />
+					<param name="toY" value="143928" />
+					<param name="toZ" value="-11895" />
+					<param name="delay" value="3" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="innadril22_2422_04m1">
+			<territories>
+				<territory name="innadril22_2422_04" minZ="-12432" maxZ="-12032">
+					<node x="149692" y="147041" />
+					<node x="149474" y="147310" />
+					<node x="147631" y="146908" />
+					<node x="144664" y="144344" />
+					<node x="144548" y="143282" />
+					<node x="147067" y="142462" />
+					<node x="147067" y="142462" />
+					<node x="147067" y="142462" />
+					<node x="148653" y="142138" />
+					<node x="149109" y="142388" />
+					<node x="149689" y="143818" />
+				</territory>
+			</territories>
+			<npc id="19008" x="147205" y="142810" z="-12208" heading="-32488" count="1"> <!-- Water Cannon -->
+				<parameters>
+					<param name="base_id" value="5" />
+					<param name="SupportMaker1" value="innadril22_2422_04m2" />
+					<param name="SupportMaker2" value="innadril22_2422_04m3" />
+					<param name="SupportMaker3" value="innadril22_2422_04m4" />
+					<param name="GlobalMap_ID" value="2422005" />
+				</parameters>
+			</npc>
+			<npc id="23012" x="146981" y="142728" z="-12144" heading="-32488" count="2" /> <!-- Stronghold Protector -->
+			<npc id="23012" x="147008" y="142929" z="-12145" heading="-32488" count="2" /> <!-- Stronghold Protector -->
+			<npc id="23010" x="147383" y="142665" z="-12181" respawnTime="2min" count="1"> <!-- Square Intruder -->
+				<parameters>
+					<param name="base_id" value="5" />
+					<param name="toX" value="146981" />
+					<param name="toY" value="142728" />
+					<param name="toZ" value="-12144" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23010" x="147383" y="142665" z="-12181" respawnTime="2min" count="1"> <!-- Square Intruder -->
+				<parameters>
+					<param name="base_id" value="5" />
+					<param name="toX" value="146981" />
+					<param name="toY" value="142728" />
+					<param name="toZ" value="-12144" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+			<npc id="23010" x="147383" y="142665" z="-12181" respawnTime="2min" count="1"> <!-- Square Intruder -->
+				<parameters>
+					<param name="base_id" value="5" />
+					<param name="toX" value="146981" />
+					<param name="toY" value="142728" />
+					<param name="toZ" value="-12144" />
+					<param name="delay" value="3" />
+				</parameters>
+			</npc>
+			<npc id="23010" x="147399" y="142996" z="-12181" respawnTime="2min" count="1"> <!-- Square Intruder -->
+				<parameters>
+					<param name="base_id" value="5" />
+					<param name="toX" value="147008" />
+					<param name="toY" value="142929" />
+					<param name="toZ" value="-12145" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23010" x="147399" y="142996" z="-12181" respawnTime="2min" count="1"> <!-- Square Intruder -->
+				<parameters>
+					<param name="base_id" value="5" />
+					<param name="toX" value="147008" />
+					<param name="toY" value="142929" />
+					<param name="toZ" value="-12145" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+			<npc id="23010" x="147399" y="142996" z="-12181" respawnTime="2min" count="1"> <!-- Square Intruder -->
+				<parameters>
+					<param name="base_id" value="5" />
+					<param name="toX" value="147008" />
+					<param name="toY" value="142929" />
+					<param name="toZ" value="-12145" />
+					<param name="delay" value="3" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="innadril22_2422_04m5">
+			<territories>
+				<territory name="innadril22_2422_04" minZ="-12432" maxZ="-12032">
+					<node x="149692" y="147041" />
+					<node x="149474" y="147310" />
+					<node x="147631" y="146908" />
+					<node x="144664" y="144344" />
+					<node x="144548" y="143282" />
+					<node x="147067" y="142462" />
+					<node x="147067" y="142462" />
+					<node x="147067" y="142462" />
+					<node x="148653" y="142138" />
+					<node x="149109" y="142388" />
+					<node x="149689" y="143818" />
+				</territory>
+			</territories>
+			<npc id="19008" x="147149" y="144810" z="-12208" heading="-30296" count="1"> <!-- Water Cannon -->
+				<parameters>
+					<param name="base_id" value="6" />
+					<param name="SupportMaker1" value="innadril22_2422_04m6" />
+					<param name="SupportMaker2" value="innadril22_2422_04m7" />
+					<param name="SupportMaker3" value="innadril22_2422_04m8" />
+					<param name="GlobalMap_ID" value="2422006" />
+				</parameters>
+			</npc>
+			<npc id="23012" x="147028" y="144677" z="-12154" heading="-30296" count="1" /> <!-- Stronghold Protector -->
+			<npc id="23012" x="147020" y="144878" z="-12154" heading="-30296" count="1" /> <!-- Stronghold Protector -->
+			<npc id="23010" x="147361" y="144702" z="-12190" respawnTime="2min" count="1"> <!-- Square Intruder -->
+				<parameters>
+					<param name="base_id" value="6" />
+					<param name="toX" value="147028" />
+					<param name="toY" value="144677" />
+					<param name="toZ" value="-12154" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23010" x="147361" y="144702" z="-12190" respawnTime="2min" count="1"> <!-- Square Intruder -->
+				<parameters>
+					<param name="base_id" value="6" />
+					<param name="toX" value="147028" />
+					<param name="toY" value="144677" />
+					<param name="toZ" value="-12154" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+			<npc id="23010" x="147361" y="144702" z="-12190" respawnTime="2min" count="1"> <!-- Square Intruder -->
+				<parameters>
+					<param name="base_id" value="6" />
+					<param name="toX" value="147028" />
+					<param name="toY" value="144677" />
+					<param name="toZ" value="-12154" />
+					<param name="delay" value="3" />
+				</parameters>
+			</npc>
+			<npc id="23010" x="147332" y="145034" z="-12190" respawnTime="2min" count="1"> <!-- Square Intruder -->
+				<parameters>
+					<param name="base_id" value="6" />
+					<param name="toX" value="147020" />
+					<param name="toY" value="144878" />
+					<param name="toZ" value="-12154" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23010" x="147332" y="145034" z="-12190" respawnTime="2min" count="1"> <!-- Square Intruder -->
+				<parameters>
+					<param name="base_id" value="6" />
+					<param name="toX" value="147020" />
+					<param name="toY" value="144878" />
+					<param name="toZ" value="-12154" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+			<npc id="23010" x="147332" y="145034" z="-12190" respawnTime="2min" count="1"> <!-- Square Intruder -->
+				<parameters>
+					<param name="base_id" value="6" />
+					<param name="toX" value="147020" />
+					<param name="toY" value="144878" />
+					<param name="toZ" value="-12154" />
+					<param name="delay" value="3" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="innadril22_2422_04m9">
+			<territories>
+				<territory name="innadril22_2422_04" minZ="-12432" maxZ="-12032">
+					<node x="149692" y="147041" />
+					<node x="149474" y="147310" />
+					<node x="147631" y="146908" />
+					<node x="144664" y="144344" />
+					<node x="144548" y="143282" />
+					<node x="147067" y="142462" />
+					<node x="147067" y="142462" />
+					<node x="147067" y="142462" />
+					<node x="148653" y="142138" />
+					<node x="149109" y="142388" />
+					<node x="149689" y="143818" />
+				</territory>
+			</territories>
+			<npc id="19008" x="148511" y="144812" z="-12208" heading="-22160" count="1">
+				<!-- Water Cannon -->
+				<parameters>
+					<param name="base_id" value="7" />
+					<param name="SupportMaker1" value="innadril22_2422_04m10" />
+					<param name="SupportMaker2" value="innadril22_2422_04m11" />
+					<param name="SupportMaker3" value="innadril22_2422_04m12" />
+					<param name="GlobalMap_ID" value="2422007" />
+				</parameters>
+			</npc>
+			<npc id="23012" x="148628" y="144530" z="-12220" heading="-22160" count="2" /> <!-- Stronghold Protector -->
+			<npc id="23012" x="148282" y="144887" z="-12191" heading="-22160" count="2" /> <!-- Stronghold Protector -->
+			<npc id="23010" x="148739" y="144818" z="-12220" respawnTime="2min" count="1"> <!-- Square Intruder -->
+				<parameters>
+					<param name="base_id" value="7" />
+					<param name="toX" value="148628" />
+					<param name="toY" value="144530" />
+					<param name="toZ" value="-12220" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23010" x="148739" y="144818" z="-12220" respawnTime="2min" count="1"> <!-- Square Intruder -->
+				<parameters>
+					<param name="base_id" value="7" />
+					<param name="toX" value="148628" />
+					<param name="toY" value="144530" />
+					<param name="toZ" value="-12220" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+			<npc id="23010" x="148739" y="144818" z="-12220" respawnTime="2min" count="1"> <!-- Square Intruder -->
+				<parameters>
+					<param name="base_id" value="7" />
+					<param name="toX" value="148628" />
+					<param name="toY" value="144530" />
+					<param name="toZ" value="-12220" />
+					<param name="delay" value="3" />
+				</parameters>
+			</npc>
+			<npc id="23010" x="148453" y="145077" z="-12220" respawnTime="2min" count="1"> <!-- Square Intruder -->
+				<parameters>
+					<param name="base_id" value="7" />
+					<param name="toX" value="148282" />
+					<param name="toY" value="144887" />
+					<param name="toZ" value="-12191" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23010" x="148453" y="145077" z="-12220" respawnTime="2min" count="1"> <!-- Square Intruder -->
+				<parameters>
+					<param name="base_id" value="7" />
+					<param name="toX" value="148282" />
+					<param name="toY" value="144887" />
+					<param name="toZ" value="-12191" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+			<npc id="23010" x="148453" y="145077" z="-12220" respawnTime="2min" count="1"> <!-- Square Intruder -->
+				<parameters>
+					<param name="base_id" value="7" />
+					<param name="toX" value="148282" />
+					<param name="toY" value="144887" />
+					<param name="toZ" value="-12191" />
+					<param name="delay" value="3" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="innadril22_2422_04m13">
+			<territories>
+				<territory name="innadril22_2422_04" minZ="-12432" maxZ="-12032">
+					<node x="149692" y="147041" />
+					<node x="149474" y="147310" />
+					<node x="147631" y="146908" />
+					<node x="144664" y="144344" />
+					<node x="144548" y="143282" />
+					<node x="147067" y="142462" />
+					<node x="147067" y="142462" />
+					<node x="147067" y="142462" />
+					<node x="148653" y="142138" />
+					<node x="149109" y="142388" />
+					<node x="149689" y="143818" />
+				</territory>
+			</territories>
+			<npc id="19008" x="148592" y="146328" z="-12312" heading="-24976" count="1"> <!-- Water Cannon -->
+				<parameters>
+					<param name="base_id" value="8" />
+					<param name="SupportMaker1" value="innadril22_2422_04m14" />
+					<param name="SupportMaker2" value="innadril22_2422_04m15" />
+					<param name="SupportMaker3" value="innadril22_2422_04m16" />
+					<param name="GlobalMap_ID" value="2422008" />
+				</parameters>
+			</npc>
+			<npc id="23012" x="148750" y="146087" z="-12258" heading="-24976" count="2" /> <!-- Stronghold Protector -->
+			<npc id="23012" x="148552" y="146225" z="-12258" heading="-24976" count="2" /> <!-- Stronghold Protector -->
+			<npc id="23010" x="149201" y="146587" z="-12258" respawnTime="2min" count="1"> <!-- Square Intruder -->
+				<parameters>
+					<param name="base_id" value="8" />
+					<param name="toX" value="148750" />
+					<param name="toY" value="146087" />
+					<param name="toZ" value="-12258" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23010" x="149201" y="146587" z="-12258" respawnTime="2min" count="1"> <!-- Square Intruder -->
+				<parameters>
+					<param name="base_id" value="8" />
+					<param name="toX" value="148750" />
+					<param name="toY" value="146087" />
+					<param name="toZ" value="-12258" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+			<npc id="23010" x="149201" y="146587" z="-12258" respawnTime="2min" count="1"> <!-- Square Intruder -->
+				<parameters>
+					<param name="base_id" value="8" />
+					<param name="toX" value="148750" />
+					<param name="toY" value="146087" />
+					<param name="toZ" value="-12258" />
+					<param name="delay" value="3" />
+				</parameters>
+			</npc>
+			<npc id="23010" x="149201" y="146587" z="-12258" respawnTime="2min" count="1"> <!-- Square Intruder -->
+				<parameters>
+					<param name="base_id" value="8" />
+					<param name="toX" value="148750" />
+					<param name="toY" value="146087" />
+					<param name="toZ" value="-12258" />
+					<param name="delay" value="4" />
+				</parameters>
+			</npc>
+			<npc id="23010" x="148888" y="146652" z="-12258" respawnTime="2min" count="1"> <!-- Square Intruder -->
+				<parameters>
+					<param name="base_id" value="8" />
+					<param name="toX" value="148552" />
+					<param name="toY" value="146225" />
+					<param name="toZ" value="-12258" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23010" x="148888" y="146652" z="-12258" respawnTime="2min" count="1"> <!-- Square Intruder -->
+				<parameters>
+					<param name="base_id" value="8" />
+					<param name="toX" value="148552" />
+					<param name="toY" value="146225" />
+					<param name="toZ" value="-12258" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+			<npc id="23010" x="148888" y="146652" z="-12258" respawnTime="2min" count="1"> <!-- Square Intruder -->
+				<parameters>
+					<param name="base_id" value="8" />
+					<param name="toX" value="148552" />
+					<param name="toY" value="146225" />
+					<param name="toZ" value="-12258" />
+					<param name="delay" value="3" />
+				</parameters>
+			</npc>
+			<npc id="23010" x="148888" y="146652" z="-12258" respawnTime="2min" count="1"> <!-- Square Intruder -->
+				<parameters>
+					<param name="base_id" value="8" />
+					<param name="toX" value="148552" />
+					<param name="toY" value="146225" />
+					<param name="toZ" value="-12258" />
+					<param name="delay" value="4" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="innadril22_2422_04m17">
+			<territories>
+				<territory name="innadril22_2422_04" minZ="-12432" maxZ="-12032">
+					<node x="149692" y="147041" />
+					<node x="149474" y="147310" />
+					<node x="147631" y="146908" />
+					<node x="144664" y="144344" />
+					<node x="144548" y="143282" />
+					<node x="147067" y="142462" />
+					<node x="147067" y="142462" />
+					<node x="147067" y="142462" />
+					<node x="148653" y="142138" />
+					<node x="149109" y="142388" />
+					<node x="149689" y="143818" />
+				</territory>
+			</territories>
+			<npc id="19008" x="149038" y="146022" z="-12272" heading="-25520" count="1"> <!-- Water Cannon -->
+				<parameters>
+					<param name="base_id" value="9" />
+					<param name="SupportMaker1" value="innadril22_2422_04m18" />
+					<param name="SupportMaker2" value="innadril22_2422_04m19" />
+					<param name="SupportMaker3" value="innadril22_2422_04m20" />
+					<param name="GlobalMap_ID" value="2422009" />
+				</parameters>
+			</npc>
+			<npc id="23012" x="149098" y="145875" z="-12258" heading="-25520" count="2" /> <!-- Stronghold Protector -->
+			<npc id="23012" x="148859" y="146019" z="-12258" heading="-25520" count="2" /> <!-- Stronghold Protector -->
+			<npc id="23010" x="149408" y="146279" z="-12258" respawnTime="2min" count="1"> <!-- Square Intruder -->
+				<parameters>
+					<param name="base_id" value="9" />
+					<param name="toX" value="149098" />
+					<param name="toY" value="145875" />
+					<param name="toZ" value="-12258" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23010" x="149408" y="146279" z="-12258" respawnTime="2min" count="1"> <!-- Square Intruder -->
+				<parameters>
+					<param name="base_id" value="9" />
+					<param name="toX" value="149098" />
+					<param name="toY" value="145875" />
+					<param name="toZ" value="-12258" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+			<npc id="23010" x="149257" y="146521" z="-12258" respawnTime="2min" count="1"> <!-- Square Intruder -->
+				<parameters>
+					<param name="base_id" value="9" />
+					<param name="toX" value="148859" />
+					<param name="toY" value="146019" />
+					<param name="toZ" value="-12258" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23010" x="149257" y="146521" z="-12258" respawnTime="2min" count="1"> <!-- Square Intruder -->
+				<parameters>
+					<param name="base_id" value="9" />
+					<param name="toX" value="148859" />
+					<param name="toY" value="146019" />
+					<param name="toZ" value="-12258" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="innadril28_2422_A_01m1">
+			<territories>
+				<territory name="innadril28_2422_A_01" minZ="-15321" maxZ="-15021">
+					<node x="139567" y="139667" />
+					<node x="141220" y="139667" />
+					<node x="141218" y="141321" />
+					<node x="139560" y="141322" />
+				</territory>
+			</territories>
+			<npc id="19042" count="1"> <!-- Jewel Management -->
+				<parameters>
+					<param name="Room_Number" value="1" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="innadril28_2422_A_02m1">
+			<territories>
+				<territory name="innadril28_2422_A_02" minZ="-15307" maxZ="-15007">
+					<node x="141856" y="139663" />
+					<node x="143509" y="139663" />
+					<node x="143507" y="141317" />
+					<node x="141849" y="141318" />
+				</territory>
+			</territories>
+			<npc id="19042" count="1"> <!-- Jewel Management -->
+				<parameters>
+					<param name="Room_Number" value="2" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="innadril28_2422_A_03m1">
+			<territories>
+				<territory name="innadril28_2422_A_03" minZ="-15320" maxZ="-15020">
+					<node x="144149" y="139660" />
+					<node x="145802" y="139660" />
+					<node x="145799" y="141313" />
+					<node x="144141" y="141314" />
+				</territory>
+			</territories>
+			<npc id="19042" count="1"> <!-- Jewel Management -->
+				<parameters>
+					<param name="Room_Number" value="3" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="innadril28_2422_A_04m1">
+			<territories>
+				<territory name="innadril28_2422_A_04" minZ="-15317" maxZ="-15017">
+					<node x="139572" y="141996" />
+					<node x="141225" y="141996" />
+					<node x="141222" y="143649" />
+					<node x="139564" y="143650" />
+				</territory>
+			</territories>
+			<npc id="19042" count="1"> <!-- Jewel Management -->
+				<parameters>
+					<param name="Room_Number" value="4" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="innadril28_2422_A_05m1">
+			<territories>
+				<territory name="innadril28_2422_A_05" minZ="-15317" maxZ="-15017">
+					<node x="144153" y="142001" />
+					<node x="145806" y="142001" />
+					<node x="145803" y="143654" />
+					<node x="144145" y="143655" />
+				</territory>
+			</territories>
+			<npc id="19042" count="1"> <!-- Jewel Management -->
+				<parameters>
+					<param name="Room_Number" value="5" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="innadril28_2422_A_06m1">
+			<territories>
+				<territory name="innadril28_2422_A_06" minZ="-15328" maxZ="-15028">
+					<node x="139573" y="144326" />
+					<node x="141226" y="144326" />
+					<node x="141223" y="145979" />
+					<node x="139565" y="145980" />
+				</territory>
+			</territories>
+			<npc id="19042" count="1"> <!-- Jewel Management -->
+				<parameters>
+					<param name="Room_Number" value="6" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="innadril28_2422_A_07m1">
+			<territories>
+				<territory name="innadril28_2422_A_07" minZ="-15322" maxZ="-15022">
+					<node x="141858" y="144329" />
+					<node x="143511" y="144329" />
+					<node x="143509" y="145982" />
+					<node x="141851" y="145983" />
+				</territory>
+			</territories>
+			<npc id="19042" count="1"> <!-- Jewel Management -->
+				<parameters>
+					<param name="Room_Number" value="7" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="innadril28_2422_A_08m1">
+			<territories>
+				<territory name="innadril28_2422_A_08" minZ="-15313" maxZ="-15013">
+					<node x="144147" y="144328" />
+					<node x="145800" y="144328" />
+					<node x="145798" y="145981" />
+					<node x="144140" y="145982" />
+				</territory>
+			</territories>
+			<npc id="19042" count="1"> <!-- Jewel Management -->
+				<parameters>
+					<param name="Room_Number" value="8" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="innadril22_2422_01m4" spawnByDefault="false">
+			<territories>
+				<territory name="innadril22_2422_01" minZ="-12121" maxZ="-11721">
+					<node x="144026" y="145766" />
+					<node x="144002" y="146454" />
+					<node x="143669" y="146723" />
+					<node x="142762" y="146554" />
+					<node x="142619" y="146480" />
+					<node x="141526" y="144782" />
+					<node x="144039" y="144064" />
+				</territory>
+			</territories>
+			<npc id="23011" x="142625" y="144939" z="-11883" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="2" />
+					<param name="toHelpX" value="143204" />
+					<param name="toHelpY" value="145999" />
+					<param name="toHelpZ" value="-12002" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="142625" y="144939" z="-11883" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="2" />
+					<param name="toHelpX" value="143204" />
+					<param name="toHelpY" value="145999" />
+					<param name="toHelpZ" value="-12002" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="142625" y="144939" z="-11883" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="2" />
+					<param name="toHelpX" value="143204" />
+					<param name="toHelpY" value="145999" />
+					<param name="toHelpZ" value="-12002" />
+					<param name="delay" value="3" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="142625" y="144939" z="-11883" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="2" />
+					<param name="toHelpX" value="143204" />
+					<param name="toHelpY" value="145999" />
+					<param name="toHelpZ" value="-12002" />
+					<param name="delay" value="4" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="142900" y="144839" z="-11883" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="2" />
+					<param name="toHelpX" value="143417" />
+					<param name="toHelpY" value="145812" />
+					<param name="toHelpZ" value="-12002" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="142900" y="144839" z="-11883" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="2" />
+					<param name="toHelpX" value="143417" />
+					<param name="toHelpY" value="145812" />
+					<param name="toHelpZ" value="-12002" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="142900" y="144839" z="-11883" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="2" />
+					<param name="toHelpX" value="143417" />
+					<param name="toHelpY" value="145812" />
+					<param name="toHelpZ" value="-12002" />
+					<param name="delay" value="3" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="142900" y="144839" z="-11883" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="2" />
+					<param name="toHelpX" value="143417" />
+					<param name="toHelpY" value="145812" />
+					<param name="toHelpZ" value="-12002" />
+					<param name="delay" value="4" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="innadril22_2422_01m5" spawnByDefault="false">
+			<territories>
+				<territory name="innadril22_2422_01" minZ="-12121" maxZ="-11721">
+					<node x="144026" y="145766" />
+					<node x="144002" y="146454" />
+					<node x="143669" y="146723" />
+					<node x="142762" y="146554" />
+					<node x="142619" y="146480" />
+					<node x="141526" y="144782" />
+					<node x="144039" y="144064" />
+				</territory>
+			</territories>
+			<npc id="23011" x="142625" y="144939" z="-11883" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="2" />
+					<param name="toHelpX" value="143204" />
+					<param name="toHelpY" value="145999" />
+					<param name="toHelpZ" value="-12002" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="142625" y="144939" z="-11883" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="2" />
+					<param name="toHelpX" value="143204" />
+					<param name="toHelpY" value="145999" />
+					<param name="toHelpZ" value="-12002" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="142625" y="144939" z="-11883" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="2" />
+					<param name="toHelpX" value="143204" />
+					<param name="toHelpY" value="145999" />
+					<param name="toHelpZ" value="-12002" />
+					<param name="delay" value="3" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="142625" y="144939" z="-11883" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="2" />
+					<param name="toHelpX" value="143204" />
+					<param name="toHelpY" value="145999" />
+					<param name="toHelpZ" value="-12002" />
+					<param name="delay" value="4" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="142900" y="144839" z="-11883" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="2" />
+					<param name="toHelpX" value="143417" />
+					<param name="toHelpY" value="145812" />
+					<param name="toHelpZ" value="-12002" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="142900" y="144839" z="-11883" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="2" />
+					<param name="toHelpX" value="143417" />
+					<param name="toHelpY" value="145812" />
+					<param name="toHelpZ" value="-12002" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="142900" y="144839" z="-11883" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="2" />
+					<param name="toHelpX" value="143417" />
+					<param name="toHelpY" value="145812" />
+					<param name="toHelpZ" value="-12002" />
+					<param name="delay" value="3" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="142900" y="144839" z="-11883" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="2" />
+					<param name="toHelpX" value="143417" />
+					<param name="toHelpY" value="145812" />
+					<param name="toHelpZ" value="-12002" />
+					<param name="delay" value="4" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="innadril22_2422_01m6" spawnByDefault="false">
+			<territories>
+				<territory name="innadril22_2422_01" minZ="-12121" maxZ="-11721">
+					<node x="144026" y="145766" />
+					<node x="144002" y="146454" />
+					<node x="143669" y="146723" />
+					<node x="142762" y="146554" />
+					<node x="142619" y="146480" />
+					<node x="141526" y="144782" />
+					<node x="144039" y="144064" />
+				</territory>
+			</territories>
+			<npc id="23011" x="142625" y="144939" z="-11883" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="2" />
+					<param name="toHelpX" value="143204" />
+					<param name="toHelpY" value="145999" />
+					<param name="toHelpZ" value="-12002" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="142625" y="144939" z="-11883" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="2" />
+					<param name="toHelpX" value="143204" />
+					<param name="toHelpY" value="145999" />
+					<param name="toHelpZ" value="-12002" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="142625" y="144939" z="-11883" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="2" />
+					<param name="toHelpX" value="143204" />
+					<param name="toHelpY" value="145999" />
+					<param name="toHelpZ" value="-12002" />
+					<param name="delay" value="3" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="142625" y="144939" z="-11883" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="2" />
+					<param name="toHelpX" value="143204" />
+					<param name="toHelpY" value="145999" />
+					<param name="toHelpZ" value="-12002" />
+					<param name="delay" value="4" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="142900" y="144839" z="-11883" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="2" />
+					<param name="toHelpX" value="143417" />
+					<param name="toHelpY" value="145812" />
+					<param name="toHelpZ" value="-12002" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="142900" y="144839" z="-11883" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="2" />
+					<param name="toHelpX" value="143417" />
+					<param name="toHelpY" value="145812" />
+					<param name="toHelpZ" value="-12002" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="142900" y="144839" z="-11883" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="2" />
+					<param name="toHelpX" value="143417" />
+					<param name="toHelpY" value="145812" />
+					<param name="toHelpZ" value="-12002" />
+					<param name="delay" value="3" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="142900" y="144839" z="-11883" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="2" />
+					<param name="toHelpX" value="143417" />
+					<param name="toHelpY" value="145812" />
+					<param name="toHelpZ" value="-12002" />
+					<param name="delay" value="4" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="innadril22_2422_02m2" spawnByDefault="false">
+			<territories>
+				<territory name="innadril22_2422_02" minZ="-12142" maxZ="-11742">
+					<node x="144398" y="142317" />
+					<node x="144652" y="144349" />
+					<node x="144084" y="144042" />
+					<node x="141526" y="144776" />
+					<node x="141550" y="143726" />
+					<node x="141834" y="143229" />
+					<node x="141976" y="139889" />
+					<node x="143238" y="139908" />
+					<node x="144014" y="142182" />
+				</territory>
+			</territories>
+			<npc id="23011" x="143281" y="143701" z="-11902" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="3" />
+					<param name="toHelpX" value="142625" />
+					<param name="toHelpY" value="144939" />
+					<param name="toHelpZ" value="-11883" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="143281" y="143701" z="-11902" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="3" />
+					<param name="toHelpX" value="142625" />
+					<param name="toHelpY" value="144939" />
+					<param name="toHelpZ" value="-11883" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="143281" y="143701" z="-11902" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="3" />
+					<param name="toHelpX" value="142625" />
+					<param name="toHelpY" value="144939" />
+					<param name="toHelpZ" value="-11883" />
+					<param name="delay" value="3" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="143479" y="143890" z="-11929" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="3" />
+					<param name="toHelpX" value="142900" />
+					<param name="toHelpY" value="144839" />
+					<param name="toHelpZ" value="-11883" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="143479" y="143890" z="-11929" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="3" />
+					<param name="toHelpX" value="142900" />
+					<param name="toHelpY" value="144839" />
+					<param name="toHelpZ" value="-11883" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="143479" y="143890" z="-11929" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="3" />
+					<param name="toHelpX" value="142900" />
+					<param name="toHelpY" value="144839" />
+					<param name="toHelpZ" value="-11883" />
+					<param name="delay" value="3" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="innadril22_2422_02m3" spawnByDefault="false">
+			<territories>
+				<territory name="innadril22_2422_02" minZ="-12142" maxZ="-11742">
+					<node x="144398" y="142317" />
+					<node x="144652" y="144349" />
+					<node x="144084" y="144042" />
+					<node x="141526" y="144776" />
+					<node x="141550" y="143726" />
+					<node x="141834" y="143229" />
+					<node x="141976" y="139889" />
+					<node x="143238" y="139908" />
+					<node x="144014" y="142182" />
+				</territory>
+			</territories>
+			<npc id="23011" x="143281" y="143701" z="-11902" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="3" />
+					<param name="toHelpX" value="142625" />
+					<param name="toHelpY" value="144939" />
+					<param name="toHelpZ" value="-11883" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="143281" y="143701" z="-11902" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="3" />
+					<param name="toHelpX" value="142625" />
+					<param name="toHelpY" value="144939" />
+					<param name="toHelpZ" value="-11883" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="143281" y="143701" z="-11902" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="3" />
+					<param name="toHelpX" value="142625" />
+					<param name="toHelpY" value="144939" />
+					<param name="toHelpZ" value="-11883" />
+					<param name="delay" value="3" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="143479" y="143890" z="-11929" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="3" />
+					<param name="toHelpX" value="142900" />
+					<param name="toHelpY" value="144839" />
+					<param name="toHelpZ" value="-11883" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="143479" y="143890" z="-11929" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="3" />
+					<param name="toHelpX" value="142900" />
+					<param name="toHelpY" value="144839" />
+					<param name="toHelpZ" value="-11883" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="143479" y="143890" z="-11929" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="3" />
+					<param name="toHelpX" value="142900" />
+					<param name="toHelpY" value="144839" />
+					<param name="toHelpZ" value="-11883" />
+					<param name="delay" value="3" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="innadril22_2422_02m4" spawnByDefault="false">
+			<territories>
+				<territory name="innadril22_2422_02" minZ="-12142" maxZ="-11742">
+					<node x="144398" y="142317" />
+					<node x="144652" y="144349" />
+					<node x="144084" y="144042" />
+					<node x="141526" y="144776" />
+					<node x="141550" y="143726" />
+					<node x="141834" y="143229" />
+					<node x="141976" y="139889" />
+					<node x="143238" y="139908" />
+					<node x="144014" y="142182" />
+				</territory>
+			</territories>
+			<npc id="23011" x="143281" y="143701" z="-11902" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="3" />
+					<param name="toHelpX" value="142625" />
+					<param name="toHelpY" value="144939" />
+					<param name="toHelpZ" value="-11883" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="143281" y="143701" z="-11902" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="3" />
+					<param name="toHelpX" value="142625" />
+					<param name="toHelpY" value="144939" />
+					<param name="toHelpZ" value="-11883" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="143281" y="143701" z="-11902" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="3" />
+					<param name="toHelpX" value="142625" />
+					<param name="toHelpY" value="144939" />
+					<param name="toHelpZ" value="-11883" />
+					<param name="delay" value="3" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="143479" y="143890" z="-11929" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="3" />
+					<param name="toHelpX" value="142900" />
+					<param name="toHelpY" value="144839" />
+					<param name="toHelpZ" value="-11883" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="143479" y="143890" z="-11929" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="3" />
+					<param name="toHelpX" value="142900" />
+					<param name="toHelpY" value="144839" />
+					<param name="toHelpZ" value="-11883" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="143479" y="143890" z="-11929" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="3" />
+					<param name="toHelpX" value="142900" />
+					<param name="toHelpY" value="144839" />
+					<param name="toHelpZ" value="-11883" />
+					<param name="delay" value="3" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="innadril22_2422_03m2" spawnByDefault="false">
+			<territories>
+				<territory name="innadril22_2422_03" minZ="-12075" maxZ="-11475">
+					<node x="144624" y="143212" />
+					<node x="145621" y="143212" />
+					<node x="145625" y="144208" />
+					<node x="144625" y="144210" />
+				</territory>
+			</territories>
+			<npc id="23011" x="145095" y="143525" z="-11904" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="4" />
+					<param name="toHelpX" value="143281" />
+					<param name="toHelpY" value="143701" />
+					<param name="toHelpZ" value="-11902" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="145095" y="143525" z="-11904" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="4" />
+					<param name="toHelpX" value="143281" />
+					<param name="toHelpY" value="143701" />
+					<param name="toHelpZ" value="-11902" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="145095" y="143525" z="-11904" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="4" />
+					<param name="toHelpX" value="143281" />
+					<param name="toHelpY" value="143701" />
+					<param name="toHelpZ" value="-11902" />
+					<param name="delay" value="3" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="145081" y="143928" z="-11895" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="4" />
+					<param name="toHelpX" value="143479" />
+					<param name="toHelpY" value="143890" />
+					<param name="toHelpZ" value="-11929" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="145081" y="143928" z="-11895" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="4" />
+					<param name="toHelpX" value="143479" />
+					<param name="toHelpY" value="143890" />
+					<param name="toHelpZ" value="-11929" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="145081" y="143928" z="-11895" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="4" />
+					<param name="toHelpX" value="143479" />
+					<param name="toHelpY" value="143890" />
+					<param name="toHelpZ" value="-11929" />
+					<param name="delay" value="3" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="innadril22_2422_03m3" spawnByDefault="false">
+			<territories>
+				<territory name="innadril22_2422_03" minZ="-12075" maxZ="-11475">
+					<node x="144624" y="143212" />
+					<node x="145621" y="143212" />
+					<node x="145625" y="144208" />
+					<node x="144625" y="144210" />
+				</territory>
+			</territories>
+			<npc id="23011" x="145095" y="143525" z="-11904" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="4" />
+					<param name="toHelpX" value="143281" />
+					<param name="toHelpY" value="143701" />
+					<param name="toHelpZ" value="-11902" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="145095" y="143525" z="-11904" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="4" />
+					<param name="toHelpX" value="143281" />
+					<param name="toHelpY" value="143701" />
+					<param name="toHelpZ" value="-11902" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="145095" y="143525" z="-11904" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="4" />
+					<param name="toHelpX" value="143281" />
+					<param name="toHelpY" value="143701" />
+					<param name="toHelpZ" value="-11902" />
+					<param name="delay" value="3" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="145081" y="143928" z="-11895" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="4" />
+					<param name="toHelpX" value="143479" />
+					<param name="toHelpY" value="143890" />
+					<param name="toHelpZ" value="-11929" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="145081" y="143928" z="-11895" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="4" />
+					<param name="toHelpX" value="143479" />
+					<param name="toHelpY" value="143890" />
+					<param name="toHelpZ" value="-11929" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="145081" y="143928" z="-11895" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="4" />
+					<param name="toHelpX" value="143479" />
+					<param name="toHelpY" value="143890" />
+					<param name="toHelpZ" value="-11929" />
+					<param name="delay" value="3" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="innadril22_2422_03m4" spawnByDefault="false">
+			<territories>
+				<territory name="innadril22_2422_03" minZ="-12075" maxZ="-11475">
+					<node x="144624" y="143212" />
+					<node x="145621" y="143212" />
+					<node x="145625" y="144208" />
+					<node x="144625" y="144210" />
+				</territory>
+			</territories>
+			<npc id="23011" x="145095" y="143525" z="-11904" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="4" />
+					<param name="toHelpX" value="143281" />
+					<param name="toHelpY" value="143701" />
+					<param name="toHelpZ" value="-11902" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="145095" y="143525" z="-11904" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="4" />
+					<param name="toHelpX" value="143281" />
+					<param name="toHelpY" value="143701" />
+					<param name="toHelpZ" value="-11902" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="145095" y="143525" z="-11904" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="4" />
+					<param name="toHelpX" value="143281" />
+					<param name="toHelpY" value="143701" />
+					<param name="toHelpZ" value="-11902" />
+					<param name="delay" value="3" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="145081" y="143928" z="-11895" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="4" />
+					<param name="toHelpX" value="143479" />
+					<param name="toHelpY" value="143890" />
+					<param name="toHelpZ" value="-11929" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="145081" y="143928" z="-11895" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="4" />
+					<param name="toHelpX" value="143479" />
+					<param name="toHelpY" value="143890" />
+					<param name="toHelpZ" value="-11929" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="145081" y="143928" z="-11895" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="4" />
+					<param name="toHelpX" value="143479" />
+					<param name="toHelpY" value="143890" />
+					<param name="toHelpZ" value="-11929" />
+					<param name="delay" value="3" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="innadril22_2422_04m2" spawnByDefault="false">
+			<territories>
+				<territory name="innadril22_2422_04" minZ="-12432" maxZ="-12032">
+					<node x="149692" y="147041" />
+					<node x="149474" y="147310" />
+					<node x="147631" y="146908" />
+					<node x="144664" y="144344" />
+					<node x="144548" y="143282" />
+					<node x="147067" y="142462" />
+					<node x="147067" y="142462" />
+					<node x="147067" y="142462" />
+					<node x="148653" y="142138" />
+					<node x="149109" y="142388" />
+					<node x="149689" y="143818" />
+				</territory>
+			</territories>
+			<npc id="23011" x="146981" y="142728" z="-12144" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="5" />
+					<param name="toHelpX" value="145095" />
+					<param name="toHelpY" value="143525" />
+					<param name="toHelpZ" value="-11904" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="146981" y="142728" z="-12144" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="5" />
+					<param name="toHelpX" value="145095" />
+					<param name="toHelpY" value="143525" />
+					<param name="toHelpZ" value="-11904" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="146981" y="142728" z="-12144" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="5" />
+					<param name="toHelpX" value="145095" />
+					<param name="toHelpY" value="143525" />
+					<param name="toHelpZ" value="-11904" />
+					<param name="delay" value="3" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="147008" y="142929" z="-12145" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="5" />
+					<param name="toHelpX" value="145081" />
+					<param name="toHelpY" value="143928" />
+					<param name="toHelpZ" value="-11895" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="147008" y="142929" z="-12145" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="5" />
+					<param name="toHelpX" value="145081" />
+					<param name="toHelpY" value="143928" />
+					<param name="toHelpZ" value="-11895" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="147008" y="142929" z="-12145" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="5" />
+					<param name="toHelpX" value="145081" />
+					<param name="toHelpY" value="143928" />
+					<param name="toHelpZ" value="-11895" />
+					<param name="delay" value="3" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="innadril22_2422_04m3" spawnByDefault="false">
+			<territories>
+				<territory name="innadril22_2422_04" minZ="-12432" maxZ="-12032">
+					<node x="149692" y="147041" />
+					<node x="149474" y="147310" />
+					<node x="147631" y="146908" />
+					<node x="144664" y="144344" />
+					<node x="144548" y="143282" />
+					<node x="147067" y="142462" />
+					<node x="147067" y="142462" />
+					<node x="147067" y="142462" />
+					<node x="148653" y="142138" />
+					<node x="149109" y="142388" />
+					<node x="149689" y="143818" />
+				</territory>
+			</territories>
+			<npc id="23011" x="146981" y="142728" z="-12144" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="5" />
+					<param name="toHelpX" value="145095" />
+					<param name="toHelpY" value="143525" />
+					<param name="toHelpZ" value="-11904" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="146981" y="142728" z="-12144" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="5" />
+					<param name="toHelpX" value="145095" />
+					<param name="toHelpY" value="143525" />
+					<param name="toHelpZ" value="-11904" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="146981" y="142728" z="-12144" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="5" />
+					<param name="toHelpX" value="145095" />
+					<param name="toHelpY" value="143525" />
+					<param name="toHelpZ" value="-11904" />
+					<param name="delay" value="3" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="147008" y="142929" z="-12145" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="5" />
+					<param name="toHelpX" value="145081" />
+					<param name="toHelpY" value="143928" />
+					<param name="toHelpZ" value="-11895" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="147008" y="142929" z="-12145" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="5" />
+					<param name="toHelpX" value="145081" />
+					<param name="toHelpY" value="143928" />
+					<param name="toHelpZ" value="-11895" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="147008" y="142929" z="-12145" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="5" />
+					<param name="toHelpX" value="145081" />
+					<param name="toHelpY" value="143928" />
+					<param name="toHelpZ" value="-11895" />
+					<param name="delay" value="3" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="innadril22_2422_04m4" spawnByDefault="false">
+			<territories>
+				<territory name="innadril22_2422_04" minZ="-12432" maxZ="-12032">
+					<node x="149692" y="147041" />
+					<node x="149474" y="147310" />
+					<node x="147631" y="146908" />
+					<node x="144664" y="144344" />
+					<node x="144548" y="143282" />
+					<node x="147067" y="142462" />
+					<node x="147067" y="142462" />
+					<node x="147067" y="142462" />
+					<node x="148653" y="142138" />
+					<node x="149109" y="142388" />
+					<node x="149689" y="143818" />
+				</territory>
+			</territories>
+			<npc id="23011" x="146981" y="142728" z="-12144" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="5" />
+					<param name="toHelpX" value="145095" />
+					<param name="toHelpY" value="143525" />
+					<param name="toHelpZ" value="-11904" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="146981" y="142728" z="-12144" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="5" />
+					<param name="toHelpX" value="145095" />
+					<param name="toHelpY" value="143525" />
+					<param name="toHelpZ" value="-11904" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="146981" y="142728" z="-12144" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="5" />
+					<param name="toHelpX" value="145095" />
+					<param name="toHelpY" value="143525" />
+					<param name="toHelpZ" value="-11904" />
+					<param name="delay" value="3" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="147008" y="142929" z="-12145" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="5" />
+					<param name="toHelpX" value="145081" />
+					<param name="toHelpY" value="143928" />
+					<param name="toHelpZ" value="-11895" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="147008" y="142929" z="-12145" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="5" />
+					<param name="toHelpX" value="145081" />
+					<param name="toHelpY" value="143928" />
+					<param name="toHelpZ" value="-11895" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="147008" y="142929" z="-12145" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="5" />
+					<param name="toHelpX" value="145081" />
+					<param name="toHelpY" value="143928" />
+					<param name="toHelpZ" value="-11895" />
+					<param name="delay" value="3" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="innadril22_2422_04m6" spawnByDefault="false">
+			<territories>
+				<territory name="innadril22_2422_04" minZ="-12432" maxZ="-12032">
+					<node x="149692" y="147041" />
+					<node x="149474" y="147310" />
+					<node x="147631" y="146908" />
+					<node x="144664" y="144344" />
+					<node x="144548" y="143282" />
+					<node x="147067" y="142462" />
+					<node x="147067" y="142462" />
+					<node x="147067" y="142462" />
+					<node x="148653" y="142138" />
+					<node x="149109" y="142388" />
+					<node x="149689" y="143818" />
+				</territory>
+			</territories>
+			<npc id="23011" x="147028" y="144677" z="-12154" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="6" />
+					<param name="toHelpX" value="145095" />
+					<param name="toHelpY" value="143525" />
+					<param name="toHelpZ" value="-11904" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="147028" y="144677" z="-12154" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="6" />
+					<param name="toHelpX" value="145095" />
+					<param name="toHelpY" value="143525" />
+					<param name="toHelpZ" value="-11904" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="147028" y="144677" z="-12154" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="6" />
+					<param name="toHelpX" value="145095" />
+					<param name="toHelpY" value="143525" />
+					<param name="toHelpZ" value="-11904" />
+					<param name="delay" value="3" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="147020" y="144878" z="-12154" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="6" />
+					<param name="toHelpX" value="145081" />
+					<param name="toHelpY" value="143928" />
+					<param name="toHelpZ" value="-11895" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="147020" y="144878" z="-12154" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="6" />
+					<param name="toHelpX" value="145081" />
+					<param name="toHelpY" value="143928" />
+					<param name="toHelpZ" value="-11895" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="147020" y="144878" z="-12154" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="6" />
+					<param name="toHelpX" value="145081" />
+					<param name="toHelpY" value="143928" />
+					<param name="toHelpZ" value="-11895" />
+					<param name="delay" value="3" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="innadril22_2422_04m7" spawnByDefault="false">
+			<territories>
+				<territory name="innadril22_2422_04" minZ="-12432" maxZ="-12032">
+					<node x="149692" y="147041" />
+					<node x="149474" y="147310" />
+					<node x="147631" y="146908" />
+					<node x="144664" y="144344" />
+					<node x="144548" y="143282" />
+					<node x="147067" y="142462" />
+					<node x="147067" y="142462" />
+					<node x="147067" y="142462" />
+					<node x="148653" y="142138" />
+					<node x="149109" y="142388" />
+					<node x="149689" y="143818" />
+				</territory>
+			</territories>
+			<npc id="23011" x="147028" y="144677" z="-12154" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="6" />
+					<param name="toHelpX" value="145095" />
+					<param name="toHelpY" value="143525" />
+					<param name="toHelpZ" value="-11904" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="147028" y="144677" z="-12154" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="6" />
+					<param name="toHelpX" value="145095" />
+					<param name="toHelpY" value="143525" />
+					<param name="toHelpZ" value="-11904" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="147028" y="144677" z="-12154" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="6" />
+					<param name="toHelpX" value="145095" />
+					<param name="toHelpY" value="143525" />
+					<param name="toHelpZ" value="-11904" />
+					<param name="delay" value="3" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="147020" y="144878" z="-12154" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="6" />
+					<param name="toHelpX" value="145081" />
+					<param name="toHelpY" value="143928" />
+					<param name="toHelpZ" value="-11895" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="147020" y="144878" z="-12154" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="6" />
+					<param name="toHelpX" value="145081" />
+					<param name="toHelpY" value="143928" />
+					<param name="toHelpZ" value="-11895" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="147020" y="144878" z="-12154" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="6" />
+					<param name="toHelpX" value="145081" />
+					<param name="toHelpY" value="143928" />
+					<param name="toHelpZ" value="-11895" />
+					<param name="delay" value="3" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="innadril22_2422_04m8" spawnByDefault="false">
+			<territories>
+				<territory name="innadril22_2422_04" minZ="-12432" maxZ="-12032">
+					<node x="149692" y="147041" />
+					<node x="149474" y="147310" />
+					<node x="147631" y="146908" />
+					<node x="144664" y="144344" />
+					<node x="144548" y="143282" />
+					<node x="147067" y="142462" />
+					<node x="147067" y="142462" />
+					<node x="147067" y="142462" />
+					<node x="148653" y="142138" />
+					<node x="149109" y="142388" />
+					<node x="149689" y="143818" />
+				</territory>
+			</territories>
+			<npc id="23011" x="147028" y="144677" z="-12154" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="6" />
+					<param name="toHelpX" value="145095" />
+					<param name="toHelpY" value="143525" />
+					<param name="toHelpZ" value="-11904" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="147028" y="144677" z="-12154" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="6" />
+					<param name="toHelpX" value="145095" />
+					<param name="toHelpY" value="143525" />
+					<param name="toHelpZ" value="-11904" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="147028" y="144677" z="-12154" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="6" />
+					<param name="toHelpX" value="145095" />
+					<param name="toHelpY" value="143525" />
+					<param name="toHelpZ" value="-11904" />
+					<param name="delay" value="3" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="147020" y="144878" z="-12154" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="6" />
+					<param name="toHelpX" value="145081" />
+					<param name="toHelpY" value="143928" />
+					<param name="toHelpZ" value="-11895" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="147020" y="144878" z="-12154" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="6" />
+					<param name="toHelpX" value="145081" />
+					<param name="toHelpY" value="143928" />
+					<param name="toHelpZ" value="-11895" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="147020" y="144878" z="-12154" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="6" />
+					<param name="toHelpX" value="145081" />
+					<param name="toHelpY" value="143928" />
+					<param name="toHelpZ" value="-11895" />
+					<param name="delay" value="3" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="innadril22_2422_04m10" spawnByDefault="false">
+			<territories>
+				<territory name="innadril22_2422_04" minZ="-12432" maxZ="-12032">
+					<node x="149692" y="147041" />
+					<node x="149474" y="147310" />
+					<node x="147631" y="146908" />
+					<node x="144664" y="144344" />
+					<node x="144548" y="143282" />
+					<node x="147067" y="142462" />
+					<node x="147067" y="142462" />
+					<node x="147067" y="142462" />
+					<node x="148653" y="142138" />
+					<node x="149109" y="142388" />
+					<node x="149689" y="143818" />
+				</territory>
+			</territories>
+			<npc id="23011" x="148628" y="144530" z="-12220" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="7" />
+					<param name="toHelpX" value="146981" />
+					<param name="toHelpY" value="142728" />
+					<param name="toHelpZ" value="-12144" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="148628" y="144530" z="-12220" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="7" />
+					<param name="toHelpX" value="146981" />
+					<param name="toHelpY" value="142728" />
+					<param name="toHelpZ" value="-12144" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="148628" y="144530" z="-12220" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="7" />
+					<param name="toHelpX" value="146981" />
+					<param name="toHelpY" value="142728" />
+					<param name="toHelpZ" value="-12144" />
+					<param name="delay" value="3" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="148282" y="144887" z="-12191" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="7" />
+					<param name="toHelpX" value="147020" />
+					<param name="toHelpY" value="144878" />
+					<param name="toHelpZ" value="-12154" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="148282" y="144887" z="-12191" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="7" />
+					<param name="toHelpX" value="147020" />
+					<param name="toHelpY" value="144878" />
+					<param name="toHelpZ" value="-12154" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="148282" y="144887" z="-12191" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="7" />
+					<param name="toHelpX" value="147020" />
+					<param name="toHelpY" value="144878" />
+					<param name="toHelpZ" value="-12154" />
+					<param name="delay" value="3" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="innadril22_2422_04m11" spawnByDefault="false">
+			<territories>
+				<territory name="innadril22_2422_04" minZ="-12432" maxZ="-12032">
+					<node x="149692" y="147041" />
+					<node x="149474" y="147310" />
+					<node x="147631" y="146908" />
+					<node x="144664" y="144344" />
+					<node x="144548" y="143282" />
+					<node x="147067" y="142462" />
+					<node x="147067" y="142462" />
+					<node x="147067" y="142462" />
+					<node x="148653" y="142138" />
+					<node x="149109" y="142388" />
+					<node x="149689" y="143818" />
+				</territory>
+			</territories>
+			<npc id="23011" x="148628" y="144530" z="-12220" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="7" />
+					<param name="toHelpX" value="146981" />
+					<param name="toHelpY" value="142728" />
+					<param name="toHelpZ" value="-12144" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="148628" y="144530" z="-12220" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="7" />
+					<param name="toHelpX" value="146981" />
+					<param name="toHelpY" value="142728" />
+					<param name="toHelpZ" value="-12144" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="148628" y="144530" z="-12220" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="7" />
+					<param name="toHelpX" value="146981" />
+					<param name="toHelpY" value="142728" />
+					<param name="toHelpZ" value="-12144" />
+					<param name="delay" value="3" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="148282" y="144887" z="-12191" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="7" />
+					<param name="toHelpX" value="147020" />
+					<param name="toHelpY" value="144878" />
+					<param name="toHelpZ" value="-12154" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="148282" y="144887" z="-12191" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="7" />
+					<param name="toHelpX" value="147020" />
+					<param name="toHelpY" value="144878" />
+					<param name="toHelpZ" value="-12154" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="148282" y="144887" z="-12191" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="7" />
+					<param name="toHelpX" value="147020" />
+					<param name="toHelpY" value="144878" />
+					<param name="toHelpZ" value="-12154" />
+					<param name="delay" value="3" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="innadril22_2422_04m12" spawnByDefault="false">
+			<territories>
+				<territory name="innadril22_2422_04" minZ="-12432" maxZ="-12032">
+					<node x="149692" y="147041" />
+					<node x="149474" y="147310" />
+					<node x="147631" y="146908" />
+					<node x="144664" y="144344" />
+					<node x="144548" y="143282" />
+					<node x="147067" y="142462" />
+					<node x="147067" y="142462" />
+					<node x="147067" y="142462" />
+					<node x="148653" y="142138" />
+					<node x="149109" y="142388" />
+					<node x="149689" y="143818" />
+				</territory>
+			</territories>
+			<npc id="23011" x="148628" y="144530" z="-12220" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="7" />
+					<param name="toHelpX" value="146981" />
+					<param name="toHelpY" value="142728" />
+					<param name="toHelpZ" value="-12144" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="148628" y="144530" z="-12220" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="7" />
+					<param name="toHelpX" value="146981" />
+					<param name="toHelpY" value="142728" />
+					<param name="toHelpZ" value="-12144" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="148628" y="144530" z="-12220" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="7" />
+					<param name="toHelpX" value="146981" />
+					<param name="toHelpY" value="142728" />
+					<param name="toHelpZ" value="-12144" />
+					<param name="delay" value="3" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="148282" y="144887" z="-12191" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="7" />
+					<param name="toHelpX" value="147020" />
+					<param name="toHelpY" value="144878" />
+					<param name="toHelpZ" value="-12154" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="148282" y="144887" z="-12191" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="7" />
+					<param name="toHelpX" value="147020" />
+					<param name="toHelpY" value="144878" />
+					<param name="toHelpZ" value="-12154" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="148282" y="144887" z="-12191" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="7" />
+					<param name="toHelpX" value="147020" />
+					<param name="toHelpY" value="144878" />
+					<param name="toHelpZ" value="-12154" />
+					<param name="delay" value="3" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="innadril22_2422_04m14" spawnByDefault="false">
+			<territories>
+				<territory name="innadril22_2422_04" minZ="-12432" maxZ="-12032">
+					<node x="149692" y="147041" />
+					<node x="149474" y="147310" />
+					<node x="147631" y="146908" />
+					<node x="144664" y="144344" />
+					<node x="144548" y="143282" />
+					<node x="147067" y="142462" />
+					<node x="147067" y="142462" />
+					<node x="147067" y="142462" />
+					<node x="148653" y="142138" />
+					<node x="149109" y="142388" />
+					<node x="149689" y="143818" />
+				</territory>
+			</territories>
+			<npc id="23011" x="148750" y="146087" z="-12258" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="8" />
+					<param name="toHelpX" value="148628" />
+					<param name="toHelpY" value="144530" />
+					<param name="toHelpZ" value="-12220" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="148750" y="146087" z="-12258" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="8" />
+					<param name="toHelpX" value="148628" />
+					<param name="toHelpY" value="144530" />
+					<param name="toHelpZ" value="-12220" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="148552" y="146225" z="-12258" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="8" />
+					<param name="toHelpX" value="148282" />
+					<param name="toHelpY" value="144887" />
+					<param name="toHelpZ" value="-12191" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="148552" y="146225" z="-12258" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="8" />
+					<param name="toHelpX" value="148282" />
+					<param name="toHelpY" value="144887" />
+					<param name="toHelpZ" value="-12191" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="innadril22_2422_04m15" spawnByDefault="false">
+			<territories>
+				<territory name="innadril22_2422_04" minZ="-12432" maxZ="-12032">
+					<node x="149692" y="147041" />
+					<node x="149474" y="147310" />
+					<node x="147631" y="146908" />
+					<node x="144664" y="144344" />
+					<node x="144548" y="143282" />
+					<node x="147067" y="142462" />
+					<node x="147067" y="142462" />
+					<node x="147067" y="142462" />
+					<node x="148653" y="142138" />
+					<node x="149109" y="142388" />
+					<node x="149689" y="143818" />
+				</territory>
+			</territories>
+			<npc id="23011" x="148750" y="146087" z="-12258" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="8" />
+					<param name="toHelpX" value="148628" />
+					<param name="toHelpY" value="144530" />
+					<param name="toHelpZ" value="-12220" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="148750" y="146087" z="-12258" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="8" />
+					<param name="toHelpX" value="148628" />
+					<param name="toHelpY" value="144530" />
+					<param name="toHelpZ" value="-12220" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="148552" y="146225" z="-12258" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="8" />
+					<param name="toHelpX" value="148282" />
+					<param name="toHelpY" value="144887" />
+					<param name="toHelpZ" value="-12191" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="148552" y="146225" z="-12258" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="8" />
+					<param name="toHelpX" value="148282" />
+					<param name="toHelpY" value="144887" />
+					<param name="toHelpZ" value="-12191" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="innadril22_2422_04m16" spawnByDefault="false">
+			<territories>
+				<territory name="innadril22_2422_04" minZ="-12432" maxZ="-12032">
+					<node x="149692" y="147041" />
+					<node x="149474" y="147310" />
+					<node x="147631" y="146908" />
+					<node x="144664" y="144344" />
+					<node x="144548" y="143282" />
+					<node x="147067" y="142462" />
+					<node x="147067" y="142462" />
+					<node x="147067" y="142462" />
+					<node x="148653" y="142138" />
+					<node x="149109" y="142388" />
+					<node x="149689" y="143818" />
+				</territory>
+			</territories>
+			<npc id="23011" x="148750" y="146087" z="-12258" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="8" />
+					<param name="toHelpX" value="148628" />
+					<param name="toHelpY" value="144530" />
+					<param name="toHelpZ" value="-12220" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="148750" y="146087" z="-12258" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="8" />
+					<param name="toHelpX" value="148628" />
+					<param name="toHelpY" value="144530" />
+					<param name="toHelpZ" value="-12220" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="148552" y="146225" z="-12258" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="8" />
+					<param name="toHelpX" value="148282" />
+					<param name="toHelpY" value="144887" />
+					<param name="toHelpZ" value="-12191" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="148552" y="146225" z="-12258" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="8" />
+					<param name="toHelpX" value="148282" />
+					<param name="toHelpY" value="144887" />
+					<param name="toHelpZ" value="-12191" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="innadril22_2422_04m18" spawnByDefault="false">
+			<territories>
+				<territory name="innadril22_2422_04" minZ="-12432" maxZ="-12032">
+					<node x="149692" y="147041" />
+					<node x="149474" y="147310" />
+					<node x="147631" y="146908" />
+					<node x="144664" y="144344" />
+					<node x="144548" y="143282" />
+					<node x="147067" y="142462" />
+					<node x="147067" y="142462" />
+					<node x="147067" y="142462" />
+					<node x="148653" y="142138" />
+					<node x="149109" y="142388" />
+					<node x="149689" y="143818" />
+				</territory>
+			</territories>
+			<npc id="23011" x="149098" y="145875" z="-12258" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="9" />
+					<param name="toHelpX" value="148628" />
+					<param name="toHelpY" value="144530" />
+					<param name="toHelpZ" value="-12220" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="149098" y="145875" z="-12258" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="9" />
+					<param name="toHelpX" value="148628" />
+					<param name="toHelpY" value="144530" />
+					<param name="toHelpZ" value="-12220" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="148859" y="146019" z="-12258" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="9" />
+					<param name="toHelpX" value="148282" />
+					<param name="toHelpY" value="144887" />
+					<param name="toHelpZ" value="-12191" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="148859" y="146019" z="-12258" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="9" />
+					<param name="toHelpX" value="148282" />
+					<param name="toHelpY" value="144887" />
+					<param name="toHelpZ" value="-12191" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="innadril22_2422_04m19" spawnByDefault="false">
+			<territories>
+				<territory name="innadril22_2422_04" minZ="-12432" maxZ="-12032">
+					<node x="149692" y="147041" />
+					<node x="149474" y="147310" />
+					<node x="147631" y="146908" />
+					<node x="144664" y="144344" />
+					<node x="144548" y="143282" />
+					<node x="147067" y="142462" />
+					<node x="147067" y="142462" />
+					<node x="147067" y="142462" />
+					<node x="148653" y="142138" />
+					<node x="149109" y="142388" />
+					<node x="149689" y="143818" />
+				</territory>
+			</territories>
+			<npc id="23011" x="149098" y="145875" z="-12258" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="9" />
+					<param name="toHelpX" value="148628" />
+					<param name="toHelpY" value="144530" />
+					<param name="toHelpZ" value="-12220" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="149098" y="145875" z="-12258" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="9" />
+					<param name="toHelpX" value="148628" />
+					<param name="toHelpY" value="144530" />
+					<param name="toHelpZ" value="-12220" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="148859" y="146019" z="-12258" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="9" />
+					<param name="toHelpX" value="148282" />
+					<param name="toHelpY" value="144887" />
+					<param name="toHelpZ" value="-12191" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="148859" y="146019" z="-12258" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="9" />
+					<param name="toHelpX" value="148282" />
+					<param name="toHelpY" value="144887" />
+					<param name="toHelpZ" value="-12191" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="innadril22_2422_04m20" spawnByDefault="false">
+			<territories>
+				<territory name="innadril22_2422_04" minZ="-12432" maxZ="-12032">
+					<node x="149692" y="147041" />
+					<node x="149474" y="147310" />
+					<node x="147631" y="146908" />
+					<node x="144664" y="144344" />
+					<node x="144548" y="143282" />
+					<node x="147067" y="142462" />
+					<node x="147067" y="142462" />
+					<node x="147067" y="142462" />
+					<node x="148653" y="142138" />
+					<node x="149109" y="142388" />
+					<node x="149689" y="143818" />
+				</territory>
+			</territories>
+			<npc id="23011" x="149098" y="145875" z="-12258" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="9" />
+					<param name="toHelpX" value="148628" />
+					<param name="toHelpY" value="144530" />
+					<param name="toHelpZ" value="-12220" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="149098" y="145875" z="-12258" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="9" />
+					<param name="toHelpX" value="148628" />
+					<param name="toHelpY" value="144530" />
+					<param name="toHelpZ" value="-12220" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="148859" y="146019" z="-12258" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="9" />
+					<param name="toHelpX" value="148282" />
+					<param name="toHelpY" value="144887" />
+					<param name="toHelpZ" value="-12191" />
+					<param name="delay" value="1" />
+				</parameters>
+			</npc>
+			<npc id="23011" x="148859" y="146019" z="-12258" respawnTime="2min" count="1"> <!-- Square Attacker -->
+				<parameters>
+					<param name="base_id" value="9" />
+					<param name="toHelpX" value="148282" />
+					<param name="toHelpY" value="144887" />
+					<param name="toHelpZ" value="-12191" />
+					<param name="delay" value="2" />
+				</parameters>
+			</npc>
+		</group>
+	</spawnlist>
+</instance>

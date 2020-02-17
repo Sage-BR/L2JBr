@@ -1,0 +1,818 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="17300" toLevel="1" name="Shy Bounce">
+		<!-- For 2 h., SP gained +50%. -->
+		<icon>icon.skill_sing</icon>
+		<operateType>A2</operateType>
+		<isMagic>4</isMagic>
+	</skill>
+	<skill id="17301" toLevel="1" name="Lively Bounce">
+		<!-- For 2 h., Acquired XP +50%. -->
+		<icon>icon.skill_sing</icon>
+		<operateType>A2</operateType>
+		<isMagic>4</isMagic>
+	</skill>
+	<skill id="17302" toLevel="1" name="Spirited Bounce">
+		<!-- For 2 h., Stun/ Paralysis/ Mental/ Knock Back/ Knock Down/ Aerial Yoke attack and defense bonus +50. Deleted when entering the Olympiad or Ceremony of Chaos. -->
+		<icon>icon.skill_sing</icon>
+		<operateType>A2</operateType>
+		<isMagic>4</isMagic>
+	</skill>
+	<skill id="17303" toLevel="1" name="Prevailing Sonata - Enhanced Cocktail">
+		<!-- For 1 h., Max HP +30%, P. Atk. +25%, M. Atk. +30%, and magic cancel rate -40. A chance to add 8% Vampiric Rage effect. PA exclusive. -->
+		<icon>icon.etc_fruit_cocktail_i01</icon>
+		<operateType>A2</operateType>
+		<effectPoint>687</effectPoint>
+		<abnormalType>BUFF_SPECIAL_AURA</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<abnormalLvl>5</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="MaxHp">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DispelBySlotProbability">
+				<dispel>DANCE_OF_BLADESTORM;SONG_OF_CHAMPION;SONG_OF_EARTH;SONG_OF_HUNTER;SONG_OF_LIFE;SONG_OF_MEDITATION;SONG_OF_RENEWAL;SONG_OF_VENGEANCE;SONG_OF_VITALITY;SONG_OF_WARDING;SONG_OF_WATER;SONG_OF_WIND;DANCE_OF_BERSERKER;DANCE_OF_CONCENTRATION;DANCE_OF_FIRE;DANCE_OF_FURY;DANCE_OF_INSPIRATION;DANCE_OF_MYSTIC;DANCE_OF_SIREN;DANCE_OF_VAMPIRE;DANCE_OF_WARRIOR;SONG_OF_PURIFICATION;WISPERING_OF_BATTLE;SONG_OF_WINDSTORM;MOTION_OF_DEFENCE;BUFF_UNICORN_SERAPHIM;BUFF_QUEEN_OF_CAT;KNIGHT_AURA;DMG_SHIELD;AVOID_UP</dispel>
+				<rate>100</rate>
+			</effect>
+			<effect name="BlockAbnormalSlot">
+				<slot>DANCE_OF_BLADESTORM;SONG_OF_CHAMPION;SONG_OF_EARTH;SONG_OF_HUNTER;SONG_OF_LIFE;SONG_OF_MEDITATION;SONG_OF_RENEWAL;SONG_OF_VENGEANCE;SONG_OF_VITALITY;SONG_OF_WARDING;SONG_OF_WATER;SONG_OF_WIND;DANCE_OF_BERSERKER;DANCE_OF_CONCENTRATION;DANCE_OF_FIRE;DANCE_OF_FURY;DANCE_OF_INSPIRATION;DANCE_OF_MYSTIC;DANCE_OF_SIREN;DANCE_OF_VAMPIRE;DANCE_OF_WARRIOR;SONG_OF_PURIFICATION;WISPERING_OF_BATTLE;SONG_OF_WINDSTORM;MOTION_OF_DEFENCE;BUFF_UNICORN_SERAPHIM;BUFF_QUEEN_OF_CAT;KNIGHT_AURA;DMG_SHIELD;AVOID_UP</slot>
+			</effect>
+			<effect name="PAtk">
+				<amount>25</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MpRegen">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="ReduceCancel">
+				<amount>-53</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicMpCost">
+				<amount>-10</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+			<effect name="VampiricAttack">
+				<amount>9</amount>
+				<chance>30</chance>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17304" toLevel="1" name="Daring Sonata - Enhanced Cocktail">
+		<!-- For 1 h., increases Atk. Spd. +25%, Casting Spd. +25%, Speed +20, Damage Reflectionion +10%, and Skill Cooldown -10%. PA exclusive. -->
+		<icon>icon.etc_fruit_cocktail_i01</icon>
+		<operateType>A2</operateType>
+		<effectPoint>696</effectPoint>
+		<abnormalType>ENCHANTER_MOD</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<abnormalLvl>5</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="DispelBySlotProbability">
+				<dispel>DANCE_OF_BLADESTORM;SONG_OF_CHAMPION;SONG_OF_EARTH;SONG_OF_HUNTER;SONG_OF_LIFE;SONG_OF_MEDITATION;SONG_OF_RENEWAL;SONG_OF_VENGEANCE;SONG_OF_VITALITY;SONG_OF_WARDING;SONG_OF_WATER;SONG_OF_WIND;DANCE_OF_BERSERKER;DANCE_OF_CONCENTRATION;DANCE_OF_FIRE;DANCE_OF_FURY;DANCE_OF_INSPIRATION;DANCE_OF_MYSTIC;DANCE_OF_SIREN;DANCE_OF_VAMPIRE;DANCE_OF_WARRIOR;SONG_OF_PURIFICATION;WISPERING_OF_BATTLE;SONG_OF_WINDSTORM;MOTION_OF_DEFENCE;BUFF_UNICORN_SERAPHIM;BUFF_QUEEN_OF_CAT;KNIGHT_AURA;DMG_SHIELD;AVOID_UP</dispel>
+				<rate>100</rate>
+			</effect>
+			<effect name="BlockAbnormalSlot">
+				<slot>DANCE_OF_BLADESTORM;SONG_OF_CHAMPION;SONG_OF_EARTH;SONG_OF_HUNTER;SONG_OF_LIFE;SONG_OF_MEDITATION;SONG_OF_RENEWAL;SONG_OF_VENGEANCE;SONG_OF_VITALITY;SONG_OF_WARDING;SONG_OF_WATER;SONG_OF_WIND;DANCE_OF_BERSERKER;DANCE_OF_CONCENTRATION;DANCE_OF_FIRE;DANCE_OF_FURY;DANCE_OF_INSPIRATION;DANCE_OF_MYSTIC;DANCE_OF_SIREN;DANCE_OF_VAMPIRE;DANCE_OF_WARRIOR;SONG_OF_PURIFICATION;WISPERING_OF_BATTLE;SONG_OF_WINDSTORM;MOTION_OF_DEFENCE;BUFF_UNICORN_SERAPHIM;BUFF_QUEEN_OF_CAT;KNIGHT_AURA;DMG_SHIELD;AVOID_UP</slot>
+			</effect>
+			<effect name="Speed">
+				<amount>20</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicMpCost">
+				<amount>-10</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>25</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>25</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DamageShield">
+				<amount>10</amount>
+			</effect>
+			<effect name="Reuse">
+				<amount>-10</amount>
+				<mode>PER</mode>
+				<magicType>0</magicType>
+			</effect>
+			<effect name="Reuse">
+				<amount>-10</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17305" toLevel="1" name="Refreshing Sonata - Enhanced Cocktail">
+		<!-- For 1 h., HP Recovery +75%, MP Recovery +50%, P. Evasion/ M. Evasion +5, and Skill MP Consumption -20%. PA exclusive. -->
+		<icon>icon.etc_fruit_cocktail_i01</icon>
+		<operateType>A2</operateType>
+		<effectPoint>696</effectPoint>
+		<abnormalType>SYNERGY_IS</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<abnormalLvl>5</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="DispelBySlotProbability">
+				<dispel>DANCE_OF_BLADESTORM;SONG_OF_CHAMPION;SONG_OF_EARTH;SONG_OF_HUNTER;SONG_OF_LIFE;SONG_OF_MEDITATION;SONG_OF_RENEWAL;SONG_OF_VENGEANCE;SONG_OF_VITALITY;SONG_OF_WARDING;SONG_OF_WATER;SONG_OF_WIND;DANCE_OF_BERSERKER;DANCE_OF_CONCENTRATION;DANCE_OF_FIRE;DANCE_OF_FURY;DANCE_OF_INSPIRATION;DANCE_OF_MYSTIC;DANCE_OF_SIREN;DANCE_OF_VAMPIRE;DANCE_OF_WARRIOR;SONG_OF_PURIFICATION;WISPERING_OF_BATTLE;SONG_OF_WINDSTORM;MOTION_OF_DEFENCE;BUFF_UNICORN_SERAPHIM;BUFF_QUEEN_OF_CAT;KNIGHT_AURA;DMG_SHIELD;AVOID_UP</dispel>
+				<rate>100</rate>
+			</effect>
+			<effect name="BlockAbnormalSlot">
+				<slot>DANCE_OF_BLADESTORM;SONG_OF_CHAMPION;SONG_OF_EARTH;SONG_OF_HUNTER;SONG_OF_LIFE;SONG_OF_MEDITATION;SONG_OF_RENEWAL;SONG_OF_VENGEANCE;SONG_OF_VITALITY;SONG_OF_WARDING;SONG_OF_WATER;SONG_OF_WIND;DANCE_OF_BERSERKER;DANCE_OF_CONCENTRATION;DANCE_OF_FIRE;DANCE_OF_FURY;DANCE_OF_INSPIRATION;DANCE_OF_MYSTIC;DANCE_OF_SIREN;DANCE_OF_VAMPIRE;DANCE_OF_WARRIOR;SONG_OF_PURIFICATION;WISPERING_OF_BATTLE;SONG_OF_WINDSTORM;MOTION_OF_DEFENCE;BUFF_UNICORN_SERAPHIM;BUFF_QUEEN_OF_CAT;KNIGHT_AURA;DMG_SHIELD;AVOID_UP</slot>
+			</effect>
+			<effect name="PhysicalEvasion">
+				<amount>5</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicalEvasion">
+				<amount>5</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="HpRegen">
+				<amount>75</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MpRegen">
+				<amount>50</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicMpCost">
+				<amount>-20</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+			<effect name="MagicMpCost">
+				<amount>-20</amount>
+				<mode>PER</mode>
+				<magicType>0</magicType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17306" toLevel="1" name="Real Tor's Blessing">
+		<operateType>A1</operateType>
+		<effectPoint>1</effectPoint>
+		<isMagic>4</isMagic>
+	</skill>
+	<skill id="17307" toLevel="24" name="Real Tor's Blessing Stage 1">
+		<!-- Can acquire a Territory Card in $s1 h. Can acquire up to $s2 cards ($s3 stages total). Return to the Real Tor for a new buff when it disappears. <Note> Cannot acquire buff or card if you're dead at the time of distribution, or if your inventory is full. -->
+		<icon>icon.etc_cycle_point_i00</icon>
+		<operateType>A2</operateType>
+		<castRange>
+			<value level="1">900</value>
+			<value level="2">-1</value>
+			<value level="3">-1</value>
+			<value level="4">-1</value>
+			<value level="5">-1</value>
+			<value level="6">-1</value>
+			<value level="7">-1</value>
+			<value level="8">-1</value>
+			<value level="9">-1</value>
+			<value level="10">-1</value>
+			<value level="11">-1</value>
+			<value level="12">-1</value>
+			<value level="13">-1</value>
+			<value level="14">-1</value>
+			<value level="15">-1</value>
+			<value level="16">-1</value>
+			<value level="17">-1</value>
+			<value level="18">-1</value>
+			<value level="19">-1</value>
+			<value level="20">-1</value>
+			<value level="21">-1</value>
+			<value level="22">-1</value>
+			<value level="23">-1</value>
+			<value level="24">-1</value>
+		</castRange>
+		<effectPoint>1</effectPoint>
+		<isMagic>4</isMagic>
+	</skill>
+	<skill id="17308" toLevel="1" name="Destruction's Shadow">
+		<!-- For 30 min., attribute attack +50, attribute resistance +50. -->
+		<icon>icon.card_hero_red</icon>
+		<operateType>A2</operateType>
+		<reuseDelay>10000</reuseDelay>
+		<isMagic>4</isMagic>
+	</skill>
+	<skill id="17309" toLevel="1" name="Evolving Darkness">
+		<!-- For 30 min., attribute attack +50. -->
+		<icon>icon.card_devil_black</icon>
+		<operateType>A2</operateType>
+		<reuseDelay>10000</reuseDelay>
+		<isMagic>4</isMagic>
+	</skill>
+	<skill id="17310" toLevel="1" name="Sliver of Truth">
+		<!-- For 30 min., attribute resistance +50. -->
+		<icon>icon.card_angel_blue</icon>
+		<operateType>A2</operateType>
+		<reuseDelay>10000</reuseDelay>
+		<isMagic>4</isMagic>
+	</skill>
+	<skill id="17311" toLevel="1" name="Chaotic Ambush">
+		<!-- For 30 min., attribute attack +30, attribute resistance +30. -->
+		<icon>icon.card_dragon_gold</icon>
+		<operateType>A2</operateType>
+		<reuseDelay>10000</reuseDelay>
+		<isMagic>4</isMagic>
+	</skill>
+	<skill id="17312" toLevel="1" name="Real Tor's Blessing">
+		<operateType>A1</operateType>
+		<effectPoint>1</effectPoint>
+		<isMagic>4</isMagic>
+	</skill>
+	<skill id="17313" toLevel="24" name="Real Tor's Blessing Stage 1 (Premium)">
+		<!-- Can acquire a Territory Card in $s1 h. Can acquire up to $s2 cards ($s3 stages total). Return to the Real Tor for a new buff when it disappears. Has a chance of acquiring a different gift.<Note> Cannot acquire buff or card if you're dead at the time of distribution, or if your inventory is full. -->
+		<icon>icon.etc_cycle_point_i00</icon>
+		<operateType>A2</operateType>
+		<castRange>
+			<value level="1">900</value>
+			<value level="2">-1</value>
+			<value level="3">-1</value>
+			<value level="4">-1</value>
+			<value level="5">-1</value>
+			<value level="6">-1</value>
+			<value level="7">-1</value>
+			<value level="8">-1</value>
+			<value level="9">-1</value>
+			<value level="10">-1</value>
+			<value level="11">-1</value>
+			<value level="12">-1</value>
+			<value level="13">-1</value>
+			<value level="14">-1</value>
+			<value level="15">-1</value>
+			<value level="16">-1</value>
+			<value level="17">-1</value>
+			<value level="18">-1</value>
+			<value level="19">-1</value>
+			<value level="20">-1</value>
+			<value level="21">-1</value>
+			<value level="22">-1</value>
+			<value level="23">-1</value>
+			<value level="24">-1</value>
+		</castRange>
+		<effectPoint>1</effectPoint>
+		<isMagic>4</isMagic>
+	</skill>
+	<skill id="17314" toLevel="1" name="Territory Card Pouch: Demon">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17315" toLevel="1" name="Territory Card Pouch: Undead">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17316" toLevel="1" name="Territory Card Pouch: Monster">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17317" toLevel="1" name="Territory Card Pouch: Orc">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17318" toLevel="1" name="Leona's Cube">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17319" toLevel="1" name="Leona's Will">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17320" toLevel="1" name="Leona's Scroll: Buffs">
+		<!-- For 30 min., Acquired XP/ SP +30%, Max HP/ MP/ CP +30%, P. Def./ M. Def. +30%, Speed +20, P. Atk. +10%, M. Atk. +20%. Skill MP Consumption -15%. Cannot use with the Art of Seduction. Cooldown is 30 min. -->
+		<icon>icon.event_altair_enchant_scroll_i00</icon>
+		<operateType>A2</operateType>
+		<abnormalType>BR_EVENT_BUF1</abnormalType>
+		<abnormalLvl>5</abnormalLvl>
+		<abnormalTime>1800</abnormalTime>
+		<reuseDelay>1800000</reuseDelay>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>38099</itemConsumeId> <!-- Leona's Scroll: Buffs -->
+		<effectPoint>1</effectPoint>
+		<isMagic>4</isMagic>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="ExpModify">
+				<amount>30</amount>
+			</effect>
+			<effect name="SpModify">
+				<amount>30</amount>
+			</effect>
+			<effect name="MaxMp">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxCp">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Speed">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicMpCost">
+				<amount>-15</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17321" toLevel="1" name="Leona's Scroll: 1,000,000 SP">
+		<!-- Gives 1,000,000 SP. -->
+		<icon>icon.etc_sp_scroll1_i00</icon>
+		<operateType>A1</operateType>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>38101</itemConsumeId> <!-- Leona's Scroll: 1,000,000 SP -->
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="GiveSp">
+				<sp>1000000</sp>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17322" toLevel="1" name="Leona's Scroll: 5,000,000 SP">
+		<!-- Gives 5,000,000 SP. -->
+		<icon>icon.etc_sp_scroll2_i00</icon>
+		<operateType>A1</operateType>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>38102</itemConsumeId> <!-- Leona's Scroll: 5,000,000 SP -->
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="GiveSp">
+				<sp>5000000</sp>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17323" toLevel="1" name="Leona's Scroll: 10,000,000 SP">
+		<!-- Gives 10,000,000 SP. -->
+		<icon>icon.etc_sp_scroll3_i00</icon>
+		<operateType>A1</operateType>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>38103</itemConsumeId> <!-- Leona's Scroll: 10,000,000 SP -->
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="GiveSp">
+				<sp>10000000</sp>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17324" toLevel="1" name="Superior CP Potion">
+		<!-- Restores 1000 CP. -->
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="CpHeal">
+				<power>1000</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17325" toLevel="1" name="Leona's Cube (1-time)">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17326" toLevel="1" name="Small Green Mackerel">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17327" toLevel="1" name="Small Blue Mackerel">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17328" toLevel="1" name="Small Flatfish">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17329" toLevel="1" name="Small Rockfish">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17330" toLevel="1" name="Small Salmon">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17331" toLevel="1" name="Small Marlin">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17332" toLevel="1" name="Small Tuna">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17333" toLevel="1" name="Green Mackerel">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17334" toLevel="1" name="Blue Mackerel">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17335" toLevel="1" name="Flatfish">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17336" toLevel="1" name="Rockfish">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17337" toLevel="1" name="Salmon">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17338" toLevel="1" name="Marlin">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17339" toLevel="1" name="Tuna">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17340" toLevel="1" name="Large Green Mackerel">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17341" toLevel="1" name="Large Blue Mackerel">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17342" toLevel="1" name="Large Flatfish">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17343" toLevel="1" name="Large Rockfish">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17344" toLevel="1" name="Large Salmon">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17345" toLevel="1" name="Large Marlin">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17346" toLevel="1" name="Large Tuna">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17347" toLevel="1" name="Small Killifish">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17348" toLevel="1" name="Small Minnow">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17349" toLevel="1" name="Small Mandarin Fish">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17350" toLevel="1" name="Small Goldfish">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17351" toLevel="1" name="Small Eel">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17352" toLevel="1" name="Small Cat'sh">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17353" toLevel="1" name="Small Carp">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17354" toLevel="1" name="Killifish">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17355" toLevel="1" name="Minnow">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17356" toLevel="1" name="Mandarin Fish">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17357" toLevel="1" name="Goldfish">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17358" toLevel="1" name="Eel">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17359" toLevel="1" name="Cat'sh">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17360" toLevel="1" name="Carp">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17361" toLevel="1" name="Large Killifish">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17362" toLevel="1" name="Large Minnow">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17363" toLevel="1" name="Large Mandarin Fish">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17364" toLevel="1" name="Large Goldfish">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17365" toLevel="1" name="Large Eel">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17366" toLevel="1" name="Large Cat'sh">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17367" toLevel="1" name="Large Carp">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17368" toLevel="1" name="Whale">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17370" toLevel="1" name="Samurai Long Sword Appearance Stone">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17371" toLevel="1" name="Apprentice's Spellbook Appearance Stone">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17372" toLevel="1" name="Crystal Dagger Appearance Stone">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17373" toLevel="1" name="Hellblade Appearance Stone (30-day)">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17374" toLevel="1" name="Doll's Butcher Blades Appearance Stone (30-day)">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17375" toLevel="1" name="Tiat's Tiatenon Appearance Stone (30-day)">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17376" toLevel="1" name="Aenkinel's Astaroth Appearance Stone (30-day)">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17377" toLevel="1" name="Yehan Klanikus' Tirbing Appearance Stone (30-day)">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17378" toLevel="1" name="Mardil's Wind Appearance Stone (30-day)">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17379" toLevel="1" name="Hellblade Appearance Stone">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17380" toLevel="1" name="Doll's Butcher Blades Appearance Stone">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17381" toLevel="1" name="Tiat's Tiatenon Appearance Stone">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17382" toLevel="1" name="Aenkinel's Astaroth Appearance Stone">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17383" toLevel="1" name="Yehan Klanikus' Tirbing Appearance Stone">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17384" toLevel="1" name="Mardil's Wind Appearance Stone">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17385" toLevel="1" name="Normal Fishing Shot">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17386" toLevel="1" name="High-grade Fishing Shot">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="17387" toLevel="1" name="Fish Stew: WIT">
+		<!-- For 30 min./ WIT +3. Effect does not stack. Cooldown is 5 min. -->
+		<icon>icon.fish_stew_buff</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>1800</abnormalTime>
+		<abnormalType>INSTANT_EV_BUFF2</abnormalType>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<reuseDelay>300000</reuseDelay>
+		<isMagic>4</isMagic>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>38222</itemConsumeId>
+		<effects>
+			<effect name="StatUp">
+				<amount>3</amount>
+				<stat>WIT</stat>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17388" toLevel="1" name="Fish Stew: INT">
+		<!-- For 30 min./ INT +3. Effect does not stack. Cooldown is 5 min. -->
+		<icon>icon.fish_stew_buff</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>1800</abnormalTime>
+		<abnormalType>INSTANT_EV_BUFF2</abnormalType>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<reuseDelay>300000</reuseDelay>
+		<isMagic>4</isMagic>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>38223</itemConsumeId>
+		<effects>
+			<effect name="StatUp">
+				<amount>3</amount>
+				<stat>INT</stat>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17389" toLevel="1" name="Fish Stew: MEN">
+		<!-- For 30 min./ MEN +3. Effect does not stack. Cooldown is 5 min. -->
+		<icon>icon.fish_stew_buff</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>1800</abnormalTime>
+		<abnormalType>INSTANT_EV_BUFF2</abnormalType>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<reuseDelay>300000</reuseDelay>
+		<isMagic>4</isMagic>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>38224</itemConsumeId>
+		<effects>
+			<effect name="StatUp">
+				<amount>3</amount>
+				<stat>MEN</stat>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17390" toLevel="1" name="Fish Stew: DEX">
+		<!-- For 30 min./ DEX +3. Effect does not stack. Cooldown is 5 min. -->
+		<icon>icon.fish_stew_buff</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>1800</abnormalTime>
+		<abnormalType>INSTANT_EV_BUFF2</abnormalType>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<reuseDelay>300000</reuseDelay>
+		<isMagic>4</isMagic>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>38225</itemConsumeId>
+		<effects>
+			<effect name="StatUp">
+				<amount>3</amount>
+				<stat>DEX</stat>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17391" toLevel="1" name="Fish Stew: STR">
+		<!-- For 30 min./ STR +3. Effect does not stack. Cooldown is 5 min. -->
+		<icon>icon.fish_stew_buff</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>1800</abnormalTime>
+		<abnormalType>INSTANT_EV_BUFF2</abnormalType>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<reuseDelay>300000</reuseDelay>
+		<isMagic>4</isMagic>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>38226</itemConsumeId>
+		<effects>
+			<effect name="StatUp">
+				<amount>3</amount>
+				<stat>STR</stat>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17392" toLevel="1" name="Fish Stew: CON">
+		<!-- For 30 min./ CON +3. Effect does not stack. Cooldown is 5 min. -->
+		<icon>icon.fish_stew_buff</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>1800</abnormalTime>
+		<abnormalType>INSTANT_EV_BUFF2</abnormalType>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<reuseDelay>300000</reuseDelay>
+		<isMagic>4</isMagic>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>38227</itemConsumeId>
+		<effects>
+			<effect name="StatUp">
+				<amount>3</amount>
+				<stat>CON</stat>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17393" toLevel="1" name="Lady's Hairpin: STR">
+		<!-- STR +3. -->
+		<icon>icon.accessory_hairpin_i00</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="StatUp">
+				<stat>STR</stat>
+				<amount>3</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17394" toLevel="1" name="Lady's Hairpin: DEX">
+		<!-- DEX +3. -->
+		<icon>icon.accessory_hairpin_i00</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="StatUp">
+				<stat>DEX</stat>
+				<amount>3</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17395" toLevel="1" name="Lady's Hairpin: CON">
+		<!-- CON +3. -->
+		<icon>icon.accessory_hairpin_i00</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="StatUp">
+				<stat>CON</stat>
+				<amount>3</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17396" toLevel="1" name="Lady's Hairpin: MEN">
+		<!-- MEN +3. -->
+		<icon>icon.accessory_hairpin_i00</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="StatUp">
+				<stat>MEN</stat>
+				<amount>3</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17397" toLevel="1" name="Lady's Hairpin: INT">
+		<!-- INT +3. -->
+		<icon>icon.accessory_hairpin_i00</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="StatUp">
+				<stat>INT</stat>
+				<amount>3</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17398" toLevel="1" name="Lady's Hairpin: WIT">
+		<!-- WIT +3. -->
+		<icon>icon.accessory_hairpin_i00</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="StatUp">
+				<stat>WIT</stat>
+				<amount>3</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17399" toLevel="1" name="Lady's Hairpin: Critical Rate">
+		<!-- Critical Rate +50. -->
+		<icon>icon.accessory_hairpin_i00</icon>
+		<operateType>P</operateType>
+		<magicLvl>1</magicLvl>
+		<effects>
+			<effect name="CriticalRate">
+				<amount>50</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+</list>

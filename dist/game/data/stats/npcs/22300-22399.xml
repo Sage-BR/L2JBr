@@ -1,0 +1,1104 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/npcs.xsd">
+	<npc id="22300" level="82" type="Monster" name="Dolph's Subordinate">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="110" />
+			<param name="MoveAroundSocial1" value="110" />
+			<param name="MoveAroundSocial2" value="110" />
+			<param name="Party_Type" value="1" />
+			<param name="Party_Loyalty" value="1" />
+			<param name="Party_OneShot" value="50" />
+			<skill name="Skill01_ID" id="5303" level="4" />
+		</parameters>
+		<race>DEMONIC</race>
+		<sex>MALE</sex>
+		<acquire exp="62009" sp="14" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="10982" hpRegen="112.558039826218" mp="1743" mpRegen="3" />
+			<attack physical="6734.49667710476" magical="4598.788195986" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="559.639632" magical="614.28" />
+			<speed>
+				<walk ground="60" />
+				<run ground="210" />
+			</speed>
+			<hitTime>490</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="14" /> <!-- Strong M. Atk. -->
+			<skill id="4412" level="8" /> <!-- Weak P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="9" /> <!-- Demons -->
+			<skill id="5303" level="4" /> <!-- Bleed -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<ai clanHelpRange="500" aggroRange="450">
+			<clanList>
+				<clan>ORACLE</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="34" />
+			<height normal="35" />
+		</collision>
+	</npc>
+	<npc id="22301" level="82" type="Monster" name="Terod">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="0" />
+			<param name="MoveAroundSocial1" value="0" />
+			<param name="MoveAroundSocial2" value="0" />
+			<skill name="PhysicalSpecial" id="5283" level="4" />
+			<skill name="W_LongRangeDDMagic" id="5317" level="4" />
+			<skill name="debuff" id="5203" level="10" />
+		</parameters>
+		<race>UNDEAD</race>
+		<sex>MALE</sex>
+		<acquire exp="342560" sp="82" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="65802" hpRegen="112.40520021868" mp="1743" mpRegen="3" />
+			<attack physical="5571.87244121247" magical="3804.86656104545" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="559.639632" magical="614.28" />
+			<attribute>
+				<defence fire="50" water="100" wind="100" earth="100" holy="100" dark="100" default="50" />
+				<attack type="WATER" value="100" />
+			</attribute>
+			<speed>
+				<walk ground="80" />
+				<run ground="170" />
+			</speed>
+			<hitTime>560</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="3" /> <!-- Light Armor Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="1" /> <!-- Undead -->
+			<skill id="5203" level="10" /> <!-- Fear -->
+			<skill id="5283" level="4" /> <!-- NPC(party) - Physical Range Close Range Attack - Water -->
+			<skill id="5317" level="4" /> <!-- NPC(party) -Magic Range Long Range DD - Water -->
+			<skill id="5463" level="1" /> <!-- Water Attacks -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<ai clanHelpRange="700" aggroRange="450">
+			<clanList>
+				<clan>ORACLE</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="24" />
+			<height normal="50.4" />
+		</collision>
+	</npc>
+	<npc id="22302" level="82" type="Monster" name="Darnel's Guardian">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="0" />
+			<param name="MoveAroundSocial1" value="0" />
+			<param name="MoveAroundSocial2" value="0" />
+			<param name="IsAggressive" value="1" />
+			<param name="Aggressive_Time" value="0" />
+			<param name="MoveArounding" value="0" />
+			<param name="Skill01_Target" value="3" />
+			<param name="Skill01_AttackSplash" value="1" />
+			<param name="Skill01_Check_Dist" value="1" />
+			<param name="Skill01_Dist_Max" value="150" />
+			<param name="Skill02_AttackSplash" value="1" />
+			<param name="Skill02_Check_Dist" value="1" />
+			<param name="Skill02_Dist_Min" value="150" />
+			<skill name="Skill01_ID" id="5360" level="2" />
+			<skill name="Skill02_ID" id="5390" level="4" />
+			<skill name="Skill03_ID" id="4666" level="10" />
+		</parameters>
+		<race>FAIRY</race>
+		<sex>FEMALE</sex>
+		<acquire exp="328135" sp="78" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="44673" hpRegen="152.624194212594" mp="1743" mpRegen="3" />
+			<attack physical="8134.44098282343" magical="5929.5911226735" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="559.639632" magical="614.28" />
+			<attribute>
+				<defence fire="100" water="100" wind="100" earth="100" holy="50" dark="100" default="50" />
+				<attack type="DARK" value="100" />
+			</attribute>
+			<speed>
+				<walk ground="80" />
+				<run ground="150" />
+			</speed>
+			<hitTime>720</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="14" /> <!-- Strong M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="13" /> <!-- Fairies -->
+			<skill id="4666" level="10" /> <!-- NPC 100% HP Drain - Slow -->
+			<skill id="5360" level="2" /> <!-- NPC(party) - Physical Range Close Range Attack - Dark -->
+			<skill id="5390" level="4" /> <!-- NPC(party) -Magic Range Long Range DD - Holy -->
+			<skill id="5467" level="1" /> <!-- Dark Attacks -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<ai clanHelpRange="500" aggroRange="450">
+			<clanList>
+				<clan>ORACLE</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="10" />
+			<height normal="54" />
+		</collision>
+	</npc>
+	<npc id="22303" level="82" type="Monster" name="Guardian of the Square">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="80" />
+			<param name="MoveAroundSocial1" value="80" />
+			<param name="MoveAroundSocial2" value="100" />
+			<param name="IsAggressive" value="1" />
+			<param name="Aggressive_Time" value="0" />
+			<param name="MoveArounding" value="0" />
+			<skill name="Skill01_ID" id="5365" level="4" />
+			<skill name="Skill02_ID" id="5359" level="4" />
+		</parameters>
+		<race>ELEMENTAL</race>
+		<sex>FEMALE</sex>
+		<acquire exp="342208" sp="82" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="44673" hpRegen="152.624194212594" mp="1743" mpRegen="3" />
+			<attack physical="8134.44098282343" magical="5929.5911226735" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="559.639632" magical="614.28" />
+			<attribute>
+				<defence fire="100" water="100" wind="100" earth="100" holy="50" dark="100" default="50" />
+				<attack type="DARK" value="100" />
+			</attribute>
+			<speed>
+				<walk ground="30" />
+				<run ground="250" />
+			</speed>
+			<hitTime>430</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="14" /> <!-- Strong P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="7" /> <!-- Spirits -->
+			<skill id="5359" level="4" /> <!-- NPC(party) - Physical Single Long Range Attack - Dark -->
+			<skill id="5365" level="4" /> <!-- Paralysis -->
+			<skill id="5467" level="1" /> <!-- Dark Attacks -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<ai clanHelpRange="500" aggroRange="450">
+			<clanList>
+				<clan>ORACLE</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="16" />
+			<height normal="35.6" />
+		</collision>
+	</npc>
+	<npc id="22304" level="82" type="Monster" name="Guardian of the Emerald">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="0" />
+			<param name="MoveAroundSocial1" value="0" />
+			<param name="MoveAroundSocial2" value="0" />
+			<param name="IsAggressive" value="1" />
+			<param name="Aggressive_Time" value="0" />
+			<param name="MoveArounding" value="0" />
+			<skill name="Skill01_ID" id="5362" level="4" />
+			<skill name="Skill02_ID" id="5393" level="4" />
+		</parameters>
+		<race>ELEMENTAL</race>
+		<sex>MALE</sex>
+		<acquire exp="343659" sp="82" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="44673" hpRegen="152.624194212594" mp="1743" mpRegen="3" />
+			<attack physical="8134.44098282343" magical="5929.5911226735" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="559.639632" magical="614.28" />
+			<attribute>
+				<defence fire="100" water="100" wind="100" earth="100" holy="50" dark="100" default="50" />
+				<attack type="DARK" value="100" />
+			</attribute>
+			<speed>
+				<walk ground="35" />
+				<run ground="200" />
+			</speed>
+			<hitTime>710</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="14" /> <!-- Strong M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="7" /> <!-- Spirits -->
+			<skill id="5362" level="4" /> <!-- Stun -->
+			<skill id="5393" level="4" /> <!-- NPC MP Burn -->
+			<skill id="5467" level="1" /> <!-- Dark Attacks -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<ai clanHelpRange="500" aggroRange="450">
+			<clanList>
+				<clan>ORACLE</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="13" />
+			<height normal="26" />
+		</collision>
+	</npc>
+	<npc id="22305" level="82" type="Monster" name="Kechi's Guard Captain">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="40" />
+			<param name="MoveAroundSocial1" value="40" />
+			<param name="MoveAroundSocial2" value="40" />
+			<minions name="Privates">
+				<npc id="22308" count="1" respawnTime="0" weightPoint="1" />
+			</minions>
+			<param name="IsAggressive" value="1" />
+			<param name="Aggressive_Time" value="0" />
+			<param name="MoveArounding" value="0" />
+			<param name="Party_Type" value="2" />
+			<param name="Party_Loyalty" value="0" />
+			<param name="Party_OneShot" value="50" />
+			<skill name="Skill01_ID" id="5273" level="3" />
+		</parameters>
+		<race>CONSTRUCT</race>
+		<sex>MALE</sex>
+		<acquire exp="62370" sp="14" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="10982" hpRegen="112.558039826218" mp="1743" mpRegen="3" />
+			<attack physical="6734.49667710476" magical="4598.788195986" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="559.639632" magical="614.28" />
+			<attribute>
+				<attack type="FIRE" value="100" />
+				<defence fire="100" water="50" wind="100" earth="100" holy="100" dark="100" default="50" />
+			</attribute>
+			<speed>
+				<walk ground="70" />
+				<run ground="150" />
+			</speed>
+			<hitTime>410</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="2" /> <!-- Magic Creatures -->
+			<skill id="5273" level="3" /> <!-- NPC(party) - Physical Single Close Range Attack -->
+			<skill id="5462" level="1" /> <!-- Fire Attacks -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<ai clanHelpRange="500" aggroRange="450">
+			<clanList>
+				<clan>ORACLE</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="16" />
+			<height normal="36" />
+		</collision>
+	</npc>
+	<npc id="22306" level="82" type="Monster" name="Kechi's Guard Captain">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="135" />
+			<param name="MoveAroundSocial1" value="135" />
+			<param name="MoveAroundSocial2" value="135" />
+			<minions name="Privates">
+				<npc id="22308" count="2" respawnTime="0" weightPoint="1" />
+				<npc id="22309" count="2" respawnTime="0" weightPoint="1" />
+			</minions>
+			<param name="IsAggressive" value="1" />
+			<param name="Aggressive_Time" value="0" />
+			<param name="AttackRange" value="2" />
+			<param name="MoveArounding" value="0" />
+			<param name="Party_Type" value="2" />
+			<param name="Party_Loyalty" value="0" />
+			<param name="Party_OneShot" value="50" />
+			<param name="Skill01_Check_Dist" value="1" />
+			<param name="Skill01_Dist_Min" value="150" />
+			<param name="Skill01_MainAttack" value="1" />
+			<param name="Skill02_Target" value="3" />
+			<param name="Skill02_AttackSplash" value="1" />
+			<param name="Skill02_Check_Dist" value="1" />
+			<param name="Skill02_Dist_Max" value="150" />
+			<skill name="Skill01_ID" id="5312" level="4" />
+			<skill name="Skill02_ID" id="5314" level="4" />
+		</parameters>
+		<race>CONSTRUCT</race>
+		<sex>MALE</sex>
+		<acquire exp="158527" sp="38" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="10982" hpRegen="112.558039826218" mp="1743" mpRegen="3" />
+			<attack physical="6734.49667710476" magical="4598.788195986" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="559.639632" magical="614.28" />
+			<attribute>
+				<attack type="FIRE" value="100" />
+				<defence fire="100" water="50" wind="100" earth="100" holy="100" dark="100" default="50" />
+			</attribute>
+			<speed>
+				<walk ground="13" />
+				<run ground="60" />
+			</speed>
+			<hitTime>470</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4408" level="11" /> <!-- HP Increase (3x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="3" /> <!-- Light Armor Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="2" /> <!-- Magic Creatures -->
+			<skill id="5312" level="4" /> <!-- NPC(party) -Magic Single Long Range DD - Fire -->
+			<skill id="5314" level="4" /> <!-- NPC(party) -Magic Range Close Range DD - Fire -->
+			<skill id="5462" level="1" /> <!-- Fire Attacks -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<sNpcPropHpRate>3</sNpcPropHpRate>
+		<ai clanHelpRange="500" aggroRange="450">
+			<clanList>
+				<clan>ORACLE</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="38" />
+			<height normal="45" />
+		</collision>
+	</npc>
+	<npc id="22307" level="82" type="Monster" name="Kechi's Guard Captain">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="80" />
+			<param name="MoveAroundSocial1" value="80" />
+			<param name="MoveAroundSocial2" value="116" />
+			<minions name="Privates">
+				<npc id="22308" count="1" respawnTime="0" weightPoint="1" />
+				<npc id="22309" count="2" respawnTime="0" weightPoint="1" />
+				<npc id="22310" count="1" respawnTime="0" weightPoint="1" />
+			</minions>
+			<param name="IsAggressive" value="1" />
+			<param name="Aggressive_Time" value="0" />
+			<param name="MoveArounding" value="0" />
+			<param name="Party_Type" value="2" />
+			<param name="Party_Loyalty" value="0" />
+			<param name="Party_OneShot" value="50" />
+			<param name="Skill01_Target" value="3" />
+			<param name="Skill01_AttackSplash" value="1" />
+			<param name="Skill01_Check_Dist" value="1" />
+			<param name="Skill01_Dist_Max" value="150" />
+			<skill name="Skill01_ID" id="5340" level="3" />
+		</parameters>
+		<race>CONSTRUCT</race>
+		<sex>MALE</sex>
+		<acquire exp="343664" sp="82" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="32946" hpRegen="112.558039826218" mp="1743" mpRegen="3" />
+			<attack physical="5793.32235492338" magical="3956.08814418738" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
+			<defence physical="559.639632" magical="614.28" />
+			<attribute>
+				<attack type="FIRE" value="100" />
+				<defence fire="100" water="50" wind="100" earth="100" holy="100" dark="100" default="50" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="200" />
+			</speed>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4408" level="10" /> <!-- HP Increase (2x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="13" /> <!-- Slightly Strong P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="1" /> <!-- Heavy Armor Type -->
+			<skill id="4415" level="5" /> <!-- Blunt Weapons -->
+			<skill id="4416" level="2" /> <!-- Magic Creatures -->
+			<skill id="4444" level="1" /> <!-- Higher Resist Bow/Crossbow Weapons -->
+			<skill id="5340" level="3" /> <!-- NPC(party) - Physical Range Close Range Attack - Fire -->
+			<skill id="5462" level="1" /> <!-- Fire Attacks -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<sNpcPropHpRate>2</sNpcPropHpRate>
+		<ai clanHelpRange="500" aggroRange="450">
+			<clanList>
+				<clan>ORACLE</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="35" />
+			<height normal="46.3765" />
+		</collision>
+	</npc>
+	<npc id="22308" level="82" type="Monster" name="Kechi's Guard">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="0" />
+			<param name="MoveAroundSocial1" value="0" />
+			<param name="MoveAroundSocial2" value="0" />
+			<param name="MoveArounding" value="0" />
+			<param name="Party_Type" value="1" />
+			<param name="Party_Loyalty" value="1" />
+			<param name="Party_OneShot" value="50" />
+			<param name="Skill01_Target" value="3" />
+			<param name="Skill01_AttackSplash" value="1" />
+			<param name="Skill01_Check_Dist" value="1" />
+			<param name="Skill01_Dist_Max" value="150" />
+			<skill name="Skill01_ID" id="4614" level="10" />
+		</parameters>
+		<race>CONSTRUCT</race>
+		<sex>MALE</sex>
+		<acquire exp="54703" sp="13" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="3643" hpRegen="8.5" mp="1743" mpRegen="3" />
+			<attack physical="1055.28566004965" magical="720.623302603812" random="5" critical="4" accuracy="5" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="349.77477" magical="255.95" />
+			<attribute>
+				<attack type="FIRE" value="100" />
+				<defence fire="100" water="50" wind="100" earth="100" holy="100" dark="100" default="50" />
+			</attribute>
+			<speed>
+				<walk ground="90" />
+				<run ground="110" />
+			</speed>
+			<hitTime>390</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4408" level="12" /> <!-- HP Increase (4x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="3" /> <!-- Light Armor Type -->
+			<skill id="4415" level="1" /> <!-- Bare Hands -->
+			<skill id="4416" level="2" /> <!-- Magic Creatures -->
+			<skill id="4614" level="10" /> <!-- NPC Death Bomb -->
+			<skill id="5462" level="1" /> <!-- Fire Attacks -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<sNpcPropHpRate>4</sNpcPropHpRate>
+		<ai clanHelpRange="500" aggroRange="450">
+			<clanList>
+				<clan>ORACLE</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="11" />
+			<height normal="27" />
+		</collision>
+	</npc>
+	<npc id="22309" level="82" type="Monster" name="Kechi's Guard">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="90" />
+			<param name="MoveAroundSocial1" value="90" />
+			<param name="MoveAroundSocial2" value="90" />
+			<param name="MoveArounding" value="0" />
+			<param name="Party_Type" value="1" />
+			<param name="Party_Loyalty" value="1" />
+			<param name="Party_OneShot" value="50" />
+			<skill name="Skill01_ID" id="4572" level="10" />
+			<skill name="Skill02_ID" id="5301" level="3" />
+		</parameters>
+		<race>HUMANOID</race>
+		<sex>MALE</sex>
+		<equipment rhand="148" /> <!-- Sword of Valhalla -->
+		<acquire exp="76173" sp="18" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="3643" hpRegen="8.5" mp="1743" mpRegen="3" />
+			<attack physical="1055.28566004965" magical="720.623302603812" random="5" critical="4" accuracy="5" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="349.77477" magical="255.95" />
+			<attribute>
+				<attack type="FIRE" value="100" />
+				<defence fire="100" water="50" wind="100" earth="100" holy="100" dark="100" default="50" />
+			</attribute>
+			<speed>
+				<walk ground="25" />
+				<run ground="170" />
+			</speed>
+			<hitTime>740</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4085" level="1" /> <!-- Critical Damage -->
+			<skill id="4408" level="14" /> <!-- HP Increase (6x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="14" /> <!-- Strong P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="1" /> <!-- Heavy Armor Type -->
+			<skill id="4415" level="1" /> <!-- Bare Hands -->
+			<skill id="4416" level="6" /> <!-- Humanoids -->
+			<skill id="4572" level="10" /> <!-- NPC Triple Sonic Slash -->
+			<skill id="5301" level="3" /> <!-- Stun -->
+			<skill id="5462" level="1" /> <!-- Fire Attacks -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<sNpcPropHpRate>6</sNpcPropHpRate>
+		<ai clanHelpRange="500" aggroRange="450">
+			<clanList>
+				<clan>ORACLE</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="15" />
+			<height normal="38" />
+		</collision>
+	</npc>
+	<npc id="22310" level="82" type="Monster" name="Kechi's Guard">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="0" />
+			<param name="MoveAroundSocial1" value="0" />
+			<param name="MoveAroundSocial2" value="0" />
+			<param name="AttackRange" value="2" />
+			<param name="MoveArounding" value="0" />
+			<param name="Party_Type" value="1" />
+			<param name="Party_Loyalty" value="1" />
+			<param name="Party_OneShot" value="50" />
+			<param name="Skill01_Check_Dist" value="1" />
+			<param name="Skill01_Dist_Min" value="150" />
+			<param name="Skill01_MainAttack" value="1" />
+			<param name="Skill02_Check_Dist" value="1" />
+			<param name="Skill02_Dist_Max" value="150" />
+			<skill name="Skill01_ID" id="4157" level="10" />
+			<skill name="Skill02_ID" id="4561" level="10" />
+		</parameters>
+		<race>DEMONIC</race>
+		<sex>MALE</sex>
+		<acquire exp="71823" sp="17" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="3643" hpRegen="8.5" mp="1743" mpRegen="3" />
+			<attack physical="1055.28566004965" magical="720.623302603812" random="5" critical="4" accuracy="5" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="349.77477" magical="255.95" />
+			<attribute>
+				<attack type="FIRE" value="100" />
+				<defence fire="100" water="50" wind="100" earth="100" holy="100" dark="100" default="50" />
+			</attribute>
+			<speed>
+				<walk ground="30" />
+				<run ground="200" />
+			</speed>
+			<hitTime>430</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4157" level="10" /> <!-- NPC Blaze - Magic -->
+			<skill id="4408" level="14" /> <!-- HP Increase (6x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="14" /> <!-- Strong M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="1" /> <!-- Bare Hands -->
+			<skill id="4416" level="9" /> <!-- Demons -->
+			<skill id="4439" level="5" /> <!-- Greater Resist Hold -->
+			<skill id="4443" level="1" /> <!-- Greater Resist Blunt Weapons -->
+			<skill id="4444" level="1" /> <!-- Higher Resist Bow/Crossbow Weapons -->
+			<skill id="4561" level="10" /> <!-- NPC Fire Burn - Magic -->
+			<skill id="5462" level="1" /> <!-- Fire Attacks -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<sNpcPropHpRate>6</sNpcPropHpRate>
+		<ai clanHelpRange="500" aggroRange="450">
+			<clanList>
+				<clan>ORACLE</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="23" />
+			<height normal="52" />
+		</collision>
+	</npc>
+	<npc id="22311" level="83" type="Monster" name="Parme's Guardian">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="40" />
+			<param name="MoveAroundSocial1" value="40" />
+			<param name="MoveAroundSocial2" value="40" />
+			<param name="IsAggressive" value="1" />
+			<param name="Aggressive_Time" value="0" />
+			<param name="AttackRange" value="2" />
+			<param name="MoveArounding" value="0" />
+			<param name="Skill01_AttackSplash" value="1" />
+			<param name="Skill01_Check_Dist" value="1" />
+			<param name="Skill01_Dist_Min" value="150" />
+			<param name="Skill01_MainAttack" value="1" />
+			<param name="Skill02_Target" value="3" />
+			<param name="Skill02_AttackSplash" value="1" />
+			<param name="Skill02_Check_Dist" value="1" />
+			<param name="Skill02_Dist_Max" value="150" />
+			<skill name="Skill01_ID" id="5317" level="4" />
+			<skill name="Skill02_ID" id="5318" level="4" />
+		</parameters>
+		<race>BUG</race>
+		<sex>FEMALE</sex>
+		<acquire exp="324426" sp="77" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="32829" hpRegen="111.50705124295" mp="1777" mpRegen="3" />
+			<attack physical="5815.28895362847" magical="3971.08850697278" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="566.178304" magical="621.45708" />
+			<attribute>
+				<attack type="WATER" value="100" />
+				<defence fire="50" water="100" wind="100" earth="100" holy="100" dark="100" default="60" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="180" />
+			</speed>
+			<hitTime>450</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4408" level="10" /> <!-- HP Increase (2x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="13" /> <!-- Slightly Strong M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="13" /> <!-- Slightly Strong M. Def. -->
+			<skill id="4414" level="3" /> <!-- Light Armor Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="12" /> <!-- Bugs -->
+			<skill id="5317" level="4" /> <!-- NPC(party) -Magic Range Long Range DD - Water -->
+			<skill id="5318" level="4" /> <!-- NPC(party) -Magic Range Close Range DD - Water -->
+			<skill id="5463" level="1" /> <!-- Water Attacks -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<sNpcPropHpRate>2</sNpcPropHpRate>
+		<ai clanHelpRange="500" aggroRange="450">
+			<clanList>
+				<clan>ORACLE</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="25" />
+			<height normal="72" />
+		</collision>
+	</npc>
+	<npc id="22312" level="83" type="Monster" name="Fafurion's Henchman">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="70" />
+			<param name="MoveAroundSocial1" value="70" />
+			<param name="MoveAroundSocial2" value="70" />
+			<param name="IsAggressive" value="1" />
+			<param name="Aggressive_Time" value="0" />
+			<param name="MoveArounding" value="0" />
+			<param name="Skill02_Target" value="3" />
+			<param name="Skill02_AttackSplash" value="1" />
+			<skill name="Skill01_ID" id="5282" level="4" />
+			<skill name="Skill02_ID" id="5283" level="4" />
+		</parameters>
+		<race>BUG</race>
+		<sex>MALE</sex>
+		<acquire exp="343670" sp="82" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="65569" hpRegen="111.355378460862" mp="1777" mpRegen="3" />
+			<attack physical="5589.57218651355" magical="3816.95321518099" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="566.178304" magical="621.45708" />
+			<attribute>
+				<attack type="WATER" value="100" />
+				<defence fire="50" water="100" wind="100" earth="100" holy="100" dark="100" default="60" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="180" />
+			</speed>
+			<hitTime>540</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="14" /> <!-- Strong P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="9" /> <!-- Slightly Weak M. Def. -->
+			<skill id="4414" level="1" /> <!-- Heavy Armor Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="12" /> <!-- Bugs -->
+			<skill id="5282" level="4" /> <!-- NPC(party) - Physical Single Long Range Attack - Water -->
+			<skill id="5283" level="4" /> <!-- NPC(party) - Physical Range Close Range Attack - Water -->
+			<skill id="5463" level="1" /> <!-- Water Attacks -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<ai clanHelpRange="500" aggroRange="450">
+			<clanList>
+				<clan>ORACLE</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="37" />
+			<height normal="64" />
+		</collision>
+	</npc>
+	<npc id="22313" level="83" type="Monster" name="Garden Stakato">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="62" />
+			<param name="MoveAroundSocial1" value="62" />
+			<param name="MoveAroundSocial2" value="62" />
+			<param name="IsAggressive" value="1" />
+			<param name="Aggressive_Time" value="0" />
+			<param name="MoveArounding" value="0" />
+			<param name="Skill01_Target" value="3" />
+			<param name="Skill01_AttackSplash" value="1" />
+			<param name="Skill01_Check_Dist" value="1" />
+			<param name="Skill01_Dist_Max" value="150" />
+			<param name="Skill02_Probablity" value="1500" />
+			<skill name="Skill01_ID" id="4072" level="10" />
+			<skill name="Skill02_ID" id="5282" level="4" />
+		</parameters>
+		<race>HUMANOID</race>
+		<sex>MALE</sex>
+		<equipment rhand="134" /> <!-- Sword of Nightmare -->
+		<acquire exp="109671" sp="26" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="10943" hpRegen="111.50705124295" mp="1777" mpRegen="3" />
+			<attack physical="6774.50811945968" magical="4626.11085160169" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="566.178304" magical="621.45708" />
+			<attribute>
+				<attack type="WATER" value="100" />
+				<defence fire="50" water="100" wind="100" earth="100" holy="100" dark="100" default="60" />
+			</attribute>
+			<speed>
+				<walk ground="25" />
+				<run ground="180" />
+			</speed>
+			<hitTime>580</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4072" level="10" /> <!-- Stun -->
+			<skill id="4086" level="1" /> <!-- Critical Chance -->
+			<skill id="4408" level="10" /> <!-- HP Increase (2x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="3" /> <!-- Light Armor Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="6" /> <!-- Humanoids -->
+			<skill id="5282" level="4" /> <!-- NPC(party) - Physical Single Long Range Attack - Water -->
+			<skill id="5463" level="1" /> <!-- Water Attacks -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<sNpcPropHpRate>2</sNpcPropHpRate>
+		<ai clanHelpRange="500" aggroRange="450">
+			<clanList>
+				<clan>ORACLE</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="15" />
+			<height normal="39" />
+		</collision>
+	</npc>
+	<npc id="22314" level="83" type="Monster" name="Garden Poison Moth">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="150" />
+			<param name="MoveAroundSocial1" value="150" />
+			<param name="MoveAroundSocial2" value="150" />
+			<param name="IsAggressive" value="1" />
+			<param name="Aggressive_Time" value="0" />
+			<param name="AttackRange" value="2" />
+			<param name="MoveArounding" value="0" />
+			<param name="Skill01_AttackSplash" value="1" />
+			<skill name="Skill01_ID" id="5333" level="4" />
+			<skill name="Skill02_ID" id="5310" level="4" />
+		</parameters>
+		<race>DEMONIC</race>
+		<sex>MALE</sex>
+		<acquire exp="107305" sp="25" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="10943" hpRegen="111.50705124295" mp="1777" mpRegen="3" />
+			<attack physical="6774.50811945968" magical="4626.11085160169" random="5" critical="4" accuracy="5" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
+			<defence physical="566.178304" magical="621.45708" />
+			<attribute>
+				<attack type="WATER" value="100" />
+				<defence fire="50" water="100" wind="100" earth="100" holy="100" dark="100" default="60" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="180" />
+			</speed>
+			<hitTime>460</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4408" level="10" /> <!-- HP Increase (2x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="1" /> <!-- Bare Hands -->
+			<skill id="4416" level="9" /> <!-- Demons -->
+			<skill id="5310" level="4" /> <!-- NPC(party) - Magic Close Range DD - less powerful -->
+			<skill id="5333" level="4" /> <!-- Poison -->
+			<skill id="5463" level="1" /> <!-- Water Attacks -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<sNpcPropHpRate>2</sNpcPropHpRate>
+		<ai clanHelpRange="500" aggroRange="450">
+			<clanList>
+				<clan>ORACLE</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="20" />
+			<height normal="41" />
+		</collision>
+	</npc>
+	<npc id="22315" level="83" type="Monster" name="Garden Guard">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="0" />
+			<param name="MoveAroundSocial1" value="0" />
+			<param name="MoveAroundSocial2" value="0" />
+			<param name="IsAggressive" value="1" />
+			<param name="Aggressive_Time" value="0" />
+			<param name="MoveArounding" value="0" />
+			<skill name="Skill01_ID" id="5273" level="4" />
+			<skill name="Skill02_ID" id="5309" level="4" />
+		</parameters>
+		<race>GIANT</race>
+		<sex>MALE</sex>
+		<equipment rhand="5132" /> <!-- Monster Only (Giant Trident) -->
+		<acquire exp="62811" sp="15" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="10943" hpRegen="111.50705124295" mp="1777" mpRegen="3" />
+			<attack physical="6774.50811945968" magical="4626.11085160169" random="10" critical="4" accuracy="0" attackSpeed="253" type="POLE" range="80" distance="80" width="120" />
+			<defence physical="566.178304" magical="621.45708" />
+			<attribute>
+				<attack type="WATER" value="100" />
+				<defence fire="50" water="100" wind="100" earth="100" holy="100" dark="100" default="50" />
+			</attribute>
+			<speed>
+				<walk ground="35" />
+				<run ground="160" />
+			</speed>
+			<hitTime>450</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="13" /> <!-- Slightly Strong P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="8" /> <!-- Weak M. Def. -->
+			<skill id="4414" level="1" /> <!-- Heavy Armor Type -->
+			<skill id="4415" level="11" /> <!-- Spears -->
+			<skill id="4416" level="11" /> <!-- Giants -->
+			<skill id="5273" level="4" /> <!-- NPC(party) - Physical Single Close Range Attack -->
+			<skill id="5309" level="4" /> <!-- Bleed -->
+			<skill id="5463" level="1" /> <!-- Water Attacks -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<ai clanHelpRange="500" aggroRange="450">
+			<clanList>
+				<clan>ORACLE</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="13" />
+			<height normal="44" />
+		</collision>
+	</npc>
+	<npc id="22316" level="83" type="Monster" name="Garden Guardian Tree">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="80" />
+			<param name="MoveAroundSocial1" value="80" />
+			<param name="MoveAroundSocial2" value="114" />
+			<param name="IsAggressive" value="1" />
+			<param name="Aggressive_Time" value="0" />
+			<param name="MoveArounding" value="0" />
+			<param name="Skill02_Type" value="2" />
+			<skill name="Skill01_ID" id="5273" level="4" />
+			<skill name="Skill02_ID" id="4463" level="3" />
+		</parameters>
+		<race>PLANT</race>
+		<sex>FEMALE</sex>
+		<acquire exp="181770" sp="43" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="32829" hpRegen="111.50705124295" mp="1777" mpRegen="3" />
+			<attack physical="5815.28895362847" magical="3971.08850697278" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="566.178304" magical="621.45708" />
+			<attribute>
+				<attack type="WATER" value="100" />
+				<defence fire="50" water="100" wind="100" earth="100" holy="100" dark="100" default="50" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="180" />
+			</speed>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="14" /> <!-- Strong M. Atk. -->
+			<skill id="4412" level="16" /> <!-- Very Strong P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="1" /> <!-- Heavy Armor Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="5" /> <!-- Plants -->
+			<skill id="4463" level="3" /> <!-- Surrender To Water -->
+			<skill id="5273" level="4" /> <!-- NPC(party) - Physical Single Close Range Attack -->
+			<skill id="5463" level="1" /> <!-- Water Attacks -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<ai clanHelpRange="500" aggroRange="450">
+			<clanList>
+				<clan>ORACLE</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="60" />
+			<height normal="47" />
+		</collision>
+	</npc>
+	<npc id="22317" level="83" type="Monster" name="Garden Castalia">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="90" />
+			<param name="MoveAroundSocial1" value="90" />
+			<param name="MoveAroundSocial2" value="90" />
+			<param name="IsAggressive" value="1" />
+			<param name="Aggressive_Time" value="0" />
+			<param name="AttackRange" value="2" />
+			<param name="IsHealer" value="1" />
+			<param name="MoveArounding" value="0" />
+			<param name="Skill01_Check_Dist" value="1" />
+			<param name="Skill01_Dist_Min" value="150" />
+			<param name="Skill01_MainAttack" value="1" />
+			<param name="Skill02_Target" value="3" />
+			<param name="Skill02_AttackSplash" value="1" />
+			<param name="Skill02_Check_Dist" value="1" />
+			<param name="Skill02_Dist_Max" value="150" />
+			<param name="Skill03_Target" value="3" />
+			<param name="Skill03_Type" value="3" />
+			<param name="Skill03_AttackSplash" value="1" />
+			<param name="Skill03_Check_Dist" value="1" />
+			<param name="Skill03_Dist_Max" value="800" />
+			<skill name="Skill01_ID" id="5282" level="4" />
+			<skill name="Skill02_ID" id="5318" level="4" />
+			<skill name="Skill03_ID" id="4613" level="10" />
+		</parameters>
+		<race>ELEMENTAL</race>
+		<sex>FEMALE</sex>
+		<equipment rhand="9639" lhand="9639" /> <!-- Tears r2 / Tears r2 -->
+		<acquire exp="26986" sp="6" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="10943" hpRegen="111.50705124295" mp="1777" mpRegen="3" />
+			<attack physical="6774.50811945968" magical="4626.11085160169" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="566.178304" magical="621.45708" />
+			<attribute>
+				<attack type="WATER" value="100" />
+				<defence fire="50" water="100" wind="100" earth="100" holy="100" dark="100" default="50" />
+			</attribute>
+			<speed>
+				<walk ground="60" />
+				<run ground="180" />
+			</speed>
+			<hitTime>450</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" />
+		<skillList>
+			<skill id="4408" level="9" /> <!-- HP Increase (1/2x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="13" /> <!-- Slightly Strong M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="7" /> <!-- Spirits -->
+			<skill id="4613" level="10" /> <!-- NPC Clan Heal -->
+			<skill id="5282" level="4" /> <!-- NPC(party) - Physical Single Long Range Attack - Water -->
+			<skill id="5318" level="4" /> <!-- NPC(party) -Magic Range Close Range DD - Water -->
+			<skill id="5463" level="1" /> <!-- Water Attacks -->
+		</skillList>
+		<exCrtEffect>false</exCrtEffect>
+		<sNpcPropHpRate>0.5</sNpcPropHpRate>
+		<ai clanHelpRange="500" aggroRange="450">
+			<clanList>
+				<clan>ORACLE</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="20" />
+			<height normal="27.5" />
+		</collision>
+	</npc>
+</list>

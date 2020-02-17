@@ -1,0 +1,1824 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/npcs.xsd">
+	<npc id="21100" level="19" type="Monster" name="Langk Lizardman Sentinel">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="58" />
+			<param name="MoveAroundSocial1" value="58" />
+			<param name="MoveAroundSocial2" value="58" />
+		</parameters>
+		<race>HUMANOID</race>
+		<sex>MALE</sex>
+		<equipment rhand="2" /> <!-- Long Sword -->
+		<acquire exp="207" sp="0" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="321.135735" hpRegen="2.5" mp="184.908" mpRegen="1.2" />
+			<attack physical="40.96915" magical="27.97662" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="84.07638" magical="61.52345" />
+			<speed>
+				<walk ground="43" />
+				<run ground="130" />
+			</speed>
+			<hitTime>480</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4416" level="6" /> <!-- Humanoids -->
+		</skillList>
+		<shots shotChance="30" spiritChance="30" />
+		<exCrtEffect>false</exCrtEffect>
+		<ai aggroRange="450" clanHelpRange="300" isAggressive="true">
+			<clanList>
+				<clan>LIZARDMAN</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="10" />
+			<height normal="23" />
+		</collision>
+		<dropLists>
+			<drop>
+				<item id="57" min="4" max="11" chance="70" /> <!-- Adena -->
+				<item id="36522" min="1" max="1" chance="0.075" /> <!-- Silver -->
+				<item id="36864" min="1" max="1" chance="0.0009" /> <!-- Recipe: Iron Ore - Downgrade -->
+				<item id="8600" min="1" max="1" chance="10" /> <!-- Herb of Life -->
+				<item id="8601" min="1" max="1" chance="8" /> <!-- Major Herb of Life -->
+				<item id="8602" min="1" max="1" chance="2" /> <!-- Superior Herb of Life -->
+				<item id="8603" min="1" max="1" chance="19.8" /> <!-- Herb of Mana -->
+				<item id="8604" min="1" max="1" chance="9.9" /> <!-- Major Herb of Mana -->
+				<item id="8605" min="1" max="1" chance="3.3" /> <!-- Superior Herb of Mana -->
+				<item id="34849" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Power -->
+				<item id="34850" min="1" max="1" chance="0.7"/> <!-- Mysterious Herb of Magic -->
+				<item id="13028" min="1" max="1" chance="0.1" /> <!-- Vitality Replenishing Herb -->
+			</drop>
+			<spoil>
+				<item id="36521" min="1" max="1" chance="5.685" /> <!-- Iron Ore -->
+			</spoil>
+		</dropLists>
+	</npc>
+	<npc id="21101" level="24" type="Monster" name="Langk Lizardman Shaman">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="75" />
+			<param name="MoveAroundSocial1" value="75" />
+			<param name="MoveAroundSocial2" value="75" />
+			<param name="SoulShot" value="200" />
+			<param name="SoulShotRate" value="5" />
+			<param name="SpiritShot" value="100" />
+			<param name="SpiritShotRate" value="10" />
+			<param name="LongRangeGuardRate" value="10" />
+			<skill name="W_LongRangeDDMagic" id="4152" level="2" />
+			<skill name="W_ShortRangeDDMagic" id="4160" level="2" />
+			<skill name="DeBuff" id="4076" level="1" />
+		</parameters>
+		<race>HUMANOID</race>
+		<sex>MALE</sex>
+		<equipment rhand="6" /> <!-- Apprentice's Wand -->
+		<acquire exp="336" sp="0" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="434.700435" hpRegen="3.5" mp="247.355" mpRegen="1.5" />
+			<attack physical="60.19687" magical="41.10666" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
+			<defence physical="98.70919" magical="72.2311" />
+			<speed>
+				<walk ground="43" />
+				<run ground="130" />
+			</speed>
+			<hitTime>480</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4076" level="1" /> <!-- Decrease Speed -->
+			<skill id="4152" level="2" /> <!-- NPC HP Drain - Magic -->
+			<skill id="4160" level="2" /> <!-- NPC Aura Burn - Magic -->
+			<skill id="4416" level="6" /> <!-- Humanoids -->
+			<skill id="4414" level="3" /> <!-- Light Armor Type -->
+		</skillList>
+		<shots shotChance="30" spiritChance="30" />
+		<exCrtEffect>false</exCrtEffect>
+		<ai type="BALANCED" clanHelpRange="300" aggroRange="450">
+			<clanList>
+				<clan>LIZARDMAN</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="10" />
+			<height normal="29" />
+		</collision>
+		<dropLists>
+			<drop>
+				<item id="57" min="7" max="16" chance="70" /> <!-- Adena -->
+				<item id="6035" min="1" max="1" chance="0.3" /> <!-- Magic Haste Potion -->
+				<item id="36527" min="1" max="1" chance="0.3" /> <!-- Synthetic Fiber -->
+				<item id="36872" min="1" max="1" chance="0.0009" /> <!-- Recipe: Fiber - Downgrade -->
+				<item id="8600" min="1" max="1" chance="10" /> <!-- Herb of Life -->
+				<item id="8601" min="1" max="1" chance="8" /> <!-- Major Herb of Life -->
+				<item id="8602" min="1" max="1" chance="2" /> <!-- Superior Herb of Life -->
+				<item id="8603" min="1" max="1" chance="19.8" /> <!-- Herb of Mana -->
+				<item id="8604" min="1" max="1" chance="9.9" /> <!-- Major Herb of Mana -->
+				<item id="8605" min="1" max="1" chance="3.3" /> <!-- Superior Herb of Mana -->
+				<item id="34849" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Power -->
+				<item id="34850" min="1" max="1" chance="0.7"/> <!-- Mysterious Herb of Magic -->
+				<item id="13028" min="1" max="1" chance="0.1" /> <!-- Vitality Replenishing Herb -->
+			</drop>
+			<spoil>
+				<item id="36526" min="1" max="1" chance="23.7" /> <!-- Fiber -->
+			</spoil>
+		</dropLists>
+	</npc>
+	<npc id="21102" level="30" type="Monster" name="Watchman of the Plains">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="0" />
+			<param name="MoveAroundSocial1" value="0" />
+			<param name="MoveAroundSocial2" value="0" />
+			<param name="SoulShot" value="200" />
+			<param name="SoulShotRate" value="5" />
+			<param name="SpiritShot" value="100" />
+			<param name="SpiritShotRate" value="10" />
+			<param name="LongRangeGuardRate" value="10" />
+			<skill name="W_LongRangeDDMagic" id="4151" level="3" />
+			<skill name="W_ShortRangeDDMagic" id="4160" level="3" />
+		</parameters>
+		<race>CONSTRUCT</race>
+		<sex>MALE</sex>
+		<acquire exp="480" sp="0" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="603.785655" hpRegen="3.5" mp="332.51" mpRegen="1.5" />
+			<attack physical="92.64226" magical="63.26266" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
+			<defence physical="118.46427" magical="86.68702" />
+			<speed>
+				<walk ground="90" />
+				<run ground="160" />
+			</speed>
+			<hitTime>390</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4151" level="3" /> <!-- NPC Windstrike - Magic -->
+			<skill id="4160" level="3" /> <!-- NPC Aura Burn - Magic -->
+			<skill id="4416" level="2" /> <!-- Magic Creatures -->
+			<skill id="4414" level="3" /> <!-- Light Armor Type -->
+			<skill id="4276" level="1" /> <!-- Bow/ Crossbow Vulnerability -->
+		</skillList>
+		<shots shotChance="30" spiritChance="30" />
+		<exCrtEffect>false</exCrtEffect>
+		<ai aggroRange="450" clanHelpRange="300" isAggressive="true">
+			<clanList>
+				<clan>MONSTER_EYE</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="11" grown="13" />
+			<height normal="20" grown="24" />
+		</collision>
+		<dropLists>
+			<drop>
+				<item id="57" min="9" max="21" chance="70" /> <!-- Adena -->
+				<item id="36537" min="1" max="1" chance="0.075" /> <!-- Leather Braid -->
+				<item id="36547" min="1" max="1" chance="0.03" /> <!-- Weapon Fragment -->
+				<item id="8600" min="1" max="1" chance="10" /> <!-- Herb of Life -->
+				<item id="8601" min="1" max="1" chance="8" /> <!-- Major Herb of Life -->
+				<item id="8602" min="1" max="1" chance="2" /> <!-- Superior Herb of Life -->
+				<item id="8603" min="1" max="1" chance="19.8" /> <!-- Herb of Mana -->
+				<item id="8604" min="1" max="1" chance="9.9" /> <!-- Major Herb of Mana -->
+				<item id="8605" min="1" max="1" chance="3.3" /> <!-- Superior Herb of Mana -->
+				<item id="34849" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Power -->
+				<item id="34850" min="1" max="1" chance="0.7"/> <!-- Mysterious Herb of Magic -->
+				<item id="13028" min="1" max="1" chance="0.1" /> <!-- Vitality Replenishing Herb -->
+			</drop>
+			<spoil>
+				<item id="36531" min="1" max="1" chance="10.42" /> <!-- Thread -->
+			</spoil>
+		</dropLists>
+	</npc>
+	<npc id="21103" level="31" type="Monster" name="Roughly Hewn Rock Golem">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="116" />
+			<param name="MoveAroundSocial1" value="116" />
+			<param name="MoveAroundSocial2" value="116" />
+			<param name="SoulShot" value="200" />
+			<param name="SoulShotRate" value="5" />
+			<param name="SpiritShot" value="100" />
+			<param name="SpiritShotRate" value="10" />
+			<param name="LongRangeGuardRate" value="10" />
+			<skill name="DDMagicSlow" id="4254" level="3" />
+		</parameters>
+		<race>CONSTRUCT</race>
+		<sex>MALE</sex>
+		<acquire exp="503" sp="0" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="634.70049" hpRegen="4.5" mp="346.297" mpRegen="1.8" />
+			<attack physical="99.21986" magical="67.7543" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
+			<defence physical="121.98819" magical="89.26566" />
+			<speed>
+				<walk ground="23" />
+				<run ground="23" />
+			</speed>
+			<hitTime>410</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4254" level="3" /> <!-- NPC Prominence - Slow -->
+			<skill id="4416" level="2" /> <!-- Magic Creatures -->
+			<skill id="4444" level="2" /> <!-- Greater Bow/ Crossbow Resistance -->
+			<skill id="4273" level="3" /> <!-- Dagger/ Rapier Resistance -->
+			<skill id="4274" level="1" /> <!-- Blunt Weapon Vulnerability -->
+		</skillList>
+		<shots shotChance="30" spiritChance="30" />
+		<exCrtEffect>false</exCrtEffect>
+		<ai clanHelpRange="300" aggroRange="450">
+			<clanList>
+				<clan>ALL</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="20" />
+			<height normal="40.3" />
+		</collision>
+		<dropLists>
+			<drop>
+				<item id="57" min="10" max="22" chance="70" /> <!-- Adena -->
+				<item id="1061" min="1" max="1" chance="2.245" /> <!-- Major Healing Potion -->
+				<item id="36522" min="1" max="1" chance="0.075" /> <!-- Silver -->
+				<item id="36542" min="1" max="1" chance="0.03" /> <!-- Silver Wire -->
+				<item id="36552" min="1" max="1" chance="0.0075" /> <!-- Armor Fragment -->
+				<item id="8600" min="1" max="1" chance="10" /> <!-- Herb of Life -->
+				<item id="8601" min="1" max="1" chance="8" /> <!-- Major Herb of Life -->
+				<item id="8602" min="1" max="1" chance="2" /> <!-- Superior Herb of Life -->
+				<item id="8603" min="1" max="1" chance="19.8" /> <!-- Herb of Mana -->
+				<item id="8604" min="1" max="1" chance="9.9" /> <!-- Major Herb of Mana -->
+				<item id="8605" min="1" max="1" chance="3.3" /> <!-- Superior Herb of Mana -->
+				<item id="34849" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Power -->
+				<item id="34850" min="1" max="1" chance="0.7"/> <!-- Mysterious Herb of Magic -->
+				<item id="13028" min="1" max="1" chance="0.1" /> <!-- Vitality Replenishing Herb -->
+			</drop>
+			<spoil>
+				<item id="36531" min="1" max="1" chance="10.35" /> <!-- Thread -->
+			</spoil>
+		</dropLists>
+	</npc>
+	<npc id="21104" level="32" type="Monster" name="Delu Lizardman Supplier">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="58" />
+			<param name="MoveAroundSocial1" value="58" />
+			<param name="MoveAroundSocial2" value="58" />
+			<param name="IsVs" value="1" />
+			<param name="SoulShot" value="200" />
+			<param name="SoulShotRate" value="5" />
+			<param name="SpiritShot" value="100" />
+			<param name="SpiritShotRate" value="10" />
+			<param name="LongRangeGuardRate" value="10" />
+			<skill name="PhysicalSpecial" id="4032" level="3" />
+		</parameters>
+		<race>HUMANOID</race>
+		<sex>MALE</sex>
+		<equipment rhand="223" /> <!-- Kukuri -->
+		<acquire exp="631" sp="0" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="668.138985" hpRegen="4.5" mp="361.706" mpRegen="1.8" />
+			<attack physical="106.16525" magical="72.49711" random="5" critical="8" accuracy="0" attackSpeed="253" type="DAGGER" range="40" distance="80" width="120" />
+			<defence physical="125.57727" magical="91.89199" />
+			<speed>
+				<walk ground="43" />
+				<run ground="135" />
+			</speed>
+			<hitTime>480</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4032" level="3" /> <!-- NPC Strike -->
+			<skill id="4416" level="6" /> <!-- Humanoids -->
+		</skillList>
+		<shots shotChance="30" spiritChance="30" />
+		<exCrtEffect>false</exCrtEffect>
+		<ai clanHelpRange="300" aggroRange="450" />
+		<collision>
+			<radius normal="10" />
+			<height normal="23" />
+		</collision>
+		<dropLists>
+			<drop>
+				<item id="57" min="12" max="27" chance="70" /> <!-- Adena -->
+				<item id="1061" min="1" max="1" chance="2.832" /> <!-- Major Healing Potion -->
+				<item id="36527" min="1" max="1" chance="0.3" /> <!-- Synthetic Fiber -->
+				<item id="36547" min="1" max="1" chance="0.03" /> <!-- Weapon Fragment -->
+				<item id="36557" min="1" max="1" chance="0.03" /> <!-- Accessory Gem -->
+				<item id="8600" min="1" max="1" chance="10" /> <!-- Herb of Life -->
+				<item id="8601" min="1" max="1" chance="8" /> <!-- Major Herb of Life -->
+				<item id="8602" min="1" max="1" chance="2" /> <!-- Superior Herb of Life -->
+				<item id="8603" min="1" max="1" chance="19.8" /> <!-- Herb of Mana -->
+				<item id="8604" min="1" max="1" chance="9.9" /> <!-- Major Herb of Mana -->
+				<item id="8605" min="1" max="1" chance="3.3" /> <!-- Superior Herb of Mana -->
+				<item id="34849" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Power -->
+				<item id="34850" min="1" max="1" chance="0.7"/> <!-- Mysterious Herb of Magic -->
+				<item id="13028" min="1" max="1" chance="0.1" /> <!-- Vitality Replenishing Herb -->
+			</drop>
+			<spoil>
+				<item id="36531" min="1" max="1" chance="12.86" /> <!-- Thread -->
+			</spoil>
+		</dropLists>
+	</npc>
+	<npc id="21105" level="33" type="Monster" name="Delu Lizardman Special Agent">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="139" />
+			<param name="MoveAroundSocial1" value="35" />
+			<param name="MoveAroundSocial2" value="139" />
+			<param name="IsVs" value="1" />
+			<param name="SoulShot" value="200" />
+			<param name="SoulShotRate" value="5" />
+			<param name="SpiritShot" value="100" />
+			<param name="SpiritShotRate" value="10" />
+			<param name="LongRangeGuardRate" value="10" />
+			<skill name="PhysicalSpecial" id="4124" level="3" />
+		</parameters>
+		<race>HUMANOID</race>
+		<sex>MALE</sex>
+		<equipment rhand="2507" /> <!-- Lizardspear -->
+		<acquire exp="728" sp="0" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="702.208395" hpRegen="4.5" mp="375.493" mpRegen="1.8" />
+			<attack physical="113.49065" magical="77.49941" random="5" critical="8" accuracy="0" attackSpeed="253" reuseDelay="1500" type="BOW" range="1100" distance="10" width="0" />
+			<defence physical="129.23095" magical="94.5656" />
+			<speed>
+				<walk ground="43" />
+				<run ground="135" />
+			</speed>
+			<hitTime>720</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4124" level="3" /> <!-- NPC Spear Attack -->
+			<skill id="4416" level="6" /> <!-- Humanoids -->
+			<skill id="4410" level="12" /> <!-- Slightly Strong P. Atk. -->
+			<skill id="4411" level="12" /> <!-- Slightly Strong M. Atk. -->
+			<skill id="4412" level="10" /> <!-- Slightly Weak P. Def. -->
+			<skill id="4413" level="10" /> <!-- Slightly Weak M. Def. -->
+		</skillList>
+		<shots shotChance="30" spiritChance="30" />
+		<exCrtEffect>false</exCrtEffect>
+		<ai clanHelpRange="300" aggroRange="450" />
+		<collision>
+			<radius normal="10" grown="12" />
+			<height normal="22" grown="27" />
+		</collision>
+		<dropLists>
+			<drop>
+				<item id="57" min="14" max="32" chance="70" /> <!-- Adena -->
+				<item id="36552" min="1" max="1" chance="0.03" /> <!-- Armor Fragment -->
+				<item id="36562" min="1" max="1" chance="0.03" /> <!-- Greater Cokes -->
+				<item id="8600" min="1" max="1" chance="10" /> <!-- Herb of Life -->
+				<item id="8601" min="1" max="1" chance="8" /> <!-- Major Herb of Life -->
+				<item id="8602" min="1" max="1" chance="2" /> <!-- Superior Herb of Life -->
+				<item id="8603" min="1" max="1" chance="19.8" /> <!-- Herb of Mana -->
+				<item id="8604" min="1" max="1" chance="9.9" /> <!-- Major Herb of Mana -->
+				<item id="8605" min="1" max="1" chance="3.3" /> <!-- Superior Herb of Mana -->
+				<item id="34849" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Power -->
+				<item id="34850" min="1" max="1" chance="0.7"/> <!-- Mysterious Herb of Magic -->
+				<item id="13028" min="1" max="1" chance="0.1" /> <!-- Vitality Replenishing Herb -->
+			</drop>
+			<spoil>
+				<item id="36531" min="1" max="1" chance="14.42" /> <!-- Thread -->
+			</spoil>
+		</dropLists>
+	</npc>
+	<npc id="21106" level="34" type="Monster" name="Cursed Watchman">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="0" />
+			<param name="MoveAroundSocial1" value="0" />
+			<param name="MoveAroundSocial2" value="0" />
+			<param name="SoulShot" value="200" />
+			<param name="SoulShotRate" value="5" />
+			<param name="SpiritShot" value="100" />
+			<param name="SpiritShotRate" value="10" />
+			<param name="LongRangeGuardRate" value="10" />
+			<skill name="W_LongRangeDDMagic" id="4151" level="3" />
+			<skill name="W_ShortRangeDDMagic" id="4160" level="3" />
+			<skill name="DeBuff" id="4038" level="1" />
+		</parameters>
+		<race>CONSTRUCT</race>
+		<sex>MALE</sex>
+		<acquire exp="617" sp="0" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="736.277805" hpRegen="4.5" mp="390.902" mpRegen="1.8" />
+			<attack physical="121.20802" magical="82.76936" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
+			<defence physical="132.9486" magical="97.28601" />
+			<speed>
+				<walk ground="90" />
+				<run ground="160" />
+			</speed>
+			<hitTime>390</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4038" level="1" /> <!-- Decrease Atk. Spd. -->
+			<skill id="4151" level="3" /> <!-- NPC Windstrike - Magic -->
+			<skill id="4160" level="3" /> <!-- NPC Aura Burn - Magic -->
+			<skill id="4416" level="2" /> <!-- Magic Creatures -->
+			<skill id="4414" level="3" /> <!-- Light Armor Type -->
+			<skill id="4276" level="1" /> <!-- Bow/ Crossbow Vulnerability -->
+		</skillList>
+		<shots shotChance="30" spiritChance="30" />
+		<exCrtEffect>false</exCrtEffect>
+		<ai aggroRange="450" clanHelpRange="300" isAggressive="true">
+			<clanList>
+				<clan>MONSTER_EYE</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="11" grown="13" />
+			<height normal="20" grown="24" />
+		</collision>
+		<dropLists>
+			<drop>
+				<item id="57" min="11" max="27" chance="70" /> <!-- Adena -->
+				<item id="36517" min="1" max="1" chance="0.3" /> <!-- Leather -->
+				<item id="36537" min="1" max="1" chance="0.075" /> <!-- Leather Braid -->
+				<item id="36557" min="1" max="1" chance="0.03" /> <!-- Accessory Gem -->
+				<item id="8600" min="1" max="1" chance="10" /> <!-- Herb of Life -->
+				<item id="8601" min="1" max="1" chance="8" /> <!-- Major Herb of Life -->
+				<item id="8602" min="1" max="1" chance="2" /> <!-- Superior Herb of Life -->
+				<item id="8603" min="1" max="1" chance="19.8" /> <!-- Herb of Mana -->
+				<item id="8604" min="1" max="1" chance="9.9" /> <!-- Major Herb of Mana -->
+				<item id="8605" min="1" max="1" chance="3.3" /> <!-- Superior Herb of Mana -->
+				<item id="34849" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Power -->
+				<item id="34850" min="1" max="1" chance="0.7"/> <!-- Mysterious Herb of Magic -->
+				<item id="13028" min="1" max="1" chance="0.1" /> <!-- Vitality Replenishing Herb -->
+			</drop>
+			<spoil>
+				<item id="36531" min="1" max="1" chance="12.29" /> <!-- Thread -->
+			</spoil>
+		</dropLists>
+	</npc>
+	<npc id="21107" level="35" type="Monster" name="Delu Lizardman Commander">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="80" />
+			<param name="MoveAroundSocial1" value="80" />
+			<param name="MoveAroundSocial2" value="80" />
+			<param name="IsVs" value="1" />
+			<param name="SoulShot" value="200" />
+			<param name="SoulShotRate" value="5" />
+			<param name="SpiritShot" value="100" />
+			<param name="SpiritShotRate" value="10" />
+			<param name="LongRangeGuardRate" value="10" />
+			<skill name="SelfRangeDDMagic" id="4033" level="3" />
+		</parameters>
+		<race>HUMANOID</race>
+		<sex>MALE</sex>
+		<equipment rhand="93" /> <!-- Winged Spear -->
+		<acquire exp="1306" sp="0" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="1543.849005" hpRegen="4.5" mp="406.311" mpRegen="1.8" />
+			<attack physical="129.32896" magical="88.31491" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="136.72948" magical="100.0527" />
+			<speed>
+				<walk ground="52" />
+				<run ground="135" />
+			</speed>
+			<hitTime>590</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4033" level="3" /> <!-- NPC Burn -->
+			<skill id="4416" level="6" /> <!-- Humanoids -->
+		</skillList>
+		<shots shotChance="30" spiritChance="30" />
+		<exCrtEffect>false</exCrtEffect>
+		<sNpcPropHpRate>2</sNpcPropHpRate>
+		<ai clanHelpRange="300" aggroRange="450" />
+		<collision>
+			<radius normal="12" />
+			<height normal="30" />
+		</collision>
+		<dropLists>
+			<drop>
+				<item id="57" min="25" max="56" chance="70" /> <!-- Adena -->
+				<item id="36522" min="1" max="1" chance="0.3" /> <!-- Silver -->
+				<item id="36562" min="1" max="1" chance="0.03" /> <!-- Greater Cokes -->
+				<item id="8600" min="1" max="1" chance="10" /> <!-- Herb of Life -->
+				<item id="8601" min="1" max="1" chance="8" /> <!-- Major Herb of Life -->
+				<item id="8602" min="1" max="1" chance="2" /> <!-- Superior Herb of Life -->
+				<item id="8603" min="1" max="1" chance="19.8" /> <!-- Herb of Mana -->
+				<item id="8604" min="1" max="1" chance="9.9" /> <!-- Major Herb of Mana -->
+				<item id="8605" min="1" max="1" chance="3.3" /> <!-- Superior Herb of Mana -->
+				<item id="34849" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Power -->
+				<item id="34850" min="1" max="1" chance="0.7"/> <!-- Mysterious Herb of Magic -->
+				<item id="13028" min="1" max="1" chance="0.1" /> <!-- Vitality Replenishing Herb -->
+			</drop>
+			<spoil>
+				<item id="36531" min="1" max="1" chance="25.91" /> <!-- Thread -->
+			</spoil>
+		</dropLists>
+	</npc>
+	<npc id="21110" level="69" type="Monster" name="Swamp Predator">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="82" />
+			<param name="MoveAroundSocial1" value="82" />
+			<param name="MoveAroundSocial2" value="82" />
+			<param name="SoulShot" value="200" />
+			<param name="SoulShotRate" value="5" />
+			<param name="SpiritShot" value="100" />
+			<param name="SpiritShotRate" value="10" />
+			<param name="LongRangeGuardRate" value="10" />
+			<skill name="W_LongRangeDDMagic" id="4152" level="7" />
+			<skill name="W_ShortRangeDDMagic" id="4160" level="7" />
+		</parameters>
+		<race>BUG</race>
+		<sex>MALE</sex>
+		<acquire exp="18603" sp="4" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="2394.95334" hpRegen="7.5" mp="1326.796" mpRegen="2.7" />
+			<attack physical="667.50361" magical="455.81844" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="291.15063" magical="213.05139" />
+			<speed>
+				<walk ground="25" />
+				<run ground="175" />
+			</speed>
+			<hitTime>430</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4152" level="7" /> <!-- NPC HP Drain - Magic -->
+			<skill id="4160" level="7" /> <!-- NPC Aura Burn - Magic -->
+			<skill id="4416" level="12" /> <!-- Bugs -->
+		</skillList>
+		<shots shotChance="30" spiritChance="30" />
+		<exCrtEffect>false</exCrtEffect>
+		<ai clanHelpRange="200" aggroRange="450">
+			<clanList>
+				<clan>ALL</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="35" />
+			<height normal="35" />
+		</collision>
+		<dropLists>
+			<drop>
+				<item id="57" min="48" max="111" chance="70" /> <!-- Adena -->
+				<item id="1807" min="1" max="1" chance="0.03" /> <!-- Recipe: Soulshot (A-grade) -->
+				<item id="3035" min="1" max="1" chance="0.03" /> <!-- Recipe: Spiritshot (A-grade) -->
+				<item id="36903" min="1" max="1" chance="0.0009" /> <!-- Recipe: Silver Wire - Downgrade -->
+				<item id="36915" min="1" max="1" chance="0.0009" /> <!-- Recipe: Weapon Fragment - Downgrade -->
+				<item id="8600" min="1" max="1" chance="10" /> <!-- Herb of Life -->
+				<item id="8601" min="1" max="1" chance="8" /> <!-- Major Herb of Life -->
+				<item id="8602" min="1" max="1" chance="2" /> <!-- Superior Herb of Life -->
+				<item id="8603" min="1" max="1" chance="19.8" /> <!-- Herb of Mana -->
+				<item id="8604" min="1" max="1" chance="9.9" /> <!-- Major Herb of Mana -->
+				<item id="8605" min="1" max="1" chance="3.3" /> <!-- Superior Herb of Mana -->
+				<item id="34849" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Power -->
+				<item id="34850" min="1" max="1" chance="0.7"/> <!-- Mysterious Herb of Magic -->
+				<item id="13028" min="1" max="1" chance="0.1" /> <!-- Vitality Replenishing Herb -->
+			</drop>
+			<spoil>
+				<item id="36532" min="1" max="1" chance="0.3" /> <!-- Thin Braid -->
+				<item id="36882" min="1" max="1" chance="0.003" /> <!-- Recipe: Thin Braid - Upgrade -->
+				<item id="36881" min="1" max="1" chance="0.0009" /> <!-- Recipe: Thin Braid - Downgrade -->
+			</spoil>
+		</dropLists>
+	</npc>
+	<npc id="21111" level="70" type="Monster" name="Lava Wyrm">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="60" />
+			<param name="MoveAroundSocial1" value="60" />
+			<param name="MoveAroundSocial2" value="60" />
+			<param name="SoulShot" value="200" />
+			<param name="SoulShotRate" value="5" />
+			<param name="SpiritShot" value="100" />
+			<param name="SpiritShotRate" value="10" />
+			<param name="LongRangeGuardRate" value="10" />
+			<skill name="W_LongRangeDDMagic" id="4158" level="7" />
+			<skill name="W_ShortRangeDDMagic" id="4160" level="7" />
+		</parameters>
+		<race>DRAGON</race>
+		<sex>MALE</sex>
+		<acquire exp="19432" sp="4" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="2444.16471" hpRegen="7.5" mp="1358.425" mpRegen="2.7" />
+			<attack physical="688.86373" magical="470.40463" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="295.91597" magical="216.53847" />
+			<speed>
+				<walk ground="70" />
+				<run ground="175" />
+			</speed>
+			<hitTime>190</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4158" level="7" /> <!-- NPC Prominence - Magic -->
+			<skill id="4160" level="7" /> <!-- NPC Aura Burn - Magic -->
+			<skill id="4416" level="10" /> <!-- Dragons -->
+		</skillList>
+		<shots shotChance="30" spiritChance="30" />
+		<exCrtEffect>false</exCrtEffect>
+		<ai aggroRange="450" clanHelpRange="300" isAggressive="true" />
+		<collision>
+			<radius normal="29" />
+			<height normal="72" />
+		</collision>
+		<dropLists>
+			<drop>
+				<item id="57" min="50" max="116" chance="70" /> <!-- Adena -->
+				<item id="5166" min="1" max="1" chance="0.03" /> <!-- Recipe: Blessed Spiritshot Compressed Package (A-grade) -->
+				<item id="36873" min="1" max="1" chance="0.0009" /> <!-- Recipe: Synthetic Fiber - Downgrade -->
+				<item id="36904" min="1" max="1" chance="0.0009" /> <!-- Recipe: Silver Wire - Upgrade -->
+				<item id="36916" min="1" max="1" chance="0.0009" /> <!-- Recipe: Weapon Fragment - Upgrade -->
+				<item id="8600" min="1" max="1" chance="10" /> <!-- Herb of Life -->
+				<item id="8601" min="1" max="1" chance="8" /> <!-- Major Herb of Life -->
+				<item id="8602" min="1" max="1" chance="2" /> <!-- Superior Herb of Life -->
+				<item id="8603" min="1" max="1" chance="19.8" /> <!-- Herb of Mana -->
+				<item id="8604" min="1" max="1" chance="9.9" /> <!-- Major Herb of Mana -->
+				<item id="8605" min="1" max="1" chance="3.3" /> <!-- Superior Herb of Mana -->
+				<item id="34849" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Power -->
+				<item id="34850" min="1" max="1" chance="0.7"/> <!-- Mysterious Herb of Magic -->
+				<item id="13028" min="1" max="1" chance="0.1" /> <!-- Vitality Replenishing Herb -->
+			</drop>
+			<spoil>
+				<item id="36532" min="1" max="1" chance="0.3" /> <!-- Thin Braid -->
+				<item id="36882" min="1" max="1" chance="0.003" /> <!-- Recipe: Thin Braid - Upgrade -->
+				<item id="36881" min="1" max="1" chance="0.0009" /> <!-- Recipe: Thin Braid - Downgrade -->
+			</spoil>
+		</dropLists>
+	</npc>
+	<npc id="21112" level="71" type="Monster" name="Hames Orc Foot Soldier">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="90" />
+			<param name="MoveAroundSocial1" value="65" />
+			<param name="MoveAroundSocial2" value="90" />
+			<param name="DaggerBackAttack" value="1" />
+			<param name="SoulShot" value="200" />
+			<param name="SoulShotRate" value="5" />
+			<param name="SpiritShot" value="100" />
+			<param name="SpiritShotRate" value="10" />
+			<param name="LongRangeGuardRate" value="10" />
+			<skill name="PhysicalSpecial" id="4032" level="7" />
+		</parameters>
+		<race>HUMANOID</race>
+		<sex>MALE</sex>
+		<equipment rhand="233" lhand="110" /> <!-- Dark Screamer / Doom Shield -->
+		<acquire exp="23556" sp="5" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="2492.11425" hpRegen="8.5" mp="1390.865" mpRegen="3" />
+			<attack physical="710.2185" magical="484.98717" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="300.65359" magical="220.00525" shield="150" shieldRate="20" />
+			<speed>
+				<walk ground="45" />
+				<run ground="180" />
+			</speed>
+			<hitTime>460</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4032" level="7" /> <!-- NPC Strike -->
+			<skill id="4416" level="6" /> <!-- Humanoids -->
+		</skillList>
+		<shots shotChance="30" spiritChance="30" />
+		<exCrtEffect>false</exCrtEffect>
+		<ai clanHelpRange="300" aggroRange="450">
+			<clanList>
+				<clan>ORC</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="12" />
+			<height normal="29" />
+		</collision>
+		<dropLists>
+			<drop>
+				<item id="57" min="61" max="141" chance="70" /> <!-- Adena -->
+				<item id="3956" min="1" max="1" chance="0.03" /> <!-- Recipe: Blessed Spiritshot (A-grade) -->
+				<item id="5281" min="1" max="1" chance="0.03" /> <!-- Recipe: Greater Blessed Spiritshot Compressed Package (A-grade) -->
+				<item id="36905" min="1" max="1" chance="0.0009" /> <!-- Recipe: Silver Wire - Combination -->
+				<item id="36923" min="1" max="1" chance="0.0009" /> <!-- Recipe: Armor Fragment - Downgrade -->
+				<item id="8600" min="1" max="1" chance="10" /> <!-- Herb of Life -->
+				<item id="8601" min="1" max="1" chance="8" /> <!-- Major Herb of Life -->
+				<item id="8602" min="1" max="1" chance="2" /> <!-- Superior Herb of Life -->
+				<item id="8603" min="1" max="1" chance="19.8" /> <!-- Herb of Mana -->
+				<item id="8604" min="1" max="1" chance="9.9" /> <!-- Major Herb of Mana -->
+				<item id="8605" min="1" max="1" chance="3.3" /> <!-- Superior Herb of Mana -->
+				<item id="34849" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Power -->
+				<item id="34850" min="1" max="1" chance="0.7"/> <!-- Mysterious Herb of Magic -->
+				<item id="13028" min="1" max="1" chance="0.1" /> <!-- Vitality Replenishing Herb -->
+			</drop>
+			<spoil>
+				<item id="36532" min="1" max="1" chance="0.3" /> <!-- Thin Braid -->
+				<item id="36882" min="1" max="1" chance="0.003" /> <!-- Recipe: Thin Braid - Upgrade -->
+				<item id="36881" min="1" max="1" chance="0.0009" /> <!-- Recipe: Thin Braid - Downgrade -->
+			</spoil>
+		</dropLists>
+	</npc>
+	<npc id="21113" level="72" type="Monster" name="Hames Orc Sniper">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="90" />
+			<param name="MoveAroundSocial1" value="65" />
+			<param name="MoveAroundSocial2" value="90" />
+			<param name="SoulShot" value="200" />
+			<param name="SoulShotRate" value="5" />
+			<param name="SpiritShot" value="100" />
+			<param name="SpiritShotRate" value="10" />
+			<param name="LongRangeGuardRate" value="10" />
+			<skill name="PhysicalSpecial" id="4040" level="7" />
+		</parameters>
+		<race>HUMANOID</race>
+		<sex>MALE</sex>
+		<equipment rhand="287" /> <!-- Bow of Peril -->
+		<acquire exp="26246" sp="6" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="2540.06379" hpRegen="8.5" mp="1424.116" mpRegen="3" />
+			<attack physical="731.52506" magical="499.53679" random="5" critical="8" accuracy="0" attackSpeed="253" reuseDelay="1500" type="BOW" range="1100" distance="10" width="0" />
+			<defence physical="305.35947" magical="223.44881" />
+			<speed>
+				<walk ground="45" />
+				<run ground="160" />
+			</speed>
+			<hitTime>910</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4040" level="7" /> <!-- NPC Bow Attack -->
+			<skill id="4416" level="6" /> <!-- Humanoids -->
+			<skill id="4414" level="3" /> <!-- Light Armor Type -->
+		</skillList>
+		<shots shotChance="30" spiritChance="30" />
+		<exCrtEffect>false</exCrtEffect>
+		<ai type="ARCHER" clanHelpRange="300" dodge="15" aggroRange="450">
+			<clanList>
+				<clan>ORC</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="12" />
+			<height normal="27" />
+		</collision>
+		<dropLists>
+			<drop>
+				<item id="57" min="68" max="158" chance="70" /> <!-- Adena -->
+				<item id="3035" min="1" max="1" chance="0.03" /> <!-- Recipe: Spiritshot (A-grade) -->
+				<item id="5156" min="1" max="1" chance="0.03" /> <!-- Recipe: Soulshot Compressed Package (A-grade) -->
+				<item id="5166" min="1" max="1" chance="0.03" /> <!-- Recipe: Blessed Spiritshot Compressed Package (A-grade) -->
+				<item id="36915" min="1" max="1" chance="0.0009" /> <!-- Recipe: Weapon Fragment - Downgrade -->
+				<item id="36924" min="1" max="1" chance="0.0009" /> <!-- Recipe: Armor Fragment - Upgrade -->
+				<item id="8600" min="1" max="1" chance="10" /> <!-- Herb of Life -->
+				<item id="8601" min="1" max="1" chance="8" /> <!-- Major Herb of Life -->
+				<item id="8602" min="1" max="1" chance="2" /> <!-- Superior Herb of Life -->
+				<item id="8603" min="1" max="1" chance="19.8" /> <!-- Herb of Mana -->
+				<item id="8604" min="1" max="1" chance="9.9" /> <!-- Major Herb of Mana -->
+				<item id="8605" min="1" max="1" chance="3.3" /> <!-- Superior Herb of Mana -->
+				<item id="34849" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Power -->
+				<item id="34850" min="1" max="1" chance="0.7"/> <!-- Mysterious Herb of Magic -->
+				<item id="13028" min="1" max="1" chance="0.1" /> <!-- Vitality Replenishing Herb -->
+			</drop>
+			<spoil>
+				<item id="36532" min="1" max="1" chance="0.75" /> <!-- Thin Braid -->
+				<item id="36882" min="1" max="1" chance="0.003" /> <!-- Recipe: Thin Braid - Upgrade -->
+				<item id="36881" min="1" max="1" chance="0.0009" /> <!-- Recipe: Thin Braid - Downgrade -->
+			</spoil>
+		</dropLists>
+	</npc>
+	<npc id="21115" level="74" type="Monster" name="Hames Orc Shaman">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="90" />
+			<param name="MoveAroundSocial1" value="75" />
+			<param name="MoveAroundSocial2" value="90" />
+			<param name="SoulShot" value="200" />
+			<param name="SoulShotRate" value="5" />
+			<param name="SpiritShot" value="100" />
+			<param name="SpiritShotRate" value="10" />
+			<param name="LongRangeGuardRate" value="10" />
+			<skill name="DDMagic" id="4087" level="7" />
+			<skill name="DeBuff" id="4037" level="2" />
+			<skill name="HoldMagic" id="4047" level="7" />
+		</parameters>
+		<race>HUMANOID</race>
+		<sex>MALE</sex>
+		<equipment rhand="186" /> <!-- Staff of Magic -->
+		<acquire exp="21716" sp="5" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="2632.17738" hpRegen="8.5" mp="1489.807" mpRegen="3" />
+			<attack physical="773.81598" magical="528.41601" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
+			<defence physical="314.65987" magical="230.25444" />
+			<speed>
+				<walk ground="10" />
+				<run ground="145" />
+			</speed>
+			<hitTime>340</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4037" level="2" /> <!-- Decrease P. Atk. -->
+			<skill id="4047" level="7" /> <!-- Hold -->
+			<skill id="4087" level="7" /> <!-- NPC Blaze -->
+			<skill id="4416" level="6" /> <!-- Humanoids -->
+			<skill id="4414" level="3" /> <!-- Light Armor Type -->
+		</skillList>
+		<shots shotChance="30" spiritChance="30" />
+		<exCrtEffect>false</exCrtEffect>
+		<ai type="BALANCED" clanHelpRange="400" aggroRange="450">
+			<clanList>
+				<clan>ORC</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="10" />
+			<height normal="23" />
+		</collision>
+		<dropLists>
+			<drop>
+				<item id="57" min="56" max="131" chance="70" /> <!-- Adena -->
+				<item id="5166" min="1" max="1" chance="0.03" /> <!-- Recipe: Blessed Spiritshot Compressed Package (A-grade) -->
+				<item id="5281" min="1" max="1" chance="0.03" /> <!-- Recipe: Greater Blessed Spiritshot Compressed Package (A-grade) -->
+				<item id="36858" min="1" max="1" chance="0.003" /> <!-- Recipe: Leather - Upgrade -->
+				<item id="36932" min="1" max="1" chance="0.003" /> <!-- Recipe: Accessory Gem - Upgrade -->
+				<item id="36923" min="1" max="1" chance="0.0009" /> <!-- Recipe: Armor Fragment - Downgrade -->
+				<item id="8600" min="1" max="1" chance="10" /> <!-- Herb of Life -->
+				<item id="8601" min="1" max="1" chance="8" /> <!-- Major Herb of Life -->
+				<item id="8602" min="1" max="1" chance="2" /> <!-- Superior Herb of Life -->
+				<item id="8603" min="1" max="1" chance="19.8" /> <!-- Herb of Mana -->
+				<item id="8604" min="1" max="1" chance="9.9" /> <!-- Major Herb of Mana -->
+				<item id="8605" min="1" max="1" chance="3.3" /> <!-- Superior Herb of Mana -->
+				<item id="34849" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Power -->
+				<item id="34850" min="1" max="1" chance="0.7"/> <!-- Mysterious Herb of Magic -->
+				<item id="13028" min="1" max="1" chance="0.1" /> <!-- Vitality Replenishing Herb -->
+			</drop>
+			<spoil>
+				<item id="36532" min="1" max="1" chance="0.3" /> <!-- Thin Braid -->
+				<item id="36882" min="1" max="1" chance="0.003" /> <!-- Recipe: Thin Braid - Upgrade -->
+				<item id="36881" min="1" max="1" chance="0.0009" /> <!-- Recipe: Thin Braid - Downgrade -->
+			</spoil>
+		</dropLists>
+	</npc>
+	<npc id="21116" level="75" type="Monster" name="Hames Orc Prefect">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="90" />
+			<param name="MoveAroundSocial1" value="65" />
+			<param name="MoveAroundSocial2" value="90" />
+			<param name="SoulShot" value="200" />
+			<param name="SoulShotRate" value="5" />
+			<param name="SpiritShot" value="100" />
+			<param name="SpiritShotRate" value="10" />
+			<param name="LongRangeGuardRate" value="10" />
+			<skill name="SelfBuff" id="4091" level="1" />
+			<skill name="SelfRangeDDMagic" id="4033" level="8" />
+			<skill name="PhysicalSpecial" id="4032" level="8" />
+			<skill name="SpecialSkill" id="4318" level="1" />
+		</parameters>
+		<race>HUMANOID</race>
+		<sex>MALE</sex>
+		<equipment rhand="75" lhand="103" /> <!-- Caliburs / Tower Shield -->
+		<acquire exp="34289" sp="8" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="2675.710515" hpRegen="8.5" mp="1522.247" mpRegen="3" />
+			<attack physical="794.70901" magical="542.68324" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="319.24623" magical="233.61053" shield="160" shieldRate="20" />
+			<speed>
+				<walk ground="36" />
+				<run ground="175" />
+			</speed>
+			<hitTime>540</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4032" level="8" /> <!-- NPC Strike -->
+			<skill id="4033" level="8" /> <!-- NPC Burn -->
+			<skill id="4091" level="1" /> <!-- NPC Ogre Spirit Totem -->
+			<skill id="4318" level="1" /> <!-- Ultimate Buff -->
+			<skill id="4416" level="6" /> <!-- Humanoids -->
+			<skill id="4410" level="12" /> <!-- Slightly Strong P. Atk. -->
+			<skill id="4411" level="12" /> <!-- Slightly Strong M. Atk. -->
+			<skill id="4412" level="10" /> <!-- Slightly Weak P. Def. -->
+			<skill id="4413" level="10" /> <!-- Slightly Weak M. Def. -->
+			<skill id="4273" level="3" /> <!-- Dagger/ Rapier Resistance -->
+		</skillList>
+		<shots shotChance="30" spiritChance="30" />
+		<exCrtEffect>false</exCrtEffect>
+		<ai aggroRange="450" clanHelpRange="500" isAggressive="true">
+			<clanList>
+				<clan>ORC</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="12" grown="14" />
+			<height normal="24" grown="28.8" />
+		</collision>
+		<dropLists>
+			<drop>
+				<item id="57" min="89" max="207" chance="70" /> <!-- Adena -->
+				<item id="729" min="1" max="1" chance="0.003" /> <!-- Scroll: Enchant Weapon (A-grade) -->
+				<item id="36924" min="1" max="1" chance="0.003" /> <!-- Recipe: Armor Fragment - Upgrade -->
+				<item id="36865" min="1" max="1" chance="0.0009" /> <!-- Recipe: Silver - Downgrade -->
+				<item id="36939" min="1" max="1" chance="0.0009" /> <!-- Recipe: Greater Cokes - Downgrade -->
+				<item id="8600" min="1" max="1" chance="10" /> <!-- Herb of Life -->
+				<item id="8601" min="1" max="1" chance="8" /> <!-- Major Herb of Life -->
+				<item id="8602" min="1" max="1" chance="2" /> <!-- Superior Herb of Life -->
+				<item id="8603" min="1" max="1" chance="19.8" /> <!-- Herb of Mana -->
+				<item id="8604" min="1" max="1" chance="9.9" /> <!-- Major Herb of Mana -->
+				<item id="8605" min="1" max="1" chance="3.3" /> <!-- Superior Herb of Mana -->
+				<item id="34849" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Power -->
+				<item id="34850" min="1" max="1" chance="0.7"/> <!-- Mysterious Herb of Magic -->
+				<item id="13028" min="1" max="1" chance="0.1" /> <!-- Vitality Replenishing Herb -->
+			</drop>
+			<spoil>
+				<item id="36532" min="1" max="1" chance="0.75" /> <!-- Thin Braid -->
+				<item id="36882" min="1" max="1" chance="0.003" /> <!-- Recipe: Thin Braid - Upgrade -->
+				<item id="36881" min="1" max="1" chance="0.0009" /> <!-- Recipe: Thin Braid - Downgrade -->
+			</spoil>
+		</dropLists>
+	</npc>
+	<npc id="21117" level="19" type="Monster" name="Kasha Imp">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="0" />
+			<param name="MoveAroundSocial1" value="0" />
+			<param name="MoveAroundSocial2" value="0" />
+		</parameters>
+		<race>FAIRY</race>
+		<sex>MALE</sex>
+		<acquire exp="1017" sp="30" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="321" hpRegen="2.5" mp="183" mpRegen="1.2" />
+			<attack physical="40.96915" magical="27.97662" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="84.07638" magical="61.52345" />
+			<speed>
+				<walk ground="60" />
+				<run ground="85" />
+			</speed>
+			<hitTime>340</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="3" /> <!-- Light Armor Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="13" /> <!-- Fairies -->
+		</skillList>
+		<shots shotChance="30" spiritChance="30" />
+		<exCrtEffect>false</exCrtEffect>
+		<ai clanHelpRange="300" aggroRange="450">
+			<clanList>
+				<clan>ALL</clan>
+			</clanList>
+		</ai>
+		<dropLists>
+			<drop>
+				<item id="8600" min="1" max="1" chance="10" /> <!-- Herb of Life -->
+				<item id="8601" min="1" max="1" chance="8" /> <!-- Major Herb of Life -->
+				<item id="8602" min="1" max="1" chance="2" /> <!-- Superior Herb of Life -->
+				<item id="8603" min="1" max="1" chance="19.8" /> <!-- Herb of Mana -->
+				<item id="8604" min="1" max="1" chance="9.9" /> <!-- Major Herb of Mana -->
+				<item id="8605" min="1" max="1" chance="3.3" /> <!-- Superior Herb of Mana -->
+				<item id="34849" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Power -->
+				<item id="34850" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Magic -->
+				<item id="13028" min="1" max="1" chance="0.1" /> <!-- Vitality Replenishing Herb -->
+			</drop>
+		</dropLists>
+		<collision>
+			<radius normal="10" />
+			<height normal="30" />
+		</collision>
+	</npc>
+	<npc id="21118" level="20" type="Monster" name="Baar Dre Vanul">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="0" />
+			<param name="MoveAroundSocial1" value="0" />
+			<param name="MoveAroundSocial2" value="0" />
+		</parameters>
+		<race>DEMONIC</race>
+		<sex>MALE</sex>
+		<acquire exp="1090" sp="32" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="342" hpRegen="2.5" mp="192" mpRegen="1.2" />
+			<attack physical="44.32863" magical="30.2707" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="86.87049" magical="63.56806" />
+			<speed>
+				<walk ground="80" />
+				<run ground="85" />
+			</speed>
+			<hitTime>350</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="9" /> <!-- Demons -->
+			<skill id="4278" level="1" /> <!-- Dark Attack -->
+			<skill id="4333" level="5" /> <!-- Dark Attack Resistance -->
+		</skillList>
+		<shots shotChance="30" spiritChance="30" />
+		<exCrtEffect>false</exCrtEffect>
+		<ai aggroRange="450" clanHelpRange="300" isAggressive="true">
+			<clanList>
+				<clan>DEMONIC</clan>
+			</clanList>
+		</ai>
+		<dropLists>
+			<drop>
+				<item id="8600" min="1" max="1" chance="10" /> <!-- Herb of Life -->
+				<item id="8601" min="1" max="1" chance="8" /> <!-- Major Herb of Life -->
+				<item id="8602" min="1" max="1" chance="2" /> <!-- Superior Herb of Life -->
+				<item id="8603" min="1" max="1" chance="19.8" /> <!-- Herb of Mana -->
+				<item id="8604" min="1" max="1" chance="9.9" /> <!-- Major Herb of Mana -->
+				<item id="8605" min="1" max="1" chance="3.3" /> <!-- Superior Herb of Mana -->
+				<item id="34849" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Power -->
+				<item id="34850" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Magic -->
+				<item id="13028" min="1" max="1" chance="0.1" /> <!-- Vitality Replenishing Herb -->
+			</drop>
+		</dropLists>
+		<collision>
+			<radius normal="14" />
+			<height normal="36" />
+		</collision>
+	</npc>
+	<npc id="21119" level="21" type="Monster" name="Kasha Hobgoblin">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="0" />
+			<param name="MoveAroundSocial1" value="0" />
+			<param name="MoveAroundSocial2" value="0" />
+			<param name="SoulShot" value="200" />
+			<param name="SoulShotRate" value="5" />
+			<param name="SpiritShot" value="100" />
+			<param name="SpiritShotRate" value="10" />
+			<param name="LongRangeGuardRate" value="10" />
+		</parameters>
+		<race>HUMANOID</race>
+		<sex>MALE</sex>
+		<equipment rhand="4" /> <!-- Club -->
+		<acquire exp="1374" sp="42" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="364" hpRegen="3.5" mp="205" mpRegen="1.5" />
+			<attack physical="47.91924" magical="32.72263" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
+			<defence physical="89.73059" magical="65.66095" />
+			<speed>
+				<walk ground="45" />
+				<run ground="110" />
+			</speed>
+			<hitTime>410</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="5" /> <!-- Blunt Weapons -->
+			<skill id="4416" level="6" /> <!-- Humanoids -->
+		</skillList>
+		<shots shotChance="30" spiritChance="30" />
+		<exCrtEffect>false</exCrtEffect>
+		<ai clanHelpRange="300" aggroRange="450">
+			<clanList>
+				<clan>GOBLIN</clan>
+			</clanList>
+		</ai>
+		<dropLists>
+			<drop>
+				<item id="8600" min="1" max="1" chance="10" /> <!-- Herb of Life -->
+				<item id="8601" min="1" max="1" chance="8" /> <!-- Major Herb of Life -->
+				<item id="8602" min="1" max="1" chance="2" /> <!-- Superior Herb of Life -->
+				<item id="8603" min="1" max="1" chance="19.8" /> <!-- Herb of Mana -->
+				<item id="8604" min="1" max="1" chance="9.9" /> <!-- Major Herb of Mana -->
+				<item id="8605" min="1" max="1" chance="3.3" /> <!-- Superior Herb of Mana -->
+				<item id="34849" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Power -->
+				<item id="34850" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Magic -->
+				<item id="13028" min="1" max="1" chance="0.1" /> <!-- Vitality Replenishing Herb -->
+			</drop>
+		</dropLists>
+		<collision>
+			<radius normal="12" />
+			<height normal="24" />
+		</collision>
+	</npc>
+	<npc id="21120" level="22" type="Monster" name="Kasha Imp Turen">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="0" />
+			<param name="MoveAroundSocial1" value="0" />
+			<param name="MoveAroundSocial2" value="0" />
+			<param name="SoulShot" value="200" />
+			<param name="SoulShotRate" value="5" />
+			<param name="SpiritShot" value="100" />
+			<param name="SpiritShotRate" value="10" />
+			<param name="LongRangeGuardRate" value="10" />
+			<skill name="PhysicalSpecial" id="4032" level="2" />
+		</parameters>
+		<race>FAIRY</race>
+		<sex>MALE</sex>
+		<acquire exp="1793" sp="56" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="387" hpRegen="3.5" mp="218" mpRegen="1.5" />
+			<attack physical="51.75278" magical="35.34044" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="92.65694" magical="67.80232" />
+			<speed>
+				<walk ground="60" />
+				<run ground="85" />
+			</speed>
+			<hitTime>340</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4032" level="2" /> <!-- NPC Strike -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="12" /> <!-- Slightly Strong P. Atk. -->
+			<skill id="4411" level="12" /> <!-- Slightly Strong M. Atk. -->
+			<skill id="4412" level="10" /> <!-- Slightly Weak P. Def. -->
+			<skill id="4413" level="10" /> <!-- Slightly Weak M. Def. -->
+			<skill id="4414" level="3" /> <!-- Light Armor Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="13" /> <!-- Fairies -->
+		</skillList>
+		<shots shotChance="30" spiritChance="30" />
+		<exCrtEffect>false</exCrtEffect>
+		<ai aggroRange="450" clanHelpRange="300" isAggressive="true">
+			<clanList>
+				<clan>ALL</clan>
+			</clanList>
+		</ai>
+		<dropLists>
+			<drop>
+				<item id="8600" min="1" max="1" chance="10" /> <!-- Herb of Life -->
+				<item id="8601" min="1" max="1" chance="8" /> <!-- Major Herb of Life -->
+				<item id="8602" min="1" max="1" chance="2" /> <!-- Superior Herb of Life -->
+				<item id="8603" min="1" max="1" chance="19.8" /> <!-- Herb of Mana -->
+				<item id="8604" min="1" max="1" chance="9.9" /> <!-- Major Herb of Mana -->
+				<item id="8605" min="1" max="1" chance="3.3" /> <!-- Superior Herb of Mana -->
+				<item id="34849" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Power -->
+				<item id="34850" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Magic -->
+				<item id="13028" min="1" max="1" chance="0.1" /> <!-- Vitality Replenishing Herb -->
+			</drop>
+		</dropLists>
+		<collision>
+			<radius normal="10" />
+			<height normal="30" />
+		</collision>
+	</npc>
+	<npc id="21121" level="23" type="Monster" name="Kasha Dire Wolf">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="60" />
+			<param name="MoveAroundSocial1" value="60" />
+			<param name="MoveAroundSocial2" value="60" />
+			<param name="SoulShot" value="200" />
+			<param name="SoulShotRate" value="5" />
+			<param name="SpiritShot" value="100" />
+			<param name="SpiritShotRate" value="10" />
+			<param name="LongRangeGuardRate" value="10" />
+		</parameters>
+		<race>ANIMAL</race>
+		<sex>MALE</sex>
+		<acquire exp="1611" sp="52" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="410" hpRegen="3.5" mp="231" mpRegen="1.5" />
+			<attack physical="55.84125" magical="38.13234" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="95.64976" magical="69.99234" />
+			<speed>
+				<walk ground="24" />
+				<run ground="135" />
+			</speed>
+			<hitTime>390</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="3" /> <!-- Light Armor Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="4" /> <!-- Animals -->
+		</skillList>
+		<shots shotChance="30" spiritChance="30" />
+		<exCrtEffect>false</exCrtEffect>
+		<ai aggroRange="450" clanHelpRange="300" isAggressive="true">
+			<clanList>
+				<clan>ALL</clan>
+			</clanList>
+		</ai>
+		<dropLists>
+			<drop>
+				<item id="8600" min="1" max="1" chance="10" /> <!-- Herb of Life -->
+				<item id="8601" min="1" max="1" chance="8" /> <!-- Major Herb of Life -->
+				<item id="8602" min="1" max="1" chance="2" /> <!-- Superior Herb of Life -->
+				<item id="8603" min="1" max="1" chance="19.8" /> <!-- Herb of Mana -->
+				<item id="8604" min="1" max="1" chance="9.9" /> <!-- Major Herb of Mana -->
+				<item id="8605" min="1" max="1" chance="3.3" /> <!-- Superior Herb of Mana -->
+				<item id="34849" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Power -->
+				<item id="34850" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Magic -->
+				<item id="13028" min="1" max="1" chance="0.1" /> <!-- Vitality Replenishing Herb -->
+			</drop>
+		</dropLists>
+		<collision>
+			<radius normal="13" />
+			<height normal="11" />
+		</collision>
+	</npc>
+	<npc id="21122" level="24" type="Monster" name="Kasha Bugbear">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="124" />
+			<param name="MoveAroundSocial1" value="124" />
+			<param name="MoveAroundSocial2" value="124" />
+			<param name="SoulShot" value="200" />
+			<param name="SoulShotRate" value="5" />
+			<param name="SpiritShot" value="100" />
+			<param name="SpiritShotRate" value="10" />
+			<param name="LongRangeGuardRate" value="10" />
+		</parameters>
+		<race>GIANT</race>
+		<sex>MALE</sex>
+		<equipment rhand="169" /> <!-- Skull Breaker -->
+		<acquire exp="1717" sp="56" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="435" hpRegen="3.5" mp="245" mpRegen="1.5" />
+			<attack physical="60.19687" magical="41.10666" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
+			<defence physical="98.70919" magical="72.2311" />
+			<speed>
+				<walk ground="55" />
+				<run ground="130" />
+			</speed>
+			<hitTime>280</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="5" /> <!-- Blunt Weapons -->
+			<skill id="4416" level="11" /> <!-- Giants -->
+		</skillList>
+		<shots shotChance="30" spiritChance="30" />
+		<exCrtEffect>false</exCrtEffect>
+		<ai aggroRange="450" clanHelpRange="300" isAggressive="true">
+			<clanList>
+				<clan>ALL</clan>
+			</clanList>
+		</ai>
+		<dropLists>
+			<drop>
+				<item id="8600" min="1" max="1" chance="10" /> <!-- Herb of Life -->
+				<item id="8601" min="1" max="1" chance="8" /> <!-- Major Herb of Life -->
+				<item id="8602" min="1" max="1" chance="2" /> <!-- Superior Herb of Life -->
+				<item id="8603" min="1" max="1" chance="19.8" /> <!-- Herb of Mana -->
+				<item id="8604" min="1" max="1" chance="9.9" /> <!-- Major Herb of Mana -->
+				<item id="8605" min="1" max="1" chance="3.3" /> <!-- Superior Herb of Mana -->
+				<item id="34849" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Power -->
+				<item id="34850" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Magic -->
+				<item id="13028" min="1" max="1" chance="0.1" /> <!-- Vitality Replenishing Herb -->
+			</drop>
+		</dropLists>
+		<collision>
+			<radius normal="17" />
+			<height normal="35" />
+		</collision>
+	</npc>
+	<npc id="21123" level="25" type="Monster" name="Baar Dre Vanul Destroyer">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="0" />
+			<param name="MoveAroundSocial1" value="0" />
+			<param name="MoveAroundSocial2" value="0" />
+			<param name="SoulShot" value="200" />
+			<param name="SoulShotRate" value="5" />
+			<param name="SpiritShot" value="100" />
+			<param name="SpiritShotRate" value="10" />
+			<param name="LongRangeGuardRate" value="10" />
+			<skill name="PhysicalSpecial" id="4229" level="2" />
+		</parameters>
+		<race>DEMONIC</race>
+		<sex>MALE</sex>
+		<acquire exp="2281" sp="76" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="460" hpRegen="3.5" mp="259" mpRegen="1.5" />
+			<attack physical="64.83203" magical="44.27187" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="101.83533" magical="74.51868" />
+			<speed>
+				<walk ground="80" />
+				<run ground="85" />
+			</speed>
+			<hitTime>350</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4229" level="2" /> <!-- NPC Double Wind Fist -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="12" /> <!-- Slightly Strong P. Atk. -->
+			<skill id="4411" level="12" /> <!-- Slightly Strong M. Atk. -->
+			<skill id="4412" level="10" /> <!-- Slightly Weak P. Def. -->
+			<skill id="4413" level="10" /> <!-- Slightly Weak M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="9" /> <!-- Demons -->
+			<skill id="4278" level="1" /> <!-- Dark Attack -->
+			<skill id="4333" level="5" /> <!-- Dark Attack Resistance -->
+		</skillList>
+		<shots shotChance="30" spiritChance="30" />
+		<exCrtEffect>false</exCrtEffect>
+		<ai aggroRange="450" clanHelpRange="300" isAggressive="true">
+			<clanList>
+				<clan>DEMONIC</clan>
+			</clanList>
+		</ai>
+		<dropLists>
+			<drop>
+				<item id="8600" min="1" max="1" chance="10" /> <!-- Herb of Life -->
+				<item id="8601" min="1" max="1" chance="8" /> <!-- Major Herb of Life -->
+				<item id="8602" min="1" max="1" chance="2" /> <!-- Superior Herb of Life -->
+				<item id="8603" min="1" max="1" chance="19.8" /> <!-- Herb of Mana -->
+				<item id="8604" min="1" max="1" chance="9.9" /> <!-- Major Herb of Mana -->
+				<item id="8605" min="1" max="1" chance="3.3" /> <!-- Superior Herb of Mana -->
+				<item id="34849" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Power -->
+				<item id="34850" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Magic -->
+				<item id="13028" min="1" max="1" chance="0.1" /> <!-- Vitality Replenishing Herb -->
+			</drop>
+		</dropLists>
+		<collision>
+			<radius normal="14" />
+			<height normal="36" />
+		</collision>
+	</npc>
+	<npc id="21124" level="18" type="Monster" name="Red Eye Barbed Bat">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="0" />
+			<param name="MoveAroundSocial1" value="0" />
+			<param name="MoveAroundSocial2" value="0" />
+		</parameters>
+		<race>ANIMAL</race>
+		<sex>MALE</sex>
+		<acquire exp="192" sp="0" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="300.946455" hpRegen="2.5" mp="175.987" mpRegen="1.2" />
+			<attack physical="37.82932" magical="25.83252" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="81.34791" magical="59.52687" />
+			<speed>
+				<walk ground="60" />
+				<run ground="90" />
+			</speed>
+			<hitTime>500</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4416" level="4" /> <!-- Animals -->
+			<skill id="4414" level="3" /> <!-- Light Armor Type -->
+			<skill id="4276" level="1" /> <!-- Bow/ Crossbow Vulnerability -->
+		</skillList>
+		<shots shotChance="30" spiritChance="30" />
+		<exCrtEffect>false</exCrtEffect>
+		<ai clanHelpRange="300" aggroRange="450">
+			<clanList>
+				<clan>ALL</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="10" />
+			<height normal="33.5" />
+		</collision>
+		<dropLists>
+			<drop>
+				<item id="57" min="4" max="10" chance="70" /> <!-- Adena -->
+				<item id="735" min="1" max="1" chance="0.3" /> <!-- Haste Potion -->
+				<item id="36561" min="1" max="1" chance="0.3" /> <!-- Cokes -->
+			</drop>
+			<spoil>
+				<item id="36531" min="1" max="1" chance="4.771" /> <!-- Thread -->
+			</spoil>
+		</dropLists>
+	</npc>
+	<npc id="21125" level="19" type="Monster" name="Northern Trimden">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="80" />
+			<param name="MoveAroundSocial1" value="80" />
+			<param name="MoveAroundSocial2" value="80" />
+		</parameters>
+		<race>BUG</race>
+		<sex>MALE</sex>
+		<acquire exp="1027" sp="37" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="321" hpRegen="2.5" mp="183" mpRegen="1.2" />
+			<attack physical="40.96915" magical="27.97662" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="84.07638" magical="61.52345" />
+			<speed>
+				<walk ground="60" />
+				<run ground="140" />
+			</speed>
+			<hitTime>650</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
+			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
+			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
+			<skill id="4412" level="11" /> <!-- Average P. Def. -->
+			<skill id="4413" level="11" /> <!-- Average M. Def. -->
+			<skill id="4414" level="2" /> <!-- Standard Type -->
+			<skill id="4415" level="3" /> <!-- One-handed Sword -->
+			<skill id="4416" level="12" /> <!-- Bugs -->
+		</skillList>
+		<shots shotChance="30" spiritChance="30" />
+		<exCrtEffect>false</exCrtEffect>
+		<ai aggroRange="450" clanHelpRange="300" isAggressive="true" />
+		<dropLists>
+			<drop>
+				<item id="8600" min="1" max="1" chance="10" /> <!-- Herb of Life -->
+				<item id="8601" min="1" max="1" chance="8" /> <!-- Major Herb of Life -->
+				<item id="8602" min="1" max="1" chance="2" /> <!-- Superior Herb of Life -->
+				<item id="8603" min="1" max="1" chance="19.8" /> <!-- Herb of Mana -->
+				<item id="8604" min="1" max="1" chance="9.9" /> <!-- Major Herb of Mana -->
+				<item id="8605" min="1" max="1" chance="3.3" /> <!-- Superior Herb of Mana -->
+				<item id="34849" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Power -->
+				<item id="34850" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Magic -->
+				<item id="13028" min="1" max="1" chance="0.1" /> <!-- Vitality Replenishing Herb -->
+			</drop>
+		</dropLists>
+		<collision>
+			<radius normal="27" />
+			<height normal="25.5" />
+		</collision>
+	</npc>
+	<npc id="21126" level="20" type="Monster" name="Kerope Werewolf">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="72" />
+			<param name="MoveAroundSocial1" value="72" />
+			<param name="MoveAroundSocial2" value="72" />
+		</parameters>
+		<race>HUMANOID</race>
+		<sex>MALE</sex>
+		<acquire exp="213" sp="0" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="341.95593" hpRegen="2.5" mp="193.829" mpRegen="1.2" />
+			<attack physical="44.32863" magical="30.2707" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
+			<defence physical="86.87049" magical="63.56806" />
+			<speed>
+				<walk ground="50" />
+				<run ground="125" />
+			</speed>
+			<hitTime>430</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4416" level="6" /> <!-- Humanoids -->
+			<skill id="4414" level="3" /> <!-- Light Armor Type -->
+		</skillList>
+		<shots shotChance="30" spiritChance="30" />
+		<exCrtEffect>false</exCrtEffect>
+		<ai clanHelpRange="300" aggroRange="450">
+			<clanList>
+				<clan>WEREWOLF</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="11" />
+			<height normal="29.7" />
+		</collision>
+		<dropLists>
+			<drop>
+				<item id="57" min="5" max="11" chance="70" /> <!-- Adena -->
+				<item id="36562" min="1" max="1" chance="0.03" /> <!-- Greater Cokes -->
+			</drop>
+			<spoil>
+				<item id="36531" min="1" max="1" chance="5.005" /> <!-- Thread -->
+			</spoil>
+		</dropLists>
+	</npc>
+	<npc id="21127" level="21" type="Monster" name="Northern Goblin">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="115" />
+			<param name="MoveAroundSocial1" value="115" />
+			<param name="MoveAroundSocial2" value="115" />
+			<param name="SoulShot" value="200" />
+			<param name="SoulShotRate" value="5" />
+			<param name="SpiritShot" value="100" />
+			<param name="SpiritShotRate" value="10" />
+			<param name="LongRangeGuardRate" value="10" />
+		</parameters>
+		<race>HUMANOID</race>
+		<sex>MALE</sex>
+		<equipment rhand="152" /> <!-- Heavy Chisel -->
+		<acquire exp="275" sp="0" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="364.037955" hpRegen="3.5" mp="206.805" mpRegen="1.5" />
+			<attack physical="47.91924" magical="32.72263" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
+			<defence physical="89.73059" magical="65.66095" />
+			<speed>
+				<walk ground="30" />
+				<run ground="120" />
+			</speed>
+			<hitTime>450</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4416" level="6" /> <!-- Humanoids -->
+		</skillList>
+		<shots shotChance="30" spiritChance="30" />
+		<exCrtEffect>false</exCrtEffect>
+		<ai clanHelpRange="300" aggroRange="450">
+			<clanList>
+				<clan>GOBLIN</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="4" />
+			<height normal="15" />
+		</collision>
+		<dropLists>
+			<drop>
+				<item id="57" min="6" max="13" chance="70" /> <!-- Adena -->
+				<item id="6035" min="1" max="1" chance="0.3" /> <!-- Magic Haste Potion -->
+				<item id="1804" min="1" max="1" chance="0.075" /> <!-- Recipe: Soulshot (D-grade) -->
+				<item id="36562" min="1" max="1" chance="0.003" /> <!-- Greater Cokes -->
+			</drop>
+			<spoil>
+				<item id="36531" min="1" max="1" chance="6.325" /> <!-- Thread -->
+			</spoil>
+		</dropLists>
+	</npc>
+	<npc id="21128" level="22" type="Monster" name="Spine Golem">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="116" />
+			<param name="MoveAroundSocial1" value="116" />
+			<param name="MoveAroundSocial2" value="116" />
+			<param name="SoulShot" value="200" />
+			<param name="SoulShotRate" value="5" />
+			<param name="SpiritShot" value="100" />
+			<param name="SpiritShotRate" value="10" />
+			<param name="LongRangeGuardRate" value="10" />
+			<skill name="DDMagicSlow" id="4254" level="2" />
+		</parameters>
+		<race>CONSTRUCT</race>
+		<sex>MALE</sex>
+		<acquire exp="295" sp="0" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="386.750895" hpRegen="3.5" mp="219.781" mpRegen="1.5" />
+			<attack physical="51.75278" magical="35.34044" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
+			<defence physical="92.65694" magical="67.80232" />
+			<speed>
+				<walk ground="23" />
+				<run ground="23" />
+			</speed>
+			<hitTime>410</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4254" level="2" /> <!-- NPC Prominence - Slow -->
+			<skill id="4416" level="2" /> <!-- Magic Creatures -->
+			<skill id="4444" level="2" /> <!-- Greater Bow/ Crossbow Resistance -->
+			<skill id="4273" level="3" /> <!-- Dagger/ Rapier Resistance -->
+			<skill id="4274" level="1" /> <!-- Blunt Weapon Vulnerability -->
+		</skillList>
+		<shots shotChance="30" spiritChance="30" />
+		<exCrtEffect>false</exCrtEffect>
+		<ai clanHelpRange="300" aggroRange="450">
+			<clanList>
+				<clan>ALL</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="20" />
+			<height normal="40.3" />
+		</collision>
+		<dropLists>
+			<drop>
+				<item id="57" min="6" max="14" chance="70" /> <!-- Adena -->
+				<item id="36562" min="1" max="1" chance="0.03" /> <!-- Greater Cokes -->
+			</drop>
+			<spoil>
+				<item id="36531" min="1" max="1" chance="6.731" /> <!-- Thread -->
+			</spoil>
+		</dropLists>
+	</npc>
+	<npc id="21129" level="23" type="Monster" name="Kerope Werewolf Chief">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="72" />
+			<param name="MoveAroundSocial1" value="72" />
+			<param name="MoveAroundSocial2" value="72" />
+			<param name="SoulShot" value="200" />
+			<param name="SoulShotRate" value="5" />
+			<param name="SpiritShot" value="100" />
+			<param name="SpiritShotRate" value="10" />
+			<param name="LongRangeGuardRate" value="10" />
+		</parameters>
+		<race>HUMANOID</race>
+		<sex>MALE</sex>
+		<acquire exp="322" sp="0" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="410.09475" hpRegen="3.5" mp="233.568" mpRegen="1.5" />
+			<attack physical="55.84125" magical="38.13234" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
+			<defence physical="95.64976" magical="69.99234" />
+			<speed>
+				<walk ground="50" />
+				<run ground="140" />
+			</speed>
+			<hitTime>430</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4416" level="6" /> <!-- Humanoids -->
+			<skill id="4410" level="12" /> <!-- Slightly Strong P. Atk. -->
+			<skill id="4411" level="12" /> <!-- Slightly Strong M. Atk. -->
+			<skill id="4412" level="10" /> <!-- Slightly Weak P. Def. -->
+			<skill id="4413" level="10" /> <!-- Slightly Weak M. Def. -->
+			<skill id="4414" level="3" /> <!-- Light Armor Type -->
+		</skillList>
+		<shots shotChance="30" spiritChance="30" />
+		<exCrtEffect>false</exCrtEffect>
+		<ai aggroRange="450" clanHelpRange="300" isAggressive="true">
+			<clanList>
+				<clan>WEREWOLF</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="11" />
+			<height normal="29.7" />
+		</collision>
+		<dropLists>
+			<drop>
+				<item id="57" min="7" max="15" chance="70" /> <!-- Adena -->
+				<item id="6035" min="1" max="1" chance="0.3" /> <!-- Magic Haste Potion -->
+				<item id="3032" min="1" max="1" chance="0.075" /> <!-- Recipe: Spiritshot (D-grade) -->
+				<item id="36562" min="1" max="1" chance="0.0075" /> <!-- Greater Cokes -->
+			</drop>
+			<spoil>
+				<item id="36531" min="1" max="1" chance="7.127" /> <!-- Thread -->
+			</spoil>
+		</dropLists>
+	</npc>
+	<npc id="21130" level="24" type="Monster" name="Northern Goblin Captain">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="115" />
+			<param name="MoveAroundSocial1" value="115" />
+			<param name="MoveAroundSocial2" value="115" />
+			<param name="SoulShot" value="200" />
+			<param name="SoulShotRate" value="5" />
+			<param name="SpiritShot" value="100" />
+			<param name="SpiritShotRate" value="10" />
+			<param name="LongRangeGuardRate" value="10" />
+		</parameters>
+		<race>HUMANOID</race>
+		<sex>MALE</sex>
+		<equipment rhand="66" lhand="102" /> <!-- Gladius / Round Shield -->
+		<acquire exp="343" sp="0" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="434.700435" hpRegen="3.5" mp="247.355" mpRegen="1.5" />
+			<attack physical="60.19687" magical="41.10666" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
+			<defence physical="98.70919" magical="72.2311" shield="49" shieldRate="20" />
+			<speed>
+				<walk ground="30" />
+				<run ground="125" />
+			</speed>
+			<hitTime>450</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4416" level="6" /> <!-- Humanoids -->
+		</skillList>
+		<shots shotChance="30" spiritChance="30" />
+		<exCrtEffect>false</exCrtEffect>
+		<ai aggroRange="450" clanHelpRange="300" isAggressive="true">
+			<clanList>
+				<clan>GOBLIN</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="4" />
+			<height normal="15" />
+		</collision>
+		<dropLists>
+			<drop>
+				<item id="57" min="7" max="16" chance="70" /> <!-- Adena -->
+				<item id="734" min="1" max="1" chance="0.75" /> <!-- Wind Walk Potion -->
+				<item id="5273" min="1" max="1" chance="0.075" /> <!-- Recipe: Greater Spiritshot Compressed Package (D-grade) -->
+				<item id="36562" min="1" max="1" chance="0.0075" /> <!-- Greater Cokes -->
+			</drop>
+			<spoil>
+				<item id="36531" min="1" max="1" chance="7.503" /> <!-- Thread -->
+			</spoil>
+		</dropLists>
+	</npc>
+	<npc id="21131" level="25" type="Monster" name="Reinforced Spine Golem">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="116" />
+			<param name="MoveAroundSocial1" value="116" />
+			<param name="MoveAroundSocial2" value="116" />
+			<param name="SoulShot" value="200" />
+			<param name="SoulShotRate" value="5" />
+			<param name="SpiritShot" value="100" />
+			<param name="SpiritShotRate" value="10" />
+			<param name="LongRangeGuardRate" value="10" />
+			<skill name="DDMagicSlow" id="4250" level="3" />
+		</parameters>
+		<race>CONSTRUCT</race>
+		<sex>MALE</sex>
+		<acquire exp="357" sp="0" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="459.937035" hpRegen="3.5" mp="261.953" mpRegen="1.5" />
+			<attack physical="64.83203" magical="44.27187" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
+			<defence physical="101.83533" magical="74.51868" />
+			<speed>
+				<walk ground="23" />
+				<run ground="29" />
+			</speed>
+			<hitTime>410</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4250" level="3" /> <!-- NPC Twister - Slow -->
+			<skill id="4416" level="2" /> <!-- Magic Creatures -->
+			<skill id="4410" level="12" /> <!-- Slightly Strong P. Atk. -->
+			<skill id="4411" level="12" /> <!-- Slightly Strong M. Atk. -->
+			<skill id="4412" level="10" /> <!-- Slightly Weak P. Def. -->
+			<skill id="4413" level="10" /> <!-- Slightly Weak M. Def. -->
+			<skill id="4444" level="2" /> <!-- Greater Bow/ Crossbow Resistance -->
+			<skill id="4273" level="3" /> <!-- Dagger/ Rapier Resistance -->
+			<skill id="4274" level="1" /> <!-- Blunt Weapon Vulnerability -->
+		</skillList>
+		<shots shotChance="30" spiritChance="30" />
+		<exCrtEffect>false</exCrtEffect>
+		<ai clanHelpRange="300" aggroRange="450">
+			<clanList>
+				<clan>ALL</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="20" />
+			<height normal="40.3" />
+		</collision>
+		<dropLists>
+			<drop>
+				<item id="57" min="7" max="16" chance="70" /> <!-- Adena -->
+				<item id="36562" min="1" max="1" chance="0.03" /> <!-- Greater Cokes -->
+			</drop>
+			<spoil>
+				<item id="36531" min="1" max="1" chance="7.823" /> <!-- Thread -->
+			</spoil>
+		</dropLists>
+	</npc>
+</list>

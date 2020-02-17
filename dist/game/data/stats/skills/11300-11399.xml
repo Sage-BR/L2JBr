@@ -1,0 +1,4445 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="11300" toLevel="6" name="Yoke Status">
+		<!-- Momentarily immobilized. P./ M. Def. -$s1. -->
+		<icon>icon.skill1042</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>9</abnormalTime>
+		<abnormalType>AIRBIND</abnormalType>
+		<abnormalVisualEffect>AIRBIND</abnormalVisualEffect>
+		<effectPoint>-692</effectPoint>
+		<operateType>A2</operateType>
+		<castRange>500</castRange>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>1000</effectRange>
+		<activateRate>100</activateRate>
+		<magicLvl>85</magicLvl>
+		<trait>AIRBIND</trait>
+		<isDebuff>true</isDebuff>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpCheckCrtEffect" />
+		</conditions>
+		<effects>
+			<effect name="AirBind" />
+			<effect name="BlockActions" />
+			<effect name="BlockControl" />
+			<effect name="DefenceTrait">
+				<AIRBIND>100</AIRBIND>
+				<KNOCKBACK>100</KNOCKBACK>
+				<KNOCKDOWN>100</KNOCKDOWN>
+				<HOLD>100</HOLD>
+				<SLEEP>100</SLEEP>
+				<DERANGEMENT>100</DERANGEMENT>
+				<CHANGEBODY>100</CHANGEBODY>
+				<SHOCK>100</SHOCK>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11301" toLevel="8" name="Dimension Storm">
+		<!-- Attack nearby enemies with $s1 Power added to M. Atk. -->
+		<icon>icon.skill0005</icon>
+		<affectRange>300</affectRange>
+		<affectLimit>5-12</affectLimit>
+		<operateType>A1</operateType>
+		<mpConsume>70</mpConsume>
+		<hitTime>2560</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>10000</reuseDelay>
+		<effectPoint>-704</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>
+			<value level="1">85</value>
+			<value level="2">86</value>
+			<value level="3">88</value>
+			<value level="4">90</value>
+			<value level="5">92</value>
+			<value level="6">94</value>
+			<value level="7">96</value>
+			<value level="8">98</value>
+		</magicLvl>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>POINT_BLANK</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<effects>
+			<effect name="MagicalAttack">
+				<power>
+					<value level="1">152</value>
+					<value level="2">154</value>
+					<value level="3">157</value>
+					<value level="4">161</value>
+					<value level="5">165</value>
+					<value level="6">169</value>
+					<value level="7">173</value>
+					<value level="8">177</value>
+				</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11302" toLevel="13" name="Servitor Major Heal">
+		<!-- Heals the servitor with $s1 Power. -->
+		<icon>icon.skill1127</icon>
+		<operateType>A1</operateType>
+		<mpConsume>70</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>1000</reuseDelay>
+		<effectPoint>687</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>1100</effectRange>
+		<magicLvl>
+			<value level="1">85</value>
+			<value level="2">86</value>
+			<value level="3">88</value>
+			<value level="4">90</value>
+			<value level="5">92</value>
+			<value level="6">94</value>
+			<value level="7">96</value>
+			<value level="8">98</value>
+			<value level="9">101</value>
+			<value level="10">103</value>
+			<value level="11">105</value>
+			<value level="12">107</value>
+			<value level="13">109</value>
+		</magicLvl>
+		<isMagic>1</isMagic>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpCompanion">
+				<type>MY_SUMMON</type>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="Heal">
+				<power>
+					<value level="1">1637</value>
+					<value level="2">1645</value>
+					<value level="3">1658</value>
+					<value level="4">1671</value>
+					<value level="5">1685</value>
+					<value level="6">1698</value>
+					<value level="7">1713</value>
+					<value level="8">1727</value>
+					<value level="9">1928</value>
+					<value level="10">1944</value>
+					<value level="11">1960</value>
+					<value level="12">1976</value>
+					<value level="13">1992</value>
+					<value fromLevel="7" toLevel="13" fromSubLevel="1001" toSubLevel="1020">{base + (base / 100 * subIndex)}</value>
+				</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11303" toLevel="1" name="Mass Servitor Magic Barrier">
+		<!-- Increases all servitor's M. Def. by 30% for 30 min. -->
+		<icon>icon.skill1139</icon>
+		<abnormalLvl>3</abnormalLvl>
+		<abnormalTime>1800</abnormalTime>
+		<abnormalType>MD_UP</abnormalType>
+		<operateType>A2</operateType>
+		<mpConsume>70</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>3500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>10000</reuseDelay>
+		<effectPoint>687</effectPoint>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>1100</effectRange>
+		<magicLvl>85</magicLvl>
+		<affectRange>1000</affectRange>
+		<isMagic>1</isMagic>
+		<targetType>SUMMON</targetType>
+		<affectScope>SUMMON_EXCEPT_MASTER</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<effects>
+			<effect name="MagicalDefence">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11304" toLevel="1" name="Mass Servitor Haste">
+		<!-- Increases all servitor's Atk. Spd. by 34% for 30 min. -->
+		<icon>icon.skill1141</icon>
+		<abnormalLvl>2</abnormalLvl>
+		<abnormalTime>1800</abnormalTime>
+		<abnormalType>ATTACK_TIME_DOWN</abnormalType>
+		<operateType>A2</operateType>
+		<mpConsume>70</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>3500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>10000</reuseDelay>
+		<effectPoint>687</effectPoint>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>1100</effectRange>
+		<magicLvl>85</magicLvl>
+		<affectRange>1000</affectRange>
+		<isMagic>1</isMagic>
+		<targetType>SUMMON</targetType>
+		<affectScope>SUMMON_EXCEPT_MASTER</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<effects>
+			<effect name="PhysicalAttackSpeed">
+				<amount>34</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11305" toLevel="1" name="Mass Servitor Shield">
+		<!-- Increases all servitor's P. Def. by 15% for 30 min. -->
+		<icon>icon.skill1140</icon>
+		<abnormalLvl>3</abnormalLvl>
+		<abnormalTime>1800</abnormalTime>
+		<abnormalType>PD_UP</abnormalType>
+		<operateType>A2</operateType>
+		<mpConsume>70</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>3500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>10000</reuseDelay>
+		<effectPoint>687</effectPoint>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>1100</effectRange>
+		<magicLvl>85</magicLvl>
+		<affectRange>1000</affectRange>
+		<isMagic>1</isMagic>
+		<targetType>SUMMON</targetType>
+		<affectScope>SUMMON_EXCEPT_MASTER</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<effects>
+			<effect name="PhysicalDefence">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11306" toLevel="1" name="Mass Servitor Empower">
+		<!-- Increases all servitor's M. Atk. by 79% for 30 min. -->
+		<icon>icon.skill1059</icon>
+		<abnormalLvl>3</abnormalLvl>
+		<abnormalTime>1800</abnormalTime>
+		<abnormalType>MA_UP</abnormalType>
+		<operateType>A2</operateType>
+		<mpConsume>70</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>3500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>10000</reuseDelay>
+		<effectPoint>687</effectPoint>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>1100</effectRange>
+		<magicLvl>85</magicLvl>
+		<affectRange>1000</affectRange>
+		<isMagic>1</isMagic>
+		<targetType>SUMMON</targetType>
+		<affectScope>SUMMON_EXCEPT_MASTER</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<effects>
+			<effect name="MAtk">
+				<amount>79</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11307" toLevel="1" name="Mass Servitor Might">
+		<!-- Increases all servitor's P. Atk. by 17% for 30 min. -->
+		<icon>icon.skill1146</icon>
+		<abnormalLvl>3</abnormalLvl>
+		<abnormalTime>1800</abnormalTime>
+		<abnormalType>PA_UP</abnormalType>
+		<operateType>A2</operateType>
+		<mpConsume>70</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>3500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>10000</reuseDelay>
+		<effectPoint>687</effectPoint>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>1100</effectRange>
+		<magicLvl>85</magicLvl>
+		<affectRange>1000</affectRange>
+		<isMagic>1</isMagic>
+		<targetType>SUMMON</targetType>
+		<affectScope>SUMMON_EXCEPT_MASTER</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<effects>
+			<effect name="PAtk">
+				<amount>17</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11308" toLevel="1" name="Mass Servitor Wind Walk">
+		<!-- Increases all servitor's Speed by 34 for 30 min. -->
+		<icon>icon.skill1144</icon>
+		<abnormalLvl>2</abnormalLvl>
+		<abnormalTime>1800</abnormalTime>
+		<abnormalType>SPEED_UP</abnormalType>
+		<operateType>A2</operateType>
+		<mpConsume>70</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>3500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>10000</reuseDelay>
+		<effectPoint>687</effectPoint>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>1100</effectRange>
+		<magicLvl>85</magicLvl>
+		<affectRange>1000</affectRange>
+		<isMagic>1</isMagic>
+		<targetType>SUMMON</targetType>
+		<affectScope>SUMMON_EXCEPT_MASTER</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<effects>
+			<effect name="Speed">
+				<amount>34</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11309" toLevel="1" name="Mass Servitor Blessing">
+		<!-- Dispels debuffs on all servitors and makes them immune to debuffs for 5 sec. -->
+		<icon>icon.skill1301</icon>
+		<abnormalTime>5</abnormalTime>
+		<operateType>A2</operateType>
+		<mpConsume>70</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>3500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>30000</reuseDelay>
+		<effectPoint>687</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>1100</effectRange>
+		<magicLvl>85</magicLvl>
+		<affectRange>1000</affectRange>
+		<isMagic>1</isMagic>
+		<targetType>SUMMON</targetType>
+		<affectScope>SUMMON_EXCEPT_MASTER</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<effects>
+			<effect name="DispelByCategory">
+				<slot>DEBUFF</slot>
+				<rate>100</rate>
+				<max>10</max>
+			</effect>
+			<effect name="DebuffBlock" />
+			<effect name="Heal" fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1020">
+				<power>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1001">1936</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1002" toSubLevel="1002">2072</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1003" toSubLevel="1003">2207</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1004" toSubLevel="1004">2342</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1005" toSubLevel="1005">2477</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1006" toSubLevel="1006">2612</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1007" toSubLevel="1007">2747</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1008" toSubLevel="1008">2882</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1009" toSubLevel="1009">3017</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1010" toSubLevel="1010">3152</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1011" toSubLevel="1011">3288</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1012" toSubLevel="1012">3423</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1013" toSubLevel="1013">3558</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1014" toSubLevel="1014">3693</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1015" toSubLevel="1015">3828</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1016" toSubLevel="1016">3964</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1017" toSubLevel="1017">4099</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1018" toSubLevel="1018">4234</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1019" toSubLevel="1019">4369</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1020" toSubLevel="1020">4504</value>
+				</power>
+			</effect>
+			<effect name="ManaHeal" fromLevel="1" toLevel="1" fromSubLevel="2001" toSubLevel="2020">
+				<power>
+					<value fromLevel="1" toLevel="1" fromSubLevel="2001" toSubLevel="2001">532</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="2002" toSubLevel="2002">570</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="2003" toSubLevel="2003">607</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="2004" toSubLevel="2004">644</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="2005" toSubLevel="2005">681</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="2006" toSubLevel="2006">718</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="2007" toSubLevel="2007">756</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="2008" toSubLevel="2008">793</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="2009" toSubLevel="2009">830</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="2010" toSubLevel="2010">867</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="2011" toSubLevel="2011">904</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="2012" toSubLevel="2012">942</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="2013" toSubLevel="2013">979</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="2014" toSubLevel="2014">1016</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="2015" toSubLevel="2015">1053</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="2016" toSubLevel="2016">1090</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="2017" toSubLevel="2017">1128</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="2018" toSubLevel="2018">1165</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="2019" toSubLevel="2019">1202</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="2020" toSubLevel="2020">1240</value>
+				</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11310" toLevel="2" name="Servitor Immortality">
+		<!-- For $s1, increases the Servitor's P. Def. by $s2 and M. Def. by $s3 and prevents its HP from dropping below 1. -->
+		<icon>icon.skill11310</icon>
+		<abnormalLvl>2</abnormalLvl>
+		<abnormalTime>
+			<value fromLevel="1" toLevel="2">30</value>
+			<value fromLevel="1" toLevel="2" fromSubLevel="1001" toSubLevel="1010">{base + subIndex}</value>
+			<value fromLevel="1" toLevel="2" fromSubLevel="1011" toSubLevel="1020">{base + 10 + (subIndex - 10 * 0.5)}</value>
+		</abnormalTime>
+		<abnormalType>PD_UP_SPECIAL</abnormalType>
+		<operateType>A2</operateType>
+		<mpConsume>70</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<reuseDelay>600000</reuseDelay>
+		<effectPoint>687</effectPoint>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>1100</effectRange>
+		<magicLvl>85</magicLvl>
+		<affectRange>1000</affectRange>
+		<isMagic>1</isMagic>
+		<targetType>SUMMON</targetType>
+		<affectScope>SUMMON_EXCEPT_MASTER</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<effects>
+			<effect name="PhysicalDefence">
+				<amount>
+					<value level="1">7020</value>
+					<value level="2">14040</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>
+					<value level="1">6318</value>
+					<value level="2">12636</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="PAtk" fromLevel="1" toLevel="2" fromSubLevel="2001" toSubLevel="2020">
+				<amount>
+					<value fromLevel="1" toLevel="2" fromSubLevel="2001" toSubLevel="2020">{0.6 + (0.4 * subIndex)}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11311" toLevel="3" name="Naviarope Strike">
+		<!-- Inflicts $s1 damage. -->
+		<icon>icon.skill_transform_etc</icon>
+		<operateType>A1</operateType>
+		<mpConsume>70</mpConsume>
+		<nextAction>ATTACK</nextAction>
+		<castRange>40</castRange>
+		<hitTime>1490</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-704</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>400</effectRange>
+		<magicLvl>
+			<value level="1">95</value>
+			<value level="2">97</value>
+			<value level="3">99</value>
+		</magicLvl>
+		<reuseDelay>4000</reuseDelay>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>
+					<value level="1">20633</value>
+					<value level="2">21717</value>
+					<value level="3">22799</value>
+				</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11312" toLevel="3" name="Naviarope Flame">
+		<!-- Inflicts $s1 ranged damage. -->
+		<icon>icon.skill_transform_etc</icon>
+		<operateType>A1</operateType>
+		<mpConsume>70</mpConsume>
+		<nextAction>ATTACK</nextAction>
+		<castRange>900</castRange>
+		<hitTime>1490</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-704</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>1500</effectRange>
+		<magicLvl>
+			<value level="1">95</value>
+			<value level="2">97</value>
+			<value level="3">99</value>
+		</magicLvl>
+		<reuseDelay>4000</reuseDelay>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>
+					<value level="1">18758</value>
+					<value level="2">19743</value>
+					<value level="3">20727</value>
+				</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11313" toLevel="3" name="Naviarope Explosion">
+		<!-- Inflicts $s1 damage to nearby enemies. -->
+		<icon>icon.skill_transform_etc</icon>
+		<affectRange>200</affectRange> <!-- Guessed -->
+		<operateType>A1</operateType>
+		<mpConsume>70</mpConsume>
+		<hitTime>1490</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-704</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>
+			<value level="1">95</value>
+			<value level="2">97</value>
+			<value level="3">99</value>
+		</magicLvl>
+		<affectLimit>6-12</affectLimit>
+		<reuseDelay>4000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>POINT_BLANK</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>
+					<value level="1">18758</value>
+					<value level="2">19743</value>
+					<value level="3">20727</value>
+				</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11314" toLevel="3" name="Corpse Blast">
+		<!-- Detonates a corpse to inflict damage on nearby enemies. -->
+		<icon>icon.skill_transform_debuff</icon>
+		<affectRange>150</affectRange>
+		<operateType>A1</operateType>
+		<mpConsume>70</mpConsume>
+		<castRange>400</castRange>
+		<hitTime>1500</hitTime>
+		<reuseDelay>5000</reuseDelay>
+		<isMagic>1</isMagic>
+		<effectPoint>-704</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>900</effectRange>
+		<magicLvl>
+			<value level="1">95</value>
+			<value level="2">97</value>
+			<value level="3">99</value>
+		</magicLvl>
+		<affectLimit>6-12</affectLimit>
+		<isDebuff>true</isDebuff>
+		<targetType>NPC_BODY</targetType>
+		<affectScope>RANGE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<conditions>
+			<condition name="ConsumeBody" />
+		</conditions>
+		<effects>
+			<effect name="ConsumeBody" />
+			<effect name="MagicalAttack">
+				<power>
+					<value level="1">370</value>
+					<value level="2">372</value>
+					<value level="3">374</value>
+				</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11315" toLevel="1" name="Summon Defense">
+		<!-- Increases Bow/ Crossbow Resistance +50 and M. Def. +50%. -->
+		<icon>icon.skill11253</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<effects>
+			<effect name="DefenceTrait">
+				<BOW>50</BOW>
+				<TWOHANDCROSSBOW>50</TWOHANDCROSSBOW>
+				<CROSSBOW>50</CROSSBOW>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>50</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11316" toLevel="1" name="Summon Soulshots">
+		<!-- Summons 1900 Beast Soulshots. Consumes 1 Crystal (R-grade). -->
+		<icon>icon.skill11316</icon>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>17371</itemConsumeId> <!-- Crystal (R-Grade) -->
+		<operateType>A1</operateType>
+		<mpInitialConsume>398</mpInitialConsume>
+		<hitTime>3000</hitTime>
+		<reuseDelay>60000</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<isMagic>1</isMagic>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="Restoration">
+				<itemId>6645</itemId> <!-- Beast Soulshot -->
+				<itemCount>1900</itemCount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11317" toLevel="8" name="Servitor Group Heal">
+		<!-- Restores all servitor's HP by $s1. Not in Use. -->
+		<icon>icon.skill1027</icon>
+		<operateType>A1</operateType>
+		<mpConsume>
+			<value level="1">278</value>
+			<value level="2">280</value>
+			<value level="3">284</value>
+			<value level="4">289</value>
+			<value level="5">293</value>
+			<value level="6">298</value>
+			<value level="7">303</value>
+			<value level="8">308</value>
+		</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>6500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>6000</reuseDelay>
+		<effectPoint>687</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>1100</effectRange>
+		<magicLvl>
+			<value level="1">85</value>
+			<value level="2">86</value>
+			<value level="3">88</value>
+			<value level="4">90</value>
+			<value level="5">92</value>
+			<value level="6">94</value>
+			<value level="7">96</value>
+			<value level="8">98</value>
+		</magicLvl>
+		<affectRange>1000</affectRange>
+		<isMagic>1</isMagic>
+		<targetType>SUMMON</targetType>
+		<affectScope>SUMMON_EXCEPT_MASTER</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<effects>
+			<effect name="Heal">
+				<power>
+					<value level="1">1191</value>
+					<value level="2">1196</value>
+					<value level="3">1206</value>
+					<value level="4">1216</value>
+					<value level="5">1226</value>
+					<value level="6">1236</value>
+					<value level="7">1246</value>
+					<value level="8">1256</value>
+				</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11320" toLevel="8" name="Summon Wynn Kai the Cat">
+		<!-- Summons Wynn Kai the Cat. Consumes $s1 summon points. -->
+		<icon>icon.skill11844</icon>
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<mpConsume>
+			<value level="1">350</value>
+			<value level="2">360</value>
+			<value level="3">375</value>
+			<value level="4">390</value>
+			<value level="5">405</value>
+			<value level="6">420</value>
+			<value level="7">435</value>
+			<value level="8">455</value>
+		</mpConsume>
+		<hitTime>3500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>5000</reuseDelay>
+		<isMagic>1</isMagic>
+		<conditions>
+			<condition name="CanSummonMulti">
+				<summonPoints>2</summonPoints>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SummonMulti">
+				<npcId>
+					<value level="1">15066</value>
+					<value level="2">15067</value>
+					<value level="3">15068</value>
+					<value level="4">15069</value>
+					<value level="5">15070</value>
+					<value level="6">15071</value>
+					<value level="7">15072</value>
+					<value level="8">15073</value>
+				</npcId>
+				<summonPoints>2</summonPoints>
+				<lifeTime>-1</lifeTime>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11321" toLevel="8" name="Summon Wynn Feline King">
+		<!-- Summons Wynn Feline King. Consumes $s1 summon points. -->
+		<icon>icon.skill11845</icon>
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<mpConsume>
+			<value level="1">350</value>
+			<value level="2">360</value>
+			<value level="3">375</value>
+			<value level="4">390</value>
+			<value level="5">405</value>
+			<value level="6">420</value>
+			<value level="7">435</value>
+			<value level="8">455</value>
+		</mpConsume>
+		<hitTime>3500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>5000</reuseDelay>
+		<isMagic>1</isMagic>
+		<conditions>
+			<condition name="CanSummonMulti">
+				<summonPoints>2</summonPoints>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SummonMulti">
+				<npcId>
+					<value level="1">15074</value>
+					<value level="2">15075</value>
+					<value level="3">15076</value>
+					<value level="4">15077</value>
+					<value level="5">15078</value>
+					<value level="6">15079</value>
+					<value level="7">15080</value>
+					<value level="8">15081</value>
+				</npcId>
+				<summonPoints>2</summonPoints>
+				<lifeTime>-1</lifeTime>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11322" toLevel="8" name="Summon Wynn Feline Queen">
+		<!-- Summons Wynn Feline Queen. Consumes $s1 summon points. -->
+		<icon>icon.skill11846</icon>
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<mpConsume>
+			<value level="1">350</value>
+			<value level="2">360</value>
+			<value level="3">375</value>
+			<value level="4">390</value>
+			<value level="5">405</value>
+			<value level="6">420</value>
+			<value level="7">435</value>
+			<value level="8">455</value>
+		</mpConsume>
+		<hitTime>3500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>5000</reuseDelay>
+		<isMagic>1</isMagic>
+		<conditions>
+			<condition name="CanSummonMulti">
+				<summonPoints>2</summonPoints>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SummonMulti">
+				<npcId>
+					<value level="1">15082</value>
+					<value level="2">15083</value>
+					<value level="3">15084</value>
+					<value level="4">15085</value>
+					<value level="5">15086</value>
+					<value level="6">15087</value>
+					<value level="7">15088</value>
+					<value level="8">15089</value>
+				</npcId>
+				<summonPoints>2</summonPoints>
+				<lifeTime>-1</lifeTime>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11323" toLevel="8" name="Feline Aggression">
+		<!-- Provokes nearby enemies. -->
+		<icon>icon.skill0028</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>3</abnormalTime>
+		<abnormalType>TARGET_LOCK</abnormalType>
+		<affectRange>200</affectRange> <!-- Guessed -->
+		<activateRate>100</activateRate>
+		<basicProperty>MAGIC</basicProperty> <!-- Guessed -->
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>POINT_BLANK</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<trait>AGGRESSION</trait>
+		<mpConsume>
+			<value level="1">73</value>
+			<value level="2">76</value>
+			<value level="3">79</value>
+			<value level="4">81</value>
+			<value level="5">84</value>
+			<value level="6">87</value>
+			<value level="7">90</value>
+			<value level="8">93</value>
+		</mpConsume>
+		<hitTime>1490</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>15000</reuseDelay>
+		<effectPoint>-687</effectPoint>
+		<isDebuff>true</isDebuff>
+		<effects>
+			<effect name="TargetMe" /> <!-- Guessed -->
+			<effect name="GetAgro" />
+		</effects>
+	</skill>
+	<skill id="11324" toLevel="8" name="Feline Stun">
+		<!-- Temporarily Stuns nearby enemies. -->
+		<icon>icon.skill0028</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>5</abnormalTime>
+		<abnormalType>STUN</abnormalType>
+		<abnormalVisualEffect>STUN</abnormalVisualEffect>
+		<activateRate>80</activateRate> <!-- Guessed -->
+		<affectRange>200</affectRange> <!-- Guessed -->
+		<basicProperty>PHYSICAL</basicProperty> <!-- Guessed -->
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>POINT_BLANK</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<trait>SHOCK</trait>
+		<mpConsume>
+			<value level="1">73</value>
+			<value level="2">76</value>
+			<value level="3">79</value>
+			<value level="4">81</value>
+			<value level="5">84</value>
+			<value level="6">87</value>
+			<value level="7">90</value>
+			<value level="8">93</value>
+		</mpConsume>
+		<hitTime>1490</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>15000</reuseDelay>
+		<effectPoint>-687</effectPoint>
+		<isDebuff>true</isDebuff>
+		<effects>
+			<effect name="BlockActions">
+				<allowedSkills>10279;10517;10025;10776;11770;1904;11264;11093;13314;1912</allowedSkills>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11325" toLevel="8" name="Feline Bite">
+		<!-- Inflicts damage on a target with $s1 Power added to P. Atk. -->
+		<icon>icon.skill0121</icon>
+		<operateType>A1</operateType>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<mpConsume>
+			<value level="1">48</value>
+			<value level="2">50</value>
+			<value level="3">52</value>
+			<value level="4">54</value>
+			<value level="5">56</value>
+			<value level="6">58</value>
+			<value level="7">60</value>
+			<value level="8">62</value>
+		</mpConsume>
+		<nextAction>ATTACK</nextAction>
+		<castRange>40</castRange>
+		<hitTime>1490</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-687</effectPoint>
+		<reuseDelay>5000</reuseDelay>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>
+					<value level="1">10508</value>
+					<value level="2">11190</value>
+					<value level="3">11872</value>
+					<value level="4">12554</value>
+					<value level="5">13236</value>
+					<value level="6">13918</value>
+					<value level="7">14600</value>
+					<value level="8">15282</value>
+				</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11326" toLevel="8" name="Feline Pounce">
+		<!-- Inflicts damage on a target with $s1 Power added to P. Atk. Speed -$s2. -->
+		<icon>icon.skill0121</icon>
+		<abnormalLvl>
+			<value level="1">1</value>
+			<value level="2">2</value>
+			<value level="3">3</value>
+			<value level="4">4</value>
+			<value level="5">5</value>
+			<value level="6">6</value>
+			<value level="7">7</value>
+			<value level="8">8</value>
+		</abnormalLvl>
+		<abnormalTime>5</abnormalTime>
+		<abnormalType>SPEED_DOWN</abnormalType>
+		<activateRate>100</activateRate>
+		<affectRange>150</affectRange> <!-- Guessed -->
+		<basicProperty>PHYSICAL</basicProperty> <!-- Guessed -->
+		<operateType>DA2</operateType>
+		<targetType>ENEMY_ONLY</targetType>
+		<affectScope>RANGE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<mpConsume>
+			<value level="1">48</value>
+			<value level="2">50</value>
+			<value level="3">52</value>
+			<value level="4">54</value>
+			<value level="5">56</value>
+			<value level="6">58</value>
+			<value level="7">60</value>
+			<value level="8">62</value>
+		</mpConsume>
+		<nextAction>ATTACK</nextAction>
+		<castRange>600</castRange>
+		<hitTime>100</hitTime>
+		<coolTime>500</coolTime>
+		<effectRange>800</effectRange>
+		<reuseDelay>5000</reuseDelay>
+		<effectPoint>-687</effectPoint>
+		<isDebuff>true</isDebuff>
+		<conditions>
+			<condition name="OpCheckCastRange">
+				<distance>200</distance>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>
+					<value level="1">8406</value>
+					<value level="2">8920</value>
+					<value level="3">9497</value>
+					<value level="4">10043</value>
+					<value level="5">10588</value>
+					<value level="6">11134</value>
+					<value level="7">11680</value>
+					<value level="8">12225</value>
+				</power>
+			</effect>
+			<effect name="Speed">
+				<amount>-100</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11327" toLevel="8" name="Feline Touch">
+		<!-- Inflicts damage on a target with $s1 Power added to P. Atk. -->
+		<icon>icon.skill1234</icon>
+		<operateType>A1</operateType>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<mpConsume>
+			<value level="1">48</value>
+			<value level="2">50</value>
+			<value level="3">52</value>
+			<value level="4">54</value>
+			<value level="5">56</value>
+			<value level="6">58</value>
+			<value level="7">60</value>
+			<value level="8">62</value>
+		</mpConsume>
+		<castRange>1100</castRange>
+		<hitTime>2200</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-687</effectPoint>
+		<reuseDelay>5000</reuseDelay>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>
+					<value level="1">10508</value>
+					<value level="2">11190</value>
+					<value level="3">11872</value>
+					<value level="4">12554</value>
+					<value level="5">13236</value>
+					<value level="6">13918</value>
+					<value level="7">14600</value>
+					<value level="8">15282</value>
+				</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11328" toLevel="8" name="Feline Power">
+		<!-- Inflicts damage on nearby enemies with $s1 Power added to P. Atk. -->
+		<icon>icon.skill1171</icon>
+		<affectRange>150</affectRange> <!-- Guessed -->
+		<operateType>A1</operateType>
+		<targetType>ENEMY_ONLY</targetType>
+		<affectScope>RANGE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<mpConsume>
+			<value level="1">73</value>
+			<value level="2">76</value>
+			<value level="3">79</value>
+			<value level="4">81</value>
+			<value level="5">84</value>
+			<value level="6">87</value>
+			<value level="7">90</value>
+			<value level="8">93</value>
+		</mpConsume>
+		<castRange>1100</castRange>
+		<hitTime>2900</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-687</effectPoint>
+		<reuseDelay>5000</reuseDelay>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>
+					<value level="1">11558</value>
+					<value level="2">12309</value>
+					<value level="3">13059</value>
+					<value level="4">13809</value>
+					<value level="5">14559</value>
+					<value level="6">15309</value>
+					<value level="7">16060</value>
+					<value level="8">16810</value>
+				</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11329" toLevel="8" name="Summon Wynn Merrow">
+		<!-- Summons Wynn Merrow. Consumes $s1 summon points. -->
+		<icon>icon.skill11847</icon>
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<mpConsume>
+			<value level="1">350</value>
+			<value level="2">360</value>
+			<value level="3">375</value>
+			<value level="4">390</value>
+			<value level="5">405</value>
+			<value level="6">420</value>
+			<value level="7">435</value>
+			<value level="8">455</value>
+		</mpConsume>
+		<hitTime>3500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>5000</reuseDelay>
+		<isMagic>1</isMagic>
+		<conditions>
+			<condition name="CanSummonMulti">
+				<summonPoints>2</summonPoints>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SummonMulti">
+				<npcId>
+					<value level="1">15114</value>
+					<value level="2">15115</value>
+					<value level="3">15116</value>
+					<value level="4">15117</value>
+					<value level="5">15118</value>
+					<value level="6">15119</value>
+					<value level="7">15120</value>
+					<value level="8">15121</value>
+				</npcId>
+				<summonPoints>2</summonPoints>
+				<lifeTime>-1</lifeTime>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11330" toLevel="8" name="Summon Wynn Magnus">
+		<!-- Summons Wynn Magnus. Consumes $s1 summon points. -->
+		<icon>icon.skill11848</icon>
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<mpConsume>
+			<value level="1">350</value>
+			<value level="2">360</value>
+			<value level="3">375</value>
+			<value level="4">390</value>
+			<value level="5">405</value>
+			<value level="6">420</value>
+			<value level="7">435</value>
+			<value level="8">455</value>
+		</mpConsume>
+		<hitTime>3500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>5000</reuseDelay>
+		<isMagic>1</isMagic>
+		<conditions>
+			<condition name="CanSummonMulti">
+				<summonPoints>2</summonPoints>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SummonMulti">
+				<npcId>
+					<value level="1">15122</value>
+					<value level="2">15123</value>
+					<value level="3">15124</value>
+					<value level="4">15125</value>
+					<value level="5">15126</value>
+					<value level="6">15127</value>
+					<value level="7">15128</value>
+					<value level="8">15129</value>
+				</npcId>
+				<summonPoints>2</summonPoints>
+				<lifeTime>-1</lifeTime>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11331" toLevel="8" name="Summon Wynn Seraphim">
+		<!-- Summons Wynn Seraphim. Consumes $s1 summon points. -->
+		<icon>icon.skill11849</icon>
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<mpConsume>
+			<value level="1">350</value>
+			<value level="2">360</value>
+			<value level="3">375</value>
+			<value level="4">390</value>
+			<value level="5">405</value>
+			<value level="6">420</value>
+			<value level="7">435</value>
+			<value level="8">455</value>
+		</mpConsume>
+		<hitTime>3500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>5000</reuseDelay>
+		<isMagic>1</isMagic>
+		<conditions>
+			<condition name="CanSummonMulti">
+				<summonPoints>2</summonPoints>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SummonMulti">
+				<npcId>
+					<value level="1">15130</value>
+					<value level="2">15131</value>
+					<value level="3">15132</value>
+					<value level="4">15133</value>
+					<value level="5">15134</value>
+					<value level="6">15135</value>
+					<value level="7">15136</value>
+					<value level="8">15137</value>
+				</npcId>
+				<summonPoints>2</summonPoints>
+				<lifeTime>-1</lifeTime>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11332" toLevel="8" name="Unicorn's Aggression">
+		<!-- Provokes nearby enemies. -->
+		<icon>icon.skill0028</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>3</abnormalTime>
+		<abnormalType>TARGET_LOCK</abnormalType>
+		<affectRange>200</affectRange> <!-- Guessed -->
+		<activateRate>100</activateRate>
+		<basicProperty>MAGIC</basicProperty> <!-- Guessed -->
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>POINT_BLANK</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<trait>AGGRESSION</trait>
+		<mpConsume>
+			<value level="1">73</value>
+			<value level="2">76</value>
+			<value level="3">79</value>
+			<value level="4">81</value>
+			<value level="5">84</value>
+			<value level="6">87</value>
+			<value level="7">90</value>
+			<value level="8">93</value>
+		</mpConsume>
+		<hitTime>1490</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>15000</reuseDelay>
+		<effectPoint>-687</effectPoint>
+		<isDebuff>true</isDebuff>
+		<effects>
+			<effect name="TargetMe" /> <!-- Guessed -->
+			<effect name="GetAgro" />
+		</effects>
+	</skill>
+	<skill id="11333" toLevel="8" name="Unicorn's Stun">
+		<!-- Temporarily Stuns nearby enemies. -->
+		<icon>icon.skill0028</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>5</abnormalTime>
+		<abnormalType>STUN</abnormalType>
+		<abnormalVisualEffect>STUN</abnormalVisualEffect>
+		<activateRate>80</activateRate> <!-- Guessed -->
+		<affectRange>200</affectRange> <!-- Guessed -->
+		<basicProperty>PHYSICAL</basicProperty> <!-- Guessed -->
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>POINT_BLANK</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<trait>SHOCK</trait>
+		<mpConsume>
+			<value level="1">73</value>
+			<value level="2">76</value>
+			<value level="3">79</value>
+			<value level="4">81</value>
+			<value level="5">84</value>
+			<value level="6">87</value>
+			<value level="7">90</value>
+			<value level="8">93</value>
+		</mpConsume>
+		<hitTime>1490</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>15000</reuseDelay>
+		<effectPoint>-687</effectPoint>
+		<isDebuff>true</isDebuff>
+		<effects>
+			<effect name="BlockActions">
+				<allowedSkills>10279;10517;10025;10776;11770;1904;11264;11093;13314;1912</allowedSkills>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11334" toLevel="8" name="Unicorn's Bite">
+		<!-- Inflicts damage on a target with $s1 Power added to P. Atk. -->
+		<icon>icon.skill0121</icon>
+		<operateType>A1</operateType>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<mpConsume>
+			<value level="1">48</value>
+			<value level="2">50</value>
+			<value level="3">52</value>
+			<value level="4">54</value>
+			<value level="5">56</value>
+			<value level="6">58</value>
+			<value level="7">60</value>
+			<value level="8">62</value>
+		</mpConsume>
+		<nextAction>ATTACK</nextAction>
+		<castRange>40</castRange>
+		<hitTime>1490</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-687</effectPoint>
+		<reuseDelay>5000</reuseDelay>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>
+					<value level="1">10508</value>
+					<value level="2">11190</value>
+					<value level="3">11872</value>
+					<value level="4">12554</value>
+					<value level="5">13236</value>
+					<value level="6">13918</value>
+					<value level="7">14600</value>
+					<value level="8">15282</value>
+				</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11335" toLevel="8" name="Unicorn's Pounce">
+		<!-- Inflicts damage on a target with $s1 Power added to P. Atk. Speed -$s2. -->
+		<icon>icon.skill0121</icon>
+		<abnormalLvl>
+			<value level="1">1</value>
+			<value level="2">2</value>
+			<value level="3">3</value>
+			<value level="4">4</value>
+			<value level="5">5</value>
+			<value level="6">6</value>
+			<value level="7">7</value>
+			<value level="8">8</value>
+		</abnormalLvl>
+		<abnormalTime>5</abnormalTime>
+		<abnormalType>SPEED_DOWN</abnormalType>
+		<activateRate>100</activateRate>
+		<affectRange>150</affectRange> <!-- Guessed -->
+		<basicProperty>PHYSICAL</basicProperty> <!-- Guessed -->
+		<operateType>DA2</operateType>
+		<targetType>ENEMY_ONLY</targetType>
+		<affectScope>RANGE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<mpConsume>
+			<value level="1">48</value>
+			<value level="2">50</value>
+			<value level="3">52</value>
+			<value level="4">54</value>
+			<value level="5">56</value>
+			<value level="6">58</value>
+			<value level="7">60</value>
+			<value level="8">62</value>
+		</mpConsume>
+		<nextAction>ATTACK</nextAction>
+		<castRange>600</castRange>
+		<hitTime>100</hitTime>
+		<coolTime>500</coolTime>
+		<effectRange>800</effectRange>
+		<reuseDelay>5000</reuseDelay>
+		<effectPoint>-687</effectPoint>
+		<isDebuff>true</isDebuff>
+		<conditions>
+			<condition name="OpCheckCastRange">
+				<distance>200</distance>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>
+					<value level="1">8406</value>
+					<value level="2">8920</value>
+					<value level="3">9497</value>
+					<value level="4">10043</value>
+					<value level="5">10588</value>
+					<value level="6">11134</value>
+					<value level="7">11680</value>
+					<value level="8">12225</value>
+				</power>
+			</effect>
+			<effect name="Speed">
+				<amount>-100</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11336" toLevel="8" name="Unicorn's Touch">
+		<!-- Inflicts damage on a target with $s1 Power added to P. Atk. -->
+		<icon>icon.skill1234</icon>
+		<operateType>A1</operateType>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<mpConsume>
+			<value level="1">48</value>
+			<value level="2">50</value>
+			<value level="3">52</value>
+			<value level="4">54</value>
+			<value level="5">56</value>
+			<value level="6">58</value>
+			<value level="7">60</value>
+			<value level="8">62</value>
+		</mpConsume>
+		<castRange>1100</castRange>
+		<hitTime>2200</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-687</effectPoint>
+		<reuseDelay>5000</reuseDelay>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>
+					<value level="1">10508</value>
+					<value level="2">11190</value>
+					<value level="3">11872</value>
+					<value level="4">12554</value>
+					<value level="5">13236</value>
+					<value level="6">13918</value>
+					<value level="7">14600</value>
+					<value level="8">15282</value>
+				</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11337" toLevel="8" name="Unicorn's Power">
+		<!-- Inflicts damage on nearby enemies with $s1 Power added to P. Atk. -->
+		<icon>icon.skill1171</icon>
+		<affectRange>150</affectRange> <!-- Guessed -->
+		<operateType>A1</operateType>
+		<targetType>ENEMY_ONLY</targetType>
+		<affectScope>RANGE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<mpConsume>
+			<value level="1">73</value>
+			<value level="2">76</value>
+			<value level="3">79</value>
+			<value level="4">81</value>
+			<value level="5">84</value>
+			<value level="6">87</value>
+			<value level="7">90</value>
+			<value level="8">93</value>
+		</mpConsume>
+		<castRange>1100</castRange>
+		<hitTime>2900</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-687</effectPoint>
+		<reuseDelay>5000</reuseDelay>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>
+					<value level="1">11558</value>
+					<value level="2">12309</value>
+					<value level="3">13059</value>
+					<value level="4">13809</value>
+					<value level="5">14559</value>
+					<value level="6">15309</value>
+					<value level="7">16060</value>
+					<value level="8">16810</value>
+				</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11338" toLevel="8" name="Summon Wynn Nightshade">
+		<!-- Summons Wynn Nightshade. Consumes $s1 summon points. -->
+		<icon>icon.skill11850</icon>
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<mpConsume>
+			<value level="1">350</value>
+			<value level="2">360</value>
+			<value level="3">375</value>
+			<value level="4">390</value>
+			<value level="5">405</value>
+			<value level="6">420</value>
+			<value level="7">435</value>
+			<value level="8">455</value>
+		</mpConsume>
+		<hitTime>3500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>5000</reuseDelay>
+		<isMagic>1</isMagic>
+		<conditions>
+			<condition name="CanSummonMulti">
+				<summonPoints>2</summonPoints>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SummonMulti">
+				<npcId>
+					<value level="1">15090</value>
+					<value level="2">15091</value>
+					<value level="3">15092</value>
+					<value level="4">15093</value>
+					<value level="5">15094</value>
+					<value level="6">15095</value>
+					<value level="7">15096</value>
+					<value level="8">15097</value>
+				</npcId>
+				<summonPoints>2</summonPoints>
+				<lifeTime>-1</lifeTime>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11339" toLevel="8" name="Summon Wynn Spectral Lord">
+		<!-- Summons Wynn Spectral Lord. Consumes $s1 summon points. -->
+		<icon>icon.skill11851</icon>
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<mpConsume>
+			<value level="1">350</value>
+			<value level="2">360</value>
+			<value level="3">375</value>
+			<value level="4">390</value>
+			<value level="5">405</value>
+			<value level="6">420</value>
+			<value level="7">435</value>
+			<value level="8">455</value>
+		</mpConsume>
+		<hitTime>3500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>5000</reuseDelay>
+		<isMagic>1</isMagic>
+		<conditions>
+			<condition name="CanSummonMulti">
+				<summonPoints>2</summonPoints>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SummonMulti">
+				<npcId>
+					<value level="1">15098</value>
+					<value level="2">15099</value>
+					<value level="3">15100</value>
+					<value level="4">15101</value>
+					<value level="5">15102</value>
+					<value level="6">15103</value>
+					<value level="7">15104</value>
+					<value level="8">15105</value>
+				</npcId>
+				<summonPoints>2</summonPoints>
+				<lifeTime>-1</lifeTime>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11340" toLevel="8" name="Summon Wynn Soulless">
+		<!-- Summons Wynn Soulless. Consumes $s1 summon points. -->
+		<icon>icon.skill11852</icon>
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<mpConsume>
+			<value level="1">350</value>
+			<value level="2">360</value>
+			<value level="3">375</value>
+			<value level="4">390</value>
+			<value level="5">405</value>
+			<value level="6">420</value>
+			<value level="7">435</value>
+			<value level="8">455</value>
+		</mpConsume>
+		<hitTime>3500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>5000</reuseDelay>
+		<isMagic>1</isMagic>
+		<conditions>
+			<condition name="CanSummonMulti">
+				<summonPoints>2</summonPoints>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SummonMulti">
+				<npcId>
+					<value level="1">15106</value>
+					<value level="2">15107</value>
+					<value level="3">15108</value>
+					<value level="4">15109</value>
+					<value level="5">15110</value>
+					<value level="6">15111</value>
+					<value level="7">15112</value>
+					<value level="8">15113</value>
+				</npcId>
+				<summonPoints>2</summonPoints>
+				<lifeTime>-1</lifeTime>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11341" toLevel="8" name="Phantom Aggression">
+		<!-- Provokes nearby enemies. -->
+		<icon>icon.skill0028</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>3</abnormalTime>
+		<abnormalType>TARGET_LOCK</abnormalType>
+		<affectRange>200</affectRange> <!-- Guessed -->
+		<activateRate>100</activateRate>
+		<basicProperty>MAGIC</basicProperty> <!-- Guessed -->
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>POINT_BLANK</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<trait>AGGRESSION</trait>
+		<mpConsume>
+			<value level="1">73</value>
+			<value level="2">76</value>
+			<value level="3">79</value>
+			<value level="4">81</value>
+			<value level="5">84</value>
+			<value level="6">87</value>
+			<value level="7">90</value>
+			<value level="8">93</value>
+		</mpConsume>
+		<hitTime>1490</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>15000</reuseDelay>
+		<effectPoint>-687</effectPoint>
+		<isDebuff>true</isDebuff>
+		<effects>
+			<effect name="TargetMe" /> <!-- Guessed -->
+			<effect name="GetAgro" />
+		</effects>
+	</skill>
+	<skill id="11342" toLevel="8" name="Phantom Stun">
+		<!-- Temporarily Stuns nearby enemies. -->
+		<icon>icon.skill0028</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>5</abnormalTime>
+		<abnormalType>STUN</abnormalType>
+		<abnormalVisualEffect>STUN</abnormalVisualEffect>
+		<activateRate>80</activateRate> <!-- Guessed -->
+		<affectRange>200</affectRange> <!-- Guessed -->
+		<basicProperty>PHYSICAL</basicProperty> <!-- Guessed -->
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>POINT_BLANK</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<trait>SHOCK</trait>
+		<mpConsume>
+			<value level="1">73</value>
+			<value level="2">76</value>
+			<value level="3">79</value>
+			<value level="4">81</value>
+			<value level="5">84</value>
+			<value level="6">87</value>
+			<value level="7">90</value>
+			<value level="8">93</value>
+		</mpConsume>
+		<hitTime>1490</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>15000</reuseDelay>
+		<effectPoint>-687</effectPoint>
+		<isDebuff>true</isDebuff>
+		<effects>
+			<effect name="BlockActions">
+				<allowedSkills>10279;10517;10025;10776;11770;1904;11264;11093;13314;1912</allowedSkills>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11343" toLevel="8" name="Phantom Bite">
+		<!-- Inflicts damage on a target with $s1 Power added to P. Atk. -->
+		<icon>icon.skill0121</icon>
+		<operateType>A1</operateType>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<mpConsume>
+			<value level="1">48</value>
+			<value level="2">50</value>
+			<value level="3">52</value>
+			<value level="4">54</value>
+			<value level="5">56</value>
+			<value level="6">58</value>
+			<value level="7">60</value>
+			<value level="8">62</value>
+		</mpConsume>
+		<nextAction>ATTACK</nextAction>
+		<castRange>40</castRange>
+		<hitTime>1490</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-687</effectPoint>
+		<reuseDelay>5000</reuseDelay>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>
+					<value level="1">10508</value>
+					<value level="2">11190</value>
+					<value level="3">11872</value>
+					<value level="4">12554</value>
+					<value level="5">13236</value>
+					<value level="6">13918</value>
+					<value level="7">14600</value>
+					<value level="8">15282</value>
+				</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11344" toLevel="8" name="Phantom Pounce">
+		<!-- Inflicts damage on a target with $s1 Power added to P. Atk. Speed -$s2. -->
+		<icon>icon.skill0121</icon>
+		<abnormalLvl>
+			<value level="1">1</value>
+			<value level="2">2</value>
+			<value level="3">3</value>
+			<value level="4">4</value>
+			<value level="5">5</value>
+			<value level="6">6</value>
+			<value level="7">7</value>
+			<value level="8">8</value>
+		</abnormalLvl>
+		<abnormalTime>5</abnormalTime>
+		<abnormalType>SPEED_DOWN</abnormalType>
+		<activateRate>100</activateRate>
+		<affectRange>150</affectRange> <!-- Guessed -->
+		<basicProperty>PHYSICAL</basicProperty> <!-- Guessed -->
+		<operateType>DA2</operateType>
+		<targetType>ENEMY_ONLY</targetType>
+		<affectScope>RANGE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<mpConsume>
+			<value level="1">48</value>
+			<value level="2">50</value>
+			<value level="3">52</value>
+			<value level="4">54</value>
+			<value level="5">56</value>
+			<value level="6">58</value>
+			<value level="7">60</value>
+			<value level="8">62</value>
+		</mpConsume>
+		<nextAction>ATTACK</nextAction>
+		<castRange>600</castRange>
+		<hitTime>100</hitTime>
+		<coolTime>500</coolTime>
+		<effectRange>800</effectRange>
+		<reuseDelay>5000</reuseDelay>
+		<effectPoint>-687</effectPoint>
+		<isDebuff>true</isDebuff>
+		<conditions>
+			<condition name="OpCheckCastRange">
+				<distance>200</distance>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>
+					<value level="1">8406</value>
+					<value level="2">8920</value>
+					<value level="3">9497</value>
+					<value level="4">10043</value>
+					<value level="5">10588</value>
+					<value level="6">11134</value>
+					<value level="7">11680</value>
+					<value level="8">12225</value>
+				</power>
+			</effect>
+			<effect name="Speed">
+				<amount>-100</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11345" toLevel="8" name="Phantom Touch">
+		<!-- Inflicts damage on a target with $s1 Power added to P. Atk. -->
+		<icon>icon.skill1234</icon>
+		<operateType>A1</operateType>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<mpConsume>
+			<value level="1">48</value>
+			<value level="2">50</value>
+			<value level="3">52</value>
+			<value level="4">54</value>
+			<value level="5">56</value>
+			<value level="6">58</value>
+			<value level="7">60</value>
+			<value level="8">62</value>
+		</mpConsume>
+		<castRange>1100</castRange>
+		<hitTime>2200</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-687</effectPoint>
+		<reuseDelay>5000</reuseDelay>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>
+					<value level="1">10508</value>
+					<value level="2">11190</value>
+					<value level="3">11872</value>
+					<value level="4">12554</value>
+					<value level="5">13236</value>
+					<value level="6">13918</value>
+					<value level="7">14600</value>
+					<value level="8">15282</value>
+				</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11346" toLevel="8" name="Phantom Power">
+		<!-- Inflicts damage on nearby enemies with $s1 Power added to P. Atk. -->
+		<icon>icon.skill1171</icon>
+		<affectRange>150</affectRange> <!-- Guessed -->
+		<operateType>A1</operateType>
+		<targetType>ENEMY_ONLY</targetType>
+		<affectScope>RANGE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<mpConsume>
+			<value level="1">73</value>
+			<value level="2">76</value>
+			<value level="3">79</value>
+			<value level="4">81</value>
+			<value level="5">84</value>
+			<value level="6">87</value>
+			<value level="7">90</value>
+			<value level="8">93</value>
+		</mpConsume>
+		<castRange>1100</castRange>
+		<hitTime>2900</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-687</effectPoint>
+		<reuseDelay>5000</reuseDelay>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>
+					<value level="1">11558</value>
+					<value level="2">12309</value>
+					<value level="3">13059</value>
+					<value level="4">13809</value>
+					<value level="5">14559</value>
+					<value level="6">15309</value>
+					<value level="7">16060</value>
+					<value level="8">16810</value>
+				</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11347" toLevel="8" name="Greater Servitor Haste">
+		<!-- For $s1, all servitor's Atk. Spd. +$s2. -->
+		<icon>icon.skill11347</icon>
+		<abnormalLvl>
+			<value level="1">1</value>
+			<value level="2">2</value>
+			<value level="3">3</value>
+			<value level="4">4</value>
+			<value level="5">5</value>
+			<value level="6">6</value>
+			<value level="7">7</value>
+			<value level="8">8</value>
+		</abnormalLvl>
+		<abnormalTime>1800</abnormalTime>
+		<abnormalType>GREATER_SERVITOR_BUFF</abnormalType>
+		<operateType>A2</operateType>
+		<targetType>SUMMON</targetType>
+		<affectScope>SUMMON_EXCEPT_MASTER</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<mpConsume>
+			<value level="1">61</value>
+			<value level="2">67</value>
+			<value level="3">73</value>
+			<value level="4">79</value>
+			<value level="5">82</value>
+			<value level="6">85</value>
+			<value level="7">88</value>
+			<value level="8">91</value>
+		</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>3500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>10000</reuseDelay>
+		<effectPoint>687</effectPoint>
+		<isMagic>1</isMagic>
+		<effects>
+			<effect name="PhysicalAttackSpeed">
+				<amount>
+					<value level="1">10</value>
+					<value level="2">12</value>
+					<value level="3">15</value>
+					<value level="4">20</value>
+					<value level="5">20</value>
+					<value level="6">20</value>
+					<value level="7">20</value>
+					<value level="8">20</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PAtk">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">5</value>
+					<value level="6">7</value>
+					<value level="7">10</value>
+					<value level="8">20</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Accuracy">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">2</value>
+					<value level="6">4</value>
+					<value level="7">6</value>
+					<value level="8">10</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">5</value>
+					<value level="6">10</value>
+					<value level="7">15</value>
+					<value level="8">25</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence" fromLevel="3" toLevel="8" fromSubLevel="1001" toSubLevel="1020">
+				<amount>
+					<value fromLevel="3" toLevel="7" fromSubLevel="1001" toSubLevel="1020">{0.6 + (0.4 * subIndex)}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence" fromLevel="3" toLevel="8" fromSubLevel="1001" toSubLevel="1020">
+				<amount>
+					<value fromLevel="3" toLevel="7" fromSubLevel="1001" toSubLevel="1020">{0.6 + (0.4 * subIndex)}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Speed" fromLevel="3" toLevel="8" fromSubLevel="3001" toSubLevel="3020">
+				<amount>
+					<value fromLevel="3" toLevel="7" fromSubLevel="3001" toSubLevel="3020">{2 * subIndex}</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11348" toLevel="8" name="Servitor Death Whisper">
+		<!-- For $s1, all servitor's Critical Damage +$s2. -->
+		<icon>icon.skill11348</icon>
+		<abnormalLvl>
+			<value level="1">1</value>
+			<value level="2">2</value>
+			<value level="3">3</value>
+			<value level="4">4</value>
+			<value level="5">5</value>
+			<value level="6">6</value>
+			<value level="7">7</value>
+			<value level="8">8</value>
+		</abnormalLvl>
+		<abnormalTime>1800</abnormalTime>
+		<abnormalType>GREATER_SERVITOR_BUFF</abnormalType>
+		<operateType>A2</operateType>
+		<targetType>SUMMON</targetType>
+		<affectScope>SUMMON_EXCEPT_MASTER</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<mpConsume>
+			<value level="1">61</value>
+			<value level="2">67</value>
+			<value level="3">73</value>
+			<value level="4">79</value>
+			<value level="5">82</value>
+			<value level="6">85</value>
+			<value level="7">88</value>
+			<value level="8">91</value>
+		</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>3500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>10000</reuseDelay>
+		<effectPoint>687</effectPoint>
+		<isMagic>1</isMagic>
+		<effects>
+			<effect name="CriticalDamage">
+				<amount>
+					<value level="1">10</value>
+					<value level="2">12</value>
+					<value level="3">15</value>
+					<value level="4">20</value>
+					<value level="5">20</value>
+					<value level="6">20</value>
+					<value level="7">20</value>
+					<value level="8">20</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PAtk">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">5</value>
+					<value level="6">7</value>
+					<value level="7">10</value>
+					<value level="8">20</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Accuracy">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">2</value>
+					<value level="6">4</value>
+					<value level="7">6</value>
+					<value level="8">10</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">5</value>
+					<value level="6">10</value>
+					<value level="7">15</value>
+					<value level="8">25</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence" fromLevel="3" toLevel="8" fromSubLevel="1001" toSubLevel="1020">
+				<amount>
+					<value fromLevel="3" toLevel="7" fromSubLevel="1001" toSubLevel="1020">{0.6 + (0.4 * subIndex)}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence" fromLevel="3" toLevel="8" fromSubLevel="1001" toSubLevel="1020">
+				<amount>
+					<value fromLevel="3" toLevel="7" fromSubLevel="1001" toSubLevel="1020">{0.6 + (0.4 * subIndex)}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Speed" fromLevel="3" toLevel="8" fromSubLevel="3001" toSubLevel="3020">
+				<amount>
+					<value fromLevel="3" toLevel="7" fromSubLevel="3001" toSubLevel="3020">{2 * subIndex}</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11349" toLevel="8" name="Greater Servitor Might">
+		<!-- For $s1, all servitor's P. Atk. +$s2. -->
+		<icon>icon.skill11349</icon>
+		<abnormalLvl>
+			<value level="1">1</value>
+			<value level="2">2</value>
+			<value level="3">3</value>
+			<value level="4">4</value>
+			<value level="5">5</value>
+			<value level="6">6</value>
+			<value level="7">7</value>
+			<value level="8">8</value>
+		</abnormalLvl>
+		<abnormalTime>1800</abnormalTime>
+		<abnormalType>GREATER_SERVITOR_BUFF</abnormalType>
+		<operateType>A2</operateType>
+		<targetType>SUMMON</targetType>
+		<affectScope>SUMMON_EXCEPT_MASTER</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<mpConsume>
+			<value level="1">61</value>
+			<value level="2">67</value>
+			<value level="3">73</value>
+			<value level="4">79</value>
+			<value level="5">82</value>
+			<value level="6">85</value>
+			<value level="7">88</value>
+			<value level="8">91</value>
+		</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>3500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>10000</reuseDelay>
+		<effectPoint>687</effectPoint>
+		<isMagic>1</isMagic>
+		<effects>
+			<effect name="PAtk">
+				<amount>
+					<value level="1">10</value>
+					<value level="2">12</value>
+					<value level="3">15</value>
+					<value level="4">20</value>
+					<value level="5">25</value>
+					<value level="6">27</value>
+					<value level="7">30</value>
+					<value level="8">40</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Accuracy">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">2</value>
+					<value level="6">4</value>
+					<value level="7">6</value>
+					<value level="8">10</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">5</value>
+					<value level="6">10</value>
+					<value level="7">15</value>
+					<value level="8">25</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence" fromLevel="3" toLevel="8" fromSubLevel="1001" toSubLevel="1020">
+				<amount>
+					<value fromLevel="3" toLevel="7" fromSubLevel="1001" toSubLevel="1020">{0.6 + (0.4 * subIndex)}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence" fromLevel="3" toLevel="8" fromSubLevel="1001" toSubLevel="1020">
+				<amount>
+					<value fromLevel="3" toLevel="7" fromSubLevel="1001" toSubLevel="1020">{0.6 + (0.4 * subIndex)}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Speed" fromLevel="3" toLevel="8" fromSubLevel="3001" toSubLevel="3020">
+				<amount>
+					<value fromLevel="3" toLevel="7" fromSubLevel="3001" toSubLevel="3020">{2 * subIndex}</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11350" toLevel="9" name="Arcane Rage">
+		<!-- Use Arcana Wrath to inflict severe damage on a target with $s1 Power added to M. Atk. -->
+		<icon>icon.skill11350</icon>
+		<operateType>A1</operateType>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<mpConsume>
+			<value level="1">53</value>
+			<value level="2">60</value>
+			<value level="3">67</value>
+			<value level="4">70</value>
+			<value level="5">73</value>
+			<value level="6">76</value>
+			<value level="7">79</value>
+			<value level="8">82</value>
+			<value level="9">85</value>
+		</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>2780</hitTime>
+		<coolTime>300</coolTime>
+		<reuseDelay>2400</reuseDelay>
+		<effectPoint>
+			<value level="1">-700</value>
+			<value level="2">-704</value>
+			<value level="3">-707</value>
+			<value level="4">-709</value>
+			<value level="5">-711</value>
+			<value level="6">-713</value>
+			<value level="7">-715</value>
+			<value level="8">-715</value>
+			<value level="9">-715</value>
+		</effectPoint>
+		<isMagic>1</isMagic>
+		<magicCriticalRate>
+			<value fromLevel="1" toLevel="7">6</value>
+			<value fromLevel="3" toLevel="7" fromSubLevel="2001" toSubLevel="2020">{base + (base / 100 * subIndex)}</value>
+		</magicCriticalRate>
+		<effects>
+			<effect name="MagicalAttack">
+				<power>
+					<value level="1">188</value>
+					<value level="2">202</value>
+					<value level="3">215</value>
+					<value level="4">227</value>
+					<value level="5">242</value>
+					<value level="6">248</value>
+					<value level="7">254</value>
+					<value level="8">266</value>
+					<value level="9">278</value>
+					<value fromLevel="3" toLevel="9" fromSubLevel="1001" toSubLevel="1005">{base + (base / 100 * (1 + 0.4 * (subIndex - 1)))}</value>
+					<value fromLevel="3" toLevel="9" fromSubLevel="1006" toSubLevel="1006">{base + (base / 100 * (2 + 0.8 * (subIndex - 5)))}</value>
+					<value fromLevel="3" toLevel="9" fromSubLevel="1007" toSubLevel="1007">{base + (base / 100 * (3 + 0.3 * (subIndex - 6)))}</value>
+					<value fromLevel="3" toLevel="9" fromSubLevel="1008" toSubLevel="1008">{base + (base / 100 * (3 + 0.3 * (subIndex - 7)))}</value>
+					<value fromLevel="3" toLevel="9" fromSubLevel="1009" toSubLevel="1011">{base + (base / 100 * (4 + 0.4 * (subIndex - 8)))}</value>
+					<value fromLevel="3" toLevel="9" fromSubLevel="1012" toSubLevel="1012">{base + (base / 100 * (5 + 0.1 * (subIndex - 11)))}</value>
+					<value fromLevel="3" toLevel="9" fromSubLevel="1013" toSubLevel="1013">{base + (base / 100 * (5 + 0.5 * (subIndex - 12)))}</value>
+					<value fromLevel="3" toLevel="9" fromSubLevel="1014" toSubLevel="1014">{base + (base / 100 * (5 + 0.9 * (subIndex - 13)))}</value>
+					<value fromLevel="3" toLevel="9" fromSubLevel="1015" toSubLevel="1015">{base + (base / 100 * (6 + 0.2 * (subIndex - 14)))}</value>
+					<value fromLevel="3" toLevel="9" fromSubLevel="1016" toSubLevel="1016">{base + (base / 100 * (6 + 0.6 * (subIndex - 15)))}</value>
+					<value fromLevel="3" toLevel="9" fromSubLevel="1017" toSubLevel="1017">{base + (base / 100 * (7 + 0.2 * (subIndex - 16)))}</value>
+					<value fromLevel="3" toLevel="9" fromSubLevel="1018" toSubLevel="1018">{base + (base / 100 * (7 + 0.4 * (subIndex - 17)))}</value>
+					<value fromLevel="3" toLevel="9" fromSubLevel="1019" toSubLevel="1019">{base + (base / 100 * (7 + 0.7 * (subIndex - 18)))}</value>
+					<value fromLevel="3" toLevel="9" fromSubLevel="1020" toSubLevel="1020">{base + (base / 100 * (8 + 0.1 * (subIndex - 19)))}</value>
+				</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11351" toLevel="5" name="Link of Loyalty">
+		<!-- Servitor's wrath. P. Atk. +$s1, Critical Rate +$s2, and Critical Damage +$s3. -->
+		<icon>icon.skill11351</icon>
+		<abnormalLvl>
+			<value level="1">1</value>
+			<value level="2">2</value>
+			<value level="3">3</value>
+			<value level="4">4</value>
+			<value level="5">5</value>
+		</abnormalLvl>
+		<abnormalTime>10</abnormalTime>
+		<abnormalType>SUMMONER_LINK</abnormalType>
+		<isTriggeredSkill>true</isTriggeredSkill>
+		<operateType>A2</operateType>
+		<targetType>SUMMON</targetType>
+		<affectScope>SUMMON_EXCEPT_MASTER</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<castRange>900</castRange>
+		<reuseDelay>3000</reuseDelay>
+		<isMagic>4</isMagic>
+		<effects>
+			<effect name="PAtk">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">3</value>
+					<value level="3">5</value>
+					<value level="4">10</value>
+					<value level="5">15</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="CriticalDamage">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">3</value>
+					<value level="3">5</value>
+					<value level="4">10</value>
+					<value level="5">15</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="CriticalRate">
+				<amount>
+					<value level="1">10</value>
+					<value level="2">15</value>
+					<value level="3">20</value>
+					<value level="4">25</value>
+					<value level="5">30</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11352" toLevel="4" name="Arcane Ability">
+		<!-- Atk. Spd., P. Def. +$s1, and PvP Damage -$s2. -->
+		<icon>icon.skill11277</icon>
+		<operateType>P</operateType>
+		<magicLvl>
+			<value level="1">85</value>
+			<value level="2">90</value>
+			<value level="3">95</value>
+			<value level="4">99</value>
+		</magicLvl>
+		<effects>
+			<effect name="PhysicalDefence">
+				<amount>
+					<value level="1">3</value>
+					<value level="2">5</value>
+					<value level="3">7</value>
+					<value level="4">10</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>
+					<value level="1">3</value>
+					<value level="2">5</value>
+					<value level="3">7</value>
+					<value level="4">10</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDefenceBonus">
+				<amount>
+					<value level="1">3</value>
+					<value level="2">5</value>
+					<value level="3">7</value>
+					<value level="4">10</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpMagicalSkillDefenceBonus">
+				<amount>
+					<value level="1">3</value>
+					<value level="2">5</value>
+					<value level="3">7</value>
+					<value level="4">10</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDefenceBonus">
+				<amount>
+					<value level="1">3</value>
+					<value level="2">5</value>
+					<value level="3">7</value>
+					<value level="4">10</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11353" toLevel="9" name="Elemental Rage">
+		<!-- Use Elemental Wrath to inflict severe damage on a target with $s1 Power added to M. Atk. -->
+		<icon>icon.skill11353</icon>
+		<operateType>A1</operateType>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<mpConsume>
+			<value level="1">53</value>
+			<value level="2">60</value>
+			<value level="3">67</value>
+			<value level="4">70</value>
+			<value level="5">73</value>
+			<value level="6">76</value>
+			<value level="7">79</value>
+		</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>2780</hitTime>
+		<coolTime>300</coolTime>
+		<reuseDelay>2400</reuseDelay>
+		<effectPoint>
+			<value level="1">-700</value>
+			<value level="2">-704</value>
+			<value level="3">-707</value>
+			<value level="4">-709</value>
+			<value level="5">-711</value>
+			<value level="6">-713</value>
+			<value level="7">-715</value>
+			<value level="8">-715</value>
+			<value level="9">-715</value>
+		</effectPoint>
+		<isMagic>1</isMagic>
+		<magicCriticalRate>
+			<value fromLevel="1" toLevel="7">6</value>
+			<value fromLevel="3" toLevel="7" fromSubLevel="2001" toSubLevel="2020">{base + (base / 100 * subIndex)}</value>
+		</magicCriticalRate>
+		<effects>
+			<effect name="MagicalAttack">
+				<power>
+					<value level="1">188</value>
+					<value level="2">202</value>
+					<value level="3">215</value>
+					<value level="4">227</value>
+					<value level="5">242</value>
+					<value level="6">248</value>
+					<value level="7">254</value>
+					<value fromLevel="3" toLevel="7" fromSubLevel="1001" toSubLevel="1005">{base + (base / 100 * (1 + 0.4 * (subIndex - 1)))}</value>
+					<value fromLevel="3" toLevel="7" fromSubLevel="1006" toSubLevel="1006">{base + (base / 100 * (2 + 0.8 * (subIndex - 5)))}</value>
+					<value fromLevel="3" toLevel="7" fromSubLevel="1007" toSubLevel="1007">{base + (base / 100 * (3 + 0.3 * (subIndex - 6)))}</value>
+					<value fromLevel="3" toLevel="7" fromSubLevel="1008" toSubLevel="1008">{base + (base / 100 * (3 + 0.3 * (subIndex - 7)))}</value>
+					<value fromLevel="3" toLevel="7" fromSubLevel="1009" toSubLevel="1011">{base + (base / 100 * (4 + 0.4 * (subIndex - 8)))}</value>
+					<value fromLevel="3" toLevel="7" fromSubLevel="1012" toSubLevel="1012">{base + (base / 100 * (5 + 0.1 * (subIndex - 11)))}</value>
+					<value fromLevel="3" toLevel="7" fromSubLevel="1013" toSubLevel="1013">{base + (base / 100 * (5 + 0.5 * (subIndex - 12)))}</value>
+					<value fromLevel="3" toLevel="7" fromSubLevel="1014" toSubLevel="1014">{base + (base / 100 * (5 + 0.9 * (subIndex - 13)))}</value>
+					<value fromLevel="3" toLevel="7" fromSubLevel="1015" toSubLevel="1015">{base + (base / 100 * (6 + 0.2 * (subIndex - 14)))}</value>
+					<value fromLevel="3" toLevel="7" fromSubLevel="1016" toSubLevel="1016">{base + (base / 100 * (6 + 0.6 * (subIndex - 15)))}</value>
+					<value fromLevel="3" toLevel="7" fromSubLevel="1017" toSubLevel="1017">{base + (base / 100 * (7 + 0.2 * (subIndex - 16)))}</value>
+					<value fromLevel="3" toLevel="7" fromSubLevel="1018" toSubLevel="1018">{base + (base / 100 * (7 + 0.4 * (subIndex - 17)))}</value>
+					<value fromLevel="3" toLevel="7" fromSubLevel="1019" toSubLevel="1019">{base + (base / 100 * (7 + 0.7 * (subIndex - 18)))}</value>
+					<value fromLevel="3" toLevel="7" fromSubLevel="1020" toSubLevel="1020">{base + (base / 100 * (8 + 0.1 * (subIndex - 19)))}</value>
+				</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11354" toLevel="5" name="Elemental Link">
+		<!-- Servitor's wrath. P. Atk. +$s1, Critical Rate +$s2, and Critical Damage +$s3. -->
+		<icon>icon.skill11354</icon>
+		<abnormalLvl>
+			<value level="1">1</value>
+			<value level="2">2</value>
+			<value level="3">3</value>
+			<value level="4">4</value>
+			<value level="5">5</value>
+		</abnormalLvl>
+		<abnormalTime>10</abnormalTime>
+		<abnormalType>SUMMONER_LINK</abnormalType>
+		<isTriggeredSkill>true</isTriggeredSkill>
+		<operateType>A2</operateType>
+		<targetType>SUMMON</targetType>
+		<affectScope>SUMMON_EXCEPT_MASTER</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<castRange>900</castRange>
+		<reuseDelay>5000</reuseDelay>
+		<isMagic>4</isMagic>
+		<effects>
+			<effect name="PAtk">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">3</value>
+					<value level="3">5</value>
+					<value level="4">10</value>
+					<value level="5">15</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="CriticalDamage">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">3</value>
+					<value level="3">5</value>
+					<value level="4">10</value>
+					<value level="5">15</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="CriticalRate">
+				<amount>
+					<value level="1">10</value>
+					<value level="2">15</value>
+					<value level="3">20</value>
+					<value level="4">25</value>
+					<value level="5">30</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11355" toLevel="4" name="Elemental Ability">
+		<!-- Critical Damage +$s1. -->
+		<icon>icon.skill11277</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="CriticalDamage">
+				<amount>
+					<value level="1">5</value>
+					<value level="2">7</value>
+					<value level="3">10</value>
+					<value level="4">12</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11356" toLevel="9" name="Spectral Rage">
+		<!-- Use Spectral Wrath to inflict severe damage on a target with $s1 Power added to M. Atk. -->
+		<icon>icon.skill11356</icon>
+		<operateType>A1</operateType>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<mpConsume>
+			<value level="1">53</value>
+			<value level="2">60</value>
+			<value level="3">67</value>
+			<value level="4">70</value>
+			<value level="5">73</value>
+			<value level="6">76</value>
+			<value level="7">79</value>
+			<value level="8">82</value>
+			<value level="9">85</value>
+		</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>2780</hitTime>
+		<coolTime>300</coolTime>
+		<reuseDelay>2400</reuseDelay>
+		<effectPoint>
+			<value level="1">-700</value>
+			<value level="2">-704</value>
+			<value level="3">-707</value>
+			<value level="4">-709</value>
+			<value level="5">-711</value>
+			<value level="6">-713</value>
+			<value level="7">-715</value>
+			<value level="8">-715</value>
+			<value level="9">-715</value>
+		</effectPoint>
+		<isMagic>1</isMagic>
+		<magicCriticalRate>
+			<value fromLevel="1" toLevel="9">6</value>
+			<value fromLevel="3" toLevel="9" fromSubLevel="2001" toSubLevel="2020">{base + (base / 100 * subIndex)}</value>
+		</magicCriticalRate>
+		<effects>
+			<effect name="MagicalAttack">
+				<power>
+					<value level="1">188</value>
+					<value level="2">202</value>
+					<value level="3">215</value>
+					<value level="4">227</value>
+					<value level="5">242</value>
+					<value level="6">248</value>
+					<value level="7">254</value>
+					<value level="8">266</value>
+					<value level="9">278</value>
+					<value fromLevel="3" toLevel="9" fromSubLevel="1001" toSubLevel="1005">{base + (base / 100 * (1 + 0.4 * (subIndex - 1)))}</value>
+					<value fromLevel="3" toLevel="9" fromSubLevel="1006" toSubLevel="1006">{base + (base / 100 * (2 + 0.8 * (subIndex - 5)))}</value>
+					<value fromLevel="3" toLevel="9" fromSubLevel="1007" toSubLevel="1007">{base + (base / 100 * (3 + 0.3 * (subIndex - 6)))}</value>
+					<value fromLevel="3" toLevel="9" fromSubLevel="1008" toSubLevel="1008">{base + (base / 100 * (3 + 0.3 * (subIndex - 7)))}</value>
+					<value fromLevel="3" toLevel="9" fromSubLevel="1009" toSubLevel="1011">{base + (base / 100 * (4 + 0.4 * (subIndex - 8)))}</value>
+					<value fromLevel="3" toLevel="9" fromSubLevel="1012" toSubLevel="1012">{base + (base / 100 * (5 + 0.1 * (subIndex - 11)))}</value>
+					<value fromLevel="3" toLevel="9" fromSubLevel="1013" toSubLevel="1013">{base + (base / 100 * (5 + 0.5 * (subIndex - 12)))}</value>
+					<value fromLevel="3" toLevel="9" fromSubLevel="1014" toSubLevel="1014">{base + (base / 100 * (5 + 0.9 * (subIndex - 13)))}</value>
+					<value fromLevel="3" toLevel="9" fromSubLevel="1015" toSubLevel="1015">{base + (base / 100 * (6 + 0.2 * (subIndex - 14)))}</value>
+					<value fromLevel="3" toLevel="9" fromSubLevel="1016" toSubLevel="1016">{base + (base / 100 * (6 + 0.6 * (subIndex - 15)))}</value>
+					<value fromLevel="3" toLevel="9" fromSubLevel="1017" toSubLevel="1017">{base + (base / 100 * (7 + 0.2 * (subIndex - 16)))}</value>
+					<value fromLevel="3" toLevel="9" fromSubLevel="1018" toSubLevel="1018">{base + (base / 100 * (7 + 0.4 * (subIndex - 17)))}</value>
+					<value fromLevel="3" toLevel="9" fromSubLevel="1019" toSubLevel="1019">{base + (base / 100 * (7 + 0.7 * (subIndex - 18)))}</value>
+					<value fromLevel="3" toLevel="9" fromSubLevel="1020" toSubLevel="1020">{base + (base / 100 * (8 + 0.1 * (subIndex - 19)))}</value>
+				</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11357" toLevel="5" name="Spectral Link">
+		<!-- Servitor's wrath. P. Atk. +$s1, Critical Rate +$s2, and Critical Damage +$s3. -->
+		<icon>icon.skill11357</icon>
+		<abnormalLvl>
+			<value level="1">1</value>
+			<value level="2">2</value>
+			<value level="3">3</value>
+			<value level="4">4</value>
+			<value level="5">5</value>
+		</abnormalLvl>
+		<abnormalTime>10</abnormalTime>
+		<abnormalType>SUMMONER_LINK</abnormalType>
+		<isTriggeredSkill>true</isTriggeredSkill>
+		<operateType>A2</operateType>
+		<targetType>SUMMON</targetType>
+		<affectScope>SUMMON_EXCEPT_MASTER</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<castRange>900</castRange>
+		<reuseDelay>5000</reuseDelay>
+		<isMagic>4</isMagic>
+		<effects>
+			<effect name="PAtk">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">3</value>
+					<value level="3">5</value>
+					<value level="4">10</value>
+					<value level="5">15</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="CriticalDamage">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">3</value>
+					<value level="3">5</value>
+					<value level="4">10</value>
+					<value level="5">15</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="CriticalRate">
+				<amount>
+					<value level="1">10</value>
+					<value level="2">15</value>
+					<value level="3">20</value>
+					<value level="4">25</value>
+					<value level="5">30</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11358" toLevel="4" name="Spectral Ability">
+		<!-- P. Atk. +$s1, and PvP Damage -$s2. -->
+		<icon>icon.skill11277</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="PAtk">
+				<amount>
+					<value level="1">3</value>
+					<value level="2">5</value>
+					<value level="3">7</value>
+					<value level="4">10</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDefenceBonus">
+				<amount>
+					<value level="1">3</value>
+					<value level="2">5</value>
+					<value level="3">7</value>
+					<value level="4">10</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpMagicalSkillDefenceBonus">
+				<amount>
+					<value level="1">3</value>
+					<value level="2">5</value>
+					<value level="3">7</value>
+					<value level="4">10</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDefenceBonus">
+				<amount>
+					<value level="1">3</value>
+					<value level="2">5</value>
+					<value level="3">7</value>
+					<value level="4">10</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11359" toLevel="3" name="Summon Protection Stone">
+		<!-- Summons a giant shaman stone to temporarily increase party's abilities. Consumes $s1 Spirit Ore. -->
+		<icon>icon.skill11359</icon>
+		<itemConsumeCount>15</itemConsumeCount>
+		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
+		<operateType>A1</operateType>
+		<targetType>GROUND</targetType>
+		<affectScope>SINGLE</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<mpConsume>
+			<value level="1">137</value>
+			<value level="2">132</value>
+			<value level="3">137</value>
+		</mpConsume>
+		<castRange>900</castRange>
+		<effectRange>1100</effectRange>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>400000</reuseDelay>
+		<effects>
+			<effect name="SummonNpc">
+				<npcId>
+					<value level="1">13423</value>
+					<value level="2">13424</value>
+					<value level="3">13425</value>
+				</npcId>
+				<npcCount>1</npcCount>
+				<despawnDelay>120000</despawnDelay>
+				<singleInstance>true</singleInstance>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11360" toLevel="3" name="Arcane Protection">
+		<!-- For $s1, Received P./ M. Critical Rate -$s2, Pull Resistance and Knock Back/ Knock Down Resistance -$s3. Debuff Resistance +$s4, HP/ MP Recovery Bonus +$s5. -->
+		<icon>icon.skill11360</icon>
+		<abnormalLvl>
+			<value level="1">1</value>
+			<value level="2">2</value>
+			<value level="3">3</value>
+		</abnormalLvl>
+		<abnormalTime>30</abnormalTime>
+		<abnormalType>ARCANE_PROTECTION</abnormalType>
+		<affectRange>200</affectRange>
+		<operateType>A2</operateType>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+		<castRange>900</castRange>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>4000</reuseDelay>
+		<isMagic>4</isMagic>
+		<effects>
+			<effect name="DefenceTrait">
+				<PULL>
+					<value level="1">5</value>
+					<value level="2">7</value>
+					<value level="3">10</value>
+				</PULL>
+				<KNOCKBACK>
+					<value level="1">5</value>
+					<value level="2">7</value>
+					<value level="3">10</value>
+				</KNOCKBACK>
+				<KNOCKDOWN>
+					<value level="1">5</value>
+					<value level="2">7</value>
+					<value level="3">10</value>
+				</KNOCKDOWN>
+			</effect>
+			<effect name="HpRegen">
+				<amount>
+					<value level="1">5</value>
+					<value level="2">7</value>
+					<value level="3">10</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MpRegen">
+				<amount>
+					<value level="1">5</value>
+					<value level="2">7</value>
+					<value level="3">10</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="ResistAbnormalByCategory">
+				<amount>
+					<value level="1">-5</value>
+					<value level="2">-7</value>
+					<value level="3">-10</value>
+				</amount>
+				<slot>DEBUFF</slot>
+			</effect>
+			<effect name="DefenceCriticalRate">
+				<amount>
+					<value level="1">5</value>
+					<value level="2">7</value>
+					<value level="3">10</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DefenceMagicCriticalRate">
+				<amount>
+					<value level="1">5</value>
+					<value level="2">7</value>
+					<value level="3">10</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11361" toLevel="3" name="Summon Moving Portal">
+		<!-- Summons an instant Moving Portal for $s1. Consumes $s2 Spirit Ore. -->
+		<icon>icon.skill11361</icon>
+		<itemConsumeCount>5</itemConsumeCount>
+		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<mpConsume>128</mpConsume>
+		<hitTime>1000</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>50000</reuseDelay>
+		<effects>
+			<effect name="SummonNpc">
+				<npcId>13426</npcId> <!-- Instant Portal -->
+				<npcCount>1</npcCount>
+				<despawnDelay>
+					<value level="1">30000</value>
+					<value level="2">45000</value>
+					<value level="3">45000</value>
+				</despawnDelay>
+				<singleInstance>true</singleInstance>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11362" toLevel="3" name="Summon Moving Portal">
+		<!-- An instant Moving Portal is summoned. -->
+		<icon>icon.skill11361</icon>
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="11363" toLevel="3" name="Instant Teleport">
+		<!-- Teleports using the Moving Portal summoned. Consumes 1 Spirit Ore. -->
+		<icon>icon.skill11363</icon>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<mpConsume>
+			<value level="1">108</value>
+			<value level="2">104</value>
+			<value level="3">108</value>
+		</mpConsume>
+		<hitTime>1000</hitTime>
+		<reuseDelay>5000</reuseDelay>
+		<conditions>
+			<condition name="OpCallPc" />
+			<condition name="OpCanEscape" />
+			<condition name="OpHaveSummonedNpc">
+				<npcId>13426</npcId> <!-- Instant Portal -->
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="TeleportToNpc">
+				<npcId>13426</npcId> <!-- Instant Portal -->
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11364" toLevel="3" name="Elemental Dash">
+		<!-- Party's Speed +$s1. -->
+		<icon>icon.skill0028</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>15</abnormalTime> <!-- Guessed -->
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<mpConsume>70</mpConsume>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>4000</reuseDelay>
+		<effects>
+			<effect name="Speed">
+				<amount>
+					<value level="1">15</value>
+					<value level="2">20</value>
+					<value level="3">30</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11365" toLevel="6" name="Summon Demonic Crucifix">
+		<!-- Attacks target and nearby enemies with $s1 Power added to M. Atk. and casts a curse. Atk. Spd./ Casting Spd. -$s2 and Speed -$s3. Consumes $s4 Spirit Ores. -->
+		<icon>icon.skill11365</icon>
+		<abnormalLvl>
+			<value level="1">1</value>
+			<value level="2">2</value>
+			<value level="3">3</value>
+			<value level="4">4</value>
+			<value level="5">5</value>
+			<value level="6">6</value>
+		</abnormalLvl>
+		<abnormalTime>10</abnormalTime>
+		<abnormalType>NONE</abnormalType>
+		<activateRate>90</activateRate> <!-- Guessed -->
+		<affectRange>200</affectRange>
+		<basicProperty>MAGIC</basicProperty> <!-- Guessed -->
+		<itemConsumeCount>3</itemConsumeCount>
+		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
+		<operateType>A2</operateType>
+		<targetType>ENEMY_ONLY</targetType>
+		<affectScope>RANGE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<mpConsume>
+			<value level="1">394</value>
+			<value level="2">382</value>
+			<value level="3">394</value>
+			<value level="4">394</value>
+			<value level="5">409</value>
+			<value level="6">424</value>
+		</mpConsume>
+		<magicLvl>
+			<value level="1">99</value>
+			<value level="2">101</value>
+			<value level="3">103</value>
+			<value level="4">105</value>
+			<value level="5">107</value>
+			<value level="6">109</value>
+		</magicLvl>
+		<castRange>600</castRange>
+		<hitTime>2500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>60000</reuseDelay>
+		<isMagic>1</isMagic>
+		<effectPoint>-700</effectPoint>
+		<isDebuff>true</isDebuff>
+		<effects>
+			<effect name="MagicalAttack">
+				<power>
+					<value level="1">518</value>
+					<value level="2">526</value>
+					<value level="3">542</value>
+					<value level="4">558</value>
+					<value level="5">584</value>
+					<value level="6">610</value>
+				</power>
+			</effect>
+			<effect name="Speed">
+				<amount>-180</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>-30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>-30</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11366" toLevel="3" name="Spectral Curse">
+		<!-- Temporarily renders nearby enemies helpless. -->
+		<icon>icon.skill0028</icon>
+		<operateType>A2</operateType>
+		<mpConsume>70</mpConsume>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>4000</reuseDelay>
+		<effectPoint>-709</effectPoint>
+		<isDebuff>true</isDebuff>
+	</skill>
+	<skill id="11367" toLevel="3" name="Arcane Protection">
+		<!-- For $s1, Received P./ M. Critical Rate -$s2, Pull Resistance and Knock Back/ Knock Down Resistance -$s3. Debuff Resistance +$s4, HP/ MP Recovery Bonus +$s5. -->
+		<icon>icon.skill11360</icon>
+		<abnormalLvl>
+			<value level="1">3</value>
+			<value level="2">4</value>
+			<value level="3">5</value>
+		</abnormalLvl>
+		<abnormalTime>30</abnormalTime>
+		<abnormalType>ARCANE_PROTECTION</abnormalType>
+		<affectRange>200</affectRange>
+		<operateType>A2</operateType>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+		<castRange>900</castRange>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>4000</reuseDelay>
+		<isMagic>4</isMagic>
+		<effects>
+			<effect name="DefenceTrait">
+				<PULL>
+					<value level="1">10</value>
+					<value level="2">12</value>
+					<value level="3">15</value>
+				</PULL>
+				<KNOCKBACK>
+					<value level="1">10</value>
+					<value level="2">12</value>
+					<value level="3">15</value>
+				</KNOCKBACK>
+				<KNOCKDOWN>
+					<value level="1">10</value>
+					<value level="2">12</value>
+					<value level="3">15</value>
+				</KNOCKDOWN>
+			</effect>
+			<effect name="HpRegen">
+				<amount>
+					<value level="1">10</value>
+					<value level="2">12</value>
+					<value level="3">15</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MpRegen">
+				<amount>
+					<value level="1">10</value>
+					<value level="2">12</value>
+					<value level="3">15</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="ResistAbnormalByCategory">
+				<amount>
+					<value level="1">-10</value>
+					<value level="2">-12</value>
+					<value level="3">-15</value>
+				</amount>
+				<slot>DEBUFF</slot>
+			</effect>
+			<effect name="DefenceCriticalRate">
+				<amount>
+					<value level="1">7</value>
+					<value level="2">10</value>
+					<value level="3">12</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DefenceMagicCriticalRate">
+				<amount>
+					<value level="1">7</value>
+					<value level="2">10</value>
+					<value level="3">12</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11368" toLevel="3" name="Arcane Protection">
+		<!-- For $s1, Debuff Resistance +$s2, Pull/ Danger Zone Resistance +$s3, Knock Back/ Knock Down Resistance +$s4, HP/ MP Recovery Bonus +$s5. Received P./ M. Critical Rate -$s6. -->
+		<icon>icon.skill11360</icon>
+		<abnormalLvl>
+			<value level="1">5</value>
+			<value level="2">6</value>
+			<value level="3">6</value>
+		</abnormalLvl>
+		<abnormalTime>30</abnormalTime>
+		<abnormalType>ARCANE_PROTECTION</abnormalType>
+		<affectRange>200</affectRange>
+		<operateType>A2</operateType>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+		<castRange>900</castRange>
+		<reuseDelay>4000</reuseDelay>
+		<isMagic>4</isMagic>
+		<effects>
+			<effect name="DefenceTrait">
+				<PULL>
+					<value level="1">15</value>
+					<value level="2">20</value>
+					<value level="3">20</value>
+				</PULL>
+				<ZONE>
+					<value level="1">15</value>
+					<value level="2">20</value>
+					<value level="3">20</value>
+				</ZONE>
+				<KNOCKBACK>
+					<value level="1">15</value>
+					<value level="2">20</value>
+					<value level="3">20</value>
+				</KNOCKBACK>
+				<KNOCKDOWN>
+					<value level="1">15</value>
+					<value level="2">20</value>
+					<value level="3">20</value>
+				</KNOCKDOWN>
+			</effect>
+			<effect name="HpRegen">
+				<amount>
+					<value level="1">15</value>
+					<value level="2">20</value>
+					<value level="3">20</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MpRegen">
+				<amount>
+					<value level="1">15</value>
+					<value level="2">20</value>
+					<value level="3">20</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="ResistAbnormalByCategory">
+				<amount>
+					<value level="1">-15</value>
+					<value level="2">-20</value>
+					<value level="3">-20</value>
+				</amount>
+				<slot>DEBUFF</slot>
+			</effect>
+			<effect name="DefenceCriticalRate">
+				<amount>
+					<value level="1">10</value>
+					<value level="2">15</value>
+					<value level="3">15</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DefenceMagicCriticalRate">
+				<amount>
+					<value level="1">10</value>
+					<value level="2">15</value>
+					<value level="3">15</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11369" toLevel="11" name="Summon Commando Cat">
+		<!-- Summons Commando Cat. Consumes $s1 summon points. -->
+		<icon>icon.skill11369</icon>
+		<magicLvl>
+			<value level="1">100</value>
+			<value level="2">101</value>
+			<value level="3">102</value>
+			<value level="4">103</value>
+			<value level="5">104</value>
+			<value level="6">105</value>
+			<value level="7">106</value>
+			<value level="8">107</value>
+			<value level="9">108</value>
+			<value level="10">109</value>
+			<value level="11">110</value>
+		</magicLvl>
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<mpConsume>
+			<value level="1">465</value>
+			<value level="2">475</value>
+			<value level="3">485</value>
+			<value level="4">495</value>
+			<value level="5">505</value>
+			<value level="6">515</value>
+			<value level="7">525</value>
+			<value level="8">535</value>
+			<value level="9">545</value>
+			<value level="10">555</value>
+			<value level="11">565</value>
+		</mpConsume>
+		<hitTime>3500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>5000</reuseDelay>
+		<isMagic>1</isMagic>
+		<conditions>
+			<condition name="CanSummonMulti">
+				<summonPoints>2</summonPoints>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SummonMulti">
+				<npcId>
+					<value level="1">15155</value>
+					<value level="2">15156</value>
+					<value level="3">15157</value>
+					<value level="4">15158</value>
+					<value level="5">15159</value>
+					<value level="6">15160</value>
+					<value level="7">15220</value>
+					<value level="8">15221</value>
+					<value level="9">15222</value>
+					<value level="10">15223</value>
+					<value level="11">15224</value>
+				</npcId>
+				<summonPoints>2</summonPoints>
+				<lifeTime>-1</lifeTime>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11370" toLevel="11" name="Summon Witch Cat">
+		<!-- Summons Witch Cat. Consumes $s1 summon points. -->
+		<icon>icon.skill11370</icon>
+		<magicLvl>
+			<value level="1">100</value>
+			<value level="2">101</value>
+			<value level="3">102</value>
+			<value level="4">103</value>
+			<value level="5">104</value>
+			<value level="6">105</value>
+			<value level="7">106</value>
+			<value level="8">107</value>
+			<value level="9">108</value>
+			<value level="10">109</value>
+			<value level="11">110</value>
+		</magicLvl>
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<mpConsume>
+			<value level="1">465</value>
+			<value level="2">475</value>
+			<value level="3">485</value>
+			<value level="4">495</value>
+			<value level="5">505</value>
+			<value level="6">515</value>
+			<value level="7">525</value>
+			<value level="8">535</value>
+			<value level="9">545</value>
+			<value level="10">555</value>
+			<value level="11">565</value>
+		</mpConsume>
+		<hitTime>3500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>5000</reuseDelay>
+		<isMagic>1</isMagic>
+		<conditions>
+			<condition name="CanSummonMulti">
+				<summonPoints>2</summonPoints>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SummonMulti">
+				<npcId>
+					<value level="1">15161</value>
+					<value level="2">15162</value>
+					<value level="3">15163</value>
+					<value level="4">15164</value>
+					<value level="5">15165</value>
+					<value level="6">15166</value>
+					<value level="7">15225</value>
+					<value level="8">15226</value>
+					<value level="9">15227</value>
+					<value level="10">15228</value>
+					<value level="11">15229</value>
+				</npcId>
+				<summonPoints>2</summonPoints>
+				<lifeTime>-1</lifeTime>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11371" toLevel="11" name="Summon Unicorn Lancer">
+		<!-- Summons Unicorn Lancer. Consumes $s1 summon points. -->
+		<icon>icon.skill11371</icon>
+		<magicLvl>
+			<value level="1">100</value>
+			<value level="2">101</value>
+			<value level="3">102</value>
+			<value level="4">103</value>
+			<value level="5">104</value>
+			<value level="6">105</value>
+			<value level="7">106</value>
+			<value level="8">107</value>
+			<value level="9">108</value>
+			<value level="10">109</value>
+			<value level="11">110</value>
+		</magicLvl>
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<mpConsume>
+			<value level="1">465</value>
+			<value level="2">475</value>
+			<value level="3">485</value>
+			<value level="4">495</value>
+			<value level="5">505</value>
+			<value level="6">515</value>
+			<value level="7">525</value>
+			<value level="8">535</value>
+			<value level="9">545</value>
+			<value level="10">555</value>
+			<value level="11">565</value>
+		</mpConsume>
+		<hitTime>3500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>5000</reuseDelay>
+		<isMagic>1</isMagic>
+		<conditions>
+			<condition name="CanSummonMulti">
+				<summonPoints>2</summonPoints>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SummonMulti">
+				<npcId>
+					<value level="1">15167</value>
+					<value level="2">15168</value>
+					<value level="3">15169</value>
+					<value level="4">15170</value>
+					<value level="5">15171</value>
+					<value level="6">15172</value>
+					<value level="7">15230</value>
+					<value level="8">15231</value>
+					<value level="9">15232</value>
+					<value level="10">15233</value>
+					<value level="11">15234</value>
+				</npcId>
+				<summonPoints>2</summonPoints>
+				<lifeTime>-1</lifeTime>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11372" toLevel="11" name="Summon Unicorn Cherub">
+		<!-- Summons Unicorn Cherub. Consumes $s1 summon points. -->
+		<icon>icon.skill11372</icon>
+		<magicLvl>
+			<value level="1">100</value>
+			<value level="2">101</value>
+			<value level="3">102</value>
+			<value level="4">103</value>
+			<value level="5">104</value>
+			<value level="6">105</value>
+			<value level="7">106</value>
+			<value level="8">107</value>
+			<value level="9">108</value>
+			<value level="10">109</value>
+			<value level="11">110</value>
+		</magicLvl>
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<mpConsume>
+			<value level="1">465</value>
+			<value level="2">475</value>
+			<value level="3">485</value>
+			<value level="4">495</value>
+			<value level="5">505</value>
+			<value level="6">515</value>
+			<value level="7">525</value>
+			<value level="8">535</value>
+			<value level="9">545</value>
+			<value level="10">555</value>
+			<value level="11">565</value>
+		</mpConsume>
+		<hitTime>3500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>5000</reuseDelay>
+		<isMagic>1</isMagic>
+		<conditions>
+			<condition name="CanSummonMulti">
+				<summonPoints>2</summonPoints>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SummonMulti">
+				<npcId>
+					<value level="1">15173</value>
+					<value level="2">15174</value>
+					<value level="3">15175</value>
+					<value level="4">15176</value>
+					<value level="5">15177</value>
+					<value level="6">15178</value>
+					<value level="7">15235</value>
+					<value level="8">15236</value>
+					<value level="9">15237</value>
+					<value level="10">15238</value>
+					<value level="11">15239</value>
+				</npcId>
+				<summonPoints>2</summonPoints>
+				<lifeTime>-1</lifeTime>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11373" toLevel="11" name="Summon Dark Crusader">
+		<!-- Summons Dark Crusader. Consumes $s1 summon points. -->
+		<icon>icon.skill11373</icon>
+		<magicLvl>
+			<value level="1">100</value>
+			<value level="2">101</value>
+			<value level="3">102</value>
+			<value level="4">103</value>
+			<value level="5">104</value>
+			<value level="6">105</value>
+			<value level="7">106</value>
+			<value level="8">107</value>
+			<value level="9">108</value>
+			<value level="10">109</value>
+			<value level="11">110</value>
+		</magicLvl>
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<mpConsume>
+			<value level="1">465</value>
+			<value level="2">475</value>
+			<value level="3">485</value>
+			<value level="4">495</value>
+			<value level="5">505</value>
+			<value level="6">515</value>
+			<value level="7">525</value>
+			<value level="8">535</value>
+			<value level="9">545</value>
+			<value level="10">555</value>
+			<value level="11">565</value>
+		</mpConsume>
+		<hitTime>3500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>5000</reuseDelay>
+		<isMagic>1</isMagic>
+		<conditions>
+			<condition name="CanSummonMulti">
+				<summonPoints>2</summonPoints>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SummonMulti">
+				<npcId>
+					<value level="1">15179</value>
+					<value level="2">15180</value>
+					<value level="3">15181</value>
+					<value level="4">15182</value>
+					<value level="5">15183</value>
+					<value level="6">15184</value>
+					<value level="7">15240</value>
+					<value level="8">15241</value>
+					<value level="9">15242</value>
+					<value level="10">15243</value>
+					<value level="11">15244</value>
+				</npcId>
+				<summonPoints>2</summonPoints>
+				<lifeTime>-1</lifeTime>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11374" toLevel="11" name="Summon Banshee Queen">
+		<!-- Summons Banshee Queen. Consumes $s1 summon points. -->
+		<icon>icon.skill11374</icon>
+		<magicLvl>
+			<value level="1">100</value>
+			<value level="2">101</value>
+			<value level="3">102</value>
+			<value level="4">103</value>
+			<value level="5">104</value>
+			<value level="6">105</value>
+			<value level="7">106</value>
+			<value level="8">107</value>
+			<value level="9">108</value>
+			<value level="10">109</value>
+			<value level="11">110</value>
+		</magicLvl>
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<mpConsume>
+			<value level="1">465</value>
+			<value level="2">475</value>
+			<value level="3">485</value>
+			<value level="4">495</value>
+			<value level="5">505</value>
+			<value level="6">515</value>
+			<value level="7">525</value>
+			<value level="8">535</value>
+			<value level="9">545</value>
+			<value level="10">555</value>
+			<value level="11">565</value>
+		</mpConsume>
+		<hitTime>3500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>5000</reuseDelay>
+		<isMagic>1</isMagic>
+		<conditions>
+			<condition name="CanSummonMulti">
+				<summonPoints>2</summonPoints>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SummonMulti">
+				<npcId>
+					<value level="1">15185</value>
+					<value level="2">15186</value>
+					<value level="3">15187</value>
+					<value level="4">15188</value>
+					<value level="5">15189</value>
+					<value level="6">15190</value>
+					<value level="7">15245</value>
+					<value level="8">15246</value>
+					<value level="9">15247</value>
+					<value level="10">15248</value>
+					<value level="11">15249</value>
+				</npcId>
+				<summonPoints>2</summonPoints>
+				<lifeTime>-1</lifeTime>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11375" toLevel="6" name="Commando Jumping Attack">
+		<!-- Jumps and hulrs attack to target and nearby enemies with $s1 Power added to P. Atk., and decreases Speed by $s3 for $s2. -->
+		<icon>icon.skill0121</icon>
+		<abnormalLvl>
+			<value level="1">1</value>
+			<value level="2">2</value>
+			<value level="3">3</value>
+			<value level="4">4</value>
+			<value level="5">5</value>
+			<value level="6">6</value>
+		</abnormalLvl>
+		<abnormalTime>5</abnormalTime>
+		<abnormalType>SPEED_DOWN</abnormalType>
+		<activateRate>100</activateRate> <!-- Guessed -->
+		<basicProperty>PHYSICAL</basicProperty> <!-- Guessed -->
+		<operateType>DA2</operateType>
+		<targetType>ENEMY</targetType>
+		<affectScope>FAN</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<mpConsume>
+			<value level="1">86</value>
+			<value level="2">86</value>
+			<value level="3">87</value>
+			<value level="4">87</value> <!-- Guessed -->
+			<value level="5">88</value> <!-- Guessed -->
+			<value level="6">88</value> <!-- Guessed -->
+		</mpConsume>
+		<nextAction>ATTACK</nextAction>
+		<castRange>600</castRange>
+		<effectRange>800</effectRange>
+		<fanRange>0;0;600;60</fanRange>
+		<hitTime>100</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>5000</reuseDelay>
+		<effectPoint>-709</effectPoint>
+		<isDebuff>true</isDebuff>
+		<conditions>
+			<condition name="OpCheckCastRange">
+				<distance>200</distance>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>
+					<value level="1">18224</value>
+					<value level="2">19158</value>
+					<value level="3">20092</value>
+					<value level="4">21026</value> <!-- Guessed -->
+					<value level="5">21960</value> <!-- Guessed -->
+					<value level="6">22903</value> <!-- Guessed -->
+				</power>
+			</effect>
+			<effect name="Speed">
+				<amount>-100</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11376" toLevel="6" name="Commando Double Smash">
+		<!-- Inflicts damage with $s1 Power added to P. Atk. and knocks down for $s2 -->
+		<icon>icon.skill10546</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>3</abnormalTime>
+		<abnormalType>KNOCKDOWN</abnormalType>
+		<abnormalVisualEffect>KNOCKDOWN</abnormalVisualEffect>
+		<activateRate>80</activateRate> <!-- Guessed -->
+		<operateType>A2</operateType>
+		<trait>KNOCKDOWN</trait>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<mpConsume>
+			<value level="1">86</value>
+			<value level="2">86</value>
+			<value level="3">87</value>
+			<value level="4">88</value> <!-- Guessed -->
+			<value level="5">89</value> <!-- Guessed -->
+			<value level="6">90</value> <!-- Guessed -->
+		</mpConsume>
+		<castRange>40</castRange>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>7000</reuseDelay>
+		<effectPoint>-709</effectPoint>
+		<isDebuff>true</isDebuff>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>
+					<value level="1">32410</value>
+					<value level="2">34072</value>
+					<value level="3">35734</value>
+					<value level="4">37396</value> <!-- Guessed -->
+					<value level="5">39058</value> <!-- Guessed -->
+					<value level="6">40720</value> <!-- Guessed -->
+				</power>
+			</effect>
+			<effect name="KnockBack">
+				<!-- Guessed -->
+				<speed>700</speed>
+				<distance>50</distance>
+				<knockDown>true</knockDown>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11377" toLevel="6" name="Witch Cat Power">
+		<!-- Inflicts damage to nearby enemies with $s1 Power added to P. Atk. -->
+		<icon>icon.skill1171</icon>
+		<affectRange>150</affectRange> <!-- Guessed -->
+		<operateType>A1</operateType>
+		<targetType>ENEMY_ONLY</targetType>
+		<affectScope>RANGE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<mpConsume>
+			<value level="1">172</value>
+			<value level="2">173</value>
+			<value level="3">174</value>
+			<value level="4">175</value> <!-- Guessed -->
+			<value level="5">176</value> <!-- Guessed -->
+			<value level="6">177</value> <!-- Guessed -->
+		</mpConsume>
+		<castRange>1100</castRange>
+		<hitTime>2000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>
+			<value level="1">-3541</value>
+			<value level="2">-3561</value>
+			<value level="3">-3561</value>
+			<value level="4">-3561</value>
+			<value level="5">-3561</value>
+			<value level="6">-3561</value>
+		</effectPoint>
+		<reuseDelay>5000</reuseDelay>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>
+					<value level="1">31903</value>
+					<value level="2">33539</value>
+					<value level="3">35175</value>
+					<value level="4">36811</value> <!-- Guessed -->
+					<value level="5">38447</value> <!-- Guessed -->
+					<value level="6">40083</value> <!-- Guessed -->
+				</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11378" toLevel="6" name="Elemental Slam">
+		<!-- Inflicts damage to nearby enemies with $s1 Power added to P. Atk. and pushes them back. -->
+		<icon>icon.skill1171</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalType>STUN</abnormalType>
+		<abnormalTime>1</abnormalTime>
+		<abnormalVisualEffect>KNOCKBACK</abnormalVisualEffect>
+		<activateRate>80</activateRate> <!-- Guessed -->
+		<affectRange>150</affectRange> <!-- Guessed -->
+		<basicProperty>PHYSICAL</basicProperty> <!-- Guessed -->
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>POINT_BLANK</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<trait>KNOCKBACK</trait>
+		<mpConsume>
+			<value level="1">172</value>
+			<value level="2">173</value>
+			<value level="3">174</value>
+			<value level="4">175</value> <!-- Guessed -->
+			<value level="5">176</value> <!-- Guessed -->
+			<value level="6">177</value> <!-- Guessed -->
+		</mpConsume>
+		<castRange>1100</castRange>
+		<hitTime>2500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>15000</reuseDelay>
+		<effectPoint>
+			<value level="1">-3541</value>
+			<value level="2">-3561</value>
+			<value level="3">-3561</value>
+			<value level="4">-3561</value>
+			<value level="5">-3561</value>
+			<value level="6">-3561</value>
+		</effectPoint>
+		<isDebuff>true</isDebuff>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>
+					<value level="1">30623</value>
+					<value level="2">32193</value>
+					<value level="3">33763</value>
+					<value level="4">35333</value> <!-- Guessed -->
+					<value level="5">36903</value> <!-- Guessed -->
+					<value level="6">38473</value> <!-- Guessed -->
+				</power>
+			</effect>
+			<effect name="KnockBack">
+				<!-- Guessed -->
+				<speed>400</speed>
+				<distance>100</distance>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11379" toLevel="6" name="Lancer Rush">
+		<!-- Charges forward to inflict damage on the target with $s1 power added to P. Attack and inflicts Stun for $s2. -->
+		<icon>icon.skill0121</icon>
+		<abnormalLvl>
+			<value level="1">1</value>
+			<value level="2">2</value>
+			<value level="3">3</value>
+			<value level="4">3</value>
+			<value level="5">3</value>
+			<value level="6">3</value>
+		</abnormalLvl>
+		<abnormalTime>5</abnormalTime>
+		<abnormalType>STUN</abnormalType>
+		<abnormalVisualEffect>STUN</abnormalVisualEffect>
+		<activateRate>60</activateRate> <!-- Guessed -->
+		<affectRange>600</affectRange>
+		<basicProperty>PHYSICAL</basicProperty> <!-- Guessed -->
+		<effectRange>800</effectRange>
+		<fanRange>0;0;600;60</fanRange>
+		<operateType>DA2</operateType>
+		<targetType>ENEMY</targetType>
+		<affectScope>FAN</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<trait>SHOCK</trait>
+		<mpConsume>
+			<value level="1">86</value>
+			<value level="2">86</value>
+			<value level="3">87</value>
+			<value level="4">87</value> <!-- Guessed -->
+			<value level="5">88</value> <!-- Guessed -->
+			<value level="6">88</value> <!-- Guessed -->
+		</mpConsume>
+		<nextAction>ATTACK</nextAction>
+		<castRange>600</castRange>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>5000</reuseDelay>
+		<effectPoint>
+			<value level="1">-3541</value>
+			<value level="2">-3561</value>
+			<value level="3">-3561</value>
+			<value level="4">-3561</value>
+			<value level="5">-3561</value>
+			<value level="6">-3561</value>
+		</effectPoint>
+		<isDebuff>true</isDebuff>
+		<conditions>
+			<condition name="OpCheckCastRange">
+				<distance>200</distance>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>
+					<value level="1">16198</value>
+					<value level="2">17028</value>
+					<value level="3">17858</value>
+					<value level="4">18688</value> <!-- Guessed -->
+					<value level="5">19518</value> <!-- Guessed -->
+					<value level="6">20348</value> <!-- Guessed -->
+				</power>
+			</effect>
+			<effect name="BlockActions">
+				<allowedSkills>10279;10517;10025;10776;11770;1904;11264;11093;13314;1912</allowedSkills>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11380" toLevel="6" name="Power Stump">
+		<!-- Inflicts damage to nearby enemies with $s1 Power added to P. Atk. and blows them away. -->
+		<icon>icon.skill30006</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalType>STUN</abnormalType>
+		<abnormalTime>1</abnormalTime>
+		<abnormalVisualEffect>KNOCKBACK</abnormalVisualEffect>
+		<affectRange>200</affectRange> <!-- Guessed -->
+		<activateRate>80</activateRate> <!-- Guessed -->
+		<basicProperty>PHYSICAL</basicProperty> <!-- Guessed -->
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>POINT_BLANK</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<trait>KNOCKBACK</trait>
+		<mpConsume>
+			<value level="1">86</value>
+			<value level="2">86</value>
+			<value level="3">87</value>
+			<value level="4">87</value> <!-- Guessed -->
+			<value level="5">88</value> <!-- Guessed -->
+			<value level="6">88</value> <!-- Guessed -->
+		</mpConsume>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>
+			<value level="1">-3541</value>
+			<value level="2">-3561</value>
+			<value level="3">-3561</value>
+			<value level="4">-3561</value>
+			<value level="5">-3561</value>
+			<value level="6">-3561</value>
+		</effectPoint>
+		<reuseDelay>7000</reuseDelay>
+		<isDebuff>true</isDebuff>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>
+					<value level="1">22677</value>
+					<value level="2">23839</value>
+					<value level="3">25001</value>
+					<value level="4">26163</value> <!-- Guessed -->
+					<value level="5">27325</value> <!-- Guessed -->
+					<value level="6">28487</value> <!-- Guessed -->
+				</power>
+			</effect>
+			<effect name="KnockBack">
+				<!-- Guessed -->
+				<speed>400</speed>
+				<distance>100</distance>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11381" toLevel="6" name="Cherub Power">
+		<!-- Inflicts damage to nearby enemies with $s1 Power added to P. Atk. -->
+		<icon>icon.skill1171</icon>
+		<affectRange>150</affectRange> <!-- Guessed -->
+		<operateType>A1</operateType>
+		<targetType>ENEMY_ONLY</targetType>
+		<affectScope>RANGE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<mpConsume>
+			<value level="1">172</value>
+			<value level="2">173</value>
+			<value level="3">174</value>
+			<value level="4">174</value> <!-- Guessed -->
+			<value level="5">175</value> <!-- Guessed -->
+			<value level="6">175</value> <!-- Guessed -->
+		</mpConsume>
+		<castRange>1100</castRange>
+		<hitTime>2000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>
+			<value level="1">-3541</value>
+			<value level="2">-3561</value>
+			<value level="3">-3561</value>
+			<value level="4">-3561</value>
+			<value level="5">-3561</value>
+			<value level="6">-3561</value>
+		</effectPoint>
+		<reuseDelay>5000</reuseDelay>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>
+					<value level="1">31903</value>
+					<value level="2">33539</value>
+					<value level="3">35175</value>
+					<value level="4">36811</value> <!-- Guessed -->
+					<value level="5">38447</value> <!-- Guessed -->
+					<value level="6">40083</value> <!-- Guessed -->
+				</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11382" toLevel="6" name="Multiple Icicles">
+		<!-- Inflicts damage to target and nearby enemies with $s1 Power added to P. Atk., and decreases Speed by $s3 for $s2. -->
+		<icon>icon.skill10103</icon>
+		<abnormalLvl>
+			<value level="1">1</value>
+			<value level="2">2</value>
+			<value level="3">3</value>
+			<value level="4">4</value>
+			<value level="5">5</value>
+			<value level="6">6</value>
+		</abnormalLvl>
+		<abnormalTime>5</abnormalTime>
+		<abnormalType>SPEED_DOWN</abnormalType>
+		<activateRate>100</activateRate>
+		<affectRange>200</affectRange> <!-- Guessed -->
+		<basicProperty>PHYSICAL</basicProperty> <!-- Guessed -->
+		<operateType>A2</operateType>
+		<targetType>ENEMY_ONLY</targetType>
+		<affectScope>RANGE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<mpConsume>
+			<value level="1">172</value>
+			<value level="2">173</value>
+			<value level="3">174</value>
+			<value level="4">174</value> <!-- Guessed -->
+			<value level="5">175</value> <!-- Guessed -->
+			<value level="6">175</value> <!-- Guessed -->
+		</mpConsume>
+		<castRange>400</castRange>
+		<hitTime>2500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>15000</reuseDelay>
+		<effectPoint>
+			<value level="1">-3541</value>
+			<value level="2">-3561</value>
+			<value level="3">-3561</value>
+			<value level="4">-3561</value>
+			<value level="5">-3561</value>
+			<value level="6">-3561</value>
+		</effectPoint>
+		<isDebuff>true</isDebuff>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>
+					<value level="1">34449</value>
+					<value level="2">36215</value>
+					<value level="3">37981</value>
+					<value level="4">39747</value> <!-- Guessed -->
+					<value level="5">41513</value> <!-- Guessed -->
+					<value level="6">43279</value> <!-- Guessed -->
+				</power>
+			</effect>
+			<effect name="Speed">
+				<amount>-100</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11383" toLevel="6" name="Phantom Sword Attack">
+		<!-- Inflicts damage with $s1 Power added to P. Atk. -->
+		<icon>icon.skill0121</icon>
+		<operateType>A1</operateType>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<mpConsume>
+			<value level="1">86</value>
+			<value level="2">86</value>
+			<value level="3">87</value>
+			<value level="4">87</value>
+			<value level="5">88</value>
+			<value level="6">88</value>
+		</mpConsume>
+		<nextAction>ATTACK</nextAction>
+		<castRange>50</castRange>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-709</effectPoint>
+		<reuseDelay>5000</reuseDelay>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>
+					<value level="1">40502</value>
+					<value level="2">42578</value>
+					<value level="3">44654</value>
+					<value level="4">46730</value> <!-- Guessed -->
+					<value level="5">48806</value> <!-- Guessed -->
+					<value level="6">50882</value> <!-- Guessed -->
+				</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11384" toLevel="6" name="Phantom Blow">
+		<!-- Attacks the target's vital points with $s1 Power added to P. Atk. -->
+		<icon>icon.skill10511</icon>
+		<operateType>A1</operateType>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<trait>DEATH</trait>
+		<mpConsume>
+			<value level="1">86</value>
+			<value level="2">86</value>
+			<value level="3">87</value>
+			<value level="4">87</value>
+			<value level="5">88</value>
+			<value level="6">88</value>
+		</mpConsume>
+		<nextAction>ATTACK</nextAction>
+		<castRange>50</castRange>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-709</effectPoint>
+		<reuseDelay>7000</reuseDelay>
+		<effects>
+			<effect name="FatalBlow">
+				<!-- Guessed -->
+				<chanceBoost>300</chanceBoost>
+				<power>
+					<value level="1">45696</value>
+					<value level="2">47772</value>
+					<value level="3">49848</value>
+					<value level="4">51924</value> <!-- Guessed -->
+					<value level="5">54000</value> <!-- Guessed -->
+					<value level="6">56076</value> <!-- Guessed -->
+				</power>
+			</effect>
+			<effect name="Lethal">
+				<fullLethal>0</fullLethal>
+				<halfLethal>10</halfLethal>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11385" toLevel="6" name="Phantom Spike">
+		<!-- Attacks the target's vital points with $s1 Power added to P. Atk. -->
+		<icon>icon.skill1171</icon>
+		<operateType>A1</operateType>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<trait>DEATH</trait>
+		<mpConsume>
+			<value level="1">86</value>
+			<value level="2">86</value>
+			<value level="3">87</value>
+			<value level="4">87</value>
+			<value level="5">88</value>
+			<value level="6">88</value>
+		</mpConsume>
+		<castRange>1100</castRange>
+		<hitTime>2000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-709</effectPoint>
+		<reuseDelay>7000</reuseDelay>
+		<effects>
+			<effect name="FatalBlow">
+				<!-- Guessed -->
+				<chanceBoost>300</chanceBoost>
+				<power>
+					<value level="1">51411</value>
+					<value level="2">53747</value>
+					<value level="3">56083</value>
+					<value level="4">58419</value> <!-- Guessed -->
+					<value level="5">60755</value> <!-- Guessed -->
+					<value level="6">63091</value> <!-- Guessed -->
+				</power>
+			</effect>
+			<effect name="Lethal">
+				<fullLethal>0</fullLethal>
+				<halfLethal>10</halfLethal>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11386" toLevel="6" name="Phantom Crash">
+		<!-- Inflicts damage with $s1 Power added to P. Atk. -->
+		<icon>icon.skill1171</icon>
+		<operateType>A1</operateType>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<mpConsume>
+			<value level="1">86</value>
+			<value level="2">86</value>
+			<value level="3">87</value>
+			<value level="4">87</value>
+			<value level="5">88</value>
+			<value level="6">88</value>
+		</mpConsume>
+		<castRange>1100</castRange>
+		<hitTime>2000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-709</effectPoint>
+		<reuseDelay>7000</reuseDelay>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>
+					<value level="1">45568</value>
+					<value level="2">47904</value>
+					<value level="3">50240</value>
+					<value level="4">52576</value> <!-- Guessed -->
+					<value level="5">54912</value> <!-- Guessed -->
+					<value level="6">57248</value> <!-- Guessed -->
+				</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11387" toLevel="2" name="Arcana's Call">
+		<!-- The power of nature is used to increase P. Atk./ P. Def./ M. Atk./ M. Def. by $s2 for $s1 Additionally, P. Atk. +$s3, P. Accuracy +$s4, Knock Back/ Knock Down Success Rate +$s5 for servitors. The Servitor also becomes immune to debuffs. Consumes 10 Spirit Ore. -->
+		<icon>icon.skill11387</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>30</abnormalTime>
+		<abnormalType>BIG_BODY_COMBINATION</abnormalType>
+		<abnormalVisualEffect>BIG_BODY_COMBINATION_CAT_NPC</abnormalVisualEffect>
+		<itemConsumeCount>10</itemConsumeCount>
+		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
+		<operateType>A2</operateType>
+		<targetType>SUMMON</targetType>
+		<affectScope>SUMMON_EXCEPT_MASTER</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<mpConsume>70</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>1000</hitTime>
+		<coolTime>200</coolTime>
+		<reuseDelay>300000</reuseDelay>
+		<effectPoint>687</effectPoint>
+		<isMagic>1</isMagic>
+		<effects>
+			<effect name="AttackTrait"> <!-- CONFUSION ATTACK RATE -->
+				<AGGRESSION>60</AGGRESSION>
+				<AIRBIND>60</AIRBIND>
+				<KNOCKDOWN>60</KNOCKDOWN>
+				<KNOCKBACK>60</KNOCKBACK>
+				<KNOCKBACK>60</KNOCKBACK>
+				<PARALYZE>60</PARALYZE>
+				<SHOCK>60</SHOCK>
+				<PULL>60</PULL>
+			</effect>
+			<effect name="PAtk">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Accuracy">
+				<amount>23</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="DebuffBlock" />
+			<effect name="DispelByCategory">
+				<slot>DEBUFF</slot>
+				<rate>100</rate>
+				<max>10</max>
+			</effect>
+			<effect name="ResistDispelByCategory">
+				<amount>-100</amount>
+				<slot>ALL</slot>
+			</effect>
+			<effect name="ResistAbnormalByCategory">
+				<amount>-100</amount>
+				<slot>DEBUFF</slot>
+			</effect>
+		</effects>
+		<selfEffects>
+			<effect name="CallSkill">
+				<!-- Lord of Arcana -->
+				<skillId>11388</skillId> <!-- Lord of Arcana -->
+				<skillLevel>1</skillLevel>
+			</effect>
+		</selfEffects>
+	</skill>
+	<skill id="11388" toLevel="2" name="Lord of Arcana">
+		<!-- For $s1, P. Atk./ P. Def./ M. Atk./ M. Def. +$s2. -->
+		<icon>icon.skill11387</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>30</abnormalTime>
+		<abnormalType>BIG_BODY_COMBINATION</abnormalType>
+		<abnormalVisualEffect>BIG_BODY_COMBINATION_CAT_PC</abnormalVisualEffect>
+		<isSharedWithSummon>false</isSharedWithSummon>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<mpConsume>70</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>300</hitTime>
+		<coolTime>200</coolTime>
+		<reuseDelay>300000</reuseDelay>
+		<effectPoint>687</effectPoint>
+		<isMagic>1</isMagic>
+		<effects>
+			<effect name="MAtk">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PAtk">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11389" toLevel="2" name="Elemental's Call">
+		<!-- The power of nature is used to increase P. Atk./ P. Def./ M. Atk./ M. Def. by $s2 for $s1 Additionally, P. Atk. +$s3, Atk. Spd. +$s4, and Skill Cooldown -$s5 for servitors. The Servitor also becomes immune to debuffs. Consumes 10 Spirit Ore. -->
+		<icon>icon.skill11388</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>30</abnormalTime>
+		<abnormalType>BIG_BODY_COMBINATION</abnormalType>
+		<abnormalVisualEffect>BIG_BODY_COMBINATION_UNICORN_NPC</abnormalVisualEffect>
+		<itemConsumeCount>10</itemConsumeCount>
+		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
+		<operateType>A2</operateType>
+		<targetType>SUMMON</targetType>
+		<affectScope>SUMMON_EXCEPT_MASTER</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<mpConsume>70</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>1000</hitTime>
+		<coolTime>200</coolTime>
+		<reuseDelay>300000</reuseDelay>
+		<effectPoint>687</effectPoint>
+		<isMagic>1</isMagic>
+		<effects>
+			<effect name="PAtk">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Reuse">
+				<amount>-60</amount>
+				<mode>PER</mode>
+				<magicType>0</magicType>
+			</effect>
+			<effect name="Reuse">
+				<amount>-60</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+			<effect name="DebuffBlock" />
+			<effect name="DispelByCategory">
+				<slot>DEBUFF</slot>
+				<rate>100</rate>
+				<max>10</max>
+			</effect>
+			<effect name="ResistDispelByCategory">
+				<amount>-100</amount>
+				<slot>ALL</slot>
+			</effect>
+			<effect name="ResistAbnormalByCategory">
+				<amount>-100</amount>
+				<slot>DEBUFF</slot>
+			</effect>
+		</effects>
+		<selfEffects>
+			<effect name="CallSkill">
+				<!-- Lord of Elemental -->
+				<skillId>11390</skillId> <!-- Lord of Elemental -->
+				<skillLevel>1</skillLevel>
+			</effect>
+		</selfEffects>
+	</skill>
+	<skill id="11390" toLevel="2" name="Lord of Elemental">
+		<!-- For $s1, P. Atk./ P. Def./ M. Atk./ M. Def. +$s2. -->
+		<icon>icon.skill11388</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>30</abnormalTime>
+		<abnormalType>BIG_BODY_COMBINATION</abnormalType>
+		<abnormalVisualEffect>BIG_BODY_COMBINATION_UNICORN_PC</abnormalVisualEffect>
+		<isSharedWithSummon>false</isSharedWithSummon>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<mpConsume>70</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>300</hitTime>
+		<coolTime>200</coolTime>
+		<reuseDelay>300000</reuseDelay>
+		<effectPoint>687</effectPoint>
+		<isMagic>1</isMagic>
+		<effects>
+			<effect name="MAtk">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PAtk">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11391" toLevel="2" name="Spectral's Call">
+		<!-- The power of demons is used to increase P. Atk./ P. Def./ M. Atk./ M. Def. by $s2 for $s1 Additionally, P. Atk. +$s3 and P. Critical Damage +$s4 for servitors. The Servitor also becomes immune to debuffs. Consumes 10 Spirit Ore. -->
+		<icon>icon.skill11389</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>30</abnormalTime>
+		<abnormalType>BIG_BODY_COMBINATION</abnormalType>
+		<abnormalVisualEffect>BIG_BODY_COMBINATION_DEMON_NPC</abnormalVisualEffect>
+		<itemConsumeCount>10</itemConsumeCount>
+		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
+		<operateType>A2</operateType>
+		<targetType>SUMMON</targetType>
+		<affectScope>SUMMON_EXCEPT_MASTER</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<mpConsume>70</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>1000</hitTime>
+		<coolTime>200</coolTime>
+		<reuseDelay>300000</reuseDelay>
+		<effectPoint>687</effectPoint>
+		<isMagic>1</isMagic>
+		<effects>
+			<effect name="PAtk">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="CriticalDamage">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DebuffBlock" />
+			<effect name="DispelByCategory">
+				<slot>DEBUFF</slot>
+				<rate>100</rate>
+				<max>10</max>
+			</effect>
+			<effect name="ResistDispelByCategory">
+				<amount>-100</amount>
+				<slot>ALL</slot>
+			</effect>
+			<effect name="ResistAbnormalByCategory">
+				<amount>-100</amount>
+				<slot>DEBUFF</slot>
+			</effect>
+		</effects>
+		<selfEffects>
+			<effect name="CallSkill">
+				<!-- Lord of Spectral -->
+				<skillId>11392</skillId> <!-- Lord of Spectral -->
+				<skillLevel>1</skillLevel>
+			</effect>
+		</selfEffects>
+	</skill>
+	<skill id="11392" toLevel="2" name="Lord of Spectral">
+		<!-- For $s1, P. Atk./ P. Def./ M. Atk./ M. Def. +$s2. -->
+		<icon>icon.skill11389</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>30</abnormalTime>
+		<abnormalType>BIG_BODY_COMBINATION</abnormalType>
+		<abnormalVisualEffect>BIG_BODY_COMBINATION_DEMON_PC</abnormalVisualEffect>
+		<isSharedWithSummon>false</isSharedWithSummon>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<mpConsume>70</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>300</hitTime>
+		<coolTime>200</coolTime>
+		<reuseDelay>300000</reuseDelay>
+		<effectPoint>687</effectPoint>
+		<isMagic>1</isMagic>
+		<effects>
+			<effect name="MAtk">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PAtk">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11393" toLevel="6" name="Freezing Invoke">
+		<!-- Attacks the target and nearby enemies with $s1 Power added to M. Atk. For $s2, P./ M. Def. -$s3. Consumes $s4 Spirit Ore. -->
+		<icon>icon.skill11393</icon>
+		<abnormalLvl>
+			<value level="1">1</value>
+			<value level="2">2</value>
+			<value level="3">3</value>
+			<value level="4">4</value>
+			<value level="5">5</value>
+			<value level="6">6</value>
+		</abnormalLvl>
+		<abnormalType>SYNERGY_WYNN</abnormalType>
+		<abnormalTime>20</abnormalTime>
+		<activateRate>
+		<value fromLevel="1" toLevel="6">80</value>
+		<value fromLevel="1" toLevel="6" fromSubLevel="2001" toSubLevel="2020">{base + (base / 100 * subIndex)}</value>
+		</activateRate>
+		<basicProperty>NONE</basicProperty>
+		<itemConsumeCount>2</itemConsumeCount>
+		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
+		<operateType>A2</operateType>
+		<magicLvl>
+			<value level="1">99</value>
+			<value level="2">101</value>
+			<value level="3">103</value>
+			<value level="4">105</value>
+			<value level="5">107</value>
+			<value level="6">109</value>
+		</magicLvl>
+		<mpConsume>
+			<value level="1">286</value>
+			<value level="2">301</value>
+			<value level="3">316</value>
+			<value level="4">331</value>
+			<value level="5">346</value>
+			<value level="6">361</value>
+		</mpConsume>
+		<castRange>600</castRange>
+		<hitTime>2560</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>10000</reuseDelay>
+		<effectPoint>-709</effectPoint>
+		<isMagic>1</isMagic>
+		<isDebuff>true</isDebuff>
+		<targetType>ENEMY</targetType>
+		<affectScope>RANGE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<affectLimit>5-12</affectLimit>
+		<affectRange>150</affectRange>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MagicalAttack">
+				<power>
+					<value level="1">224</value>
+					<value level="2">231</value>
+					<value level="3">238</value>
+					<value level="4">245</value>
+					<value level="5">257</value>
+					<value level="6">269</value>
+					<value fromLevel="1" toLevel="6" fromSubLevel="1001" toSubLevel="1020">{base + (base / 100 * subIndex)}</value>
+				</power>
+			</effect>
+			<effect name="PhysicalDefence">
+					<amount>-30</amount>
+					<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>
+					<value fromLevel="1" toLevel="6">-30</value>
+					<value fromLevel="1" toLevel="6" fromSubLevel="3001" toSubLevel="3020">{base - (-0.6 - (0.4 * subIndex))}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11394" toLevel="6" name="Surrender to the Elemental">
+		<!-- Attacks the target with $s1 Power added to M. Atk. For $s2, all Attribute Resistance -$s3. Consumes $s4 Spirit Ore. -->
+		<icon>icon.skill11394</icon>
+		<abnormalLvl>
+			<value level="1">1</value>
+			<value level="2">2</value>
+			<value level="3">3</value>
+			<value level="4">4</value>
+			<value level="5">5</value>
+			<value level="6">6</value>
+		</abnormalLvl>
+		<abnormalType>MD_DOWN_AWAKEN</abnormalType>
+		<abnormalTime>10</abnormalTime>
+		<activateRate>
+			<value fromLevel="1" toLevel="6">80</value> <!-- Guessed -->
+			<value fromLevel="1" toLevel="6" fromSubLevel="2001" toSubLevel="2020">{base + (base / 100 * subIndex)}</value>
+		</activateRate>
+		<basicProperty>NONE</basicProperty>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
+		<operateType>A2</operateType>
+		<magicLvl>
+			<value level="1">99</value>
+			<value level="2">101</value>
+			<value level="3">103</value>
+			<value level="4">105</value>
+			<value level="5">107</value>
+			<value level="6">109</value>
+		</magicLvl>
+		<mpConsume>
+			<value level="1">86</value>
+			<value level="2">88</value>
+			<value level="3">90</value>
+			<value level="4">92</value>
+			<value level="5">94</value>
+			<value level="6">96</value>
+		</mpConsume>
+		<castRange>1100</castRange>
+		<hitTime>2780</hitTime>
+		<coolTime>300</coolTime>
+		<reuseDelay>5000</reuseDelay>
+		<effectPoint>-328</effectPoint>
+		<isMagic>1</isMagic>
+		<isDebuff>1</isDebuff>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MagicalAttack">
+				<power>
+					<value level="1">249</value>
+					<value level="2">256</value>
+					<value level="3">264</value>
+					<value level="4">272</value>
+					<value level="5">284</value>
+					<value level="6">296</value>
+					<value fromLevel="1" toLevel="6" fromSubLevel="1001" toSubLevel="1020">{base + (base / 100 * subIndex)}</value>
+				</power>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>-50</amount>
+				<attribute>FIRE</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>-50</amount>
+				<attribute>WATER</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>-50</amount>
+				<attribute>WIND</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>-50</amount>
+				<attribute>EARTH</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>-50</amount>
+				<attribute>HOLY</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>-50</amount>
+				<attribute>DARK</attribute>
+			</effect>
+			<effect name="PhysicalDefence" fromLevel="1" toLevel="6" fromSubLevel="3001" toSubLevel="3020">
+				<amount>
+					<value fromLevel="1" toLevel="6" fromSubLevel="3001" toSubLevel="3020">{-0.6 - (0.4 * subIndex)}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11395" toLevel="6" name="Curse Exposure">
+		<!-- Attacks the target with $s1 Power added to M. Atk. For $s2, Deadly Attack Def. -$s3. Consumes $s4 Spirit Ore. -->
+		<icon>icon.skill11395</icon>
+		<abnormalLvl>
+			<value level="1">1</value>
+			<value level="2">2</value>
+			<value level="3">3</value>
+			<value level="4">4</value>
+			<value level="5">5</value>
+			<value level="6">6</value>
+		</abnormalLvl>
+		<abnormalType>CURSE_EXPOSURE</abnormalType>
+		<abnormalTime>30</abnormalTime>
+		<activateRate>
+			<value fromLevel="1" toLevel="6">80</value> <!-- Guessed -->
+			<value fromLevel="1" toLevel="6" fromSubLevel="2001" toSubLevel="2020">{base + (base / 100 * subIndex)}</value>
+		</activateRate>
+		<basicProperty>NONE</basicProperty>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
+		<operateType>A2</operateType>
+		<magicLvl>
+			<value level="1">99</value>
+			<value level="2">101</value>
+			<value level="3">103</value>
+			<value level="4">105</value>
+			<value level="5">107</value>
+			<value level="6">109</value>
+		</magicLvl>
+		<mpConsume>
+			<value level="1">86</value>
+			<value level="2">88</value>
+			<value level="3">90</value>
+			<value level="4">92</value>
+			<value level="5">94</value>
+			<value level="6">96</value>
+		</mpConsume>
+		<castRange>1100</castRange>
+		<hitTime>2780</hitTime>
+		<coolTime>300</coolTime>
+		<reuseDelay>5000</reuseDelay>
+		<effectPoint>-671</effectPoint>
+		<isMagic>1</isMagic>
+		<isDebuff>1</isDebuff>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MagicalAttack">
+				<power>
+					<value level="1">249</value>
+					<value level="2">256</value>
+					<value level="3">264</value>
+					<value level="4">272</value>
+					<value level="5">284</value>
+					<value level="6">296</value>
+					<value fromLevel="1" toLevel="6" fromSubLevel="1001" toSubLevel="1020">{base + (base / 100 * subIndex)}</value>
+				</power>
+			</effect>
+			<effect name="InstantKillResist">
+				<amount>-30</amount>
+			</effect>
+			<effect name="PhysicalDefence" fromLevel="1" toLevel="6" fromSubLevel="3001" toSubLevel="3020">
+				<amount>
+					<value fromLevel="1" toLevel="6" fromSubLevel="3001" toSubLevel="3020">{-0.6 - (0.4 * subIndex)}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+</list>

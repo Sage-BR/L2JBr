@@ -1,0 +1,2405 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="30000" toLevel="1" name="Hydro Attack: Debuff">
+		<!-- Stacks Storm Marks when using Hydro Attack. -->
+		<icon>icon.skill11011</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="TriggerSkillBySkill">
+				<castSkillId>30001</castSkillId> <!-- Hydro Attack -->
+				<skillId>30002</skillId> <!-- Storm Sign -->
+				<skillLevel>1</skillLevel>
+				<skillLevelScaleTo>3</skillLevelScaleTo>
+				<chance>100</chance>
+				<targetType>TARGET</targetType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30001" toLevel="30" name="Hydro Attack">
+		<!-- Attacks target with $s1 Power added to M. Atk. $s2 more damage if target is debuffed. Requires a sword or blunt weapon. -->
+		<icon>icon.skill30001</icon>
+		<operateType>A1</operateType>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<mpConsume>
+			<value level="1">2</value>
+			<value level="2">6</value>
+			<value level="3">8</value>
+			<value level="4">10</value>
+			<value level="5">13</value>
+			<value level="6">14</value>
+			<value level="7">16</value>
+			<value level="8">17</value>
+			<value level="9">18</value>
+			<value level="10">20</value>
+			<value level="11">22</value>
+			<value level="12">23</value>
+			<value level="13">24</value>
+			<value level="14">25</value>
+			<value level="15">26</value>
+			<value level="16">26</value>
+			<value level="17">26</value>
+			<value level="18">26</value>
+			<value level="19">26</value>
+			<value level="20">27</value>
+			<value level="21">27</value>
+			<value level="22">27</value>
+			<value level="23">27</value>
+			<value level="24">27</value>
+			<value level="25">28</value>
+			<value level="26">29</value>
+			<value level="27">30</value>
+			<value level="28">30</value>
+			<value level="29">30</value>
+			<value level="30">30</value>
+		</mpConsume>
+		<mpInitialConsume>
+			<value level="1">1</value>
+			<value level="2">2</value>
+			<value level="3">2</value>
+			<value level="4">3</value>
+			<value level="5">3</value>
+			<value level="6">4</value>
+			<value level="7">4</value>
+			<value level="8">4</value>
+			<value level="9">5</value>
+			<value level="10">5</value>
+			<value level="11">5</value>
+			<value level="12">6</value>
+			<value level="13">6</value>
+			<value level="14">6</value>
+			<value level="15">6</value>
+			<value level="16">6</value>
+			<value level="17">7</value>
+			<value level="18">7</value>
+			<value level="19">7</value>
+			<value level="20">7</value>
+			<value level="21">7</value>
+			<value level="22">7</value>
+			<value level="23">7</value>
+			<value level="24">7</value>
+			<value level="25">7</value>
+			<value level="26">7</value>
+			<value level="27">7</value>
+			<value level="28">8</value>
+			<value level="29">8</value>
+			<value level="30">8</value>
+		</mpInitialConsume>
+		<castRange>80</castRange>
+		<effectRange>400</effectRange>
+		<effectPoint>-692</effectPoint>
+		<hitTime>1000</hitTime>
+		<coolTime>500</coolTime>
+		<isMagic>1</isMagic>
+		<magicLvl>
+			<value level="1">1</value>
+			<value level="2">20</value>
+			<value level="3">28</value>
+			<value level="4">36</value>
+			<value level="5">42</value>
+			<value level="6">46</value>
+			<value level="7">50</value>
+			<value level="8">54</value>
+			<value level="9">60</value>
+			<value level="10">62</value>
+			<value level="11">66</value>
+			<value level="12">70</value>
+			<value level="13">74</value>
+			<value level="14">77</value>
+			<value level="15">79</value>
+			<value level="16">81</value>
+			<value level="17">83</value>
+			<value level="18">85</value>
+			<value level="19">87</value>
+			<value level="20">89</value>
+			<value level="21">91</value>
+			<value level="22">93</value>
+			<value level="23">95</value>
+			<value level="24">97</value>
+			<value level="25">99</value>
+			<value level="26">101</value>
+			<value level="27">103</value>
+			<value level="28">105</value>
+			<value level="29">107</value>
+			<value level="30">109</value>
+		</magicLvl>
+		<nextAction>CAST</nextAction>
+		<magicCriticalRate>
+			<value fromLevel="1" toLevel="30">6</value>
+			<value fromLevel="24" toLevel="30" fromSubLevel="2001" toSubLevel="2020">{base + (base / 100 * subIndex)}</value>
+		</magicCriticalRate>
+		<conditions>
+			<condition name="EquipWeapon">
+				<weaponType>
+					<item>SWORD</item>
+					<item>BLUNT</item>
+				</weaponType>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="MagicalAttack">
+				<power>
+					<value level="1">6</value>
+					<value level="2">14</value>
+					<value level="3">19</value>
+					<value level="4">25</value>
+					<value level="5">32</value>
+					<value level="6">36</value>
+					<value level="7">41</value>
+					<value level="8">46</value>
+					<value level="9">50</value>
+					<value level="10">55</value>
+					<value level="11">60</value>
+					<value level="12">64</value>
+					<value level="13">69</value>
+					<value level="14">72</value>
+					<value level="15">75</value>
+					<value level="16">77</value>
+					<value level="17">79</value>
+					<value level="18">171</value>
+					<value level="19">179</value>
+					<value level="20">187</value>
+					<value level="21">195</value>
+					<value level="22">203</value>
+					<value level="23">211</value>
+					<value level="24">219</value>
+					<value level="25">227</value>
+					<value level="26">231</value>
+					<value level="27">235</value>
+					<value level="28">239</value>
+					<value level="29">243</value>
+					<value level="30">247</value>
+					<value fromLevel="24" toLevel="30" fromSubLevel="1001" toSubLevel="1005">{base + (base / 100 * (1 + 0.4 * (subIndex - 1)))}</value>
+					<value fromLevel="24" toLevel="30" fromSubLevel="1006" toSubLevel="1006">{base + (base / 100 * (2 + 0.8 * (subIndex - 5)))}</value>
+					<value fromLevel="24" toLevel="30" fromSubLevel="1007" toSubLevel="1007">{base + (base / 100 * (3 + 0.3 * (subIndex - 6)))}</value>
+					<value fromLevel="24" toLevel="30" fromSubLevel="1008" toSubLevel="1008">{base + (base / 100 * (3 + 0.3 * (subIndex - 7)))}</value>
+					<value fromLevel="24" toLevel="30" fromSubLevel="1009" toSubLevel="1011">{base + (base / 100 * (4 + 0.4 * (subIndex - 8)))}</value>
+					<value fromLevel="24" toLevel="30" fromSubLevel="1012" toSubLevel="1012">{base + (base / 100 * (5 + 0.1 * (subIndex - 11)))}</value>
+					<value fromLevel="24" toLevel="30" fromSubLevel="1013" toSubLevel="1013">{base + (base / 100 * (5 + 0.5 * (subIndex - 12)))}</value>
+					<value fromLevel="24" toLevel="30" fromSubLevel="1014" toSubLevel="1014">{base + (base / 100 * (5 + 0.9 * (subIndex - 13)))}</value>
+					<value fromLevel="24" toLevel="30" fromSubLevel="1015" toSubLevel="1015">{base + (base / 100 * (6 + 0.2 * (subIndex - 14)))}</value>
+					<value fromLevel="24" toLevel="30" fromSubLevel="1016" toSubLevel="1016">{base + (base / 100 * (6 + 0.6 * (subIndex - 15)))}</value>
+					<value fromLevel="24" toLevel="30" fromSubLevel="1017" toSubLevel="1017">{base + (base / 100 * (7 + 0.2 * (subIndex - 16)))}</value>
+					<value fromLevel="24" toLevel="30" fromSubLevel="1018" toSubLevel="1018">{base + (base / 100 * (7 + 0.4 * (subIndex - 17)))}</value>
+					<value fromLevel="24" toLevel="30" fromSubLevel="1019" toSubLevel="1019">{base + (base / 100 * (7 + 0.7 * (subIndex - 18)))}</value>
+					<value fromLevel="24" toLevel="30" fromSubLevel="1020" toSubLevel="1020">{base + (base / 100 * (8 + 0.1 * (subIndex - 19)))}</value>
+				</power>
+				<debuffModifier>1.1</debuffModifier>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30002" toLevel="3" name="Storm Sign">
+		<!-- M. Def. -$s1, Speed -$s2. -->
+		<icon>icon.skill30027</icon>
+		<operateType>A2</operateType>
+		<abnormalLvl>
+			<value level="1">1</value>
+			<value level="2">2</value>
+			<value level="3">3</value>
+		</abnormalLvl>
+		<abnormalTime>5</abnormalTime>
+		<abnormalType>STORM_SIGN</abnormalType>
+		<abnormalVisualEffect>
+			<value level="1"> </value>
+			<value level="2"> </value>
+			<value level="3">STORM_SIGN1</value>
+		</abnormalVisualEffect>
+		<activateRate>100</activateRate>
+		<isMagic>4</isMagic>
+		<effectPoint>-100</effectPoint>
+		<isDebuff>true</isDebuff>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="Speed">
+				<amount>-70</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>-30</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30003" toLevel="22" name="Hydro Flare">
+		<!-- Eliminates Storm Sign and attacks target with $s1 Power added to M. Atk. $s2 more damage if target is debuffed. Storm Sign Stage $s3 only. Requires a sword or blunt weapon. -->
+		<icon>icon.skill30003</icon>
+		<operateType>A1</operateType>
+		<mpConsume>
+			<value level="1">47</value>
+			<value level="2">51</value>
+			<value level="3">54</value>
+			<value level="4">58</value>
+			<value level="5">60</value>
+			<value level="6">62</value>
+			<value level="7">64</value>
+			<value level="8">65</value>
+			<value level="9">66</value>
+			<value level="10">67</value>
+			<value level="11">67</value>
+			<value level="12">68</value>
+			<value level="13">68</value>
+			<value level="14">68</value>
+			<value level="15">69</value>
+			<value level="16">69</value>
+			<value level="17">70</value>
+			<value level="18">71</value>
+			<value level="19">72</value>
+			<value level="20">73</value>
+			<value level="21">74</value>
+			<value level="22">75</value>
+		</mpConsume>
+		<castRange>80</castRange>
+		<effectRange>400</effectRange>
+		<effectPoint>-696</effectPoint>
+		<hitTime>4000</hitTime>
+		<coolTime>500</coolTime>
+		<isMagic>1</isMagic>
+		<magicLvl>
+			<value level="1">58</value>
+			<value level="2">62</value>
+			<value level="3">66</value>
+			<value level="4">70</value>
+			<value level="5">74</value>
+			<value level="6">77</value>
+			<value level="7">79</value>
+			<value level="8">81</value>
+			<value level="9">83</value>
+			<value level="10">85</value>
+			<value level="11">86</value>
+			<value level="12">88</value>
+			<value level="13">90</value>
+			<value level="14">92</value>
+			<value level="15">94</value>
+			<value level="16">96</value>
+			<value level="17">98</value>
+			<value level="18">101</value>
+			<value level="19">103</value>
+			<value level="20">105</value>
+			<value level="21">107</value>
+			<value level="22">109</value>
+		</magicLvl>
+		<magicCriticalRate>
+			<value fromLevel="1" toLevel="22">6</value>
+			<value fromLevel="16" toLevel="22" fromSubLevel="2001" toSubLevel="2020">{base + (base / 100 * subIndex)}</value>
+		</magicCriticalRate>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="EquipWeapon">
+				<weaponType>
+					<item>SWORD</item>
+					<item>BLUNT</item>
+				</weaponType>
+			</condition>
+			<condition name="OpCheckAbnormal">
+				<type>STORM_SIGN</type>
+				<level>3</level>
+				<hasAbnormal>true</hasAbnormal>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="MagicalAttack">
+				<power>
+					<value level="1">110</value>
+					<value level="2">120</value>
+					<value level="3">130</value>
+					<value level="4">140</value>
+					<value level="5">150</value>
+					<value level="6">157</value>
+					<value level="7">162</value>
+					<value level="8">167</value>
+					<value level="9">172</value>
+					<value level="10">501</value>
+					<value level="11">515</value>
+					<value level="12">543</value>
+					<value level="13">571</value>
+					<value level="14">599</value>
+					<value level="15">627</value>
+					<value level="16">655</value>
+					<value level="17">683</value>
+					<value level="18">711</value>
+					<value level="19">725</value>
+					<value level="20">739</value>
+					<value level="21">754</value>
+					<value level="22">769</value>
+					<value fromLevel="16" toLevel="22" fromSubLevel="1001" toSubLevel="1005">{base + (base / 100 * (1 + 0.4 * (subIndex - 1)))}</value>
+					<value fromLevel="16" toLevel="22" fromSubLevel="1006" toSubLevel="1006">{base + (base / 100 * (2 + 0.8 * (subIndex - 5)))}</value>
+					<value fromLevel="16" toLevel="22" fromSubLevel="1007" toSubLevel="1007">{base + (base / 100 * (3 + 0.3 * (subIndex - 6)))}</value>
+					<value fromLevel="16" toLevel="22" fromSubLevel="1008" toSubLevel="1008">{base + (base / 100 * (3 + 0.3 * (subIndex - 7)))}</value>
+					<value fromLevel="16" toLevel="22" fromSubLevel="1009" toSubLevel="1011">{base + (base / 100 * (4 + 0.4 * (subIndex - 8)))}</value>
+					<value fromLevel="16" toLevel="22" fromSubLevel="1012" toSubLevel="1012">{base + (base / 100 * (5 + 0.1 * (subIndex - 11)))}</value>
+					<value fromLevel="16" toLevel="22" fromSubLevel="1013" toSubLevel="1013">{base + (base / 100 * (5 + 0.5 * (subIndex - 12)))}</value>
+					<value fromLevel="16" toLevel="22" fromSubLevel="1014" toSubLevel="1014">{base + (base / 100 * (5 + 0.9 * (subIndex - 13)))}</value>
+					<value fromLevel="16" toLevel="22" fromSubLevel="1015" toSubLevel="1015">{base + (base / 100 * (6 + 0.2 * (subIndex - 14)))}</value>
+					<value fromLevel="16" toLevel="22" fromSubLevel="1016" toSubLevel="1016">{base + (base / 100 * (6 + 0.6 * (subIndex - 15)))}</value>
+					<value fromLevel="16" toLevel="22" fromSubLevel="1017" toSubLevel="1017">{base + (base / 100 * (7 + 0.2 * (subIndex - 16)))}</value>
+					<value fromLevel="16" toLevel="22" fromSubLevel="1018" toSubLevel="1018">{base + (base / 100 * (7 + 0.4 * (subIndex - 17)))}</value>
+					<value fromLevel="16" toLevel="22" fromSubLevel="1019" toSubLevel="1019">{base + (base / 100 * (7 + 0.7 * (subIndex - 18)))}</value>
+					<value fromLevel="16" toLevel="22" fromSubLevel="1020" toSubLevel="1020">{base + (base / 100 * (8 + 0.1 * (subIndex - 19)))}</value>
+				</power>
+				<debuffModifier>1.1</debuffModifier>
+			</effect>
+			<effect name="DispelBySlot">
+				<dispel>STORM_SIGN,3</dispel>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30004" toLevel="27" name="Hydro Strike">
+		<!-- Uses the power of storm to inflict damage with $s1 power added to M. Atk. and generates strong squall to make the target faint for $s2. -->
+		<icon>icon.skill30004</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalType>STUN</abnormalType>
+		<abnormalTime>5</abnormalTime>
+		<abnormalVisualEffect>WIND_STUN</abnormalVisualEffect>
+		<activateRate>
+			<value fromLevel="1" toLevel="27">120</value>
+			<value fromLevel="21" toLevel="27" fromSubLevel="1001" toSubLevel="1020">{base + (base / 100 * subIndex)}</value>
+		</activateRate>
+		<operateType>A2</operateType>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<mpConsume>
+			<value level="1">31</value>
+			<value level="2">34</value>
+			<value level="3">38</value>
+			<value level="4">41</value>
+			<value level="5">45</value>
+			<value level="6">49</value>
+			<value level="7">53</value>
+			<value level="8">56</value>
+			<value level="9">59</value>
+			<value level="10">62</value>
+			<value level="11">63</value>
+			<value level="12">64</value>
+			<value level="13">65</value>
+			<value level="14">66</value>
+			<value level="15">67</value>
+			<value level="16">67</value>
+			<value level="17">68</value>
+			<value level="18">68</value>
+			<value level="19">69</value>
+			<value level="20">69</value>
+			<value level="21">69</value>
+			<value level="22">70</value>
+			<value level="23">71</value>
+			<value level="24">72</value>
+			<value level="25">73</value>
+			<value level="26">74</value>
+			<value level="27">75</value>
+		</mpConsume>
+		<castRange>80</castRange>
+		<effectRange>400</effectRange>
+		<effectPoint>-696</effectPoint>
+		<hitTime>3000</hitTime>
+		<coolTime>500</coolTime>
+		<isMagic>1</isMagic>
+		<isDebuff>true</isDebuff>
+		<magicLvl>
+			<value level="1">40</value>
+			<value level="2">44</value>
+			<value level="3">48</value>
+			<value level="4">52</value>
+			<value level="5">56</value>
+			<value level="6">58</value>
+			<value level="7">64</value>
+			<value level="8">68</value>
+			<value level="9">72</value>
+			<value level="10">76</value>
+			<value level="11">78</value>
+			<value level="12">80</value>
+			<value level="13">82</value>
+			<value level="14">84</value>
+			<value level="15">85</value>
+			<value level="16">87</value>
+			<value level="17">89</value>
+			<value level="18">91</value>
+			<value level="19">93</value>
+			<value level="20">95</value>
+			<value level="21">97</value>
+			<value level="22">99</value>
+			<value level="23">101</value>
+			<value level="24">103</value>
+			<value level="25">105</value>
+			<value level="26">107</value>
+			<value level="27">109</value>
+		</magicLvl>
+		<trait>KNOCKBACK</trait>
+		<conditions>
+			<condition name="OpAffectedBySkill">
+				<skillId>19227</skillId> <!-- Wind Hiding -->
+			</condition>
+			<condition name="EquipWeapon">
+				<weaponType>
+					<item>SWORD</item>
+					<item>BLUNT</item>
+				</weaponType>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="MagicalAttack">
+				<power>
+					<value level="1">57</value>
+					<value level="2">66</value>
+					<value level="3">74</value>
+					<value level="4">83</value>
+					<value level="5">92</value>
+					<value level="6">101</value>
+					<value level="7">110</value>
+					<value level="8">118</value>
+					<value level="9">127</value>
+					<value level="10">136</value>
+					<value level="11">140</value>
+					<value level="12">145</value>
+					<value level="13">149</value>
+					<value level="14">154</value>
+					<value level="15">420</value>
+					<value level="16">442</value>
+					<value level="17">464</value>
+					<value level="18">486</value>
+					<value level="19">508</value>
+					<value level="20">530</value>
+					<value level="21">552</value>
+					<value level="22">574</value>
+					<value level="23">584</value>
+					<value level="24">594</value>
+					<value level="25">604</value>
+					<value level="26">608</value>
+					<value level="27">612</value>
+					<value fromLevel="21" toLevel="27" fromSubLevel="1001" toSubLevel="1005">{base + (base / 100 * (1 + 0.4 * (subIndex - 1)))}</value>
+					<value fromLevel="21" toLevel="27" fromSubLevel="1006" toSubLevel="1006">{base + (base / 100 * (2 + 0.8 * (subIndex - 5)))}</value>
+					<value fromLevel="21" toLevel="27" fromSubLevel="1007" toSubLevel="1007">{base + (base / 100 * (3 + 0.3 * (subIndex - 6)))}</value>
+					<value fromLevel="21" toLevel="27" fromSubLevel="1008" toSubLevel="1008">{base + (base / 100 * (3 + 0.3 * (subIndex - 7)))}</value>
+					<value fromLevel="21" toLevel="27" fromSubLevel="1009" toSubLevel="1011">{base + (base / 100 * (4 + 0.4 * (subIndex - 8)))}</value>
+					<value fromLevel="21" toLevel="27" fromSubLevel="1012" toSubLevel="1012">{base + (base / 100 * (5 + 0.1 * (subIndex - 11)))}</value>
+					<value fromLevel="21" toLevel="27" fromSubLevel="1013" toSubLevel="1013">{base + (base / 100 * (5 + 0.5 * (subIndex - 12)))}</value>
+					<value fromLevel="21" toLevel="27" fromSubLevel="1014" toSubLevel="1014">{base + (base / 100 * (5 + 0.9 * (subIndex - 13)))}</value>
+					<value fromLevel="21" toLevel="27" fromSubLevel="1015" toSubLevel="1015">{base + (base / 100 * (6 + 0.2 * (subIndex - 14)))}</value>
+					<value fromLevel="21" toLevel="27" fromSubLevel="1016" toSubLevel="1016">{base + (base / 100 * (6 + 0.6 * (subIndex - 15)))}</value>
+					<value fromLevel="21" toLevel="27" fromSubLevel="1017" toSubLevel="1017">{base + (base / 100 * (7 + 0.2 * (subIndex - 16)))}</value>
+					<value fromLevel="21" toLevel="27" fromSubLevel="1018" toSubLevel="1018">{base + (base / 100 * (7 + 0.4 * (subIndex - 17)))}</value>
+					<value fromLevel="21" toLevel="27" fromSubLevel="1019" toSubLevel="1019">{base + (base / 100 * (7 + 0.7 * (subIndex - 18)))}</value>
+					<value fromLevel="21" toLevel="27" fromSubLevel="1020" toSubLevel="1020">{base + (base / 100 * (8 + 0.1 * (subIndex - 19)))}</value>
+				</power>
+			</effect>
+			<effect name="BlockActions" />
+			<effect name="MagicalDefence" fromLevel="21" toLevel="27" fromSubLevel="3001" toSubLevel="3020">
+				<amount>
+					<value fromLevel="21" toLevel="27" fromSubLevel="3001" toSubLevel="3020">{-0.6 - (0.4 * subIndex)}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30005" fromLevel="4" toLevel="4" name="Storm Sign">
+		<!-- M. Def. -50%, Speed -100. -->
+		<icon>icon.skill30027</icon>
+		<abnormalLvl>4</abnormalLvl>
+		<abnormalTime>5</abnormalTime>
+		<abnormalType>STORM_SIGN</abnormalType>
+		<abnormalVisualEffect>STORM_SIGN2</abnormalVisualEffect>
+		<operateType>A2</operateType>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<isMagic>4</isMagic>
+		<effectPoint>-100</effectPoint>
+		<isDebuff>true</isDebuff>
+		<effects>
+			<effect name="Speed">
+				<amount>-100</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>-50</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30006" toLevel="13" name="Storm Rage">
+		<!-- Attacks target with $s1 Power added to M. Atk. and blows them away. $s2 more damage if target is debuffed. Requires a sword or blunt weapon. -->
+		<icon>icon.skill30006</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalType>STUN</abnormalType>
+		<abnormalTime>1</abnormalTime>
+		<abnormalVisualEffect>KNOCKBACK</abnormalVisualEffect>
+		<activateRate>
+			<value fromLevel="1" toLevel="13">120</value>
+			<value fromLevel="7" toLevel="13" fromSubLevel="2001" toSubLevel="2020">{base + (base / 100 * subIndex)}</value>
+		</activateRate>
+		<affectLimit>5-10</affectLimit> <!-- Unconfirmed -->
+		<affectRange>100</affectRange> <!-- Unconfirmed -->
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>POINT_BLANK</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<magicLvl>
+			<value level="1">85</value>
+			<value level="2">87</value>
+			<value level="3">89</value>
+			<value level="4">91</value>
+			<value level="5">93</value>
+			<value level="6">95</value>
+			<value level="7">97</value>
+			<value level="8">99</value>
+			<value level="9">101</value>
+			<value level="10">103</value>
+			<value level="11">105</value>
+			<value level="12">107</value>
+			<value level="13">109</value>
+		</magicLvl>
+		<mpConsume>
+			<value level="1">134</value>
+			<value level="2">135</value>
+			<value level="3">136</value>
+			<value level="4">137</value>
+			<value level="5">138</value>
+			<value level="6">138</value>
+			<value level="7">139</value>
+			<value level="8">141</value>
+			<value level="9">143</value>
+			<value level="10">145</value>
+			<value level="11">147</value>
+			<value level="12">149</value>
+			<value level="13">151</value>
+		</mpConsume>
+		<effectPoint>-687</effectPoint>
+		<hitTime>1800</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>30000</reuseDelay>
+		<isMagic>1</isMagic>
+		<isDebuff>true</isDebuff>
+		<trait>KNOCKBACK</trait>
+		<magicCriticalRate>
+			<value fromLevel="1" toLevel="13">6</value>
+			<value fromLevel="7" toLevel="13" fromSubLevel="3001" toSubLevel="3020">{base + (base / 100 * subIndex)}</value>
+		</magicCriticalRate>
+		<conditions>
+			<condition name="EquipWeapon">
+				<weaponType>
+					<item>SWORD</item>
+					<item>BLUNT</item>
+				</weaponType>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="KnockBack">
+				<distance>60</distance>
+				<type>THROW_UP</type>
+			</effect>
+			<effect name="MagicalAttack">
+				<debuffModifier>1.1</debuffModifier>
+				<power>
+					<value level="1">255</value>
+					<value level="2">269</value>
+					<value level="3">283</value>
+					<value level="4">297</value>
+					<value level="5">311</value>
+					<value level="6">325</value>
+					<value level="7">339</value>
+					<value level="8">353</value>
+					<value level="9">359</value>
+					<value level="10">365</value>
+					<value level="11">371</value>
+					<value level="12">377</value>
+					<value level="13">383</value>
+					<value fromLevel="7" toLevel="13" fromSubLevel="1001" toSubLevel="1005">{base + (base / 100 * (1 + 0.4 * (subIndex - 1)))}</value>
+					<value fromLevel="7" toLevel="13" fromSubLevel="1006" toSubLevel="1006">{base + (base / 100 * (2 + 0.8 * (subIndex - 5)))}</value>
+					<value fromLevel="7" toLevel="13" fromSubLevel="1007" toSubLevel="1007">{base + (base / 100 * (3 + 0.3 * (subIndex - 6)))}</value>
+					<value fromLevel="7" toLevel="13" fromSubLevel="1008" toSubLevel="1008">{base + (base / 100 * (3 + 0.3 * (subIndex - 7)))}</value>
+					<value fromLevel="7" toLevel="13" fromSubLevel="1009" toSubLevel="1011">{base + (base / 100 * (4 + 0.4 * (subIndex - 8)))}</value>
+					<value fromLevel="7" toLevel="13" fromSubLevel="1012" toSubLevel="1012">{base + (base / 100 * (5 + 0.1 * (subIndex - 11)))}</value>
+					<value fromLevel="7" toLevel="13" fromSubLevel="1013" toSubLevel="1013">{base + (base / 100 * (5 + 0.5 * (subIndex - 12)))}</value>
+					<value fromLevel="7" toLevel="13" fromSubLevel="1014" toSubLevel="1014">{base + (base / 100 * (5 + 0.9 * (subIndex - 13)))}</value>
+					<value fromLevel="7" toLevel="13" fromSubLevel="1015" toSubLevel="1015">{base + (base / 100 * (6 + 0.2 * (subIndex - 14)))}</value>
+					<value fromLevel="7" toLevel="13" fromSubLevel="1016" toSubLevel="1016">{base + (base / 100 * (6 + 0.6 * (subIndex - 15)))}</value>
+					<value fromLevel="7" toLevel="13" fromSubLevel="1017" toSubLevel="1017">{base + (base / 100 * (7 + 0.2 * (subIndex - 16)))}</value>
+					<value fromLevel="7" toLevel="13" fromSubLevel="1018" toSubLevel="1018">{base + (base / 100 * (7 + 0.4 * (subIndex - 17)))}</value>
+					<value fromLevel="7" toLevel="13" fromSubLevel="1019" toSubLevel="1019">{base + (base / 100 * (7 + 0.7 * (subIndex - 18)))}</value>
+					<value fromLevel="7" toLevel="13" fromSubLevel="1020" toSubLevel="1020">{base + (base / 100 * (8 + 0.1 * (subIndex - 19)))}</value>
+				</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30007" toLevel="17" name="Hydro Drain">
+		<!-- Eliminates Storm Sign and attacks target with $s1 Power added to M. atk. and recovers $s2 HP and $s3 MP. Over-hit. Storm Sign Stage $s4 only. Requires a sword or blunt weapon. -->
+		<icon>icon.skill30007</icon>
+		<operateType>A1</operateType>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<magicLvl>
+			<value level="1">78</value>
+			<value level="2">80</value>
+			<value level="3">82</value>
+			<value level="4">84</value>
+			<value level="5">85</value>
+			<value level="6">86</value>
+			<value level="7">88</value>
+			<value level="8">90</value>
+			<value level="9">92</value>
+			<value level="10">94</value>
+			<value level="11">96</value>
+			<value level="12">98</value>
+			<value level="13">101</value>
+			<value level="14">103</value>
+			<value level="15">105</value>
+			<value level="16">107</value>
+			<value level="17">109</value>
+		</magicLvl>
+		<mpConsume>
+			<value level="1">63</value>
+			<value level="2">64</value>
+			<value level="3">65</value>
+			<value level="4">66</value>
+			<value level="5">67</value>
+			<value level="6">67</value>
+			<value level="7">68</value>
+			<value level="8">68</value>
+			<value level="9">68</value>
+			<value level="10">69</value>
+			<value level="11">69</value>
+			<value level="12">70</value>
+			<value level="13">71</value>
+			<value level="14">72</value>
+			<value level="15">73</value>
+			<value level="16">74</value>
+			<value level="17">75</value>
+		</mpConsume>
+		<castRange>80</castRange>
+		<effectRange>400</effectRange>
+		<effectPoint>-696</effectPoint>
+		<hitTime>4000</hitTime>
+		<coolTime>500</coolTime>
+		<isMagic>1</isMagic>
+		<magicCriticalRate>
+			<value fromLevel="1" toLevel="17">6</value>
+			<value fromLevel="11" toLevel="17" fromSubLevel="2001" toSubLevel="2020">{base + (base / 100 * subIndex)}</value>
+		</magicCriticalRate>
+		<conditions>
+			<condition name="EquipWeapon">
+				<weaponType>
+					<item>SWORD</item>
+					<item>BLUNT</item>
+				</weaponType>
+			</condition>
+			<condition name="OpCheckAbnormal">
+				<type>STORM_SIGN</type>
+				<level>3</level>
+				<hasAbnormal>true</hasAbnormal>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="MagicalAttack">
+				<power>
+					<value level="1">123</value>
+					<value level="2">127</value>
+					<value level="3">130</value>
+					<value level="4">134</value>
+					<value level="5">386</value>
+					<value level="6">396</value>
+					<value level="7">416</value>
+					<value level="8">436</value>
+					<value level="9">456</value>
+					<value level="10">476</value>
+					<value level="11">496</value>
+					<value level="12">516</value>
+					<value level="13">536</value>
+					<value level="14">546</value>
+					<value level="15">556</value>
+					<value level="16">567</value>
+					<value level="17">578</value>
+					<value fromLevel="11" toLevel="17" fromSubLevel="1001" toSubLevel="1005">{base + (base / 100 * (1 + 0.4 * (subIndex - 1)))}</value>
+					<value fromLevel="11" toLevel="17" fromSubLevel="1006" toSubLevel="1006">{base + (base / 100 * (2 + 0.8 * (subIndex - 5)))}</value>
+					<value fromLevel="11" toLevel="17" fromSubLevel="1007" toSubLevel="1007">{base + (base / 100 * (3 + 0.3 * (subIndex - 6)))}</value>
+					<value fromLevel="11" toLevel="17" fromSubLevel="1008" toSubLevel="1008">{base + (base / 100 * (3 + 0.3 * (subIndex - 7)))}</value>
+					<value fromLevel="11" toLevel="17" fromSubLevel="1009" toSubLevel="1011">{base + (base / 100 * (4 + 0.4 * (subIndex - 8)))}</value>
+					<value fromLevel="11" toLevel="17" fromSubLevel="1012" toSubLevel="1012">{base + (base / 100 * (5 + 0.1 * (subIndex - 11)))}</value>
+					<value fromLevel="11" toLevel="17" fromSubLevel="1013" toSubLevel="1013">{base + (base / 100 * (5 + 0.5 * (subIndex - 12)))}</value>
+					<value fromLevel="11" toLevel="17" fromSubLevel="1014" toSubLevel="1014">{base + (base / 100 * (5 + 0.9 * (subIndex - 13)))}</value>
+					<value fromLevel="11" toLevel="17" fromSubLevel="1015" toSubLevel="1015">{base + (base / 100 * (6 + 0.2 * (subIndex - 14)))}</value>
+					<value fromLevel="11" toLevel="17" fromSubLevel="1016" toSubLevel="1016">{base + (base / 100 * (6 + 0.6 * (subIndex - 15)))}</value>
+					<value fromLevel="11" toLevel="17" fromSubLevel="1017" toSubLevel="1017">{base + (base / 100 * (7 + 0.2 * (subIndex - 16)))}</value>
+					<value fromLevel="11" toLevel="17" fromSubLevel="1018" toSubLevel="1018">{base + (base / 100 * (7 + 0.4 * (subIndex - 17)))}</value>
+					<value fromLevel="11" toLevel="17" fromSubLevel="1019" toSubLevel="1019">{base + (base / 100 * (7 + 0.7 * (subIndex - 18)))}</value>
+					<value fromLevel="11" toLevel="17" fromSubLevel="1020" toSubLevel="1020">{base + (base / 100 * (8 + 0.1 * (subIndex - 19)))}</value>
+				</power>
+			</effect>
+			<effect name="DispelBySlot">
+				<dispel>STORM_SIGN,3</dispel>
+			</effect>
+		</effects>
+		<selfEffects>
+			<effect name="HealPercent">
+				<power>10</power>
+			</effect>
+			<effect name="ManaHealPercent">
+				<power>5</power>
+			</effect>
+		</selfEffects>
+	</skill>
+	<skill id="30008" toLevel="5" name="Wind Blend">
+		<!-- For $s1, blends into the wind. Becomes one with the wind and disappears later on. Requires a sword or blunt weapon. -->
+		<icon>icon.skill30008</icon>
+		<operateType>A2</operateType>
+		<abnormalLvl>
+			<value level="1">1</value>
+			<value level="2">2</value>
+			<value level="3">3</value>
+			<value level="4">4</value>
+			<value level="5">5</value>
+		</abnormalLvl>
+		<abnormalTime>5</abnormalTime>
+		<abnormalType>WIND_BLEND</abnormalType>
+		<abnormalVisualEffect>WIND_BLEND</abnormalVisualEffect>
+		<effectPoint>687</effectPoint>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<magicLvl>
+			<value level="1">20</value>
+			<value level="2">85</value>
+			<value level="3">90</value>
+			<value level="4">94</value>
+			<value level="5">98</value>
+		</magicLvl>
+		<mpConsume>
+			<value level="1">16</value>
+			<value level="2">67</value>
+			<value level="3">68</value>
+			<value level="4">69</value>
+			<value level="5">70</value>
+		</mpConsume>
+		<reuseDelay>
+			<value level="1">50000</value>
+			<value level="2">50000</value>
+			<value level="3">40000</value>
+			<value level="4">30000</value>
+			<value level="5">20000</value>
+		</reuseDelay>
+		<isMagic>1</isMagic>
+		<conditions>
+			<condition name="EquipWeapon">
+				<weaponType>
+					<item>SWORD</item>
+					<item>BLUNT</item>
+				</weaponType>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="PhysicalDefence">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">20</value>
+					<value level="3">30</value>
+					<value level="4">40</value>
+					<value level="5">50</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">20</value>
+					<value level="3">30</value>
+					<value level="4">40</value>
+					<value level="5">50</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+		<endEffects>
+			<effect name="CallSkill">
+				<skillId>19227</skillId> <!-- Wind Hiding -->
+				<skillLevel>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">2</value>
+					<value level="4">2</value>
+					<value level="5">2</value>
+				</skillLevel>
+			</effect>
+		</endEffects>
+	</skill>
+	<skill id="30009" toLevel="10" name="Deceptive Blink">
+		<!-- The caster's assimilated into the wind, and teleports to the rear. Assimiliation lasts for $s1, and Speed increases by $s2 while assimilated. Requires a sword or blunt weapon. -->
+		<icon>icon.skill30009</icon>
+		<abnormalLvl>
+			<value level="1">1</value>
+			<value level="2">2</value>
+			<value level="3">3</value>
+			<value level="4">4</value>
+			<value level="5">5</value>
+			<value level="6">6</value>
+			<value level="7">7</value>
+			<value level="8">8</value>
+			<value level="9">9</value>
+			<value level="10">10</value>
+		</abnormalLvl>
+		<abnormalTime>5</abnormalTime>
+		<abnormalType>HIDE</abnormalType>
+		<abnormalVisualEffect>DECEPTIVE_BLINK</abnormalVisualEffect>
+		<effectPoint>687</effectPoint>
+		<operateType>A2</operateType>
+		<removedOnAnyActionExceptMove>true</removedOnAnyActionExceptMove>
+		<removedOnDamage>true</removedOnDamage>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<mpConsume>
+			<value level="1">77</value>
+			<value level="2">78</value>
+			<value level="3">79</value>
+			<value level="4">80</value>
+			<value level="5">81</value>
+			<value level="6">82</value>
+			<value level="7">82</value>
+			<value level="8">83</value>
+			<value level="9">83</value>
+			<value level="10">84</value>
+		</mpConsume>
+		<hitTime>1000</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>15000</reuseDelay>
+		<isMagic>1</isMagic>
+		<conditions>
+			<condition name="EquipWeapon">
+				<weaponType>
+					<item>SWORD</item>
+					<item>BLUNT</item>
+				</weaponType>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="Blink">
+				<angle>0</angle> <!-- Teleport to Back -->
+				<range>400</range>
+			</effect>
+			<effect name="Hide" />
+			<effect name="Speed">
+				<amount>50</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="PhysicalDefence" fromLevel="9" toLevel="10" fromSubLevel="1001" toSubLevel="1020">
+				<amount>
+					<value fromLevel="9" toLevel="10" fromSubLevel="1001" toSubLevel="1020">{0.6 + (0.4 * subIndex)}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence" fromLevel="9" toLevel="10" fromSubLevel="2001" toSubLevel="2020">
+				<amount>
+					<value fromLevel="9" toLevel="10" fromSubLevel="2001" toSubLevel="2020">{0.6 + (0.4 * subIndex)}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30010" toLevel="3" name="Windy Refuge">
+		<!-- Cancels all debuffs and recovers HP/ MP for $s1 inside a refuge of wind. Cannot move. -->
+		<icon>icon.skill30010</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>
+			<value fromLevel="1" toLevel="3">10</value>
+			<value fromLevel="1" toLevel="3" fromSubLevel="1001" toSubLevel="1020">{base + (0.5 * subIndex)}</value>
+		</abnormalTime>
+		<abnormalVisualEffect>WIND_HIDE</abnormalVisualEffect>
+		<blockedInOlympiad>true</blockedInOlympiad> <!-- Unconfirmed -->
+		<effectPoint>687</effectPoint>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<magicLvl>
+			<value level="1">88</value>
+			<value level="2">101</value>
+			<value level="3">110</value>
+		</magicLvl>
+		<mpConsume>40</mpConsume>
+		<hitTime>1000</hitTime>
+		<coolTime>500</coolTime>
+		<removedOnDamage>true</removedOnDamage> <!-- Unconfirmed -->
+		<reuseDelay>180000</reuseDelay>
+		<isMagic>1</isMagic>
+		<effects>
+			<effect name="DispelByCategory">
+				<slot>DEBUFF</slot>
+				<rate>100</rate>
+				<max>10</max>
+			</effect>
+			<effect name="BlockActions" />
+			<effect name="HealOverTime">
+				<!-- Unconfirmed -->
+				<power>60</power>
+				<ticks>5</ticks>
+			</effect>
+			<effect name="ManaHealOverTime">
+				<!-- Unconfirmed -->
+				<power>10</power>
+				<ticks>5</ticks>
+			</effect>
+			<effect name="Heal" fromLevel="1" toLevel="3" fromSubLevel="2001" toSubLevel="2020">
+				<power>
+					<value fromLevel="1" toLevel="3" fromSubLevel="2001" toSubLevel="2001">1936</value>
+					<value fromLevel="1" toLevel="3" fromSubLevel="2002" toSubLevel="2002">2072</value>
+					<value fromLevel="1" toLevel="3" fromSubLevel="2003" toSubLevel="2003">2207</value>
+					<value fromLevel="1" toLevel="3" fromSubLevel="2004" toSubLevel="2004">2342</value>
+					<value fromLevel="1" toLevel="3" fromSubLevel="2005" toSubLevel="2005">2477</value>
+					<value fromLevel="1" toLevel="3" fromSubLevel="2006" toSubLevel="2006">2612</value>
+					<value fromLevel="1" toLevel="3" fromSubLevel="2007" toSubLevel="2007">2747</value>
+					<value fromLevel="1" toLevel="3" fromSubLevel="2008" toSubLevel="2008">2882</value>
+					<value fromLevel="1" toLevel="3" fromSubLevel="2009" toSubLevel="2009">3017</value>
+					<value fromLevel="1" toLevel="3" fromSubLevel="2010" toSubLevel="2010">3152</value>
+					<value fromLevel="1" toLevel="3" fromSubLevel="2011" toSubLevel="2011">3288</value>
+					<value fromLevel="1" toLevel="3" fromSubLevel="2012" toSubLevel="2012">3423</value>
+					<value fromLevel="1" toLevel="3" fromSubLevel="2013" toSubLevel="2013">3558</value>
+					<value fromLevel="1" toLevel="3" fromSubLevel="2014" toSubLevel="2014">3693</value>
+					<value fromLevel="1" toLevel="3" fromSubLevel="2015" toSubLevel="2015">3828</value>
+					<value fromLevel="1" toLevel="3" fromSubLevel="2016" toSubLevel="2016">3964</value>
+					<value fromLevel="1" toLevel="3" fromSubLevel="2017" toSubLevel="2017">4099</value>
+					<value fromLevel="1" toLevel="3" fromSubLevel="2018" toSubLevel="2018">4234</value>
+					<value fromLevel="1" toLevel="3" fromSubLevel="2019" toSubLevel="2019">4369</value>
+					<value fromLevel="1" toLevel="3" fromSubLevel="2020" toSubLevel="2020">4504</value>
+				</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30011" toLevel="17" name="Threatening Wind">
+		<!-- Sends a slashing wind to brand target with Storm Sign Stage $s1. Requires a sword or blunt Weapon. -->
+		<icon>icon.skill30011</icon>
+		<effectRange>1200</effectRange>
+		<operateType>A1</operateType>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<magicLvl>
+			<value level="1">76</value>
+			<value level="2">78</value>
+			<value level="3">80</value>
+			<value level="4">82</value>
+			<value level="5">84</value>
+			<value level="6">86</value>
+			<value level="7">88</value>
+			<value level="8">90</value>
+			<value level="9">92</value>
+			<value level="10">94</value>
+			<value level="11">96</value>
+			<value level="12">98</value>
+			<value level="13">101</value>
+			<value level="14">103</value>
+			<value level="15">105</value>
+			<value level="16">107</value>
+			<value level="17">109</value>
+		</magicLvl>
+		<mpConsume>
+			<value level="1">31</value>
+			<value level="2">31</value>
+			<value level="3">32</value>
+			<value level="4">32</value>
+			<value level="5">33</value>
+			<value level="6">33</value>
+			<value level="7">34</value>
+			<value level="8">34</value>
+			<value level="9">34</value>
+			<value level="10">34</value>
+			<value level="11">34</value>
+			<value level="12">35</value>
+			<value level="13">36</value>
+			<value level="14">37</value>
+			<value level="15">38</value>
+			<value level="16">39</value>
+			<value level="17">40</value>
+		</mpConsume>
+		<castRange>600</castRange>
+		<hitTime>1200</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>15000</reuseDelay>
+		<effectPoint>-687</effectPoint>
+		<isMagic>1</isMagic>
+		<conditions>
+			<condition name="EquipWeapon">
+				<weaponType>
+					<item>SWORD</item>
+					<item>BLUNT</item>
+				</weaponType>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="CallSkill">
+				<skillId>30002</skillId> <!-- Storm Sign -->
+				<skillLevel>3</skillLevel>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30012" toLevel="27" name="Air Rush">
+		<!-- Knocks down target and attacks with $s1 Power added to M. Atk. $s2 more damage if target is debuffed. If target has Storm Sign, eliminates it and inflicts additional damage. Requires a sword or blunt weapon. -->
+		<icon>icon.skill30012</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>5</abnormalTime>
+		<abnormalType>STUN</abnormalType>
+		<abnormalVisualEffect>KNOCKDOWN</abnormalVisualEffect>
+		<activateRate>
+			<value fromLevel="1" toLevel="27">120</value>
+			<value fromLevel="21" toLevel="27" fromSubLevel="2001" toSubLevel="2020">{base + (base / 100 * subIndex)}</value>
+		</activateRate>
+		<operateType>DA2</operateType>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<mpConsume>
+			<value level="1">31</value>
+			<value level="2">34</value>
+			<value level="3">38</value>
+			<value level="4">41</value>
+			<value level="5">45</value>
+			<value level="6">49</value>
+			<value level="7">53</value>
+			<value level="8">56</value>
+			<value level="9">59</value>
+			<value level="10">62</value>
+			<value level="11">63</value>
+			<value level="12">64</value>
+			<value level="13">65</value>
+			<value level="14">66</value>
+			<value level="15">67</value>
+			<value level="16">67</value>
+			<value level="17">68</value>
+			<value level="18">68</value>
+			<value level="19">69</value>
+			<value level="20">69</value>
+			<value level="21">69</value>
+			<value level="22">70</value>
+			<value level="23">71</value>
+			<value level="24">72</value>
+			<value level="25">73</value>
+			<value level="26">74</value>
+			<value level="27">75</value>
+		</mpConsume>
+		<effectPoint>-696</effectPoint>
+		<castRange>
+			<value fromLevel="1" toLevel="27">900</value>
+			<value fromLevel="21" toLevel="27" fromSubLevel="3001" toSubLevel="3020">{base + (10 * subIndex)}</value>
+		</castRange>
+		<hitTime>1000</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>7000</reuseDelay>
+		<isMagic>1</isMagic>
+		<isDebuff>true</isDebuff>
+		<trait>KNOCKBACK</trait>
+		<conditions>
+			<condition name="EquipWeapon">
+				<weaponType>
+					<item>SWORD</item>
+					<item>BLUNT</item>
+				</weaponType>
+			</condition>
+			<condition name="OpCheckCastRange">
+				<distance>200</distance>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="MagicalAttack">
+				<debuffModifier>1.1</debuffModifier>
+				<power>
+					<value level="1">57</value>
+					<value level="2">66</value>
+					<value level="3">74</value>
+					<value level="4">83</value>
+					<value level="5">92</value>
+					<value level="6">101</value>
+					<value level="7">110</value>
+					<value level="8">118</value>
+					<value level="9">127</value>
+					<value level="10">136</value>
+					<value level="11">141</value>
+					<value level="12">145</value>
+					<value level="13">150</value>
+					<value level="14">154</value>
+					<value level="15">376</value>
+					<value level="16">397</value>
+					<value level="17">418</value>
+					<value level="18">438</value>
+					<value level="19">459</value>
+					<value level="20">480</value>
+					<value level="21">501</value>
+					<value level="22">522</value>
+					<value level="23">535</value>
+					<value level="24">545</value>
+					<value level="25">555</value>
+					<value level="26">566</value>
+					<value level="27">577</value>
+					<value fromLevel="21" toLevel="27" fromSubLevel="1001" toSubLevel="1005">{base + (base / 100 * (1 + 0.4 * (subIndex - 1)))}</value>
+					<value fromLevel="21" toLevel="27" fromSubLevel="1006" toSubLevel="1006">{base + (base / 100 * (2 + 0.8 * (subIndex - 5)))}</value>
+					<value fromLevel="21" toLevel="27" fromSubLevel="1007" toSubLevel="1007">{base + (base / 100 * (3 + 0.3 * (subIndex - 6)))}</value>
+					<value fromLevel="21" toLevel="27" fromSubLevel="1008" toSubLevel="1008">{base + (base / 100 * (3 + 0.3 * (subIndex - 7)))}</value>
+					<value fromLevel="21" toLevel="27" fromSubLevel="1009" toSubLevel="1011">{base + (base / 100 * (4 + 0.4 * (subIndex - 8)))}</value>
+					<value fromLevel="21" toLevel="27" fromSubLevel="1012" toSubLevel="1012">{base + (base / 100 * (5 + 0.1 * (subIndex - 11)))}</value>
+					<value fromLevel="21" toLevel="27" fromSubLevel="1013" toSubLevel="1013">{base + (base / 100 * (5 + 0.5 * (subIndex - 12)))}</value>
+					<value fromLevel="21" toLevel="27" fromSubLevel="1014" toSubLevel="1014">{base + (base / 100 * (5 + 0.9 * (subIndex - 13)))}</value>
+					<value fromLevel="21" toLevel="27" fromSubLevel="1015" toSubLevel="1015">{base + (base / 100 * (6 + 0.2 * (subIndex - 14)))}</value>
+					<value fromLevel="21" toLevel="27" fromSubLevel="1016" toSubLevel="1016">{base + (base / 100 * (6 + 0.6 * (subIndex - 15)))}</value>
+					<value fromLevel="21" toLevel="27" fromSubLevel="1017" toSubLevel="1017">{base + (base / 100 * (7 + 0.2 * (subIndex - 16)))}</value>
+					<value fromLevel="21" toLevel="27" fromSubLevel="1018" toSubLevel="1018">{base + (base / 100 * (7 + 0.4 * (subIndex - 17)))}</value>
+					<value fromLevel="21" toLevel="27" fromSubLevel="1019" toSubLevel="1019">{base + (base / 100 * (7 + 0.7 * (subIndex - 18)))}</value>
+					<value fromLevel="21" toLevel="27" fromSubLevel="1020" toSubLevel="1020">{base + (base / 100 * (8 + 0.1 * (subIndex - 19)))}</value>
+				</power>
+			</effect>
+			<effect name="DispelBySlot">
+				<dispel>STORM_SIGN,3</dispel>
+			</effect>
+			<effect name="KnockBack"> <!-- Value are guessed -->
+				<distance>50</distance>
+				<speed>400</speed>
+				<knockDown>true</knockDown>
+			</effect>
+			<effect name="BlockActions" />
+		</effects>
+	</skill>
+	<skill id="30013" toLevel="1" name="Switch Places">
+		<!-- Trades places with target. Requires a sword or blunt weapon. Can only use on other characters. -->
+		<icon>icon.skill30005</icon>
+		<effectRange>1400</effectRange>
+		<effectPoint>-709</effectPoint>
+		<operateType>A1</operateType>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<mpConsume>705</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>1200</hitTime>
+		<coolTime>300</coolTime>
+		<reuseDelay>300000</reuseDelay>
+		<isMagic>1</isMagic>
+		<conditions>
+			<condition name="EquipWeapon">
+				<weaponType>
+					<item>SWORD</item>
+					<item>BLUNT</item>
+				</weaponType>
+			</condition>
+			<condition name="OpTargetPc" />
+		</conditions>
+		<effects>
+			<effect name="BlinkSwap" />
+		</effects>
+	</skill>
+	<skill id="30014" toLevel="17" name="Compelling Wind">
+		<!-- Sends a breeze that pushes target toward you for $s1. Requires a sword/ blunt weapon. -->
+		<icon>icon.skill30014</icon>
+		<operateType>A2</operateType>
+		<abnormalLevel>1</abnormalLevel>
+		<abnormalTime>5</abnormalTime>
+		<abnormalType>COMPELLING_WIND</abnormalType>
+		<abnormalVisualEffect>PSY_POWER</abnormalVisualEffect>
+		<activateRate>
+			<value fromLevel="1" toLevel="17">50</value>
+			<value fromLevel="11" toLevel="17" fromSubLevel="1001" toSubLevel="1020">{base + (base / 100 * subIndex)}</value>
+		</activateRate>
+		<basicProperty>MAGIC</basicProperty>
+		<trait>PSYCHIC</trait> <!-- retail confirmed {trait_psychic} -->
+		<effectPoint>-1371</effectPoint>
+		<mpConsume>
+			<value level="1">31</value>
+			<value level="2">31</value>
+			<value level="3">32</value>
+			<value level="4">32</value>
+			<value level="5">33</value>
+			<value level="6">33</value>
+			<value level="7">34</value>
+			<value level="8">34</value>
+			<value level="9">34</value>
+			<value level="10">34</value>
+			<value level="11">34</value>
+			<value level="12">35</value>
+			<value level="13">36</value>
+			<value level="14">37</value>
+			<value level="15">38</value>
+			<value level="16">39</value>
+			<value level="17">40</value>
+		</mpConsume>
+		<magicLvl>
+			<value level="1">76</value>
+			<value level="2">78</value>
+			<value level="3">80</value>
+			<value level="4">82</value>
+			<value level="5">84</value>
+			<value level="6">86</value>
+			<value level="7">88</value>
+			<value level="8">90</value>
+			<value level="9">92</value>
+			<value level="10">94</value>
+			<value level="11">96</value>
+			<value level="12">98</value>
+			<value level="13">101</value>
+			<value level="14">103</value>
+			<value level="15">105</value>
+			<value level="16">107</value>
+			<value level="17">109</value>
+		</magicLvl>
+		<castRange>
+			<value fromLevel="1" toLevel="17">600</value>
+			<value fromLevel="11" toLevel="17" fromSubLevel="3001" toSubLevel="3020">{base + (10 * subIndex)}</value>
+		</castRange>
+		<hitTime>1200</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>10000</reuseDelay>
+		<isMagic>1</isMagic>
+		<isDebuff>true</isDebuff>
+		<targetType>ENEMY_ONLY</targetType>
+		<affectScope>RANGE</affectScope>
+		<conditions>
+			<condition name="EquipWeapon">
+				<weaponType>
+					<item>SWORD</item>
+					<item>BLUNT</item>
+				</weaponType>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="Compelling" />
+			<effect name="BlockControl" />
+			<effect name="MagicalDefence" fromLevel="11" toLevel="17" fromSubLevel="2001" toSubLevel="2020">
+				<amount>
+					<value fromLevel="11" toLevel="17" fromSubLevel="2001" toSubLevel="2020">{-0.6 - (0.4 * subIndex)}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30015" toLevel="1" name="Mass Compelling Wind">
+		<!-- Sends a breeze that pushes target and nearby enemies toward you. -->
+		<icon>icon.skill0028</icon>
+		<operateType>A2</operateType>
+		<abnormalLevel>1</abnormalLevel>
+		<abnormalTime>5</abnormalTime>
+		<abnormalType>COMPELLING_WIND</abnormalType>
+		<abnormalVisualEffect>PSY_POWER</abnormalVisualEffect>
+		<castRange>1100</castRange>
+		<hitTime>1200</hitTime>
+		<coolTime>500</coolTime>
+		<isMagic>1</isMagic>
+		<effectPoint>-1371</effectPoint>
+		<isDebuff>true</isDebuff>
+		<targetType>SELF</targetType>
+		<affectScope>POINT_BLANK</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<conditions>
+			<condition name="EquipWeapon">
+				<weaponType>
+					<item>SWORD</item>
+					<item>BLUNT</item>
+				</weaponType>
+			</condition>
+		</conditions>
+	</skill>
+	<skill id="30016" toLevel="4" name="Eye of the Storm">
+		<!-- For $s1, M. Critical Rate +$s2, P./ M. Def. +$s3. -->
+		<icon>icon.skill30016</icon>
+		<operateType>A2</operateType>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>
+			<value fromLevel="1" toLevel="4">30</value>
+			<value fromLevel="3" toLevel="4" fromSubLevel="1001" toSubLevel="1010">{base + subIndex}</value>
+			<value fromLevel="3" toLevel="4" fromSubLevel="1011" toSubLevel="1020">{base + 10 + (subIndex - 10 * 0.5)}</value>
+		</abnormalTime>
+		<abnormalType>EYE_STORM</abnormalType>
+		<effectPoint>687</effectPoint>
+		<mpConsume>
+			<value level="1">18</value>
+			<value level="2">37</value>
+			<value level="3">40</value>
+			<value level="4">43</value>
+		</mpConsume>
+		<hitTime>1000</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>300000</reuseDelay>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="DefenceTrait" fromLevel="3" toLevel="4">
+				<KNOCKDOWN>90</KNOCKDOWN>
+				<KNOCKBACK>90</KNOCKBACK>
+				<HATE>90</HATE>
+				<PULL>90</PULL>
+				<ZONE>90</ZONE>
+				<AIRBIND>90</AIRBIND>
+				<AGGRESSION>90</AGGRESSION>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicCriticalRate">
+				<amount>100</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicMpCost" fromLevel="2" toLevel="4">
+				<amount>-50</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+			<effect name="MAtk" fromLevel="3" toLevel="4" fromSubLevel="2001" toSubLevel="2020">
+				<amount>
+					<value fromLevel="3" toLevel="4" fromSubLevel="2001" toSubLevel="2020">{0.4 + (0.6 * subIndex)}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30017" toLevel="5" name="Squall">
+		<!-- For $s1, Received P./ M. Critical Damage -$s2. Has a chance of striking target with lightning. -->
+		<icon>icon.skill30017</icon>
+		<operateType>A2</operateType>
+		<abnormalLvl>
+			<value level="1">1</value>
+			<value level="2">2</value>
+			<value level="3">3</value>
+			<value level="4">4</value>
+			<value level="5">5</value>
+		</abnormalLvl>
+		<abnormalTime>600</abnormalTime>
+		<abnormalType>SQUALL</abnormalType>
+		<abnormalVisualEffect>SQUALL</abnormalVisualEffect>
+		<effectPoint>2</effectPoint>
+		<magicLvl>
+			<value level="1">40</value>
+			<value level="2">76</value>
+			<value level="3">85</value>
+			<value level="4">101</value>
+			<value level="5">110</value>
+		</magicLvl>
+		<mpConsume>
+			<value level="1">18</value>
+			<value level="2">37</value>
+			<value level="3">40</value>
+			<value level="4">43</value>
+			<value level="5">46</value>
+		</mpConsume>
+		<hitTime>1000</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>30000</reuseDelay>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="DefenceMagicCriticalDamage">
+				<amount>
+					<value level="1">-15</value>
+					<value level="2">-15</value>
+					<value level="3">-15</value>
+					<value level="4">-20</value>
+					<value level="5">-25</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="TriggerSkillByDamage">
+				<chance>50</chance> <!-- Unconfirmed -->
+				<targetType>ENEMY</targetType>
+				<affectScope>SINGLE</affectScope>
+				<skillId>30026</skillId> <!-- Lightning Squall -->
+				<skillLevel>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+					<value level="4">4</value>
+					<value level="5">4</value>
+				</skillLevel>
+			</effect>
+			<effect name="DispelByCategory" fromLevel="3" toLevel="5">
+				<slot>DEBUFF</slot>
+				<rate>100</rate>
+				<max>99</max>
+			</effect>
+			<effect name="Speed" fromLevel="2" toLevel="7">
+				<amount>7</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="DefenceCriticalDamage">
+				<amount>
+					<value level="1">-15</value>
+					<value level="2">-15</value>
+					<value level="3">-15</value>
+					<value level="4">-20</value>
+					<value level="5">-25</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence" fromLevel="3" toLevel="5" fromSubLevel="1001" toSubLevel="1020">
+				<amount>
+					<value fromLevel="3" toLevel="5" fromSubLevel="1001" toSubLevel="1020">{0.6 + (0.4 * subIndex)}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence" fromLevel="3" toLevel="5" fromSubLevel="2001" toSubLevel="2020">
+				<amount>
+					<value fromLevel="3" toLevel="5" fromSubLevel="2001" toSubLevel="2020">{0.6 + (0.4 * subIndex)}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30018" toLevel="1" name="Windy Illusion">
+		<!-- Removes all debuffs and prevents you from being targeted for 10 sec. by becoming wind. -->
+		<icon>icon.skill30018</icon>
+		<operateType>A2</operateType>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>10</abnormalTime>
+		<abnormalVisualEffect>WIND_ILLUSION</abnormalVisualEffect>
+		<mpConsume>41</mpConsume>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>300000</reuseDelay>
+		<effectPoint>100</effectPoint>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="Untargetable" />
+			<effect name="DispelByCategory">
+				<slot>DEBUFF</slot>
+				<rate>100</rate>
+				<max>10</max>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30019" toLevel="13" name="Sayha's Word">
+		<!-- Attacks target with $s1 Power added to M. Atk., and decreases their Atk./ Casting Spd. by $s3 and Speed by $s4 for $s2. Instantly brands target with Storm Sign Stage $s5. $s6 more damage if target is debuffed. Requires a sword or blunt weapon. -->
+		<icon>icon.skill30019</icon>
+		<abnormalLvl>
+			<value level="1">1</value>
+			<value level="2">2</value>
+			<value level="3">3</value>
+			<value level="4">4</value>
+			<value level="5">5</value>
+			<value level="6">6</value>
+			<value level="7">7</value>
+			<value level="8">8</value>
+			<value level="9">9</value>
+			<value level="10">10</value>
+			<value level="11">11</value>
+			<value level="12">12</value>
+			<value level="13">13</value>
+		</abnormalLvl>
+		<abnormalTime>10</abnormalTime>
+		<activateRate>
+			<value fromLevel="1" toLevel="13">80</value>
+			<value fromLevel="7" toLevel="13" fromSubLevel="2001" toSubLevel="2020">{base + (base / 100 * subIndex)}</value>
+		</activateRate>
+		<effectPoint>-687</effectPoint>
+		<operateType>A2</operateType>
+		<magicLvl>
+			<value level="1">85</value>
+			<value level="2">87</value>
+			<value level="3">89</value>
+			<value level="4">91</value>
+			<value level="5">93</value>
+			<value level="6">95</value>
+			<value level="7">97</value>
+			<value level="8">99</value>
+			<value level="9">101</value>
+			<value level="10">103</value>
+			<value level="11">105</value>
+			<value level="12">107</value>
+			<value level="13">109</value>
+		</magicLvl>
+		<mpConsume>
+			<value level="1">670</value>
+			<value level="2">677</value>
+			<value level="3">682</value>
+			<value level="4">687</value>
+			<value level="5">690</value>
+			<value level="6">694</value>
+			<value level="7">699</value>
+			<value level="8">705</value>
+			<value level="9">711</value>
+			<value level="10">717</value>
+			<value level="11">723</value>
+			<value level="12">729</value>
+			<value level="13">735</value>
+		</mpConsume>
+		<castRange>80</castRange>
+		<hitTime>5500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>15000</reuseDelay>
+		<isMagic>1</isMagic>
+		<isDebuff>true</isDebuff>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="EquipWeapon">
+				<weaponType>
+					<item>SWORD</item>
+					<item>BLUNT</item>
+				</weaponType>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="CallSkill">
+				<skillId>30002</skillId> <!-- Storm Sign -->
+				<skillLevel>3</skillLevel>
+			</effect>
+			<effect name="MagicalAttack">
+				<power>
+					<value level="1">533</value>
+					<value level="2">561</value>
+					<value level="3">589</value>
+					<value level="4">617</value>
+					<value level="5">645</value>
+					<value level="6">673</value>
+					<value level="7">701</value>
+					<value level="8">729</value>
+					<value level="9">743</value>
+					<value level="10">757</value>
+					<value level="11">771</value>
+					<value level="12">786</value>
+					<value level="13">801</value>
+					<value fromLevel="7" toLevel="13" fromSubLevel="1001" toSubLevel="1005">{base + (base / 100 * (1 + 0.4 * (subIndex - 1)))}</value>
+					<value fromLevel="7" toLevel="13" fromSubLevel="1006" toSubLevel="1006">{base + (base / 100 * (2 + 0.8 * (subIndex - 5)))}</value>
+					<value fromLevel="7" toLevel="13" fromSubLevel="1007" toSubLevel="1007">{base + (base / 100 * (3 + 0.3 * (subIndex - 6)))}</value>
+					<value fromLevel="7" toLevel="13" fromSubLevel="1008" toSubLevel="1008">{base + (base / 100 * (3 + 0.3 * (subIndex - 7)))}</value>
+					<value fromLevel="7" toLevel="13" fromSubLevel="1009" toSubLevel="1011">{base + (base / 100 * (4 + 0.4 * (subIndex - 8)))}</value>
+					<value fromLevel="7" toLevel="13" fromSubLevel="1012" toSubLevel="1012">{base + (base / 100 * (5 + 0.1 * (subIndex - 11)))}</value>
+					<value fromLevel="7" toLevel="13" fromSubLevel="1013" toSubLevel="1013">{base + (base / 100 * (5 + 0.5 * (subIndex - 12)))}</value>
+					<value fromLevel="7" toLevel="13" fromSubLevel="1014" toSubLevel="1014">{base + (base / 100 * (5 + 0.9 * (subIndex - 13)))}</value>
+					<value fromLevel="7" toLevel="13" fromSubLevel="1015" toSubLevel="1015">{base + (base / 100 * (6 + 0.2 * (subIndex - 14)))}</value>
+					<value fromLevel="7" toLevel="13" fromSubLevel="1016" toSubLevel="1016">{base + (base / 100 * (6 + 0.6 * (subIndex - 15)))}</value>
+					<value fromLevel="7" toLevel="13" fromSubLevel="1017" toSubLevel="1017">{base + (base / 100 * (7 + 0.2 * (subIndex - 16)))}</value>
+					<value fromLevel="7" toLevel="13" fromSubLevel="1018" toSubLevel="1018">{base + (base / 100 * (7 + 0.4 * (subIndex - 17)))}</value>
+					<value fromLevel="7" toLevel="13" fromSubLevel="1019" toSubLevel="1019">{base + (base / 100 * (7 + 0.7 * (subIndex - 18)))}</value>
+					<value fromLevel="7" toLevel="13" fromSubLevel="1020" toSubLevel="1020">{base + (base / 100 * (8 + 0.1 * (subIndex - 19)))}</value>
+				</power>
+				<debuffModifier>1.1</debuffModifier>
+			</effect>
+			<effect name="Speed">
+				<amount>-180</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>-30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>-30</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30020" toLevel="1" name="Sayha's Fury">
+		<!-- For 30 sec., Received P./ M. Critical Damage -50%, and Speed +70. Has a chance of striking an attacker with lightning and branding them with Storm Sign Stage 4. Requires a sword or blunt weapon. -->
+		<icon>icon.skill30020</icon>
+		<operateType>A2</operateType>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>
+			<value fromLevel="1" toLevel="1">30</value>
+			<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1010">{base + subIndex}</value>
+			<value fromLevel="1" toLevel="1" fromSubLevel="1011" toSubLevel="1020">{base + 10 + (subIndex - 10 * 0.5)}</value>
+		</abnormalTime>
+		<abnormalType>SAYHA_FURY</abnormalType>
+		<abnormalVisualEffect>SAYHA_FURY</abnormalVisualEffect>
+		<mpConsume>40</mpConsume>
+		<hitTime>1000</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>300000</reuseDelay>
+		<effectPoint>2</effectPoint>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="EquipWeapon">
+				<weaponType>
+					<item>SWORD</item>
+					<item>BLUNT</item>
+				</weaponType>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="DefenceMagicCriticalDamage">
+				<amount>-50</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="TriggerSkillByDamage">
+				<chance>50</chance> <!-- Unconfirmed -->
+				<targetType>ENEMY</targetType>
+				<affectScope>SINGLE</affectScope>
+				<skillId>30027</skillId> <!-- Destructive Bolt -->
+				<skillLevel>1</skillLevel>
+			</effect>
+			<effect name="Speed">
+				<amount>70</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="DefenceCriticalDamage">
+				<amount>-50</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence" fromLevel="1" toLevel="1" fromSubLevel="2001" toSubLevel="2020">
+				<amount>
+					<value fromLevel="1" toLevel="1" fromSubLevel="2001" toSubLevel="2020">{0.6 + (0.4 * subIndex)}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence" fromLevel="1" toLevel="1" fromSubLevel="3001" toSubLevel="3020">
+				<amount>
+					<value fromLevel="1" toLevel="1" fromSubLevel="3001" toSubLevel="3020">{0.6 + (0.4 * subIndex)}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30022" toLevel="3" name="Sayha's Blessing">
+		<!-- For $s1, nearby party members' Speed +$s2, and Knock Back/ Knock Down/ Pull/ Danger Zone/ Aerial Yoke/ Aggression Resistance +$s3. Requires a sword or blunt weapon. -->
+		<icon>icon.skill30022</icon>
+		<operateType>A2</operateType>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>
+			<value fromLevel="1" toLevel="3">30</value>
+			<value fromLevel="1" toLevel="3" fromSubLevel="1001" toSubLevel="1010">{base + subIndex}</value>
+			<value fromLevel="1" toLevel="3" fromSubLevel="1011" toSubLevel="1020">{base + 10 + (subIndex - 10 * 0.5)}</value>
+		</abnormalTime>
+		<abnormalType>SAYHA_BLESSING</abnormalType>
+		<effectPoint>687</effectPoint>
+		<affectRange>1000</affectRange>
+		<magicLvl>
+			<value level="1">99</value>
+			<value level="2">101</value>
+			<value level="3">110</value>
+		</magicLvl>
+		<mpConsume>
+			<value level="1">84</value>
+			<value level="2">87</value>
+			<value level="2">90</value>
+		</mpConsume>
+		<hitTime>5500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>300000</reuseDelay>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<conditions>
+			<condition name="EquipWeapon">
+				<weaponType>
+					<item>SWORD</item>
+					<item>BLUNT</item>
+				</weaponType>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="DefenceTrait">
+				<KNOCKDOWN>
+					<value level="1">30</value>
+					<value level="2">40</value>
+					<value level="3">50</value>
+				</KNOCKDOWN>
+				<KNOCKBACK>
+					<value level="1">30</value>
+					<value level="2">40</value>
+					<value level="3">50</value>
+				</KNOCKBACK>
+				<PULL>
+					<value level="1">30</value>
+					<value level="2">40</value>
+					<value level="3">50</value>
+				</PULL>
+				<ZONE>
+					<value level="1">30</value>
+					<value level="2">40</value>
+					<value level="3">50</value>
+				</ZONE>
+				<AIRBIND>
+					<value level="1">30</value>
+					<value level="2">40</value>
+					<value level="3">50</value>
+				</AIRBIND>
+				<AGGRESSION>
+					<value level="1">30</value>
+					<value level="2">40</value>
+					<value level="3">50</value>
+				</AGGRESSION>
+			</effect>
+			<effect name="Speed">
+				<amount>
+					<value level="1">50</value>
+					<value level="2">70</value>
+					<value level="3">50</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="PAtk" fromLevel="1" toLevel="3" fromSubLevel="1001" toSubLevel="1020">
+				<amount>
+					<value fromLevel="1" toLevel="3" fromSubLevel="1001" toSubLevel="1020">{0.6 + (0.4 * subIndex)}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk" fromLevel="1" toLevel="3" fromSubLevel="2001" toSubLevel="2020">
+				<amount>
+					<value fromLevel="1" toLevel="3" fromSubLevel="2001" toSubLevel="2020">{0.4 + (0.6 * subIndex)}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30023" toLevel="1" name="Decoy Lock">
+		<!-- Cannot change target. -->
+		<operateType>A2</operateType>
+		<hitTime>1000</hitTime>
+		<effectPoint>-102</effectPoint>
+		<isDebuff>true</isDebuff>
+	</skill>
+	<skill id="30026" toLevel="4" name="Lightning Squall">
+		<!-- Attacks target with $s1 Power added to M. Atk., and decreases Speed by $s2. -->
+		<icon>icon.skill30026</icon>
+		<abnormalLvl>3</abnormalLvl>
+		<abnormalTime>5</abnormalTime>
+		<abnormalType>SPEED_DOWN</abnormalType>
+		<effectRange>1600</effectRange>
+		<effectPoint>-711</effectPoint>
+		<operateType>A2</operateType>
+		<castRange>1100</castRange>
+		<isMagic>4</isMagic>
+		<isDebuff>true</isDebuff>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="MagicalAttack">
+				<power>
+					<value level="1">50</value>
+					<value level="2">100</value>
+					<value level="3">150</value>
+					<value level="4">200</value>
+				</power>
+			</effect>
+			<effect name="Speed">
+				<amount>-20</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30027" toLevel="1" name="Destructive Bolt">
+		<!-- Attacks target with 300 Power added to M. Atk. and has a 10% chance of branding target with Storm Sign Stage 4. -->
+		<icon>icon.skill30026</icon>
+		<effectRange>1400</effectRange>
+		<effectPoint>-711</effectPoint>
+		<operateType>A1</operateType>
+		<castRange>1100</castRange>
+		<isMagic>4</isMagic>
+		<isDebuff>true</isDebuff>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="MagicalAttack">
+				<power>300</power>
+			</effect>
+			<effect name="CallSkill">
+				<skillId>30005</skillId> <!-- Storm Sign -->
+				<skillLevel>4</skillLevel>
+				<chance>10</chance>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30029" toLevel="6" name="Divine Storm">
+		<!-- Attacks nearby target with $s1 Power added to M. Atk. and locks them inside a storm for $s2. $s3 more damage if target is debuffed. Requires a sword or blunt weapon. -->
+		<icon>icon.iconskill30007</icon>
+		<operateType>A2</operateType>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>5</abnormalTime>
+		<abnormalType>DIVINE_STORM</abnormalType>
+		<activateRate>
+			<value fromLevel="1" toLevel="6">90</value>
+			<value fromLevel="1" toLevel="6" fromSubLevel="2001" toSubLevel="2020">{base + (base / 100 * subIndex)}</value>
+		</activateRate>
+		<affectLimit>10-10</affectLimit> <!-- Unconfirmed -->
+		<affectRange>200</affectRange> <!-- Unconfirmed -->
+		<effectRange>400</effectRange>
+		<effectPoint>-707</effectPoint>
+		<magicLvl>
+			<value level="1">98</value>
+			<value level="2">101</value>
+			<value level="3">103</value>
+			<value level="4">105</value>
+			<value level="5">107</value>
+			<value level="6">109</value>
+		</magicLvl>
+		<mpConsume>1405</mpConsume>
+		<hitTime>2000</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>30000</reuseDelay>
+		<isMagic>1</isMagic>
+		<isDebuff>true</isDebuff>
+		<magicCriticalRate>
+			<value fromLevel="1" toLevel="6">6</value>
+			<value fromLevel="1" toLevel="6" fromSubLevel="3001" toSubLevel="3020">{base + (base / 100 * subIndex)}</value>
+		</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>POINT_BLANK</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<conditions>
+			<condition name="EquipWeapon">
+				<weaponType>
+					<item>SWORD</item>
+					<item>BLUNT</item>
+				</weaponType>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="MagicalAttack">
+				<power>
+					<value level="1">448</value>
+					<value level="2">465</value>
+					<value level="3">473</value>
+					<value level="4">481</value>
+					<value level="5">489</value>
+					<value level="6">497</value>
+					<value fromLevel="1" toLevel="4" fromSubLevel="1001" toSubLevel="1005">{base + (base / 100 * (1 + 0.4 * (subIndex - 1)))}</value>
+					<value fromLevel="1" toLevel="4" fromSubLevel="1006" toSubLevel="1006">{base + (base / 100 * (2 + 0.8 * (subIndex - 5)))}</value>
+					<value fromLevel="1" toLevel="4" fromSubLevel="1007" toSubLevel="1007">{base + (base / 100 * (3 + 0.3 * (subIndex - 6)))}</value>
+					<value fromLevel="1" toLevel="4" fromSubLevel="1008" toSubLevel="1008">{base + (base / 100 * (3 + 0.3 * (subIndex - 7)))}</value>
+					<value fromLevel="1" toLevel="4" fromSubLevel="1009" toSubLevel="1011">{base + (base / 100 * (4 + 0.4 * (subIndex - 8)))}</value>
+					<value fromLevel="1" toLevel="4" fromSubLevel="1012" toSubLevel="1012">{base + (base / 100 * (5 + 0.1 * (subIndex - 11)))}</value>
+					<value fromLevel="1" toLevel="4" fromSubLevel="1013" toSubLevel="1013">{base + (base / 100 * (5 + 0.5 * (subIndex - 12)))}</value>
+					<value fromLevel="1" toLevel="4" fromSubLevel="1014" toSubLevel="1014">{base + (base / 100 * (5 + 0.9 * (subIndex - 13)))}</value>
+					<value fromLevel="1" toLevel="4" fromSubLevel="1015" toSubLevel="1015">{base + (base / 100 * (6 + 0.2 * (subIndex - 14)))}</value>
+					<value fromLevel="1" toLevel="4" fromSubLevel="1016" toSubLevel="1016">{base + (base / 100 * (6 + 0.6 * (subIndex - 15)))}</value>
+					<value fromLevel="1" toLevel="4" fromSubLevel="1017" toSubLevel="1017">{base + (base / 100 * (7 + 0.2 * (subIndex - 16)))}</value>
+					<value fromLevel="1" toLevel="4" fromSubLevel="1018" toSubLevel="1018">{base + (base / 100 * (7 + 0.4 * (subIndex - 17)))}</value>
+					<value fromLevel="1" toLevel="4" fromSubLevel="1019" toSubLevel="1019">{base + (base / 100 * (7 + 0.7 * (subIndex - 18)))}</value>
+					<value fromLevel="1" toLevel="4" fromSubLevel="1020" toSubLevel="1020">{base + (base / 100 * (8 + 0.1 * (subIndex - 19)))}</value>
+				</power>
+				<debuffModifier>1.1</debuffModifier>
+			</effect>
+			<effect name="CallSkill">
+				<skillId>30030</skillId> <!-- Storm Captivity -->
+				<skillLevel>1</skillLevel>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30030" toLevel="1" name="Storm Captivity">
+		<!-- Trapped by a storm that gives continuous damage. -->
+		<icon>icon.skill1042</icon>
+		<operateType>A2</operateType>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>5</abnormalTime>
+		<effectPoint>-707</effectPoint>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<isTriggeredSkill>true</isTriggeredSkill>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<isDebuff>true</isDebuff>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="DamOverTime">
+				<power>480</power> <!-- Unconfirmed -->
+				<ticks>1</ticks>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30031" toLevel="1" name="Magic Potential">
+		<!-- Increases Max. M. Critical Rate to 550. -->
+		<icon>icon.skill30025</icon>
+		<operateType>P</operateType>
+		<magicLvl>85</magicLvl>
+		<effects>
+			<effect name="MagicCriticalRate">
+				<amount>550</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30040" toLevel="17" name="Eminent Blunt Weapon Mastery">
+		<!-- When equipped with a blunt weapon, M. Atk. +$s1 and +$s2, Casting Spd. +$s3. -->
+		<icon>icon.skill30023</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="TriggerSkillBySkill" fromLevel="3" toLevel="17">
+				<skillId>30002</skillId> <!-- Storm Sign -->
+				<skillLevel>1</skillLevel>
+				<skillLevelScaleTo>3</skillLevelScaleTo>
+				<allowWeapons>BLUNT</allowWeapons>
+				<castSkillId>30001</castSkillId> <!-- Hydro Attack -->
+			</effect>
+			<effect name="TriggerSkillBySkill" fromLevel="8" toLevel="17">
+				<castSkillId>30019</castSkillId> <!-- Sayha's Word -->
+				<allowWeapons>BLUNT</allowWeapons>
+				<skillId>30002</skillId> <!-- Storm Sign -->
+				<skillLevel>3</skillLevel>
+			</effect>
+			<effect name="TriggerSkillBySkill" fromLevel="4" toLevel="17">
+				<chance>33</chance> <!-- 33% Chance to trigger Storm Sign Lv. 4 -->
+				<castSkillId>30003</castSkillId> <!-- Hydro Flare -->
+				<allowWeapons>BLUNT</allowWeapons>
+				<skillId>30005</skillId> <!-- Storm Sign -->
+				<skillLevel>4</skillLevel>
+			</effect>
+			<effect name="MAtk">
+				<amount>
+					<value level="1">17</value>
+					<value level="2">17</value>
+					<value level="3">17</value>
+					<value level="4">17</value>
+					<value level="5">17</value>
+					<value level="6">17</value>
+					<value level="7">17</value>
+					<value level="8">40</value>
+					<value level="9">40</value>
+					<value level="10">40</value>
+					<value level="11">40</value>
+					<value level="12">40</value>
+					<value level="13">40</value>
+					<value level="14">40</value>
+					<value level="15">40</value>
+					<value level="16">40</value>
+					<value level="17">40</value>
+				</amount>
+				<mode>PER</mode>
+				<weaponType>
+					<item>BLUNT</item>
+				</weaponType>
+			</effect>
+			<effect name="MAtk">
+				<amount>
+					<value level="1">10</value>
+					<value level="2">57</value>
+					<value level="3">228</value>
+					<value level="4">436</value>
+					<value level="5">728</value>
+					<value level="6">834</value>
+					<value level="7">942</value>
+					<value level="8">1963</value>
+					<value level="9">2276</value>
+					<value level="10">2638</value>
+					<value level="11">2970</value>
+					<value level="12">3365</value>
+					<value level="13">3570</value>
+					<value level="14">3787</value>
+					<value level="15">4018</value>
+					<value level="16">4262</value>
+					<value level="17">4522</value>
+				</amount>
+				<mode>DIFF</mode>
+				<weaponType>
+					<item>BLUNT</item>
+				</weaponType>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>
+					<value level="1">5</value>
+					<value level="2">5</value>
+					<value level="3">10</value>
+					<value level="4">10</value>
+					<value level="5">10</value>
+					<value level="6">15</value>
+					<value level="7">20</value>
+					<value level="8">30</value>
+					<value level="9">30</value>
+					<value level="10">30</value>
+					<value level="11">30</value>
+					<value level="12">30</value>
+					<value level="13">30</value>
+					<value level="14">30</value>
+					<value level="15">30</value>
+					<value level="16">30</value>
+					<value level="17">30</value>
+				</amount>
+				<mode>PER</mode>
+				<weaponType>
+					<item>BLUNT</item>
+				</weaponType>
+			</effect>
+			<effect name="MagicCriticalRate">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">0</value>
+					<value level="6">0</value>
+					<value level="7">0</value>
+					<value level="8">10</value>
+					<value level="9">10</value>
+					<value level="10">10</value>
+					<value level="11">10</value>
+					<value level="12">10</value>
+					<value level="13">10</value>
+					<value level="14">10</value>
+					<value level="15">10</value>
+					<value level="16">10</value>
+					<value level="17">10</value>
+				</amount>
+				<mode>PER</mode>
+				<weaponType>
+					<item>BLUNT</item>
+				</weaponType>
+			</effect>
+			<effect name="MagicCriticalDamage">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">0</value>
+					<value level="6">0</value>
+					<value level="7">0</value>
+					<value level="8">10</value>
+					<value level="9">10</value>
+					<value level="10">10</value>
+					<value level="11">10</value>
+					<value level="12">10</value>
+					<value level="13">10</value>
+					<value level="14">10</value>
+					<value level="15">10</value>
+					<value level="16">10</value>
+					<value level="17">10</value>
+				</amount>
+				<mode>PER</mode>
+				<weaponType>
+					<item>BLUNT</item>
+				</weaponType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30041" toLevel="17" name="Eminent Robe Mastery">
+		<!-- When equipped with a robe, P. Def. +$s1. Shields and Sigils are not worn, as you move with the wind. -->
+		<icon>icon.skill30024</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="MagicalDefence" fromLevel="7" toLevel="17">
+				<amount>
+					<value level="7">3</value>
+					<value fromLevel="8" toLevel="17">10</value>
+				</amount>
+				<mode>PER</mode>
+				<armorType>
+					<item>MAGIC</item>
+				</armorType>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">0</value>
+					<value level="6">0</value>
+					<value level="7">533</value>
+					<value level="8">949</value>
+					<value level="9">1073</value>
+					<value level="10">1214</value>
+					<value level="11">1340</value>
+					<value level="12">1511</value>
+					<value level="13">1588</value>
+					<value level="14">1668</value>
+					<value level="15">1753</value>
+					<value level="16">1842</value>
+					<value level="17">1935</value>
+				</amount>
+				<mode>DIFF</mode>
+				<armorType>
+					<item>MAGIC</item>
+				</armorType>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">0</value>
+					<value level="6">0</value>
+					<value level="7">3</value>
+					<value level="8">10</value>
+					<value level="9">10</value>
+					<value level="10">10</value>
+					<value level="11">10</value>
+					<value level="12">10</value>
+					<value level="13">10</value>
+					<value level="14">10</value>
+					<value level="15">10</value>
+					<value level="16">10</value>
+					<value level="17">10</value>
+				</amount>
+				<mode>PER</mode>
+				<armorType>
+					<item>MAGIC</item>
+				</armorType>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>
+					<value level="1">7</value>
+					<value level="2">12</value>
+					<value level="3">27</value>
+					<value level="4">39</value>
+					<value level="5">55</value>
+					<value level="6">69</value>
+					<value level="7">77</value>
+					<value level="8">1333</value>
+					<value level="9">1464</value>
+					<value level="10">1608</value>
+					<value level="11">1734</value>
+					<value level="12">1943</value>
+					<value level="13">2017</value>
+					<value level="14">2093</value>
+					<value level="15">2172</value>
+					<value level="16">2264</value>
+					<value level="17">2350</value>
+				</amount>
+				<mode>DIFF</mode>
+				<armorType>
+					<item>MAGIC</item>
+				</armorType>
+			</effect>
+			<effect name="ResistDDMagic">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">5</value>
+					<value level="3">10</value>
+					<value level="4">15</value>
+					<value level="5">20</value>
+					<value level="6">25</value>
+					<value level="7">30</value>
+					<value level="8">35</value>
+					<value level="9">35</value>
+					<value level="10">35</value>
+					<value level="11">35</value>
+					<value level="12">35</value>
+					<value level="13">35</value>
+					<value level="14">35</value>
+					<value level="15">35</value>
+					<value level="16">35</value>
+					<value level="17">35</value>
+				</amount>
+				<mode>PER</mode>
+				<armorType>
+					<item>MAGIC</item>
+				</armorType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30042" toLevel="13" name="Eminent Quick Recovery">
+		<!-- Max. MP +$s1, MP Recovery Bonus +$s2, and M. Skill Cooldown -$s3. -->
+		<icon>
+			<value level="1">icon.skill11004</value>
+			<value level="2">icon.skill10504</value>
+			<value level="3">icon.skill10504</value>
+			<value level="4">icon.skill10504</value>
+			<value level="5">icon.skill10504</value>
+			<value level="6">icon.skill10504</value>
+			<value level="7">icon.skill10504</value>
+			<value level="8">icon.skill10504</value>
+			<value level="9">icon.skill10504</value>
+			<value level="10">icon.skill10504</value>
+			<value level="11">icon.skill10504</value>
+			<value level="12">icon.skill10504</value>
+			<value level="13">icon.skill10504</value>
+		</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="MaxHp" fromLevel="4" toLevel="13">
+				<amount>4891</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>
+					<value level="1">33</value>
+					<value level="2">77</value>
+					<value level="3">223</value>
+					<value level="4">692</value>
+					<value level="5">758</value>
+					<value level="6">827</value>
+					<value level="7">883</value>
+					<value level="8">897</value>
+					<value level="9">925</value>
+					<value level="10">954</value>
+					<value level="11">983</value>
+					<value level="12">1013</value>
+					<value level="13">1043</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MpRegen">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">3</value>
+					<value level="3">5</value>
+					<value fromLevel="4" toLevel="13">12</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicMpCost" fromLevel="3" toLevel="13">
+				<amount>
+					<value level="3">-5</value>
+					<value fromLevel="4" toLevel="13">-7</value>
+				</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+			<effect name="Reuse">
+				<amount>
+					<value level="1">-10</value>
+					<value level="2">-15</value>
+					<value level="3">-20</value>
+					<value fromLevel="4" toLevel="13">-30</value>
+				</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30043" toLevel="11" name="Eminent Attribute Resistance">
+		<!-- Attack Attribute Bonus +$s1, Fire/ Water/ Wind/ Earth/ Holy Resistance +$s2. -->
+		<icon>icon.skill11006</icon>
+		<operateType>P</operateType>
+		<magicLvl>
+			<value level="1">76</value>
+			<value level="2">85</value>
+			<value level="3">90</value>
+			<value level="4">95</value>
+			<value level="5">99</value>
+			<value level="6">100</value>
+			<value level="7">102</value>
+			<value level="8">104</value>
+			<value level="9">106</value>
+			<value level="10">108</value>
+			<value level="11">110</value>
+		</magicLvl>
+		<effects>
+			<effect name="AttackAttributeAdd">
+				<amount>
+					<value level="1">10</value>
+					<value level="2">20</value>
+					<value level="3">22</value>
+					<value level="4">24</value>
+					<value level="5">26</value>
+					<value level="6">30</value>
+					<value level="7">32</value>
+					<value level="8">34</value>
+					<value level="9">36</value>
+					<value level="10">38</value>
+					<value level="11">40</value>
+				</amount>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">10</value>
+					<value level="2">20</value>
+					<value level="3">22</value>
+					<value level="4">24</value>
+					<value level="5">26</value>
+					<value level="6">30</value>
+					<value level="7">32</value>
+					<value level="8">34</value>
+					<value level="9">36</value>
+					<value level="10">38</value>
+					<value level="11">40</value>
+				</amount>
+				<attribute>FIRE</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">10</value>
+					<value level="2">20</value>
+					<value level="3">22</value>
+					<value level="4">24</value>
+					<value level="5">26</value>
+					<value level="6">30</value>
+					<value level="7">32</value>
+					<value level="8">34</value>
+					<value level="9">36</value>
+					<value level="10">38</value>
+					<value level="11">40</value>
+				</amount>
+				<attribute>WATER</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">10</value>
+					<value level="2">20</value>
+					<value level="3">22</value>
+					<value level="4">24</value>
+					<value level="5">26</value>
+					<value level="6">30</value>
+					<value level="7">32</value>
+					<value level="8">34</value>
+					<value level="9">36</value>
+					<value level="10">38</value>
+					<value level="11">40</value>
+				</amount>
+				<attribute>WIND</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">10</value>
+					<value level="2">20</value>
+					<value level="3">22</value>
+					<value level="4">24</value>
+					<value level="5">26</value>
+					<value level="6">30</value>
+					<value level="7">32</value>
+					<value level="8">34</value>
+					<value level="9">36</value>
+					<value level="10">38</value>
+					<value level="11">40</value>
+				</amount>
+				<attribute>EARTH</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">10</value>
+					<value level="2">20</value>
+					<value level="3">22</value>
+					<value level="4">24</value>
+					<value level="5">26</value>
+					<value level="6">30</value>
+					<value level="7">32</value>
+					<value level="8">34</value>
+					<value level="9">36</value>
+					<value level="10">38</value>
+					<value level="11">40</value>
+				</amount>
+				<attribute>HOLY</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30044" toLevel="2" name="Eminent Trait Resistance">
+		<!-- Hold/ Mental Resistance +$s1. -->
+		<icon>icon.skill10005</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="DefenceTrait">
+				<HOLD>30</HOLD>
+				<DERANGEMENT>30</DERANGEMENT>
+				<PULL>
+					<value level="1">0</value>
+					<value level="2">30</value>
+				</PULL>
+				<ZONE>
+					<value level="1">0</value>
+					<value level="2">30</value>
+				</ZONE>
+				<HATE>
+					<value level="1">0</value>
+					<value level="2">30</value>
+				</HATE>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30045" toLevel="3" name="Eminent Ability">
+		<!-- INT +2. -->
+		<icon>icon.skill11253</icon>
+		<operateType>P</operateType>
+		<magicLvl>
+			<value level="1">40</value>
+			<value level="2">76</value>
+			<value level="3">85</value>
+		</magicLvl>
+		<effects>
+			<effect name="SkillCritical">
+				<stat>INT</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>
+					<value level="1">2</value>
+					<value level="2">4</value>
+					<value level="3">16</value>
+				</amount>
+				<stat>INT</stat>
+			</effect>
+		</effects>
+	</skill>
+</list>

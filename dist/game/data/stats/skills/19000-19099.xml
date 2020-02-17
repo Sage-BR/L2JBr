@@ -1,0 +1,1811 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="19001" toLevel="1" name="Test Bleed">
+		<!-- Race confirm -->
+		<icon>icon.skill0010509</icon>
+		<operateType>A2</operateType>
+		<castRange>40</castRange>
+		<hitTime>1080</hitTime>
+		<coolTime>720</coolTime>
+		<reuseDelay>3000</reuseDelay>
+		<effectPoint>-1</effectPoint>
+		<subordinationAbnormalType>BLEEDING</subordinationAbnormalType>
+		<abnormalType>BLEEDING</abnormalType>
+		<basicProperty>PHYSICAL</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>400</effectRange>
+		<lvlBonusRate>30</lvlBonusRate>
+		<activateRate>100</activateRate>
+		<magicLvl>85</magicLvl>
+		<abnormalLvl>3</abnormalLvl>
+		<abnormalTime>40</abnormalTime>
+		<trait>BLEED</trait>
+		<abnormalVisualEffect>DOT_BLEEDING</abnormalVisualEffect>
+		<isDebuff>true</isDebuff>
+		<targetType>ENEMY_ONLY</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="19002" toLevel="1" name="Anchor">
+		<!-- Action prevent item skill confirm -->
+		<icon>icon.skill10510</icon>
+		<operateType>A2</operateType>
+		<castRange>400</castRange>
+		<hitTime>3000</hitTime>
+		<reuseDelay>3000</reuseDelay>
+		<isMagic>1</isMagic>
+		<effectPoint>-1</effectPoint>
+		<abnormalType>PARALYZE</abnormalType>
+		<basicProperty>MAGIC</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>900</effectRange>
+		<lvlBonusRate>20</lvlBonusRate>
+		<activateRate>40</activateRate>
+		<magicLvl>85</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>40</abnormalTime>
+		<trait>PARALYZE</trait>
+		<isDebuff>true</isDebuff>
+		<targetType>ENEMY_ONLY</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="19003" toLevel="5" name="Clan Resistance Hall">
+		<!-- Increases clan members' Holy/ Dark Attack Resistance by $s1. Applies after the elder stage. -->
+		<icon>icon.skill19003</icon>
+		<magicLvl>1</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">3</value>
+					<value level="2">4</value>
+					<value level="3">5</value>
+					<value level="4">6</value>
+					<value level="5">7</value>
+				</amount>
+				<attribute>HOLY</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">3</value>
+					<value level="2">4</value>
+					<value level="3">5</value>
+					<value level="4">6</value>
+					<value level="5">7</value>
+				</amount>
+				<attribute>DARK</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19004" toLevel="5" name="Clan De-Buff Control">
+		<!-- Increases clan members' Debuff Resistance by $s1. Applies after the elder stage. -->
+		<icon>icon.skill19004</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<effects>
+			<effect name="DefenceTrait">
+				<HOLD>
+					<value level="1">3</value>
+					<value level="2">4</value>
+					<value level="3">5</value>
+					<value level="4">6</value>
+					<value level="5">7</value>
+				</HOLD>
+				<PARALYZE>
+					<value level="1">3</value>
+					<value level="2">4</value>
+					<value level="3">5</value>
+					<value level="4">6</value>
+					<value level="5">7</value>
+				</PARALYZE>
+				<POISON>
+					<value level="1">3</value>
+					<value level="2">4</value>
+					<value level="3">5</value>
+					<value level="4">6</value>
+					<value level="5">7</value>
+				</POISON>
+				<SHOCK>
+					<value level="1">3</value>
+					<value level="2">4</value>
+					<value level="3">5</value>
+					<value level="4">6</value>
+					<value level="5">7</value>
+				</SHOCK>
+				<SLEEP>
+					<value level="1">3</value>
+					<value level="2">4</value>
+					<value level="3">5</value>
+					<value level="4">6</value>
+					<value level="5">7</value>
+				</SLEEP>
+				<BLEED>
+					<value level="1">3</value>
+					<value level="2">4</value>
+					<value level="3">5</value>
+					<value level="4">6</value>
+					<value level="5">7</value>
+				</BLEED>
+				<DERANGEMENT>
+					<value level="1">3</value>
+					<value level="2">4</value>
+					<value level="3">5</value>
+					<value level="4">6</value>
+					<value level="5">7</value>
+				</DERANGEMENT>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19005" toLevel="5" name="Clan Muzzle Control">
+		<!-- Increases clan members' Paralysis Resistance by $s1. Applies after the elder stage. -->
+		<icon>icon.skill19005</icon>
+		<magicLvl>1</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="DefenceTrait">
+				<PARALYZE>
+					<value level="1">12</value>
+					<value level="2">13</value>
+					<value level="3">14</value>
+					<value level="4">15</value>
+					<value level="5">16</value>
+				</PARALYZE>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19006" toLevel="5" name="Clan Mental Control">
+		<!-- Increases clan members' Mental Attack Resistance by $s1. Applies after the elder stage. -->
+		<icon>icon.skill19006</icon>
+		<magicLvl>1</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="DefenceTrait">
+				<DERANGEMENT>
+					<value level="1">12</value>
+					<value level="2">13</value>
+					<value level="3">14</value>
+					<value level="4">15</value>
+					<value level="5">16</value>
+				</DERANGEMENT>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19007" toLevel="1" name="Clan Summon">
+		<!-- Summons a clan member. Consumes 100 Spirit Ore. -->
+		<icon>icon.skill19007</icon>
+		<operateType>A1</operateType>
+		<coolTime>500</coolTime>
+		<hitTime>10000</hitTime>
+		<effectPoint>467</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>-2</effectRange>
+		<magicLvl>85</magicLvl>
+		<isMagic>2</isMagic>
+		<reuseDelay>1800000</reuseDelay>
+		<staticReuse>true</staticReuse>
+		<famePointConsume>900</famePointConsume>
+		<itemConsumeCount>5</itemConsumeCount>
+		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
+		<targetType>OTHERS</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<conditions>
+			<condition name="OpCallPc" />
+			<condition name="TargetMyPledge">
+				<includeMe>false</includeMe>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="CallPc" />
+		</effects>
+	</skill>
+	<skill id="19008" toLevel="1" name="Clan Rebirth">
+		<!-- Uses the clan guardian's power to restore nearby clan members' HP/ MP/ CP. Consumes 1000 Spirit Ore. Only available for the clan leader. -->
+		<icon>icon.skill19008</icon>
+		<operateType>A1</operateType>
+		<hitTime>1000</hitTime>
+		<hitCancelTime>0</hitCancelTime>
+		<coolTime>500</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<isMagic>1</isMagic>
+		<reuseDelay>1800000</reuseDelay>
+		<staticReuse>true</staticReuse>
+		<effectPoint>100</effectPoint>
+		<targetType>SELF</targetType>
+		<affectScope>PLEDGE</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<affectRange>1000</affectRange>
+		<itemConsumeCount>1000</itemConsumeCount>
+		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
+		<blockedInOlympiad>true</blockedInOlympiad>
+		<conditions>
+			<condition name="OpSocialClass">
+				<socialClass>8</socialClass>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="HealPercent">
+				<power>100</power>
+			</effect>
+			<effect name="CpHealPercent">
+				<power>100</power>
+			</effect>
+			<effect name="ManaHealPercent">
+				<power>100</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19009" toLevel="1" name="Clan Advent">
+		<!-- Clan members' P. Atk. +5%, M. Atk. +6%, P./ M. Def. +5%, and HP/ MP Recovery bonus +5. This effect is activated only when the clan leader and/ or an elite clan member's online. -->
+		<icon>icon.skill19009</icon>
+		<operateType>A2</operateType>
+		<effectPoint>100</effectPoint>
+		<abnormalType>CLAN_ADVENT</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-2</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>-2</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>-1</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<canBeDispelled>false</canBeDispelled>
+		<affectRange>1000</affectRange>
+		<affectLimit>50-50</affectLimit>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>PLEDGE</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<effects>
+			<effect name="PAtk">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>6</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="HpRegen">
+				<amount>5</amount>
+			</effect>
+			<effect name="MpRegen">
+				<amount>5</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19010" toLevel="1" name="Clan Copy">
+		<!-- Summons a copy of yourself to cause confusion among the enemy. Consumes 50 Spirit Ore. Consumes 1500 Individual Fame. Marquis or above only. -->
+		<icon>icon.skill19010</icon>
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>74</magicLvl>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<reuseDelay>3600000</reuseDelay>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<famePointConsume>1500</famePointConsume>
+		<itemConsumeCount>50</itemConsumeCount>
+		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
+		<effects>
+			<effect name="SummonNpc">
+				<npcId>13076</npcId> <!-- Illusion -->
+				<npcCount>1</npcCount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19011" toLevel="1" name="Clan Legend">
+		<!-- Increases P. Atk. and P. Def. when HP is below 30%. Applies after the lord stage. -->
+		<icon>icon.skill19011</icon>
+		<operateType>P</operateType>
+		<passiveConditions>
+			<condition name="CanUseInBattlefield" />
+			<condition name="RemainHpPer">
+				<amount>30</amount>
+				<percentType>LESS</percentType>
+				<affectType>CASTER</affectType>
+			</condition>
+		</passiveConditions>
+		<effects>
+			<effect name="PAtk">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19012" toLevel="1" name="Clan Hide">
+		<!-- Hides nearby clan members. Decreases Speed by 50% when hidden. Consumes 150 Soulstones. Consumes 1000 Clan Reputation. Applies after the lord stage. -->
+		<icon>icon.skill19012</icon>
+		<operateType>A2</operateType>
+		<hitTime>1000</hitTime>
+		<effectPoint>100</effectPoint>
+		<abnormalType>HIDE</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>40</abnormalTime>
+		<canBeDispelled>false</canBeDispelled>
+		<affectRange>1000</affectRange>
+		<affectLimit>50-50</affectLimit>
+		<staticReuse>true</staticReuse>
+		<abnormalVisualEffect>STEALTH</abnormalVisualEffect>
+		<removedOnAnyActionExceptMove>true</removedOnAnyActionExceptMove>
+		<removedOnDamage>true</removedOnDamage>
+		<isMagic>2</isMagic>
+		<reuseDelay>14400000</reuseDelay>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<affectScope>PLEDGE</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<clanRepConsume>1000</clanRepConsume>
+		<itemConsumeCount>150</itemConsumeCount>
+		<itemConsumeId>1785</itemConsumeId> <!-- Soulstone -->
+		<effects>
+			<effect name="Hide" />
+			<effect name="Speed">
+				<amount>0.5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="SilentMove">
+				<chance>100</chance>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19013" toLevel="1" name="Clan Purge">
+		<!-- Removes all debuffs from nearby clan members. Consumes 300 Spirit Ore. Available only for the clan leader and elite clan members. -->
+		<icon>icon.skill19013</icon>
+		<operateType>A1</operateType>
+		<hitTime>1000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>100</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<canBeDispelled>false</canBeDispelled>
+		<affectRange>1000</affectRange>
+		<affectLimit>50-50</affectLimit>
+		<isMagic>2</isMagic>
+		<reuseDelay>1800000</reuseDelay>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<affectScope>PLEDGE</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<famePointConsume>1500</famePointConsume>
+		<itemConsumeCount>30</itemConsumeCount>
+		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
+		<effect name="DispelByCategory">
+			<slot>DEBUFF</slot>
+			<rate>100</rate>
+			<max>100</max>
+		</effect>
+	</skill>
+	<skill id="19014" toLevel="1" name="Clan Defense">
+		<!-- Makes nearby clan members invincible. Consumes 30 Spirit Ore. Consumes 1000 Clan Reputation. Applies after the distinguished king stage. -->
+		<icon>icon.skill19014</icon>
+		<operateType>A2</operateType>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<abnormalType>INVINCIBILITY</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>5</abnormalTime>
+		<canBeDispelled>false</canBeDispelled>
+		<affectRange>500</affectRange>
+		<staticReuse>true</staticReuse>
+		<abnormalVisualEffect>INVINCIBILITY</abnormalVisualEffect>
+		<isMagic>2</isMagic>
+		<reuseDelay>3600000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>PLEDGE</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<clanRepConsume>1000</clanRepConsume>
+		<itemConsumeCount>30</itemConsumeCount>
+		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
+		<effects>
+			<effect name="DamageBlock">
+				<type>BLOCK_HP</type>
+			</effect>
+			<effect name="DamageBlock">
+				<type>BLOCK_MP</type>
+			</effect>
+			<effect name="DebuffBlock" />
+			<effect name="ResistDispelByCategory">
+				<amount>-100</amount>
+				<slot>ALL</slot>
+			</effect>
+			<effect name="ResistAbnormalByCategory">
+				<amount>-100</amount>
+				<slot>DEBUFF</slot>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19015" toLevel="1" name="Clan Friendly">
+		<!-- Increases nearby clan members' P. Critical Rate by 3% and M. Critical Rate by 20. Consumes 50 Spirit Ore. Consumes 3500 Individual Fame. Applies after the marquis stage. -->
+		<icon>icon.skill19015</icon>
+		<operateType>A2</operateType>
+		<hitTime>2500</hitTime>
+		<effectPoint>100</effectPoint>
+		<abnormalType>CLAN_FRIEND</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>600</abnormalTime>
+		<canBeDispelled>false</canBeDispelled>
+		<affectRange>500</affectRange>
+		<affectLimit>50-50</affectLimit>
+		<isMagic>2</isMagic>
+		<reuseDelay>3600000</reuseDelay>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<affectScope>PLEDGE</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<famePointConsume>3500</famePointConsume>
+		<itemConsumeCount>50</itemConsumeCount>
+		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
+		<effects>
+			<effect name="CriticalRate">
+				<amount>3</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicCriticalRate">
+				<amount>20</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19016" toLevel="1" name="Clan Boundary">
+		<!-- Increases nearby clan members' P. Atk. by 3% and P. Def. by 3%. Consumes 50 Spirit Ore. Consumes 3000 Individual Fame. Applies after the count stage. -->
+		<icon>icon.skill19016</icon>
+		<operateType>A2</operateType>
+		<hitTime>2500</hitTime>
+		<effectPoint>100</effectPoint>
+		<abnormalType>CLAN_BOUNDARY</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>600</abnormalTime>
+		<canBeDispelled>false</canBeDispelled>
+		<affectRange>500</affectRange>
+		<affectLimit>50-50</affectLimit>
+		<isMagic>2</isMagic>
+		<reuseDelay>3600000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>PLEDGE</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<famePointConsume>3000</famePointConsume>
+		<itemConsumeCount>50</itemConsumeCount>
+		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
+		<effects>
+			<effect name="PAtk">
+				<amount>3</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>3</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19017" toLevel="1" name="Clan Prison">
+		<!-- For 60 sec., Speed of nearby enemies -23% and stops them from escaping. Consumes 30 Spirit Ore. Consumes 3000 Individual Fame. Applies after the duke stage. -->
+		<icon>icon.skill19017</icon>
+		<operateType>A2</operateType>
+		<hitTime>1500</hitTime>
+		<reuseDelay>3600000</reuseDelay>
+		<effectPoint>-100</effectPoint>
+		<abnormalType>CLAN_PRISON</abnormalType>
+		<basicProperty>MAGIC</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<lvlBonusRate>30</lvlBonusRate>
+		<activateRate>90</activateRate>
+		<magicLvl>85</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>60</abnormalTime>
+		<trait>HOLD</trait>
+		<canBeDispelled>false</canBeDispelled>
+		<affectRange>600</affectRange>
+		<affectLimit>10-10</affectLimit>
+		<isMagic>2</isMagic>
+		<isDebuff>true</isDebuff>
+		<targetType>SELF</targetType>
+		<affectScope>POINT_BLANK</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<famePointConsume>3000</famePointConsume>
+		<itemConsumeCount>30</itemConsumeCount>
+		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
+		<effects>
+			<effect name="Speed">
+				<amount>-23</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Root" />
+		</effects>
+	</skill>
+	<skill id="19018" toLevel="1" name="Clan Guardian Recovery">
+		<!-- Restores HP/ MP/ CP. -->
+		<icon>icon.skill19008</icon>
+		<operateType>A1</operateType>
+		<hitTime>1500</hitTime>
+		<effectPoint>100</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<canBeDispelled>false</canBeDispelled>
+		<affectRange>1000</affectRange>
+		<isMagic>2</isMagic>
+		<reuseDelay>5000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>POINT_BLANK</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<effects>
+			<effect name="HealPercent">
+				<power>100</power>
+			</effect>
+			<effect name="CpHealPercent">
+				<power>100</power>
+			</effect>
+			<effect name="ManaHealPercent">
+				<power>100</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19019" toLevel="1" name="Revolution Blade">
+		<!-- Inflicts physical damage on target. Can only be used in a castle siege area by characters between lv 40 - 84. Soulshots and Spiritshots are not consumed. -->
+		<icon>icon.skill10013</icon>
+		<operateType>A1</operateType>
+		<castRange>40</castRange>
+		<hitTime>1000</hitTime>
+		<coolTime>200</coolTime>
+		<effectPoint>-687</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>400</effectRange>
+		<magicLvl>85</magicLvl>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>40</minLevel>
+				<maxLevel>84</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+		</conditions>
+	</skill>
+	<skill id="19020" toLevel="1" name="Revolution Eruption">
+		<!-- Attacks frontal targets to inflict physical damage. Can only be used in a castle siege area by characters between lv 40 - 84. Soulshots and Spiritshots are not consumed. -->
+		<icon>icon.skill10265</icon>
+		<operateType>A1</operateType>
+		<castRange>40</castRange>
+		<hitTime>1000</hitTime>
+		<coolTime>200</coolTime>
+		<effectPoint>-687</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>400</effectRange>
+		<magicLvl>85</magicLvl>
+		<affectLimit>5-12</affectLimit>
+		<fanRange>0;0;150;120</fanRange>
+		<isMagic>2</isMagic>
+		<reuseDelay>6000</reuseDelay>
+		<targetType>ENEMY</targetType>
+		<affectScope>FAN</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>40</minLevel>
+				<maxLevel>84</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+		</conditions>
+	</skill>
+	<skill id="19021" toLevel="1" name="Revolution Strike">
+		<!-- Inflicts powerful physical damage on target. Can only be used in a castle siege area by characters between lv 40 - 84. Soulshots and Spiritshots are not consumed. -->
+		<icon>icon.skill10260</icon>
+		<operateType>A1</operateType>
+		<castRange>40</castRange>
+		<hitTime>1000</hitTime>
+		<coolTime>200</coolTime>
+		<effectPoint>-687</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>400</effectRange>
+		<magicLvl>85</magicLvl>
+		<isMagic>2</isMagic>
+		<reuseDelay>30000</reuseDelay>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>40</minLevel>
+				<maxLevel>84</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+		</conditions>
+	</skill>
+	<skill id="19022" toLevel="1" name="Revolution Shot">
+		<!-- Attacks distant enemies. Requires a bow or crossbow to be equipped. Over-hit. Critical. Can only be used in a castle siege area by characters between lv 40 - 84. Soulshots and Spiritshots are not consumed. -->
+		<icon>icon.skill10762</icon>
+		<operateType>A1</operateType>
+		<castRange>900</castRange>
+		<hitTime>1000</hitTime>
+		<coolTime>200</coolTime>
+		<effectPoint>-687</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>1200</effectRange>
+		<magicLvl>85</magicLvl>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>40</minLevel>
+				<maxLevel>84</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+		</conditions>
+	</skill>
+	<skill id="19023" toLevel="1" name="Revolution Multi-Shot">
+		<!-- Does ranged attacks centered on frontal target. Requires a bow or crossbow to be equipped. Over-hit. Critical. Can only be used in a castle siege area by characters between lv 40 - 84. Soulshots and Spiritshots are not consumed. -->
+		<icon>icon.skill10771</icon>
+		<operateType>A1</operateType>
+		<castRange>900</castRange>
+		<hitTime>1000</hitTime>
+		<coolTime>200</coolTime>
+		<effectPoint>-687</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>1200</effectRange>
+		<magicLvl>85</magicLvl>
+		<affectLimit>5-12</affectLimit>
+		<fanRange>0;0;900;90</fanRange>
+		<isMagic>2</isMagic>
+		<reuseDelay>6000</reuseDelay>
+		<targetType>ENEMY</targetType>
+		<affectScope>FAN</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>40</minLevel>
+				<maxLevel>84</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+		</conditions>
+	</skill>
+	<skill id="19024" toLevel="1" name="Revolution Tornado Shot">
+		<!-- Inflicts a penetrating attack on enemies at the front. Requires a bow or crossbow to be equipped. Over-hit. Critical. Can only be used in a castle siege area by characters between lv 40 - 84. Soulshots and Spiritshots are not consumed. -->
+		<icon>icon.skill10760</icon>
+		<operateType>A1</operateType>
+		<castRange>900</castRange>
+		<hitTime>1000</hitTime>
+		<coolTime>200</coolTime>
+		<effectPoint>-687</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>1200</effectRange>
+		<magicLvl>85</magicLvl>
+		<isMagic>2</isMagic>
+		<reuseDelay>30000</reuseDelay>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>40</minLevel>
+				<maxLevel>84</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+		</conditions>
+	</skill>
+	<skill id="19025" toLevel="1" name="Revolution Spike">
+		<!-- Inflicts a magic attack on target. Over-hit. Can only be used in a castle siege area by characters between lv 40 - 84. Soulshots and Spiritshots are not consumed. -->
+		<icon>icon.skill11011</icon>
+		<operateType>A1</operateType>
+		<castRange>900</castRange>
+		<hitTime>1000</hitTime>
+		<coolTime>200</coolTime>
+		<effectPoint>-687</effectPoint>
+		<magicCriticalRate>6</magicCriticalRate>
+		<effectRange>1200</effectRange>
+		<magicLvl>85</magicLvl>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>40</minLevel>
+				<maxLevel>84</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+		</conditions>
+	</skill>
+	<skill id="19026" toLevel="1" name="Revolution Blast">
+		<!-- Inflicts a magic attack on target and enemies near target. Over-hit. Can only be used in a castle siege area by characters between lv 40 - 84. Soulshots and Spiritshots are not consumed. -->
+		<icon>icon.skill11034</icon>
+		<operateType>A1</operateType>
+		<castRange>900</castRange>
+		<hitTime>1000</hitTime>
+		<coolTime>200</coolTime>
+		<effectPoint>-687</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>1200</effectRange>
+		<magicLvl>85</magicLvl>
+		<affectRange>100</affectRange>
+		<affectLimit>5-12</affectLimit>
+		<isMagic>2</isMagic>
+		<reuseDelay>6000</reuseDelay>
+		<targetType>ENEMY</targetType>
+		<affectScope>RANGE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>40</minLevel>
+				<maxLevel>84</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+		</conditions>
+	</skill>
+	<skill id="19027" toLevel="1" name="Revolution Destruction">
+		<!-- Inflicts a powerful magic attack on target. Over-hit. Can only be used in a castle siege area by characters between lv 40 - 84. Soulshots and Spiritshots are not consumed. -->
+		<icon>icon.skill11023</icon>
+		<operateType>A1</operateType>
+		<castRange>900</castRange>
+		<hitTime>1000</hitTime>
+		<coolTime>200</coolTime>
+		<effectPoint>-687</effectPoint>
+		<magicCriticalRate>11</magicCriticalRate>
+		<effectRange>1200</effectRange>
+		<magicLvl>85</magicLvl>
+		<isMagic>2</isMagic>
+		<reuseDelay>30000</reuseDelay>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>40</minLevel>
+				<maxLevel>84</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+		</conditions>
+	</skill>
+	<skill id="19028" toLevel="2" name="Revolution Spirit">
+		<!-- Increases Max CP by $s2, P. Def. by $s3, and M. Def. by $s4 for $s1. Can only be used in a castle siege area by characters between Lv. $s5 -$s6. Soulshots and Spiritshots are not consumed. -->
+		<icon>BranchSys2.icon.skill20006</icon>
+		<operateType>A2</operateType>
+		<hitTime>1000</hitTime>
+		<coolTime>200</coolTime>
+		<effectPoint>635</effectPoint>
+		<abnormalType>MAX_HP_UP_K</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>
+			<value level="1">85</value>
+			<value level="2">86</value>
+		</magicLvl>
+		<abnormalLvl>
+			<value level="1">1</value>
+			<value level="2">2</value>
+		</abnormalLvl>
+		<abnormalTime>300</abnormalTime>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>40</minLevel>
+				<maxLevel>84</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+		</conditions>
+	</skill>
+	<skill id="19029" toLevel="1" name="Revolution Self CP Recovery">
+		<!-- Increases combat spirit to recover your own CP by 2000. Can only be used by characters between lv 40-84 within the castle siege area. Soulshots and Spiritshots are not consumed. -->
+		<icon>icon.skill0440</icon>
+		<operateType>A1</operateType>
+		<hitTime>1000</hitTime>
+		<coolTime>200</coolTime>
+		<effectPoint>669</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>40</minLevel>
+				<maxLevel>84</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="Cp">
+				<amount>2000</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19030" toLevel="1" name="Revolution CP Recovery">
+		<!-- Increases combat spirit to recover target's CP by 1000. Can only be used by characters between lv 40-84 within the castle siege area. Soulshots and Spiritshots are not consumed. -->
+		<icon>icon.skill11755</icon>
+		<operateType>A1</operateType>
+		<castRange>600</castRange>
+		<hitTime>1000</hitTime>
+		<coolTime>200</coolTime>
+		<effectPoint>669</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>1100</effectRange>
+		<magicLvl>85</magicLvl>
+		<isMagic>2</isMagic>
+		<reuseDelay>6000</reuseDelay>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>40</minLevel>
+				<maxLevel>84</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="Cp">
+				<amount>1000</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19031" toLevel="1" name="Revolution Party CP Recovery">
+		<!-- Increases combat spirit to recover a party member's CP by 1000. Can only be used by characters between lv 40-84 within the castle siege area. Soulshots and Spiritshots are not consumed. -->
+		<icon>icon.skill11757</icon>
+		<operateType>A1</operateType>
+		<hitTime>1000</hitTime>
+		<coolTime>200</coolTime>
+		<effectPoint>669</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<affectRange>1000</affectRange>
+		<isMagic>2</isMagic>
+		<reuseDelay>6000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>40</minLevel>
+				<maxLevel>84</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="Cp">
+				<amount>1000</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19032" toLevel="1" name="Ability of Light">
+		<!-- Imbued with the Ability of Light. Increases Max CP by 3000 and damage inflicted during PvP by 10%. Effects do not apply when in Chaotic state. Can be used by a Marquis or higher. -->
+		<icon>icon.skill19008</icon>
+		<magicLvl>85</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MaxCp">
+				<amount>3000</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19033" toLevel="1" name="Ability of Darkness">
+		<!-- Imbued with the Ability of Darkness. Increases Max CP by 3000 and damage inflicted during PvP by 10%. Can be used by a Marquis or higher. -->
+		<icon>icon.skill19008</icon>
+		<magicLvl>85</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MaxCp">
+				<amount>3000</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19034" toLevel="1" name="Imprint of Light">
+		<!-- Engraves the Imprint of Light on the ancient relic that guards the castle. -->
+		<icon>icon.skill0246</icon>
+		<castRange>85</castRange>
+		<effectRange>400</effectRange>
+		<hitTime>120000</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>85</magicLvl>
+		<operateType>A1</operateType>
+		<mpConsume>50</mpConsume>
+		<reuseDelay>5000</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>HOLYTHING</targetType>
+		<affectScope>SINGLE</affectScope>
+		<startEffects>
+			<effect name="TakeCastleStart" />
+		</startEffects>
+		<conditions>
+			<condition name="PossessHolything" />
+		</conditions>
+		<effects>
+			<effect name="TakeCastle">
+				<side>LIGHT</side>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19035" toLevel="1" name="Imprint of Darkness">
+		<!-- Engraves the Imprint of Darkness on the ancient relic that guards the castle. -->
+		<icon>icon.skill0246</icon>
+		<castRange>85</castRange>
+		<effectRange>400</effectRange>
+		<hitTime>120000</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>85</magicLvl>
+		<operateType>A1</operateType>
+		<mpConsume>50</mpConsume>
+		<reuseDelay>5000</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>HOLYTHING</targetType>
+		<affectScope>SINGLE</affectScope>
+		<startEffects>
+			<effect name="TakeCastleStart" />
+		</startEffects>
+		<conditions>
+			<condition name="PossessHolything" />
+		</conditions>
+		<effects>
+			<effect name="TakeCastle">
+				<side>DARK</side>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19036" toLevel="1" name="Blessing of Light">
+		<!-- Acquires 3% additional XP and SP through the blessing of the Guardian of Light. -->
+		<icon>icon.etc_pi_gift_box_i04</icon>
+		<operateType>A2</operateType>
+		<isMagic>4</isMagic>
+		<abnormalType>BRIGHTNESS_BLESS</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<irreplacableBuff>true</irreplacableBuff>
+		<staticReuse>true</staticReuse>
+		<abnormalVisualEffect>VP_KEEP</abnormalVisualEffect>
+		<abnormalTime>3600</abnormalTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="ExpModify">
+				<amount>3</amount>
+			</effect>
+			<effect name="SpModify">
+				<amount>3</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19037" toLevel="1" name="Cloak of Radiant Light">
+		<!-- All stats +4 and damage received -15%. Ineffective in Chaotic state. -->
+		<icon>icon.amor_goodness_cloak</icon>
+		<magicLvl>1</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<passiveConditions>
+			<condition name="OpAlignment">
+				<alignment>LAWFUL</alignment>
+				<affectType>CASTER</affectType>
+			</condition>
+		</passiveConditions>
+		<effects>
+			<effect name="DamageByAttack">
+				<amount>-15</amount>
+				<type>PK</type>
+			</effect>
+			<effect name="StatUp">
+				<amount>3</amount>
+				<stat>STR</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>3</amount>
+				<stat>INT</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>3</amount>
+				<stat>CON</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>3</amount>
+				<stat>DEX</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>3</amount>
+				<stat>WIT</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>3</amount>
+				<stat>MEN</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>3</amount>
+				<stat>LUC</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>3</amount>
+				<stat>CHA</stat>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19038" toLevel="1" name="Cold Cloak of Darkness">
+		<!-- All stats +4 and damage received -15%. -->
+		<icon>icon.amor_evilness_cloak</icon>
+		<magicLvl>1</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="DamageByAttack">
+				<amount>-15</amount>
+				<type>PK</type>
+			</effect>
+			<effect name="StatUp">
+				<amount>3</amount>
+				<stat>STR</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>3</amount>
+				<stat>INT</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>3</amount>
+				<stat>CON</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>3</amount>
+				<stat>DEX</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>3</amount>
+				<stat>WIT</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>3</amount>
+				<stat>MEN</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>3</amount>
+				<stat>LUC</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>3</amount>
+				<stat>CHA</stat>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19039" toLevel="1" name="Cloak of Light">
+		<!-- All stats +2 and damage received -5%. Ineffective in Chaotic state. -->
+		<icon>icon.amor_goodness_cloak</icon>
+		<magicLvl>1</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<passiveConditions>
+			<condition name="OpAlignment">
+				<alignment>LAWFUL</alignment>
+				<affectType>CASTER</affectType>
+			</condition>
+		</passiveConditions>
+		<effects>
+			<effect name="DamageByAttack">
+				<amount>-5</amount>
+				<type>PK</type>
+			</effect>
+			<effect name="StatUp">
+				<amount>2</amount>
+				<stat>STR</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>2</amount>
+				<stat>INT</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>2</amount>
+				<stat>CON</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>2</amount>
+				<stat>DEX</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>2</amount>
+				<stat>WIT</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>2</amount>
+				<stat>MEN</stat>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19040" toLevel="1" name="Cloak of Darkness">
+		<!-- All stats +2 and damage received -5%. -->
+		<icon>icon.amor_evilness_cloak</icon>
+		<magicLvl>1</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="DamageByAttack">
+				<amount>-5</amount>
+				<type>PK</type>
+			</effect>
+			<effect name="StatUp">
+				<amount>2</amount>
+				<stat>STR</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>2</amount>
+				<stat>INT</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>2</amount>
+				<stat>CON</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>2</amount>
+				<stat>DEX</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>2</amount>
+				<stat>WIT</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>2</amount>
+				<stat>MEN</stat>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19041" toLevel="1" name="King's Call">
+		<!-- Teleports to your castle. -->
+		<icon>icon.vesper_cloack_i00</icon>
+		<hitTime>20000</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<reuseDelay>3600000</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpCanEscape" />
+		</conditions>
+		<effects>
+			<effect name="Escape">
+				<escapeType>CASTLE</escapeType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19042" toLevel="1" name="King's Summon">
+		<!-- Teleports to your castle immediately. -->
+		<icon>icon.vesper_cloack_i00</icon>
+		<operateType>A1</operateType>
+		<hitTime>200</hitTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<reuseDelay>3600000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpCanEscape" />
+			<condition name="OpHome">
+				<type>CASTLE</type>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="Escape">
+				<escapeType>CASTLE</escapeType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19074" toLevel="2" name="Academy Precept">
+		<!-- For $s1, increases academy members' P. Atk. by $s2, M. Atk. by $s3, Critical Rate by $s4, and M. Critical Rate by $s5. -->
+		<icon>icon.skill19008</icon>
+		<operateType>A2</operateType>
+		<mpConsume>100</mpConsume>
+		<castRange>400</castRange>
+		<hitTime>4000</hitTime>
+		<effectPoint>100</effectPoint>
+		<abnormalType>ACADEMY_UP</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>900</effectRange>
+		<magicLvl>
+			<value level="1">85</value>
+			<value level="2">90</value>
+		</magicLvl>
+		<abnormalLvl>
+			<value level="1">1</value>
+			<value level="2">2</value>
+		</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<isMagic>2</isMagic>
+		<reuseDelay>
+			<value level="1">43200000</value>
+			<value level="2">21600000</value>
+		</reuseDelay>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="19075" toLevel="1" name="Clan Relation">
+		<icon>icon.skill19008</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+	</skill>
+	<skill id="19076" toLevel="1" name="Clan Academy Reward">
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="49">
+						<item id="9910" count="1" /> <!-- Blood Oath -->
+					</item>
+					<item chance="49">
+						<item id="9911" count="1" /> <!-- Blood Alliance -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19080" toLevel="1" name="Sigel Ixion">
+		<!-- Transforms into Ixion. -->
+		<icon>icon.skilltransform3</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>TRANSFORM</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>2</isMagic>
+		<hitTime>1000</hitTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CanTransform">
+				<transformId>508</transformId>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="Transformation">
+				<transformationId>508</transformationId>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19081" toLevel="1" name="Tyrr Ixion">
+		<!-- Transforms into Ixion. -->
+		<icon>icon.skilltransform3</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>TRANSFORM</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>2</isMagic>
+		<hitTime>1000</hitTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CanTransform">
+				<transformId>510</transformId>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="Transformation">
+				<transformationId>510</transformationId>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19082" toLevel="1" name="Othell Ixion">
+		<!-- Transforms into Ixion. -->
+		<icon>icon.skilltransform3</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>TRANSFORM</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>2</isMagic>
+		<hitTime>1000</hitTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CanTransform">
+				<transformId>511</transformId>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="Transformation">
+				<transformationId>511</transformationId>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19083" toLevel="1" name="Yul Ixion">
+		<!-- Transforms into Ixion. -->
+		<icon>icon.skilltransform3</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>TRANSFORM</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>2</isMagic>
+		<hitTime>1000</hitTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CanTransform">
+				<transformId>512</transformId>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="Transformation">
+				<transformationId>512</transformationId>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19084" toLevel="1" name="Feoh Ixion">
+		<!-- Transforms into Ixion. -->
+		<icon>icon.skilltransform3</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>TRANSFORM</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>2</isMagic>
+		<hitTime>1000</hitTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CanTransform">
+				<transformId>513</transformId>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="Transformation">
+				<transformationId>513</transformationId>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19085" toLevel="1" name="Iss Ixion">
+		<!-- Transforms into Ixion. -->
+		<icon>icon.skilltransform3</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>TRANSFORM</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>2</isMagic>
+		<hitTime>1000</hitTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CanTransform">
+				<transformId>514</transformId>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="Transformation">
+				<transformationId>514</transformationId>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19086" toLevel="1" name="Wynn Ixion">
+		<!-- Transforms into Ixion. -->
+		<icon>icon.skilltransform3</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>TRANSFORM</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>2</isMagic>
+		<hitTime>1000</hitTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CanTransform">
+				<transformId>515</transformId>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="Transformation">
+				<transformationId>515</transformationId>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19087" toLevel="1" name="Aeore Ixion">
+		<!-- Transforms into Ixion. -->
+		<icon>icon.skilltransform3</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>TRANSFORM</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>2</isMagic>
+		<hitTime>1000</hitTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CanTransform">
+				<transformId>516</transformId>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="Transformation">
+				<transformationId>516</transformationId>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19088" toLevel="4" name="Summon Siege Golem">
+		<!-- Summons a siege weapon. Requires $s1 R-grade Crystals. Automatically acquired by dwarves at level $s2. -->
+		<icon>icon.skill0013</icon>
+		<operateType>A1</operateType>
+		<mpConsume>530</mpConsume>
+		<hitTime>180000</hitTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>
+			<value level="1">85</value>
+			<value level="2">90</value>
+			<value level="3">95</value>
+			<value level="4">99</value>
+		</magicLvl>
+		<isMagic>2</isMagic>
+		<reuseDelay>7200000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CanSummonSiegeGolem" />
+			<condition name="CanSummon" />
+		</conditions>
+		<effects>
+			<effect name="Summon">
+				<npcId>
+					<value level="1">15054</value>
+					<value level="2">15055</value>
+					<value level="3">15056</value>
+					<value level="4">15057</value>
+				</npcId>
+				<npcCount>1</npcCount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19089" toLevel="4" name="Summon Wild Hog Cannon">
+		<!-- Summons a siege weapon. Can only move in normal mode. During siege mode, it cannot move, and it can inflict ranged attacks. Switching modes takes $s1. Requires $s2 R-grade Crystals. Automatically acquired by Maestro class at level $s3. -->
+		<icon>icon.skill0299</icon>
+		<operateType>A1</operateType>
+		<mpConsume>530</mpConsume>
+		<hitTime>30000</hitTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>
+			<value level="1">85</value>
+			<value level="2">90</value>
+			<value level="3">95</value>
+			<value level="4">99</value>
+		</magicLvl>
+		<isMagic>2</isMagic>
+		<reuseDelay>1200000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CanSummonSiegeGolem" />
+			<condition name="CanSummon" />
+		</conditions>
+		<effects>
+			<effect name="Summon">
+				<npcId>
+					<value level="1">15058</value>
+					<value level="2">15059</value>
+					<value level="3">15060</value>
+					<value level="4">15061</value>
+				</npcId>
+				<npcCount>1</npcCount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19090" toLevel="4" name="Summon Swoop Cannon">
+		<!-- Summons a Swoop Cannon. Requires $s1 R-grade Crystals. Automatically acquired by dwarves at level $s2. -->
+		<icon>icon.skill0448</icon>
+		<operateType>A1</operateType>
+		<mpConsume>530</mpConsume>
+		<hitTime>10000</hitTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>7.5</hitCancelTime>
+		<magicLvl>
+			<value level="1">85</value>
+			<value level="2">90</value>
+			<value level="3">95</value>
+			<value level="4">99</value>
+		</magicLvl>
+		<isMagic>2</isMagic>
+		<reuseDelay>7200000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CanSummonSiegeGolem" />
+			<condition name="CanSummon" />
+		</conditions>
+		<effects>
+			<effect name="Summon">
+				<npcId>
+					<value level="1">15062</value>
+					<value level="2">15063</value>
+					<value level="3">15064</value>
+					<value level="4">15065</value>
+				</npcId>
+				<npcCount>1</npcCount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19091" toLevel="1" name="Increase Item Drop Rate">
+		<!-- Increases Item Drop Rate upon PK. -->
+		<icon>icon.skill1170</icon>
+		<operateType>A2</operateType>
+		<mpConsume>1</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>2000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-700</effectPoint>
+		<abnormalType>PARALYZE</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<effectRange>1400</effectRange>
+		<lvlBonusRate>20</lvlBonusRate>
+		<activateRate>100</activateRate>
+		<magicLvl>99</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>1800</abnormalTime>
+		<trait>PARALYZE</trait>
+		<isDebuff>true</isDebuff>
+		<targetType>ENEMY_ONLY</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="19092" toLevel="2" name="Chat Prohibited">
+		<!-- Chatting is restricted. -->
+		<icon>
+			<value level="1">icon.skill1170</value>
+			<value level="2">icon.skill10313</value>
+		</icon>
+		<operateType>A2</operateType>
+		<mpConsume>
+			<value level="1">1</value>
+			<value level="2">2</value>
+		</mpConsume>
+		<castRange>
+			<value level="1">900</value>
+			<value level="2">-1</value>
+		</castRange>
+		<hitTime>
+			<value level="1">2000</value>
+			<value level="2">1500</value>
+		</hitTime>
+		<coolTime>
+			<value level="1">500</value>
+			<value level="2">0</value>
+		</coolTime>
+		<reuseDelay>
+			<value level="1">0</value>
+			<value level="2">150000</value>
+		</reuseDelay>
+		<isMagic>
+			<value level="1">0</value>
+			<value level="2">1</value>
+		</isMagic>
+		<effectPoint>
+			<value level="1">-700</value>
+			<value level="2">0</value>
+		</effectPoint>
+		<abnormalType>PARALYZE</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<effectRange>1400</effectRange>
+		<lvlBonusRate>20</lvlBonusRate>
+		<activateRate>100</activateRate>
+		<magicLvl>99</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>1800</abnormalTime>
+		<trait>PARALYZE</trait>
+		<isDebuff>
+			<value level="1">true</value>
+			<value level="2">false</value>
+		</isDebuff>
+		<targetType>ENEMY_ONLY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpCanEscape" />
+		</conditions>
+	</skill>
+	<skill id="19093" toLevel="1" name="Additional Hit Quiver">
+		<!-- Chance of inflicting damage again upon shooting. -->
+		<icon>icon.skill0256</icon>
+		<operateType>T</operateType>
+		<mpConsume>1</mpConsume>
+		<hitTime>500</hitTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>97</magicLvl>
+		<reuseDelay>30000</reuseDelay>
+		<targetType>NONE</targetType>
+	</skill>
+	<skill id="19094" toLevel="1" name="Increased Damage Quiver">
+		<!-- Great damage occurs if critical occurs while shooting. -->
+		<icon>icon.skill0256</icon>
+		<operateType>T</operateType>
+		<mpConsume>1</mpConsume>
+		<hitTime>500</hitTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>97</magicLvl>
+		<reuseDelay>30000</reuseDelay>
+		<targetType>NONE</targetType>
+	</skill>
+	<skill id="19095" toLevel="1" name="Added Bleed Quiver">
+		<!-- Chance of inflicting bleed if critical occurs while shooting. -->
+		<icon>icon.skill0256</icon>
+		<operateType>T</operateType>
+		<mpConsume>1</mpConsume>
+		<hitTime>500</hitTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>97</magicLvl>
+		<reuseDelay>30000</reuseDelay>
+		<targetType>NONE</targetType>
+	</skill>
+	<skill id="19096" toLevel="1" name="Additional Hit">
+		<icon>icon.skill0056</icon>
+		<operateType>A1</operateType>
+		<effectPoint>-2</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<effectRange>1500</effectRange>
+		<magicLvl>97</magicLvl>
+		<castRange>900</castRange>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="19097" toLevel="1" name="Critical Target">
+		<icon>icon.skill0056</icon>
+		<operateType>A1</operateType>
+		<castRange>900</castRange>
+		<effectPoint>-2</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<effectRange>1500</effectRange>
+		<magicLvl>97</magicLvl>
+		<reuseDelay>10000</reuseDelay>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="19098" toLevel="1" name="Bleed Target">
+		<!-- Consumes 100 HP per second for 15 sec. -->
+		<icon>icon.skill0096</icon>
+		<operateType>A2</operateType>
+		<castRange>900</castRange>
+		<reuseDelay>10000</reuseDelay>
+		<effectPoint>-2</effectPoint>
+		<abnormalType>BLEEDING</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<effectRange>1500</effectRange>
+		<activateRate>100</activateRate>
+		<magicLvl>97</magicLvl>
+		<abnormalLvl>3</abnormalLvl>
+		<abnormalTime>20</abnormalTime>
+		<trait>BLEED</trait>
+		<abnormalVisualEffect>DOT_BLEEDING</abnormalVisualEffect>
+		<isDebuff>true</isDebuff>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="19099" toLevel="1" name="GM's Authority">
+		<!-- Inflicts petrification on target for 60 min. -->
+		<icon>icon.skill0367</icon>
+		<operateType>A2</operateType>
+		<castRange>900</castRange>
+		<hitTime>500</hitTime>
+		<abnormalType>TURN_STONE</abnormalType>
+		<basicProperty>MAGIC</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>1100</effectRange>
+		<lvlBonusRate>30</lvlBonusRate>
+		<magicLvl>99</magicLvl>
+		<abnormalLvl>7</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<trait>TURN_STONE</trait>
+		<abnormalVisualEffect>FLESH_STONE</abnormalVisualEffect>
+		<isMagic>2</isMagic>
+		<isDebuff>true</isDebuff>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+</list>

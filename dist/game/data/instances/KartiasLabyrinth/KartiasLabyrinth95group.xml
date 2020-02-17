@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Kartia's Labyrinth 95 group -->
+<instance id="210" maxWorlds="10" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/instance.xsd">
+	<time duration="60" empty="0" />
+	<locations>
+		<enter type="FIXED">
+			<location x="-108951" y="-10443" z="-11920" />
+		</enter>
+		<exit type="ORIGIN" />
+	</locations>
+	<parameters>
+		<param name="firstDoorId" value="16170001" />
+		<param name="secondDoorId" value="16170002" />
+		<param name="thirdDoorId" value="16170003" />
+		<param name="route1_1" value="kartia_95_route_1_1" />
+		<param name="route2_1" value="kartia_95_route_2_1" />
+		<param name="route1_2" value="kartia_95_route_1_2" />
+		<param name="route2_2" value="kartia_95_route_2_2" />
+		<param name="route1_3" value="kartia_95_route_1_3" />
+		<param name="route2_3" value="kartia_95_route_2_3" />
+		<param name="helperSurvivor" value="33646" />
+		<location name="prisonerEscapeLoc" x="-108939" y="-10455" z="-11924" />
+		<location name="middlePointRoom1" x="-111274" y="-10455" z="-11685" />
+		<location name="middlePointRoom3" x="-111295" y="-14493" z="-11429" />
+		<location name="bossEscapeLoc1" x="-111286" y="-13172" z="-11568" />
+		<location name="bossEscapeLoc2" x="-111286" y="-13904" z="-11440" />
+		<location name="teleportZone1_loc" x="-110285" y="-10447" z="-11924" />
+		<location name="teleportZone2_loc" x="-111297" y="-11923" z="-11571" />
+		<location name="teleportZone3_loc" x="-111297" y="-14147" z="-11429" />
+	</parameters>
+	<conditions>
+		<condition type="Party" showMessageAndHtml="true">
+			<param name="html" value="33647-7.htm" />
+		</condition>
+		<condition type="PartyLeader" showMessageAndHtml="true">
+			<param name="html" value="33647-7.htm" />
+		</condition>
+		<condition type="GroupMin">
+			<param name="limit" value="2" />
+		</condition>
+		<condition type="GroupMax">
+			<param name="limit" value="7" />
+		</condition>
+		<condition type="Level" showMessageAndHtml="true">
+			<param name="min" value="95" />
+			<param name="html" value="33647-6.htm" />
+		</condition>
+		<condition type="Distance" showMessageAndHtml="true">
+			<param name="html" value="33647-8.htm" />
+		</condition>
+		<condition type="Reenter" showMessageAndHtml="true">
+			<param name="html" value="33647-8.htm" />
+		</condition>
+	</conditions>
+	<reenter apply="ON_FINISH">
+		<reset day="MONDAY" hour="6" minute="30" />
+		<reset day="TUESDAY" hour="6" minute="30" />
+		<reset day="WEDNESDAY" hour="6" minute="30" />
+		<reset day="THURSDAY" hour="6" minute="30" />
+		<reset day="FRIDAY" hour="6" minute="30" />
+		<reset day="SATURDAY" hour="6" minute="30" />
+		<reset day="SUNDAY" hour="6" minute="30" />
+	</reenter>
+	<doorlist>
+		<door id="16170001" />
+		<door id="16170002" />
+		<door id="16170003" />
+	</doorlist>
+	<spawnlist>
+		<group>
+			<npc id="25884" x="-111296" y="-15872" z="-11400" heading="15596" /> <!-- Kalios -->
+		</group>
+		<group name="PRISONERS" spawnByDefault="false">
+			<npc id="33645" x="-109986" y="-10367" z="-11680" heading="0" /> <!-- Kartia Prisoner -->
+			<npc id="33645" x="-109988" y="-10543" z="-11680" heading="0" /> <!-- Kartia Prisoner -->
+			<npc id="33645" x="-109953" y="-10580" z="-11680" heading="0" /> <!-- Kartia Prisoner -->
+			<npc id="33645" x="-109902" y="-10543" z="-11688" heading="0" /> <!-- Kartia Prisoner -->
+			<npc id="33645" x="-109987" y="-10423" z="-11680" heading="0" /> <!-- Kartia Prisoner -->
+			<npc id="33645" x="-109897" y="-10422" z="-11688" heading="0" /> <!-- Kartia Prisoner -->
+			<npc id="33645" x="-109987" y="-10484" z="-11680" heading="0" /> <!-- Kartia Prisoner -->
+			<npc id="33645" x="-109897" y="-10365" z="-11680" heading="0" /> <!-- Kartia Prisoner -->
+			<npc id="33645" x="-109898" y="-10484" z="-11688" heading="0" /> <!-- Kartia Prisoner -->
+			<npc id="33645" x="-109948" y="-10324" z="-11680" heading="0" /> <!-- Kartia Prisoner -->
+		</group>
+		<group name="ROOM1_STAGE1_WAVE1" spawnByDefault="false">
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+		</group>
+		<group name="ROOM1_STAGE1_WAVE2" spawnByDefault="false">
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+		</group>
+		<group name="ROOM1_STAGE1_WAVE3" spawnByDefault="false">
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+		</group>
+		<group name="ROOM1_STAGE2_WAVE1" spawnByDefault="false">
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+		</group>
+		<group name="ROOM1_STAGE2_WAVE2" spawnByDefault="false">
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19236" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Watchman -->
+		</group>
+		<group name="ROOM1_STAGE2_WAVE3" spawnByDefault="false">
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19236" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Watchman -->
+		</group>
+		<group name="ROOM1_STAGE3_WAVE1" spawnByDefault="false">
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+		</group>
+		<group name="ROOM1_STAGE3_WAVE2" spawnByDefault="false">
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19236" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Watchman -->
+		</group>
+		<group name="ROOM1_STAGE3_WAVE3" spawnByDefault="false">
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19236" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Watchman -->
+		</group>
+		<group name="ROOM1_STAGE4_WAVE1" spawnByDefault="false">
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+		</group>
+		<group name="ROOM1_STAGE4_WAVE2" spawnByDefault="false">
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19236" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Watchman -->
+		</group>
+		<group name="ROOM1_STAGE4_WAVE3" spawnByDefault="false">
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19236" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Watchman -->
+		</group>
+		<group name="ROOM1_STAGE5_WAVE1" spawnByDefault="false">
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19236" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Watchman -->
+		</group>
+		<group name="ROOM1_STAGE5_WAVE2" spawnByDefault="false">
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Guard -->
+			<npc id="19237" x="-111320" y="-11025" z="-11680" heading="32944" /> <!-- Kartia Dimensional Watchman -->
+			<npc id="18830" x="-109315" y="-10455" z="-11920" heading="32970" /> <!-- Boz' Energy -->
+		</group>
+		<group name="ROOM2_STAGE1_WAVE1" spawnByDefault="false">
+			<npc id="19235" x="-111688" y="-12693" z="-11568" heading="0" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111132" y="-12253" z="-11568" heading="20675" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111082" y="-12929" z="-11568" heading="43225" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111671" y="-12896" z="-11568" heading="35712" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111174" y="-12157" z="-11568" heading="63418" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111174" y="-13025" z="-11568" heading="15689" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111448" y="-13024" z="-11568" heading="0" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111682" y="-12340" z="-11568" heading="10352" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111571" y="-12522" z="-11568" heading="14784" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111112" y="-12557" z="-11568" heading="37215" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111356" y="-12401" z="-11568" heading="5301" /> <!-- Kartia Guard -->
+			<npc id="19236" x="-110880" y="-12923" z="-11568" heading="17557" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-111304" y="-12854" z="-11568" heading="64842" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-111187" y="-12690" z="-11568" heading="7864" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-110778" y="-12730" z="-11560" heading="61632" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-110871" y="-12321" z="-11568" heading="0" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-111445" y="-12343" z="-11568" heading="55177" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-111449" y="-12693" z="-11568" heading="0" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-111147" y="-12348" z="-11568" heading="0" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-111686" y="-13020" z="-11568" heading="0" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-111279" y="-12514" z="-11568" heading="51434" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-111455" y="-12372" z="-11568" heading="59476" /> <!-- Kartia Watchman -->
+			<npc id="19237" x="-111746" y="-12558" z="-11568" heading="53210" /> <!-- Kartia Dimensional Watchman -->
+		</group>
+		<group name="ROOM3_STAGE1_WAVE1" spawnByDefault="false">
+			<npc id="19235" x="-112086" y="-15790" z="-11416" heading="23356" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111302" y="-15706" z="-11400" heading="35688" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111988" y="-15370" z="-11424" heading="48099" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111988" y="-15762" z="-11416" heading="28547" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111400" y="-15874" z="-11400" heading="26454" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111890" y="-15650" z="-11416" heading="51235" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111204" y="-15566" z="-11416" heading="50367" /> <!-- Kartia Guard -->
+			<npc id="19236" x="-111008" y="-15846" z="-11400" heading="37675" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-112086" y="-15678" z="-11416" heading="24809" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-110910" y="-15454" z="-11416" heading="18802" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-111988" y="-15566" z="-11416" heading="30826" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-111792" y="-15454" z="-11416" heading="12896" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-110910" y="-15398" z="-11416" heading="49811" /> <!-- Kartia Watchman -->
+			<npc id="19235" x="-111400" y="-15426" z="-11416" heading="43461" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-110910" y="-15846" z="-11400" heading="55038" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-110616" y="-15538" z="-11416" heading="13822" /> <!-- Kartia Guard -->
+		</group>
+		<group name="ROOM3_STAGE2_WAVE1" spawnByDefault="false">
+			<npc id="19235" x="-110714" y="-15426" z="-11424" heading="25665" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111988" y="-15398" z="-11424" heading="37917" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111988" y="-15622" z="-11416" heading="34105" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111988" y="-15818" z="-11408" heading="47297" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111204" y="-15370" z="-11416" heading="40555" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111890" y="-15650" z="-11416" heading="36910" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-112086" y="-15566" z="-11416" heading="40516" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-110616" y="-15650" z="-11416" heading="44869" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-110910" y="-15426" z="-11416" heading="45278" /> <!-- Kartia Guard -->
+			<npc id="19236" x="-111008" y="-15902" z="-11400" heading="58723" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-111890" y="-15426" z="-11424" heading="23409" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-110616" y="-15510" z="-11424" heading="4207" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-111890" y="-15622" z="-11416" heading="61872" /> <!-- Kartia Watchman -->
+			<npc id="19235" x="-111890" y="-15594" z="-11416" heading="64931" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111204" y="-15538" z="-11416" heading="42531" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111204" y="-15762" z="-11400" heading="41512" /> <!-- Kartia Guard -->
+			<npc id="19236" x="-110910" y="-15622" z="-11416" heading="63971" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-111106" y="-15566" z="-11416" heading="3435" /> <!-- Kartia Watchman -->
+		</group>
+		<group name="ROOM3_STAGE3_WAVE1" spawnByDefault="false">
+			<npc id="19235" x="-111302" y="-15398" z="-11416" heading="29992" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111792" y="-15454" z="-11416" heading="49196" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111204" y="-15566" z="-11416" heading="7761" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111302" y="-15790" z="-11400" heading="15684" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111008" y="-15454" z="-11416" heading="42612" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-110518" y="-15454" z="-11416" heading="65138" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111694" y="-15398" z="-11416" heading="15872" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111400" y="-15846" z="-11400" heading="62101" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-110518" y="-15706" z="-11416" heading="23651" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111988" y="-15650" z="-11416" heading="7333" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-110714" y="-15370" z="-11424" heading="1540" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-110910" y="-15510" z="-11416" heading="9847" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111498" y="-15370" z="-11416" heading="27884" /> <!-- Kartia Guard -->
+			<npc id="19236" x="-111988" y="-15594" z="-11416" heading="33959" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-111008" y="-15902" z="-11400" heading="15706" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-111498" y="-15594" z="-11408" heading="18622" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-111988" y="-15790" z="-11416" heading="3371" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-110616" y="-15454" z="-11424" heading="13102" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-111988" y="-15482" z="-11424" heading="55299" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-111694" y="-15622" z="-11408" heading="53337" /> <!-- Kartia Watchman -->
+		</group>
+		<group name="ROOM3_STAGE4_WAVE1" spawnByDefault="false">
+			<npc id="19235" x="-111890" y="-15510" z="-11416" heading="1080" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-110616" y="-15426" z="-11424" heading="34823" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111106" y="-15650" z="-11408" heading="7941" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-110714" y="-15538" z="-11416" heading="60520" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111988" y="-15426" z="-11424" heading="1956" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111400" y="-15874" z="-11400" heading="6524" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111792" y="-15790" z="-11408" heading="55258" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111302" y="-15398" z="-11416" heading="51661" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111596" y="-15426" z="-11416" heading="42038" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-110910" y="-15538" z="-11416" heading="29817" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-110812" y="-15426" z="-11416" heading="30580" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-110812" y="-15482" z="-11416" heading="54703" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-110714" y="-15650" z="-11416" heading="36181" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111302" y="-15622" z="-11408" heading="36717" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111596" y="-15594" z="-11416" heading="5753" /> <!-- Kartia Guard -->
+			<npc id="19236" x="-111302" y="-15874" z="-11400" heading="20774" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-111204" y="-15790" z="-11400" heading="62798" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-111498" y="-15734" z="-11400" heading="7397" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-110518" y="-15790" z="-11416" heading="16086" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-111302" y="-15650" z="-11408" heading="64556" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-110518" y="-15678" z="-11416" heading="39320" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-111596" y="-15566" z="-11416" heading="438" /> <!-- Kartia Watchman -->
+		</group>
+		<group name="ROOM3_STAGE5_WAVE1" spawnByDefault="false">
+			<npc id="19235" x="-111008" y="-15538" z="-11416" heading="25775" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111302" y="-15566" z="-11408" heading="43909" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111302" y="-15426" z="-11416" heading="16067" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111596" y="-15650" z="-11408" heading="46516" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-110616" y="-15370" z="-11424" heading="49936" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111302" y="-15846" z="-11400" heading="59657" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-112086" y="-15566" z="-11416" heading="9711" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111400" y="-15454" z="-11416" heading="16040" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-110812" y="-15790" z="-11408" heading="18106" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-110910" y="-15566" z="-11416" heading="49989" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-111498" y="-15762" z="-11400" heading="30257" /> <!-- Kartia Guard -->
+			<npc id="19235" x="-110616" y="-15622" z="-11416" heading="5228" /> <!-- Kartia Guard -->
+			<npc id="19236" x="-111008" y="-15678" z="-11408" heading="12504" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-111694" y="-15398" z="-11416" heading="63320" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-110812" y="-15622" z="-11416" heading="4652" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-111596" y="-15426" z="-11416" heading="30171" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-111694" y="-15538" z="-11416" heading="16095" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-112086" y="-15762" z="-11416" heading="43351" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-110518" y="-15678" z="-11416" heading="53083" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-112184" y="-15734" z="-11416" heading="18739" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-112086" y="-15426" z="-11416" heading="5197" /> <!-- Kartia Watchman -->
+			<npc id="19236" x="-111792" y="-15594" z="-11416" heading="13986" /> <!-- Kartia Watchman -->
+		</group>
+	</spawnlist>
+</instance>

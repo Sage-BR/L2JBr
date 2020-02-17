@@ -1,0 +1,1172 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="23700" toLevel="1" name="Flame Thrower">
+		<!-- Inflicts great magic damage to enemies within range and burns them for 5 sec. -->
+		<icon>icon.skill1160</icon>
+		<operateType>A2</operateType>
+		<mpConsume>20</mpConsume>
+		<isMagic>1</isMagic>
+		<effectPoint>-100</effectPoint>
+		<isDebuff>true</isDebuff>
+	</skill>
+	<skill id="23701" toLevel="1" name="Contaminated Atelia Gas">
+		<!-- Contaminated gas spread throughout Atelia Fortress. Inflicts continuous damage and decreases Speed and Atk. Spd. -->
+		<icon>icon.skill11066</icon>
+		<operateType>A2</operateType>
+		<isMagic>4</isMagic>
+		<isDebuff>true</isDebuff>
+	</skill>
+	<skill id="23702" toLevel="1" name="Laceration">
+		<operateType>A1</operateType>
+		<effectPoint>100</effectPoint>
+		<hitTime>1000</hitTime>
+	</skill>
+	<skill id="23703" toLevel="1" name="Kelbim Battle Mode">
+		<operateType>A1</operateType>
+		<effectPoint>100</effectPoint>
+		<hitTime>1000</hitTime>
+	</skill>
+	<skill id="23704" toLevel="1" name="Kelbim Battle Mode">
+		<operateType>A1</operateType>
+		<effectPoint>100</effectPoint>
+		<hitTime>1000</hitTime>
+	</skill>
+	<skill id="23705" toLevel="1" name="Kelbim Battle Mode">
+		<operateType>A2</operateType>
+		<effectPoint>100</effectPoint>
+		<hitTime>1000</hitTime>
+	</skill>
+	<skill id="23706" toLevel="4" name="Dark Fire">
+		<!-- Deals great magic damage to a single target and decreases P./ M. Atk. by $s2 for $s1. -->
+		<icon>icon.skill4336_new</icon>
+		<operateType>A2</operateType>
+		<mpConsume>10</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>2000</hitTime>
+		<isMagic>1</isMagic>
+		<effectPoint>-200</effectPoint>
+		<abnormalLvl>
+			<value level="1">1</value>
+			<value level="2">2</value>
+			<value level="3">3</value>
+			<value level="4">4</value>
+		</abnormalLvl>
+		<abnormalTime>20</abnormalTime>
+		<activateRate>80</activateRate>
+		<abnormalType>PA_DOWN</abnormalType>
+		<isDebuff>true</isDebuff>
+		<basicProperty>MAGIC</basicProperty>
+		<effectRange>400</effectRange>
+		<magicLvl>1</magicLvl>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="MagicalAttack">
+				<power>
+					<value level="1">506</value> <!-- Fix: Retail Missed -->
+					<value level="2">518</value> <!-- Fix: Retail Missed -->
+					<value level="3">529</value> <!-- Fix: Retail Missed -->
+					<value level="4">553</value> <!-- Fix: Retail Missed -->
+				</power>
+				<overHit>true</overHit>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>
+					<value level="1">-25</value>
+					<value level="2">-35</value>
+					<value level="3">-50</value>
+					<value level="4">-60</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>
+					<value level="1">-25</value>
+					<value level="2">-35</value>
+					<value level="3">-50</value>
+					<value level="4">-60</value>		
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="23707" toLevel="4" name="Chaos Fire">
+		<!-- Deals great magic damage to a single target and decreases P./ M. Def. by $s2 for $s1. -->
+		<icon>icon.skill4336_new</icon>
+		<operateType>A2</operateType>
+		<mpConsume>10</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>2000</hitTime>
+		<isMagic>1</isMagic>
+		<effectPoint>-200</effectPoint>
+		<abnormalLvl>
+			<value level="1">1</value>
+			<value level="2">2</value>
+			<value level="3">3</value>
+			<value level="4">4</value>
+		</abnormalLvl>
+		<abnormalTime>20</abnormalTime>
+		<activateRate>80</activateRate>
+		<abnormalType>PD_DOWN</abnormalType>
+		<isDebuff>true</isDebuff>
+		<basicProperty>MAGIC</basicProperty>
+		<effectRange>400</effectRange>
+		<magicLvl>1</magicLvl>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="MagicalAttack">
+				<power>
+					<value level="1">506</value> <!-- Fix: Retail Missed -->
+					<value level="2">518</value> <!-- Fix: Retail Missed -->
+					<value level="3">529</value> <!-- Fix: Retail Missed -->
+					<value level="4">553</value> <!-- Fix: Retail Missed -->
+				</power>
+				<overHit>true</overHit>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>
+					<value level="1">-25</value>
+					<value level="2">-35</value>
+					<value level="3">-50</value>
+					<value level="4">-60</value>		
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>
+					<value level="1">-25</value>
+					<value level="2">-35</value>
+					<value level="3">-50</value>
+					<value level="4">-60</value>			
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="23708" toLevel="4" name="Dark Breaker">
+		<!-- Deals great damage to a single target and decreases P./ M. Atk. by $s2 for $s1. -->
+		<icon>icon.skill1443</icon>
+		<operateType>A2</operateType>
+		<mpConsume>10</mpConsume>
+		<castRange>450</castRange>
+		<hitTime>2500</hitTime>
+		<reuseDelay>10000</reuseDelay>
+		<isMagic>1</isMagic>
+		<effectPoint>-200</effectPoint>
+		<abnormalLvl>
+			<value level="1">1</value>
+			<value level="2">2</value>
+			<value level="3">3</value>
+			<value level="4">4</value>
+		</abnormalLvl>
+		<abnormalTime>20</abnormalTime>
+		<activateRate>80</activateRate>
+		<abnormalType>PA_DOWN</abnormalType>
+		<isDebuff>true</isDebuff>
+		<basicProperty>MAGIC</basicProperty>
+		<effectRange>400</effectRange>
+		<magicLvl>1</magicLvl>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>
+					<value level="1">26082</value> <!-- Fix: Retail Missed -->
+					<value level="2">27458</value> <!-- Fix: Retail Missed -->
+					<value level="3">28833</value> <!-- Fix: Retail Missed -->
+					<value level="4">31628</value> <!-- Fix: Retail Missed -->
+				</power>
+				<overHit>true</overHit>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>
+					<value level="1">-25</value>
+					<value level="2">-35</value>
+					<value level="3">-50</value>
+					<value level="4">-60</value>		
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>
+					<value level="1">-25</value>
+					<value level="2">-35</value>
+					<value level="3">-50</value>
+					<value level="4">-60</value>			
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="23709" toLevel="4" name="Chaos Breaker">
+		<!-- Deals great damage to a single target and decreases P./ M. Def. by $s2 for $s1. -->
+		<icon>icon.skill1443</icon>
+		<operateType>A2</operateType>
+		<mpConsume>10</mpConsume>
+		<castRange>450</castRange>
+		<hitTime>2500</hitTime>
+		<reuseDelay>10000</reuseDelay>
+		<isMagic>1</isMagic>
+		<effectPoint>-200</effectPoint>
+		<abnormalLvl>
+			<value level="1">1</value>
+			<value level="2">2</value>
+			<value level="3">3</value>
+			<value level="4">4</value>
+		</abnormalLvl>
+		<abnormalTime>20</abnormalTime>
+		<activateRate>80</activateRate>
+		<abnormalType>PA_DOWN</abnormalType>
+		<isDebuff>true</isDebuff>
+		<basicProperty>MAGIC</basicProperty>
+		<effectRange>400</effectRange>
+		<magicLvl>1</magicLvl>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>
+					<value level="1">26082</value> <!-- Fix: Retail Missed -->
+					<value level="2">27458</value> <!-- Fix: Retail Missed -->
+					<value level="3">28833</value> <!-- Fix: Retail Missed -->
+					<value level="4">31628</value> <!-- Fix: Retail Missed -->
+				</power>
+				<overHit>true</overHit>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>
+					<value level="1">-25</value>
+					<value level="2">-35</value>
+					<value level="3">-50</value>
+					<value level="4">-60</value>			
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>
+					<value level="1">-25</value>
+					<value level="2">-35</value>
+					<value level="3">-50</value>
+					<value level="4">-60</value>			
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="23710" toLevel="1" name="Atelia Buff Check">
+		<operateType>A1</operateType>
+		<effectPoint>100</effectPoint>
+	</skill>
+	<skill id="23711" toLevel="1" name="Atelia Buff Check">
+		<operateType>A1</operateType>
+		<effectPoint>100</effectPoint>
+	</skill>
+	<skill id="23712" toLevel="1" name="Atelia Buff Check">
+		<operateType>A1</operateType>
+		<effectPoint>100</effectPoint>
+	</skill>
+	<skill id="23713" toLevel="1" name="Atelia Buff Check">
+		<operateType>A1</operateType>
+		<effectPoint>100</effectPoint>
+	</skill>
+	<skill id="23714" toLevel="1" name="Water Drop Shackle - Silence">
+		<!-- Blocks all physical/ magic skills for 10 sec. -->
+		<icon>icon.skill1064</icon>
+		<operateType>A2</operateType>
+		<isMagic>1</isMagic>
+		<isDebuff>true</isDebuff>
+	</skill>
+	<skill id="23715" toLevel="2" name="Power Strike">
+		<operateType>A1</operateType>
+		<castRange>
+			<value level="1">40</value>
+			<value level="2">100</value>
+		</castRange>
+		<effectPoint>-100</effectPoint>
+		<hitTime>1500</hitTime>
+		<coolTime>720</coolTime>
+		<reuseDelay>10000</reuseDelay>
+		<effectPoint>-111</effectPoint>
+		<isDebuff>true</isDebuff>
+		<basicProperty>PHYSICAL</basicProperty>
+		<effectRange>400</effectRange>
+		<magicLvl>1</magicLvl>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>
+					<value level="1">28833</value> <!-- Fix: Retail Missed -->
+					<value level="2">31628</value> <!-- Fix: Retail Missed -->
+				</power>
+				<overHit>true</overHit>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="23716" toLevel="2" name="Power Smash">
+		<operateType>A1</operateType>
+		<castRange>
+			<value level="1">40</value>
+			<value level="2">100</value>
+		</castRange>
+		<effectPoint>-2</effectPoint>
+		<hitTime>1500</hitTime>
+		<castRange>300</castRange>
+		<coolTime>720</coolTime>
+		<reuseDelay>10000</reuseDelay>
+		<effectPoint>-111</effectPoint>
+		<isDebuff>true</isDebuff>
+		<basicProperty>MAGIC</basicProperty>
+		<effectRange>400</effectRange>
+		<magicLvl>1</magicLvl>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="MagicalAttack">
+				<power>
+					<value level="1">518</value> <!-- Fix: Retail Missed -->
+					<value level="2">529</value> <!-- Fix: Retail Missed -->
+				</power>
+				<overHit>true</overHit>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="23717" toLevel="5" name="Pollen Spray">
+		<!-- Leaves a mark to the killer when dying.. -->
+		<icon>icon.etc_powder_orange_i00</icon>
+		<operateType>A2</operateType>
+		<castRange>1500</castRange>
+		<isMagic>1</isMagic>
+		<effectPoint>-100</effectPoint>
+		<isDebuff>true</isDebuff>
+	</skill>
+	<skill id="23718" toLevel="1" name="Dust Spray">
+		<!-- Sprays dust to enemies, dealing immediate damage, and inflicting continuous damage. -->
+		<icon>icon.skill4036</icon>
+		<operateType>A2</operateType>
+		<castRange>900</castRange>
+		<hitTime>1500</hitTime>
+		<isMagic>1</isMagic>
+		<effectPoint>-100</effectPoint>
+		<isDebuff>true</isDebuff>
+	</skill>
+	<skill id="23719" toLevel="1" name="Rose Scent Spray">
+		<!-- Seduces enemies, pulling them closer. -->
+		<icon>icon.etc_red_rose_i00</icon>
+		<operateType>A2</operateType>
+		<castRange>900</castRange>
+		<hitTime>1500</hitTime>
+		<isMagic>1</isMagic>
+		<effectPoint>-1371</effectPoint>
+		<isDebuff>true</isDebuff>
+	</skill>
+	<skill id="23720" toLevel="1" name="Lily Scent Spray">
+		<!-- Confuses enemies and immobilizes them. -->
+		<icon>icon.etc_flower_i00</icon>
+		<operateType>A2</operateType>
+		<castRange>900</castRange>
+		<hitTime>1500</hitTime>
+		<isMagic>1</isMagic>
+		<effectPoint>-100</effectPoint>
+		<isDebuff>true</isDebuff>
+	</skill>
+	<skill id="23721" toLevel="1" name="Tulip Scent Spray">
+		<!-- Seduces enemies with the scent and prevents them from using any skills. -->
+		<icon>icon.etc_flower_i02</icon>
+		<operateType>A2</operateType>
+		<castRange>900</castRange>
+		<hitTime>1500</hitTime>
+		<isMagic>1</isMagic>
+		<effectPoint>-100</effectPoint>
+		<isDebuff>true</isDebuff>
+		<reuseDelay>10000</reuseDelay>
+		<affectLimit>5-10</affectLimit>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>10</abnormalTime> <!-- Fix: Retail Missed -->
+		<abnormalType>SILENCE</abnormalType>
+		<abnormalVisualEffect>SILENCE</abnormalVisualEffect>
+		<activateRate>80</activateRate>
+		<basicProperty>MAGIC</basicProperty>
+		<effectRange>1100</effectRange>
+		<magicLvl>1</magicLvl>
+		<magicCriticalRate>5</magicCriticalRate>
+		<trait>DERANGEMENT</trait>
+		<fanRange>0;0;600;600</fanRange>
+		<targetType>ENEMY</targetType>
+		<affectScope>FAN</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<effects>
+			<effect name="Mute" />
+			<effect name="PhysicalMute" />
+		</effects>
+	</skill>
+	<skill id="23722" toLevel="1" name="Cosmos Scent Spray">
+		<!-- Binds enemies and immobilizes them. -->
+		<icon>icon.etc_flower_i01</icon>
+		<operateType>A2</operateType>
+		<castRange>900</castRange>
+		<hitTime>1500</hitTime>
+		<isMagic>1</isMagic>
+		<effectPoint>-100</effectPoint>
+		<isDebuff>true</isDebuff>
+	</skill>
+	<skill id="23723" toLevel="1" name="Guardian Knock Down">
+		<!-- Pushes oncoming attackers and makes them fall. -->
+		<operateType>A2</operateType>
+		<castRange>150</castRange>
+		<hitTime>1000</hitTime>
+		<effectPoint>-100</effectPoint>
+		<isDebuff>true</isDebuff>
+		<reuseDelay>10000</reuseDelay>
+		<effectPoint>-1</effectPoint>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>5</abnormalTime>
+		<affectLimit>5-10</affectLimit>
+		<abnormalType>KNOCKDOWN</abnormalType>
+		<abnormalVisualEffect>KNOCKDOWN</abnormalVisualEffect>
+		<activateRate>80</activateRate>
+		<affectRange>600</affectRange>
+		<basicProperty>PHYSICAL</basicProperty>
+		<effectRange>800</effectRange>
+		<fanRange>0;0;600;60</fanRange>
+		<magicLvl>1</magicLvl>
+		<trait>KNOCKDOWN</trait>
+		<targetType>ENEMY</targetType>
+		<affectScope>FAN</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<effects>
+			<effect name="KnockBack">
+				<speed>200</speed>
+				<distance>100</distance>
+				<knockDown>true</knockDown>
+			</effect>
+			<effect name="TargetCancel">
+				<chance>40</chance>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="23724" toLevel="1" name="Nymph's Fury">
+		<operateType>A1</operateType>
+		<castRange>150</castRange>
+		<effectPoint>-100</effectPoint>
+		<hitTime>5000</hitTime>
+	</skill>
+	<skill id="23725" toLevel="1" name="Enchanted Valley Teleport">
+		<operateType>A1</operateType>
+		<hitTime>1000</hitTime>
+	</skill>
+	<skill id="23726" toLevel="1" name="Strong Flower Scent">
+		<!-- Affected by the strong scent left by a dying Nymph Guardian. You can feel your power increasing. -->
+		<icon>icon.skill19014</icon>
+		<operateType>A2</operateType>
+		<castRange>1500</castRange>
+		<effectPoint>696</effectPoint>
+		<isMagic>1</isMagic>
+	</skill>
+	<skill id="23727" toLevel="1" name="Birthday Cake Vitality Buff">
+		<icon>BranchSys.icon.br_birthday_cake_i00</icon>
+		<operateType>A1</operateType>
+		<castRange>500</castRange>
+		<effectPoint>1</effectPoint>
+		<isMagic>4</isMagic>
+	</skill>
+	<skill id="23728" toLevel="1" name="Superior Aggression Aura">
+		<!-- Provokes nearby enemies into attacking you. -->
+		<icon>icon.skill10027</icon>
+		<operateType>A2</operateType>
+		<hitTime>1000</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>10000</reuseDelay>
+		<effectPoint>-10330</effectPoint>
+		<isDebuff>true</isDebuff>
+	</skill>
+	<skill id="23729" toLevel="1" name="Mass Lightning Strike">
+		<!-- Strikes target and nearby enemies with a lightning bolt that inflicts non-attribute damage with 11997 Power. Paralyzes for 5 sec. Consumes 1 Soulstone. -->
+		<icon>icon.skll10094</icon>
+		<operateType>A2</operateType>
+		<mpConsume>1</mpConsume>
+		<castRange>400</castRange>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>60000</reuseDelay>
+		<effectPoint>-828</effectPoint>
+		<isDebuff>true</isDebuff>
+	</skill>
+	<skill id="23730" toLevel="1" name="Chain Galaxy">
+		<!-- Attacks nearby targets. Healing Power received -90%. -->
+		<icon>icon.skill10014</icon>
+		<operateType>A2</operateType>
+		<mpConsume>1</mpConsume>
+		<hitTime>1700</hitTime>
+		<coolTime>370</coolTime>
+		<reuseDelay>10000</reuseDelay>
+		<effectPoint>-1378</effectPoint>
+		<isDebuff>true</isDebuff>
+	</skill>
+	<skill id="23731" toLevel="1" name="Chain Hydra">
+		<!-- Pulls target and nearby enemies to make them attack you. -->
+		<icon>icon.skill10016</icon>
+		<operateType>A2</operateType>
+		<mpConsume>1</mpConsume>
+		<castRange>600</castRange>
+		<hitTime>500</hitTime>
+		<coolTime>1000</coolTime>
+		<reuseDelay>45000</reuseDelay>
+		<effectPoint>-2093</effectPoint>
+		<isDebuff>true</isDebuff>
+	</skill>
+	<skill id="23732" toLevel="1" name="Shield Wave">
+		<!-- Attacks the targets near you and inflicts Stun for 9 sec. -->
+		<icon>icon.skill10012</icon>
+		<operateType>A2</operateType>
+		<mpConsume>1</mpConsume>
+		<castRange>40</castRange>
+		<hitTime>1000</hitTime>
+		<coolTime>470</coolTime>
+		<reuseDelay>60000</reuseDelay>
+		<effectPoint>-1378</effectPoint>
+		<isDebuff>true</isDebuff>
+	</skill>
+	<skill id="23733" toLevel="1" name="Armor Destruction">
+		<!-- Attacks target and weakens P. Def. Over-hit. Critical. -->
+		<icon>icon.skill10258</icon>
+		<operateType>A2</operateType>
+		<mpConsume>1</mpConsume>
+		<castRange>40</castRange>
+		<hitTime>1090</hitTime>
+		<coolTime>200</coolTime>
+		<reuseDelay>2000</reuseDelay>
+		<effectPoint>-687</effectPoint>
+		<isDebuff>true</isDebuff>
+	</skill>
+	<skill id="23734" toLevel="1" name="Lightning Disarm">
+		<!-- Disarms nearby enemies for 5 sec. Lowers P. Atk. and M. Atk. by 10%. -->
+		<icon>icon.skill10273</icon>
+		<operateType>A2</operateType>
+		<trait>DISARM</trait>
+		<mpConsume>1</mpConsume>
+		<hitTime>1200</hitTime>
+		<coolTime>300</coolTime>
+		<reuseDelay>120000</reuseDelay>
+		<effectPoint>-707</effectPoint>
+		<isDebuff>true</isDebuff>
+	</skill>
+	<skill id="23735" toLevel="1" name="Sonic Star">
+		<!-- Attacks and knocks down nearby enemies at the speed of light. Over-hit. Critical. -->
+		<icon>icon.skill10281</icon>
+		<operateType>A2</operateType>
+		<mpConsume>1</mpConsume>
+		<hitTime>7500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>30000</reuseDelay>
+		<effectPoint>-700</effectPoint>
+		<isDebuff>true</isDebuff>
+	</skill>
+	<skill id="23736" toLevel="1" name="Jump Attack">
+		<!-- Jumps to attack frontal enemies and decreases their Speed by 180 for 5 sec. Over-hit. Critical. -->
+		<icon>icon.skill10269</icon>
+		<operateType>A1</operateType>
+		<mpConsume>1</mpConsume>
+		<castRange>600</castRange>
+		<hitTime>890</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>5000</reuseDelay>
+		<effectPoint>-711</effectPoint>
+		<isDebuff>true</isDebuff>
+	</skill>
+	<skill id="23737" toLevel="1" name="Power Revival">
+		<!-- Recovers all of your HP. -->
+		<icon>icon.skill10298</icon>
+		<operateType>A1</operateType>
+		<mpConsume>1</mpConsume>
+		<hitTime>200</hitTime>
+		<effectPoint>707</effectPoint>
+		<reuseDelay>600000</reuseDelay>
+	</skill>
+	<skill id="23738" toLevel="1" name="Power Bluff">
+		<!-- Makes your enemy show its back and inflicts Bluff for 3 sec. -->
+		<icon>icon.skill10554</icon>
+		<operateType>A2</operateType>
+		<mpConsume>1</mpConsume>
+		<castRange>40</castRange>
+		<hitTime>1000</hitTime>
+		<reuseDelay>8000</reuseDelay>
+		<effectPoint>-1</effectPoint>
+		<isDebuff>true</isDebuff>
+	</skill>
+	<skill id="23739" toLevel="1" name="Heart Breaker">
+		<!-- Stabs target's heart with 29472 Power added to P. Atk. to inflict a powerful vital spot attack. Increases Spd. +40, Evasion +5, and Rear Critical Damage +30%. Over-hit. Critical hit. Half-kill. -->
+		<icon>icon.skill10509</icon>
+		<operateType>A2</operateType>
+		<mpConsume>1</mpConsume>
+		<castRange>40</castRange>
+		<hitTime>1030</hitTime>
+		<coolTime>700</coolTime>
+		<effectPoint>-708</effectPoint>
+		<reuseDelay>5000</reuseDelay>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>5</abnormalTime>
+		<abnormalType>SPEED_UP_SPECIAL</abnormalType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="CriticalDamagePosition">
+				<amount>30</amount>
+				<mode>PER</mode>
+				<position>BACK</position>
+			</effect>
+			<effect name="Speed">
+				<amount>40</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="PhysicalEvasion">
+				<amount>5</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="23740" toLevel="1" name="Final Ultimate Evasion">
+		<!-- For 30 sec., increases P. Evasion by 70, M. Evasion by 80, M. Def. by 20%, P. Skill Evasion Rate by 60% and Debuff Resistance. Has a 40% chance of canceling the enemy's targeting when attacked. -->
+		<icon>icon.skill10520</icon>
+		<operateType>A2</operateType>
+		<mpConsume>1</mpConsume>
+		<hitTime>800</hitTime>
+		<coolTime>100</coolTime>
+		<effectPoint>707</effectPoint>
+		<reuseDelay>600000</reuseDelay>
+	</skill>
+	<skill id="23741" toLevel="1" name="Razor Rain">
+		<!-- Calls down a rain of blades to attack nearby enemies and inflicts Bleed. Requires a dagger or dual dagger. Over-hit. Critical hit. -->
+		<icon>icon.skill10513</icon>
+		<operateType>A2</operateType>
+		<mpConsume>1</mpConsume>
+		<hitTime>1530</hitTime>
+		<coolTime>200</coolTime>
+		<reuseDelay>10000</reuseDelay>
+		<effectPoint>-710</effectPoint>
+		<isDebuff>true</isDebuff>
+		<conditions>
+			<condition name="EquipWeapon">
+				<weaponType>
+					<item>DAGGER</item>
+					<item>DUALDAGGER</item>
+					<item>DAGGER</item>
+					<item>DUALDAGGER</item>
+				</weaponType>
+			</condition>
+		</conditions>
+	</skill>
+	<skill id="23742" toLevel="1" name="Mass Trick">
+		<!-- Cancels target of frontal enemies. Eliminates their aggression and prevent them from targeting anything for 3 sec. -->
+		<icon>icon.skill10527</icon>
+		<operateType>A2</operateType>
+		<mpConsume>1</mpConsume>
+		<castRange>400</castRange>
+		<hitTime>1200</hitTime>
+		<coolTime>300</coolTime>
+		<reuseDelay>60000</reuseDelay>
+		<effectPoint>-709</effectPoint>
+		<isDebuff>true</isDebuff>
+	</skill>
+	<skill id="23743" toLevel="1" name="Mass Bullseye">
+		<!-- Decreases target's and nearby enemies' Bow/ Crossbow Resistance by 60% and M. Def. by 25%. -->
+		<icon>icon.skill10782</icon>
+		<operateType>A2</operateType>
+		<mpConsume>1</mpConsume>
+		<castRange>1100</castRange>
+		<hitTime>3000</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>180000</reuseDelay>
+		<effectPoint>-714</effectPoint>
+		<isDebuff>true</isDebuff>
+	</skill>
+	<skill id="23744" toLevel="1" name="Multiple Arrow">
+		<!-- Attacks frontal enemies. Over-hit. Critical. -->
+		<icon>icon.skill10771</icon>
+		<operateType>A1</operateType>
+		<mpConsume>1</mpConsume>
+		<castRange>1100</castRange>
+		<hitTime>2900</hitTime>
+		<coolTime>350</coolTime>
+		<effectPoint>-711</effectPoint>
+		<reuseDelay>7000</reuseDelay>
+	</skill>
+	<skill id="23745" toLevel="1" name="Impact Shot">
+		<!-- Fires an arrow at the enemy. Stuns the enemy for 5 sec. Over-hit. -->
+		<icon>icon.skill10769</icon>
+		<operateType>A2</operateType>
+		<mpConsume>1</mpConsume>
+		<castRange>1100</castRange>
+		<hitTime>2200</hitTime>
+		<coolTime>350</coolTime>
+		<reuseDelay>10000</reuseDelay>
+		<effectPoint>-707</effectPoint>
+		<isDebuff>true</isDebuff>
+	</skill>
+	<skill id="23746" toLevel="1" name="Quick Evasion">
+		<!-- Momentarily teleports 400 backward. -->
+		<icon>icon.skill10774</icon>
+		<operateType>A1</operateType>
+		<mpConsume>1</mpConsume>
+		<castRange>400</castRange>
+		<hitTime>700</hitTime>
+		<reuseDelay>15000</reuseDelay>
+		<effectPoint>2</effectPoint>
+		<isDebuff>true</isDebuff>
+	</skill>
+	<skill id="23747" toLevel="1" name="Tornado Shot">
+		<!-- Attacks target with piercing power. Requires a bow or crossbow to be equipped. Over-hit. Critical. -->
+		<icon>icon.skill10760</icon>
+		<operateType>A1</operateType>
+		<mpConsume>1</mpConsume>
+		<castRange>1100</castRange>
+		<hitTime>2200</hitTime>
+		<coolTime>350</coolTime>
+		<effectPoint>-710</effectPoint>
+		<reuseDelay>7000</reuseDelay>
+		<conditions>
+			<condition name="EquipWeapon">
+				<weaponType>
+					<item>BOW</item>
+					<item>CROSSBOW</item>
+					<item>TWOHANDCROSSBOW</item>
+				</weaponType>
+			</condition>
+		</conditions>
+	</skill>
+	<skill id="23748" toLevel="1" name="Elemental Destruction">
+		<!-- Inflicts a magic attack imbued with elemental properties. Over-hit. -->
+		<icon>icon.skill11023</icon>
+		<operateType>A1</operateType>
+		<mpConsume>2</mpConsume>
+		<castRange>1100</castRange>
+		<hitTime>3000</hitTime>
+		<coolTime>1000</coolTime>
+		<reuseDelay>6700</reuseDelay>
+		<effectPoint>-709</effectPoint>
+		<isMagic>1</isMagic>
+	</skill>
+	<skill id="23749" toLevel="1" name="Elemental Storm">
+		<!-- Inflicts a magic attack imbued with elemental properties on target and surrounding enemies. Over-hit. -->
+		<icon>icon.skill11040</icon>
+		<operateType>A1</operateType>
+		<mpConsume>2</mpConsume>
+		<castRange>1100</castRange>
+		<hitTime>2000</hitTime>
+		<coolTime>300</coolTime>
+		<reuseDelay>6700</reuseDelay>
+		<effectPoint>-712</effectPoint>
+		<isMagic>1</isMagic>
+	</skill>
+	<skill id="23750" toLevel="1" name="Mass Hell Binding">
+		<!-- Immobilizes target and nearby enemies midair for 9 sec. and inflicts 100 damage per second. -->
+		<icon>icon.skill11052</icon>
+		<operateType>A1</operateType>
+		<mpConsume>2</mpConsume>
+		<castRange>1100</castRange>
+		<hitTime>7000</hitTime>
+		<reuseDelay>300000</reuseDelay>
+		<effectPoint>-707</effectPoint>
+		<isDebuff>true</isDebuff>
+	</skill>
+	<skill id="23751" toLevel="1" name="Mass Death Fear">
+		<!-- For 10 sec., inflicts Fear on target and nearby enemies and decreases Speed by 55%. -->
+		<icon>icon.skill11056</icon>
+		<operateType>A2</operateType>
+		<mpConsume>2</mpConsume>
+		<castRange>1100</castRange>
+		<hitTime>1200</hitTime>
+		<coolTime>300</coolTime>
+		<reuseDelay>120000</reuseDelay>
+		<isMagic>1</isMagic>
+		<effectPoint>-705</effectPoint>
+		<isDebuff>true</isDebuff>
+	</skill>
+	<skill id="23752" toLevel="1" name="Magical Charge">
+		<!-- Attacks nearby enemies inflicting Stun and canceling their targets. Teleports you to the front. -->
+		<icon>icon.skill11094</icon>
+		<operateType>A2</operateType>
+		<mpConsume>2</mpConsume>
+		<hitTime>800</hitTime>
+		<coolTime>200</coolTime>
+		<reuseDelay>15000</reuseDelay>
+		<isMagic>1</isMagic>
+		<effectPoint>-709</effectPoint>
+		<isDebuff>true</isDebuff>
+	</skill>
+	<skill id="23753" toLevel="1" name="Battle Rhapsody">
+		<!-- For 30 sec., doubles all party members' P. Atk., M. Atk., Atk. Spd. and Casting Spd. -->
+		<icon>icon.skill11544</icon>
+		<operateType>A2</operateType>
+		<mpConsume>2</mpConsume>
+		<hitTime>3000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>687</effectPoint>
+		<reuseDelay>600000</reuseDelay>
+		<abnormalType>RHAPSODY</abnormalType>
+	</skill>
+	<skill id="23754" toLevel="1" name="Mass Crippling Attack">
+		<!-- Attacks target and nearby enemies and decreases target's P./ M. Def. by 40% and P. Evasion by 15 for 20 sec. Over-hit. Critical. -->
+		<icon>icon.skill11513</icon>
+		<operateType>A2</operateType>
+		<mpConsume>1</mpConsume>
+		<castRange>40</castRange>
+		<hitTime>1210</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>10000</reuseDelay>
+		<effectPoint>-712</effectPoint>
+		<isDebuff>true</isDebuff>
+	</skill>
+	<skill id="23755" toLevel="1" name="Polymorph">
+		<!-- Transforms yourself into a stone for 15 sec. to eliminate nearby enemies' aggression and keep them from targeting you. Greatly decreases Speed while transformed. -->
+		<icon>icon.skill11541</icon>
+		<operateType>A2</operateType>
+		<mpConsume>2</mpConsume>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>5000</reuseDelay>
+		<effectPoint>-687</effectPoint>
+		<isMagic>1</isMagic>
+	</skill>
+	<skill id="23756" toLevel="1" name="Assault Rush">
+		<!-- Charges toward the enemy to inflict Stun for 1 sec. -->
+		<icon>icon.skill11508</icon>
+		<operateType>A2</operateType>
+		<mpConsume>1</mpConsume>
+		<castRange>600</castRange>
+		<hitTime>800</hitTime>
+		<coolTime>200</coolTime>
+		<reuseDelay>10000</reuseDelay>
+		<effectPoint>-712</effectPoint>
+		<isDebuff>true</isDebuff>
+	</skill>
+	<skill id="23757" toLevel="1" name="Ultimate Suspension">
+		<!-- Increases nearby enemies' physical/ magic skill Cooldown by 200% for 2 min. -->
+		<icon>icon.skill11559</icon>
+		<operateType>A2</operateType>
+		<mpConsume>2</mpConsume>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<reuseDelay>10000</reuseDelay>
+		<isMagic>1</isMagic>
+		<effectPoint>-457</effectPoint>
+		<isDebuff>true</isDebuff>
+	</skill>
+	<skill id="23758" toLevel="1" name="Summon Demonic Crucifix">
+		<!-- Summons a Demonic Crucifix and inflicts damage to target and nearby enemies. Casts a curse that decreases target's Atk./ Casting Spd. by 30% and Speed by 180. Consumes 3 Spirit Ore. -->
+		<icon>icon.skill11365</icon>
+		<operateType>A2</operateType>
+		<mpConsume>2</mpConsume>
+		<castRange>600</castRange>
+		<hitTime>2500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>60000</reuseDelay>
+		<isMagic>1</isMagic>
+		<effectPoint>-700</effectPoint>
+		<isDebuff>true</isDebuff>
+	</skill>
+	<skill id="23759" toLevel="1" name="Mass Exile">
+		<!-- Banishes enemies near target into another dimension. They become immobile and invincible against debuffs, skills, and standard attacks, and lose 282 HP/ second. -->
+		<icon>icon.skill11296</icon>
+		<operateType>A2</operateType>
+		<trait>DEPORT</trait>
+		<mpConsume>2</mpConsume>
+		<castRange>600</castRange>
+		<hitTime>3000</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>300000</reuseDelay>
+		<isMagic>1</isMagic>
+		<effectPoint>-687</effectPoint>
+		<isDebuff>true</isDebuff>
+	</skill>
+	<skill id="23760" toLevel="1" name="Spectral Rage">
+		<!-- Use Spectral Wrath to inflict severe damage on a target. -->
+		<icon>icon.skill11356</icon>
+		<operateType>A1</operateType>
+		<mpConsume>2</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>2780</hitTime>
+		<coolTime>300</coolTime>
+		<reuseDelay>2400</reuseDelay>
+		<effectPoint>-700</effectPoint>
+		<isMagic>1</isMagic>
+	</skill>
+	<skill id="23761" toLevel="1" name="Invoke">
+		<!-- Calls forth the fist of a Giant from the outer world to inflict powerful damage on target and nearby enemies. -->
+		<icon>icon.skill11263</icon>
+		<operateType>A1</operateType>
+		<mpConsume>2</mpConsume>
+		<castRange>600</castRange>
+		<hitTime>2560</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>15000</reuseDelay>
+		<effectPoint>-700</effectPoint>
+		<isMagic>1</isMagic>
+	</skill>
+	<skill id="23762" toLevel="1" name="Mark of Weakness">
+		<!-- Weakens target for 10 sec. Decreases 326 HP per second, P. Def. by 30%, M. Def. by 30%, and Debuff Resistance by 30%. -->
+		<icon>icon.skill11259</icon>
+		<operateType>A2</operateType>
+		<mpConsume>2</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>1200</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>5000</reuseDelay>
+		<isMagic>1</isMagic>
+		<effectPoint>-687</effectPoint>
+		<isDebuff>true</isDebuff>
+	</skill>
+	<skill id="23763" toLevel="1" name="Mark of Lumi">
+		<!-- Leaves a mark that decreases target's P. Def. and M. Def. by 10%, and consumes 113 HP every second for 60 sec. -->
+		<icon>icon.skill11777</icon>
+		<operateType>A2</operateType>
+		<mpConsume>2</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>1500</hitTime>
+		<coolTime>800</coolTime>
+		<reuseDelay>4000</reuseDelay>
+		<isMagic>1</isMagic>
+		<effectPoint>-867</effectPoint>
+		<isDebuff>true</isDebuff>
+	</skill>
+	<skill id="23764" toLevel="1" name="Brilliant Heal">
+		<!-- Heals yourself and nearby party members. -->
+		<icon>icon.skill11757</icon>
+		<operateType>A1</operateType>
+		<mpConsume>2</mpConsume>
+		<hitTime>3000</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>5000</reuseDelay>
+		<effectPoint>1734</effectPoint>
+		<isMagic>1</isMagic>
+	</skill>
+	<skill id="23765" toLevel="1" name="Celestial Party Protection">
+		<!-- Renders all party members invincible for 10 sec. -->
+		<icon>icon.skill11759</icon>
+		<operateType>A2</operateType>
+		<mpConsume>2</mpConsume>
+		<hitTime>500</hitTime>
+		<reuseDelay>120000</reuseDelay>
+		<effectPoint>1760</effectPoint>
+		<isMagic>1</isMagic>
+	</skill>
+	<skill id="23766" toLevel="1" name="Mass Dark Veil">
+		<!-- Deals damage to target and nearby enemies. -->
+		<icon>icon.skill11767</icon>
+		<operateType>A1</operateType>
+		<mpConsume>2</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>3780</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>6700</reuseDelay>
+		<effectPoint>-1835</effectPoint>
+		<isMagic>1</isMagic>
+	</skill>
+	<skill id="23767" toLevel="1" name="Dark Force">
+		<!-- Inflicts damage on target and has a chance of pushing back target. -->
+		<icon>icon.skill11814</icon>
+		<operateType>A2</operateType>
+		<mpConsume>2</mpConsume>
+		<castRange>400</castRange>
+		<hitTime>2780</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>10000</reuseDelay>
+		<isMagic>1</isMagic>
+		<effectPoint>-922</effectPoint>
+		<isDebuff>true</isDebuff>
+	</skill>
+	<skill id="23768" toLevel="1" name="Disparition">
+		<!-- Cancels all your debuffs. For 5 sec., you cannot be targeted. -->
+		<icon>icon.skill1912</icon>
+		<operateType>A2</operateType>
+		<hitTime>200</hitTime>
+		<reuseDelay>600000</reuseDelay>
+	</skill>
+	<skill id="23769" toLevel="1" name="Undying Will">
+		<!-- When receiving damage while HP is below 30%, becomes invincible for 5 sec. 1 time every 5 min. only. -->
+		<icon>icon.skill1917</icon>
+		<operateType>P</operateType>
+	</skill>
+	<skill id="23770" toLevel="1" name="Undying Will">
+		<!-- Invincible. -->
+		<icon>icon.skill1917</icon>
+		<operateType>A2</operateType>
+		<hitTime>200</hitTime>
+		<reuseDelay>300000</reuseDelay>
+	</skill>
+	<skill id="23771" toLevel="1" name="Savage">
+		<!-- For 60 sec., P. Atk. +10%, M. Atk. +20%, Atk. Spd., +10%, and Casting Spd. +10%. P. Def./ M. Def. -10%. -->
+		<icon>icon.skill1914</icon>
+		<operateType>A2</operateType>
+		<hitTime>200</hitTime>
+		<reuseDelay>600000</reuseDelay>
+	</skill>
+	<skill id="23772" toLevel="1" name="Revolutionaries' Petrification">
+		<!-- Petrified and unable to move temporarily. -->
+		<icon>icon.skill4111</icon>
+		<operateType>A2</operateType>
+		<castRange>1000</castRange>
+		<hitTime>3200</hitTime>
+		<coolTime>1800</coolTime>
+		<effectPoint>-100</effectPoint>
+		<isDebuff>true</isDebuff>
+	</skill>
+	<skill id="23773" toLevel="1" name="Sharing Ability (Test)">
+		<!-- Shares the following with your servitor(s): 70% of P. Atk., 60% of P. Def., 50% of M. Def., 15% of Max HP and MP, 10% of Atk. Spd., 30% of Critical Rate for 30 min. -->
+		<icon>icon.skill11288</icon>
+		<operateType>A2</operateType>
+		<mpConsume>77</mpConsume>
+		<hitTime>1000</hitTime>
+		<reuseDelay>60000</reuseDelay>
+		<isMagic>1</isMagic>
+	</skill>
+	<skill id="23774" toLevel="1" name="Clan Teamwork - Stage 1">
+		<!-- Teamwork achieved thanks to the clan activities. Acquired XP/ SP +8% and Vitality Consumption Speed -3% for 3 h. -->
+		<icon>icon.skill19011</icon>
+		<abnormalType>CLAN_TEAMWORK</abnormalType>
+		<abnormalTime>10800</abnormalTime>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effectPoint>100</effectPoint>
+		<isMagic>4</isMagic>
+		<effects>
+			<effect name="ExpModify">
+				<amount>8</amount>
+			</effect>
+			<effect name="SpModify">
+				<amount>8</amount>
+			</effect>
+			<effect name="VitalityPointsRate">
+				<amount>3</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="23775" toLevel="1" name="Clan Teamwork - Stage 2">
+		<!-- Teamwork achieved thanks to the clan activities. Acquired XP/ SP +16%, PvE Damage +2%, and Vitality Consumption Speed -3% for 3 h. -->
+		<icon>icon.skill19011</icon>
+		<abnormalType>CLAN_TEAMWORK</abnormalType>
+		<abnormalTime>10800</abnormalTime>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effectPoint>100</effectPoint>
+		<isMagic>4</isMagic>
+		<effects>
+			<effect name="ExpModify">
+				<amount>16</amount>
+			</effect>
+			<effect name="SpModify">
+				<amount>16</amount>
+			</effect>
+			<effect name="PveMagicalSkillDamageBonus">
+				<amount>2</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvePhysicalAttackDamageBonus">
+				<amount>2</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvePhysicalAttackDamageBonus">
+				<amount>2</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="VitalityPointsRate">
+				<amount>3</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="23776" toLevel="1" name="Clan Teamwork - Stage 3">
+		<!-- Teamwork achieved thanks to the clan activities. Acquired XP/ SP +24%, PvE Damage +5%, and Vitality Consumption Speed -5% for 3 h. -->
+		<icon>icon.skill19011</icon>
+		<abnormalType>CLAN_TEAMWORK</abnormalType>
+		<abnormalTime>10800</abnormalTime>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effectPoint>100</effectPoint>
+		<isMagic>4</isMagic>
+		<effects>
+			<effect name="ExpModify">
+				<amount>24</amount>
+			</effect>
+			<effect name="SpModify">
+				<amount>24</amount>
+			</effect>
+			<effect name="PveMagicalSkillDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvePhysicalAttackDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvePhysicalAttackDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="VitalityPointsRate">
+				<amount>5</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="23777" toLevel="1" name="Clan Teamwork - Stage 4">
+		<!-- Teamwork achieved thanks to the clan activities. Acquired XP/ SP +35%, PvE Damage +8%, Vitality Consumption Speed -3%, and Damage Received from Raid/ Boss Monsters -8% for 3 h. -->
+		<icon>icon.skill19011</icon>
+		<abnormalType>CLAN_TEAMWORK</abnormalType>
+		<abnormalTime>10800</abnormalTime>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effectPoint>100</effectPoint>
+		<isMagic>4</isMagic>
+		<effects>
+			<effect name="ExpModify">
+				<amount>35</amount>
+			</effect>
+			<effect name="SpModify">
+				<amount>35</amount>
+			</effect>
+			<effect name="PveMagicalSkillDamageBonus">
+				<amount>8</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvePhysicalAttackDamageBonus">
+				<amount>8</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvePhysicalAttackDamageBonus">
+				<amount>8</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PveRaidMagicalSkillDefenceBonus">
+				<amount>8</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PveRaidPhysicalAttackDefenceBonus">
+				<amount>8</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PveRaidPhysicalSkillDefenceBonus">
+				<amount>8</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="VitalityPointsRate">
+				<amount>5</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+		</effects>
+	</skill>
+</list>

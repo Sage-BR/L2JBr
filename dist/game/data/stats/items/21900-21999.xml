@@ -1,0 +1,2907 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
+	<item id="21900" name="Totem of Spirit" type="EtcItem">
+		<!-- Summons a totem that increases MP Recovery Rate by 15%. Total duration is 30 min. Can only be used inside the lairs of Valakas and Antharas. But cannot be used in "Balthus Knights - Antharas Expedition." cooldown is 10 min. -->
+		<set name="icon" val="BranchSys2.icon.totem_of_mind" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="POTION" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="10" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="SCROLL_OTHER" />
+		<set name="is_questitem" val="true" />
+		<cond addName="1" msgId="113">
+			<player insideZoneId="12010, 12001" />
+		</cond>
+		<skills>
+			<skill id="22295" level="1" /> <!-- Totem of Spirit -->
+		</skills>
+	</item>
+	<item id="21901" name="Totem of Courage" type="EtcItem">
+		<!-- Summons a totem that P. Def. +15% and cancels fear at a certain cycle. Total duration is 30 min. Can only be used inside the lairs of Valakas and Antharas. But cannot be used in "Balthus Knights - Antharas Expedition." cooldown is 10 min. -->
+		<set name="icon" val="BranchSys2.icon.totem_of_bravery" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="POTION" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="10" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="SCROLL_OTHER" />
+		<set name="is_questitem" val="true" />
+		<cond addName="1" msgId="113">
+			<player insideZoneId="12010, 12001" />
+		</cond>
+		<skills>
+			<skill id="22296" level="1" /> <!-- Totem of Courage -->
+		</skills>
+	</item>
+	<item id="21902" name="Totem of Fortitude" type="EtcItem">
+		<!-- Summons a totem that M. Def. +25% and cancels petrification at a certain cycle. Total duration is 30 min. Can only be used inside the lairs of Valakas and Antharas. But cannot be used in "Balthus Knights - Antharas Expedition." cooldown is 10 min. -->
+		<set name="icon" val="BranchSys2.icon.totem_of_fortitude" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="POTION" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="10" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="SCROLL_OTHER" />
+		<set name="is_questitem" val="true" />
+		<cond addName="1" msgId="113">
+			<player insideZoneId="12010, 12001" />
+		</cond>
+		<skills>
+			<skill id="22297" level="1" /> <!-- Totem of Fortitude -->
+		</skills>
+	</item>
+	<item id="21903" name="Refined Red Dragon Blood" type="EtcItem">
+		<!-- When used, instantly recovers some HP to yourself and to party members. Can only be used inside the lairs of Valakas and Antharas. Cooldown is 5 min. -->
+		<set name="icon" val="BranchSys2.icon.refined_red_blood_of_dragon" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="POTION" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="10" />
+		<set name="shared_reuse_group" val="-1" />
+		<!-- TODO: Custom. -->
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="POTION" />
+		<set name="is_questitem" val="true" />
+		<cond addName="1" msgId="113">
+			<player insideZoneId="12010, 12001" />
+		</cond>
+		<skills>
+			<skill id="22298" level="1" /> <!-- Refined Red Dragon Blood -->
+		</skills>
+	</item>
+	<item id="21904" name="Refined Blue Dragon Blood" type="EtcItem">
+		<!-- When used, instantly recovers some MP to yourself and to party members. Can only be used inside the lairs of Valakas and Antharas. Cooldown is 5 min. -->
+		<set name="icon" val="BranchSys2.icon.refined_blue_blood_of_dragon" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="POTION" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="10" />
+		<set name="shared_reuse_group" val="-1" />
+		<!-- TODO: Custom. -->
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="is_questitem" val="true" />
+		<set name="commissionItemType" val="POTION" />
+		<cond addName="1" msgId="113">
+			<player insideZoneId="12010, 12001" />
+		</cond>
+		<skills>
+			<skill id="22299" level="1" /> <!-- Refined Blue Dragon Blood -->
+		</skills>
+	</item>
+	<item id="21905" name="Clear Crystal" type="EtcItem">
+		<!-- There is nothing inside the clear crystal. Rumors say that this crystal can store the Antharas' energy. -->
+		<set name="icon" val="icon.etc_bead_white_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="21906" name="Empty Crystal" type="EtcItem">
+		<!-- There is nothing inside the empty crystal. Rumors say that this crystal can store the Valakas' energy. -->
+		<set name="icon" val="icon.etc_bead_white_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="21907" name="Filled Crystal (Antharas Energy)" type="EtcItem">
+		<!-- Crystal containing the land dragon's energy. You must bring it to Theodric. -->
+		<set name="icon" val="icon.etc_bead_gold_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="21908" name="Filled Crystal (Valakas Energy)" type="EtcItem">
+		<!-- Crystal containing the fire dragon's energy. You must bring it to Klein. -->
+		<set name="icon" val="icon.etc_bead_red_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="21909" name="Lavasaurus Stone Fragment" type="EtcItem">
+		<!-- Stone fragment from a Lavasaurus. Researchers say this is what controls how a Lavasaurus moves. -->
+		<set name="icon" val="icon.etc_broken_crystal_silver_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="21910" name="Lavasaurus Head Fragment" type="EtcItem">
+		<!-- Fragment from the head of a Lavasaurus. Its shape resembles that of a Dragon. -->
+		<set name="icon" val="icon.etc_broken_crystal_silver_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="21911" name="Lavasaurus Body Fragment" type="EtcItem">
+		<!-- Fragment taken from the body of a Lavasaurus. -->
+		<set name="icon" val="icon.etc_broken_crystal_silver_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="21912" name="Lavasaurus Horn Fragment" type="EtcItem">
+		<!-- Fragment from a Lavasaurus horn. -->
+		<set name="icon" val="icon.etc_broken_crystal_silver_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="21913" name="Unrefined Red Dragon Blood" type="EtcItem">
+		<!-- Unrefined Red Dragon Blood collected from the dragons inside the Lair of Antharas. -->
+		<set name="icon" val="icon.etc_potion_red_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="21914" name="Unrefined Blue Dragon Blood" type="EtcItem">
+		<!-- Unrefined Blue Dragon Blood collected from the dragons inside the Lair of Antharas. -->
+		<set name="icon" val="icon.etc_potion_blue_i00" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_questitem" val="true" />
+	</item>
+	<item id="21915" name="Ice Candy Piece" type="EtcItem">
+		<!-- Sweet ice candy piece. Collect 50 and bring them back to Santa Claus to receive a reward. -->
+		<set name="icon" val="BranchSys.icon.br_valentine_cream_i00" />
+		<set name="material" val="LIQUID" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="21916" name="Super Kat the Cat Z Summon Necklace" type="EtcItem">
+		<!-- Item that allows you to summon a Minion who temporarily casts Wizard-type battle buff. -->
+		<set name="icon" val="BranchSys2.icon.g_supercat_cat_i00" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="default_action" val="SKILL_MAINTAIN" />
+		<set name="etcitem_type" val="PET_COLLAR" />
+		<set name="handler" val="SummonItems" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<skills>
+			<skill id="2046" level="1" /> <!-- Summon Pet -->
+		</skills>
+	</item>
+	<item id="21917" name="Super Feline Queen Z Summon Necklace" type="EtcItem">
+		<!-- Item that allows you to summon a Minion who temporarily casts Wizard-type battle buff. -->
+		<set name="icon" val="BranchSys2.icon.g_supercat_queen_i00" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="default_action" val="SKILL_MAINTAIN" />
+		<set name="etcitem_type" val="PET_COLLAR" />
+		<set name="handler" val="SummonItems" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<skills>
+			<skill id="2046" level="1" /> <!-- Summon Pet -->
+		</skills>
+	</item>
+	<item id="21918" name="Super Mew the Cat Z Summon Necklace" type="EtcItem">
+		<!-- Item that allows you to summon a Minion who temporarily casts Wizard-type battle buff. -->
+		<set name="icon" val="BranchSys2.icon.g_supercat_mew_i00" />
+		<set name="material" val="LEATHER" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="default_action" val="SKILL_MAINTAIN" />
+		<set name="etcitem_type" val="PET_COLLAR" />
+		<set name="handler" val="SummonItems" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<skills>
+			<skill id="2046" level="1" /> <!-- Summon Pet -->
+		</skills>
+	</item>
+	<item id="21919" name="Hellblade" type="Weapon">
+		<!-- Sword used by Darion. Bestows a special power upon the wielder. Can bestow 1 regular Soul Crystal and 1 special Soul Crystal. -->
+		<set name="icon" val="BranchSys2.icon.br_wp_Caladbulg_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4587" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1520" />
+		<set name="price" val="143356000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<set name="commissionItemType" val="ONE_HAND_SWORD" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="21252" level="1" /> <!-- Hellblade -->
+		</skills>
+		<stats>
+			<stat type="pAtk">396</stat>
+			<stat type="mAtk">176</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21920" name="Hellblade" additionalName="Haste" type="Weapon">
+		<!-- Not used -->
+		<set name="icon" val="BranchSys2.icon.br_wp_Caladbulg_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4587" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1520" />
+		<set name="price" val="143356000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<set name="commissionItemType" val="ONE_HAND_SWORD" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="21252" level="1" /> <!-- Hellblade -->
+			<skill id="3564" level="3" /> <!-- Special Ability: Haste -->
+		</skills>
+		<stats>
+			<stat type="pAtk">396</stat>
+			<stat type="mAtk">176</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21921" name="Hellblade" additionalName="Health" type="Weapon">
+		<!-- Not used -->
+		<set name="icon" val="BranchSys2.icon.br_wp_Caladbulg_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4587" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1520" />
+		<set name="price" val="143356000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<set name="commissionItemType" val="ONE_HAND_SWORD" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="21252" level="1" /> <!-- Hellblade -->
+			<skill id="3013" level="3" /> <!-- Special Ability: Health -->
+		</skills>
+		<stats>
+			<stat type="pAtk">396</stat>
+			<stat type="mAtk">176</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21922" name="Hellblade" additionalName="Focus" type="Weapon">
+		<!-- Not used -->
+		<set name="icon" val="BranchSys2.icon.br_wp_Caladbulg_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4587" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1520" />
+		<set name="price" val="143356000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<set name="commissionItemType" val="ONE_HAND_SWORD" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="21252" level="1" /> <!-- Hellblade -->
+			<skill id="3566" level="3" /> <!-- Special Ability: Focus -->
+		</skills>
+		<stats>
+			<stat type="pAtk">396</stat>
+			<stat type="mAtk">176</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21923" name="Hellblade {PvP}" type="Weapon">
+		<!-- Sword used by Darion. Bestows a special power upon the wielder. Increases damage inflicted during PvP. Has a chance of recovering CP. No Soul Crystal option. -->
+		<set name="icon" val="BranchSys2.icon.br_wp_Caladbulg_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4587" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1520" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="isAppearanceable" val="true" />
+		<set name="is_private_storeable" val="false" />
+		<skills>
+			<skill id="3653" level="1" /> <!-- PvP Weapon - Attack Rate -->
+			<skill id="21252" level="1" /> <!-- Hellblade -->
+			<skill id="3552" level="3" /> <!-- Special Ability: PvP Damage -->
+		</skills>
+		<stats>
+			<stat type="pAtk">396</stat>
+			<stat type="mAtk">176</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21924" name="Hellblade {PvP} - Haste" type="Weapon">
+		<!-- <Special Option>. Sword used by Darion. Bestows a special power upon the wielder. Increases Atk. Spd. by about 11%. Increases damage inflicted during PvP. Has a chance of recovering CP during an attack. No Soul Crystal option. -->
+		<set name="icon" val="BranchSys2.icon.br_wp_Caladbulg_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4587" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1520" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="isAppearanceable" val="true" />
+		<set name="is_private_storeable" val="false" />
+		<skills>
+			<skill id="3552" level="1" /> <!-- Special Ability: PvP Damage -->
+			<skill id="3650" level="1" /> <!-- PvP Weapon - CP Drain -->
+			<skill id="21252" level="1" /> <!-- Hellblade -->
+			<skill id="3564" level="3" /> <!-- Special Ability: Haste -->
+		</skills>
+		<stats>
+			<stat type="pAtk">396</stat>
+			<stat type="mAtk">176</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21925" name="Hellblade {PvP} - Health" type="Weapon">
+		<!-- <Special Option>. Sword used by Darion. Bestows a special power upon the wielder. Increases Max HP by 25%. Increases damage inflicted during PvP. Has a chance of recovering CP during an attack. No Soul Crystal option. -->
+		<set name="icon" val="BranchSys2.icon.br_wp_Caladbulg_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4587" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1520" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="isAppearanceable" val="true" />
+		<set name="is_private_storeable" val="false" />
+		<skills>
+			<skill id="3552" level="1" /> <!-- Special Ability: PvP Damage -->
+			<skill id="3650" level="1" /> <!-- PvP Weapon - CP Drain -->
+			<skill id="21252" level="1" /> <!-- Hellblade -->
+			<skill id="3013" level="3" /> <!-- Special Ability: Health -->
+		</skills>
+		<stats>
+			<stat type="pAtk">396</stat>
+			<stat type="mAtk">176</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21926" name="Hellblade {PvP} - Focus" type="Weapon">
+		<!-- <Special Option>. Sword used by Darion. Bestows a special power upon the wielder. Increases Critical by 131. Increases damage inflicted during PvP. Has a chance of recovering CP during an attack. No Soul Crystal option. -->
+		<set name="icon" val="BranchSys2.icon.br_wp_Caladbulg_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4587" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1520" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="isAppearanceable" val="true" />
+		<set name="is_private_storeable" val="false" />
+		<skills>
+			<skill id="3552" level="1" /> <!-- Special Ability: PvP Damage -->
+			<skill id="3650" level="1" /> <!-- PvP Weapon - CP Drain -->
+			<skill id="21252" level="1" /> <!-- Hellblade -->
+			<skill id="3566" level="3" /> <!-- Special Ability: Focus -->
+		</skills>
+		<stats>
+			<stat type="pAtk">396</stat>
+			<stat type="mAtk">176</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21927" name="Hellblade - Lightning" type="Weapon">
+		<!-- Masterwork Item that increases the P. Critical Rate. Sword used by Darion. Bestows a special power upon the wielder. Can bestow 1 regular Soul Crystal and 1 special Soul Crystal. -->
+		<set name="icon" val="BranchSys2.icon.br_wp_Caladbulg_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4587" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1520" />
+		<set name="price" val="143356000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<set name="commissionItemType" val="ONE_HAND_SWORD" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="21252" level="1" /> <!-- Hellblade -->
+			<skill id="3828" level="1" /> <!-- Sword of Critical Chance -->
+		</skills>
+		<stats>
+			<stat type="pAtk">396</stat>
+			<stat type="mAtk">176</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21928" name="Hellblade - Lightning" additionalName="Haste" type="Weapon">
+		<!-- Not used -->
+		<set name="icon" val="BranchSys2.icon.br_wp_Caladbulg_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4587" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1520" />
+		<set name="price" val="143356000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<set name="commissionItemType" val="ONE_HAND_SWORD" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="3828" level="1" /> <!-- Sword of Critical Chance -->
+			<skill id="21252" level="1" /> <!-- Hellblade -->
+			<skill id="3564" level="3" /> <!-- Special Ability: Haste -->
+		</skills>
+		<stats>
+			<stat type="pAtk">396</stat>
+			<stat type="mAtk">176</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21929" name="Hellblade - Lightning" additionalName="Health" type="Weapon">
+		<!-- Not used -->
+		<set name="icon" val="BranchSys2.icon.br_wp_Caladbulg_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4587" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1520" />
+		<set name="price" val="143356000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<set name="commissionItemType" val="ONE_HAND_SWORD" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="3828" level="1" /> <!-- Sword of Critical Chance -->
+			<skill id="21252" level="1" /> <!-- Hellblade -->
+			<skill id="3013" level="3" /> <!-- Special Ability: Health -->
+		</skills>
+		<stats>
+			<stat type="pAtk">396</stat>
+			<stat type="mAtk">176</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21930" name="Hellblade - Lightning" additionalName="Focus" type="Weapon">
+		<!-- Not used -->
+		<set name="icon" val="BranchSys2.icon.br_wp_Caladbulg_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4587" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1520" />
+		<set name="price" val="143356000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<set name="commissionItemType" val="ONE_HAND_SWORD" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="3828" level="1" /> <!-- Sword of Critical Chance -->
+			<skill id="21252" level="1" /> <!-- Hellblade -->
+			<skill id="3566" level="3" /> <!-- Special Ability: Focus -->
+		</skills>
+		<stats>
+			<stat type="pAtk">396</stat>
+			<stat type="mAtk">176</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21931" name="Hellblade - Lightning {PvP}" type="Weapon">
+		<!-- Masterwork Item that increases the P. Critical Rate. Sword used by Darion. Bestows a special power upon the wielder. Increases damage inflicted during PvP. Has a chance of recovering CP during an attack. No Soul Crystal option. -->
+		<set name="icon" val="BranchSys2.icon.br_wp_Caladbulg_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4587" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1520" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="isAppearanceable" val="true" />
+		<set name="is_private_storeable" val="false" />
+		<skills>
+			<skill id="3653" level="1" /> <!-- PvP Weapon - Attack Rate -->
+			<skill id="3851" level="2" /> <!-- Ancient Sword of Critical Chance -->
+			<skill id="21252" level="1" /> <!-- Hellblade -->
+			<skill id="3552" level="3" /> <!-- Special Ability: PvP Damage -->
+		</skills>
+		<stats>
+			<stat type="pAtk">396</stat>
+			<stat type="mAtk">176</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21932" name="Hellblade - Lightning {PvP} - Haste" type="Weapon">
+		<!-- Masterwork Item that increases the Critical Rate. <Special Option>. Sword used by Darion. Bestows a special power upon the wielder. Increases Atk. Spd. by about 11%. Increases damage inflicted during PvP and has a chance of recovering CP during an attack. No Soul Crystal option. -->
+		<set name="icon" val="BranchSys2.icon.br_wp_Caladbulg_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4587" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1520" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="isAppearanceable" val="true" />
+		<set name="is_private_storeable" val="false" />
+		<skills>
+			<skill id="3650" level="1" /> <!-- PvP Weapon - CP Drain -->
+			<skill id="3564" level="3" /> <!-- Special Ability: Haste -->
+			<skill id="3828" level="1" /> <!-- Sword of Critical Chance -->
+			<skill id="21252" level="1" /> <!-- Hellblade -->
+			<skill id="3552" level="1" /> <!-- Special Ability: PvP Damage -->
+		</skills>
+		<stats>
+			<stat type="pAtk">396</stat>
+			<stat type="mAtk">176</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21933" name="Hellblade - Lightning {PvP} - Health" type="Weapon">
+		<!-- Masterwork Item that increases the Critical Rate. <Special Option>. Sword used by Darion. Bestows a special power upon the wielder. Increases Max HP by 25%. Increases damage inflicted during PvP and has a chance of recovering CP during an attack. No Soul Crystal option. -->
+		<set name="icon" val="BranchSys2.icon.br_wp_Caladbulg_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4587" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1520" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="isAppearanceable" val="true" />
+		<set name="is_private_storeable" val="false" />
+		<skills>
+			<skill id="3650" level="1" /> <!-- PvP Weapon - CP Drain -->
+			<skill id="3013" level="3" /> <!-- Special Ability: Health -->
+			<skill id="3828" level="1" /> <!-- Sword of Critical Chance -->
+			<skill id="21252" level="1" /> <!-- Hellblade -->
+			<skill id="3552" level="1" /> <!-- Special Ability: PvP Damage -->
+		</skills>
+		<stats>
+			<stat type="pAtk">396</stat>
+			<stat type="mAtk">176</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21934" name="Hellblade - Lightning {PvP} - Focus" type="Weapon">
+		<!-- Masterwork Item that increases the Critical Rate. <Special Option>. Sword used by Darion. Bestows a special power upon the wielder. Increases Critical by 131. Increases damage inflicted during PvP and has a chance of recovering CP during an attack. No Soul Crystal option. -->
+		<set name="icon" val="BranchSys2.icon.br_wp_Caladbulg_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4587" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1520" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="isAppearanceable" val="true" />
+		<set name="is_private_storeable" val="false" />
+		<skills>
+			<skill id="3650" level="1" /> <!-- PvP Weapon - CP Drain -->
+			<skill id="3566" level="3" /> <!-- Special Ability: Focus -->
+			<skill id="3828" level="1" /> <!-- Sword of Critical Chance -->
+			<skill id="21252" level="1" /> <!-- Hellblade -->
+			<skill id="3552" level="1" /> <!-- Special Ability: PvP Damage -->
+		</skills>
+		<stats>
+			<stat type="pAtk">396</stat>
+			<stat type="mAtk">176</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21935" name="Butcher Blades" type="Weapon">
+		<!-- A dual dagger used by Doll Blader. Bestows a special power on the wearer. Has greater P. Atk. than a regular one-handed sword when enchanted. Can be equipped by Dagger Masters level 81 and higher. Can bestow 1 regular Soul Crystal and 1 special Soul Crystal. -->
+		<set name="icon" val="BranchSys2.icon.br_wp_habus_knife_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUALDAGGER" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="3896" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="2100" />
+		<set name="price" val="121780000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<set name="isAppearanceable" val="true" />
+		<set name="commissionItemType" val="DUAL_DAGGER" />
+		<cond msgId="1518">
+			<and>
+				<player level="81" />
+				<player categoryType="DAGGER_MASTER" />
+			</and>
+		</cond>
+		<skills>
+			<skill id="3552" level="1" /> <!-- Special Ability: PvP Damage -->
+			<skill id="21253" level="1" /> <!-- Butcher Blades -->
+			<skill id="8296" level="1" type="ON_ENCHANT" type_value="4" /> <!-- Special Ability: Focus -->
+		</skills>
+		<stats>
+			<stat type="pAtk">332</stat>
+			<stat type="mAtk">169</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkSpd">433</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21936" name="Butcher Blades {PvP}" type="Weapon">
+		<!-- A dual dagger used by Doll Blader. Bestows a special power on the wearer. Has greater P. Atk. than a regular one-handed sword when enchanted. When enchanted to 4 or higher, increases Critical by 109. Has a chance to remove 1 or more of the target's enhanced status or decrease its Shield Defense during an attack. Can be equipped by Dagger Masters level 81 and higher. Inflicts more damage during PvP. No Soul Crystal option. -->
+		<set name="icon" val="BranchSys2.icon.br_wp_habus_knife_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUALDAGGER" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="3896" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="2100" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="isAppearanceable" val="true" />
+		<set name="is_private_storeable" val="false" />
+		<cond msgId="1518">
+			<and>
+				<player level="81" />
+				<player categoryType="DAGGER_MASTER" />
+			</and>
+		</cond>
+		<skills>
+			<skill id="3651" level="1" /> <!-- PvP Weapon - Cancel -->
+			<skill id="3652" level="1" /> <!-- PvP Weapon - Ignore Shield Defense -->
+			<skill id="3552" level="3" /> <!-- Special Ability: PvP Damage -->
+			<skill id="21253" level="1" /> <!-- Butcher Blades -->
+			<skill id="8296" level="1" type="ON_ENCHANT" type_value="4" /> <!-- Special Ability: Focus -->
+		</skills>
+		<stats>
+			<stat type="pAtk">332</stat>
+			<stat type="mAtk">169</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkSpd">433</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21937" name="Butcher Blades - Confusion" type="Weapon">
+		<!-- Masterwork item that increases Evasion. A dual dagger used by Doll Blader. Bestows a special power on the wearer. Has greater P. Atk. than a regular one-handed sword when enchanted. Can be equipped by Dagger Masters level 81 and higher. Can bestow 1 regular Soul Crystal and 1 special Soul Crystal. -->
+		<set name="icon" val="BranchSys2.icon.br_wp_habus_knife_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUALDAGGER" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="3896" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="2100" />
+		<set name="price" val="121780000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<set name="commissionItemType" val="DUAL_DAGGER" />
+		<set name="isAppearanceable" val="true" />
+		<cond msgId="1518">
+			<and>
+				<player level="81" />
+				<player categoryType="DAGGER_MASTER" />
+			</and>
+		</cond>
+		<skills>
+			<skill id="3552" level="1" /> <!-- Special Ability: PvP Damage -->
+			<skill id="3858" level="3" /> <!-- Dagger of Avoid -->
+			<skill id="21253" level="1" /> <!-- Butcher Blades -->
+			<skill id="8296" level="1" type="ON_ENCHANT" type_value="4" /> <!-- Special Ability: Focus -->
+		</skills>
+		<stats>
+			<stat type="pAtk">332</stat>
+			<stat type="mAtk">169</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkSpd">433</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21938" name="Butcher Blades - Confusion {PvP}" type="Weapon">
+		<!-- Masterwork item that increases Evasion. A dual dagger used by Doll Blader. Bestows a special power on the wearer. Has greater P. Atk. than a regular one-handed sword when enchanted. When enchanted to 4 or higher, increases Critical by 109. Inflicts more damage during PvP and has a chance to remove 1 or more of the target's enhanced status or decrease its Shield Defense during an attack. Can be equipped by Dagger Masters level 81 and higher. No Soul Crystal option. -->
+		<set name="icon" val="BranchSys2.icon.br_wp_habus_knife_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUALDAGGER" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;44;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="3896" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="2100" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="isAppearanceable" val="true" />
+		<set name="is_private_storeable" val="false" />
+		<cond msgId="1518">
+			<and>
+				<player level="81" />
+				<player categoryType="DAGGER_MASTER" />
+			</and>
+		</cond>
+		<skills>
+			<skill id="3858" level="3" /> <!-- Dagger of Avoid -->
+			<skill id="3552" level="3" /> <!-- Special Ability: PvP Damage -->
+			<skill id="3651" level="1" /> <!-- PvP Weapon - Cancel -->
+			<skill id="3652" level="1" /> <!-- PvP Weapon - Ignore Shield Defense -->
+			<skill id="21253" level="1" /> <!-- Butcher Blades -->
+			<skill id="8296" level="1" type="ON_ENCHANT" type_value="4" /> <!-- Special Ability: Focus -->
+		</skills>
+		<stats>
+			<stat type="pAtk">332</stat>
+			<stat type="mAtk">169</stat>
+			<stat type="rCrit">12</stat>
+			<stat type="accCombat">-3.75</stat>
+			<stat type="pAtkSpd">433</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21939" name="Tiat's Tiatenon" type="Weapon">
+		<!-- Blunt weapon used by Tiat. Bestows a special power upon the wielder. Can bestow 1 regular Soul Crystal and 1 special Soul Crystal. -->
+		<set name="icon" val="BranchSys2.icon.br_wp_tiatenon_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4587" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1740" />
+		<set name="price" val="143356000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<set name="commissionItemType" val="BLUNT_WEAPON" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="21254" level="1" /> <!-- Claw of Destruction -->
+		</skills>
+		<stats>
+			<stat type="pAtk">396</stat>
+			<stat type="mAtk">176</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21940" name="Tiat's Tiatenon" additionalName="HP Drain" type="Weapon">
+		<!-- Not used -->
+		<set name="icon" val="BranchSys2.icon.br_wp_tiatenon_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4587" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1740" />
+		<set name="price" val="143356000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<set name="commissionItemType" val="BLUNT_WEAPON" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="21254" level="1" /> <!-- Claw of Destruction -->
+			<skill id="3568" level="2" /> <!-- Special Ability: HP Drain -->
+		</skills>
+		<stats>
+			<stat type="pAtk">396</stat>
+			<stat type="mAtk">176</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21941" name="Tiat's Tiatenon" additionalName="Health" type="Weapon">
+		<!-- Not used -->
+		<set name="icon" val="BranchSys2.icon.br_wp_tiatenon_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4587" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1740" />
+		<set name="price" val="143356000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<set name="commissionItemType" val="BLUNT_WEAPON" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="21254" level="1" /> <!-- Claw of Destruction -->
+			<skill id="3013" level="3" /> <!-- Special Ability: Health -->
+		</skills>
+		<stats>
+			<stat type="pAtk">396</stat>
+			<stat type="mAtk">176</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21942" name="Tiat's Tiatenon" additionalName="HP Regeneration" type="Weapon">
+		<!-- Not used -->
+		<set name="icon" val="BranchSys2.icon.br_wp_tiatenon_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4587" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1740" />
+		<set name="price" val="143356000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<set name="commissionItemType" val="BLUNT_WEAPON" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="21254" level="1" /> <!-- Claw of Destruction -->
+			<skill id="3569" level="2" /> <!-- Special Ability: HP Regeneration -->
+		</skills>
+		<stats>
+			<stat type="pAtk">396</stat>
+			<stat type="mAtk">176</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21943" name="Tiat's Tiatenon {PvP}" type="Weapon">
+		<!-- Blunt weapon used by Tiat. Bestows a special power upon the wielder. Increases damage inflicted during PvP. Has a chance of recovering CP during an attack. No Soul Crystal option. -->
+		<set name="icon" val="BranchSys2.icon.br_wp_tiatenon_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4587" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1740" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="isAppearanceable" val="true" />
+		<set name="is_private_storeable" val="false" />
+		<skills>
+			<skill id="3650" level="1" /> <!-- PvP Weapon - CP Drain -->
+			<skill id="21254" level="1" /> <!-- Claw of Destruction -->
+			<skill id="3552" level="3" /> <!-- Special Ability: PvP Damage -->
+		</skills>
+		<stats>
+			<stat type="pAtk">396</stat>
+			<stat type="mAtk">176</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21944" name="Tiat's Tiatenon {PvP} - HP Drain" type="Weapon">
+		<!-- <Special Option>. Blunt used by Tiat. Bestows a special power upon the wielder. Absorbs 4% of standard melee damage inflicted upon the enemy as HP. Increases damage inflicted during PvP. Has a chance of recovering CP during an attack. No Soul Crystal option. -->
+		<set name="icon" val="BranchSys2.icon.br_wp_tiatenon_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4587" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1740" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="isAppearanceable" val="true" />
+		<set name="is_private_storeable" val="false" />
+		<skills>
+			<skill id="3552" level="1" /> <!-- Special Ability: PvP Damage -->
+			<skill id="3650" level="1" /> <!-- PvP Weapon - CP Drain -->
+			<skill id="21254" level="1" /> <!-- Claw of Destruction -->
+			<skill id="3568" level="2" /> <!-- Special Ability: HP Drain -->
+		</skills>
+		<stats>
+			<stat type="pAtk">396</stat>
+			<stat type="mAtk">176</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21945" name="Tiat's Tiatenon {PvP} - Health" type="Weapon">
+		<!-- <Special Option>. Blunt used by Tiat. Bestows a special power upon the wielder. Increases Max HP by 25%. Increases damage inflicted during PvP. Has a chance of recovering CP during an attack. No Soul Crystal option. -->
+		<set name="icon" val="BranchSys2.icon.br_wp_tiatenon_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4587" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1740" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="isAppearanceable" val="true" />
+		<set name="is_private_storeable" val="false" />
+		<skills>
+			<skill id="3552" level="1" /> <!-- Special Ability: PvP Damage -->
+			<skill id="3650" level="1" /> <!-- PvP Weapon - CP Drain -->
+			<skill id="21254" level="1" /> <!-- Claw of Destruction -->
+			<skill id="3013" level="3" /> <!-- Special Ability: Health -->
+		</skills>
+		<stats>
+			<stat type="pAtk">396</stat>
+			<stat type="mAtk">176</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21946" name="Tiat's Tiatenon {PvP} - HP Regeneration" type="Weapon">
+		<!-- <Special Option>. Blunt used by Tiat. Bestows a special power upon the wielder. Increases HP Recovery Rate. Increases damage inflicted during PvP. Has a chance of recovering CP during an attack. No Soul Crystal option. -->
+		<set name="icon" val="BranchSys2.icon.br_wp_tiatenon_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4587" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1740" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="isAppearanceable" val="true" />
+		<set name="is_private_storeable" val="false" />
+		<skills>
+			<skill id="3552" level="1" /> <!-- Special Ability: PvP Damage -->
+			<skill id="3650" level="1" /> <!-- PvP Weapon - CP Drain -->
+			<skill id="21254" level="1" /> <!-- Claw of Destruction -->
+			<skill id="3569" level="2" /> <!-- Special Ability: HP Regeneration -->
+		</skills>
+		<stats>
+			<stat type="pAtk">396</stat>
+			<stat type="mAtk">176</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21947" name="Tiat's Tiatenon - Landslide" type="Weapon">
+		<!-- Masterwork Item that has the Stun effect at a fixed rate when striking. Blunt weapon used by Tiat. Bestows a special power upon the wielder. Can bestow 1 regular Soul Crystal and 1 special Soul Crystal. -->
+		<set name="icon" val="BranchSys2.icon.br_wp_tiatenon_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4587" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1740" />
+		<set name="price" val="143356000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<set name="commissionItemType" val="BLUNT_WEAPON" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="21254" level="1" /> <!-- Claw of Destruction -->
+			<skill id="3885" level="2" /> <!-- Blunt Weapon of Stun -->
+		</skills>
+		<stats>
+			<stat type="pAtk">396</stat>
+			<stat type="mAtk">176</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21948" name="Tiat's Tiatenon - Landslide" additionalName="HP Drain" type="Weapon">
+		<!-- Not used -->
+		<set name="icon" val="BranchSys2.icon.br_wp_tiatenon_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4587" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1740" />
+		<set name="price" val="143356000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<set name="commissionItemType" val="BLUNT_WEAPON" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="3885" level="2" /> <!-- Blunt Weapon of Stun -->
+			<skill id="21254" level="1" /> <!-- Claw of Destruction -->
+			<skill id="3568" level="2" /> <!-- Special Ability: HP Drain -->
+		</skills>
+		<stats>
+			<stat type="pAtk">396</stat>
+			<stat type="mAtk">176</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21949" name="Tiat's Tiatenon - Landslide" additionalName="Health" type="Weapon">
+		<!-- Not used -->
+		<set name="icon" val="BranchSys2.icon.br_wp_tiatenon_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4587" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1740" />
+		<set name="price" val="143356000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<set name="commissionItemType" val="BLUNT_WEAPON" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="3885" level="2" /> <!-- Blunt Weapon of Stun -->
+			<skill id="21254" level="1" /> <!-- Claw of Destruction -->
+			<skill id="3013" level="3" /> <!-- Special Ability: Health -->
+		</skills>
+		<stats>
+			<stat type="pAtk">396</stat>
+			<stat type="mAtk">176</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21950" name="Tiat's Tiatenon - Landslide" additionalName="HP Regeneration" type="Weapon">
+		<!-- Not used -->
+		<set name="icon" val="BranchSys2.icon.br_wp_tiatenon_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4587" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1740" />
+		<set name="price" val="143356000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<set name="commissionItemType" val="BLUNT_WEAPON" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="3885" level="2" /> <!-- Blunt Weapon of Stun -->
+			<skill id="21254" level="1" /> <!-- Claw of Destruction -->
+			<skill id="3569" level="2" /> <!-- Special Ability: HP Regeneration -->
+		</skills>
+		<stats>
+			<stat type="pAtk">396</stat>
+			<stat type="mAtk">176</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21951" name="Tiat's Tiatenon - Landslide {PvP}" type="Weapon">
+		<!-- Masterwork Item that has the Stun effect at a fixed rate when striking. Increases damage inflicted during PvP. Has a chance of recovering CP during an attack. No Soul Crystal option. -->
+		<set name="icon" val="BranchSys2.icon.br_wp_tiatenon_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4587" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1740" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="isAppearanceable" val="true" />
+		<set name="is_private_storeable" val="false" />
+		<skills>
+			<skill id="3650" level="1" /> <!-- PvP Weapon - CP Drain -->
+			<skill id="3885" level="2" /> <!-- Blunt Weapon of Stun -->
+			<skill id="21254" level="1" /> <!-- Claw of Destruction -->
+			<skill id="3552" level="3" /> <!-- Special Ability: PvP Damage -->
+		</skills>
+		<stats>
+			<stat type="pAtk">396</stat>
+			<stat type="mAtk">176</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21952" name="Tiat's Tiatenon - Landslide {PvP} - HP Drain" type="Weapon">
+		<!-- Masterwork Item that has the Stun effect at a fixed rate when striking. <Special Option>. Blunt weapon used by Tiat. Bestows a special power upon the wielder. Absorbs 4% of standard melee damage inflicted upon the enemy as HP. Increases damage inflicted during PvP. Has a chance of recovering CP during an attack. No Soul Crystal option. -->
+		<set name="icon" val="BranchSys2.icon.br_wp_tiatenon_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4587" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1740" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="isAppearanceable" val="true" />
+		<set name="is_private_storeable" val="false" />
+		<skills>
+			<skill id="3650" level="1" /> <!-- PvP Weapon - CP Drain -->
+			<skill id="3568" level="2" /> <!-- Special Ability: HP Drain -->
+			<skill id="3885" level="2" /> <!-- Blunt Weapon of Stun -->
+			<skill id="21254" level="1" /> <!-- Claw of Destruction -->
+			<skill id="3552" level="1" /> <!-- Special Ability: PvP Damage -->
+		</skills>
+		<stats>
+			<stat type="pAtk">396</stat>
+			<stat type="mAtk">176</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21953" name="Tiat's Tiatenon - Landslide {PvP} - Health" type="Weapon">
+		<!-- Masterwork Item that has the Stun effect at a fixed rate when striking. <Special Option>. Blunt weapon used by Tiat. Bestows a special power upon the wielder. Increases Max HP by 25%. Increases damage inflicted during PvP and has a chance of recovering CP during an attack. No Soul Crystal option. -->
+		<set name="icon" val="BranchSys2.icon.br_wp_tiatenon_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4587" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1740" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="isAppearanceable" val="true" />
+		<set name="is_private_storeable" val="false" />
+		<skills>
+			<skill id="3650" level="1" /> <!-- PvP Weapon - CP Drain -->
+			<skill id="3013" level="3" /> <!-- Special Ability: Health -->
+			<skill id="3885" level="2" /> <!-- Blunt Weapon of Stun -->
+			<skill id="21254" level="1" /> <!-- Claw of Destruction -->
+			<skill id="3552" level="1" /> <!-- Special Ability: PvP Damage -->
+		</skills>
+		<stats>
+			<stat type="pAtk">396</stat>
+			<stat type="mAtk">176</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21954" name="Tiat's Tiatenon - Landslide {PvP} - HP Regeneration" type="Weapon">
+		<!-- Masterwork Item that has the Stun effect at a fixed rate when striking. <Special Option>. Blunt weapon used by Tiat. Bestows a special power upon the wielder. Increases HP Recovery Rate. Increases damage inflicted during PvP and has a chance of recovering CP during an attack. No Soul Crystal option. -->
+		<set name="icon" val="BranchSys2.icon.br_wp_tiatenon_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="4587" />
+		<set name="crystal_type" val="S80" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1740" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="isAppearanceable" val="true" />
+		<set name="is_private_storeable" val="false" />
+		<skills>
+			<skill id="3650" level="1" /> <!-- PvP Weapon - CP Drain -->
+			<skill id="3569" level="2" /> <!-- Special Ability: HP Regeneration -->
+			<skill id="3885" level="2" /> <!-- Blunt Weapon of Stun -->
+			<skill id="21254" level="1" /> <!-- Claw of Destruction -->
+			<skill id="3552" level="1" /> <!-- Special Ability: PvP Damage -->
+		</skills>
+		<stats>
+			<stat type="pAtk">396</stat>
+			<stat type="mAtk">176</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">20</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21955" name="Aenkinel's Astaroth" type="Weapon">
+		<!-- A dual sword used by Aenkinel. Bestows a special power on the wearer. Has greater P. Atk. than a regular one-handed sword when enchanted. When a dual sword is enchanted together with a two-handed sword, two-handed blunt, or fist weapon, its P. Atk. increases more than that of a regular one-handed sword. Can bestow 1 regular Soul Crystal and 1 special Soul Crystal. -->
+		<set name="icon" val="BranchSys2.icon.br_wp_astarot_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUAL" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2398" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1520" />
+		<set name="price" val="74946000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<set name="commissionItemType" val="DUALSWORD" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="3552" level="1" /> <!-- Special Ability: PvP Damage -->
+			<skill id="21255" level="1" /> <!-- Blades of Delusion -->
+			<skill id="3411" level="1" type="ON_ENCHANT" type_value="4" /> <!-- Special Ability: Focus -->
+		</skills>
+		<stats>
+			<stat type="pAtk">405</stat>
+			<stat type="mAtk">151</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21956" name="Aenkinel's Astaroth {PvP}" type="Weapon">
+		<!-- A dual sword used by Aenkinel. Bestows a special power on the wearer. When a dual sword is enchanted together with a two-handed sword, two-handed blunt, or fist weapon, its P. Atk. increases more than that of a regular one-handed sword. When enchanted to 4 or higher, increases Critical by 109 and Max HP by 10%. Inflicts more damage during PvP and has a chance to decrease the range of Bow/ Crossbow. No Soul Crystal option. -->
+		<set name="icon" val="BranchSys2.icon.br_wp_astarot_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUAL" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2398" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1520" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="isAppearanceable" val="true" />
+		<set name="is_private_storeable" val="false" />
+		<skills>
+			<skill id="3656" level="1" /> <!-- PvP Weapon - Decrease Range -->
+			<skill id="3552" level="3" /> <!-- Special Ability: PvP Damage -->
+			<skill id="21255" level="1" /> <!-- Blades of Delusion -->
+			<skill id="3411" level="1" type="ON_ENCHANT" type_value="4" /> <!-- Special Ability: Focus -->
+		</skills>
+		<stats>
+			<stat type="pAtk">405</stat>
+			<stat type="mAtk">151</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21957" name="Aenkinel's Astaroth - Earth" type="Weapon">
+		<!-- Masterwork item that increases Max HP. A dual sword used by Aenkinel. Bestows a special power on the wearer. When a dual sword is enchanted together with a two-handed sword, two-handed blunt, or fist weapon, its P. Atk. increases more than that of a regular one-handed sword. Can bestow 1 regular Soul Crystal and 1 special Soul Crystal. -->
+		<set name="icon" val="BranchSys2.icon.br_wp_astarot_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUAL" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2398" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1520" />
+		<set name="price" val="74946000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<set name="commissionItemType" val="DUALSWORD" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="3552" level="1" /> <!-- Special Ability: PvP Damage -->
+			<skill id="3836" level="2" /> <!-- Dual-blade Weapon of Boost HP -->
+			<skill id="21255" level="1" /> <!-- Blades of Delusion -->
+			<skill id="3411" level="1" type="ON_ENCHANT" type_value="4" /> <!-- Special Ability: Focus -->
+		</skills>
+		<stats>
+			<stat type="pAtk">405</stat>
+			<stat type="mAtk">151</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21958" name="Aenkinel's Astaroth - Earth {PvP}" type="Weapon">
+		<!-- Masterwork item that increases Max HP. A dual sword used by Aenkinel. Bestows a special power on the wearer. When a dual sword is enchanted together with a two-handed sword, two-handed blunt, or fist weapon, its P. Atk. increases more than that of a regular one-handed sword. When enchanted to 4 or higher, increases Critical by 109 and Max HP by 10%. Inflicts more damage during PvP and has a chance to decrease the range of Bow/ Crossbow. No Soul Crystal option. -->
+		<set name="icon" val="BranchSys2.icon.br_wp_astarot_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUAL" />
+		<set name="bodypart" val="lrhand" />
+		<set name="crystal_count" val="2398" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1520" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="isAppearanceable" val="true" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_private_storeable" val="false" />
+		<skills>
+			<skill id="3836" level="2" /> <!-- Dual-blade Weapon of Boost HP -->
+			<skill id="3656" level="1" /> <!-- PvP Weapon - Decrease Range -->
+			<skill id="3552" level="3" /> <!-- Special Ability: PvP Damage -->
+			<skill id="21255" level="1" /> <!-- Blades of Delusion -->
+			<skill id="3411" level="1" type="ON_ENCHANT" type_value="4" /> <!-- Special Ability: Focus -->
+		</skills>
+		<stats>
+			<stat type="pAtk">405</stat>
+			<stat type="mAtk">151</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21959" name="Yehan Klanikus' Tirbing" type="Weapon">
+		<!-- A two-handed sword used by Yehan Klanikus. Bestows a special power on the wearer. Can bestow 1 regular Soul Crystal and 1 special Soul Crystal. -->
+		<set name="icon" val="BranchSys2.icon.br_wp_tirbing_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2398" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1740" />
+		<set name="price" val="74946000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<set name="commissionItemType" val="TWO_HAND_SWORD" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="21256" level="1" /> <!-- Blood Brother -->
+		</skills>
+		<stats>
+			<stat type="pAtk">405</stat>
+			<stat type="mAtk">151</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21960" name="Yehan Klanikus' Tirbing" additionalName="Focus" type="Weapon">
+		<!-- Not used -->
+		<set name="icon" val="BranchSys2.icon.br_wp_tirbing_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2398" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1740" />
+		<set name="price" val="74946000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<set name="commissionItemType" val="TWO_HAND_SWORD" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="21256" level="1" /> <!-- Blood Brother -->
+			<skill id="3566" level="2" /> <!-- Special Ability: Focus -->
+		</skills>
+		<stats>
+			<stat type="pAtk">405</stat>
+			<stat type="mAtk">151</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21961" name="Yehan Klanikus' Tirbing" additionalName="Health" type="Weapon">
+		<!-- Not used -->
+		<set name="icon" val="BranchSys2.icon.br_wp_tirbing_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2398" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1740" />
+		<set name="price" val="74946000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<set name="commissionItemType" val="TWO_HAND_SWORD" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="21256" level="1" /> <!-- Blood Brother -->
+			<skill id="3013" level="3" /> <!-- Special Ability: Health -->
+		</skills>
+		<stats>
+			<stat type="pAtk">405</stat>
+			<stat type="mAtk">151</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21962" name="Yehan Klanikus' Tirbing" additionalName="Light Armor" type="Weapon">
+		<!-- Not used -->
+		<set name="icon" val="BranchSys2.icon.br_wp_tirbing_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2398" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1740" />
+		<set name="price" val="74946000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<set name="commissionItemType" val="TWO_HAND_SWORD" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="3498" level="1" /> <!-- Special Ability: Light -->
+			<skill id="21256" level="1" /> <!-- Blood Brother -->
+			<skill id="3552" level="1" /> <!-- Special Ability: PvP Damage -->
+		</skills>
+		<stats>
+			<stat type="pAtk">405</stat>
+			<stat type="mAtk">151</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21963" name="Yehan Klanikus' Tirbing {PvP} - Focus" type="Weapon">
+		<!-- <Special Option>. A two-handed sword used by Yehan Klanikus. Bestows a special power on the wearer. Increases Critical by 111. Inflicts more damage during PvP and has a chance to inflict additional damage during an attack. No Soul Crystal option. -->
+		<set name="icon" val="BranchSys2.icon.br_wp_tirbing_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2398" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1740" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="isAppearanceable" val="true" />
+		<set name="is_private_storeable" val="false" />
+		<skills>
+			<skill id="3653" level="1" /> <!-- PvP Weapon - Attack Rate -->
+			<skill id="3552" level="1" /> <!-- Special Ability: PvP Damage -->
+			<skill id="21256" level="1" /> <!-- Blood Brother -->
+			<skill id="3566" level="2" /> <!-- Special Ability: Focus -->
+		</skills>
+		<stats>
+			<stat type="pAtk">405</stat>
+			<stat type="mAtk">151</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21964" name="Yehan Klanikus' Tirbing {PvP} - Health" type="Weapon">
+		<!-- <Special Option>. A two-handed sword used by Yehan Klanikus. Bestows a special power on the wearer. Increases Max HP by 25%. Inflicts more damage during PvP and has a chance to inflict additional damage during an attack. No Soul Crystal option. -->
+		<set name="icon" val="BranchSys2.icon.br_wp_tirbing_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2398" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1740" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="isAppearanceable" val="true" />
+		<set name="is_private_storeable" val="false" />
+		<skills>
+			<skill id="3653" level="1" /> <!-- PvP Weapon - Attack Rate -->
+			<skill id="3552" level="1" /> <!-- Special Ability: PvP Damage -->
+			<skill id="21256" level="1" /> <!-- Blood Brother -->
+			<skill id="3013" level="3" /> <!-- Special Ability: Health -->
+		</skills>
+		<stats>
+			<stat type="pAtk">405</stat>
+			<stat type="mAtk">151</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21965" name="Yehan Klanikus' Tirbing {PvP} - Light Armor" type="Weapon">
+		<!-- <Special Option>. A two-handed sword used by Yehan Klanikus. Bestows a special power on the wearer. Increases Weight Gauge by 20%. Inflicts more damage during PvP and has a chance to inflict additional damage during an attack. No Soul Crystal option. -->
+		<set name="icon" val="BranchSys2.icon.br_wp_tirbing_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2398" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1740" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="isAppearanceable" val="true" />
+		<set name="is_private_storeable" val="false" />
+		<skills>
+			<skill id="3552" level="3" /> <!-- Special Ability: PvP Damage -->
+			<skill id="3498" level="1" /> <!-- Special Ability: Light -->
+			<skill id="21256" level="1" /> <!-- Blood Brother -->
+			<skill id="3653" level="1" /> <!-- PvP Weapon - Attack Rate -->
+		</skills>
+		<stats>
+			<stat type="pAtk">405</stat>
+			<stat type="mAtk">151</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21966" name="Yehan Klanikus' Tirbing - Great Gale" type="Weapon">
+		<!-- Masterwork item that increases Atk. Spd. A two-handed sword used by Yehan Klanikus. Bestows a special power on the wearer. Can bestow 1 regular Soul Crystal and 1 special Soul Crystal. -->
+		<set name="icon" val="BranchSys2.icon.br_wp_tirbing_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2398" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1740" />
+		<set name="price" val="74946000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<set name="commissionItemType" val="TWO_HAND_SWORD" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="21256" level="1" /> <!-- Blood Brother -->
+			<skill id="3840" level="2" /> <!-- Two-handed Sword of Haste -->
+		</skills>
+		<stats>
+			<stat type="pAtk">405</stat>
+			<stat type="mAtk">151</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21967" name="Yehan Klanikus' Tirbing - Great Gale" additionalName="Focus" type="Weapon">
+		<!-- Not used -->
+		<set name="icon" val="BranchSys2.icon.br_wp_tirbing_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2398" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1740" />
+		<set name="price" val="74946000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<set name="commissionItemType" val="TWO_HAND_SWORD" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="3840" level="2" /> <!-- Two-handed Sword of Haste -->
+			<skill id="21256" level="1" /> <!-- Blood Brother -->
+			<skill id="3566" level="2" /> <!-- Special Ability: Focus -->
+		</skills>
+		<stats>
+			<stat type="pAtk">405</stat>
+			<stat type="mAtk">151</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21968" name="Yehan Klanikus' Tirbing - Great Gale" additionalName="Health" type="Weapon">
+		<!-- Not used -->
+		<set name="icon" val="BranchSys2.icon.br_wp_tirbing_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2398" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1740" />
+		<set name="price" val="74946000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<set name="commissionItemType" val="TWO_HAND_SWORD" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="3840" level="2" /> <!-- Two-handed Sword of Haste -->
+			<skill id="21256" level="1" /> <!-- Blood Brother -->
+			<skill id="3013" level="3" /> <!-- Special Ability: Health -->
+		</skills>
+		<stats>
+			<stat type="pAtk">405</stat>
+			<stat type="mAtk">151</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21969" name="Yehan Klanikus' Tirbing - Great Gale" additionalName="Light Armor" type="Weapon">
+		<!-- Not used -->
+		<set name="icon" val="BranchSys2.icon.br_wp_tirbing_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2398" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1740" />
+		<set name="price" val="74946000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="element_enabled" val="true" />
+		<set name="enchant_enabled" val="1" />
+		<set name="commissionItemType" val="TWO_HAND_SWORD" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="3498" level="1" /> <!-- Special Ability: Light -->
+			<skill id="3840" level="2" /> <!-- Two-handed Sword of Haste -->
+			<skill id="21256" level="1" /> <!-- Blood Brother -->
+			<skill id="3552" level="1" /> <!-- Special Ability: PvP Damage -->
+		</skills>
+		<stats>
+			<stat type="pAtk">405</stat>
+			<stat type="mAtk">151</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21970" name="Yehan Klanikus' Tirbing - Great Gale {PvP} - Focus" type="Weapon">
+		<!-- Masterwork item that increases Atk. Spd. <Special Option>. A two-handed sword used by Yehan Klanikus. Bestows a special power on the wearer. Increases Critical by 111. Inflicts more damage during PvP and has a chance to inflict additional damage during an attack. No Soul Crystal option. -->
+		<set name="icon" val="BranchSys2.icon.br_wp_tirbing_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2398" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1740" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="isAppearanceable" val="true" />
+		<set name="is_private_storeable" val="false" />
+		<skills>
+			<skill id="3840" level="2" /> <!-- Two-handed Sword of Haste -->
+			<skill id="3653" level="1" /> <!-- PvP Weapon - Attack Rate -->
+			<skill id="3552" level="1" /> <!-- Special Ability: PvP Damage -->
+			<skill id="21256" level="1" /> <!-- Blood Brother -->
+			<skill id="3566" level="2" /> <!-- Special Ability: Focus -->
+		</skills>
+		<stats>
+			<stat type="pAtk">405</stat>
+			<stat type="mAtk">151</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21971" name="Yehan Klanikus' Tirbing - Great Gale {PvP} - Health" type="Weapon">
+		<!-- Masterwork item that increases Atk. Spd. <Special Option>. A two-handed sword used by Yehan Klanikus. Bestows a special power on the wearer. Increases Max HP by 25%. Inflicts more damage during PvP and has a chance to inflict additional damage during an attack. No Soul Crystal option. -->
+		<set name="icon" val="BranchSys2.icon.br_wp_tirbing_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2398" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1740" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="isAppearanceable" val="true" />
+		<set name="is_private_storeable" val="false" />
+		<skills>
+			<skill id="3840" level="2" /> <!-- Two-handed Sword of Haste -->
+			<skill id="3653" level="1" /> <!-- PvP Weapon - Attack Rate -->
+			<skill id="3552" level="1" /> <!-- Special Ability: PvP Damage -->
+			<skill id="21256" level="1" /> <!-- Blood Brother -->
+			<skill id="3013" level="3" /> <!-- Special Ability: Health -->
+		</skills>
+		<stats>
+			<stat type="pAtk">405</stat>
+			<stat type="mAtk">151</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21972" name="Yehan Klanikus' Tirbing - Great Gale {PvP} - Light Armor" type="Weapon">
+		<!-- Masterwork item that increases Atk. Spd. <Special Option>. A two-handed sword used by Yehan Klanikus. Bestows a special power on the wearer. Increases Weight Gauge by 20%. Inflicts more damage during PvP and has a chance to inflict additional damage during an attack. No Soul Crystal option. -->
+		<set name="icon" val="BranchSys2.icon.br_wp_tirbing_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="lrhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="2398" />
+		<set name="crystal_type" val="S" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="1740" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="isAppearanceable" val="true" />
+		<set name="is_private_storeable" val="false" />
+		<skills>
+			<skill id="3653" level="1" /> <!-- PvP Weapon - Attack Rate -->
+			<skill id="3552" level="3" /> <!-- Special Ability: PvP Damage -->
+			<skill id="3498" level="1" /> <!-- Special Ability: Light -->
+			<skill id="21256" level="1" /> <!-- Blood Brother -->
+			<skill id="3840" level="2" /> <!-- Two-handed Sword of Haste -->
+		</skills>
+		<stats>
+			<stat type="pAtk">405</stat>
+			<stat type="mAtk">151</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21973" name="Mardil's Wind" type="Weapon">
+		<!-- Magic fan used by Mardil. Bestows a special power upon the wielder. Can bestow 1 regular Soul Crystal and 1 special Soul Crystal. -->
+		<set name="icon" val="BranchSys2.icon.br_wp_wind_of_mardil_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1106" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="ADAMANTAITE" />
+		<set name="weight" val="840" />
+		<set name="price" val="20741000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="commissionItemType" val="ONE_HAND_MAGIC_SWORD" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="21257" level="1" /> <!-- Mardil -->
+		</skills>
+		<stats>
+			<stat type="pAtk">186</stat>
+			<stat type="mAtk">152</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21974" name="Mardil's Wind" additionalName="M. Atk." type="Weapon">
+		<!-- <Soul Crystal Enhancement>. Magic fan used by Mardil. Bestows a special power upon the wielder. Increases MP consumption by 15% and M. Atk. by 167 during magic use. Increases damage inflicted during PvP. -->
+		<set name="icon" val="BranchSys2.icon.br_wp_wind_of_mardil_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1106" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="ADAMANTAITE" />
+		<set name="weight" val="840" />
+		<set name="price" val="20741000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_magic_weapon" val="true" />
+		<set name="commissionItemType" val="ONE_HAND_MAGIC_SWORD" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="21257" level="1" /> <!-- Mardil -->
+			<skill id="3073" level="2" /> <!-- Special Ability: M. Atk. -->
+		</skills>
+		<stats>
+			<stat type="pAtk">186</stat>
+			<stat type="mAtk">152</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21975" name="Mardil's Wind" additionalName="Magic Silence" type="Weapon">
+		<!-- <Soul Crystal Enhancement>. Magic fan used by Mardil. Bestows a special power upon the wielder. Inflicts Silence on the target with a 10% chance during magic use. Increases damage inflicted during PvP. -->
+		<set name="icon" val="BranchSys2.icon.br_wp_wind_of_mardil_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1106" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="ADAMANTAITE" />
+		<set name="weight" val="840" />
+		<set name="price" val="20741000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_magic_weapon" val="true" />
+		<set name="commissionItemType" val="ONE_HAND_MAGIC_SWORD" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="3074" level="2" type_chance="10" type="ON_MAGIC_SKILL" /> <!-- Special Ability: Magic Silence -->
+			<skill id="21257" level="1" /> <!-- Mardil -->
+			<skill id="3552" level="1" /> <!-- Special Ability: PvP Damage -->
+		</skills>
+		<stats>
+			<stat type="pAtk">186</stat>
+			<stat type="mAtk">152</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21976" name="Mardil's Wind" additionalName="Acumen" type="Weapon">
+		<!-- <Soul Crystal Enhancement>. Magic fan used by Mardil. Bestows a special power upon the wielder. Increases Casting Spd. by 15%. Increases damage inflicted during PvP. -->
+		<set name="icon" val="BranchSys2.icon.br_wp_wind_of_mardil_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1106" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="ADAMANTAITE" />
+		<set name="weight" val="840" />
+		<set name="price" val="20741000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_magic_weapon" val="true" />
+		<set name="commissionItemType" val="ONE_HAND_MAGIC_SWORD" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="21257" level="1" /> <!-- Mardil -->
+			<skill id="3047" level="2" /> <!-- Special Ability: Acumen -->
+		</skills>
+		<stats>
+			<stat type="pAtk">186</stat>
+			<stat type="mAtk">152</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21977" name="Mardil's Wind - Holy Spirit" type="Weapon">
+		<!-- Masterwork Item that increases Heal Amount. Magic fan used by Mardil. Bestows a special power upon the wielder. Can bestow 1 regular Soul Crystal and 1 special Soul Crystal. -->
+		<set name="icon" val="BranchSys2.icon.br_wp_wind_of_mardil_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1106" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="ADAMANTAITE" />
+		<set name="weight" val="840" />
+		<set name="price" val="20741000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_magic_weapon" val="true" />
+		<set name="commissionItemType" val="ONE_HAND_MAGIC_SWORD" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="21257" level="1" /> <!-- Mardil -->
+			<skill id="3856" level="1" /> <!-- Sword of Divine Power -->
+		</skills>
+		<stats>
+			<stat type="pAtk">186</stat>
+			<stat type="mAtk">152</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21978" name="Mardil's Wind - Holy Spirit" additionalName="M. Atk." type="Weapon">
+		<!-- Masterwork Item that increases Heal Amount. <Soul Crystal Enhancement>. Magic fan used by Mardil. Bestows a special power upon the wielder. Increases MP consumption by 15% and M. Atk. by 167 during magic use. Increases damage inflicted during PvP. -->
+		<set name="icon" val="BranchSys2.icon.br_wp_wind_of_mardil_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1106" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="ADAMANTAITE" />
+		<set name="weight" val="840" />
+		<set name="price" val="20741000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_magic_weapon" val="true" />
+		<set name="commissionItemType" val="ONE_HAND_MAGIC_SWORD" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="3856" level="1" /> <!-- Sword of Divine Power -->
+			<skill id="21257" level="1" /> <!-- Mardil -->
+			<skill id="3073" level="2" /> <!-- Special Ability: M. Atk. -->
+		</skills>
+		<stats>
+			<stat type="pAtk">186</stat>
+			<stat type="mAtk">152</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21979" name="Mardil's Wind - Holy Spirit" additionalName="Magic Silence" type="Weapon">
+		<!-- Masterwork Item that increases Heal Amount. <Soul Crystal Enhancement>. Magic fan used by Mardil. Bestows a special power upon the wielder. Inflicts Silence on the target with a 10% chance during magic use. Increases damage inflicted during PvP. -->
+		<set name="icon" val="BranchSys2.icon.br_wp_wind_of_mardil_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1106" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="ADAMANTAITE" />
+		<set name="weight" val="840" />
+		<set name="price" val="20741000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_magic_weapon" val="true" />
+		<set name="commissionItemType" val="ONE_HAND_MAGIC_SWORD" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="3074" level="2" type_chance="10" type="ON_MAGIC_SKILL" /> <!-- Special Ability: Magic Silence -->
+			<skill id="3856" level="1" /> <!-- Sword of Divine Power -->
+			<skill id="21257" level="1" /> <!-- Mardil -->
+			<skill id="3552" level="1" /> <!-- Special Ability: PvP Damage -->
+		</skills>
+		<stats>
+			<stat type="pAtk">186</stat>
+			<stat type="mAtk">152</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21980" name="Mardil's Wind - Holy Spirit" additionalName="Acumen" type="Weapon">
+		<!-- Masterwork Item that increases Heal Amount. <Soul Crystal Enhancement>. Magic fan used by Mardil. Bestows a special power upon the wielder. Increases Casting Spd. by 15%. Increases damage inflicted during PvP. -->
+		<set name="icon" val="BranchSys2.icon.br_wp_wind_of_mardil_i01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="rhand" />
+		<set name="damage_range" val="0;0;40;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_count" val="1106" />
+		<set name="crystal_type" val="A" />
+		<set name="material" val="ADAMANTAITE" />
+		<set name="weight" val="840" />
+		<set name="price" val="20741000" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="enchant_enabled" val="1" />
+		<set name="is_magic_weapon" val="true" />
+		<set name="commissionItemType" val="ONE_HAND_MAGIC_SWORD" />
+		<set name="isAppearanceable" val="true" />
+		<skills>
+			<skill id="3856" level="1" /> <!-- Sword of Divine Power -->
+			<skill id="21257" level="1" /> <!-- Mardil -->
+			<skill id="3047" level="2" /> <!-- Special Ability: Acumen -->
+		</skills>
+		<stats>
+			<stat type="pAtk">186</stat>
+			<stat type="mAtk">152</stat>
+			<stat type="rCrit">8</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21981" name="Clownfish Hat" type="Armor">
+		<!-- Clownfish Hat. Uses 2 hair accessory slots. -->
+		<set name="icon" val="icon.accessory_fish_cap2_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="enchant_enabled" val="7" />
+		<set name="isAppearanceable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="21982" name="Refined Angel Ring" type="Armor">
+		<!-- Refined Angel Ring. Uses 2 hair accessory slots. -->
+		<set name="icon" val="icon.accessory_angel_ring_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="enchant_enabled" val="7" />
+		<set name="isAppearanceable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="21983" name="Refined Wizard Hat" type="Armor">
+		<!-- Refined Wizard Hat. Uses 2 hair accessory slots. -->
+		<set name="icon" val="icon.accessory_magician_cap2_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="enchant_enabled" val="7" />
+		<set name="isAppearanceable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="21984" name="Refined Jester Hat" type="Armor">
+		<!-- Refined Jester Hat. Uses 2 hair accessory slots. -->
+		<set name="icon" val="icon.accessory_jester_cap_2_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="enchant_enabled" val="7" />
+		<set name="isAppearanceable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="21985" name="Refined Romantic Chapeau" type="Armor">
+		<!-- Refined Romantic Chapeau. Uses 2 hair accessory slots. -->
+		<set name="icon" val="icon.accessory_archer_hat2_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="enchant_enabled" val="7" />
+		<set name="isAppearanceable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="21986" name="Agathion - Antharas" type="Armor">
+		<!-- Bracelet that summons a cute Agathion - Antharas. -->
+		<set name="icon" val="icon.pi_high_agathion_bracelet_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lbracelet" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="150" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_private_storeable" val="false" />
+		<skills>
+			<skill id="8521" level="1" /> <!-- Release Agathion's Seal - Antharas -->
+			<skill id="6916" level="1" /> <!-- Antharas' Cute Tricks -->
+			<skill id="3267" level="1" type="ON_UNEQUIP" /> <!-- Seal Agathion -->
+		</skills>
+	</item>
+	<item id="21987" name="Pirate Hat" type="Armor">
+		<!-- Hat worn by pirates. Uses 2 hair accessory slots. -->
+		<set name="icon" val="icon.Accessary_sea_robber_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="enchant_enabled" val="7" />
+		<set name="isAppearanceable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="21988" name="Shiny Platform Summon Bracelet" type="Armor">
+		<!-- Can stand upon the Shiny Platform with brilliant lighting when equipped. -->
+		<set name="icon" val="BranchSys2.Icon.br_shiny_platform_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="lbracelet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="SILVER" />
+		<set name="weight" val="30" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_premium" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<skills>
+			<skill id="839" level="1" type="ON_UNEQUIP" /> <!-- Dismount -->
+			<skill id="21232" level="1" /> <!-- Shiny Platform -->
+		</skills>
+	</item>
+	<item id="21989" name="Warm Bear Hat" type="Armor">
+		<!-- Polar bear hat that makes you feel cozy just by looking at it. Uses 2 hair accessory slot(s). -->
+		<set name="icon" val="BranchSys2.icon.br_polar_bear_cap_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="hairall" />
+		<set name="material" val="WOOD" />
+		<set name="weight" val="10" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="enchant_enabled" val="7" />
+		<set name="isAppearanceable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="21990" name="Warm Bear Paws" type="Weapon">
+		<!-- Fist weapon that looks like cozy bear paws. Very low P. Atk. -->
+		<set name="icon" val="BranchSys2.icon.br_polar_bear_wp_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="DUALFIST" />
+		<set name="bodypart" val="lrhand" />
+		<set name="material" val="ADAMANTAITE" />
+		<set name="weight" val="450" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="isAppearanceable" val="true" />
+		<set name="damage_range" val="0;0;32;120" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_sellable" val="false" />
+		<stats>
+			<stat type="pAtk">5</stat>
+			<stat type="mAtk">5</stat>
+			<stat type="rCrit">6</stat>
+			<stat type="accCombat">8</stat>
+			<!-- Truncated value. -->
+			<stat type="pAtkSpd">325</stat>
+			<stat type="randomDamage">5</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="21991" name="Tarask Dragon's Leather Fragment" type="EtcItem">
+		<!-- Leathery hide from a Tarask Dragon. -->
+		<set name="icon" val="icon.etc_leather_yellow_i00" />
+		<set name="material" val="STEEL" />
+		<set name="is_depositable" val="false" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_questitem" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="21992" name="Behemoth Dragon Leather" type="EtcItem">
+		<!-- Leathery hide from a Behemoth Dragon. -->
+		<set name="icon" val="icon.etc_leather_yellow_i00" />
+		<set name="material" val="STEEL" />
+		<set name="is_depositable" val="false" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_questitem" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="21993" name="Lavasaurus Alpha Fragment" type="EtcItem">
+		<!-- Lavasaurus Alpha fragment piece. Bring it to Valakas Watchman Klein. -->
+		<set name="icon" val="icon.etc_broken_crystal_gold_i00" />
+		<set name="material" val="STEEL" />
+		<set name="is_depositable" val="false" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_questitem" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="21994" name="Vitality Replenishing Potion 9-unit Pack" type="EtcItem">
+		<!-- Pack containing 9 units of Vitality Replenishing Potion. -->
+		<set name="icon" val="icon.etc_pi_gift_box_i00" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="14055" min="9" max="9" chance="100" /> <!-- Vitality Replenishing Potion -->
+		</capsuled_items>
+	</item>
+	<item id="21995" name="Vitality Replenishing Potion 12-unit Pack" type="EtcItem">
+		<!-- Pack containing 12 units of Vitality Replenishing Potion. -->
+		<set name="icon" val="icon.etc_pi_gift_box_i00" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="14055" min="12" max="12" chance="100" /> <!-- Vitality Replenishing Potion -->
+		</capsuled_items>
+	</item>
+	<item id="21996" name="Vitality Replenishing Potion 15-unit Pack" type="EtcItem">
+		<!-- Can be shared between characters on the same account through the Dimensional Merchant. Pack containing 15 units of Vitality Replenishing Potion. -->
+		<set name="icon" val="icon.etc_pi_gift_box_i00" />
+		<set name="material" val="STEEL" />
+		<set name="weight" val="100" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="14055" min="15" max="15" chance="100" /> <!-- Vitality Replenishing Potion -->
+		</capsuled_items>
+	</item>
+	<item id="21997" name="Shattered Bones" type="EtcItem">
+		<!-- Shattered bones that can be obtained from the Ketra Orcs and the Varka Silenos. Bring this to Rune Captain Mathias. -->
+		<set name="icon" val="icon.etc_broken_crystal_gold_i00" />
+		<set name="material" val="STEEL" />
+		<set name="is_depositable" val="false" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_questitem" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="21998" name="Cannibalistic Stakato Captain Claw" type="EtcItem">
+		<!-- Cannibalistic Stakato Captain Claw. Bring this to Rune Captain Mathias. -->
+		<set name="icon" val="icon.etc_parasite_i00" />
+		<set name="material" val="STEEL" />
+		<set name="is_depositable" val="false" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_questitem" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="21999" name="Anais Scroll" type="EtcItem">
+		<!-- Magic scroll that belongs to Anais. Bring this to Rune Captain Mathias. -->
+		<set name="icon" val="BranchSys2.icon.g_ancient_book_piece_high" />
+		<set name="material" val="STEEL" />
+		<set name="is_depositable" val="false" />
+		<set name="is_clan_depositable" val="false" />
+		<set name="is_mailable" val="false" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_commissionable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_questitem" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_stackable" val="true" />
+	</item>
+</list>

@@ -1,0 +1,2689 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="19200" toLevel="1" name="Gravity Sign">
+		<!-- For 30 sec., P./ M. Def. +10%. -->
+		<icon>icon.skill1997</icon>
+		<abnormalType>1</abnormalType>
+		<abnormalTime>30</abnormalTime>
+		<abnormalType>PUBLIC_SLOT</abnormalType>
+		<operateType>A2</operateType>
+		<effectPoint>2</effectPoint>
+		<isMagic>4</isMagic>
+		<effects>
+			<effect name="PhysicalDefence">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19201" toLevel="1" name="Paladin's Protection">
+		<!-- For 15 sec., all party members' P. Def. +200%, P. Evastion +8, Speed +20. Consumes 5 Soulstones. -->
+		<icon>icon.skill19201</icon>
+		<operateType>A2</operateType>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>15</abnormalTime>
+		<abnormalVisualEffect>PALADIN_PROTECTION</abnormalVisualEffect>
+		<itemConsumeCount>5</itemConsumeCount>
+		<itemConsumeId>1785</itemConsumeId> <!-- Soulstones -->
+		<targetType>SELF</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<mpConsume>140</mpConsume>
+		<hitTime>500</hitTime>
+		<coolTime>1000</coolTime>
+		<effectPoint>702</effectPoint>
+		<reuseDelay>900000</reuseDelay>
+		<effects>
+			<effect name="Speed">
+				<amount>20</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>200</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalEvasion">
+				<amount>8</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19202" toLevel="1" name="Sentinel's Protection">
+		<!-- For 15 sec., all party members' M. Def. +200%, M. Evastion +8, Speed +20. Consumes 5 Soulstones. -->
+		<icon>icon.skill19202</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>15</abnormalTime>
+		<abnormalVisualEffect>SENTINEL_PROTECTION</abnormalVisualEffect>
+		<itemConsumeCount>5</itemConsumeCount>
+		<itemConsumeId>1785</itemConsumeId> <!-- Soulstones -->
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<mpConsume>140</mpConsume>
+		<hitTime>500</hitTime>
+		<coolTime>1000</coolTime>
+		<effectPoint>702</effectPoint>
+		<reuseDelay>900000</reuseDelay>
+		<effects>
+			<effect name="Speed">
+				<amount>20</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>200</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalEvasion">
+				<amount>8</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19203" toLevel="1" name="Ultimate Bullseye">
+		<!-- Decreases target's Bow/ Crossbow Resistance by 60% for 7 sec. Does not cancel when striking. Consumes 1 Soulstone. -->
+		<icon>icon.skill19203</icon>
+		<abnormalLvl>8</abnormalLvl>
+		<abnormalTime>7</abnormalTime>
+		<abnormalType>REAL_TARGET</abnormalType>
+		<abnormalVisualEffect>REAL_TARGET</abnormalVisualEffect>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>1785</itemConsumeId> <!-- Soulstones -->
+		<operateType>A2</operateType>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<mpConsume>24</mpConsume>
+		<castRange>1100</castRange>
+		<hitTime>500</hitTime>
+		<reuseDelay>20000</reuseDelay>
+		<effectPoint>-711</effectPoint>
+		<isDebuff>true</isDebuff>
+		<effects>
+			<effect name="DefenceTrait">
+				<BOW>-60</BOW>
+				<CROSSBOW>-60</CROSSBOW>
+			</effect>
+			<effect name="PhysicalDefence" fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1020">
+				<amount>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1020">{-0.6 - 0.4 * subIndex}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Speed" fromLevel="1" toLevel="1" fromSubLevel="2001" toSubLevel="2020">
+				<amount>
+					<value fromLevel="1" toLevel="1" fromSubLevel="2001" toSubLevel="2020">{-2 * subIndex}</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19204" toLevel="1" name="Prophecy of Might">
+		<!-- For 5 min., the selected party member's P. Critical Rate and Damage, P./ M. Skill Critical Rate and Power +25%. If cast once, it activates the Glaring effect that increases your P. Atk./ M. Atk. by 15%, and resets the cooldown of Prophecy of Might. If cast twice, it cancels the Glaring effect. Consumes 5 Spirit Ore. -->
+		<icon>icon.skill19204</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>
+			<value fromLevel="1" toLevel="1">300</value>
+			<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1010">{base + subIndex}</value>
+			<value fromLevel="1" toLevel="1" fromSubLevel="1011" toSubLevel="1020">{base + 10 + 0.5 * subIndex}</value>
+		</abnormalTime>
+		<abnormalType>SONG_WEAPON</abnormalType> <!-- find proper name -->
+		<itemConsumeCount>5</itemConsumeCount>
+		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ores -->
+		<operateType>A3</operateType>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+		<mpConsume>270</mpConsume>
+		<castRange>400</castRange>
+		<hitTime>8000</hitTime>
+		<coolTime>300</coolTime>
+		<effectPoint>712</effectPoint>
+		<reuseDelay>600000</reuseDelay>
+		<conditions>
+			<condition name="TargetMyParty">
+				<includeMe>true</includeMe>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SkillCriticalDamage">
+				<amount>25</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="CriticalDamage">
+				<amount>25</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="CriticalRate">
+				<amount>25</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicCriticalRate">
+				<amount>25</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicCriticalDamage">
+				<amount>25</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+		<selfEffects>
+			<effect name="CallSkill">
+				<skillId>19447</skillId> <!-- Glaring -->
+				<skillLevel>1</skillLevel>
+			</effect>
+		</selfEffects>
+	</skill>
+	<skill id="19205" toLevel="1" name="Song of Archery">
+		<!-- Increases Bow/ Crossbow Resistance of all party members by 50% for 30 sec. Consumes 5 Spirit Ore. -->
+		<icon>icon.skillsongofarchery</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>
+			<value fromLevel="1" toLevel="1">30</value>
+			<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1010">{base + subIndex}</value>
+			<value fromLevel="1" toLevel="1" fromSubLevel="1011" toSubLevel="1020">{base + 10 + 0.5 * subIndex}</value>
+		</abnormalTime>
+		<abnormalType>SONG_OF_ARCHERY</abnormalType>
+		<affectRange>1000</affectRange>
+		<itemConsumeCount>5</itemConsumeCount>
+		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ores -->
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<mpConsume>140</mpConsume>
+		<hitTime>8000</hitTime>
+		<coolTime>300</coolTime>
+		<effectPoint>687</effectPoint>
+		<reuseDelay>300000</reuseDelay>
+		<effects>
+			<effect name="DefenceTrait">
+				<BOW>50</BOW>
+				<CROSSBOW>50</CROSSBOW>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19206" toLevel="1" name="Sage's Dance">
+		<!-- Increases M. Def. of all party members by 50% for 30 sec. Consumes 5 Spirit Ore. -->
+		<icon>icon.skilldanceofwisdom</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>
+			<value fromLevel="1" toLevel="1">30</value>
+			<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1010">{base + subIndex}</value>
+			<value fromLevel="1" toLevel="1" fromSubLevel="1011" toSubLevel="1020">{base + 10 + 0.5 * subIndex}</value>
+		</abnormalTime>
+		<abnormalType>DANCE_OF_SAGE</abnormalType>
+		<affectRange>1000</affectRange>
+		<itemConsumeCount>5</itemConsumeCount>
+		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ores -->
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<mpConsume>140</mpConsume>
+		<hitTime>8000</hitTime>
+		<coolTime>300</coolTime>
+		<effectPoint>687</effectPoint>
+		<reuseDelay>300000</reuseDelay>
+		<effects>
+			<effect name="MagicalDefence">
+				<amount>50</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19207" toLevel="1" name="Chant of Bison">
+		<!-- For 5 min., all party members' P. Atk./ M. Atk. +15% and P. Skill Power/ M. Skill Power +5%. Consumes 10 Spirit Ore. -->
+		<icon>icon.skill19207</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>
+			<value fromLevel="1" toLevel="1">300</value>
+			<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1010">{base + subIndex}</value>
+			<value fromLevel="1" toLevel="1" fromSubLevel="1011" toSubLevel="1020">{base + 10 + 0.5 * subIndex}</value>
+		</abnormalTime>
+		<abnormalType>SONG_WEAPON</abnormalType>
+		<affectRange>1000</affectRange>
+		<itemConsumeCount>10</itemConsumeCount>
+		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<mpConsume>332</mpConsume>
+		<hitTime>8000</hitTime>
+		<coolTime>300</coolTime>
+		<effectPoint>712</effectPoint>
+		<reuseDelay>600000</reuseDelay>
+		<effects>
+			<effect name="PAtk">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalSkillPower">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalSkillPower">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19208" toLevel="7" name="Seal of Suspension">
+		<!-- For $s1, Physical and Magic skill cooldown of the target and nearby enemies +$s2. Consumes 5 Spirit Ore. -->
+		<icon>
+			<value level="1">icon.skill11558</value>
+			<value level="2">icon.skill11558</value>
+			<value level="3">icon.skill11558</value>
+			<value level="4">icon.skill19208</value>
+			<value level="5">icon.skill19208</value>
+			<value level="6">icon.skill19208</value>
+			<value level="7">icon.skill19208</value>
+		</icon>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<mpConsume>332</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<reuseDelay>60000</reuseDelay>
+		<isMagic>1</isMagic>
+		<effectPoint>
+			<value level="1">-457</value>
+			<value level="2">-457</value>
+			<value level="3">-457</value>
+			<value level="4">-285</value>
+			<value level="5">-285</value>
+			<value level="6">-285</value>
+			<value level="7">-285</value>
+		</effectPoint>
+		<abnormalTime>30</abnormalTime>
+		<isDebuff>true</isDebuff>
+		<itemConsumeCount>5</itemConsumeCount>
+		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
+		<effects>
+			<effect name="BlockAbnormalSlot">
+				<!-- Guess there is more -->
+				<slot>INVINCIBILITY</slot>
+			</effect>
+			<effect name="BlockSkill">
+				<magicTypes>0</magicTypes>
+			</effect>
+			<effect name="BlockSkill">
+				<magicTypes>1</magicTypes>
+			</effect>
+			<effect name="BlockSkill">
+				<magicTypes>3</magicTypes>
+			</effect>
+			<effect name="PhysicalDefence" fromLevel="1" toLevel="7" fromSubLevel="1001" toSubLevel="1020">
+				<amount>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1020">{-0.6 - 0.4 * subIndex}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence" fromLevel="1" toLevel="7" fromSubLevel="2001" toSubLevel="2020">
+				<amount>
+					<value fromLevel="1" toLevel="1" fromSubLevel="2001" toSubLevel="2020">{-0.6 - 0.4 * subIndex}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Speed" fromLevel="1" toLevel="7" fromSubLevel="3001" toSubLevel="3020">
+				<amount>
+					<value fromLevel="1" toLevel="1" fromSubLevel="3001" toSubLevel="3020">{-2 * subIndex}</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19209" toLevel="1" name="Divinity of Einhasad">
+		<!-- Decreases Magic Skill MP Consumption by 30% and has a 100% to result in a Critical when using 'Radiant Heal', 'Panic Heal', or 'Brilliant Heal' for 30 sec. Consumes 5 Spirit Ore. -->
+		<icon>icon.skill19209</icon>
+		<operateType>A2</operateType>
+		<mpConsume>46</mpConsume>
+		<reuseDelay>180000</reuseDelay>
+		<isMagic>1</isMagic>
+		<abnormalLevel>1</abnormalLevel>
+		<abnormalTime>
+			<value fromLevel="1" toLevel="1">30</value>
+			<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1010">{base + subIndex}</value>
+			<value fromLevel="1" toLevel="1" fromSubLevel="1011" toSubLevel="1020">{base + 10 + 0.5 * subIndex}</value>
+		</abnormalTime>
+		<abnormalVisualEffect>DIVINITY</abnormalVisualEffect>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<magicLvl>101</magicLvl>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<itemConsumeCount>5</itemConsumeCount>
+		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
+		<effects>
+			<effect name="MagicMpCost">
+				<amount>-30</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+			<effect name="HpCpHealCritical" />
+		</effects>
+	</skill>
+	<skill id="19210" toLevel="1" name="Summon Tree of Sephiroth">
+		<!-- Summons an Enchanted Tree of Life that cannot be targeted. The summoned tree heals nearby party members for 30 sec. and casts a debuff canceling blessing. Consumes 5 Spirit Ore. -->
+		<icon>icon.skill19210</icon>
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<magicLvl>101</magicLvl>
+		<mpConsume>243</mpConsume>
+		<castRange>600</castRange>
+		<hitTime>5000</hitTime>
+		<coolTime>2000</coolTime>
+		<reuseDelay>180000</reuseDelay>
+		<effectPoint>1733</effectPoint>
+		<isMagic>1</isMagic>
+		<effectRange>1000</effectRange>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>3</hitCancelTime>
+		<itemConsumeCount>5</itemConsumeCount>
+		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
+		<effects>
+			<effect name="Summon">
+				<npcId>15154</npcId> <!-- Tree of Life -->
+				<lifeTime>30</lifeTime>
+			</effect>
+			<effect name="ManaHeal" fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1020">
+				<power>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1001">532</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1002" toSubLevel="1002">570</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1003" toSubLevel="1003">607</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1004" toSubLevel="1004">644</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1005" toSubLevel="1005">681</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1006" toSubLevel="1006">718</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1007" toSubLevel="1007">756</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1008" toSubLevel="1008">793</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1009" toSubLevel="1009">830</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1010" toSubLevel="1010">867</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1011" toSubLevel="1011">904</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1012" toSubLevel="1012">942</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1013" toSubLevel="1013">979</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1014" toSubLevel="1014">1016</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1015" toSubLevel="1015">1053</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1016" toSubLevel="1016">1090</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1017" toSubLevel="1017">1128</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1018" toSubLevel="1018">1165</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1019" toSubLevel="1019">1202</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1020" toSubLevel="1020">1240</value>
+				</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19211" toLevel="1" name="Barrier for Test">
+		<!-- For 1 min., puts a barrier around a party member. The barrier blocks 50000 damage. Consumes 5 Spirit Ore. -->
+		<icon>icon.skill19211</icon>
+		<operateType>A2</operateType>
+		<mpConsume>43</mpConsume>
+		<hitTime>1500</hitTime>
+		<coolTime>300</coolTime>
+		<reuseDelay>600000</reuseDelay>
+		<effectPoint>867</effectPoint>
+		<isMagic>1</isMagic>
+	</skill>
+	<skill id="19212" toLevel="1" name="Shillien Protection">
+		<!-- Puts a barrier around a party member for 30 sec. Recovers 100% CP/ HP if dealt a death blow. Buff is deleted when the effect is applied. Consumes 5 Spirit Ore. -->
+		<icon>icon.skill19211</icon>
+		<operateType>A2</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<castRange>600</castRange>
+		<effectPoint>867</effectPoint>
+		<mpConsume>46</mpConsume>
+		<affectRange>600</affectRange>
+		<hitTime>1500</hitTime>
+		<coolTime>300</coolTime>
+		<reuseDelay>180000</reuseDelay>
+		<affectLimit>0-0</affectLimit>
+		<abnormalLevel>1</abnormalLevel>
+		<abnormalTime>
+			<value fromLevel="1" toLevel="1">30</value>
+			<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1010">{base + subIndex}</value>
+			<value fromLevel="1" toLevel="1" fromSubLevel="1011" toSubLevel="1020">{base + 10 + 0.5 * subIndex}</value>
+		</abnormalTime>
+		<abnormalType>SHILLIEN_PROTECTION</abnormalType>
+		<abnormalVisualEffect>SHILLIEN_PROTECTION</abnormalVisualEffect>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<itemConsumeCount>5</itemConsumeCount>
+		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
+		<effects>
+			<effect name="TriggerSkillByDeathBlow">
+				<chance>100</chance>
+				<skillId>19221</skillId> <!-- Power of Darkness -->
+				<skillLevel>1</skillLevel>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19213" toLevel="1" name="Polishing Arrows: Atk. Spd.">
+		<!-- Creates 250 Enhanced Orichalcum Arrows with increased Atk. Spd. Consumes 1 Crystal (R-grade). -->
+		<icon>icon.skill_polishing_arrows</icon>
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<mpConsume>117</mpConsume>
+		<hitTime>3000</hitTime>
+		<reuseDelay>60000</reuseDelay>
+		<isMagic>1</isMagic>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>17371</itemConsumeId> <!-- Crystal (R-Grade) -->
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="Restoration">
+				<!-- Enhanced Orichalcum Arrow -->
+				<itemId>45578</itemId>
+				<itemCount>250</itemCount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19214" toLevel="1" name="Polishing Bolts: Atk. Spd.">
+		<!-- Creates 250 Enhanced Orichalcum Bolts with increased Atk. Spd. Consumes 1 Crystal (R-grade). -->
+		<icon>icon.skill_polishing_bolts</icon>
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<mpConsume>117</mpConsume>
+		<hitTime>3000</hitTime>
+		<reuseDelay>60000</reuseDelay>
+		<isMagic>1</isMagic>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>17371</itemConsumeId> <!-- Crystal (R-Grade) -->
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="Restoration">
+				<!-- Enhanced Orichalcum Bolt -->
+				<itemId>45581</itemId>
+				<itemCount>250</itemCount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19215" toLevel="1" name="Polishing Arrows: P. Atk.">
+		<!-- Creates 250 Enhanced Orichalcum Arrows with increased P. Atk. Consumes 1 Crystal (R-grade). -->
+		<icon>icon.skill_polishing_arrows</icon>
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<mpConsume>117</mpConsume>
+		<hitTime>3000</hitTime>
+		<reuseDelay>60000</reuseDelay>
+		<isMagic>1</isMagic>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>17371</itemConsumeId> <!-- Crystal (R-Grade) -->
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="Restoration">
+				<!-- Enhanced Orichalcum Arrow -->
+				<itemId>45579</itemId>
+				<itemCount>250</itemCount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19216" toLevel="1" name="Polishing Bolts: P. Atk.">
+		<!-- Creates 250 Enhanced Orichalcum Bolts with increased P. Atk. Consumes 1 Crystal (R-grade). -->
+		<icon>icon.skill_polishing_bolts</icon>
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<mpConsume>117</mpConsume>
+		<hitTime>3000</hitTime>
+		<reuseDelay>60000</reuseDelay>
+		<isMagic>1</isMagic>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>17371</itemConsumeId> <!-- Crystal (R-Grade) -->
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="Restoration">
+				<!-- Enhanced Orichalcum Bolt -->
+				<itemId>45582</itemId>
+				<itemCount>250</itemCount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19217" toLevel="1" name="Polishing Arrows: Additional Hit">
+		<!-- Creates 250 Enhanced Orichalcum Arrows with Additional Hit. Consumes 1 Crystal (R-grade). -->
+		<icon>icon.skill_polishing_arrows</icon>
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<mpConsume>128</mpConsume>
+		<hitTime>3000</hitTime>
+		<reuseDelay>60000</reuseDelay>
+		<isMagic>1</isMagic>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>17371</itemConsumeId> <!-- Crystal (R-Grade) -->
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="Restoration">
+				<!-- Enhanced Orichalcum Arrow -->
+				<itemId>45580</itemId>
+				<itemCount>250</itemCount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19218" toLevel="1" name="Polishing Bolts: Additional Hit">
+		<!-- Creates 250 Enhanced Orichalcum Bolts with Additional Hit. Consumes 1 Crystal (R-grade). -->
+		<icon>icon.skill_polishing_bolts</icon>
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<mpConsume>128</mpConsume>
+		<hitTime>3000</hitTime>
+		<reuseDelay>60000</reuseDelay>
+		<isMagic>1</isMagic>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>17371</itemConsumeId> <!-- Crystal (R-Grade) -->
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="Restoration">
+				<!-- Enhanced Orichalcum Bolt -->
+				<itemId>45583</itemId>
+				<itemCount>250</itemCount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19219" toLevel="1" name="Blessing of Tree">
+		<!-- Recovers HP and removes bad abnormal statuses. -->
+		<icon>icon.skill1258</icon>
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<reuseDelay>7000</reuseDelay>
+		<effectPoint>2</effectPoint>
+		<isMagic>1</isMagic>
+		<magicLvl>101</magicLvl>
+		<magicCriticalRate>5</magicCriticalRate>
+		<affectRange>200</affectRange>
+		<effects>
+			<effect name="HpCpHeal">
+				<!-- Custom, value if Tree of Life level 4 -->
+				<power>3338</power>
+			</effect>
+			<effect name="DispelByCategory">
+				<slot>DEBUFF</slot>
+				<rate>100</rate>
+				<max>10</max>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19220" toLevel="1" name="Sharing Equipment">
+		<!-- For 30 min., the ability of the equipped item transfers to your servitor. Consumes 5 Spirit Ore. -->
+		<icon>icon.skill19220</icon>
+		<operateType>A2</operateType>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>1800</abnormalTime>
+		<abnormalType>SPIRIT_SHARING</abnormalType>
+		<mpConsume>77</mpConsume>
+		<hitTime>1000</hitTime>
+		<coolTime>200</coolTime>
+		<reuseDelay>60000</reuseDelay>
+		<isMagic>1</isMagic>
+		<magicLvl>99</magicLvl>
+		<itemConsumeCount>5</itemConsumeCount>
+		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ores -->
+		<effectPoint>418</effectPoint>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SUMMON</targetType>
+		<affectScope>SUMMON_EXCEPT_MASTER</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<conditions>
+			<condition name="OpHaveSummon" />
+		</conditions>
+		<effects>
+		<!-- FIX ME: EFFECT NOT REALIZED -->
+			<effect name="AttackAttributeAdd">
+				<amount>450</amount>
+			</effect>
+			<effect name="MaxHp">
+				<amount>25</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>25</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>25</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>25</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>25</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PAtk">
+				<amount>25</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>25</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>25</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalSkillPower">
+				<amount>25</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalSkillPower">
+				<amount>25</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="CriticalDamage">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="SkillCriticalDamage">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicCriticalDamage">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>300</amount>
+				<attribute>FIRE</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>300</amount>
+				<attribute>WATER</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>300</amount>
+				<attribute>WIND</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>300</amount>
+				<attribute>EARTH</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>300</amount>
+				<attribute>HOLY</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>300</amount>
+				<attribute>DARK</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19221" toLevel="1" name="Power of Darkness">
+		<icon>Icon.skill1050</icon>
+		<operateType>A1</operateType>
+		<reuseDelay>5000</reuseDelay>
+		<effectPoint>2</effectPoint>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="DispelBySlot">
+				<dispel>SHILLIEN_PROTECTION,1</dispel>
+			</effect>
+			<effect name="CpHealPercent">
+				<power>100</power>
+			</effect>
+			<effect name="HealPercent">
+				<power>100</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19222" toLevel="5" name="Dignity of the Exalted">
+		<!-- STR +$s1, DEX +$s2, CON +$s3, INT +$s4, WIT +$s5, MEN +$s6, CHA +$s7. -->
+		<icon>icon.skill19222</icon>
+		<operateType>P</operateType>
+		<excludedFromCheck>true</excludedFromCheck>
+		<effectPoint>100</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="StatUp">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+					<value level="4">4</value>
+					<value level="5">5</value>
+				</amount>
+				<stat>STR</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+					<value level="4">4</value>
+					<value level="5">5</value>
+				</amount>
+				<stat>DEX</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+					<value level="4">4</value>
+					<value level="5">5</value>
+				</amount>
+				<stat>CON</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+					<value level="4">4</value>
+					<value level="5">5</value>
+				</amount>
+				<stat>INT</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+					<value level="4">4</value>
+					<value level="5">5</value>
+				</amount>
+				<stat>WIT</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+					<value level="4">4</value>
+					<value level="5">5</value>
+				</amount>
+				<stat>MEN</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+					<value level="4">4</value>
+					<value level="5">5</value>
+				</amount>
+				<stat>CHA</stat>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19223" toLevel="1" name="Belief of the Exalted">
+		<!-- Teleports to selected party member. Consumes 100 Spirit Ore. -->
+		<icon>icon.skill19223</icon>
+		<operateType>A1</operateType>
+		<effectPoint>100</effectPoint>
+		<excludedFromCheck>true</excludedFromCheck>
+		<mpConsume>142</mpConsume>
+		<hitTime>5000</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>600000</reuseDelay>
+		<magicLvl>99</magicLvl>
+		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
+		<itemConsumeCount>100</itemConsumeCount>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>MY_PARTY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="TargetMyParty">
+				<includeMe>false</includeMe>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="TeleportToPlayer" />
+		</effects>
+	</skill>
+	<skill id="19224" toLevel="1" name="Blessing of the Exalted">
+		<!-- Gives 'Blessing of the Exalted' effect to all party members. Maintains target's buff/ de-buff condition even following death and resurrection. Consumes 40 Spirit Ore. -->
+		<icon>icon.skill19224</icon>
+		<operateType>A2</operateType>
+		<excludedFromCheck>true</excludedFromCheck>
+		<mpConsume>207</mpConsume>
+		<hitTime>1000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>100</effectPoint>
+		<reuseDelay>60000</reuseDelay>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<abnormalType>PRESERVE_ABNORMAL</abnormalType>
+		<effectRange>900</effectRange>
+		<affectRange>1000</affectRange>
+		<affectLimit>0-0</affectLimit>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
+		<itemConsumeCount>40</itemConsumeCount>
+		<magicLvl>99</magicLvl>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<effects>
+			<effect name="NoblesseBless" />
+		</effects>
+	</skill>
+	<skill id="19225" toLevel="1" name="Summon Battle Potion">
+		<!-- Summons 5 Battle Quick Healing Potions. Consumes 40 Crystals (R-grade). -->
+		<icon>icon.skill19225</icon>
+		<operateType>A1</operateType>
+		<excludedFromCheck>true</excludedFromCheck>
+		<mpConsume>142</mpConsume>
+		<hitTime>3000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>100</effectPoint>
+		<reuseDelay>21600000</reuseDelay>
+		<itemConsumeId>17371</itemConsumeId> <!-- Consumes 40 Crystals (R-grade) -->
+		<itemConsumeCount>40</itemConsumeCount>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>20</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="Restoration">
+				<itemId>45945</itemId>
+				<itemCount>5</itemCount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19226" toLevel="2" name="Favor of the Exalted">
+		<!-- For $s1 h., increases Acquired XP/ SP by $s2. Consumes $s3 Spirit Ore. -->
+		<icon>icon.skill19226</icon>
+		<operateType>A2</operateType>
+		<excludedFromCheck>true</excludedFromCheck>
+		<abnormalLvl>
+			<value level="1">1</value>
+			<value level="2">2</value>
+		</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<mpConsume>142</mpConsume>
+		<castRange>400</castRange>
+		<hitTime>1000</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>2000</reuseDelay>
+		<effectPoint>100</effectPoint>
+		<isMagic>4</isMagic>
+		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
+		<itemConsumeCount>
+			<value level="1">40</value>
+			<value level="2">120</value>
+		</itemConsumeCount>
+		<targetType>MY_PARTY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="ExpModify">
+				<amount>
+					<value level="1">3</value>
+					<value level="2">10</value>
+				</amount>
+			</effect>
+			<effect name="SpModify">
+				<amount>
+					<value level="1">3</value>
+					<value level="2">10</value>
+				</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19227" toLevel="2" name="Wind Hiding">
+		<!-- Blends into the wind for $s1. Increases Speed by $s2. Canceled when using standard attacks or attack skills. -->
+		<icon>icon.skill30008</icon>
+		<abnormalLvl>
+			<value level="1">1</value>
+			<value level="2">2</value>
+		</abnormalLvl>
+		<abnormalTime>5</abnormalTime>
+		<abnormalType>HIDE</abnormalType>
+		<abnormalVisualEffect>WIND_BLEND</abnormalVisualEffect>
+		<removedOnAnyActionExceptMove>true</removedOnAnyActionExceptMove>
+		<removedOnDamage>true</removedOnDamage>
+		<isTriggeredSkill>true</isTriggeredSkill>
+		<magicLvl>
+			<value level="1">20</value>
+			<value level="2">85</value>
+		</magicLvl>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effectPoint>687</effectPoint>
+		<isMagic>4</isMagic>
+		<effects>
+			<effect name="Hide" />
+			<effect name="Speed">
+				<amount>
+					<value level="1">7</value>
+					<value level="2">14</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19228" toLevel="1" name="Song of Thief">
+		<!-- Increases Dagger/ Dual Dagger Resistance of all party members by 50% for 30 sec. Consumes 5 Spirit Ore. -->
+		<icon>icon.skill19228</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>30</abnormalTime>
+		<abnormalType>SONG_OF_THIEF</abnormalType>
+		<affectRange>1000</affectRange>
+		<itemConsumeCount>5</itemConsumeCount>
+		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ores -->
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<mpConsume>140</mpConsume>
+		<hitTime>8000</hitTime>
+		<coolTime>300</coolTime>
+		<effectPoint>687</effectPoint>
+		<abnormalTime>30</abnormalTime>
+		<reuseDelay>300000</reuseDelay>
+		<effects>
+			<effect name="DefenceTrait">
+				<DAGGER>50</DAGGER>
+				<DUALDAGGER>50</DUALDAGGER>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19229" toLevel="1" name="Fate of the Exalted">
+		<!-- LUC +3. -->
+		<icon>icon.skill19222</icon>
+		<operateType>P</operateType>
+		<excludedFromCheck>true</excludedFromCheck>
+		<effectPoint>100</effectPoint>
+		<effects>
+			<effect name="StatUp">
+				<amount>3</amount>
+				<stat>LUC</stat>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19230" toLevel="30" name="MP Recovery">
+		<!-- MP Recovery Bonus +$s2 for $s1. -->
+		<icon>icon.skill1047</icon>
+		<abnormalLvl>5</abnormalLvl>
+		<abnormalTime>15</abnormalTime>
+		<abnormalType>MP_REGEN_UP</abnormalType>
+		<operateType>A2</operateType>
+		<effectPoint>635</effectPoint>
+		<abnormalTime>15</abnormalTime>
+		<isMagic>1</isMagic>
+	</skill>
+	<skill id="19231" toLevel="1" name="Song of Assault">
+		<!-- For 30 sec., all P. Critical Rate and Damage, P./ M. Skill Critical Rate and Critical Damage of all party members +15%. Consumes 5 Spirit Ore. -->
+		<icon>icon.skill19231</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>
+			<value fromLevel="1" toLevel="1">30</value>
+			<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1010">{base + subIndex}</value>
+			<value fromLevel="1" toLevel="1" fromSubLevel="1011" toSubLevel="1020">{base + 10 + 0.5 * subIndex}</value>
+		</abnormalTime>
+		<abnormalType>SONG_OF_WISDOM</abnormalType>
+		<affectRange>1000</affectRange>
+		<itemConsumeCount>5</itemConsumeCount>
+		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ores -->
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<mpConsume>140</mpConsume>
+		<hitTime>8000</hitTime>
+		<coolTime>300</coolTime>
+		<effectPoint>687</effectPoint>
+		<reuseDelay>300000</reuseDelay>
+		<effects>
+			<effect name="MagicCriticalDamage">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicCriticalRate">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="SkillCriticalDamage">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="SkillCriticalProbability">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="CriticalRate">
+				<amount>15</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="CriticalDamage">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19232" toLevel="1" name="Crippling Dance">
+		<!-- For 30 sec., all party members' P. Atk./ M. Atk. +25% and P. Skill Power/ M. Skill Power +15%. Consumes 5 Spirit Ore. -->
+		<icon>icon.skill19232</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>
+			<value fromLevel="1" toLevel="1">30</value>
+			<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1010">{base + subIndex}</value>
+			<value fromLevel="1" toLevel="1" fromSubLevel="1011" toSubLevel="1020">{base + 10 + 0.5 * subIndex}</value>
+		</abnormalTime>
+		<abnormalType>CRIPPLING_DANCE</abnormalType>
+		<affectRange>1000</affectRange>
+		<itemConsumeCount>5</itemConsumeCount>
+		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ores -->
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<mpConsume>140</mpConsume>
+		<hitTime>8000</hitTime>
+		<coolTime>300</coolTime>
+		<effectPoint>687</effectPoint>
+		<reuseDelay>300000</reuseDelay>
+		<effects>
+			<effect name="PAtk">
+				<amount>25</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>25</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalSkillPower">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalSkillPower">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19233" toLevel="3" name="Guardian Shield">
+		<!-- Defense +$s1 -->
+		<icon>icon.skill19120</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="PhysicalDefence">
+				<amount>
+					<value level="1">2</value>
+					<value level="2">4</value>
+					<value level="3">7</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19234" toLevel="3" name="Guardian Magic Barrier">
+		<!-- M. Def. +$s1 -->
+		<icon>icon.skill19121</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="MagicalDefence">
+				<amount>
+					<value level="1">2</value>
+					<value level="2">4</value>
+					<value level="3">7</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19235" toLevel="3" name="Guardian Body">
+		<!-- Max HP +$s1 -->
+		<icon>icon.skill1045</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="MaxHp">
+				<amount>
+					<value level="1">3</value>
+					<value level="2">6</value>
+					<value level="3">9</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19236" toLevel="3" name="Guardian Elemental Cover">
+		<!-- Attribute Resistance +$s1 -->
+		<icon>icon.skill1352</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">15</value>
+					<value level="2">25</value>
+					<value level="3">40</value>
+				</amount>
+				<attribute>FIRE</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">15</value>
+					<value level="2">25</value>
+					<value level="3">40</value>
+				</amount>
+				<attribute>WATER</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">15</value>
+					<value level="2">25</value>
+					<value level="3">40</value>
+				</amount>
+				<attribute>WIND</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">15</value>
+					<value level="2">25</value>
+					<value level="3">40</value>
+				</amount>
+				<attribute>EARTH</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">15</value>
+					<value level="2">25</value>
+					<value level="3">40</value>
+				</amount>
+				<attribute>HOLY</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">15</value>
+					<value level="2">25</value>
+					<value level="3">40</value>
+				</amount>
+				<attribute>DARK</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19237" toLevel="2" name="Guardian Armor Defense">
+		<!-- P./ M. Def. +$s1 if heavy armor is equipped. -->
+		<icon>icon.skill0231</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="PhysicalDefence">
+				<amount>
+					<value level="1">3</value>
+					<value level="2">6</value>
+				</amount>
+				<mode>PER</mode>
+				<armorType>
+					<item>HEAVY</item>
+				</armorType>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>
+					<value level="1">3</value>
+					<value level="2">6</value>
+				</amount>
+				<mode>PER</mode>
+				<armorType>
+					<item>HEAVY</item>
+				</armorType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19238" toLevel="2" name="Guardian Leather Defense">
+		<!-- P./ M. Def. +$s1 if light armor is equipped. -->
+		<icon>icon.skill0233</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="PhysicalDefence">
+				<amount>
+					<value level="1">3</value>
+					<value level="2">6</value>
+				</amount>
+				<mode>PER</mode>
+				<armorType>
+					<item>LIGHT</item>
+				</armorType>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>
+					<value level="1">3</value>
+					<value level="2">6</value>
+				</amount>
+				<mode>PER</mode>
+				<armorType>
+					<item>LIGHT</item>
+				</armorType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19239" toLevel="2" name="Guardian Tunic Defense">
+		<!-- P./ M. Def. +$s1 if robe is equipped. -->
+		<icon>icon.skill0234</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="PhysicalDefence">
+				<amount>
+					<value level="1">3</value>
+					<value level="2">6</value>
+				</amount>
+				<mode>PER</mode>
+				<armorType>
+					<item>MAGIC</item>
+				</armorType>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>
+					<value level="1">3</value>
+					<value level="2">6</value>
+				</amount>
+				<mode>PER</mode>
+				<armorType>
+					<item>MAGIC</item>
+				</armorType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19240" toLevel="2" name="Guardian Resist">
+		<!-- Debuff Resistance +$s1 -->
+		<icon>icon.skill1354</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="ResistAbnormalByCategory">
+				<amount>
+					<value level="1">-5</value>
+					<value level="2">-10</value>
+				</amount>
+				<slot>DEBUFF</slot>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19241" toLevel="4" name="Guardian Life">
+		<!-- Max HP +$s1 -->
+		<icon>icon.skill1229</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="MaxHp">
+				<amount>
+					<value level="1">3</value>
+					<value level="2">6</value>
+					<value level="3">10</value>
+					<value level="4">15</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19242" toLevel="1" name="Guardian Block">
+		<!-- Shield Defense +100% -->
+		<icon>icon.skill1304</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="ShieldDefence">
+				<amount>100</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19243" toLevel="4" name="Guardian Armor">
+		<!-- Defense +$s1 -->
+		<icon>icon.skill19165</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="PhysicalDefence">
+				<amount>
+					<value level="1">2</value>
+					<value level="2">4</value>
+					<value level="3">8</value>
+					<value level="4">12</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19244" toLevel="1" name="Guardian Guidance">
+		<!-- P. Accuracy, M. Accuracy, and Servitor's P. Accuracy +12. Enchants Revelation skill. -->
+		<icon>icon.skill19127</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="Accuracy">
+				<amount>12</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicAccuracy">
+				<amount>12</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ServitorShare">
+				<ACCURACY_COMBAT>12</ACCURACY_COMBAT>
+			</effect>
+			<effect name="AddSkillBySkill">
+				<existingSkillId>1904</existingSkillId>
+				<existingSkillLevel>1</existingSkillLevel>
+				<addedSkillId>1904</addedSkillId>
+				<addedSkillLevel>2</addedSkillLevel>
+			</effect>
+			<effect name="AddSkillBySkill">
+				<existingSkillId>1907</existingSkillId>
+				<existingSkillLevel>1</existingSkillLevel>
+				<addedSkillId>1907</addedSkillId>
+				<addedSkillLevel>2</addedSkillLevel>
+			</effect>
+			<effect name="AddSkillBySkill">
+				<existingSkillId>1912</existingSkillId>
+				<existingSkillLevel>1</existingSkillLevel>
+				<addedSkillId>1912</addedSkillId>
+				<addedSkillLevel>2</addedSkillLevel>
+			</effect>
+			<effect name="AddSkillBySkill">
+				<existingSkillId>1914</existingSkillId>
+				<existingSkillLevel>1</existingSkillLevel>
+				<addedSkillId>1914</addedSkillId>
+				<addedSkillLevel>2</addedSkillLevel>
+			</effect>
+			<effect name="AddSkillBySkill">
+				<existingSkillId>1920</existingSkillId>
+				<existingSkillLevel>1</existingSkillLevel>
+				<addedSkillId>1920</addedSkillId>
+				<addedSkillLevel>2</addedSkillLevel>
+			</effect>
+			<effect name="AddSkillBySkill">
+				<existingSkillId>1922</existingSkillId>
+				<existingSkillLevel>1</existingSkillLevel>
+				<addedSkillId>1922</addedSkillId>
+				<addedSkillLevel>2</addedSkillLevel>
+			</effect>
+			<effect name="AddSkillBySkill">
+				<existingSkillId>1925</existingSkillId>
+				<existingSkillLevel>1</existingSkillLevel>
+				<addedSkillId>1925</addedSkillId>
+				<addedSkillLevel>2</addedSkillLevel>
+			</effect>
+			<effect name="AddSkillBySkill">
+				<existingSkillId>1996</existingSkillId>
+				<existingSkillLevel>1</existingSkillLevel>
+				<addedSkillId>1996</addedSkillId>
+				<addedSkillLevel>2</addedSkillLevel>
+			</effect>
+			<effect name="AddSkillBySkill">
+				<existingSkillId>1997</existingSkillId>
+				<existingSkillLevel>1</existingSkillLevel>
+				<addedSkillId>1997</addedSkillId>
+				<addedSkillLevel>2</addedSkillLevel>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19245" toLevel="2" name="Guardian Death Shield">
+		<!-- Received P. Critical Damage -$s1. -->
+		<icon>icon.skill1542</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="DefenceCriticalDamage">
+				<amount>
+					<value level="1">-10</value>
+					<value level="2">-20</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19246" toLevel="2" name="Guardian Focus Shield">
+		<!-- Chance of receiving P. Critical Damage -$s1. -->
+		<icon>icon.skill0986</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="DefenceCriticalRate">
+				<amount>
+					<value level="1">15</value>
+					<value level="2">30</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19247" toLevel="2" name="Guardian Mind Control">
+		<!-- Skill Cooldown -$s1. -->
+		<icon>icon.skill19132</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="Reuse">
+				<amount>
+					<value level="1">-3</value>
+					<value level="2">-5</value>
+				</amount>
+				<mode>PER</mode>
+				<magicType>0</magicType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19248" toLevel="2" name="Guardian Blessing">
+		<!-- Acquired XP/ SP +$s1 -->
+		<icon>icon.skill_exp_sp_up</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="ExpModify">
+				<amount>
+					<value level="1">5</value>
+					<value level="2">10</value>
+				</amount>
+			</effect>
+			<effect name="SpModify">
+				<amount>
+					<value level="1">5</value>
+					<value level="2">10</value>
+				</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19249" toLevel="2" name="Guardian Binding Cover">
+		<!-- Received Damage -$s1 when immobilized. -->
+		<icon>icon.skill0335</icon>
+		<operateType>P</operateType>
+		<passiveConditions>
+			<condition name="OpCheckAbnormal">
+				<type>STUN</type>
+				<level>1</level>
+				<hasAbnormal>true</hasAbnormal>
+				<affectType>CASTER</affectType>
+			</condition>
+		</passiveConditions>
+		<effects>
+			<effect name="DefenceCriticalRate">
+				<amount>
+					<value level="1">7</value>
+					<value level="2">15</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19250" toLevel="1" name="Guardian Spirit">
+		<!-- Attribute Resistance +50 -->
+		<icon>icon.skill10044</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="DefenceAttribute">
+				<amount>50</amount>
+				<attribute>FIRE</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>50</amount>
+				<attribute>WATER</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>50</amount>
+				<attribute>WIND</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>50</amount>
+				<attribute>EARTH</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>50</amount>
+				<attribute>HOLY</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>50</amount>
+				<attribute>DARK</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19251" toLevel="1" name="Guardian Potential">
+		<!-- Skill Critical Rate +10%. -->
+		<icon>icon.skill1532</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="SkillCriticalProbability">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19252" toLevel="2" name="Guardian Expert Potion">
+		<!-- Recovery Potion and Miracle Potion +$s1 -->
+		<icon>icon.skill_potion_up</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="HealEffect">
+				<amount>
+					<value level="1">500</value>
+					<value level="2">1000</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19253" toLevel="1" name="Guardian Defense Master">
+		<!-- Received Damage -10% -->
+		<icon>icon.skill0528</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<effects>
+			<effect name="DamageByAttack">
+				<amount>-10</amount>
+				<type>PK</type>
+			</effect>
+			<effect name="DamageByAttack">
+				<amount>-10</amount>
+				<type>ENEMY_ALL</type>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19254" toLevel="2" name="Berserker Haste">
+		<!-- Atk. Spd. +$s1 -->
+		<icon>icon.skill1086</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<effects>
+			<effect name="PhysicalAttackSpeed">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">3</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19255" toLevel="4" name="Berserker Might">
+		<!-- P. Atk. +$s1. -->
+		<icon>icon.skill19139</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="PAtk">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+					<value level="4">4</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19256" toLevel="4" name="Berserker's Elemental Attack">
+		<!-- Attack Attribute +$s1 -->
+		<icon>icon.skill19130</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="AttackAttributeAdd">
+				<amount>
+					<value level="1">10</value>
+					<value level="2">20</value>
+					<value level="3">30</value>
+					<value level="4">40</value>
+				</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19257" toLevel="3" name="Berserker Craft Focus">
+		<!-- P. Skill Critical Rate +$s1. -->
+		<icon>icon.skill0193</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="SkillCriticalProbability">
+				<amount>
+					<value level="1">3</value>
+					<value level="2">6</value>
+					<value level="3">10</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19258" toLevel="2" name="Berserker Backfire">
+		<!-- Damage From Behind +$s1 -->
+		<icon>icon.skill0030</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="RearDamage">
+				<amount>
+					<value level="1">2</value>
+					<value level="2">5</value>
+				</amount>
+				<mode>PER</mode>
+				<position>BACK</position>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19259" toLevel="3" name="Berserker Focus">
+		<!-- P. Critical Rate +$s1 -->
+		<icon>icon.skill1077</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="CriticalRate">
+				<amount>
+					<value level="1">10</value>
+					<value level="2">20</value>
+					<value level="3">40</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19260" toLevel="1" name="Berserker Coast">
+		<!-- Skill MP Consumption -5%. -->
+		<icon>icon.skill19140</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="MagicMpCost">
+				<amount>-5</amount>
+				<mode>PER</mode>
+				<magicType>0</magicType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19261" toLevel="3" name="Berserker Craft Death">
+		<!-- P. Skill Critical Damage +$s1. -->
+		<icon>icon.skill10655</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="SkillCriticalDamage">
+				<amount>
+					<value level="1">2</value>
+					<value level="2">4</value>
+					<value level="3">7</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19262" toLevel="2" name="Mortal Berserker">
+		<!-- Skill Master Rate +$s1 -->
+		<icon>icon.skill0330</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="SkillCriticalProbability">
+				<amount>
+					<value level="1">30</value>
+					<value level="2">60</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19263" toLevel="3" name="Berserker's Death Whisper">
+		<!-- P. Critical Damage +$s1. -->
+		<icon>icon.skill4278</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="CriticalDamage">
+				<amount>
+					<value level="1">2</value>
+					<value level="2">4</value>
+					<value level="3">7</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19264" toLevel="1" name="Berserker Eagle">
+		<!-- P. Accuracy, M. Accuracy, and Servitor's P. Accuracy +12. Enchants Revelation skill. -->
+		<icon>icon.skill19127</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="Accuracy">
+				<amount>12</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicAccuracy">
+				<amount>12</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ServitorShare">
+				<ACCURACY_COMBAT>12</ACCURACY_COMBAT>
+			</effect>
+				<effect name="AddSkillBySkill">
+				<existingSkillId>1904</existingSkillId>
+				<existingSkillLevel>1</existingSkillLevel>
+				<addedSkillId>1904</addedSkillId>
+				<addedSkillLevel>2</addedSkillLevel>
+			</effect>
+			<effect name="AddSkillBySkill">
+				<existingSkillId>1907</existingSkillId>
+				<existingSkillLevel>1</existingSkillLevel>
+				<addedSkillId>1907</addedSkillId>
+				<addedSkillLevel>2</addedSkillLevel>
+			</effect>
+			<effect name="AddSkillBySkill">
+				<existingSkillId>1912</existingSkillId>
+				<existingSkillLevel>1</existingSkillLevel>
+				<addedSkillId>1912</addedSkillId>
+				<addedSkillLevel>2</addedSkillLevel>
+			</effect>
+			<effect name="AddSkillBySkill">
+				<existingSkillId>1914</existingSkillId>
+				<existingSkillLevel>1</existingSkillLevel>
+				<addedSkillId>1914</addedSkillId>
+				<addedSkillLevel>2</addedSkillLevel>
+			</effect>
+			<effect name="AddSkillBySkill">
+				<existingSkillId>1920</existingSkillId>
+				<existingSkillLevel>1</existingSkillLevel>
+				<addedSkillId>1920</addedSkillId>
+				<addedSkillLevel>2</addedSkillLevel>
+			</effect>
+			<effect name="AddSkillBySkill">
+				<existingSkillId>1922</existingSkillId>
+				<existingSkillLevel>1</existingSkillLevel>
+				<addedSkillId>1922</addedSkillId>
+				<addedSkillLevel>2</addedSkillLevel>
+			</effect>
+			<effect name="AddSkillBySkill">
+				<existingSkillId>1925</existingSkillId>
+				<existingSkillLevel>1</existingSkillLevel>
+				<addedSkillId>1925</addedSkillId>
+				<addedSkillLevel>2</addedSkillLevel>
+			</effect>
+			<effect name="AddSkillBySkill">
+				<existingSkillId>1996</existingSkillId>
+				<existingSkillLevel>1</existingSkillLevel>
+				<addedSkillId>1996</addedSkillId>
+				<addedSkillLevel>2</addedSkillLevel>
+			</effect>
+			<effect name="AddSkillBySkill">
+				<existingSkillId>1997</existingSkillId>
+				<existingSkillLevel>1</existingSkillLevel>
+				<addedSkillId>1997</addedSkillId>
+				<addedSkillLevel>2</addedSkillLevel>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19265" toLevel="2" name="Berserker Battle">
+		<!-- P. Atk. +$s1. -->
+		<icon>icon.skill1388</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="PAtk">
+				<amount>
+					<value level="1">3</value>
+					<value level="2">6</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19266" toLevel="2" name="Berserker Fire">
+		<!-- P. Skill Power +$s1. -->
+		<icon>icon.skill1356</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="PhysicalSkillPower">
+				<amount>
+					<value level="1">2</value>
+					<value level="2">5</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19267" toLevel="1" name="Berserker's Skill Reduction">
+		<!-- Skill Cooldown -3%. -->
+		<icon>icon.skill0758</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="Reuse">
+				<amount>-3</amount>
+				<mode>PER</mode>
+				<magicType>0</magicType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19268" toLevel="2" name="Berserker's Blessing">
+		<!-- Acquired XP/ SP +$s1 -->
+		<icon>icon.skill_exp_sp_up</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="ExpModify">
+				<amount>
+					<value level="1">5</value>
+					<value level="2">10</value>
+				</amount>
+			</effect>
+			<effect name="SpModify">
+				<amount>
+					<value level="1">5</value>
+					<value level="2">10</value>
+				</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19269" toLevel="2" name="Berserker's Binding Attack">
+		<!-- Damage on immobile target +$s1 -->
+		<icon>icon.skill0983</icon>
+		<operateType>P</operateType>
+		<passiveConditions>
+			<condition name="OpCheckAbnormal">
+				<type>STUN</type>
+				<level>1</level>
+				<hasAbnormal>true</hasAbnormal>
+				<affectType>TARGET</affectType>
+			</condition>
+		</passiveConditions>
+		<effects>
+			<effect name="PAtk">
+				<amount>
+					<value level="1">5</value>
+					<value level="2">10</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19270" toLevel="2" name="Berserker's Divine Attack">
+		<!-- Attack Attribute +$s1 -->
+		<icon>icon.skill11011</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="AttackAttributeAdd">
+				<amount>
+					<value level="1">25</value>
+					<value level="2">50</value>
+				</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19271" toLevel="2" name="Berserker's Expert Potion">
+		<!-- Recovery Potion and Miracle Potion +$s1 -->
+		<icon>icon.skill_potion_up</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="AdditionalPotionHp">
+				<amount>
+					<value level="1">500</value>
+					<value level="2">1000</value>
+				</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19272" toLevel="1" name="Berserker Combat Master">
+		<!-- Damage +10% -->
+		<icon>icon.skill1499</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="PvePhysicalAttackDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvePhysicalSkillDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19273" toLevel="2" name="Wizard's Acumen">
+		<!-- Casting Spd. +$s1 -->
+		<icon>icon.skill1085</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="MagicalAttackSpeed">
+				<amount>
+					<value level="1">2</value>
+					<value level="2">4</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19274" toLevel="3" name="Wizard's Empower">
+		<!-- M. Atk. +$s1. -->
+		<icon>icon.skill1059</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="MAtk">
+				<amount>
+					<value level="1">2</value>
+					<value level="2">5</value>
+					<value level="3">8</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19275" toLevel="3" name="Wizard's Elemental Shot">
+		<!-- Attack Attribute +$s1 -->
+		<icon>icon.skill19130</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="AttackAttributeAdd">
+				<amount>
+					<value level="1">10</value>
+					<value level="2">20</value>
+					<value level="3">40</value>
+				</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19276" toLevel="3" name="Wizard's Wild Magic">
+		<!-- M. Critical Rate +$s1 -->
+		<icon>icon.skill1303</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="MagicCriticalRate">
+				<amount>
+					<value level="1">10</value>
+					<value level="2">20</value>
+					<value level="3">40</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19277" toLevel="3" name="Wizard's Condition">
+		<!-- Max HP/ MP +$s1. -->
+		<icon>icon.skill1501</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="MaxHp">
+				<amount>
+					<value level="1">3</value>
+					<value level="2">6</value>
+					<value level="3">9</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>
+					<value level="1">3</value>
+					<value level="2">6</value>
+					<value level="3">9</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19278" toLevel="1" name="Wizard's Eva">
+		<!-- Skill MP Consumption -5%. -->
+		<icon>icon.skill0214</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="MagicMpCost">
+				<amount>-5</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19279" toLevel="3" name="Wizard's Mystic">
+		<!-- M. Critical Damage +$s1 -->
+		<icon>icon.skill19160</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="MagicCriticalDamage">
+				<amount>
+					<value level="1">3</value>
+					<value level="2">6</value>
+					<value level="3">10</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19280" toLevel="2" name="Wizard's Prominence">
+		<!-- Skill Master Rate +$s1 -->
+		<icon>icon.skill0330</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="SkillCriticalProbability">
+				<amount>
+					<value level="1">30</value>
+					<value level="2">60</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19281" toLevel="1" name="Wizard's Sight">
+		<!-- P. Accuracy, M. Accuracy, and Servitor's P. Accuracy +12. Enchants Revelation skill. -->
+		<icon>icon.skill19127</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="Accuracy">
+				<amount>12</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicAccuracy">
+				<amount>12</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ServitorShare">
+				<ACCURACY_COMBAT>12</ACCURACY_COMBAT>
+			</effect>
+				<effect name="AddSkillBySkill">
+				<existingSkillId>1904</existingSkillId>
+				<existingSkillLevel>1</existingSkillLevel>
+				<addedSkillId>1904</addedSkillId>
+				<addedSkillLevel>2</addedSkillLevel>
+			</effect>
+			<effect name="AddSkillBySkill">
+				<existingSkillId>1907</existingSkillId>
+				<existingSkillLevel>1</existingSkillLevel>
+				<addedSkillId>1907</addedSkillId>
+				<addedSkillLevel>2</addedSkillLevel>
+			</effect>
+			<effect name="AddSkillBySkill">
+				<existingSkillId>1912</existingSkillId>
+				<existingSkillLevel>1</existingSkillLevel>
+				<addedSkillId>1912</addedSkillId>
+				<addedSkillLevel>2</addedSkillLevel>
+			</effect>
+			<effect name="AddSkillBySkill">
+				<existingSkillId>1914</existingSkillId>
+				<existingSkillLevel>1</existingSkillLevel>
+				<addedSkillId>1914</addedSkillId>
+				<addedSkillLevel>2</addedSkillLevel>
+			</effect>
+			<effect name="AddSkillBySkill">
+				<existingSkillId>1920</existingSkillId>
+				<existingSkillLevel>1</existingSkillLevel>
+				<addedSkillId>1920</addedSkillId>
+				<addedSkillLevel>2</addedSkillLevel>
+			</effect>
+			<effect name="AddSkillBySkill">
+				<existingSkillId>1922</existingSkillId>
+				<existingSkillLevel>1</existingSkillLevel>
+				<addedSkillId>1922</addedSkillId>
+				<addedSkillLevel>2</addedSkillLevel>
+			</effect>
+			<effect name="AddSkillBySkill">
+				<existingSkillId>1925</existingSkillId>
+				<existingSkillLevel>1</existingSkillLevel>
+				<addedSkillId>1925</addedSkillId>
+				<addedSkillLevel>2</addedSkillLevel>
+			</effect>
+			<effect name="AddSkillBySkill">
+				<existingSkillId>1996</existingSkillId>
+				<existingSkillLevel>1</existingSkillLevel>
+				<addedSkillId>1996</addedSkillId>
+				<addedSkillLevel>2</addedSkillLevel>
+			</effect>
+			<effect name="AddSkillBySkill">
+				<existingSkillId>1997</existingSkillId>
+				<existingSkillLevel>1</existingSkillLevel>
+				<addedSkillId>1997</addedSkillId>
+				<addedSkillLevel>2</addedSkillLevel>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19282" toLevel="2" name="Wizard's Protection">
+		<!-- Mental, Stun, and Aerial Yoke Atk. Rate +$s1 -->
+		<icon>icon.skill0046</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="AttackTrait">
+				<SHOCK>
+					<value level="1">5</value>
+					<value level="2">10</value>
+				</SHOCK>
+				<DERANGEMENT>
+					<value level="1">5</value>
+					<value level="2">10</value>
+				</DERANGEMENT>
+				<AIRBIND>
+					<value level="1">5</value>
+					<value level="2">10</value>
+				</AIRBIND>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19283" toLevel="2" name="Wizard's Water">
+		<!-- M. Skill Power +$s1. -->
+		<icon>icon.skill1355</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="MagicalSkillPower">
+				<amount>
+					<value level="1">2</value>
+					<value level="2">5</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19284" toLevel="2" name="Wizard's Magic Reduction">
+		<!-- Skill Cooldown -$s1. -->
+		<icon>icon.skill0945</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="Reuse">
+				<amount>
+					<value level="1">-3</value>
+					<value level="2">-5</value>
+				</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19285" toLevel="2" name="Wizard's Blessing">
+		<!-- Acquired XP/ SP +$s1 -->
+		<icon>icon.skill_exp_sp_up</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="ExpModify">
+				<amount>
+					<value level="1">5</value>
+					<value level="2">10</value>
+				</amount>
+			</effect>
+			<effect name="SpModify">
+				<amount>
+					<value level="1">5</value>
+					<value level="2">10</value>
+				</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19286" toLevel="2" name="Wizard's Binding Shot">
+		<!-- Damage on immobile target +$s1 -->
+		<icon>icon.skill0983</icon>
+		<operateType>P</operateType>
+		<passiveConditions>
+			<condition name="OpCheckAbnormal">
+				<type>STUN</type>
+				<level>1</level>
+				<hasAbnormal>true</hasAbnormal>
+				<affectType>TARGET</affectType>
+			</condition>
+		</passiveConditions>
+		<effects>
+			<effect name="MAtk">
+				<amount>
+					<value level="1">5</value>
+					<value level="2">10</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19287" toLevel="2" name="Wizard's Divine Shot">
+		<!-- Attack Attribute +$s1 -->
+		<icon>icon.skill11011</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="AttackAttributeAdd">
+				<amount>
+					<value level="1">25</value>
+					<value level="2">50</value>
+				</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19288" toLevel="2" name="Wizard's Expert Potion">
+		<!-- Recovery Potion and Miracle Potion +$s1 -->
+		<icon>icon.skill_potion_up</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="AdditionalPotionHp">
+				<amount>
+					<value level="1">500</value>
+					<value level="2">1000</value>
+				</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19289" toLevel="1" name="Wizard's Spellmaster">
+		<!-- Damage +10% -->
+		<icon>icon.skill1500</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="PveMagicalSkillDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19290" toLevel="2" name="Vitality of the Exalted">
+		<!-- Acquired XP/ SP +$s1. -->
+		<icon>icon.s_vitality_of_honors1</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effectPoint>100</effectPoint>
+		<excludedFromCheck>true</excludedFromCheck>
+		<effects>
+			<effect name="ExpModify">
+				<amount>
+					<value level="1">30</value>
+					<value level="2">100</value>
+				</amount>
+			</effect>
+			<effect name="SpModify">
+				<amount>
+					<value level="1">30</value>
+					<value level="2">100</value>
+				</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19291" toLevel="1" name="Subclass Certification - Attack">
+		<!-- Increases P. Atk. by 4%, M. Atk. by 6%. -->
+		<icon>icon.skill0816</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<effects>
+			<effect name="PAtk">
+				<amount>4</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>6</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19292" toLevel="1" name="Subclass Certification - Defense">
+		<!-- Increases P. Def./ M. Def. by 4%. -->
+		<icon>icon.skill0439</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<effects>
+			<effect name="PhysicalDefence">
+				<amount>4</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>4</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19293" toLevel="1" name="Subclass Certification - Speed">
+		<!-- Increases Atk. Spd./ Casting Spd. by 4%. -->
+		<icon>icon.skill0817</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<effects>
+			<effect name="PhysicalAttackSpeed">
+				<amount>4</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>4</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19294" toLevel="1" name="Subclass Certification - Critical">
+		<!-- Increases P./ M. Critical Rate by 40. -->
+		<icon>icon.skill0814</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<effects>
+			<effect name="CriticalRate">
+				<amount>40</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicCriticalRate">
+				<amount>40</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19295" toLevel="1" name="Subclass Certification - Condition">
+		<!-- Increases Max HP/ MP/ CP by 6%. -->
+		<icon>icon.skill1397</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<effects>
+			<effect name="MaxHp">
+				<amount>6</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>6</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxCp">
+				<amount>6</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19296" toLevel="10" name="Counter Flip">
+		<!-- Knocks down the opponent who attacked you for $s1 and moves you behind opponent's back. Cancels Counter Stance. Requires dagger/ dual dagger. -->
+		<icon>icon.skill19296</icon>
+		<abnormalLvl>
+			<value level="1">1</value>
+			<value level="2">2</value>
+			<value level="3">3</value>
+			<value level="4">4</value>
+			<value level="5">5</value>
+			<value level="6">6</value>
+			<value level="7">7</value>
+			<value level="8">8</value>
+			<value level="9">9</value>
+			<value level="10">10</value>
+		</abnormalLvl>
+		<abnormalTime>5</abnormalTime>
+		<abnormalType>COUNTER_FLIP</abnormalType>
+		<abnormalVisualEffect>RO_COUNTER_TRASPIE</abnormalVisualEffect>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<magicLvl>
+			<value level="1">85</value>
+			<value level="2">88</value>
+			<value level="3">91</value>
+			<value level="4">94</value>
+			<value level="5">97</value>
+			<value level="6">101</value>
+			<value level="7">103</value>
+			<value level="8">105</value>
+			<value level="9">107</value>
+			<value level="10">109</value>
+		</magicLvl>
+		<mpConsume>
+			<value level="1">42</value>
+			<value level="2">44</value>
+			<value level="3">46</value>
+			<value level="4">48</value>
+			<value level="5">50</value>
+			<value level="6">52</value>
+			<value level="7">54</value>
+			<value level="8">56</value>
+			<value level="9">58</value>
+			<value level="10">60</value>
+		</mpConsume>
+		<hitTime>100</hitTime>
+		<coolTime>100</coolTime>
+		<reuseDelay>30000</reuseDelay>
+		<effectPoint>707</effectPoint>
+		<conditions>
+			<condition name="EquipWeapon">
+				<weaponType>
+					<item>DAGGER</item>
+					<item>DUALDAGGER</item>
+				</weaponType>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="TriggerSkillByDamage">
+				<attackerType>Creature</attackerType>
+				<minAttackerLevel>1</minAttackerLevel>
+				<maxAttackerLevel>127</maxAttackerLevel>
+				<chance>100</chance>
+				<targetType>ENEMY</targetType>
+				<minDamage>1</minDamage>
+				<skillId>19297</skillId> <!-- Counter Flip -->
+				<skillLevel>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+					<value level="4">4</value>
+					<value level="5">5</value>
+					<value level="6">6</value>
+					<value level="7">7</value>
+					<value level="8">8</value>
+					<value level="9">9</value>
+					<value level="10">10</value>
+				</skillLevel>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="19297" toLevel="10" name="Counter Flip">
+		<!-- Countering has knocked you down for $s1. -->
+		<icon>icon.skill19296</icon>
+		<abnormalLvl>
+			<value level="1">1</value>
+			<value level="2">2</value>
+			<value level="3">3</value>
+			<value level="4">4</value>
+			<value level="5">5</value>
+			<value level="6">6</value>
+			<value level="7">7</value>
+			<value level="8">8</value>
+			<value level="9">9</value>
+			<value level="10">10</value>
+		</abnormalLvl>
+		<abnormalTime>5</abnormalTime>
+		<abnormalType>KNOCKDOWN</abnormalType>
+		<abnormalVisualEffect>KNOCKDOWN</abnormalVisualEffect>
+		<operateType>A2</operateType>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<magicLvl>
+			<value level="1">85</value>
+			<value level="2">88</value>
+			<value level="3">91</value>
+			<value level="4">94</value>
+			<value level="5">97</value>
+			<value level="6">101</value>
+			<value level="7">103</value>
+			<value level="8">105</value>
+			<value level="9">107</value>
+			<value level="10">109</value>
+		</magicLvl>
+		<castRange>100</castRange>
+		<hitTime>1500</hitTime>
+		<coolTime>100</coolTime>
+		<reuseDelay>30000</reuseDelay>
+		<effectPoint>-709</effectPoint>
+		<isDebuff>2</isDebuff>
+		<isTriggeredSkill>true</isTriggeredSkill>
+		<effects>
+			<effect name="DispelBySlot">
+				<dispel>COUNTER_FLIP,-1</dispel>
+			</effect>
+			<effect name="TeleportToTarget" />
+			<effect name="KnockBack">
+				<speed>600</speed>
+				<distance>50</distance>
+				<knockDown>true</knockDown>
+			</effect>
+			<effect name="DefenceTrait">
+				<DERANGEMENT>100</DERANGEMENT>
+				<SLEEP>100</SLEEP>
+				<CHANGEBODY>100</CHANGEBODY>
+				<SHOCK>100</SHOCK>
+				<HOLD>100</HOLD>
+			</effect>
+			<effect name="BlockActions" />
+		</effects>
+	</skill>
+	<skill id="19298" toLevel="10" name="Flash Dagger">
+		<!-- Blinds enemies in front of you for $s1 and cancels their ability to pick a target. Requires dagger/ dual dagger. -->
+		<icon>icon.skill19298</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>3</abnormalTime>
+		<abnormalType>CONFUSION</abnormalType>
+		<activateRate>80</activateRate>
+		<trait>DERANGEMENT</trait>
+		<operateType>A2</operateType>
+		<targetType>ENEMY</targetType>
+		<affectScope>FAN</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<fanRange>0;0;300;150</fanRange>
+		<affectLimit>5-12</affectLimit>
+		<affectRange>300</affectRange>
+		<castRange>300</castRange>
+		<magicLvl>
+			<value level="1">85</value>
+			<value level="2">88</value>
+			<value level="3">91</value>
+			<value level="4">94</value>
+			<value level="5">97</value>
+			<value level="6">101</value>
+			<value level="7">103</value>
+			<value level="8">105</value>
+			<value level="9">107</value>
+			<value level="10">109</value>
+		</magicLvl>
+		<mpConsume>
+			<value level="1">74</value>
+			<value level="2">77</value>
+			<value level="3">80</value>
+			<value level="4">83</value>
+			<value level="5">86</value>
+			<value level="6">89</value>
+			<value level="7">92</value>
+			<value level="8">95</value>
+			<value level="9">98</value>
+			<value level="10">101</value>
+		</mpConsume>
+		<hitTime>1200</hitTime>
+		<coolTime>300</coolTime>
+		<reuseDelay>60000</reuseDelay>
+		<effectPoint>-709</effectPoint>
+		<isDebuff>3</isDebuff>
+		<conditions>
+			<condition name="EquipWeapon">
+				<weaponType>
+					<item>DAGGER</item>
+					<item>DUALDAGGER</item>
+				</weaponType>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="DeleteHateOfMe">
+				<chance>80</chance>
+			</effect>
+			<effect name="TargetCancel">
+				<chance>100</chance>
+			</effect>
+			<effect name="BlockActions" />
+		</effects>
+	</skill>
+	<skill id="19299" toLevel="9" name="Reverse Mana">
+		<!-- Attempts Deadly Attack with 36840 power added to P. Attack and recovers your MP by 3%. Half-kill is possible. Requires dagger/ dual dagger. -->
+		<icon>icon.skill19299</icon>
+		<operateType>A1</operateType>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<castRange>40</castRange>
+		<magicLvl>
+			<value level="1">85</value>
+			<value level="2">90</value>
+			<value level="3">95</value>
+			<value level="4">99</value>
+			<value level="5">101</value>
+			<value level="6">103</value>
+			<value level="7">105</value>
+			<value level="8">107</value>
+			<value level="9">109</value>
+		</magicLvl>
+		<mpConsume>
+			<value level="1">90</value>
+			<value level="2">98</value>
+			<value level="3">106</value>
+			<value level="4">112</value>
+			<value level="5">118</value>
+			<value level="6">124</value>
+			<value level="7">130</value>
+			<value level="8">136</value>
+			<value level="9">142</value>
+		</mpConsume>
+		<hitTime>2030</hitTime>
+		<coolTime>500</coolTime>
+		<staticReuse>true</staticReuse>
+		<reuseDelay>10000</reuseDelay>
+		<effectPoint>
+			<value level="1">-709</value>
+			<value level="2">-711</value>
+			<value level="3">-713</value>
+			<value level="4">-715</value>
+			<value level="5">-715</value>
+			<value level="6">-715</value>
+			<value level="7">-715</value>
+			<value level="8">-715</value>
+			<value level="9">-715</value>
+		</effectPoint>
+		<conditions>
+			<condition name="EquipWeapon">
+				<weaponType>
+					<item>DAGGER</item>
+					<item>DUALDAGGER</item>
+				</weaponType>
+			</condition>
+		</conditions>
+		<selfEffects>
+			<effect name="CallSkill">
+				<skillId>19300</skillId> <!-- Reverse Mana Drain -->
+				<skillLevel>1</skillLevel>
+			</effect>
+		</selfEffects>
+		<effects>
+			<effect name="FatalBlow">
+				<power>
+					<value level="1">36840</value>
+					<value level="2">43170</value>
+					<value level="3">49500</value>
+					<value level="4">54560</value>
+					<value level="5">58100</value>
+					<value level="6">60700</value>
+					<value level="7">63290</value>
+					<value level="8">66540</value>
+					<value level="9">69790</value>
+				</power>
+				<criticalChance>15</criticalChance>
+				<chanceBoost>300</chanceBoost>
+			</effect>
+			<effect name="Lethal">
+				<fullLethal>0</fullLethal>
+				<halfLethal>15</halfLethal>
+			</effect>
+		</effects>
+	</skill>
+</list>

@@ -1,0 +1,1991 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="13100" toLevel="4" name="R3 2 set">
+		<icon>icon.armor_t401_u_i00</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+	</skill>
+	<skill id="13101" toLevel="4" name="R3 2 set">
+		<icon>icon.armor_t402_u_i00</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+	</skill>
+	<skill id="13102" toLevel="4" name="R3 2 set">
+		<icon>icon.armor_t403_u_i00</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+	</skill>
+	<skill id="13103" toLevel="4" name="R4 2 set">
+		<icon>icon.armor_t701_u_i00</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+	</skill>
+	<skill id="13104" toLevel="4" name="R4 2 set">
+		<icon>icon.armor_t702_u_i00</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+	</skill>
+	<skill id="13105" toLevel="4" name="R4 2 set">
+		<icon>icon.armor_t703_u_i00</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+	</skill>
+	<skill id="13106" toLevel="4" name="R5 2 set">
+		<icon>icon.armor_t701_u_i00</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+	</skill>
+	<skill id="13107" toLevel="4" name="R5 2 set">
+		<icon>icon.armor_t702_u_i00</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+	</skill>
+	<skill id="13108" toLevel="4" name="R5 2 set">
+		<icon>icon.armor_t703_u_i00</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+	</skill>
+	<skill id="13109" toLevel="5" name="Special Ability: Damage Up">
+		<!-- Increases P. Atk. Enables the character to attack multiple opponents. Inflicts additional damage during PvP. -->
+		<icon>icon.skill1068</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>
+			<value level="1">85</value>
+			<value level="2">90</value>
+			<value level="3">94</value>
+			<value level="4">97</value>
+			<value level="5">99</value>
+		</magicLvl>
+		<effects>
+			<effect name="PAtk">
+				<amount>
+					<value level="1">288</value>
+					<value level="2">332</value>
+					<value level="3">377</value>
+					<value level="4">415</value>
+					<value level="5">600</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="HitNumber">
+				<amount>8</amount>
+				<mode>DIFF</mode>
+				<weaponType>
+					<item>POLE</item>
+				</weaponType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13110" toLevel="5" name="Special Ability: Guidance">
+		<!-- Increases Accuracy. Enables the character to attack multiple opponents. Increases damage inflicted during PvP. -->
+		<icon>icon.skill1240</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<effects>
+			<effect name="Accuracy">
+				<amount>
+					<value level="1">5.02</value>
+					<value level="2">5.37</value>
+					<value level="3">5.72</value>
+					<value level="4">6.07</value>
+					<value level="5">6.88</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="HitNumber">
+				<amount>8</amount>
+				<mode>DIFF</mode>
+				<weaponType>
+					<item>POLE</item>
+				</weaponType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13111" toLevel="1" name="Special Ability: HP Drain">
+		<!-- Restores HP by using some of the damage inflicted upon the enemy with a certain probability. Can attack multiple enemies. Inflicts additional damage during PvP. -->
+		<icon>icon.skill1268</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<effects>
+			<effect name="VampiricAttack">
+				<amount>4</amount>
+				<chance>30</chance>
+			</effect>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="HitNumber">
+				<amount>8</amount>
+				<mode>DIFF</mode>
+				<weaponType>
+					<item>POLE</item>
+				</weaponType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13112" toLevel="1" name="Special Ability: Critical Stun">
+		<!-- Momentarily immobile due to the Stun effect. -->
+		<icon>icon.skill0100</icon>
+		<operateType>A2</operateType>
+		<effectPoint>-100</effectPoint>
+		<abnormalType>STUN</abnormalType>
+		<basicProperty>PHYSICAL</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<lvlBonusRate>20</lvlBonusRate>
+		<activateRate>43</activateRate>
+		<magicLvl>85</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>9</abnormalTime>
+		<trait>SHOCK</trait>
+		<abnormalVisualEffect>STUN</abnormalVisualEffect>
+		<isDebuff>true</isDebuff>
+		<targetType>ENEMY_ONLY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<effects>
+			<effect name="BlockActions">
+				<allowedSkills>10279;10517;10025;10776;11770;1904;11264;11093;13314;1912</allowedSkills>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13113" toLevel="1" name="Special Ability: Critical Slow">
+		<!-- Temporarily decreases Speed. -->
+		<icon>icon.skill1160</icon>
+		<operateType>A2</operateType>
+		<castRange>1000</castRange>
+		<effectPoint>-100</effectPoint>
+		<abnormalType>SPEED_DOWN</abnormalType>
+		<basicProperty>MAGIC</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<effectRange>1500</effectRange>
+		<lvlBonusRate>20</lvlBonusRate>
+		<activateRate>16</activateRate>
+		<magicLvl>85</magicLvl>
+		<abnormalLvl>3</abnormalLvl>
+		<abnormalTime>120</abnormalTime>
+		<isDebuff>true</isDebuff>
+		<targetType>ENEMY_ONLY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<effects>
+			<effect name="Speed">
+				<amount>-30</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13114" toLevel="1" name="Special Ability: Magic Hold">
+		<!-- Momentarily inflicted with hold and unable to move. -->
+		<icon>icon.skill1201</icon>
+		<operateType>A2</operateType>
+		<castRange>1000</castRange>
+		<isMagic>1</isMagic>
+		<effectPoint>-100</effectPoint>
+		<abnormalType>ROOT_MAGICALLY</abnormalType>
+		<basicProperty>MAGIC</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<effectRange>1500</effectRange>
+		<lvlBonusRate>20</lvlBonusRate>
+		<activateRate>80</activateRate>
+		<magicLvl>85</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>30</abnormalTime>
+		<trait>HOLD</trait>
+		<abnormalVisualEffect>ROOT</abnormalVisualEffect>
+		<isDebuff>true</isDebuff>
+		<targetType>ENEMY_ONLY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="Root" />
+		</effects>
+	</skill>
+	<skill id="13115" toLevel="1" name="Polearm Multi-attack">
+		<!-- Enables the character to attack multiple opponents. -->
+		<icon>icon.skill0216</icon>
+		<magicLvl>1</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="HitNumber">
+				<amount>4</amount>
+				<mode>DIFF</mode>
+				<weaponType>
+					<item>POLE</item>
+				</weaponType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13116" toLevel="1" name="Talisman (R-grade) - Knock Back Resistance">
+		<!-- Increases Knock Back Resistance when equipped. -->
+		<icon>icon.r85_talisman_md_up_passive</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<effects>
+			<effect name="DefenceTrait">
+				<KNOCKBACK>15</KNOCKBACK>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13117" toLevel="1" name="Talisman (R-grade) - Knock Down Resistance">
+		<!-- Increases Knock Down Resistance when equipped. -->
+		<icon>icon.r85_talisman_md_up_passive</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<effects>
+			<effect name="DefenceTrait">
+				<KNOCKDOWN>15</KNOCKDOWN>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13118" toLevel="1" name="Talisman (R-grade) - Binding Resistance">
+		<!-- Increases Resistance to yoke when equipped. -->
+		<icon>icon.r85_talisman_md_up_passive</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<effects>
+			<effect name="DefenceTrait">
+				<HOLD>15</HOLD>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13119" toLevel="1" name="Talisman (R-grade) - Pulling Resistance">
+		<!-- Increases Resistance to pulling when equipped. -->
+		<icon>icon.r85_talisman_md_up_passive</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<effects>
+			<effect name="DefenceTrait">
+				<PULL>15</PULL>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13120" toLevel="1" name="Talisman (R-grade) - Banishment Resistance">
+		<!-- Increases Resistance to banishment when equipped. -->
+		<icon>icon.r85_talisman_md_up_passive</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<effects>
+			<effect name="DefenceTrait">
+				<DEPORT>15</DEPORT>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13121" toLevel="1" name="Talisman (R-grade) - Mutation Resistance">
+		<!-- Increases Resistance to change when equipped. -->
+		<icon>icon.r85_talisman_md_up_passive</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<effects>
+			<effect name="DefenceTrait">
+				<CHANGEBODY>15</CHANGEBODY>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13122" toLevel="1" name="Additional Hit Quiver">
+		<!-- Chance of inflicting damage again upon shooting. -->
+		<icon>icon.skill0256</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>99</magicLvl>
+	</skill>
+	<skill id="13123" toLevel="1" name="Increased Damage Quiver">
+		<!-- Great damage occurs if critical occurs while shooting. -->
+		<icon>icon.skill0256</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>99</magicLvl>
+	</skill>
+	<skill id="13124" toLevel="1" name="Added Bleed Quiver">
+		<!-- Chance of inflicting bleed if critical occurs while shooting. -->
+		<icon>icon.skill0256</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>99</magicLvl>
+	</skill>
+	<skill id="13125" toLevel="1" name="Special Talisman - P. Atk.">
+		<!-- Increases P. Atk. when equipped. -->
+		<icon>icon.r85_talisman_pa_up_active</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+	</skill>
+	<skill id="13126" toLevel="1" name="Special Talisman - M. Atk.">
+		<!-- Increases M. Atk. when equipped. -->
+		<icon>icon.r85_talisman_ma_up_active</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>55</magicLvl>
+	</skill>
+	<skill id="13127" toLevel="1" name="Special Talisman - Atk. Spd.">
+		<!-- Increases Atk. Spd. when equipped. -->
+		<icon>icon.r85_talisman_pa_up_active</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>55</magicLvl>
+	</skill>
+	<skill id="13128" toLevel="1" name="Special Talisman - Casting Spd.">
+		<!-- Increases Casting Spd. when equipped. -->
+		<icon>icon.r85_talisman_ma_up_active</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>55</magicLvl>
+	</skill>
+	<skill id="13129" toLevel="4" name="Set Effect - Twilight Heavy Armor 2 Piece (Defense Type)">
+		<!-- CON +$s1, STR -$s2, Atk. Spd. +$s3. HP +$s4. -->
+		<icon>icon.armor_t94_u_i00</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+	</skill>
+	<skill id="13130" toLevel="4" name="Set Effect - Twilight Heavy Armor 2 Piece (Attack Type)">
+		<!-- STR +$s1, CON -$s2, Atk. Spd. +$s3. -->
+		<icon>icon.armor_t94_u_i00</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+	</skill>
+	<skill id="13131" toLevel="4" name="Set Effect - Twilight Light Armor 2 Piece (Assassin Type)">
+		<!-- DEX +$s1, STR -$s2, Atk. Spd. +$s3. -->
+		<icon>icon.armor_t94_u_i00</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+	</skill>
+	<skill id="13132" toLevel="4" name="Set Effect - Twilight Light Armor 2 Piece (Enchant Type)">
+		<!-- STR +$s1, CON -$s2, P. Atk. +$s3. P. Atk. Spd. +$s4. -->
+		<icon>icon.armor_t94_u_i00</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+	</skill>
+	<skill id="13133" toLevel="4" name="Set Effect - Twilight Robe 2 Piece (Magic Type)">
+		<!-- INT +$s1. MEN -$s2. Casting Spd. +$s3. -->
+		<icon>icon.armor_t94_u_i00</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+	</skill>
+	<skill id="13134" toLevel="4" name="Set Effect - Twilight Robe 2 Piece (Recovery Type)">
+		<!-- WIT+$s1. MEN -$s2. Casting Spd. +$s3. -->
+		<icon>icon.armor_t94_u_i00</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+	</skill>
+	<skill id="13135" toLevel="1" name="Servitor Share">
+		<!-- Extends the summoner's abilities to the servitor. Using the summoner's abilities as the basis, extends to the servitor P. Atk./ P. Def. by 50%, M. Atk./ M. Def. by 25%, Max HP/ MP by 10%, Critical Rate by 20%, Atk. Spd. by 10%, and Casting Spd. by 3%. -->
+		<icon>icon.skill1557</icon>
+		<operateType>A2</operateType>
+		<mpConsume>35</mpConsume>
+		<hitTime>1000</hitTime>
+		<reuseDelay>60000</reuseDelay>
+		<effectPoint>669</effectPoint>
+		<abnormalType>ABILITY_CHANGE</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>1200</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpHaveSummon" />
+		</conditions>
+	</skill>
+	<skill id="13136" toLevel="1" name="Hero's Cloak">
+		<!-- Increases STR/ DEX/ CON/ INT/ WIT/ MEN +3, and decreases PvP damage by 15%. -->
+		<icon>icon.vesper_cloack_i00</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<effects>
+			<effect name="PvpMagicalSkillDefenceBonus">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDefenceBonus">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDefenceBonus">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="StatUp">
+				<amount>3</amount>
+				<stat>STR</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>3</amount>
+				<stat>DEX</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>3</amount>
+				<stat>INT</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>3</amount>
+				<stat>WIT</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>3</amount>
+				<stat>CON</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>3</amount>
+				<stat>MEN</stat>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13137" toLevel="1" name="Glorious Cloak">
+		<!-- Increases STR/ DEX/ CON/ INT/ WIT/ MEN +2, and decreases PvP damage by 5%. -->
+		<icon>icon.vesper_cloack_i00</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<effects>
+			<effect name="PvpMagicalSkillDefenceBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDefenceBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDefenceBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="StatUp">
+				<amount>2</amount>
+				<stat>STR</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>2</amount>
+				<stat>DEX</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>2</amount>
+				<stat>INT</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>2</amount>
+				<stat>WIT</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>2</amount>
+				<stat>CON</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>2</amount>
+				<stat>MEN</stat>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13138" toLevel="1" name="Haste Talisman">
+		<!-- Increases P. Atk. Spd. by 2% when equipped. -->
+		<icon>icon.r85_talisman_pa_up_active</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<effects>
+			<effect name="PhysicalAttackSpeed">
+				<amount>2</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13139" toLevel="1" name="P. Atk. Talisman">
+		<!-- Increases P. Atk. by 2% when equipped. -->
+		<icon>icon.r85_talisman_pa_up_passive</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<effects>
+			<effect name="PAtk">
+				<amount>2</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13140" toLevel="1" name="P. Def. Talisman">
+		<!-- Increases P. Def. by 3% when equipped. -->
+		<icon>icon.r85_talisman_pd_up_passive</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<effects>
+			<effect name="PhysicalDefence">
+				<amount>3</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13141" toLevel="1" name="Casting Spd. Talisman">
+		<!-- Increases Casting Spd. by 2 with the power of Talisman. -->
+		<icon>icon.r85_talisman_ma_up_active</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<effects>
+			<effect name="MagicalAttackSpeed">
+				<amount>2</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13142" toLevel="1" name="M. Def. Talisman">
+		<!-- Increases M. Def. by 3% when equipped. -->
+		<icon>icon.r85_talisman_md_up_passive</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<effects>
+			<effect name="MagicalDefence">
+				<amount>3</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13143" toLevel="1" name="M. Atk. Talisman">
+		<!-- Increases M. Atk. by 2% when equipped. -->
+		<icon>icon.r85_talisman_ma_up_passive</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<effects>
+			<effect name="MAtk">
+				<amount>2</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13144" toLevel="1" name="Chic Silver Chapeau">
+		<!-- STR+1, INT+1 -->
+		<icon>icon.armor_t94_u_i00</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<effects>
+			<effect name="StatUp">
+				<amount>1</amount>
+				<stat>STR</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>1</amount>
+				<stat>INT</stat>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13145" toLevel="1" name="Demon's Circlet">
+		<!-- CON+1, MEN+1 -->
+		<icon>icon.armor_t94_u_i00</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<effects>
+			<effect name="StatUp">
+				<amount>1</amount>
+				<stat>CON</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>1</amount>
+				<stat>MEN</stat>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13146" toLevel="1" name="Special Ability: Infinity Shaper">
+		<!-- PvP Damage +30%. Max HP/ MP/ CP +30%, Atk. Spd. +15%, P. Skill Power +10%, P. Skill Critical Damage +10%. -->
+		<icon>icon.weapon_the_dagger_of_hero_i01</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<effects>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxCp">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalSkillPower">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="SkillCriticalDamage">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13147" toLevel="1" name="Special Ability: Infinity Cutter">
+		<!-- PvP Damage +30%. Max HP/ MP/ CP +30%, Atk. Spd. +15%, P. Skill Power +10%, Skill Cooldown -5%. -->
+		<icon>icon.weapon_the_sword_of_hero_i01</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<effects>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxCp">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalSkillPower">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Reuse">
+				<amount>-5</amount>
+				<mode>PER</mode>
+				<magicType>0</magicType>
+			</effect>
+			<effect name="Reuse">
+				<amount>-5</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13148" toLevel="1" name="Special Ability: Infinity Slasher">
+		<!-- PvP Damage +30%. Max HP/ MP/ CP +30%, Atk. Spd. +15%, P. Skill Power +10%, P. Critical Damage +7%. -->
+		<icon>icon.weapon_the_two_handed_sword_of_hero_i01</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<effects>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxCp">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalSkillPower">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="CriticalDamage">
+				<amount>7</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13149" toLevel="1" name="Special Ability: Infinity Avenger">
+		<!-- PvP Damage +30%. Max HP/ MP/ CP +30%, Atk. Spd. +15%, P. Skill Power +10%, Skill Cooldown -5%. -->
+		<icon>icon.weapon_the_axe_of_hero_i01</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<effects>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxCp">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalSkillPower">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Reuse">
+				<amount>-5</amount>
+				<mode>PER</mode>
+				<magicType>0</magicType>
+			</effect>
+			<effect name="Reuse">
+				<amount>-5</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13150" toLevel="1" name="Special Ability: Infinity Fighter">
+		<!-- PvP Damage +30%. Max HP/ MP/ CP +30%, Atk. Spd. +15%, P. Skill Power +10%, P. Critical Damage +7%. -->
+		<icon>icon.weapon_the_fist_of_hero_i01</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<effects>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxCp">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalSkillPower">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="CriticalDamage">
+				<amount>7</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13151" toLevel="1" name="Special Ability: Infinity Stormer">
+		<!-- PvP Damage +30%. Max HP/ MP/ CP +30%, Atk. Spd. +15%, P. Skill Power +10%, P. Critical Damage +7%. -->
+		<icon>icon.weapon_the_pole_of_hero_i01</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<effects>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxCp">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalSkillPower">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="CriticalDamage">
+				<amount>7</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13152" toLevel="1" name="Special Ability: Infinity Thrower">
+		<!-- PvP Damage +30%. Max HP/ MP/ CP +30%, Atk. Spd. +15%, P. Skill Power +10%, P. Skill Critical Damage +10%. -->
+		<icon>icon.weapon_the_bow_of_hero_i01</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<effects>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxCp">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalSkillPower">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="SkillCriticalDamage">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13153" toLevel="1" name="Special Ability: Infinity Shooter">
+		<!-- PvP Damage +30%. Max HP/ MP/ CP +30%, Atk. Spd. +15%, P. Skill Power +10%, P. Skill Critical Damage +10%. -->
+		<icon>icon.weapon_infinity_shooter_i01</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<effects>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxCp">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalSkillPower">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="SkillCriticalDamage">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13154" toLevel="1" name="Special Ability: Infinity Buster">
+		<!-- PvP Damage +30%. Max HP/ MP/ CP +30%, Casting Spd. +15%, M. Skill Power +10%, M. Skill Critical Damage +7%. -->
+		<icon>icon.weapon_infinity_sword_i01</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<effects>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxCp">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalSkillPower">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicCriticalDamage">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13155" toLevel="1" name="Special Ability: Infinity Caster">
+		<!-- PvP Damage +30%. Max HP/ MP/ CP +30%, Casting Spd. +15%, M.Skill Power +10%, M. Skill Critical Damage +7%. -->
+		<icon>icon.weapon_the_mace_of_hero_i01</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<effects>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxCp">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalSkillPower">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicCriticalDamage">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13156" toLevel="1" name="Special Ability: Infinity Retributer">
+		<!-- PvP Damage +30%. Max HP/ MP/ CP +30%, Casting Spd. +15%, M. Skill Power +10%, M. Critical Damage +7%. -->
+		<icon>icon.weapon_the_staff_of_hero_i01</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<effects>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxCp">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalSkillPower">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicCriticalDamage">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13157" toLevel="1" name="Special Ability: Infinity Dual Sword">
+		<!-- PvP Damage +30%. Max HP/ MP/ CP +30%, Atk. Spd. +15%, P. Skill Power +10%, P. Critical Damage +7%. -->
+		<icon>icon.weapon_r_dualsword_i01</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<effects>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxCp">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalSkillPower">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="CriticalDamage">
+				<amount>7</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13158" toLevel="1" name="Special Ability: Infinity Dual Dagger">
+		<!-- PvP Damage +30%. Max HP/ MP/ CP +30%, Atk. Spd. +15%, P. Skill Power +10%, P. Skill Critical Damage +10%. -->
+		<icon>icon.weapon_r_dualdagger_i01</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<effects>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxCp">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalSkillPower">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="SkillCriticalDamage">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13159" toLevel="1" name="Special Ability: Infinity Dual Blunt Weapon">
+		<!-- PvP Damage +30%. Max HP/ MP/ CP +30%, Atk. Spd. +15%, P. Skill Power +10%, P. Critical Damage +7%. -->
+		<icon>icon.weapon_r_dualblunt_i01</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<effects>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxCp">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalSkillPower">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="CriticalDamage">
+				<amount>7</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13160" toLevel="1" name="Low-grade Magic Rune Clip Immortal Belt">
+		<!-- Increases HP regeneration when equipped. -->
+		<icon>icon.skill0332</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<effects>
+			<effect name="HpRegen">
+				<amount>1.17</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="StatByMoveType">
+				<stat>REGENERATE_HP_RATE</stat>
+				<type>SITTING</type>
+				<value>0.9</value>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13161" fromLevel="2" toLevel="2" name="Standard Magic Rune Clip Immortal Belt">
+		<!-- Increases HP regeneration when equipped. -->
+		<icon>icon.skill0332</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<effects>
+			<effect name="HpRegen">
+				<amount>2.93</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="StatByMoveType">
+				<stat>REGENERATE_HP_RATE</stat>
+				<type>SITTING</type>
+				<value>2.25</value>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13162" fromLevel="3" toLevel="3" name="High-grade Magic Rune Clip Immortal Belt">
+		<!-- Increases HP regeneration when equipped. -->
+		<icon>icon.skill0332</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<effects>
+			<effect name="HpRegen">
+				<amount>4.1</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="StatByMoveType">
+				<stat>REGENERATE_HP_RATE</stat>
+				<type>SITTING</type>
+				<value>3.15</value>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13163" fromLevel="4" toLevel="4" name="Top-grade Magic Rune Clip Immortal Belt">
+		<!-- Increases HP regeneration when equipped. -->
+		<icon>icon.skill0332</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<effects>
+			<effect name="HpRegen">
+				<amount>5.58</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="StatByMoveType">
+				<stat>REGENERATE_HP_RATE</stat>
+				<type>SITTING</type>
+				<value>4.5</value>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13164" toLevel="1" name="Low-grade Magic Rune Clip Immortal Belt">
+		<!-- Increases MP regeneration when equipped. -->
+		<icon>icon.skill0332</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<effects>
+			<effect name="MpRegen">
+				<amount>0.45</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="StatByMoveType">
+				<stat>REGENERATE_HP_RATE</stat>
+				<type>SITTING</type>
+				<value>0.45</value>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13165" fromLevel="2" toLevel="2" name="Standard Magic Rune Clip Immortal Belt">
+		<!-- Increases MP regeneration when equipped. -->
+		<icon>icon.skill0332</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<effects>
+			<effect name="MpRegen">
+				<amount>1.13</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="StatByMoveType">
+				<stat>REGENERATE_HP_RATE</stat>
+				<type>SITTING</type>
+				<value>1.13</value>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13166" fromLevel="3" toLevel="3" name="High-grade Magic Rune Clip Immortal Belt">
+		<!-- Increases MP regeneration when equipped. -->
+		<icon>icon.skill0332</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<effects>
+			<effect name="MpRegen">
+				<amount>1.58</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="StatByMoveType">
+				<stat>REGENERATE_HP_RATE</stat>
+				<type>SITTING</type>
+				<value>1.58</value>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13167" fromLevel="4" toLevel="4" name="Top-grade Magic Rune Clip Immortal Belt">
+		<!-- Increases MP regeneration when equipped. -->
+		<icon>icon.skill0332</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<effects>
+			<effect name="MpRegen">
+				<amount>2.25</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="StatByMoveType">
+				<stat>REGENERATE_HP_RATE</stat>
+				<type>SITTING</type>
+				<value>2.25</value>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13168" toLevel="1" name="Low-grade Magic Ornament Immortal Belt">
+		<!-- Increases normal damage during PvP when equipped. -->
+		<icon>icon.skill0332</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<effects>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>1</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13169" fromLevel="2" toLevel="2" name="Standard Magic Ornament Immortal Belt">
+		<!-- Increases normal damage during PvP when equipped. -->
+		<icon>icon.skill0332</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<effects>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>2.5</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13170" fromLevel="3" toLevel="3" name="High-grade Magic Ornament Immortal Belt">
+		<!-- Increases normal damage during PvP when equipped. -->
+		<icon>icon.skill0332</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<effects>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>3.5</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13171" fromLevel="4" toLevel="4" name="Top-grade Magic Ornament Immortal Belt">
+		<!-- Increases normal damage during PvP when equipped. -->
+		<icon>icon.skill0332</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<effects>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13172" toLevel="1" name="Low-grade Magic Ornament Immortal Belt">
+		<!-- Increases skill/ magic damage during PvP when equipped. -->
+		<icon>icon.skill0332</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<effects>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>1</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>1</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13173" fromLevel="2" toLevel="2" name="Standard Magic Ornament Immortal Belt">
+		<!-- Increases skill/ magic damage during PvP when equipped. -->
+		<icon>icon.skill0332</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<effects>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>2.5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>2.5</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13174" fromLevel="3" toLevel="3" name="High-grade Magic Ornament Immortal Belt">
+		<!-- Increases skill/ magic damage during PvP when equipped. -->
+		<icon>icon.skill0332</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<effects>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>3.5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>3.5</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13175" fromLevel="4" toLevel="4" name="Top-grade Magic Ornament Immortal Belt">
+		<!-- Increases skill/ magic damage during PvP when equipped. -->
+		<icon>icon.skill0332</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<effects>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13176" toLevel="1" name="Low-grade Magic Ornament Immortal Belt">
+		<!-- Decreases damage received during PvP when equipped. -->
+		<icon>icon.skill0332</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<effects>
+			<effect name="PvpPhysicalAttackDefenceBonus">
+				<amount>1.2</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDefenceBonus">
+				<amount>1.2</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpMagicalSkillDefenceBonus">
+				<amount>1.2</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13177" fromLevel="2" toLevel="2" name="Standard Magic Ornament Immortal Belt">
+		<!-- Decreases damage received during PvP when equipped. -->
+		<icon>icon.skill0332</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<effects>
+			<effect name="PvpPhysicalAttackDefenceBonus">
+				<amount>3</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDefenceBonus">
+				<amount>3</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpMagicalSkillDefenceBonus">
+				<amount>3</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13178" fromLevel="3" toLevel="3" name="High-grade Magic Ornament Immortal Belt">
+		<!-- Decreases damage received during PvP when equipped. -->
+		<icon>icon.skill0332</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<effects>
+			<effect name="PvpPhysicalAttackDefenceBonus">
+				<amount>4.2</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDefenceBonus">
+				<amount>4.2</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpMagicalSkillDefenceBonus">
+				<amount>4.2</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13179" fromLevel="4" toLevel="4" name="Top-grade Magic Ornament Immortal Belt">
+		<!-- Decreases damage received during PvP when equipped. -->
+		<icon>icon.skill0332</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<effects>
+			<effect name="PvpPhysicalAttackDefenceBonus">
+				<amount>6</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDefenceBonus">
+				<amount>6</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpMagicalSkillDefenceBonus">
+				<amount>6</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13180" toLevel="1" name="Low-grade Magic Rune Clip Twilight Belt">
+		<!-- Increases HP regeneration when equipped. -->
+		<icon>icon.skill0332</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<effects>
+			<effect name="HpRegen">
+				<amount>1.41</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="StatByMoveType">
+				<stat>REGENERATE_HP_RATE</stat>
+				<type>SITTING</type>
+				<value>1.08</value>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13181" fromLevel="2" toLevel="2" name="Standard Magic Rune Clip Twilight Belt">
+		<!-- Increases HP regeneration when equipped. -->
+		<icon>icon.skill0332</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<effects>
+			<effect name="HpRegen">
+				<amount>3.52</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="StatByMoveType">
+				<stat>REGENERATE_HP_RATE</stat>
+				<type>SITTING</type>
+				<value>2.7</value>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13182" fromLevel="3" toLevel="3" name="High-grade Magic Rune Clip Twilight Belt">
+		<!-- Increases HP regeneration when equipped. -->
+		<icon>icon.skill0332</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<effects>
+			<effect name="HpRegen">
+				<amount>4.92</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="StatByMoveType">
+				<stat>REGENERATE_HP_RATE</stat>
+				<type>SITTING</type>
+				<value>3.78</value>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13183" fromLevel="4" toLevel="4" name="Top-grade Magic Rune Clip Twilight Belt">
+		<!-- Increases HP regeneration when equipped. -->
+		<icon>icon.skill0332</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<effects>
+			<effect name="HpRegen">
+				<amount>7.02</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="StatByMoveType">
+				<stat>REGENERATE_HP_RATE</stat>
+				<type>SITTING</type>
+				<value>5.4</value>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13184" toLevel="1" name="Low-grade Magic Rune Clip Twilight Belt">
+		<!-- Increases MP regeneration when equipped. -->
+		<icon>icon.skill0332</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<effects>
+			<effect name="MpRegen">
+				<amount>0.54</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="StatByMoveType">
+				<stat>REGENERATE_HP_RATE</stat>
+				<type>SITTING</type>
+				<value>0.54</value>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13185" fromLevel="2" toLevel="2" name="Standard Magic Rune Clip Twilight Belt">
+		<!-- Increases MP regeneration when equipped. -->
+		<icon>icon.skill0332</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<effects>
+			<effect name="MpRegen">
+				<amount>1.36</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="StatByMoveType">
+				<stat>REGENERATE_HP_RATE</stat>
+				<type>SITTING</type>
+				<value>1.36</value>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13186" fromLevel="3" toLevel="3" name="High-grade Magic Rune Clip Twilight Belt">
+		<!-- Increases MP regeneration when equipped. -->
+		<icon>icon.skill0332</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<effects>
+			<effect name="MpRegen">
+				<amount>1.9</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="StatByMoveType">
+				<stat>REGENERATE_HP_RATE</stat>
+				<type>SITTING</type>
+				<value>1.9</value>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13187" fromLevel="4" toLevel="4" name="Top-grade Magic Rune Clip Twilight Belt">
+		<!-- Increases MP regeneration when equipped. -->
+		<icon>icon.skill0332</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<effects>
+			<effect name="MpRegen">
+				<amount>2.7</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="StatByMoveType">
+				<stat>REGENERATE_HP_RATE</stat>
+				<type>SITTING</type>
+				<value>2.7</value>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13188" toLevel="1" name="Low-grade Magic Ornament Twilight Belt">
+		<!-- Increases normal damage during PvP when equipped. -->
+		<icon>icon.skill0332</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<effects>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>1</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13189" fromLevel="2" toLevel="2" name="Standard Magic Ornament Twilight Belt">
+		<!-- Increases normal damage during PvP when equipped. -->
+		<icon>icon.skill0332</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<effects>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>2.5</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13190" fromLevel="3" toLevel="3" name="High-grade Magic Ornament Twilight Belt">
+		<!-- Increases normal damage during PvP when equipped. -->
+		<icon>icon.skill0332</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<effects>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>3.5</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13191" fromLevel="4" toLevel="4" name="Top-grade Magic Ornament Twilight Belt">
+		<!-- Increases normal damage during PvP when equipped. -->
+		<icon>icon.skill0332</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<effects>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13192" toLevel="1" name="Low-grade Magic Ornament Twilight Belt">
+		<!-- Increases skill/ magic damage during PvP when equipped. -->
+		<icon>icon.skill0332</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<effects>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>1</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>1</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13193" fromLevel="2" toLevel="2" name="Standard Magic Ornament Twilight Belt">
+		<!-- Increases skill/ magic damage during PvP when equipped. -->
+		<icon>icon.skill0332</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<effects>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>2.5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>2.5</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13194" fromLevel="3" toLevel="3" name="High-grade Magic Ornament Twilight Belt">
+		<!-- Increases skill/ magic damage during PvP when equipped. -->
+		<icon>icon.skill0332</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<effects>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>3.5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>3.5</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13195" fromLevel="4" toLevel="4" name="Top-grade Magic Ornament Twilight Belt">
+		<!-- Increases skill/ magic damage during PvP when equipped. -->
+		<icon>icon.skill0332</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<effects>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13196" toLevel="1" name="Low-grade Magic Ornament Twilight Belt">
+		<!-- Decreases damage received during PvP when equipped. -->
+		<icon>icon.skill0332</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<effects>
+			<effect name="PvpPhysicalAttackDefenceBonus">
+				<amount>1.2</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDefenceBonus">
+				<amount>1.2</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpMagicalSkillDefenceBonus">
+				<amount>1.2</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13197" fromLevel="2" toLevel="2" name="Standard Magic Ornament Twilight Belt">
+		<!-- Decreases damage received during PvP when equipped. -->
+		<icon>icon.skill0332</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<effects>
+			<effect name="PvpPhysicalAttackDefenceBonus">
+				<amount>3</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDefenceBonus">
+				<amount>3</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpMagicalSkillDefenceBonus">
+				<amount>3</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13198" fromLevel="3" toLevel="3" name="High-grade Magic Ornament Twilight Belt">
+		<!-- Decreases damage received during PvP when equipped. -->
+		<icon>icon.skill0332</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<effects>
+			<effect name="PvpPhysicalAttackDefenceBonus">
+				<amount>4.2</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDefenceBonus">
+				<amount>4.2</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpMagicalSkillDefenceBonus">
+				<amount>4.2</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="13199" fromLevel="4" toLevel="4" name="Top-grade Magic Ornament Twilight Belt">
+		<!-- Decreases damage received during PvP when equipped. -->
+		<icon>icon.skill0332</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<effects>
+			<effect name="PvpPhysicalAttackDefenceBonus">
+				<amount>6</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDefenceBonus">
+				<amount>6</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpMagicalSkillDefenceBonus">
+				<amount>6</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+</list>

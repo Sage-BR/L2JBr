@@ -1,0 +1,1598 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="16700" toLevel="1" name="Biting Wind">
+		<!-- The biting wind has lowered the defensive abilities of the nearby spirits. -->
+		<icon>icon.skill1074</icon>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<mpConsume>10</mpConsume>
+		<hitTime>1000</hitTime>
+		<effectPoint>-418</effectPoint>
+		<isMagic>1</isMagic>
+		<isDebuff>1</isDebuff>
+	</skill>
+	<skill id="16701" toLevel="1" name="Warm Wind">
+		<!-- The warm wind has boosted the defensive abilities of the nearby spirits. -->
+		<icon>icon.skill1189</icon>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<mpConsume>10</mpConsume>
+		<hitTime>1000</hitTime>
+		<effectPoint>418</effectPoint>
+		<isMagic>1</isMagic>
+	</skill>
+	<skill id="16702" toLevel="1" name="Royal Shout">
+		<!-- A loud shout is made, stunning nearby enemies -->
+		<icon>icon.skill1399</icon>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<hitTime>1000</hitTime>
+		<coolTime>200</coolTime>
+		<effectPoint>-800</effectPoint>
+		<isDebuff>1</isDebuff>
+	</skill>
+	<skill id="16703" toLevel="1" name="Flame Storm">
+		<!-- An explosive flame that deals magic damage to nearby enemies is generated. -->
+		<icon>icon.skill0771</icon>
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<mpConsume>10</mpConsume>
+		<hitTime>2000</hitTime>
+		<effectPoint>-800</effectPoint>
+		<isMagic>1</isMagic>
+	</skill>
+	<skill id="16704" toLevel="1" name="Mimillion Flame">
+		<!-- A ball of fire is thrown at the target, dealing magic damage and knocking back the target. -->
+		<icon>icon.skill1181</icon>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<mpConsume>10</mpConsume>
+		<castRange>1200</castRange>
+		<hitTime>3000</hitTime>
+		<reuseDelay>30000</reuseDelay>
+		<effectPoint>-800</effectPoint>
+		<isMagic>1</isMagic>
+		<isDebuff>1</isDebuff>
+	</skill>
+	<skill id="16705" toLevel="1" name="Thunder Storm">
+		<!-- An explosion of lightning that deals magic damage to nearby enemies is generated. -->
+		<icon>icon.skll10094</icon>
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<mpConsume>10</mpConsume>
+		<hitTime>2000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-800</effectPoint>
+		<isMagic>1</isMagic>
+	</skill>
+	<skill id="16706" toLevel="1" name="Mimillus Thunder">
+		<!-- Lightning is thrown at the target, dealing magic damage and paralyzing the target. -->
+		<icon>icon.skill0279</icon>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<mpConsume>10</mpConsume>
+		<castRange>1200</castRange>
+		<hitTime>3000</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>30000</reuseDelay>
+		<effectPoint>-800</effectPoint>
+		<isMagic>1</isMagic>
+		<isDebuff>1</isDebuff>
+	</skill>
+	<skill id="16707" toLevel="2" name="Horn Melody - Residence">
+		<!-- For $s1, P. Atk. +$s2, M. Atk. +$s3, P. Def. +$s4, and M. Def. +$s5. -->
+		<icon>icon.skill11517</icon>
+		<abnormalLvl>
+			<value level="1">1</value>
+			<value level="2">2</value>
+		</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<abnormalType>BUFF_SPECIAL_ATTACK</abnormalType>
+		<operateType>A2</operateType>
+		<effectPoint>
+			<value level="1">687</value>
+			<value level="2">698</value>
+		</effectPoint>
+		<coolTime>300</coolTime>
+		<reuseDelay>2000</reuseDelay>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="PAtk">
+				<amount>
+					<value level="1">23</value>
+					<value level="2">24</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>
+					<value level="1">88</value>
+					<value level="2">91</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>35</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>40</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DispelBySlotProbability">
+				<dispel>IMPROVE_PA_PD_UP;PA_UP;PD_UP;IMPROVE_MA_MD_UP;MD_UP;MA_UP;KAMAEL_SPECIAL</dispel>
+				<rate>100</rate>
+			</effect>
+			<effect name="BlockAbnormalSlot">
+				<slot>IMPROVE_PA_PD_UP;PA_UP;PD_UP;IMPROVE_MA_MD_UP;MD_UP;MA_UP;KAMAEL_SPECIAL</slot>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="16708" toLevel="2" name="Guitar Melody - Residence">
+		<!-- For $s1, Atk. Spd. +$s2, Casting Spd. +$s3, and Speed +$s4 and Skill MP Consumption -$s5. -->
+		<icon>icon.skill11520</icon>
+		<abnormalLvl>
+			<value level="1">1</value>
+			<value level="2">2</value>
+		</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<abnormalType>BUFF_SPECIAL_MOVE</abnormalType>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<coolTime>300</coolTime>
+		<reuseDelay>2000</reuseDelay>
+		<effectPoint>
+			<value level="1">687</value>
+			<value level="2">698</value>
+		</effectPoint>
+	</skill>
+	<skill id="16709" toLevel="2" name="Drum Melody - Residence">
+		<!-- For $s1, increases P. Critical Rate by $s2, P. Critical Damage by $s3, M. Critical Rate by $s4, and decreases Received P. Critical Damage by $s5. Also has a chance to increase Critical Damage when hit. -->
+		<icon>icon.skill11522</icon>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<coolTime>300</coolTime>
+		<reuseDelay>2000</reuseDelay>
+		<effectPoint>
+			<value level="1">687</value>
+			<value level="2">698</value>
+		</effectPoint>
+	</skill>
+	<skill id="16710" toLevel="2" name="Harp Melody - Residence">
+		<!-- For $s1, P. Accuracy +$s2, P. Evasion/ M. Evasion +$s3, and Speed +$s4. Also, Critical Damage Received -$s5. -->
+		<icon>icon.skill11521</icon>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<coolTime>300</coolTime>
+		<reuseDelay>2000</reuseDelay>
+		<effectPoint>
+			<value level="1">687</value>
+			<value level="2">698</value>
+		</effectPoint>
+	</skill>
+	<skill id="16711" toLevel="2" name="Lute Melody - Residence">
+		<!-- For $s1, Atk. Spd. and Casting Spd. +$s2 and $s3, respectively, and applies the Vampiric Rage effect for $s4 at a certain probability. -->
+		<icon>icon.skill11518</icon>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<coolTime>300</coolTime>
+		<reuseDelay>2000</reuseDelay>
+		<effectPoint>
+			<value level="1">687</value>
+			<value level="2">698</value>
+		</effectPoint>
+	</skill>
+	<skill id="16712" toLevel="2" name="Pipe Organ Melody - Residence">
+		<!-- For $s1, Max HP +$s2, Max MP +$s3, and Max CP +$s4. A chance to apply $s5 Vampiric Rage effect. -->
+		<icon>icon.skill11519</icon>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<coolTime>300</coolTime>
+		<reuseDelay>2000</reuseDelay>
+		<effectPoint>
+			<value level="1">687</value>
+			<value level="2">698</value>
+		</effectPoint>
+	</skill>
+	<skill id="16713" toLevel="1" name="Prevailing Sonata - Residence">
+		<!-- For 1 h., Max HP +30%, P. Atk. +25%, M. Atk. +30%, and magic cancel rate -40. A chance to add 8% Vampiric Rage effect. -->
+		<icon>icon.skill11529</icon>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<castRange>900</castRange>
+		<reuseDelay>1000</reuseDelay>
+		<effectPoint>1</effectPoint>
+	</skill>
+	<skill id="16714" toLevel="1" name="Daring Sonata - Residence">
+		<!-- For 1 h., Atk. Spd. +25%, Casting Spd. +25%, Speed +20, Damage Reflectionion +10%, and Skill Cooldown -10%. -->
+		<icon>icon.skill11530</icon>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<castRange>900</castRange>
+		<reuseDelay>1000</reuseDelay>
+		<effectPoint>1</effectPoint>
+	</skill>
+	<skill id="16715" toLevel="1" name="Refreshing Sonata - Residence">
+		<!-- For 1 h., HP Recovery +75%, MP Recovery +50%, and P. Evasion/ M. Evasion +5, and Skill MP Consumption -20%. -->
+		<icon>icon.skill11532</icon>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<castRange>900</castRange>
+		<reuseDelay>1000</reuseDelay>
+		<effectPoint>1</effectPoint>
+	</skill>
+	<skill id="16716" toLevel="1" name="Knight's Harmony - Residence">
+		<!-- For 1 h., increases P. Def. by 45%, M. Def. by 15%, P./ M. Critical Rate by 100%, P. Critical Damage by 35%, Shield Defense Rate by 30%, and Shield Defense by 50%. -->
+		<icon>icon.skill11523</icon>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<castRange>900</castRange>
+		<coolTime>300</coolTime>
+		<reuseDelay>2000</reuseDelay>
+		<effectPoint>687</effectPoint>
+	</skill>
+	<skill id="16717" toLevel="1" name="Warrior's Harmony - Residence">
+		<!-- For 1 h., increases P. Atk. by 22%, P. Critical Rate by 100%, P. Critical Damage by 70%, Atk. Spd. by 10%, and Speed by 10. -->
+		<icon>icon.skill11524</icon>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<castRange>900</castRange>
+		<coolTime>300</coolTime>
+		<reuseDelay>2000</reuseDelay>
+		<effectPoint>687</effectPoint>
+	</skill>
+	<skill id="16718" toLevel="1" name="Wizard's Harmony - Residence">
+		<!-- For 1 h., M. Atk. +40%, M. Critical Rate +100%, Casting Spd. +15%, Skill Cooldown -20%, and Skill MP Consumption -15%. -->
+		<icon>icon.skill11525</icon>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<castRange>900</castRange>
+		<coolTime>300</coolTime>
+		<reuseDelay>2000</reuseDelay>
+		<effectPoint>687</effectPoint>
+	</skill>
+	<skill id="16719" toLevel="1" name="Elemental Resistance - Residence">
+		<!-- For 1 h., all Attribute Resistance +30. -->
+		<icon>icon.skill11565</icon>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<mpConsume>140</mpConsume>
+		<coolTime>300</coolTime>
+		<reuseDelay>2000</reuseDelay>
+		<effectPoint>687</effectPoint>
+	</skill>
+	<skill id="16720" toLevel="1" name="Resistance Debuff - Residence">
+		<!-- For 1 h., Resistance to Poison/ Bleed/ Hold/ Sleep/ Mental +50%. -->
+		<icon>icon.skill11567</icon>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<mpConsume>140</mpConsume>
+		<coolTime>300</coolTime>
+		<reuseDelay>2000</reuseDelay>
+		<effectPoint>687</effectPoint>
+	</skill>
+	<skill id="16721" toLevel="1" name="Mental Attack Resistance - Residence">
+		<!-- For1 h., Resistance to buff-canceling attacks/ debuff attacks +30. -->
+		<icon>icon.skill11824</icon>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<mpConsume>140</mpConsume>
+		<coolTime>300</coolTime>
+		<reuseDelay>2000</reuseDelay>
+		<effectPoint>687</effectPoint>
+	</skill>
+	<skill id="16722" toLevel="1" name="Resistance of Saha - Residence">
+		<!-- For 1 h., all Attribute Resistance +30. -->
+		<icon>icon.skill11567</icon>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<mpConsume>17</mpConsume>
+		<castRange>600</castRange>
+		<coolTime>300</coolTime>
+		<reuseDelay>2000</reuseDelay>
+		<effectPoint>687</effectPoint>
+		<isMagic>1</isMagic>
+	</skill>
+	<skill id="16723" toLevel="3" name="Powered Giant Strike">
+		<!-- Attack skill that deals physical damage to a single target -->
+		<operateType>A1</operateType>
+		<mpConsume>13</mpConsume>
+		<castRange>150</castRange>
+		<hitTime>2000</hitTime>
+		<coolTime>500</coolTime>
+		<isMagic>1</isMagic> <!-- Static Skill -->
+		<effectPoint>
+			<value level="1">-500</value>
+			<value level="2">-800</value>
+			<value level="3">-1000</value>
+		</effectPoint>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>100000</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="16724" toLevel="3" name="Powered Giant Slasher">
+		<!-- Attack skill that deals physical damage to the target and nearby enemies -->
+		<operateType>A1</operateType>
+		<mpConsume>13</mpConsume>
+		<castRange>150</castRange>
+		<hitTime>2000</hitTime>
+		<coolTime>500</coolTime>
+		<isMagic>1</isMagic> <!-- Static Skill -->
+		<effectPoint>
+			<value level="1">-500</value>
+			<value level="2">-800</value>
+			<value level="3">-1000</value>
+		</effectPoint>
+		<targetType>ENEMY</targetType>
+		<affectScope>FAN</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<fanRange>0;0;150;360</fanRange>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>150000</power>
+				<criticalChance>5</criticalChance>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="16725" toLevel="3" name="Powered Giant Plasma">
+		<!-- Attack skill that deals magic damage to a single target -->
+		<operateType>A1</operateType>
+		<mpConsume>34</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>2000</hitTime>
+		<coolTime>500</coolTime>
+		<isMagic>1</isMagic> <!-- Static Skill -->
+		<effectPoint>
+			<value level="1">-500</value>
+			<value level="2">-800</value>
+			<value level="3">-1000</value>
+		</effectPoint>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="MagicalAttack">
+				<power>
+					<value level="1">529</value>
+					<value level="2">541</value>
+					<value level="3">553</value>
+				</power>
+				<overHit>true</overHit>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="16726" toLevel="3" name="Powered Giant Storm">
+		<!-- Attack skill that deals magic damage to the target and nearby enemies -->
+		<operateType>A1</operateType>
+		<affectLimit>20-25</affectLimit>
+		<castRange>900</castRange>
+		<effectRange>900</effectRange>
+		<affectRange>600</affectRange>
+		<hitTime>2000</hitTime>
+		<coolTime>500</coolTime>
+		<isMagic>1</isMagic> <!-- Static Skill -->
+		<effectPoint>
+			<value level="1">-500</value>
+			<value level="2">-800</value>
+			<value level="3">-1000</value>
+		</effectPoint>
+		<targetType>ENEMY</targetType>
+		<affectScope>RANGE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<effects>
+			<effect name="MagicalAttack">
+				<power>
+					<value level="1">529</value>
+					<value level="2">541</value>
+					<value level="3">553</value>
+				</power>
+				<overHit>true</overHit>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="16727" toLevel="1" name="Helios Storm Fist">
+		<operateType>A1</operateType>
+		<hitTime>1500</hitTime>
+		<effectPoint>-100</effectPoint>
+		<effectRange>600</effectRange>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>34255</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="16728" toLevel="1" name="Side Slasher">
+		<icon>icon.skill0036</icon>
+		<operateType>A1</operateType>
+		<reuseDelay>5000</reuseDelay>
+		<mpConsume>10</mpConsume>
+		<castRange>400</castRange>
+		<hitTime>2000</hitTime>
+		<isMagic>1</isMagic> <!-- Static Skill -->
+		<effectPoint>-352</effectPoint>
+		<targetType>ENEMY</targetType>
+		<affectScope>FAN</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<fanRange>0;0;900;120</fanRange>
+		<isMagic>1</isMagic> <!-- Static Skill -->
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>150000</power>
+				<criticalChance>5</criticalChance>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="16729" toLevel="1" name="Side Megabomber">
+		<!-- The opponents in range are knocked down for 10 sec. -->
+		<icon>icon.skill0922</icon>
+		<operateType>A2</operateType>
+		<reuseDelay>20000</reuseDelay>
+		<abnormalType>KNOCKDOWN</abnormalType>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>10</abnormalTime>
+		<abnormalVisualEffect>KNOCKDOWN</abnormalVisualEffect>
+		<activateRate>200</activateRate>
+		<affectLimit>20-25</affectLimit>
+		<mpConsume>1</mpConsume>
+		<castRange>400</castRange>
+		<hitTime>5000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-700</effectPoint>
+		<targetType>ENEMY</targetType>
+		<affectScope>FAN</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<fanRange>0;0;900;160</fanRange>
+		<isMagic>1</isMagic> <!-- Static Skill -->
+		<trait>KNOCKDOWN</trait>
+		<isDebuff>true</isDebuff>
+		<effects>
+			<effect name="KnockBack">
+				<speed>600</speed>
+				<distance>200</distance>
+				<knockDown>true</knockDown>
+			</effect>
+			<effect name="BlockActions" />
+		</effects>
+	</skill>
+	<skill id="16730" toLevel="1" name="Amity Level-up">
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<hitTime>500</hitTime>
+	</skill>
+	<skill id="16731" toLevel="1" name="Leaking Magic - Attack">
+		<!-- The physical attack and magic attack of the Queen and her minions are boosted greatly by the magic leaking out of the disintegrating MP Control Unit. -->
+		<icon>icon.skill1059</icon>
+		<abnormalLvl>5</abnormalLvl>
+		<abnormalTime>60</abnormalTime>
+		<operateType>A2</operateType>
+		<effectPoint>-100</effectPoint>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="PAtk">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="16732" toLevel="1" name="Leaking Magic - Defense">
+		<!-- The physical defense and magic defense of the Queen and her minions are boosted greatly by the magic leaking out of the disintegrating MP Control Unit. -->
+		<icon>icon.skill1478</icon>
+		<abnormalLvl>5</abnormalLvl>
+		<abnormalTime>60</abnormalTime>
+		<operateType>A2</operateType>
+		<effectPoint>-100</effectPoint>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="PhysicalDefence">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="16733" toLevel="1" name="Leaking Magic - HP">
+		<!-- The HP regen of the Queen and her minions are boosted greatly by the magic leaking out of the disintegrating MP Control Unit. -->
+		<icon>icon.skill1044</icon>
+		<abnormalLvl>5</abnormalLvl>
+		<abnormalTime>60</abnormalTime>
+		<operateType>A2</operateType>
+		<effectPoint>-100</effectPoint>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="HpRegen">
+				<amount>3</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="16734" toLevel="1" name="Leaking Magic - Eradication">
+		<!-- The Queen and her minions continuously receive massive damage fur to the magic leaking out of the disintegrating MP Control Unit. -->
+		<icon>icon.skill1108</icon>
+		<abnormalLvl>5</abnormalLvl>
+		<abnormalTime>60</abnormalTime>
+		<operateType>A2</operateType>
+		<effectPoint>-100</effectPoint>
+		<isDebuff>true</isDebuff>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpTargetPc" /> <!-- TODO -->
+			<condition name="OpResurrection" /> <!-- TODO -->
+		</conditions>
+		<effects>
+			<effect name="BlockResurrection" /> <!-- TODO -->
+		</effects>
+	</skill>
+	<skill id="16735" toLevel="10" name="Inherent Abilities - Blackbird Clan Talisman">
+		<!-- Damage received from Demons -$s1. -->
+		<icon>etc_blackbird_talisman</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="DefenceTrait">
+				<BEAST_WEAKNESS>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+					<value level="4">4</value>
+					<value level="5">5</value>
+					<value level="6">6</value>
+					<value level="7">7</value>
+					<value level="8">8</value>
+					<value level="9">9</value>
+					<value level="10">10</value>
+				</BEAST_WEAKNESS>
+			</effect>
+			<effect name="AttackTrait">
+				<BEAST_WEAKNESS>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">0</value>
+					<value level="6">1</value>
+					<value level="7">2</value>
+					<value level="8">3</value>
+					<value level="9">4</value>
+					<value level="10">5</value>
+				</BEAST_WEAKNESS>
+			</effect>
+			<effect name="PAtk">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">0</value>
+					<value level="6">0</value>
+					<value level="7">0</value>
+					<value level="8">1</value>
+					<value level="9">2</value>
+					<value level="10">3</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="16736" toLevel="10" name="Inherent Abilities - Mother Tree Guardians Talisman">
+		<!-- Damage received from Plants -$s1. -->
+		<icon>etc_guardian_talisman</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="DefenceTrait">
+				<PLANT_WEAKNESS>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+					<value level="4">4</value>
+					<value level="5">5</value>
+					<value level="6">6</value>
+					<value level="7">7</value>
+					<value level="8">8</value>
+					<value level="9">9</value>
+					<value level="10">10</value>
+				</PLANT_WEAKNESS>
+			</effect>
+			<effect name="AttackTrait">
+				<PLANT_WEAKNESS>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">0</value>
+					<value level="6">1</value>
+					<value level="7">2</value>
+					<value level="8">3</value>
+					<value level="9">4</value>
+					<value level="10">5</value>
+				</PLANT_WEAKNESS>
+			</effect>
+			<effect name="MAtk">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">0</value>
+					<value level="6">0</value>
+					<value level="7">0</value>
+					<value level="8">1</value>
+					<value level="9">2</value>
+					<value level="10">3</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="16737" toLevel="10" name="Inherent Abilities - Kingdom's Royal Guard Talisman">
+		<!-- Damage received from Embryo -$s1. -->
+		<icon>etc_royalgurad_talisman</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+	</skill>
+	<skill id="16738" toLevel="10" name="Inherent Abilities - Unworldly Visitors Talisman">
+		<!-- Damage received from Spirits -$s1. -->
+		<icon>etc_stranger_talisman</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+	</skill>
+	<skill id="16739" toLevel="10" name="Inherent Abilities - Giant Trackers Talisman">
+		<!-- Damage received from Giants -$s1. -->
+		<icon>etc_giantslayer_talisman</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="DefenceTrait">
+				<GIANT_WEAKNESS>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+					<value level="4">4</value>
+					<value level="5">5</value>
+					<value level="6">6</value>
+					<value level="7">7</value>
+					<value level="8">8</value>
+					<value level="9">9</value>
+					<value level="10">10</value>
+				</GIANT_WEAKNESS>
+			</effect>
+			<effect name="AttackTrait">
+				<GIANT_WEAKNESS>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">0</value>
+					<value level="6">1</value>
+					<value level="7">2</value>
+					<value level="8">3</value>
+					<value level="9">4</value>
+					<value level="10">5</value>
+				</GIANT_WEAKNESS>
+			</effect>
+			<effect name="CriticalDamage">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">0</value>
+					<value level="6">0</value>
+					<value level="7">0</value>
+					<value level="8">1</value>
+					<value level="9">2</value>
+					<value level="10">3</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="16740" toLevel="1" name="Return to the Stronghold">
+		<!-- Return to the stronghold of the Blackbird Clan. Consumes 4 Spirit Ore. -->
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<hitTime>2000</hitTime>
+		<reuseDelay>600000</reuseDelay>
+	</skill>
+	<skill id="16741" toLevel="1" name="Return to the Stronghold">
+		<!-- Return to the stronghold of the Kingdom's Royal Guard. Consumes 4 Spirit Ore. -->
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<hitTime>2000</hitTime>
+		<reuseDelay>600000</reuseDelay>
+	</skill>
+	<skill id="16742" toLevel="1" name="Return to the Stronghold">
+		<!-- Return to the stronghold of the Unworldly Visitors. Consumes 4 Spirit Ore. -->
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<hitTime>2000</hitTime>
+		<reuseDelay>600000</reuseDelay>
+	</skill>
+	<skill id="16743" toLevel="1" name="Return to the Stronghold">
+		<!-- Return to the stronghold of the Mother Tree Guardians. Consumes 4 Spirit Ore. -->
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<hitTime>2000</hitTime>
+		<reuseDelay>600000</reuseDelay>
+	</skill>
+	<skill id="16744" toLevel="1" name="Return to the Stronghold">
+		<!-- Return to the stronghold of the Giant Trackers. Consumes 4 Spirit Ore. -->
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<hitTime>2000</hitTime>
+		<reuseDelay>600000</reuseDelay>
+	</skill>
+	<skill id="16745" toLevel="1" name="Kamael's Origin Dispatch">
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+	</skill>
+	<skill id="16746" toLevel="3" name="Ramona">
+		<!-- Both the wife of Emperor Helios and a great wizard in her own right. On the day the Giants' age came to an end, she fell into a deep sleep with Helios from which she has been awakened. She controls the Fortress Superion on behalf of Helios. -->
+		<icon>icon.skillboss</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+	</skill>
+	<skill id="16747" toLevel="1" name="Ring of the Beginning">
+		<!-- Max MP +42, P./ M. Atk. +3%, P./ M. Critical Damage +15%, Stun/ Paralyze/ Knock Back attack and defense success rate +15%, Additional Damage to the Giants +5% -->
+		<icon>icon.accessory_ring_of_helios_Black</icon>
+	<!-- Emperor of the Giant Empire, during the Ancient Age of Giants. He was responsible for the golden age. In his heyday, Helios was so powerful that even the gods had to be careful around him, and he ruled as master of the Material Realm. He is the creator of the Grail, and the Grail itself. -->
+	<operateType>P</operateType>
+	<targetType>SELF</targetType>
+		<effects>
+			<effect name="AttackTrait">
+				<SHOCK>15</SHOCK>
+				<PARALYZE>15</PARALYZE>
+				<KNOCKBACK>15</KNOCKBACK>
+			</effect>
+			<effect name="DefenceTrait">
+				<SHOCK>15</SHOCK>
+				<PARALYZE>15</PARALYZE>
+				<KNOCKBACK>15</KNOCKBACK>
+			</effect>
+			<effect name="AttackTrait">
+				<GIANT_WEAKNESS>5</GIANT_WEAKNESS>
+			</effect>
+			<effect name="CriticalDamage">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicCriticalDamage">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PAtk">
+				<amount>3</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>3</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="16748" toLevel="2" name="Ring of Authority">
+		<!-- Max MP +43, P. Atk. +4%, P. Critical Damage +15%, Stun/ Paralyze/ Knock Back attack and defense success rate +25%, Additional Damage to the Giants +5% -->
+		<icon>
+			<value level="1">icon.accessory_ring_of_helios_red</value>
+			<value level="2">icon.accessory_ring_of_helios_enchant_red</value>
+		</icon>
+	<!-- Emperor of the Giant Empire, during the Ancient Age of Giants. He was responsible for the golden age. In his heyday, Helios was so powerful that even the gods had to be careful around him, and he ruled as master of the Material Realm. He is the creator of the Grail, and the Grail itself. -->
+	<operateType>P</operateType>
+	<targetType>SELF</targetType>
+		<effects>
+			<effect name="MaxMp">
+				<amount>
+					<value level="1">43</value>
+					<value level="2">46</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="AttackTrait">
+			<SHOCK>
+				<value level="1">25</value>
+				<value level="2">30</value>
+			</SHOCK>
+			<PARALYZE>
+				<value level="1">25</value>
+				<value level="2">30</value>
+			</PARALYZE>
+			<KNOCKBACK>
+				<value level="1">25</value>
+				<value level="2">30</value>
+			</KNOCKBACK>
+			</effect>
+			<effect name="DefenceTrait">
+			<SHOCK>
+				<value level="1">25</value>
+				<value level="2">30</value>
+			</SHOCK>
+			<PARALYZE>
+				<value level="1">25</value>
+				<value level="2">30</value>
+			</PARALYZE>
+			<KNOCKBACK>
+				<value level="1">25</value>
+				<value level="2">30</value>
+			</KNOCKBACK>
+			</effect>
+			<effect name="AttackTrait">
+				<GIANT_WEAKNESS>5</GIANT_WEAKNESS>
+			</effect>
+			<effect name="CriticalDamage">
+				<amount>
+					<value level="1">15</value>
+					<value level="2">20</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PAtk">
+				<amount>
+					<value level="1">4</value>
+					<value level="2">5</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="StatUp">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">2</value>
+				</amount>
+				<stat>CHA</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">2</value>
+				</amount>
+				<stat>LUC</stat>
+			</effect>
+			<effect name="TriggerSkillByMagicType" fromLevel="2" toLevel="2">
+				<magicTypes>0;1</magicTypes>
+				<skillId>16755</skillId> <!-- Activate.Paralysis -->
+				<skillLevel>1</skillLevel>
+				<chance>100</chance>
+				<targetType>ENEMY</targetType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="16749" toLevel="2" name="Ring of the Truth">
+		<!-- Max MP +43, M. Atk. +4%, Magical Critical Damage +15%, Stun/ Paralyze/ Knock Back attack and defense success rate +25%, Additional Damage to the Giants +5% -->
+		<icon>
+			<value level="1">icon.accessory_ring_of_helios</value>
+			<value level="2">icon.accessory_ring_of_helios_enchant</value>
+		</icon>
+	<!-- Emperor of the Giant Empire, during the Ancient Age of Giants. He was responsible for the golden age. In his heyday, Helios was so powerful that even the gods had to be careful around him, and he ruled as master of the Material Realm. He is the creator of the Grail, and the Grail itself. -->
+	<operateType>P</operateType>
+	<targetType>SELF</targetType>
+		<effects>
+			<effect name="MaxMp">
+				<amount>
+					<value level="1">43</value>
+					<value level="2">46</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="AttackTrait">
+			<SHOCK>
+				<value level="1">25</value>
+				<value level="2">30</value>
+			</SHOCK>
+			<PARALYZE>
+				<value level="1">25</value>
+				<value level="2">30</value>
+			</PARALYZE>
+			<KNOCKBACK>
+				<value level="1">25</value>
+				<value level="2">30</value>
+			</KNOCKBACK>
+			</effect>
+			<effect name="DefenceTrait">
+			<SHOCK>
+				<value level="1">25</value>
+				<value level="2">30</value>
+			</SHOCK>
+			<PARALYZE>
+				<value level="1">25</value>
+				<value level="2">30</value>
+			</PARALYZE>
+			<KNOCKBACK>
+				<value level="1">25</value>
+				<value level="2">30</value>
+			</KNOCKBACK>
+			</effect>
+			<effect name="AttackTrait">
+				<GIANT_WEAKNESS>5</GIANT_WEAKNESS>
+			</effect>
+			<effect name="MagicCriticalDamage">
+				<amount>
+					<value level="1">15</value>
+					<value level="2">20</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>
+					<value level="1">4</value>
+					<value level="2">5</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="StatUp">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">2</value>
+				</amount>
+				<stat>CHA</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">2</value>
+				</amount>
+				<stat>LUC</stat>
+			</effect>
+			<effect name="TriggerSkillByMagicType" fromLevel="2" toLevel="2">
+				<magicTypes>0;1</magicTypes>
+				<skillId>16756</skillId> <!-- Activate.Knock Down -->
+				<skillLevel>1</skillLevel>
+				<chance>100</chance>
+				<targetType>ENEMY</targetType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="16750" toLevel="1" name="Ramona's Fancy Earrings">
+		<!-- Max MP +64, Additional Damage to the Giants +5%, Vampiric Rage +5% -->
+		<icon>icon.glossy_earing_of_ramona</icon>
+	<!-- Emperor of the Giant Empire, during the Ancient Age of Giants. He was responsible for the golden age. In his heyday, Helios was so powerful that even the gods had to be careful around him, and he ruled as master of the Material Realm. He is the creator of the Grail, and the Grail itself. -->
+	<operateType>P</operateType>
+	<targetType>SELF</targetType>
+		<effects>
+			<effect name="AttackTrait">
+				<GIANT_WEAKNESS>5</GIANT_WEAKNESS>
+			</effect>
+			<effect name="VampiricAttack">
+				<amount>5</amount>
+				<chance>30</chance>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="16751" toLevel="1" name="Helios' Majestic Earrings">
+		<!-- Max MP +64, Additional Damage to the Giants +5%, Vampiric Rage +5% -->
+		<icon>icon.grand_earing_of_helios</icon>
+	<!-- Emperor of the Giant Empire, during the Ancient Age of Giants. He was responsible for the golden age. In his heyday, Helios was so powerful that even the gods had to be careful around him, and he ruled as master of the Material Realm. He is the creator of the Grail, and the Grail itself. -->
+	<operateType>P</operateType>
+	<targetType>SELF</targetType>
+		<effects>
+			<effect name="AttackTrait">
+				<GIANT_WEAKNESS>5</GIANT_WEAKNESS>
+			</effect>
+			<effect name="VampiricAttack">
+				<amount>5</amount>
+				<chance>30</chance>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="16752" toLevel="1" name="Harnak's Transformed Necklace">
+		<!-- Max MP +79, Skill Cooldown -10%, Additional Damage to the Giants +5% -->
+		<icon>icon.transform_necklace_of_harnak</icon>
+	<!-- Take it to Rafforty to exchange for the Source of the Emperor Exchange. MP +79, Additional Damage to the Giants +5%, Skill Cooldown -10%. Enchantment, Augment, Crystallization not possible -->
+	<operateType>P</operateType>
+	<targetType>SELF</targetType>
+		<effects>
+			<effect name="AttackTrait">
+				<GIANT_WEAKNESS>5</GIANT_WEAKNESS>
+			</effect>
+			<effect name="Reuse">
+				<amount>-10</amount>
+				<mode>PER</mode>
+				<magicType>0</magicType>
+			</effect>
+			<effect name="Reuse">
+				<amount>-10</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="16753" toLevel="1" name="Mimir's Worn Ring">
+		<!-- Max MP +42, P. Critical Damage +15%, Additional Damage to the Giants +5% -->
+		<icon>icon.old_ring_of_mimir</icon>
+	<!-- Take it to Rafforty to exchange for the Source of the Emperor. MP +42, Additional Damage to the Giants +5%, P. Critical Damage +15%. Effect does not stack with identical ones. Enchantment, Augment, Crystallization not possible -->
+	<operateType>P</operateType>
+	<targetType>SELF</targetType>
+		<effects>
+			<effect name="AttackTrait">
+				<GIANT_WEAKNESS>5</GIANT_WEAKNESS>
+			</effect>
+			<effect name="CriticalDamage">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="16754" toLevel="1" name="Forgotten Ring of the Core">
+		<!-- Max MP +39, M. Critical Damage +15%, Additional Damage to the Giants +5% -->
+		<icon>icon.forgotten_ring_of_core</icon>
+	<!-- Take it to Rafforty to exchange for the Source of the Emperor. MP +39, Additional Damage to the Giants +5%, M. Critical Damage +15%. Effect does not stack with identical ones. Enchantment, Augment, Crystallization not possible -->
+	<operateType>P</operateType>
+	<targetType>SELF</targetType>
+		<effects>
+			<effect name="AttackTrait">
+				<GIANT_WEAKNESS>5</GIANT_WEAKNESS>
+			</effect>
+			<effect name="MagicCriticalDamage">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="16755" toLevel="1" name="Activate.Paralysis">
+		<!-- Body is paralyzed and begins to stiffen. -->
+		<icon>icon.bm_ensoul_stone_hidden</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>3</abnormalTime>
+		<abnormalType>PARALYZE</abnormalType>
+		<abnormalVisualEffect>PARALYZE</abnormalVisualEffect>
+		<activateRate>80</activateRate> <!-- Guessed -->
+		<basicProperty>MAGIC</basicProperty>
+		<trait>PARALYZE</trait>
+		<operateType>A2</operateType>
+		<targetType>ENEMY_ONLY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<castRange>1000</castRange>
+		<reuseDelay>60000</reuseDelay>
+		<effectPoint>-100</effectPoint>
+		<isDebuff>1</isDebuff>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<staticReuse>true</staticReuse>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="BlockActions">
+				<allowedSkills>10279;10517;10025;10776;11770;1904;11264;11093;13314;1912;30516</allowedSkills>
+			</effect>
+			<effect name="DefenceTrait">
+				<PARALYZE>100</PARALYZE>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="16756" toLevel="1" name="Activate.Knock Down">
+		<!-- Knocked down to the ground. -->
+		<icon>icon.bm_ensoul_stone_hidden</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>3</abnormalTime>
+		<abnormalType>KNOCKDOWN</abnormalType>
+		<abnormalVisualEffect>KNOCKDOWN</abnormalVisualEffect>
+		<activateRate>120</activateRate>
+		<basicProperty>NONE</basicProperty>
+		<trait>KNOCKDOWN</trait>
+		<operateType>A2</operateType>
+		<targetType>ENEMY_ONLY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<castRange>1000</castRange>
+		<reuseDelay>60000</reuseDelay>
+		<effectPoint>-100</effectPoint>
+		<isDebuff>1</isDebuff>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<staticReuse>true</staticReuse>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="KnockBack">
+				<distance>250</distance>
+				<speed>600</speed>
+				<knockDown>true</knockDown>
+			</effect>
+			<effect name="DefenceTrait">
+				<AIRBIND>100</AIRBIND>
+				<KNOCKBACK>100</KNOCKBACK>
+				<SLEEP>100</SLEEP>
+				<KNOCKDOWN>100</KNOCKDOWN>
+				<SHOCK>100</SHOCK>
+				<HOLD>100</HOLD>
+			</effect>
+			<effect name="BlockActions" />
+		</effects>
+	</skill>
+	<skill id="16757" toLevel="4" name="Superion Barrier">
+		<!-- Due to the Battle Fortress Superion, Atk. Spd., Casting Spd., and Speed decreased, and Skill Cooldown increased. -->
+		<icon>
+			<value level="1">icon.skill1230</value>
+			<value level="2">icon.etc_black_freezing_core_i00</value>
+			<value level="3">icon.skill1230</value>
+			<value level="4">icon.etc_freezing_core_i00</value>
+		</icon>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<effectPoint>
+			<value level="1">-100</value>
+			<value level="2">0</value>
+			<value level="3">-100</value>
+			<value level="4">0</value>
+		</effectPoint>
+		<isDebuff>
+			<value level="1">1</value>
+			<value level="2">0</value>
+			<value level="3">1</value>
+			<value level="4">0</value>
+		</isDebuff>
+	</skill>
+	<skill id="16758" toLevel="1" name="Embryo">
+		<!-- A secret organization with a grand conspiracy to control the power of Shilen to rule the world. The Embryo, whose power has long been growing in the dark shadow of history, begin their invasion of Aden after construction of Atelia Fortress. -->
+		<icon>icon.skill4416_mercenary</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+	</skill>
+	<skill id="16759" toLevel="10" name="Red Power">
+		<!-- PvE Damage Up $s1 -->
+		<icon>icon.pk</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+	</skill>
+	<skill id="16760" toLevel="1" name="Giant's Vitality Recovery">
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<castRange>1200</castRange>
+	</skill>
+	<skill id="16761" toLevel="50" name="Dissolving Shield of Light Particles - 2%">
+		<!-- The Particle Dissolver is being used to dissolve Helios' Shield of Light. -->
+		<icon>icon.giant_item_equip</icon>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<isMagic>1</isMagic>
+		<isDebuff>1</isDebuff>
+	</skill>
+	<skill id="16762" toLevel="1" name="Berserk">
+		<!-- Continued battle has enhanced Physical Attack. -->
+		<icon>icon.skill1062</icon>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<mpConsume>1</mpConsume>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>100</effectPoint>
+	</skill>
+	<skill id="16763" toLevel="6" name="Critical Slasher">
+		<icon>icon.skill16636</icon>
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<mpConsume>1</mpConsume>
+		<hitTime>2000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-2</effectPoint>
+		<isDebuff>1</isDebuff>
+	</skill>
+	<skill id="16764" toLevel="1" name="Fatal Strike">
+		<icon>icon.skill16202</icon>
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<mpConsume>1</mpConsume>
+		<castRange>40</castRange>
+		<hitTime>1500</hitTime>
+		<coolTime>1000</coolTime>
+		<reuseDelay>5000</reuseDelay>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="16765" toLevel="1" name="Fatal Shot">
+		<icon>icon.skill16203</icon>
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<mpConsume>1</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>1500</hitTime>
+		<coolTime>1000</coolTime>
+		<reuseDelay>5000</reuseDelay>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="16766" toLevel="1" name="Fatal Slasher">
+		<icon>icon.skill16204</icon>
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<mpConsume>1</mpConsume>
+		<hitTime>2000</hitTime>
+		<coolTime>1000</coolTime>
+		<reuseDelay>5000</reuseDelay>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="16767" toLevel="1" name="Burst Shot">
+		<icon>icon.skill16205</icon>
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<mpConsume>1</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>2000</hitTime>
+		<coolTime>1000</coolTime>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="16768" toLevel="1" name="Energy Spike">
+		<icon>icon.skill16206</icon>
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<mpConsume>1</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>1000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+		<isMagic>1</isMagic>
+	</skill>
+	<skill id="16769" toLevel="1" name="Energy Burst">
+		<icon>icon.skill16212</icon>
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<mpConsume>1</mpConsume>
+		<hitTime>2000</hitTime>
+		<coolTime>800</coolTime>
+		<reuseDelay>3000</reuseDelay>
+		<effectPoint>-700</effectPoint>
+		<isMagic>1</isMagic>
+	</skill>
+	<skill id="16770" toLevel="1" name="Energy Blast">
+		<icon>icon.skill16218</icon>
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<mpConsume>1</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>2000</hitTime>
+		<coolTime>800</coolTime>
+		<reuseDelay>3000</reuseDelay>
+		<effectPoint>-700</effectPoint>
+		<isMagic>1</isMagic>
+	</skill>
+	<skill id="16771" toLevel="1" name="Death Lift">
+		<!-- Lifts the target while dealing damage -->
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<castRange>40</castRange>
+		<hitTime>2000</hitTime>
+		<coolTime>1000</coolTime>
+		<reuseDelay>5000</reuseDelay>
+		<effectPoint>-150</effectPoint>
+	</skill>
+	<skill id="16772" toLevel="1" name="Fatal Strike">
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<castRange>40</castRange>
+		<hitTime>1000</hitTime>
+		<coolTime>800</coolTime>
+		<reuseDelay>5000</reuseDelay>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="16773" toLevel="1" name="Unholy Spike">
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<castRange>900</castRange>
+		<hitTime>1000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+		<isMagic>1</isMagic>
+	</skill>
+	<skill id="16774" toLevel="1" name="Stun Shot">
+		<!-- Momentarily immobile due to the Stun effect. -->
+		<icon>icon.skill0101</icon>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<castRange>900</castRange>
+		<hitTime>2000</hitTime>
+		<effectPoint>-100</effectPoint>
+		<isDebuff>1</isDebuff>
+	</skill>
+	<skill id="16775" toLevel="1" name="Power Shot">
+		<operateType>A1</operateType>
+		<castRange>600</castRange>
+		<hitTime>3000</hitTime>
+		<reuseDelay>5000</reuseDelay>
+		<effectPoint>-350</effectPoint>
+		<basicProperty>PHYSICAL</basicProperty>
+		<effectRange>400</effectRange>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<nextAction>ATTACK</nextAction>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>28833</power> <!-- Fix: Retail Missed -->
+				<overHit>true</overHit>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="16776" toLevel="1" name="Sleep">
+		<!-- Sleep has set in, and made movement temporarily impossible. -->
+		<icon>icon.skill4046</icon>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<castRange>900</castRange>
+		<hitTime>2000</hitTime>
+		<effectPoint>-100</effectPoint>
+		<isMagic>1</isMagic>
+		<isDebuff>1</isDebuff>
+	</skill>
+	<skill id="16777" toLevel="1" name="Reprieve">
+		<!-- There has been a stay..of the execution... For 7 min... -->
+		<icon>icon.skill11056</icon>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<mpConsume>1</mpConsume>
+		<hitTime>1000</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>10000</reuseDelay>
+		<effectPoint>-712</effectPoint>
+		<isMagic>6</isMagic>
+		<isDebuff>1</isDebuff>
+	</skill>
+	<skill id="16778" toLevel="1" name="Execution">
+		<!-- Unavoidable Death -->
+		<icon>icon.skill0061</icon>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<mpConsume>1</mpConsume>
+		<hitTime>10000</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>10000</reuseDelay>
+		<effectPoint>-712</effectPoint>
+		<isMagic>6</isMagic>
+		<isDebuff>1</isDebuff>
+	</skill>
+	<skill id="16779" toLevel="3" name="Black Hearts Rage">
+		<!-- Makkum's black heart thumps. For $s1, P. Atk. and Atk. Spd. +$s2, Speed +$s3, and P. Def. and M. Def. -$s4. -->
+		<icon>icon.skill0103</icon>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<mpConsume>1</mpConsume>
+		<hitTime>2000</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>10000</reuseDelay>
+		<effectPoint>-712</effectPoint>
+		<isMagic>3</isMagic>
+		<isDebuff>1</isDebuff>
+	</skill>
+	<skill id="16780" toLevel="2" name="Bloody Circle">
+		<!-- Marshall creates a gust of blood, dealing damage equal to his P. Atk. +$s1 to the surrounding area. -->
+		<icon>icon.skill0096</icon>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<mpConsume>1</mpConsume>
+		<hitTime>
+			<value level="1">4200</value>
+			<value level="2">3700</value>
+		</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>15000</reuseDelay>
+		<effectPoint>-712</effectPoint>
+		<isMagic>6</isMagic>
+		<isDebuff>1</isDebuff>
+	</skill>
+	<skill id="16781" toLevel="1" name="Ring of Corruption">
+		<!-- Makkum rotates the device on his back to create a ring-shaped zone of corruption around himself. In the zone of corruption, users suffer 1000 damage per second, and speed is reduced by 100. -->
+		<icon>icon.skill11023</icon>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<mpConsume>1</mpConsume>
+		<hitTime>2000</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>10000</reuseDelay>
+		<effectPoint>-100</effectPoint>
+		<isMagic>1</isMagic>
+		<isDebuff>1</isDebuff>
+	</skill>
+	<skill id="16782" toLevel="1" name="Violent Charge">
+		<!-- Makkum suddenly charges toward the target to inflict 10% power added to P. Attack and inflicts Stun for 3 sec. -->
+		<icon>icon.skill10318</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<mpConsume>1</mpConsume>
+		<castRange>1200</castRange>
+		<hitTime>100</hitTime>
+		<coolTime>100</coolTime>
+		<reuseDelay>10000</reuseDelay>
+		<effectPoint>-687</effectPoint>
+		<isDebuff>1</isDebuff>
+	</skill>
+	<skill id="16783" toLevel="1" name="Sentence of Death">
+		<!-- Makkum declares death to the target to decrease Defense by 40% and Speed by 180. Failure to impeded this may result in an even more fearful skill. -->
+		<icon>icon.skill1561</icon>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<mpConsume>1</mpConsume>
+		<castRange>200</castRange>
+		<hitTime>4500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>10000</reuseDelay>
+		<effectPoint>-712</effectPoint>
+		<isMagic>6</isMagic>
+		<isDebuff>1</isDebuff>
+	</skill>
+	<skill id="16784" toLevel="1" name="Guillotine Chopping">
+		<!-- Makkum's barrage of attacks inflict 300% power added to P. Attack and inflict severe Bleed for 4 sec. -->
+		<icon>icon.skill1298</icon>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<mpConsume>1</mpConsume>
+		<castRange>600</castRange>
+		<hitTime>2500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>10000</reuseDelay>
+		<effectPoint>-712</effectPoint>
+		<isMagic>6</isMagic>
+		<isDebuff>1</isDebuff>
+	</skill>
+	<skill id="16785" toLevel="1" name="Void Heal">
+		<!-- Treats yourself while Makkum's not on the attack. -->
+		<icon>icon.skill10336</icon>
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<mpConsume>1</mpConsume>
+		<hitTime>4500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>10000</reuseDelay>
+		<effectPoint>-712</effectPoint>
+		<isMagic>1</isMagic>
+		<isDebuff>1</isDebuff>
+	</skill>
+	<skill id="16786" toLevel="1" name="Revenge Will">
+		<!-- Makkum casts a spell of revenge; those attacking Makkum are faced with 500% times the damage of their own attack reflected back to them. -->
+		<icon>icon.skill10307</icon>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<mpConsume>1</mpConsume>
+		<hitTime>3000</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>10000</reuseDelay>
+		<effectPoint>-712</effectPoint>
+		<isMagic>3</isMagic>
+		<isDebuff>1</isDebuff>
+	</skill>
+	<skill id="16787" toLevel="1" name="Double Edge Slash">
+		<!-- This skill was conceived by Makkum to attack a ranged enemy. Inflicts damage on yourself as well as on the ranged target. -->
+		<icon>icon.skill1043</icon>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<mpConsume>1</mpConsume>
+		<castRange>1200</castRange>
+		<hitTime>1500</hitTime>
+		<coolTime>100</coolTime>
+		<reuseDelay>3000</reuseDelay>
+		<effectPoint>-712</effectPoint>
+		<isMagic>6</isMagic>
+		<isDebuff>1</isDebuff>
+	</skill>
+	<skill id="16788" toLevel="24" name="Raid Boss (Lv. 101)">
+		<!-- Dorgon used to be a valiant warrior of the Lizardmen, but was forced to hide in the backwoods by the Humans. His resentment of the Humans caused him to sell his soul to the Demons, a deed for which he was dismissed by the Lizardman Tribe. Since he has been banished, he has not been seen anywhere. However, when the energy of another dimension began spreading throughout the material realm, he was lured out of hiding. -->
+		<icon>icon.skillraid</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+	</skill>
+	<skill id="16789" toLevel="5" name="Standby State">
+		<!-- Standby for $s1. -->
+		<icon>icon.skillraid</icon>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<castRange>1100</castRange>
+		<effectPoint>-705</effectPoint>
+		<isMagic>1</isMagic>
+	</skill>
+	<skill id="16790" toLevel="1" name="Stun Crush">
+		<!-- Attacks the nearby enemies to inflict Stun for 5 sec. -->
+		<icon>icon.skill0096</icon>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<castRange>300</castRange>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-700</effectPoint>
+		<isDebuff>1</isDebuff>
+	</skill>
+	<skill id="16791" toLevel="1" name="Bloody Strike">
+		<!-- Inflicts severe damage on a single target and Bleed effect for 10 sec. -->
+		<icon>icon.skill0096</icon>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<castRange>300</castRange>
+		<hitTime>3000</hitTime>
+		<coolTime>800</coolTime>
+		<effectPoint>-100</effectPoint>
+		<isDebuff>1</isDebuff>
+	</skill>
+	<skill id="16792" toLevel="1" name="Rush Assault">
+		<!-- Charges toward a single target and knocks it back by a short distance. -->
+		<icon>icon.skill0230</icon>
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<castRange>500</castRange>
+		<hitTime>400</hitTime>
+		<effectPoint>-1</effectPoint>
+		<isDebuff>1</isDebuff>
+	</skill>
+	<skill id="16793" toLevel="1" name="Thirst of Blood">
+		<!-- Inflicts neutral damage on the enemy. Absorbs 40% of damage as HP. -->
+		<icon>icon.skill10509</icon>
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<castRange>40</castRange>
+		<hitTime>1000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-687</effectPoint>
+	</skill>
+	<skill id="16794" toLevel="1" name="Crack of Air">
+		<!-- Pulls every target in the specified range toward you. -->
+		<icon>icon.skill10015</icon>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<castRange>600</castRange>
+		<hitTime>500</hitTime>
+		<coolTime>1000</coolTime>
+		<effectPoint>-2140</effectPoint>
+		<isDebuff>1</isDebuff>
+	</skill>
+	<skill id="16795" toLevel="1" name="Vampiric Force">
+		<!-- Applies HP Drain attack to the target in the specified range and obtains the Vampiric Rage effect for 10 sec. -->
+		<icon>icon.skill1507</icon>
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<castRange>600</castRange>
+		<hitTime>3000</hitTime>
+		<effectPoint>-679</effectPoint>
+		<isMagic>1</isMagic>
+		<isDebuff>1</isDebuff>
+	</skill>
+	<skill id="16796" toLevel="1" name="Robe of Embryo">
+		<!-- For 10 sec., 80% of the physical damage inflicted on the enemy is recovered as HP at a certain probability. -->
+		<icon>icon.skill1507</icon>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<hitTime>3000</hitTime>
+		<effectPoint>679</effectPoint>
+		<isMagic>1</isMagic>
+	</skill>
+	<skill id="16797" toLevel="1" name="Curse of Silence">
+		<!-- Attacks the vicinity of the target and blocks P./ M. Skills for 10 sec. -->
+		<icon>icon.skill1064</icon>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<castRange>600</castRange>
+		<hitTime>2000</hitTime>
+		<effectPoint>-100</effectPoint>
+		<isMagic>1</isMagic>
+		<isDebuff>3</isDebuff>
+	</skill>
+	<skill id="16798" toLevel="1" name="Absolute Black">
+		<!-- Attacks the nearby enemies to inflict Stun for 5 sec. -->
+		<icon>icon.skill10265</icon>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<hitTime>2000</hitTime>
+		<coolTime>800</coolTime>
+		<effectPoint>-700</effectPoint>
+		<isDebuff>1</isDebuff>
+	</skill>
+	<skill id="16799" toLevel="1" name="Curse of Blaze">
+		<!-- Inflicts severe magical damage on a single target and Burn damage for 10 sec. -->
+		<icon>icon.skill10262</icon>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<castRange>40</castRange>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-700</effectPoint>
+		<isDebuff>1</isDebuff>
+	</skill>
+</list>

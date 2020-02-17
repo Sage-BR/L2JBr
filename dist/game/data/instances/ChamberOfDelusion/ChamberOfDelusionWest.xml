@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Chamber of Delusion (Western Seal) -->
+<instance id="128" maxWorlds="20" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/instance.xsd">
+	<time duration="40" empty="20" />
+	<locations>
+		<enter type="NONE">
+			<location x="-108960" y="-218892" z="-6720" />
+			<location x="-108976" y="-218028" z="-6720" />
+			<location x="-108960" y="-220204" z="-6720" />
+			<location x="-108032" y="-218428" z="-6720" />
+			<location x="-108032" y="-220140" z="-6720" /> <!-- Raid room -->
+		</enter>
+		<exit type="ORIGIN" />
+	</locations>
+	<parameters>
+		<param name="isBigRoom" value="false" />
+		<param name="raidGatekeeper" value="32673" />
+	</parameters>
+	<conditions>
+		<condition type="Party" />
+		<condition type="PartyLeader" />
+		<condition type="GroupMin">
+			<param name="limit" value="2" />
+		</condition>
+		<condition type="GroupMax">
+			<param name="limit" value="7" />
+		</condition>
+		<condition type="Level">
+			<param name="min" value="80" />
+		</condition>
+		<condition type="Distance" />
+	</conditions>
+	<spawnlist>
+		<group>
+			<!-- Room 1 -->
+			<npc id="22708" x="-108810" y="-219231" z="-6720" heading="0" respawnTime="25sec" /> <!-- Invader Warrior of Nightmare -->
+			<npc id="22708" x="-108925" y="-218920" z="-6720" heading="0" respawnTime="25sec" /> <!-- Invader Warrior of Nightmare -->
+			<npc id="22708" x="-108748" y="-218984" z="-6720" heading="0" respawnTime="25sec" /> <!-- Invader Warrior of Nightmare -->
+			<npc id="22709" x="-109084" y="-218861" z="-6720" heading="0" respawnTime="25sec" /> <!-- Invader Healer of Nightmare -->
+			<npc id="32669" x="-108960" y="-218992" z="-6720" heading="0" /> <!-- Delusion Manager -->
+			<!-- Room 2 -->
+			<npc id="22708" x="-108833" y="-218075" z="-6720" heading="0" respawnTime="25sec" /> <!-- Invader Warrior of Nightmare -->
+			<npc id="22710" x="-108728" y="-218254" z="-6720" heading="0" respawnTime="25sec" /> <!-- Invader Guide of Nightmare -->
+			<npc id="22714" x="-109181" y="-218148" z="-6720" heading="0" respawnTime="25sec" /> <!-- Invader Archer of Nightmare -->
+			<npc id="22714" x="-109019" y="-218193" z="-6720" heading="0" respawnTime="25sec" /> <!-- Invader Archer of Nightmare -->
+			<npc id="32670" x="-108976" y="-218128" z="-6720" heading="0" /> <!-- Delusion Manager -->
+			<!-- Room 3 -->
+			<npc id="18817" x="-108923" y="-219708" z="-6720" heading="0" respawnTime="30sec" /> <!-- Invader Martyr of Nightmare -->
+			<npc id="22708" x="-109103" y="-220480" z="-6720" heading="0" respawnTime="30sec" /> <!-- Invader Warrior of Nightmare -->
+			<npc id="22708" x="-109039" y="-219719" z="-6720" heading="0" respawnTime="30sec" /> <!-- Invader Warrior of Nightmare -->
+			<npc id="22709" x="-109082" y="-220688" z="-6720" heading="0" respawnTime="30sec" /> <!-- Invader Healer of Nightmare -->
+			<npc id="22710" x="-109286" y="-220659" z="-6720" heading="0" respawnTime="30sec" /> <!-- Invader Guide of Nightmare -->
+			<npc id="22711" x="-108886" y="-220123" z="-6720" heading="0" respawnTime="30sec" /> <!-- Invader Destroyer of Nightmare -->
+			<npc id="22714" x="-108918" y="-220469" z="-6720" heading="0" respawnTime="30sec" /> <!-- Invader Archer of Nightmare -->
+			<npc id="22714" x="-108714" y="-220828" z="-6720" heading="0" respawnTime="30sec" /> <!-- Invader Archer of Nightmare -->
+			<npc id="22714" x="-109112" y="-220202" z="-6720" heading="0" respawnTime="30sec" /> <!-- Invader Archer of Nightmare -->
+			<npc id="32671" x="-108960" y="-220304" z="-6720" heading="0" /> <!-- Delusion Manager -->
+			<!-- Room 4 -->
+			<npc id="22708" x="-107929" y="-218978" z="-6720" heading="0" respawnTime="30sec" /> <!-- Invader Warrior of Nightmare -->
+			<npc id="22710" x="-107759" y="-218062" z="-6720" heading="0" respawnTime="30sec" /> <!-- Invader Guide of Nightmare -->
+			<npc id="22710" x="-108078" y="-218773" z="-6720" heading="0" respawnTime="30sec" /> <!-- Invader Guide of Nightmare -->
+			<npc id="22713" x="-108320" y="-218480" z="-6720" heading="0" respawnTime="30sec" /> <!-- Invader Shaman of Nightmare -->
+			<npc id="22714" x="-107754" y="-219188" z="-6720" heading="0" respawnTime="30sec" /> <!-- Invader Archer of Nightmare -->
+			<npc id="22714" x="-108197" y="-218297" z="-6720" heading="0" respawnTime="30sec" /> <!-- Invader Archer of Nightmare -->
+			<npc id="22714" x="-108074" y="-218126" z="-6720" heading="0" respawnTime="30sec" /> <!-- Invader Archer of Nightmare -->
+			<npc id="22718" x="-107744" y="-218481" z="-6720" heading="0" respawnTime="30sec" /> <!-- Invader Elite Soldier of Nightmare -->
+			<npc id="32672" x="-108032" y="-218528" z="-6720" heading="0" /> <!-- Delusion Manager -->
+			<!-- Room 5 -->
+			<npc id="25691" x="-107913" y="-219841" z="-6720" heading="0" respawnTime="65sec" /> <!-- Aenkinel -->
+			<npc id="32673" x="-108032" y="-220240" z="-6720" heading="0" /> <!-- Delusion Manager -->
+		</group>
+		<group name="boxes" spawnByDefault="false">
+			<npc id="18838" x="-107913" y="-219841" z="-6720" heading="0" /> <!-- Treasure Chest of Invader Soldier of Nightmare -->
+			<npc id="18838" x="-108173" y="-219976" z="-6720" heading="0" /> <!-- Treasure Chest of Invader Soldier of Nightmare -->
+			<npc id="18838" x="-108237" y="-220422" z="-6720" heading="0" /> <!-- Treasure Chest of Invader Soldier of Nightmare -->
+			<npc id="18838" x="-107848" y="-220385" z="-6720" heading="0" /> <!-- Treasure Chest of Invader Soldier of Nightmare -->
+		</group>
+	</spawnlist>
+</instance>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Istina Cavern -->
+<instance id="169" maxWorlds="20" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/instance.xsd">
+	<time duration="60" empty="5" />
+	<removeBuffs type="ALL" />
+	<locations>
+		<enter type="FIXED">
+			<location x="-177119" y="142292" z="-11266" />
+		</enter>
+		<exit type="ORIGIN" />
+	</locations>
+	<conditions>
+		<condition type="Party" />
+		<condition type="CommandChannel" />
+		<condition type="CommandChannelLeader" />
+		<condition type="GroupMin">
+			<param name="limit" value="7" />
+		</condition>
+		<condition type="GroupMax">
+			<param name="limit" value="35" />
+		</condition>
+		<condition type="Level">
+			<param name="min" value="90" />
+			<param name="max" value="95" />
+		</condition>
+		<condition type="Distance" />
+		<condition type="Reenter" />
+	</conditions>
+	<reenter apply="ON_FINISH">
+		<reset day="WEDNESDAY" hour="6" minute="30" />
+		<reset day="SATURDAY" hour="6" minute="30" />
+	</reenter>
+	<doorlist>
+		<door id="14220100">
+			<openStatus default="open" />
+		</door>
+		<door id="14220101">
+			<openStatus default="open" />
+		</door>
+	</doorlist>
+	<spawnlist>
+		<group>
+			<npc id="29195" x="-177125" y="147856" z="-11384" heading="49140" /> <!-- Istina -->
+			<npc id="33293" x="-177120" y="143526" z="-11264" heading="49140" /> <!-- Rumiese -->
+		</group>
+		<group name="BALLISTA" spawnByDefault="false">
+			<npc id="19021" x="-177125" y="147856" z="-11370" heading="16198" /> <!-- Magical Power Ballista -->
+		</group>
+	</spawnlist>
+</instance>

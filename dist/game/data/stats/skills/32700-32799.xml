@@ -1,0 +1,1055 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="32700" toLevel="1" name="Aqua Prison">
+		<!-- Traps the target inside a water drop, making it immobile. -->
+		<icon>icon.skill32644</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<isDebuff>true</isDebuff>
+		<castRange>1100</castRange>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>10000</reuseDelay>
+		<effectPoint>-1000</effectPoint>
+		<abnormalType>AIRBIND</abnormalType>
+		<abnormalVisualEffect>AIRBIND</abnormalVisualEffect>
+		<abnormalResists>STUN;TURN_FLEE</abnormalResists>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<effectRange>400</effectRange>
+		<magicLvl>87</magicLvl>
+		<reuseDelayGroup>11050</reuseDelayGroup>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>5</abnormalTime>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="AirBind" />
+			<effect name="DamOverTime">
+				<canKill>true</canKill>
+				<power>500</power>
+				<ticks>5</ticks>
+			</effect>
+			<effect name="BlockActions" />
+		</effects>
+	</skill>
+	<skill id="32701" toLevel="1" name="Surrender to Water">
+		<!-- Decrease the enemy's Water Attack Resistance. -->
+		<icon>icon.skill1071</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<isDebuff>true</isDebuff>
+		<castRange>900</castRange>
+		<hitTime>3000</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>30000</reuseDelay>
+		<effectPoint>-1000</effectPoint>
+		<abnormalLvl>4</abnormalLvl>
+		<abnormalTime>30</abnormalTime>
+		<abnormalType>ARMOR_WATER</abnormalType>
+		<activateRate>80</activateRate>
+		<basicProperty>MAGIC</basicProperty>
+		<effectRange>1400</effectRange>
+		<attributeType>WATER</attributeType>
+		<attributeValue>20</attributeValue>
+		<lvlBonusRate>30</lvlBonusRate>
+		<magicLvl>100</magicLvl>
+		<mpConsume>80</mpConsume>
+		<mpInitialConsume>80</mpInitialConsume>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>ENEMY_ONLY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="DefenceAttribute">
+				<amount>10</amount>
+				<attribute>FIRE</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>-150</amount>
+				<attribute>WATER</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="32702" toLevel="1" name="Mass Surrender to Water">
+		<!-- Decrease the enemies' Water Attack Resistance. -->
+		<icon>icon.skill1071</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<isDebuff>true</isDebuff>
+		<castRange>900</castRange>
+		<hitTime>3000</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>30000</reuseDelay>
+		<effectPoint>-1000</effectPoint>
+		<abnormalLvl>4</abnormalLvl>
+		<abnormalTime>30</abnormalTime>
+		<abnormalType>ARMOR_WATER</abnormalType>
+		<activateRate>40</activateRate>
+		<affectLimit>10-10</affectLimit>
+		<affectRange>200</affectRange>
+		<basicProperty>MAGIC</basicProperty>
+		<effectRange>1400</effectRange>
+		<lvlBonusRate>20</lvlBonusRate>
+		<magicLvl>100</magicLvl>
+		<mpConsume>80</mpConsume>
+		<magicCriticalRate>5</magicCriticalRate>
+		<attributeType>WATER</attributeType>
+		<attributeValue>20</attributeValue>
+		<targetType>ENEMY_ONLY</targetType>
+		<affectScope>POINT_BLANK</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<effects>
+			<effect name="DefenceAttribute">
+				<amount>150</amount>
+				<attribute>FIRE</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>-150</amount>
+				<attribute>WATER</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="32703" toLevel="1" name="Aqua Heal">
+		<!-- Recovers the target's HP. -->
+		<icon>icon.skill1015</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<castRange>600</castRange>
+		<hitTime>1000</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>10000</reuseDelay>
+		<effectPoint>-1000</effectPoint>
+		<effectPoint>575</effectPoint>
+		<effectRange>1100</effectRange>
+		<magicLvl>100</magicLvl>
+		<mpConsume>48</mpConsume>
+		<mpInitialConsume>12</mpInitialConsume>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>TARGET</targetType>
+		<affectScope>PARTY_PLEDGE</affectScope>
+		<effects>
+			<effect name="Heal">
+				<power>100000</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="32704" toLevel="1" name="Bite Attack">
+		<!-- Bites the enemy. -->
+		<icon>icon.skill0325</icon>
+		<operateType>A1</operateType>
+		<castRange>40</castRange>
+		<hitTime>1000</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>10000</reuseDelay>
+		<effectPoint>-1000</effectPoint>
+		<basicProperty>PHYSICAL</basicProperty>
+		<effectRange>400</effectRange>
+		<magicLvl>1</magicLvl>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>10000</power> <!-- Fix: Retail Missed -->
+				<overHit>true</overHit>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="32705" toLevel="1" name="Fafurion Normal Attack">
+		<!-- Fafurion Basic Attack -->
+		<affectRange>300</affectRange>
+		<castRange>250</castRange>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+		<effectRange>300</effectRange>
+		<attributeType>WATER</attributeType>
+		<attributeValue>450</attributeValue>
+		<hitTime>1000</hitTime>
+		<magicLvl>-1</magicLvl>
+		<operateType>A1</operateType>
+		<targetType>ENEMY</targetType>
+		<affectScope>RANGE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>300000</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="32706" toLevel="1" name="Fafurion Bite">
+		<!-- Bleeding after receiving physical damage from Fafurion's bite. -->
+		<icon>icon.skill32706</icon>
+		<operateType>A1</operateType>
+		<isDebuff>true</isDebuff>
+		<castRange>300</castRange>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+		<abnormalLvl>9</abnormalLvl>
+		<abnormalTime>20</abnormalTime>
+		<subordinationAbnormalType>BLEEDING</subordinationAbnormalType>
+		<abnormalType>BLEEDING</abnormalType>
+		<abnormalVisualEffect>DOT_BLEEDING</abnormalVisualEffect>
+		<activateRate>50</activateRate>
+		<basicProperty>PHYSICAL</basicProperty>
+		<effectRange>400</effectRange>
+		<lvlBonusRate>20</lvlBonusRate>
+		<magicLvl>100</magicLvl>
+		<mpConsume>80</mpConsume>
+		<magicCriticalRate>5</magicCriticalRate>
+		<trait>BLEED</trait>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>100000</power>
+				<overHit>true</overHit>
+			</effect>
+			<effect name="DamOverTime">
+				<power>50000</power>
+				<ticks>5</ticks>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="32707" toLevel="1" name="Fafurion Water Blast">
+		<!-- Water Blast Presentation -->
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<hitTime>2000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32708" toLevel="2" name="Fafurion Water Blast">
+		<!-- Suffering magic damage caused by the water pillar that Fafurion summoned and being blown away. -->
+		<icon>icon.skill32708</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<isDebuff>true</isDebuff>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32709" toLevel="1" name="Fafurion Water Spiral">
+		<!-- Pulled forcefully after receiving magic damage from Fafurion's cyclone. -->
+		<icon>icon.skill32709</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<isDebuff>true</isDebuff>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32710" toLevel="1" name="Fafurion Hydro Blast">
+		<!-- Hydro Blast Presentation -->
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<hitTime>2000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32711" toLevel="2" name="Fafurion Hydro Blast">
+		<!-- Suffering magic damage caused by the water pillar that Fafurion summoned and being blown away. -->
+		<icon>
+			<value level="1">icon.skill0000</value>
+			<value level="2">icon.skill32708</value>
+		</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<isDebuff>true</isDebuff>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32712" toLevel="1" name="Fafurion Hydro Spiral">
+		<!-- Pulled forcefully after receiving magic damage from Fafurion's cyclone. -->
+		<icon>icon.skill32709</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<isDebuff>true</isDebuff>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+		<affectLimit>15-25</affectLimit>
+		<affectRange>1500</affectRange>
+		<blockedInOlympiad>true</blockedInOlympiad>
+		<channelingStart>1</channelingStart>
+		<channelingTickInterval>2</channelingTickInterval>
+		<attributeType>WIND</attributeType>
+		<attributeValue>20</attributeValue>
+		<magicLvl>80</magicLvl>
+		<mpConsume>36</mpConsume>
+		<mpInitialConsume>36</mpInitialConsume>
+		<mpPerChanneling>80</mpPerChanneling>
+		<operateType>CA1</operateType>
+		<reuseDelay>20000</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>4</hitCancelTime>
+		<effectRange>1500</effectRange>
+		<targetType>GROUND</targetType>
+		<affectScope>POINT_BLANK</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<channelingEffects>
+			<effect name="MagicalAttack">
+				<power>500</power>
+			</effect>
+		</channelingEffects>
+	</skill>
+	<skill id="32713" toLevel="1" name="Fafurion Tail Strike">
+		<!-- Suffering physical damage from Fafurion's smashing tail and being blown away. -->
+		<icon>icon.skill32713</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>10</abnormalTime>
+		<abnormalType>STUN</abnormalType>
+		<abnormalVisualEffect>STUN</abnormalVisualEffect>
+		<coolTime>1500</coolTime>
+		<effectPoint>-100</effectPoint>
+		<attributeType>WATER</attributeType>
+		<attributeValue>450</attributeValue>
+		<fanRange>0;180;1500;600</fanRange>
+		<hitTime>3000</hitTime>
+		<magicLvl>-1</magicLvl>
+		<operateType>A2</operateType>
+		<trait>SHOCK</trait>
+		<targetType>SELF</targetType>
+		<affectScope>SQUARE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>300000</power>
+			</effect>
+			<effect name="BlockActions" />
+		</effects>
+	</skill>
+	<skill id="32714" toLevel="1" name="Fafurion Tail Strike">
+		<!-- Suffering physical damage from Fafurion's smashing tail and being blown away. -->
+		<icon>icon.skill32713</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>10</abnormalTime>
+		<abnormalType>STUN</abnormalType>
+		<abnormalVisualEffect>STUN</abnormalVisualEffect>
+		<coolTime>1500</coolTime>
+		<effectPoint>-100</effectPoint>
+		<attributeType>WATER</attributeType>
+		<attributeValue>450</attributeValue>
+		<fanRange>0;180;1500;600</fanRange>
+		<hitTime>500</hitTime>
+		<magicLvl>-1</magicLvl>
+		<operateType>A2</operateType>
+		<isDebuff>true</isDebuff>
+		<trait>SHOCK</trait>
+		<targetType>SELF</targetType>
+		<affectScope>SQUARE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>300000</power>
+			</effect>
+			<effect name="BlockActions" />
+		</effects>
+	</skill>
+	<skill id="32715" toLevel="1" name="Fafurion Water Wave">
+		<!-- Knocked back after receiving magic damage from the wave caused by the sheer force of Fafurion. -->
+		<icon>icon.skill32715</icon>
+		<operateType>A2</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<isDebuff>true</isDebuff>
+		<hitTime>3000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+		<abnormalTime>2</abnormalTime>
+		<abnormalType>KNOCKDOWN</abnormalType>
+		<abnormalVisualEffect>KNOCKDOWN</abnormalVisualEffect>
+		<activateRate>100</activateRate>
+		<reuseDelay>30000</reuseDelay>
+		<affectLimit>20-20</affectLimit>
+		<castRange>800</castRange>
+		<affectRange>1500</affectRange>
+		<trait>KNOCKDOWN</trait>
+		<targetType>SELF</targetType>
+		<affectScope>POINT_BLANK</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<effects>
+			<effect name="MagicalAttack">
+				<power>10000</power>
+			</effect>
+			<effect name="KnockBack">
+				<speed>600</speed>
+				<distance>100</distance>
+				<knockDown>false</knockDown>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="32716" toLevel="3" name="Fafurion Breath">
+		<!-- Fafurion inflicts physical damage to enemies in front of it. -->
+		<icon>icon.skill32716</icon>
+		<operateType>A2</operateType>
+		<castRange>600</castRange>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>30</abnormalTime>
+		<hitTime>3000</hitTime>
+		<coolTime>1500</coolTime>
+		<effectPoint>-100</effectPoint>
+		<attributeType>WATER</attributeType>
+		<attributeValue>450</attributeValue>
+		<magicLvl>-1</magicLvl>
+		<isDebuff>true</isDebuff>
+		<fanRange>0;0;2500;900</fanRange>
+		<targetType>SELF</targetType>
+		<affectScope>SQUARE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>300000</power>
+			</effect>
+			<effect name="DamOverTime">
+				<power>5120</power>
+				<ticks>1</ticks>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="32717" toLevel="2" name="Fafurion Fear">
+		<!-- Suffering physical damage caused by Fafurion's Energy of Fear. Targets flee with P./ M. Def. decreased. -->
+		<icon>icon.skill32717</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>30</abnormalTime>
+		<abnormalType>TURN_FLEE</abnormalType>
+		<abnormalVisualEffect>TURN_FLEE</abnormalVisualEffect>
+		<affectRange>600</affectRange>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+		<hitTime>3000</hitTime>
+		<isDebuff>true</isDebuff>
+		<magicLvl>-1</magicLvl>
+		<operateType>A2</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<trait>DERANGEMENT</trait>
+		<targetType>SELF</targetType>
+		<affectScope>POINT_BLANK</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<effects>
+			<effect name="BlockControl" />
+			<effect name="Fear" />
+			<effect name="MagicalDefence">
+				<amount>-30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>-30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DamOverTime">
+				<power>512</power>
+				<ticks>1</ticks>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="32718" toLevel="1" name="Fafurion Power Stamp">
+		<!-- Stunned after receiving physical damage from the shock that Fafurion dealt by striking nearby enemies with its wing-like fins. -->
+		<icon>icon.skill32718</icon>
+		<operateType>A1</operateType>
+		<isDebuff>true</isDebuff>
+		<hitTime>5000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>10</abnormalTime>
+		<abnormalType>STUN</abnormalType>
+		<abnormalVisualEffect>STUN</abnormalVisualEffect>
+		<attributeType>WATER</attributeType>
+		<attributeValue>450</attributeValue>
+		<fanRange>0;180;1500;600</fanRange>
+		<reuseDelay>60000</reuseDelay>
+		<magicLvl>110</magicLvl>
+		<trait>SHOCK</trait>
+		<targetType>SELF</targetType>
+		<affectScope>SQUARE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>34255</power>
+			</effect>
+			<effect name="BlockActions" />
+		</effects>
+	</skill>
+	<skill id="32719" toLevel="1" name="Fafurion Summon Water Orb">
+		<!-- Water Orb Summoning Presentation -->
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<hitTime>5000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32720" toLevel="1" name="Fafurion Water Bomb">
+		<!-- The orb casts magic that inflicts great water damage on the aimed target. -->
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<castRange>900</castRange>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32721" toLevel="1" name="Fafurion Wing Strike">
+		<!-- Knocked down after receiving physical damage from the strong wind by Fafurion's flapping wings. -->
+		<icon>icon.skill32721</icon>
+		<operateType>A2</operateType>
+		<isDebuff>true</isDebuff>
+		<hitTime>5000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>5</abnormalTime>
+		<abnormalType>STUN</abnormalType>
+		<abnormalVisualEffect>STUN</abnormalVisualEffect>
+		<attributeType>WATER</attributeType>
+		<attributeValue>450</attributeValue>
+		<fanRange>0;180;1500;600</fanRange>
+		<reuseDelay>60000</reuseDelay>
+		<magicLvl>110</magicLvl>
+		<trait>SHOCK</trait>
+		<targetType>SELF</targetType>
+		<affectScope>SQUARE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>34255</power>
+			</effect>
+			<effect name="KnockBack">
+				<speed>600</speed>
+				<distance>100</distance>
+				<knockDown>true</knockDown>
+			</effect>
+			<effect name="BlockActions" />
+		</effects>
+	</skill>
+	<skill id="32722" toLevel="1" name="Fafurion Tidal Wave">
+		<!-- Tidal Wave Presentation -->
+		<icon>icon.skill32722</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<hitTime>7000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32723" toLevel="2" name="Fafurion Tidal Wave">
+		<!-- Knocked back after receiving magic damage from the huge wave created by Fafurion's flapping wings. -->
+		<icon>icon.skill32722</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<isDebuff>true</isDebuff>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32724" toLevel="1" name="Fafurion Fury">
+		<!-- Fafurion becomes enraged, increasing its P. Atk./ M. Atk. -->
+		<icon>icon.skill32724</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<isDebuff>true</isDebuff>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32725" toLevel="1" name="Fafurion Berserk">
+		<!-- Livid, Fafurion has changed its appearance, and its P. Atk./ M. Atk. has increased. -->
+		<icon>icon.skill32724</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<isDebuff>true</isDebuff>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32726" toLevel="1" name="Fafurion">
+		<!-- A water dragon, birthed by Shilen. It was long dormant, deep in the sea off the coast of Innadril. As one of the most rational dragons, it appointed one of the elves as a priestess, tasked with comforting its mind and controlling its anger. Fafurion was awakened when the Seven Seals were broken, and now uses its rage to build strength and find a way to revive Shilen in Aden. -->
+		<icon>icon.skillboss</icon>
+		<operateType>P</operateType>
+		<magicLvl>110</magicLvl>
+		<effects>
+			<effect name="DebuffBlock" />
+		</effects>
+	</skill>
+	<skill id="32727" toLevel="3" name="Fafurion's Arrogance - Stage 1">
+		<!-- Fafurion's arrogance grows as its challengers fail. -->
+		<icon>icon.skillboss</icon>
+		<operateType>P</operateType>
+	</skill>
+	<skill id="32728" toLevel="3" name="Fafurion's Anger - Stage 1">
+		<!-- Fafurion gets angry as he suffers at the hands of the challengers. -->
+		<icon>icon.skillboss</icon>
+		<operateType>P</operateType>
+	</skill>
+	<skill id="32729" toLevel="1" name="Priestess's Prayer">
+		<!-- A prayer that the priestess chants to quell Fafurion's rage. If the prayer works, Fafurion's rage decreases sharply. -->
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<hitTime>15000</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>60000</reuseDelay>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32730" toLevel="1" name="Breath">
+		<!-- Makes the servant breathe on the enemies in front of it, inflicting damage. -->
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<castRange>500</castRange>
+		<hitTime>2000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+		<affectLimit>150-200</affectLimit>
+		<attributeType>WATER</attributeType>
+		<attributeValue>250</attributeValue>
+		<targetType>ENEMY</targetType>
+		<affectScope>RANGE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<effects>
+			<effect name="MagicalAttack">
+				<power>553</power>
+				<criticalChance>5</criticalChance>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="32731" toLevel="1" name="Water Wave">
+		<!-- Creates a wave around you to inflict damage. -->
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<hitTime>2000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+		<affectLimit>150-200</affectLimit>
+		<affectRange>1050</affectRange>
+		<attributeType>WATER</attributeType>
+		<attributeValue>250</attributeValue>
+		<targetType>SELF</targetType>
+		<affectScope>POINT_BLANK</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<effects>
+			<effect name="MagicalAttack">
+				<power>553</power>
+				<criticalChance>5</criticalChance>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="32732" toLevel="1" name="Tail Strike">
+		<!-- Attacks enemies in the back with the tail, dealing damage and stunning them. -->
+		<icon>icon.skill32713</icon>
+		<operateType>A2</operateType>
+		<isDebuff>true</isDebuff>
+		<hitTime>2000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>10</abnormalTime>
+		<affectLimit>150-200</affectLimit>
+		<abnormalType>STUN</abnormalType>
+		<abnormalVisualEffect>STUN</abnormalVisualEffect>
+		<attributeType>WATER</attributeType>
+		<attributeValue>250</attributeValue>
+		<fanRange>0;180;1500;600</fanRange>
+		<magicLvl>-1</magicLvl>
+		<trait>SHOCK</trait>
+		<targetType>SELF</targetType>
+		<affectScope>SQUARE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>300000</power>
+			</effect>
+			<effect name="BlockActions" />
+		</effects>
+	</skill>
+	<skill id="32733" toLevel="1" name="Spine Attack">
+		<!-- Spreads wings to inflict damage. -->
+		<operateType>A1</operateType>
+		<isDebuff>true</isDebuff>
+		<castRange>100</castRange>
+		<hitTime>2000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+		<isMagic>1</isMagic> <!-- Static Skill -->
+		<affectLimit>150-200</affectLimit>
+		<attributeType>WATER</attributeType>
+		<attributeValue>250</attributeValue>
+		<targetType>SELF</targetType>
+		<affectScope>FAN</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<fanRange>0;0;500;90</fanRange>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>150000</power>
+				<criticalChance>5</criticalChance>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="32734" toLevel="2" name="Spiral Shoot">
+		<!-- Slashes with its forelegs and appendages. -->
+		<icon>
+			<value level="1">icon.skill0000</value>
+			<value level="2">icon.skill1511</value>
+		</icon>
+		<operateType>A1</operateType>
+		<isDebuff>true</isDebuff>
+		<hitTime>2000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+		<affectLimit>150-200</affectLimit>
+		<affectRange>650</affectRange>
+		<attributeType>WATER</attributeType>
+		<attributeValue>250</attributeValue>
+		<targetType>SELF</targetType>
+		<affectScope>POINT_BLANK</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<effects>
+			<effect name="MagicalAttack">
+				<power>
+					<value level="1">533</value>
+					<value level="2">585</value>
+				</power>
+				<criticalChance>5</criticalChance>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="32735" toLevel="2" name="Sword Earthquake">
+		<!-- Strikes downward, causing great damage and Stun. -->
+		<icon>
+			<value level="1">icon.skill0000</value>
+			<value level="2">icon.skill0003</value>
+		</icon>
+		<operateType>A2</operateType>
+		<isDebuff>true</isDebuff>
+		<castRange>100</castRange>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>10</abnormalTime>
+		<affectLimit>150-200</affectLimit>
+		<abnormalType>STUN</abnormalType>
+		<abnormalVisualEffect>STUN</abnormalVisualEffect>
+		<attributeType>WATER</attributeType>
+		<attributeValue>250</attributeValue>
+		<magicLvl>-1</magicLvl>
+		<trait>SHOCK</trait>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>
+					<value level="1">150000</value>
+					<value level="2">300000</value>				
+				</power>
+			</effect>
+			<effect name="BlockActions" />
+		</effects>
+	</skill>
+	<skill id="32736" toLevel="2" name="Shield Bash">
+		<!-- Swings a shield to inflict damage on enemies in front and knock them down. -->
+		<icon>
+			<value level="1">icon.skill0000</value>
+			<value level="2">icon.skill0352</value>
+		</icon>
+		<operateType>A2</operateType>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>3</abnormalTime>
+		<isDebuff>true</isDebuff>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+		<isMagic>1</isMagic> <!-- Static Skill -->
+		<affectLimit>150-200</affectLimit>
+		<attributeType>WATER</attributeType>
+		<attributeValue>250</attributeValue>
+		<fanRange>0;0;200;90</fanRange>
+		<targetType>SELF</targetType>
+		<affectScope>FAN</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<trait>KNOCKDOWN</trait>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>
+					<value level="1">150000</value>
+					<value level="2">300000</value>				
+				</power>
+				<criticalChance>5</criticalChance>
+			</effect>
+			<effect name="KnockBack">
+				<speed>600</speed>
+				<distance>100</distance>
+				<knockDown>true</knockDown>
+			</effect>
+			<effect name="BlockActions" />
+		</effects>
+	</skill>
+	<skill id="32737" toLevel="2" name="Shield Dash">
+		<!-- Dashes at the target in front, damaging and stunning it. -->
+		<icon>
+			<value level="1">icon.skill0000</value>
+			<value level="2">icon.skill10008</value>
+		</icon>
+		<operateType>DA2</operateType>
+		<isDebuff>true</isDebuff>
+		<castRange>400</castRange>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+		<abnormalLvl>
+			<value level="1">1</value>
+			<value level="2">2</value>		
+		</abnormalLvl>
+		<abnormalTime>5</abnormalTime>
+		<abnormalType>STUN</abnormalType>
+		<abnormalVisualEffect>STUN</abnormalVisualEffect>
+		<activateRate>80</activateRate>
+		<affectRange>600</affectRange>
+		<basicProperty>PHYSICAL</basicProperty>
+		<effectRange>800</effectRange>
+		<fanRange>0;0;600;60</fanRange>
+		<magicLvl>-1</magicLvl>
+		<nextAction>ATTACK</nextAction>
+		<trait>SHOCK</trait>
+		<targetType>ENEMY</targetType>
+		<affectScope>FAN</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>
+					<value level="1">150000</value>
+					<value level="2">300000</value>				
+				</power>
+			</effect>
+			<effect name="BlockActions">
+				<allowedSkills>10279;10517;10025;10776;11770;1904;11264;11093;13314;1912</allowedSkills>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="32738" toLevel="1" name="Water Shield">
+		<!-- Uses water to sharply increase P. Def. -->
+		<icon>icon.skill1238</icon>
+		<operateType>A2</operateType>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>60</abnormalTime>
+		<abnormalVisualEffect>BLESS_AVE</abnormalVisualEffect>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<castRange>900</castRange>
+		<hitTime>2000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>100</effectPoint>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="PhysicalDefence">
+				<amount>100</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="32739" toLevel="2" name="Water Spout">
+		<!-- Uses water to inflict damage on nearby enemies and pull them. -->
+		<icon>
+			<value level="1">icon.skill0000</value>
+			<value level="2">icon.skill32709</value>
+		</icon>
+		<operateType>A3</operateType>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>5</abnormalTime>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<isDebuff>true</isDebuff>
+		<hitTime>2000</hitTime>
+		<coolTime>500</coolTime>
+		<abnormalType>STUN</abnormalType>
+		<effectPoint>-100</effectPoint>
+		<attributeType>WATER</attributeType>
+		<attributeValue>250</attributeValue>
+		<activateRate>100</activateRate>
+		<affectLimit>5-12</affectLimit>
+		<affectHeight>-100;200</affectHeight>
+		<affectRange>450</affectRange>
+		<trait>PULL</trait>
+		<basicProperty>PHYSICAL</basicProperty>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>POINT_BLANK</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>
+					<value level="1">150000</value>
+					<value level="2">300000</value>				
+				</power>
+			</effect>
+			<effect name="PullBack">
+				<speed>600</speed>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="32740" toLevel="1" name="Aqua Arrow">
+		<!-- Fires a giant magic water arrow at the target. -->
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<castRange>900</castRange>
+		<hitTime>2000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+		<mpConsume>1</mpConsume>
+		<attributeType>WATER</attributeType>
+		<attributeValue>250</attributeValue>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="MagicalAttack">
+				<power>585</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="32741" toLevel="1" name="Arrow Flush">
+		<!-- Fires water magic arrows at the target and nearby enemies to knock them back. -->
+		<icon>icon.skill11025</icon>
+		<operateType>A2</operateType>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>3</abnormalTime>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<isDebuff>true</isDebuff>
+		<castRange>600</castRange>
+		<hitTime>3000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+		<mpConsume>1</mpConsume>
+		<attributeType>WATER</attributeType>
+		<attributeValue>250</attributeValue>
+		<affectLimit>150-200</affectLimit>
+		<effectRange>900</effectRange>
+		<affectRange>600</affectRange>
+		<targetType>ENEMY</targetType>
+		<affectScope>RANGE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<trait>KNOCKDOWN</trait>
+		<effects>
+			<effect name="MagicalAttack">
+				<power>585</power>
+			</effect>
+			<effect name="KnockBack">
+				<speed>600</speed>
+				<distance>100</distance>
+				<knockDown>true</knockDown>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="32742" toLevel="1" name="Aqua Wave">
+		<!-- Causes a wave in front of you, dealing magic damage and decreasing Atk. Spd./ Casting Spd./ Speed. -->
+		<icon>icon.oasis_feel</icon>
+		<operateType>A2</operateType>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>3</abnormalTime>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<isDebuff>true</isDebuff>
+		<hitTime>3000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+		<mpConsume>1</mpConsume>
+		<attributeType>WATER</attributeType>
+		<attributeValue>250</attributeValue>
+		<castRange>500</castRange>
+		<affectLimit>5-12</affectLimit>
+		<effectRange>700</effectRange>
+		<fanRange>0;0;600;100</fanRange>
+		<targetType>ENEMY</targetType>
+		<affectScope>SQUARE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<effects>
+			<effect name="MagicalAttack">
+				<power>585</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="32743" toLevel="1" name="Surge Wave">
+		<!-- Summons a wave under the target and nearby enemies, imprisoning them and periodically decreasing their MP. -->
+		<icon>icon.skill5016</icon>
+		<operateType>A2</operateType>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>5</abnormalTime>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<isDebuff>true</isDebuff>
+		<hitTime>3000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+		<mpConsume>1</mpConsume>
+		<affectLimit>150-200</affectLimit>
+		<affectRange>750</affectRange>
+		<attributeType>WATER</attributeType>
+		<attributeValue>250</attributeValue>
+		<targetType>SELF</targetType>
+		<affectScope>POINT_BLANK</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<effects>
+			<effect name="MagicalAttack">
+				<power>553</power>
+			</effect>
+			<effect name="ManaDamOverTime">
+				<power>553</power>
+				<ticks>1</ticks>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="32744" toLevel="1" name="Fafurion's Blessing">
+		<!-- The grace of the Water Dragon strengthens you, sharply increasing water attack attributes, and also increasing M. Atk./ Casting Spd./ M. Def. -->
+		<icon>icon.skill4280</icon>
+		<operateType>A2</operateType>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<hitTime>2500</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>100</effectPoint>
+		<mpConsume>1</mpConsume>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="AttackAttribute">
+				<amount>100</amount>
+				<attribute>WATER</attribute>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>25</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>25</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="32746" toLevel="1" name="Suicide Big Bomb">
+		<operateType>A1</operateType>
+		<hitTime>500</hitTime>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32747" toLevel="1" name="Cyrax">
+		<!-- A guardian protecting Fafurion Temple. Since Fafurion ordered it to guard the path to his nest, Cyrax has been guarding Fafurion Temple. To defeat Fafurion, you must first eliminate Cyrax. -->
+		<icon>icon.skillraid</icon>
+		<operateType>P</operateType>
+	</skill>
+	<skill id="32748" toLevel="1" name="Sword's Melody 1">
+		<!-- Boom boom boom... Rhythmical beats spread throughout the battlefield. The combat song flows through your blood.\nFor 2 h., XP and SP gain +5% -->
+		<icon>icon.skill_sing</icon>
+		<operateType>A1</operateType>
+		<isMagic>4</isMagic>
+	</skill>
+	<skill id="32749" toLevel="1" name="Sword's Melody 2">
+		<!-- Boom boom boom... Rhythmical beats spread throughout the battlefield. The combat song flows through your blood.\nFor 2 h., Acquired XP/ SP +30%, P. Atk./ M. Atk./ P. Def/ M. Def/ Max HP&MP +5% -->
+		<icon>icon.skill_sing</icon>
+		<operateType>A1</operateType>
+		<isMagic>4</isMagic>
+	</skill>
+	<skill id="32750" toLevel="1" name="Sword's Melody 3">
+		<!-- Boom boom boom... Rhythmical beats spread throughout the battlefield. The combat song flows through your blood.\nFor 2 h., Acquired XP/ SP +30%, P. Atk./ M. Atk./ P. Def/ M. Def/ Max HP&MP +10% -->
+		<icon>icon.skill_sing</icon>
+		<operateType>A1</operateType>
+		<isMagic>4</isMagic>
+	</skill>
+	<skill id="32751" toLevel="1" name="Limit Barrier">
+		<!-- Barrier broken after 600 hits. If 600 hits are not made within 15 sec., all of the Raid Boss's HP recovers. -->
+		<icon>icon.skill11621</icon>
+		<operateType>A1</operateType>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+	</skill>
+</list>

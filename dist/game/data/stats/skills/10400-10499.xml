@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="10497" toLevel="1" name="Warrior - Individual Passive">
+		<icon>icon.skill0217</icon>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<operateType>P</operateType>
+	</skill>
+	<skill id="10498" toLevel="1" name="Warrior - Individual">
+		<!-- P. Atk. increases by 10% for 5 sec. -->
+		<icon>icon.skill1543</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>5</abnormalTime>
+		<abnormalType>PA_UP</abnormalType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<operateType>A2</operateType>
+		<hitTime>500</hitTime>
+		<reuseDelay>5000</reuseDelay>
+		<effectPoint>1</effectPoint>
+		<isMagic>4</isMagic>
+		<basicProperty>NONE</basicProperty>
+		<hitCancelTime>0</hitCancelTime>
+		<reuseDelayGroup>10258</reuseDelayGroup>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="PAtk">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="10499" toLevel="1" name="Heavy Hit">
+		<!-- Inflicts a powerful blow on target. -->
+		<icon>icon.skill10317</icon>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<nextAction>ATTACK</nextAction>
+		<operateType>A1</operateType>
+		<castRange>40</castRange>
+		<effectRange>200</effectRange>
+		<hitTime>2000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-687</effectPoint>
+		<hitCancelTime>0</hitCancelTime>
+		<reuseDelay>10000</reuseDelay>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpCheckAbnormal">
+				<type>AIRBIND</type>
+				<level>1</level>
+				<hasAbnormal>true</hasAbnormal>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>12000</power>
+			</effect>
+		</effects>
+	</skill>
+</list>

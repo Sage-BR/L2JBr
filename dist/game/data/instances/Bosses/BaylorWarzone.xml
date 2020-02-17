@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Baylor Warzone -->
+<instance id="166" maxWorlds="80" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/instance.xsd">
+	<time duration="60" empty="3" />
+	<removeBuffs type="ALL" />
+	<locations>
+		<enter type="FIXED">
+			<location x="153573" y="143772" z="-12704" />
+		</enter>
+		<exit type="ORIGIN" />
+	</locations>
+	<conditions>
+		<condition type="Party">
+			<param name="html" value="condNoParty.html" />
+		</condition>
+		<condition type="PartyLeader">
+			<param name="html" value="condNoPartyLeader.html" />
+		</condition>
+		<condition type="GroupMin">
+			<param name="limit" value="7" />
+		</condition>
+		<condition type="GroupMax">
+			<param name="limit" value="21" />
+		</condition>
+		<condition type="Level">
+			<param name="min" value="97" />
+			<param name="max" value="99" />
+		</condition>
+		<condition type="Distance" />
+		<condition type="Reenter" />
+	</conditions>
+	<reenter apply="NONE">
+		<reset day="MONDAY" hour="6" minute="30" />
+		<reset day="TUESDAY" hour="6" minute="30" />
+		<reset day="WEDNESDAY" hour="6" minute="30" />
+		<reset day="THURSDAY" hour="6" minute="30" />
+		<reset day="FRIDAY" hour="6" minute="30" />
+		<reset day="SATURDAY" hour="6" minute="30" />
+		<reset day="SUNDAY" hour="6" minute="30" />
+	</reenter>
+	<doorlist>
+		<door id="24220008">
+			<openStatus default="open" />
+		</door>
+		<door id="24220009" />
+		<door id="24220010" />
+		<door id="24220011" />
+		<door id="24220012" />
+		<door id="24220013" />
+		<door id="24220014" />
+		<door id="24220015" />
+		<door id="24220016" />
+		<door id="24220017" />
+		<door id="24220018" />
+		<door id="24220019" />
+	</doorlist>
+	<spawnlist>
+		<group>
+			<npc id="29106" x="153568" y="142080" z="-12736" heading="60000" /> <!-- -->
+			<npc id="29107" x="152484" y="142710" z="-12736" heading="60000" /> <!-- -->
+			<npc id="29108" x="153351" y="142396" z="-12736" heading="60000" /> <!-- -->
+			<npc id="29109" x="153155" y="142317" z="-12736" heading="60000" /> <!-- -->
+		</group>
+		<group name="BAYLOR" spawnByDefault="false">
+			<npc id="29213" x="153776" y="141993" z="-12736" heading="60470" /> <!-- Baylor -->
+			<npc id="29213" x="153378" y="141997" z="-12736" heading="36076" /> <!-- Baylor -->
+		</group>
+		<group name="PRISON_GUARD_GROUP_1" spawnByDefault="false">
+			<npc id="29104" x="153360" y="141936" z="-12736" heading="8192" spawnAnimation="true" /> <!-- Crystal Prison Guard -->
+			<npc id="29104" x="153312" y="142048" z="-12736" heading="0" spawnAnimation="true" /> <!-- Crystal Prison Guard -->
+			<npc id="29104" x="153333" y="142176" z="-12736" heading="61439" spawnAnimation="true" /> <!-- Crystal Prison Guard -->
+		</group>
+		<group name="PRISON_GUARD_GROUP_2" spawnByDefault="false">
+			<npc id="29104" x="153727" y="141875" z="-12736" heading="24500" spawnAnimation="true" /> <!-- Crystal Prison Guard -->
+			<npc id="29104" x="153600" y="141824" z="-12736" heading="16384" spawnAnimation="true" /> <!-- Crystal Prison Guard -->
+			<npc id="29104" x="153472" y="141840" z="-12736" heading="12288" spawnAnimation="true" /> <!-- Crystal Prison Guard -->
+		</group>
+		<group name="PRISON_GUARD_GROUP_3" spawnByDefault="false">
+			<npc id="29104" x="153776" y="142224" z="-12736" heading="40960" spawnAnimation="true" /> <!-- Crystal Prison Guard -->
+			<npc id="29104" x="153824" y="142112" z="-12736" heading="32768" spawnAnimation="true" /> <!-- Crystal Prison Guard -->
+			<npc id="29104" x="153808" y="141984" z="-12736" heading="28672" spawnAnimation="true" /> <!-- Crystal Prison Guard -->
+		</group>
+		<group name="PRISON_GUARD_GROUP_4" spawnByDefault="false">
+			<npc id="29104" x="153424" y="142288" z="-12736" heading="57344" spawnAnimation="true" /> <!-- Crystal Prison Guard -->
+			<npc id="29104" x="153520" y="142336" z="-12736" heading="49152" spawnAnimation="true" /> <!-- Crystal Prison Guard -->
+			<npc id="29104" x="153666" y="142312" z="-12736" heading="45055" spawnAnimation="true" /> <!-- Crystal Prison Guard -->
+		</group>
+	</spawnlist>
+</instance>

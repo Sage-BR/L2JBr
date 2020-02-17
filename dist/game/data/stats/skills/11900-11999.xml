@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="11997" toLevel="1" name="Healer - Individual Passive">
+		<icon>icon.skill0217</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+	</skill>
+	<skill id="11998" toLevel="1" name="Healer - Individual">
+		<!-- Atk. Spd. +30% for 5 sec. -->
+		<icon>icon.skill1543</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>5</abnormalTime>
+		<abnormalType>ATTACK_TIME_DOWN_SPECIAL</abnormalType>
+		<operateType>A2</operateType>
+		<hitTime>500</hitTime>
+		<reuseDelay>5000</reuseDelay>
+		<effectPoint>1</effectPoint>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>85</magicLvl>
+		<reuseDelayGroup>11766</reuseDelayGroup>
+		<isMagic>4</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="PhysicalAttackSpeed">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11999" toLevel="1" name="Heavy Hit">
+		<!-- Inflicts a powerful blow on target. -->
+		<icon>icon.skill10317</icon>
+		<operateType>A1</operateType>
+		<mpInitialConsume>1</mpInitialConsume>
+		<mpConsume>1</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>2000</hitTime>
+		<coolTime>300</coolTime>
+		<reuseDelay>10000</reuseDelay>
+		<effectPoint>-1</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>1400</effectRange>
+		<magicLvl>85</magicLvl>
+		<isMagic>1</isMagic>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpCheckAbnormal">
+				<type>AIRBIND</type>
+				<level>1</level>
+				<hasAbnormal>true</hasAbnormal>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="MagicalAttack">
+				<power>184</power>
+			</effect>
+		</effects>
+	</skill>
+</list>

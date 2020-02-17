@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Fortress Dungeon -->
+<instance id="34" maxWorlds="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/instance.xsd">
+	<time duration="60" empty="20" />
+	<locations>
+		<enter type="RANDOM">
+			<location x="53462" y="246309" z="-6576" />
+			<location x="53335" y="246344" z="-6576" />
+			<location x="53211" y="246289" z="-6576" />
+		</enter>
+		<exit type="ORIGIN" />
+	</locations>
+	<conditions>
+		<condition type="Party">
+			<param name="html" value="noParty.html" />
+		</condition>
+		<condition type="PartyLeader" />
+		<condition type="GroupMin">
+			<param name="limit" value="2" />
+		</condition>
+		<condition type="GroupMax">
+			<param name="limit" value="7" />
+		</condition>
+		<condition type="HasResidence">
+			<param name="id" value="113" />
+			<param name="type" value="FORTRESS" />
+			<param name="html" value="noProperPledge.html" />
+		</condition>
+		<condition type="Quest">
+			<param name="id" value="511" />
+		</condition>
+		<condition type="Reenter">
+			<param name="html" value="hasReenter.html" />
+		</condition>
+		<condition type="Distance" />
+	</conditions>
+	<reenter apply="ON_FINISH">
+		<reset time="1440" /> <!-- 24 hours -->
+	</reenter>
+</instance>

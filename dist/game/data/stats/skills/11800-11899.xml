@@ -1,0 +1,2069 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="11800" toLevel="3" name="Sustain">
+		<!-- For $s1, increases Healing power by $s2. If triggered again, the effect will increase. -->
+		<icon>icon.skill1217</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>10</abnormalTime>
+		<abnormalType>LIFE_FORCE_HEALER_SELF</abnormalType>
+		<magicLvl>93</magicLvl>
+		<operateType>A4</operateType>
+		<effectPoint>1</effectPoint>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<isMagic>4</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="HealEffect">
+				<amount>
+					<value level="1">50</value>
+					<value level="2">100</value>
+					<value level="3">200</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11801" toLevel="3" name="Sustain">
+		<!-- For $s1, Heals allies over time. Also increases your Healing power. If triggered again, the effect will increase. -->
+		<icon>icon.skill1217</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>15</abnormalTime>
+		<abnormalType>LIFE_FORCE_HEALER</abnormalType>
+		<castRange>600</castRange>
+		<effectRange>1100</effectRange>
+		<reuseDelay>1000</reuseDelay>
+		<mpConsume>
+			<value level="1">57</value>
+			<value level="2">0</value>
+			<value level="3">0</value>
+		</mpConsume>
+		<magicLvl>95</magicLvl>
+		<operateType>A4</operateType>
+		<hitTime>500</hitTime>
+		<effectPoint>1</effectPoint>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<isMagic>1</isMagic>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="TargetMyParty">
+				<includeMe>true</includeMe>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="HealOverTime">
+				<power>
+					<value level="1">106</value>
+					<value level="2">142</value>
+					<value level="3">178</value>
+				</power>
+				<ticks>1</ticks>
+			</effect>
+			<effect name="HealEffect">
+				<amount>
+					<value level="1">10</value>
+					<value level="2">20</value>
+					<value level="3">30</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+		<selfEffects>
+			<effect name="CallSkill">
+				<skillId>11802</skillId> <!-- Sustain -->
+				<skillLevel>1</skillLevel>
+				<skillLevelScaleTo>3</skillLevelScaleTo>
+			</effect>
+		</selfEffects>
+	</skill>
+	<skill id="11802" toLevel="3" name="Sustain">
+		<!-- For $s1, increases Healing power by $s2. If triggered again, the effect will increase. -->
+		<icon>icon.skill1217</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>10</abnormalTime>
+		<abnormalType>LIFE_FORCE_HEALER_SELF</abnormalType>
+		<magicLvl>95</magicLvl>
+		<operateType>A4</operateType>
+		<effectPoint>1</effectPoint>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<isMagic>4</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="HealEffect">
+				<amount>
+					<value level="1">50</value>
+					<value level="2">100</value>
+					<value level="3">200</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11803" toLevel="3" name="Sustain">
+		<!-- For $s1, Heals allies over time. Also increases your Healing power. If triggered again, the effect will increase. -->
+		<icon>icon.skill1217</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>15</abnormalTime>
+		<abnormalType>LIFE_FORCE_HEALER</abnormalType>
+		<castRange>600</castRange>
+		<reuseDelay>1000</reuseDelay>
+		<mpConsume>
+			<value level="1">57</value>
+			<value level="2">0</value>
+			<value level="3">0</value>
+		</mpConsume>
+		<magicLvl>97</magicLvl>
+		<operateType>A4</operateType>
+		<hitTime>500</hitTime>
+		<effectPoint>1</effectPoint>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>1100</effectRange>
+		<isMagic>1</isMagic>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="TargetMyParty">
+				<includeMe>true</includeMe>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="HealOverTime">
+				<power>
+					<value level="1">107</value>
+					<value level="2">143</value>
+					<value level="3">179</value>
+				</power>
+				<ticks>1</ticks>
+			</effect>
+			<effect name="HealEffect">
+				<amount>
+					<value level="1">10</value>
+					<value level="2">20</value>
+					<value level="3">30</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+		<selfEffects>
+			<effect name="CallSkill">
+				<skillId>11804</skillId> <!-- Sustain -->
+				<skillLevel>1</skillLevel>
+				<skillLevelScaleTo>3</skillLevelScaleTo>
+			</effect>
+		</selfEffects>
+	</skill>
+	<skill id="11804" toLevel="3" name="Sustain">
+		<!-- For $s1, increases Healing power by $s2. If triggered again, the effect will increase. -->
+		<icon>icon.skill1217</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>10</abnormalTime>
+		<abnormalType>LIFE_FORCE_HEALER_SELF</abnormalType>
+		<magicLvl>97</magicLvl>
+		<operateType>A4</operateType>
+		<effectPoint>1</effectPoint>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<isMagic>4</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="HealEffect">
+				<amount>
+					<value level="1">50</value>
+					<value level="2">100</value>
+					<value level="3">200</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11805" toLevel="1" name="Not in Use">
+		<icon>icon.skill1460</icon>
+		<!-- Custom Skill: Used for skill Vanguard of Baylor (19449) -->
+		<isTriggeredSkill>true</isTriggeredSkill>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpExistNpc">
+				<npcIds>
+					<item>15211</item>
+				</npcIds>
+				<range>600</range>
+				<isAround>false</isAround>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SummonNpc">
+				<npcId>15211</npcId> <!-- Dominant Flag -->
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11806" toLevel="4" name="Blessing of Tree">
+		<!-- Recovers HP and removes bad abnormal statuses. -->
+		<icon>icon.skill1258</icon>
+		<operateType>A1</operateType>
+		<reuseDelay>7000</reuseDelay>
+		<effectPoint>2</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>
+			<value level="1">85</value>
+			<value level="2">90</value>
+			<value level="3">95</value>
+			<value level="4">99</value>
+		</magicLvl>
+		<affectRange>200</affectRange>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<effects>
+			<effect name="HpCpHeal">
+				<power>
+					<value level="1">3274</value>
+					<value level="2">3296</value>
+					<value level="3">3319</value>
+					<value level="4">3338</value>
+				</power>
+			</effect>
+			<effect name="DispelByCategory">
+				<slot>DEBUFF</slot>
+				<rate>100</rate>
+				<max>10</max>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11807" toLevel="5" name="Miracle of Fairy">
+		<icon>icon.skill11807</icon>
+		<magicLvl>
+			<value level="1">87</value>
+			<value level="2">90</value>
+			<value level="3">93</value>
+			<value level="4">96</value>
+			<value level="5">99</value>
+		</magicLvl>
+		<operateType>A1</operateType>
+		<castRange>600</castRange>
+		<effectRange>1100</effectRange>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<isMagic>1</isMagic>
+		<staticReuse>true</staticReuse>
+		<reuseDelay>5000</reuseDelay>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="HealPercent">
+				<power>
+					<value level="1">5</value>
+					<value level="2">6</value>
+					<value level="3">7</value>
+					<value level="4">8</value>
+					<value level="5">9</value>
+				</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11808" toLevel="2" name="Elegance of Light">
+		<!-- Affected by Elegance of Light. HP is decreased. -->
+		<icon>icon.skill0086</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>11</abnormalTime>
+		<abnormalType>ALL_REGEN_DOWN</abnormalType>
+		<affectRange>300</affectRange>
+		<operateType>A5</operateType>
+		<mpConsume>1</mpConsume>
+		<hitTime>500</hitTime>
+		<reuseDelay>10000</reuseDelay>
+		<effectPoint>379</effectPoint>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>
+			<value level="1">91</value>
+			<value level="2">97</value>
+		</magicLvl>
+		<isDebuff>true</isDebuff>
+		<targetType>ENEMY</targetType>
+		<affectScope>RANGE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<effects>
+			<effect name="DamOverTime">
+				<power>
+					<value level="1">200</value>
+					<value level="2">400</value>
+				</power>
+				<ticks>1</ticks>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11809" toLevel="2" name="Elegance of Light">
+		<!-- Affected by Elegance of Light. Increases HP. -->
+		<icon>icon.skill0086</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>11</abnormalTime>
+		<abnormalType>MULTI_DEBUFF_EARTH</abnormalType>
+		<affectRange>300</affectRange>
+		<operateType>A5</operateType>
+		<mpConsume>1</mpConsume>
+		<hitTime>500</hitTime>
+		<effectPoint>379</effectPoint>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>
+			<value level="1">91</value>
+			<value level="2">97</value>
+		</magicLvl>
+		<reuseDelay>10000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<effects>
+			<effect name="HealOverTime">
+				<power>
+					<value level="1">200</value>
+					<value level="2">400</value>
+				</power>
+				<ticks>1</ticks>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11810" toLevel="1" name="Resurrection Wish">
+		<!-- Can use the Mark of Resurrection for 30 sec. -->
+		<icon>icon.skill1217</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>30</abnormalTime>
+		<abnormalType>AB_HAWK_EYE</abnormalType>
+		<operateType>A4</operateType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<activateRate>0</activateRate>
+		<magicLvl>97</magicLvl>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="11811" toLevel="1" name="Total Resurrection Wish">
+		<!-- Can use the Mark of Resurrection and Mark of Total Resurrection for 30 sec. -->
+		<icon>icon.skill1217</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>30</abnormalTime>
+		<abnormalType>SNIPE</abnormalType>
+		<operateType>A4</operateType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<activateRate>0</activateRate>
+		<magicLvl>97</magicLvl>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="11812" toLevel="1" name="Mark of Resurrection">
+		<!-- Bestows the mark of resurrection that can completely resurrect party members from death for 10 min. Buffs and debuffs are maintained at death. But the Noblesse Blessing and Lucky Charm will disappear. -->
+		<icon>icon.skill1410</icon>
+		<abnormalLvl>2</abnormalLvl>
+		<abnormalTime>600</abnormalTime>
+		<abnormalType>RESURRECTION_SPECIAL</abnormalType>
+		<effectPoint>379</effectPoint>
+		<itemConsumeCount>2</itemConsumeCount>
+		<itemConsumeId>8874</itemConsumeId> <!-- Einhasad's Holy Water -->
+		<operateType>A2</operateType>
+		<mpConsume>38</mpConsume>
+		<castRange>400</castRange>
+		<hitTime>2000</hitTime>
+		<reuseDelay>600000</reuseDelay>
+		<staticReuse>true</staticReuse>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>900</effectRange>
+		<magicLvl>85</magicLvl>
+		<isMagic>1</isMagic>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<!-- TODO check Zealar implementation of Res special -->
+			<!-- p_resurrection_special;100;100;100;[s_debuff_immunity1]} -->
+			<effect name="ResurrectionSpecial">
+				<power>100</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11813" toLevel="1" name="Mark of Total Resurrection">
+		<!-- Bestows the mark of resurrection that can completely resurrect all party members from death for 10 min. Buffs and debuffs are maintained at death. But the Noblesse Blessing and Lucky Charm will disappear. -->
+		<icon>icon.skill1410</icon>
+		<abnormalLvl>2</abnormalLvl>
+		<abnormalTime>600</abnormalTime>
+		<abnormalType>RESURRECTION_SPECIAL</abnormalType>
+		<affectRange>1000</affectRange>
+		<itemConsumeCount>2</itemConsumeCount>
+		<itemConsumeId>8874</itemConsumeId> <!-- Einhasad's Holy Water -->
+		<effectPoint>379</effectPoint>
+		<operateType>A2</operateType>
+		<mpConsume>77</mpConsume>
+		<hitTime>4000</hitTime>
+		<reuseDelay>600000</reuseDelay>
+		<staticReuse>true</staticReuse>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>93</magicLvl>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<effects>
+			<!-- TODO check Zealar implementation of Res special -->
+			<!-- p_resurrection_special;100;100;100;[s_debuff_immunity1]} -->
+			<effect name="ResurrectionSpecial">
+				<power>100</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11814" toLevel="13" name="Dark Force">
+		<!-- Inflicts damage on target with $s1 Power added to M. Atk. Has a chance of pushing back target. -->
+		<icon>icon.skill11814</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalType>STUN</abnormalType>
+		<abnormalTime>1</abnormalTime>
+		<abnormalVisualEffect>KNOCKBACK</abnormalVisualEffect>
+		<activateRate>
+			<value fromLevel="1" toLevel="13">90</value>
+			<value fromLevel="7" toLevel="13" fromSubLevel="2001" toSubLevel="2020">{base + (base / 100 * subIndex)}</value>
+		</activateRate>
+		<basicProperty>PHYSICAL</basicProperty>
+		<lvlBonusRate>20</lvlBonusRate>
+		<magicLvl>
+			<value level="1">85</value>
+			<value level="2">86</value>
+			<value level="3">88</value>
+			<value level="4">90</value>
+			<value level="5">92</value>
+			<value level="6">94</value>
+			<value level="7">96</value>
+			<value level="8">98</value>
+			<value level="9">101</value>
+			<value level="10">103</value>
+			<value level="11">105</value>
+			<value level="12">107</value>
+			<value level="13">109</value>
+		</magicLvl>
+		<operateType>A2</operateType>
+		<effectPoint>
+			<value level="1">-867</value>
+			<value level="2">-880</value>
+			<value level="3">-891</value>
+			<value level="4">-899</value>
+			<value level="5">-906</value>
+			<value level="6">-913</value>
+			<value level="7">-922</value>
+			<value level="8">-933</value>
+			<value level="9">-941</value>
+			<value level="10">-950</value>
+			<value level="11">-959</value>
+			<value level="12">-967</value>
+			<value level="13">-976</value>
+		</effectPoint>
+		<effectRange>900</effectRange>
+		<mpConsume>
+			<value level="1">87</value>
+			<value level="2">91</value>
+			<value level="3">95</value>
+			<value level="4">98</value>
+			<value level="5">102</value>
+			<value level="6">107</value>
+			<value level="7">111</value>
+			<value level="8">116</value>
+			<value level="9">118</value>
+			<value level="10">122</value>
+			<value level="11">127</value>
+			<value level="12">132</value>
+			<value level="13">137</value>
+		</mpConsume>
+		<castRange>400</castRange>
+		<hitTime>2780</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>10000</reuseDelay>
+		<isMagic>1</isMagic>
+		<isDebuff>true</isDebuff>
+		<magicCriticalRate>
+			<value fromLevel="1" toLevel="13">5</value>
+			<value fromLevel="7" toLevel="13" fromSubLevel="3001" toSubLevel="3020">{base + (base / 100 * subIndex)}</value>
+		</magicCriticalRate>
+		<trait>KNOCKDOWN</trait>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="AirBind" />
+			<effect name="MagicalAttack">
+				<power>
+					<value level="1">124</value>
+					<value level="2">127</value>
+					<value level="3">129</value>
+					<value level="4">133</value>
+					<value level="5">137</value>
+					<value level="6">141</value>
+					<value level="7">144</value>
+					<value level="8">148</value>
+					<value level="9">178</value>
+					<value level="10">182</value>
+					<value level="11">186</value>
+					<value level="12">190</value>
+					<value level="13">194</value>
+					<value fromLevel="7" toLevel="13" fromSubLevel="1001" toSubLevel="1005">{base + (base / 100 * (1 + 0.4 * (subIndex - 1)))}</value>
+					<value fromLevel="7" toLevel="13" fromSubLevel="1006" toSubLevel="1006">{base + (base / 100 * (2 + 0.8 * (subIndex - 5)))}</value>
+					<value fromLevel="7" toLevel="13" fromSubLevel="1007" toSubLevel="1007">{base + (base / 100 * (3 + 0.3 * (subIndex - 6)))}</value>
+					<value fromLevel="7" toLevel="13" fromSubLevel="1008" toSubLevel="1008">{base + (base / 100 * (3 + 0.3 * (subIndex - 7)))}</value>
+					<value fromLevel="7" toLevel="13" fromSubLevel="1009" toSubLevel="1011">{base + (base / 100 * (4 + 0.4 * (subIndex - 8)))}</value>
+					<value fromLevel="7" toLevel="13" fromSubLevel="1012" toSubLevel="1012">{base + (base / 100 * (5 + 0.1 * (subIndex - 11)))}</value>
+					<value fromLevel="7" toLevel="13" fromSubLevel="1013" toSubLevel="1013">{base + (base / 100 * (5 + 0.5 * (subIndex - 12)))}</value>
+					<value fromLevel="7" toLevel="13" fromSubLevel="1014" toSubLevel="1014">{base + (base / 100 * (5 + 0.9 * (subIndex - 13)))}</value>
+					<value fromLevel="7" toLevel="13" fromSubLevel="1015" toSubLevel="1015">{base + (base / 100 * (6 + 0.2 * (subIndex - 14)))}</value>
+					<value fromLevel="7" toLevel="13" fromSubLevel="1016" toSubLevel="1016">{base + (base / 100 * (6 + 0.6 * (subIndex - 15)))}</value>
+					<value fromLevel="7" toLevel="13" fromSubLevel="1017" toSubLevel="1017">{base + (base / 100 * (7 + 0.2 * (subIndex - 16)))}</value>
+					<value fromLevel="7" toLevel="13" fromSubLevel="1018" toSubLevel="1018">{base + (base / 100 * (7 + 0.4 * (subIndex - 17)))}</value>
+					<value fromLevel="7" toLevel="13" fromSubLevel="1019" toSubLevel="1019">{base + (base / 100 * (7 + 0.7 * (subIndex - 18)))}</value>
+					<value fromLevel="7" toLevel="13" fromSubLevel="1020" toSubLevel="1020">{base + (base / 100 * (8 + 0.1 * (subIndex - 19)))}</value>
+				</power>
+			</effect>
+			<effect name="KnockBack">
+				<speed>500</speed>
+				<distance>200</distance>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11815" toLevel="3" name="Sustain">
+		<!-- For $s1, Heals allies over time. Also increases your Healing power. If triggered again, the effect will increase. -->
+		<icon>icon.skill1217</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>15</abnormalTime>
+		<abnormalType>LIFE_FORCE_HEALER</abnormalType>
+		<castRange>600</castRange>
+		<reuseDelay>1000</reuseDelay>
+		<mpConsume>
+			<value level="1">57</value>
+			<value level="2">0</value>
+			<value level="3">0</value>
+		</mpConsume>
+		<magicLvl>99</magicLvl>
+		<operateType>A4</operateType>
+		<hitTime>500</hitTime>
+		<effectPoint>1</effectPoint>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>1100</effectRange>
+		<isMagic>1</isMagic>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="TargetMyParty">
+				<includeMe>true</includeMe>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="HealOverTime">
+				<power>
+					<value level="1">107</value>
+					<value level="2">143</value>
+					<value level="3">179</value>
+				</power>
+				<ticks>1</ticks>
+			</effect>
+			<effect name="HealEffect">
+				<amount>
+					<value level="1">10</value>
+					<value level="2">20</value>
+					<value level="3">30</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+		<selfEffects>
+			<effect name="CallSkill">
+				<!-- Sustain -->
+				<skillId>11804</skillId> <!-- Sustain -->
+				<skillLevel>1</skillLevel>
+				<skillLevelScaleTo>3</skillLevelScaleTo>
+			</effect>
+		</selfEffects>
+	</skill>
+	<skill id="11816" toLevel="3" name="Sustain">
+		<!-- For $s1, increases Healing power by $s2. If triggered again, the effect will increase. -->
+		<icon>icon.skill1217</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>10</abnormalTime>
+		<abnormalType>LIFE_FORCE_HEALER_SELF</abnormalType>
+		<operateType>A4</operateType>
+		<effectPoint>1</effectPoint>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>99</magicLvl>
+		<isMagic>4</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="HealEffect">
+				<amount>
+					<value level="1">50</value>
+					<value level="2">100</value>
+					<value level="3">200</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11817" toLevel="13" name="Dark Rain">
+		<!-- Inflicts damage on nearby enemies with $s1 Power added to M. Atk. and decreases aggression toward yourself. -->
+		<icon>icon.skill11817</icon>
+		<affectLimit>10-10</affectLimit>
+		<affectRange>300</affectRange>
+		<effectPoint>
+			<value level="1">-1733</value>
+			<value level="2">-1747</value>
+			<value level="3">-1771</value>
+			<value level="4">-1789</value>
+			<value level="5">-1803</value>
+			<value level="6">-1817</value>
+			<value level="7">-1835</value>
+			<value level="8">-1853</value>
+			<value level="9">-1870</value>
+			<value level="10">-1887</value>
+			<value level="11">-1904</value>
+			<value level="12">-1921</value>
+			<value level="13">-1938</value>
+		</effectPoint>
+		<effectRange>1400</effectRange>
+		<operateType>A1</operateType>
+		<magicLvl>
+			<value level="1">85</value>
+			<value level="2">87</value>
+			<value level="3">89</value>
+			<value level="4">91</value>
+			<value level="5">93</value>
+			<value level="6">95</value>
+			<value level="7">97</value>
+			<value level="8">99</value>
+			<value level="9">101</value>
+			<value level="10">103</value>
+			<value level="11">105</value>
+			<value level="12">107</value>
+			<value level="13">109</value>
+		</magicLvl>
+		<mpConsume>
+			<value level="1">282</value>
+			<value level="2">288</value>
+			<value level="3">300</value>
+			<value level="4">312</value>
+			<value level="5">325</value>
+			<value level="6">337</value>
+			<value level="7">351</value>
+			<value level="8">365</value>
+			<value level="9">373</value>
+			<value level="10">386</value>
+			<value level="11">398</value>
+			<value level="12">410</value>
+			<value level="13">422</value>
+		</mpConsume>
+		<hitTime>3780</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>6700</reuseDelay>
+		<magicCriticalRate>
+			<value fromLevel="1" toLevel="13">5</value>
+			<value fromLevel="7" toLevel="13" fromSubLevel="2001" toSubLevel="2020">{base + (base / 100 * subIndex)}</value>
+		</magicCriticalRate>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>POINT_BLANK</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<effects>
+			<effect name="MagicalAttack">
+				<power>
+					<value level="1">102</value>
+					<value level="2">104</value>
+					<value level="3">107</value>
+					<value level="4">110</value>
+					<value level="5">113</value>
+					<value level="6">116</value>
+					<value level="7">119</value>
+					<value level="8">122</value>
+					<value level="9">162</value>
+					<value level="10">166</value>
+					<value level="11">170</value>
+					<value level="12">174</value>
+					<value level="13">178</value>
+					<value fromLevel="7" toLevel="13" fromSubLevel="1001" toSubLevel="1005">{base + (base / 100 * (1 + 0.4 * (subIndex - 1)))}</value>
+					<value fromLevel="7" toLevel="13" fromSubLevel="1006" toSubLevel="1006">{base + (base / 100 * (2 + 0.8 * (subIndex - 5)))}</value>
+					<value fromLevel="7" toLevel="13" fromSubLevel="1007" toSubLevel="1007">{base + (base / 100 * (3 + 0.3 * (subIndex - 6)))}</value>
+					<value fromLevel="7" toLevel="13" fromSubLevel="1008" toSubLevel="1008">{base + (base / 100 * (3 + 0.3 * (subIndex - 7)))}</value>
+					<value fromLevel="7" toLevel="13" fromSubLevel="1009" toSubLevel="1011">{base + (base / 100 * (4 + 0.4 * (subIndex - 8)))}</value>
+					<value fromLevel="7" toLevel="13" fromSubLevel="1012" toSubLevel="1012">{base + (base / 100 * (5 + 0.1 * (subIndex - 11)))}</value>
+					<value fromLevel="7" toLevel="13" fromSubLevel="1013" toSubLevel="1013">{base + (base / 100 * (5 + 0.5 * (subIndex - 12)))}</value>
+					<value fromLevel="7" toLevel="13" fromSubLevel="1014" toSubLevel="1014">{base + (base / 100 * (5 + 0.9 * (subIndex - 13)))}</value>
+					<value fromLevel="7" toLevel="13" fromSubLevel="1015" toSubLevel="1015">{base + (base / 100 * (6 + 0.2 * (subIndex - 14)))}</value>
+					<value fromLevel="7" toLevel="13" fromSubLevel="1016" toSubLevel="1016">{base + (base / 100 * (6 + 0.6 * (subIndex - 15)))}</value>
+					<value fromLevel="7" toLevel="13" fromSubLevel="1017" toSubLevel="1017">{base + (base / 100 * (7 + 0.2 * (subIndex - 16)))}</value>
+					<value fromLevel="7" toLevel="13" fromSubLevel="1018" toSubLevel="1018">{base + (base / 100 * (7 + 0.4 * (subIndex - 17)))}</value>
+					<value fromLevel="7" toLevel="13" fromSubLevel="1019" toSubLevel="1019">{base + (base / 100 * (7 + 0.7 * (subIndex - 18)))}</value>
+					<value fromLevel="7" toLevel="13" fromSubLevel="1020" toSubLevel="1020">{base + (base / 100 * (8 + 0.1 * (subIndex - 19)))}</value>
+				</power>
+			</effect>
+			<effect name="AddHate">
+				<power>-1240</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11818" toLevel="1" name="Price of Summoning">
+		<!-- Healing abilities are decreased as a price for summoning Lumi. -->
+		<icon>icon.skill1100</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>180</abnormalTime>
+		<abnormalType>DOT_MP</abnormalType>
+		<operateType>A2</operateType>
+		<castRange>600</castRange>
+		<reuseDelay>8000</reuseDelay>
+		<effectPoint>1</effectPoint>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<effectRange>1100</effectRange>
+		<activateRate>100</activateRate>
+		<isMagic>2</isMagic>
+		<isDebuff>true</isDebuff>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="HealEffect">
+				<amount>-300</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11819" toLevel="1" name="Party Return">
+		<!-- Teleports party members to the nearest village. Cannot be used in a specially designated place such as the GM Consultation Service. -->
+		<icon>icon.skill11819</icon>
+		<affectRange>1000</affectRange>
+		<blockedInOlympiad>true</blockedInOlympiad>
+		<operateType>A1</operateType>
+		<mpConsume>91</mpConsume>
+		<hitTime>3500</hitTime>
+		<reuseDelay>150000</reuseDelay>
+		<isMagic>1</isMagic>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<targetType>SELF</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<conditions>
+			<condition name="OpCanEscape" />
+		</conditions>
+		<effects>
+			<effect name="Escape">
+				<escapeType>TOWN</escapeType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11820" toLevel="1" name="Power of Saha">
+		<!-- For 30 min., party members' P. Atk. +23%, M. Atk. +88%, P. Def. +35%, and M. Def. +40%. -->
+		<icon>icon.skill11820</icon>
+		<abnormalTime>1800</abnormalTime>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalType>BUFF_SPECIAL_ATTACK</abnormalType>
+		<operateType>A2</operateType>
+		<mpConsume>17</mpConsume>
+		<hitTime>700</hitTime>
+		<coolTime>300</coolTime>
+		<reuseDelay>2000</reuseDelay>
+		<effectPoint>687</effectPoint>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>1100</effectRange>
+		<magicLvl>85</magicLvl>
+		<isMagic>22</isMagic>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="DispelBySlotProbability">
+				<dispel>MULTI_BUFF;IMPROVE_PA_PD_UP;PA_UP;IMPROVE_MA_MD_UP;MD_UP;MA_UP;KAMAEL_SPECIAL;PD_UP;HIT_UP;IMPROVE_HIT_DEFENCE_CRT_RATE_UP;IMPROVE_CRT_RATE_DMG_UP;T_CRT_DMG_DOWN;CRITICAL_DMG_UP;CRITICAL_PROB_UP;IMPROVE_SPEED_AVOID_UP;SPEED_UP;MAX_BREATH_UP;HOLY_ATTACK;AVOID_UP;DECREASE_WEIGHT_PENALTY;RESIST_HOLY_UNHOLY</dispel>
+				<rate>100</rate>
+			</effect>
+			<effect name="BlockAbnormalSlot">
+				<slot>MULTI_BUFF;IMPROVE_PA_PD_UP;PA_UP;IMPROVE_MA_MD_UP;MD_UP;MA_UP;KAMAEL_SPECIAL;PD_UP;HIT_UP;IMPROVE_HIT_DEFENCE_CRT_RATE_UP;IMPROVE_CRT_RATE_DMG_UP;T_CRT_DMG_DOWN;CRITICAL_DMG_UP;CRITICAL_PROB_UP;IMPROVE_SPEED_AVOID_UP;SPEED_UP;MAX_BREATH_UP;HOLY_ATTACK;AVOID_UP;DECREASE_WEIGHT_PENALTY;RESIST_HOLY_UNHOLY</slot>
+			</effect>
+			<effect name="PAtk">
+				<amount>17</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>79</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11821" toLevel="1" name="Critical of Saha">
+		<!-- For 30 min., increases party members' P. Critical Rate by 30%, P. Critical Power by 30%, M. Critical Rate by 40, and decreases Received P. Critical Damage by 50%. Also has a chance to increase Critical Damage when hit. -->
+		<icon>icon.skill11821</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>1800</abnormalTime>
+		<abnormalType>BUFF_SPECIAL_CRITICAL</abnormalType>
+		<operateType>A2</operateType>
+		<mpConsume>17</mpConsume>
+		<hitTime>700</hitTime>
+		<coolTime>300</coolTime>
+		<reuseDelay>2000</reuseDelay>
+		<effectPoint>687</effectPoint>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>1100</effectRange>
+		<magicLvl>85</magicLvl>
+		<isMagic>22</isMagic>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="DispelBySlotProbability">
+				<dispel>ATTACK_TIME_DOWN;CASTING_TIME_DOWN;SPEED_UP;CHEAP_MAGIC;MULTI_BUFF;IMPROVE_HIT_DEFENCE_CRT_RATE_UP;IMPROVE_CRT_RATE_DMG_UP;HIT_UP;T_CRT_DMG_DOWN;CRITICAL_DMG_UP;CRITICAL_PROB_UP;IMPROVE_SPEED_AVOID_UP;MAX_BREATH_UP;HOLY_ATTACK;AVOID_UP;DECREASE_WEIGHT_PENALTY;RESIST_HOLY_UNHOLY</dispel>
+				<rate>100</rate>
+			</effect>
+			<effect name="BlockAbnormalSlot">
+				<slot>ATTACK_TIME_DOWN;CASTING_TIME_DOWN;SPEED_UP;CHEAP_MAGIC;MULTI_BUFF;IMPROVE_HIT_DEFENCE_CRT_RATE_UP;IMPROVE_CRT_RATE_DMG_UP;HIT_UP;T_CRT_DMG_DOWN;CRITICAL_DMG_UP;CRITICAL_PROB_UP;IMPROVE_SPEED_AVOID_UP;MAX_BREATH_UP;HOLY_ATTACK;AVOID_UP;DECREASE_WEIGHT_PENALTY;RESIST_HOLY_UNHOLY</slot>
+			</effect>
+			<effect name="CriticalDamage">
+				<amount>35</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="CriticalRate">
+				<amount>32</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicCriticalRate">
+				<amount>20</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicMpCost">
+				<amount>-10</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+			<effect name="MagicMpCost">
+				<amount>-20</amount>
+				<mode>PER</mode>
+				<magicType>0</magicType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11822" toLevel="1" name="Force of Saha">
+		<!-- For 30 min., party members' Max HP +37%, Max MP +62%, and Max CP +37%. A chance to apply the Vampiric Rage effect for 9%. -->
+		<icon>icon.skill11822</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>1800</abnormalTime>
+		<abnormalType>BUFF_SPECIAL_CONDITION</abnormalType>
+		<operateType>A2</operateType>
+		<mpConsume>17</mpConsume>
+		<hitTime>700</hitTime>
+		<coolTime>300</coolTime>
+		<reuseDelay>2000</reuseDelay>
+		<effectPoint>687</effectPoint>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>1100</effectRange>
+		<magicLvl>85</magicLvl>
+		<isMagic>22</isMagic>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="DispelBySlotProbability">
+				<dispel>MULTI_BUFF;IMPROVE_HP_MP_UP;MAX_HP_UP;MAX_MP_UP;HP_REGEN_UP;VAMPIRIC_ATTACK;IMPROVE_VAMPIRIC_HASTE;IMPROVE_HIT_DEFENCE_CRT_RATE_UP;IMPROVE_CRT_RATE_DMG_UP;HIT_UP;T_CRT_DMG_DOWN;CRITICAL_DMG_UP;CRITICAL_PROB_UP;IMPROVE_SPEED_AVOID_UP;SPEED_UP;MAX_BREATH_UP;HOLY_ATTACK;AVOID_UP;DECREASE_WEIGHT_PENALTY;RESIST_HOLY_UNHOLY</dispel>
+				<rate>100</rate>
+			</effect>
+			<effect name="BlockAbnormalSlot">
+				<slot>MULTI_BUFF;IMPROVE_HP_MP_UP;MAX_HP_UP;MAX_MP_UP;HP_REGEN_UP;VAMPIRIC_ATTACK;IMPROVE_VAMPIRIC_HASTE;IMPROVE_HIT_DEFENCE_CRT_RATE_UP;IMPROVE_CRT_RATE_DMG_UP;HIT_UP;T_CRT_DMG_DOWN;CRITICAL_DMG_UP;CRITICAL_PROB_UP;IMPROVE_SPEED_AVOID_UP;SPEED_UP;MAX_BREATH_UP;HOLY_ATTACK;AVOID_UP;DECREASE_WEIGHT_PENALTY;RESIST_HOLY_UNHOLY</slot>
+			</effect>
+			<effect name="VampiricAttack">
+				<amount>9</amount>
+				<chance>30</chance>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>34</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>31</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11823" toLevel="1" name="Speed of Saha">
+		<!-- For 30 min., party members' Atk. Spd. +60%, Casting Spd. +60%, and Speed +10, and Skill MP Consumption -10%. -->
+		<icon>icon.skill11823</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>1800</abnormalTime>
+		<abnormalType>BUFF_SPECIAL_MOVE</abnormalType>
+		<operateType>A2</operateType>
+		<mpConsume>17</mpConsume>
+		<hitTime>700</hitTime>
+		<coolTime>300</coolTime>
+		<reuseDelay>2000</reuseDelay>
+		<effectPoint>687</effectPoint>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>1100</effectRange>
+		<magicLvl>85</magicLvl>
+		<isMagic>22</isMagic>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="DispelBySlotProbability">
+				<dispel>ATTACK_TIME_DOWN;CASTING_TIME_DOWN;SPEED_UP;CHEAP_MAGIC;MULTI_BUFF;IMPROVE_HIT_DEFENCE_CRT_RATE_UP;IMPROVE_CRT_RATE_DMG_UP;HIT_UP;T_CRT_DMG_DOWN;CRITICAL_DMG_UP;CRITICAL_PROB_UP;IMPROVE_SPEED_AVOID_UP;MAX_BREATH_UP;HOLY_ATTACK;AVOID_UP;DECREASE_WEIGHT_PENALTY;RESIST_HOLY_UNHOLY</dispel>
+				<rate>100</rate>
+			</effect>
+			<effect name="BlockAbnormalSlot">
+				<slot>ATTACK_TIME_DOWN;CASTING_TIME_DOWN;SPEED_UP;CHEAP_MAGIC;MULTI_BUFF;IMPROVE_HIT_DEFENCE_CRT_RATE_UP;IMPROVE_CRT_RATE_DMG_UP;HIT_UP;T_CRT_DMG_DOWN;CRITICAL_DMG_UP;CRITICAL_PROB_UP;IMPROVE_SPEED_AVOID_UP;MAX_BREATH_UP;HOLY_ATTACK;AVOID_UP;DECREASE_WEIGHT_PENALTY;RESIST_HOLY_UNHOLY</slot>
+			</effect>
+			<effect name="Speed">
+				<amount>34</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="PhysicalEvasion">
+				<amount>5</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="Accuracy">
+				<amount>5</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicalEvasion">
+				<amount>5</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="DefenceCriticalRate">
+				<amount>-30</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11824" toLevel="1" name="Resistance of Saha">
+		<!-- For 30 min., all Defense attributes of party members +30. -->
+		<icon>icon.skill11567</icon>
+		<abnormalLvl>5</abnormalLvl>
+		<abnormalTime>1800</abnormalTime>
+		<abnormalType>ARMOR_HOLY</abnormalType>
+		<operateType>A2</operateType>
+		<mpConsume>17</mpConsume>
+		<hitTime>700</hitTime>
+		<coolTime>300</coolTime>
+		<reuseDelay>2000</reuseDelay>
+		<effectPoint>687</effectPoint>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>1100</effectRange>
+		<magicLvl>85</magicLvl>
+		<isMagic>22</isMagic>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="DefenceTrait">
+				<SHOCK>40</SHOCK>
+				<POISON>50</POISON>
+			</effect>
+			<effect name="DispelBySlotProbability">
+				<dispel>DANCE_OF_ALIGNMENT;ARMOR_UNHOLY;DANCE_OF_LIGHT;SONG_OF_INVOCATION;RESIST_BLEEDING;RESIST_SHOCK</dispel>
+			</effect>
+			<effect name="BlockAbnormalSlot">
+				<slot>DANCE_OF_ALIGNMENT;ARMOR_UNHOLY;DANCE_OF_LIGHT;SONG_OF_INVOCATION;RESIST_BLEEDING;RESIST_SHOCK</slot>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>30</amount>
+				<attribute>HOLY</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>30</amount>
+				<attribute>DARK</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11825" toLevel="1" name="Clarity of Saha">
+		<!-- For 30 min., a party member's Resistance to buff-canceling attacks/ debuff attacks +30. -->
+		<icon>icon.skill11825</icon>
+		<abnormalTime>1800</abnormalTime>
+		<abnormalLvl>5</abnormalLvl>
+		<abnormalType>RESIST_DERANGEMENT</abnormalType>
+		<operateType>A2</operateType>
+		<mpConsume>17</mpConsume>
+		<hitTime>700</hitTime>
+		<coolTime>300</coolTime>
+		<reuseDelay>2000</reuseDelay>
+		<effectPoint>687</effectPoint>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>1100</effectRange>
+		<magicLvl>85</magicLvl>
+		<isMagic>22</isMagic>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="DefenceTrait">
+				<HOLD>50</HOLD>
+				<DERANGEMENT>50</DERANGEMENT>
+				<SLEEP>50</SLEEP>
+			</effect>
+			<effect name="DispelBySlotProbability">
+				<dispel>DANCE_OF_PROTECTION;RESIST_DEBUFF_DISPEL</dispel>
+			</effect>
+			<effect name="BlockAbnormalSlot">
+				<slot>DANCE_OF_PROTECTION;RESIST_DEBUFF_DISPEL</slot>
+			</effect>
+			<effect name="ResistDispelByCategory">
+				<amount>-30</amount>
+				<slot>BUFF</slot>
+			</effect>
+			<effect name="ResistAbnormalByCategory">
+				<amount>-20</amount>
+				<slot>DEBUFF</slot>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11826" toLevel="1" name="Emblem of Salvation">
+		<!-- Resurrects from death fully recovered. Buffs/ debuffs remain in death, but Noblesse Blessing and Lucky Charm disappear. -->
+		<icon>icon.skill11826</icon>
+		<abnormalLvl>2</abnormalLvl>
+		<abnormalType>RESURRECTION_SPECIAL</abnormalType>
+		<abnormalTime>
+			<value fromLevel="1" toLevel="1">3600</value>
+			<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1020">{base + (subIndex * 90)}</value>
+		</abnormalTime>
+		<castRange>600</castRange>
+		<effectPoint>687</effectPoint>
+		<effectRange>1100</effectRange>
+		<hitTime>4000</hitTime>
+		<isMagic>22</isMagic>
+		<magicLvl>85</magicLvl>
+		<mpConsume>70</mpConsume>
+		<mpInitialConsume>14</mpInitialConsume>
+		<operateType>A2</operateType>
+		<reuseDelay>3600000</reuseDelay>
+		<staticReuse>true</staticReuse>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="ResurrectionSpecial">
+				<power>100</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11827" toLevel="5" name="Fairy Blessing">
+		<icon>icon.skill11827</icon>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>
+			<value level="1">85</value>
+			<value level="2">88</value>
+			<value level="3">91</value>
+			<value level="4">94</value>
+			<value level="5">97</value>
+		</magicLvl>
+		<reuseDelay>4000</reuseDelay>
+		<staticReuse>true</staticReuse>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="Hp">
+				<amount>
+					<value level="1">521</value>
+					<value level="2">532</value>
+					<value level="3">540</value>
+					<value level="4">546</value>
+					<value level="5">554</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11828" toLevel="1" name="Progressive Heal">
+		<!-- Heals target and the 10 most injured allies around target by up to 40% of their Max HP. The recovery amount decreases starting from the most injured person. -->
+		<icon>icon.skill11828</icon>
+		<affectLimit>9-0</affectLimit>
+		<affectRange>300</affectRange>
+		<castRange>900</castRange>
+		<effectPoint>1301</effectPoint>
+		<effectRange>1400</effectRange>
+		<hitTime>3000</hitTime>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<magicLvl>85</magicLvl>
+		<mpConsume>458</mpConsume>
+		<mpInitialConsume>115</mpInitialConsume>
+		<operateType>A1</operateType>
+		<reuseDelay>5000</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>ENEMY_NOT</targetType>
+		<affectScope>RANGE_SORT_BY_HP</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<effects>
+			<effect name="HealPercent">
+				<power>40</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11830" toLevel="1" name="Blessing of Saha">
+		<!-- For 30 min., party members' Resistance to Poison/ Bleed/ Hold/ Sleep/ Mental +50%. -->
+		<icon>icon.skill11522</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>1800</abnormalTime>
+		<abnormalType>BUFF_SPECIAL_DEFENCE</abnormalType>
+		<operateType>A2</operateType>
+		<mpConsume>35</mpConsume>
+		<hitTime>700</hitTime>
+		<coolTime>300</coolTime>
+		<reuseDelay>2000</reuseDelay>
+		<effectPoint>687</effectPoint>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>1100</effectRange>
+		<magicLvl>85</magicLvl>
+		<isMagic>22</isMagic>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="DispelBySlotProbability">
+				<dispel>MULTI_BUFF;COUNTER_CRITICAL;CRITICAL_PROB_UP;CRITICAL_DMG_UP;MAGIC_CRITICAL_UP;IMPROVE_HIT_DEFENCE_CRT_RATE_UP;IMPROVE_CRT_RATE_DMG_UP;HIT_UP;T_CRT_DMG_DOWN;IMPROVE_SPEED_AVOID_UP;SPEED_UP;MAX_BREATH_UP;HOLY_ATTACK;AVOID_UP;DECREASE_WEIGHT_PENALTY;RESIST_HOLY_UNHOLY</dispel>
+			</effect>
+			<effect name="BlockAbnormalSlot">
+				<slot>MULTI_BUFF;COUNTER_CRITICAL;CRITICAL_PROB_UP;CRITICAL_DMG_UP;MAGIC_CRITICAL_UP;IMPROVE_HIT_DEFENCE_CRT_RATE_UP;IMPROVE_CRT_RATE_DMG_UP;HIT_UP;T_CRT_DMG_DOWN;IMPROVE_SPEED_AVOID_UP;SPEED_UP;MAX_BREATH_UP;HOLY_ATTACK;AVOID_UP;DECREASE_WEIGHT_PENALTY;RESIST_HOLY_UNHOLY</slot>
+			</effect>
+			<effect name="PAtk">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Speed">
+				<amount>-15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="CriticalDamage">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="HpRegen">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="ResistAbnormalByCategory">
+				<amount>-10</amount>
+				<slot>DEBUFF</slot>
+			</effect>
+			<effect name="DefenceCriticalRate">
+				<amount>-30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicCriticalRate">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11831" toLevel="13" name="Erase Impact">
+		<!-- Banishes the enemy's servitor into another dimension. -->
+		<icon>icon.skill1395</icon>
+		<affectRange>100</affectRange>
+		<effectPoint>-655</effectPoint>
+		<effectRange>1100</effectRange>
+		<operateType>A1</operateType>
+		<magicLvl>
+			<value level="1">85</value>
+			<value level="2">87</value>
+			<value level="3">89</value>
+			<value level="4">91</value>
+			<value level="5">93</value>
+			<value level="6">95</value>
+			<value level="7">97</value>
+			<value level="8">99</value>
+			<value level="9">101</value>
+			<value level="10">103</value>
+			<value level="11">105</value>
+			<value level="12">107</value>
+			<value level="13">109</value>
+		</magicLvl>
+		<mpConsume>
+			<value level="1">373</value>
+			<value level="2">377</value>
+			<value level="3">380</value>
+			<value level="4">383</value>
+			<value level="5">384</value>
+			<value level="6">387</value>
+			<value level="7">390</value>
+			<value level="8">393</value>
+			<value level="9">396</value>
+			<value level="10">398</value>
+			<value level="11">401</value>
+			<value level="12">404</value>
+			<value level="13">408</value>
+		</mpConsume>
+		<castRange>600</castRange>
+		<hitTime>2500</hitTime>
+		<reuseDelay>30000</reuseDelay>
+		<trait>DERANGEMENT</trait>
+		<magicCriticalRate>5</magicCriticalRate>
+		<isMagic>1</isMagic>
+		<targetType>ENEMY_ONLY</targetType>
+		<affectScope>RANGE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<effects>
+			<effect name="Unsummon">
+				<chance>50</chance>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11832" toLevel="9" name="Mass Fatal Sleep">
+		<!-- Casts Sleep on nearby enemies for $s1. -->
+		<icon>icon.skill1072</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>30</abnormalTime>
+		<abnormalType>SLEEP</abnormalType>
+		<abnormalVisualEffect>SLEEP</abnormalVisualEffect>
+		<activateRate>
+			<value fromLevel="1" toLevel="9">80</value>
+			<value fromLevel="5" toLevel="9" fromSubLevel="1001" toSubLevel="1020">{base + (base / 100 * subIndex)}</value>
+		</activateRate>
+		<affectLimit>9-10</affectLimit>
+		<affectRange>300</affectRange>
+		<basicProperty>MAGIC</basicProperty>
+		<effectPoint>
+			<value level="1">-867</value>
+			<value level="2">-874</value>
+			<value level="3">-891</value>
+			<value level="4">-902</value>
+			<value level="5">-913</value>
+			<value level="6">-927</value>
+			<value level="7">-938</value>
+			<value level="8">-950</value>
+			<value level="9">-962</value>
+		</effectPoint>
+		<lvlBonusRate>30</lvlBonusRate>
+		<operateType>A2</operateType>
+		<removedOnDamage>true</removedOnDamage>
+		<trait>SLEEP</trait>
+		<magicLvl>
+			<value level="1">85</value>
+			<value level="2">86</value>
+			<value level="3">89</value>
+			<value level="4">92</value>
+			<value level="5">95</value>
+			<value level="6">98</value>
+			<value level="7">101</value>
+			<value level="8">103</value>
+			<value level="9">105</value>
+		</magicLvl>
+		<mpConsume>
+			<value level="1">52</value>
+			<value level="2">52</value>
+			<value level="3">54</value>
+			<value level="4">60</value>
+			<value level="5">62</value>
+			<value level="6">66</value>
+			<value level="7">68</value>
+			<value level="8">70</value>
+			<value level="9">74</value>
+		</mpConsume>
+		<hitTime>4000</hitTime>
+		<reuseDelay>120000</reuseDelay>
+		<isMagic>1</isMagic>
+		<magicCriticalRate>5</magicCriticalRate>
+		<isDebuff>true</isDebuff>
+		<targetType>SELF</targetType>
+		<affectScope>POINT_BLANK</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<effects>
+			<effect name="BlockActions">
+				<allowedSkills>10279;10517;10025;10776;11770;1904;11264;11093;13314;1912</allowedSkills>
+			</effect>
+			<effect name="DefenceTrait">
+				<SLEEP>100</SLEEP>
+			</effect>
+			<effect name="MagicalDefence" fromLevel="5" toLevel="9" fromSubLevel="2001" toSubLevel="2020">
+				<amount>
+					<value fromLevel="5" toLevel="9" fromSubLevel="2001" toSubLevel="2020">{-0.6 - (0.4 * subIndex)}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11833" toLevel="3" name="Limit of Aeore">
+		<!-- Reduces the duration of the Celestial Protection/ Celestial Party Protection to half if it is shorter than $s1. -->
+		<icon>icon.skill11758</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>60</abnormalTime>
+		<canBeDispelled>false</canBeDispelled>
+		<isDebuff>true</isDebuff>
+		<operateType>A2</operateType>
+		<isMagic>4</isMagic>
+		<effectPoint>1</effectPoint>
+		<effects>
+			<effect name="LimitSkill" />
+		</effects>
+	</skill>
+	<skill id="11834" toLevel="1" name="Lingering Protection">
+		<!-- Lingering Celestial Party Protection. For 1 min., HP/ MP recovery bonus increases and Spd. +5. Cannot receive the effects of Celestial Protection, Celestial Party Protection, or Celestial Aegis. -->
+		<icon>icon.skill11759</icon>
+		<abnormalLvl>9</abnormalLvl>
+		<abnormalTime>70</abnormalTime> <!-- Tested -->
+		<abnormalType>INVINCIBILITY_SPECIAL</abnormalType>
+		<operateType>A2</operateType>
+		<isMagic>1</isMagic>
+		<effectPoint>1</effectPoint>
+		<isDebuff>true</isDebuff>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-2</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>99</magicLvl>
+		<irreplacableBuff>true</irreplacableBuff>
+		<canBeDispelled>false</canBeDispelled>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="Speed">
+				<amount>5</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="HpRegen">
+				<amount>1</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MpRegen">
+				<amount>0.5</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11835" toLevel="1" name="Dissolve">
+		<!-- Increases Speed. -->
+		<icon>icon.skill11770</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>15</abnormalTime>
+		<abnormalType>SPEED_UP_SPECIAL</abnormalType>
+		<operateType>A2</operateType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>97</magicLvl>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="Speed">
+				<amount>100</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="PhysicalDefence" fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1020">
+				<amount>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1020">{0.6 + (0.4 * subIndex)}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence" fromLevel="1" toLevel="1" fromSubLevel="2001" toSubLevel="2020">
+				<amount>
+					<value fromLevel="1" toLevel="1" fromSubLevel="2001" toSubLevel="2020">{0.6 + (0.4 * subIndex)}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11836" fromLevel="101" toLevel="110" name="Summon Lumi Power Passive">
+		<!-- Increases P. Atk. -->
+		<icon>icon.skill10001</icon>
+		<operateType>P</operateType>
+		<magicLvl>99</magicLvl>
+		<effects>
+			<effect name="PAtk">
+				<amount>
+					<value level="101">1.5</value>
+					<value level="102">3</value>
+					<value level="103">4.5</value>
+					<value level="104">6</value>
+					<value level="105">7.5</value>
+					<value level="106">9</value>
+					<value level="107">10.5</value>
+					<value level="108">12</value>
+					<value level="109">13.5</value>
+					<value level="110">15</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11850" toLevel="4" name="Miraculous Benediction">
+		<!-- Restores clan members' CP/ HP. Can only be used when MP is 50% or below. -->
+		<!-- Restores clan members' CP/ HP. Can only be used when MP is 60% or below. -->
+		<!-- Restores clan members' CP/ HP. Can only be used when MP is 70% or below. -->
+		<!-- Restores clan members' CP/ HP. -->
+		<icon>icon.skill11850new</icon>
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>PLEDGE</affectScope>
+		<affectObject>FRIEND_PC</affectObject>
+		<mpConsume>
+			<value level="1">148</value>
+			<value level="2">164</value>
+			<value level="3">180</value>
+			<value level="4">194</value>
+		</mpConsume>
+		<mpInitialConsume>
+			<value level="1">37</value>
+			<value level="2">41</value>
+			<value level="3">45</value>
+			<value level="4">49</value>
+		</mpInitialConsume>
+		<hitTime>10000</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>600000</reuseDelay>
+		<isMagic>1</isMagic>
+		<affectLimit>50-50</affectLimit>
+		<affectRange>1000</affectRange>
+		<magicLvl>
+			<value level="1">85</value>
+			<value level="2">90</value>
+			<value level="3">95</value>
+			<value level="4">99</value>
+		</magicLvl>
+		<effectPoint>560</effectPoint>
+		<conditions>
+			<condition name="RemainMpPer">
+				<amount>
+					<value level="1">50</value>
+					<value level="2">60</value>
+					<value level="3">70</value>
+					<value level="4">100</value>
+				</amount>
+				<percentType>LESS</percentType>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="CpHealPercent">
+				<power>100</power>
+			</effect>
+			<effect name="HealPercent">
+				<power>100</power>
+			</effect>
+			<effect name="ManaHeal" fromLevel="3" toLevel="4" fromSubLevel="1001" toSubLevel="1020">
+				<power>
+					<value fromLevel="3" toLevel="4" fromSubLevel="1001" toSubLevel="1001">532</value>
+					<value fromLevel="3" toLevel="4" fromSubLevel="1002" toSubLevel="1002">570</value>
+					<value fromLevel="3" toLevel="4" fromSubLevel="1003" toSubLevel="1003">607</value>
+					<value fromLevel="3" toLevel="4" fromSubLevel="1004" toSubLevel="1004">644</value>
+					<value fromLevel="3" toLevel="4" fromSubLevel="1005" toSubLevel="1005">681</value>
+					<value fromLevel="3" toLevel="4" fromSubLevel="1006" toSubLevel="1006">718</value>
+					<value fromLevel="3" toLevel="4" fromSubLevel="1007" toSubLevel="1007">756</value>
+					<value fromLevel="3" toLevel="4" fromSubLevel="1008" toSubLevel="1008">793</value>
+					<value fromLevel="3" toLevel="4" fromSubLevel="1009" toSubLevel="1009">830</value>
+					<value fromLevel="3" toLevel="4" fromSubLevel="1010" toSubLevel="1010">867</value>
+					<value fromLevel="3" toLevel="4" fromSubLevel="1011" toSubLevel="1011">904</value>
+					<value fromLevel="3" toLevel="4" fromSubLevel="1012" toSubLevel="1012">942</value>
+					<value fromLevel="3" toLevel="4" fromSubLevel="1013" toSubLevel="1013">979</value>
+					<value fromLevel="3" toLevel="4" fromSubLevel="1014" toSubLevel="1014">1016</value>
+					<value fromLevel="3" toLevel="4" fromSubLevel="1015" toSubLevel="1015">1053</value>
+					<value fromLevel="3" toLevel="4" fromSubLevel="1016" toSubLevel="1016">1090</value>
+					<value fromLevel="3" toLevel="4" fromSubLevel="1017" toSubLevel="1017">1128</value>
+					<value fromLevel="3" toLevel="4" fromSubLevel="1018" toSubLevel="1018">1165</value>
+					<value fromLevel="3" toLevel="4" fromSubLevel="1019" toSubLevel="1019">1202</value>
+					<value fromLevel="3" toLevel="4" fromSubLevel="1020" toSubLevel="1020">1240</value>
+				</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11851" toLevel="6" name="Divine Prayer">
+		<!-- For $s1, party members' HP heal amount +$s2. -->
+		<icon>icon.skill11859</icon>
+		<abnormalLvl>
+			<value level="1">4</value>
+			<value level="2">5</value>
+			<value level="3">6</value>
+			<value level="4">7</value>
+			<value level="5">8</value>
+			<value level="6">9</value>
+		</abnormalLvl>
+		<abnormalType>HEAL_EFFECT_UP</abnormalType>
+		<abnormalTime>1800</abnormalTime>
+		<affectRange>1000</affectRange>
+		<operateType>A2</operateType>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>30000</reuseDelay>
+		<isMagic>1</isMagic>
+		<magicLvl>
+			<value level="1">85</value>
+			<value level="2">90</value>
+			<value level="3">95</value>
+			<value level="4">99</value>
+			<value level="5">106</value>
+			<value level="6">110</value>
+		</magicLvl>
+		<mpConsume>
+			<value level="1">185</value>
+			<value level="2">205</value>
+			<value level="3">225</value>
+			<value level="4">243</value>
+			<value level="5">261</value>
+			<value level="6">279</value>
+		</mpConsume>
+		<mpInitialConsume>
+			<value level="1">37</value>
+			<value level="2">41</value>
+			<value level="3">45</value>
+			<value level="4">49</value>
+			<value level="5">54</value>
+			<value level="6">58</value>
+		</mpInitialConsume>
+		<targetType>SELF</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<effectPoint>611</effectPoint>
+		<effects>
+			<effect name="HealEffect">
+				<amount>
+					<value level="1">5</value>
+					<value level="2">7</value>
+					<value level="3">10</value>
+					<value level="4">15</value>
+					<value level="5">20</value>
+					<value level="6">25</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence" fromLevel="3" toLevel="6" fromSubLevel="1001" toSubLevel="1020">
+				<amount>
+					<value fromLevel="3" toLevel="6" fromSubLevel="1001" toSubLevel="1020">{0.6 + (0.4 * subIndex)}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence" fromLevel="3" toLevel="6" fromSubLevel="2001" toSubLevel="2020">
+				<amount>
+					<value fromLevel="3" toLevel="6" fromSubLevel="2001" toSubLevel="2020">{0.6 + (0.4 * subIndex)}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Speed" fromLevel="3" toLevel="6" fromSubLevel="3001" toSubLevel="3020">
+				<amount>
+					<value fromLevel="3" toLevel="6" fromSubLevel="3001" toSubLevel="3020">{2 * subIndex}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11852" toLevel="6" name="Mass Mana Gain">
+		<!-- For $s1, party members' MP heal amount +$s2. -->
+		<icon>icon.skill11852new</icon>
+		<abnormalLvl>
+			<value level="1">2</value>
+			<value level="2">3</value>
+			<value level="3">4</value>
+			<value level="4">5</value>
+			<value level="5">6</value>
+			<value level="6">7</value>
+		</abnormalLvl>
+		<abnormalType>RECHARGE_UP</abnormalType>
+		<abnormalTime>1800</abnormalTime>
+		<affectRange>1000</affectRange>
+		<operateType>A2</operateType>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>30000</reuseDelay>
+		<isMagic>1</isMagic>
+		<magicLvl>
+			<value level="1">85</value>
+			<value level="2">90</value>
+			<value level="3">95</value>
+			<value level="4">99</value>
+			<value level="5">106</value>
+			<value level="6">110</value>
+		</magicLvl>
+		<mpConsume>
+			<value level="1">148</value>
+			<value level="2">164</value>
+			<value level="3">180</value>
+			<value level="4">194</value>
+			<value level="5">261</value>
+			<value level="6">279</value>
+		</mpConsume>
+		<mpInitialConsume>
+			<value level="1">37</value>
+			<value level="2">41</value>
+			<value level="3">45</value>
+			<value level="4">49</value>
+			<value level="5">53</value>
+			<value level="6">57</value>
+		</mpInitialConsume>
+		<effectPoint>1</effectPoint>
+		<targetType>SELF</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<effects>
+			<effect name="ManaCharge">
+				<amount>
+					<value level="1">33</value>
+					<value level="2">35</value>
+					<value level="3">37</value>
+					<value level="4">40</value>
+					<value level="5">43</value>
+					<value level="6">46</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="PhysicalDefence" fromLevel="3" toLevel="6" fromSubLevel="1001" toSubLevel="1020">
+				<amount>
+					<value fromLevel="3" toLevel="6" fromSubLevel="1001" toSubLevel="1020">{0.6 + (0.4 * subIndex)}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence" fromLevel="3" toLevel="6" fromSubLevel="2001" toSubLevel="2020">
+				<amount>
+					<value fromLevel="3" toLevel="6" fromSubLevel="2001" toSubLevel="2020">{0.6 + (0.4 * subIndex)}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Speed" fromLevel="3" toLevel="6" fromSubLevel="3001" toSubLevel="3020">
+				<amount>
+					<value fromLevel="3" toLevel="6" fromSubLevel="3001" toSubLevel="3020">{2 * subIndex}</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11853" toLevel="4" name="Superior Quick Recovery">
+		<!-- Magic skill Cooldown -$s1. -->
+		<icon>icon.skill0228</icon>
+		<operateType>P</operateType>
+		<magicLvl>
+			<value level="1">85</value>
+			<value level="2">90</value>
+			<value level="3">95</value>
+			<value level="4">99</value>
+		</magicLvl>
+		<effects>
+			<effect name="Reuse">
+				<amount>
+					<value level="1">-5</value>
+					<value level="2">-6</value>
+					<value level="3">-7</value>
+					<value level="4">-10</value>
+				</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11854" toLevel="6" name="Mass Mana Gain">
+		<!-- For $s1, party members' MP heal amount +$s2. -->
+		<icon>icon.skill11852new</icon>
+		<abnormalLvl>
+			<value level="1">2</value>
+			<value level="2">3</value>
+			<value level="3">4</value>
+			<value level="4">5</value>
+			<value level="5">6</value>
+			<value level="6">7</value>
+		</abnormalLvl>
+		<abnormalType>RECHARGE_UP</abnormalType>
+		<abnormalTime>1800</abnormalTime>
+		<affectRange>1000</affectRange>
+		<operateType>A2</operateType>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>30000</reuseDelay>
+		<isMagic>1</isMagic>
+		<magicLvl>
+			<value level="1">85</value>
+			<value level="2">90</value>
+			<value level="3">95</value>
+			<value level="4">99</value>
+			<value level="5">106</value>
+			<value level="6">110</value>
+		</magicLvl>
+		<mpConsume>
+			<value level="1">185</value>
+			<value level="2">205</value>
+			<value level="3">225</value>
+			<value level="4">243</value>
+			<value level="5">261</value>
+			<value level="6">279</value>
+		</mpConsume>
+		<mpInitialConsume>
+			<value level="1">37</value>
+			<value level="2">41</value>
+			<value level="3">45</value>
+			<value level="4">49</value>
+			<value level="5">53</value>
+			<value level="6">57</value>
+		</mpInitialConsume>
+		<effectPoint>1</effectPoint>
+		<targetType>SELF</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<effects>
+			<effect name="ManaCharge">
+				<amount>
+					<value level="1">33</value>
+					<value level="2">35</value>
+					<value level="3">37</value>
+					<value level="4">40</value>
+					<value level="5">50</value>
+					<value level="6">55</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="PhysicalDefence" fromLevel="3" toLevel="6" fromSubLevel="1001" toSubLevel="1020">
+				<amount>
+					<value fromLevel="3" toLevel="4" fromSubLevel="1001" toSubLevel="1020">{0.6 + (0.4 * subIndex)}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence" fromLevel="3" toLevel="6" fromSubLevel="2001" toSubLevel="2020">
+				<amount>
+					<value fromLevel="3" toLevel="4" fromSubLevel="2001" toSubLevel="2020">{0.6 + (0.4 * subIndex)}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Speed" fromLevel="3" toLevel="6" fromSubLevel="3001" toSubLevel="3020">
+				<amount>
+					<value fromLevel="3" toLevel="4" fromSubLevel="3001" toSubLevel="3020">{2 * subIndex}</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11855" toLevel="4" name="Superior Wizard Combat">
+		<!-- M. Atk. +$s1. M. Skill MP Consumption -$s2. -->
+		<icon>icon.skill0945</icon>
+		<operateType>P</operateType>
+		<magicLvl>
+			<value level="1">85</value>
+			<value level="2">90</value>
+			<value level="3">95</value>
+			<value level="4">99</value>
+		</magicLvl>
+		<effects>
+			<effect name="MAtk">
+				<amount>
+					<value level="1">10</value>
+					<value level="2">12</value>
+					<value level="3">15</value>
+					<value level="4">20</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicMpCost">
+				<amount>-10</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11856" toLevel="1" name="Mental Recharge">
+		<!-- Restores target's MP. -->
+		<icon>icon.skill11856</icon>
+		<operateType>A1</operateType>
+		<mpConsume>66</mpConsume>
+		<castRange>600</castRange>
+		<hitTime>5500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>600000</reuseDelay>
+		<effectPoint>1811</effectPoint>
+		<isMagic>1</isMagic>
+		<targetType>TARGET</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<effects>
+			<effect name="ManaHealPercent">
+				<power>100</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11857" toLevel="3" name="Summon Flag of Life">
+		<!-- Summons a Flag of Life, which restores the HP of those that click on it. -->
+		<icon>icon.skill11774</icon>
+		<operateType>A1</operateType>
+		<mpConsume>185</mpConsume>
+		<castRange>600</castRange>
+		<hitTime>5000</hitTime>
+		<coolTime>2000</coolTime>
+		<reuseDelay>10000</reuseDelay>
+		<effectPoint>1733</effectPoint>
+		<isMagic>1</isMagic>
+	</skill>
+	<skill id="11858" toLevel="3" name="Protective Heal">
+		<!-- For $s1, puts a barrier around a party member. The barrier blocks $s2 times. -->
+		<icon>icon.skill11754</icon>
+		<abnormalTime>60</abnormalTime>
+		<operateType>A2</operateType>
+		<mpConsume>43</mpConsume>
+		<castRange>600</castRange>
+		<hitTime>2200</hitTime>
+		<coolTime>300</coolTime>
+		<reuseDelay>15000</reuseDelay>
+		<effectPoint>867</effectPoint>
+		<isMagic>1</isMagic>
+	</skill>
+	<skill id="11859" toLevel="6" name="Dark Vampirism">
+		<!-- Attacks target with $s1 Power added to M. Atk. and recovers HP equivalent to $s2 of damage inflicted. Consumes $s3 Spirit Ore. -->
+		<icon>icon.skill11859</icon>
+		<operateType>A1</operateType>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<mpConsume>
+			<value level="1">92</value>
+			<value level="2">96</value>
+			<value level="3">100</value>
+			<value level="4">103</value>
+			<value level="5">108</value>
+			<value level="6">112</value>
+		</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>2000</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>2000</reuseDelay>
+		<effectPoint>-700</effectPoint>
+		<isMagic>1</isMagic>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
+		<effects>
+			<effect name="HpDrain">
+				<power>
+					<value level="1">198</value>
+					<value level="2">200</value>
+					<value level="3">203</value>
+					<value level="4">240</value>
+					<value level="5">244</value>
+					<value level="6">248</value>
+				</power>
+				<percentage>50</percentage>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11860" toLevel="3" name="Healing Flag">
+		<!-- Attacks target with $s1 Power added to M. Atk. If HP is full, CP is restored. -->
+		<icon>icon.skill11755</icon>
+		<operateType>A1</operateType>
+		<mpConsume>50</mpConsume>
+		<castRange>600</castRange>
+		<hitTime>1000</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>3000</reuseDelay>
+		<effectPoint>867</effectPoint>
+		<isMagic>1</isMagic>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="HpCpHeal">
+				<power>
+					<value level="1">2490</value>
+					<value level="2">3520</value>
+					<value level="3">5760</value>
+				</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11861" toLevel="1" name="Elemental Resistance">
+		<!-- For 30 min., increases party member's Elemental Resistance by 30. Consumes 10 Spirit Ore. -->
+		<icon>icon.skill11861</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>1800</abnormalTime>
+		<abnormalType>HEAL_RESISTANCE</abnormalType>
+		<operateType>A2</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<castRange>900</castRange>
+		<targetType>SELF</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<mpConsume>82</mpConsume>
+		<affectRange>900</affectRange>
+		<hitTime>1000</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>2000</reuseDelay>
+		<effectPoint>687</effectPoint>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<itemConsumeCount>10</itemConsumeCount>
+		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
+		<effects>
+			<effect name="DefenceAttribute">
+				<amount>30</amount>
+				<attribute>FIRE</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>30</amount>
+				<attribute>WATER</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>30</amount>
+				<attribute>WIND</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>30</amount>
+				<attribute>EARTH</attribute>
+			</effect>
+			<effect name="PAtk" fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1020">
+				<amount>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1020">{0.6 + (0.4 * subIndex)}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk" fromLevel="1" toLevel="1" fromSubLevel="2001" toSubLevel="2020">
+				<amount>
+					<value fromLevel="1" toLevel="1" fromSubLevel="2001" toSubLevel="2020">{0.4 + (0.6 * subIndex)}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Speed" fromLevel="1" toLevel="1" fromSubLevel="3001" toSubLevel="3020">
+				<amount>
+					<value fromLevel="1" toLevel="1" fromSubLevel="3001" toSubLevel="3020">{2 * subIndex}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11862" toLevel="1" name="Melee Weapon Resistance">
+		<!-- For 30 min., increases party member's resistance to melee weapons by 5%. Consumes 10 Spirit Ore. -->
+		<icon>icon.skill11862</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>1800</abnormalTime>
+		<abnormalType>HEAL_RESISTANCE</abnormalType>
+		<itemConsumeCount>10</itemConsumeCount>
+		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
+		<operateType>A2</operateType>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+		<magicLvl>99</magicLvl>
+		<mpConsume>82</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>1000</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>2000</reuseDelay>
+		<effectPoint>687</effectPoint>
+		<isMagic>1</isMagic>
+		<conditions>
+			<condition name="TargetMyParty">
+				<includeMe>true</includeMe>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="DefenceTrait">
+				<SWORD>5</SWORD>
+				<DAGGER>5</DAGGER>
+				<DUALFIST>5</DUALFIST>
+				<ANCIENTSWORD>5</ANCIENTSWORD>
+				<DUALDAGGER>5</DUALDAGGER>
+				<BLUNT>5</BLUNT>
+				<POLE>5</POLE>
+				<DUAL>5</DUAL>
+				<RAPIER>5</RAPIER>
+			</effect>
+			<effect name="PAtk" fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1020">
+				<amount>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1020">{0.6 + (0.4 * subIndex)}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk" fromLevel="1" toLevel="1" fromSubLevel="2001" toSubLevel="2020">
+				<amount>
+					<value fromLevel="1" toLevel="1" fromSubLevel="2001" toSubLevel="2020">{0.4 + (0.6 * subIndex)}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Speed" fromLevel="1" toLevel="1" fromSubLevel="3001" toSubLevel="3020">
+				<amount>
+					<value fromLevel="1" toLevel="1" fromSubLevel="3001" toSubLevel="3020">{2 * subIndex}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="11863" toLevel="1" name="Ranged Weapon Resistance">
+		<!-- For 30 min., increases party member's resistance to ranged weapons by 5%. Consumes 10 Spirit Ore. -->
+		<icon>icon.skill11863</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>1800</abnormalTime>
+		<abnormalType>HEAL_RESISTANCE</abnormalType>
+		<itemConsumeCount>10</itemConsumeCount>
+		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
+		<operateType>A2</operateType>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+		<magicLvl>99</magicLvl>
+		<mpConsume>82</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>1000</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>2000</reuseDelay>
+		<effectPoint>687</effectPoint>
+		<isMagic>1</isMagic>
+		<conditions>
+			<condition name="TargetMyParty">
+				<includeMe>true</includeMe>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="DefenceTrait">
+				<BOW>5</BOW>
+				<CROSSBOW>5</CROSSBOW>
+			</effect>
+			<effect name="PAtk" fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1020">
+				<amount>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1020">{0.6 + (0.4 * subIndex)}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk" fromLevel="1" toLevel="1" fromSubLevel="2001" toSubLevel="2020">
+				<amount>
+					<value fromLevel="1" toLevel="1" fromSubLevel="2001" toSubLevel="2020">{0.4 + (0.6 * subIndex)}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Speed" fromLevel="1" toLevel="1" fromSubLevel="3001" toSubLevel="3020">
+				<amount>
+					<value fromLevel="1" toLevel="1" fromSubLevel="3001" toSubLevel="3020">{2 * subIndex}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+</list>

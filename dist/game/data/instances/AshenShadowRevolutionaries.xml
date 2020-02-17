@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Ashen Shadow Revolutionaries -->
+<instance id="260" maxWorlds="50" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/instance.xsd">
+	<time duration="120" empty="5" />
+	<locations>
+		<enter type="FIXED">
+			<location x="-77684" y="155984" z="-3194" />
+		</enter>
+		<exit type="ORIGIN" />
+	</locations>
+	<conditions>
+		<condition type="Party" showMessageAndHtml="true">
+			<param name="html" value="condNoGroup.html" />
+		</condition>
+		<condition type="GroupMin">
+			<param name="html" value="condSmallGroup.html" />
+			<param name="limit" value="5" />
+		</condition>
+		<condition type="GroupMax">
+			<param name="limit" value="7" />
+		</condition>
+		<condition type="Level" showMessageAndHtml="true">
+			<param name="html" value="condNoLevel.html" />
+			<param name="min" value="99" />
+		</condition>
+		<condition type="Level" showMessageAndHtml="true">
+			<param name="html" value="condOverLevel.html" />
+			<param name="max" value="104" />
+		</condition>
+		<condition type="Distance" />
+		<condition type="Reenter" />
+	</conditions>
+	<reenter apply="ON_ENTER">
+		<reset day="WEDNESDAY" hour="6" minute="30" />
+		<reset day="SATURDAY" hour="6" minute="30" />
+	</reenter>
+	<spawnlist>
+		<group>
+			<npc id="34101" x="-77573" y="155694" z="-3191" heading="10969" /> <!-- Treasure Chest -->
+		</group>
+		<group name="wave_1" spawnByDefault="false">
+			<npc id="23651" x="-81913" y="153314" z="-3168" heading="15835" /> <!-- Unit Signalman -->
+			<npc id="19602" x="-81925" y="153399" z="-3168" heading="49153" />
+			<npc id="23616" x="-79880" y="153773" z="-3168" heading="23742" /> <!-- Unit 1 Elite Soldier -->
+			<npc id="23616" x="-83677" y="154528" z="-3168" heading="32767" /> <!-- Unit 1 Elite Soldier -->
+			<npc id="23617" x="-79314" y="154915" z="-3168" heading="58963" /> <!-- Unit 2 Elite Soldier -->
+			<npc id="23617" x="-79398" y="155041" z="-3168" heading="5441" /> <!-- Unit 2 Elite Soldier -->
+			<npc id="23618" x="-80938" y="154823" z="-3168" heading="3039" /> <!-- Unit 3 Elite Soldier -->
+			<npc id="23619" x="-82570" y="155111" z="-3168" heading="45661" /> <!-- Unit 4 Elite Soldier -->
+			<npc id="23619" x="-83124" y="153236" z="-3168" heading="15887" /> <!-- Unit 4 Elite Soldier -->
+			<npc id="23620" x="-83788" y="154480" z="-3168" heading="62981" /> <!-- Unit 5 Elite Soldier -->
+			<npc id="23621" x="-80971" y="154926" z="-3168" heading="53989" /> <!-- Unit 6 Elite Soldier -->
+			<npc id="23621" x="-82577" y="154752" z="-3168" heading="18938" /> <!-- Unit 6 Elite Soldier -->
+			<npc id="23622" x="-81719" y="153896" z="-3168" heading="16141" /> <!-- Unit 7 Elite Soldier -->
+			<npc id="23623" x="-79952" y="153733" z="-3168" heading="17250" /> <!-- Unit 8 Elite Soldier -->
+			<npc id="23623" x="-81815" y="154009" z="-3168" heading="16141" /> <!-- Unit 8 Elite Soldier -->
+			<npc id="23624" x="-83244" y="153400" z="-3168" heading="49153" /> <!-- Unit 1 Elite Soldier -->
+			<npc id="23625" x="-79734" y="153996" z="-3168" heading="30708" /> <!-- Unit 2 Elite Soldier -->
+			<npc id="23625" x="-82682" y="155081" z="-3168" heading="62368" /> <!-- Unit 2 Elite Soldier -->
+			<npc id="23626" x="-83037" y="153234" z="-3168" heading="15887" /> <!-- Unit 3 Elite Soldier -->
+			<npc id="23627" x="-82737" y="154954" z="-3168" heading="62181" /> <!-- Unit 4 Elite Soldier -->
+			<npc id="23628" x="-80747" y="154958" z="-3168" heading="37605" /> <!-- Unit 5 Elite Soldier -->
+			<npc id="23628" x="-83791" y="154515" z="-3168" heading="62981" /> <!-- Unit 5 Elite Soldier -->
+			<npc id="23631" x="-80911" y="155011" z="-3168" heading="53686" /> <!-- Unit 8 Elite Soldier -->
+			<npc id="23631" x="-83716" y="154480" z="-3168" heading="26634" /> <!-- Unit 8 Elite Soldier -->
+			<npc id="23632" x="-79357" y="154991" z="-3168" heading="19185" /> <!-- Unit 1 Elite Soldier -->
+			<npc id="23632" x="-81898" y="154109" z="-3168" heading="16141" /> <!-- Unit 1 Elite Soldier -->
+			<npc id="23633" x="-79284" y="154847" z="-3168" heading="55769" /> <!-- Unit 2 Elite Soldier -->
+			<npc id="23633" x="-79439" y="155092" z="-3168" heading="10900" /> <!-- Unit 2 Elite Soldier -->
+			<npc id="23633" x="-80807" y="155026" z="-3168" heading="44742" /> <!-- Unit 2 Elite Soldier -->
+			<npc id="23633" x="-81604" y="153740" z="-3168" heading="16141" /> <!-- Unit 2 Elite Soldier -->
+			<npc id="23633" x="-83216" y="153236" z="-3168" heading="15887" /> <!-- Unit 2 Elite Soldier -->
+			<npc id="23633" x="-83290" y="153239" z="-3168" heading="15887" /> <!-- Unit 2 Elite Soldier -->
+			<npc id="23635" x="-80732" y="154869" z="-3168" heading="28798" /> <!-- Unit 4 Elite Soldier -->
+			<npc id="23637" x="-82017" y="153994" z="-3168" heading="16141" /> <!-- Unit 6 Elite Soldier -->
+			<npc id="23637" x="-83363" y="153240" z="-3168" heading="15887" /> <!-- Unit 6 Elite Soldier -->
+			<npc id="23638" x="-80119" y="153715" z="-3168" heading="16383" /> <!-- Unit 7 Elite Soldier -->
+			<npc id="23638" x="-82288" y="153734" z="-3168" heading="16141" /> <!-- Unit 7 Elite Soldier -->
+			<npc id="23639" x="-79485" y="155137" z="-3168" heading="3769" /> <!-- Unit 8 Elite Soldier -->
+			<npc id="23639" x="-83443" y="153233" z="-3168" heading="15887" /> <!-- Unit 8 Elite Soldier -->
+			<npc id="23640" x="-80819" y="154794" z="-3168" heading="20606" /> <!-- Unit 1 Elite Soldier -->
+			<npc id="23640" x="-82466" y="155036" z="-3168" heading="38361" /> <!-- Unit 1 Elite Soldier -->
+			<npc id="23642" x="-80027" y="153728" z="-3168" heading="24575" /> <!-- Unit 3 Elite Soldier -->
+			<npc id="23642" x="-83782" y="154442" z="-3168" heading="62981" /> <!-- Unit 3 Elite Soldier -->
+			<npc id="23643" x="-82150" y="153867" z="-3168" heading="16141" /> <!-- Unit 4 Elite Soldier -->
+			<npc id="23643" x="-83794" y="154577" z="-3168" heading="62981" /> <!-- Unit 4 Elite Soldier -->
+			<npc id="23644" x="-79774" y="153915" z="-3168" heading="27931" /> <!-- Unit 5 Elite Soldier -->
+			<npc id="23645" x="-79246" y="154775" z="-3168" heading="7088" /> <!-- Unit 6 Elite Soldier -->
+			<npc id="23645" x="-79816" y="153840" z="-3168" heading="25615" /> <!-- Unit 6 Elite Soldier -->
+			<npc id="23645" x="-83795" y="154644" z="-3168" heading="26634" /> <!-- Unit 6 Elite Soldier -->
+			<npc id="23646" x="-82705" y="154842" z="-3168" heading="4835" /> <!-- Unit 7 Elite Soldier -->
+			<npc id="23647" x="-82454" y="154864" z="-3168" heading="26634" /> <!-- Unit 8 Elite Soldier -->
+			<npc id="23648" x="-80089" y="153745" z="-3168" heading="0" /> <!-- Dark Crusader -->
+			<npc id="23648" x="-81689" y="153926" z="-3168" heading="0" /> <!-- Dark Crusader -->
+			<npc id="23648" x="-82258" y="153764" z="-3168" heading="0" /> <!-- Dark Crusader -->
+			<npc id="23648" x="-82675" y="154872" z="-3168" heading="0" /> <!-- Dark Crusader -->
+			<npc id="23649" x="-80149" y="153685" z="-3168" heading="0" /> <!-- Banshee Queen -->
+			<npc id="23649" x="-81749" y="153866" z="-3168" heading="0" /> <!-- Banshee Queen -->
+			<npc id="23649" x="-82318" y="153704" z="-3168" heading="0" /> <!-- Banshee Queen -->
+			<npc id="23649" x="-82735" y="154812" z="-3168" heading="0" /> <!-- Banshee Queen -->
+			<npc id="23652" x="-78746" y="152812" z="-3168" heading="65361" /> <!-- Unit Guard -->
+			<npc id="23652" x="-78776" y="152688" z="-3168" heading="65361" /> <!-- Unit Guard -->
+			<npc id="23652" x="-82901" y="149262" z="-3112" heading="48419" /> <!-- Unit Guard -->
+			<npc id="23652" x="-83444" y="149245" z="-3112" heading="48419" /> <!-- Unit Guard -->
+			<npc id="23652" x="-84882" y="152805" z="-3176" heading="32202" /> <!-- Unit Guard -->
+			<npc id="23652" x="-84889" y="152683" z="-3168" heading="32202" /> <!-- Unit Guard -->
+		</group>
+		<group name="wave_2" spawnByDefault="false">
+			<npc id="23651" x="-78988" y="150832" z="-3032" heading="34026" /> <!-- Unit Signalman -->
+			<npc id="19602" x="-79083" y="150830" z="-3041" heading="65484" />
+			<npc id="23638" x="-82450" y="151502" z="-3129" heading="48539" /> <!-- Unit 7 Elite Soldier -->
+			<npc id="23649" x="-82427" y="151552" z="-3129" heading="47893" /> <!-- Banshee Queen -->
+			<npc id="23648" x="-82480" y="151551" z="-3129" heading="44641" /> <!-- Dark Crusader -->
+			<npc id="23639" x="-82361" y="151508" z="-3129" heading="49312" /> <!-- Unit 8 Elite Soldier -->
+			<npc id="23644" x="-82280" y="151504" z="-3129" heading="43018" /> <!-- Unit 5 Elite Soldier -->
+			<npc id="23617" x="-82211" y="151504" z="-3129" heading="48330" /> <!-- Unit 2 Elite Soldier -->
+			<npc id="23642" x="-82139" y="151502" z="-3132" heading="53988" /> <!-- Unit 3 Elite Soldier -->
+			<npc id="23635" x="-82071" y="151500" z="-3129" heading="49032" /> <!-- Unit 4 Elite Soldier -->
+			<npc id="23632" x="-82215" y="151393" z="-3129" heading="16383" /> <!-- Unit 1 Elite Soldier -->
+			<npc id="23642" x="-83812" y="151735" z="-3129" heading="59969" /> <!-- Unit 3 Elite Soldier -->
+			<npc id="23617" x="-83856" y="151655" z="-3129" heading="61485" /> <!-- Unit 2 Elite Soldier -->
+			<npc id="23632" x="-83913" y="151586" z="-3129" heading="57797" /> <!-- Unit 1 Elite Soldier -->
+			<npc id="23635" x="-83989" y="151542" z="-3129" heading="52192" /> <!-- Unit 4 Elite Soldier -->
+			<npc id="23644" x="-84076" y="151503" z="-3129" heading="49730" /> <!-- Unit 5 Elite Soldier -->
+			<npc id="23645" x="-84151" y="151483" z="-3132" heading="49341" /> <!-- Unit 6 Elite Soldier -->
+			<npc id="23638" x="-84225" y="151452" z="-3129" heading="50704" /> <!-- Unit 7 Elite Soldier -->
+			<npc id="23648" x="-84237" y="151405" z="-3129" heading="46544" /> <!-- Dark Crusader -->
+			<npc id="23649" x="-84241" y="151339" z="-3129" heading="49151" /> <!-- Banshee Queen -->
+			<npc id="23639" x="-84779" y="150513" z="-3129" heading="12908" /> <!-- Unit 8 Elite Soldier -->
+			<npc id="23617" x="-84681" y="150513" z="-3129" heading="9346" /> <!-- Unit 2 Elite Soldier -->
+			<npc id="23642" x="-84588" y="150460" z="-3129" heading="6133" /> <!-- Unit 3 Elite Soldier -->
+			<npc id="23635" x="-84492" y="150416" z="-3129" heading="7131" /> <!-- Unit 4 Elite Soldier -->
+			<npc id="23644" x="-84421" y="150359" z="-3129" heading="6657" /> <!-- Unit 5 Elite Soldier -->
+			<npc id="23645" x="-84356" y="150284" z="-3129" heading="3709" /> <!-- Unit 6 Elite Soldier -->
+			<npc id="23649" x="-84283" y="150273" z="-3129" heading="11716" /> <!-- Banshee Queen -->
+			<npc id="23648" x="-84209" y="150200" z="-3129" heading="59899" /> <!-- Dark Crusader -->
+			<npc id="23638" x="-84313" y="150204" z="-3129" heading="3422" /> <!-- Unit 7 Elite Soldier -->
+			<npc id="23639" x="-84266" y="150113" z="-3129" heading="4667" /> <!-- Unit 8 Elite Soldier -->
+			<npc id="23648" x="-84009" y="149774" z="-3129" heading="14018" /> <!-- Dark Crusader -->
+			<npc id="23649" x="-83944" y="149759" z="-3129" heading="7832" /> <!-- Banshee Queen -->
+			<npc id="23638" x="-83980" y="149835" z="-3129" heading="12892" /> <!-- Unit 7 Elite Soldier -->
+			<npc id="23635" x="-83909" y="149823" z="-3129" heading="13606" /> <!-- Unit 4 Elite Soldier -->
+			<npc id="23617" x="-83788" y="149802" z="-3129" heading="18317" /> <!-- Unit 2 Elite Soldier -->
+			<npc id="23632" x="-83688" y="149754" z="-3129" heading="11006" /> <!-- Unit 1 Elite Soldier -->
+			<npc id="23644" x="-83607" y="149656" z="-3129" heading="5579" /> <!-- Unit 5 Elite Soldier -->
+			<npc id="23645" x="-83594" y="149552" z="-3129" heading="5208" /> <!-- Unit 6 Elite Soldier -->
+			<npc id="23617" x="-82277" y="150209" z="-3129" heading="17329" /> <!-- Unit 2 Elite Soldier -->
+			<npc id="23642" x="-82195" y="150215" z="-3129" heading="18939" /> <!-- Unit 3 Elite Soldier -->
+			<npc id="23632" x="-82099" y="150304" z="-3129" heading="49151" /> <!-- Unit 1 Elite Soldier -->
+			<npc id="23635" x="-82115" y="150209" z="-3129" heading="14707" /> <!-- Unit 4 Elite Soldier -->
+			<npc id="23644" x="-82028" y="150217" z="-3129" heading="18442" /> <!-- Unit 5 Elite Soldier -->
+			<npc id="23645" x="-81941" y="150210" z="-3129" heading="15540" /> <!-- Unit 6 Elite Soldier -->
+			<npc id="23638" x="-81855" y="150206" z="-3129" heading="15438" /> <!-- Unit 7 Elite Soldier -->
+			<npc id="23639" x="-81773" y="150203" z="-3129" heading="14219" /> <!-- Unit 8 Elite Soldier -->
+			<npc id="23648" x="-81888" y="150133" z="-3129" heading="15308" /> <!-- Dark Crusader -->
+			<npc id="23649" x="-81827" y="150121" z="-3129" heading="15329" /> <!-- Banshee Queen -->
+			<npc id="23642" x="-81032" y="149747" z="-3044" heading="27536" /> <!-- Unit 3 Elite Soldier -->
+			<npc id="23639" x="-80966" y="149824" z="-3044" heading="21798" /> <!-- Unit 8 Elite Soldier -->
+			<npc id="23633" x="-80892" y="149855" z="-3044" heading="13161" /> <!-- Unit 2 Elite Soldier -->
+			<npc id="23632" x="-80806" y="149879" z="-3044" heading="17681" /> <!-- Unit 1 Elite Soldier -->
+			<npc id="23635" x="-80736" y="149848" z="-3044" heading="16383" /> <!-- Unit 4 Elite Soldier -->
+			<npc id="23644" x="-80665" y="149788" z="-3044" heading="6894" /> <!-- Unit 5 Elite Soldier -->
+			<npc id="23645" x="-80627" y="149720" z="-3044" heading="7152" /> <!-- Unit 6 Elite Soldier -->
+			<npc id="23638" x="-80592" y="149642" z="-3044" heading="3968" /> <!-- Unit 7 Elite Soldier -->
+			<npc id="23632" x="-80614" y="152010" z="-3044" heading="65261" /> <!-- Unit 1 Elite Soldier -->
+			<npc id="23639" x="-80498" y="151773" z="-3044" heading="32116" /> <!-- Unit 8 Elite Soldier -->
+			<npc id="23638" x="-80509" y="151852" z="-3044" heading="35881" /> <!-- Unit 7 Elite Soldier -->
+			<npc id="23648" x="-80428" y="151836" z="-3044" heading="32767" /> <!-- Dark Crusader -->
+			<npc id="23649" x="-80430" y="151883" z="-3044" heading="31836" /> <!-- Banshee Queen -->
+			<npc id="23642" x="-80508" y="151931" z="-3044" heading="31287" /> <!-- Unit 3 Elite Soldier -->
+			<npc id="23633" x="-80503" y="152009" z="-3044" heading="32767" /> <!-- Unit 2 Elite Soldier -->
+			<npc id="23635" x="-80500" y="152091" z="-3044" heading="32767" /> <!-- Unit 4 Elite Soldier -->
+			<npc id="23644" x="-80499" y="152174" z="-3044" heading="33966" /> <!-- Unit 5 Elite Soldier -->
+			<npc id="23645" x="-80503" y="152254" z="-3044" heading="30535" /> <!-- Unit 6 Elite Soldier -->
+			<npc id="23632" x="-79479" y="150835" z="-3041" heading="32431" /> <!-- Unit 1 Elite Soldier -->
+			<npc id="23633" x="-79439" y="150682" z="-3041" heading="34248" /> <!-- Unit 2 Elite Soldier -->
+			<npc id="23642" x="-79432" y="150731" z="-3041" heading="30764" /> <!-- Unit 3 Elite Soldier -->
+			<npc id="23635" x="-79423" y="150777" z="-3041" heading="32767" /> <!-- Unit 4 Elite Soldier -->
+			<npc id="23644" x="-79428" y="150832" z="-3041" heading="32189" /> <!-- Unit 5 Elite Soldier -->
+			<npc id="23645" x="-79429" y="150884" z="-3041" heading="30791" /> <!-- Unit 6 Elite Soldier -->
+			<npc id="23638" x="-79426" y="150937" z="-3041" heading="31332" /> <!-- Unit 7 Elite Soldier -->
+			<npc id="23639" x="-79429" y="150984" z="-3041" heading="32219" /> <!-- Unit 8 Elite Soldier -->
+			<npc id="23648" x="-79361" y="150898" z="-3041" heading="31502" /> <!-- Dark Crusader -->
+			<npc id="23649" x="-79359" y="150955" z="-3041" heading="30804" /> <!-- Banshee Queen -->
+		</group>
+		<group name="wave_3" spawnByDefault="false">
+			<npc id="34151" x="-82922" y="150963" z="-3128" heading="62633" /> <!-- Sir Klaus Vasper -->
+			<npc id="34152" x="-82922" y="150865" z="-3128" heading="62633" /> <!-- Adonius -->
+			<npc id="34153" x="-82922" y="150756" z="-3128" heading="62633" /> <!-- Kluto -->
+			<npc id="34154" x="-82922" y="151069" z="-3128" heading="62633" /> <!-- Yeniche -->
+			<npc id="34155" x="-82922" y="151172" z="-3128" heading="62633" /> <!-- Yuyuria -->
+		</group>
+		<group name="goods" spawnByDefault="false">
+			<npc id="34102" x="-79183" y="153902" z="-3168" heading="54717"/> <!-- Transport Goods -->
+			<npc id="34102" x="-78997" y="155928" z="-3152" heading="40585"/> <!-- Transport Goods -->
+			<npc id="34102" x="-78887" y="153230" z="-3168" heading="8065"/> <!-- Transport Goods -->
+			<npc id="34102" x="-81895" y="151753" z="-3056" heading="17132"/> <!-- Transport Goods -->
+			<npc id="34102" x="-82036" y="149838" z="-3072" heading="17132"/> <!-- Transport Goods -->
+			<npc id="34102" x="-80751" y="149776" z="-3024" heading="17132"/> <!-- Transport Goods -->
+			<npc id="34102" x="-79821" y="149963" z="-3040" heading="17132"/> <!-- Transport Goods -->
+			<npc id="34102" x="-80111" y="152322" z="-3040" heading="17132"/> <!-- Transport Goods -->
+			<npc id="34102" x="-82032" y="150009" z="-3072" heading="17132"/> <!-- Transport Goods -->
+			<npc id="34102" x="-82216" y="151701" z="-3120" heading="17132"/> <!-- Transport Goods -->
+			<npc id="34102" x="-84783" y="151696" z="-3120" heading="17132"/> <!-- Transport Goods -->
+			<npc id="34102" x="-80147" y="153089" z="-3168" heading="61750"/> <!-- Transport Goods -->
+			<npc id="34102" x="-83850" y="151822" z="-3120" heading="17132"/> <!-- Transport Goods -->
+			<npc id="34102" x="-84258" y="149455" z="-3120" heading="17132"/> <!-- Transport Goods -->
+			<npc id="34102" x="-84783" y="151515" z="-3120" heading="17132"/> <!-- Transport Goods -->
+			<npc id="34102" x="-82796" y="152306" z="-3120" heading="17132"/> <!-- Transport Goods -->
+			<npc id="34102" x="-84231" y="150098" z="-3120" heading="48821"/> <!-- Transport Goods -->
+			<npc id="34102" x="-82832" y="155148" z="-3168" heading="48821"/> <!-- Transport Goods -->
+			<npc id="34102" x="-84438" y="153174" z="-3168" heading="48821"/> <!-- Transport Goods -->
+			<npc id="34102" x="-81834" y="153847" z="-3168" heading="48821"/> <!-- Transport Goods -->
+			<npc id="34102" x="-79671" y="153778" z="-3136" heading="48303"/> <!-- Transport Goods -->
+			<npc id="34102" x="-82453" y="155388" z="-3168" heading="48821"/> <!-- Transport Goods -->
+			<npc id="34102" x="-79533" y="154994" z="-3168" heading="3041"/> <!-- Transport Goods -->
+			<npc id="34102" x="-80761" y="152740" z="-3168" heading="17505"/> <!-- Transport Goods -->
+			<npc id="34102" x="-83342" y="155448" z="-3168" heading="48821"/> <!-- Transport Goods -->
+			<npc id="34102" x="-81999" y="153843" z="-3168" heading="48821"/> <!-- Transport Goods -->
+			<npc id="34102" x="-81311" y="153210" z="-3168" heading="32316"/> <!-- Transport Goods -->
+			<npc id="34102" x="-80854" y="155254" z="-3136" heading="58542"/> <!-- Transport Goods -->
+			<npc id="34102" x="-79916" y="153563" z="-3136" heading="41115"/> <!-- Transport Goods -->
+			<npc id="34102" x="-80626" y="155005" z="-3168" heading="18904"/> <!-- Transport Goods -->
+			<npc id="34102" x="-83329" y="155774" z="-3168" heading="47044"/> <!-- Transport Goods -->
+			<npc id="34102" x="-84320" y="154853" z="-3176" heading="15636"/> <!-- Transport Goods -->
+			<npc id="34102" x="-84337" y="154258" z="-3176" heading="61936"/> <!-- Transport Goods -->
+		</group>
+		<group name="altars" spawnByDefault="false">
+			<npc id="34103" x="-79749" y="154721" z="-3178" heading="40585" /> <!-- Revolutionaries' Altar -->
+			<npc id="34103" x="-78997" y="155928" z="-3152" heading="40585" /> <!-- Revolutionaries' Altar -->
+			<npc id="34103" x="-80078" y="153576" z="-3177" heading="41115" /> <!-- Revolutionaries' Altar -->
+			<npc id="34103" x="-80147" y="153089" z="-3168" heading="61750" /> <!-- Revolutionaries' Altar -->
+			<npc id="34103" x="-80848" y="154912" z="-3177" heading="58542" /> <!-- Revolutionaries' Altar -->
+			<npc id="34103" x="-81895" y="151753" z="-3056" heading="17132" /> <!-- Revolutionaries' Altar -->
+			<npc id="34103" x="-82796" y="152306" z="-3120" heading="17132" /> <!-- Revolutionaries' Altar -->
+			<npc id="34103" x="-82575" y="154940" z="-3180" heading="48821" /> <!-- Revolutionaries' Altar -->
+			<npc id="34103" x="-83711" y="155024" z="-3178" heading="48821" /> <!-- Revolutionaries' Altar -->
+			<npc id="34103" x="-83659" y="154123" z="-3178" heading="48821" /> <!-- Revolutionaries' Altar -->
+			<npc id="34103" x="-83358" y="153410" z="-3178" heading="48821" /> <!-- Revolutionaries' Altar -->
+			<npc id="34103" x="-82471" y="153948" z="-3178" heading="48821" /> <!-- Revolutionaries' Altar -->
+			<npc id="34103" x="-81272" y="153821" z="-3178" heading="48821" /> <!-- Revolutionaries' Altar -->
+			<npc id="34103" x="-84028" y="151716" z="-3132" heading="48821" /> <!-- Revolutionaries' Altar -->
+			<npc id="34103" x="-83767" y="149640" z="-3129" heading="48821" /> <!-- Revolutionaries' Altar -->
+			<npc id="34103" x="-83366" y="150874" z="-3129" heading="48821" /> <!-- Revolutionaries' Altar -->
+			<npc id="34103" x="-82216" y="151309" z="-3129" heading="48821" /> <!-- Revolutionaries' Altar -->
+			<npc id="34103" x="-82046" y="150342" z="-3129" heading="48821" /> <!-- Revolutionaries' Altar -->
+			<npc id="34103" x="-81652" y="150972" z="-3129" heading="48821" /> <!-- Revolutionaries' Altar -->
+			<npc id="34103" x="-80925" y="149734" z="-3044" heading="48821" /> <!-- Revolutionaries' Altar -->
+			<npc id="34103" x="-80902" y="151910" z="-3044" heading="48821" /> <!-- Revolutionaries' Altar -->
+		</group>
+		<group name="captives" spawnByDefault="false">
+			<npc id="34104" x="-79262" y="150981" z="-3040" heading="49803" /> <!-- Levian -->
+			<npc id="34105" x="-79256" y="150676" z="-3040" heading="16384" /> <!-- Zigaunt -->
+			<npc id="34106" x="-79559" y="150661" z="-3040" heading="16384" /> <!-- Iris -->
+			<npc id="34107" x="-79557" y="150982" z="-3040" heading="49152" /> <!-- Nell -->
+			<npc id="34108" x="-81864" y="149502" z="-3120" heading="49152" /> <!-- Baenedes -->
+			<npc id="34109" x="-81861" y="149197" z="-3120" heading="16384" /> <!-- Auron -->
+			<npc id="34110" x="-81688" y="149350" z="-3120" heading="32768" /> <!-- Ramos -->
+			<npc id="34111" x="-82212" y="149197" z="-3120" heading="16384" /> <!-- Celma -->
+			<npc id="34112" x="-82211" y="149504" z="-3120" heading="49152" /> <!-- Rhodiel -->
+			<npc id="34113" x="-84400" y="149872" z="-3029" heading="49152" /> <!-- Kalinta -->
+			<npc id="34114" x="-84661" y="149989" z="-3120" heading="0" /> <!-- Estella -->
+			<npc id="34115" x="-84642" y="149630" z="-3120" heading="8192" /> <!-- Talbot -->
+			<npc id="34116" x="-84401" y="149606" z="-3120" heading="16384" /> <!-- Xenos -->
+			<npc id="34117" x="-81908" y="152077" z="-3120" heading="0" /> <!-- Collen -->
+			<npc id="34118" x="-81199" y="151904" z="-3120" heading="27000" /> <!-- Galatea -->
+			<npc id="34119" x="-81266" y="152076" z="-3120" heading="32768" /> <!-- Asha -->
+			<npc id="34120" x="-81520" y="152256" z="-3120" heading="49376" /> <!-- Marsden-->
+			<npc id="34121" x="-81490" y="152254" z="-3120" heading="48074" /> <!-- Raminya -->
+			<npc id="34122" x="-79405" y="153963" z="-3152" heading="49152" /> <!-- Poesia -->
+			<npc id="34123" x="-79369" y="153318" z="-3160" heading="26000" /> <!-- Bleaker -->
+			<npc id="34124" x="-80108" y="153307" z="-3152" heading="0" /> <!-- Nestle -->
+			<npc id="34125" x="-80448" y="153208" z="-3076" heading="32000" /> <!-- Umos -->
+			<npc id="34126" x="-80448" y="153408" z="-3076" heading="32000" /> <!-- Kasman -->
+			<npc id="34127" x="-80343" y="154897" z="-3160" heading="16384" /> <!-- Arodin -->
+			<npc id="34128" x="-80935" y="155526" z="-3160" heading="0" /> <!-- Damion -->
+			<npc id="34129" x="-83197" y="155347" z="-3176" heading="0000" /> <!-- Rogen -->
+			<npc id="34130" x="-82930" y="155352" z="-3176" heading="33306" /> <!-- Lyan -->
+			<npc id="34131" x="-84773" y="153134" z="-3160" heading="16384" /> <!-- Shubain -->
+			<npc id="34132" x="-84697" y="153134" z="-3160" heading="16384" /> <!-- Sione -->
+			<npc id="34133" x="-81857" y="153545" z="-3168" heading="49152" /> <!-- Norman -->
+			<npc id="34134" x="-81913" y="153545" z="-3168" heading="49152" /> <!-- Moke -->
+			<npc id="34135" x="-81966" y="153547" z="-3168" heading="49152" /> <!-- Raut -->
+		</group>
+	</spawnlist>
+</instance>

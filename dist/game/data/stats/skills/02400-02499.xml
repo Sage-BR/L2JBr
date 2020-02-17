@@ -1,0 +1,3045 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="2400" toLevel="1" name="Coral Treasure Chest Key">
+		<castRange>40</castRange>
+		<effectPoint>-1</effectPoint>
+		<effectRange>400</effectRange>
+		<hitTime>500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10017</itemConsumeId> <!-- Coral Treasure Chest Key -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<reuseDelay>3000</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>DOOR_TREASURE</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpTargetNpc">
+				<npcIds>
+					<item>18477</item>
+				</npcIds>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="OpenChest" />
+		</effects>
+	</skill>
+	<skill id="2401" toLevel="1" name="Mana Recovery Potion (Battleground)">
+		<!-- Recovers MP. -->
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<reuseDelay>600000</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>52</minLevel>
+				<maxLevel>127</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="Mp">
+				<amount>360</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2402" toLevel="1" name="CP Recovery Potion (Battleground)">
+		<!-- Recovers CP. -->
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<reuseDelay>600000</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>52</minLevel>
+				<maxLevel>127</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="Cp">
+				<amount>1400</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2403" toLevel="1" name="Hot Springs CP Potion">
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<reuseDelay>300000</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="Cp">
+				<amount>1400</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2404" toLevel="1" name="Might">
+		<!-- Temporarily increases P. Atk. Effect 2. -->
+		<icon>icon.etc_hot_spring_nectar_i00</icon>
+		<abnormalLvl>2</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<abnormalType>PA_UP</abnormalType>
+		<effectPoint>1</effectPoint>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<magicLvl>20</magicLvl>
+		<operateType>A2</operateType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="PAtk">
+				<amount>12</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2405" toLevel="1" name="Shield">
+		<!-- Temporarily increases P. Def. Effect 2. -->
+		<icon>icon.etc_hot_spring_nectar_i00</icon>
+		<abnormalLvl>2</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<abnormalType>PD_UP</abnormalType>
+		<effectPoint>1</effectPoint>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<magicLvl>25</magicLvl>
+		<operateType>A2</operateType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="PhysicalDefence">
+				<amount>12</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2406" toLevel="1" name="Wind Walk">
+		<!-- Temporarily increases Speed. Effect 2. -->
+		<icon>icon.etc_hot_spring_nectar_i00</icon>
+		<abnormalLvl>2</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<abnormalType>SPEED_UP</abnormalType>
+		<effectPoint>1</effectPoint>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<magicLvl>30</magicLvl>
+		<operateType>A2</operateType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="Speed">
+				<amount>33</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2407" toLevel="1" name="Focus">
+		<!-- Temporarily increases Critical Rate Effect 2. -->
+		<icon>icon.etc_hot_spring_nectar_i00</icon>
+		<abnormalLvl>2</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<abnormalType>CRITICAL_PROB_UP</abnormalType>
+		<effectPoint>1</effectPoint>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<magicLvl>44</magicLvl>
+		<operateType>A2</operateType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="CriticalRate">
+				<amount>25</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2408" toLevel="1" name="Death Whisper">
+		<!-- Critical Damage is increased temporarily. Effect 2. -->
+		<icon>icon.etc_hot_spring_nectar_i00</icon>
+		<abnormalLvl>2</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<abnormalType>CRITICAL_DMG_UP</abnormalType>
+		<effectPoint>1</effectPoint>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<magicLvl>48</magicLvl>
+		<operateType>A2</operateType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="CriticalDamage">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2409" toLevel="1" name="Guidance">
+		<!-- Temporarily increases Accuracy. Effect 2. -->
+		<icon>icon.etc_hot_spring_nectar_i00</icon>
+		<abnormalLvl>2</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<abnormalType>HIT_UP</abnormalType>
+		<effectPoint>1</effectPoint>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<magicLvl>48</magicLvl>
+		<operateType>A2</operateType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="Accuracy">
+				<amount>3</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2410" toLevel="1" name="Blessed Shield">
+		<!-- Temporarily increases Shield Defense Rate. Effect 2. -->
+		<icon>icon.etc_hot_spring_nectar_i00</icon>
+		<abnormalLvl>2</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<abnormalType>SHIELD_PROB_UP</abnormalType>
+		<effectPoint>1</effectPoint>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<magicLvl>48</magicLvl>
+		<operateType>A2</operateType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="ShieldDefenceRate">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2411" toLevel="1" name="Blessed Body">
+		<!-- Temporarily increases Max HP. Effect 3. -->
+		<icon>icon.etc_hot_spring_nectar_i00</icon>
+		<abnormalLvl>3</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<abnormalType>MAX_HP_UP</abnormalType>
+		<effectPoint>1</effectPoint>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<magicLvl>52</magicLvl>
+		<operateType>A2</operateType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="MaxHp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2412" toLevel="1" name="Haste">
+		<!-- Temporarily increases Atk. Spd. Effect 1. -->
+		<icon>icon.etc_hot_spring_nectar_i00</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<abnormalType>ATTACK_TIME_DOWN</abnormalType>
+		<effectPoint>1</effectPoint>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<magicLvl>44</magicLvl>
+		<operateType>A2</operateType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="PhysicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2413" toLevel="1" name="Vampiric Rage">
+		<!-- Temporarily bestows the ability to recover HP using some of the damage inflicted on the enemy with a certain probability. Effect 2. -->
+		<icon>icon.etc_hot_spring_nectar_i00</icon>
+		<abnormalLvl>2</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<abnormalType>VAMPIRIC_ATTACK</abnormalType>
+		<effectPoint>1</effectPoint>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<magicLvl>44</magicLvl>
+		<operateType>A2</operateType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="VampiricAttack">
+				<amount>7</amount>
+				<chance>80</chance>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2414" toLevel="1" name="Berserker Spirit">
+		<!-- Temporarily decreases P. Def./ M. Def./ Evasion and increases P. Atk/ M Atk/ Atk. Spd./ Casting Spd./ speed. Effect 1. -->
+		<icon>icon.etc_hot_spring_nectar_i00</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<abnormalType>BERSERKER</abnormalType>
+		<effectPoint>1</effectPoint>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<magicLvl>35</magicLvl>
+		<operateType>A2</operateType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="PAtk">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Speed">
+				<amount>5</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>-10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>-5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalEvasion">
+				<amount>-2</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2415" toLevel="1" name="Magic Barrier">
+		<!-- Temporarily increases M. Def. Effect 2. -->
+		<icon>icon.etc_hot_spring_nectar_i00</icon>
+		<abnormalLvl>2</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<abnormalType>MD_UP</abnormalType>
+		<effectPoint>1</effectPoint>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<magicLvl>44</magicLvl>
+		<operateType>A2</operateType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="MagicalDefence">
+				<amount>23</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2416" toLevel="1" name="Blessed Soul">
+		<!-- Temporarily increases Max MP. Effect 3. -->
+		<icon>icon.etc_hot_spring_nectar_i00</icon>
+		<abnormalLvl>3</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<abnormalType>MAX_MP_UP</abnormalType>
+		<effectPoint>1</effectPoint>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<magicLvl>52</magicLvl>
+		<operateType>A2</operateType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="MaxMp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2417" toLevel="1" name="Empower">
+		<!-- Temporarily increases M. Atk. Effect 2. -->
+		<icon>icon.etc_hot_spring_nectar_i00</icon>
+		<abnormalLvl>2</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<abnormalType>MA_UP</abnormalType>
+		<effectPoint>1</effectPoint>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<magicLvl>44</magicLvl>
+		<operateType>A2</operateType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="MAtk">
+				<amount>65</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2418" toLevel="1" name="Acumen">
+		<!-- Temporarily increases Casting Spd. Effect 2. -->
+		<icon>icon.etc_hot_spring_nectar_i00</icon>
+		<abnormalLvl>2</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<abnormalType>CASTING_TIME_DOWN</abnormalType>
+		<effectPoint>1</effectPoint>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<magicLvl>35</magicLvl>
+		<operateType>A2</operateType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="MagicalAttackSpeed">
+				<amount>23</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2419" toLevel="1" name="Clarity">
+		<!-- Temporarily decreases the target's MP Consumption. Effect 1. -->
+		<icon>icon.etc_hot_spring_nectar_i00</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<abnormalType>CHEAP_MAGIC</abnormalType>
+		<effectPoint>1</effectPoint>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<magicLvl>58</magicLvl>
+		<operateType>A2</operateType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="MagicMpCost">
+				<amount>-4</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+			<effect name="MagicMpCost">
+				<amount>-10</amount>
+				<mode>PER</mode>
+				<magicType>0</magicType>
+			</effect>
+			<effect name="MagicMpCost">
+				<amount>-10</amount>
+				<mode>PER</mode>
+				<magicType>3</magicType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2420" toLevel="1" name="White Seed of Evil Lump">
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>20</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="Restoration">
+				<itemId>9597</itemId>
+				<itemCount>2</itemCount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2421" toLevel="1" name="Black Seed of Evil Lump">
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>20</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="Restoration">
+				<itemId>9598</itemId>
+				<itemCount>2</itemCount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2422" toLevel="1" name="1st Place Treasure Sack">
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10254</itemConsumeId>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>20</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="27.2628">
+						<item id="10295" count="1" /> <!-- Transformation Sealbook: Zaken -->
+					</item>
+					<item chance="27.2628">
+						<item id="10296" count="1" /> <!-- Transformation Sealbook: Anakim -->
+					</item>
+					<item chance="26">
+						<item id="17263" count="1" /> <!-- Blessed Scroll: Enchant Weapon (S-grade) - Event -->
+						<item id="21185" count="2" /> <!-- Transformation Scroll: Zaken - Event -->
+						<item id="21186" count="2" /> <!-- Transformation Scroll: Anakim - Event -->
+					</item>
+					<item chance="20">
+						<item id="17264" count="1" /> <!-- Blessed Scroll: Enchant Armor (S-grade) - Event -->
+						<item id="21185" count="2" /> <!-- Transformation Scroll: Zaken - Event -->
+						<item id="21186" count="2" /> <!-- Transformation Scroll: Anakim - Event -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2423" toLevel="2" name="2nd Place Treasure Sack">
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10255</itemConsumeId>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>20</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom" fromLevel="2" toLevel="2">
+				<items>
+					<value level="2">
+						<item chance="0.4194">
+							<item id="10297" count="1" /> <!-- Transformation Sealbook: Venom -->
+						</item>
+						<item chance="0.4194">
+							<item id="10300" count="1" /> <!-- Transformation Sealbook: Kechi -->
+						</item>
+						<item chance="0.4194">
+							<item id="10301" count="1" /> <!-- Transformation Sealbook: Demon Prince -->
+						</item>
+						<item chance="24.6855">
+							<item id="17263" count="1" /> <!-- Blessed Scroll: Enchant Weapon (S-grade) - Event -->
+							<item id="21185" count="1" /> <!-- Transformation Scroll: Zaken - Event -->
+							<item id="21186" count="1" /> <!-- Transformation Scroll: Anakim - Event -->
+						</item>
+						<item chance="24.6855">
+							<item id="17264" count="1" /> <!-- Blessed Scroll: Enchant Armor (S-grade) - Event -->
+							<item id="21185" count="1" /> <!-- Transformation Scroll: Zaken - Event -->
+							<item id="21186" count="1" /> <!-- Transformation Scroll: Anakim - Event -->
+						</item>
+						<item chance="24.6855">
+							<item id="17255" count="1" /> <!-- Blessed Scroll: Enchant Weapon (A-grade) - Event -->
+							<item id="21185" count="1" /> <!-- Transformation Scroll: Zaken - Event -->
+							<item id="21186" count="1" /> <!-- Transformation Scroll: Anakim - Event -->
+						</item>
+						<item chance="24.6855">
+							<item id="17256" count="1" /> <!-- Blessed Scroll: Enchant Armor (A-grade) - Event -->
+							<item id="21185" count="1" /> <!-- Transformation Scroll: Zaken - Event -->
+							<item id="21186" count="1" /> <!-- Transformation Scroll: Anakim - Event -->
+						</item>
+					</value>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2424" toLevel="3" name="3rd Place Treasure Sack">
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10256</itemConsumeId>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>20</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom" fromLevel="3" toLevel="3">
+				<items>
+					<item chance="0.229">
+						<item id="10298" count="1" /> <!-- Transformation Sealbook: Gordon -->
+					</item>
+					<item chance="0.229">
+						<item id="10299" count="1" /> <!-- Transformation Sealbook: Ranku -->
+					</item>
+					<item chance="7.6571">
+						<item id="10303" count="1" /> <!-- Transformation Sealbook: Veil Master -->
+					</item>
+					<item chance="7.6571">
+						<item id="10302" count="1" /> <!-- Transformation Sealbook: Heretic -->
+					</item>
+					<item chance="7.6571">
+						<item id="10304" count="1" /> <!-- Transformation Sealbook: Saber Tooth Tiger -->
+					</item>
+					<item chance="7.6571">
+						<item id="10305" count="1" /> <!-- Transformation Sealbook: Oel Mahum -->
+					</item>
+					<item chance="7.6571">
+						<item id="10306" count="1" /> <!-- Transformation Sealbook: Doll Blader -->
+					</item>
+					<item chance="7.6571">
+						<item id="17255" count="1" /> <!-- Blessed Scroll: Enchant Weapon (A-grade) - Event -->
+					</item>
+					<item chance="7.6571">
+						<item id="17256" count="1" /> <!-- Blessed Scroll: Enchant Armor (A-grade) - Event -->
+					</item>
+					<item chance="7.6571">
+						<item id="9552" count="1" /> <!-- Fire Crystal -->
+					</item>
+					<item chance="7.6571">
+						<item id="9553" count="1" /> <!-- Water Crystal -->
+					</item>
+					<item chance="7.6571">
+						<item id="9554" count="1" /> <!-- Earth Crystal -->
+					</item>
+					<item chance="7.6571">
+						<item id="9555" count="1" /> <!-- Wind Crystal -->
+					</item>
+					<item chance="7.6571">
+						<item id="9556" count="1" /> <!-- Dark Crystal -->
+					</item>
+					<item chance="7.6571">
+						<item id="9557" count="1" /> <!-- Holy Crystal -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2425" toLevel="4" name="4th Place Treasure Sack">
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10257</itemConsumeId>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>20</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom" fromLevel="4" toLevel="4">
+				<items>
+					<item chance="10">
+						<item id="21188" count="3" /> <!-- Transformation Scroll: Gordon - Event -->
+						<item id="21189" count="3" /> <!-- Transformation Scroll: Ranku - Event -->
+						<item id="21190" count="3" /> <!-- Transformation Scroll: Kechi - Event -->
+						<item id="21191" count="3" /> <!-- Transformation Scroll: Demon Prince - Event -->
+						<item id="21187" count="3" /> <!-- Transformation Scroll: Venom - Event -->
+					</item>
+					<item chance="20">
+						<item id="21174" count="3" /> <!-- Transformation Scroll: Grail Apostle - Event -->
+						<item id="21175" count="3" /> <!-- Transformation Scroll: Unicorn - Event -->
+						<item id="21176" count="3" /> <!-- Transformation Scroll: Lilim Knight - Event -->
+					</item>
+					<item chance="20">
+						<item id="21177" count="3" /> <!-- Transformation Scroll: Golem Guardian - Event -->
+						<item id="21178" count="3" /> <!-- Transformation Scroll: Inferno Drake - Event -->
+						<item id="21179" count="3" /> <!-- Transformation Scroll: Dragon Bomber - Event -->
+					</item>
+					<item chance="5">
+						<item id="17257" count="1" /> <!-- Blessed Scroll: Enchant Weapon (B-grade) - Event -->
+					</item>
+					<item chance="15">
+						<item id="17258" count="1" /> <!-- Blessed Scroll: Enchant Armor (B-grade) - Event -->
+					</item>
+					<item chance="5">
+						<item id="9552" count="1" /> <!-- Fire Crystal -->
+					</item>
+					<item chance="5">
+						<item id="9553" count="1" /> <!-- Water Crystal -->
+					</item>
+					<item chance="5">
+						<item id="9554" count="1" /> <!-- Earth Crystal -->
+					</item>
+					<item chance="5">
+						<item id="9555" count="1" /> <!-- Wind Crystal -->
+					</item>
+					<item chance="5">
+						<item id="9556" count="1" /> <!-- Dark Crystal -->
+					</item>
+					<item chance="5">
+						<item id="9557" count="1" /> <!-- Holy Crystal -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2426" toLevel="5" name="5th Place Treasure sack">
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10258</itemConsumeId>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>20</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom" fromLevel="5" toLevel="5">
+				<items>
+					<item chance="10">
+						<item id="21190" count="2" /> <!-- Transformation Scroll: Kechi - Event -->
+						<item id="21191" count="2" /> <!-- Transformation Scroll: Demon Prince - Event -->
+						<item id="21187" count="2" /> <!-- Transformation Scroll: Venom - Event -->
+					</item>
+					<item chance="15">
+						<item id="21174" count="2" /> <!-- Transformation Scroll: Grail Apostle - Event -->
+						<item id="21175" count="2" /> <!-- Transformation Scroll: Unicorn - Event -->
+						<item id="21176" count="2" /> <!-- Transformation Scroll: Lilim Knight - Event -->
+					</item>
+					<item chance="15">
+						<item id="21177" count="2" /> <!-- Transformation Scroll: Golem Guardian - Event -->
+						<item id="21178" count="2" /> <!-- Transformation Scroll: Inferno Drake - Event -->
+						<item id="21179" count="2" /> <!-- Transformation Scroll: Dragon Bomber - Event -->
+					</item>
+					<item chance="10">
+						<item id="17259" count="1" /> <!-- Blessed Scroll: Enchant Weapon (C-grade) - Event -->
+					</item>
+					<item chance="7.1429">
+						<item id="17260" count="1" /> <!-- Blessed Scroll: Enchant Armor (C-grade) - Event -->
+					</item>
+					<item chance="7.1429">
+						<item id="9546" count="1" /> <!-- Fire Stone -->
+					</item>
+					<item chance="7.1429">
+						<item id="9547" count="1" /> <!-- Water Stone -->
+					</item>
+					<item chance="7.1429">
+						<item id="9548" count="1" /> <!-- Earth Stone -->
+					</item>
+					<item chance="7.1429">
+						<item id="9549" count="1" /> <!-- Wind Stone -->
+					</item>
+					<item chance="7.1429">
+						<item id="9550" count="1" /> <!-- Dark Stone -->
+					</item>
+					<item chance="7.1429">
+						<item id="9551" count="1" /> <!-- Holy Stone -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2427" toLevel="6" name="6th Place Treasure Sack">
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10259</itemConsumeId>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>20</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom" fromLevel="6" toLevel="6">
+				<items>
+					<item chance="22.5">
+						<item id="21174" count="1" /> <!-- Transformation Scroll: Grail Apostle - Event -->
+						<item id="21175" count="1" /> <!-- Transformation Scroll: Unicorn - Event -->
+						<item id="21176" count="1" /> <!-- Transformation Scroll: Lilim Knight - Event -->
+						<item id="21172" count="1" /> <!-- Transformation Scroll: Onyx Beast - Event -->
+					</item>
+					<item chance="22.5">
+						<item id="21177" count="1" /> <!-- Transformation Scroll: Golem Guardian - Event -->
+						<item id="21178" count="1" /> <!-- Transformation Scroll: Inferno Drake - Event -->
+						<item id="21179" count="1" /> <!-- Transformation Scroll: Dragon Bomber - Event -->
+						<item id="21173" count="1" /> <!-- Transformation Scroll: Doom Wraith - Event -->
+					</item>
+					<item chance="15">
+						<item id="17261" count="1" /> <!-- Blessed Scroll: Enchant Weapon (D-grade) - Event -->
+					</item>
+					<item chance="5.01">
+						<item id="17262" count="1" /> <!-- Blessed Scroll: Enchant Armor (D-grade) - Event -->
+					</item>
+					<item chance="5.8333">
+						<item id="9546" count="1" /> <!-- Fire Stone -->
+					</item>
+					<item chance="5.8333">
+						<item id="9547" count="1" /> <!-- Water Stone -->
+					</item>
+					<item chance="5.8333">
+						<item id="9548" count="1" /> <!-- Earth Stone -->
+					</item>
+					<item chance="5.8333">
+						<item id="9549" count="1" /> <!-- Wind Stone -->
+					</item>
+					<item chance="5.8333">
+						<item id="9550" count="1" /> <!-- Dark Stone -->
+					</item>
+					<item chance="5.8333">
+						<item id="9551" count="1" /> <!-- Holy Stone -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2428" toLevel="1" name="Transformation Scroll: Rabbit">
+		<!-- Transforms into a cute bunny. -->
+		<icon>icon.skill0298</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>600</abnormalTime>
+		<abnormalType>TRANSFORM</abnormalType>
+		<effectPoint>1</effectPoint>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10274</itemConsumeId> <!-- Transformation Scroll: Rabbit -->
+		<magicLvl>-1</magicLvl>
+		<operateType>A2</operateType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CanTransform">
+				<transformId>105</transformId>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="Transformation">
+				<transformationId>105</transformationId>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2429" toLevel="1" name="Haste Potion">
+		<!-- Increases Atk. Spd. by 33% for 60 min. -->
+		<icon>icon.etc_fruit_juice_glass_bottle_i00</icon>
+		<abnormalLvl>3</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<abnormalType>ATTACK_TIME_DOWN</abnormalType>
+		<effectPoint>1</effectPoint>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10260</itemConsumeId> <!-- Alacrity Juice -->
+		<magicLvl>1</magicLvl>
+		<operateType>A2</operateType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="PhysicalAttackSpeed">
+				<amount>33</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2430" toLevel="1" name="Accuracy Juice">
+		<!-- Increases Accuracy by 4 for 60 min. -->
+		<icon>icon.etc_fruit_juice_glass_bottle_i01</icon>
+		<abnormalLvl>4</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<abnormalType>HIT_UP</abnormalType>
+		<effectPoint>1</effectPoint>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10261</itemConsumeId> <!-- Accuracy Juice -->
+		<magicLvl>1</magicLvl>
+		<operateType>A2</operateType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="Accuracy">
+				<amount>4</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2431" toLevel="1" name="Critical Damage Juice">
+		<!-- Increases Critical Damage by 35% for 60 min. -->
+		<icon>icon.etc_fruit_juice_glass_bottle_i02</icon>
+		<abnormalLvl>4</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<abnormalType>CRITICAL_DMG_UP</abnormalType>
+		<effectPoint>1</effectPoint>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10262</itemConsumeId> <!-- Critical Hit Juice -->
+		<magicLvl>1</magicLvl>
+		<operateType>A2</operateType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="CriticalDamage">
+				<amount>35</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2432" toLevel="1" name="Critical Rate Juice">
+		<!-- Increases Critical Rate by 30% for 60 min. -->
+		<icon>icon.etc_fruit_juice_glass_bottle_i03</icon>
+		<abnormalLvl>4</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<abnormalType>CRITICAL_PROB_UP</abnormalType>
+		<effectPoint>1</effectPoint>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10263</itemConsumeId> <!-- Critical Rate Juice -->
+		<magicLvl>1</magicLvl>
+		<operateType>A2</operateType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="CriticalRate">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2433" toLevel="1" name="Casting Spd. Juice">
+		<!-- Increases Casting Spd. by 30% for 60 min. -->
+		<icon>icon.etc_fruit_juice_glass_bottle_i04</icon>
+		<abnormalLvl>4</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<abnormalType>CASTING_TIME_DOWN</abnormalType>
+		<effectPoint>1</effectPoint>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10264</itemConsumeId> <!-- Casting Spd. Juice -->
+		<magicLvl>1</magicLvl>
+		<operateType>A2</operateType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="MagicalAttackSpeed">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2434" toLevel="1" name="Evasion Juice">
+		<!-- Increases Evasion by 4 for 60 min. -->
+		<icon>icon.etc_fruit_juice_glass_bottle_i05</icon>
+		<abnormalLvl>4</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<abnormalType>AVOID_UP</abnormalType>
+		<effectPoint>1</effectPoint>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10265</itemConsumeId> <!-- Evasion Juice -->
+		<magicLvl>1</magicLvl>
+		<operateType>A2</operateType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="PhysicalEvasion">
+				<amount>4</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2435" toLevel="1" name="M. Atk. Juice">
+		<!-- Increases M. Atk. by 75% for 60 min. -->
+		<icon>icon.etc_fruit_juice_glass_bottle_i06</icon>
+		<abnormalLvl>4</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<abnormalType>MA_UP</abnormalType>
+		<effectPoint>1</effectPoint>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10266</itemConsumeId> <!-- M. Atk. Juice -->
+		<magicLvl>1</magicLvl>
+		<operateType>A2</operateType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="MAtk">
+				<amount>75</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2436" toLevel="1" name="P. Atk. Potion">
+		<!-- Increases P. Atk. by 15% for 60 min. -->
+		<icon>icon.etc_fruit_juice_glass_bottle_i07</icon>
+		<abnormalLvl>4</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<abnormalType>PA_UP</abnormalType>
+		<effectPoint>1</effectPoint>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10267</itemConsumeId> <!-- Power Juice -->
+		<magicLvl>1</magicLvl>
+		<operateType>A2</operateType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="PAtk">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2437" toLevel="1" name="Wind Walk Juice">
+		<!-- Increases Speed by 60 for 33 min. -->
+		<icon>icon.etc_fruit_juice_glass_bottle_i08</icon>
+		<abnormalLvl>3</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<abnormalType>SPEED_UP</abnormalType>
+		<effectPoint>1</effectPoint>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10268</itemConsumeId> <!-- Speed Juice -->
+		<magicLvl>1</magicLvl>
+		<operateType>A2</operateType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="Speed">
+				<amount>33</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2438" toLevel="1" name="P. Def. Juice">
+		<!-- Increases P. Def. by 15% for 60 min. -->
+		<icon>icon.etc_fruit_juice_glass_bottle_i09</icon>
+		<abnormalLvl>4</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<abnormalType>PD_UP</abnormalType>
+		<effectPoint>1</effectPoint>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10269</itemConsumeId> <!-- Defense Juice -->
+		<magicLvl>1</magicLvl>
+		<operateType>A2</operateType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="PhysicalDefence">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2439" toLevel="1" name="MP Consumption Juice">
+		<!-- For 60 min., decreases MP consumption by 10% for physical skills, by 4% for magic skills, and by 10 for song/ dance skills. -->
+		<icon>icon.etc_fruit_juice_glass_bottle_i10</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<abnormalType>CHEAP_MAGIC</abnormalType>
+		<effectPoint>1</effectPoint>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10270</itemConsumeId> <!-- MP Consumption Juice -->
+		<magicLvl>1</magicLvl>
+		<operateType>A2</operateType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="MagicMpCost">
+				<amount>-4</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+			<effect name="MagicMpCost">
+				<amount>-10</amount>
+				<mode>PER</mode>
+				<magicType>0</magicType>
+			</effect>
+			<effect name="MagicMpCost">
+				<amount>-10</amount>
+				<mode>PER</mode>
+				<magicType>3</magicType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2440" toLevel="1" name="Ancient Tome of the Demon">
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>9599</itemConsumeId>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>20</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="40">
+						<item id="9600" count="1" /> <!-- Hidden First Page -->
+					</item>
+					<item chance="50">
+						<item id="9601" count="2" /> <!-- Hidden Second Page -->
+					</item>
+					<item chance="10">
+						<item id="9602" count="1" /> <!-- Demon Contract Fragment -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2441" toLevel="1" name="Protection of Rune">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10549</itemConsumeId> <!-- Forgotten Scroll - Protection of Rune -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>82</minLevel>
+				<maxLevel>84</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+			<condition name="OpSkill">
+				<skillId>755</skillId> <!-- Protection of Rune -->
+				<skillLevel>1</skillLevel>
+				<hasLearned>false</hasLearned>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SetSkill">
+				<skillId>755</skillId> <!-- Protection of Rune -->
+				<skillLvl>1</skillLvl>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2442" toLevel="1" name="Protection of Elemental">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10550</itemConsumeId> <!-- Forgotten Scroll - Protection of Elemental -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>82</minLevel>
+				<maxLevel>84</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+			<condition name="OpSkill">
+				<skillId>756</skillId> <!-- Protection of Elemental -->
+				<skillLevel>1</skillLevel>
+				<hasLearned>false</hasLearned>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SetSkill">
+				<skillId>756</skillId> <!-- Protection of Elemental -->
+				<skillLvl>1</skillLvl>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2443" toLevel="1" name="Protection of Alignment">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10551</itemConsumeId> <!-- Forgotten Scroll - Protection of Alignment -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>82</minLevel>
+				<maxLevel>84</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+			<condition name="OpSkill">
+				<skillId>757</skillId> <!-- Protection of Alignment -->
+				<skillLevel>1</skillLevel>
+				<hasLearned>false</hasLearned>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SetSkill">
+				<skillId>757</skillId> <!-- Protection of Alignment -->
+				<skillLvl>1</skillLvl>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2444" toLevel="1" name="Fighter's Will">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10552</itemConsumeId> <!-- Forgotten Scroll - Fighter's Will -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>81</minLevel>
+				<maxLevel>84</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+			<condition name="OpSkill">
+				<skillId>758</skillId> <!-- Fighter's Will -->
+				<skillLevel>1</skillLevel>
+				<hasLearned>false</hasLearned>
+			</condition>
+			<condition name="OpCheckClass">
+				<classId>MAGE</classId>
+				<affectType>CASTER</affectType>
+				<isWithin>false</isWithin>
+			</condition>
+			<condition name="OpCheckClass">
+				<classId>ELVEN_MAGE</classId>
+				<affectType>CASTER</affectType>
+				<isWithin>false</isWithin>
+			</condition>
+			<condition name="OpCheckClass">
+				<classId>ELVEN_MAGE</classId>
+				<affectType>CASTER</affectType>
+				<isWithin>false</isWithin>
+			</condition>
+			<condition name="OpCheckClass">
+				<classId>DARK_MAGE</classId>
+				<affectType>CASTER</affectType>
+				<isWithin>false</isWithin>
+			</condition>
+			<condition name="OpCheckClass">
+				<classId>ORC_MAGE</classId>
+				<affectType>CASTER</affectType>
+				<isWithin>false</isWithin>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SetSkill">
+				<skillId>758</skillId> <!-- Fighter's Will -->
+				<skillLvl>1</skillLvl>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2445" toLevel="1" name="Archer's Will">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10553</itemConsumeId> <!-- Forgotten Scroll - Archer's Will -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>81</minLevel>
+				<maxLevel>84</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+			<condition name="OpSkill">
+				<skillId>759</skillId> <!-- Archer's Will -->
+				<skillLevel>1</skillLevel>
+				<hasLearned>false</hasLearned>
+			</condition>
+			<condition name="OpCheckClass">
+				<classId>MAGE</classId>
+				<affectType>CASTER</affectType>
+				<isWithin>false</isWithin>
+			</condition>
+			<condition name="OpCheckClass">
+				<classId>ELVEN_MAGE</classId>
+				<affectType>CASTER</affectType>
+				<isWithin>false</isWithin>
+			</condition>
+			<condition name="OpCheckClass">
+				<classId>ELVEN_MAGE</classId>
+				<affectType>CASTER</affectType>
+				<isWithin>false</isWithin>
+			</condition>
+			<condition name="OpCheckClass">
+				<classId>DARK_MAGE</classId>
+				<affectType>CASTER</affectType>
+				<isWithin>false</isWithin>
+			</condition>
+			<condition name="OpCheckClass">
+				<classId>ORC_MAGE</classId>
+				<affectType>CASTER</affectType>
+				<isWithin>false</isWithin>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SetSkill">
+				<skillId>759</skillId> <!-- Archer's Will -->
+				<skillLvl>1</skillLvl>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2446" toLevel="1" name="Anti Magic Armor">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10554</itemConsumeId> <!-- Forgotten Scroll - Anti-Magic Armor -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>81</minLevel>
+				<maxLevel>84</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+			<condition name="OpCheckClassList">
+				<classIds>
+					<item>PHOENIX_KNIGHT</item>
+					<item>HELL_KNIGHT</item>
+					<item>EVA_TEMPLAR</item>
+					<item>SHILLIEN_TEMPLAR</item>
+				</classIds>
+				<affectType>CASTER</affectType>
+				<isWithin>true</isWithin>
+			</condition>
+			<condition name="OpSkill">
+				<skillId>760</skillId> <!-- Anti Magic Armor -->
+				<skillLevel>1</skillLevel>
+				<hasLearned>false</hasLearned>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SetSkill">
+				<skillId>760</skillId> <!-- Anti Magic Armor -->
+				<skillLvl>1</skillLvl>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2447" toLevel="1" name="Seed of Revenge">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10555</itemConsumeId> <!-- Forgotten Scroll - Seed of Revenge -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>83</minLevel>
+				<maxLevel>84</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+			<condition name="OpSkill">
+				<skillId>762</skillId> <!-- Insane Crusher -->
+				<skillLevel>1</skillLevel>
+				<hasLearned>false</hasLearned>
+			</condition>
+			<condition name="OpCheckClass">
+				<classId>HELL_KNIGHT</classId>
+				<affectType>CASTER</affectType>
+				<isWithin>true</isWithin>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SetSkill">
+				<skillId>761</skillId> <!-- Seed of Revenge -->
+				<skillLvl>1</skillLvl>
+			</effect>
+			<effect name="SetSkill">
+				<skillId>762</skillId> <!-- Insane Crusher -->
+				<skillLvl>1</skillLvl>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2448" toLevel="1" name="Hell Scream">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10556</itemConsumeId> <!-- Forgotten Scroll - Hell Scream -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>81</minLevel>
+				<maxLevel>84</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+			<condition name="OpSkill">
+				<skillId>763</skillId> <!-- Hell Scream -->
+				<skillLevel>1</skillLevel>
+				<hasLearned>false</hasLearned>
+			</condition>
+			<condition name="OpCheckClass">
+				<classId>HELL_KNIGHT</classId>
+				<affectType>CASTER</affectType>
+				<isWithin>true</isWithin>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SetSkill">
+				<skillId>763</skillId> <!-- Hell Scream -->
+				<skillLvl>1</skillLvl>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2449" toLevel="1" name="Song of Windstorm">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10557</itemConsumeId> <!-- Forgotten Scroll - Song of Windstorm -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>75</minLevel>
+				<maxLevel>84</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+			<condition name="OpSkill">
+				<skillId>764</skillId> <!-- Windstorm Song -->
+				<skillLevel>1</skillLevel>
+				<hasLearned>false</hasLearned>
+			</condition>
+			<condition name="OpCheckClass">
+				<classId>SWORD_MUSE</classId>
+				<affectType>CASTER</affectType>
+				<isWithin>true</isWithin>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SetSkill">
+				<skillId>764</skillId> <!-- Windstorm Song -->
+				<skillLvl>1</skillLvl>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2450" toLevel="1" name="Blade Storm">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10558</itemConsumeId> <!-- Forgotten Scroll - Dance of Blade Storm -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>75</minLevel>
+				<maxLevel>84</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+			<condition name="OpSkill">
+				<skillId>765</skillId> <!-- Dance of Blade Storm -->
+				<skillLevel>1</skillLevel>
+				<hasLearned>false</hasLearned>
+			</condition>
+			<condition name="OpCheckClass">
+				<classId>SPECTRAL_DANCER</classId>
+				<affectType>CASTER</affectType>
+				<isWithin>true</isWithin>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SetSkill">
+				<skillId>765</skillId> <!-- Dance of Blade Storm -->
+				<skillLvl>1</skillLvl>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2451" toLevel="1" name="Sixth Sense">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10559</itemConsumeId> <!-- Forgotten Scroll - Sixth Sense -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>81</minLevel>
+				<maxLevel>84</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+			<condition name="OpCheckClassList">
+				<classIds>
+					<item>PHOENIX_KNIGHT</item>
+					<item>HELL_KNIGHT</item>
+					<item>EVA_TEMPLAR</item>
+					<item>SHILLIEN_TEMPLAR</item>
+					<item>ADVENTURER</item>
+					<item>SWORD_MUSE</item>
+					<item>WIND_RIDER</item>
+					<item>SPECTRAL_DANCER</item>
+					<item>GHOST_HUNTER</item>
+					<item>MALE_SOUL_HOUND</item>
+					<item>FEMALE_SOUL_HOUND</item>
+					<item>TRICKSTER</item>
+				</classIds>
+				<affectType>CASTER</affectType>
+				<isWithin>true</isWithin>
+			</condition>
+			<condition name="OpSkill">
+				<skillId>766</skillId> <!-- Sixth Sense -->
+				<skillLevel>1</skillLevel>
+				<hasLearned>false</hasLearned>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SetSkill">
+				<skillId>766</skillId> <!-- Sixth Sense -->
+				<skillLvl>1</skillLvl>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2452" toLevel="1" name="Expose Vulnerability">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10560</itemConsumeId> <!-- Forgotten Scroll - Expose Weak Point -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>81</minLevel>
+				<maxLevel>84</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+			<condition name="OpCheckClassList">
+				<classIds>
+					<item>DUELIST</item>
+					<item>DREADNOUGHT</item>
+					<item>TITAN</item>
+					<item>GRAND_KHAVATARI</item>
+					<item>FORTUNE_SEEKER</item>
+					<item>MAESTRO</item>
+					<item>ADVENTURER</item>
+					<item>WIND_RIDER</item>
+					<item>GHOST_HUNTER</item>
+					<item>MALE_SOUL_HOUND</item>
+					<item>FEMALE_SOUL_HOUND</item>
+					<item>DOOMBRINGER</item>
+				</classIds>
+				<affectType>CASTER</affectType>
+				<isWithin>true</isWithin>
+			</condition>
+			<condition name="OpSkill">
+				<skillId>767</skillId> <!-- Expose Vulnerability -->
+				<skillLevel>1</skillLevel>
+				<hasLearned>false</hasLearned>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SetSkill">
+				<skillId>767</skillId> <!-- Expose Vulnerability -->
+				<skillLvl>1</skillLvl>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2453" toLevel="1" name="Exciting Adventure">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10561</itemConsumeId> <!-- Forgotten Scroll - Exciting Adventure -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>83</minLevel>
+				<maxLevel>84</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+			<condition name="OpSkill">
+				<skillId>768</skillId> <!-- Exciting Adventure -->
+				<skillLevel>1</skillLevel>
+				<hasLearned>false</hasLearned>
+			</condition>
+			<condition name="OpCheckClass">
+				<classId>ADVENTURER</classId>
+				<affectType>CASTER</affectType>
+				<isWithin>true</isWithin>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SetSkill">
+				<skillId>768</skillId> <!-- Exciting Adventure -->
+				<skillLvl>1</skillLvl>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2454" toLevel="1" name="Wind Riding">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10562</itemConsumeId> <!-- Forgotten Scroll - Wind Riding -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>83</minLevel>
+				<maxLevel>84</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+			<condition name="OpSkill">
+				<skillId>769</skillId> <!-- Wind Riding -->
+				<skillLevel>1</skillLevel>
+				<hasLearned>false</hasLearned>
+			</condition>
+			<condition name="OpCheckClass">
+				<classId>WIND_RIDER</classId>
+				<affectType>CASTER</affectType>
+				<isWithin>true</isWithin>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SetSkill">
+				<skillId>769</skillId> <!-- Wind Riding -->
+				<skillLvl>1</skillLvl>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2455" toLevel="1" name="Ghost Walking">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10563</itemConsumeId> <!-- Forgotten Scroll - Ghost Walking -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>83</minLevel>
+				<maxLevel>84</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+			<condition name="OpSkill">
+				<skillId>770</skillId> <!-- Ghost Walking -->
+				<skillLevel>1</skillLevel>
+				<hasLearned>false</hasLearned>
+			</condition>
+			<condition name="OpCheckClass">
+				<classId>GHOST_HUNTER</classId>
+				<affectType>CASTER</affectType>
+				<isWithin>true</isWithin>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SetSkill">
+				<skillId>770</skillId> <!-- Ghost Walking -->
+				<skillLvl>1</skillLvl>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2456" toLevel="1" name="Flame Hawk">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10564</itemConsumeId> <!-- Forgotten Scroll - Flame Hawk -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>83</minLevel>
+				<maxLevel>84</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+			<condition name="OpSkill">
+				<skillId>771</skillId> <!-- Flame Hawk -->
+				<skillLevel>1</skillLevel>
+				<hasLearned>false</hasLearned>
+			</condition>
+			<condition name="OpCheckClass">
+				<classId>SAGITTARIUS</classId>
+				<affectType>CASTER</affectType>
+				<isWithin>true</isWithin>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SetSkill">
+				<skillId>771</skillId> <!-- Flame Hawk -->
+				<skillLvl>1</skillLvl>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2457" toLevel="1" name="Arrow Rain">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10565</itemConsumeId> <!-- Forgotten Scroll - Arrow Rain -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>83</minLevel>
+				<maxLevel>84</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+			<condition name="OpSkill">
+				<skillId>772</skillId> <!-- Arrow Rain -->
+				<skillLevel>1</skillLevel>
+				<hasLearned>false</hasLearned>
+			</condition>
+			<condition name="OpCheckClass">
+				<classId>MOONLIGHT_SENTINEL</classId>
+				<affectType>CASTER</affectType>
+				<isWithin>true</isWithin>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SetSkill">
+				<skillId>772</skillId> <!-- Arrow Rain -->
+				<skillLvl>1</skillLvl>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2458" toLevel="1" name="Ghost Piercing">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10566</itemConsumeId> <!-- Forgotten Scroll - Ghost Piercing -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>83</minLevel>
+				<maxLevel>84</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+			<condition name="OpSkill">
+				<skillId>773</skillId> <!-- Ghost Piercing -->
+				<skillLevel>1</skillLevel>
+				<hasLearned>false</hasLearned>
+			</condition>
+			<condition name="OpCheckClass">
+				<classId>GHOST_SENTINEL</classId>
+				<affectType>CASTER</affectType>
+				<isWithin>true</isWithin>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SetSkill">
+				<skillId>773</skillId> <!-- Ghost Piercing -->
+				<skillLvl>1</skillLvl>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2459" toLevel="1" name="Dread Pool">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10567</itemConsumeId> <!-- Forgotten Scroll - Dread Pool -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>83</minLevel>
+				<maxLevel>84</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+			<condition name="OpSkill">
+				<skillId>774</skillId> <!-- Dread Pool -->
+				<skillLevel>1</skillLevel>
+				<hasLearned>false</hasLearned>
+			</condition>
+			<condition name="OpCheckClass">
+				<classId>DREADNOUGHT</classId>
+				<affectType>CASTER</affectType>
+				<isWithin>true</isWithin>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SetSkill">
+				<skillId>774</skillId> <!-- Dread Pool -->
+				<skillLvl>1</skillLvl>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2460" toLevel="1" name="Weapon Blockade">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10568</itemConsumeId> <!-- Forgotten Scroll - Weapon Blockade -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>79</minLevel>
+				<maxLevel>84</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+			<condition name="OpSkill">
+				<skillId>775</skillId> <!-- Weapon Blockade -->
+				<skillLevel>1</skillLevel>
+				<hasLearned>false</hasLearned>
+			</condition>
+			<condition name="OpCheckClass">
+				<classId>DUELIST</classId>
+				<affectType>CASTER</affectType>
+				<isWithin>true</isWithin>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SetSkill">
+				<skillId>775</skillId> <!-- Weapon Blockade -->
+				<skillLvl>1</skillLvl>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2461" toLevel="1" name="Force of Destruction">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10569</itemConsumeId> <!-- Forgotten Scroll - Force of Destruction -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>83</minLevel>
+				<maxLevel>84</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+			<condition name="OpSkill">
+				<skillId>776</skillId> <!-- Force of Destruction -->
+				<skillLevel>1</skillLevel>
+				<hasLearned>false</hasLearned>
+			</condition>
+			<condition name="OpCheckClass">
+				<classId>GRAND_KHAVATARI</classId>
+				<affectType>CASTER</affectType>
+				<isWithin>true</isWithin>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SetSkill">
+				<skillId>776</skillId> <!-- Force of Destruction -->
+				<skillLvl>1</skillLvl>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2462" toLevel="1" name="Demolition Impact">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10570</itemConsumeId> <!-- Forgotten Scroll - Demolition Impact -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>83</minLevel>
+				<maxLevel>84</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+			<condition name="OpSkill">
+				<skillId>777</skillId> <!-- Demolition Impact -->
+				<skillLevel>1</skillLevel>
+				<hasLearned>false</hasLearned>
+			</condition>
+			<condition name="OpCheckClass">
+				<classId>TITAN</classId>
+				<affectType>CASTER</affectType>
+				<isWithin>true</isWithin>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SetSkill">
+				<skillId>777</skillId> <!-- Demolition Impact -->
+				<skillLvl>1</skillLvl>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2463" toLevel="1" name="Golem Armor">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10571</itemConsumeId> <!-- Forgotten Scroll - Golem Armor -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>83</minLevel>
+				<maxLevel>84</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+			<condition name="OpSkill">
+				<skillId>778</skillId> <!-- Golem Armor -->
+				<skillLevel>1</skillLevel>
+				<hasLearned>false</hasLearned>
+			</condition>
+			<condition name="OpCheckClass">
+				<classId>MAESTRO</classId>
+				<affectType>CASTER</affectType>
+				<isWithin>true</isWithin>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SetSkill">
+				<skillId>778</skillId> <!-- Golem Armor -->
+				<skillLvl>1</skillLvl>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2464" toLevel="1" name="Flame Armor">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10572</itemConsumeId> <!-- Forgotten Scroll - Flame Armor -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>83</minLevel>
+				<maxLevel>84</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+			<condition name="OpSkill">
+				<skillId>1492</skillId> <!-- Flame Armor -->
+				<skillLevel>1</skillLevel>
+				<hasLearned>false</hasLearned>
+			</condition>
+			<condition name="OpCheckClass">
+				<classId>ARCHMAGE</classId>
+				<affectType>CASTER</affectType>
+				<isWithin>true</isWithin>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SetSkill">
+				<skillId>1492</skillId> <!-- Flame Armor -->
+				<skillLvl>1</skillLvl>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2465" toLevel="1" name="Frost Armor">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10573</itemConsumeId> <!-- Forgotten Scroll - Frost Armor -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>83</minLevel>
+				<maxLevel>84</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+			<condition name="OpSkill">
+				<skillId>1493</skillId> <!-- Frost Armor -->
+				<skillLevel>1</skillLevel>
+				<hasLearned>false</hasLearned>
+			</condition>
+			<condition name="OpCheckClass">
+				<classId>MYSTIC_MUSE</classId>
+				<affectType>CASTER</affectType>
+				<isWithin>true</isWithin>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SetSkill">
+				<skillId>1493</skillId> <!-- Frost Armor -->
+				<skillLvl>1</skillLvl>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2466" toLevel="1" name="Hurricane Armor">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10574</itemConsumeId> <!-- Forgotten Scroll - Hurricane Armor -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>83</minLevel>
+				<maxLevel>84</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+			<condition name="OpSkill">
+				<skillId>1494</skillId> <!-- Hurricane Armor -->
+				<skillLevel>1</skillLevel>
+				<hasLearned>false</hasLearned>
+			</condition>
+			<condition name="OpCheckClass">
+				<classId>STORM_SCREAMER</classId>
+				<affectType>CASTER</affectType>
+				<isWithin>true</isWithin>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SetSkill">
+				<skillId>1494</skillId> <!-- Hurricane Armor -->
+				<skillLvl>1</skillLvl>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2467" toLevel="1" name="Vampiric Mist">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10575</itemConsumeId> <!-- Forgotten Scroll - Vampiric Mist -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>83</minLevel>
+				<maxLevel>84</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+			<condition name="OpSkill">
+				<skillId>1495</skillId> <!-- Vampiric Mist -->
+				<skillLevel>1</skillLevel>
+				<hasLearned>false</hasLearned>
+			</condition>
+			<condition name="OpCheckClass">
+				<classId>SOULTAKER</classId>
+				<affectType>CASTER</affectType>
+				<isWithin>true</isWithin>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SetSkill">
+				<skillId>1495</skillId> <!-- Vampiric Mist -->
+				<skillLvl>1</skillLvl>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2468" toLevel="1" name="Servitor Barrier">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10576</itemConsumeId> <!-- Forgotten Scroll - Servitor Barrier -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>81</minLevel>
+				<maxLevel>84</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+			<condition name="OpCheckClassList">
+				<classIds>
+					<item>ARCANA_LORD</item>
+					<item>ELEMENTAL_MASTER</item>
+					<item>SPECTRAL_MASTER</item>
+				</classIds>
+				<affectType>CASTER</affectType>
+				<isWithin>true</isWithin>
+			</condition>
+			<condition name="OpSkill">
+				<skillId>1496</skillId> <!-- Servitor Barrier -->
+				<skillLevel>1</skillLevel>
+				<hasLearned>false</hasLearned>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SetSkill">
+				<skillId>1496</skillId> <!-- Servitor Barrier -->
+				<skillLvl>1</skillLvl>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2469" toLevel="1" name="Excessive Loyalty">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10577</itemConsumeId> <!-- Forgotten Scroll - Excessive Loyalty -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>81</minLevel>
+				<maxLevel>84</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+			<condition name="OpCheckClassList">
+				<classIds>
+					<item>ARCANA_LORD</item>
+					<item>ELEMENTAL_MASTER</item>
+					<item>SPECTRAL_MASTER</item>
+				</classIds>
+				<affectType>CASTER</affectType>
+				<isWithin>true</isWithin>
+			</condition>
+			<condition name="OpSkill">
+				<skillId>1497</skillId> <!-- Excessive Loyalty -->
+				<skillLevel>1</skillLevel>
+				<hasLearned>false</hasLearned>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SetSkill">
+				<skillId>1497</skillId> <!-- Excessive Loyalty -->
+				<skillLvl>1</skillLvl>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2470" toLevel="1" name="Mutual Response">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10578</itemConsumeId> <!-- Forgotten Scroll - Mutual Response -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>81</minLevel>
+				<maxLevel>84</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+			<condition name="OpCheckClassList">
+				<classIds>
+					<item>ARCANA_LORD</item>
+					<item>ELEMENTAL_MASTER</item>
+					<item>SPECTRAL_MASTER</item>
+				</classIds>
+				<affectType>CASTER</affectType>
+				<isWithin>true</isWithin>
+			</condition>
+			<condition name="OpSkill">
+				<skillId>1498</skillId> <!-- Mutual Response -->
+				<skillLevel>1</skillLevel>
+				<hasLearned>false</hasLearned>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SetSkill">
+				<skillId>1498</skillId> <!-- Mutual Response -->
+				<skillLvl>1</skillLvl>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2471" toLevel="1" name="Improve Combat">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10579</itemConsumeId> <!-- Forgotten Scroll - Improve Combat -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>70</minLevel>
+				<maxLevel>84</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+			<condition name="OpSkill">
+				<skillId>1499</skillId> <!-- Improve Combat -->
+				<skillLevel>1</skillLevel>
+				<hasLearned>false</hasLearned>
+			</condition>
+			<condition name="OpCheckClass">
+				<classId>PROPHET</classId>
+				<affectType>CASTER</affectType>
+				<isWithin>true</isWithin>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SetSkill">
+				<skillId>1499</skillId> <!-- Improve Combat -->
+				<skillLvl>1</skillLvl>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2472" toLevel="1" name="Improve Magic">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10580</itemConsumeId> <!-- Forgotten Scroll - Improve Magic -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>70</minLevel>
+				<maxLevel>84</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+			<condition name="OpSkill">
+				<skillId>1500</skillId> <!-- Improve Magic -->
+				<skillLevel>1</skillLevel>
+				<hasLearned>false</hasLearned>
+			</condition>
+			<condition name="OpCheckClass">
+				<classId>SHILLIEN_ELDER</classId>
+				<affectType>CASTER</affectType>
+				<isWithin>true</isWithin>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SetSkill">
+				<skillId>1500</skillId> <!-- Improve Magic -->
+				<skillLvl>1</skillLvl>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2473" toLevel="1" name="Improve Condition">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10581</itemConsumeId> <!-- Forgotten Scroll - Improve Condition -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>70</minLevel>
+				<maxLevel>84</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+			<condition name="OpSkill">
+				<skillId>1501</skillId> <!-- Improve Condition -->
+				<skillLevel>1</skillLevel>
+				<hasLearned>false</hasLearned>
+			</condition>
+			<condition name="OpCheckClass">
+				<classId>PROPHET</classId>
+				<affectType>CASTER</affectType>
+				<isWithin>true</isWithin>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SetSkill">
+				<skillId>1501</skillId> <!-- Improve Condition -->
+				<skillLvl>1</skillLvl>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2474" toLevel="1" name="Improve Critical Attack">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10582</itemConsumeId> <!-- Forgotten Scroll - Improve Critical Attack -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>70</minLevel>
+				<maxLevel>84</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+			<condition name="OpSkill">
+				<skillId>1502</skillId> <!-- Improve Critical Attack -->
+				<skillLevel>1</skillLevel>
+				<hasLearned>false</hasLearned>
+			</condition>
+			<condition name="OpCheckClass">
+				<classId>SHILLIEN_ELDER</classId>
+				<affectType>CASTER</affectType>
+				<isWithin>true</isWithin>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SetSkill">
+				<skillId>1502</skillId> <!-- Improve Critical Attack -->
+				<skillLvl>1</skillLvl>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2475" toLevel="1" name="Improve Shield Defense">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10583</itemConsumeId> <!-- Forgotten Scroll - Improve Shield Defense -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>70</minLevel>
+				<maxLevel>84</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+			<condition name="OpSkill">
+				<skillId>1503</skillId> <!-- Improve Shield Defense -->
+				<skillLevel>1</skillLevel>
+				<hasLearned>false</hasLearned>
+			</condition>
+			<condition name="OpCheckClass">
+				<classId>ELDER</classId>
+				<affectType>CASTER</affectType>
+				<isWithin>true</isWithin>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SetSkill">
+				<skillId>1503</skillId> <!-- Improve Shield Defense -->
+				<skillLvl>1</skillLvl>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2476" toLevel="1" name="Improve Movement">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10584</itemConsumeId> <!-- Forgotten Scroll - Improve Movement -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>70</minLevel>
+				<maxLevel>84</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+			<condition name="OpSkill">
+				<skillId>1504</skillId> <!-- Improve Movement -->
+				<skillLevel>1</skillLevel>
+				<hasLearned>false</hasLearned>
+			</condition>
+			<condition name="OpCheckClass">
+				<classId>ELDER</classId>
+				<affectType>CASTER</affectType>
+				<isWithin>true</isWithin>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SetSkill">
+				<skillId>1504</skillId> <!-- Improve Movement -->
+				<skillLvl>1</skillLvl>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2477" toLevel="1" name="Sublime Self-Sacrifice">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10585</itemConsumeId> <!-- Forgotten Scroll - Sublime Self Sacrifice -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>83</minLevel>
+				<maxLevel>84</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+			<condition name="OpSkill">
+				<skillId>1505</skillId> <!-- Sublime Self-Sacrifice -->
+				<skillLevel>1</skillLevel>
+				<hasLearned>false</hasLearned>
+			</condition>
+			<condition name="OpCheckClass">
+				<classId>CARDINAL</classId>
+				<affectType>CASTER</affectType>
+				<isWithin>true</isWithin>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SetSkill">
+				<skillId>1505</skillId> <!-- Sublime Self-Sacrifice -->
+				<skillLvl>1</skillLvl>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2478" toLevel="1" name="Blessing of Eva">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10586</itemConsumeId> <!-- Forgotten Scroll - Blessing of Eva -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>83</minLevel>
+				<maxLevel>84</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+			<condition name="OpSkill">
+				<skillId>1506</skillId> <!-- Blessing of Eva -->
+				<skillLevel>1</skillLevel>
+				<hasLearned>false</hasLearned>
+			</condition>
+			<condition name="OpCheckClass">
+				<classId>EVA_SAINT</classId>
+				<affectType>CASTER</affectType>
+				<isWithin>true</isWithin>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SetSkill">
+				<skillId>1506</skillId> <!-- Blessing of Eva -->
+				<skillLvl>1</skillLvl>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2479" toLevel="1" name="Lord of Vampires">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10587</itemConsumeId> <!-- Forgotten Scroll - Lord of Vampire -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>83</minLevel>
+				<maxLevel>84</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+			<condition name="OpSkill">
+				<skillId>1507</skillId> <!-- Lord of Vampires -->
+				<skillLevel>1</skillLevel>
+				<hasLearned>false</hasLearned>
+			</condition>
+			<condition name="OpCheckClass">
+				<classId>SHILLIEN_SAINT</classId>
+				<affectType>CASTER</affectType>
+				<isWithin>true</isWithin>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SetSkill">
+				<skillId>1507</skillId> <!-- Lord of Vampires -->
+				<skillLvl>1</skillLvl>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2480" toLevel="1" name="Thorn Root">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10588</itemConsumeId> <!-- Forgotten Scroll - Thorn Root -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>81</minLevel>
+				<maxLevel>84</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+			<condition name="OpSkill">
+				<skillId>1508</skillId> <!-- Thorn Root -->
+				<skillLevel>1</skillLevel>
+				<hasLearned>false</hasLearned>
+			</condition>
+			<condition name="OpCheckClass">
+				<classId>SHILLIEN_SAINT</classId>
+				<affectType>CASTER</affectType>
+				<isWithin>true</isWithin>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SetSkill">
+				<skillId>1508</skillId> <!-- Thorn Root -->
+				<skillLvl>1</skillLvl>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2481" toLevel="1" name="Seal of Limit">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10589</itemConsumeId> <!-- Forgotten Scroll - Seal of Limit -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>83</minLevel>
+				<maxLevel>84</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+			<condition name="OpSkill">
+				<skillId>1509</skillId> <!-- Seal of Limit -->
+				<skillLevel>1</skillLevel>
+				<hasLearned>false</hasLearned>
+			</condition>
+			<condition name="OpCheckClass">
+				<classId>DOMINATOR</classId>
+				<affectType>CASTER</affectType>
+				<isWithin>true</isWithin>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SetSkill">
+				<skillId>1509</skillId> <!-- Seal of Limit -->
+				<skillLvl>1</skillLvl>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2482" toLevel="1" name="Spirit of the Phoenix">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10591</itemConsumeId> <!-- Forgotten Scroll - Spirit of Phoenix/Flame Icon -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>83</minLevel>
+				<maxLevel>84</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+			<condition name="OpSkill">
+				<skillId>785</skillId> <!-- Flame Archon -->
+				<skillLevel>1</skillLevel>
+				<hasLearned>false</hasLearned>
+			</condition>
+			<condition name="OpCheckClass">
+				<classId>PHOENIX_KNIGHT</classId>
+				<affectType>CASTER</affectType>
+				<isWithin>true</isWithin>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SetSkill">
+				<skillId>784</skillId> <!-- Spirit of the Phoenix -->
+				<skillLvl>1</skillLvl>
+			</effect>
+			<effect name="SetSkill">
+				<skillId>785</skillId> <!-- Flame Archon -->
+				<skillLvl>1</skillLvl>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2483" toLevel="1" name="Eva's Will">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10592</itemConsumeId> <!-- Forgotten Scroll - Eva's Will -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>83</minLevel>
+				<maxLevel>84</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+			<condition name="OpSkill">
+				<skillId>787</skillId> <!-- Touch of Eva -->
+				<skillLevel>1</skillLevel>
+				<hasLearned>false</hasLearned>
+			</condition>
+			<condition name="OpCheckClass">
+				<classId>EVA_TEMPLAR</classId>
+				<affectType>CASTER</affectType>
+				<isWithin>true</isWithin>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SetSkill">
+				<skillId>786</skillId> <!-- Eva's Will -->
+				<skillLvl>1</skillLvl>
+			</effect>
+			<effect name="SetSkill">
+				<skillId>787</skillId> <!-- Touch of Eva -->
+				<skillLvl>1</skillLvl>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2484" toLevel="1" name="Pain of Shilen">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10593</itemConsumeId> <!-- Forgotten Scroll - Pain of Shilen / Spirit of Shilen -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>83</minLevel>
+				<maxLevel>84</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+			<condition name="OpSkill">
+				<skillId>789</skillId> <!-- Spirit of Shilen -->
+				<skillLevel>1</skillLevel>
+				<hasLearned>false</hasLearned>
+			</condition>
+			<condition name="OpCheckClass">
+				<classId>SHILLIEN_TEMPLAR</classId>
+				<affectType>CASTER</affectType>
+				<isWithin>true</isWithin>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SetSkill">
+				<skillId>788</skillId> <!-- Pain of Shilen -->
+				<skillLvl>1</skillLvl>
+			</effect>
+			<effect name="SetSkill">
+				<skillId>789</skillId> <!-- Spirit of Shilen -->
+				<skillLvl>1</skillLvl>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2485" toLevel="1" name="Herb of Life">
+		<effectPoint>100</effectPoint>
+		<hitTime>100</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>40</magicLvl>
+		<operateType>A1</operateType>
+		<reuseDelay>2000</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<affectRange>1000</affectRange>
+		<isRecoveryHerb>true</isRecoveryHerb>
+		<targetType>SELF</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<effects>
+			<effect name="HealPercent">
+				<power>50</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2486" toLevel="1" name="Herb of Mana">
+		<effectPoint>100</effectPoint>
+		<hitTime>100</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>40</magicLvl>
+		<operateType>A1</operateType>
+		<reuseDelay>2000</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<affectRange>1000</affectRange>
+		<isRecoveryHerb>true</isRecoveryHerb>
+		<targetType>SELF</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<effects>
+			<effect name="ManaHealPercent">
+				<power>30</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2487" toLevel="1" name="Item - Special Sound Crystal">
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="2488" toLevel="1" name="Wild Shot">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10594</itemConsumeId> <!-- Forgotten Scroll - Wild Shot -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>83</minLevel>
+				<maxLevel>84</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+			<condition name="OpSkill">
+				<skillId>790</skillId> <!-- Wild Shot -->
+				<skillLevel>1</skillLevel>
+				<hasLearned>false</hasLearned>
+			</condition>
+			<condition name="OpCheckClass">
+				<classId>ARBALESTER</classId>
+				<affectType>CASTER</affectType>
+				<isWithin>true</isWithin>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SetSkill">
+				<skillId>790</skillId> <!-- Wild Shot -->
+				<skillLvl>1</skillLvl>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2489" toLevel="1" name="Lightning Shock">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10595</itemConsumeId> <!-- Forgotten Scroll - Lightning Shock -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>83</minLevel>
+				<maxLevel>84</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+			<condition name="OpCheckClassList">
+				<classIds>
+					<item>MALE_SOUL_HOUND</item>
+					<item>FEMALE_SOUL_HOUND</item>
+				</classIds>
+				<affectType>CASTER</affectType>
+				<isWithin>true</isWithin>
+			</condition>
+			<condition name="OpSkill">
+				<skillId>791</skillId> <!-- Lightning Shock -->
+				<skillLevel>1</skillLevel>
+				<hasLearned>false</hasLearned>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SetSkill">
+				<skillId>791</skillId> <!-- Lightning Shock -->
+				<skillLvl>1</skillLvl>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2490" toLevel="1" name="M. Def. Toolkit (Novice)">
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>1</magicLvl>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10473</itemConsumeId>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>20</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="100">
+						<item id="10470" count="2" /> <!-- Shadow Item: Red Crescent -->
+						<item id="10471" count="2" /> <!-- Shadow Item: Ring of Devotion -->
+						<item id="10472" count="1" /> <!-- Shadow Item: Necklace of Devotion -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2491" toLevel="1" name="Transform Zaken">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="SetSkill">
+				<skillId>663</skillId> <!-- Transform Zaken -->
+				<skillLvl>1</skillLvl>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2492" toLevel="1" name="Transform Anakim">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="SetSkill">
+				<skillId>664</skillId> <!-- Transform Anakim -->
+				<skillLvl>1</skillLvl>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2493" toLevel="1" name="Transform Venom">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="SetSkill">
+				<skillId>665</skillId> <!-- Transform Venom -->
+				<skillLvl>1</skillLvl>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2494" toLevel="1" name="Transform Gordon">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="SetSkill">
+				<skillId>666</skillId> <!-- Transform Gordon -->
+				<skillLvl>1</skillLvl>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2495" toLevel="1" name="Transform Ranku">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="SetSkill">
+				<skillId>667</skillId> <!-- Transform Ranku -->
+				<skillLvl>1</skillLvl>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2496" toLevel="1" name="Transform Kechi">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="SetSkill">
+				<skillId>668</skillId> <!-- Transform Kechi -->
+				<skillLvl>1</skillLvl>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2497" toLevel="1" name="Transform Demon Prince">
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="SetSkill">
+				<skillId>669</skillId> <!-- Transform Demon Prince -->
+				<skillLvl>1</skillLvl>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2498" toLevel="1" name="Bottle of Empty Soul">
+		<hitTime>500</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>10409</itemConsumeId> <!-- A Bottle of Souls -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<soulMaxConsumeCount>5</soulMaxConsumeCount>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="SoulSaved">
+				<amount>5</amount>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="Restoration">
+				<itemId>10410</itemId>
+				<itemCount>1</itemCount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="2499" toLevel="1" name="Full Bottle of Souls">
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="FocusSouls">
+				<charge>5</charge>
+			</effect>
+		</effects>
+	</skill>
+</list>

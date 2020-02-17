@@ -1,0 +1,1044 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="32500" toLevel="1" name="Fore Out Scale">
+		<!-- Due to the effects of the scattering scales, receives magic damage, and also inflicted with Fear and movement is restricted for 3 sec. -->
+		<icon>icon.skill1169</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<isDebuff>true</isDebuff>
+		<castRange>250</castRange>
+		<hitTime>3000</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>5000</reuseDelay>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32501" toLevel="1" name="Tabeth Spike">
+		<!-- Single Target Magic Attack -->
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<castRange>700</castRange>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+		<effectRange>1100</effectRange>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="MagicalAttack">
+				<power>2000</power> <!-- Guessing -->
+			</effect>
+		</effects>
+	</skill>
+	<skill id="32502" toLevel="1" name="Tabeth Spore Blast">
+		<!-- Powerful Magic Attack within Target Range -->
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<castRange>700</castRange>
+		<hitTime>2000</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>1000</reuseDelay>
+		<effectPoint>-100</effectPoint>
+		<affectLimit>5-12</affectLimit>
+		<abnormalTime>1</abnormalTime>
+		<abnormalLvl>1</abnormalLvl>
+		<activateRate>60</activateRate>
+		<nextAction>ATTACK</nextAction>
+		<affectRange>600</affectRange>
+		<affectLimit>10-10</affectLimit>
+		<basicProperty>NONE</basicProperty>
+		<effectPoint>-5013</effectPoint>
+		<effectRange>600</effectRange>
+		<isDebuff>true</isDebuff>
+		<magicLvl>100</magicLvl>
+		<mpConsume>80</mpConsume>
+		<reuseDelay>45000</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>ENEMY_ONLY</targetType>
+		<affectScope>FAN</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<fanRange>0;0;600;180</fanRange>
+		<basicProperty>MAGIC</basicProperty> <!-- Guessed -->
+		<lvlBonusRate>1</lvlBonusRate>
+		<effects>
+			<effect name="MagicalAttack">
+				<power>15000</power>
+				<chance>15</chance>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="32503" toLevel="1" name="Tabeth Spore Blossom">
+		<!-- Affected by a rising cloud of spores. Decreases Speed by 30 and receives damage over time for 5 sec. -->
+		<icon>icon.skill0516</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<isDebuff>true</isDebuff>
+		<hitTime>3000</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>5000</reuseDelay>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32504" toLevel="1" name="Tabeth Fatal Strike">
+		<!-- Single Target Powerful Physical Attack -->
+		<operateType>A1</operateType>
+		<castRange>250</castRange>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>1000</reuseDelay>
+		<effectPoint>-100</effectPoint>
+		<castRange>40</castRange>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>100</magicLvl>
+		<mpConsume>80</mpConsume>
+		<effectRange>200</effectRange>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>100000</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="32505" toLevel="1" name="Tabeth Body Attack">
+		<!-- Deals physical damage to the target and stuns them. -->
+		<icon>icon.skill0092</icon>
+		<operateType>A2</operateType>
+		<isDebuff>true</isDebuff>
+		<castRange>250</castRange>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>1000</reuseDelay>
+		<effectPoint>-100</effectPoint>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>3</abnormalTime>
+		<abnormalType>STUN</abnormalType>
+		<abnormalVisualEffect>STUN</abnormalVisualEffect>
+		<activateRate>200</activateRate>
+		<basicProperty>PHYSICAL</basicProperty>
+		<effectRange>300</effectRange>
+		<magicLvl>1</magicLvl>
+		<magicCriticalRate>5</magicCriticalRate>
+		<trait>SHOCK</trait>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>10000</power> <!-- Fix: Retail Missed -->
+				<overHit>true</overHit>
+			</effect>
+			<effect name="BlockActions">
+				<allowedSkills>10279;10517;10025;10776;11770;1904;11264;11093;13314;1912</allowedSkills>
+			</effect>
+			<effect name="TargetCancel">
+				<chance>40</chance>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="32506" toLevel="5" name="Energy of the Sea of Spores">
+		<!-- Energy of the Sea of Spores collected in the Sea of Spores increases P. Def./ M. Def. by $s1 and HP Recovery by $s2. -->
+		<icon>
+			<value level="1">icon.skill32506_1</value>
+			<value level="2">icon.skill32506_2</value>
+			<value level="3">icon.skill32506_3</value>
+			<value level="4">icon.skill32506_4</value>
+			<value level="5">icon.skill32506_5</value>
+		</icon>
+		<operateType>A1</operateType>
+		<castRange>1500</castRange>
+		<coolTime>500</coolTime>
+		<reuseDelay>3000</reuseDelay>
+	</skill>
+	<skill id="32507" toLevel="5" name="Shroud of the Sea of Spores">
+		<!-- A barrier linked with the Energy of the Sea of Spores applied to Orfen. Deal a certain amount of damage to destroy it. The Energy of the Sea of Spores weakens when an Orfen's Handmaiden dies. -->
+		<icon>
+			<value level="1">icon.skill32507_1</value>
+			<value level="2">icon.skill32507_2</value>
+			<value level="3">icon.skill32507_3</value>
+			<value level="4">icon.skill32507_4</value>
+			<value level="5">icon.skill32507_5</value>
+		</icon>
+		<operateType>A1</operateType>
+		<castRange>1500</castRange>
+		<coolTime>500</coolTime>
+		<reuseDelay>3000</reuseDelay>
+	</skill>
+	<skill id="32508" toLevel="4" name="Death Strike">
+		<!-- Strong pounding attack. -->
+		<icon>icon.skill0476</icon>
+		<operateType>A1</operateType>
+		<castRange>40</castRange>
+		<hitTime>1000</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>10000</reuseDelay>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32509" toLevel="4" name="Death Pierce">
+		<!-- Attacks the enemy powerfully with a spear. -->
+		<icon>icon.skill0921</icon>
+		<operateType>A1</operateType>
+		<castRange>40</castRange>
+		<hitTime>1000</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>10000</reuseDelay>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32510" toLevel="4" name="Stun Shot">
+		<!-- Shoots an arrow at the enemy to deal physical damage and stun them for $s1. -->
+		<icon>icon.skill0101</icon>
+		<operateType>A1</operateType>
+		<isDebuff>true</isDebuff>
+		<castRange>900</castRange>
+		<hitTime>2000</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>30000</reuseDelay>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32511" toLevel="4" name="Death Bomber">
+		<!-- Strikes the enemy powerfully to deal physical damage and knock them down for $s1. -->
+		<icon>icon.skill10262</icon>
+		<operateType>A1</operateType>
+		<isDebuff>true</isDebuff>
+		<castRange>40</castRange>
+		<hitTime>1000</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>15000</reuseDelay>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32512" toLevel="4" name="Aggression">
+		<!-- Provokes an enemy, forcing them to attack you for $s1. -->
+		<icon>icon.skill0028</icon>
+		<operateType>A1</operateType>
+		<isDebuff>true</isDebuff>
+		<castRange>400</castRange>
+		<hitTime>700</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>30000</reuseDelay>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32513" toLevel="4" name="Blood Blow">
+		<!-- Attacks the enemy's vital spot to deal physical damage and inflict Bleed for $s1. -->
+		<icon>icon.skill10508</icon>
+		<operateType>A1</operateType>
+		<isDebuff>true</isDebuff>
+		<castRange>40</castRange>
+		<hitTime>700</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>15000</reuseDelay>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32514" toLevel="4" name="Death Rage">
+		<!-- Unleashes deathly energy at the enemy, dealing physical damage and decreasing their P. Def. by $s2 for $s1. -->
+		<icon>icon.skill0939</icon>
+		<operateType>A1</operateType>
+		<isDebuff>true</isDebuff>
+		<castRange>600</castRange>
+		<hitTime>700</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>15000</reuseDelay>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32515" toLevel="4" name="Death Spike">
+		<!-- Unleashes Dark magic at the enemy to inflict damage. -->
+		<icon>icon.skill1148</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<castRange>900</castRange>
+		<hitTime>300</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32516" toLevel="4" name="Death Crash">
+		<!-- Attacks the enemy with powerful magic. -->
+		<icon>icon.skill11018</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<castRange>900</castRange>
+		<hitTime>1000</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>15000</reuseDelay>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32517" toLevel="3" name="Death Smash">
+		<!-- Strong pounding attack. -->
+		<icon>icon.skill0255</icon>
+		<operateType>A1</operateType>
+		<castRange>40</castRange>
+		<hitTime>1000</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>10000</reuseDelay>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32518" toLevel="3" name="Death Bluff">
+		<!-- Inflicts Bluff on the enemy, making them turn around for $s1. -->
+		<icon>icon.skill10554</icon>
+		<operateType>A1</operateType>
+		<isDebuff>true</isDebuff>
+		<castRange>40</castRange>
+		<hitTime>1000</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>15000</reuseDelay>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32519" toLevel="3" name="Rush">
+		<!-- Charges at the enemy and inflicts physical damage. -->
+		<icon>icon.skill0484</icon>
+		<operateType>A1</operateType>
+		<castRange>400</castRange>
+		<hitTime>300</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>10000</reuseDelay>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32520" toLevel="3" name="Berserker">
+		<!-- Increases Debuff Resistance, Speed, P. Atk., P. Accuracy, P. Def., Atk. Spd., and Critical Damage, and killing an enemy restores $s1 HP. When HP is $s2 or below, additionally increases P. Atk. by $s3 and Critical Rate by $s4. When HP is $s5 or below, additionally increases P. Atk. by $s6 and Critical Rate by $s7. -->
+		<icon>icon.skill10274</icon>
+		<operateType>A1</operateType>
+		<hitTime>1000</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>600000</reuseDelay>
+	</skill>
+	<skill id="32521" toLevel="3" name="Raise Skeleton">
+		<icon>icon.skill32521</icon>
+		<operateType>A1</operateType>
+		<hitTime>5000</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>10000</reuseDelay>
+	</skill>
+	<skill id="32522" toLevel="2" name="Unholy Barrier">
+		<!-- A barrier surrounded by dark energy. It will disappear after $s1 strikes. -->
+		<icon>icon.skill32522</icon>
+		<operateType>A1</operateType>
+		<hitTime>300</hitTime>
+		<coolTime>500</coolTime>
+	</skill>
+	<skill id="32523" toLevel="3" name="Death Spike">
+		<!-- Unleashes Dark magic at the enemy to inflict damage. -->
+		<icon>icon.skill1148</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<castRange>900</castRange>
+		<hitTime>300</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32524" toLevel="3" name="Death Crash">
+		<!-- Attacks the enemy with powerful magic. -->
+		<icon>icon.skill11018</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<castRange>900</castRange>
+		<hitTime>1000</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>15000</reuseDelay>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32525" toLevel="3" name="Death Howl">
+		<!-- Deals magic damage to nearby enemies and knocks them down for $s1. -->
+		<icon>icon.skill11032</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<isDebuff>true</isDebuff>
+		<hitTime>1000</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>15000</reuseDelay>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32526" toLevel="3" name="Raise Death Squad">
+		<icon>icon.skill32526</icon>
+		<operateType>A1</operateType>
+		<hitTime>5000</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>10000</reuseDelay>
+	</skill>
+	<skill id="32527" toLevel="1" name="Rift of Power">
+		<!-- A rift forms in Orfen's power, decreasing her P. Atk./ M. Atk./ Speed by 33%. -->
+		<icon>icon.skill32527</icon>
+		<operateType>A1</operateType>
+		<isDebuff>true</isDebuff>
+		<castRange>1100</castRange>
+		<coolTime>500</coolTime>
+		<reuseDelay>3000</reuseDelay>
+	</skill>
+	<skill id="32528" toLevel="1" name="Liberation">
+		<!-- Liberates shackled powers, increasing M. Atk. and M. Def. 4-fold, Casting Spd. 2-fold, and HP Recovery 10-fold for 1 h. -->
+		<icon>icon.skill30020</icon>
+		<operateType>A1</operateType>
+		<hitTime>1500</hitTime>
+	</skill>
+	<skill id="32529" toLevel="1" name="Tabeth Mass Slam">
+		<!-- Deals physical damage to nearby enemies and knocks them down for 5 sec. -->
+		<icon>icon.skill10266</icon>
+		<operateType>A1</operateType>
+		<isDebuff>true</isDebuff>
+		<hitTime>2000</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>10000</reuseDelay>
+		<effectPoint>-100</effectPoint>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>5</abnormalTime>
+		<affectLimit>5-10</affectLimit>
+		<abnormalType>KNOCKDOWN</abnormalType>
+		<abnormalVisualEffect>KNOCKDOWN</abnormalVisualEffect>
+		<activateRate>200</activateRate>
+		<affectRange>600</affectRange>
+		<basicProperty>PHYSICAL</basicProperty>
+		<effectRange>800</effectRange>
+		<fanRange>0;0;600;60</fanRange>
+		<magicLvl>1</magicLvl>
+		<trait>KNOCKDOWN</trait>
+		<targetType>ENEMY</targetType>
+		<affectScope>FAN</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<effects>
+			<effect name="KnockBack">
+				<speed>200</speed>
+				<distance>100</distance>
+				<knockDown>true</knockDown>
+			</effect>
+			<effect name="TargetCancel">
+				<chance>40</chance>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="32530" toLevel="10" name="Red Nosed Rudolph - Stage 1">
+		<!-- You can receive items after $s1. A total of $s2 stages. Increases all basic stats by $s3, and decreases Vitality consumption speed by $s4.\n<Warning> If you are dead at the time the items are given, you can't receive Red Nosed Rudolph Buff or the items. You also can't receive the items if there is no room in your inventory. -->
+		<icon>icon.rudolph_buff</icon>
+		<operateType>A1</operateType>
+		<isMagic>4</isMagic>
+		<castRange>900</castRange>
+	</skill>
+	<skill id="32531" toLevel="5" name="Red Nosed Rudolph - Buff Reward">
+		<operateType>A1</operateType>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>5000</reuseDelay>
+	</skill>
+	<skill id="32532" toLevel="1" name="Mysterious Ancient Herb">
+		<!-- Mysterious ancient power energizes you and increases P. Def. by 2837, M. Def. by 1785, Speed by 7, Vampiric Rage effect by 5%. -->
+		<icon>BranchSys2.icon.etc_vampiric_rage_herb_i01</icon>
+		<operateType>A1</operateType>
+		<castRange>2000</castRange>
+		<hitTime>100</hitTime>
+		<reuseDelay>2000</reuseDelay>
+		<effectPoint>100</effectPoint>
+	</skill>
+	<skill id="32533" toLevel="24" name="Super Lucky Dog - Stage 1">
+		<!-- Golden Dog's golden energy decreases your Vitality consumption speed by $s1. You can receive items after $s2. A total of $s3 stages.\n<Warning> If you are dead at the time the items are given, you can't receive Super Lucky Dog Buff or the items. You also can't receive the items if there is no room in your inventory. -->
+		<icon>icon.christmas_card_box2</icon>
+		<operateType>A1</operateType>
+		<isMagic>4</isMagic>
+		<castRange>900</castRange>
+	</skill>
+	<skill id="32534" toLevel="23" name="Super Lucky Dog">
+		<!-- 1-Set Reward - H/ A -->
+		<operateType>A1</operateType>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>5000</reuseDelay>
+	</skill>
+	<skill id="32535" toLevel="8" name="Raid Boss (Lv. 107)">
+		<!-- Corrupted Atrofa was one of the Atrofas in the Sea of Spores that became completely corrupted after being exposed to unusually powerful Energy of the Sea of Spores. It no longer has a place in the Sea of Spores, but assimilation with the Energy of the Sea of Spores allows it to stay there. -->
+		<icon>icon.skillraid</icon>
+		<operateType>P</operateType>
+	</skill>
+	<skill id="32536" toLevel="1" name="Lilith Magic Bolt">
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<castRange>900</castRange>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-700</effectPoint>
+		<activateRate>100</activateRate>
+		<hitCancelTime>0</hitCancelTime>
+		<affectRange>1000</affectRange>
+		<effectRange>1100</effectRange>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="MagicalAttack">
+				<power>723</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="32537" toLevel="1" name="Lilith Magic Blast">
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<castRange>900</castRange>
+		<hitTime>3000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-700</effectPoint>
+		<activateRate>70</activateRate>
+		<hitCancelTime>0</hitCancelTime>
+		<affectRange>900</affectRange>
+		<targetType>SELF</targetType>
+		<affectScope>POINT_BLANK</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<effects>
+			<effect name="MagicalAttack">
+				<power>723</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="32538" toLevel="1" name="Lilith Unholy Vengeance">
+		<!-- The Power of Darkness locks skills for 5 sec. -->
+		<icon>icon.skill1336</icon>
+		<operateType>A2</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<isDebuff>true</isDebuff>
+		<hitTime>5000</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>10000</reuseDelay>
+		<effectPoint>-700</effectPoint>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>5</abnormalTime>
+		<abnormalType>ROOT_MAGICALLY</abnormalType>
+		<abnormalVisualEffect>ROOT</abnormalVisualEffect>
+		<affectLimit>200-200</affectLimit>
+		<hitCancelTime>0</hitCancelTime>
+		<activateRate>100</activateRate>
+		<affectRange>1200</affectRange>
+		<trait>HOLD</trait>
+		<targetType>SELF</targetType>
+		<affectScope>POINT_BLANK</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<effects>
+			<effect name="Root" />
+		</effects>
+	</skill>
+	<skill id="32539" toLevel="1" name="Lilith Unholy Dimension">
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<hitTime>2000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-700</effectPoint>
+	</skill>
+	<skill id="32540" toLevel="1" name="Lilith Unholy Barrier">
+		<!-- Barrier broken after 1000 hits. If 1000 hits are not made within 15 sec., all of the Raid Boss's HP recovers. -->
+		<icon>icon.skill32540</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+	</skill>
+	<skill id="32541" toLevel="1" name="Unholy Mega Slash">
+		<operateType>A1</operateType>
+		<castRange>40</castRange>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-700</effectPoint>
+	</skill>
+	<skill id="32542" toLevel="2" name="Unholy Giga Slash">
+		<operateType>A1</operateType>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-700</effectPoint>
+	</skill>
+	<skill id="32543" toLevel="1" name="Unholy Tera Shout">
+		<!-- Makes a loud noise, stunning nearby enemies for 5 sec. -->
+		<icon>icon.skill0100</icon>
+		<operateType>A1</operateType>
+		<isDebuff>true</isDebuff>
+		<hitTime>2000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-700</effectPoint>
+	</skill>
+	<skill id="32544" toLevel="2" name="Unholy Magic Bolt">
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<castRange>900</castRange>
+		<hitTime>2000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-700</effectPoint>
+	</skill>
+	<skill id="32545" toLevel="1" name="Unholy Tera Fear">
+		<!-- Induces Fear in nearby enemies, making them flee for 10 sec. -->
+		<icon>icon.skill1169</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<isDebuff>true</isDebuff>
+		<hitTime>2000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-700</effectPoint>
+	</skill>
+	<skill id="32546" toLevel="1" name="Unholy Magic Blast">
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<castRange>900</castRange>
+		<hitTime>2000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-700</effectPoint>
+	</skill>
+	<skill id="32547" toLevel="1" name="Unholy Magic Burst">
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<hitTime>2000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-700</effectPoint>
+	</skill>
+	<skill id="32548" toLevel="1" name="Unholy Magic Hold">
+		<!-- Casts Hold on nearby enemies for 10 sec. -->
+		<icon>icon.skill1201</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<isDebuff>true</isDebuff>
+		<hitTime>2000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-700</effectPoint>
+	</skill>
+	<skill id="32549" toLevel="1" name="Darkness Slash">
+		<operateType>A1</operateType>
+		<castRange>40</castRange>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32550" toLevel="1" name="Darkness Aggression">
+		<!-- Forces the enemy to target you. -->
+		<icon>icon.skill10026</icon>
+		<operateType>A1</operateType>
+		<isDebuff>true</isDebuff>
+		<castRange>600</castRange>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-1</effectPoint>
+	</skill>
+	<skill id="32551" toLevel="1" name="Darkness Aggression Aura">
+		<!-- Forces enemies to target you. -->
+		<icon>icon.skill10027</icon>
+		<operateType>A1</operateType>
+		<isDebuff>true</isDebuff>
+		<hitTime>2000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-1</effectPoint>
+	</skill>
+	<skill id="32552" toLevel="1" name="Darkness Skull Crash">
+		<!-- Deals strong attack. P. Def. -10% for 20 sec. -->
+		<icon>icon.skill0122</icon>
+		<operateType>A1</operateType>
+		<isDebuff>true</isDebuff>
+		<castRange>40</castRange>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32553" toLevel="1" name="Darkness Shout">
+		<!-- Makes a loud noise, stunning nearby enemies for 5 sec. -->
+		<icon>icon.skill0100</icon>
+		<operateType>A1</operateType>
+		<isDebuff>true</isDebuff>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32554" toLevel="1" name="Darkness Jump Shot">
+		<operateType>A1</operateType>
+		<castRange>900</castRange>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32555" toLevel="1" name="Darkness Power Up">
+		<!-- Maximizes strength to sharply increase P. Atk. -->
+		<icon>icon.skill1068</icon>
+		<operateType>A1</operateType>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32556" toLevel="2" name="Magic Shot of Darkness">
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<castRange>900</castRange>
+		<hitTime>2000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32557" toLevel="3" name="Darkness Magic Blast">
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<castRange>450</castRange>
+		<hitTime>2000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32558" toLevel="2" name="Darkness Fear">
+		<!-- Puts nearby enemies into Fear for $s1. -->
+		<icon>icon.skill1169</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<isDebuff>true</isDebuff>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32559" toLevel="1" name="Darkness Front Attack">
+		<icon>icon.skill0096</icon>
+		<operateType>A1</operateType>
+		<castRange>40</castRange>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32560" toLevel="1" name="Darkness Soul Drain">
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<hitTime>2000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32561" toLevel="1" name="Darkness Sword Storm">
+		<operateType>A1</operateType>
+		<castRange>40</castRange>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32562" toLevel="1" name="Darkness Stomach Cutter">
+		<!-- Cuts bellies of nearby enemies, making them bleed. -->
+		<icon>icon.skill0096</icon>
+		<operateType>A1</operateType>
+		<isDebuff>true</isDebuff>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32563" toLevel="1" name="Darkness Berserk">
+		<!-- Explodes your power to increase P. Atk. -->
+		<icon>icon.skill1062</icon>
+		<operateType>A1</operateType>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+	</skill>
+	<skill id="32564" toLevel="1" name="Hold of Darkness">
+		<!-- Casts Hold on nearby enemies for 5 sec. -->
+		<icon>icon.skill1201</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<isDebuff>true</isDebuff>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32565" toLevel="1" name="Darkness Hyper Magic Burst">
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<hitTime>3000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32566" toLevel="1" name="Anakim Power Strike">
+		<operateType>A1</operateType>
+		<castRange>100</castRange>
+		<hitTime>1000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+		<hitCancelTime>0</hitCancelTime>
+		<hitTime>3000</hitTime>
+		<effectRange>500</effectRange>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>61189</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="32567" toLevel="1" name="Anakim Power Multi Shot">
+		<operateType>A1</operateType>
+		<castRange>250</castRange>
+		<hitTime>2000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+		<affectLimit>200-200</affectLimit>
+		<hitCancelTime>0</hitCancelTime>
+		<hitTime>3000</hitTime>
+		<affectRange>500</affectRange>
+		<fanRange>0;0;500;90</fanRange>
+		<targetType>ENEMY</targetType>
+		<affectScope>FAN</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>61189</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="32568" toLevel="1" name="Anakim Holy Vengeance">
+		<!-- Anakim's lightning strike paralyzes the enemy for 2 sec. -->
+		<icon>icon.skill1170</icon>
+		<operateType>A2</operateType>
+		<isDebuff>true</isDebuff>
+		<hitTime>5000</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>10000</reuseDelay>
+		<effectPoint>-100</effectPoint>
+		<activateRate>100</activateRate>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>2</abnormalTime>
+		<abnormalType>PARALYZE</abnormalType>
+		<abnormalVisualEffect>PARALYZE</abnormalVisualEffect>
+		<hitCancelTime>0</hitCancelTime>
+		<affectLimit>200-200</affectLimit>
+		<affectRange>1000</affectRange>
+		<trait>PARALYZE</trait>
+		<targetType>SELF</targetType>
+		<affectScope>POINT_BLANK</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<effects>
+			<effect name="BlockActions" />
+		</effects>
+	</skill>
+	<skill id="32569" toLevel="1" name="Anakim Holy Dimension">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32570" toLevel="1" name="Anakim Holy Shield">
+		<!-- Barrier broken after 1000 hits. If 1000 hits are not made within 15 sec., all of the Raid Boss's HP recovers. -->
+		<icon>icon.skill32570</icon>
+		<operateType>A1</operateType>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+	</skill>
+	<skill id="32571" toLevel="1" name="Holy Aggression">
+		<!-- Forces the enemy to target you. -->
+		<icon>icon.skill10026</icon>
+		<operateType>A1</operateType>
+		<isDebuff>true</isDebuff>
+		<castRange>600</castRange>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32572" toLevel="2" name="Holy Strike">
+		<operateType>A1</operateType>
+		<castRange>40</castRange>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32573" toLevel="1" name="Holly Aggression Aura">
+		<!-- Forces nearby enemies to target you. -->
+		<icon>icon.skill10027</icon>
+		<operateType>A1</operateType>
+		<isDebuff>true</isDebuff>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32574" toLevel="1" name="Holy Bless">
+		<!-- Uses a buff that increases nearby allies' P. Atk. -->
+		<icon>icon.skill1068</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<hitTime>2000</hitTime>
+		<coolTime>500</coolTime>
+	</skill>
+	<skill id="32575" toLevel="1" name="Holy Lightning">
+		<!-- Inflicts great damage on nearby enemies and stuns the target. -->
+		<icon>icon.skill0100</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<isDebuff>true</isDebuff>
+		<hitTime>2000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32576" toLevel="1" name="Holy Energy Shot">
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<castRange>900</castRange>
+		<hitTime>2000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32577" toLevel="1" name="Holy Magic Blast">
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<castRange>900</castRange>
+		<hitTime>2000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32578" toLevel="1" name="Holy Regeneration">
+		<!-- Refills HP of the target and nearby allies and increases their HP Regen ability. -->
+		<icon>icon.skill1044</icon>
+		<operateType>A1</operateType>
+		<castRange>900</castRange>
+		<hitTime>3000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>100</effectPoint>
+	</skill>
+	<skill id="32579" toLevel="1" name="Light Strike">
+		<operateType>A1</operateType>
+		<castRange>40</castRange>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32580" toLevel="1" name="Light Aggression">
+		<!-- Forces the enemy to target you. -->
+		<icon>icon.skill10026</icon>
+		<operateType>A1</operateType>
+		<isDebuff>true</isDebuff>
+		<castRange>600</castRange>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32581" toLevel="1" name="Light Aggression Aura">
+		<!-- Forces enemies to target you. -->
+		<icon>icon.skill10027</icon>
+		<operateType>A1</operateType>
+		<isDebuff>true</isDebuff>
+		<hitTime>2000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32582" toLevel="1" name="Light Double Blade Swing">
+		<operateType>A1</operateType>
+		<castRange>40</castRange>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32583" toLevel="1" name="Light High Frequency Shout">
+		<!-- Shouts at a high pitch, inflicting physical damage on nearby enemies and dazing them. -->
+		<icon>icon.skill0100</icon>
+		<operateType>A1</operateType>
+		<isDebuff>true</isDebuff>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32584" toLevel="1" name="Light Sharp Shot">
+		<operateType>A1</operateType>
+		<castRange>1100</castRange>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32585" toLevel="1" name="Light Multi Shot">
+		<operateType>A1</operateType>
+		<castRange>900</castRange>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32586" toLevel="1" name="Light Fast Aiming">
+		<!-- Casts a buff that increases your Atk. Spd. -->
+		<icon>icon.skill1086</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<hitTime>2000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32587" toLevel="1" name="Light Magic Shot">
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<castRange>900</castRange>
+		<hitTime>2000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32588" toLevel="1" name="Light Magic Blast">
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<castRange>900</castRange>
+		<hitTime>2000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32589" toLevel="1" name="Light Friend Cure">
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<hitTime>2000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32590" toLevel="2" name="Light Spear Slash">
+		<operateType>A1</operateType>
+		<castRange>60</castRange>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32591" toLevel="2" name="Light Force Explosion">
+		<!-- Inflicts damage on nearby enemies and stuns the target. -->
+		<icon>icon.skill0100</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<isDebuff>true</isDebuff>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32592" toLevel="1" name="Light Shield">
+		<!-- Temporarily increases your P. Def. -->
+		<icon>icon.skill1389</icon>
+		<operateType>A1</operateType>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+	</skill>
+	<skill id="32593" toLevel="1" name="Light Double Punch">
+		<!-- Cuts bellies of nearby enemies, making them bleed. -->
+		<icon>icon.skill0096</icon>
+		<operateType>A1</operateType>
+		<isDebuff>true</isDebuff>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32594" toLevel="1" name="Light Might">
+		<!-- Increases your P. Atk. -->
+		<icon>icon.skill1068</icon>
+		<operateType>A1</operateType>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+	</skill>
+	<skill id="32595" toLevel="1" name="Light Power Slash">
+		<operateType>A1</operateType>
+		<castRange>40</castRange>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32596" toLevel="1" name="Light Electronic Shock">
+		<!-- Cuts bellies of nearby enemies, making them bleed. -->
+		<icon>icon.skill0096</icon>
+		<operateType>A1</operateType>
+		<isDebuff>true</isDebuff>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32597" toLevel="1" name="Light Paralyze Field">
+		<!-- Inflicts damage on nearby enemies with magic force, paralyzing them. -->
+		<icon>icon.skill1170</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<isDebuff>true</isDebuff>
+		<hitTime>3000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32598" toLevel="1" name="Light Power Overwhelming">
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<hitTime>2000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-100</effectPoint>
+	</skill>
+	<skill id="32599" toLevel="1" name="Fire Spike">
+		<icon>icon.skill1148</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<castRange>900</castRange>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>1000</reuseDelay>
+		<effectPoint>-3000</effectPoint>
+	</skill>
+</list>

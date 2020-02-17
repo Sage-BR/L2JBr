@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="30600" toLevel="1" name="Heavy Hit">
+		<!-- Inflicts a powerful blow on target. -->
+		<operateType>A1</operateType>
+		<castRange>600</castRange>
+		<coolTime>500</coolTime>
+		<effectPoint>-1</effectPoint>
+		<reuseDelay>10000</reuseDelay>
+	</skill>
+	<skill id="30601" toLevel="1" name="Heavy Hit">
+		<!-- Inflicts a powerful blow on target. -->
+		<operateType>A1</operateType>
+		<castRange>40</castRange>
+		<hitTime>2000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-1</effectPoint>
+		<reuseDelay>10000</reuseDelay>
+	</skill>
+	<skill id="30602" toLevel="1" name="Eviscerator Aura">
+		<!-- Casts Eviscerator Force on entire party, which increases P. Skill Critical Rate +1%. -->
+		<icon>icon.icon_lender</icon>
+		<magicCriticalRate>5</magicCriticalRate>
+		<toggleGroupId>0</toggleGroupId>
+		<magicLvl>85</magicLvl>
+		<operateType>AU</operateType>
+		<reuseDelay>5000</reuseDelay>
+		<isMagic>3</isMagic>
+		<effects>
+			<effect name="CallSkillOnActionTime">
+				<skillId>30603</skillId> <!-- Eviscerator Force -->
+				<skillLevel>1</skillLevel>
+				<ticks>7</ticks>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30603" toLevel="1" name="Eviscerator Force">
+		<!-- P. Skill Critical Rate +1%. -->
+		<icon>icon.icon_lender_01</icon>
+		<abnormallVL>1</abnormallVL>
+		<abnormalTime>11</abnormalTime>
+		<abnormalType>SYNERGY_LENKER</abnormalType>
+		<affectRange>1600</affectRange>
+		<canBeDispelled>false</canBeDispelled>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<operateType>A6</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<reuseDelay>5000</reuseDelay>
+		<effectPoint>2</effectPoint>
+		<isMagic>3</isMagic>
+		<effects>
+			<effect name="SkillCriticalProbability">
+				<amount>1</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30604" toLevel="1" name="Block Eviscerator Force">
+		<!-- Blocks Eviscerator Force. -->
+		<icon>icon.icon_lender</icon>
+		<operateType>P</operateType>
+	</skill>
+	<skill id="30605" toLevel="1" name="Sayha's Seer Aura">
+		<!-- Casts Sayha's Seer Force on entire party, which increases M. Critical Rate +1%. -->
+		<icon>icon.icon_Er_wizard</icon>
+		<magicCriticalRate>5</magicCriticalRate>
+		<toggleGroupId>0</toggleGroupId>
+		<magicLvl>85</magicLvl>
+		<operateType>AU</operateType>
+		<reuseDelay>5000</reuseDelay>
+		<isMagic>3</isMagic>
+		<effects>
+			<effect name="CallSkillOnActionTime">
+				<skillId>30606</skillId> <!-- Sayha's Seer Force -->
+				<skillLevel>1</skillLevel>
+				<ticks>7</ticks>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30606" toLevel="1" name="Sayha's Seer Force">
+		<!-- M. Critical Rate +1%. -->
+		<icon>icon.icon_Er_wizard_01</icon>
+		<abnormallVL>1</abnormallVL>
+		<abnormalTime>11</abnormalTime>
+		<abnormalType>SYNERGY_SEER</abnormalType>
+		<affectRange>1600</affectRange>
+		<canBeDispelled>false</canBeDispelled>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<operateType>A6</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<reuseDelay>5000</reuseDelay>
+		<effectPoint>2</effectPoint>
+		<isMagic>3</isMagic>
+		<effects>
+			<effect name="MagicCriticalRate">
+				<amount>1</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="30607" toLevel="1" name="Block Sayha's Seer Force">
+		<!-- Blocks Sayha's Seer Force. -->
+		<icon>icon.icon_Er_wizard</icon>
+		<operateType>P</operateType>
+	</skill>
+	<skill id="30608" toLevel="5" name="Fury of Eviscerator">
+		<!-- P. Atk. +$s1. -->
+		<icon>icon.skill30509</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>5</abnormalTime>
+		<abnormalType>ALL_ATTACK_UP</abnormalType>
+		<operateType>A2</operateType>
+		<hitTime>300</hitTime>
+		<effectPoint>500</effectPoint>
+		<isMagic>4</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="PAtk">
+				<amount>
+					<value level="1">5</value>
+					<value level="2">10</value>
+					<value level="3">15</value>
+					<value level="4">20</value>
+					<value level="5">20</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="AttackTrait" fromLevel="5" toLevel="5">
+				<KNOCKDOWN>50</KNOCKDOWN>
+			</effect>
+		</effects>
+	</skill>
+</list>

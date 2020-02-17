@@ -1,0 +1,1725 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="27700" toLevel="6" name="Inherent Abilities - Gloves Attack">
+		<!-- P. Atk. +1%, M. Atk. +2%. -->
+		<icon>icon.pk</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="PAtk">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">1.1</value>
+					<value level="3">1.2</value>
+					<value level="4">1.3</value>
+					<value level="5">1.4</value>
+					<value level="6">1.5</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>
+					<value level="1">2</value>
+					<value level="2">2.2</value>
+					<value level="3">2.4</value>
+					<value level="4">2.6</value>
+					<value level="5">2.8</value>
+					<value level="6">3</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="27701" toLevel="6" name="Inherent Abilities - Shoes Attack">
+		<!-- P. Atk. +1%, M. Atk. +2%. -->
+		<icon>icon.pk</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="PAtk">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">1.1</value>
+					<value level="3">1.2</value>
+					<value level="4">1.3</value>
+					<value level="5">1.4</value>
+					<value level="6">1.5</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>
+					<value level="1">2</value>
+					<value level="2">2.2</value>
+					<value level="3">2.4</value>
+					<value level="4">2.6</value>
+					<value level="5">2.8</value>
+					<value level="6">3</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="27702" toLevel="6" name="Shilen's Ring">
+		<!-- M. Def. $s1, Dark Attribute Resistance +$s2, STR/ INT +$s3, Skill Critical Damage +$s4. Effects do not stack with additional rings. -->
+		<icon>BranchIcon.Icon.ring_of_shilen_i00</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="MagicalDefence">
+				<amount>
+					<value level="1">30</value>
+					<value level="2">32</value>
+					<value level="3">35</value>
+					<value level="4">40</value>
+					<value level="5">45</value>
+					<value level="6">50</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">100</value>
+					<value level="2">110</value>
+					<value level="3">110</value>
+					<value level="4">120</value>
+					<value level="5">120</value>
+					<value level="6">130</value>
+				</amount>
+				<attribute>DARK</attribute>
+			</effect>
+			<effect name="StatUp">
+				<amount>
+					<value level="1">5</value>
+					<value level="2">6</value>
+					<value level="3">6</value>
+					<value level="4">7</value>
+					<value level="5">7</value>
+					<value level="6">8</value>
+				</amount>
+				<stat>STR</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>
+					<value level="1">5</value>
+					<value level="2">6</value>
+					<value level="3">6</value>
+					<value level="4">7</value>
+					<value level="5">7</value>
+					<value level="6">8</value>
+				</amount>
+				<stat>INT</stat>
+			</effect>
+			<effect name="SkillCriticalDamage">
+				<amount>
+					<value level="1">18</value>
+					<value level="2">20</value>
+					<value level="3">20</value>
+					<value level="4">25</value>
+					<value level="5">25</value>
+					<value level="6">30</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>
+					<value level="2">12</value>
+					<value level="3">12</value>
+					<value level="4">15</value>
+					<value level="5">18</value>
+					<value level="6">20</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>
+					<value level="2">12</value>
+					<value level="3">12</value>
+					<value level="4">15</value>
+					<value level="5">18</value>
+					<value level="6">20</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="27703" toLevel="1" name="Shilen's Harshness">
+		<!-- When killing another character, there's a 70% chance that the PK count will not increase. -->
+		<icon>BranchIcon.Icon.ring_of_shilen_i00</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+	</skill>
+	<skill id="27704" toLevel="1" name="Shilen's Will">
+		<!-- Increases P./ M. Atk. by 100% for 60 sec. -->
+		<icon>BranchIcon.Icon.ring_of_shilen_i00</icon>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<hitTime>200</hitTime>
+		<reuseDelay>7200000</reuseDelay>
+	</skill>
+	<skill id="27705" toLevel="6" name="Shilen's Necklace">
+		<!-- M. Def. +$s1, Dark Attribute Resistance +$s2, STR/ INT +$s3, Physical/ Mental attack success rate +$s4. Effects do not stack with additional rings. -->
+		<icon>BranchIcon.Icon.necklace_of_shilen_i00</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="MagicalDefence">
+				<amount>
+					<value level="1">60</value>
+					<value level="2">62</value>
+					<value level="3">65</value>
+					<value level="4">70</value>
+					<value level="5">75</value>
+					<value level="6">80</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">120</value>
+					<value level="2">130</value>
+					<value level="3">130</value>
+					<value level="4">140</value>
+					<value level="5">140</value>
+					<value level="6">150</value>
+				</amount>
+				<attribute>DARK</attribute>
+			</effect>
+			<effect name="StatUp">
+				<amount>
+					<value level="1">7</value>
+					<value level="2">8</value>
+					<value level="3">8</value>
+					<value level="4">9</value>
+					<value level="5">9</value>
+					<value level="6">10</value>
+				</amount>
+				<stat>STR</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>
+					<value level="1">7</value>
+					<value level="2">8</value>
+					<value level="3">8</value>
+					<value level="4">9</value>
+					<value level="5">9</value>
+					<value level="6">10</value>
+				</amount>
+				<stat>INT</stat>
+			</effect>
+			<effect name="AttackTrait">
+				<DERANGEMENT>
+					<value level="1">25</value>
+					<value level="2">25</value>
+					<value level="3">30</value>
+					<value level="4">35</value>
+					<value level="5">35</value>
+					<value level="6">40</value>
+				</DERANGEMENT>
+			</effect>
+			<effect name="MaxHp">
+				<amount>
+					<value level="2">25</value>
+					<value level="3">30</value>
+					<value level="4">34</value>
+					<value level="5">37</value>
+					<value level="6">40</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="27706" toLevel="1" name="Shilen's Strength">
+		<!-- When being attacked, there's a chance that the amount of PvP damage received will be reduced. -->
+		<icon>BranchIcon.Icon.necklace_of_shilen_i00</icon>
+		<operateType>P</operateType>
+	</skill>
+	<skill id="27707" toLevel="1" name="Shilen's Dignity">
+		<!-- Stuns target for 60 sec. -->
+		<icon>BranchIcon.Icon.necklace_of_shilen_i00</icon>
+		<operateType>A1</operateType>
+		<isDebuff>true</isDebuff>
+		<hitTime>200</hitTime>
+		<reuseDelay>7200000</reuseDelay>
+		<effectPoint>-999</effectPoint>
+	</skill>
+	<skill id="27708" toLevel="6" name="Shilen's Earring">
+		<!-- M. Def. +$s1, Dark Attribute Resistance +$s2, STR/ INT +$s3, Physical/ Mental Resistance +$s4, Speed +$s5. Effects do not stack with additional rings. -->
+		<icon>BranchIcon.Icon.earring_of_shilen_i00</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<reuseDelay>
+			<value level="1">300000</value>
+			<value level="2">0</value>
+			<value level="3">0</value>
+			<value level="4">0</value>
+			<value level="5">0</value>
+			<value level="6">0</value>
+		</reuseDelay>
+		<effects>
+			<effect name="MagicalDefence">
+				<amount>
+					<value level="1">50</value>
+					<value level="2">52</value>
+					<value level="3">55</value>
+					<value level="4">60</value>
+					<value level="5">65</value>
+					<value level="6">70</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">110</value>
+					<value level="2">120</value>
+					<value level="3">120</value>
+					<value level="4">130</value>
+					<value level="5">130</value>
+					<value level="6">140</value>
+				</amount>
+				<attribute>DARK</attribute>
+			</effect>
+			<effect name="StatUp">
+				<amount>
+					<value level="1">6</value>
+					<value level="2">7</value>
+					<value level="3">7</value>
+					<value level="4">8</value>
+					<value level="5">8</value>
+					<value level="6">9</value>
+				</amount>
+				<stat>STR</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>
+					<value level="1">6</value>
+					<value level="2">7</value>
+					<value level="3">7</value>
+					<value level="4">8</value>
+					<value level="5">8</value>
+					<value level="6">9</value>
+				</amount>
+				<stat>INT</stat>
+			</effect>
+			<effect name="DefenceTrait">
+				<DERANGEMENT>
+					<value level="1">30</value>
+					<value level="2">30</value>
+					<value level="3">35</value>
+					<value level="4">35</value>
+					<value level="5">40</value>
+					<value level="6">45</value>
+				</DERANGEMENT>
+			</effect>
+			<effect name="Speed">
+				<amount>
+					<value level="1">10</value>
+					<value level="2">15</value>
+					<value level="3">15</value>
+					<value level="4">20</value>
+					<value level="5">20</value>
+					<value level="6">25</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MaxCp">
+				<amount>
+					<value level="2">50</value>
+					<value level="3">57</value>
+					<value level="4">68</value>
+					<value level="5">80</value>
+					<value level="6">100</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="27709" toLevel="1" name="Shilen's Energy">
+		<!-- CHA +10. -->
+		<icon>BranchIcon.Icon.earring_of_shilen_i00</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="StatUp">
+				<amount>10</amount>
+				<stat>CHA</stat>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="27710" toLevel="1" name="Shilen's Protection">
+		<!-- Creates a space that cancels all ranged attacks and debuffs for 60 sec. -->
+		<icon>BranchIcon.Icon.earring_of_shilen_i00</icon>
+		<operateType>A1</operateType>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>7200000</reuseDelay>
+		<effectPoint>379</effectPoint>
+	</skill>
+	<skill id="27711" toLevel="1" name="Scroll: Shilen's Ring">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="27712" toLevel="1" name="Scroll: Shilen's Necklace">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="27713" toLevel="1" name="Scroll: Shilen's Earring">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="27714" toLevel="1" name="Shilen's Strength">
+		<!-- When being attacked, there's a chance that the amount of PvP damage received will be reduced. -->
+		<icon>icon.skill3080</icon>
+		<operateType>A1</operateType>
+		<isMagic>4</isMagic>
+		<castRange>400</castRange>
+	</skill>
+	<skill id="27715" toLevel="1" name="Prestige Cube">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="27716" toLevel="1" name="Zodiac Agathion Pack">
+		<icon>icon.etc_treasure_box_i02</icon>
+		<operateType>A1</operateType>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+	</skill>
+	<skill id="27717" toLevel="6" name="Greater Jewel's Blessing">
+		<!-- You can feel a new energy thanks to your possession of a Greater Jewel. Max CP +5%. -->
+		<icon>icon.etc_bm_brooch_lavianrose_piece</icon>
+		<magicLvl>1</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MaxHp">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">7</value>
+					<value level="3">15</value>
+					<value level="4">17</value>
+					<value level="5">20</value>
+					<value level="6">25</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxCp">
+				<amount>
+					<value level="1">5</value>
+					<value level="2">7</value>
+					<value level="3">15</value>
+					<value level="4">17</value>
+					<value level="5">20</value>
+					<value level="6">25</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="27718" toLevel="1" name="La Vie En Rose's Elegant Brooch">
+		<!-- 6 Jewels can be equipped. -->
+		<icon>BranchIcon.icon.etc_g_bm_brooch_lavianrose</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="JewelSlot">
+				<amount>6</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="27719" toLevel="1" name="La Vie En Rose's Elegant Brooch">
+		<!-- Increases the inventory's size. -->
+		<icon>BranchIcon.icon.etc_g_bm_brooch_lavianrose</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="EnlargeSlot">
+				<amount>12</amount>
+				<type>INVENTORY_NORMAL</type>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="27720" toLevel="1" name="Ultimate Jewelry Box">
+		<itemConsumeId>38941</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="Restoration">
+				<itemId>26296</itemId> <!-- La Vie En Rose's Jewelry Box -->
+				<itemCount>1</itemCount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="27721" toLevel="1" name="Lv.1 La Vie En Rose's Energy">
+		<!-- For 30 sec., party members' M. Atk. +400%. -->
+		<icon>icon.etc_5slot_brooch_i00</icon>
+		<operateType>A2</operateType>
+		<abnormalType>PUBLIC_SLOT</abnormalType> <!-- Guess -->
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>30</abnormalTime>
+		<affectRange>1000</affectRange>
+		<hitTime>500</hitTime>
+		<coolTime>1000</coolTime>
+		<reuseDelay>900000</reuseDelay>
+		<staticReuse>true</staticReuse>
+		<effectPoint>702</effectPoint>
+		<targetType>SELF</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<reuseDelayGroup>27724</reuseDelayGroup>
+		<effects>
+			<effect name="MAtk">
+				<amount>400</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="27722" toLevel="1" name="Lv.2 La Vie En Rose's Energy">
+		<!-- For 30 sec., party members' P. Atk. +100% and M. Atk. +400%. -->
+		<icon>icon.etc_5slot_brooch_i00</icon>
+		<operateType>A2</operateType>
+		<abnormalType>PUBLIC_SLOT</abnormalType> <!-- Guess -->
+		<abnormalLvl>2</abnormalLvl>
+		<abnormalTime>30</abnormalTime>
+		<affectRange>1000</affectRange>
+		<hitTime>500</hitTime>
+		<coolTime>1000</coolTime>
+		<reuseDelay>900000</reuseDelay>
+		<staticReuse>true</staticReuse>
+		<effectPoint>702</effectPoint>
+		<targetType>SELF</targetType>
+		<targetType>SELF</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<reuseDelayGroup>27724</reuseDelayGroup>
+		<effects>
+			<effect name="PAtk">
+				<amount>100</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>400</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="27723" toLevel="1" name="Lv.3 La Vie En Rose's Energy">
+		<!-- For 30 sec., party members' P. Atk. +100%, M. Atk. +400%, and M. Def. +10000. -->
+		<icon>icon.etc_5slot_brooch_i00</icon>
+		<operateType>A2</operateType>
+		<abnormalType>PUBLIC_SLOT</abnormalType> <!-- Guess -->
+		<abnormalLvl>3</abnormalLvl>
+		<abnormalTime>30</abnormalTime>
+		<affectRange>1000</affectRange>
+		<hitTime>500</hitTime>
+		<coolTime>1000</coolTime>
+		<reuseDelay>900000</reuseDelay>
+		<staticReuse>true</staticReuse>
+		<effectPoint>702</effectPoint>
+		<targetType>SELF</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<reuseDelayGroup>27724</reuseDelayGroup>
+		<effects>
+			<effect name="PAtk">
+				<amount>100</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>400</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>10000</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="27724" toLevel="1" name="Lv.4 La Vie En Rose's Energy">
+		<!-- For 30 sec., party members' P. Atk. +100%, M. Atk. +400%, P. Def. +13000, and M. Def. +10000. -->
+		<icon>icon.etc_5slot_brooch_i00</icon>
+		<operateType>A2</operateType>
+		<abnormalType>PUBLIC_SLOT</abnormalType> <!-- Guess -->
+		<abnormalLvl>4</abnormalLvl>
+		<abnormalTime>30</abnormalTime>
+		<affectRange>1000</affectRange>
+		<hitTime>500</hitTime>
+		<coolTime>1000</coolTime>
+		<reuseDelay>900000</reuseDelay>
+		<staticReuse>true</staticReuse>
+		<effectPoint>702</effectPoint>
+		<targetType>SELF</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<reuseDelayGroup>27724</reuseDelayGroup>
+		<effects>
+			<effect name="PAtk">
+				<amount>100</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>400</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>13000</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>10000</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="27725" toLevel="1" name="Ultimate Jewelry Box">
+		<itemConsumeId>28365</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="100">
+						<item id="28364" count="1" /> <!-- Jewel Grinder -->
+					</item>
+				</items>
+			</effect>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="0.31">
+						<item id="26475" count="1" /> <!-- Radiant Gemstone Fragment -->
+					</item>
+					<item chance="0.04">
+						<item id="28489" count="1" /> <!-- La Vie En Rose's Magnificent Brooch Jewel -->
+					</item>
+					<item chance="7.75">
+						<item id="38939" count="1" /> <!-- La Vie En Rose's Aquamarine Box -->
+					</item>
+					<item chance="2.3">
+						<item id="26508" count="1" /> <!-- La Vie En Rose's Amethyst Box -->
+					</item>
+					<item chance="7.5">
+						<item id="38937" count="1" /> <!-- La Vie En Rose's Diamond Box -->
+					</item>
+					<item chance="7.72">
+						<item id="26492" count="1" /> <!-- La Vie En Rose's Garnet Box -->
+					</item>
+					<item chance="8.02">
+						<item id="38940" count="1" /> <!-- La Vie En Rose's Pearl Box -->
+					</item>
+					<item chance="7.39">
+						<item id="38938" count="1" /> <!-- La Vie En Rose's Emerald Box -->
+					</item>
+					<item chance="7.64">
+						<item id="27483" count="1" /> <!-- La Vie En Rose's Vital Stone Box -->
+					</item>
+					<item chance="7.69">
+						<item id="26507" count="1" /> <!-- La Vie En Rose's Cat's Eye Box -->
+					</item>
+					<item chance="2.29">
+						<item id="47701" count="1" /> <!-- La Vie En Rose's Red Cat's Eye Box -->
+					</item>
+					<item chance="7.66">
+						<item id="38936" count="1" /> <!-- La Vie En Rose's Obsidian Box -->
+					</item>
+					<item chance="7.78">
+						<item id="38935" count="1" /> <!-- La Vie En Rose's Opal Box -->
+					</item>
+					<item chance="7.88">
+						<item id="38932" count="1" /> <!-- La Vie En Rose's Ruby Box -->
+					</item>
+					<item chance="7.73">
+						<item id="38933" count="1" /> <!-- La Vie En Rose's Sapphire Box -->
+					</item>
+					<item chance="3.14">
+						<item id="47702" count="1" /> <!-- La Vie En Rose's Blue Cat's Eye Box -->
+					</item>
+					<item chance="7.16">
+						<item id="27479" count="1" /> <!-- La Vie En Rose's Tanzanite Box -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="27726" toLevel="1" name="Abundance Box - Infinite">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="27727" toLevel="1" name="Equip Goddess' Accessory - Lv. 1 Necklace">
+		<!-- The necklace imbued with the goddess' power is shining. -->
+		<icon>icon.accessory_punishment_talisman_i01</icon>
+		<operateType>A1</operateType>
+		<isMagic>3</isMagic> <!-- Dance Skill -->
+	</skill>
+	<skill id="27728" toLevel="1" name="Unequip Goddess' Accessory - Lv. 1 Necklace">
+		<!-- The light of the necklace imbued with the goddess' power fades away. -->
+		<icon>icon.accessory_punishment_talisman_i01</icon>
+		<operateType>A1</operateType>
+		<effectPoint>1</effectPoint>
+	</skill>
+	<skill id="27729" toLevel="1" name="Equip Goddess' Accessory - Lv. 1 Earring">
+		<!-- The earring imbued with the goddess' power is shining. -->
+		<icon>icon.accessory_punishment_talisman_i01</icon>
+		<operateType>A1</operateType>
+		<isMagic>3</isMagic> <!-- Dance Skill -->
+	</skill>
+	<skill id="27730" toLevel="1" name="Unequip Goddess' Accessory - Lv. 1 Earring">
+		<!-- The light of the earring imbued with the goddess' power fades away. -->
+		<icon>icon.accessory_punishment_talisman_i01</icon>
+		<operateType>A1</operateType>
+		<effectPoint>1</effectPoint>
+	</skill>
+	<skill id="27731" toLevel="1" name="Equip Goddess' Accessory - Lv. 1 Ring">
+		<!-- The ring imbued with the goddess' power is shining. -->
+		<icon>icon.accessory_punishment_talisman_i01</icon>
+		<operateType>A1</operateType>
+		<isMagic>3</isMagic> <!-- Dance Skill -->
+	</skill>
+	<skill id="27732" toLevel="1" name="Unequip Goddess' Accessory - Lv. 1 Ring">
+		<!-- The light of the ring imbued with the goddess' power fades away. -->
+		<icon>icon.accessory_punishment_talisman_i01</icon>
+		<operateType>A1</operateType>
+		<effectPoint>1</effectPoint>
+	</skill>
+	<skill id="27733" toLevel="1" name="Equip Goddess' Accessory - Lv. 2 Necklace">
+		<!-- The necklace imbued with the goddess' power is shining. -->
+		<icon>icon.accessory_punishment_talisman_i01</icon>
+		<operateType>A1</operateType>
+		<isMagic>3</isMagic> <!-- Dance Skill -->
+	</skill>
+	<skill id="27734" toLevel="1" name="Unequip Goddess' Accessory - Lv. 2 Necklace">
+		<!-- The light of the necklace imbued with the goddess' power fades away. -->
+		<icon>icon.accessory_punishment_talisman_i01</icon>
+		<operateType>A1</operateType>
+		<effectPoint>1</effectPoint>
+	</skill>
+	<skill id="27735" toLevel="1" name="Equip Goddess' Accessory - Lv. 2 Earring">
+		<!-- The earring imbued with the goddess' power is shining. -->
+		<icon>icon.accessory_punishment_talisman_i01</icon>
+		<operateType>A1</operateType>
+		<isMagic>3</isMagic> <!-- Dance Skill -->
+	</skill>
+	<skill id="27736" toLevel="1" name="Unequip Goddess' Accessory - Lv. 2 Earring">
+		<!-- The light of the earring imbued with the goddess' power fades away. -->
+		<icon>icon.accessory_punishment_talisman_i01</icon>
+		<operateType>A1</operateType>
+		<effectPoint>1</effectPoint>
+	</skill>
+	<skill id="27737" toLevel="1" name="Equip Goddess' Accessory - Lv. 2 Ring">
+		<!-- The ring imbued with the goddess' power is shining. -->
+		<icon>icon.accessory_punishment_talisman_i01</icon>
+		<operateType>A1</operateType>
+		<isMagic>3</isMagic> <!-- Dance Skill -->
+	</skill>
+	<skill id="27738" toLevel="1" name="Unequip Goddess' Accessory - Lv. 2 Ring">
+		<!-- The light of the ring imbued with the goddess' power fades away. -->
+		<icon>icon.accessory_punishment_talisman_i01</icon>
+		<operateType>A1</operateType>
+		<effectPoint>1</effectPoint>
+	</skill>
+	<skill id="27739" toLevel="1" name="Equip Goddess' Accessory - Lv. 3 Necklace">
+		<!-- The necklace imbued with the goddess' power is shining. -->
+		<icon>icon.accessory_punishment_talisman_i01</icon>
+		<operateType>A1</operateType>
+		<isMagic>3</isMagic> <!-- Dance Skill -->
+	</skill>
+	<skill id="27740" toLevel="1" name="Unequip Goddess' Accessory - Lv. 3 Necklace">
+		<!-- The light of the necklace imbued with the goddess' power fades away. -->
+		<icon>icon.accessory_punishment_talisman_i01</icon>
+		<operateType>A1</operateType>
+		<effectPoint>1</effectPoint>
+	</skill>
+	<skill id="27741" toLevel="1" name="Equip Goddess' Accessory - Lv. 3 Earring">
+		<!-- The earring imbued with the goddess' power is shining. -->
+		<icon>icon.accessory_punishment_talisman_i01</icon>
+		<operateType>A1</operateType>
+		<isMagic>3</isMagic> <!-- Dance Skill -->
+	</skill>
+	<skill id="27742" toLevel="1" name="Unequip Goddess' Accessory - Lv. 3 Earring">
+		<!-- The light of the earring imbued with the goddess' power fades away. -->
+		<icon>icon.accessory_punishment_talisman_i01</icon>
+		<operateType>A1</operateType>
+		<effectPoint>1</effectPoint>
+	</skill>
+	<skill id="27743" toLevel="1" name="Equip Goddess' Accessory - Lv. 3 Ring">
+		<!-- The ring imbued with the goddess' power is shining. -->
+		<icon>icon.accessory_punishment_talisman_i01</icon>
+		<operateType>A1</operateType>
+		<isMagic>3</isMagic> <!-- Dance Skill -->
+	</skill>
+	<skill id="27744" toLevel="1" name="Unequip Goddess' Accessory - Lv. 3 Ring">
+		<!-- The light of the ring imbued with the goddess' power fades away. -->
+		<icon>icon.accessory_punishment_talisman_i01</icon>
+		<operateType>A1</operateType>
+		<effectPoint>1</effectPoint>
+	</skill>
+	<skill id="27745" toLevel="1" name="Chef Monkey's Belt">
+		<!-- Max HP/ MP/ CP +300, Weight +12800, Damage +7%, Received Damage -5%, Inventory Slots +18, Attribute Resistance +5. -->
+		<icon>BranchIcon.icon.g_monkey_belt</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="MaxCp">
+				<amount>300</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>300</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>300</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="WeightLimit">
+				<amount>12800</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="DamageByAttack">
+				<amount>-5</amount>
+				<type>PK</type>
+			</effect>
+			<effect name="DamageByAttack">
+				<amount>-5</amount>
+				<type>ENEMY_ALL</type>
+			</effect>
+			<effect name="EnlargeSlot">
+				<amount>18</amount>
+				<type>INVENTORY_NORMAL</type>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="27746" toLevel="1" name="Item Skill: Unlimited Vitality Agathion">
+		<!-- When equipped, XP +3%. -->
+		<icon>BranchSys.icon.br_aga_bonus_i00</icon>
+		<operateType>P</operateType>
+	</skill>
+	<skill id="27747" toLevel="1" name="2016 World Olympiad Hero">
+		<!-- STR +5, DEX +5, CON +5, INT +5, WIT +5, MEN +5 -->
+		<icon>icon.accessory_ornithomimus_cap_i00</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="StatUp">
+				<amount>5</amount>
+				<stat>STR</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>5</amount>
+				<stat>DEX</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>5</amount>
+				<stat>CON</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>5</amount>
+				<stat>INT</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>5</amount>
+				<stat>WIT</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>5</amount>
+				<stat>MEN</stat>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="27748" toLevel="1" name="Special Treasure Chest">
+		<operateType>A1</operateType>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+	</skill>
+	<skill id="27749" toLevel="6" name="Gran Kain's Necklace">
+		<!-- When used, ignores target's invincibility for $s1 sec. -->
+		<icon>BranchIcon.Icon.necklace_of_grankein_i00</icon>
+		<operateType>A2</operateType>
+		<reuseDelay>600000</reuseDelay>
+		<effectPoint>-1</effectPoint>
+		<abnormalLvl>
+			<value level="1">1</value>
+			<value level="2">2</value>
+			<value level="3">3</value>
+			<value level="4">4</value>
+			<value level="5">5</value>
+			<value level="6">6</value>
+		</abnormalLvl>
+		<abnormalTime>
+			<value level="1">6</value>
+			<value level="2">7</value>
+			<value level="3">8</value>
+			<value level="4">10</value>
+			<value level="5">12</value>
+			<value level="6">15</value>		
+		</abnormalTime>
+		<hitCancelTime>0</hitCancelTime>
+		<basicProperty>NONE</basicProperty>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="27750" toLevel="6" name="Einhasad's Necklace">
+		<!-- Damage Reflection Resistance becomes $s1 for 30 sec. -->
+		<icon>BranchIcon.Icon.necklace_of_einhasad_i00</icon>
+		<operateType>A2</operateType>
+		<reuseDelay>300000</reuseDelay>
+		<effectPoint>1</effectPoint>
+		<abnormalLvl>
+			<value level="1">1</value>
+			<value level="2">2</value>
+			<value level="3">3</value>
+			<value level="4">4</value>
+			<value level="5">5</value>
+			<value level="6">6</value>
+		</abnormalLvl>
+		<abnormalTime>30</abnormalTime>
+		<hitCancelTime>0</hitCancelTime>
+		<basicProperty>NONE</basicProperty>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="DamageShield">
+				<amount>
+					<value level="1">15</value>
+					<value level="2">20</value>
+					<value level="3">35</value>
+					<value level="4">60</value>
+					<value level="5">80</value>
+					<value level="6">100</value>
+				</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="27751" toLevel="6" name="Pa'agrio's Earring">
+		<!-- $s1 chance with standard attacks and $s2 chance when casting a skill to inflict $s3 fixed damage. -->
+		<icon>BranchIcon.Icon.earring_of_paagrio_i00</icon>
+		<operateType>P</operateType>
+	</skill>
+	<skill id="27752" toLevel="6" name="Eva's Earring">
+		<!-- P. Def. and M. Def. become $s1 for 40 sec. -->
+		<icon>BranchIcon.Icon.earring_of_eva_i00</icon>
+		<operateType>A2</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<isDebuff>true</isDebuff>
+		<castRange>600</castRange>
+		<reuseDelay>300000</reuseDelay>
+		<effectPoint>-379</effectPoint>
+		<abnormalLvl>
+			<value level="1">1</value>
+			<value level="2">2</value>
+			<value level="3">3</value>
+			<value level="4">4</value>
+			<value level="5">5</value>
+			<value level="6">6</value>
+		</abnormalLvl>
+		<abnormalTime>40</abnormalTime>
+		<hitCancelTime>0</hitCancelTime>
+		<basicProperty>NONE</basicProperty>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="PhysicalDefence">
+				<amount>
+					<value level="1">15</value>
+					<value level="2">20</value>
+					<value level="3">25</value>
+					<value level="4">30</value>
+					<value level="5">40</value>
+					<value level="6">50</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>
+					<value level="1">15</value>
+					<value level="2">20</value>
+					<value level="3">25</value>
+					<value level="4">30</value>
+					<value level="5">40</value>
+					<value level="6">50</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDefenceBonus">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">10</value>
+					<value level="4">12</value>
+					<value level="5">15</value>
+					<value level="6">20</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpMagicalSkillDefenceBonus">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">10</value>
+					<value level="4">12</value>
+					<value level="5">15</value>
+					<value level="6">20</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDefenceBonus">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">10</value>
+					<value level="4">12</value>
+					<value level="5">15</value>
+					<value level="6">20</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">150</value>
+					<value level="6">300</value>
+				</amount>
+				<attribute>FIRE</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">150</value>
+					<value level="6">300</value>
+				</amount>
+				<attribute>WATER</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">150</value>
+					<value level="6">300</value>
+				</amount>
+				<attribute>EARTH</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">150</value>
+					<value level="6">300</value>
+				</amount>
+				<attribute>WIND</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">150</value>
+					<value level="6">300</value>
+				</amount>
+				<attribute>HOLY</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">150</value>
+					<value level="6">300</value>
+				</amount>
+				<attribute>DARK</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="27753" toLevel="6" name="Sayha's Ring">
+		<!-- $s1 chance with standard attacks and $s2 chance when casting a skill to Restrain Physical and Magic skills. -->
+		<icon>BranchIcon.Icon.ring_of_sayhas_i00</icon>
+		<operateType>P</operateType>
+	</skill>
+	<skill id="27754" toLevel="6" name="Maphr's Ring">
+		<!-- $s1 chance with standard attacks and $s2 chance when casting a skill to bind target. -->
+		<icon>BranchIcon.Icon.ring_of_maphr_i00</icon>
+		<operateType>P</operateType>
+	</skill>
+	<skill id="27755" toLevel="1" name="Shilen's Necklace">
+		<!-- Go into Hide state when used. -->
+		<icon>BranchIcon.Icon.necklace_of_shilen_i00</icon>
+		<operateType>A1</operateType>
+		<reuseDelay>120000</reuseDelay>
+		<effectPoint>679</effectPoint>
+	</skill>
+	<skill id="27756" toLevel="1" name="Shilen's Earring">
+		<!-- 90% chance of PK count not increasing after killing another character. -->
+		<icon>BranchIcon.Icon.earring_of_shilen_i00</icon>
+		<operateType>P</operateType>
+	</skill>
+	<skill id="27757" toLevel="1" name="Shilen's Ring">
+		<!-- Resets all cooldowns. -->
+		<icon>BranchIcon.Icon.ring_of_shilen_i00</icon>
+		<operateType>A1</operateType>
+		<reuseDelay>7200000</reuseDelay>
+	</skill>
+	<skill id="27758" toLevel="1" name="Entrance Pass: Embryo Command Post">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="27759" toLevel="1" name="Eva's Rune">
+		<!-- Through the power of Eva, increases Max HP by 10% and decreases Cooldown by 20%. Reflects a portion of damage received back onto the enemy. -->
+		<icon>BranchSys.icon.br_rune_of_eva_i00</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="MaxHp">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DamageShield">
+				<amount>5</amount>
+			</effect>
+			<effect name="Reuse">
+				<amount>-20</amount>
+				<mode>PER</mode>
+				<magicType>0</magicType>
+			</effect>
+			<effect name="Reuse">
+				<amount>-20</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="27760" toLevel="1" name="+10 Shiny Elemental Shirt Pack">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="27761" toLevel="1" name="+10 Reflect Attack T-shirt Pack">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="27762" toLevel="1" name="+10 Reflect Magic T-shirt Pack">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="27763" toLevel="1" name="+10 Pa'agrio's Shirt Pack">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="27764" toLevel="1" name="+10 Sayha's Shirt Pack">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="27765" toLevel="1" name="+10 Eva's Shirt Pack">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="27766" toLevel="1" name="+10 Maphr's Shirt Pack">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="27767" toLevel="1" name="Shiny Elemental Shirt Special Pack">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="27768" toLevel="1" name="Physical Reflect Shirt Special Pack">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="27769" toLevel="1" name="Magical Reflect Shirt Special Pack">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="27770" toLevel="1" name="Royal White Save Card (R)">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="27771" toLevel="1" name="Royal White Save Card (R95)">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="27772" toLevel="1" name="Royal White Save Card (R99)">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="27773" toLevel="1" name="Royal Purple Save Card (R)">
+		<!-- When using an R-grade Weapon Enchantment Standard Weapon Enchant Scroll, increases the chance by 20%. Can only be used with a 12 or higher Enchantment Item. On success, Enchantment count increases by 1. In case of Enchantment failure, the item is not Crystallized, but the base Enchantment count decreases by 1. -->
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="27774" toLevel="1" name="Royal Purple Save Card (R95)">
+		<!-- A ticket that enhances probability by 20% when using a Normal Weapon Enchant Scroll to enchant R95-grade Armor. Can only be used on 12+enchanted items. When Enchant succeeds, it increases by 1. When Enchant fails, the item does not crystallize, but the existing enchant level decreases by 1. -->
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="27775" toLevel="1" name="Royal Purple Save Card (R99)">
+		<!-- A ticket that enhances probability by 20% when using a Normal Weapon Enchant Scroll to enchant R99-grade Armor. Can only be used on 12+enchanted items. When Enchant succeeds, it increases by 1. When Enchant fails, the item does not crystallize, but the existing enchant level decreases by 1. -->
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="27776" toLevel="1" name="Entrance Pass: Embryo Command Post">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="27777" toLevel="1" name="Abundant Seven Signs Box">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="27778" toLevel="1" name="Release Agathion's Seal - Babayaga">
+		<!-- The Agathion - Babayaga seal is released. -->
+		<icon>icon.etc_summon_aga_agit_i00</icon>
+		<operateType>A1</operateType>
+		<hitTime>3000</hitTime>
+	</skill>
+	<skill id="27779" toLevel="1" name="Babayaga Teleport: Town of Aden">
+		<!-- Teleport to the Town of Aden. Usable only when Agathion's Seal is released. -->
+		<operateType>A1</operateType>
+		<hitTime>3000</hitTime>
+		<reuseDelay>600000</reuseDelay>
+	</skill>
+	<skill id="27780" toLevel="1" name="Babayaga Teleport - Town of Rune">
+		<!-- Teleport to the Town of Rune. Usable only when Agathion's Seal is released. -->
+		<operateType>A1</operateType>
+		<hitTime>3000</hitTime>
+		<reuseDelay>600000</reuseDelay>
+	</skill>
+	<skill id="27781" toLevel="1" name="Babayaga Teleport - Town of Giran">
+		<!-- Teleport to the Town of Giran. Usable only when Agathion's Seal is released. -->
+		<operateType>A1</operateType>
+		<hitTime>3000</hitTime>
+		<reuseDelay>600000</reuseDelay>
+	</skill>
+	<skill id="27782" toLevel="1" name="Agathion's Blessing: Dash">
+		<!-- For 10sec., a Babayaga's power boosts Speed by 100%. Cooldown is 10min. -->
+		<icon>icon.skill_transform_buff</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<reuseDelay>600000</reuseDelay>
+		<effectPoint>689</effectPoint>
+	</skill>
+	<skill id="27783" toLevel="1" name="Agathion's Blessing: Meditation">
+		<!-- For 30sec., P. Def. -90% and restores MP by 134 per second. Effect removed when hit. Cooldown is 30 min. -->
+		<icon>icon.skill1430</icon>
+		<operateType>A1</operateType>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<hitTime>2000</hitTime>
+		<reuseDelay>1800000</reuseDelay>
+		<effectPoint>1</effectPoint>
+	</skill>
+	<skill id="27784" toLevel="1" name="Agathion's Blessing: Featherweight">
+		<!-- Weight Limit +9000, and Inventory Slots +9. -->
+		<icon>icon.skill0332</icon>
+		<operateType>P</operateType>
+	</skill>
+	<skill id="27785" toLevel="1" name="Agathion Cute Trick - Babayaga">
+		<!-- See the summoned spirit perform cute tricks. -->
+		<icon>icon.skill_agathion_cute</icon>
+		<operateType>A1</operateType>
+		<hitTime>1000</hitTime>
+	</skill>
+	<skill id="27786" toLevel="1" name="Ride Elk">
+		<!-- Mounts the Elk. -->
+		<icon>icon.skilltransform3</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>TRANSFORM</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>60000</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CanTransform">
+				<transformId>20022</transformId>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="Transformation">
+				<transformationId>20022</transformationId>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="27787" toLevel="10" name="Sayha's Talisman">
+		<!-- P. Def. +$s1, M. Def. +$s2, Acquired XP/ SP +$s3. -->
+		<icon>icon.bm_sayhas_talisman</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<isMagic>3</isMagic>
+		<effects>
+			<effect name="PhysicalDefence">
+				<amount>
+					<value level="1">112</value>
+					<value level="2">225</value>
+					<value level="3">450</value>
+					<value level="4">676</value>
+					<value level="5">901</value>
+					<value level="6">1126</value>
+					<value level="7">1351</value>
+					<value level="8">1576</value>
+					<value level="9">1801</value>
+					<value level="10">2027</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>
+					<value level="1">74</value>
+					<value level="2">147</value>
+					<value level="3">294</value>
+					<value level="4">441</value>
+					<value level="5">589</value>
+					<value level="6">736</value>
+					<value level="7">833</value>
+					<value level="8">1030</value>
+					<value level="9">1178</value>
+					<value level="10">1325</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ExpModify">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+					<value level="4">5</value>
+					<value level="5">7</value>
+					<value level="6">10</value>
+					<value level="7">15</value>
+					<value level="8">20</value>
+					<value level="9">25</value>
+					<value level="10">30</value>
+				</amount>
+			</effect>
+			<effect name="SpModify">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+					<value level="4">5</value>
+					<value level="5">7</value>
+					<value level="6">10</value>
+					<value level="7">15</value>
+					<value level="8">20</value>
+					<value level="9">25</value>
+					<value level="10">30</value>
+				</amount>
+			</effect>
+			<effect name="AdditionalPotionHp">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">0</value>
+					<value level="6">0</value>
+					<value level="7">0</value>
+					<value level="8">0</value>
+					<value level="9">5000</value>
+					<value level="10">7000</value>
+				</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="27788" toLevel="4" name="Sayha's Trust">
+		<!-- Skill Power +$s1, Skill Cooldown -$s2. -->
+		<icon>icon.bm_sayhas_talisman</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<isMagic>3</isMagic>
+		<effects>
+			<effect name="PhysicalSkillPower">
+				<amount>
+					<value level="1">2</value>
+					<value level="2">3</value>
+					<value level="3">5</value>
+					<value level="4">9</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalSkillPower">
+				<amount>
+					<value level="1">2</value>
+					<value level="2">3</value>
+					<value level="3">5</value>
+					<value level="4">9</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Reuse">
+				<amount>
+					<value level="1">-2</value>
+					<value level="2">-3</value>
+					<value level="3">-5</value>
+					<value level="4">-5</value>
+				</amount>
+				<mode>PER</mode>
+				<magicType>0</magicType>
+			</effect>
+			<effect name="Reuse">
+				<amount>
+					<value level="1">-2</value>
+					<value level="2">-3</value>
+					<value level="3">-5</value>
+					<value level="4">-5</value>
+				</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="27789" toLevel="4" name="Sayha's Protection">
+		<!-- For $s1, Damage Received -$s2. -->
+		<icon>
+			<value level="1">icon.sayhas_talisman_g_Lv1</value>
+			<value level="2">icon.sayhas_talisman_g_Lv2</value>
+			<value level="3">icon.sayhas_talisman_g_Lv3</value>
+			<value level="4">icon.sayhas_talisman_g_Lv4</value>
+		</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>45</abnormalTime>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<hitTime>300</hitTime>
+		<coolTime>300</coolTime>
+		<reuseDelay>
+			<value level="1">600000</value>
+			<value level="2">420000</value>
+			<value level="3">300000</value>
+			<value level="4">180000</value>
+		</reuseDelay>
+		<staticReuse>true</staticReuse>
+		<castRange>900</castRange>
+		<effectPoint>1</effectPoint>
+		<effects>
+			<effect name="DamageByAttack">
+				<amount>
+					<value level="1">-5</value>
+					<value level="2">-7</value>
+					<value level="3">-7</value>
+					<value level="4">-10</value>
+				</amount>
+				<type>PK</type>
+			</effect>
+			<effect name="DamageByAttack">
+				<amount>
+					<value level="1">-5</value>
+					<value level="2">-7</value>
+					<value level="3">-7</value>
+					<value level="4">-10</value>
+				</amount>
+				<type>ENEMY_ALL</type>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="27790" toLevel="4" name="Sayha's Encouragement">
+		<!-- For $s1, PvE Damage +$s2. -->
+		<icon>
+			<value level="1">icon.sayhas_talisman_pve_Lv1</value>
+			<value level="2">icon.sayhas_talisman_pve_Lv2</value>
+			<value level="3">icon.sayhas_talisman_pve_Lv3</value>
+			<value level="4">icon.sayhas_talisman_pve_Lv4</value>
+		</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>
+			<value level="1">180</value>
+			<value level="2">180</value>
+			<value level="3">300</value>
+			<value level="4">600</value>
+		</abnormalTime>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<hitTime>300</hitTime>
+		<coolTime>300</coolTime>
+		<reuseDelay>
+			<value level="1">600000</value>
+			<value level="2">420000</value>
+			<value level="3">300000</value>
+			<value level="4">180000</value>
+		</reuseDelay>
+		<staticReuse>true</staticReuse>
+		<castRange>900</castRange>
+		<effectPoint>1</effectPoint>
+		<effects>
+			<effect name="PveMagicalSkillDamageBonus">
+				<amount>
+					<value level="1">5</value>
+					<value level="2">8</value>
+					<value level="3">8</value>
+					<value level="4">10</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvePhysicalAttackDamageBonus">
+				<amount>
+					<value level="1">5</value>
+					<value level="2">8</value>
+					<value level="3">8</value>
+					<value level="4">10</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvePhysicalSkillDamageBonus">
+				<amount>
+					<value level="1">5</value>
+					<value level="2">8</value>
+					<value level="3">8</value>
+					<value level="4">10</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="27791" toLevel="4" name="Sayha's Anger">
+		<!-- For $s1, PvP Damage +$s2. -->
+		<icon>
+			<value level="1">icon.sayhas_talisman_pvp_Lv1</value>
+			<value level="2">icon.sayhas_talisman_pvp_Lv2</value>
+			<value level="3">icon.sayhas_talisman_pvp_Lv3</value>
+			<value level="4">icon.sayhas_talisman_pvp_Lv4</value>
+		</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>45</abnormalTime>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<hitTime>300</hitTime>
+		<coolTime>300</coolTime>
+		<reuseDelay>
+			<value level="1">600000</value>
+			<value level="2">420000</value>
+			<value level="3">300000</value>
+			<value level="4">180000</value>
+		</reuseDelay>
+		<staticReuse>true</staticReuse>
+		<castRange>900</castRange>
+		<effectPoint>1</effectPoint>
+		<effects>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>
+					<value level="1">8</value>
+					<value level="2">8</value>
+					<value level="3">12</value>
+					<value level="4">15</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>
+					<value level="1">8</value>
+					<value level="2">8</value>
+					<value level="3">12</value>
+					<value level="4">15</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>
+					<value level="1">8</value>
+					<value level="2">8</value>
+					<value level="3">12</value>
+					<value level="4">15</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="27792" toLevel="3" name="Sayha's Support">
+		<!-- Recovers HP by $s1, MP by $s2, and CP by $s3. -->
+		<icon>icon.bm_sayhas_talisman</icon>
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<hitTime>300</hitTime>
+		<coolTime>300</coolTime>
+		<reuseDelay>
+			<value level="1">1800000</value>
+			<value level="2">1200000</value>
+			<value level="3">360000</value>
+		</reuseDelay>
+		<staticReuse>true</staticReuse>
+		<effectPoint>10</effectPoint>
+		<effects>
+			<effect name="HealPercent">
+				<power>
+					<value level="1">20</value>
+					<value level="2">20</value>
+					<value level="3">30</value>
+				</power>
+			</effect>
+			<effect name="ManaHealPercent">
+				<power>
+					<value level="1">20</value>
+					<value level="2">20</value>
+					<value level="3">30</value>
+				</power>
+			</effect>
+			<effect name="CpHealPercent">
+				<power>
+					<value level="1">30</value>
+					<value level="2">30</value>
+					<value level="3">50</value>
+				</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="27793" toLevel="1" name="Fortune Talisman Pack">
+		<!-- Double-click to obtain either Sayha's Talisman or Venir's Talisman. -->
+		<operateType>A1</operateType>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+	</skill>
+	<skill id="27794" toLevel="1" name="Seed Talisman Enhancement Pack">
+		<operateType>A1</operateType>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+	</skill>
+	<skill id="27795" toLevel="1" name="Fortune Hair Accessory Box">
+		<!-- Double-click to get 1 random Hair Accessory Box. -->
+		<operateType>A1</operateType>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+	</skill>
+	<skill id="27796" toLevel="1" name="Exclusive Reward Chest">
+		<operateType>A1</operateType>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+	</skill>
+	<skill id="27797" toLevel="1" name="Ultimate Jewelry Box">
+		<itemConsumeId>28470</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="100">
+						<item id="28364" count="1" /> <!-- Jewel Grinder -->
+					</item>
+				</items>
+			</effect>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="0.31">
+						<item id="26475" count="1" /> <!-- Radiant Gemstone Fragment -->
+					</item>
+					<item chance="0.04">
+						<item id="28489" count="1" /> <!-- La Vie En Rose's Magnificent Brooch Jewel -->
+					</item>
+					<item chance="7.75">
+						<item id="38939" count="1" /> <!-- La Vie En Rose's Aquamarine Box -->
+					</item>
+					<item chance="2.3">
+						<item id="26508" count="1" /> <!-- La Vie En Rose's Amethyst Box -->
+					</item>
+					<item chance="7.5">
+						<item id="38937" count="1" /> <!-- La Vie En Rose's Diamond Box -->
+					</item>
+					<item chance="7.72">
+						<item id="26492" count="1" /> <!-- La Vie En Rose's Garnet Box -->
+					</item>
+					<item chance="8.02">
+						<item id="38940" count="1" /> <!-- La Vie En Rose's Pearl Box -->
+					</item>
+					<item chance="7.39">
+						<item id="38938" count="1" /> <!-- La Vie En Rose's Emerald Box -->
+					</item>
+					<item chance="7.64">
+						<item id="27483" count="1" /> <!-- La Vie En Rose's Vital Stone Box -->
+					</item>
+					<item chance="7.69">
+						<item id="26507" count="1" /> <!-- La Vie En Rose's Cat's Eye Box -->
+					</item>
+					<item chance="2.29">
+						<item id="47701" count="1" /> <!-- La Vie En Rose's Red Cat's Eye Box -->
+					</item>
+					<item chance="7.66">
+						<item id="38936" count="1" /> <!-- La Vie En Rose's Obsidian Box -->
+					</item>
+					<item chance="7.78">
+						<item id="38935" count="1" /> <!-- La Vie En Rose's Opal Box -->
+					</item>
+					<item chance="7.88">
+						<item id="38932" count="1" /> <!-- La Vie En Rose's Ruby Box -->
+					</item>
+					<item chance="7.73">
+						<item id="38933" count="1" /> <!-- La Vie En Rose's Sapphire Box -->
+					</item>
+					<item chance="3.14">
+						<item id="47702" count="1" /> <!-- La Vie En Rose's Blue Cat's Eye Box -->
+					</item>
+					<item chance="7.16">
+						<item id="27479" count="1" /> <!-- La Vie En Rose's Tanzanite Box -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="27798" toLevel="1" name="Elk's Blessing">
+		<!-- Maintains Vitality for 1 h. through the Elk's Blessing. -->
+		<icon>BranchSys.icon.br_xmas_miracle_i00</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<abnormalType>VP_KEEP</abnormalType>
+		<abnormalVisualEffect>VP_UP</abnormalVisualEffect>
+		<effectPoint>100</effectPoint>
+		<isMagic>4</isMagic> <!-- Item Skill -->
+		<magicLvl>-1</magicLvl>
+		<operateType>A2</operateType>
+		<reuseDelay>43200000</reuseDelay>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="VitalityPointsRate">
+				<amount>-100</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="27799" toLevel="1" name="Elk's Summon">
+		<!-- Summon a party member. -->
+		<icon>icon.skill1403</icon>
+		<effectPoint>1</effectPoint>
+		<effectRange>-2</effectRange>
+		<hitTime>15000</hitTime>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<magicLvl>-1</magicLvl>
+		<operateType>A1</operateType>
+		<reuseDelay>600000</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>OTHERS</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpCallPc" />
+			<condition name="TargetMyParty">
+				<includeMe>false</includeMe>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="CallPc">
+				<itemId>8615</itemId>
+				<itemCount>0</itemCount>
+			</effect>
+		</effects>
+	</skill>
+</list>

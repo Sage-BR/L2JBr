@@ -1,0 +1,1732 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="3400" toLevel="1" name="Stat Enhancing Earring">
+		<!-- Increases the power of mental attacks. -->
+		<magicLvl>80</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="AttackTrait">
+				<DERANGEMENT>6</DERANGEMENT>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3401" toLevel="1" name="Dynasty Resistance Necklace">
+		<!-- Increases mental Attack Resistance. -->
+		<magicLvl>80</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="DefenceTrait">
+				<DERANGEMENT>9</DERANGEMENT>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3402" toLevel="1" name="Dynasty Resistance Ring">
+		<!-- Increases mental Attack Resistance. -->
+		<magicLvl>80</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="DefenceTrait">
+				<DERANGEMENT>4</DERANGEMENT>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3403" toLevel="1" name="Dynasty Resistance Earring">
+		<!-- Increases mental Attack Resistance. -->
+		<magicLvl>80</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="DefenceTrait">
+				<DERANGEMENT>6</DERANGEMENT>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3404" toLevel="1" name="Mysterious Effect">
+		<!-- Enlarges the user's head. -->
+		<abnormalLvl>0</abnormalLvl>
+		<abnormalTime>1200</abnormalTime>
+		<abnormalType>BIG_HEAD</abnormalType>
+		<abnormalVisualEffect>BIG_HEAD</abnormalVisualEffect>
+		<activateRate>0</activateRate>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>1</magicLvl>
+		<operateType>A2</operateType>
+		<reuseDelay>1800000</reuseDelay>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<trait>ETC</trait>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CannotUseInTransform">
+				<transformId>103</transformId>
+			</condition>
+		</conditions>
+	</skill>
+	<skill id="3405" toLevel="1" name="Large Firecracker Effect">
+		<!-- Shoots out large firecrackers. -->
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<reuseDelay>1200000</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="3406" toLevel="1" name="Weight Loss Ring">
+		<!-- Decreases weight penalty. -->
+		<magicLvl>1</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="WeightPenalty">
+				<amount>9000</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3407" toLevel="1" name="Stealth Ring">
+		<!-- Decreases the sound of your own steps to avoid receiving the first strike. -->
+		<abnormalLvl>0</abnormalLvl>
+		<abnormalTime>120</abnormalTime>
+		<abnormalType>STEALTH</abnormalType>
+		<abnormalVisualEffect>STEALTH</abnormalVisualEffect>
+		<activateRate>0</activateRate>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>1</magicLvl>
+		<operateType>A2</operateType>
+		<reuseDelay>600000</reuseDelay>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="SilentMove">
+				<chance>100</chance>
+			</effect>
+			<effect name="Speed">
+				<amount>-40</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3408" toLevel="1" name="Blessed Ring of Escape">
+		<!-- Allows the use of Blessed Escape every 1 min. -->
+		<blockedInOlympiad>true</blockedInOlympiad>
+		<hitTime>200</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<reuseDelay>60000</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpCanEscape" />
+		</conditions>
+		<effects>
+			<effect name="Escape">
+				<escapeType>TOWN</escapeType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3409" toLevel="1" name="Blessed Ring of Resurrection">
+		<!-- Allows the use of Blessed Resurrection every 5 min. -->
+		<blockedInOlympiad>true</blockedInOlympiad>
+		<castRange>400</castRange>
+		<effectPoint>1</effectPoint>
+		<effectRange>600</effectRange>
+		<hitTime>3000</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<reuseDelay>300000</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>PC_BODY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpResurrection" />
+		</conditions>
+		<effects>
+			<effect name="Resurrection">
+				<power>100</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3410" toLevel="1" name="Blue Talisman - Damage Reflection">
+		<!-- Reflects a portion of physical melee damage received back onto the enemy when using a Talisman. -->
+		<icon>icon.etc_talisman_i01</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>7</abnormalTime>
+		<abnormalType>TALISMAN</abnormalType>
+		<hitTime>4000</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>55</magicLvl>
+		<mpConsume>40</mpConsume>
+		<mpInitialConsume>10</mpInitialConsume>
+		<operateType>A2</operateType>
+		<reuseDelay>360000</reuseDelay>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="DamageShield">
+				<amount>10</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3411" toLevel="1" name="Special Ability: Focus">
+		<!-- Increases Max HP by 10%, and Critical Rate. Inflicts additional damage during PvP. -->
+		<icon>icon.ensoul_big_old</icon>
+		<magicLvl>80</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="CriticalRate">
+				<amount>109.2</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3412" toLevel="1" name="Dynasty Breastplate">
+		<!-- Increases P. Def., Max HP, and Dark Resistance. -->
+		<icon>icon.armor_t91_u_i00</icon>
+		<magicLvl>1</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="EnableCloak" />
+			<effect name="PhysicalDefence">
+				<amount>4.6</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>6</amount>
+				<attribute>DARK</attribute>
+			</effect>
+			<effect name="MaxHp">
+				<amount>418</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3413" toLevel="1" name="Dynasty Leather Armor">
+		<!-- Increases P. Atk./ Evasion Rate/ Max HP/ Dark Resistance. -->
+		<icon>icon.armor_t92_u_i00</icon>
+		<magicLvl>1</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="EnableCloak" />
+			<effect name="PhysicalEvasion">
+				<amount>1.72</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="Accuracy">
+				<amount>1.72</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>6</amount>
+				<attribute>DARK</attribute>
+			</effect>
+			<effect name="MaxHp">
+				<amount>418</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3414" toLevel="1" name="Dynasty Leather Armor">
+		<!-- Increases P. Atk./ Max HP/ Dark Resistance, and decreases MP Consumption. -->
+		<icon>icon.armor_t92_ud_i00</icon>
+		<magicLvl>1</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="EnableCloak" />
+			<effect name="PAtk">
+				<amount>5.4</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>8</amount>
+				<attribute>DARK</attribute>
+			</effect>
+			<effect name="MaxHp">
+				<amount>492</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicMpCost">
+				<amount>-5</amount>
+				<mode>PER</mode>
+				<magicType>0</magicType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3415" toLevel="1" name="Dynasty Leather Armor">
+		<!-- Increases P. Atk/ Max HP/ Critical Rate/ Critical Damage/ Dark Resistance. -->
+		<icon>icon.armor_t92_ub_i00</icon>
+		<magicLvl>1</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="EnableCloak" />
+			<effect name="PAtk">
+				<amount>5.4</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="CriticalDamage">
+				<amount>234</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="CriticalRate">
+				<amount>24.6</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>8</amount>
+				<attribute>DARK</attribute>
+			</effect>
+			<effect name="MaxHp">
+				<amount>492</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3416" toLevel="1" name="Dynasty Tunic">
+		<!-- Increases Casting Spd./ Max MP/ Dark Resistance. -->
+		<icon>icon.armor_t93_u_i00</icon>
+		<magicLvl>1</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="EnableCloak" />
+			<effect name="MagicalAttackSpeed">
+				<amount>12</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>257</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>6</amount>
+				<attribute>DARK</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3417" toLevel="1" name="Equip Shield">
+		<!-- Increases Shield Defense Rate. -->
+		<icon>icon.shield_dynasty_shield_i00</icon>
+		<magicLvl>1</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="ShieldDefenceRate">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3418" toLevel="1" name="Active Skill: Transform Pig">
+		<!-- Transform into a cute pig for 5 min. -->
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>300</abnormalTime>
+		<abnormalType>TRANSFORM</abnormalType>
+		<effectPoint>1</effectPoint>
+		<magicLvl>1</magicLvl>
+		<operateType>A2</operateType>
+		<reuseDelay>600000</reuseDelay>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CanTransform">
+				<transformId>104</transformId>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="Transformation">
+				<transformationId>104</transformationId>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3419" toLevel="1" name="Magic Immunity">
+		<!-- Increases M. Def. when equipped with a shirt -->
+		<icon>icon.etc_stripe_shirts_s_i05</icon>
+		<magicLvl>1</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+	</skill>
+	<skill id="3420" toLevel="1" name="Dynasty Leather Armor">
+		<!-- Increases P. Atk., P. Def., Max HP, Atk. Speed and Dark Resistance. -->
+		<icon>icon.armor_t92_u_i00</icon>
+		<magicLvl>1</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="EnableCloak" />
+			<effect name="PAtk">
+				<amount>2.66</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>2.66</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>5.4</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>8</amount>
+				<attribute>DARK</attribute>
+			</effect>
+			<effect name="MaxHp">
+				<amount>492</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3421" toLevel="1" name="Ride Wolf">
+		<!-- Ride a Wolf -->
+		<icon>icon.skill0083</icon>
+		<blockedInOlympiad>true</blockedInOlympiad>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="3422" toLevel="1" name="Dismount Wolf">
+		<!-- Dismount a Wolf. -->
+		<icon>icon.skill0083</icon>
+		<blockedInOlympiad>true</blockedInOlympiad>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="3423" toLevel="1" name="Agathion Summon - Little Angel">
+		<!-- Summons Agathion. -->
+		<icon>icon.etc_summon_aga_agit_i00</icon>
+		<hitTime>3000</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>85</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="SummonAgathion">
+				<npcId>16031</npcId> <!-- Little Angel Agathion -->
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3424" toLevel="1" name="Agathion Summon - Little Devil">
+		<!-- Summons Agathion. -->
+		<icon>icon.etc_summon_aga_agit_i00</icon>
+		<hitTime>3000</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>85</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="SummonAgathion">
+				<npcId>16032</npcId> <!-- Little Devil Agathion -->
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3425" toLevel="1" name="Agathion Summon - Rudolph">
+		<!-- Summons Agathion. -->
+		<icon>icon.etc_summon_aga_agit_i00</icon>
+		<hitTime>3000</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>85</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="SummonAgathion">
+				<npcId>16033</npcId> <!-- Rudolph Agathion -->
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3426" toLevel="1" name="Maximum Ability">
+		<!-- A critical attack will have a chance to increase P. Atk., M. Atk., and healing power, and decrease MP Consumption during skill use, for you and your party members. -->
+		<magicLvl>1</magicLvl>
+		<magicCriticalRate>5</magicCriticalRate>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="TriggerSkillByAttack">
+				<!-- Maximum Ability -->
+				<attackerType>Creature</attackerType>
+				<minAttackerLevel>1</minAttackerLevel>
+				<maxAttackerLevel>127</maxAttackerLevel>
+				<minDamage>1</minDamage>
+				<chance>5</chance>
+				<targetType>MY_PARTY</targetType>
+				<isCritical>true</isCritical>
+				<allowWeapons>ALL</allowWeapons>
+				<skillId>5547</skillId> <!-- Maximum Ability -->
+				<skillLevel>1</skillLevel>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3427" toLevel="1" name="Special Ability: Infinity Rapier">
+		<!-- Decreases the enemy's P. Def. on a critical attack. Increases Max HP, Max MP, Max CP. Inflicts additional damage during PvP. Reflects some of the damage received back to the enemy. In addition, when a critical hit occurs during a regular attack, there is a chance that the capacity of a party member's skills will be maximized. -->
+		<icon>icon.weapon_infinity_rapier_i00</icon>
+		<magicLvl>80</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="TriggerSkillByAttack">
+				<!-- Maximum Ability -->
+				<attackerType>Creature</attackerType>
+				<minAttackerLevel>1</minAttackerLevel>
+				<maxAttackerLevel>127</maxAttackerLevel>
+				<minDamage>1</minDamage>
+				<chance>5</chance>
+				<targetType>MY_PARTY</targetType>
+				<isCritical>true</isCritical>
+				<allowWeapons>ALL</allowWeapons>
+				<skillId>5547</skillId> <!-- Maximum Ability -->
+				<skillLevel>1</skillLevel>
+			</effect>
+			<effect name="DamageShield">
+				<amount>9</amount>
+			</effect>
+			<effect name="MaxCp">
+				<amount>50</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>25</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3428" toLevel="1" name="Blue Talisman - Explosion">
+		<!-- Increases the attacking power/ speed momentarily with the power of Talisman. -->
+		<icon>icon.etc_talisman_i01</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>10</abnormalTime>
+		<abnormalType>TALISMAN</abnormalType>
+		<effectPoint>669</effectPoint>
+		<hitTime>4000</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>75</magicLvl>
+		<mpConsume>40</mpConsume>
+		<mpInitialConsume>10</mpInitialConsume>
+		<operateType>A2</operateType>
+		<reuseDelay>600000</reuseDelay>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="PAtk">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3429" toLevel="1" name="Red Talisman - Life Force">
+		<!-- Regenerate HP and MP completely with the power of Talisman. -->
+		<icon>icon.etc_talisman_i00</icon>
+		<hitTime>3000</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>75</magicLvl>
+		<operateType>A1</operateType>
+		<reuseDelay>1800000</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="HealPercent">
+				<power>100</power>
+			</effect>
+			<effect name="ManaHealPercent">
+				<power>100</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3430" toLevel="1" name="White Talisman - Darkness">
+		<!-- Momentarily and greatly increases Dark Resistance with the power of Talisman. -->
+		<icon>icon.etc_talisman_i06</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>10</abnormalTime>
+		<abnormalType>TALISMAN</abnormalType>
+		<effectPoint>669</effectPoint>
+		<hitTime>4000</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>75</magicLvl>
+		<mpConsume>40</mpConsume>
+		<mpInitialConsume>10</mpInitialConsume>
+		<operateType>A2</operateType>
+		<reuseDelay>600000</reuseDelay>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="DefenceAttribute">
+				<amount>50</amount>
+				<attribute>DARK</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3431" toLevel="1" name="White Talisman - Storm">
+		<!-- Momentarily and greatly increases Wind Resistance with the power of Talisman. -->
+		<icon>icon.etc_talisman_i06</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>10</abnormalTime>
+		<abnormalType>TALISMAN</abnormalType>
+		<effectPoint>669</effectPoint>
+		<hitTime>4000</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>75</magicLvl>
+		<mpConsume>40</mpConsume>
+		<mpInitialConsume>10</mpInitialConsume>
+		<operateType>A2</operateType>
+		<reuseDelay>600000</reuseDelay>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="DefenceAttribute">
+				<amount>50</amount>
+				<attribute>WIND</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3432" toLevel="1" name="White Talisman - Water">
+		<!-- Momentarily and greatly increases Water Resistance with the power of Talisman. -->
+		<icon>icon.etc_talisman_i06</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>10</abnormalTime>
+		<abnormalType>TALISMAN</abnormalType>
+		<effectPoint>669</effectPoint>
+		<hitTime>4000</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>75</magicLvl>
+		<mpConsume>40</mpConsume>
+		<mpInitialConsume>10</mpInitialConsume>
+		<operateType>A2</operateType>
+		<reuseDelay>600000</reuseDelay>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="DefenceAttribute">
+				<amount>50</amount>
+				<attribute>WATER</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3433" toLevel="1" name="White Talisman - Fire">
+		<!-- Momentarily and greatly increases Fire Resistance with the power of Talisman. -->
+		<icon>icon.etc_talisman_i06</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>10</abnormalTime>
+		<abnormalType>TALISMAN</abnormalType>
+		<effectPoint>669</effectPoint>
+		<hitTime>4000</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>75</magicLvl>
+		<mpConsume>40</mpConsume>
+		<mpInitialConsume>10</mpInitialConsume>
+		<operateType>A2</operateType>
+		<reuseDelay>600000</reuseDelay>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="DefenceAttribute">
+				<amount>50</amount>
+				<attribute>FIRE</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3434" toLevel="1" name="White Talisman - Earth">
+		<!-- Momentarily and greatly increases Earth Resistance with the power of Talisman. -->
+		<icon>icon.etc_talisman_i06</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>10</abnormalTime>
+		<abnormalType>TALISMAN</abnormalType>
+		<effectPoint>669</effectPoint>
+		<hitTime>4000</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>75</magicLvl>
+		<mpConsume>40</mpConsume>
+		<mpInitialConsume>10</mpInitialConsume>
+		<operateType>A2</operateType>
+		<reuseDelay>600000</reuseDelay>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="DefenceAttribute">
+				<amount>50</amount>
+				<attribute>EARTH</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3435" toLevel="1" name="White Talisman - Light">
+		<!-- Momentarily and greatly increases Holy Resistance with the power of Talisman. -->
+		<icon>icon.etc_talisman_i06</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>10</abnormalTime>
+		<abnormalType>TALISMAN</abnormalType>
+		<effectPoint>669</effectPoint>
+		<hitTime>4000</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>75</magicLvl>
+		<mpConsume>40</mpConsume>
+		<mpInitialConsume>10</mpInitialConsume>
+		<operateType>A2</operateType>
+		<reuseDelay>600000</reuseDelay>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="DefenceAttribute">
+				<amount>50</amount>
+				<attribute>HOLY</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3436" toLevel="1" name="Blue Talisman - Self-destruction">
+		<!-- Greatly damage the environment exploding the power of Talisman. -->
+		<icon>icon.etc_talisman_i01</icon>
+		<affectLimit>6-12</affectLimit>
+		<affectRange>200</affectRange>
+		<effectPoint>-669</effectPoint>
+		<hitTime>3000</hitTime>
+		<hpConsume>800</hpConsume>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>75</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<affectScope>POINT_BLANK</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<effects>
+			<effect name="MagicalAttack">
+				<power>200</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3437" toLevel="1" name="Blue Talisman - Magic Explosion">
+		<!-- Momentarily and greatly increases M. Atk. and M. Critical Rate with the power of Talisman. -->
+		<icon>icon.etc_talisman_i01</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>10</abnormalTime>
+		<abnormalType>TALISMAN</abnormalType>
+		<effectPoint>669</effectPoint>
+		<hitTime>4000</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>75</magicLvl>
+		<mpConsume>40</mpConsume>
+		<mpInitialConsume>10</mpInitialConsume>
+		<operateType>A2</operateType>
+		<reuseDelay>600000</reuseDelay>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="MAtk">
+				<amount>55</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicCriticalRate">
+				<amount>4</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3438" toLevel="1" name="Blue Talisman - Greater Healing">
+		<!-- Momentarily and greatly increases the power of HP regeneration magic with the power of Talisman. -->
+		<icon>icon.etc_talisman_i01</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>10</abnormalTime>
+		<abnormalType>TALISMAN</abnormalType>
+		<effectPoint>669</effectPoint>
+		<hitTime>4000</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>75</magicLvl>
+		<mpConsume>40</mpConsume>
+		<mpInitialConsume>10</mpInitialConsume>
+		<operateType>A2</operateType>
+		<reuseDelay>600000</reuseDelay>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="HealEffect">
+				<amount>1000</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3439" toLevel="1" name="Silk Shirt">
+		<!-- Increases Max HP. -->
+		<magicLvl>49</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MaxHp">
+				<amount>118</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3440" toLevel="1" name="Silk Shirt">
+		<!-- Increases Max MP. -->
+		<magicLvl>49</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MaxMp">
+				<amount>51</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3441" toLevel="1" name="Silk Shirt">
+		<!-- Increases Max CP. -->
+		<magicLvl>49</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MaxCp">
+				<amount>354</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3442" toLevel="1" name="Silk Shirt">
+		<!-- Increases Max HP/ MP. -->
+		<magicLvl>49</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MaxMp">
+				<amount>26</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>59</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3443" toLevel="1" name="Silk Shirt">
+		<!-- Increases Max HP/ CP. -->
+		<magicLvl>49</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MaxCp">
+				<amount>117</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>59</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3444" toLevel="1" name="Silk Shirt">
+		<!-- Increases Max MP/ CP. -->
+		<magicLvl>49</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MaxCp">
+				<amount>117</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>26</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3445" toLevel="1" name="Thin Leather Shirt">
+		<!-- Increases Max HP. -->
+		<magicLvl>58</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MaxHp">
+				<amount>147</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3446" toLevel="1" name="Thin Leather Shirt">
+		<!-- Increases Max MP. -->
+		<magicLvl>58</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MaxMp">
+				<amount>72</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3447" toLevel="1" name="Thin Leather Shirt">
+		<!-- Increases Max CP. -->
+		<magicLvl>58</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MaxCp">
+				<amount>441</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3448" toLevel="1" name="Thin Leather Shirt">
+		<!-- Increases Max HP/ MP. -->
+		<magicLvl>58</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MaxMp">
+				<amount>36</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>74</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3449" toLevel="1" name="Thin Leather Shirt">
+		<!-- Increases Max HP/ CP. -->
+		<magicLvl>58</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MaxCp">
+				<amount>222</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>74</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3450" toLevel="1" name="Thin Leather Shirt">
+		<!-- Increases Max MP/ CP. -->
+		<magicLvl>58</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MaxCp">
+				<amount>222</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>36</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3451" toLevel="1" name="Scale Shirt">
+		<!-- Increases Max HP. -->
+		<magicLvl>64</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MaxHp">
+				<amount>172</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3452" toLevel="1" name="Scale Shirt">
+		<!-- Increases Max MP. -->
+		<magicLvl>64</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MaxMp">
+				<amount>85</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3453" toLevel="1" name="Scale Shirt">
+		<!-- Increases Max CP. -->
+		<magicLvl>64</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MaxCp">
+				<amount>516</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3454" toLevel="1" name="Scale Shirt">
+		<!-- Increases Max HP/ MP. -->
+		<magicLvl>64</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MaxMp">
+				<amount>43</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>86</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3455" toLevel="1" name="Scale Shirt">
+		<!-- Increases Max HP/ CP. -->
+		<magicLvl>64</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MaxCp">
+				<amount>258</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>86</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3456" toLevel="1" name="Scale Shirt">
+		<!-- Increases Max MP/ CP. -->
+		<magicLvl>64</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MaxCp">
+				<amount>258</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>43</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3457" toLevel="1" name="Mithril Shirt">
+		<!-- Increases Max HP. -->
+		<magicLvl>75</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MaxHp">
+				<amount>224</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3458" toLevel="1" name="Mithril Shirt">
+		<!-- Increases Max MP. -->
+		<magicLvl>75</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MaxMp">
+				<amount>111</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3459" toLevel="1" name="Mithril Shirt">
+		<!-- Increases Max CP. -->
+		<magicLvl>75</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MaxCp">
+				<amount>672</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3460" toLevel="1" name="Mithril Shirt">
+		<!-- Increases Max HP/ MP. -->
+		<magicLvl>75</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MaxMp">
+				<amount>56</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>112</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3461" toLevel="1" name="Mithril Shirt">
+		<!-- Increases Max HP/ CP. -->
+		<magicLvl>75</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MaxCp">
+				<amount>336</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>112</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3462" toLevel="1" name="Mithril Shirt">
+		<!-- Increases Max MP/ CP. -->
+		<magicLvl>75</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MaxCp">
+				<amount>336</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>56</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3463" toLevel="1" name="Striped Silk Shirt">
+		<!-- Increases Max HP. -->
+		<magicLvl>55</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MaxHp">
+				<amount>135</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3464" toLevel="1" name="Striped Silk Shirt">
+		<!-- Increases Max MP. -->
+		<magicLvl>55</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MaxMp">
+				<amount>66</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3465" toLevel="1" name="Striped Silk Shirt">
+		<!-- Increases Max CP. -->
+		<magicLvl>55</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MaxCp">
+				<amount>405</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3466" toLevel="1" name="Striped Silk Shirt">
+		<!-- Increases Max HP/ MP. -->
+		<magicLvl>55</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MaxMp">
+				<amount>33</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>68</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3467" toLevel="1" name="Striped Silk Shirt">
+		<!-- Increases Max HP/ CP. -->
+		<magicLvl>55</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MaxCp">
+				<amount>203</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>68</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3468" toLevel="1" name="Striped Silk Shirt">
+		<!-- Increases Max MP/ CP. -->
+		<magicLvl>55</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MaxCp">
+				<amount>203</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>33</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3469" toLevel="1" name="Thin Striped Leather Shirt">
+		<!-- Increases Max HP. -->
+		<magicLvl>61</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MaxHp">
+				<amount>160</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3470" toLevel="1" name="Thin Striped Leather Shirt">
+		<!-- Increases Max MP. -->
+		<magicLvl>61</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MaxMp">
+				<amount>78</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3471" toLevel="1" name="Thin Striped Leather Shirt">
+		<!-- Increases Max CP. -->
+		<magicLvl>61</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MaxCp">
+				<amount>480</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3472" toLevel="1" name="Thin Striped Leather Shirt">
+		<!-- Increases Max HP/ MP. -->
+		<magicLvl>61</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MaxMp">
+				<amount>39</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>80</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3473" toLevel="1" name="Thin Striped Leather Shirt">
+		<!-- Increases Max HP/ CP. -->
+		<magicLvl>61</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MaxCp">
+				<amount>240</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>80</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3474" toLevel="1" name="Thin Striped Leather Shirt">
+		<!-- Increases Max MP/ CP. -->
+		<magicLvl>61</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MaxCp">
+				<amount>240</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>39</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3475" toLevel="1" name="Striped Scale Shirt">
+		<!-- Increases Max HP. -->
+		<magicLvl>67</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MaxHp">
+				<amount>186</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3476" toLevel="1" name="Striped Scale Shirt">
+		<!-- Increases Max MP. -->
+		<magicLvl>67</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MaxMp">
+				<amount>92</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3477" toLevel="1" name="Striped Scale Shirt">
+		<!-- Increases Max CP. -->
+		<magicLvl>67</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MaxCp">
+				<amount>564</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3478" toLevel="1" name="Striped Scale Shirt">
+		<!-- Increases Max HP/ MP. -->
+		<magicLvl>67</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MaxMp">
+				<amount>46</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>93</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3479" toLevel="1" name="Striped Scale Shirt">
+		<!-- Increases Max HP/ CP. -->
+		<magicLvl>67</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MaxCp">
+				<amount>282</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>93</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3480" toLevel="1" name="Striped Scale Shirt">
+		<!-- Increases Max MP/ CP. -->
+		<magicLvl>67</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MaxCp">
+				<amount>282</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>46</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3481" toLevel="1" name="Striped Mithril Shirt">
+		<!-- Increases Max HP. -->
+		<magicLvl>80</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MaxHp">
+				<amount>246</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3482" toLevel="1" name="Striped Mithril Shirt">
+		<!-- Increases Max MP. -->
+		<magicLvl>80</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MaxMp">
+				<amount>122</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3483" toLevel="1" name="Striped Mithril Shirt">
+		<!-- Increases Max CP. -->
+		<magicLvl>80</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MaxCp">
+				<amount>744</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3484" toLevel="1" name="Striped Mithril Shirt">
+		<!-- Increases Max HP/ MP. -->
+		<magicLvl>80</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MaxMp">
+				<amount>61</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>123</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3485" toLevel="1" name="Striped Mithril Shirt">
+		<!-- Increases Max HP/ CP. -->
+		<magicLvl>80</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MaxCp">
+				<amount>372</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>123</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3486" toLevel="1" name="Striped Mithril Shirt">
+		<!-- Increases Max MP/ CP. -->
+		<magicLvl>80</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MaxCp">
+				<amount>372</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>61</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3487" toLevel="1" name="Blue Talisman - P. Atk.">
+		<!-- Increases P. Atk. with the power of Talisman. -->
+		<icon>icon.etc_talisman_i01</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>120</abnormalTime>
+		<abnormalType>TALISMAN</abnormalType>
+		<effectPoint>532</effectPoint>
+		<hitTime>4000</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>55</magicLvl>
+		<mpConsume>40</mpConsume>
+		<mpInitialConsume>10</mpInitialConsume>
+		<operateType>A2</operateType>
+		<reuseDelay>360000</reuseDelay>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="PAtk">
+				<amount>9.4</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3488" toLevel="1" name="Blue Talisman - Shield Defense">
+		<!-- Increases Shield Defense with the power of Talisman. -->
+		<icon>icon.etc_talisman_i01</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>120</abnormalTime>
+		<abnormalType>TALISMAN</abnormalType>
+		<effectPoint>532</effectPoint>
+		<hitTime>4000</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>55</magicLvl>
+		<mpConsume>40</mpConsume>
+		<mpInitialConsume>10</mpInitialConsume>
+		<operateType>A2</operateType>
+		<reuseDelay>360000</reuseDelay>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="ShieldDefence">
+				<amount>63</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3489" toLevel="1" name="Yellow Talisman - M. Atk.">
+		<!-- Increases M. Atk. when equipped. -->
+		<icon>icon.etc_talisman_i02</icon>
+		<magicLvl>55</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MAtk">
+				<amount>11.7</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3490" toLevel="1" name="Yellow Talisman - P. Def.">
+		<!-- Increases P. Def. when equipped. -->
+		<icon>icon.etc_talisman_i02</icon>
+		<magicLvl>55</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="PhysicalDefence">
+				<amount>18.3</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3491" toLevel="1" name="Yellow Talisman - Evasion">
+		<!-- Increases Evasion when equipped. -->
+		<icon>icon.etc_talisman_i02</icon>
+		<magicLvl>55</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="PhysicalEvasion">
+				<amount>1.1</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3492" toLevel="1" name="Yellow Talisman - Speed">
+		<!-- Increases Speed when equipped. -->
+		<icon>icon.etc_talisman_i02</icon>
+		<magicLvl>55</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="Speed">
+				<amount>3</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3493" toLevel="1" name="Yellow Talisman - HP Regeneration">
+		<!-- Increases HP Recovery Bonus when a talisman is equipped. -->
+		<icon>icon.etc_talisman_i02</icon>
+		<magicLvl>55</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="HpRegen">
+				<amount>1</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3494" toLevel="1" name="Yellow Talisman - CP Regeneration">
+		<!-- Increases CP Recovery Bonus when a talisman is equipped. -->
+		<icon>icon.etc_talisman_i02</icon>
+		<magicLvl>55</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="CpRegen">
+				<amount>1</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3495" toLevel="1" name="Yellow Talisman - Healing">
+		<!-- Increases power of HP regeneration magic when equipped. -->
+		<icon>icon.etc_talisman_i02</icon>
+		<magicLvl>55</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="HealEffect">
+				<amount>8</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3496" toLevel="1" name="Red Talisman - HP/ CP Recovery">
+		<!-- Recover HP/ CP with the power of Talisman. -->
+		<icon>icon.etc_talisman_i00</icon>
+		<effectPoint>532</effectPoint>
+		<hitTime>4000</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>55</magicLvl>
+		<mpConsume>40</mpConsume>
+		<mpInitialConsume>10</mpInitialConsume>
+		<operateType>A1</operateType>
+		<reuseDelay>300000</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="Heal">
+				<power>100</power>
+			</effect>
+			<effect name="Cp">
+				<amount>100</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3497" toLevel="1" name="Yellow Talisman - MP Regeneration">
+		<!-- Increases MP Recovery Bonus when a talisman is equipped. -->
+		<icon>icon.etc_talisman_i02</icon>
+		<magicLvl>55</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MpRegen">
+				<amount>1</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3498" toLevel="2" name="Special Ability: Light">
+		<!-- Increases Weight Gauge by 20%. -->
+		<icon>icon.ensoul_big_old</icon>
+		<magicLvl>46</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="WeightLimit">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="3499" toLevel="1" name="Dispel Transform">
+		<!-- Cancels transformation. -->
+		<icon>icon.skilltransform2</icon>
+		<effectPoint>10</effectPoint>
+		<hitTime>2500</hitTime>
+		<magicLvl>56</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="DispelBySlot">
+				<dispel>TRANSFORM,9</dispel>
+			</effect>
+		</effects>
+	</skill>
+</list>

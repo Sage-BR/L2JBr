@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="39101" toLevel="1" name="Chase Down">
+		<!-- Speed +66 for 15 sec. -->
+		<icon>icon.skill0998</icon>
+		<abnormalTime>15</abnormalTime>
+		<operateType>A2</operateType>
+		<hitTime>1000</hitTime>
+		<effectPoint>438</effectPoint>
+		<reuseDelay>30000</reuseDelay>
+		<effects>
+			<effect name="Speed">
+				<amount>66</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="39102" toLevel="1" name="Sneak">
+		<!-- Do not receive preemptive attacks from monsters. -->
+		<icon>icon.skill10518</icon>
+		<operateType>T</operateType>
+		<mpConsume>1</mpConsume>
+		<abnormalType>STEALTH</abnormalType>
+		<abnormalVisualEffect>STEALTH</abnormalVisualEffect>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="ChameleonRest">
+				<power>2</power>
+				<ticks>5</ticks>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="39169" toLevel="1" name="Cheer Firecracker">
+		<!-- Large firecracker that explodes in colorful light and fills the sky. -->
+		<icon>BranchSys.icon.br_firecracker_gold_i00</icon>
+		<operateType>A1</operateType>
+		<reuseDelay>10000</reuseDelay>
+	</skill>
+	<skill id="39171" toLevel="5" name="Sibi's Disguided Clothing">
+		<!-- Grants you a disguise for 1 h. You'll have a chance to receive special supplies. -->
+		<icon>
+			<value level="1">icon.ev_balthus_token</value>
+			<value level="2">icon.etc_lottery_card_i00</value>
+			<value level="3">icon.etc_lottery_card_i00</value>
+			<value level="4">icon.etc_lottery_card_i00</value>
+			<value level="5">icon.christmas_card_box2</value>
+		</icon>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>49784</itemConsumeId>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<abnormalType>CHANGEBODY</abnormalType>
+		<abnormalVisualEffect>CHANGESHAPE_TRANSFORM</abnormalVisualEffect>
+		<stayAfterDeath>true</stayAfterDeath>
+		<blockedInOlympiad>true</blockedInOlympiad>
+		<effectPoint>1</effectPoint>
+		<isMagic>4</isMagic> <!-- Magic Skill -->
+		<magicLvl>56</magicLvl>
+		<operateType>A2</operateType>
+		<reuseDelay>60000</reuseDelay>
+		<stayAfterDeath>true</stayAfterDeath>
+		<hitTime>500</hitTime>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<passiveConditions>
+			<condition name="CheckLevel">
+				<minLevel>85</minLevel>
+				<maxLevel>127</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+		</passiveConditions>
+		<effects>
+			<effect name="ExpModify">
+				<amount>10</amount>
+			</effect>
+			<effect name="SpModify">
+				<amount>10</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="39172" toLevel="1" name="Party Scroll of Escape">
+		<!-- Teleports party members to the nearest village. -->
+		<icon>icon.skill11819</icon>
+		<hitTime>5000</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>48282</itemConsumeId>
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<reuseDelay>150000</reuseDelay>
+		<mpConsume>91</mpConsume>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<conditions>
+			<condition name="OpCanEscape" />
+		</conditions>
+		<effects>
+			<effect name="Escape">
+				<escapeType>TOWN</escapeType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="39173" toLevel="1" name="Stealth Detector">
+		<!-- Fires a Flare to reveal nearby hiding enemies or traps. -->
+		<icon>icon.etc_fairy_fire_i00</icon>
+		<affectRange>300</affectRange>
+		<effectPoint>-1</effectPoint>
+		<hitTime>1200</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>48283</itemConsumeId>
+		<operateType>A1</operateType>
+		<coolTime>300</coolTime>
+		<reuseDelay>5000</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>RANGE</affectScope>
+		<affectObject>INVISIBLE</affectObject>
+		<effects>
+			<effect name="Detection" />
+		</effects>
+	</skill>
+	<skill id="39174" toLevel="1" name="Valor Recovery Potion">
+		<operateType>A1</operateType>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>1</magicLvl>
+		<itemConsumeId>48284</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="HpCpHeal">
+				<power>5000</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="39175" toLevel="1" name="Scroll: PK">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<itemConsumeId>48285</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpNotCursed" />
+			<condition name="OpPkcount">
+				<affectType>CASTER</affectType>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="PkCount">
+				<amount>-1</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="39176" toLevel="1" name="Scroll: Reputation">
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<itemConsumeId>48286</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpAlignment">
+				<affectType>CASTER</affectType>
+				<alignment>CHAOTIC</alignment>
+			</condition>
+			<condition name="OpNotCursed" />
+		</conditions>
+		<effects>
+			<effect name="KarmaCount">
+				<amount>30000</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="39177" toLevel="1" name="Resolute Raid Point Rune">
+		<!-- RP gain +100% if stored in the inventory. -->
+		<icon>icon.etc_i.etc_rp_point_i00</icon>
+		<operateType>P</operateType>
+	</skill>
+	<skill id="39178" toLevel="1" name="Resolute Attack Scroll">
+		<!-- For 30 min., all clan members' P. Atk./ M. Atk. +3%, P. Skill Power/ M. Skill Power +3%, XP and SP gain +5%. -->
+		<icon>icon.skill19015</icon>
+		<operateType>A1</operateType>
+		<hitTime>2500</hitTime>
+		<reuseDelay>60000</reuseDelay>
+		<effectPoint>100</effectPoint>
+	</skill>
+	<skill id="39179" toLevel="1" name="Resolute Defense Scroll">
+		<!-- For 30 min., nearby clan members' P./ M. Def. +5%, debuff resistance +5%, XP and SP gain +5%. -->
+		<icon>icon.skill19015</icon>
+		<operateType>A1</operateType>
+		<hitTime>2500</hitTime>
+		<reuseDelay>60000</reuseDelay>
+		<effectPoint>100</effectPoint>
+	</skill>
+	<skill id="39180" toLevel="1" name="Resolute Recovery Potion">
+		<!-- Recovers 3000 HP. -->
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="39181" toLevel="3" name="Honey Vitality Beer">
+		<!-- For $s1, CON/ MEN/ LUC/ CHA $s2. Using additional Honey Vitality Beer items while the buff is active enables up to Lv. 3 stacked effects. -->
+		<icon>
+			<value level="1">icon.bm_royal_honey_beer_lv1</value>
+			<value level="2">icon.bm_royal_honey_beer_lv2</value>
+			<value level="3">icon.bm_royal_honey_beer_lv3</value>
+		</icon>
+		<operateType>A1</operateType>
+		<isMagic>4</isMagic>
+		<reuseDelay>5000</reuseDelay>
+	</skill>
+	<skill id="39182" toLevel="1" name="Chorong's Summon Friend Scroll">
+		<!-- Summons a selected target. Only available while you're in a party. Cooldown 30 min. -->
+		<icon>icon.etc_summon_aga_agit_i00</icon>
+		<operateType>A1</operateType>
+		<hitTime>5000</hitTime>
+		<reuseDelay>1800000</reuseDelay>
+		<effectPoint>1000</effectPoint>
+	</skill>
+	<skill id="39183" toLevel="1" name="Vitality Beer">
+		<!-- Double-click it to recover a certain amount of Vitality. -->
+		<icon>icon.bm_honey_beer</icon>
+		<operateType>A1</operateType>
+		<reuseDelay>60000</reuseDelay>
+	</skill>
+	<skill id="39184" toLevel="6" name="Suspicious Safe">
+		<!-- Double-click to obtain an item. -->
+		<icon>
+			<value level="1">icon.bm_strongbox</value>
+			<value level="2">icon.bm_pvp_pve_upgrade_box</value>
+			<value level="3">icon.bm_royal_white_ticket_box</value>
+			<value level="4">icon.bm_royal_purple_ticket_box</value>
+			<value level="5">icon.skill0000</value>
+			<value level="6">icon.bm_strongbox</value>
+		</icon>
+		<operateType>A1</operateType>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+	</skill>
+	<skill id="39185" toLevel="1" name="Divine Zodiac Agathion Book of Growth">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="39186" toLevel="1" name="Zodiac Agathion Box">
+		<operateType>A1</operateType>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+	</skill>
+	<skill id="39187" toLevel="21" name="Burnstein's Aufgabe Shield Appearance Stone (30-day)">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="39188" toLevel="1" name="Red Libra Kaliel's Energy Box">
+		<operateType>A1</operateType>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+	</skill>
+	<skill id="39189" toLevel="2" name="Clan Hall Belt - Stage 1">
+		<!-- When equipped, Max HP/ MP/ CP +$s1, weight +$s2, damage dealt +$s3, Received Damage -$s4, Inventory Slots +$s5. -->
+		<icon>icon.event_energy_belt_i00</icon>
+		<operateType>P</operateType>
+	</skill>
+	<skill id="39190" toLevel="1" name="GM Lassana's Present Box">
+		<operateType>A1</operateType>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+	</skill>
+	<skill id="39191" toLevel="1" name="Talisman - Wind Pack">
+		<operateType>A1</operateType>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+	</skill>
+	<skill id="39192" toLevel="1" name="Talisman - Fortress Pack">
+		<operateType>A1</operateType>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+	</skill>
+	<skill id="39193" toLevel="1" name="Item Seal Scroll">
+		<icon>icon.scrl_item_lock</icon>
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="39194" toLevel="1" name="Release Seal Scroll">
+		<icon>icon.scrl_item_unlock</icon>
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="39195" toLevel="1" name="Dark/ Bloody Amaranthine Enhancement Stone Box">
+		<operateType>A1</operateType>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>500</reuseDelay>
+	</skill>
+	<skill id="39196" toLevel="1" name="Knights' Basic Supplies">
+		<operateType>A1</operateType>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>500</reuseDelay>
+	</skill>
+	<skill id="39197" toLevel="1" name="+8 Shiny Elemental T-shirt Pack">
+		<!-- Obtains an Elemental Shirt enchanted to +8 on use. -->
+		<operateType>A1</operateType>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>500</reuseDelay>
+	</skill>
+	<skill id="39198" toLevel="1" name="+8 Reflect Attack T-shirt Pack">
+		<!-- Obtains a Reflect Attack T-shirt enchanted to +8 on use. -->
+		<operateType>A1</operateType>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>500</reuseDelay>
+	</skill>
+	<skill id="39199" toLevel="1" name="+8 Reflect Magic T-shirt Pack">
+		<!-- Obtains a Reflect Magic T-shirt enchanted to +8 on use. -->
+		<operateType>A1</operateType>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>500</reuseDelay>
+	</skill>
+</list>

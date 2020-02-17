@@ -1,0 +1,2376 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="22700" toLevel="1" name="Dr. Destroy's Sealed Rune of Wisdom">
+		<!-- INT +7 permanently, and has a 10% chance of not consuming MP for healing skills. -->
+		<icon>br_cashtex.skill.br_cash_rune_of_exp_buff_1</icon>
+		<operateType>P</operateType>
+		<passiveConditions>
+			<condition name="OpNotOlympiad" />
+		</passiveConditions>
+		<effects>
+			<effect name="TriggerSkillByAttack">
+				<!-- 10% chance of not consuming MP for healing skills. -->
+				<minDamage>1</minDamage>
+				<skillId>22706</skillId> <!-- Dr. Destroy's Sealed Rune of Wisdom_Trigger -->
+				<skillLevel>1</skillLevel>
+				<chance>10</chance>
+				<isCritical>false</isCritical>
+				<allowSkillAttack>true</allowSkillAttack>
+				<allowNormalAttack>false</allowNormalAttack>
+				<targetType>SELF</targetType>
+				<affectScope>SINGLE</affectScope>
+			</effect>
+			<effect name="StatUp">
+				<amount>7</amount>
+				<stat>INT</stat>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22701" toLevel="1" name="Harp's Sealed Rune of Power_Trigger">
+		<!-- Has a 5% chance of Stunning all enemies within 400 grids for 3 sec. -->
+		<icon>icon.skill1551</icon>
+		<operateType>A2</operateType>
+		<abnormalLvl>4</abnormalLvl>
+		<abnormalTime>3</abnormalTime>
+		<abnormalType>STUN</abnormalType>
+		<abnormalVisualEffect>STUN</abnormalVisualEffect>
+		<affectLimit>5-12</affectLimit>
+		<affectRange>400</affectRange>
+		<activateRate>130</activateRate>
+		<effectPoint>1000</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<effectRange>400</effectRange>
+		<isDebuff>true</isDebuff>
+		<basicProperty>NONE</basicProperty>
+		<trait>SHOCK</trait>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<blockedInOlympiad>true</blockedInOlympiad>
+		<effects>
+			<effect name="BlockActions" />
+		</effects>
+	</skill>
+	<skill id="22702" toLevel="1" name="Harp's Sealed Rune of Magic_Trigger_Decrease Defense">
+		<!-- Decreases M. Def. of target and all enemies within 400 grids by 20% for 10 sec. -->
+		<icon>icon.skill1263</icon>
+		<operateType>A2</operateType>
+		<hitTime>1500</hitTime>
+		<reuseDelay>5000</reuseDelay>
+		<castRange>900</castRange>
+		<isMagic>1</isMagic>
+		<effectPoint>-209</effectPoint>
+		<abnormalType>MD_DOWN</abnormalType>
+		<basicProperty>MAGIC</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>1400</effectRange>
+		<lvlBonusRate>30</lvlBonusRate>
+		<activateRate>100</activateRate>
+		<magicLvl>1</magicLvl>
+		<abnormalLvl>5</abnormalLvl>
+		<abnormalTime>10</abnormalTime>
+		<isDebuff>true</isDebuff>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<blockedInOlympiad>true</blockedInOlympiad>
+		<effects>
+			<effect name="MagicalDefence">
+				<amount>-20</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22703" toLevel="1" name="Flynt's Sealed Rune of Will_Trigger">
+		<!-- Becomes invincible for 5 sec. -->
+		<icon>icon.skill1551</icon>
+		<operateType>A2</operateType>
+		<hitTime>1000</hitTime>
+		<reuseDelay>180000</reuseDelay>
+		<abnormalType>INVINCIBILITY</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>5</abnormalTime>
+		<abnormalVisualEffect>INVINCIBILITY</abnormalVisualEffect>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<blockedInOlympiad>true</blockedInOlympiad>
+		<effects>
+			<effect name="DamageBlock">
+				<type>BLOCK_HP</type>
+			</effect>
+			<effect name="DamageBlock">
+				<type>BLOCK_MP</type>
+			</effect>
+			<effect name="DebuffBlock" />
+			<effect name="ResistDispelByCategory">
+				<amount>-100</amount>
+				<slot>ALL</slot>
+			</effect>
+			<effect name="ResistAbnormalByCategory">
+				<amount>-100</amount>
+				<slot>DEBUFF</slot>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22704" toLevel="1" name="Flynt's Sealed Rune of Destruction_Trigger">
+		<!-- Rune is activated, inflicting a brand and additional damage. -->
+		<icon>icon.skill11511</icon>
+		<operateType>A2</operateType>
+		<coolTime>30000</coolTime>
+		<reuseDelay>30000</reuseDelay>
+		<castRange>40</castRange>
+		<effectPoint>-712</effectPoint>
+		<abnormalType>POISON</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<effectRange>400</effectRange>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>1</abnormalTime>
+		<activateRate>100</activateRate>
+		<magicLvl>85</magicLvl>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="PhysicalSkillPower">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22705" toLevel="1" name="Dr. Destroy's Sealed Rune of Skill">
+		<!-- For 10 sec., Critical Damage and Critical Rage are increased. -->
+		<icon>icon.etc_scroll_white_i00</icon>
+		<operateType>A2</operateType>
+		<abnormalType>CRITICAL_DMG_UP</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<abnormalLvl>4</abnormalLvl>
+		<abnormalTime>10</abnormalTime>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="CriticalDamage">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="CriticalRate">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22706" toLevel="1" name="Dr. Destroy's Sealed Rune of Wisdom_Trigger">
+		<!-- For 10 sec., skills do not consume MP. -->
+		<icon>icon.etc_hot_spring_nectar_i00</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>CHEAP_MAGIC</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>10</abnormalTime>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="MagicMpCost">
+				<amount>-100</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22707" toLevel="2" name="Vitality Maintaining Potion">
+		<!-- Maintains Vitality for 30 min. -->
+		<icon>icon.etc_lesser_potion_scarlet_i00</icon>
+		<operateType>A2</operateType>
+		<reuseDelay>3600000</reuseDelay>
+		<isMagic>4</isMagic>
+		<effectPoint>100</effectPoint>
+		<abnormalType>VP_KEEP</abnormalType>
+		<specialLevel>-1</specialLevel>
+		<magicCriticalRate>5</magicCriticalRate>
+		<basicProperty>NONE</basicProperty>
+		<abnormalLvl>3</abnormalLvl>
+		<abnormalTime>1800</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<staticReuse>true</staticReuse>
+		<abnormalVisualEffect>VP_KEEP</abnormalVisualEffect>
+		<isDebuff>false</isDebuff>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CanRestoreVitalPoint" />
+			<condition name="CanUseVitalityConsumeItem" />
+		</conditions>
+	</skill>
+	<skill id="22708" toLevel="1" name="XP Buff 50% (1-h.)">
+		<!-- Obtained XP +50%. -->
+		<icon>icon.etc_dragons_blood_i03</icon>
+		<operateType>A2</operateType>
+		<abnormalType>VOTE</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<staticReuse>true</staticReuse>
+		<abnormalVisualEffect>VP_KEEP</abnormalVisualEffect>
+		<isMagic>4</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpCheckAbnormal">
+				<type>VOTE</type>
+				<level>1</level>
+				<hasAbnormal>false</hasAbnormal>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="ExpModify">
+				<amount>50</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22709" toLevel="1" name="XP Buff 50% (2-h.)">
+		<!-- Obtained XP +50%. -->
+		<icon>icon.etc_dragons_blood_i03</icon>
+		<operateType>A2</operateType>
+		<abnormalType>VOTE</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>7200</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<staticReuse>true</staticReuse>
+		<abnormalVisualEffect>VP_KEEP</abnormalVisualEffect>
+		<isMagic>4</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpCheckAbnormal">
+				<type>VOTE</type>
+				<level>1</level>
+				<hasAbnormal>false</hasAbnormal>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="ExpModify">
+				<amount>50</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22710" toLevel="3" name="Scroll: Increase Vitality">
+		<operateType>A1</operateType>
+		<hitTime>200</hitTime>
+		<reuseDelay>259200000</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<isDebuff>false</isDebuff>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CanChangeVitalItemCount" />
+		</conditions>
+	</skill>
+	<skill id="22711" toLevel="3" name="Scroll: Replenish Vitality">
+		<operateType>A1</operateType>
+		<hitTime>200</hitTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<staticReuse>true</staticReuse>
+		<isMagic>2</isMagic>
+		<reuseDelay>3600000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CanRestoreVitalPoint" />
+			<condition name="CanUseVitalityConsumeItem" />
+		</conditions>
+	</skill>
+	<skill id="22712" toLevel="1" name="Vitality Recovering Potion">
+		<!-- For 30 min., Vitality is replenished with XP gain through hunting. Effect remains even after death. -->
+		<icon>icon.etc_hot_spring_mineral_i00</icon>
+		<operateType>A2</operateType>
+		<reuseDelay>3600000</reuseDelay>
+		<effectPoint>100</effectPoint>
+		<abnormalType>VP_UP</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-2</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<abnormalLvl>3</abnormalLvl>
+		<abnormalTime>1800</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<staticReuse>true</staticReuse>
+		<abnormalVisualEffect>VP_UP</abnormalVisualEffect>
+		<isMagic>4</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CanRestoreVitalPoint" />
+			<condition name="CanUseVitalityConsumeItem" />
+		</conditions>
+	</skill>
+	<skill id="22713" toLevel="1" name="Letter Collector's Gift">
+		<!-- For 2 h., Atk./ Casting Spd. +15%, and Speed +20. -->
+		<icon>icon.shield_bread_i01</icon>
+		<operateType>A2</operateType>
+		<reuseDelay>3600000</reuseDelay>
+		<effectPoint>100</effectPoint>
+		<abnormalType>BR_EVENT_BUF1</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-3</specialLevel>
+		<magicLvl>-3</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>7200</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<staticReuse>true</staticReuse>
+		<abnormalVisualEffect>CHANGE_7ANNIVERSARY</abnormalVisualEffect>
+		<isMagic>4</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22714" toLevel="1" name="Transformation Scroll Pack">
+		<itemConsumeId>23350</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="11">
+						<item id="21182" count="1" /> <!-- Transformation Scroll: Saber Tooth Tiger - Event -->
+					</item>
+					<item chance="11">
+						<item id="21183" count="1" /> <!-- Transformation Scroll: Oel Mahum - Event -->
+					</item>
+					<item chance="11">
+						<item id="21184" count="1" /> <!-- Transformation Scroll: Doll Blader - Event -->
+					</item>
+					<item chance="11">
+						<item id="21185" count="1" /> <!-- Transformation Scroll: Zaken - Event -->
+					</item>
+					<item chance="1">
+						<item id="21186" count="1" /> <!-- Transformation Scroll: Anakim - Event -->
+					</item>
+					<item chance="11">
+						<item id="21187" count="1" /> <!-- Transformation Scroll: Venom - Event -->
+					</item>
+					<item chance="11">
+						<item id="21188" count="1" /> <!-- Transformation Scroll: Gordon - Event -->
+					</item>
+					<item chance="11">
+						<item id="21189" count="1" /> <!-- Transformation Scroll: Ranku - Event -->
+					</item>
+					<item chance="11">
+						<item id="21190" count="1" /> <!-- Transformation Scroll: Kechi - Event -->
+					</item>
+					<item chance="11">
+						<item id="21191" count="1" /> <!-- Transformation Scroll: Demon Prince - Event -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22715" toLevel="1" name="Heavenly Treasure Chest">
+		<itemConsumeId>23377</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="0.05">
+						<item id="23343" count="1" /> <!-- Heavenly Scroll: Enchant Weapon (R-grade) -->
+					</item>
+					<item chance="0.1">
+						<item id="23342" count="1" /> <!-- Ancient Scroll: Enchant Weapon (R-grade) -->
+					</item>
+					<item chance="0.1">
+						<item id="23345" count="1" /> <!-- Heavenly Scroll: Enchant Armor (R-grade) -->
+					</item>
+					<item chance="1.5">
+						<item id="17712" count="1" /> <!-- Lv. 5 Legendary INT Dye - INT +5/ WIT +1/ Water Resistance +25 -->
+					</item>
+					<item chance="0.75">
+						<item id="19447" count="1" /> <!-- Blessed Scroll: Enchant Weapon (R-grade) -->
+					</item>
+					<item chance="1.5">
+						<item id="17709" count="1" /> <!-- Lv. 5 Legendary STR Dye - STR +5/ DEX +1/ Fire Resistance +25 -->
+					</item>
+					<item chance="2">
+						<item id="23344" count="1" /> <!-- Ancient Scroll: Enchant Armor (R-grade) -->
+					</item>
+					<item chance="2">
+						<item id="17711" count="1" /> <!-- Lv. 5 Legendary CON Dye - CON +5/ STR +1/ Dark Resistance +25 -->
+					</item>
+					<item chance="2">
+						<item id="17713" count="1" /> <!-- Lv. 5 Legendary WIT Dye - WIT +5/ MEN +1/ Wind Resistance +25 -->
+					</item>
+					<item chance="3">
+						<item id="17710" count="1" /> <!-- Lv. 5 Legendary DEX Dye - DEX +5/ CON +1/ Earth Resistance +25 -->
+					</item>
+					<item chance="3">
+						<item id="17714" count="1" /> <!-- Lv. 5 Legendary MEN Dye - MEN +5/ INT +1/ Holy Resistance +25 -->
+					</item>
+					<item chance="6">
+						<item id="19448" count="1" /> <!-- Blessed Scroll: Enchant Armor (R-grade) -->
+					</item>
+					<item chance="10">
+						<item id="34941" count="1" /> <!-- Life Stone: Hair Accessory - Event -->
+					</item>
+					<item chance="10">
+						<item id="34940" count="1" /> <!-- Scroll: Enchant Hair Accessory - Event -->
+					</item>
+					<item chance="6">
+						<item id="34681" count="1" /> <!-- Scroll: Seal Weapon (R99-grade) -->
+					</item>
+					<item chance="10">
+						<item id="34690" count="1" /> <!-- Scroll: Seal Armor (R99-grade) -->
+					</item>
+					<item chance="7">
+						<item id="34689" count="1" /> <!-- Scroll: Seal Armor (R95-grade) -->
+					</item>
+					<item chance="7">
+						<item id="34688" count="1" /> <!-- Scroll: Seal Armor (R-grade) -->
+					</item>
+					<item chance="7">
+						<item id="34680" count="1" /> <!-- Scroll: Seal Weapon (R95-grade) -->
+					</item>
+					<item chance="7">
+						<item id="34679" count="1" /> <!-- Scroll: Seal Weapon (R-grade) -->
+					</item>
+					<item chance="7">
+						<item id="18566" count="1" /> <!-- Top-grade Life Stone (R-grade) -->
+					</item>
+					<item chance="7">
+						<item id="18565" count="1" /> <!-- High-grade Life Stone (R-grade) -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22716" toLevel="1" name="Fantastical Treasure Chest">
+		<itemConsumeId>23378</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="0.05">
+						<item id="23087" count="1" /> <!-- Enhanced Power Shirt Pack - Event -->
+					</item>
+					<item chance="0.1">
+						<item id="34984" count="1" /> <!-- Talisman - Infinity -->
+					</item>
+					<item chance="0.79">
+						<item id="36186" count="1" /> <!-- Kaliel's Energy - Desire -->
+					</item>
+					<item chance="1">
+						<item id="36185" count="1" /> <!-- Kaliel's Energy - Hellfire -->
+					</item>
+					<item chance="2">
+						<item id="35749" count="1" /> <!-- Weapon Attribute Change Crystal (R-grade) - Event -->
+					</item>
+					<item chance="2">
+						<item id="36184" count="1" /> <!-- Kaliel's Energy - Annihilation -->
+					</item>
+					<item chance="10">
+						<item id="23348" count="1" /> <!-- Lucky Enchant Stone: Armor (R-grade) -->
+					</item>
+					<item chance="15">
+						<item id="34628" count="1" /> <!-- Einhasad's Energy -->
+					</item>
+					<item chance="12">
+						<item id="23347" count="1" /> <!-- Lucky Enchant Stone: Weapon (R-grade) -->
+					</item>
+					<item chance="15">
+						<item id="23346" count="1" /> <!-- Letter Collector's Gift -->
+					</item>
+					<item chance="7.01">
+						<item id="34661" count="1" /> <!-- Fire Stone (+60) -->
+					</item>
+					<item chance="7.01">
+						<item id="34662" count="1" /> <!-- Water Stone (+60) -->
+					</item>
+					<item chance="7.01">
+						<item id="34663" count="1" /> <!-- Earth Stone (+60) -->
+					</item>
+					<item chance="7.01">
+						<item id="34664" count="1" /> <!-- Wind Stone (+60) -->
+					</item>
+					<item chance="7.01">
+						<item id="34665" count="1" /> <!-- Dark Stone (+60) -->
+					</item>
+					<item chance="7.01">
+						<item id="34666" count="1" /> <!-- Holy Stone (+60) -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22717" toLevel="1" name="Glorious Treasure Chest">
+		<itemConsumeId>23379</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="0.1">
+						<item id="20577" count="1" /> <!-- Eva's Circlet Pack (7-day) -->
+					</item>
+					<item chance="2">
+						<item id="22515" count="1" /> <!-- Superior Minion Coupon Pack -->
+					</item>
+					<item chance="1">
+						<item id="23372" count="1" /> <!-- Weapon Appearance/ Restoration Stone Pack (R-grade) -->
+					</item>
+					<item chance="2.45">
+						<item id="23376" count="1" /> <!-- Hair Accessory Appearance/ Restoration Stone Pack -->
+					</item>
+					<item chance="2.45">
+						<item id="23374" count="1" /> <!-- Armor Appearance/ Restoration Stone Pack (R-grade) -->
+					</item>
+					<item chance="5">
+						<item id="23373" count="1" /> <!-- Weapon Appearance/ Restoration Stone Pack (S-grade) -->
+					</item>
+					<item chance="10">
+						<item id="23438" count="1" /> <!-- Party Cake Pack -->
+					</item>
+					<item chance="13">
+						<item id="23439" count="1" /> <!-- Feather of Blessing Pack -->
+					</item>
+					<item chance="13">
+						<item id="23437" count="1" /> <!-- Mysterious Friend Summon Bracelet Pack (30-day) -->
+					</item>
+					<item chance="15">
+						<item id="23350" count="1" /> <!-- Transformation Scroll Pack -->
+					</item>
+					<item chance="8">
+						<item id="23434" count="1" /> <!-- Agathion - Phoenix Pack (7-day) - Nirvana Rebirth -->
+					</item>
+					<item chance="6">
+						<item id="23435" count="1" /> <!-- Agathion - Blue Opera Pack (7-day) - Sword of Recovery ] -->
+					</item>
+					<item chance="8">
+						<item id="23436" count="1" /> <!-- Agathion - Button-eyed Bear Doll Pack (7-day) - Vitality -->
+					</item>
+					<item chance="6">
+						<item id="23441" count="1" /> <!-- Super Healthy Juice Pack (CP) -->
+					</item>
+					<item chance="8">
+						<item id="23440" count="1" /> <!-- Super Healthy Juice Pack (HP) -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22718" toLevel="1" name="Blessed Griffin Egg">
+		<itemConsumeId>23387</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="16">
+						<item id="22622" count="1" /> <!-- Blessed Scroll of Escape - 1-day -->
+					</item>
+					<item chance="15">
+						<item id="22623" count="1" /> <!-- Blessed Scroll of Resurrection - 1-day -->
+					</item>
+					<item chance="15.055">
+						<item id="22624" count="1" /> <!-- Elixir of Life - 1-day -->
+					</item>
+					<item chance="23">
+						<item id="22625" count="1" /> <!-- Elixir of Mind - 1-day -->
+					</item>
+					<item chance="20">
+						<item id="22626" count="1" /> <!-- Elixir of CP - 1-day -->
+					</item>
+					<item chance="4">
+						<item id="22621" count="1" /> <!-- Vitality Recovery Potion - 1-hour -->
+					</item>
+					<item chance="0.1">
+						<item id="22628" count="1" /> <!-- Scroll: Enchant Armor (R-grade) -->
+					</item>
+					<item chance="0.05">
+						<item id="22627" count="1" /> <!-- Scroll: Enchant Weapon (R-grade) -->
+					</item>
+					<item chance="0.01">
+						<item id="22648" count="1" /> <!-- Blessed Scroll: Enchant Armor (R-grade) -->
+					</item>
+					<item chance="0.005">
+						<item id="22647" count="1" /> <!-- Blessed Scroll: Enchant Weapon (R-grade) -->
+					</item>
+					<item chance="0.9">
+						<item id="22629" count="1" /> <!-- High-grade Life Stone (R-grade) -->
+					</item>
+					<item chance="0.8">
+						<item id="22630" count="1" /> <!-- Top-grade Life Stone (R-grade) -->
+					</item>
+					<item chance="0.7">
+						<item id="22631" count="1" /> <!-- High-grade Life Stone (R95-grade) -->
+					</item>
+					<item chance="0.3">
+						<item id="22632" count="1" /> <!-- Top-grade Life Stone (R95-grade) -->
+					</item>
+					<item chance="0.2">
+						<item id="22633" count="1" /> <!-- High-grade Life Stone (R99-grade) -->
+					</item>
+					<item chance="0.1">
+						<item id="22634" count="1" /> <!-- Top-grade Life Stone (R99-grade) -->
+					</item>
+					<item chance="0.2">
+						<item id="19508" count="1" /> <!-- Yellow Soul Crystal Fragment (R-grade) -->
+					</item>
+					<item chance="0.2">
+						<item id="19509" count="1" /> <!-- Teal Soul Crystal Fragment (R-grade) -->
+					</item>
+					<item chance="0.2">
+						<item id="19510" count="1" /> <!-- Purple Soul Crystal Fragment (R-grade) -->
+					</item>
+					<item chance="0.05">
+						<item id="19511" count="1" /> <!-- Yellow Soul Crystal Fragment (R95-grade) -->
+					</item>
+					<item chance="0.05">
+						<item id="19512" count="1" /> <!-- Teal Soul Crystal Fragment (R95-grade) -->
+					</item>
+					<item chance="0.05">
+						<item id="19513" count="1" /> <!-- Purple Soul Crystal Fragment (R95-grade) -->
+					</item>
+					<item chance="0.01">
+						<item id="19467" count="1" /> <!-- Yellow Soul Crystal Fragment (R99-grade) -->
+					</item>
+					<item chance="0.01">
+						<item id="19468" count="1" /> <!-- Teal Soul Crystal Fragment (R99-grade) -->
+					</item>
+					<item chance="0.01">
+						<item id="19469" count="1" /> <!-- Purple Soul Crystal Fragment (R99-grade) -->
+					</item>
+					<item chance="0.4">
+						<item id="22635" count="1" /> <!-- Fire Stone -->
+					</item>
+					<item chance="0.4">
+						<item id="22636" count="1" /> <!-- Water Stone -->
+					</item>
+					<item chance="0.4">
+						<item id="22637" count="1" /> <!-- Earth Stone -->
+					</item>
+					<item chance="0.4">
+						<item id="22638" count="1" /> <!-- Wind Stone -->
+					</item>
+					<item chance="0.4">
+						<item id="22639" count="1" /> <!-- Dark Stone -->
+					</item>
+					<item chance="0.4">
+						<item id="22640" count="1" /> <!-- Holy Stone -->
+					</item>
+					<item chance="0.1">
+						<item id="22641" count="1" /> <!-- Fire Crystal -->
+					</item>
+					<item chance="0.1">
+						<item id="22642" count="1" /> <!-- Water Crystal -->
+					</item>
+					<item chance="0.1">
+						<item id="22643" count="1" /> <!-- Earth Crystal -->
+					</item>
+					<item chance="0.1">
+						<item id="22644" count="1" /> <!-- Wind Crystal -->
+					</item>
+					<item chance="0.1">
+						<item id="22645" count="1" /> <!-- Dark Crystal -->
+					</item>
+					<item chance="0.1">
+						<item id="22646" count="1" /> <!-- Holy Crystal -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22719" toLevel="1" name="Transformation Scroll Pack">
+		<itemConsumeId>23388</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="11">
+						<item id="23400" count="1" /> <!-- Transformation Scroll: Saber Tooth Tiger -->
+					</item>
+					<item chance="11">
+						<item id="23401" count="1" /> <!-- Transformation Scroll: Oel Mahum -->
+					</item>
+					<item chance="11">
+						<item id="23402" count="1" /> <!-- Transformation Scroll: Doll Blader -->
+					</item>
+					<item chance="11">
+						<item id="23403" count="1" /> <!-- Transformation Scroll: Zaken -->
+					</item>
+					<item chance="1">
+						<item id="23404" count="1" /> <!-- Transformation Scroll: Anakim -->
+					</item>
+					<item chance="11">
+						<item id="23405" count="1" /> <!-- Transformation Scroll: Venom -->
+					</item>
+					<item chance="11">
+						<item id="23406" count="1" /> <!-- Transformation Scroll: Gordon -->
+					</item>
+					<item chance="11">
+						<item id="23407" count="1" /> <!-- Transformation Scroll: Ranku -->
+					</item>
+					<item chance="11">
+						<item id="23408" count="1" /> <!-- Transformation Scroll: Kechi -->
+					</item>
+					<item chance="11">
+						<item id="23409" count="1" /> <!-- Transformation Scroll: Demon Prince -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22720" toLevel="1" name="Brilliant Talisman Pack">
+		<itemConsumeId>23393</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<staticReuse>true</staticReuse>
+		<isMagic>2</isMagic>
+		<reuseDelay>2000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="7">
+						<item id="18273" count="1" /> <!-- Talisman (R85-grade) - P. Atk. (Passive) -->
+					</item>
+					<item chance="7">
+						<item id="18277" count="1" /> <!-- Talisman (R85-grade) - P. Def. (Passive) -->
+					</item>
+					<item chance="7">
+						<item id="18281" count="1" /> <!-- Talisman (R85-grade) - M. Atk. (Passive) -->
+					</item>
+					<item chance="7">
+						<item id="18285" count="1" /> <!-- Talisman (R85-grade) - M. Def. (Passive) -->
+					</item>
+					<item chance="7">
+						<item id="18289" count="1" /> <!-- Talisman (R85-grade) - HP (Passive) -->
+					</item>
+					<item chance="7">
+						<item id="18293" count="1" /> <!-- Talisman (R85-grade) - MP (Passive) -->
+					</item>
+					<item chance="7">
+						<item id="18297" count="1" /> <!-- Talisman (R85-grade) - CP (Passive) -->
+					</item>
+					<item chance="7">
+						<item id="18301" count="1" /> <!-- Talisman (R85-grade) - Critical Damage (Passive) -->
+					</item>
+					<item chance="7">
+						<item id="18305" count="1" /> <!-- Talisman (R85-grade) - Decrease Critical (Passive) -->
+					</item>
+					<item chance="7">
+						<item id="18309" count="1" /> <!-- Talisman (R-grade) - M. Critical (Passive) -->
+					</item>
+					<item chance="7">
+						<item id="18310" count="1" /> <!-- Talisman (R-grade) - P. Accuracy (Passive) -->
+					</item>
+					<item chance="7">
+						<item id="18311" count="1" /> <!-- Talisman (R-grade) - M. Accuracy (Passive) -->
+					</item>
+					<item chance="7">
+						<item id="18312" count="1" /> <!-- Talisman (R-grade) - Evasion (Passive) -->
+					</item>
+					<item chance="7">
+						<item id="18313" count="1" /> <!-- Talisman (R-grade) - M. Evasion (Passive) -->
+					</item>
+					<item chance="8">
+						<item id="18314" count="1" /> <!-- Talisman (R-grade) - P. Critical Rate (Passive) -->
+					</item>
+					<item chance="8">
+						<item id="18315" count="1" /> <!-- Talisman (R-grade) - Critical Evasion (Passive) -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22721" toLevel="1" name="Scroll: Seal Weapon Pack">
+		<itemConsumeId>23394</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<staticReuse>true</staticReuse>
+		<isMagic>2</isMagic>
+		<reuseDelay>2000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="30">
+						<item id="34015" count="1" /> <!-- Scroll: Seal Weapon (D-grade) - Event -->
+					</item>
+					<item chance="25">
+						<item id="34016" count="1" /> <!-- Scroll: Seal Weapon (C-grade) - Event -->
+					</item>
+					<item chance="20">
+						<item id="34017" count="1" /> <!-- Scroll: Seal Weapon (B-grade) - Event -->
+					</item>
+					<item chance="10">
+						<item id="34018" count="1" /> <!-- Scroll: Seal Weapon (A-grade) - Event -->
+					</item>
+					<item chance="5">
+						<item id="34019" count="1" /> <!-- Scroll: Seal Weapon (S-grade) - Event -->
+					</item>
+					<item chance="4">
+						<item id="34020" count="1" /> <!-- Scroll: Seal Weapon (S80-grade) - Event -->
+					</item>
+					<item chance="3">
+						<item id="34021" count="1" /> <!-- Scroll: Seal Weapon (R-grade) - Event -->
+					</item>
+					<item chance="2">
+						<item id="34022" count="1" /> <!-- Scroll: Seal Weapon (R95-grade) - Event -->
+					</item>
+					<item chance="1">
+						<item id="34023" count="1" /> <!-- Scroll: Seal Weapon (R99-grade) - Event -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22722" toLevel="1" name="Scroll: Seal Armor Pack">
+		<itemConsumeId>23395</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<staticReuse>true</staticReuse>
+		<isMagic>2</isMagic>
+		<reuseDelay>2000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="15">
+						<item id="34024" count="1" /> <!-- Scroll: Seal Armor (D-grade) - Event -->
+					</item>
+					<item chance="15">
+						<item id="34025" count="1" /> <!-- Scroll: Seal Armor (C-grade) - Event -->
+					</item>
+					<item chance="15">
+						<item id="34026" count="1" /> <!-- Scroll: Seal Armor (B-grade) - Event -->
+					</item>
+					<item chance="15">
+						<item id="34027" count="1" /> <!-- Scroll: Seal Armor (A-grade) - Event -->
+					</item>
+					<item chance="12">
+						<item id="34028" count="1" /> <!-- Scroll: Seal Armor (S-grade) - Event -->
+					</item>
+					<item chance="10">
+						<item id="34029" count="1" /> <!-- Scroll: Seal Armor (S80-grade) - Event -->
+					</item>
+					<item chance="8">
+						<item id="34030" count="1" /> <!-- Scroll: Seal Armor (R-grade) - Event -->
+					</item>
+					<item chance="6">
+						<item id="34031" count="1" /> <!-- Scroll: Seal Armor (R95-grade) - Event -->
+					</item>
+					<item chance="4">
+						<item id="34032" count="1" /> <!-- Scroll: Seal Armor (R99-grade) - Event -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22723" toLevel="1" name="Scroll: Enchant Weapon Pack">
+		<itemConsumeId>23396</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<staticReuse>true</staticReuse>
+		<isMagic>2</isMagic>
+		<reuseDelay>2000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="10">
+						<item id="23410" count="1" /> <!-- Scroll: Enchant Weapon (R-grade) -->
+					</item>
+					<item chance="15">
+						<item id="23411" count="1" /> <!-- Scroll: Enchant Weapon (S-grade) -->
+					</item>
+					<item chance="15">
+						<item id="23412" count="1" /> <!-- Scroll: Enchant Weapon (A-grade) -->
+					</item>
+					<item chance="20">
+						<item id="23413" count="1" /> <!-- Scroll: Enchant Weapon (B-grade) -->
+					</item>
+					<item chance="20">
+						<item id="23414" count="1" /> <!-- Scroll: Enchant Weapon (C-grade) -->
+					</item>
+					<item chance="20">
+						<item id="23415" count="1" /> <!-- Scroll: Enchant Weapon (D-grade) -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22724" toLevel="1" name="Scroll: Enchant Armor Pack">
+		<itemConsumeId>23397</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<staticReuse>true</staticReuse>
+		<isMagic>2</isMagic>
+		<reuseDelay>2000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="20">
+						<item id="23416" count="1" /> <!-- Scroll: Enchant Armor (R-grade) -->
+					</item>
+					<item chance="20">
+						<item id="23417" count="1" /> <!-- Scroll: Enchant Armor (S-grade) -->
+					</item>
+					<item chance="15">
+						<item id="23418" count="1" /> <!-- Scroll: Enchant Armor (A-grade) -->
+					</item>
+					<item chance="15">
+						<item id="23419" count="1" /> <!-- Scroll: Enchant Armor (B-grade) -->
+					</item>
+					<item chance="15">
+						<item id="23420" count="1" /> <!-- Scroll: Enchant Armor (C-grade) -->
+					</item>
+					<item chance="15">
+						<item id="23421" count="1" /> <!-- Scroll: Enchant Armor (D-grade) -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22725" toLevel="1" name="Blessed Scroll: Enchant Weapon Pack">
+		<itemConsumeId>23398</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<staticReuse>true</staticReuse>
+		<isMagic>2</isMagic>
+		<reuseDelay>2000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="10">
+						<item id="23422" count="1" /> <!-- Blessed Scroll: Enchant Weapon (R-grade) -->
+					</item>
+					<item chance="10">
+						<item id="23423" count="1" /> <!-- Blessed Scroll: Enchant Weapon (S-grade) -->
+					</item>
+					<item chance="15">
+						<item id="23424" count="1" /> <!-- Blessed Scroll: Enchant Weapon (A-grade) -->
+					</item>
+					<item chance="20">
+						<item id="23425" count="1" /> <!-- Blessed Scroll: Enchant Weapon (B-grade) -->
+					</item>
+					<item chance="20">
+						<item id="23426" count="1" /> <!-- Blessed Scroll: Enchant Weapon (C-grade) -->
+					</item>
+					<item chance="25">
+						<item id="23427" count="1" /> <!-- Blessed Scroll: Enchant Weapon (D-grade) -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22726" toLevel="1" name="Blessed Scroll: Enchant Armor Pack">
+		<itemConsumeId>23399</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<staticReuse>true</staticReuse>
+		<isMagic>2</isMagic>
+		<reuseDelay>2000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="15">
+						<item id="23428" count="1" /> <!-- Blessed Scroll: Enchant Armor (R-grade) -->
+					</item>
+					<item chance="15">
+						<item id="23429" count="1" /> <!-- Blessed Scroll: Enchant Armor (S-grade) -->
+					</item>
+					<item chance="15">
+						<item id="23430" count="1" /> <!-- Blessed Scroll: Enchant Armor (A-grade) -->
+					</item>
+					<item chance="15">
+						<item id="23431" count="1" /> <!-- Blessed Scroll: Enchant Armor (B-grade) -->
+					</item>
+					<item chance="15">
+						<item id="23432" count="1" /> <!-- Blessed Scroll: Enchant Armor (C-grade) -->
+					</item>
+					<item chance="25">
+						<item id="23433" count="1" /> <!-- Blessed Scroll: Enchant Armor (D-grade) -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22727" toLevel="1" name="Transformation Scroll: Saber Tooth Tiger">
+		<!-- Transforms into Saber Tooth Tiger. -->
+		<icon>icon.skilltransform1</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>TRANSFORM</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>1800</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CanTransform">
+				<transformId>5</transformId>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="Transformation">
+				<transformationId>5</transformationId>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22728" toLevel="1" name="Transformation Scroll: Oel Mahum">
+		<!-- Transforms into Oel Mahum. -->
+		<icon>icon.skilltransform1</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>TRANSFORM</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>1800</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CanTransform">
+				<transformId>6</transformId>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="Transformation">
+				<transformationId>6</transformationId>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22729" toLevel="1" name="Transformation Scroll: Doll Blader">
+		<!-- Transforms into Doll Blader. -->
+		<icon>icon.skilltransform1</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>TRANSFORM</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>1800</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CanTransform">
+				<transformId>7</transformId>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="Transformation">
+				<transformationId>7</transformationId>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22730" toLevel="1" name="Transformation Scroll: Zaken">
+		<!-- Transforms into Zaken. -->
+		<icon>icon.skilltransform1</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>TRANSFORM</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>1800</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CanTransform">
+				<transformId>305</transformId>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="Transformation">
+				<transformationId>305</transformationId>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22731" toLevel="1" name="Transformation Scroll: Anakim">
+		<!-- Transforms into Anakim. -->
+		<icon>icon.skilltransform1</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>TRANSFORM</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>1800</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CanTransform">
+				<transformId>306</transformId>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="Transformation">
+				<transformationId>306</transformationId>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22732" toLevel="1" name="Transformation Scroll: Venom">
+		<!-- Transforms into Venom. -->
+		<icon>icon.skilltransform1</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>TRANSFORM</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>1800</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CanTransform">
+				<transformId>307</transformId>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="Transformation">
+				<transformationId>307</transformationId>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22733" toLevel="1" name="Transformation Scroll: Gordon">
+		<!-- Transforms into Gordon. -->
+		<icon>icon.skilltransform1</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>TRANSFORM</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>1800</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CanTransform">
+				<transformId>308</transformId>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="Transformation">
+				<transformationId>308</transformationId>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22734" toLevel="1" name="Transformation Scroll: Ranku">
+		<!-- Transforms into Ranku. -->
+		<icon>icon.skilltransform1</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>TRANSFORM</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>1800</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CanTransform">
+				<transformId>309</transformId>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="Transformation">
+				<transformationId>309</transformationId>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22735" toLevel="1" name="Transformation Scroll: Kechi">
+		<!-- Transforms into Kechi. -->
+		<icon>icon.skilltransform1</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>TRANSFORM</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>1800</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CanTransform">
+				<transformId>310</transformId>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="Transformation">
+				<transformationId>310</transformationId>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22736" toLevel="1" name="Transformation Scroll: Demon Prince">
+		<!-- Transforms into Demon Prince. -->
+		<icon>icon.skilltransform1</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>TRANSFORM</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>1800</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CanTransform">
+				<transformId>311</transformId>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="Transformation">
+				<transformationId>311</transformationId>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22737" toLevel="1" name="Ink Herb">
+		<operateType>A1</operateType>
+		<effectPoint>100</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<affectRange>1000</affectRange>
+		<isMagic>2</isMagic>
+		<hitTime>100</hitTime>
+		<targetType>SELF</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+	</skill>
+	<skill id="22738" toLevel="1" name="Ink Gauge Reduced">
+		<operateType>A1</operateType>
+		<castRange>800</castRange>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>950</effectRange>
+		<magicLvl>99</magicLvl>
+		<isMagic>2</isMagic>
+		<hitTime>100</hitTime>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22739" toLevel="2" name="Greater Ink Herb">
+		<operateType>A1</operateType>
+		<hitTime>100</hitTime>
+		<effectPoint>100</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<affectRange>1000</affectRange>
+		<isMagic>2</isMagic>
+		<isDebuff>false</isDebuff>
+		<targetType>SELF</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+	</skill>
+	<skill id="22740" toLevel="1" name="Greater Ink Gauge Reduced">
+		<operateType>A1</operateType>
+		<castRange>800</castRange>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>950</effectRange>
+		<magicLvl>99</magicLvl>
+		<isMagic>2</isMagic>
+		<hitTime>100</hitTime>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22741" toLevel="1" name="Fantasy Gift Box">
+		<itemConsumeId>23466</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="0.0118">
+						<item id="23579" count="1" /> <!-- Shining Accessory Pack - Event -->
+					</item>
+					<item chance="0.027">
+						<item id="36163" count="1" /> <!-- Giant's Scroll: Enchant Weapon (R-grade) - Event -->
+					</item>
+					<item chance="0.037">
+						<item id="23596" count="1" /> <!-- Blessed Scroll: Enchant Weapon (R-grade) - Event -->
+					</item>
+					<item chance="0.058">
+						<item id="35749" count="1" /> <!-- Weapon Attribute Change Crystal (R-grade) - Event -->
+					</item>
+					<item chance="0.0942">
+						<item id="23599" count="1" /> <!-- Lucky Enchant Stone: Weapon (R-grade) - Event -->
+					</item>
+					<item chance="0.175">
+						<item id="23534" count="1" /> <!-- Monster Weapon Appearance Stone Pack - Event -->
+					</item>
+					<item chance="0.3">
+						<item id="36164" count="1" /> <!-- Giant's Scroll: Enchant Armor (R-grade) - Event -->
+					</item>
+					<item chance="0.425">
+						<item id="23600" count="1" /> <!-- Lucky Enchant Stone: Armor (R-grade) - Event -->
+					</item>
+					<item chance="0.52">
+						<item id="23597" count="1" /> <!-- Blessed Scroll: Enchant Armor (R-grade) - Event -->
+					</item>
+					<item chance="0.61">
+						<item id="23541" count="1" /> <!-- Vesper Noble Light Armor Appearance Stone Set - Event -->
+					</item>
+					<item chance="0.61">
+						<item id="23580" count="1" /> <!-- Vorpal Light Armor Appearance Stone Set - Event -->
+					</item>
+					<item chance="0.67">
+						<item id="23472" count="1" /> <!-- Fantasy Cookie Set - Event -->
+					</item>
+					<item chance="0.815">
+						<item id="23471" count="1" /> <!-- Fantasy Special Cookie - Event -->
+					</item>
+					<item chance="1.42">
+						<item id="23589" count="1" /> <!-- Monster Weapon Appearance Stone Pack (7-day) - Event -->
+					</item>
+					<item chance="1.861">
+						<item id="23575" count="1" /> <!-- Fantasy Top Appearance Stone Pack (7-day) - Event -->
+					</item>
+					<item chance="1.861">
+						<item id="23576" count="1" /> <!-- Fantasy Pants Appearance Stone Pack (7-day) - Event -->
+					</item>
+					<item chance="2.12">
+						<item id="23577" count="1" /> <!-- Fantasy Gloves Appearance Stone Pack (7-day) - Event -->
+					</item>
+					<item chance="2.12">
+						<item id="23578" count="1" /> <!-- Fantasy Shoes Appearance Stone Pack (7-day) - Event -->
+					</item>
+					<item chance="3.1">
+						<item id="19440" count="1" /> <!-- Gemstone (R-grade) -->
+					</item>
+					<item chance="4.9">
+						<item id="23551" count="1" /> <!-- Mysterious Spiritshot Small Pack (R-grade) - Event -->
+					</item>
+					<item chance="5.94">
+						<item id="23470" count="1" /> <!-- Fantasy Homemade Cookie - Event -->
+					</item>
+					<item chance="7.7">
+						<item id="9157" count="1" /> <!-- Blessed Scroll of Resurrection (Event) -->
+					</item>
+					<item chance="9.349">
+						<item id="9156" count="1" /> <!-- Blessed Scroll of Escape (Event) -->
+					</item>
+					<item chance="13.95">
+						<item id="23467" count="1" /> <!-- Fantasy Health Potion - Event -->
+					</item>
+					<item chance="16.39">
+						<item id="23468" count="1" /> <!-- Fantasy Mana Potion - Event -->
+					</item>
+					<item chance="24.936">
+						<item id="23550" count="1" /> <!-- Mysterious Soulshot Small Pack (R-grade) - Event -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22742" toLevel="1" name="Fantasy Health Potion">
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22743" toLevel="1" name="Fantasy Mana Potion">
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="Mp">
+				<amount>300</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22744" toLevel="1" name="Fantasy Cookie">
+		<!-- For 60 min., Speed +33. -->
+		<icon>BranchSys3.Icon.ev_halloween_cookie</icon>
+		<operateType>A2</operateType>
+		<effectPoint>100</effectPoint>
+		<abnormalType>PA_PD_UP</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<abnormalLvl>4</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<staticReuse>true</staticReuse>
+		<isMagic>2</isMagic>
+		<reuseDelay>3600000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22745" toLevel="1" name="Fantasy Homemade Cookie">
+		<!-- For 60 min., increases Max MP by 20%, HP Recovery Bonus by 20%, M. Critical Rate by 2, Standard Attack Critical Damage by 20%, P. Atk. by 10%, P. Def. by 20%, Atk. Spd. by 20%, M. Atk. by 20%, M. Def. by 20%, Casting Spd. by 20%, Debuff Resistance by 10%, and increases P. Def. when hit by a critical attack. Decreases Speed by 15%. Additionally increases Standard Attack Critical Damage for party members equipped with bow, crossbow or melee weapons when they receive more than a certain amount of damage. -->
+		<icon>BranchSys3.Icon.ev_halloween_cookie</icon>
+		<operateType>A2</operateType>
+		<effectPoint>100</effectPoint>
+		<abnormalType>BUFF_SPECIAL_DEFENCE</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<abnormalLvl>25</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<staticReuse>true</staticReuse>
+		<isMagic>2</isMagic>
+		<reuseDelay>3600000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22746" toLevel="1" name="Fantasy Special Cookie">
+		<!-- For 60 min., Acquired XP/ SP +100%. (Lv.95 or below) -->
+		<icon>BranchSys3.Icon.ev_halloween_cookie</icon>
+		<operateType>A2</operateType>
+		<abnormalType>G_EV_BUFF1</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<staticReuse>true</staticReuse>
+		<abnormalVisualEffect>VP_KEEP</abnormalVisualEffect>
+		<isMagic>2</isMagic>
+		<reuseDelay>3600000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>1</minLevel>
+				<maxLevel>95</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+			<condition name="OpCheckAbnormal">
+				<type>G_EV_BUFF1</type>
+				<level>1</level>
+				<hasAbnormal>false</hasAbnormal>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="ExpModify">
+				<amount>100</amount>
+			</effect>
+			<effect name="SpModify">
+				<amount>100</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22747" toLevel="1" name="Fantasy Isle Medal of Glory">
+		<!-- Individual Fame +200. -->
+		<operateType>A1</operateType>
+		<hitTime>200</hitTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22748" toLevel="1" name="Scroll: PK (Low-grade)">
+		<itemConsumeId>23474</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpNotCursed" />
+			<condition name="OpPkcount">
+				<affectType>CASTER</affectType>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="PkCount">
+				<amount>-1</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22749" toLevel="1" name="Scroll: PK (Mid-grade)">
+		<itemConsumeId>23475</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpNotCursed" />
+			<condition name="OpPkcount">
+				<affectType>CASTER</affectType>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="PkCount">
+				<amount>-3</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22750" toLevel="1" name="Scroll: PK (High-grade)">
+		<itemConsumeId>23476</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpNotCursed" />
+			<condition name="OpPkcount">
+				<affectType>CASTER</affectType>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="PkCount">
+				<amount>-5</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22751" toLevel="1" name="Scroll: PK (Top-grade)">
+		<itemConsumeId>23477</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpNotCursed" />
+			<condition name="OpPkcount">
+				<affectType>CASTER</affectType>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="PkCount">
+				<amount>-10</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22752" toLevel="1" name="Scroll: Reputation (Low-grade)">
+		<itemConsumeId>23478</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpAlignment">
+				<affectType>CASTER</affectType>
+				<alignment>CHAOTIC</alignment>
+			</condition>
+			<condition name="OpNotCursed" />
+		</conditions>
+		<effects>
+			<effect name="KarmaCount">
+				<amount>1000</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22753" toLevel="1" name="Scroll: Reputation (Mid-grade)">
+		<itemConsumeId>23479</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpAlignment">
+				<affectType>CASTER</affectType>
+				<alignment>CHAOTIC</alignment>
+			</condition>
+			<condition name="OpNotCursed" />
+		</conditions>
+		<effects>
+			<effect name="KarmaCount">
+				<amount>5000</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22754" toLevel="1" name="Scroll: Reputation (High-grade)">
+		<itemConsumeId>23480</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpAlignment">
+				<affectType>CASTER</affectType>
+				<alignment>CHAOTIC</alignment>
+			</condition>
+			<condition name="OpNotCursed" />
+		</conditions>
+		<effects>
+			<effect name="KarmaCount">
+				<amount>30000</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22755" toLevel="1" name="Scroll: Reputation (Top-grade)">
+		<itemConsumeId>23480</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<hitTime>2000</hitTime>
+		<coolTime>200</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpAlignment">
+				<affectType>CASTER</affectType>
+				<alignment>CHAOTIC</alignment>
+			</condition>
+			<condition name="OpNotCursed" />
+		</conditions>
+		<effects>
+			<effect name="KarmaCount">
+				<mode>RESET</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22756" toLevel="1" name="Transform: Ninja Outfit">
+		<!-- CON +1, MEN +1, WIT +1. -->
+		<icon>BranchSys3.icon1.g_co_ninja_u</icon>
+		<operateType>A2</operateType>
+		<castRange>600</castRange>
+		<hitTime>500</hitTime>
+		<reuseDelay>5000</reuseDelay>
+		<effectPoint>780</effectPoint>
+		<abnormalType>RUNWAY_ARMOR</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-3</specialLevel>
+		<hitCancelTime>0.1</hitCancelTime>
+		<effectRange>1100</effectRange>
+		<magicLvl>-3</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>5400</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<staticReuse>true</staticReuse>
+		<abnormalVisualEffect>RUNWAY_ARMOR1</abnormalVisualEffect>
+		<isMagic>4</isMagic>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22757" toLevel="1" name="Transform: Tribal Warrior Costume">
+		<!-- CON +1, MEN +1, WIT +1. -->
+		<icon>BranchSys3.icon1.g_co_paiwan_u</icon>
+		<operateType>A2</operateType>
+		<castRange>600</castRange>
+		<hitTime>500</hitTime>
+		<reuseDelay>5000</reuseDelay>
+		<effectPoint>780</effectPoint>
+		<abnormalType>RUNWAY_ARMOR</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-3</specialLevel>
+		<hitCancelTime>0.1</hitCancelTime>
+		<effectRange>1100</effectRange>
+		<magicLvl>-3</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>5400</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<staticReuse>true</staticReuse>
+		<abnormalVisualEffect>RUNWAY_ARMOR2</abnormalVisualEffect>
+		<isMagic>4</isMagic>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22758" toLevel="1" name="Transform: Military Outfit">
+		<!-- CON +1, MEN +1, WIT +1. -->
+		<icon>BranchSys3.icon1.g_co_military_u</icon>
+		<operateType>A2</operateType>
+		<castRange>600</castRange>
+		<hitTime>500</hitTime>
+		<reuseDelay>5000</reuseDelay>
+		<effectPoint>780</effectPoint>
+		<abnormalType>RUNWAY_ARMOR</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-3</specialLevel>
+		<hitCancelTime>0.1</hitCancelTime>
+		<effectRange>1100</effectRange>
+		<magicLvl>-3</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>5400</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<staticReuse>true</staticReuse>
+		<abnormalVisualEffect>RUNWAY_ARMOR3</abnormalVisualEffect>
+		<isMagic>4</isMagic>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22759" toLevel="1" name="Transform: Metal Suit">
+		<!-- CON +1, MEN +1, WIT +1. -->
+		<icon>BranchSys3.icon1.g_co_sf_u</icon>
+		<operateType>A2</operateType>
+		<castRange>600</castRange>
+		<hitTime>500</hitTime>
+		<reuseDelay>5000</reuseDelay>
+		<effectPoint>780</effectPoint>
+		<abnormalType>RUNWAY_ARMOR</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-3</specialLevel>
+		<hitCancelTime>0.1</hitCancelTime>
+		<effectRange>1100</effectRange>
+		<magicLvl>-3</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>5400</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<staticReuse>true</staticReuse>
+		<abnormalVisualEffect>RUNWAY_ARMOR4</abnormalVisualEffect>
+		<isMagic>4</isMagic>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22760" toLevel="1" name="Transform: Maid Costume">
+		<!-- CON +1, MEN +1, WIT +1. -->
+		<icon>BranchSys3.icon1.g_co_cutie_maid</icon>
+		<operateType>A2</operateType>
+		<castRange>600</castRange>
+		<hitTime>500</hitTime>
+		<reuseDelay>5000</reuseDelay>
+		<effectPoint>780</effectPoint>
+		<abnormalType>RUNWAY_ARMOR</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-3</specialLevel>
+		<hitCancelTime>0.1</hitCancelTime>
+		<effectRange>1100</effectRange>
+		<magicLvl>-3</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>5400</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<staticReuse>true</staticReuse>
+		<abnormalVisualEffect>RUNWAY_ARMOR5</abnormalVisualEffect>
+		<isMagic>4</isMagic>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22761" toLevel="1" name="Transform: Emerald Weapon">
+		<!-- STR +1, DEX +1, INT +1. -->
+		<icon>BranchSys3.Icon.g_beam_sword</icon>
+		<operateType>A2</operateType>
+		<castRange>600</castRange>
+		<hitTime>500</hitTime>
+		<reuseDelay>5000</reuseDelay>
+		<effectPoint>780</effectPoint>
+		<abnormalType>RUNWAY_WEAPON</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-3</specialLevel>
+		<hitCancelTime>0.1</hitCancelTime>
+		<effectRange>1100</effectRange>
+		<magicLvl>-3</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>5400</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<staticReuse>true</staticReuse>
+		<abnormalVisualEffect>RUNWAY_WEAPON1</abnormalVisualEffect>
+		<isMagic>4</isMagic>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22762" toLevel="1" name="Transform: Japanese Weapon">
+		<!-- STR +1, DEX +1, INT +1. -->
+		<icon>BranchSys3.Icon.g_japan_sword</icon>
+		<operateType>A2</operateType>
+		<castRange>600</castRange>
+		<hitTime>500</hitTime>
+		<reuseDelay>5000</reuseDelay>
+		<effectPoint>780</effectPoint>
+		<abnormalType>RUNWAY_WEAPON</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-3</specialLevel>
+		<hitCancelTime>0.1</hitCancelTime>
+		<effectRange>1100</effectRange>
+		<magicLvl>-3</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>5400</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<staticReuse>true</staticReuse>
+		<abnormalVisualEffect>RUNWAY_WEAPON2</abnormalVisualEffect>
+		<isMagic>4</isMagic>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22763" toLevel="1" name="Santa Outfit Appearance Stone (14-day)">
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>ITEM</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22764" toLevel="1" name="Santa Outfit Appearance Stone">
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>ITEM</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22765" toLevel="1" name="PA Vitality">
+		<!-- For 60 min., Vitality is replenished with XP gain through hunting. -->
+		<icon>icon.etc_pccafe_point_i00</icon>
+		<operateType>A2</operateType>
+		<hitTime>100</hitTime>
+		<reuseDelay>3600000</reuseDelay>
+		<effectPoint>100</effectPoint>
+		<abnormalType>VP_UP</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-2</specialLevel>
+		<magicLvl>-2</magicLvl>
+		<abnormalLvl>4</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<staticReuse>true</staticReuse>
+		<abnormalVisualEffect>VP_UP</abnormalVisualEffect>
+		<isMagic>4</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CanRestoreVitalPoint" />
+			<condition name="CanUseVitalityConsumeItem" />
+		</conditions>
+	</skill>
+	<skill id="22766" toLevel="1" name="Vitality Maintaining Potion">
+		<!-- Maintains Vitality for 10 min. -->
+		<icon>icon.etc_lesser_potion_blue_i00</icon>
+		<operateType>A2</operateType>
+		<reuseDelay>1800000</reuseDelay>
+		<effectPoint>100</effectPoint>
+		<abnormalType>VP_KEEP</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<abnormalLvl>2</abnormalLvl>
+		<abnormalTime>600</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<staticReuse>true</staticReuse>
+		<abnormalVisualEffect>VP_KEEP</abnormalVisualEffect>
+		<isMagic>4</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CanRestoreVitalPoint" />
+			<condition name="CanUseVitalityConsumeItem" />
+		</conditions>
+	</skill>
+	<skill id="22767" toLevel="2" name="Vitality Maintaining Potion">
+		<!-- Maintains Vitality for 30 min. -->
+		<icon>icon.etc_lesser_potion_scarlet_i00</icon>
+		<operateType>A2</operateType>
+		<reuseDelay>3600000</reuseDelay>
+		<isMagic>4</isMagic>
+		<effectPoint>100</effectPoint>
+		<abnormalType>VP_KEEP</abnormalType>
+		<specialLevel>-1</specialLevel>
+		<magicCriticalRate>5</magicCriticalRate>
+		<basicProperty>NONE</basicProperty>
+		<abnormalLvl>3</abnormalLvl>
+		<abnormalTime>1800</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<staticReuse>true</staticReuse>
+		<abnormalVisualEffect>VP_KEEP</abnormalVisualEffect>
+		<isDebuff>false</isDebuff>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CanRestoreVitalPoint" />
+			<condition name="CanUseVitalityConsumeItem" />
+		</conditions>
+	</skill>
+	<skill id="22768" toLevel="1" name="Metal Suit Top Appearance Stone">
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>ITEM</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22769" toLevel="1" name="Metal Suit Pants Appearance Stone">
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>ITEM</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22770" toLevel="1" name="Metal Suit Gloves Appearance Stone">
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>ITEM</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22771" toLevel="1" name="Metal Suit Shoes Appearance Stone">
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>ITEM</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22772" toLevel="1" name="Metal Suit Hair Accessory Appearance Stone">
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>ITEM</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22773" toLevel="1" name="Metal Suit Top Appearance Stone">
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>ITEM</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22774" toLevel="1" name="Metal Suit Pants Appearance Stone">
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>ITEM</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22775" toLevel="1" name="Metal Suit Gloves Appearance Stone">
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>ITEM</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22776" toLevel="1" name="Metal Suit Shoes Appearance Stone">
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>ITEM</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22777" toLevel="1" name="Metal Suit Hair Accessory Appearance Stone">
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>ITEM</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22778" toLevel="1" name="Military Top Appearance Stone">
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>ITEM</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22779" toLevel="1" name="Military Pants Appearance Stone">
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>ITEM</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22780" toLevel="1" name="Military Gloves Appearance Stone">
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>ITEM</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22781" toLevel="1" name="Military Shoes Appearance Stone">
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>ITEM</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22782" toLevel="1" name="Military Hair Accessory Appearance Stone">
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>ITEM</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22783" toLevel="1" name="Military Top Appearance Stone">
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>ITEM</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22784" toLevel="1" name="Military Pants Appearance Stone">
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>ITEM</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22785" toLevel="1" name="Military Gloves Appearance Stone">
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>ITEM</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22786" toLevel="1" name="Military Shoes Appearance Stone">
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>ITEM</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22787" toLevel="1" name="Military Hair Accessory Appearance Stone">
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>ITEM</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22788" toLevel="1" name="Maid Appearance Stone">
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>ITEM</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22789" toLevel="1" name="Maid Hair Accessory Appearance Stone">
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>ITEM</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22790" toLevel="1" name="Maid Appearance Stone">
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>ITEM</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22791" toLevel="1" name="Maid Hair Accessory Appearance Stone">
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>ITEM</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22792" toLevel="1" name="Automatic Appearance Stone: Emerald Weapon">
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>ITEM</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22793" toLevel="1" name="Automatic Appearance Stone: Japanese Weapon">
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>ITEM</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22794" toLevel="1" name="Shining Accessory Pack">
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>23579</itemConsumeId>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>ITEM</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="33.3333">
+						<item id="19452" count="1" /> <!-- Istina's Earring -->
+					</item>
+					<item chance="33.3333">
+						<item id="6658" count="1" /> <!-- Baium's Ring -->
+					</item>
+					<item chance="33.3334">
+						<item id="19459" count="1" /> <!-- Octavis' Necklace -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22795" toLevel="1" name="Vesper Noble Top Appearance Stone">
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>ITEM</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22796" toLevel="1" name="Vesper Noble Pants Appearance Stone">
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>ITEM</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22797" toLevel="1" name="Vesper Noble Gloves Appearance Stone">
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>ITEM</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22798" toLevel="1" name="Vesper Noble Shoes Appearance Stone">
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>ITEM</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22799" toLevel="1" name="Vesper Noble Top Appearance Stone">
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>ITEM</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+</list>

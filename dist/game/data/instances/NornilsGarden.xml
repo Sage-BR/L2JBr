@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Nornils Garden -->
+<instance id="231" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/instance.xsd">
+	<time duration="60" empty="5" />
+	<locations>
+		<enter type="FIXED">
+			<location x="-111815" y="87877" z="-13008" />
+		</enter>
+		<exit type="FIXED">
+			<location x="-83319" y="50913" z="-4728" />
+		</exit>
+	</locations>
+	<conditions>
+		<condition type="Party" showMessageAndHtml="true">
+			<param name="html" value="condNoPartyLeader.html" />
+		</condition>
+		<condition type="PartyLeader" showMessageAndHtml="true">
+			<param name="html" value="condNoPartyLeader.html" />
+		</condition>
+		<condition type="GroupMin">
+			<param name="limit" value="2" />
+		</condition>
+		<condition type="GroupMax">
+			<param name="limit" value="7" />
+		</condition>
+		<condition type="Level">
+			<param name="min" value="93" />
+			<param name="max" value="99" />
+		</condition>
+		<condition type="Distance" showMessageAndHtml="true">
+			<param name="html" value="33781-01.html" />
+		</condition>
+	</conditions>
+	<reenter apply="ON_FINISH">
+		<reset day="MONDAY" hour="6" minute="30" />
+		<reset day="TUESDAY" hour="6" minute="30" />
+		<reset day="WEDNESDAY" hour="6" minute="30" />
+		<reset day="THURSDAY" hour="6" minute="30" />
+		<reset day="FRIDAY" hour="6" minute="30" />
+		<reset day="SATURDAY" hour="6" minute="30" />
+		<reset day="SUNDAY" hour="6" minute="30" />
+	</reenter>
+	<doorlist>
+		<door id="16200012">
+			<openStatus default="close"/>
+		</door>
+		<door id="16200014">
+			<openStatus default="open"/>
+		</door>
+		<door id="16200015">
+			<openStatus default="close"/>
+		</door>
+		<door id="16200016">
+			<openStatus default="close"/>
+		</door>
+		<door id="16200201">
+			<openStatus default="close"/>
+		</door>
+	</doorlist>
+	<spawnlist>
+		<group name="general">
+			<npc id="19396" x="-120080" y="87176" z="-12608" heading="0" /> <!-- Mother Nornil -->
+			<npc id="19298" x="-114984" y="87176" z="-12804" heading="0" /> <!-- Boz Generator Stage 1 -->
+			<npc id="19305" x="-115160" y="86888" z="-12810" heading="24461" /> <!-- Boz Generator Stage 2 -->
+			<npc id="19305" x="-115160" y="87464" z="-12810" heading="40543" /> <!-- Boz Generator Stage 2 -->
+			<npc id="19305" x="-115736" y="87464" z="-12810" heading="57343" /> <!-- Boz Generator Stage 2 -->
+			<npc id="19305" x="-115736" y="86888" z="-12810" heading="8191" /> <!-- Boz Generator Stage 2 -->
+			<npc id="19403" x="-117352" y="87176" z="-12715" heading="0" /> <!-- Boz Generator Stage 3 -->
+			<npc id="19305" x="-119544" y="86536" z="-12618" heading="16932" /> <!-- Boz Generator Stage 4 -->
+			<npc id="19305" x="-119544" y="87816" z="-12618" heading="49151" /> <!-- Boz Generator Stage 4 -->
+			<npc id="25901" x="-119539" y="87176" z="-12595" heading="0" /> <!-- Spicula Zero -->
+		</group>
+		<group name="wave_1" spawnByDefault="false">
+			<npc id="19300" x="-114875" y="87176" z="-12776" heading="0" /> <!-- Spicula Elite Lieutnant -->
+			<npc id="19301" x="-114865" y="87176" z="-12776" heading="0" /> <!-- Elite Soldier Clone 1 -->
+			<npc id="19302" x="-114855" y="87176" z="-12776" heading="0" /> <!-- Spicula Elite Guard 1 -->
+			<npc id="19303" x="-114845" y="87176" z="-12776" heading="0" /> <!-- Elite Soldier Clone 2 -->
+			<npc id="19304" x="-114835" y="87176" z="-12776" heading="0" /> <!-- Spicula Elite Guard 2 -->
+		</group>
+		<group name="wave_2_1" spawnByDefault="false">
+			<npc id="19302" x="-115242" y="87176" z="-12784" heading="32767" /> <!-- Spicula Elite Guard 1 -->
+			<npc id="19303" x="-115307" y="87036" z="-12784" heading="33119" /> <!-- Elite Soldier Clone 2 -->
+			<npc id="19304" x="-115604" y="86876" z="-12784" heading="49552" /> <!-- Spicula Elite Guard 2 -->
+		</group>
+		<group name="wave_2_2" spawnByDefault="false">
+			<npc id="19300" x="-115449" y="87421" z="-12784" heading="0" /> <!-- Spicula Elite Lieutnant -->
+			<npc id="19303" x="-115449" y="87336" z="-12784" heading="0" /> <!-- Elite Soldier Clone 2 -->
+			<npc id="19302" x="-115447" y="87258" z="-12784" heading="0" /> <!-- Spicula Elite Guard 2 -->
+		</group>
+		<group name="wave_2_3" spawnByDefault="false">
+			<npc id="19301" x="-115701" y="87033" z="-12784" heading="4007" /> <!-- Elite Soldier Clone 1 -->
+			<npc id="19303" x="-115614" y="86944" z="-12784" heading="6559" /> <!-- Elite Soldier Clone 2 -->
+			<npc id="19301" x="-115702" y="87176" z="-12784" heading="0" /> <!-- Elite Soldier Clone 1 -->
+			<npc id="19300" x="-115596" y="87328" z="-12784" heading="54121" /> <!-- Spicula Elite Lieutnant -->
+		</group>
+		<group name="wave_2_4" spawnByDefault="false">
+			<npc id="19301" x="-115601" y="87029" z="-12784" heading="0" /> <!-- Elite Soldier Clone 1 -->
+			<npc id="19303" x="-115450" y="87372" z="-12784" heading="0" /> <!-- Elite Soldier Clone 2 -->
+			<npc id="19304" x="-115690" y="87181" z="-12784" heading="0" /> <!-- Spicula Elite Guard 2 -->
+			<npc id="19299" x="-115280" y="87344" z="-12784" heading="33432" /> <!-- Spicula Elite Captain -->
+		</group>
+		<group name="wave_3" spawnByDefault="false">
+			<npc id="19302" x="-117108" y="87176" z="-12688" heading="0" /> <!-- Spicula Elite Guard 2 -->
+			<npc id="19302" x="-117343" y="86973" z="-12688" heading="0" /> <!-- Spicula Elite Guard 1 -->
+			<npc id="19302" x="-117550" y="87176" z="-12688" heading="0" /> <!-- Spicula Elite Guard 1 -->
+			<npc id="19302" x="-117343" y="87387" z="-12688" heading="0" /> <!-- Spicula Elite Guard 1 -->
+			<npc id="19299" x="-117192" y="87330" z="-12688" heading="0" /> <!-- Spicula Elite Captain -->
+			<npc id="19300" x="-117490" y="87325" z="-12688" heading="0" /> <!-- Spicula Elite Lieutnant -->
+			<npc id="19304" x="-117340" y="87270" z="-12688" heading="0" /> <!-- Spicula Elite Guard 2 -->
+			<npc id="19304" x="-117342" y="87075" z="-12688" heading="0" /> <!-- Spicula Elite Guard 2 -->
+			<npc id="19303" x="-117650" y="87176" z="-12688" heading="0" /> <!-- Elite Soldier Clone 2 -->
+		</group>
+		<group name="wave_4" spawnByDefault="false">
+			<npc id="19300" x="-119545" y="87689" z="-12592" heading="0" /> <!-- Spicula Elite Lieutnant -->
+			<npc id="19302" x="-119545" y="87645" z="-12592" heading="0" /> <!-- Spicula Elite Guard 1 -->
+			<npc id="19303" x="-119545" y="87595" z="-12592" heading="0" /> <!-- Elite Soldier Clone 2 -->
+			<npc id="19299" x="-119545" y="86659" z="-12592" heading="0" /> <!-- Spicula Elite Captain -->
+			<npc id="19302" x="-119545" y="87687" z="-12592" heading="0" /> <!-- Spicula Elite Guard 1 -->
+			<npc id="19304" x="-119545" y="86744" z="-12592" heading="0" /> <!-- Spicula Elite Guard 2 -->
+		</group>
+	</spawnlist>
+</instance>

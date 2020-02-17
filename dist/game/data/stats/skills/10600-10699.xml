@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="10606" toLevel="1" name="Gust Movement">
+		<!-- Evades all physical attack skills for 5 sec. Requires a dagger or dual dagger to be equipped. -->
+		<icon>icon.skill11862</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>10</abnormalTime>
+		<abnormalType>AVOID_UP_SPECIAL</abnormalType>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<magicLvl>85</magicLvl>
+		<mpConsume>38</mpConsume>
+		<hitTime>1000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>337</effectPoint>
+		<reuseDelay>60000</reuseDelay>
+		<conditions>
+			<condition name="EquipWeapon">
+				<weaponType>
+					<item>DAGGER</item>
+					<item>DUALDAGGER</item>
+				</weaponType>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SkillEvasion">
+				<magicType>0</magicType>
+				<amount>100</amount>
+			</effect>
+			<effect name="PhysicalDefence" fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1020">
+				<amount>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1020">{0.6 + (0.4 * subIndex)}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence" fromLevel="1" toLevel="1" fromSubLevel="2001" toSubLevel="2020">
+				<amount>
+					<value fromLevel="1" toLevel="1" fromSubLevel="2001" toSubLevel="2020">{0.6 + (0.4 * subIndex)}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="10607" toLevel="1" name="Maximum Mortality">
+		<!-- For 1 min., Vital Spot Attack Rate +20%. Requires a dagger or dual dagger. -->
+		<icon>icon.skill10607</icon>
+		<abnormalLvl>4</abnormalLvl>
+		<abnormalTime>60</abnormalTime>
+		<abnormalType>MIGHT_MORTAL</abnormalType>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<magicLvl>85</magicLvl>
+		<mpConsume>38</mpConsume>
+		<hitTime>1000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>549</effectPoint>
+		<reuseDelay>300000</reuseDelay>
+		<conditions>
+			<condition name="EquipWeapon">
+				<weaponType>
+					<item>DAGGER</item>
+					<item>DUALDAGGER</item>
+				</weaponType>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="FatalBlowRate">
+				<amount>20</amount>
+				<mode>PER</mode>
+				<weaponType>
+					<item>DAGGER</item>
+					<item>DUALDAGGER</item>
+				</weaponType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="10608" toLevel="4" name="Superior Haste">
+		<!-- Physical skill cooldown +$s1 and the Bleed attack success rate +$s2. Also doubles the duration of Shadow Dash. -->
+		<icon>icon.skill10608</icon>
+		<magicLvl>
+			<value level="1">85</value>
+			<value level="2">90</value>
+			<value level="3">95</value>
+			<value level="4">99</value>
+		</magicLvl>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="Speed">
+				<amount>
+					<value level="1">5</value>
+					<value level="2">6</value>
+					<value level="3">7</value>
+					<value level="4">10</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="Reuse">
+				<amount>
+					<value level="1">-5</value>
+					<value level="2">-6</value>
+					<value level="3">-7</value>
+					<value level="4">-10</value>
+				</amount>
+				<mode>PER</mode>
+				<magicType>0</magicType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="10609" toLevel="1" name="Critical Chances">
+		<!-- For 5 min., increases Critical Damage by 304, Deadly Atk. Rate by 15%, Critical Rate/ Damage from the flank and back by 65% and 50%, respectively. Decreases Critical Damage from the front by 30%. Requires dagger/ dual dagger. -->
+		<icon>icon.skill10878</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>300</abnormalTime>
+		<abnormalType>FOCUS_DAGGER</abnormalType>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<magicLvl>85</magicLvl>
+		<mpConsume>36</mpConsume>
+		<hitTime>2000</hitTime>
+		<effectPoint>669</effectPoint>
+		<reuseDelay>290000</reuseDelay>
+		<conditions>
+			<condition name="EquipWeapon">
+				<weaponType>
+					<item>DAGGER</item>
+					<item>DUALDAGGER</item>
+				</weaponType>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="CriticalDamagePosition">
+				<amount>-30</amount>
+				<mode>PER</mode>
+				<position>FRONT</position>
+			</effect>
+			<effect name="CriticalDamagePosition">
+				<amount>65</amount>
+				<mode>PER</mode>
+				<position>SIDE</position>
+			</effect>
+			<effect name="CriticalDamagePosition">
+				<amount>50</amount>
+				<mode>PER</mode>
+				<position>BACK</position>
+			</effect>
+			<effect name="CriticalRatePositionBonus">
+				<amount>65</amount>
+				<mode>PER</mode>
+				<position>SIDE</position>
+			</effect>
+			<effect name="CriticalRatePositionBonus">
+				<amount>50</amount>
+				<mode>PER</mode>
+				<position>BACK</position>
+			</effect>
+			<effect name="FatalBlowRate">
+				<amount>15</amount>
+				<mode>PER</mode>
+				<weaponType>
+					<item>DAGGER</item>
+					<item>DUALDAGGER</item>
+				</weaponType>
+			</effect>
+			<effect name="CriticalDamage">
+				<amount>304</amount>
+				<mode>DIFF</mode>
+				<weaponType>
+					<item>DAGGER</item>
+					<item>DUALDAGGER</item>
+				</weaponType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="10610" toLevel="1" name="Critical Expansions">
+		<!-- Max P. Critical increases. Applies when a dagger or dual dagger is equipped. -->
+		<icon>icon.skill0819</icon>
+		<operateType>P</operateType>
+	</skill>
+	<skill id="10653" toLevel="1" name="Shadow Evasion">
+		<!-- For 10 sec., becomes immune from all disruption effects and evades Physical and Magic skills at a 50% probability. Unable to cast Shadow Hide. Requires dagger/ dual dagger. -->
+		<icon>icon.skill5242</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>10</abnormalTime>
+		<abnormalType>COUNTER_SKILL</abnormalType>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<magicLvl>85</magicLvl>
+		<mpConsume>38</mpConsume>
+		<hitTime>1000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>337</effectPoint>
+		<reuseDelay>60000</reuseDelay>
+		<conditions>
+			<condition name="EquipWeapon">
+				<weaponType>
+					<item>DAGGER</item>
+					<item>DUALDAGGER</item>
+				</weaponType>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="CounterPhysicalSkill">
+				<amount>90</amount>
+			</effect>
+			<effect name="PhysicalDefence" fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1020">
+				<amount>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1020">{0.6 + (0.4 * subIndex)}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence" fromLevel="1" toLevel="1" fromSubLevel="2001" toSubLevel="2020">
+				<amount>
+					<value fromLevel="1" toLevel="1" fromSubLevel="2001" toSubLevel="2020">{0.6 + (0.4 * subIndex)}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DisableSkill">
+				<disable>10517</disable>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="10654" toLevel="1" name="Maximum Mortality">
+		<!-- For 1 min., Vital Spot Attack Rate +20%. Requires a dagger or dual dagger. -->
+		<icon>icon.skill10607</icon>
+		<abnormalLvl>4</abnormalLvl>
+		<abnormalTime>60</abnormalTime>
+		<abnormalType>MIGHT_MORTAL</abnormalType>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<magicLvl>85</magicLvl>
+		<mpConsume>38</mpConsume>
+		<hitTime>1000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>549</effectPoint>
+		<reuseDelay>300000</reuseDelay>
+		<conditions>
+			<condition name="EquipWeapon">
+				<weaponType>
+					<item>DAGGER</item>
+					<item>DUALDAGGER</item>
+				</weaponType>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="FatalBlowRate">
+				<amount>20</amount>
+				<mode>PER</mode>
+				<weaponType>
+					<item>DAGGER</item>
+					<item>DUALDAGGER</item>
+				</weaponType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="10655" toLevel="4" name="Brutal Stab Expert">
+		<!-- P. Atk. +$s1 and Critical Damage +$s2. -->
+		<icon>icon.skill10655</icon>
+		<magicLvl>
+			<value level="1">85</value>
+			<value level="2">90</value>
+			<value level="3">95</value>
+			<value level="4">99</value>
+		</magicLvl>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="PAtk">
+				<amount>
+					<value level="1">5</value>
+					<value level="2">6</value>
+					<value level="3">7</value>
+					<value level="4">10</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="CriticalDamage">
+				<amount>
+					<value level="1">5</value>
+					<value level="2">6</value>
+					<value level="3">7</value>
+					<value level="4">10</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="10656" toLevel="1" name="Shadow Hunter">
+		<!-- For 5 min., increases Critical Damage by 608, Deadly Atk. Rate by 5%, Critical Rate/ Damage from the flank by 30%, Critical Rate from the back by 50% and Critical Damage by 65%. Decreases Critical Damage from the front by 30%. Requires dagger/ dual dagger. -->
+		<icon>icon.skill10656</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>300</abnormalTime>
+		<abnormalType>FOCUS_DAGGER</abnormalType>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<magicLvl>85</magicLvl>
+		<mpConsume>36</mpConsume>
+		<hitTime>2000</hitTime>
+		<effectPoint>669</effectPoint>
+		<reuseDelay>290000</reuseDelay>
+		<conditions>
+			<condition name="EquipWeapon">
+				<weaponType>
+					<item>DAGGER</item>
+					<item>DUALDAGGER</item>
+				</weaponType>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="CriticalDamagePosition">
+				<amount>-30</amount>
+				<mode>PER</mode>
+				<position>FRONT</position>
+			</effect>
+			<effect name="CriticalDamagePosition">
+				<amount>30</amount>
+				<mode>PER</mode>
+				<position>SIDE</position>
+			</effect>
+			<effect name="CriticalDamagePosition">
+				<amount>65</amount>
+				<mode>PER</mode>
+				<position>BACK</position>
+			</effect>
+			<effect name="CriticalRatePositionBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+				<position>SIDE</position>
+			</effect>
+			<effect name="CriticalRatePositionBonus">
+				<amount>50</amount>
+				<mode>PER</mode>
+				<position>BACK</position>
+			</effect>
+			<effect name="FatalBlowRate">
+				<amount>5</amount>
+				<mode>PER</mode>
+				<weaponType>
+					<item>DAGGER</item>
+					<item>DUALDAGGER</item>
+				</weaponType>
+			</effect>
+			<effect name="CriticalDamage">
+				<amount>608</amount>
+				<mode>DIFF</mode>
+				<weaponType>
+					<item>DAGGER</item>
+					<item>DUALDAGGER</item>
+				</weaponType>
+			</effect>
+		</effects>
+	</skill>
+</list>

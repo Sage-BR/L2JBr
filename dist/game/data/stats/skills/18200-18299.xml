@@ -1,0 +1,740 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="18200" toLevel="1" name="Red Save Card (R-grade)">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="18201" toLevel="1" name="Red Save Card (R95-grade)">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="18202" toLevel="1" name="Red Save Card (R99-grade)">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="18203" toLevel="1" name="Royal Blue Save Card (R-grade)">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="18204" toLevel="1" name="Royal Blue Save Card (R95-grade)">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="18205" toLevel="1" name="Royal Blue Save Card (R99-grade)">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="18206" toLevel="1" name="Royal Red Save Card (R-grade)">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="18207" toLevel="1" name="Royal Red Save Card (R95-grade)">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="18208" toLevel="1" name="Royal Red Save Card (R99-grade)">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="18209" toLevel="1" name="Dandy's Home Run Ball">
+		<!-- For 1 h., Acquired XP/ SP +100%. Changes the appearance of your armor into that of a Lineage II Uniform. Cannot be stacked with the Fall of the Dragon or XP Buff 50%. Buff remains after death. -->
+		<icon>BranchIcon.icon.g_ev_homerunball</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<abnormalType>TRANSFORM</abnormalType>
+		<abnormalVisualEffect>CHANGE_DINOS</abnormalVisualEffect>
+		<operateType>A2</operateType>
+		<reuseDelay>15000</reuseDelay>
+		<effectPoint>1</effectPoint>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<reuseDelayType>S</reuseDelayType>
+		<effects>
+			<effect name="ExpModify">
+				<amount>100</amount>
+			</effect>
+			<effect name="SpModify">
+				<amount>100</amount>
+			</effect>
+			<effect name="DispelBySlot">
+				<dispel>
+					<value level="1">CHANGEBODY,-1;VOTE,1</value>
+				</dispel>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="18210" toLevel="1" name="Alien Power">
+		<!-- A buff that the aliens used for luck when they purchased the lottery. Rumor has it that the user might see the winning numbers in a dream, or even get an increased success rate when enchanting weapons with scrolls. Who knows if the rumors true. -->
+		<icon>Icon.ev_invasion_debuff</icon>
+		<operateType>A2</operateType>
+		<castRange>1200</castRange>
+		<reuseDelay>15000</reuseDelay>
+		<isMagic>4</isMagic>
+	</skill>
+	<skill id="18211" toLevel="1" name="Entrance Pass: Spezion (Epic)">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="18212" toLevel="1" name="Entrance Pass: Baylor">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="18213" toLevel="1" name="Entrance Pass: Kartia's Labyrinth Lv. 95 Party">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="18214" toLevel="1" name="Transformation Potion: L2B2">
+		<!-- Transforms into the very fast L2B2 for 10 min. -->
+		<icon>Icon.ev_invasion_debuff</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>600</abnormalTime>
+		<abnormalType>TRANSFORM</abnormalType>
+		<operateType>A2</operateType>
+		<reuseDelay>60000</reuseDelay>
+		<effectPoint>1</effectPoint>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<reuseDelayType>S</reuseDelayType>
+		<conditions>
+			<condition name="CanTransform">
+				<transformId>156</transformId>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="DispelBySlot">
+				<dispel>
+					<value level="1">CHANGEBODY,-1</value>
+				</dispel>
+			</effect>
+			<effect name="Transformation">
+				<transformationId>156</transformationId>
+			</effect>
+			<effect name="TargetCancel">
+				<chance>100</chance>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="18215" toLevel="1" name="Alien's Nano Cannister">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="18216" toLevel="1" name="Appearance Stone: Formal Wear (30-day)">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="18217" toLevel="5" name="Flame Spear">
+		<operateType>A1</operateType>
+		<mpConsume>10</mpConsume>
+		<castRange>40</castRange>
+		<hitTime>800</hitTime>
+		<coolTime>300</coolTime>
+		<effectPoint>
+			<value level="1">-100</value>
+			<value level="2">-105</value>
+			<value level="3">-110</value>
+			<value level="4">-115</value>
+			<value level="5">-115</value>
+		</effectPoint>
+		<isMagic>1</isMagic>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<nextAction>ATTACK</nextAction>
+		<effects>
+			<effect name="MagicalAttack">
+				<power>
+					<value level="1">506</value>
+					<value level="2">518</value>
+					<value level="3">529</value>
+					<value level="4">541</value>
+					<value level="5">553</value>
+				</power>
+				<overHit>true</overHit>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="18218" toLevel="5" name="Fire Stigma">
+		<!-- A stigma placed on those who are a threat to the Blazing Swamp. An unexpected incident might occur while fighting in the Blazing Swamp. -->
+		<icon>icon.etc_fire_rune_i00</icon>
+		<operateType>A2</operateType>
+		<mpConsume>10</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>1500</hitTime>
+		<reuseDelay>5000</reuseDelay>
+		<isMagic>1</isMagic>
+		<effectPoint>-500</effectPoint>
+		<isDebuff>true</isDebuff>
+	</skill>
+	<skill id="18219" toLevel="1" name="Defense Decrease">
+		<!-- The blazing energy weakens and reduces P./ M. Def. by 20% -->
+		<icon>icon.skill0122</icon>
+		<operateType>A2</operateType>
+		<mpConsume>10</mpConsume>
+		<coolTime>500</coolTime>
+		<reuseDelay>3000</reuseDelay>
+		<isMagic>1</isMagic>
+		<effectPoint>-100</effectPoint>
+		<isDebuff>true</isDebuff>
+	</skill>
+	<skill id="18220" toLevel="1" name="Scroll of Escape: Blazing Swamp">
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>47063</itemConsumeId> <!-- Scroll of Escape: Blazing Swamp -->
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<hitTime>1000</hitTime>
+		<isMagic>2</isMagic>
+		<magicLvl>1</magicLvl>
+		<magicCriticalRate>5</magicCriticalRate>
+		<conditions>
+			<condition name="OpAlignment">
+				<affectType>CASTER</affectType>
+				<alignment>LAWFUL</alignment>
+			</condition>
+			<condition name="OpCanEscape" />
+		</conditions>
+		<effects>
+			<effect name="Teleport">
+				<x>152713</x>
+				<y>-15085</y>
+				<z>-4384</z>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="18221" toLevel="1" name="Invincibility">
+		<!-- Invincible state. -->
+		<icon>icon.skill1418</icon>
+		<operateType>A2</operateType>
+	</skill>
+	<skill id="18222" toLevel="1" name="Extra Pass - Nightmare Kamaloka">
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>45463</itemConsumeId> <!-- Entrance Pass: Nightmare Kamaloka -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="ResetInstanceEntry">
+				<instanceId>258</instanceId>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="18223" toLevel="1" name="Kokko's Love">
+		<!-- For 30 min., Attack Attribute +100, P. Atk. +20%, M. Atk. +30%, Atk./ Casting Spd. +10%, P./ M. Accuracy +4, Speed +10, Max HP/ MP/ CP +10%, P./ M. Def. +10%, and Skill MP Consumption -10%. Cannot be stacked with Art of Seduction. Buff remains after death. -->
+		<icon>icon.event_altair_enchant_scroll_i00</icon>
+		<operateType>A2</operateType>
+		<reuseDelay>5000</reuseDelay>
+		<effectPoint>1</effectPoint>
+		<isMagic>4</isMagic>
+	</skill>
+	<skill id="18224" toLevel="1" name="Appearance Stone: Zorro Hat (90-day)">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="18225" toLevel="1" name="Appearance Stone: Top Hat (90-day)">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="18226" toLevel="1" name="Appearance Stone: Napoleon Hat (90-day)">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="18227" toLevel="1" name="Appearance Stone: Ruthless Tribe Mask (90-day)">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="18228" toLevel="1" name="Cool Hat Pack">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="18229" toLevel="1" name="Appearance Stone: Zorro Hat (1-day)">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="18230" toLevel="1" name="Appearance Stone: Top Hat (1-day)">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="18231" toLevel="1" name="Appearance Stone: Napoleon Hat (1-day)">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="18232" toLevel="1" name="Appearance Stone: Ruthless Tribe Mask (1-day)">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="18233" toLevel="1" name="Harp's Reward Box">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="18234" toLevel="1" name="Damaged PK Pack">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="18235" toLevel="1" name="Intact PK Pack">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="18236" toLevel="1" name="Damaged Reputation Pack">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="18237" toLevel="1" name="Intact Reputation Pack">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="18238" toLevel="1" name="Damaged Elcyum Pack">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="18239" toLevel="1" name="Intact Elcyum Pack">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="18240" toLevel="1" name="Flash Grenade">
+		<!-- Throws a flare that will identify traps and targets who are hiding. -->
+		<operateType>A1</operateType>
+		<hitTime>1200</hitTime>
+		<coolTime>300</coolTime>
+		<reuseDelay>5000</reuseDelay>
+	</skill>
+	<skill id="18241" toLevel="1" name="Mackerel">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="18242" toLevel="1" name="Minnow">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="18243" toLevel="1" name="Flatfish">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="18244" toLevel="1" name="Mandarin Fish">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="18245" toLevel="1" name="Rockfish">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="18246" toLevel="1" name="Goldfish">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="18247" toLevel="1" name="Salmon">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="18248" toLevel="1" name="Eel">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="18249" toLevel="1" name="Fresh Marlin">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="18250" toLevel="1" name="Fresh Cat'sh">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="18251" toLevel="1" name="Fresh Tuna">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="18252" toLevel="1" name="Fresh Carp">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="18253" toLevel="1" name="Whale">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="18254" toLevel="1" name="Wooden Treasure Chest">
+		<itemConsumeId>45486</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="95">
+						<item id="45575" count="1" /> <!-- Special Bait Pack -->
+					</item>
+					<item chance="5">
+						<item id="45576" count="1" /> <!-- SP Scroll Pack -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="18255" toLevel="1" name="Silver Treasure Chest">
+		<itemConsumeId>45487</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="5">
+						<item id="45572" count="1" /> <!-- Zodiac Agathion Box (15-day) -->
+					</item>
+					<item chance="70">
+						<item id="45576" count="1" /> <!-- SP Scroll Pack -->
+					</item>
+					<item chance="1">
+						<item id="45494" count="1" /> <!-- Sturdy Fishing Rod -->
+					</item>
+					<item chance="24">
+						<item id="8034" count="1" /> <!-- Rainbow Springs Clan Hall War Decree -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="18256" toLevel="1" name="Golden Treasure Chest">
+		<itemConsumeId>45488</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="80">
+						<item id="45574" count="1" /> <!-- Zodiac Agathion Box (30-day) -->
+					</item>
+					<item chance="20">
+						<item id="45573" count="1" /> <!-- Zodiac Agathion Box (30-day) -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="18257" toLevel="1" name="Zodiac Agathion Pack (15-day)">
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="18258" toLevel="1" name="Zodiac Agathion Pack (30-day">
+		<itemConsumeId>45573</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="8.333">
+						<item id="45537" count="1" /> <!-- Agathion - Radiant Virgo Pack - 30-day -->
+					</item>
+					<item chance="8.333">
+						<item id="45555" count="1" /> <!-- Agathion - Radiant Gemini Pack - 30-day -->
+					</item>
+					<item chance="8.333">
+						<item id="45543" count="1" /> <!-- Agathion - Radiant Libra Pack - 30-day -->
+					</item>
+					<item chance="8.333">
+						<item id="45564" count="1" /> <!-- Agathion - Radiant Pisces Pack - 30-day -->
+					</item>
+					<item chance="8.333">
+						<item id="45561" count="1" /> <!-- Agathion - Radiant Aquarius Pack - 30-day -->
+					</item>
+					<item chance="8.333">
+						<item id="45540" count="1" /> <!-- Agathion - Radiant Capricorn Pack - 30-day -->
+					</item>
+					<item chance="8.333">
+						<item id="45552" count="1" /> <!-- Agathion - Radiant Leo Pack - 30-day -->
+					</item>
+					<item chance="8.333">
+						<item id="45546" count="1" /> <!-- Agathion - Radiant Aries Pack - 30-day -->
+					</item>
+					<item chance="8.333">
+						<item id="45570" count="1" /> <!-- Agathion - Radiant Cancer Pack - 30-day -->
+					</item>
+					<item chance="8.333">
+						<item id="45558" count="1" /> <!-- Agathion - Radiant Scorpio Pack - 30-day -->
+					</item>
+					<item chance="8.333">
+						<item id="45567" count="1" /> <!-- Agathion - Radiant Sagittarius Pack - 30-day -->
+					</item>
+					<item chance="8.333">
+						<item id="45549" count="1" /> <!-- Agathion - Radiant Taurus Pack - 30-day -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="18259" toLevel="1" name="Zodiac Agathion Pack (30-day)">
+		<itemConsumeId>45574</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="8.333">
+						<item id="45536" count="1" /> <!-- Agathion - Twinkling Virgo Pack - 30-day -->
+					</item>
+					<item chance="8.333">
+						<item id="45554" count="1" /> <!-- Agathion - Twinkling Gemini Pack - 30-day -->
+					</item>
+					<item chance="8.333">
+						<item id="45542" count="1" /> <!-- Agathion - Twinkling Libra Pack - 30-day -->
+					</item>
+					<item chance="8.333">
+						<item id="45563" count="1" /> <!-- Agathion - Twinkling Pisces Pack - 30-day -->
+					</item>
+					<item chance="8.333">
+						<item id="45560" count="1" /> <!-- Agathion - Twinkling Aquarius Pack - 30-day -->
+					</item>
+					<item chance="8.333">
+						<item id="45539" count="1" /> <!-- Agathion - Twinkling Capricorn Pack - 30-day -->
+					</item>
+					<item chance="8.333">
+						<item id="45551" count="1" /> <!-- Agathion - Twinkling Leo Pack - 30-day -->
+					</item>
+					<item chance="8.333">
+						<item id="45545" count="1" /> <!-- Agathion - Twinkling Aries Pack - 30-day -->
+					</item>
+					<item chance="8.333">
+						<item id="45569" count="1" /> <!-- Agathion - Twinkling Cancer Pack - 30-day -->
+					</item>
+					<item chance="8.333">
+						<item id="45557" count="1" /> <!-- Agathion - Twinkling Scorpio Pack - 30-day -->
+					</item>
+					<item chance="8.333">
+						<item id="45566" count="1" /> <!-- Agathion - Twinkling Sagittarius Pack - 30-day -->
+					</item>
+					<item chance="8.333">
+						<item id="45548" count="1" /> <!-- Agathion - Twinkling Taurus Pack - 30-day -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="18260" toLevel="1" name="Special Bait Pack">
+		<itemConsumeId>45575</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="80">
+						<item id="45496" count="1" /> <!-- Special Bait -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="18261" toLevel="1" name="SP Scroll Pack">
+		<itemConsumeId>45576</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="10">
+						<item id="30275" count="1" /> <!-- Scroll: 1,000,000 SP -->
+					</item>
+					<item chance="30">
+						<item id="17185" count="1" /> <!-- Scroll: 10,000 SP -->
+					</item>
+					<item chance="60">
+						<item id="17277" count="1" /> <!-- Scroll: 100,000 SP -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="18262" toLevel="1" name="Zodiac Agathion Pack (15-day)">
+		<itemConsumeId>45577</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="8.333">
+						<item id="45556" count="1" /> <!-- Agathion - Gemini Pack - 15-day -->
+					</item>
+					<item chance="8.333">
+						<item id="45544" count="1" /> <!-- Agathion - Libra Pack - 15-day -->
+					</item>
+					<item chance="8.333">
+						<item id="45562" count="1" /> <!-- Agathion - Aquarius Pack - 15-day -->
+					</item>
+					<item chance="8.333">
+						<item id="45538" count="1" /> <!-- Agathion - Virgo Pack - 15-day -->
+					</item>
+					<item chance="8.333">
+						<item id="45541" count="1" /> <!-- Agathion - Capricorn Pack - 15-day -->
+					</item>
+					<item chance="8.333">
+						<item id="45553" count="1" /> <!-- Agathion - Leo Pack - 15-day -->
+					</item>
+					<item chance="8.333">
+						<item id="45547" count="1" /> <!-- Agathion - Aries Pack - 15-day -->
+					</item>
+					<item chance="8.333">
+						<item id="45571" count="1" /> <!-- Agathion - Cancer Pack - 15-day -->
+					</item>
+					<item chance="8.333">
+						<item id="45565" count="1" /> <!-- Agathion - Pisces Pack - 15-day -->
+					</item>
+					<item chance="8.333">
+						<item id="45559" count="1" /> <!-- Agathion - Scorpio Pack - 15-day -->
+					</item>
+					<item chance="8.333">
+						<item id="45568" count="1" /> <!-- Agathion - Sagittarius Pack - 15-day -->
+					</item>
+					<item chance="8.333">
+						<item id="45550" count="1" /> <!-- Agathion - Taurus Pack - 15-day -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="18263" toLevel="1" name="Rodemai's Rune">
+		<!-- When placed in the inventory, Acquired XP/ SP +7%. -->
+		<icon>icon.skill19226</icon>
+		<operateType>P</operateType>
+	</skill>
+	<skill id="18264" toLevel="1" name="Red Devils' Fighting Spirit">
+		<!-- Speed +16 and Acquired XP/ SP +16% for 90 min. -->
+		<icon>branchsys2.br_soccer_ball_i00</icon>
+		<operateType>A2</operateType>
+		<castRange>1200</castRange>
+		<reuseDelay>15000</reuseDelay>
+		<isMagic>4</isMagic>
+	</skill>
+	<skill id="18265" toLevel="5" name="Pippi's Love">
+		<!-- Buff filled with Pippi's love. Acquired XP/ SP increases by $s2 for $s1. Once the effect wears off, receive Pippi's Fortune Pocket - Stage $s3. <Note:> Cannot receive item if you're dead or don't have space in your inventory. Deleted when changing main/ dual/ sub classes. -->
+		<icon>icon.love_mark</icon>
+		<operateType>A2</operateType>
+		<castRange>900</castRange>
+		<hitTime>3000</hitTime>
+		<effectPoint>1</effectPoint>
+		<abnormalTime>
+			<value level="1">1800</value>
+			<value level="2">1800</value>
+			<value level="3">1800</value>
+			<value level="4">1800</value>
+			<value level="5">3600</value>
+		</abnormalTime>
+		<isMagic>4</isMagic>
+	</skill>
+	<skill id="18266" toLevel="1" name="Spellbook: Fate of the Exalted">
+		<hitTime>3000</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>46036</itemConsumeId> <!-- Spellbook: Fate of the Exalted -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<hitTime>3000</hitTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>99</minLevel>
+				<maxLevel>127</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+			<condition name="OpSkill">
+				<skillId>19229</skillId> <!-- Fate of the Exalted -->
+				<skillLevel>1</skillLevel>
+				<hasLearned>false</hasLearned>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="SetSkill">
+				<skillId>19229</skillId> <!-- Fate of the Exalted -->
+				<skillLvl>1</skillLvl>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="18270" toLevel="1" name="Apocalypse Shaper Focus">
+		<!-- Creates a +4/ 6/ 9/ 11 enchanted Apocalypse Shaper Focus. -->
+		<operateType>A1</operateType>
+		<hitTime>1500</hitTime>
+	</skill>
+	<skill id="18271" toLevel="1" name="Apocalypse Cutter Focus">
+		<!-- Creates a +4/ 6/ 9/ 11 enchanted Apocalypse Cutter Focus. -->
+		<operateType>A1</operateType>
+		<hitTime>1500</hitTime>
+	</skill>
+	<skill id="18272" toLevel="1" name="Apocalypse Slasher Focus">
+		<!-- Creates a +4/ 6/ 9/ 11 enchanted Apocalypse Slasher Focus. -->
+		<operateType>A1</operateType>
+		<hitTime>1500</hitTime>
+	</skill>
+	<skill id="18273" toLevel="1" name="Apocalypse Avenger Focus">
+		<!-- Creates a +4/ 6/ 9/ 11 enchanted Apocalypse Avenger Focus. -->
+		<operateType>A1</operateType>
+		<hitTime>1500</hitTime>
+	</skill>
+	<skill id="18274" toLevel="1" name="Apocalypse Fighter Focus">
+		<!-- Creates a +4/ 6/ 9/ 11 enchanted Apocalypse Fighter Focus. -->
+		<operateType>A1</operateType>
+		<hitTime>1500</hitTime>
+	</skill>
+	<skill id="18275" toLevel="1" name="Apocalypse Stormer Damage Up">
+		<!-- Creates a +4/ 6/ 9/ 11 enchanted Apocalypse Stormer Damage Up. -->
+		<operateType>A1</operateType>
+		<hitTime>1500</hitTime>
+	</skill>
+	<skill id="18276" toLevel="1" name="Apocalypse Thrower Focus">
+		<!-- Creates a +4/ 6/ 9/ 11 enchanted Apocalypse Thrower Focus. -->
+		<operateType>A1</operateType>
+		<hitTime>1500</hitTime>
+	</skill>
+	<skill id="18277" toLevel="1" name="Apocalypse Shooter Focus">
+		<!-- Creates a +4/ 6/ 9/ 11 enchanted Apocalypse Shooter Focus. -->
+		<operateType>A1</operateType>
+		<hitTime>1500</hitTime>
+	</skill>
+	<skill id="18278" toLevel="1" name="Apocalypse Buster Acumen">
+		<!-- Creates a +4/ 6/ 9/ 11 enchanted Apocalypse Buster Acumen. -->
+		<operateType>A1</operateType>
+		<hitTime>1500</hitTime>
+	</skill>
+	<skill id="18279" toLevel="1" name="Apocalypse Caster Acumen">
+		<!-- Creates a +4/ 6/ 9/ 11 enchanted Apocalypse Caster Acumen. -->
+		<operateType>A1</operateType>
+		<hitTime>1500</hitTime>
+	</skill>
+	<skill id="18280" toLevel="1" name="Apocalypse Retributer Acumen">
+		<!-- Creates a +4/ 6/ 9/ 11 enchanted Apocalypse Retributer Acumen. -->
+		<operateType>A1</operateType>
+		<hitTime>1500</hitTime>
+	</skill>
+	<skill id="18281" toLevel="1" name="Apocalypse Dual Sword Damage Up">
+		<!-- Creates a +4/ 6/ 9/ 11 enchanted Apocalypse Dual Sword Damage Up. -->
+		<operateType>A1</operateType>
+		<hitTime>1500</hitTime>
+	</skill>
+	<skill id="18282" toLevel="1" name="Apocalypse Dual Dagger Focus">
+		<!-- Creates a +4/ 6/ 9/ 11 enchanted Apocalypse Dual Dagger Focus. -->
+		<operateType>A1</operateType>
+		<hitTime>1500</hitTime>
+	</skill>
+	<skill id="18283" toLevel="1" name="Apocalypse Dual Blunt Weapon Damage Up">
+		<!-- Creates a +4/ 6/ 9/ 11 enchanted Apocalypse Dual Blunt Weapon Damage Up. -->
+		<operateType>A1</operateType>
+		<hitTime>1500</hitTime>
+	</skill>
+</list>

@@ -1,0 +1,995 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="10100" toLevel="5" name="Guardian's Frenzy">
+		<!-- For $s1, Shield Def. +$s2, M. Def. +$s3, Atk. Spd. +$s4, P. Critical Rate/ P. Critical Damage +$s5, all Attribute Resistance +$s6, and Reflect Magic rate +$s7. -->
+		<icon>icon.skill10100</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>
+			<value fromLevel="1" toLevel="5">60</value>
+			<value fromLevel="3" toLevel="5" fromSubLevel="1001" toSubLevel="1010">{base + subIndex}</value>
+			<value fromLevel="3" toLevel="5" fromSubLevel="1011" toSubLevel="1020">{base + 10 + (subIndex - 10 * 0.5)}</value>
+		</abnormalTime>
+		<abnormalType>POSSESSION</abnormalType>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<magicLvl>
+			<value level="1">85</value>
+			<value level="2">90</value>
+			<value level="3">95</value>
+			<value level="4">99</value>
+			<value level="5">110</value>
+		</magicLvl>
+		<mpConsume>
+			<value level="1">20</value>
+			<value level="2">21</value>
+			<value level="3">23</value>
+			<value level="4">24</value>
+			<value level="5">25</value>
+		</mpConsume>
+		<hitTime>3000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>2</effectPoint>
+		<reuseDelay>300000</reuseDelay>
+		<effects>
+			<effect name="ShieldDefenceRate">
+				<amount>
+					<value level="1">85</value>
+					<value level="2">90</value>
+					<value level="3">95</value>
+					<value level="4">100</value>
+					<value level="5">110</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="ShieldDefence">
+				<amount>
+					<value level="1">85</value>
+					<value level="2">90</value>
+					<value level="3">95</value>
+					<value level="4">100</value>
+					<value level="5">110</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>120</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>
+					<value level="1">15</value>
+					<value level="2">20</value>
+					<value level="3">25</value>
+					<value level="4">30</value>
+					<value level="5">35</value>
+				</amount>
+				<mode>PER</mode>
+				<weaponType>
+					<item>SWORD</item>
+					<item>BLUNT</item>
+				</weaponType>
+			</effect>
+			<effect name="CriticalRate">
+				<amount>
+					<value fromLevel="1" toLevel="4">60</value>
+					<value level="5">65</value>
+				</amount>
+				<mode>PER</mode>
+				<weaponType>
+					<item>SWORD</item>
+					<item>BLUNT</item>
+				</weaponType>
+			</effect>
+			<effect name="CriticalDamage">
+				<amount>
+					<value fromLevel="1" toLevel="4">60</value>
+					<value level="5">65</value>
+				</amount>
+				<mode>PER</mode>
+				<weaponType>
+					<item>SWORD</item>
+					<item>BLUNT</item>
+				</weaponType>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>80</amount>
+				<attribute>FIRE</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>80</amount>
+				<attribute>WATER</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>80</amount>
+				<attribute>WIND</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>80</amount>
+				<attribute>EARTH</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>80</amount>
+				<attribute>HOLY</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>80</amount>
+				<attribute>DARK</attribute>
+			</effect>
+			<effect name="ReflectMagic">
+				<amount>15</amount>
+			</effect>
+			<effect name="DefenceCriticalDamage" fromLevel="3" toLevel="5" fromSubLevel="2001" toSubLevel="2020">
+				<amount>
+					<value fromLevel="3" toLevel="5" fromSubLevel="2001" toSubLevel="2020">{-1 - (subIndex - 1 * 0.5)}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="10101" toLevel="5" name="Templar's Frenzy">
+		<!-- For 1 min., Shield Defense +85%, M. Def. +120%, Atk. Spd. +15%, P. Critical Rate/ Damage +60%, P. Skill Power +15%. With a certain chance, activates Lightning Strike when Vanishing Stun is applied. -->
+		<icon>icon.skill10101</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>
+			<value fromLevel="1" toLevel="5">60</value>
+			<value fromLevel="3" toLevel="5" fromSubLevel="1001" toSubLevel="1010">{base + subIndex}</value>
+			<value fromLevel="3" toLevel="5" fromSubLevel="1011" toSubLevel="1020">{base + 10 + (subIndex - 10 * 0.5)}</value>
+		</abnormalTime>
+		<abnormalType>POSSESSION</abnormalType>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<magicLvl>
+			<value level="1">85</value>
+			<value level="2">90</value>
+			<value level="3">95</value>
+			<value level="4">99</value>
+			<value level="5">110</value>
+		</magicLvl>
+		<mpConsume>
+			<value level="1">20</value>
+			<value level="2">21</value>
+			<value level="3">23</value>
+			<value level="4">24</value>
+			<value level="5">25</value>
+		</mpConsume>
+		<hitTime>3000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>2</effectPoint>
+		<reuseDelay>300000</reuseDelay>
+		<effects>
+			<effect name="ShieldDefenceRate">
+				<amount>
+					<value level="1">85</value>
+					<value level="2">90</value>
+					<value level="3">95</value>
+					<value level="4">100</value>
+					<value level="5">110</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="ShieldDefence">
+				<amount>
+					<value level="1">85</value>
+					<value level="2">90</value>
+					<value level="3">95</value>
+					<value level="4">100</value>
+					<value level="5">110</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>120</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>
+					<value level="1">15</value>
+					<value level="2">20</value>
+					<value level="3">25</value>
+					<value level="4">30</value>
+					<value level="5">35</value>
+				</amount>
+				<mode>PER</mode>
+				<weaponType>
+					<item>SWORD</item>
+					<item>BLUNT</item>
+				</weaponType>
+			</effect>
+			<effect name="CriticalRate">
+				<amount>
+					<value fromLevel="1" toLevel="4">60</value>
+					<value level="5">65</value>
+				</amount>
+				<mode>PER</mode>
+				<weaponType>
+					<item>SWORD</item>
+					<item>BLUNT</item>
+				</weaponType>
+			</effect>
+			<effect name="CriticalDamage">
+				<amount>
+					<value fromLevel="1" toLevel="4">60</value>
+					<value level="5">65</value>
+				</amount>
+				<mode>PER</mode>
+				<weaponType>
+					<item>SWORD</item>
+					<item>BLUNT</item>
+				</weaponType>
+			</effect>
+			<effect name="PhysicalSkillPower">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DefenceCriticalDamage" fromLevel="3" toLevel="5" fromSubLevel="2001" toSubLevel="2020">
+				<amount>
+					<value fromLevel="3" toLevel="5" fromSubLevel="2001" toSubLevel="2020">{-1 - (subIndex - 1 * 0.5)}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="TriggerSkillBySkillAttack">
+				<skillId>19571</skillId> <!-- Lightning Strike -->
+				<skillLevel>1</skillLevel>
+				<attackSkillId>10010</attackSkillId> <!-- Vanishing Stun -->
+				<chance>30</chance>
+				<targetType>TARGET</targetType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="10102" toLevel="8" name="Shadow Hunt">
+		<!-- Summons the Blood Panther to attack the target and enemies on the path with $s1 power and decrease their Speed by $s3 and Pull Resistance by $s4 for $s2. Uses $s5 Soulstones. Requires a sword or blunt weapon to be equipped. Over-hit. Critical. -->
+		<icon>icon.skill10102</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>3</abnormalTime>
+		<affectLimit>5-12</affectLimit>
+		<affectRange>150</affectRange>
+		<activateRate>
+			<value fromLevel="1" toLevel="8">50</value>
+			<value fromLevel="3" toLevel="8" fromSubLevel="2001" toSubLevel="2020">{base + (base / 100 * subIndex)}</value>
+		</activateRate>
+		<lvlBonusRate>1</lvlBonusRate>
+		<nextAction>ATTACK</nextAction>
+		<itemConsumeId>1785</itemConsumeId> <!-- Soulstones -->
+		<itemConsumeCount>6</itemConsumeCount>
+		<operateType>A2</operateType>
+		<targetType>ENEMY_ONLY</targetType>
+		<affectScope>FAN</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<fanRange>0;0;200;180</fanRange>
+		<mpConsume>
+			<value level="1">185</value>
+			<value level="2">191</value>
+			<value level="3">197</value>
+			<value level="4">203</value>
+			<value level="5">209</value>
+			<value level="6">215</value>
+			<value level="7">221</value>
+			<value level="8">227</value>
+		</mpConsume>
+		<castRange>600</castRange>
+		<hitTime>3000</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>30000</reuseDelay>
+		<effectPoint>-5000</effectPoint>
+		<isDebuff>true</isDebuff>
+		<conditions>
+			<condition name="EquipWeapon">
+				<weaponType>
+					<item>SWORD</item>
+					<item>BLUNT</item>
+				</weaponType>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>
+					<value level="1">33505</value>
+					<value level="2">34353</value>
+					<value level="3">35201</value>
+					<value level="4">36897</value>
+					<value level="5">38593</value>
+					<value level="6">40289</value>
+					<value level="7">42087</value>
+					<value level="8">43885</value>
+					<value fromLevel="3" toLevel="8" fromSubLevel="1001" toSubLevel="1020">{base + (base / 100 * subIndex)}</value>
+				</power>
+				<overHit>true</overHit>
+			</effect>
+			<effect name="Speed">
+				<amount>-140</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="10103" toLevel="8" name="Reversal Stream">
+		<!-- Creates a torrent to attack the target and enemies on the path with $s1 Power added to P and pull them up a short distance. Also reduces their Speed by $s3 for $s2. Consumes $s4 Soulstones. Requires a sword or blunt weapon to be equipped. Over-hit. Critical. -->
+		<icon>icon.skill10103_2</icon>
+		<abnormalLvl>2</abnormalLvl>
+		<abnormalTime>10</abnormalTime>
+		<abnormalType>SPEED_DOWN</abnormalType>
+		<activateRate>
+			<value fromLevel="1" toLevel="8">60</value>
+			<value fromLevel="3" toLevel="8" fromSubLevel="2001" toSubLevel="2020">{base + (base / 100 * subIndex)}</value>
+		</activateRate>
+		<affectLimit>10-10</affectLimit>
+		<fanRange>0;0;600;180</fanRange>
+		<affectRange>200</affectRange>
+		<basicProperty>MAGIC</basicProperty> <!-- Guessed -->
+		<attributeType>WATER</attributeType>
+		<attributeValue>20</attributeValue>
+		<itemConsumeId>1785</itemConsumeId> <!-- Soulstones -->
+		<itemConsumeCount>6</itemConsumeCount>
+		<lvlBonusRate>1</lvlBonusRate>
+		<operateType>A2</operateType>
+		<magicLvl>
+			<value level="1">97</value>
+			<value level="2">98</value>
+			<value level="3">99</value>
+			<value level="4">101</value>
+			<value level="5">103</value>
+			<value level="6">105</value>
+			<value level="7">107</value>
+			<value level="8">109</value>
+		</magicLvl>
+		<targetType>ENEMY_ONLY</targetType>
+		<affectScope>FAN</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<mpConsume>
+			<value level="1">185</value>
+			<value level="2">191</value>
+			<value level="3">197</value>
+			<value level="4">199</value>
+			<value level="5">201</value>
+			<value level="6">203</value>
+			<value level="7">205</value>
+			<value level="8">207</value>
+		</mpConsume>
+		<castRange>600</castRange>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>15000</reuseDelay>
+		<effectPoint>-5000</effectPoint>
+		<isDebuff>true</isDebuff>
+		<conditions>
+			<condition name="EquipWeapon">
+				<weaponType>
+					<item>SWORD</item>
+					<item>BLUNT</item>
+				</weaponType>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="MagicalAttack">
+				<power>
+					<value level="1">18151</value>
+					<value level="2">18641</value>
+					<value level="3">19131</value>
+					<value level="4">20111</value>
+					<value level="5">21091</value>
+					<value level="6">22071</value>
+					<value level="7">23110</value>
+					<value level="8">24149</value>
+					<value fromLevel="3" toLevel="8" fromSubLevel="1001" toSubLevel="1020">{base + (base / 100 * subIndex)}</value>
+				</power>
+			</effect>
+			<effect name="Speed">
+				<amount>-100</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="PullBack">
+				<speed>600</speed>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="10104" toLevel="1" name="Paladin's Aura">
+		<!-- For you and your allies, P./ M. Def. +30%, Debuff Resistances +15%, P. Critical Damage/ M. Critical Damage Received -15%, and all Skill Cooldown -7%. Only one Knight's Aura can be active at any time. -->
+		<icon>icon.skill10104</icon>
+		<magicCriticalRate>5</magicCriticalRate>
+		<toggleGroupId>4</toggleGroupId>
+		<abnormalVisualEffect>PHOENIX_AURA</abnormalVisualEffect>
+		<magicLvl>85</magicLvl>
+		<operateType>AU</operateType>
+		<reuseDelay>1000</reuseDelay>
+		<effects>
+			<effect name="CallSkillOnActionTime">
+				<!-- Paladin's Aura -->
+				<skillId>10108</skillId> <!-- Paladin's Aura -->
+				<skillLevel>1</skillLevel>
+				<skillSubLevel>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1020">{1000 + subIndex}</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="2001" toSubLevel="2020">{2000 + subIndex}</value>
+				</skillSubLevel>
+				<ticks>7</ticks>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>
+					<value fromLevel="1" toLevel="1">30</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1020">{base + subIndex}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>
+					<value fromLevel="1" toLevel="1">30</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1020">{base + subIndex}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="ResistAbnormalByCategory">
+				<amount>15</amount>
+				<slot>DEBUFF</slot>
+			</effect>
+			<effect name="Reuse">
+				<amount>-7</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+			<effect name="Reuse">
+				<amount>-7</amount>
+				<mode>PER</mode>
+				<magicType>0</magicType>
+			</effect>
+			<effect name="DefenceCriticalDamage">
+				<amount>-15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DefenceMagicCriticalDamage">
+				<amount>-15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="HealEffect">
+				<amount>
+					<value fromLevel="1" toLevel="1" fromSubLevel="2001" toSubLevel="2020">{subIndex}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="10105" toLevel="1" name="Avenger's Aura">
+		<!-- For you and your allies, P. Atk./ M. Atk. +10%, P./ M. Def. +20%, Damage Reflection +5%, P. Critical Damage/ M. Critical Damage Received -15% and all Skill Cooldown -7%. Only one Knight's Aura can be active at any time. -->
+		<icon>icon.skill10105</icon>
+		<magicCriticalRate>5</magicCriticalRate>
+		<toggleGroupId>4</toggleGroupId>
+		<abnormalVisualEffect>REVENGE_AURA</abnormalVisualEffect>
+		<magicLvl>85</magicLvl>
+		<operateType>AU</operateType>
+		<reuseDelay>1000</reuseDelay>
+		<effects>
+			<effect name="CallSkillOnActionTime">
+				<!-- Avenger's Aura -->
+				<skillId>10109</skillId> <!-- Avenger's Aura -->
+				<skillLevel>1</skillLevel>
+				<skillSubLevel>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1020">{1000 + subIndex}</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="2001" toSubLevel="2020">{2000 + subIndex}</value>
+				</skillSubLevel>
+				<ticks>7</ticks>
+			</effect>
+			<effect name="PAtk">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>
+					<value fromLevel="1" toLevel="1">20</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1020">{base + subIndex}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>
+					<value fromLevel="1" toLevel="1">20</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1020">{base + subIndex}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Reuse">
+				<amount>-7</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+			<effect name="Reuse">
+				<amount>-7</amount>
+				<mode>PER</mode>
+				<magicType>0</magicType>
+			</effect>
+			<effect name="DefenceCriticalDamage">
+				<amount>-15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DefenceMagicCriticalDamage">
+				<amount>-15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DamageShield">
+				<amount>
+					<value fromLevel="1" toLevel="1">5</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="2001" toSubLevel="2020">{base + subIndex}</value>
+				</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="10106" toLevel="1" name="Guardian Aura">
+		<!-- For you and your allies, P./ M. Def. +20%, Speed +10, all Attribute Resistance +100, P. Critical Damage/ M. Critical Damage Received -15%, all Skill Cooldown -7%, and MP Consumption -15%. Only one Knight's Aura can be active at any time. -->
+		<icon>icon.skill10106</icon>
+		<magicCriticalRate>5</magicCriticalRate>
+		<toggleGroupId>4</toggleGroupId>
+		<abnormalVisualEffect>EVAS_AURA</abnormalVisualEffect>
+		<magicLvl>85</magicLvl>
+		<operateType>AU</operateType>
+		<reuseDelay>1000</reuseDelay>
+		<effects>
+			<effect name="CallSkillOnActionTime">
+				<!-- Sentinel's Aura -->
+				<skillId>10110</skillId> <!-- Guardian Aura -->
+				<skillLevel>1</skillLevel>
+				<skillSubLevel>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1020">{1000 + subIndex}</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="2001" toSubLevel="2020">{2000 + subIndex}</value>
+				</skillSubLevel>
+				<ticks>7</ticks>
+			</effect>
+			<effect name="TriggerSkillByDamage">
+				<attackerType>Creature</attackerType>
+				<minAttackerLevel>1</minAttackerLevel>
+				<maxAttackerLevel>127</maxAttackerLevel>
+				<chance>30</chance>
+				<targetType>SELF</targetType>
+				<minDamage>1</minDamage>
+				<skillId>10071</skillId> <!-- Eva's Presence -->
+				<skillLevel>1</skillLevel>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>
+					<value fromLevel="1" toLevel="1">20</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1020">{base + subIndex}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>
+					<value fromLevel="1" toLevel="1">20</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1020">{base + subIndex}</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="2001" toSubLevel="2020">{subIndex}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Speed">
+				<amount>10</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="DefenceCriticalDamage">
+				<amount>-15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DefenceMagicCriticalDamage">
+				<amount>-15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Reuse">
+				<amount>-7</amount>
+				<mode>PER</mode>
+				<magicType>0</magicType>
+			</effect>
+			<effect name="Reuse">
+				<amount>-7</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+			<effect name="MagicMpCost">
+				<amount>-15</amount>
+				<mode>PER</mode>
+				<magicType>0</magicType>
+			</effect>
+			<effect name="MagicMpCost">
+				<amount>-15</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>100</amount>
+				<attribute>FIRE</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>100</amount>
+				<attribute>WATER</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>100</amount>
+				<attribute>WIND</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>100</amount>
+				<attribute>EARTH</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>100</amount>
+				<attribute>HOLY</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>100</amount>
+				<attribute>DARK</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="10107" toLevel="1" name="Templar's Aura">
+		<!-- For you and your allies, P. Atk./ M. Atk. +20%, P./ M. Def. +10%, Speed +10, P. Critical Damage/ M. Critical Damage Received -15% and all Skill Cooldown -7%. Only one Knight's Aura can be active at any time. -->
+		<icon>icon.skill10107</icon>
+		<magicCriticalRate>5</magicCriticalRate>
+		<toggleGroupId>4</toggleGroupId>
+		<abnormalVisualEffect>TEMPLAR_AURA</abnormalVisualEffect>
+		<magicLvl>85</magicLvl>
+		<operateType>AU</operateType>
+		<reuseDelay>1000</reuseDelay>
+		<effects>
+			<effect name="CallSkillOnActionTime">
+				<!-- Templar's Aura -->
+				<skillId>10111</skillId> <!-- Templar's Aura -->
+				<skillLevel>1</skillLevel>
+				<skillSubLevel>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1020">{1000 + subIndex}</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="2001" toSubLevel="2020">{2000 + subIndex}</value>
+				</skillSubLevel>
+				<ticks>7</ticks>
+			</effect>
+			<effect name="PAtk">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>
+					<value fromLevel="1" toLevel="1">10</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1020">{base + subIndex}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>
+					<value fromLevel="1" toLevel="1">10</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1020">{base + subIndex}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Speed">
+				<amount>10</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="DefenceCriticalDamage">
+				<amount>-15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DefenceMagicCriticalDamage">
+				<amount>-15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Reuse">
+				<amount>-7</amount>
+				<mode>PER</mode>
+				<magicType>0</magicType>
+			</effect>
+			<effect name="Reuse">
+				<amount>-7</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>
+					<value fromLevel="1" toLevel="1" fromSubLevel="2001" toSubLevel="2020">{0.6 + (0.4 * subIndex)}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>
+					<value fromLevel="1" toLevel="1" fromSubLevel="2001" toSubLevel="2020">{0.6 + (0.4 * subIndex)}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="10108" toLevel="1" name="Paladin's Aura">
+		<!-- P./ M. Def. +30%, Debuff Resistances +15%, P. Critical Damage/ M. Critical Damage Received -15%, and all Skill Cooldown -7%. Only one Knight's Aura can be active at any time. -->
+		<icon>icon.skill10104</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>11</abnormalTime>
+		<abnormalType>AURA</abnormalType>
+		<abnormalVisualEffect>PHOENIX_AURA</abnormalVisualEffect>
+		<affectRange>1000</affectRange>
+		<canBeDispelled>false</canBeDispelled>
+		<magicLvl>85</magicLvl>
+		<operateType>A5</operateType>
+		<targetType>MY_PARTY</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<hitTime>500</hitTime>
+		<effectPoint>2</effectPoint>
+		<reuseDelay>1000</reuseDelay>
+		<effects>
+			<effect name="PhysicalDefence">
+				<amount>
+					<value fromLevel="1" toLevel="1">30</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1020">{base + subIndex}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>
+					<value fromLevel="1" toLevel="1">30</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1020">{base + subIndex}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="ResistAbnormalByCategory">
+				<amount>15</amount>
+				<slot>DEBUFF</slot>
+			</effect>
+			<effect name="Reuse">
+				<amount>-7</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+			<effect name="Reuse">
+				<amount>-7</amount>
+				<mode>PER</mode>
+				<magicType>0</magicType>
+			</effect>
+			<effect name="DefenceCriticalDamage">
+				<amount>-15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DefenceMagicCriticalDamage">
+				<amount>-15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="HealEffect">
+				<amount>
+					<value fromLevel="1" toLevel="1" fromSubLevel="2001" toSubLevel="2020">{subIndex}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="10109" toLevel="1" name="Avenger's Aura">
+		<!-- P./ M. Atk. +10%, P./ M. Def. +20%, Damage Reflection +5%, P. Critical Damage/ M. Critical Damage Received -15% and all Skill Cooldown -7%. Only one Knight's Aura can be active at any time. -->
+		<icon>icon.skill10105</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>11</abnormalTime>
+		<abnormalType>AURA</abnormalType>
+		<abnormalVisualEffect>REVENGE_AURA</abnormalVisualEffect>
+		<affectRange>1000</affectRange>
+		<canBeDispelled>false</canBeDispelled>
+		<magicLvl>85</magicLvl>
+		<operateType>A5</operateType>
+		<targetType>MY_PARTY</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<hitTime>500</hitTime>
+		<effectPoint>2</effectPoint>
+		<reuseDelay>1000</reuseDelay>
+		<effects>
+			<effect name="PAtk">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>
+					<value fromLevel="1" toLevel="1">20</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1020">{base + subIndex}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>
+					<value fromLevel="1" toLevel="1">20</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1020">{base + subIndex}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Reuse">
+				<amount>-7</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+			<effect name="Reuse">
+				<amount>-7</amount>
+				<mode>PER</mode>
+				<magicType>0</magicType>
+			</effect>
+			<effect name="DefenceCriticalDamage">
+				<amount>-15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DefenceMagicCriticalDamage">
+				<amount>-15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DamageShield">
+				<amount>
+					<value fromLevel="1" toLevel="1">5</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="2001" toSubLevel="2020">{base + subIndex}</value>
+				</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="10110" toLevel="1" name="Guardian Aura">
+		<!-- P./ M. Def. +20%, Speed +10, all Attribute Resistance +100, P. Critical Damage/ M. Critical Damage Received -15%, all Skill Cooldown -7%, and MP Consumption -15%. Only one Knight's Aura can be active at any time. -->
+		<icon>icon.skill10106</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>11</abnormalTime>
+		<abnormalType>AURA</abnormalType>
+		<abnormalVisualEffect>EVAS_AURA</abnormalVisualEffect>
+		<affectRange>1000</affectRange>
+		<canBeDispelled>false</canBeDispelled>
+		<magicLvl>85</magicLvl>
+		<operateType>A5</operateType>
+		<targetType>MY_PARTY</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<hitTime>500</hitTime>
+		<effectPoint>2</effectPoint>
+		<reuseDelay>1000</reuseDelay>
+		<effects>
+			<effect name="PhysicalDefence">
+				<amount>
+					<value fromLevel="1" toLevel="1">20</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1020">{base + subIndex}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>
+					<value fromLevel="1" toLevel="1">20</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1020">{base + subIndex}</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="2001" toSubLevel="2020">{subIndex}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Speed">
+				<amount>10</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="DefenceCriticalDamage">
+				<amount>-15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DefenceMagicCriticalDamage">
+				<amount>-15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Reuse">
+				<amount>-7</amount>
+				<mode>PER</mode>
+				<magicType>0</magicType>
+			</effect>
+			<effect name="Reuse">
+				<amount>-7</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+			<effect name="MagicMpCost">
+				<amount>-15</amount>
+				<mode>PER</mode>
+				<magicType>0</magicType>
+			</effect>
+			<effect name="MagicMpCost">
+				<amount>-15</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>100</amount>
+				<attribute>FIRE</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>100</amount>
+				<attribute>WATER</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>100</amount>
+				<attribute>WIND</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>100</amount>
+				<attribute>EARTH</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>100</amount>
+				<attribute>HOLY</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>100</amount>
+				<attribute>DARK</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="10111" toLevel="1" name="Templar's Aura">
+		<!-- P./ M. Atk. +10%, P./ M. Def. +20%, Speed +10, P. Critical Damage/ M. Critical Damage Received -15% and all Skill Cooldown -7%. Only one Knight's Aura can be active at any time. -->
+		<icon>icon.skill10107</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>11</abnormalTime>
+		<abnormalType>AURA</abnormalType>
+		<abnormalVisualEffect>TEMPLAR_AURA</abnormalVisualEffect>
+		<affectRange>1000</affectRange>
+		<canBeDispelled>false</canBeDispelled>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<operateType>A5</operateType>
+		<targetType>MY_PARTY</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<hitTime>500</hitTime>
+		<effectPoint>2</effectPoint>
+		<reuseDelay>1000</reuseDelay>
+		<effects>
+			<effect name="PAtk">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>
+					<value fromLevel="1" toLevel="1">10</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1020">{base + subIndex}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>
+					<value fromLevel="1" toLevel="1">10</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1020">{base + subIndex}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Speed">
+				<amount>10</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="DefenceCriticalDamage">
+				<amount>-15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DefenceMagicCriticalDamage">
+				<amount>-15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Reuse">
+				<amount>-7</amount>
+				<mode>PER</mode>
+				<magicType>0</magicType>
+			</effect>
+			<effect name="Reuse">
+				<amount>-7</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>
+					<value fromLevel="1" toLevel="1" fromSubLevel="2001" toSubLevel="2020">{0.6 + (0.4 * subIndex)}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>
+					<value fromLevel="1" toLevel="1" fromSubLevel="2001" toSubLevel="2020">{0.6 + (0.4 * subIndex)}</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+</list>

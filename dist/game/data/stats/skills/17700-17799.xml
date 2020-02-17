@@ -1,0 +1,3034 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="17701" toLevel="10" name="Topaz - Spiritshot">
+		<!-- Disrupts the target's skill casting. When used during PvP, inflicts fixed damage of $s1 and ignores CP. -->
+		<icon>
+			<value level="1">icon.etc_bm_jewel_topaz_i00</value>
+			<value level="2">icon.etc_bm_jewel_topaz_i00</value>
+			<value level="3">icon.etc_bm_jewel_topaz_i00</value>
+			<value level="4">icon.etc_bm_jewel_topaz_i00</value>
+			<value level="5">icon.etc_bm_jewel_topaz_i00</value>
+			<value level="6">icon.bm_jewel_absdmg_high_lv1_lavianrose</value>
+			<value level="7">icon.bm_jewel_absdmg_high_lv1_lavianrose</value>
+			<value level="8">icon.bm_jewel_absdmg_high_lv1_lavianrose</value>
+			<value level="9">icon.bm_jewel_absdmg_high_lv1_lavianrose</value>
+			<value level="10">icon.bm_jewel_absdmg_high_lv1_lavianrose</value>
+		</icon>
+		<operateType>A1</operateType>
+		<abnormalLvl>
+			<value level="1">2</value>
+			<value level="2">3</value>
+			<value level="3">4</value>
+			<value level="4">5</value>
+			<value level="5">6</value>
+			<value level="6">6</value>
+			<value level="7">7</value>
+			<value level="8">8</value>
+			<value level="9">9</value>
+			<value level="10">10</value>
+		</abnormalLvl>
+		<magicLvl>
+			<value level="1">1</value>
+			<value level="2">2</value>
+			<value level="3">3</value>
+			<value level="4">4</value>
+			<value level="5">5</value>
+			<value level="6">6</value>
+			<value level="7">7</value>
+			<value level="8">8</value>
+			<value level="9">9</value>
+			<value level="10">10</value>
+		</magicLvl>
+		<castRange>600</castRange>
+		<hitTime>1000</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-1000</effectPoint>
+		<reuseDelay>30000</reuseDelay>
+		<staticReuse>true</staticReuse>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<pvpEffects>
+			<effect name="BlockSkill">
+				<magicTypes>1;3</magicTypes>
+			</effect>
+			<effect name="SkillTurning">
+				<chance>100</chance>
+				<staticChance>true</staticChance>
+			</effect>
+			<effect name="RealDamage">
+				<power>
+					<value level="1">1062</value>
+					<value level="2">3717</value>
+					<value level="3">6903</value>
+					<value level="4">10089</value>
+					<value level="5">13275</value>
+					<value level="6">13275</value>
+					<value level="7">14868</value>
+					<value level="8">16461</value>
+					<value level="9">18054</value>
+					<value level="10">19647</value>
+				</power>
+			</effect>
+			<effect name="Lethal" fromLevel="6" toLevel="10">
+				<fullLethal>30</fullLethal>
+			</effect>
+		</pvpEffects>
+	</skill>
+	<skill id="17702" toLevel="5" name="Jewel: Quick Recovery">
+		<!-- Recovers HP by $s1. -->
+		<operateType>A1</operateType>
+		<reuseDelay>30000</reuseDelay>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="Hp">
+				<amount>
+					<value level="1">1500</value>
+					<value level="2">3000</value>
+					<value level="3">6000</value>
+					<value level="4">8000</value>
+					<value level="5">13000</value>
+				</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17703" toLevel="5" name="Jewel: Heal Boost">
+		<!-- Received heal amount +$s1. -->
+		<icon>icon.skill4416_dwarf</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="HealEffect">
+				<amount>
+					<value level="1">3</value>
+					<value level="2">6</value>
+					<value level="3">9</value>
+					<value level="4">13</value>
+					<value level="5">21</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17704" toLevel="10" name="Obsidian">
+		<!-- Decreases damage received during PvP by $s1. -->
+		<icon>
+			<value level="1">icon.etc_bm_jewel_obsidian_i00</value>
+			<value level="2">icon.etc_bm_jewel_obsidian_i00</value>
+			<value level="3">icon.etc_bm_jewel_obsidian_i00</value>
+			<value level="4">icon.etc_bm_jewel_obsidian_i00</value>
+			<value level="5">icon.etc_bm_jewel_obsidian_i00</value>
+			<value level="6">icon.bm_jewel_pvpdef_high_lv1_lavianrose</value>
+			<value level="7">icon.bm_jewel_pvpdef_high_lv1_lavianrose</value>
+			<value level="8">icon.bm_jewel_pvpdef_high_lv1_lavianrose</value>
+			<value level="9">icon.bm_jewel_pvpdef_high_lv1_lavianrose</value>
+			<value level="10">icon.bm_jewel_pvpdef_high_lv1_lavianrose</value>
+		</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="TriggerSkillByDamage" fromLevel="6" toLevel="10">
+				<!-- Greater Garnet - Cancel Stun -->
+				<attackerType>Creature</attackerType>
+				<minAttackerLevel>1</minAttackerLevel>
+				<maxAttackerLevel>127</maxAttackerLevel>
+				<minDamage>100</minDamage>
+				<chance>100</chance>
+				<targetType>SELF</targetType>
+				<allowSkillAttack>true</allowSkillAttack>
+				<allowNormalAttack>true</allowNormalAttack>
+				<allowWeapons>ALL</allowWeapons>
+				<skillId>18720</skillId> <!-- Greater Obsidian - Cancel Target -->
+				<skillLevel>1</skillLevel>
+			</effect>
+			<effect name="DamageByAttack">
+				<amount>
+					<value level="1">-1</value>
+					<value level="2">-3</value>
+					<value level="3">-7</value>
+					<value level="4">-11</value>
+					<value level="5">-15</value>
+					<value level="6">-15</value>
+					<value level="7">-15</value>
+					<value level="8">-15</value>
+					<value level="9">-15</value>
+					<value level="10">-15</value>
+				</amount>
+				<type>PK</type>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">0</value>
+					<value level="6">0</value>
+					<value level="7">1</value>
+					<value level="8">2</value>
+					<value level="9">3</value>
+					<value level="10">5</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">0</value>
+					<value level="6">0</value>
+					<value level="7">1</value>
+					<value level="8">2</value>
+					<value level="9">3</value>
+					<value level="10">5</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17705" toLevel="10" name="Opal">
+		<!-- Increases Attack Attribute by $s1. -->
+		<icon>
+			<value level="1">icon.etc_bm_jewel_opal_i00</value>
+			<value level="2">icon.etc_bm_jewel_opal_i00</value>
+			<value level="3">icon.etc_bm_jewel_opal_i00</value>
+			<value level="4">icon.etc_bm_jewel_opal_i00</value>
+			<value level="5">icon.etc_bm_jewel_opal_i00</value>
+			<value level="6">icon.bm_jewel_atkeleup_high_lv1_lavianrose</value>
+			<value level="7">icon.bm_jewel_atkeleup_high_lv1_lavianrose</value>
+			<value level="8">icon.bm_jewel_atkeleup_high_lv1_lavianrose</value>
+			<value level="9">icon.bm_jewel_atkeleup_high_lv1_lavianrose</value>
+			<value level="10">icon.bm_jewel_atkeleup_high_lv1_lavianrose</value>
+		</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="AttackAttributeAdd">
+				<amount>
+					<value level="1">10</value>
+					<value level="2">20</value>
+					<value level="3">40</value>
+					<value level="4">70</value>
+					<value level="5">120</value>
+					<value level="6">120</value>
+					<value level="7">120</value>
+					<value level="8">120</value>
+					<value level="9">120</value>
+					<value level="10">120</value>
+				</amount>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">0</value>
+					<value level="6">70</value>
+					<value level="7">80</value>
+					<value level="8">90</value>
+					<value level="9">100</value>
+					<value level="10">120</value>
+				</amount>
+				<attribute>FIRE</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">0</value>
+					<value level="6">70</value>
+					<value level="7">80</value>
+					<value level="8">90</value>
+					<value level="9">100</value>
+					<value level="10">120</value>
+				</amount>
+				<attribute>WATER</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">0</value>
+					<value level="6">70</value>
+					<value level="7">80</value>
+					<value level="8">90</value>
+					<value level="9">100</value>
+					<value level="10">120</value>
+				</amount>
+				<attribute>EARTH</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">0</value>
+					<value level="6">70</value>
+					<value level="7">80</value>
+					<value level="8">90</value>
+					<value level="9">100</value>
+					<value level="10">120</value>
+				</amount>
+				<attribute>WIND</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">0</value>
+					<value level="6">70</value>
+					<value level="7">80</value>
+					<value level="8">90</value>
+					<value level="9">100</value>
+					<value level="10">120</value>
+				</amount>
+				<attribute>DARK</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">0</value>
+					<value level="6">70</value>
+					<value level="7">80</value>
+					<value level="8">90</value>
+					<value level="9">100</value>
+					<value level="10">120</value>
+				</amount>
+				<attribute>HOLY</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17706" toLevel="5" name="Jewel: Atk. Spd. Increase">
+		<!-- Atk. Spd. +$s1. -->
+		<icon>icon.etc_talisman_i02</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="PhysicalAttackSpeed">
+				<amount>
+					<value level="1">33</value>
+					<value level="2">48</value>
+					<value level="3">78</value>
+					<value level="4">138</value>
+					<value level="5">258</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17707" toLevel="5" name="Jewel: Casting Spd. Increase">
+		<!-- Increases Casting Spd. by $s1. -->
+		<icon>icon.skill17085</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="MagicalAttackSpeed">
+				<amount>
+					<value level="1">33</value>
+					<value level="2">55</value>
+					<value level="3">90</value>
+					<value level="4">166</value>
+					<value level="5">318</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17708" toLevel="10" name="Diamond">
+		<!-- Increases P. Def. by $s1, and decreases Received P. Critical Damage by $s2. -->
+		<icon>
+			<value level="1">icon.etc_bm_jewel_diamond_i00</value>
+			<value level="2">icon.etc_bm_jewel_diamond_i00</value>
+			<value level="3">icon.etc_bm_jewel_diamond_i00</value>
+			<value level="4">icon.etc_bm_jewel_diamond_i00</value>
+			<value level="5">icon.etc_bm_jewel_diamond_i00</value>
+			<value level="6">icon.bm_jewel_phydef_high_lv1_lavianrose</value>
+			<value level="7">icon.bm_jewel_phydef_high_lv1_lavianrose</value>
+			<value level="8">icon.bm_jewel_phydef_high_lv1_lavianrose</value>
+			<value level="9">icon.bm_jewel_phydef_high_lv1_lavianrose</value>
+			<value level="10">icon.bm_jewel_phydef_high_lv1_lavianrose</value>
+		</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="PhysicalDefence">
+				<amount>
+					<value level="1">283</value>
+					<value level="2">567</value>
+					<value level="3">945</value>
+					<value level="4">1418</value>
+					<value level="5">1986</value>
+					<value level="6">1986</value>
+					<value level="7">2128</value>
+					<value level="8">2317</value>
+					<value level="9">2558</value>
+					<value level="10">2837</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="DefenceCriticalDamage">
+				<amount>
+					<value level="1">-1</value>
+					<value level="2">-2</value>
+					<value level="3">-3</value>
+					<value level="4">-4</value>
+					<value level="5">-5</value>
+					<value level="6">-5</value>
+					<value level="7">-6</value>
+					<value level="8">-7</value>
+					<value level="9">-8</value>
+					<value level="10">-10</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">0</value>
+					<value level="6">10</value>
+					<value level="7">10</value>
+					<value level="8">10</value>
+					<value level="9">10</value>
+					<value level="10">10</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17709" toLevel="10" name="Pearl">
+		<!-- M. Def. +$s1, Received M. Critical Damage -$s2. -->
+		<icon>
+			<value level="1">icon.etc_bm_jewel_pearl_i00</value>
+			<value level="2">icon.etc_bm_jewel_pearl_i00</value>
+			<value level="3">icon.etc_bm_jewel_pearl_i00</value>
+			<value level="4">icon.etc_bm_jewel_pearl_i00</value>
+			<value level="5">icon.etc_bm_jewel_pearl_i00</value>
+			<value level="6">icon.bm_jewel_magdef_high_lv1_lavianrose</value>
+			<value level="7">icon.bm_jewel_magdef_high_lv1_lavianrose</value>
+			<value level="8">icon.bm_jewel_magdef_high_lv1_lavianrose</value>
+			<value level="9">icon.bm_jewel_magdef_high_lv1_lavianrose</value>
+			<value level="10">icon.bm_jewel_magdef_high_lv1_lavianrose</value>
+		</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="MagicalDefence">
+				<amount>
+					<value level="1">163</value>
+					<value level="2">328</value>
+					<value level="3">548</value>
+					<value level="4">821</value>
+					<value level="5">1150</value>
+					<value level="6">1150</value>
+					<value level="7">1375</value>
+					<value level="8">1485</value>
+					<value level="9">1621</value>
+					<value level="10">1785</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="DefenceMagicCriticalDamage">
+				<amount>
+					<value level="1">-1</value>
+					<value level="2">-2</value>
+					<value level="3">-3</value>
+					<value level="4">-4</value>
+					<value level="5">-5</value>
+					<value level="6">-5</value>
+					<value level="7">-6</value>
+					<value level="8">-7</value>
+					<value level="9">-8</value>
+					<value level="10">-10</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">0</value>
+					<value level="6">10</value>
+					<value level="7">10</value>
+					<value level="8">10</value>
+					<value level="9">10</value>
+					<value level="10">10</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17710" toLevel="1" name="10th Anniversary Blessing Effect (Free)">
+		<operateType>A1</operateType>
+		<effectPoint>1</effectPoint>
+		<isMagic>4</isMagic>
+	</skill>
+	<skill id="17711" toLevel="24" name="10th Anniversary Blessing - Stage 1">
+		<!-- You can obtain an item in $s1 h. $s2 stages total. <Note:> If you're dead while the item is given, you cannot acquire the $s3th Anniversary Blessing buff or items. You also cannot acquire the cards if your inventory is full. -->
+		<icon>icon.ev_10th</icon>
+		<operateType>A2</operateType>
+		<castRange>
+			<value level="1">900</value>
+			<value level="2">-1</value>
+			<value level="3">-1</value>
+			<value level="4">-1</value>
+			<value level="5">-1</value>
+			<value level="6">-1</value>
+			<value level="7">-1</value>
+			<value level="8">-1</value>
+			<value level="9">-1</value>
+			<value level="10">-1</value>
+			<value level="11">-1</value>
+			<value level="12">-1</value>
+			<value level="13">-1</value>
+			<value level="14">-1</value>
+			<value level="15">-1</value>
+			<value level="16">-1</value>
+			<value level="17">-1</value>
+			<value level="18">-1</value>
+			<value level="19">-1</value>
+			<value level="20">-1</value>
+			<value level="21">-1</value>
+			<value level="22">-1</value>
+			<value level="23">-1</value>
+			<value level="24">-1</value>
+		</castRange>
+		<effectPoint>1</effectPoint>
+		<isMagic>4</isMagic>
+	</skill>
+	<skill id="17712" toLevel="1" name="10th Anniversary Blessing Effect (Paid)">
+		<operateType>A1</operateType>
+		<effectPoint>1</effectPoint>
+		<isMagic>4</isMagic>
+	</skill>
+	<skill id="17713" toLevel="24" name="10th Anniversary Special Blessing - Stage 1">
+		<!-- You can obtain an item in $s1 h. $s2 stages total. <Note:> If you're dead while the item is given, you cannot acquire the $s3th Anniversary Blessing buff or items. You also cannot acquire the cards if your inventory is full. -->
+		<icon>icon.ev_10th</icon>
+		<operateType>A2</operateType>
+		<castRange>
+			<value level="1">900</value>
+			<value level="2">-1</value>
+			<value level="3">-1</value>
+			<value level="4">-1</value>
+			<value level="5">-1</value>
+			<value level="6">-1</value>
+			<value level="7">-1</value>
+			<value level="8">-1</value>
+			<value level="9">-1</value>
+			<value level="10">-1</value>
+			<value level="11">-1</value>
+			<value level="12">-1</value>
+			<value level="13">-1</value>
+			<value level="14">-1</value>
+			<value level="15">-1</value>
+			<value level="16">-1</value>
+			<value level="17">-1</value>
+			<value level="18">-1</value>
+			<value level="19">-1</value>
+			<value level="20">-1</value>
+			<value level="21">-1</value>
+			<value level="22">-1</value>
+			<value level="23">-1</value>
+			<value level="24">-1</value>
+		</castRange>
+		<effectPoint>1</effectPoint>
+		<isMagic>4</isMagic>
+	</skill>
+	<skill id="17714" toLevel="1" name="Dancing Cat's Steps">
+		<!-- For 1 h., Max HP/ MP/ CP +30%, P./ M. Def. +30%, Speed +20, P. Atk. +10%, and M. Atk. +20%. Skill Cooldown -10%, and Skill MP Consumption -15%. (Same slot as Art of Seduction buff) -->
+		<icon>icon.skill_sing</icon>
+		<operateType>A1</operateType>
+		<isMagic>4</isMagic>
+		<castRange>900</castRange>
+		<effectPoint>100</effectPoint>
+	</skill>
+	<skill id="17715" toLevel="1" name="Spirit Hit Lv. 1">
+		<!-- Inflicts 3186 damage to a single target. -->
+		<icon>icon.skill3260</icon>
+		<operateType>A1</operateType>
+		<castRange>600</castRange>
+		<hitTime>1000</hitTime>
+		<reuseDelay>30000</reuseDelay>
+		<effectPoint>-1000</effectPoint>
+	</skill>
+	<skill id="17716" toLevel="1" name="Spirit Hit Lv. 2">
+		<!-- Inflicts 3186 damage to a single target. -->
+		<icon>icon.skill3260</icon>
+		<operateType>A1</operateType>
+		<castRange>600</castRange>
+		<hitTime>1000</hitTime>
+		<reuseDelay>30000</reuseDelay>
+		<effectPoint>-1000</effectPoint>
+	</skill>
+	<skill id="17717" toLevel="1" name="Spirit Hit Lv. 3">
+		<!-- Inflicts 3186 damage to a single target. -->
+		<icon>icon.skill3260</icon>
+		<operateType>A1</operateType>
+		<castRange>600</castRange>
+		<hitTime>1000</hitTime>
+		<reuseDelay>30000</reuseDelay>
+		<effectPoint>-1000</effectPoint>
+	</skill>
+	<skill id="17718" toLevel="1" name="Dandy's Breath">
+		<!-- Can obtain Antharas Shaper (1-h.). (Need Dandy's Scroll: Release Seal) -->
+		<icon>icon.ev_10th_dandi1</icon>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>38847</itemConsumeId> <!-- Dandy's Scroll: Release Seal -->
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<reuseDelay>60000</reuseDelay>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+			<condition name="OpChangeWeapon" />
+		</conditions>
+		<effects>
+			<effect name="ConvertItem" />
+		</effects>
+	</skill>
+	<skill id="17719" toLevel="1" name="Dandy's Breath">
+		<!-- Can obtain Sealed Antharas Slasher (1-h.). (Need Dandy's Scroll: Release Seal) -->
+		<icon>icon.ev_10th_dandi1</icon>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>38847</itemConsumeId> <!-- Dandy's Scroll: Release Seal -->
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<reuseDelay>60000</reuseDelay>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+			<condition name="OpChangeWeapon" />
+		</conditions>
+		<effects>
+			<effect name="ConvertItem" />
+		</effects>
+	</skill>
+	<skill id="17720" toLevel="1" name="Dandy's Breath">
+		<!-- Can obtain Sealed Antharas Thrower (1-h.). (Need Dandy's Scroll: Release Seal) -->
+		<icon>icon.ev_10th_dandi1</icon>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>38847</itemConsumeId> <!-- Dandy's Scroll: Release Seal -->
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<reuseDelay>60000</reuseDelay>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+			<condition name="OpChangeWeapon" />
+		</conditions>
+		<effects>
+			<effect name="ConvertItem" />
+		</effects>
+	</skill>
+	<skill id="17721" toLevel="1" name="Dandy's Breath">
+		<!-- Can obtain Sealed Antharas Buster (1-h.). (Need Dandy's Scroll: Release Seal) -->
+		<icon>icon.ev_10th_dandi1</icon>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>38847</itemConsumeId> <!-- Dandy's Scroll: Release Seal -->
+		<operateType>A1</operateType>
+		<reuseDelay>60000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<reuseDelay>60000</reuseDelay>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+			<condition name="OpChangeWeapon" />
+		</conditions>
+		<effects>
+			<effect name="ConvertItem" />
+		</effects>
+	</skill>
+	<skill id="17722" toLevel="1" name="Dandy's Breath">
+		<!-- Can obtain Antharas Cutter (1-h.). (Need Dandy's Scroll: Release Seal) -->
+		<icon>icon.ev_10th_dandi1</icon>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>38847</itemConsumeId> <!-- Dandy's Scroll: Release Seal -->
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<reuseDelay>60000</reuseDelay>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+			<condition name="OpChangeWeapon" />
+		</conditions>
+		<effects>
+			<effect name="ConvertItem" />
+		</effects>
+	</skill>
+	<skill id="17723" toLevel="1" name="Dandy's Breath">
+		<!-- Can obtain Antharas Stormer (1-h.). (Need Dandy's Scroll: Release Seal) -->
+		<icon>icon.ev_10th_dandi1</icon>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>38847</itemConsumeId> <!-- Dandy's Scroll: Release Seal -->
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<reuseDelay>60000</reuseDelay>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+			<condition name="OpChangeWeapon" />
+		</conditions>
+		<effects>
+			<effect name="ConvertItem" />
+		</effects>
+	</skill>
+	<skill id="17724" toLevel="1" name="Dandy's Breath">
+		<!-- Can obtain Antharas Fighter (1-h.). (Need Dandy's Scroll: Release Seal) -->
+		<icon>icon.ev_10th_dandi1</icon>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>38847</itemConsumeId> <!-- Dandy's Scroll: Release Seal -->
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<reuseDelay>60000</reuseDelay>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+			<condition name="OpChangeWeapon" />
+		</conditions>
+		<effects>
+			<effect name="ConvertItem" />
+		</effects>
+	</skill>
+	<skill id="17725" toLevel="1" name="Dandy's Breath">
+		<!-- Can obtain Antharas Avenger (1-h.). (Need Dandy's Scroll: Release Seal) -->
+		<icon>icon.ev_10th_dandi1</icon>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>38847</itemConsumeId> <!-- Dandy's Scroll: Release Seal -->
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<reuseDelay>60000</reuseDelay>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+			<condition name="OpChangeWeapon" />
+		</conditions>
+		<effects>
+			<effect name="ConvertItem" />
+		</effects>
+	</skill>
+	<skill id="17726" toLevel="1" name="Dandy's Breath">
+		<!-- Can obtain Antharas Dual Blunt Weapon (1-h.). (Need Dandy's Scroll: Release Seal) -->
+		<icon>icon.ev_10th_dandi1</icon>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>38847</itemConsumeId> <!-- Dandy's Scroll: Release Seal -->
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<reuseDelay>60000</reuseDelay>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+			<condition name="OpChangeWeapon" />
+		</conditions>
+		<effects>
+			<effect name="ConvertItem" />
+		</effects>
+	</skill>
+	<skill id="17727" toLevel="1" name="Dandy's Breath">
+		<!-- Can obtain Antharas Dual Sword (1-h.). (Need Dandy's Scroll: Release Seal) -->
+		<icon>icon.ev_10th_dandi1</icon>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>38847</itemConsumeId> <!-- Dandy's Scroll: Release Seal -->
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<reuseDelay>60000</reuseDelay>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+			<condition name="OpChangeWeapon" />
+		</conditions>
+		<effects>
+			<effect name="ConvertItem" />
+		</effects>
+	</skill>
+	<skill id="17728" toLevel="1" name="Dandy's Breath">
+		<!-- Can obtain Valakas Shaper (1-h.). (Need Dandy's Scroll: Release Seal) -->
+		<icon>icon.ev_10th_dandi1</icon>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>38847</itemConsumeId> <!-- Dandy's Scroll: Release Seal -->
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<reuseDelay>60000</reuseDelay>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+			<condition name="OpChangeWeapon" />
+		</conditions>
+		<effects>
+			<effect name="ConvertItem" />
+		</effects>
+	</skill>
+	<skill id="17729" toLevel="1" name="Dandy's Breath">
+		<!-- Can obtain Valakas Cutter (1-h.). (Need Dandy's Scroll: Release Seal) -->
+		<icon>icon.ev_10th_dandi1</icon>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>38847</itemConsumeId> <!-- Dandy's Scroll: Release Seal -->
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<reuseDelay>60000</reuseDelay>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+			<condition name="OpChangeWeapon" />
+		</conditions>
+		<effects>
+			<effect name="ConvertItem" />
+		</effects>
+	</skill>
+	<skill id="17730" toLevel="1" name="Dandy's Breath">
+		<!-- Can obtain Valakas Slasher (1-h.). (Need Dandy's Scroll: Release Seal) -->
+		<icon>icon.ev_10th_dandi1</icon>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>38847</itemConsumeId> <!-- Dandy's Scroll: Release Seal -->
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<reuseDelay>60000</reuseDelay>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+			<condition name="OpChangeWeapon" />
+		</conditions>
+		<effects>
+			<effect name="ConvertItem" />
+		</effects>
+	</skill>
+	<skill id="17731" toLevel="1" name="Dandy's Breath">
+		<!-- Can obtain Valakas Thrower (1-h.). (Need Dandy's Scroll: Release Seal) -->
+		<icon>icon.ev_10th_dandi1</icon>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>38847</itemConsumeId> <!-- Dandy's Scroll: Release Seal -->
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<reuseDelay>60000</reuseDelay>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+			<condition name="OpChangeWeapon" />
+		</conditions>
+		<effects>
+			<effect name="ConvertItem" />
+		</effects>
+	</skill>
+	<skill id="17732" toLevel="1" name="Dandy's Breath">
+		<!-- Can obtain Valakas Buster (1-h.). (Need Dandy's Scroll: Release Seal) -->
+		<icon>icon.ev_10th_dandi1</icon>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>38847</itemConsumeId> <!-- Dandy's Scroll: Release Seal -->
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<reuseDelay>60000</reuseDelay>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+			<condition name="OpChangeWeapon" />
+		</conditions>
+		<effects>
+			<effect name="ConvertItem" />
+		</effects>
+	</skill>
+	<skill id="17733" toLevel="1" name="Dandy's Breath">
+		<!-- Can obtain Valakas Caster (1-h.). (Need Dandy's Scroll: Release Seal) -->
+		<icon>icon.ev_10th_dandi1</icon>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>38847</itemConsumeId> <!-- Dandy's Scroll: Release Seal -->
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<reuseDelay>60000</reuseDelay>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+			<condition name="OpChangeWeapon" />
+		</conditions>
+		<effects>
+			<effect name="ConvertItem" />
+		</effects>
+	</skill>
+	<skill id="17734" toLevel="1" name="Dandy's Breath">
+		<!-- Can obtain Valakas Retributer (1-h.). (Need Dandy's Scroll: Release Seal) -->
+		<icon>icon.ev_10th_dandi1</icon>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>38847</itemConsumeId> <!-- Dandy's Scroll: Release Seal -->
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<reuseDelay>60000</reuseDelay>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+			<condition name="OpChangeWeapon" />
+		</conditions>
+		<effects>
+			<effect name="ConvertItem" />
+		</effects>
+	</skill>
+	<skill id="17735" toLevel="1" name="Dandy's Breath">
+		<!-- Can obtain Lindvior Shaper (1-h.). (Need Dandy's Scroll: Release Seal) -->
+		<icon>icon.ev_10th_dandi1</icon>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>38847</itemConsumeId> <!-- Dandy's Scroll: Release Seal -->
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<reuseDelay>60000</reuseDelay>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+			<condition name="OpChangeWeapon" />
+		</conditions>
+		<effects>
+			<effect name="ConvertItem" />
+		</effects>
+	</skill>
+	<skill id="17736" toLevel="1" name="Dandy's Breath">
+		<!-- Can obtain Lindvior Thrower (1-h.). (Need Dandy's Scroll: Release Seal) -->
+		<icon>icon.ev_10th_dandi1</icon>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>38847</itemConsumeId> <!-- Dandy's Scroll: Release Seal -->
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<reuseDelay>60000</reuseDelay>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+			<condition name="OpChangeWeapon" />
+		</conditions>
+		<effects>
+			<effect name="ConvertItem" />
+		</effects>
+	</skill>
+	<skill id="17737" toLevel="1" name="Dandy's Breath">
+		<!-- Can obtain Lindvior Slasher (1-h.). (Need Dandy's Scroll: Release Seal) -->
+		<icon>icon.ev_10th_dandi1</icon>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>38847</itemConsumeId> <!-- Dandy's Scroll: Release Seal -->
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<reuseDelay>60000</reuseDelay>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+			<condition name="OpChangeWeapon" />
+		</conditions>
+		<effects>
+			<effect name="ConvertItem" />
+		</effects>
+	</skill>
+	<skill id="17738" toLevel="1" name="Dandy's Breath">
+		<!-- Can obtain Lindvior Caster (1-h.). (Need Dandy's Scroll: Release Seal) -->
+		<icon>icon.ev_10th_dandi1</icon>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>38847</itemConsumeId> <!-- Dandy's Scroll: Release Seal -->
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<reuseDelay>60000</reuseDelay>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+			<condition name="OpChangeWeapon" />
+		</conditions>
+		<effects>
+			<effect name="ConvertItem" />
+		</effects>
+	</skill>
+	<skill id="17739" toLevel="1" name="Dandy's Breath">
+		<!-- Can obtain Lindvior Cutter (1-h.). (Need Dandy's Scroll: Release Seal) -->
+		<icon>icon.ev_10th_dandi1</icon>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>38847</itemConsumeId> <!-- Dandy's Scroll: Release Seal -->
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<reuseDelay>60000</reuseDelay>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+			<condition name="OpChangeWeapon" />
+		</conditions>
+		<effects>
+			<effect name="ConvertItem" />
+		</effects>
+	</skill>
+	<skill id="17740" toLevel="1" name="Dandy's Breath">
+		<!-- Can obtain Lindvior Shooter (1-h.). (Need Dandy's Scroll: Release Seal) -->
+		<icon>icon.ev_10th_dandi1</icon>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>38847</itemConsumeId> <!-- Dandy's Scroll: Release Seal -->
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<reuseDelay>60000</reuseDelay>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+			<condition name="OpChangeWeapon" />
+		</conditions>
+		<effects>
+			<effect name="ConvertItem" />
+		</effects>
+	</skill>
+	<skill id="17741" toLevel="1" name="Dandy's Breath">
+		<!-- Can obtain Lindvior Dual Dagger (1-h.). (Need Dandy's Scroll: Release Seal) -->
+		<icon>icon.ev_10th_dandi1</icon>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>38847</itemConsumeId> <!-- Dandy's Scroll: Release Seal -->
+		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<reuseDelay>60000</reuseDelay>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+			<condition name="OpChangeWeapon" />
+		</conditions>
+		<effects>
+			<effect name="ConvertItem" />
+		</effects>
+	</skill>
+	<skill id="17742" toLevel="1" name="Toy Knight's Strength">
+		<!-- PvP damage +5%, HP +15%, and Atk. Spd. +15%. -->
+		<icon>icon.karma</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17743" toLevel="1" name="Toy Knight's Strength">
+		<!-- PvP damage +5%, HP +15%, and Atk. Spd. +15%. -->
+		<icon>icon.karma</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17744" toLevel="1" name="Toy Knight's Strength">
+		<!-- PvP damage +5%, HP +15%, and Atk. Spd. +15%. -->
+		<icon>icon.karma</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17745" toLevel="1" name="Toy Knight's Strength">
+		<!-- PvP damage +5%, HP +15%, and Atk. Spd. +15%. -->
+		<icon>icon.karma</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17746" toLevel="1" name="Toy Knight's Strength">
+		<!-- PvP damage +5%, HP +15%, and Atk. Spd. +15%. -->
+		<icon>icon.karma</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17747" toLevel="1" name="Toy Knight's Strength">
+		<!-- PvP damage +5%, HP +15%, and Atk. Spd. +15%. -->
+		<icon>icon.karma</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17748" toLevel="1" name="Toy Knight's Strength">
+		<!-- PvP damage +5%, HP +15%, and Atk. Spd. +15%. -->
+		<icon>icon.karma</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17749" toLevel="1" name="Toy Knight's Strength">
+		<!-- PvP damage +5%, HP +15%, and Atk. Spd. +15%. -->
+		<icon>icon.karma</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17750" toLevel="1" name="Toy Knight's Strength">
+		<!-- PvP damage +5%, HP +15%, and Atk. Spd. +15%. -->
+		<icon>icon.karma</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17751" toLevel="1" name="Toy Knight's Strength">
+		<!-- PvP damage +5%, HP +15%, and Atk. Spd. +15%. -->
+		<icon>icon.karma</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17752" toLevel="1" name="Toy Knight's Strength">
+		<!-- PvP damage +5%, HP +15%, and Atk. Spd. +15%. -->
+		<icon>icon.karma</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17753" toLevel="1" name="Toy Knight's Strength">
+		<!-- PvP damage +5%, HP +15%, and Atk. Spd. +15%. -->
+		<icon>icon.karma</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17754" toLevel="1" name="Toy Knight's Strength">
+		<!-- PvP damage +5%, HP +15%, and Atk. Spd. +15%. -->
+		<icon>icon.karma</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17755" toLevel="1" name="Toy Knight's Strength">
+		<!-- PvP damage +5%, HP +15%, and Atk. Spd. +15%. -->
+		<icon>icon.karma</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17756" toLevel="1" name="Toy Knight's Strength">
+		<!-- PvP damage +5%, HP +15%, and Atk. Spd. +15%. -->
+		<icon>icon.karma</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17757" toLevel="1" name="Toy Knight's Strength">
+		<!-- PvP damage +5%, HP +15%, and Atk. Spd. +15%. -->
+		<icon>icon.karma</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17758" toLevel="1" name="Toy Knight's Strength">
+		<!-- PvP damage +5%, HP +15%, and Atk. Spd. +15%. -->
+		<icon>icon.karma</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17759" toLevel="1" name="Toy Knight's Strength">
+		<!-- PvP damage +5%, HP +15%, and Atk. Spd. +15%. -->
+		<icon>icon.karma</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17760" toLevel="1" name="Toy Knight's Strength">
+		<!-- PvP damage +5%, HP +15%, and Atk. Spd. +15%. -->
+		<icon>icon.karma</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17761" toLevel="1" name="Toy Knight's Strength">
+		<!-- PvP damage +5%, HP +15%, and Atk. Spd. +15%. -->
+		<icon>icon.karma</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17762" toLevel="1" name="Toy Knight's Strength">
+		<!-- PvP damage +5%, HP +15%, and Atk. Spd. +15%. -->
+		<icon>icon.karma</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17763" toLevel="1" name="Toy Knight's Strength">
+		<!-- PvP damage +5%, HP +15%, and Atk. Spd. +15%. -->
+		<icon>icon.karma</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17764" toLevel="1" name="Toy Knight's Strength">
+		<!-- PvP damage +5%, HP +15%, and Atk. Spd. +15%. -->
+		<icon>icon.karma</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17765" toLevel="1" name="Toy Knight's Strength">
+		<!-- PvP damage +5%, HP +15%, and Atk. Spd. +15%. -->
+		<icon>icon.karma</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17766" toLevel="1" name="Assisting Strength">
+		<!-- PvP damage +10%, HP/ MP/ CP +20%, and Atk. Spd. +15%. -->
+		<icon>icon.karma</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxCp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17767" toLevel="1" name="Assisting Strength">
+		<!-- PvP damage +10%, HP/ MP/ CP +20%, and Atk. Spd. +15%. -->
+		<icon>icon.karma</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxCp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17768" toLevel="1" name="Assisting Strength">
+		<!-- PvP damage +10%, HP/ MP/ CP +20%, and Atk. Spd. +15%. -->
+		<icon>icon.karma</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxCp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17769" toLevel="1" name="Assisting Strength">
+		<!-- PvP damage +10%, HP/ MP/ CP +20%, and Atk. Spd. +15%. -->
+		<icon>icon.karma</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxCp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17770" toLevel="1" name="Assisting Strength">
+		<!-- PvP damage +10%, HP/ MP/ CP +20%, and Atk. Spd. +15%. -->
+		<icon>icon.karma</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxCp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17771" toLevel="1" name="Assisting Strength">
+		<!-- PvP damage +10%, HP/ MP/ CP +20%, and Atk. Spd. +15%. -->
+		<icon>icon.karma</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxCp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17772" toLevel="1" name="Assisting Strength">
+		<!-- PvP damage +10%, HP/ MP/ CP +20%, and Atk. Spd. +15%. -->
+		<icon>icon.karma</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxCp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17773" toLevel="1" name="Assisting Strength">
+		<!-- PvP damage +10%, HP/ MP/ CP +20%, and Atk. Spd. +15%. -->
+		<icon>icon.karma</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxCp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17774" toLevel="1" name="Assisting Strength">
+		<!-- PvP damage +10%, HP/ MP/ CP +20%, and Atk. Spd. +15%. -->
+		<icon>icon.karma</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxCp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17775" toLevel="1" name="Assisting Strength">
+		<!-- PvP damage +10%, HP/ MP/ CP +20%, and Atk. Spd. +15%. -->
+		<icon>icon.karma</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxCp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17776" toLevel="1" name="Assisting Strength">
+		<!-- PvP damage +10%, HP/ MP/ CP +20%, and Atk. Spd. +15%. -->
+		<icon>icon.karma</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxCp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17777" toLevel="1" name="Assisting Strength">
+		<!-- PvP damage +10%, HP/ MP/ CP +20%, and Atk. Spd. +15%. -->
+		<icon>icon.karma</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxCp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17778" toLevel="1" name="Assisting Strength">
+		<!-- PvP damage +10%, HP/ MP/ CP +20%, and Atk. Spd. +15%. -->
+		<icon>icon.karma</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxCp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17779" toLevel="1" name="Assisting Strength">
+		<!-- PvP damage +10%, HP/ MP/ CP +20%, and Atk. Spd. +15%. -->
+		<icon>icon.karma</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxCp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17780" toLevel="1" name="Assisting Strength">
+		<!-- PvP damage +10%, HP/ MP/ CP +20%, and Atk. Spd. +15%. -->
+		<icon>icon.karma</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxCp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17781" toLevel="1" name="Assisting Strength">
+		<!-- PvP damage +10%, HP/ MP/ CP +20%, and Atk. Spd. +15%. -->
+		<icon>icon.karma</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxCp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17782" toLevel="1" name="Assisting Strength">
+		<!-- PvP damage +10%, HP/ MP/ CP +20%, and Atk. Spd. +15%. -->
+		<icon>icon.karma</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxCp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17783" toLevel="1" name="Assisting Strength">
+		<!-- PvP damage +10%, HP/ MP/ CP +20%, and Atk. Spd. +15%. -->
+		<icon>icon.karma</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxCp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17784" toLevel="1" name="Assisting Strength">
+		<!-- PvP damage +10%, HP/ MP/ CP +20%, and Atk. Spd. +15%. -->
+		<icon>icon.karma</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxCp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17785" toLevel="1" name="Assisting Strength">
+		<!-- PvP damage +10%, HP/ MP/ CP +20%, and Atk. Spd. +15%. -->
+		<icon>icon.karma</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxCp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17786" toLevel="1" name="Assisting Strength">
+		<!-- PvP damage +10%, HP/ MP/ CP +20%, and Atk. Spd. +15%. -->
+		<icon>icon.karma</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxCp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17787" toLevel="1" name="Assisting Strength">
+		<!-- PvP damage +10%, HP/ MP/ CP +20%, and Atk. Spd. +15%. -->
+		<icon>icon.karma</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxCp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17788" toLevel="1" name="Assisting Strength">
+		<!-- PvP damage +10%, HP/ MP/ CP +20%, and Atk. Spd. +15%. -->
+		<icon>icon.karma</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxCp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17789" toLevel="1" name="Assisting Strength">
+		<!-- PvP damage +10%, HP/ MP/ CP +20%, and Atk. Spd. +15%. -->
+		<icon>icon.karma</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxCp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17790" toLevel="1" name="Great Assisting Strength">
+		<!-- PvP damage +30%, HP/ MP +100%, CP +200%, Atk. Spd. +1500, P. Critical Rate +500 and additional damage to dragons +300%. -->
+		<icon>icon.karma</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="PveMagicalSkillDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvePhysicalAttackDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvePhysicalSkillDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxCp">
+				<amount>200</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>100</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>100</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>1500</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="CriticalRate">
+				<amount>500</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="AttackTrait">
+				<DRAGON_WEAKNESS>300</DRAGON_WEAKNESS>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17791" toLevel="1" name="Great Assisting Strength">
+		<!-- PvP damage +30%, HP/ MP +100%, CP +200%, Atk. Spd. +1500, P. Critical Rate +500 and additional damage to dragons +300%. -->
+		<icon>icon.karma</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="PveMagicalSkillDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvePhysicalAttackDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvePhysicalSkillDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxCp">
+				<amount>200</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>100</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>100</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>1500</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="CriticalRate">
+				<amount>500</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="AttackTrait">
+				<DRAGON_WEAKNESS>300</DRAGON_WEAKNESS>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17792" toLevel="1" name="Great Assisting Strength">
+		<!-- PvP damage +30%, HP/ MP +100%, CP +200%, Atk. Spd. +1500, P. Critical Rate +500 and additional damage to dragons +300%. -->
+		<icon>icon.karma</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="PveMagicalSkillDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvePhysicalAttackDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvePhysicalSkillDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxCp">
+				<amount>200</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>100</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>100</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>1500</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="CriticalRate">
+				<amount>500</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="AttackTrait">
+				<DRAGON_WEAKNESS>300</DRAGON_WEAKNESS>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17793" toLevel="1" name="Great Assisting Strength">
+		<!-- PvP damage +30%, HP/ MP +100%, CP +200%, Casting Spd. +1999, M. Critical Rate +500 and additional damage to dragons +300%. -->
+		<icon>icon.karma</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="PveMagicalSkillDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvePhysicalAttackDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvePhysicalSkillDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxCp">
+				<amount>200</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>100</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>100</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>1999</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicCriticalRate">
+				<amount>500</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="AttackTrait">
+				<DRAGON_WEAKNESS>300</DRAGON_WEAKNESS>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17794" toLevel="1" name="Great Assisting Strength">
+		<!-- PvP damage +30%, HP/ MP +100%, CP +200%, Atk. Spd. +1500, P. Critical Rate +500 and additional damage to dragons +300%. -->
+		<icon>icon.karma</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="PveMagicalSkillDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvePhysicalAttackDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvePhysicalSkillDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxCp">
+				<amount>200</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>100</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>100</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>1500</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="CriticalRate">
+				<amount>500</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="AttackTrait">
+				<DRAGON_WEAKNESS>300</DRAGON_WEAKNESS>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17795" toLevel="1" name="Great Assisting Strength">
+		<!-- PvP damage +30%, HP/ MP +100%, CP +200%, Atk. Spd. +1500, P. Critical Rate +500 and additional damage to dragons +300%. -->
+		<icon>icon.karma</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="PveMagicalSkillDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvePhysicalAttackDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvePhysicalSkillDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxCp">
+				<amount>200</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>100</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>100</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>1500</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="CriticalRate">
+				<amount>500</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="AttackTrait">
+				<DRAGON_WEAKNESS>300</DRAGON_WEAKNESS>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17796" toLevel="1" name="Great Assisting Strength">
+		<!-- PvP damage +30%, HP/ MP +100%, CP +200%, Atk. Spd. +1500, P. Critical Rate +500 and additional damage to dragons +300%. -->
+		<icon>icon.karma</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="PveMagicalSkillDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvePhysicalAttackDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvePhysicalSkillDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxCp">
+				<amount>200</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>100</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>100</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>1500</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="CriticalRate">
+				<amount>500</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="AttackTrait">
+				<DRAGON_WEAKNESS>300</DRAGON_WEAKNESS>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17797" toLevel="1" name="Great Assisting Strength">
+		<!-- PvP damage +30%, HP/ MP +100%, CP +200%, Atk. Spd. +1500, P. Critical Rate +500 and additional damage to dragons +300%. -->
+		<icon>icon.karma</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="PveMagicalSkillDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvePhysicalAttackDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvePhysicalSkillDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxCp">
+				<amount>200</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>100</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>100</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>1500</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="CriticalRate">
+				<amount>500</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="AttackTrait">
+				<DRAGON_WEAKNESS>300</DRAGON_WEAKNESS>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17798" toLevel="1" name="Great Assisting Strength">
+		<!-- PvP damage +30%, HP/ MP +100%, CP +200%, Atk. Spd. +1500, P. Critical Rate +500 and additional damage to dragons +300%. -->
+		<icon>icon.karma</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="PveMagicalSkillDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvePhysicalAttackDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvePhysicalSkillDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxCp">
+				<amount>200</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>100</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>100</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>1500</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="CriticalRate">
+				<amount>500</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="AttackTrait">
+				<DRAGON_WEAKNESS>300</DRAGON_WEAKNESS>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="17799" toLevel="1" name="Great Assisting Strength">
+		<!-- PvP damage +30%, HP/ MP +100%, CP +200%, Atk. Spd. +1500, P. Critical Rate +500 and additional damage to dragons +300%. -->
+		<icon>icon.karma</icon>
+		<operateType>P</operateType>
+		<targetType>SELF</targetType>
+		<effects>
+			<effect name="PveMagicalSkillDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvePhysicalAttackDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvePhysicalSkillDamageBonus">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxCp">
+				<amount>200</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>100</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>100</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>1500</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="CriticalRate">
+				<amount>500</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="AttackTrait">
+				<DRAGON_WEAKNESS>300</DRAGON_WEAKNESS>
+			</effect>
+		</effects>
+	</skill>
+</list>

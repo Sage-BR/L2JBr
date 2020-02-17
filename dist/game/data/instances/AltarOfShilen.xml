@@ -1,0 +1,273 @@
+<instance id="194" maxWorlds="20" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/instance.xsd">
+	<time duration="60" empty="1" />
+	<locations>
+		<enter type="RANDOM">
+			<location x="179400" y="13683" z="-7396"/> <!-- First Room -->
+		</enter>
+		<exit type="ORIGIN" />
+	</locations>
+	<parameters>
+		<param name="boss1" value="25857" />
+		<param name="boss2" value="25858" />
+	</parameters>
+	<conditions>
+		<condition type="Party" showMessageAndHtml="true">
+			<param name="html" value="condNoGroup.html" />
+		</condition>
+		<condition type="PartyLeader">
+			<param name="html" value="condNoPartyLeader.html" />
+		</condition>
+		<condition type="GroupMin">
+			<param name="html" value="condSmallGroup.html" />
+			<param name="limit" value="5" />
+		</condition>
+		<condition type="GroupMax">
+			<param name="limit" value="7" />
+		</condition>
+		<condition type="Level" showMessageAndHtml="true">
+			<param name="html" value="condNoLevel.html" />
+			<param name="min" value="101" />
+		</condition>
+		<condition type="Level" showMessageAndHtml="true">
+			<param name="html" value="condNoLevel.html" />
+			<param name="max" value="105" />
+		</condition>
+		<condition type="Distance" />
+		<condition type="Reenter" />
+	</conditions>
+	<reenter apply="ON_FINISH">
+		<reset day="MONDAY" hour="6" minute="30" />
+		<reset day="TUESDAY" hour="6" minute="30" />
+		<reset day="WEDNESDAY" hour="6" minute="30" />
+		<reset day="THURSDAY" hour="6" minute="30" />
+		<reset day="FRIDAY" hour="6" minute="30" />
+		<reset day="SATURDAY" hour="6" minute="30" />
+		<reset day="SUNDAY" hour="6" minute="30" />
+	</reenter>
+	<doorlist>
+		<door id="25180001">
+			<openStatus default="close" />
+		</door>
+		<door id="25180002">
+			<openStatus default="close" />
+		</door>
+		<door id="25180003">
+			<openStatus default="close" />
+		</door>
+		<door id="25180004">
+			<openStatus default="close" />
+		</door>
+		<door id="25180005">
+			<openStatus default="close" />
+		</door>
+		<door id="25180006">
+			<openStatus default="close" />
+		</door>
+		<door id="25180007">
+			<openStatus default="close" />
+		</door>
+	</doorlist>
+	<spawnlist>
+		<group name="general" spawnByDefault="false">
+			<npc id="25856" x="177833" y="14852" z="-13688" heading="0"/> <!-- Isadora -->
+			<npc id="25855" x="178432" y="14848" z="-13688" heading="0"/> <!-- Maliss -->
+			<npc id="34331" x="179521" y="13610" z="-7392" heading="33344"/> <!-- Logart Van Dyke -->
+			<npc id="34331" x="179543" y="13552" z="-9824" heading="32460"/> <!-- Logart Van Dyke -->
+			<npc id="34331" x="179519" y="12797" z="-12768" heading="32712"/> <!-- Logart Van Dyke -->
+			<npc id="34332" x="178149" y="16676" z="-13648" heading="16600"/> <!-- Dinford -->
+			<npc id="19121" x="178150" y="13600" z="-8016" heading="13828"/> <!-- Altar of Sacrifice -->
+			<npc id="19122" x="178150" y="13600" z="-10448" heading="16772"/> <!-- Altar of Sacrifice -->
+			<npc id="19123" x="178150" y="12840" z="-13392" heading="44317"/> <!-- Altar of Sacrifice -->
+			<npc id="19142" x="177584" y="14400" z="-8088" heading="0"/> <!-- Sacrificial Offering -->
+			<npc id="19143" x="177864" y="14534" z="-8088" heading="0"/> <!-- Sacrificial Offering -->
+			<npc id="19144" x="178149" y="14401" z="-8088" heading="0"/> <!-- Sacrificial Offering -->
+			<npc id="19145" x="178439" y="14528" z="-8088" heading="0"/> <!-- Sacrificial Offering -->
+			<npc id="19146" x="178713" y="14417" z="-8088" heading="0"/> <!-- Sacrificial Offering -->
+			<npc id="19147" x="177589" y="14407" z="-10520" heading="0"/> <!-- Sacrificial Offering -->
+			<npc id="19148" x="177863" y="14541" z="-10520" heading="0"/> <!-- Sacrificial Offering -->
+			<npc id="19149" x="178153" y="14415" z="-10520" heading="0"/> <!-- Sacrificial Offering -->
+			<npc id="19150" x="178442" y="14528" z="-10520" heading="0"/> <!-- Sacrificial Offering -->
+			<npc id="19151" x="178712" y="14408" z="-10520" heading="0"/> <!-- Sacrificial Offering -->
+		</group>
+		<group name="first_floor" spawnByDefault="false">
+			<!-- 1st floor 1st room -->
+			<npc id="23142" x="181315" y="14009" z="-7616" heading="23913" /> <!-- Embryo Guard -->
+			<npc id="23142" x="182829" y="14851" z="-7616" heading="23465" /> <!-- Embryo Guard -->
+			<npc id="23142" x="181806" y="14543" z="-7608" heading="39123" /> <!-- Embryo Guard -->
+			<npc id="23142" x="181944" y="15457" z="-7616" heading="54183" /> <!-- Embryo Guard -->
+			<npc id="23142" x="180840" y="14674" z="-7616" heading="55476" /> <!-- Embryo Guard -->
+			<npc id="23142" x="181424" y="13863" z="-7616" heading="21874" /> <!-- Embryo Guard -->
+			<npc id="23141" x="181541" y="14179" z="-7616" heading="23691" /> <!-- Embryo Fighter -->
+			<npc id="23141" x="181614" y="14795" z="-7608" heading="37559" /> <!-- Embryo Fighter -->
+			<npc id="23141" x="182055" y="15303" z="-7616" heading="55513" /> <!-- Embryo Fighter -->
+			<npc id="23141" x="182229" y="15643" z="-7616" heading="55481" /> <!-- Embryo Fighter -->
+			<npc id="23141" x="182417" y="14797" z="-7616" heading="21914" /> <!-- Embryo Fighter -->
+			<npc id="23141" x="182521" y="14650" z="-7616" heading="24720" /> <!-- Embryo Fighter -->
+			<npc id="23141" x="181076" y="14829" z="-7616" heading="55433" /> <!-- Embryo Fighter -->
+			<npc id="23141" x="181181" y="14683" z="-7616" heading="55609" /> <!-- Embryo Fighter -->
+			<npc id="23140" x="181649" y="14031" z="-7616" heading="22548" /> <!-- Embryo Watchman -->
+			<npc id="23140" x="180953" y="14515" z="-7616" heading="55493" /> <!-- Embryo Watchman -->
+			<npc id="23140" x="182713" y="15019" z="-7616" heading="22606" /> <!-- Embryo Watchman -->
+			<npc id="23140" x="181871" y="14999" z="-7608" heading="39090" /> <!-- Embryo Watchman -->
+			<npc id="23140" x="182342" y="15487" z="-7616" heading="55459" /> <!-- Embryo Watchman -->
+			<npc id="23139" x="182070" y="14727" z="-7608" heading="39831" /> <!-- Embryo Researcher -->
+			<npc id="23131" x="181834" y="14767" z="-7608" heading="37586" /> <!-- Embryo Executor Captain -->
+			<!-- 1st floor 2st room -->
+			<npc id="23142" x="182413" y="17524" z="-7864" heading="55494" /> <!-- Embryo Guard -->
+			<npc id="23142" x="181674" y="18255" z="-7872" heading="6330" /> <!-- Embryo Guard -->
+			<npc id="23142" x="183339" y="17361" z="-7872" heading="8091" /> <!-- Embryo Guard -->
+			<npc id="23142" x="182531" y="16784" z="-7872" heading="8091" /> <!-- Embryo Guard -->
+			<npc id="23142" x="182558" y="18468" z="-7872" heading="39871" /> <!-- Embryo Guard -->
+			<npc id="23141" x="182495" y="17988" z="-7864" heading="56703" /> <!-- Embryo Fighter -->
+			<npc id="23141" x="183142" y="17635" z="-7872" heading="39519" /> <!-- Embryo Fighter -->
+			<npc id="23141" x="182485" y="17168" z="-7872" heading="7171" /> <!-- Embryo Fighter -->
+			<npc id="23141" x="182226" y="18648" z="-7872" heading="38766" /> <!-- Embryo Fighter -->
+			<npc id="23141" x="181910" y="17967" z="-7872" heading="5242" /> <!-- Embryo Fighter -->
+			<npc id="23140" x="182688" y="16898" z="-7872" heading="7195" /> <!-- Embryo Watchman -->
+			<npc id="23140" x="183187" y="17254" z="-7872" heading="38269" /> <!-- Embryo Watchman -->
+			<npc id="23140" x="182224" y="17786" z="-7864" heading="55748" /> <!-- Embryo Watchman -->
+			<npc id="23140" x="181548" y="18164" z="-7872" heading="7239" /> <!-- Embryo Watchman -->
+			<npc id="23140" x="182357" y="18743" z="-7872" heading="38963" /> <!-- Embryo Watchman -->
+			<npc id="23139" x="182421" y="18369" z="-7872" heading="39556" /> <!-- Embryo Researcher -->
+			<npc id="23139" x="181772" y="17873" z="-7872" heading="7271" /> <!-- Embryo Researcher -->
+			<npc id="23139" x="182338" y="17063" z="-7872" heading="6940" /> <!-- Embryo Researcher -->
+			<npc id="23139" x="182991" y="17529" z="-7872" heading="39974" /> <!-- Embryo Researcher -->
+			<npc id="23139" x="182687" y="17717" z="-7864" heading="55632" /> <!-- Embryo Researcher -->
+			<npc id="23131" x="182453" y="17756" z="-7864" heading="55808" /> <!-- Embryo Executor Captain -->
+			<!-- 1st floor 3st room -->
+			<npc id="23142" x="179668" y="18331" z="-8128" heading="6204" /> <!-- Embryo Guard -->
+			<npc id="23142" x="178844" y="18342" z="-8136" heading="56681" /> <!-- Embryo Guard -->
+			<npc id="23142" x="179236" y="17838" z="-8136" heading="20051" /> <!-- Embryo Guard -->
+			<npc id="23142" x="179645" y="18913" z="-8136" heading="56524" /> <!-- Embryo Guard -->
+			<npc id="23142" x="180290" y="18601" z="-8136" heading="23360" /> <!-- Embryo Guard -->
+			<npc id="23141" x="180009" y="18407" z="-8136" heading="23354" /> <!-- Embryo Fighter -->
+			<npc id="23141" x="179922" y="19106" z="-8136" heading="55523" /> <!-- Embryo Fighter -->
+			<npc id="23141" x="179405" y="18141" z="-8128" heading="6007" /> <!-- Embryo Fighter -->
+			<npc id="23141" x="178487" y="18304" z="-8136" heading="56001" /> <!-- Embryo Fighter -->
+			<npc id="23141" x="179061" y="17503" z="-8136" heading="21608" /> <!-- Embryo Fighter -->
+			<npc id="23140" x="178743" y="18481" z="-8136" heading="54910" /> <!-- Embryo Watchman -->
+			<npc id="23140" x="178956" y="17649" z="-8136" heading="23285" /> <!-- Embryo Watchman -->
+			<npc id="23140" x="179473" y="18605" z="-8128" heading="7076" /> <!-- Embryo Watchman -->
+			<npc id="23140" x="179818" y="19256" z="-8136" heading="56591" /> <!-- Embryo Watchman -->
+			<npc id="23140" x="180394" y="18452" z="-8136" heading="24120" /> <!-- Embryo Watchman -->
+			<npc id="23139" x="179539" y="19062" z="-8136" heading="55014" /> <!-- Embryo Researcher -->
+			<npc id="23139" x="179205" y="18414" z="-8128" heading="6803" /> <!-- Embryo Researcher -->
+			<npc id="23139" x="180118" y="18255" z="-8136" heading="23660" /> <!-- Embryo Researcher -->
+			<npc id="23139" x="178594" y="18156" z="-8136" heading="56048" /> <!-- Embryo Researcher -->
+			<npc id="23139" x="179337" y="17699" z="-8136" heading="22822" /> <!-- Embryo Researcher -->
+			<npc id="23131" x="179442" y="18374" z="-8128" heading="4506" /> <!-- Embryo Executor Captain -->
+			<!-- 1st floor 4st room -->
+			<npc id="23141" x="177740" y="15229" z="-8312" heading="65530" /> <!-- Embryo Fighter -->
+			<npc id="23141" x="178548" y="15228" z="-8312" heading="32481" /> <!-- Embryo Fighter -->
+			<npc id="23142" x="178574" y="15774" z="-8312" heading="32849" /> <!-- Embryo Guard -->
+			<npc id="23142" x="177427" y="15227" z="-8312" heading="2497" /> <!-- Embryo Guard -->
+			<npc id="23140" x="177708" y="15783" z="-8312" heading="1499" /> <!-- Embryo Watchman -->
+			<npc id="23140" x="178827" y="15787" z="-8312" heading="13834" /> <!-- Embryo Watchman -->
+			<npc id="23139" x="178846" y="15216" z="-8312" heading="32391" /> <!-- Embryo Researcher -->
+			<npc id="23139" x="177445" y="15787" z="-8312" heading="669" /> <!-- Embryo Researcher -->
+			<!-- 1st floor boss -->
+			<npc id="25857" x="178146" y="15000" z="-8312" heading="18233" /> <!-- Corrupted Captain -->
+		</group>
+		<group name="second_floor" spawnByDefault="false">
+			<!-- 2st floor 1st room -->
+			<npc id="23129" x="181632" y="14245" z="-10048" heading="24446" /> <!-- Embryo Elite Alchemist -->
+			<npc id="23129" x="181669" y="14792" z="-10040" heading="39262" /> <!-- Embryo Elite Alchemist -->
+			<npc id="23129" x="182053" y="15304" z="-10048" heading="55811" /> <!-- Embryo Elite Alchemist -->
+			<npc id="23129" x="182857" y="14866" z="-10048" heading="22442" /> <!-- Embryo Elite Alchemist -->
+			<npc id="23129" x="181156" y="14912" z="-10048" heading="55993" /> <!-- Embryo Elite Alchemist -->
+			<npc id="23127" x="181272" y="14754" z="-10048" heading="55845" /> <!-- Embryo Elite Chaser -->
+			<npc id="23127" x="182351" y="15523" z="-10048" heading="55330" /> <!-- Embryo Elite Chaser -->
+			<npc id="23127" x="181355" y="14048" z="-10048" heading="22899" /> <!-- Embryo Elite Chaser -->
+			<npc id="23127" x="182534" y="14638" z="-10048" heading="23741" /> <!-- Embryo Elite Chaser -->
+			<npc id="23127" x="181998" y="14734" z="-10040" heading="39347" /> <!-- Embryo Elite Chaser -->
+			<npc id="23128" x="181805" y="14600" z="-10040" heading="37848" /> <!-- Embryo Elite Warrior -->
+			<npc id="23128" x="181860" y="14928" z="-10040" heading="39680" /> <!-- Embryo Elite Warrior -->
+			<npc id="23128" x="182414" y="14801" z="-10048" heading="26424" /> <!-- Embryo Elite Warrior -->
+			<npc id="23128" x="182238" y="15682" z="-10048" heading="55327" /> <!-- Embryo Elite Warrior -->
+			<npc id="23128" x="180995" y="14557" z="-10048" heading="55965" /> <!-- Embryo Elite Warrior -->
+			<npc id="23128" x="181746" y="14095" z="-10048" heading="21944" /> <!-- Embryo Elite Warrior -->
+			<npc id="23126" x="181444" y="13882" z="-10048" heading="23910" /> <!-- Embryo Elite Escort -->
+			<npc id="23126" x="180906" y="14732" z="-10048" heading="56442" /> <!-- Embryo Elite Escort -->
+			<npc id="23126" x="182712" y="15019" z="-10048" heading="23218" /> <!-- Embryo Elite Escort -->
+			<npc id="23126" x="181936" y="15470" z="-10048" heading="55180" /> <!-- Embryo Elite Escort -->
+			<!-- 2st floor 2st room -->
+			<npc id="23129" x="182665" y="16916" z="-10304" heading="5486" /> <!-- Embryo Elite Alchemist -->
+			<npc id="23129" x="182205" y="18632" z="-10304" heading="38327" /> <!-- Embryo Elite Alchemist -->
+			<npc id="23129" x="182417" y="18332" z="-10304" heading="38704" /> <!-- Embryo Elite Alchemist -->
+			<npc id="23129" x="181702" y="18273" z="-10304" heading="6517" /> <!-- Embryo Elite Alchemist -->
+			<npc id="23129" x="182501" y="16797" z="-10304" heading="6671" /> <!-- Embryo Elite Alchemist -->
+			<npc id="23129" x="182991" y="17528" z="-10304" heading="39098" /> <!-- Embryo Elite Alchemist -->
+			<npc id="23129" x="183160" y="17474" z="-10304" heading="39074" /> <!-- Embryo Elite Alchemist -->
+			<npc id="23127" x="181917" y="17975" z="-10304" heading="6011" /> <!-- Embryo Elite Chaser -->
+			<npc id="23127" x="182578" y="18447" z="-10304" heading="40250" /> <!-- Embryo Elite Chaser -->
+			<npc id="23127" x="182384" y="18553" z="-10304" heading="40030" /> <!-- Embryo Elite Chaser -->
+			<npc id="23127" x="182517" y="16983" z="-10304" heading="6049" /> <!-- Embryo Elite Chaser -->
+			<npc id="23127" x="183176" y="17270" z="-10304" heading="41931" /> <!-- Embryo Elite Chaser -->
+			<npc id="23128" x="183153" y="17644" z="-10304" heading="40362" /> <!-- Embryo Elite Warrior -->
+			<npc id="23128" x="182327" y="17051" z="-10304" heading="6919" /> <!-- Embryo Elite Warrior -->
+			<npc id="23128" x="182360" y="18743" z="-10304" heading="38293" /> <!-- Embryo Elite Warrior -->
+			<npc id="23128" x="181540" y="18157" z="-10304" heading="6379" /> <!-- Embryo Elite Warrior -->
+			<npc id="23126" x="181755" y="17860" z="-10304" heading="4711" /> <!-- Embryo Elite Escort -->
+			<npc id="23126" x="181747" y="18063" z="-10304" heading="6737" /> <!-- Embryo Elite Escort -->
+			<npc id="23126" x="182486" y="17168" z="-10304" heading="5041" /> <!-- Embryo Elite Escort -->
+			<npc id="23126" x="183333" y="17391" z="-10304" heading="38209" /> <!-- Embryo Elite Escort -->
+			<npc id="23138" x="182409" y="18255" z="-10304" heading="30021" /> <!-- Etina Bladesmen -->
+			<npc id="23138" x="182000" y="17922" z="-10304" heading="22511" /> <!-- Etina Bladesmen -->
+			<!-- 2st floor 3st room -->
+			<npc id="23130" x="179540" y="19060" z="-10568" heading="53859" /> <!-- Embryo Elite High Priest -->
+			<npc id="23130" x="178546" y="18123" z="-10568" heading="55565" /> <!-- Embryo Elite High Priest -->
+			<npc id="23130" x="178906" y="17620" z="-10568" heading="23026" /> <!-- Embryo Elite High Priest -->
+			<npc id="23129" x="178437" y="18275" z="-10568" heading="54969" /> <!-- Embryo Elite Alchemist -->
+			<npc id="23129" x="179025" y="17458" z="-10568" heading="22279" /> <!-- Embryo Elite Alchemist -->
+			<npc id="23129" x="179274" y="18400" z="-10560" heading="7344" /> <!-- Embryo Elite Alchemist -->
+			<npc id="23129" x="180125" y="18247" z="-10568" heading="23203" /> <!-- Embryo Elite Alchemist -->
+			<npc id="23128" x="179414" y="18206" z="-10560" heading="5824" /> <!-- Embryo Elite Warrior -->
+			<npc id="23128" x="180010" y="18405" z="-10568" heading="22892" /> <!-- Embryo Elite Warrior -->
+			<npc id="23128" x="178761" y="18499" z="-10568" heading="54666" /> <!-- Embryo Elite Warrior -->
+			<npc id="23128" x="179857" y="19296" z="-10568" heading="54800" /> <!-- Embryo Elite Warrior -->
+			<npc id="23127" x="179601" y="18340" z="-10560" heading="6348" /> <!-- Embryo Elite Chaser -->
+			<npc id="23127" x="179345" y="17689" z="-10568" heading="22336" /> <!-- Embryo Elite Chaser -->
+			<npc id="23127" x="179646" y="18908" z="-10568" heading="53631" /> <!-- Embryo Elite Chaser -->
+			<npc id="23127" x="180335" y="18581" z="-10568" heading="22933" /> <!-- Embryo Elite Chaser -->
+			<npc id="23126" x="179974" y="19139" z="-10568" heading="57307" /> <!-- Embryo Elite Escort -->
+			<npc id="23126" x="180427" y="18455" z="-10568" heading="25307" /> <!-- Embryo Elite Escort -->
+			<npc id="23126" x="179466" y="18541" z="-10560" heading="6681" /> <!-- Embryo Elite Escort -->
+			<npc id="23126" x="179229" y="17845" z="-10568" heading="22563" /> <!-- Embryo Elite Escort -->
+			<npc id="23131" x="178871" y="18353" z="-10568" heading="57361" /> <!-- Embryo Executor Captain -->
+			<npc id="23138" x="179050" y="18309" z="-10568" heading="38891" /> <!-- Etina Bladesmen -->
+			<!-- 2st floor 4st room -->
+			<npc id="23130" x="178536" y="15981" z="-10744" heading="31126" /> <!-- Embryo Elite High Priest -->
+			<npc id="23126" x="178549" y="15688" z="-10744" heading="33033" /> <!-- Embryo Elite Escort -->
+			<npc id="23130" x="178522" y="15390" z="-10744" heading="33219" /> <!-- Embryo Elite High Priest -->
+			<npc id="23128" x="178993" y="15706" z="-10744" heading="32714" /> <!-- Embryo Elite Warrior -->
+			<npc id="23128" x="178735" y="15533" z="-10744" heading="33312" /> <!-- Embryo Elite Warrior -->
+			<npc id="23127" x="178728" y="15847" z="-10744" heading="33290" /> <!-- Embryo Elite Chaser -->
+			<npc id="23127" x="178978" y="15981" z="-10744" heading="32904" /> <!-- Embryo Elite Chaser -->
+			<npc id="23129" x="178998" y="15408" z="-10744" heading="33170" /> <!-- Embryo Elite Alchemist -->
+			<npc id="23128" x="177722" y="15379" z="-10744" heading="217" /> <!-- Embryo Elite Warrior -->
+			<npc id="23127" x="177732" y="15672" z="-10744" heading="64457" /> <!-- Embryo Elite Chaser -->
+			<npc id="23130" x="177738" y="15981" z="-10744" heading="65477" /> <!-- Embryo Elite High Priest -->
+			<npc id="23130" x="177499" y="15494" z="-10744" heading="64083" /> <!-- Embryo Elite High Priest -->
+			<npc id="23129" x="177498" y="15843" z="-10744" heading="65509" /> <!-- Embryo Elite Alchemist -->
+			<npc id="23128" x="177269" y="15981" z="-10744" heading="789" /> <!-- Embryo Elite Warrior -->
+			<npc id="23126" x="177261" y="15656" z="-10744" heading="64191" /> <!-- Embryo Elite Escort -->
+			<npc id="23129" x="177267" y="15372" z="-10744" heading="1549" /> <!-- Embryo Elite Alchemist -->
+			<!-- 2st floor boss -->
+			<npc id="25858" x="178154" y="15149" z="-10744" heading="15626" /> <!-- Corrupted High Priest -->
+		</group>
+		<group name="thrid_floor" spawnByDefault="false">
+			<npc id="8561" x="181547" y="14035" z="-12992" heading="0" /> <!-- invisible1 -->
+			<npc id="8561" x="182615" y="14779" z="-12992" heading="0" /> <!-- invisible1 -->
+			<npc id="8561" x="182122" y="15470" z="-12992" heading="0" /> <!-- invisible1 -->
+			<npc id="8561" x="181071" y="14765" z="-12992" heading="0" /> <!-- invisible1 -->
+			<npc id="8561" x="183207" y="17472" z="-13248" heading="0" /> <!-- invisible1 -->
+			<npc id="8561" x="182485" y="17000" z="-13248" heading="0" /> <!-- invisible1 -->
+			<npc id="8561" x="181721" y="18030" z="-13248" heading="0" /> <!-- invisible1 -->
+			<npc id="8561" x="182408" y="18565" z="-13248" heading="0" /> <!-- invisible1 -->
+			<npc id="8561" x="179690" y="19125" z="-13512" heading="0" /> <!-- invisible1 -->
+			<npc id="8561" x="180233" y="18389" z="-13512" heading="0" /> <!-- invisible1 -->
+			<npc id="8561" x="179107" y="17593" z="-13512" heading="0" /> <!-- invisible1 -->
+			<npc id="8561" x="178607" y="18350" z="-13512" heading="0" /> <!-- invisible1 -->
+		</group>
+	</spawnlist>
+</instance>

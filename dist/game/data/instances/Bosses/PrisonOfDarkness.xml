@@ -1,0 +1,836 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Prison of Darkness -->
+<instance id="159" maxWorlds="50" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/instance.xsd">
+	<time duration="120" empty="3" />
+	<locations>
+		<enter type="FIXED">
+			<location x="221727" y="113431" z="-1953" />
+		</enter>
+		<exit type="ORIGIN" />
+	</locations>
+	<conditions>
+		<condition type="Party" />
+		<condition type="GroupMin">
+			<param name="limit" value="7" />
+		</condition>
+		<condition type="GroupMax">
+			<param name="limit" value="7" />
+		</condition>
+		<condition type="Level">
+			<param name="min" value="90" />
+			<param name="max" value="94" />
+		</condition>
+		<condition type="Item" showMessageAndHtml="true">
+			<param name="id" value="17612"/> <!-- Memory Fragment -->
+			<param name="count" value="1"/>
+			<param name="take" value="true"/>
+			<param name="html" value="condNoItem.htm" />
+		</condition>
+		<condition type="Distance" />
+		<condition type="Reenter" />
+	</conditions>
+	<reenter apply="ON_FINISH">
+		<reset day="MONDAY" hour="6" minute="30" />
+		<reset day="TUESDAY" hour="6" minute="30" />
+		<reset day="WEDNESDAY" hour="6" minute="30" />
+		<reset day="THURSDAY" hour="6" minute="30" />
+		<reset day="FRIDAY" hour="6" minute="30" />
+		<reset day="SATURDAY" hour="6" minute="30" />
+		<reset day="SUNDAY" hour="6" minute="30" />
+	</reenter>
+	<doorlist>
+		<door id="26190001">
+			<openStatus default="close" />
+		</door>
+		<door id="26190002">
+			<openStatus default="close" />
+		</door>
+		<door id="26190003">
+			<openStatus default="close" />
+		</door>
+		<door id="26190004">
+			<openStatus default="close" />
+		</door>
+		<door id="26190005">
+			<openStatus default="close" />
+		</door>
+		<door id="26190006">
+			<openStatus default="close" />
+		</door>
+		<door id="26190007">
+			<openStatus default="close" />
+		</door>
+		<door id="26190010">
+			<openStatus default="close" />
+		</door>
+		<door id="26210021">
+			<openStatus default="close" />
+		</door>
+		<door id="26210022">
+			<openStatus default="open" />
+		</door>
+		<door id="26210023">
+			<openStatus default="close" />
+		</door>
+		<door id="26210024">
+			<openStatus default="open" />
+		</door>
+		<door id="26210025">
+			<openStatus default="open" />
+		</door>
+		<door id="26210026">
+			<openStatus default="close" />
+		</door>
+		<door id="26210027">
+			<openStatus default="close" />
+		</door>
+		<door id="26210028">
+			<openStatus default="open" />
+		</door>
+		<door id="26210029">
+			<openStatus default="close" />
+		</door>
+		<door id="26210030">
+			<openStatus default="close" />
+		</door>
+		<door id="26210031">
+			<openStatus default="close" />
+		</door> 
+		<door id="26210032">
+			<openStatus default="open" />
+		</door>
+		<door id="26210033">
+			<openStatus default="open" />
+		</door>
+		<door id="26210041">
+			<openStatus default="open" />
+		</door>
+		<door id="26210042">
+			<openStatus default="open" />
+		</door>
+		<door id="26210043">
+			<openStatus default="open" />
+		</door>
+		<door id="26210044">
+			<openStatus default="open" />
+		</door>
+	</doorlist>
+	<spawnlist>
+		<group name="magmeld_2522_01m1">
+			<territories>
+				<territory name="magmeld_2522_01" minZ="-1790" maxZ="-1590">
+					<node x="217812" y="119060" />
+					<node x="218142" y="119387" />
+					<node x="217829" y="119770" />
+					<node x="217430" y="119395" />
+				</territory>
+			</territories>
+			<npc id="19018" respawnTime="36sec" count="1" /> <!-- Lizard Charmer -->
+			<npc id="19019" respawnTime="36sec" count="1" /> <!-- Lizard Spearman -->
+			<npc id="33239" x="217976" y="119275" z="-1760" respawnTime="36sec" count="1" /> <!-- -->
+		</group>
+		<group name="magmeld_2522_02m1">
+			<territories>
+				<territory name="magmeld_2522_02" minZ="-1374" maxZ="-1174">
+					<node x="209554" y="118818" />
+					<node x="210178" y="119409" />
+					<node x="209591" y="120012" />
+					<node x="208980" y="119418" />
+				</territory>
+			</territories>
+			<npc id="19018" respawnTime="36sec" count="1" /> <!-- Lizard Charmer -->
+			<npc id="19020" respawnTime="36sec" count="1" /> <!-- Lizard Spearman -->
+			<npc id="33278" x="209486" y="119184" z="-1352" respawnTime="36sec" count="1" /> <!-- -->
+		</group>
+		<group name="magmeld_2522_03m1">
+			<territories>
+				<territory name="magmeld_2522_03" minZ="-914" maxZ="-714">
+					<node x="213003" y="114101" />
+					<node x="214349" y="114096" />
+					<node x="214964" y="114956" />
+					<node x="212479" y="114972" />
+				</territory>
+			</territories>
+			<npc id="19018" respawnTime="36sec" count="1" /> <!-- Lizard Charmer -->
+			<npc id="19019" respawnTime="36sec" count="1" /> <!-- Lizard Spearman -->
+			<npc id="33279" x="213707" y="114867" z="-848" respawnTime="36sec" count="1" /> <!-- -->
+		</group>
+		<group name="magmeld_2522_04m1">
+			<territories>
+				<territory name="magmeld_2522_04" minZ="-1368" maxZ="-1168">
+					<node x="217769" y="110626" />
+					<node x="218393" y="111218" />
+					<node x="217806" y="111820" />
+					<node x="217195" y="111227" />
+				</territory>
+			</territories>
+			<npc id="33222" x="218102" y="111314" z="-1310" respawnTime="36sec" count="1" /> <!-- -->
+			<npc id="19018" respawnTime="36sec" count="1" /> <!-- Lizard Charmer -->
+			<npc id="19019" respawnTime="36sec" count="1" /> <!-- Lizard Spearman -->
+			<npc id="32947" respawnTime="36sec" count="1" /> <!-- -->
+		</group>
+		<group name="magmeld_2521_01m1">
+			<territories>
+				<territory name="magmeld_2521_01" minZ="-2126" maxZ="-1726">
+					<node x="221336" y="113258" />
+					<node x="222297" y="113229" />
+					<node x="222313" y="114008" />
+					<node x="221400" y="114045" />
+				</territory>
+			</territories>
+			<npc id="32944" x="221727" y="113431" z="-2034" respawnTime="1min" count="1" /> <!-- Exit Portal -->
+		</group>
+		<group name="magmeld_2521_02m1">
+			<territories>
+				<territory name="magmeld_2521_02" minZ="-1333" maxZ="-1133">
+					<node x="217713" y="112080" />
+					<node x="218538" y="112073" />
+					<node x="218538" y="112849" />
+					<node x="217726" y="112887" />
+				</territory>
+			</territories>
+			<npc id="19018" respawnTime="36sec" count="1" /> <!-- Lizard Charmer -->
+			<npc id="19019" respawnTime="36sec" count="2" /> <!-- Lizard Spearman -->
+		</group>
+		<group name="magmeld_2521_03m1">
+			<territories>
+				<territory name="magmeld_2521_03" minZ="-1333" maxZ="-1133">
+					<node x="219057" y="112289" />
+					<node x="219592" y="112262" />
+					<node x="219017" y="112873" />
+					<node x="218760" y="112592" />
+				</territory>
+			</territories>
+			<npc id="19018" respawnTime="36sec" count="2" /> <!-- Lizard Charmer -->
+			<npc id="19019" respawnTime="36sec" count="1" /> <!-- Lizard Spearman -->
+		</group>
+		<group name="magmeld_2521_04m1">
+			<territories>
+				<territory name="magmeld_2521_04" minZ="-1337" maxZ="-1137">
+					<node x="218588" y="110497" />
+					<node x="219549" y="110468" />
+					<node x="219565" y="111246" />
+					<node x="218652" y="111284" />
+				</territory>
+			</territories>
+			<npc id="19018" respawnTime="36sec" count="1" /> <!-- Lizard Charmer -->
+			<npc id="19019" respawnTime="36sec" count="2" /> <!-- Lizard Spearman -->
+		</group>
+		<group name="magmeld_2521_05m1">
+			<territories>
+				<territory name="magmeld_2521_05" minZ="-1321" maxZ="-1121">
+					<node x="218794" y="109451" />
+					<node x="219181" y="109499" />
+					<node x="219493" y="110159" />
+					<node x="218866" y="110117" />
+				</territory>
+			</territories>
+			<npc id="19018" respawnTime="36sec" count="2" /> <!-- Lizard Charmer -->
+			<npc id="19019" respawnTime="36sec" count="1" /> <!-- Lizard Spearman -->
+		</group>
+		<group name="magmeld_2521_06m1">
+			<territories>
+				<territory name="magmeld_2521_06" minZ="-1323" maxZ="-1123">
+					<node x="218010" y="109434" />
+					<node x="218595" y="109421" />
+					<node x="218516" y="110468" />
+					<node x="218105" y="110375" />
+				</territory>
+			</territories>
+			<npc id="19018" respawnTime="36sec" count="1" /> <!-- Lizard Charmer -->
+			<npc id="19019" respawnTime="36sec" count="2" /> <!-- Lizard Spearman -->
+		</group>
+		<group name="magmeld_2521_07m1">
+			<territories>
+				<territory name="magmeld_2521_07" minZ="-1331" maxZ="-1131">
+					<node x="217047" y="109433" />
+					<node x="217847" y="109435" />
+					<node x="217843" y="110051" />
+					<node x="217049" y="110053" />
+				</territory>
+			</territories>
+			<npc id="19018" respawnTime="36sec" count="1" /> <!-- Lizard Charmer -->
+			<npc id="19019" respawnTime="36sec" count="2" /> <!-- Lizard Spearman -->
+		</group>
+		<group name="magmeld_2521_08m1">
+			<territories>
+				<territory name="magmeld_2521_08" minZ="-1333" maxZ="-1133">
+					<node x="216210" y="109646" />
+					<node x="216643" y="109492" />
+					<node x="216676" y="110044" />
+					<node x="216032" y="110154" />
+				</territory>
+			</territories>
+			<npc id="19018" respawnTime="36sec" count="2" /> <!-- Lizard Charmer -->
+			<npc id="19019" respawnTime="36sec" count="1" /> <!-- Lizard Spearman -->
+		</group>
+		<group name="magmeld_2521_09m1">
+			<territories>
+				<territory name="magmeld_2521_09" minZ="-1344" maxZ="-1144">
+					<node x="216006" y="111183" />
+					<node x="216969" y="111153" />
+					<node x="216971" y="111887" />
+					<node x="216001" y="112043" />
+				</territory>
+			</territories>
+			<npc id="19018" respawnTime="36sec" count="2" /> <!-- Lizard Charmer -->
+			<npc id="19019" respawnTime="36sec" count="1" /> <!-- Lizard Spearman -->
+		</group>
+		<group name="magmeld_2521_10m1">
+			<territories>
+				<territory name="magmeld_2521_10" minZ="-1328" maxZ="-1128">
+					<node x="216073" y="112263" />
+					<node x="216719" y="112320" />
+					<node x="216741" y="112940" />
+					<node x="216090" y="112518" />
+				</territory>
+			</territories>
+			<npc id="19018" respawnTime="36sec" count="2" /> <!-- Lizard Charmer -->
+			<npc id="19019" respawnTime="36sec" count="1" /> <!-- Lizard Spearman -->
+		</group>
+		<group name="magmeld_2521_11m1">
+			<territories>
+				<territory name="magmeld_2521_11" minZ="-1320" maxZ="-1120">
+					<node x="216970" y="111992" />
+					<node x="217540" y="112071" />
+					<node x="217522" y="112990" />
+					<node x="217060" y="112996" />
+				</territory>
+			</territories>
+			<npc id="19018" respawnTime="36sec" count="1" /> <!-- Lizard Charmer -->
+			<npc id="19019" respawnTime="36sec" count="2" /> <!-- Lizard Spearman -->
+		</group>
+		<group name="magmeld_2521_12m1">
+			<territories>
+				<territory name="magmeld_2521_12" minZ="-1330" maxZ="-1130">
+					<node x="215998" y="110440" />
+					<node x="216974" y="110426" />
+					<node x="216959" y="110956" />
+					<node x="215992" y="110958" />
+				</territory>
+			</territories>
+			<npc id="19018" respawnTime="36sec" count="2" /> <!-- Lizard Charmer -->
+			<npc id="19019" respawnTime="36sec" count="1" /> <!-- Lizard Spearman -->
+		</group>
+		<group name="magmeld_2521_13m1">
+			<territories>
+				<territory name="magmeld_2521_13" minZ="-1335" maxZ="-1135">
+					<node x="218591" y="111554" />
+					<node x="219576" y="111486" />
+					<node x="219576" y="111978" />
+					<node x="218593" y="111969" />
+				</territory>
+			</territories>
+			<npc id="19018" respawnTime="36sec" count="2" /> <!-- Lizard Charmer -->
+			<npc id="19019" respawnTime="36sec" count="1" /> <!-- Lizard Spearman -->
+		</group>
+		<group name="magmeld_2521_14m1">
+			<territories>
+				<territory name="magmeld_2521_14" minZ="-1786" maxZ="-1586">
+					<node x="218186" y="120196" />
+					<node x="218236" y="120496" />
+					<node x="217329" y="120486" />
+					<node x="217335" y="120170" />
+				</territory>
+			</territories>
+			<npc id="19018" respawnTime="36sec" count="1" /> <!-- Lizard Charmer -->
+			<npc id="19019" respawnTime="36sec" count="2" /> <!-- Lizard Spearman -->
+		</group>
+		<group name="magmeld_2521_15m1">
+			<territories>
+				<territory name="magmeld_2521_15" minZ="-1775" maxZ="-1575">
+					<node x="218232" y="118350" />
+					<node x="218282" y="118650" />
+					<node x="217375" y="118640" />
+					<node x="217382" y="118324" />
+				</territory>
+			</territories>
+			<npc id="19018" respawnTime="36sec" count="1" /> <!-- Lizard Charmer -->
+			<npc id="19019" respawnTime="36sec" count="2" /> <!-- Lizard Spearman -->
+		</group>
+		<group name="magmeld_2521_16m1">
+			<territories>
+				<territory name="magmeld_2521_16" minZ="-1766" maxZ="-1566">
+					<node x="218196" y="120620" />
+					<node x="218245" y="120919" />
+					<node x="217338" y="120909" />
+					<node x="217345" y="120594" />
+				</territory>
+			</territories>
+			<npc id="19018" respawnTime="36sec" count="2" /> <!-- Lizard Charmer -->
+			<npc id="19019" respawnTime="36sec" count="1" /> <!-- Lizard Spearman -->
+		</group>
+		<group name="magmeld_2521_17m1">
+			<territories>
+				<territory name="magmeld_2521_17" minZ="-1762" maxZ="-1562">
+					<node x="218236" y="117922" />
+					<node x="218286" y="118222" />
+					<node x="217379" y="118212" />
+					<node x="217386" y="117896" />
+				</territory>
+			</territories>
+			<npc id="19018" respawnTime="36sec" count="2" /> <!-- Lizard Charmer -->
+			<npc id="19019" respawnTime="36sec" count="1" /> <!-- Lizard Spearman -->
+		</group>
+		<group name="magmeld_2521_18m1">
+			<territories>
+				<territory name="magmeld_2521_18" minZ="-1771" maxZ="-1571">
+					<node x="219287" y="118906" />
+					<node x="219292" y="119973" />
+					<node x="219005" y="119975" />
+					<node x="219010" y="118953" />
+				</territory>
+			</territories>
+			<npc id="19018" respawnTime="36sec" count="1" /> <!-- Lizard Charmer -->
+			<npc id="19019" respawnTime="36sec" count="2" /> <!-- Lizard Spearman -->
+		</group>
+		<group name="magmeld_2521_19m1">
+			<territories>
+				<territory name="magmeld_2521_19" minZ="-1770" maxZ="-1570">
+					<node x="217028" y="118864" />
+					<node x="217033" y="119932" />
+					<node x="216745" y="119845" />
+					<node x="216751" y="118912" />
+				</territory>
+			</territories>
+			<npc id="19018" respawnTime="36sec" count="2" /> <!-- Lizard Charmer -->
+			<npc id="19019" respawnTime="36sec" count="1" /> <!-- Lizard Spearman -->
+		</group>
+		<group name="magmeld_2521_20m1">
+			<territories>
+				<territory name="magmeld_2521_20" minZ="-1752" maxZ="-1552">
+					<node x="216591" y="118915" />
+					<node x="216596" y="119982" />
+					<node x="216309" y="119983" />
+					<node x="216314" y="118962" />
+				</territory>
+			</territories>
+			<npc id="19018" respawnTime="36sec" count="1" /> <!-- Lizard Charmer -->
+			<npc id="19019" respawnTime="36sec" count="2" /> <!-- Lizard Spearman -->
+		</group>
+		<group name="magmeld_2521_21m1">
+			<territories>
+				<territory name="magmeld_2521_21" minZ="-1779" maxZ="-1579">
+					<node x="218867" y="118975" />
+					<node x="218865" y="119848" />
+					<node x="218584" y="119993" />
+					<node x="218589" y="118972" />
+				</territory>
+			</territories>
+			<npc id="19018" respawnTime="36sec" count="1" /> <!-- Lizard Charmer -->
+			<npc id="19019" respawnTime="36sec" count="2" /> <!-- Lizard Spearman -->
+		</group>
+		<group name="magmeld_2521_22m1">
+			<territories>
+				<territory name="magmeld_2521_22" minZ="-1759" maxZ="-1559">
+					<node x="219599" y="120515" />
+					<node x="219037" y="121189" />
+					<node x="218433" y="121069" />
+					<node x="219352" y="120171" />
+				</territory>
+			</territories>
+			<npc id="19019" respawnTime="36sec" count="2" /> <!-- Lizard Spearman -->
+			<npc id="19018" respawnTime="36sec" count="1" /> <!-- Lizard Charmer -->
+		</group>
+		<group name="magmeld_2521_23m1">
+			<territories>
+				<territory name="magmeld_2521_23" minZ="-1769" maxZ="-1569">
+					<node x="218970" y="117572" />
+					<node x="219568" y="118149" />
+					<node x="219455" y="118721" />
+					<node x="218484" y="117764" />
+				</territory>
+			</territories>
+			<npc id="19018" respawnTime="36sec" count="1" /> <!-- Lizard Charmer -->
+			<npc id="19019" respawnTime="36sec" count="2" /> <!-- Lizard Spearman -->
+		</group>
+		<group name="magmeld_2521_24m1">
+			<territories>
+				<territory name="magmeld_2521_24" minZ="-1758" maxZ="-1558">
+					<node x="216997" y="117604" />
+					<node x="216546" y="118389" />
+					<node x="215972" y="118640" />
+					<node x="216203" y="117885" />
+				</territory>
+			</territories>
+			<npc id="19018" respawnTime="36sec" count="1" /> <!-- Lizard Charmer -->
+			<npc id="19019" respawnTime="36sec" count="2" /> <!-- Lizard Spearman -->
+		</group>
+		<group name="magmeld_2521_25m1">
+			<territories>
+				<territory name="magmeld_2521_25" minZ="-1762" maxZ="-1562">
+					<node x="216069" y="120031" />
+					<node x="217091" y="121090" />
+					<node x="216502" y="121142" />
+					<node x="215986" y="120459" />
+				</territory>
+			</territories>
+			<npc id="19019" respawnTime="36sec" count="1" /> <!-- Lizard Spearman -->
+			<npc id="19018" respawnTime="36sec" count="2" /> <!-- Lizard Charmer -->
+		</group>
+		<group name="magmeld_2521_26m1">
+			<territories>
+				<territory name="magmeld_2521_26" minZ="-1339" maxZ="-1139">
+					<node x="209498" y="120271" />
+					<node x="210323" y="120265" />
+					<node x="210323" y="121041" />
+					<node x="209512" y="121078" />
+				</territory>
+			</territories>
+			<npc id="19018" respawnTime="36sec" count="1" /> <!-- Lizard Charmer -->
+			<npc id="19019" respawnTime="36sec" count="2" /> <!-- Lizard Spearman -->
+		</group>
+		<group name="magmeld_2521_27m1">
+			<territories>
+				<territory name="magmeld_2521_27" minZ="-1339" maxZ="-1139">
+					<node x="210842" y="120480" />
+					<node x="211377" y="120454" />
+					<node x="210802" y="121064" />
+					<node x="210545" y="120783" />
+				</territory>
+			</territories>
+			<npc id="19019" respawnTime="36sec" count="2" /> <!-- Lizard Spearman -->
+			<npc id="19018" respawnTime="36sec" count="1" /> <!-- Lizard Charmer -->
+		</group>
+		<group name="magmeld_2521_28m1">
+			<territories>
+				<territory name="magmeld_2521_28" minZ="-1343" maxZ="-1143">
+					<node x="210374" y="118688" />
+					<node x="211334" y="118660" />
+					<node x="211350" y="119438" />
+					<node x="210437" y="119475" />
+				</territory>
+			</territories>
+			<npc id="19018" respawnTime="36sec" count="1" /> <!-- Lizard Charmer -->
+			<npc id="19019" respawnTime="36sec" count="2" /> <!-- Lizard Spearman -->
+		</group>
+		<group name="magmeld_2521_29m1">
+			<territories>
+				<territory name="magmeld_2521_29" minZ="-1329" maxZ="-1129">
+					<node x="209795" y="117626" />
+					<node x="210380" y="117613" />
+					<node x="210301" y="118659" />
+					<node x="209890" y="118567" />
+				</territory>
+			</territories>
+			<npc id="19018" respawnTime="36sec" count="2" /> <!-- Lizard Charmer -->
+			<npc id="19019" respawnTime="36sec" count="1" /> <!-- Lizard Spearman -->
+		</group>
+		<group name="magmeld_2521_30m1">
+			<territories>
+				<territory name="magmeld_2521_30" minZ="-1337" maxZ="-1137">
+					<node x="208832" y="117624" />
+					<node x="209633" y="117627" />
+					<node x="209628" y="118242" />
+					<node x="208835" y="118244" />
+				</territory>
+			</territories>
+			<npc id="19019" respawnTime="36sec" count="1" /> <!-- Lizard Spearman -->
+			<npc id="19018" respawnTime="36sec" count="2" /> <!-- Lizard Charmer -->
+		</group>
+		<group name="magmeld_2521_31m1">
+			<territories>
+				<territory name="magmeld_2521_31" minZ="-1339" maxZ="-1139">
+					<node x="207996" y="117838" />
+					<node x="208429" y="117684" />
+					<node x="208462" y="118235" />
+					<node x="207817" y="118345" />
+				</territory>
+			</territories>
+			<npc id="19018" respawnTime="36sec" count="1" /> <!-- Lizard Charmer -->
+			<npc id="19019" respawnTime="36sec" count="2" /> <!-- Lizard Spearman -->
+		</group>
+		<group name="magmeld_2521_32m1">
+			<territories>
+				<territory name="magmeld_2521_32" minZ="-1350" maxZ="-1150">
+					<node x="207791" y="119375" />
+					<node x="208754" y="119344" />
+					<node x="208756" y="120078" />
+					<node x="207786" y="120234" />
+				</territory>
+			</territories>
+			<npc id="19019" respawnTime="36sec" count="1" /> <!-- Lizard Spearman -->
+			<npc id="19018" respawnTime="36sec" count="2" /> <!-- Lizard Charmer -->
+		</group>
+		<group name="magmeld_2521_33m1">
+			<territories>
+				<territory name="magmeld_2521_33" minZ="-1334" maxZ="-1134">
+					<node x="207858" y="120454" />
+					<node x="208504" y="120511" />
+					<node x="208526" y="121131" />
+					<node x="207876" y="120709" />
+				</territory>
+			</territories>
+			<npc id="19018" respawnTime="36sec" count="1" /> <!-- Lizard Charmer -->
+			<npc id="19019" respawnTime="36sec" count="2" /> <!-- Lizard Spearman -->
+		</group>
+		<group name="magmeld_2521_34m1">
+			<territories>
+				<territory name="magmeld_2521_34" minZ="-1338" maxZ="-1138">
+					<node x="208755" y="120183" />
+					<node x="209325" y="120262" />
+					<node x="209307" y="121181" />
+					<node x="208845" y="121188" />
+				</territory>
+			</territories>
+			<npc id="19018" respawnTime="36sec" count="2" /> <!-- Lizard Charmer -->
+			<npc id="19019" respawnTime="36sec" count="1" /> <!-- Lizard Spearman -->
+		</group>
+		<group name="magmeld_2521_35m1">
+			<territories>
+				<territory name="magmeld_2521_35" minZ="-1336" maxZ="-1136">
+					<node x="207783" y="118631" />
+					<node x="208760" y="118618" />
+					<node x="208744" y="119148" />
+					<node x="207777" y="119150" />
+				</territory>
+			</territories>
+			<npc id="19019" respawnTime="36sec" count="1" /> <!-- Lizard Spearman -->
+			<npc id="19018" respawnTime="36sec" count="2" /> <!-- Lizard Charmer -->
+		</group>
+		<group name="magmeld_2521_36m1">
+			<territories>
+				<territory name="magmeld_2521_36" minZ="-1341" maxZ="-1141">
+					<node x="210376" y="119745" />
+					<node x="211361" y="119677" />
+					<node x="211362" y="120170" />
+					<node x="210378" y="120161" />
+				</territory>
+			</territories>
+			<npc id="19018" respawnTime="36sec" count="2" /> <!-- Lizard Charmer -->
+			<npc id="19019" respawnTime="36sec" count="1" /> <!-- Lizard Spearman -->
+		</group>
+		<group name="magmeld_2521_37m1">
+			<territories>
+				<territory name="magmeld_2521_37" minZ="-925" maxZ="-725">
+					<node x="212423" y="115695" />
+					<node x="214953" y="115677" />
+					<node x="214347" y="116521" />
+					<node x="213018" y="116500" />
+				</territory>
+			</territories>
+			<npc id="19018" respawnTime="36sec" count="1" /> <!-- Lizard Charmer -->
+			<npc id="19019" respawnTime="36sec" count="2" /> <!-- Lizard Spearman -->
+		</group>
+		<group name="magmeld_2521_38m1">
+			<territories>
+				<territory name="magmeld_2521_38" minZ="-916" maxZ="-716">
+					<node x="212276" y="115403" />
+					<node x="212293" y="115916" />
+					<node x="211646" y="115876" />
+					<node x="211616" y="115389" />
+				</territory>
+			</territories>
+			<npc id="19019" respawnTime="36sec" count="1" /> <!-- Lizard Spearman -->
+			<npc id="19018" respawnTime="36sec" count="2" /> <!-- Lizard Charmer -->
+		</group>
+		<group name="magmeld_2521_39m1">
+			<territories>
+				<territory name="magmeld_2521_39" minZ="-929" maxZ="-729">
+					<node x="212445" y="114285" />
+					<node x="212244" y="115223" />
+					<node x="211734" y="115233" />
+					<node x="212031" y="114196" />
+				</territory>
+			</territories>
+			<npc id="19019" respawnTime="36sec" count="1" /> <!-- Lizard Spearman -->
+			<npc id="19018" respawnTime="36sec" count="2" /> <!-- Lizard Charmer -->
+		</group>
+		<group name="magmeld_2521_40m1">
+			<territories>
+				<territory name="magmeld_2521_40" minZ="-925" maxZ="-725">
+					<node x="213656" y="113256" />
+					<node x="213604" y="113879" />
+					<node x="213050" y="113871" />
+					<node x="213123" y="113278" />
+				</territory>
+			</territories>
+			<npc id="19018" respawnTime="36sec" count="2" /> <!-- Lizard Charmer -->
+			<npc id="19019" respawnTime="36sec" count="1" /> <!-- Lizard Spearman -->
+		</group>
+		<group name="magmeld_2521_41m1">
+			<territories>
+				<territory name="magmeld_2521_41" minZ="-933" maxZ="-733">
+					<node x="214256" y="113238" />
+					<node x="214329" y="113889" />
+					<node x="213820" y="113879" />
+					<node x="213759" y="113252" />
+				</territory>
+			</territories>
+			<npc id="19018" respawnTime="36sec" count="2" /> <!-- Lizard Charmer -->
+			<npc id="19019" respawnTime="36sec" count="1" /> <!-- Lizard Spearman -->
+		</group>
+		<group name="magmeld_2521_42m1">
+			<territories>
+				<territory name="magmeld_2521_42" minZ="-925" maxZ="-725">
+					<node x="215785" y="114720" />
+					<node x="215785" y="115284" />
+					<node x="215151" y="115250" />
+					<node x="215076" y="114700" />
+				</territory>
+			</territories>
+			<npc id="19019" respawnTime="36sec" count="2" /> <!-- Lizard Spearman -->
+			<npc id="19018" respawnTime="36sec" count="1" /> <!-- Lizard Charmer -->
+		</group>
+		<group name="magmeld_2521_43m1">
+			<territories>
+				<territory name="magmeld_2521_43" minZ="-931" maxZ="-731">
+					<node x="215777" y="115368" />
+					<node x="215769" y="115978" />
+					<node x="215033" y="115980" />
+					<node x="215161" y="115418" />
+				</territory>
+			</territories>
+			<npc id="19018" respawnTime="36sec" count="1" /> <!-- Lizard Charmer -->
+			<npc id="19019" respawnTime="36sec" count="2" /> <!-- Lizard Spearman -->
+		</group>
+		<group name="magmeld_2521_44m1">
+			<territories>
+				<territory name="magmeld_2521_44" minZ="-938" maxZ="-738">
+					<node x="214705" y="116514" />
+					<node x="214963" y="116891" />
+					<node x="213824" y="117326" />
+					<node x="213992" y="116760" />
+				</territory>
+			</territories>
+			<npc id="19019" respawnTime="36sec" count="1" /> <!-- Lizard Spearman -->
+			<npc id="19018" respawnTime="36sec" count="2" /> <!-- Lizard Charmer -->
+		</group>
+		<group name="magmeld_2521_45m1">
+			<territories>
+				<territory name="magmeld_2521_45" minZ="-931" maxZ="-731">
+					<node x="213494" y="116823" />
+					<node x="213390" y="117194" />
+					<node x="212307" y="116796" />
+					<node x="212648" y="116467" />
+				</territory>
+			</territories>
+			<npc id="19018" respawnTime="36sec" count="1" /> <!-- Lizard Charmer -->
+			<npc id="19019" respawnTime="36sec" count="2" /> <!-- Lizard Spearman -->
+		</group>
+	<group name="magmeld_2619_01m1">
+		<territories>
+			<territory name="magmeld_2619_01" minZ="-8462" maxZ="-8262">
+				<node x="212639" y="50335" />
+				<node x="213451" y="50328" />
+				<node x="213445" y="51670" />
+				<node x="212642" y="51667" />
+			</territory>
+		</territories>
+		<npc id="22979" count="4" /> <!-- Novice Escort Swordsman -->
+		<npc id="22980" count="3" /> <!-- Novice Escort Wizard -->
+		<npc id="32951" x="213045" y="50441" z="-8347" count="1" /> <!-- Time Bomb -->
+	</group>
+	<group name="magmeld_2619_02m1">
+		<territories>
+			<territory name="magmeld_2619_02" minZ="-8615" maxZ="-8415">
+				<node x="206760" y="54245" />
+				<node x="208078" y="54247" />
+				<node x="208086" y="55225" />
+				<node x="206758" y="55223" />
+			</territory>
+		</territories>
+		<npc id="32953" x="206856" y="54690" z="-8502" count="1" /> <!-- Time Bomb -->
+	</group>
+	<group name="magmeld_2619_03m1">
+		<territories>
+			<territory name="magmeld_2619_03" minZ="-8748" maxZ="-8548">
+				<node x="210046" y="54107" />
+				<node x="212090" y="54101" />
+				<node x="212095" y="55249" />
+				<node x="210035" y="55262" />
+			</territory>
+		</territories>
+		<npc id="22979" x="211703" y="54656" z="-8629" heading="-32660" count="1" /> <!-- Novice Escort Swordsman -->
+		<npc id="22979" x="211767" y="54599" z="-8649" heading="-32660" count="1" /> <!-- Novice Escort Swordsman -->
+		<npc id="22979" x="211930" y="54490" z="-8596" heading="-32660" count="1" /> <!-- Novice Escort Swordsman -->
+		<npc id="22979" x="211846" y="54767" z="-8652" heading="-32660" count="1" /> <!-- Novice Escort Swordsman -->
+		<npc id="22980" x="211846" y="54544" z="-8604" heading="-32660" count="1" /> <!-- Novice Escort Wizard -->
+		<npc id="22980" x="211766" y="54717" z="-8642" heading="-32660" count="1" /> <!-- Novice Escort Wizard -->
+		<npc id="22980" x="211935" y="54833" z="-8657" heading="-32660" count="1" /> <!-- Novice Escort Wizard -->
+		<npc id="32952" x="212012" y="54655" z="-8620" count="1" /> <!-- Time Bomb -->
+	</group>
+	<group name="magmeld_2619_04m1">
+		<territories>
+			<territory name="magmeld_2619_04" minZ="-8718" maxZ="-8518">
+				<node x="207111" y="50446" />
+				<node x="208494" y="50438" />
+				<node x="208514" y="52733" />
+				<node x="207086" y="52734" />
+			</territory>
+		</territories>
+		<npc id="22981" x="207996" y="50598" z="-8553" heading="16308" count="1" /> <!-- Median Escort Swordsman -->
+		<npc id="22981" x="207775" y="50599" z="-8549" heading="16264" count="1" /> <!-- Median Escort Swordsman -->
+		<npc id="22981" x="207666" y="50598" z="-8632" heading="16264" count="1" /> <!-- Median Escort Swordsman -->
+		<npc id="22979" x="207885" y="50734" z="-8580" heading="16264" count="1" /> <!-- Novice Escort Swordsman -->
+		<npc id="22979" x="207883" y="50599" z="-8650" heading="16264" count="1" /> <!-- Novice Escort Swordsman -->
+		<npc id="22979" x="207993" y="50732" z="-8650" heading="16264" count="1" /> <!-- Novice Escort Swordsman -->
+		<npc id="22979" x="207558" y="50730" z="-8651" heading="16264" count="1" /> <!-- Novice Escort Swordsman -->
+		<npc id="22980" x="207667" y="50733" z="-8652" heading="16264" count="1" /> <!-- Novice Escort Wizard -->
+		<npc id="22980" x="207557" y="50597" z="-8651" heading="16264" count="1" /> <!-- Novice Escort Wizard -->
+		<npc id="22980" x="207772" y="50733" z="-8652" heading="16264" count="1" /> <!-- Novice Escort Wizard -->
+	</group>
+	<group name="magmeld_2619_05m1">
+		<territories>
+			<territory name="magmeld_2619_05" minZ="-8654" maxZ="-8454">
+				<node x="207069" y="47787" />
+				<node x="208506" y="47811" />
+				<node x="208514" y="50014" />
+				<node x="207121" y="50017" />
+			</territory>
+		</territories>
+		<npc id="22981" x="207902" y="47838" z="-8474" heading="16612" count="1" /> <!-- Median Escort Swordsman -->
+		<npc id="22981" x="207987" y="48902" z="-8474" heading="16612" count="1" /> <!-- Median Escort Swordsman -->
+		<npc id="22981" x="207565" y="48513" z="-8474" heading="16612" count="1" /> <!-- Median Escort Swordsman -->
+		<npc id="22979" x="208068" y="48704" z="-8473" heading="16612" count="1" /> <!-- Novice Escort Swordsman -->
+		<npc id="22979" x="207777" y="48411" z="-8474" heading="16612" count="1" /> <!-- Novice Escort Swordsman -->
+		<npc id="22979" x="207983" y="48510" z="-8496" heading="16612" count="1" /> <!-- Novice Escort Swordsman -->
+		<npc id="22979" x="207565" y="48901" z="-8474" heading="16612" count="1" /> <!-- Novice Escort Swordsman -->
+		<npc id="22980" x="207483" y="48706" z="-8473" heading="16612" count="1" /> <!-- Novice Escort Wizard -->
+		<npc id="22980" x="207776" y="48999" z="-8474" heading="16612" count="1" /> <!-- Novice Escort Wizard -->
+		<npc id="22980" x="207653" y="47840" z="-8474" heading="16612" count="1" /> <!-- Novice Escort Wizard -->
+		<npc id="22985" x="207781" y="48709" z="-8473" heading="16612" count="1" /> <!-- Spezion's Pawn -->
+	</group>
+	<group name="magmeld_2619_06m1">
+		<territories>
+			<territory name="magmeld_2619_06" minZ="-8616" maxZ="-8416">
+				<node x="206765" y="45259" />
+				<node x="208057" y="45261" />
+				<node x="208068" y="46217" />
+				<node x="206761" y="46207" />
+			</territory>
+		</territories>
+		<npc id="32955" x="207782" y="45693" z="-8516" count="1" /> <!-- Starlight's Lattice -->
+	</group>
+	<group name="magmeld_2522_08m1">
+		<territories>
+			<territory name="magmeld_2522_08" minZ="-11955" maxZ="-11155">
+				<node x="183410" y="141136" />
+				<node x="186598" y="141152" />
+				<node x="186590" y="144267" />
+				<node x="183310" y="144309" />
+			</territory>
+		</territories>
+		<npc id="32956" x="184901" y="143307" z="-11761" respawnTime="1min" count="1" /> <!-- Josephina -->
+		<npc id="33288" x="185310" y="143132" z="-11765" heading="11476" respawnTime="1min" count="1" /> <!-- Cannon -->
+		<npc id="33289" x="185301" y="142287" z="-11765" heading="-4784" respawnTime="1min" count="1" /> <!-- Cannon -->
+		<npc id="33290" x="184492" y="142291" z="-11765" heading="-24584" respawnTime="1min" count="1" /> <!-- Cannon -->
+		<npc id="33291" x="184447" y="143176" z="-11756" heading="25000" respawnTime="1min" count="1" /> <!-- Cannon -->
+	</group>
+	<group name="timebomb_1_guards" spawnByDefault="false">
+		<npc id="22983" x="214013" y="50562" z="-8434" count="1" /> <!-- Escort Warrior -->
+		<npc id="22983" x="212015" y="50502" z="-8441" count="1" /> <!-- Escort Warrior -->
+		<npc id="22983" x="213276" y="51910" z="-8406" count="1" /> <!-- Escort Warrior -->
+	</group>
+	<group name="timebomb_2_guards" spawnByDefault="false">
+		<npc id="22983" x="210981" y="54655" z="-8648" count="1" /> <!-- Escort Warrior -->
+		<npc id="22983" x="210980" y="54494" z="-8648" count="1" /> <!-- Escort Warrior -->
+		<npc id="22983" x="210980" y="54878" z="-8648" count="2" /> <!-- Escort Warrior -->
+	</group>
+	<group name="timebomb_3_guards" spawnByDefault="false">
+		<npc id="22983" x="207826" y="55020" z="-8529" count="1" /> <!-- Escort Warrior -->
+		<npc id="22983" x="207828" y="54737" z="-8532" count="1" /> <!-- Escort Warrior -->
+		<npc id="22983" x="207820" y="54416" z="-8525" count="2" /> <!-- Escort Warrior -->
+	</group>
+	</spawnlist>
+</instance>

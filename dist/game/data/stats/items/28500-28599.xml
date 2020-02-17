@@ -1,0 +1,1298 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
+	<item id="28500" name="Noble Tears" type="EtcItem">
+		<!-- It contain's Frintezza's feelings. You get a buff and it changes the appearance of your weapon. -->
+		<set name="icon" val="BranchSys2.icon.g_illumination_skyblue" />
+		<set name="material" val="PAPER" />
+	</item>
+	<item id="28501" name="Noble Compassion Chocolate" type="EtcItem">
+		<!-- Double-click to apply 'Compassion' effect to all party members. Acquired XP/ SP +10%, STR +2, INT +2, Attribute Resistance +20. Can be stacked with 'Devotion' and 'Longing' effects. -->
+		<set name="icon" val="icon.etc_whiteday_choco" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="5" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_private_storeable" val="false" />
+	</item>
+	<item id="28502" name="Noble Devotion Candy" type="EtcItem">
+		<!-- Double-click to apply 'Devotion' effect to all party members. Acquired XP/ SP +10%, STR +2, INT +2, DEX +2, WIT +2. Can be stacked with 'Compassion' and 'Longing' effects. -->
+		<set name="icon" val="icon.etc_whiteday_candy" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="5" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_private_storeable" val="false" />
+	</item>
+	<item id="28503" name="Noble Longing Cookie" type="EtcItem">
+		<!-- Double-click to apply 'Longing' effect to all party members. Acquired XP/ SP +10%, STR +2, INT +2, CON +2, MEN +2. Can be stacked with 'Compassion' and 'Devotion' effects. -->
+		<set name="icon" val="icon.etc_whiteday_cookie" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="POTION" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="5" />
+		<set name="reuse_delay" val="10000" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="for_npc" val="true" />
+		<set name="is_coc_restricted" val="true" />
+		<set name="commissionItemType" val="POTION" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="27848" level="1" /> <!-- Longing -->
+		</skills>
+	</item>
+	<item id="28504" name="Frintezza's Transformation Chocolate" type="EtcItem">
+		<!-- Contains Frintezza's limitless power. For 60 min., randomly transform into Snow Kung/ Scarecrow Jack/ Tin Golem/ Makeshift Bat/ Lady Tow/ Heavy Tow/ Sleepy Tow. -->
+		<set name="icon" val="icon.etc_whiteday_choco" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="5" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_private_storeable" val="false" />
+	</item>
+	<item id="28505" name="Frintezza's Transformation Candy" type="EtcItem">
+		<!-- Contains Frintezza's limitless power. For 60 min., randomly transform in to Snow Kung/ Scarecrow Jack/ Tin Golem/ Makeshift Bat/ Lady Tow/ Heavy Tow/ Sleepy Tow. -->
+		<set name="icon" val="icon.etc_whiteday_candy" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="5" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_private_storeable" val="false" />
+	</item>
+	<item id="28506" name="Frintezza's Transformation Cookie" type="EtcItem">
+		<!-- Contains Frintezza's limitless power. For 60 min., randomly transform in to Snow Kung/ Scarecrow Jack/ Tin Golem/ Makeshift Bat/ Lady Tow/ Heavy Tow/ Sleepy Tow. -->
+		<set name="icon" val="icon.etc_whiteday_cookie" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="5" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_private_storeable" val="false" />
+	</item>
+	<item id="28507" name="Frintezza's Friend Summon Chocolate" type="EtcItem">
+		<!-- Contains Frintezza's limitless power. You can summon a friend every 30 min. -->
+		<set name="icon" val="icon.etc_whiteday_choco" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="5" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_private_storeable" val="false" />
+	</item>
+	<item id="28508" name="Frintezza's Friend Summon Candy" type="EtcItem">
+		<!-- Contains Frintezza's limitless power. You can summon a friend every 30 min. -->
+		<set name="icon" val="icon.etc_whiteday_candy" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="5" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_private_storeable" val="false" />
+	</item>
+	<item id="28509" name="Frintezza's Friend Summon Cookie" type="EtcItem">
+		<!-- Contains Frintezza's limitless power. You can summon a friend every 30 min. -->
+		<set name="icon" val="icon.etc_whiteday_cookie" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="5" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_private_storeable" val="false" />
+	</item>
+	<item id="28510" name="Red Noblesse Appearance Stone" additionalName="30-day" type="EtcItem">
+		<!-- Use to change the appearance of your upper or full-bodyarmor into a Red Noblesse Garment. The stone modifies the appearance of all armor, and all armor appears as a Red Noblesse Garment. -->
+		<set name="icon" val="BranchSys3.icon1.g_scrl_change_chest" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="time" val="43200" />
+		<set name="is_private_storeable" val="false" />
+	</item>
+	<item id="28511" name="School Uniform A Appearance Stone" additionalName="30-day" type="EtcItem">
+		<!-- Changes the appearance of the entire armor into that of the School Uniform A. Tops and one-pieces only. It changes everything, making the appearance of all armor into that of the School Uniform A. Appearance is restored through the use of a Restoration Stone. -->
+		<set name="icon" val="BranchSys3.icon1.g_scrl_change_chest" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="time" val="43200" />
+		<set name="is_private_storeable" val="false" />
+	</item>
+	<item id="28512" name="School Uniform B Appearance Stone" additionalName="30-day" type="EtcItem">
+		<!-- Changes the appearance of the entire armor into that of the School Uniform B. Tops and one-pieces only. It changes everything, making the appearance of all armor into that of the School Uniform B. Appearance is restored through the use of a Restoration Stone. -->
+		<set name="icon" val="BranchSys3.icon1.g_scrl_change_chest" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="time" val="43200" />
+		<set name="is_private_storeable" val="false" />
+	</item>
+	<item id="28513" name="Advanced Red and Blue Cat's Eye Treasure Chest" additionalName="30-day" type="EtcItem">
+		<!-- Double-click to obtain a Greater Vital Stone (30-day fixed term) and a Blue Cat's Eye (30-day fixed term). -->
+		<set name="icon" val="icon.etc_bm_jewelbox_shhadai" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="time" val="43200" />
+		<set name="is_private_storeable" val="false" />
+	</item>
+	<item id="28514" name="Mysterious Shaper 7-day Pack" additionalName="Event" type="EtcItem">
+		<!-- Double-click to obtain a Mysterious Shaper (7-day). -->
+		<set name="icon" val="icon.etc_equip_item_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_private_storeable" val="false" />
+	</item>
+	<item id="28515" name="Mysterious Cutter 7-day Pack" additionalName="Event" type="EtcItem">
+		<!-- Double-click to obtain a Mysterious Cutter (7-day). -->
+		<set name="icon" val="icon.etc_equip_item_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_private_storeable" val="false" />
+	</item>
+	<item id="28516" name="Mysterious Slasher 7-day Pack" additionalName="Event" type="EtcItem">
+		<!-- Double-click to obtain a Mysterious Slasher (7-day). -->
+		<set name="icon" val="icon.etc_equip_item_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_private_storeable" val="false" />
+	</item>
+	<item id="28517" name="Mysterious Avenger 7-day Pack" additionalName="Event" type="EtcItem">
+		<!-- Double-click to obtain a Mysterious Avenger (7-day). -->
+		<set name="icon" val="icon.etc_equip_item_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_private_storeable" val="false" />
+	</item>
+	<item id="28518" name="Mysterious Fighter 7-day Pack" additionalName="Event" type="EtcItem">
+		<!-- Double-click to obtain a Mysterious Fighter (7-day). -->
+		<set name="icon" val="icon.etc_equip_item_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_private_storeable" val="false" />
+	</item>
+	<item id="28519" name="Mysterious Stormer 7-day Pack" additionalName="Event" type="EtcItem">
+		<!-- Double-click to obtain a Mysterious Stormer (7-day). -->
+		<set name="icon" val="icon.etc_equip_item_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_private_storeable" val="false" />
+	</item>
+	<item id="28520" name="Mysterious Thrower 7-day Pack" additionalName="Event" type="EtcItem">
+		<!-- Double-click to obtain a Mysterious Thrower (7-day). -->
+		<set name="icon" val="icon.etc_equip_item_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_private_storeable" val="false" />
+	</item>
+	<item id="28521" name="Mysterious Shooter 7-day Pack" additionalName="Event" type="EtcItem">
+		<!-- Double-click to obtain a Mysterious Shooter (7-day). -->
+		<set name="icon" val="icon.etc_equip_item_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_private_storeable" val="false" />
+	</item>
+	<item id="28522" name="Mysterious Buster 7-day Pack" additionalName="Event" type="EtcItem">
+		<!-- Double-click to obtain a Mysterious Buster (7-day). -->
+		<set name="icon" val="icon.etc_equip_item_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_private_storeable" val="false" />
+	</item>
+	<item id="28523" name="Mysterious Caster 7-day Pack" additionalName="Event" type="EtcItem">
+		<!-- Double-click to obtain a Mysterious Caster (7-day). -->
+		<set name="icon" val="icon.etc_equip_item_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_private_storeable" val="false" />
+	</item>
+	<item id="28524" name="Mysterious Retributer 7-day Pack" additionalName="Event" type="EtcItem">
+		<!-- Double-click to obtain a Mysterious Retributer (7-day). -->
+		<set name="icon" val="icon.etc_equip_item_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_private_storeable" val="false" />
+	</item>
+	<item id="28525" name="Mysterious Dual Sword 7-day Pack" additionalName="Event" type="EtcItem">
+		<!-- Double-click to obtain a Mysterious Dual Sword (7-day). -->
+		<set name="icon" val="icon.etc_equip_item_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_private_storeable" val="false" />
+	</item>
+	<item id="28526" name="Mysterious Dual Dagger 7-day Pack" additionalName="Event" type="EtcItem">
+		<!-- Double-click to obtain a Mysterious Dual Dagger (7-day). -->
+		<set name="icon" val="icon.etc_equip_item_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_private_storeable" val="false" />
+	</item>
+	<item id="28527" name="Mysterious Dual Blunt 7-day Pack" additionalName="Event" type="EtcItem">
+		<!-- Double-click to obtain a Mysterious Dual Blunt (7-day). -->
+		<set name="icon" val="icon.etc_equip_item_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_private_storeable" val="false" />
+	</item>
+	<item id="28528" name="Passion Treasure Chest" type="EtcItem">
+		<!-- Treasure Chest with Pomona's gift. -->
+		<set name="icon" val="icon.event_high_oriental_park_i00" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+	</item>
+	<item id="28529" name="Messiah's Castle's Lost Treasure Chest" type="EtcItem">
+		<!-- Double-click to obtain random lost treasures of Messiah's Castle. -->
+		<set name="icon" val="icon.bm_dragon_present" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="28530" name="Top-grade Brooch Spirit Stone" additionalName="Rare-Type" type="EtcItem">
+		<!-- Top-grade Spirit Stone for La Vie En Rose's Brooch. Can only be augmented for Radiant Brooch (Rare-type). -->
+		<set name="icon" val="Icon.bm_lavianrose_mineral_brooch" />
+		<set name="material" val="PAPER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="28531" name="Top-grade Hero's Support Box" type="EtcItem">
+		<!-- Double-click to obtain La Vie En Rose's Noble Brooch, Lv. 3 Ruby/ Sapphire/ Emerald/ Vital Stone (30-day), +6 Helios Weapon Capsule Coupon (30-day), +6 Eternal Armor Set Coupon (30-day), Tauti's Ring (14-day), Earth Wyrm Heart Ring (14-day), Warrior's Recovery Potion x100, Returning Hero's Vitality Replenishing Juice x10, Hero's Support Cube. For characters Lv. 99 or above. -->
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_private_storeable" val="false" />
+		<set name="is_freightable" val="true" />
+	</item>
+	<item id="28532" name="Ruby Lv. 3" additionalName="30-day" type="Armor">
+		<!-- When equipped, increases Soulshot and Beast Soulshot damage by 7.5%. Effect does not stack with additional jewels of the same type. -->
+		<set name="icon" val="icon.etc_bm_jewel_ruby_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="43200" />
+		<set name="is_private_storeable" val="false" />
+	</item>
+	<item id="28533" name="Sapphire Lv. 3" additionalName="30-day" type="Armor">
+		<!-- When equipped, increases Spiritshot and Blessed Spiritshot damage by 7.5%. Effect does not stack with additional jewels of the same type. -->
+		<set name="icon" val="icon.etc_bm_jewel_sapphire_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="43200" />
+		<set name="is_private_storeable" val="false" />
+	</item>
+	<item id="28534" name="Emerald Lv. 3" additionalName="30-day" type="Armor">
+		<!-- When equipped, STR +1, DEX +1, CON +1, INT +1, WIT +1, and MEN +1. Effect does not stack with additional jewels of the same type. -->
+		<set name="icon" val="icon.etc_bm_jewel_emerald_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="43200" />
+		<set name="is_private_storeable" val="false" />
+	</item>
+	<item id="28535" name="Vital Stone Lv. 3" additionalName="30-day" type="Armor">
+		<!-- Vitality Bonus +12%. Can use Vital Wind skill. Effect does not stack with additional jewels of the same type. -->
+		<set name="icon" val="icon.etc_bm_jewel_vital" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="brooch_jewel" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="GOLD" />
+		<set name="weight" val="5" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="time" val="43200" />
+		<set name="is_private_storeable" val="false" />
+	</item>
+	<item id="28536" name="Complete Letter Set: TOGETHER" type="EtcItem">
+		<!-- Magic pouch that contains the letters of TOGETHER. Double-click to get all the letters in TOGETHER. -->
+		<set name="icon" val="icon.etc_recipe_gold_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="28537" name="Complete Letter Set: LINEAGE II" type="EtcItem">
+		<!-- Magic pouch that contains the letters of LINEAGE II. Double-click to get all the letters in LINEAGE II. -->
+		<set name="icon" val="icon.etc_recipe_gold_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="28538" name="Complete Letter Set: NCSOFT" type="EtcItem">
+		<!-- Magic pouch that contains the letters of NCSOFT. Double-click to get all the letters in NCSOFT. -->
+		<set name="icon" val="icon.etc_recipe_gold_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="weight" val="10" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="28539" name="Magnificent Brooch Spirit Stone" type="EtcItem">
+		<!-- Spirit Stone needed for augmenting an Enhanced Magnificent Brooch. Can be also used for upgrading an Elegant Brooch. Bring this stone to Shadai in Heine to upgrade an Elegant Brooch to an Enhanced Magnificent Brooch. Additional fee is required. -->
+		<set name="icon" val="Icon.bm_lavianrose_mineral_brooch" />
+		<set name="material" val="LEATHER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="28540" name="Magnificent Brooch Spirit Stone" additionalName="Rare" type="EtcItem">
+		<!-- Spirit Stone needed for augmenting a Rare Magnificent Brooch. -->
+		<set name="icon" val="Icon.bm_lavianrose_mineral_brooch" />
+		<set name="material" val="LEATHER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="28541" name="Secret Embryo Bait (85)" type="EtcItem">
+		<!-- Fishing Time: 45s. Fishing Waiting Time: 15s. Fishing Bait. Used to acquire Smuggled Embryo Chests. Can be used only above level 85. -->
+		<set name="icon" val="icon.bm_gold_lure" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LEATHER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="28542" name="Secret Embryo Bait (95)" type="EtcItem">
+		<!-- Fishing Time: 45s. Fishing Waiting Time: 15s. Fishing Bait. Used to acquire Smuggled Embryo Chests. Can be used only above level 95. -->
+		<set name="icon" val="icon.bm_gold_lure" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LEATHER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="28543" name="Secret Embryo Bait (99)" type="EtcItem">
+		<!-- Fishing Time: 45s. Fishing Waiting Time: 15s. Fishing Bait. Used to acquire Smuggled Embryo Chests. Can be used only above level 99. -->
+		<set name="icon" val="icon.bm_gold_lure" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LEATHER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="28544" name="Secret Embryo Bait (102)" type="EtcItem">
+		<!-- Fishing Time: 45s. Fishing Waiting Time: 15s. Fishing Bait. Used to acquire Smuggled Embryo Chests. Can be used only above level 102. -->
+		<set name="icon" val="icon.bm_gold_lure" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LEATHER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="28545" name="Secret Embryo Bait (105)" type="EtcItem">
+		<!-- Fishing Time: 45s. Fishing Waiting Time: 15s. Fishing Bait. Used to acquire Smuggled Embryo Chests. Can be used only above level 105. -->
+		<set name="icon" val="icon.bm_gold_lure" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LEATHER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="28546" name="Secret Embryo Bait Coupon" type="EtcItem">
+		<!-- Can be exchanged at NPC Peeves in Heine for a Secret Embryo Bait. -->
+		<set name="icon" val="icon.etc_bm_lure_ticket2" />
+		<set name="material" val="LEATHER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="28547" name="Embryo Reward Box" type="EtcItem">
+		<!-- Embryo Reward Box. Double-click to receive a random item. -->
+		<set name="icon" val="icon.bm_nebit_box" />
+		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="material" val="LEATHER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="28548" name="Smuggled Embryo Chest" type="EtcItem">
+		<!-- Smuggled Embryo Chest. Double-click to receive a Heine Fishing Coin. There is a small chance to receive an Embryo Reward Box. -->
+		<set name="icon" val="icon.bm_nebit_angel_box" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LEATHER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="28549" name="Secret Embryo Bait (85)" type="EtcItem">
+		<!-- Fishing Time: 45s. Fishing Waiting Time: 15s. Fishing Bait. Used to acquire Smuggled Embryo Chests. Can be used only above level 85. -->
+		<set name="icon" val="icon.bm_gold_lure" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LEATHER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="28550" name="Secret Embryo Bait (95)" type="EtcItem">
+		<!-- Fishing Time: 45s. Fishing Waiting Time: 15s. Fishing Bait. Used to acquire Smuggled Embryo Chests. Can be used only above level 95. -->
+		<set name="icon" val="icon.bm_gold_lure" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LEATHER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="28551" name="Secret Embryo Bait (99)" type="EtcItem">
+		<!-- Fishing Time: 45s. Fishing Waiting Time: 15s. Fishing Bait. Used to acquire Smuggled Embryo Chests. Can be used only above level 99. -->
+		<set name="icon" val="icon.bm_gold_lure" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LEATHER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="28552" name="Secret Embryo Bait (102)" type="EtcItem">
+		<!-- Fishing Time: 45s. Fishing Waiting Time: 15s. Fishing Bait. Used to acquire Smuggled Embryo Chests. Can be used only above level 102. -->
+		<set name="icon" val="icon.bm_gold_lure" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LEATHER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="28553" name="Secret Embryo Bait (105)" type="EtcItem">
+		<!-- Fishing Time: 45s. Fishing Waiting Time: 15s. Fishing Bait. Used to acquire Smuggled Embryo Chests. Can be used only above level 105. -->
+		<set name="icon" val="icon.bm_gold_lure" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LEATHER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="28554" name="Secret Embryo Bait Coupon" type="EtcItem">
+		<!-- Can be exchanged at NPC Peeves in Heine for an Embryo Bait. -->
+		<set name="icon" val="icon.etc_bm_lure_ticket2" />
+		<set name="material" val="LEATHER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="28555" name="Embryo Reward Box" type="EtcItem">
+		<!-- Embryo Reward Box. Double-click to receive a random item. -->
+		<set name="icon" val="icon.bm_nebit_box" />
+		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="material" val="LEATHER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="28556" name="Smuggled Embryo Chest" type="EtcItem">
+		<!-- Smuggled Embryo Chest. Double-click to receive a Heine Fishing Coin. There is a small chance to receive an Embryo Reward Box. -->
+		<set name="icon" val="icon.bm_nebit_angel_box" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LEATHER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="28557" name="Galup's Special Gift" type="EtcItem">
+		<!-- A special gift form Galup. Double-click to obtain one of the following items at a certain rate: Ruler's Authority, Mystic Soul Crystal, Seven Signs' Energy, Destruction Scroll: Enchant Weapon (R-grade), Freya's Lucky Enchant Stone: Weapon/ Armor (R-grade), Sealed Talisman - Longing, Kaliel's Energy (Longing), Mystic Soul Crystal Fragment, Transformation Sealbook: Part-time Seller, Source of the Emperor, Rabbit Ears Box, Raccoon Ears Box, Cat Ears Box, Romantic Chapeau Box, Angel Circlet Box, Demon Circlet Box, Pirate's Eyepatch Box, Outlaw's Eyepatch Box, Eyepatch Box, Party Hat Box, Refined Angel Ring Box, Refined Devil Horn Box, Giant's Energy 20-unit Pack, Lv. 5 Windy LUC/ CHA Dye, Life Stone: Hair Accessory, Rune Stone, Energy of Destruction 20-unit Pack, Blessed/ Giant's Scroll: Enchant Armor (R-grade), Lv. 4 Windy LUC/ CHA Dye, Enchant Armor (R-grade) x3, Crafting Ingredients Pack x4, Gemstone (R-grade) x5. -->
+		<set name="icon" val="icon.card_event_luck_pocket" />
+		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="material" val="LEATHER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="28558" name="Bloody Helios Ingredient Set" type="EtcItem">
+		<!-- Double-click to obtain the ingredients for crafting Bloody Helios. -->
+		<set name="icon" val="icon.etc_treasure_box_i03" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LEATHER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="28559" name="Bloody Eternal Ingredient Set" type="EtcItem">
+		<!-- Double-click to obtain the ingredients for crafting Bloody Eternal. -->
+		<set name="icon" val="icon.etc_treasure_box_i03" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LEATHER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="28560" name="Dark Helios Ingredient Set" type="EtcItem">
+		<!-- Double-click to obtain the ingredients for crafting Dark Helios. -->
+		<set name="icon" val="icon.etc_treasure_box_i05" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LEATHER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="28561" name="Dark Eternal Ingredient Set" type="EtcItem">
+		<!-- Double-click to obtain the ingredients for crafting Dark Eternal. -->
+		<set name="icon" val="icon.etc_treasure_box_i05" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LEATHER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="28562" name="Storm Scroll and Miraculous Medicine Set" type="EtcItem">
+		<!-- Double-click to obtain Freya's Scroll of Storm and Gran Kain's Miraculous Medicine -->
+		<set name="icon" val="icon.etc_treasure_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LEATHER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="28563" name="Ultimate Fortune Jewelry Box" type="EtcItem">
+		<!-- Double-click to obtain 1 of the Fortune Jewelry Boxes. -->
+		<set name="icon" val="icon.bm_sayha_blessed_box" />
+		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="material" val="LEATHER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="28564" name="Cat's Eye Fortune Box" type="EtcItem">
+		<!-- Double-click to obtain 1 Cat's Eye Lv. 1-5. -->
+		<set name="icon" val="BranchIcon.Icon.etc_bm_jewelbox_catseye_i00" />
+		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="material" val="LEATHER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="28565" name="Vital Stone Fortune Box" type="EtcItem">
+		<!-- Double-click to obtain one of Level 1-5 Vital Stones. -->
+		<set name="icon" val="icon.etc_bm_jewelbox_vital" />
+		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="material" val="LEATHER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="28566" name="Tanzanite Fortune Box" type="EtcItem">
+		<!-- Double-click to obtain one of Level 1-5 Tanzanites. -->
+		<set name="icon" val="icon.etc_bm_jewelbox_tanzanite" />
+		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="material" val="LEATHER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="28567" name="Amethyst Fortune Box" type="EtcItem">
+		<!-- Double-click to obtain one of Level 1-5 Amethysts. -->
+		<set name="icon" val="BranchIcon.Icon.etc_bm_jewelbox_amethyst_i00" />
+		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="material" val="LEATHER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="28568" name="Garnet Fortune Box" type="EtcItem">
+		<!-- Double-click to obtain one of Level 1-5 Garnets. -->
+		<set name="icon" val="icon.etc_bm_jewelbox_garnet" />
+		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="material" val="LEATHER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="28569" name="Secret Embryo Bait (85)" type="EtcItem">
+		<!-- Fishing Time: 45 sec. Fishing Waiting Time: 15 sec. Fishing Bait. Used to acquire a Smuggled Embryo Chest. Can be used only above level 85. -->
+		<set name="icon" val="icon.bm_gold_lure" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LEATHER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="28570" name="Secret Embryo Bait (95)" type="EtcItem">
+		<!-- Fishing Time: 45 sec. Fishing Waiting Time: 15 sec. Fishing Bait. Used to acquire a Smuggled Embryo Chest. Can be used only above level 95. -->
+		<set name="icon" val="icon.bm_gold_lure" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LEATHER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="28571" name="Secret Embryo Bait (99)" type="EtcItem">
+		<!-- Fishing Time: 45 sec. Fishing Waiting Time: 15 sec. Fishing Bait. Used to acquire a Smuggled Embryo Chest. Can be used only above level 99. -->
+		<set name="icon" val="icon.bm_gold_lure" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LEATHER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="28572" name="Secret Embryo Bait (102)" type="EtcItem">
+		<!-- Fishing Time: 45 sec. Fishing Waiting Time: 15 sec. Fishing Bait. Used to acquire a Smuggled Embryo Chest. Can be used only above level 102. -->
+		<set name="icon" val="icon.bm_gold_lure" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LEATHER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="28573" name="Secret Embryo Bait (105)" type="EtcItem">
+		<!-- Fishing Time: 45 sec. Fishing Waiting Time: 15 sec. Fishing Bait. Used to acquire a Smuggled Embryo Chest. Can be used only above level 105. -->
+		<set name="icon" val="icon.bm_gold_lure" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LEATHER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="28574" name="Secret Embryo Bait Coupon" type="EtcItem">
+		<!-- Can be exchanged at NPC Peeves in Heine for a Secret Embryo Bait. -->
+		<set name="icon" val="icon.etc_bm_lure_ticket2" />
+		<set name="material" val="LEATHER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="28575" name="Embryo Reward Box" type="EtcItem">
+		<!-- Embryo Reward Box. Double-click to receive a random item. -->
+		<set name="icon" val="icon.bm_nebit_box" />
+		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="material" val="LEATHER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="28576" name="Smuggled Embryo Chest" type="EtcItem">
+		<!-- Smuggled Embryo Chest. Double-click to receive a Heine Fishing Coin. There is a small chance to receive an Embryo Reward Box. -->
+		<set name="icon" val="icon.bm_nebit_angel_box" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LEATHER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="28577" name="Secret Embryo Bait (85)" type="EtcItem">
+		<!-- Fishing Time: 45s. Fishing Waiting Time: 15s. Fishing Bait. Used to acquire Smuggled Embryo Chests. Can be used only above level 85. -->
+		<set name="icon" val="icon.bm_gold_lure" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LEATHER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="28578" name="Secret Embryo Bait (95)" type="EtcItem">
+		<!-- Fishing Time: 45s. Fishing Waiting Time: 15s. Fishing Bait. Used to acquire Smuggled Embryo Chests. Can be used only above level 95. -->
+		<set name="icon" val="icon.bm_gold_lure" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LEATHER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="28579" name="Secret Embryo Bait (99)" type="EtcItem">
+		<!-- Fishing Time: 45s. Fishing Waiting Time: 15s. Fishing Bait. Used to acquire Smuggled Embryo Chests. Can be used only above level 99. -->
+		<set name="icon" val="icon.bm_gold_lure" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LEATHER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="28580" name="Secret Embryo Bait (102)" type="EtcItem">
+		<!-- Fishing Time: 45s. Fishing Waiting Time: 15s. Fishing Bait. Used to acquire Smuggled Embryo Chests. Can be used only above level 102. -->
+		<set name="icon" val="icon.bm_gold_lure" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LEATHER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="28581" name="Secret Embryo Bait (105)" type="EtcItem">
+		<!-- Fishing Time: 45s. Fishing Waiting Time: 15s. Fishing Bait. Used to acquire Smuggled Embryo Chests. Can be used only above level 105. -->
+		<set name="icon" val="icon.bm_gold_lure" />
+		<set name="default_action" val="EQUIP" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LEATHER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="28582" name="Secret Embryo Bait Coupon" type="EtcItem">
+		<!-- Can be exchanged at NPC Peeves in Heine for an Embryo Bait. -->
+		<set name="icon" val="icon.etc_bm_lure_ticket2" />
+		<set name="material" val="LEATHER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="28583" name="Embryo Reward Box" type="EtcItem">
+		<!-- Embryo Reward Box. Double-click to receive a random item. -->
+		<set name="icon" val="icon.bm_nebit_box" />
+		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="material" val="LEATHER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="28584" name="Smuggled Embryo Chest" type="EtcItem">
+		<!-- Smuggled Embryo Chest. Double-click to receive a Heine Fishing Coin. There is a small chance to receive an Embryo Reward Box. -->
+		<set name="icon" val="icon.bm_nebit_angel_box" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LEATHER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="28585" name="Elmoreden Cloak" type="Armor">
+		<!-- Cloak with the crest of the ancient Elmoreden Kingdom. Can be enchanted up to +10 with the Scroll: Enchant Cloak, and different effects are applied depending on the level. Use Spirit Stone - Ancient Kingdom at +10 to bestow an additional effect. -->
+		<set name="icon" val="BranchIcon.icon.g_bm_elmoreden_cloak_normal" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="back" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="CLOTH" />
+		<set name="weight" val="220" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="enchant_enabled" val="5" />
+		<cond msgId="2453">
+			<player cloakStatus="true" />
+		</cond>
+		<cond>
+			<player level="80" />
+		</cond>
+		<skills>
+			<skill id="27871" level="1" /> <!-- Elmoreden Cloak Basic Effect -->
+			<skill id="27872" level="1" type="ON_ENCHANT" type_value="1" /> <!-- Elmoreden Cloak Enchant Effect -->
+			<skill id="27872" level="2" type="ON_ENCHANT" type_value="2" /> <!-- Elmoreden Cloak Enchant Effect -->
+			<skill id="27872" level="3" type="ON_ENCHANT" type_value="3" /> <!-- Elmoreden Cloak Enchant Effect -->
+			<skill id="27872" level="4" type="ON_ENCHANT" type_value="4" /> <!-- Elmoreden Cloak Enchant Effect -->
+			<skill id="27872" level="5" type="ON_ENCHANT" type_value="5" /> <!-- Elmoreden Cloak Enchant Effect -->
+			<skill id="27872" level="6" type="ON_ENCHANT" type_value="6" /> <!-- Elmoreden Cloak Enchant Effect -->
+			<skill id="27872" level="7" type="ON_ENCHANT" type_value="7" /> <!-- Elmoreden Cloak Enchant Effect -->
+			<skill id="27872" level="8" type="ON_ENCHANT" type_value="8" /> <!-- Elmoreden Cloak Enchant Effect -->
+			<skill id="27872" level="9" type="ON_ENCHANT" type_value="9" /> <!-- Elmoreden Cloak Enchant Effect -->
+			<skill id="27872" level="10" type="ON_ENCHANT" type_value="10" /> <!-- Elmoreden Cloak Enchant Effect -->
+			<skill id="27880" level="1" type="ON_ENCHANT" type_value="10" /> <!-- Blessing of Elmoreden --> <!-- GUESS -->
+		</skills>
+		<stats>
+			<stat type="mDef">40</stat>
+			<stat type="pDef">50</stat>
+		</stats>
+	</item>
+	<item id="28586" name="Aden Cloak" type="Armor">
+		<!-- Cloak with the crest of the ancient Aden Kingdom. Can be enchanted up to +10 with the Scroll: Enchant Cloak, and different effects are applied depending on the level. Use Spirit Stone - Ancient Kingdom at +10 to bestow an additional effect. -->
+		<set name="icon" val="BranchIcon.icon.g_bm_aden_cloak_normal" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="back" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="CLOTH" />
+		<set name="weight" val="220" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="enchant_enabled" val="5" />
+		<cond msgId="2453">
+			<player cloakStatus="true" />
+		</cond>
+		<cond>
+			<player level="80" />
+		</cond>
+		<skills>
+			<skill id="27873" level="1" /> <!-- Aden Cloak Basic Effect -->
+			<skill id="27874" level="1" type="ON_ENCHANT" type_value="1" /> <!-- Aden Cloak Enchant Effect -->
+			<skill id="27874" level="2" type="ON_ENCHANT" type_value="2" /> <!-- Aden Cloak Enchant Effect -->
+			<skill id="27874" level="3" type="ON_ENCHANT" type_value="3" /> <!-- Aden Cloak Enchant Effect -->
+			<skill id="27874" level="4" type="ON_ENCHANT" type_value="4" /> <!-- Aden Cloak Enchant Effect -->
+			<skill id="27874" level="5" type="ON_ENCHANT" type_value="5" /> <!-- Aden Cloak Enchant Effect -->
+			<skill id="27874" level="6" type="ON_ENCHANT" type_value="6" /> <!-- Aden Cloak Enchant Effect -->
+			<skill id="27874" level="7" type="ON_ENCHANT" type_value="7" /> <!-- Aden Cloak Enchant Effect -->
+			<skill id="27874" level="8" type="ON_ENCHANT" type_value="8" /> <!-- Aden Cloak Enchant Effect -->
+			<skill id="27874" level="9" type="ON_ENCHANT" type_value="9" /> <!-- Aden Cloak Enchant Effect -->
+			<skill id="27874" level="10" type="ON_ENCHANT" type_value="10" /> <!-- Aden Cloak Enchant Effect -->
+			<skill id="27881" level="1" type="ON_ENCHANT" type_value="10" /> <!-- Blessing of Aden --> <!-- GUESS -->
+		</skills>
+		<stats>
+			<stat type="mDef">40</stat>
+			<stat type="pDef">50</stat>
+		</stats>
+	</item>
+	<item id="28587" name="Elmore Cloak" type="Armor">
+		<!-- Cloak with the crest of the ancient Elmore Kingdom. Can be enchanted up to +10 with the Scroll: Enchant Cloak, and different effects are applied depending on the level. Use Spirit Stone - Ancient Kingdom at +10 to bestow an additional effect. -->
+		<set name="icon" val="BranchIcon.icon.g_bm_elmore_cloak_normal" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="back" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="CLOTH" />
+		<set name="weight" val="220" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="enchant_enabled" val="5" />
+		<cond msgId="2453">
+			<player cloakStatus="true" />
+		</cond>
+		<cond>
+			<player level="80" />
+		</cond>
+		<skills>
+			<skill id="27875" level="1" /> <!-- Elmore Cloak Basic Effect -->
+			<skill id="27876" level="1" type="ON_ENCHANT" type_value="1" /> <!-- Elmore Cloak Enchant Effect -->
+			<skill id="27876" level="2" type="ON_ENCHANT" type_value="2" /> <!-- Elmore Cloak Enchant Effect -->
+			<skill id="27876" level="3" type="ON_ENCHANT" type_value="3" /> <!-- Elmore Cloak Enchant Effect -->
+			<skill id="27876" level="4" type="ON_ENCHANT" type_value="4" /> <!-- Elmore Cloak Enchant Effect -->
+			<skill id="27876" level="5" type="ON_ENCHANT" type_value="5" /> <!-- Elmore Cloak Enchant Effect -->
+			<skill id="27876" level="6" type="ON_ENCHANT" type_value="6" /> <!-- Elmore Cloak Enchant Effect -->
+			<skill id="27876" level="7" type="ON_ENCHANT" type_value="7" /> <!-- Elmore Cloak Enchant Effect -->
+			<skill id="27876" level="8" type="ON_ENCHANT" type_value="8" /> <!-- Elmore Cloak Enchant Effect -->
+			<skill id="27876" level="9" type="ON_ENCHANT" type_value="9" /> <!-- Elmore Cloak Enchant Effect -->
+			<skill id="27876" level="10" type="ON_ENCHANT" type_value="10" /> <!-- Elmore Cloak Enchant Effect -->
+			<skill id="27882" level="1" type="ON_ENCHANT" type_value="10" /> <!-- Blessing of Elmore --> <!-- GUESS -->
+		</skills>
+		<stats>
+			<stat type="mDef">40</stat>
+			<stat type="pDef">50</stat>
+		</stats>
+	</item>
+	<item id="28588" name="Ferios Cloak" type="Armor">
+		<!-- Cloak with the crest of the ancient Ferios Kingdom. Can be enchanted up to +10 with the Scroll: Enchant Cloak, and different effects are applied depending on the level. Use Spirit Stone - Ancient Empire at +10 to bestow an additional effect. -->
+		<set name="icon" val="BranchIcon.icon.g_bm_perios_cloak_normal" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="back" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="CLOTH" />
+		<set name="weight" val="220" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="enchant_enabled" val="5" />
+		<cond msgId="2453">
+			<player cloakStatus="true" />
+		</cond>
+		<cond>
+			<player level="80" />
+		</cond>
+		<skills>
+			<skill id="27877" level="1" /> <!-- Ferios Cloak Basic Effect -->
+			<skill id="27878" level="1" type="ON_ENCHANT" type_value="1" /> <!-- Ferios Cloak Enchant Effect -->
+			<skill id="27878" level="2" type="ON_ENCHANT" type_value="2" /> <!-- Ferios Cloak Enchant Effect -->
+			<skill id="27878" level="3" type="ON_ENCHANT" type_value="3" /> <!-- Ferios Cloak Enchant Effect -->
+			<skill id="27878" level="4" type="ON_ENCHANT" type_value="4" /> <!-- Ferios Cloak Enchant Effect -->
+			<skill id="27878" level="5" type="ON_ENCHANT" type_value="5" /> <!-- Ferios Cloak Enchant Effect -->
+			<skill id="27878" level="6" type="ON_ENCHANT" type_value="6" /> <!-- Ferios Cloak Enchant Effect -->
+			<skill id="27878" level="7" type="ON_ENCHANT" type_value="7" /> <!-- Ferios Cloak Enchant Effect -->
+			<skill id="27878" level="8" type="ON_ENCHANT" type_value="8" /> <!-- Ferios Cloak Enchant Effect -->
+			<skill id="27878" level="9" type="ON_ENCHANT" type_value="9" /> <!-- Ferios Cloak Enchant Effect -->
+			<skill id="27878" level="10" type="ON_ENCHANT" type_value="10" /> <!-- Ferios Cloak Enchant Effect -->
+			<skill id="27885" level="1" type="ON_ENCHANT" type_value="10" /> <!-- Blessing of Ferios --> <!-- GUESS -->
+		</skills>
+		<stats>
+			<stat type="mDef">40</stat>
+			<stat type="pDef">50</stat>
+		</stats>
+	</item>
+	<item id="28589" name="Elmoreden Cloak - Legendary" type="Armor">
+		<!-- Legendary cloak with the crest of the ancient Elmoreden Kingdom. Can be enchanted up to +10 with the Scroll: Enchant Cloak and from +10 to +20 with the Scroll: Enchant Cloak - Legendary, and different effects are applied depending on the level. Use Spirit Stone - Ancient Empire at +10 to bestow an additional effect, and use Spirit Stone - Elmoreden at +15 to add a second effect. -->
+		<set name="icon" val="BranchIcon.icon.g_bm_elmoreden_cloak_normal" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="back" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="CLOTH" />
+		<set name="weight" val="220" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="enchant_enabled" val="5" />
+		<cond msgId="2453">
+			<player cloakStatus="true" />
+		</cond>
+		<cond>
+			<player level="80" />
+		</cond>
+		<skills>
+			<skill id="27871" level="1" /> <!-- Elmoreden Cloak Basic Effect -->
+			<skill id="27872" level="1" type="ON_ENCHANT" type_value="1" /> <!-- Elmoreden Cloak Enchant Effect -->
+			<skill id="27872" level="2" type="ON_ENCHANT" type_value="2" /> <!-- Elmoreden Cloak Enchant Effect -->
+			<skill id="27872" level="3" type="ON_ENCHANT" type_value="3" /> <!-- Elmoreden Cloak Enchant Effect -->
+			<skill id="27872" level="4" type="ON_ENCHANT" type_value="4" /> <!-- Elmoreden Cloak Enchant Effect -->
+			<skill id="27872" level="5" type="ON_ENCHANT" type_value="5" /> <!-- Elmoreden Cloak Enchant Effect -->
+			<skill id="27872" level="6" type="ON_ENCHANT" type_value="6" /> <!-- Elmoreden Cloak Enchant Effect -->
+			<skill id="27872" level="7" type="ON_ENCHANT" type_value="7" /> <!-- Elmoreden Cloak Enchant Effect -->
+			<skill id="27872" level="8" type="ON_ENCHANT" type_value="8" /> <!-- Elmoreden Cloak Enchant Effect -->
+			<skill id="27872" level="9" type="ON_ENCHANT" type_value="9" /> <!-- Elmoreden Cloak Enchant Effect -->
+			<skill id="27872" level="10" type="ON_ENCHANT" type_value="10" /> <!-- Elmoreden Cloak Enchant Effect -->
+			<skill id="27872" level="11" type="ON_ENCHANT" type_value="11" /> <!-- Elmoreden Cloak Enchant Effect -->
+			<skill id="27872" level="12" type="ON_ENCHANT" type_value="12" /> <!-- Elmoreden Cloak Enchant Effect -->
+			<skill id="27872" level="13" type="ON_ENCHANT" type_value="13" /> <!-- Elmoreden Cloak Enchant Effect -->
+			<skill id="27872" level="14" type="ON_ENCHANT" type_value="14" /> <!-- Elmoreden Cloak Enchant Effect -->
+			<skill id="27872" level="15" type="ON_ENCHANT" type_value="15" /> <!-- Elmoreden Cloak Enchant Effect -->
+			<skill id="27872" level="16" type="ON_ENCHANT" type_value="16" /> <!-- Elmoreden Cloak Enchant Effect -->
+			<skill id="27872" level="17" type="ON_ENCHANT" type_value="17" /> <!-- Elmoreden Cloak Enchant Effect -->
+			<skill id="27872" level="18" type="ON_ENCHANT" type_value="18" /> <!-- Elmoreden Cloak Enchant Effect -->
+			<skill id="27872" level="19" type="ON_ENCHANT" type_value="19" /> <!-- Elmoreden Cloak Enchant Effect -->
+			<skill id="27872" level="20" type="ON_ENCHANT" type_value="20" /> <!-- Elmoreden Cloak Enchant Effect -->
+		</skills>
+		<stats>
+			<stat type="mDef">80</stat>
+			<stat type="pDef">50</stat>
+		</stats>
+	</item>
+	<item id="28590" name="Aden Cloak - Legendary" type="Armor">
+		<!-- Legendary cloak with the crest of the ancient Aden Kingdom. Can be enchanted up to +10 with the Scroll: Enchant Cloak and from +10 to +20 with the Scroll: Enchant Cloak - Legendary, and different effects are applied depending on the level. Use Spirit Stone - Ancient Kingdom at +10 to bestow an additional effect, and use Spirit Stone - Aden at +15 to add a second effect. -->
+		<set name="icon" val="BranchIcon.icon.g_bm_aden_cloak_normal" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="back" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="CLOTH" />
+		<set name="weight" val="220" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="enchant_enabled" val="5" />
+		<cond msgId="2453">
+			<player cloakStatus="true" />
+		</cond>
+		<cond>
+			<player level="80" />
+		</cond>
+		<skills>
+			<skill id="27873" level="1" /> <!-- Aden Cloak Basic Effect -->
+			<skill id="27874" level="1" type="ON_ENCHANT" type_value="1" /> <!-- Aden Cloak Enchant Effect -->
+			<skill id="27874" level="2" type="ON_ENCHANT" type_value="2" /> <!-- Aden Cloak Enchant Effect -->
+			<skill id="27874" level="3" type="ON_ENCHANT" type_value="3" /> <!-- Aden Cloak Enchant Effect -->
+			<skill id="27874" level="4" type="ON_ENCHANT" type_value="4" /> <!-- Aden Cloak Enchant Effect -->
+			<skill id="27874" level="5" type="ON_ENCHANT" type_value="5" /> <!-- Aden Cloak Enchant Effect -->
+			<skill id="27874" level="6" type="ON_ENCHANT" type_value="6" /> <!-- Aden Cloak Enchant Effect -->
+			<skill id="27874" level="7" type="ON_ENCHANT" type_value="7" /> <!-- Aden Cloak Enchant Effect -->
+			<skill id="27874" level="8" type="ON_ENCHANT" type_value="8" /> <!-- Aden Cloak Enchant Effect -->
+			<skill id="27874" level="9" type="ON_ENCHANT" type_value="9" /> <!-- Aden Cloak Enchant Effect -->
+			<skill id="27874" level="10" type="ON_ENCHANT" type_value="10" /> <!-- Aden Cloak Enchant Effect -->
+			<skill id="27874" level="11" type="ON_ENCHANT" type_value="11" /> <!-- Aden Cloak Enchant Effect -->
+			<skill id="27874" level="12" type="ON_ENCHANT" type_value="12" /> <!-- Aden Cloak Enchant Effect -->
+			<skill id="27874" level="13" type="ON_ENCHANT" type_value="13" /> <!-- Aden Cloak Enchant Effect -->
+			<skill id="27874" level="14" type="ON_ENCHANT" type_value="14" /> <!-- Aden Cloak Enchant Effect -->
+			<skill id="27881" level="15" type="ON_ENCHANT" type_value="15" /> <!-- Aden Cloak Enchant Effect -->
+			<skill id="27881" level="16" type="ON_ENCHANT" type_value="16" /> <!-- Aden Cloak Enchant Effect -->
+			<skill id="27881" level="17" type="ON_ENCHANT" type_value="17" /> <!-- Aden Cloak Enchant Effect -->
+			<skill id="27881" level="18" type="ON_ENCHANT" type_value="18" /> <!-- Aden Cloak Enchant Effect -->
+			<skill id="27881" level="19" type="ON_ENCHANT" type_value="19" /> <!-- Aden Cloak Enchant Effect -->
+			<skill id="27881" level="20" type="ON_ENCHANT" type_value="20" /> <!-- Aden Cloak Enchant Effect -->
+		</skills>
+		<stats>
+			<stat type="mDef">80</stat>
+			<stat type="pDef">50</stat>
+		</stats>
+	</item>
+	<item id="28591" name="Elmore Cloak - Legendary" type="Armor">
+		<!-- Legendary cloak with the crest of the ancient Elmore Kingdom. Can be enchanted up to +10 with the Scroll: Enchant Cloak and from +10 to +20 with the Scroll: Enchant Cloak - Legendary, and different effects are applied depending on the level. Use Spirit Stone - Ancient Kingdom at +10 to bestow an additional effect, and use Spirit Stone - Elmore at +15 to add a second effect. -->
+		<set name="icon" val="BranchIcon.icon.g_bm_elmore_cloak_normal" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="back" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="CLOTH" />
+		<set name="weight" val="220" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="enchant_enabled" val="5" />
+		<cond msgId="2453">
+			<player cloakStatus="true" />
+		</cond>
+		<cond>
+			<player level="80" />
+		</cond>
+		<skills>
+			<skill id="27875" level="1" /> <!-- Elmore Cloak Basic Effect -->
+			<skill id="27876" level="1" type="ON_ENCHANT" type_value="1" /> <!-- Elmore Cloak Enchant Effect -->
+			<skill id="27876" level="2" type="ON_ENCHANT" type_value="2" /> <!-- Elmore Cloak Enchant Effect -->
+			<skill id="27876" level="3" type="ON_ENCHANT" type_value="3" /> <!-- Elmore Cloak Enchant Effect -->
+			<skill id="27876" level="4" type="ON_ENCHANT" type_value="4" /> <!-- Elmore Cloak Enchant Effect -->
+			<skill id="27876" level="5" type="ON_ENCHANT" type_value="5" /> <!-- Elmore Cloak Enchant Effect -->
+			<skill id="27876" level="6" type="ON_ENCHANT" type_value="6" /> <!-- Elmore Cloak Enchant Effect -->
+			<skill id="27876" level="7" type="ON_ENCHANT" type_value="7" /> <!-- Elmore Cloak Enchant Effect -->
+			<skill id="27876" level="8" type="ON_ENCHANT" type_value="8" /> <!-- Elmore Cloak Enchant Effect -->
+			<skill id="27876" level="9" type="ON_ENCHANT" type_value="9" /> <!-- Elmore Cloak Enchant Effect -->
+			<skill id="27876" level="10" type="ON_ENCHANT" type_value="10" /> <!-- Elmore Cloak Enchant Effect -->
+			<skill id="27876" level="11" type="ON_ENCHANT" type_value="11" /> <!-- Elmore Cloak Enchant Effect -->
+			<skill id="27876" level="12" type="ON_ENCHANT" type_value="12" /> <!-- Elmore Cloak Enchant Effect -->
+			<skill id="27876" level="13" type="ON_ENCHANT" type_value="13" /> <!-- Elmore Cloak Enchant Effect -->
+			<skill id="27876" level="14" type="ON_ENCHANT" type_value="14" /> <!-- Elmore Cloak Enchant Effect -->
+			<skill id="27876" level="15" type="ON_ENCHANT" type_value="15" /> <!-- Elmore Cloak Enchant Effect -->
+			<skill id="27876" level="16" type="ON_ENCHANT" type_value="16" /> <!-- Elmore Cloak Enchant Effect -->
+			<skill id="27876" level="17" type="ON_ENCHANT" type_value="17" /> <!-- Elmore Cloak Enchant Effect -->
+			<skill id="27876" level="18" type="ON_ENCHANT" type_value="18" /> <!-- Elmore Cloak Enchant Effect -->
+			<skill id="27876" level="19" type="ON_ENCHANT" type_value="19" /> <!-- Elmore Cloak Enchant Effect -->
+			<skill id="27876" level="20" type="ON_ENCHANT" type_value="20" /> <!-- Elmore Cloak Enchant Effect -->
+		</skills>
+		<stats>
+			<stat type="mDef">80</stat>
+			<stat type="pDef">50</stat>
+		</stats>
+	</item>
+	<item id="28592" name="Ferios Cloak - Legendary" type="Armor">
+		<!-- Legendary cloak with the crest of the ancient Ferios Kingdom. Can be enchanted up to +10 with the Scroll: Enchant Cloak and from +10 to +20 with the Scroll: Enchant Cloak - Legendary, and different effects are applied depending on the level. +10 Use Spirit Stone - Ancient Kingdom at +10 to bestow an additional effect, and use Spirit Stone - Ferios at +15 to add a second effect. -->
+		<set name="icon" val="BranchIcon.icon.g_bm_perios_cloak_normal" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="back" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="CLOTH" />
+		<set name="weight" val="220" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<set name="enchant_enabled" val="5" />
+		<cond msgId="2453">
+			<player cloakStatus="true" />
+		</cond>
+		<cond>
+			<player level="80" />
+		</cond>
+		<skills>
+			<skill id="27877" level="1" /> <!-- Ferios Cloak Basic Effect -->
+			<skill id="27878" level="1" type="ON_ENCHANT" type_value="1" /> <!-- Ferios Cloak Enchant Effect -->
+			<skill id="27878" level="2" type="ON_ENCHANT" type_value="2" /> <!-- Ferios Cloak Enchant Effect -->
+			<skill id="27878" level="3" type="ON_ENCHANT" type_value="3" /> <!-- Ferios Cloak Enchant Effect -->
+			<skill id="27878" level="4" type="ON_ENCHANT" type_value="4" /> <!-- Ferios Cloak Enchant Effect -->
+			<skill id="27878" level="5" type="ON_ENCHANT" type_value="5" /> <!-- Ferios Cloak Enchant Effect -->
+			<skill id="27878" level="6" type="ON_ENCHANT" type_value="6" /> <!-- Ferios Cloak Enchant Effect -->
+			<skill id="27878" level="7" type="ON_ENCHANT" type_value="7" /> <!-- Ferios Cloak Enchant Effect -->
+			<skill id="27878" level="8" type="ON_ENCHANT" type_value="8" /> <!-- Ferios Cloak Enchant Effect -->
+			<skill id="27878" level="9" type="ON_ENCHANT" type_value="9" /> <!-- Ferios Cloak Enchant Effect -->
+			<skill id="27878" level="10" type="ON_ENCHANT" type_value="10" /> <!-- Ferios Cloak Enchant Effect -->
+			<skill id="27878" level="11" type="ON_ENCHANT" type_value="11" /> <!-- Ferios Cloak Enchant Effect -->
+			<skill id="27878" level="12" type="ON_ENCHANT" type_value="12" /> <!-- Ferios Cloak Enchant Effect -->
+			<skill id="27878" level="13" type="ON_ENCHANT" type_value="13" /> <!-- Ferios Cloak Enchant Effect -->
+			<skill id="27878" level="14" type="ON_ENCHANT" type_value="14" /> <!-- Ferios Cloak Enchant Effect -->
+			<skill id="27878" level="15" type="ON_ENCHANT" type_value="15" /> <!-- Ferios Cloak Enchant Effect -->
+			<skill id="27878" level="16" type="ON_ENCHANT" type_value="16" /> <!-- Ferios Cloak Enchant Effect -->
+			<skill id="27878" level="17" type="ON_ENCHANT" type_value="17" /> <!-- Ferios Cloak Enchant Effect -->
+			<skill id="27878" level="18" type="ON_ENCHANT" type_value="18" /> <!-- Ferios Cloak Enchant Effect -->
+			<skill id="27878" level="19" type="ON_ENCHANT" type_value="19" /> <!-- Ferios Cloak Enchant Effect -->
+			<skill id="27878" level="20" type="ON_ENCHANT" type_value="20" /> <!-- Ferios Cloak Enchant Effect -->
+		</skills>
+		<stats>
+			<stat type="mDef">80</stat>
+			<stat type="pDef">50</stat>
+		</stats>
+	</item>
+	<item id="28593" name="Scroll: Enchant Cloak" type="EtcItem">
+		<!-- Enchant scroll for the Ancient Kingdom's Cloak. Can be enchanted up to +10. Enchant level goes up by 1 when it succeeds, and if it fails, the item remains and the level goes down by 1. -->
+		<set name="icon" val="BranchIcon.icon.g_bm_cloak_enchant_scroll_normal" />
+		<set name="material" val="LEATHER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="ENCHT_AM" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="EnchantScrolls" />
+		<skills>
+			<skill id="28021" level="1" /> <!-- Scroll: Enchant Cloak -->
+		</skills>
+	</item>
+	<item id="28594" name="Scroll: Enchant Cloak - Legendary" type="EtcItem">
+		<!-- Enchant scroll for the Ancient Kingdom's Cloak. Can be used when the enchant level is at least +10, up to +20. Enchant level goes up by 1 when it succeeds, and if it fails, the item remains and the level goes down by 1. -->
+		<set name="icon" val="BranchIcon.icon.g_bm_cloak_enchant_scroll_legend" />
+		<set name="material" val="LEATHER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="BLESS_ENCHT_AM" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="EnchantScrolls" />
+		<skills>
+			<skill id="28022" level="1" /> <!-- Scroll: Enchant Cloak - Legendary -->
+		</skills>
+	</item>
+	<item id="28595" name="Scroll: Ancient Cloak - Legendary" type="EtcItem">
+		<!-- Enchant scroll for the Ancient Kingdom's Cloak. Can be used when the enchant level is at least +7, up to +20. Success rate is 10% better than normal Cloak Scrolls. Enchant level goes up by 1 when it succeeds, and if it fails, the item remains and the level goes down by 1. -->
+		<set name="icon" val="BranchIcon.icon.g_bm_cloak_enchant_scroll_legend" />
+		<set name="material" val="LEATHER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="BLESS_ENCHT_AM" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="EnchantScrolls" />
+		<skills>
+			<skill id="28068" level="1" /> <!-- Scroll: Ancient Cloak - Legendary -->
+		</skills>
+	</item>
+	<item id="28596" name="Legendary Scroll" type="EtcItem">
+		<!-- Exchange a Elmoreden/ Aden/ Elmore/ Ferios Cloak for a legendary cloak through the Dimensional Merchant. -->
+		<set name="icon" val="BranchIcon.icon.g_bm_cloak_legend_scroll" />
+		<set name="material" val="LEATHER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="28597" name="Spirit Stone - Ancient Kingdom" type="EtcItem">
+		<!-- Spirit Stone for the Ancient Kingdom's Cloak. Can augment all ancient kingdom cloaks when they have been enchanted to +10, and a random effect will be added when augmented. Effects bestowed through augmentation will be applied when the enchant level is +10 or higher. Once augmented, it cannot be canceled, but it can be augmented again. -->
+		<set name="icon" val="BranchIcon.icon.g_bm_cloak_mineral_normal" />
+		<set name="material" val="LEATHER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="28598" name="Spirit Stone - Elmoreden" type="EtcItem">
+		<!-- Legendary Spirit Stone for the Elmoreden Cloak. Can augment Legendary Elmoreden kingdom cloaks when they have been enchanted to +15, and a random effect will be added when augmented. Effects bestowed through augmentation will be applied when the enchant level is +15 or higher. Once augmented, it cannot be canceled, but it can be augmented again. -->
+		<set name="icon" val="BranchIcon.icon.g_bm_cloak_mineral_elmoreden" />
+		<set name="material" val="LEATHER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+	<item id="28599" name="Spirit Stone - Aden" type="EtcItem">
+		<!-- Legendary Spirit Stone for the Aden Cloak. Can augment Legendary Aden kingdom cloaks when they have been enchanted to +15, and a random effect will be added when augmented. Effects bestowed through augmentation will be applied when the enchant level is +15 or higher. Once augmented, it cannot be canceled, but it can be augmented again. -->
+		<set name="icon" val="BranchIcon.icon.g_bm_cloak_mineral_aden" />
+		<set name="material" val="LEATHER" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+	</item>
+</list>

@@ -1,0 +1,2783 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="22300" toLevel="1" name="Fantasy Isle Magic">
+		<!-- Magic obtained from Fantasy Isle. Increases Speed by 30%, and decreases fall damage when falling from a high place. -->
+		<icon>BranchSys2.icon.s_g_fantastic_magic</icon>
+		<abnormalTime>120</abnormalTime>
+		<operateType>A2</operateType>
+		<abnormalType>PUBLIC_SLOT</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-2</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<effectRange>1100</effectRange>
+		<activateRate>0</activateRate>
+		<magicLvl>-2</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<castRange>600</castRange>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="Speed">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="SafeFallHeight">
+				<amount>-30</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22301" toLevel="1" name="Party Cake">
+		<icon>BranchSys.icon.br_birthday_cake_i00</icon>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpCanNotUseAirship" />
+			<condition name="OpCheckAbnormal">
+				<type>TRANSFORM</type>
+				<level>0</level>
+				<hasAbnormal>false</hasAbnormal>
+			</condition>
+		</conditions>
+	</skill>
+	<skill id="22302" toLevel="1" name="Sweet Chocolate (4-h.)">
+		<!-- For 4 h., recovers Vitality while hunting. -->
+		<icon>BranchSys.icon.br_valentine_darkchoco_i00</icon>
+		<operateType>A2</operateType>
+		<effectPoint>100</effectPoint>
+		<abnormalType>VP_UP</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<abnormalLvl>8</abnormalLvl>
+		<abnormalTime>14400</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<reuseDelay>3600000</reuseDelay>
+		<isMagic>4</isMagic>
+		<staticReuse>true</staticReuse>
+		<abnormalVisualEffect>VP_UP</abnormalVisualEffect>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CanRestoreVitalPoint" />
+			<condition name="CanUseVitalityConsumeItem" />
+			<condition name="OpCheckAbnormal">
+				<type>VP_UP</type>
+				<level>8</level>
+				<hasAbnormal>false</hasAbnormal>
+			</condition>
+		</conditions>
+	</skill>
+	<skill id="22303" toLevel="1" name="Party Cake">
+		<!-- Party Cake's Vitality effect. Maintains all party members' Vitality for 20 min. -->
+		<icon>BranchSys.icon.br_birthday_cake_i00</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>VP_KEEP</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<effectRange>500</effectRange>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>1200</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>4</isMagic>
+		<castRange>500</castRange>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22304" toLevel="1" name="Campfire's Warmth">
+		<!-- The campfire's warmth can be felt. Increases HP regeneration by 80%, CP regeneration by 60%, and MP regeneration by 40%. -->
+		<icon>icon.etc_torch_on_i00</icon>
+		<operateType>A2</operateType>
+		<abnormalType>HP_REGEN_UP</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<abnormalLvl>99</abnormalLvl>
+		<abnormalTime>25</abnormalTime>
+		<affectRange>200</affectRange>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>RANGE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<conditions>
+			<condition name="OpCanNotUseAirship" />
+		</conditions>
+	</skill>
+	<skill id="22305" toLevel="1" name="Summon Campfire">
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<reuseDelay>3600000</reuseDelay>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpCanNotUseAirship" />
+		</conditions>
+	</skill>
+	<skill id="22306" toLevel="1" name="Event - Summon Scroll: Bad Bunny">
+		<icon>icon.etc_scroll_of_return_i00</icon>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>1.5</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<hitTime>1500</hitTime>
+		<reuseDelay>10000</reuseDelay>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpCanNotUseAirship" />
+		</conditions>
+	</skill>
+	<skill id="22307" toLevel="1" name="Event - Summon Scroll: Bad Bunny Captain">
+		<icon>icon.etc_scroll_of_return_i00</icon>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>1.5</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<hitTime>1500</hitTime>
+		<reuseDelay>10000</reuseDelay>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpCanNotUseAirship" />
+		</conditions>
+	</skill>
+	<skill id="22308" toLevel="1" name="Event - Summon Scroll: Liverless Bunny">
+		<icon>icon.etc_scroll_of_return_i00</icon>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>1.5</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpCanNotUseAirship" />
+		</conditions>
+	</skill>
+	<skill id="22309" toLevel="1" name="Event - Summon Scroll: Liverless Bunny Captain">
+		<icon>icon.etc_scroll_of_return_i00</icon>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>1.5</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpCanNotUseAirship" />
+		</conditions>
+	</skill>
+	<skill id="22310" toLevel="1" name="Cupid's Cure">
+		<!-- Sends mutated animals a heart filled with love. -->
+		<icon>icon.skill3260</icon>
+		<operateType>A1</operateType>
+		<mpConsume>1</mpConsume>
+		<effectPoint>-1000</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>700</effectRange>
+		<magicLvl>1</magicLvl>
+		<hitTime>1000</hitTime>
+		<reuseDelay>1000</reuseDelay>
+		<castRange>500</castRange>
+		<staticReuse>true</staticReuse>
+		<isMagic>2</isMagic>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpTargetNpc">
+				<npcIds>
+					<item>149</item>
+					<item>150</item>
+					<item>151</item>
+					<item>152</item>
+					<item>156</item>
+					<item>157</item>
+					<item>13196</item>
+				</npcIds>
+			</condition>
+		</conditions>
+	</skill>
+	<skill id="22311" toLevel="1" name="Cupid's Enhanced Cure">
+		<!-- Sends mutated animals a powerful Heart filled with love. -->
+		<icon>icon.skill3260</icon>
+		<operateType>A1</operateType>
+		<mpConsume>1</mpConsume>
+		<effectPoint>-1000</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>700</effectRange>
+		<magicLvl>1</magicLvl>
+		<hitTime>1000</hitTime>
+		<reuseDelay>4000</reuseDelay>
+		<castRange>500</castRange>
+		<staticReuse>true</staticReuse>
+		<isMagic>2</isMagic>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpTargetNpc">
+				<npcIds>
+					<item>149</item>
+					<item>150</item>
+					<item>151</item>
+					<item>152</item>
+					<item>156</item>
+					<item>157</item>
+					<item>13196</item>
+				</npcIds>
+			</condition>
+		</conditions>
+	</skill>
+	<skill id="22312" toLevel="1" name="Birthday Vitality Buff">
+		<!-- Birthday gift received once a year. Increases your Vitality whenever you gain XP. This buff is active for 4 h. and is not lost upon death. However, it will disappear if you change to a subclass. -->
+		<icon>icon.etc_potion_blue_i00</icon>
+		<abnormalTime>14400</abnormalTime>
+		<canBeDispelled>false</canBeDispelled>
+		<operateType>A2</operateType>
+		<reuseDelay>14400000</reuseDelay>
+		<irreplacableBuff>true</irreplacableBuff>
+		<effectPoint>100</effectPoint>
+		<abnormalType>VP_UP</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-2</specialLevel>
+		<magicLvl>-2</magicLvl>
+		<abnormalLvl>8</abnormalLvl>
+		<hitTime>100</hitTime>
+		<isMagic>4</isMagic>
+		<staticReuse>true</staticReuse>
+		<abnormalVisualEffect>VP_UP</abnormalVisualEffect>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpCheckAbnormal">
+				<type>VP_UP</type>
+				<level>8</level>
+				<hasAbnormal>false</hasAbnormal>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="VitalityPointsRate">
+				<amount>-10</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22313" toLevel="1" name="Pa'agrio's Warm Breeze (4-h.)">
+		<!-- For 4 h., recovers Vitality when XP is acquired through hunting. Will not be deleted upon death. -->
+		<icon>BranchSys2.Icon.pi_wind_of_paagrio</icon>
+		<operateType>A2</operateType>
+		<effectPoint>100</effectPoint>
+		<abnormalType>VP_UP</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-2</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<abnormalLvl>8</abnormalLvl>
+		<abnormalTime>14400</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<reuseDelay>3600000</reuseDelay>
+		<isMagic>4</isMagic>
+		<staticReuse>true</staticReuse>
+		<abnormalVisualEffect>VP_UP</abnormalVisualEffect>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CanRestoreVitalPoint" />
+			<condition name="CanUseVitalityConsumeItem" />
+			<condition name="OpCheckAbnormal">
+				<type>VP_UP</type>
+				<level>8</level>
+				<hasAbnormal>false</hasAbnormal>
+			</condition>
+		</conditions>
+	</skill>
+	<skill id="22314" toLevel="1" name="1st Place Treasure Sack">
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>22194</itemConsumeId>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="1.19">
+						<item id="6373" count="1" /> <!-- Imperial Crusader Breastplate -->
+					</item>
+					<item chance="1.84">
+						<item id="6374" count="1" /> <!-- Imperial Crusader Gaiters -->
+					</item>
+					<item chance="4.47">
+						<item id="6375" count="1" /> <!-- Imperial Crusader Gauntlets -->
+					</item>
+					<item chance="4.47">
+						<item id="6376" count="1" /> <!-- Imperial Crusader Boots -->
+					</item>
+					<item chance="4.25">
+						<item id="6377" count="1" /> <!-- Imperial Crusader Shield -->
+					</item>
+					<item chance="3.01">
+						<item id="6378" count="1" /> <!-- Imperial Crusader Helmet -->
+					</item>
+					<item chance="0.19">
+						<item id="6379" count="1" /> <!-- Draconic Leather Armor -->
+					</item>
+					<item chance="4.47">
+						<item id="6380" count="1" /> <!-- Draconic Leather Gloves -->
+					</item>
+					<item chance="4.47">
+						<item id="6381" count="1" /> <!-- Draconic Leather Boots -->
+					</item>
+					<item chance="3.01">
+						<item id="6382" count="1" /> <!-- Draconic Leather Helmet -->
+					</item>
+					<item chance="0.19">
+						<item id="6383" count="1" /> <!-- Major Arcana Robe -->
+					</item>
+					<item chance="4.47">
+						<item id="6384" count="1" /> <!-- Major Arcana Gloves -->
+					</item>
+					<item chance="4.47">
+						<item id="6385" count="1" /> <!-- Major Arcana Boots -->
+					</item>
+					<item chance="3.01">
+						<item id="6386" count="1" /> <!-- Major Arcana Circlet -->
+					</item>
+					<item chance="3.16">
+						<item id="9570" count="1" /> <!-- Red Soul Crystal - Stage 14 -->
+					</item>
+					<item chance="3.16">
+						<item id="9571" count="1" /> <!-- Blue Soul Crystal - Stage 14 -->
+					</item>
+					<item chance="3.16">
+						<item id="9572" count="1" /> <!-- Green Soul Crystal - Stage 14 -->
+					</item>
+					<item chance="15.67">
+						<item id="5908" count="1" /> <!-- Red Soul Crystal: Stage 13 -->
+					</item>
+					<item chance="15.67">
+						<item id="5911" count="1" /> <!-- Green Soul Crystal - Stage 13 -->
+					</item>
+					<item chance="15.67">
+						<item id="5914" count="1" /> <!-- Blue Soul Crystal: Stage 13 -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22315" fromLevel="2" toLevel="2" name="2nd Place Treasure Sack">
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>22195</itemConsumeId>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="2.20">
+						<item id="9625" count="1" /> <!-- Lesser Giant's Codex - Oblivion -->
+					</item>
+					<item chance="1.42">
+						<item id="9626" count="1" /> <!-- Lesser Giant's Codex - Discipline -->
+					</item>
+					<item chance="0.67">
+						<item id="9627" count="1" /> <!-- Lesser Giant's Codex - Mastery -->
+					</item>
+					<item chance="15.30">
+						<item id="9546" count="1" /> <!-- Fire Stone -->
+					</item>
+					<item chance="15.30">
+						<item id="9547" count="1" /> <!-- Water Stone -->
+					</item>
+					<item chance="15.30">
+						<item id="9548" count="1" /> <!-- Earth Stone -->
+					</item>
+					<item chance="15.30">
+						<item id="9549" count="1" /> <!-- Wind Stone -->
+					</item>
+					<item chance="15.30">
+						<item id="9550" count="1" /> <!-- Dark Stone -->
+					</item>
+					<item chance="15.30">
+						<item id="9551" count="1" /> <!-- Holy Stone -->
+					</item>
+					<item chance="0.28">
+						<item id="959" count="1" /> <!-- Scroll: Enchant Weapon (S-grade) -->
+					</item>
+					<item chance="3.73">
+						<item id="960" count="1" /> <!-- Scroll: Enchant Armor (S-grade) -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22316" fromLevel="3" toLevel="3" name="3rd Place Treasure Sack">
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>22196</itemConsumeId>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="0.51">
+						<item id="729" count="1" /> <!-- Scroll: Enchant Weapon (A-grade) -->
+					</item>
+					<item chance="3.86">
+						<item id="730" count="1" /> <!-- Scroll: Enchant Armor (A-grade) -->
+					</item>
+					<item chance="1.85">
+						<item id="947" count="1" /> <!-- Scroll: Enchant Weapon (B-grade) -->
+					</item>
+					<item chance="11.57">
+						<item id="948" count="1" /> <!-- Scroll: Enchant Armor (B-grade) -->
+					</item>
+					<item chance="32.15">
+						<item id="8736" count="1" /> <!-- Mid-grade Life Stone - Lv. 55 -->
+					</item>
+					<item chance="23.15">
+						<item id="8738" count="1" /> <!-- Mid-grade Life Stone - Lv. 61 -->
+					</item>
+					<item chance="12.86">
+						<item id="8741" count="1" /> <!-- Mid-grade Life Stone - Lv. 70 -->
+					</item>
+					<item chance="11.57">
+						<item id="8742" count="1" /> <!-- Mid-grade Life Stone - Lv. 76 -->
+					</item>
+					<item chance="2.48">
+						<item id="3936" count="1" /> <!-- Blessed Scroll of Resurrection -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22317" fromLevel="4" toLevel="4" name="4th Place Treasure Sack">
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>22197</itemConsumeId>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="3.01">
+						<item id="951" count="1" /> <!-- Scroll: Enchant Weapon (C-grade) -->
+					</item>
+					<item chance="21.30">
+						<item id="952" count="1" /> <!-- Scroll: Enchant Armor (C-grade) -->
+					</item>
+					<item chance="6.41">
+						<item id="955" count="1" /> <!-- Scroll: Enchant Weapon (D-grade) -->
+					</item>
+					<item chance="52.72">
+						<item id="956" count="1" /> <!-- Scroll: Enchant Armor (D-grade) -->
+					</item>
+					<item chance="2.56">
+						<item id="1538" count="1" /> <!-- Blessed Scroll of Escape -->
+					</item>
+					<item chance="7.00">
+						<item id="9909" count="1" /> <!-- Agathion Bracelet -->
+					</item>
+					<item chance="7.00">
+						<item id="10139" count="1" /> <!-- Agathion Bracelet -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22318" fromLevel="5" toLevel="5" name="5th Place Treasure sack">
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>22198</itemConsumeId>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="100">
+						<item id="10178" count="5" /> <!-- Sweet Fruit Cocktail -->
+						<item id="10179" count="5" /> <!-- Fresh Fruit Cocktail -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22319" fromLevel="6" toLevel="6" name="6th Place Treasure Sack">
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>22199</itemConsumeId>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="9.00">
+						<item id="10260" count="3" /> <!-- Haste Potion -->
+					</item>
+					<item chance="9.00">
+						<item id="10261" count="3" /> <!-- Accuracy Juice -->
+					</item>
+					<item chance="9.00">
+						<item id="10262" count="3" /> <!-- Critical Damage Juice -->
+					</item>
+					<item chance="9.00">
+						<item id="10263" count="3" /> <!-- Critical Rate Juice -->
+					</item>
+					<item chance="9.00">
+						<item id="10264" count="3" /> <!-- Casting Spd. Juice -->
+					</item>
+					<item chance="9.00">
+						<item id="10265" count="3" /> <!-- Evasion Juice -->
+					</item>
+					<item chance="9.00">
+						<item id="10266" count="3" /> <!-- M. Atk. Juice -->
+					</item>
+					<item chance="9.00">
+						<item id="10267" count="3" /> <!-- P. Atk. Potion -->
+					</item>
+					<item chance="9.00">
+						<item id="10268" count="3" /> <!-- Wind Walk Juice -->
+					</item>
+					<item chance="9.00">
+						<item id="10269" count="3" /> <!-- P. Def. Juice -->
+					</item>
+					<item chance="10.00">
+						<item id="10270" count="3" /> <!-- MP Consumption Juice -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22320" toLevel="1" name="Berserker Spirit">
+		<!-- Decreases P. Def. by 8%, M. Def. by 16%, and Evasion by 4, increases P. Atk. by 8%, M. Atk. by 16%, Atk. Spd. by 8%, Casting Spd. by 8%, and Speed by 8 for 60 min. -->
+		<icon>icon.etc_fruit_cocktail_i01</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>BERSERKER</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<abnormalLvl>3</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22321" toLevel="1" name="Acumen">
+		<!-- Increases Casting Spd. by 30% for 60 min. -->
+		<icon>icon.etc_fruit_cocktail_i01</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>CASTING_TIME_DOWN</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<abnormalLvl>4</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22322" toLevel="1" name="Magic Barrier">
+		<!-- Increases M. Def. by 30% for 60 min. -->
+		<icon>icon.etc_fruit_cocktail_i01</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>MD_UP</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<abnormalLvl>4</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22323" toLevel="1" name="Clarity">
+		<!-- Decreases MP Consumption by 20% for physical skills, by 10% for magical skills, and by 20% for song/ dance skills for 60 min. -->
+		<icon>icon.etc_fruit_cocktail_i01</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>CHEAP_MAGIC</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<abnormalLvl>4</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22324" toLevel="1" name="Blessed Soul">
+		<!-- Increases Max MP by 35% for 60 min. -->
+		<icon>icon.etc_fruit_cocktail_i01</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>MAX_MP_UP</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<abnormalLvl>7</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22325" toLevel="1" name="Blessed Body">
+		<!-- Increases Max HP by 35% for 60 min. -->
+		<icon>icon.etc_fruit_cocktail_i01</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>MAX_HP_UP</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<abnormalLvl>7</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22326" toLevel="1" name="Empower">
+		<!-- Increases M. Atk. by 75% for 60 min. -->
+		<icon>icon.etc_fruit_cocktail_i01</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>MA_UP</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<abnormalLvl>4</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22327" toLevel="1" name="Wind Walk">
+		<!-- Increases Speed by 33 for 60 min. -->
+		<icon>icon.etc_fruit_cocktail_i01</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>SPEED_UP</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<abnormalLvl>3</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22328" toLevel="1" name="Shield">
+		<!-- Increases P. Def. by 15% for 60 min. -->
+		<icon>icon.etc_fruit_cocktail_i01</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>PD_UP</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<abnormalLvl>4</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22329" toLevel="1" name="Wind Walk">
+		<!-- Increases Speed by 33 for 60 min. -->
+		<icon>icon.etc_fruit_cocktail_i00</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>SPEED_UP</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<abnormalLvl>3</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22330" toLevel="1" name="Shield">
+		<!-- Increases P. Def. by 15% for 60 min. -->
+		<icon>icon.etc_fruit_cocktail_i00</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>PD_UP</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<abnormalLvl>4</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22331" toLevel="1" name="Haste">
+		<!-- Increases Atk. Spd. by 33% for 60 min. -->
+		<icon>icon.etc_fruit_cocktail_i00</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>ATTACK_TIME_DOWN</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<abnormalLvl>3</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22332" toLevel="1" name="Death Whisper">
+		<!-- Increases Critical Damage by 35% for 60 min. -->
+		<icon>icon.etc_fruit_cocktail_i00</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>CRITICAL_DMG_UP</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<abnormalLvl>4</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22333" toLevel="1" name="Vampiric Rage">
+		<!-- Absorbs 9% of the physical damage inflicted on the enemy as HP with a certain probability for 60 min. -->
+		<icon>icon.etc_fruit_cocktail_i00</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>VAMPIRIC_ATTACK</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<abnormalLvl>5</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22334" toLevel="1" name="Guidance">
+		<!-- Increases Accuracy by 4 for 60 min. -->
+		<icon>icon.etc_fruit_cocktail_i00</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>HIT_UP</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<abnormalLvl>4</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22335" toLevel="1" name="Might">
+		<!-- Increases P. Atk. by 15% for 60 min. -->
+		<icon>icon.etc_fruit_cocktail_i00</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>PA_UP</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<abnormalLvl>4</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22336" toLevel="1" name="Blessed Body">
+		<!-- Increases Max HP by 35% for 60 min. -->
+		<icon>icon.etc_fruit_cocktail_i00</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>MAX_HP_UP</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<abnormalLvl>7</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22337" toLevel="1" name="Focus">
+		<!-- Increases Critical Rate by 30% for 60 min. -->
+		<icon>icon.etc_fruit_cocktail_i00</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>CRITICAL_PROB_UP</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<abnormalLvl>4</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22338" toLevel="1" name="Blessed Shield">
+		<!-- Increases Shield Defense Rate by 30% for 60 min. -->
+		<icon>icon.etc_fruit_cocktail_i00</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>SHIELD_PROB_UP</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<abnormalLvl>3</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22339" toLevel="1" name="Berserker Spirit">
+		<!-- Decreases P. Def. by 8%, M. Def. by 16%, and Evasion by 4, and increases P. Atk. by 8%, M. Atk. by 16%, Atk. Spd. by 8%, Casting Spd. by 8%, and Speed by 8 for 60 min. -->
+		<icon>icon.etc_fruit_cocktail_i00</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>BERSERKER</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<abnormalLvl>3</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22340" toLevel="1" name="Might">
+		<!-- Increases P. Atk. by 15% for 60 min. -->
+		<icon>icon.etc_fresh_milk_i00</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>PA_UP</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-3</specialLevel>
+		<magicLvl>-3</magicLvl>
+		<abnormalLvl>4</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22341" toLevel="1" name="Wind Walk">
+		<!-- Increases Speed by 33 for 60 min. -->
+		<icon>icon.etc_fresh_milk_i00</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>SPEED_UP</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-3</specialLevel>
+		<magicLvl>-3</magicLvl>
+		<abnormalLvl>3</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22342" toLevel="1" name="Haste">
+		<!-- Increases Atk. Spd. by 33% for 60 min. -->
+		<icon>icon.etc_fresh_milk_i00</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>ATTACK_TIME_DOWN</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-3</specialLevel>
+		<magicLvl>-3</magicLvl>
+		<abnormalLvl>3</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22343" toLevel="1" name="Vampiric Rage">
+		<!-- Absorbs 9% of the physical damage inflicted on the enemy as HP with a certain probability for 60 min. -->
+		<icon>icon.etc_fresh_milk_i00</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>VAMPIRIC_ATTACK</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-3</specialLevel>
+		<magicLvl>-3</magicLvl>
+		<abnormalLvl>5</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22344" toLevel="1" name="Berserker Spirit">
+		<!-- Decreases P. Def. by 8%, M. Def. by 16%, and Evasion by 4, and increases P. Atk. by 8%, M. Atk. by 16%, Atk. Spd. by 8%, Casting Spd. by 8%, and Speed by 8 for 60 min. -->
+		<icon>icon.etc_fresh_milk_i00</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>BERSERKER</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-3</specialLevel>
+		<magicLvl>-3</magicLvl>
+		<abnormalLvl>3</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22345" toLevel="1" name="Empower">
+		<!-- Increases M. Atk. by 75% for 60 min. -->
+		<icon>icon.etc_fresh_milk_i00</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>MA_UP</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-3</specialLevel>
+		<magicLvl>-3</magicLvl>
+		<abnormalLvl>4</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22346" toLevel="1" name="Acumen">
+		<!-- Increases Casting Spd. by 30% for 60 min. -->
+		<icon>icon.etc_fresh_milk_i00</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>CASTING_TIME_DOWN</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-3</specialLevel>
+		<magicLvl>-3</magicLvl>
+		<abnormalLvl>4</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22347" toLevel="1" name="Shield">
+		<!-- Increases P. Def. by 15% for 60 min. -->
+		<icon>icon.etc_fresh_milk_i00</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>PD_UP</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-3</specialLevel>
+		<magicLvl>-3</magicLvl>
+		<abnormalLvl>4</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22348" toLevel="1" name="Focus">
+		<!-- Increases Critical Rate by 30% for 60 min. -->
+		<icon>icon.etc_fresh_milk_i00</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>CRITICAL_PROB_UP</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-3</specialLevel>
+		<magicLvl>-3</magicLvl>
+		<abnormalLvl>4</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22349" toLevel="1" name="Death Whisper">
+		<!-- Increases Critical Damage by 35% for 60 min. -->
+		<icon>icon.etc_fresh_milk_i00</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>CRITICAL_DMG_UP</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-3</specialLevel>
+		<magicLvl>-3</magicLvl>
+		<abnormalLvl>4</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22350" toLevel="1" name="Guidance">
+		<!-- Increases Accuracy by 4 for 60 min. -->
+		<icon>icon.etc_fresh_milk_i00</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>HIT_UP</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-3</specialLevel>
+		<magicLvl>-3</magicLvl>
+		<abnormalLvl>4</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22351" toLevel="1" name="Clarity">
+		<!-- Decreases MP Consumption by 20% for physical skills, by 10% for magical skills, and by 20% for song/ dance skills for 60 min. -->
+		<icon>icon.etc_fresh_milk_i00</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>CHEAP_MAGIC</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-3</specialLevel>
+		<magicLvl>-3</magicLvl>
+		<abnormalLvl>4</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22352" toLevel="1" name="Wild Magic">
+		<!-- Increases the chance of prominent magic damage by 2 for 60 min. -->
+		<icon>icon.etc_fresh_milk_i00</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>MAGIC_CRITICAL_UP</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-3</specialLevel>
+		<magicLvl>-3</magicLvl>
+		<abnormalLvl>3</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>1</isMagic>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22353" toLevel="6" name="Concentration">
+		<!-- Decreases magic cancel damage by 53 for 60 min. -->
+		<icon>icon.etc_fresh_milk_i00</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>CANCEL_PROB_DOWN</abnormalType>
+		<specialLevel>-3</specialLevel>
+		<magicCriticalRate>5</magicCriticalRate>
+		<basicProperty>NONE</basicProperty>
+		<magicLvl>-3</magicLvl>
+		<abnormalLvl>7</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>1</isMagic>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22354" toLevel="1" name="Lantern Agathion's Gift">
+		<itemConsumeId>22220</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="0.002525">
+						<item id="22202" count="1" /> <!-- Weapon Pack (S80-grade) - Event -->
+					</item>
+					<item chance="0.04161">
+						<item id="22221" count="1" /> <!-- Destruction Scroll: Enchant Weapon (S-grade) - Event -->
+					</item>
+					<item chance="0.08322">
+						<item id="22223" count="1" /> <!-- Destruction Scroll: Enchant Weapon (A-grade) - Event -->
+					</item>
+					<item chance="0.178329">
+						<item id="22225" count="1" /> <!-- Destruction Scroll: Enchant Weapon (B-grade) - Event -->
+					</item>
+					<item chance="0.416101">
+						<item id="22227" count="1" /> <!-- Destruction Scroll: Enchant Weapon (C-grade) - Event -->
+					</item>
+					<item chance="0.693502">
+						<item id="22229" count="1" /> <!-- Destruction Scroll: Enchant Weapon (D-grade) - Event -->
+					</item>
+					<item chance="0.082913">
+						<item id="22222" count="1" /> <!-- Destruction Scroll: Enchant Armor (S-grade) - Event -->
+					</item>
+					<item chance="0.207282">
+						<item id="22224" count="1" /> <!-- Destruction Scroll: Enchant Armor (A-grade) - Event -->
+					</item>
+					<item chance="0.497478">
+						<item id="22226" count="1" /> <!-- Destruction Scroll: Enchant Armor (B-grade) - Event -->
+					</item>
+					<item chance="1.066023">
+						<item id="22228" count="1" /> <!-- Destruction Scroll: Enchant Armor (C-grade) - Event -->
+					</item>
+					<item chance="1.865541">
+						<item id="22230" count="1" /> <!-- Destruction Scroll: Enchant Armor (D-grade) - Event -->
+					</item>
+					<item chance="0.002525">
+						<item id="22206" count="1" /> <!-- Soul Crystal - Step 17 Box - Event -->
+					</item>
+					<item chance="0.005051">
+						<item id="17077" count="1" /> <!-- Soul Crystal - Step 16 Box -->
+					</item>
+					<item chance="0.007576">
+						<item id="17076" count="1" /> <!-- Soul Crystal - Step 15 Box -->
+					</item>
+					<item chance="0.005051">
+						<item id="17069" count="1" /> <!-- Vesper Weapon Pack -->
+					</item>
+					<item chance="0.010101">
+						<item id="17070" count="1" /> <!-- Icarus Weapon Pack -->
+					</item>
+					<item chance="0.015152">
+						<item id="17071" count="1" /> <!-- Dynasty Weapon Pack -->
+					</item>
+					<item chance="0.003788">
+						<item id="22203" count="1" /> <!-- Vorpal Armor Pack - Event -->
+					</item>
+					<item chance="0.007576">
+						<item id="17072" count="1" /> <!-- Vesper Armor Pack -->
+					</item>
+					<item chance="0.015152">
+						<item id="17073" count="1" /> <!-- Moirai Armor Pack -->
+					</item>
+					<item chance="0.018939">
+						<item id="17074" count="1" /> <!-- Dynasty Armor Pack -->
+					</item>
+					<item chance="0.025253">
+						<item id="13421" count="1" /> <!-- Honey Wheat Cake -->
+					</item>
+					<item chance="0.25">
+						<item id="14169" count="1" /> <!-- Top-grade Life Stone - Lv. 84 -->
+					</item>
+					<item chance="0.299913">
+						<item id="10486" count="1" /> <!-- Top-grade Life Stone - Lv. 82 -->
+					</item>
+					<item chance="0.359896">
+						<item id="9576" count="1" /> <!-- Top-grade Life Stone - Lv. 80 -->
+					</item>
+					<item chance="0.431875">
+						<item id="8762" count="1" /> <!-- Top-grade Life Stone - Lv. 76 -->
+					</item>
+					<item chance="1">
+						<item id="14168" count="1" /> <!-- High-grade Life Stone - Lv. 84 -->
+					</item>
+					<item chance="1.199363">
+						<item id="10485" count="1" /> <!-- High-grade Life Stone - Lv. 82 -->
+					</item>
+					<item chance="1.439236">
+						<item id="9575" count="1" /> <!-- High-grade Life Stone - Lv. 80 -->
+					</item>
+					<item chance="1.727083">
+						<item id="8752" count="1" /> <!-- High-grade Life Stone - Lv. 76 -->
+					</item>
+					<item chance="0.833333">
+						<item id="22233" count="1" /> <!-- Mysterious Blessed Spiritshot Pack (S-grade) - Event -->
+					</item>
+					<item chance="2.916667">
+						<item id="22232" count="1" /> <!-- Mysterious Soulshot Pack (S-grade) - Event -->
+					</item>
+					<item chance="1.666667">
+						<item id="9627" count="1" /> <!-- Lesser Giant's Codex - Mastery -->
+					</item>
+					<item chance="0.833333">
+						<item id="17276" count="1" /> <!-- Scroll: 50,000 SP -->
+					</item>
+					<item chance="4.182543">
+						<item id="17185" count="1" /> <!-- Scroll: 10,000 SP -->
+					</item>
+					<item chance="6.506178">
+						<item id="14052" count="5" /> <!-- Vesper Noble Enhancement Stone -->
+					</item>
+					<item chance="5.809087">
+						<item id="17184" count="1" /> <!-- Scroll: 5,000 SP -->
+					</item>
+					<item chance="6.738541">
+						<item id="6622" count="1" /> <!-- Lesser Giant's Codex -->
+					</item>
+					<item chance="7.156795">
+						<item id="2134" count="1" /> <!-- Gemstone (S-grade) -->
+					</item>
+					<item chance="7.296213">
+						<item id="14687" count="1" /> <!-- Superior Elixir of Life (S-grade) -->
+					</item>
+					<item chance="7.296213">
+						<item id="14693" count="1" /> <!-- Superior Elixir of Mind (S-grade) -->
+					</item>
+					<item chance="7.296213">
+						<item id="14699" count="1" /> <!-- Superior Elixir of CP (S-grade) -->
+					</item>
+					<item chance="7.342686">
+						<item id="14701" count="2" /> <!-- Superior Quick Healing Potion -->
+					</item>
+					<item chance="7.389159">
+						<item id="14686" count="1" /> <!-- Superior Elixir of Life (A-grade) -->
+					</item>
+					<item chance="7.389159">
+						<item id="14692" count="1" /> <!-- Superior Elixir of Mind (A-grade) -->
+					</item>
+					<item chance="7.389159">
+						<item id="14698" count="1" /> <!-- Superior Elixir of CP (A-grade) -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22355" toLevel="1" name="Soul Crystal - Step 17 Box">
+		<itemConsumeId>22206</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<blockedInOlympiad>false</blockedInOlympiad>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="33">
+						<item id="15541" count="1" /> <!-- Red Soul Crystal - Stage 17 -->
+					</item>
+					<item chance="33">
+						<item id="15542" count="1" /> <!-- Blue Soul Crystal - Stage 17 -->
+					</item>
+					<item chance="34">
+						<item id="15543" count="1" /> <!-- Green Soul Crystal - Stage 17 -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22356" toLevel="1" name="Soul Crystal - Step 18 Box">
+		<itemConsumeId>22207</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<blockedInOlympiad>false</blockedInOlympiad>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="33">
+						<item id="15826" count="1" /> <!-- Red Soul Crystal - Stage 18 -->
+					</item>
+					<item chance="33">
+						<item id="15827" count="1" /> <!-- Blue Soul Crystal - Stage 18 -->
+					</item>
+					<item chance="34">
+						<item id="15828" count="1" /> <!-- Green Soul Crystal - Stage 18 -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22357" toLevel="1" name="High-grade Weapon Pack (S84-grade)">
+		<itemConsumeId>22202</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="7.1429">
+						<item id="15558" count="1" /> <!-- Periel Sword -->
+					</item>
+					<item chance="7.1429">
+						<item id="15559" count="1" /> <!-- Skull Edge -->
+					</item>
+					<item chance="7.1429">
+						<item id="15560" count="1" /> <!-- Vigwik Axe -->
+					</item>
+					<item chance="7.1429">
+						<item id="15561" count="1" /> <!-- Devilish Maul -->
+					</item>
+					<item chance="7.1429">
+						<item id="15562" count="1" /> <!-- Feather Eye Blade -->
+					</item>
+					<item chance="7.1429">
+						<item id="15563" count="1" /> <!-- Octo Claw -->
+					</item>
+					<item chance="7.1429">
+						<item id="15564" count="1" /> <!-- Doubletop Spear -->
+					</item>
+					<item chance="7.1429">
+						<item id="15565" count="1" /> <!-- Rising Star -->
+					</item>
+					<item chance="7.1429">
+						<item id="15566" count="1" /> <!-- Black Visage -->
+					</item>
+					<item chance="7.1429">
+						<item id="15567" count="1" /> <!-- Veniplant Sword -->
+					</item>
+					<item chance="7.1429">
+						<item id="15568" count="1" /> <!-- Skull Carnium Bow -->
+					</item>
+					<item chance="7.1429">
+						<item id="15569" count="1" /> <!-- Gemtail Rapier -->
+					</item>
+					<item chance="7.1429">
+						<item id="15570" count="1" /> <!-- Finale Blade -->
+					</item>
+					<item chance="7.1429">
+						<item id="15571" count="1" /> <!-- Dominion Crossbow -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22358" toLevel="1" name="Vorpal Armor Pack">
+		<itemConsumeId>22203</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="5.8824">
+						<item id="15743" count="1" /> <!-- Sealed Vorpal Helmet -->
+					</item>
+					<item chance="5.8824">
+						<item id="15744" count="1" /> <!-- Sealed Vorpal Leather Helmet -->
+					</item>
+					<item chance="5.8824">
+						<item id="15745" count="1" /> <!-- Sealed Vorpal Circlet -->
+					</item>
+					<item chance="5.8824">
+						<item id="15746" count="1" /> <!-- Sealed Vorpal Breastplate -->
+					</item>
+					<item chance="5.8824">
+						<item id="15747" count="1" /> <!-- Sealed Vorpal Leather Breastplate -->
+					</item>
+					<item chance="5.8824">
+						<item id="15748" count="1" /> <!-- Sealed Vorpal Tunic -->
+					</item>
+					<item chance="5.8824">
+						<item id="15749" count="1" /> <!-- Sealed Vorpal Gaiters -->
+					</item>
+					<item chance="5.8824">
+						<item id="15750" count="1" /> <!-- Sealed Vorpal Leather Leggings -->
+					</item>
+					<item chance="5.8824">
+						<item id="15751" count="1" /> <!-- Sealed Vorpal Stockings -->
+					</item>
+					<item chance="5.8824">
+						<item id="15752" count="1" /> <!-- Sealed Vorpal Gauntlets -->
+					</item>
+					<item chance="5.8824">
+						<item id="15753" count="1" /> <!-- Sealed Vorpal Leather Gloves -->
+					</item>
+					<item chance="5.8824">
+						<item id="15754" count="1" /> <!-- Sealed Vorpal Gloves -->
+					</item>
+					<item chance="5.8824">
+						<item id="15755" count="1" /> <!-- Sealed Vorpal Boots -->
+					</item>
+					<item chance="5.8824">
+						<item id="15756" count="1" /> <!-- Sealed Vorpal Leather Boots -->
+					</item>
+					<item chance="5.8824">
+						<item id="15757" count="1" /> <!-- Sealed Vorpal Shoes -->
+					</item>
+					<item chance="5.8824">
+						<item id="15758" count="1" /> <!-- Sealed Vorpal Shield -->
+					</item>
+					<item chance="5.8824">
+						<item id="15759" count="1" /> <!-- Sealed Vorpal Sigil -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22359" toLevel="1" name="Destruction Scroll: Enchant Weapon (S-grade)">
+		<operateType>A1</operateType> <!-- FIXME: value unconfirmed -->
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>ITEM</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22360" toLevel="1" name="Destruction Scroll: Enchant Armor (S-grade)">
+		<operateType>A1</operateType> <!-- FIXME: value unconfirmed -->
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>ITEM</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22361" toLevel="1" name="Destruction Scroll: Enchant Weapon (A-grade)">
+		<operateType>A1</operateType> <!-- FIXME: value unconfirmed -->
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>ITEM</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22362" toLevel="1" name="Destruction Scroll: Enchant Armor (A-grade)">
+		<operateType>A1</operateType> <!-- FIXME: value unconfirmed -->
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>ITEM</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22363" toLevel="1" name="Destruction Scroll: Enchant Weapon (B-grade)">
+		<operateType>A1</operateType> <!-- FIXME: value unconfirmed -->
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>ITEM</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22364" toLevel="1" name="Destruction Scroll: Enchant Armor (B-grade)">
+		<operateType>A1</operateType> <!-- FIXME: value unconfirmed -->
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>ITEM</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22365" toLevel="1" name="Destruction Scroll: Enchant Weapon (C-grade)">
+		<operateType>A1</operateType> <!-- FIXME: value unconfirmed -->
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>ITEM</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22366" toLevel="1" name="Destruction Scroll: Enchant Armor (C-grade)">
+		<operateType>A1</operateType> <!-- FIXME: value unconfirmed -->
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>ITEM</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22367" toLevel="1" name="Destruction Scroll: Enchant Weapon (D-grade)">
+		<operateType>A1</operateType> <!-- FIXME: value unconfirmed -->
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>ITEM</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22368" toLevel="1" name="Destruction Scroll: Enchant Armor (D-grade)">
+		<operateType>A1</operateType> <!-- FIXME: value unconfirmed -->
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>ITEM</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22369" toLevel="1" name="Blessed Spiritshot (S-grade)">
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="22370" toLevel="1" name="Mysterious Soulshot Pack (S-grade)">
+		<itemConsumeId>22232</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="Restoration">
+				<itemId>21850</itemId>
+				<itemCount>1000</itemCount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22371" toLevel="1" name="Mysterious Blessed Spiritshot Pack (S-grade)">
+		<itemConsumeId>22231</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="Restoration">
+				<itemId>22231</itemId>
+				<itemCount>1000</itemCount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22372" toLevel="1" name="Meteor">
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>81</minLevel>
+				<maxLevel>84</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+			<condition name="OpCheckClassList">
+				<classIds>
+					<item>ARCHMAGE</item>
+					<item>SOULTAKER</item>
+				</classIds>
+				<affectType>CASTER</affectType>
+				<isWithin>true</isWithin>
+			</condition>
+			<condition name="OpSkill">
+				<skillId>1467</skillId> <!-- Meteor -->
+				<skillLevel>1</skillLevel>
+				<hasLearned>false</hasLearned>
+			</condition>
+		</conditions>
+	</skill>
+	<skill id="22373" toLevel="1" name="Starfall">
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>81</minLevel>
+				<maxLevel>84</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+			<condition name="OpCheckClassList">
+				<classIds>
+					<item>MYSTIC_MUSE</item>
+					<item>STORM_SCREAMER</item>
+				</classIds>
+				<affectType>CASTER</affectType>
+				<isWithin>true</isWithin>
+			</condition>
+			<condition name="OpSkill">
+				<skillId>1468</skillId> <!-- Star Fall -->
+				<skillLevel>1</skillLevel>
+				<hasLearned>false</hasLearned>
+			</condition>
+		</conditions>
+	</skill>
+	<skill id="22374" toLevel="1" name="Sweet Chocolate">
+		<!-- For 30 min., Vitality is replenished when XP is acquired through hunting. -->
+		<icon>BranchSys.icon.br_valentine_darkchoco_i00</icon>
+		<operateType>A2</operateType>
+		<effectPoint>100</effectPoint>
+		<abnormalType>VP_UP</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<abnormalLvl>8</abnormalLvl>
+		<abnormalTime>1800</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<reuseDelay>3600000</reuseDelay>
+		<isMagic>4</isMagic>
+		<staticReuse>true</staticReuse>
+		<abnormalVisualEffect>VP_UP</abnormalVisualEffect>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CanRestoreVitalPoint" />
+			<condition name="CanUseVitalityConsumeItem" />
+			<condition name="OpCheckAbnormal">
+				<type>VP_UP</type>
+				<level>8</level>
+				<hasAbnormal>false</hasAbnormal>
+			</condition>
+		</conditions>
+	</skill>
+	<skill id="22375" toLevel="1" name="Valentine's Day Love Pouch">
+		<itemConsumeId>22236</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="20">
+						<item id="14773" count="1" /> <!-- Formal Wear (14-day) - 14-day -->
+					</item>
+					<item chance="20">
+						<item id="14776" count="1" /> <!-- Agathion - Juju (14-day) - 14-day -->
+					</item>
+					<item chance="20">
+						<item id="14774" count="1" /> <!-- Wild Rose Pig Candy - 14-day -->
+					</item>
+					<item chance="20">
+						<item id="22238" count="1" /> <!-- Scroll: Hair Accessory (Warrior) -->
+					</item>
+					<item chance="20">
+						<item id="22239" count="1" /> <!-- Scroll: Hair Accessory (Wizard) -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22376" toLevel="1" name="Sweet Chocolate">
+		<!-- For 30 min., Vitality is replenished when XP is acquired through hunting. -->
+		<icon>BranchSys.icon.br_valentine_darkchoco_i00</icon>
+		<operateType>A2</operateType>
+		<effectPoint>100</effectPoint>
+		<abnormalType>VP_UP</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<abnormalLvl>8</abnormalLvl>
+		<abnormalTime>1800</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<reuseDelay>3600000</reuseDelay>
+		<isMagic>4</isMagic>
+		<staticReuse>true</staticReuse>
+		<abnormalVisualEffect>VP_UP</abnormalVisualEffect>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CanRestoreVitalPoint" />
+			<condition name="CanUseVitalityConsumeItem" />
+			<condition name="OpCheckAbnormal">
+				<type>VP_UP</type>
+				<level>8</level>
+				<hasAbnormal>false</hasAbnormal>
+			</condition>
+		</conditions>
+	</skill>
+	<skill id="22377" toLevel="1" name="Bad Bunny's Necklace Pack">
+		<itemConsumeId>22208</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="70">
+						<item id="22211" count="1" /> <!-- Bad Bunny's Necklace - 7-day (Event) -->
+					</item>
+					<item chance="30">
+						<item id="22214" count="1" /> <!-- Bad Bunny's Necklace - 30-day (Event) -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22378" toLevel="1" name="Bad Bunny's Earring Pack">
+		<itemConsumeId>22209</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="70">
+						<item id="22212" count="1" /> <!-- Bad Bunny's Earring - 7-day (Event) -->
+					</item>
+					<item chance="30">
+						<item id="22215" count="1" /> <!-- Bad Bunny's Earring - 30-day (Event) -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22379" toLevel="1" name="Bad Bunny's Ring Pack">
+		<itemConsumeId>22210</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="70">
+						<item id="22213" count="1" /> <!-- Bad Bunny's Ring - 7-day (Event) -->
+					</item>
+					<item chance="30">
+						<item id="22216" count="1" /> <!-- Bad Bunny's Ring - 30-day (Event) -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22380" toLevel="1" name="Lantern Agathion's Gift Set">
+		<itemConsumeId>22217</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="70">
+						<item id="22220" count="2" /> <!-- Lantern Agathion's Gift - Event -->
+					</item>
+					<item chance="15">
+						<item id="22220" count="3" /> <!-- Lantern Agathion's Gift - Event -->
+					</item>
+					<item chance="10">
+						<item id="22220" count="4" /> <!-- Lantern Agathion's Gift - Event -->
+					</item>
+					<item chance="5">
+						<item id="22220" count="5" /> <!-- Lantern Agathion's Gift - Event -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22381" toLevel="1" name="Attribute Stone Pack">
+		<itemConsumeId>22204</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="17">
+						<item id="9546" count="1" /> <!-- Fire Stone -->
+					</item>
+					<item chance="17">
+						<item id="9547" count="1" /> <!-- Water Stone -->
+					</item>
+					<item chance="17">
+						<item id="9548" count="1" /> <!-- Earth Stone -->
+					</item>
+					<item chance="17">
+						<item id="9549" count="1" /> <!-- Wind Stone -->
+					</item>
+					<item chance="16">
+						<item id="9550" count="1" /> <!-- Dark Stone -->
+					</item>
+					<item chance="16">
+						<item id="9551" count="1" /> <!-- Holy Stone -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22382" toLevel="1" name="Attribute Crystal Pack">
+		<itemConsumeId>22205</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="17">
+						<item id="9552" count="1" /> <!-- Fire Crystal -->
+					</item>
+					<item chance="17">
+						<item id="9553" count="1" /> <!-- Water Crystal -->
+					</item>
+					<item chance="17">
+						<item id="9554" count="1" /> <!-- Earth Crystal -->
+					</item>
+					<item chance="17">
+						<item id="9555" count="1" /> <!-- Wind Crystal -->
+					</item>
+					<item chance="16">
+						<item id="9556" count="1" /> <!-- Dark Crystal -->
+					</item>
+					<item chance="16">
+						<item id="9557" count="1" /> <!-- Holy Crystal -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22383" toLevel="1" name="Pathfinder Supplies">
+		<itemConsumeId>22270</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="100">
+						<item id="1540" count="3" /> <!-- Quick Healing Potion -->
+						<item id="21850" count="360" /> <!-- Mysterious Soulshot (S-grade) -->
+						<item id="21856" count="360" /> <!-- Mysterious Blessed Spiritshot (S-grade) -->
+						<item id="960" count="1" /> <!-- Scroll: Enchant Armor (S-grade) -->
+						<item id="14687" count="1" /> <!-- Superior Elixir of Life (S-grade) -->
+						<item id="14693" count="1" /> <!-- Superior Elixir of Mind (S-grade) -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22384" toLevel="1" name="Pathfinder Supplies">
+		<itemConsumeId>22271</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="100">
+						<item id="1540" count="5" /> <!-- Quick Healing Potion -->
+						<item id="21850" count="360" /> <!-- Mysterious Soulshot (S-grade) -->
+						<item id="21856" count="360" /> <!-- Mysterious Blessed Spiritshot (S-grade) -->
+						<item id="22346" count="1" /> <!-- Enchanting Tool Box -->
+						<item id="14687" count="3" /> <!-- Superior Elixir of Life (S-grade) -->
+						<item id="14693" count="3" /> <!-- Superior Elixir of Mind (S-grade) -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22385" toLevel="1" name="Pathfinder Supplies">
+		<itemConsumeId>22272</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="100">
+						<item id="1540" count="8" /> <!-- Quick Healing Potion -->
+						<item id="21850" count="360" /> <!-- Mysterious Soulshot (S-grade) -->
+						<item id="21856" count="360" /> <!-- Mysterious Blessed Spiritshot (S-grade) -->
+						<item id="22346" count="1" /> <!-- Enchanting Tool Box -->
+						<item id="960" count="1" /> <!-- Scroll: Enchant Armor (S-grade) -->
+						<item id="14687" count="5" /> <!-- Superior Elixir of Life (S-grade) -->
+						<item id="14693" count="5" /> <!-- Superior Elixir of Mind (S-grade) -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22386" toLevel="1" name="PA - Transformation Scroll Pack">
+		<itemConsumeId>22274</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="11">
+						<item id="21182" count="1" /> <!-- Transformation Scroll: Saber Tooth Tiger - Event -->
+					</item>
+					<item chance="11">
+						<item id="21183" count="1" /> <!-- Transformation Scroll: Oel Mahum - Event -->
+					</item>
+					<item chance="11">
+						<item id="21184" count="1" /> <!-- Transformation Scroll: Doll Blader - Event -->
+					</item>
+					<item chance="11">
+						<item id="21185" count="1" /> <!-- Transformation Scroll: Zaken - Event -->
+					</item>
+					<item chance="1">
+						<item id="21186" count="1" /> <!-- Transformation Scroll: Anakim - Event -->
+					</item>
+					<item chance="11">
+						<item id="21187" count="1" /> <!-- Transformation Scroll: Venom - Event -->
+					</item>
+					<item chance="11">
+						<item id="21188" count="1" /> <!-- Transformation Scroll: Gordon - Event -->
+					</item>
+					<item chance="11">
+						<item id="21189" count="1" /> <!-- Transformation Scroll: Ranku - Event -->
+					</item>
+					<item chance="11">
+						<item id="21190" count="1" /> <!-- Transformation Scroll: Kechi - Event -->
+					</item>
+					<item chance="11">
+						<item id="21191" count="1" /> <!-- Transformation Scroll: Demon Prince - Event -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22387" toLevel="1" name="PA - Gift Box">
+		<itemConsumeId>22275</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="50">
+						<item id="22280" count="1" /> <!-- PA - Blessing (1-hour) - Event -->
+					</item>
+					<item chance="50">
+						<item id="22279" count="1" /> <!-- PA Vitality (1-hour) - Event -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22388" toLevel="1" name="PA - Transformation Stick Pack">
+		<itemConsumeId>22276</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="50">
+						<item id="22282" count="1" /> <!-- Sujin Transformation Stick Pack (7-day) - Event -->
+					</item>
+					<item chance="50">
+						<item id="22284" count="1" /> <!-- Trejuo Transformation Stick Pack (7-day) - Event -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22389" toLevel="1" name="PA - Hair Accessory Pack">
+		<itemConsumeId>22277</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="100">
+						<item id="22285" count="1" /> <!-- Eva's Circlet - Event -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22390" toLevel="1" name="PA - Luxury Gift Box">
+		<itemConsumeId>22278</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="100">
+						<item id="21165" count="1" /> <!-- Agathion - Zaken's Spirit Swords -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22391" toLevel="1" name="Jewelry Box - Talisman">
+		<itemConsumeId>22286</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="1.1236">
+						<item id="9914" count="1" /> <!-- Blue Talisman - P. Atk. -->
+					</item>
+					<item chance="1.1236">
+						<item id="9915" count="1" /> <!-- Blue Talisman - M. Critical Rate -->
+					</item>
+					<item chance="1.1236">
+						<item id="9916" count="1" /> <!-- Blue Talisman - Berserker -->
+					</item>
+					<item chance="1.1236">
+						<item id="9917" count="1" /> <!-- Red Talisman - Minimum Clarity -->
+					</item>
+					<item chance="1.1236">
+						<item id="9918" count="1" /> <!-- Red Talisman - Maximum Clarity -->
+					</item>
+					<item chance="1.1236">
+						<item id="9919" count="1" /> <!-- Blue Talisman - Damage Reflect -->
+					</item>
+					<item chance="1.1236">
+						<item id="9920" count="1" /> <!-- Blue Talisman - Invisibility -->
+					</item>
+					<item chance="1.1236">
+						<item id="9921" count="1" /> <!-- Blue Talisman - Shield Defense -->
+					</item>
+					<item chance="1.1236">
+						<item id="9922" count="1" /> <!-- Black Talisman - Mending -->
+					</item>
+					<item chance="1.1236">
+						<item id="9923" count="1" /> <!-- Black Talisman - Escape -->
+					</item>
+					<item chance="1.1236">
+						<item id="9924" count="1" /> <!-- Blue Talisman - Healing -->
+					</item>
+					<item chance="1.1236">
+						<item id="9925" count="1" /> <!-- Red Talisman - HP/ CP Recovery -->
+					</item>
+					<item chance="1.1236">
+						<item id="9926" count="1" /> <!-- Blue Talisman - P. Def. -->
+					</item>
+					<item chance="1.1236">
+						<item id="9927" count="1" /> <!-- Blue Talisman - M. Def. -->
+					</item>
+					<item chance="1.1236">
+						<item id="9928" count="1" /> <!-- Red Talisman - Mental Regeneration -->
+					</item>
+					<item chance="1.1236">
+						<item id="9929" count="1" /> <!-- Blue Talisman - Shield Defense -->
+					</item>
+					<item chance="1.1236">
+						<item id="9930" count="1" /> <!-- Blue Talisman - Evasion -->
+					</item>
+					<item chance="1.1236">
+						<item id="9931" count="1" /> <!-- Red Talisman - Meditation -->
+					</item>
+					<item chance="1.1236">
+						<item id="9932" count="1" /> <!-- Blue Talisman - Divine Protection -->
+					</item>
+					<item chance="1.1236">
+						<item id="9933" count="1" /> <!-- Yellow Talisman - P. Atk. -->
+					</item>
+					<item chance="1.1236">
+						<item id="9934" count="1" /> <!-- Yellow Talisman - Atk. Spd. -->
+					</item>
+					<item chance="1.1236">
+						<item id="9935" count="1" /> <!-- Yellow Talisman - M. Def. -->
+					</item>
+					<item chance="1.1236">
+						<item id="9936" count="1" /> <!-- Yellow Talisman - M. Atk. -->
+					</item>
+					<item chance="1.1236">
+						<item id="9937" count="1" /> <!-- Yellow Talisman - Casting Spd. -->
+					</item>
+					<item chance="1.1236">
+						<item id="9938" count="1" /> <!-- Yellow Talisman - Accuracy -->
+					</item>
+					<item chance="1.1236">
+						<item id="9939" count="1" /> <!-- Yellow Talisman - P. Def. -->
+					</item>
+					<item chance="1.1236">
+						<item id="9940" count="1" /> <!-- Yellow Talisman - Alacrity -->
+					</item>
+					<item chance="1.1236">
+						<item id="9941" count="1" /> <!-- Yellow Talisman - Speed -->
+					</item>
+					<item chance="1.1236">
+						<item id="9942" count="1" /> <!-- Yellow Talisman - Critical Reduction -->
+					</item>
+					<item chance="1.1236">
+						<item id="9943" count="1" /> <!-- Yellow Talisman - Critical Damage -->
+					</item>
+					<item chance="1.1236">
+						<item id="9944" count="1" /> <!-- Yellow Talisman - Critical Dodging -->
+					</item>
+					<item chance="1.1236">
+						<item id="9945" count="1" /> <!-- Yellow Talisman - Evasion -->
+					</item>
+					<item chance="1.1236">
+						<item id="9946" count="1" /> <!-- Yellow Talisman - Healing -->
+					</item>
+					<item chance="1.1236">
+						<item id="9947" count="1" /> <!-- Yellow Talisman - CP Regeneration -->
+					</item>
+					<item chance="1.1236">
+						<item id="9948" count="1" /> <!-- Yellow Talisman - HP Regeneration -->
+					</item>
+					<item chance="1.1236">
+						<item id="9949" count="1" /> <!-- Yellow Talisman - MP Regeneration -->
+					</item>
+					<item chance="1.1236">
+						<item id="9950" count="1" /> <!-- Grey Talisman - Weight Training -->
+					</item>
+					<item chance="1.1236">
+						<item id="9951" count="1" /> <!-- Grey Talisman - Mid-grade Fishing -->
+					</item>
+					<item chance="1.1236">
+						<item id="9952" count="1" /> <!-- Orange Talisman - Hot Springs CP Potion -->
+					</item>
+					<item chance="1.1236">
+						<item id="9953" count="1" /> <!-- Orange Talisman - Elixir of Life -->
+					</item>
+					<item chance="1.1236">
+						<item id="9954" count="1" /> <!-- Orange Talisman - Elixir of Mind -->
+					</item>
+					<item chance="1.1236">
+						<item id="9955" count="1" /> <!-- Black Talisman - Vocalization -->
+					</item>
+					<item chance="1.1236">
+						<item id="9956" count="1" /> <!-- Black Talisman - Arcane Freedom -->
+					</item>
+					<item chance="1.1236">
+						<item id="9957" count="1" /> <!-- Black Talisman - Physical Freedom -->
+					</item>
+					<item chance="1.1236">
+						<item id="9958" count="1" /> <!-- Black Talisman - Rescue -->
+					</item>
+					<item chance="1.1236">
+						<item id="9959" count="1" /> <!-- Black Talisman - Free Speech -->
+					</item>
+					<item chance="1.1236">
+						<item id="9960" count="1" /> <!-- White Talisman - Bravery -->
+					</item>
+					<item chance="1.1236">
+						<item id="9961" count="1" /> <!-- White Talisman - Paralysis Resistance -->
+					</item>
+					<item chance="1.1236">
+						<item id="9962" count="1" /> <!-- White Talisman - Stun Resistance -->
+					</item>
+					<item chance="1.1236">
+						<item id="9963" count="1" /> <!-- White Talisman - Sleep Resistance -->
+					</item>
+					<item chance="1.1236">
+						<item id="9964" count="1" /> <!-- White Talisman - Bleed Resistance -->
+					</item>
+					<item chance="1.1236">
+						<item id="9965" count="1" /> <!-- White Talisman - Cancel Resistance -->
+					</item>
+					<item chance="1.1236">
+						<item id="9966" count="1" /> <!-- White Talisman - Hold Resistance -->
+					</item>
+					<item chance="1.1236">
+						<item id="10141" count="1" /> <!-- Grey Talisman - Yeti Transform -->
+					</item>
+					<item chance="1.1236">
+						<item id="10142" count="1" /> <!-- Grey Talisman - Buffalo Transform -->
+					</item>
+					<item chance="1.1236">
+						<item id="10158" count="1" /> <!-- Grey Talisman - High-grade Fishing -->
+					</item>
+					<item chance="1.1236">
+						<item id="10416" count="1" /> <!-- Blue Talisman - Explosion -->
+					</item>
+					<item chance="1.1236">
+						<item id="10417" count="1" /> <!-- Blue Talisman - Magic Explosion -->
+					</item>
+					<item chance="1.1236">
+						<item id="10418" count="1" /> <!-- White Talisman - Storm -->
+					</item>
+					<item chance="1.1236">
+						<item id="10419" count="1" /> <!-- White Talisman - Darkness -->
+					</item>
+					<item chance="1.1236">
+						<item id="10420" count="1" /> <!-- White Talisman - Water -->
+					</item>
+					<item chance="1.1236">
+						<item id="10421" count="1" /> <!-- White Talisman - Fire -->
+					</item>
+					<item chance="1.1236">
+						<item id="10422" count="1" /> <!-- White Talisman - Light -->
+					</item>
+					<item chance="1.1236">
+						<item id="10423" count="1" /> <!-- Blue Talisman - Self-destruction -->
+					</item>
+					<item chance="1.1236">
+						<item id="10424" count="1" /> <!-- Blue Talisman - Greater Healing -->
+					</item>
+					<item chance="1.1236">
+						<item id="10518" count="1" /> <!-- Red Talisman - Life Force -->
+					</item>
+					<item chance="1.1236">
+						<item id="10519" count="1" /> <!-- White Talisman - Earth -->
+					</item>
+					<item chance="1.1236">
+						<item id="10533" count="1" /> <!-- Blue Talisman - P. Atk. -->
+					</item>
+					<item chance="1.1236">
+						<item id="10534" count="1" /> <!-- Blue Talisman - Shield Defense -->
+					</item>
+					<item chance="1.1236">
+						<item id="10535" count="1" /> <!-- Yellow Talisman - P. Def. -->
+					</item>
+					<item chance="1.1236">
+						<item id="10536" count="1" /> <!-- Yellow Talisman - M. Atk. -->
+					</item>
+					<item chance="1.1236">
+						<item id="10537" count="1" /> <!-- Yellow Talisman - Evasion -->
+					</item>
+					<item chance="1.1236">
+						<item id="10538" count="1" /> <!-- Yellow Talisman - Healing Power -->
+					</item>
+					<item chance="1.1236">
+						<item id="10539" count="1" /> <!-- Yellow Talisman - CP Regeneration -->
+					</item>
+					<item chance="1.1236">
+						<item id="10540" count="1" /> <!-- Yellow Talisman - HP Regeneration -->
+					</item>
+					<item chance="1.1236">
+						<item id="10541" count="1" /> <!-- Yellow Talisman - MP Regeneration (Low-grade) -->
+					</item>
+					<item chance="1.1236">
+						<item id="10542" count="1" /> <!-- Red Talisman - HP/ CP Recovery -->
+					</item>
+					<item chance="1.1236">
+						<item id="10543" count="1" /> <!-- Yellow Talisman - Speed -->
+					</item>
+					<item chance="1.1236">
+						<item id="12815" count="1" /> <!-- Red Talisman - Max CP -->
+					</item>
+					<item chance="1.1236">
+						<item id="12816" count="1" /> <!-- Red Talisman - CP Regeneration -->
+					</item>
+					<item chance="1.1236">
+						<item id="12817" count="1" /> <!-- Yellow Talisman - Increase Momentum -->
+					</item>
+					<item chance="1.1236">
+						<item id="12818" count="1" /> <!-- Yellow Talisman - Damage Transition -->
+					</item>
+					<item chance="1.1236">
+						<item id="14604" count="1" /> <!-- Red Talisman - Territory Guardian -->
+					</item>
+					<item chance="1.1236">
+						<item id="14605" count="1" /> <!-- Red Talisman - Territory Escort -->
+					</item>
+					<item chance="1.1236">
+						<item id="14810" count="1" /> <!-- Blue Talisman - Buff Cancel -->
+					</item>
+					<item chance="1.1236">
+						<item id="14811" count="1" /> <!-- Blue Talisman - Buff Steal -->
+					</item>
+					<item chance="1.1236">
+						<item id="14812" count="1" /> <!-- Red Talisman - Territory Royal Guard -->
+					</item>
+					<item chance="1.1236">
+						<item id="14813" count="1" /> <!-- Blue Talisman - Lord's Divine Protection -->
+					</item>
+					<item chance="1.1236">
+						<item id="14814" count="1" /> <!-- White Talisman - Attribute Resistance -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22392" toLevel="1" name="Cake of Happiness (Low-grade)">
+		<itemConsumeId>22291</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="10">
+						<item id="10134" count="1" /> <!-- Transformation Scroll: Unicorn -->
+					</item>
+					<item chance="10">
+						<item id="10138" count="1" /> <!-- Transformation Scroll: Dragon Bomber -->
+					</item>
+					<item chance="10">
+						<item id="9157" count="1" /> <!-- Blessed Scroll of Resurrection (Event) -->
+					</item>
+					<item chance="4">
+						<item id="22564" count="1" /> <!-- Elixir of CP - Event -->
+					</item>
+					<item chance="7">
+						<item id="22563" count="1" /> <!-- Elixir of Mind - Event -->
+					</item>
+					<item chance="14">
+						<item id="22562" count="4" /> <!-- Elixir of Life - Event -->
+					</item>
+					<item chance="20">
+						<item id="21040" count="3" /> <!-- Superior Quick Healing Potion -->
+					</item>
+					<item chance="25">
+						<item id="22292" count="1" /> <!-- Tasty Valentine Cake - Event -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22393" toLevel="1" name="Cake of Happiness (Mid-grade)">
+		<itemConsumeId>22292</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="10">
+						<item id="22550" count="1" /> <!-- Scroll: Enchant Weapon (A-grade) - Event -->
+					</item>
+					<item chance="23">
+						<item id="34001" count="1" /> <!-- High-grade Life Stone (R-grade) - Event -->
+					</item>
+					<item chance="37">
+						<item id="22551" count="1" /> <!-- Scroll: Enchant Armor (A-grade) - Event -->
+					</item>
+					<item chance="30">
+						<item id="22293" count="1" /> <!-- Delicious Valentine Cake - Event -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22394" toLevel="1" name="Cake of Happiness (High-grade)">
+		<itemConsumeId>22293</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="10">
+						<item id="17264" count="1" /> <!-- Blessed Scroll: Enchant Armor (S-grade) - Event -->
+					</item>
+					<item chance="23">
+						<item id="34002" count="1" /> <!-- Top-grade Life Stone (R-grade) - Event -->
+					</item>
+					<item chance="37">
+						<item id="22559" count="1" /> <!-- Scroll: Enchant Armor (S-grade) - Event -->
+					</item>
+					<item chance="30">
+						<item id="22294" count="1" /> <!-- Decadent Valentine Cake - Event -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22395" toLevel="1" name="Cake of Happiness (Top-grade)">
+		<itemConsumeId>22294</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="5">
+						<item id="22560" count="1" /> <!-- Scroll: Enchant Weapon (R-grade) - Event -->
+					</item>
+					<item chance="12">
+						<item id="22561" count="1" /> <!-- Scroll: Enchant Armor (R-grade) - Event -->
+					</item>
+					<item chance="20">
+						<item id="17263" count="1" /> <!-- Blessed Scroll: Enchant Weapon (S-grade) - Event -->
+					</item>
+					<item chance="63">
+						<item id="22558" count="1" /> <!-- Scroll: Enchant Weapon (S-grade) - Event -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22396" toLevel="1" name="Divine Cake of Happiness">
+		<itemConsumeId>22295</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="0.03333">
+						<item id="6656" count="1" /> <!-- Antharas' Earring -->
+					</item>
+					<item chance="0.1">
+						<item id="6658" count="1" /> <!-- Baium's Ring -->
+					</item>
+					<item chance="31">
+						<item id="22302" count="1" /> <!-- Antharas' Earring - 3-day (Event) -->
+					</item>
+					<item chance="8.6">
+						<item id="22303" count="1" /> <!-- Antharas' Earring - 7-day (Event) -->
+					</item>
+					<item chance="42.893">
+						<item id="22304" count="1" /> <!-- Baium's Ring - 3-day (Event) -->
+					</item>
+					<item chance="17.4">
+						<item id="22305" count="1" /> <!-- Baium's Ring - 7-day (Event) -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22397" toLevel="1" name="Sweet Chocolate Cookie">
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<reuseDelay>3600000</reuseDelay>
+		<staticReuse>true</staticReuse>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CanRestoreVitalPoint" />
+			<condition name="CanUseVitalityConsumeItem" />
+		</conditions>
+	</skill>
+	<skill id="22398" toLevel="1" name="Allegra Box">
+		<itemConsumeId>22310</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="1.1">
+						<item id="22325" count="1" /> <!-- Transformation Scroll: Zaken -->
+					</item>
+					<item chance="0.3">
+						<item id="21224" count="1" /> <!-- Transformation Scroll: Anakim -->
+					</item>
+					<item chance="0.05">
+						<item id="10649" count="1" /> <!-- Feather of Blessing -->
+					</item>
+					<item chance="10">
+						<item id="21235" count="3" /> <!-- Fresh Milk -->
+					</item>
+					<item chance="0.45">
+						<item id="13276" count="1" /> <!-- Minion Coupon Pack -->
+					</item>
+					<item chance="0.5">
+						<item id="14248" count="1" /> <!-- Superior Minion Coupon Pack -->
+					</item>
+					<item chance="3">
+						<item id="22341" count="1" /> <!-- Blessed Scroll: Enchant Weapon (C-grade) -->
+					</item>
+					<item chance="8">
+						<item id="22342" count="3" /> <!-- Scroll: Enchant Weapon (C-grade) -->
+					</item>
+					<item chance="10">
+						<item id="22343" count="3" /> <!-- Scroll: Enchant Armor (C-grade) -->
+					</item>
+					<item chance="10">
+						<item id="22344" count="3" /> <!-- Scroll: Enchant Weapon (D-grade) -->
+					</item>
+					<item chance="10">
+						<item id="22345" count="3" /> <!-- Scroll: Enchant Armor (D-grade) -->
+					</item>
+					<item chance="6">
+						<item id="8753" count="1" /> <!-- Top-grade Life Stone - Lv. 46 -->
+					</item>
+					<item chance="4">
+						<item id="20392" count="1" /> <!-- Vitality Replenishing Potion -->
+					</item>
+					<item chance="3">
+						<item id="15440" count="1" /> <!-- Vitality Maintaining Potion (30-min.) -->
+					</item>
+					<item chance="4.5">
+						<item id="21085" count="1" /> <!-- XP Rune III (Lv. 1-100+) 30% Pack (1-hour) -->
+					</item>
+					<item chance="4.1">
+						<item id="20336" count="1" /> <!-- XP Rune III (Lv. 1-100+) 50% - 5-hour -->
+					</item>
+					<item chance="7">
+						<item id="20220" count="1" /> <!-- Agathion - Brown Maneki Neko Pack (7-day) - Vitality -->
+					</item>
+					<item chance="7">
+						<item id="21166" count="1" /> <!-- Agathion - Zaken's Spirit Swords - 7-day -->
+					</item>
+					<item chance="7">
+						<item id="20798" count="1" /> <!-- Agathion - Blue Opera Pack (7-day) - Sword of Recovery -->
+					</item>
+					<item chance="2">
+						<item id="22312" count="1" /> <!-- Top-grade Magic Pin Cloth Belt -->
+					</item>
+					<item chance="2">
+						<item id="22313" count="1" /> <!-- Top-grade Magic Pouch Cloth Belt -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="22399" toLevel="1" name="Latus Box">
+		<itemConsumeId>22311</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="0.0015">
+						<item id="20521" count="1" /> <!-- Heavenly Scroll: Enchant Weapon (S-grade) -->
+					</item>
+					<item chance="0.0015">
+						<item id="20522" count="1" /> <!-- Heavenly Scroll: Enchant Armor (S-grade) -->
+					</item>
+					<item chance="0.1">
+						<item id="20519" count="1" /> <!-- Ancient Scroll: Enchant Weapon (S-grade) -->
+					</item>
+					<item chance="0.25">
+						<item id="20520" count="1" /> <!-- Ancient Scroll: Enchant Armor (S-grade) -->
+					</item>
+					<item chance="0.5">
+						<item id="22314" count="1" /> <!-- Blessed Scroll: Enchant Weapon (S-grade) -->
+					</item>
+					<item chance="1">
+						<item id="22315" count="1" /> <!-- Blessed Scroll: Enchant Armor (S-grade) -->
+					</item>
+					<item chance="3">
+						<item id="9552" count="1" /> <!-- Fire Crystal -->
+					</item>
+					<item chance="3">
+						<item id="9553" count="1" /> <!-- Water Crystal -->
+					</item>
+					<item chance="3">
+						<item id="9554" count="1" /> <!-- Earth Crystal -->
+					</item>
+					<item chance="3">
+						<item id="9555" count="1" /> <!-- Wind Crystal -->
+					</item>
+					<item chance="3">
+						<item id="9556" count="1" /> <!-- Dark Crystal -->
+					</item>
+					<item chance="3">
+						<item id="9557" count="1" /> <!-- Holy Crystal -->
+					</item>
+					<item chance="2">
+						<item id="9576" count="1" /> <!-- Top-grade Life Stone - Lv. 80 -->
+					</item>
+					<item chance="5">
+						<item id="8762" count="1" /> <!-- Top-grade Life Stone - Lv. 76 -->
+					</item>
+					<item chance="10">
+						<item id="9575" count="3" /> <!-- High-grade Life Stone - Lv. 80 -->
+					</item>
+					<item chance="13">
+						<item id="8752" count="3" /> <!-- High-grade Life Stone - Lv. 76 -->
+					</item>
+					<item chance="10">
+						<item id="9551" count="3" /> <!-- Holy Stone -->
+					</item>
+					<item chance="13">
+						<item id="9547" count="3" /> <!-- Water Stone -->
+					</item>
+					<item chance="6">
+						<item id="9549" count="3" /> <!-- Wind Stone -->
+					</item>
+					<item chance="3">
+						<item id="9627" count="1" /> <!-- Lesser Giant's Codex - Mastery -->
+					</item>
+					<item chance="2.017">
+						<item id="13757" count="10" /> <!-- Gludio Territory Badge -->
+					</item>
+					<item chance="2.017">
+						<item id="13758" count="10" /> <!-- Dion Territory Badge -->
+					</item>
+					<item chance="2.017">
+						<item id="13759" count="10" /> <!-- Giran Territory Badge -->
+					</item>
+					<item chance="2.017">
+						<item id="13760" count="10" /> <!-- Oren Territory Badge -->
+					</item>
+					<item chance="2.017">
+						<item id="13761" count="10" /> <!-- Aden Territory Badge -->
+					</item>
+					<item chance="2.017">
+						<item id="13762" count="10" /> <!-- Innadril Territory Badge -->
+					</item>
+					<item chance="2.017">
+						<item id="13763" count="10" /> <!-- Goddard Territory Badge -->
+					</item>
+					<item chance="2.017">
+						<item id="13764" count="10" /> <!-- Rune Territory Badge -->
+					</item>
+					<item chance="2.017">
+						<item id="13765" count="10" /> <!-- Schuttgart Territory Badge -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+</list>

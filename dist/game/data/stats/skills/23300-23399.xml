@@ -1,0 +1,1984 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="23300" toLevel="1" name="Ghost Piercing">
+		<!-- Envelops with a specter to inflict 300 dark damage every second for 10 sec. -->
+		<icon>icon.skill0773</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>10</abnormalTime>
+		<abnormalType>DOT_ATTR</abnormalType>
+		<abnormalVisualEffect>DOT_BLEEDING</abnormalVisualEffect>
+		<attributeType>DARK</attributeType>
+		<attributeValue>20</attributeValue>
+		<isTriggeredSkill>true</isTriggeredSkill>
+		<magicLvl>83</magicLvl>
+		<operateType>A2</operateType>
+		<effectPoint>-1000</effectPoint>
+		<basicProperty>MAGIC</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<lvlBonusRate>1</lvlBonusRate>
+		<isDebuff>true</isDebuff>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="DamOverTime">
+				<power>300</power>
+				<ticks>5</ticks>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="23301" toLevel="1" name="Dimensional Door A">
+		<!-- Summons a dimensional door that moves the PC to the Dimensional Door B. -->
+		<icon>Icon.skill1050</icon>
+		<operateType>A1</operateType>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<hitTime>4000</hitTime>
+		<reuseDelay>1000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="23302" toLevel="1" name="Dimensional Door B">
+		<!-- Summons a dimensional door that moves the PC to the Dimensional Door A. -->
+		<icon>Icon.skill1050</icon>
+		<operateType>A1</operateType>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<hitTime>4000</hitTime>
+		<reuseDelay>1000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="23303" toLevel="1" name="Teleport">
+		<operateType>A1</operateType>
+		<mpConsume>1</mpConsume>
+		<effectPoint>1</effectPoint>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<effectRange>2000</effectRange>
+		<magicLvl>85</magicLvl>
+		<hitTime>1500</hitTime>
+		<reuseDelay>1000</reuseDelay>
+		<castRange>2000</castRange>
+		<isMagic>2</isMagic>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="23304" toLevel="1" name="Teleport">
+		<operateType>A1</operateType>
+		<mpConsume>1</mpConsume>
+		<effectPoint>1</effectPoint>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<effectRange>2000</effectRange>
+		<magicLvl>85</magicLvl>
+		<hitTime>1500</hitTime>
+		<reuseDelay>1000</reuseDelay>
+		<castRange>2000</castRange>
+		<isMagic>2</isMagic>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="23305" toLevel="1" name="Zinyanzi Agathion - Yunbokhwan">
+		<!-- Restores all HP/ MP/ CP and becomes invincible for 5 sec. But can only be used when HP is below 30%. -->
+		<icon>icon.skill_agathion_special</icon>
+		<operateType>A2</operateType>
+		<abnormalType>INVINCIBILITY</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<activateRate>0</activateRate>
+		<abnormalLvl>82</abnormalLvl>
+		<abnormalTime>5</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<hitTime>200</hitTime>
+		<reuseDelay>43200000</reuseDelay>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="RemainHpPer">
+				<amount>30</amount>
+				<percentType>LESS</percentType>
+				<affectType>CASTER</affectType>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="DamageBlock">
+				<type>BLOCK_HP</type>
+			</effect>
+			<effect name="DamageBlock">
+				<type>BLOCK_MP</type>
+			</effect>
+			<effect name="DebuffBlock" />
+			<effect name="ResistDispelByCategory">
+				<amount>-100</amount>
+				<slot>ALL</slot>
+			</effect>
+			<effect name="ResistAbnormalByCategory">
+				<amount>-100</amount>
+				<slot>DEBUFF</slot>
+			</effect>
+			<effect name="HealPercent">
+				<power>100</power>
+			</effect>
+			<effect name="ManaHealPercent">
+				<power>100</power>
+			</effect>
+			<effect name="CpHealPercent">
+				<power>100</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="23306" toLevel="1" name="Zinyanzi Agathion Cute Trick">
+		<!-- Able to see the summoned Zinyanzi perform cute tricks. -->
+		<icon>icon.skill_agathion_cute</icon>
+		<operateType>A1</operateType>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>85</magicLvl>
+		<hitTime>3000</hitTime>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpNeedAgathion" />
+		</conditions>
+	</skill>
+	<skill id="23307" toLevel="1" name="Yanzi Agathion Cute Trick">
+		<!-- Able to see the summoned Yanzi perform cute tricks. -->
+		<icon>icon.skill_agathion_cute</icon>
+		<operateType>A1</operateType>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>85</magicLvl>
+		<hitTime>3000</hitTime>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpNeedAgathion" />
+		</conditions>
+	</skill>
+	<skill id="23308" toLevel="1" name="Totem's Energy - Body">
+		<!-- Increases HP Recovery Bonus by 30% and decreases damage from the topography by 80% through the mysterious totem's energy. The energy disappears when the totem becomes out of range. -->
+		<icon>BranchSys2.icon.totem_of_body</icon>
+		<abnormalTime>300</abnormalTime>
+		<affectRange>400</affectRange>
+		<blockedInOlympiad>false</blockedInOlympiad>
+		<operateType>A2</operateType>
+		<abnormalType>ENERGY_OF_TOTEM_1</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>85</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<isMagic>4</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>POINT_BLANK</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<effects>
+			<effect name="HpRegen">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="AreaDamage">
+				<amount>80</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="23309" toLevel="1" name="Totem's Energy - Spirit">
+		<!-- Increases MP Recovery Bonus by 30% through the mysterious totem's energy. The energy disappears when the totem becomes out of range. -->
+		<icon>BranchSys2.icon.totem_of_mind</icon>
+		<abnormalTime>300</abnormalTime>
+		<affectRange>400</affectRange>
+		<blockedInOlympiad>false</blockedInOlympiad>
+		<operateType>A2</operateType>
+		<abnormalType>ENERGY_OF_TOTEM_2</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>85</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<isMagic>4</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>POINT_BLANK</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<effects>
+			<effect name="MpRegen">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="23310" toLevel="1" name="Totem's Energy - Courage">
+		<!-- Increases P. Def. by 15% through the mysterious totem's energy. The energy disappears when the totem becomes out of range. -->
+		<icon>BranchSys2.icon.totem_of_bravery</icon>
+		<abnormalTime>300</abnormalTime>
+		<affectRange>400</affectRange>
+		<blockedInOlympiad>false</blockedInOlympiad>
+		<operateType>A2</operateType>
+		<abnormalType>ENERGY_OF_TOTEM_3</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>85</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<isMagic>4</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>POINT_BLANK</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<effects>
+			<effect name="PhysicalDefence">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="23311" toLevel="1" name="Totem's Energy - Fortitude">
+		<!-- Increases M. Def. by 25% through the mysterious totem's energy. The energy disappears when the totem becomes out of range. -->
+		<icon>BranchSys2.icon.totem_of_fortitude</icon>
+		<abnormalTime>300</abnormalTime>
+		<affectRange>400</affectRange>
+		<blockedInOlympiad>false</blockedInOlympiad>
+		<operateType>A2</operateType>
+		<abnormalType>ENERGY_OF_TOTEM_4</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>85</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<isMagic>4</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>POINT_BLANK</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<effects>
+			<effect name="MagicalDefence">
+				<amount>25</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="23312" toLevel="1" name="Fall of the Dragon">
+		<!-- Gift to commemorate the great feats of the warriors who eradicated the reckless dragon. Additional XP and SP are acquired by 100% for 1 h. -->
+		<icon>BranchSys2.icon.the_fall_of_dragon</icon>
+		<operateType>A2</operateType>
+		<castRange>1200</castRange>
+		<isMagic>4</isMagic>
+		<abnormalType>VOTE</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<specialLevel>-2</specialLevel>
+		<effectRange>1500</effectRange>
+		<magicLvl>-2</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<irreplacableBuff>true</irreplacableBuff>
+		<staticReuse>true</staticReuse>
+		<abnormalVisualEffect>VP_KEEP</abnormalVisualEffect>
+		<abnormalTime>3600</abnormalTime>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="ExpModify">
+				<amount>100</amount>
+			</effect>
+			<effect name="SpModify">
+				<amount>100</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="23313" toLevel="5" name="Action Prohibit Immunity">
+		<!-- Increases Resistance to action-inhibiting attacks by $s1. -->
+		<icon>icon.skill0386</icon>
+		<operateType>A4</operateType>
+		<abnormalType>RESIST_SHOCK</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<specialLevel>-3</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>-3</magicLvl>
+		<abnormalLvl>
+			<value level="1">1</value>
+			<value level="2">2</value>
+			<value level="3">3</value>
+			<value level="4">4</value>
+			<value level="5">0</value>
+		</abnormalLvl>
+		<abnormalTime>
+			<value level="1">8</value>
+			<value level="2">6</value>
+			<value level="3">5</value>
+			<value level="4">4</value>
+			<value level="5">4</value>
+		</abnormalTime>
+		<isMagic>1</isMagic>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="23314" toLevel="5" name="Control Prohibit Immunity">
+		<!-- Increases Resistance to control-inhibiting attacks by $s1. -->
+		<icon>icon.skill0388</icon>
+		<operateType>A4</operateType>
+		<abnormalType>RESIST_SHOCK</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<specialLevel>-3</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>-3</magicLvl>
+		<abnormalLvl>0</abnormalLvl>
+		<abnormalTime>
+			<value level="1">8</value>
+			<value level="2">6</value>
+			<value level="3">5</value>
+			<value level="4">4</value>
+			<value level="5">4</value>
+		</abnormalTime>
+		<isMagic>1</isMagic>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="23315" toLevel="5" name="Paralysis Immunity Enhance">
+		<!-- Increases Paralysis Resistance by $s1. -->
+		<operateType>A2</operateType>
+		<abnormalType>RESIST_SHOCK</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<specialLevel>-3</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>-3</magicLvl>
+		<abnormalLvl>0</abnormalLvl>
+		<abnormalTime>2</abnormalTime>
+		<isMagic>1</isMagic>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="23316" toLevel="5" name="Enhance Petrification Immunity">
+		<!-- Increases Petrification Resistance by $s1. -->
+		<operateType>A2</operateType>
+		<abnormalType>RESIST_SHOCK</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<specialLevel>-3</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>-3</magicLvl>
+		<abnormalLvl>0</abnormalLvl>
+		<abnormalTime>2</abnormalTime>
+		<isMagic>1</isMagic>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="23317" toLevel="5" name="Fear Immunity Enhance">
+		<!-- Increases Fear Resistance by $s1. -->
+		<operateType>A2</operateType>
+		<abnormalType>RESIST_SHOCK</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<specialLevel>-3</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>-3</magicLvl>
+		<abnormalLvl>0</abnormalLvl>
+		<abnormalTime>2</abnormalTime>
+		<isMagic>1</isMagic>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="23318" toLevel="1" name="Cat the Ranger Boost">
+		<!-- Recovers the master's HP by 10%. For 1 min., receives power from Cat the Ranger to increase the master's Debuff Resistance by 80%, Buff-canceling Attack Resistance by 40%, Speed by 10%, P. Def. by 20%, and M. Def. by 20%. Does not receive preemptive attacks from monsters. Cooldown 10 min. -->
+		<icon>BranchSys2.icon.action5016</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>MULTI_BUFF</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<effectRange>1400</effectRange>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>60</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<reuseDelay>600000</reuseDelay>
+		<isMagic>1</isMagic>
+		<castRange>900</castRange>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="23319" toLevel="1" name="Blood Seeker">
+		<!-- HP decreases from bleeding momentarily. -->
+		<icon>BranchSys2.icon.br_wp_Caladbulg_i00</icon>
+		<abnormalLvl>10</abnormalLvl>
+		<abnormalTime>20</abnormalTime>
+		<subordinationAbnormalType>BLEEDING</subordinationAbnormalType>
+		<abnormalType>BLEEDING</abnormalType>
+		<abnormalVisualEffect>DOT_BLEEDING</abnormalVisualEffect>
+		<activateRate>90</activateRate>
+		<blockedInOlympiad>false</blockedInOlympiad>
+		<castRange>80</castRange>
+		<effectRange>200</effectRange>
+		<isDebuff>true</isDebuff>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<isTriggeredSkill>true</isTriggeredSkill>
+		<lvlBonusRate>1</lvlBonusRate>
+		<magicLvl>84</magicLvl>
+		<operateType>A2</operateType>
+		<effectPoint>-100</effectPoint>
+		<basicProperty>PHYSICAL</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<attributeType>DARK</attributeType>
+		<attributeValue>180</attributeValue>
+		<trait>BLEED</trait>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<effects>
+			<effect name="DamOverTime">
+				<power>52</power>
+				<ticks>5</ticks>
+			</effect>
+			<effect name="PhysicalAttack">
+				<power>2616</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="23320" toLevel="1" name="Greedy Throat">
+		<!-- HP decreases from bleeding momentarily. -->
+		<icon>BranchSys2.icon.br_wp_habus_knife_i00</icon>
+		<abnormalLvl>10</abnormalLvl>
+		<abnormalTime>20</abnormalTime>
+		<subordinationAbnormalType>BLEEDING</subordinationAbnormalType>
+		<abnormalType>BLEEDING</abnormalType>
+		<abnormalVisualEffect>DOT_BLEEDING</abnormalVisualEffect>
+		<activateRate>90</activateRate>
+		<blockedInOlympiad>false</blockedInOlympiad>
+		<castRange>80</castRange>
+		<effectRange>200</effectRange>
+		<isDebuff>true</isDebuff>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<isTriggeredSkill>true</isTriggeredSkill>
+		<lvlBonusRate>1</lvlBonusRate>
+		<magicLvl>83</magicLvl>
+		<operateType>A2</operateType>
+		<effectPoint>-100</effectPoint>
+		<basicProperty>PHYSICAL</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<attributeType>DARK</attributeType>
+		<attributeValue>180</attributeValue>
+		<trait>BLEED</trait>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<effects>
+			<effect name="DamOverTime">
+				<power>67</power>
+				<ticks>5</ticks>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="23321" toLevel="1" name="Draconic Evolver">
+		<!-- Afflicted with Fear and moving against own will. -->
+		<icon>BranchSys2.icon.br_wp_tiatenon_i00</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>10</abnormalTime>
+		<abnormalType>TURN_FLEE</abnormalType>
+		<abnormalVisualEffect>TURN_FLEE</abnormalVisualEffect>
+		<activateRate>60</activateRate>
+		<basicProperty>MAGIC</basicProperty>
+		<blockedInOlympiad>false</blockedInOlympiad>
+		<castRange>80</castRange>
+		<effectPoint>-100</effectPoint>
+		<effectRange>200</effectRange>
+		<isDebuff>true</isDebuff>
+		<isMagic>1</isMagic>
+		<isTriggeredSkill>true</isTriggeredSkill>
+		<lvlBonusRate>1</lvlBonusRate>
+		<magicLvl>82</magicLvl>
+		<operateType>A2</operateType>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<trait>DERANGEMENT</trait>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<effects>
+			<effect name="BlockControl" />
+			<effect name="Fear" />
+		</effects>
+	</skill>
+	<skill id="23322" toLevel="10" name="Demonic Desire">
+		<!-- P. Def. decreases momentarily. -->
+		<icon>BranchSys2.icon.br_wp_astarot_i00</icon>
+		<abnormalLvl>13</abnormalLvl>
+		<abnormalTime>9</abnormalTime>
+		<abnormalType>PD_DOWN</abnormalType>
+		<activateRate>80</activateRate>
+		<basicProperty>PHYSICAL</basicProperty> <!-- Guessed -->
+		<blockedInOlympiad>true</blockedInOlympiad>
+		<castRange>80</castRange>
+		<effectPoint>-100</effectPoint>
+		<effectRange>200</effectRange>
+		<isDebuff>true</isDebuff>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<isTriggeredSkill>true</isTriggeredSkill>
+		<lvlBonusRate>2</lvlBonusRate>
+		<magicLvl>82</magicLvl>
+		<operateType>A2</operateType>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<trait>SHOCK</trait>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<effects>
+			<effect name="PhysicalDefence">
+				<amount>-23</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="23323" toLevel="10" name="Fury of Darkness">
+		<!-- State of momentarily decreased defense and immobility due to the Stun effect. -->
+		<icon>BranchSys2.icon.br_wp_tirbing_i00</icon>
+		<abnormalLvl>13</abnormalLvl>
+		<abnormalTime>9</abnormalTime>
+		<abnormalType>STUN</abnormalType>
+		<activateRate>80</activateRate>
+		<basicProperty>PHYSICAL</basicProperty>
+		<blockedInOlympiad>true</blockedInOlympiad>
+		<castRange>80</castRange>
+		<effectPoint>-100</effectPoint>
+		<effectRange>200</effectRange>
+		<isDebuff>true</isDebuff>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<isTriggeredSkill>true</isTriggeredSkill>
+		<lvlBonusRate>2</lvlBonusRate>
+		<magicLvl>82</magicLvl>
+		<operateType>A2</operateType>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<abnormalVisualEffect>STUN</abnormalVisualEffect>
+		<trait>SHOCK</trait>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<effects>
+			<effect name="BlockActions">
+				<allowedSkills>10279;10517;10025;10776;11770;1904;11264;11093;13314;1912</allowedSkills>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>-23</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="23324" toLevel="1" name="Jet Black Typhoon">
+		<!-- Casting Spd. and Wind P. Atk. increases momentarily. -->
+		<icon>BranchSys2.icon.br_wp_wind_of_mardil_i00</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>15</abnormalTime>
+		<blockedInOlympiad>false</blockedInOlympiad>
+		<effectPoint>800</effectPoint>
+		<isMagic>1</isMagic>
+		<isTriggeredSkill>true</isTriggeredSkill>
+		<magicLvl>71</magicLvl>
+		<operateType>A2</operateType>
+		<abnormalType>CASTING_TIME_DOWN</abnormalType>
+		<basicProperty>MAGIC</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="MagicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="AttackAttribute">
+				<amount>30</amount>
+				<attribute>WIND</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="23325" toLevel="1" name="Enlarge - Luckpy">
+		<operateType>A1</operateType>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>85</magicLvl>
+		<hitTime>2000</hitTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="23326" toLevel="1" name="Reduce - Luckpy">
+		<operateType>A1</operateType>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>85</magicLvl>
+		<hitTime>2000</hitTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="23327" toLevel="1" name="Boss Test - Weaken">
+		<!-- A skill to test a boss mob - Weaken -->
+		<operateType>A2</operateType>
+		<abnormalType>PUBLIC_SLOT</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<effectRange>2000</effectRange>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>648000</abnormalTime>
+		<castRange>1500</castRange>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpTargetNpc">
+				<npcIds>
+					<item>29028</item>
+					<item>29068</item>
+				</npcIds>
+			</condition>
+		</conditions>
+	</skill>
+	<skill id="23328" toLevel="1" name="Boss Test - Strengthen">
+		<!-- A skill to test a boss mob - Strengthen -->
+		<operateType>A2</operateType>
+		<abnormalType>PUBLIC_SLOT</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<effectRange>2000</effectRange>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>648000</abnormalTime>
+		<castRange>1500</castRange>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpTargetNpc">
+				<npcIds>
+					<item>29028</item>
+					<item>29068</item>
+				</npcIds>
+			</condition>
+		</conditions>
+	</skill>
+	<skill id="23329" toLevel="1" name="Lantern Agathion's Gift1">
+		<operateType>A1</operateType>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>55</magicLvl>
+		<hitTime>2700</hitTime>
+		<coolTime>1000</coolTime>
+		<staticReuse>true</staticReuse>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpNeedAgathion" />
+		</conditions>
+		<effects>
+			<effect name="Restoration">
+				<itemId>22220</itemId>
+				<itemCount>1</itemCount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="23330" toLevel="1" name="Lantern Agathion's Gift2">
+		<operateType>A1</operateType>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>55</magicLvl>
+		<hitTime>2700</hitTime>
+		<coolTime>1000</coolTime>
+		<staticReuse>true</staticReuse>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpNeedAgathion" />
+		</conditions>
+		<effects>
+			<effect name="Restoration">
+				<itemId>22220</itemId>
+				<itemCount>1</itemCount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="23331" toLevel="1" name="Lantern Agathion's Gift3">
+		<operateType>A1</operateType>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>55</magicLvl>
+		<hitTime>2700</hitTime>
+		<coolTime>1000</coolTime>
+		<staticReuse>true</staticReuse>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpNeedAgathion" />
+		</conditions>
+		<effects>
+			<effect name="Restoration">
+				<itemId>22220</itemId>
+				<itemCount>1</itemCount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="23332" toLevel="1" name="Lantern Agathion's Gift4">
+		<operateType>A1</operateType>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>55</magicLvl>
+		<hitTime>2700</hitTime>
+		<coolTime>1000</coolTime>
+		<staticReuse>true</staticReuse>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpNeedAgathion" />
+		</conditions>
+		<effects>
+			<effect name="Restoration">
+				<itemId>22220</itemId>
+				<itemCount>1</itemCount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="23333" toLevel="1" name="Agathion's New Year's Wish">
+		<!-- Through the power of the Lantern Agathion, Vitality is maintained and not consumed. -->
+		<icon>icon.etc_pi_gift_box_i03</icon>
+		<operateType>A2</operateType>
+		<abnormalType>VP_KEEP</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<specialLevel>-2</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>-2</magicLvl>
+		<abnormalLvl>2</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<hitTime>2000</hitTime>
+		<coolTime>1000</coolTime>
+		<isMagic>4</isMagic>
+		<staticReuse>true</staticReuse>
+		<abnormalVisualEffect>VP_KEEP</abnormalVisualEffect>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CanRestoreVitalPoint" />
+			<condition name="CanUseVitalityConsumeItem" />
+		</conditions>
+	</skill>
+	<skill id="23334" toLevel="1" name="Lantern Agathion Cute Trick">
+		<!-- Able to see the summoned Lantern's perform cute tricks. -->
+		<icon>icon.skill_agathion_cute</icon>
+		<operateType>A1</operateType>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>85</magicLvl>
+		<hitTime>3000</hitTime>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpNeedAgathion" />
+		</conditions>
+	</skill>
+	<skill id="23335" toLevel="1" name="Agathion's New Year's Wish">
+		<!-- Energy is maintained and not consumed through the Juju Agathion's strength. -->
+		<icon>icon.etc_pi_gift_box_i03</icon>
+		<operateType>A2</operateType>
+		<abnormalType>VP_KEEP</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<specialLevel>-2</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>-2</magicLvl>
+		<abnormalLvl>2</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<hitTime>2000</hitTime>
+		<coolTime>1000</coolTime>
+		<isMagic>4</isMagic>
+		<staticReuse>true</staticReuse>
+		<abnormalVisualEffect>VP_KEEP</abnormalVisualEffect>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CanRestoreVitalPoint" />
+			<condition name="CanUseVitalityConsumeItem" />
+		</conditions>
+	</skill>
+	<skill id="23336" toLevel="1" name="Juju Agathion Cute Trick">
+		<!-- You can see the summoned Juju's cute tricks. -->
+		<icon>icon.skill_agathion_cute</icon>
+		<operateType>A1</operateType>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>85</magicLvl>
+		<hitTime>3000</hitTime>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpNeedAgathion" />
+		</conditions>
+	</skill>
+	<skill id="23337" toLevel="1" name="Juju Agathion's Gift 1">
+		<operateType>A1</operateType>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>55</magicLvl>
+		<hitTime>2700</hitTime>
+		<coolTime>1000</coolTime>
+		<staticReuse>true</staticReuse>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpNeedAgathion" />
+		</conditions>
+		<effects>
+			<effect name="Restoration">
+				<itemId>22289</itemId>
+				<itemCount>1</itemCount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="23338" toLevel="1" name="Juju Agathion's Gift 2">
+		<operateType>A1</operateType>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>55</magicLvl>
+		<hitTime>2700</hitTime>
+		<coolTime>1000</coolTime>
+		<staticReuse>true</staticReuse>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpNeedAgathion" />
+		</conditions>
+		<effects>
+			<effect name="Restoration">
+				<itemId>22289</itemId>
+				<itemCount>1</itemCount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="23339" toLevel="1" name="Juju Agathion's Gift 3">
+		<operateType>A1</operateType>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>55</magicLvl>
+		<hitTime>2700</hitTime>
+		<coolTime>1000</coolTime>
+		<staticReuse>true</staticReuse>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpNeedAgathion" />
+		</conditions>
+		<effects>
+			<effect name="Restoration">
+				<itemId>22289</itemId>
+				<itemCount>1</itemCount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="23340" toLevel="1" name="Juju Agathion's Gift 4">
+		<operateType>A1</operateType>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>55</magicLvl>
+		<hitTime>2700</hitTime>
+		<coolTime>1000</coolTime>
+		<staticReuse>true</staticReuse>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpNeedAgathion" />
+		</conditions>
+		<effects>
+			<effect name="Restoration">
+				<itemId>22289</itemId>
+				<itemCount>1</itemCount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="23341" toLevel="1" name="Norhand's Flint">
+		<!-- Temporarily petrified by Norhand's powerful cry. -->
+		<icon>icon.skill4111</icon>
+		<operateType>A2</operateType>
+		<castRange>300</castRange>
+		<hitTime>3000</hitTime>
+		<coolTime>3000</coolTime>
+		<effectPoint>-100</effectPoint>
+		<abnormalType>TURN_STONE</abnormalType>
+		<abnormalResists>TURN_FLEE;KNOCKDOWN;DEPORT;SILENCE;PARALYZE;ABSORB;DISARM;SILENCE_PHYSICAL;SILENCE_ALL;CHANGEBODY;TURN_STONE;DERANGEMENT;AIRBIND;SLEEP;OBLIVION;MIRAGE;MIRAGE_TRAP;ROOT_MAGICALLY;ROOT_PHYSICALLY;STUN;PUBLIC_SLOT</abnormalResists>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<effectRange>300</effectRange>
+		<magicLvl>99</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>7</abnormalTime>
+		<attributeType>EARTH</attributeType>
+		<attributeValue>20</attributeValue>
+		<affectRange>300</affectRange>
+		<abnormalVisualEffect>FLESH_STONE</abnormalVisualEffect>
+		<isDebuff>true</isDebuff>
+		<targetType>ENEMY</targetType>
+		<affectScope>RANGE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+	</skill>
+	<skill id="23342" toLevel="2" name="Norhand's Trace">
+		<!-- Norhand is searching for Skooldie. A trace of its voice remains. -->
+		<icon>BranchSys.icon.br_rotten_jack_ghost_i00</icon>
+		<operateType>A2</operateType>
+		<castRange>300</castRange>
+		<hitTime>1500</hitTime>
+		<coolTime>2000</coolTime>
+		<abnormalType>BR_EVENT_BUF7</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<specialLevel>-2</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<effectRange>300</effectRange>
+		<magicLvl>-2</magicLvl>
+		<abnormalLvl>
+			<value level="1">1</value>
+			<value level="2">2</value>
+		</abnormalLvl>
+		<abnormalTime>7200</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<affectRange>300</affectRange>
+		<abnormalVisualEffect>AURA_BUFF</abnormalVisualEffect>
+		<isDebuff>true</isDebuff>
+		<targetType>ENEMY_ONLY</targetType>
+		<affectScope>RANGE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+	</skill>
+	<skill id="23344" toLevel="5" name="Weakened Shilen's Breath">
+		<!-- Is killed and poisoned by Shilen's Breath. Increases Dark Attack Resistance by $s1 and HP recovery by $s2. Poison stage increases when killed while poisoned. -->
+		<icon>icon.skill5076_c</icon>
+		<operateType>A2</operateType>
+		<isMagic>1</isMagic>
+		<effectPoint>1</effectPoint>
+		<abnormalType>DEATH_PENALTY_GD</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<specialLevel>-2</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>-2</magicLvl>
+		<abnormalLvl>
+			<value level="1">1</value>
+			<value level="2">2</value>
+			<value level="3">3</value>
+			<value level="4">4</value>
+			<value level="5">5</value>
+		</abnormalLvl>
+		<abnormalTime>60</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isDebuff>true</isDebuff>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="23345" toLevel="1" name="Region Banishment">
+		<operateType>A1</operateType>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>1</magicLvl>
+		<isMagic>2</isMagic>
+		<hitTime>200</hitTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpCanEscape" />
+		</conditions>
+	</skill>
+	<skill id="23346" toLevel="7" name="Valakas Agathion Cute Trick">
+		<!-- You can see the summoned Valakas' cute tricks. -->
+		<icon>icon.skill_agathion_cute</icon>
+		<operateType>A1</operateType>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>85</magicLvl>
+		<isMagic>2</isMagic>
+		<hitTime>3000</hitTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpNeedAgathion" />
+		</conditions>
+	</skill>
+	<skill id="23347" toLevel="7" name="Valakas Agathion Special Skill: Valakas' Blessing">
+		<!-- When Valakas' Blessing is received, for $s1 h., increases Fire P. Atk. by $s2 and Fire Resistance by $s3. Re-use delay is $s4 h. -->
+		<icon>icon.skill_agathion_special</icon>
+		<operateType>T</operateType>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<abnormalVisualEffect>BR_SOUL_AVATAR</abnormalVisualEffect>
+		<hitTime>4000</hitTime>
+		<targetType>NONE</targetType>
+	</skill>
+	<skill id="23348" toLevel="1" name="Transform Elpy">
+		<!-- Transforms into a game Master. -->
+		<icon>icon.skilltransform1</icon>
+		<operateType>A2</operateType>
+		<hitTime>2500</hitTime>
+		<effectPoint>1</effectPoint>
+		<abnormalType>TRANSFORM</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<specialLevel>-2</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>-2</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>-1</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<staticReuse>true</staticReuse>
+		<reuseDelay>10000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CanTransform">
+				<transformId>20011</transformId>
+			</condition>
+		</conditions>
+	</skill>
+	<skill id="23349" toLevel="1" name="Tree's Blessing - Stage 1">
+		<!-- For 10 min., increases P. Atk. by 1% and M. Atk. by 2% with the tree's blessing. -->
+		<icon>icon.etc_x_mas_tree_i00</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>BR_EVENT_BUF1</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<specialLevel>-2</specialLevel>
+		<magicLvl>-2</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>600</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>4</isMagic>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="23350" toLevel="1" name="Tree's Blessing - Stage 2">
+		<!-- For 15 min., increases P. Atk. by 2% and M. Atk. by 4% with the tree's blessing. -->
+		<icon>icon.etc_x_mas_tree_i00</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>BR_EVENT_BUF1</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<specialLevel>-2</specialLevel>
+		<magicLvl>-2</magicLvl>
+		<abnormalLvl>3</abnormalLvl>
+		<abnormalTime>900</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>4</isMagic>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="23351" toLevel="1" name="Tree's Blessing - Stage 3">
+		<!-- For 20 min., increases P. Atk. by 3% and M. Atk. by 6% with the tree's blessing. -->
+		<icon>icon.etc_x_mas_tree_i00</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>BR_EVENT_BUF1</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<specialLevel>-2</specialLevel>
+		<magicLvl>-2</magicLvl>
+		<abnormalLvl>5</abnormalLvl>
+		<abnormalTime>1200</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>4</isMagic>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="23352" toLevel="1" name="Tree's Blessing - Stage 4">
+		<!-- For 25 min., increases P. Atk. by 4% and M. Atk. by 8% with the tree's blessing. -->
+		<icon>icon.etc_x_mas_tree_i00</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>BR_EVENT_BUF1</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<specialLevel>-2</specialLevel>
+		<magicLvl>-2</magicLvl>
+		<abnormalLvl>7</abnormalLvl>
+		<abnormalTime>1500</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>4</isMagic>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="23353" toLevel="1" name="Tree's Blessing - Stage 5">
+		<!-- For 60 min., increases P. Atk. by 6% and M. Atk. by 12% with the tree's blessing. -->
+		<icon>icon.etc_x_mas_tree_i00</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>BR_EVENT_BUF1</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<specialLevel>-2</specialLevel>
+		<magicLvl>-2</magicLvl>
+		<abnormalLvl>9</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>4</isMagic>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="23354" toLevel="1" name="Lingering Tree's Blessing - Stage 1">
+		<!-- Enjoying Lingering Tree's Blessing. Need to wait for 2 h. to receive Tree's Blessing - Stage 1. -->
+		<icon>BranchSys.icon.br_xmas_reward_buff_i00</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>BR_EVENT_BUF1</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<specialLevel>-2</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>-2</magicLvl>
+		<abnormalLvl>2</abnormalLvl>
+		<abnormalTime>7200</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>2</isMagic>
+		<isDebuff>true</isDebuff>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="23355" toLevel="1" name="Lingering Tree's Blessing - Stage 2">
+		<!-- Enjoying Lingering Tree's Blessing. Need to wait for 2 h. to receive Tree's Blessing - Stage 2. -->
+		<icon>BranchSys.icon.br_xmas_reward_buff_i00</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>BR_EVENT_BUF1</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<specialLevel>-2</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>-2</magicLvl>
+		<abnormalLvl>4</abnormalLvl>
+		<abnormalTime>7200</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>2</isMagic>
+		<isDebuff>true</isDebuff>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="23356" toLevel="1" name="Lingering Tree's Blessing - Stage 3">
+		<!-- Enjoying Lingering Tree's Blessing. Need to wait for 2 h. to receive Tree's Blessing - Stage 3. -->
+		<icon>BranchSys.icon.br_xmas_reward_buff_i00</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>BR_EVENT_BUF1</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<specialLevel>-2</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>-2</magicLvl>
+		<abnormalLvl>6</abnormalLvl>
+		<abnormalTime>7200</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>2</isMagic>
+		<isDebuff>true</isDebuff>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="23357" toLevel="1" name="Lingering Tree's Blessing - Stage 4">
+		<!-- Enjoying Lingering Tree's Blessing. Need to wait for 2 h. to receive Tree's Blessing - Stage 4. -->
+		<icon>BranchSys.icon.br_xmas_reward_buff_i00</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>BR_EVENT_BUF1</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<specialLevel>-2</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>-2</magicLvl>
+		<abnormalLvl>8</abnormalLvl>
+		<abnormalTime>7200</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>2</isMagic>
+		<isDebuff>true</isDebuff>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="23358" toLevel="1" name="Lingering Tree's Blessing - Stage 5">
+		<!-- Enjoying Lingering Tree's Blessing. Need to wait for 2 h. to receive Tree's Blessing - Stage 5. -->
+		<icon>BranchSys.icon.br_xmas_reward_buff_i00</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>BR_EVENT_BUF1</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<specialLevel>-2</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>-2</magicLvl>
+		<abnormalLvl>10</abnormalLvl>
+		<abnormalTime>7200</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>2</isMagic>
+		<isDebuff>true</isDebuff>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="23359" toLevel="1" name="Tree's Blessing - Lute Melody">
+		<!-- For 10 min., increases Atk. Spd. by 34% and Casting Spd. by 31%. Chance of applying Vampiric Rage effect by 9%. -->
+		<icon>icon.skill11518</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>BUFF_SPECIAL_MOVE</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<magicLvl>80</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>600</abnormalTime>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="23360" toLevel="1" name="Tree's Blessing - Lute Melody">
+		<!-- For 15 min., increases Atk. Spd. by 34% and Casting Spd. by 31%. Chance of applying Vampiric Rage effect by 9%. -->
+		<icon>icon.skill11518</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>BUFF_SPECIAL_MOVE</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<magicLvl>81</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>900</abnormalTime>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="23361" toLevel="1" name="Tree's Blessing - Lute Melody">
+		<!-- For 20 min., increases Atk. Spd. by 34% and Casting Spd. by 31%. Chance of applying Vampiric Rage effect by 9%. -->
+		<icon>icon.skill11518</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>BUFF_SPECIAL_MOVE</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<magicLvl>82</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>1200</abnormalTime>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="23362" toLevel="1" name="Tree's Blessing - Lute Melody">
+		<!-- For 25 min., increases Atk. Spd. by 34% and Casting Spd. by 31%. Chance of applying Vampiric Rage effect by 9%. -->
+		<icon>icon.skill11518</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>BUFF_SPECIAL_MOVE</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<magicLvl>83</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>1500</abnormalTime>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="23363" toLevel="1" name="Tree's Blessing - Lute Melody">
+		<!-- For 60 min., increases Atk. Spd. by 34% and Casting Spd. by 31%. Chance of applying Vampiric Rage effect by 9%. -->
+		<icon>icon.skill11518</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>BUFF_SPECIAL_MOVE</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<magicLvl>84</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="23364" toLevel="1" name="Tree's Blessing - Pipe Organ Melody">
+		<!-- For 10 min., increases Max HP by 37%, Max MP by 37%, Max CP by 37%, and HP recovery bonus by 20%. -->
+		<icon>icon.skill11519</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>BUFF_SPECIAL_CONDITION</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<magicLvl>80</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>600</abnormalTime>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="23365" toLevel="1" name="Tree's Blessing - Pipe Organ Melody">
+		<!-- For 15 min., increases Max HP by 37%, Max MP by 37%, Max CP by 37%, and HP recovery bonus by 20%. -->
+		<icon>icon.skill11519</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>BUFF_SPECIAL_CONDITION</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<magicLvl>81</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>900</abnormalTime>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="23366" toLevel="1" name="Tree's Blessing - Pipe Organ Melody">
+		<!-- For 20 min., increases Max HP by 37%, Max MP by 37%, Max CP by 37%, and HP recovery bonus by 20%. -->
+		<icon>icon.skill11519</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>BUFF_SPECIAL_CONDITION</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<magicLvl>82</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>1200</abnormalTime>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="23367" toLevel="1" name="Tree's Blessing - Pipe Organ Melody">
+		<!-- For 25 min., increases Max HP by 37%, Max MP by 37%, Max CP by 37%, and HP recovery bonus by 20%. -->
+		<icon>icon.skill11519</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>BUFF_SPECIAL_CONDITION</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<magicLvl>83</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>1500</abnormalTime>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="23368" toLevel="1" name="Tree's Blessing - Pipe Organ Melody">
+		<!-- For 60 min., increases Max HP by 37%, Max MP by 37%, Max CP by 37%, and HP recovery bonus by 20%. -->
+		<icon>icon.skill11519</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>BUFF_SPECIAL_CONDITION</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<magicLvl>84</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="23369" toLevel="1" name="Tree's Blessing - Guitar Melody">
+		<!-- For 10 min., increases P. Critical Rate by 32%, P. Critical Damage by 35%, and M. Critical Rate by 20. Decreases P. Skill MP Consumption by 20%, M. Skill MP Consumption by 10%, and Enchant Skill MP Consumption for Iss Enchanters by 20%. -->
+		<icon>icon.skill11520</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>BUFF_SPECIAL_MOVE</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<magicLvl>80</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>600</abnormalTime>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="23370" toLevel="1" name="Tree's Blessing - Guitar Melody">
+		<!-- For 15 min., increases P. Critical Rate by 32%, P. Critical Damage by 35%, and M. Critical Rate by 20. Decreases P. Skill MP Consumption by 20%, M. Skill MP Consumption by 10%, and Enchant Skill MP Consumption for Iss Enchanters by 20%. -->
+		<icon>icon.skill11520</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>BUFF_SPECIAL_MOVE</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<magicLvl>81</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>900</abnormalTime>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="23371" toLevel="1" name="Tree's Blessing - Guitar Melody">
+		<!-- For 20 min., increases P. Critical Rate by 32%, P. Critical Damage by 35%, and M. Critical Rate by 20. Decreases P. Skill MP Consumption by 20%, M. Skill MP Consumption by 10%, and Enchant Skill MP Consumption for Iss Enchanters by 20%. -->
+		<icon>icon.skill11520</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>BUFF_SPECIAL_MOVE</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<magicLvl>82</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>1200</abnormalTime>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="23372" toLevel="1" name="Tree's Blessing - Guitar Melody">
+		<!-- For 25 min., increases P. Critical Rate by 32%, P. Critical Damage by 35%, and M. Critical Rate by 20. Decreases P. Skill MP Consumption by 20%, M. Skill MP Consumption by 10%, and Enchant Skill MP Consumption for Iss Enchanters by 20%. -->
+		<icon>icon.skill11520</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>BUFF_SPECIAL_MOVE</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<magicLvl>83</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>1500</abnormalTime>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="23373" toLevel="1" name="Tree's Blessing - Guitar Melody">
+		<!-- For 60 min., increases P. Critical Rate by 32%, P. Critical Damage by 35%, and M. Critical Rate by 20. Decreases P. Skill MP Consumption by 20%, M. Skill MP Consumption by 10%, and Enchant Skill MP Consumption for Iss Enchanters by 20%. -->
+		<icon>icon.skill11520</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>BUFF_SPECIAL_MOVE</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<magicLvl>84</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="23374" toLevel="1" name="Tree's Blessing - Harp Melody">
+		<!-- For 10 min., increases physical Accuracy by 5, physical and magic evasion by 5, and speed by 34. Decreases received critical damage by 30%. -->
+		<icon>icon.skill11521</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>BUFF_SPECIAL_HITAVOID</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<magicLvl>80</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>600</abnormalTime>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="23375" toLevel="1" name="Tree's Blessing - Harp Melody">
+		<!-- For 15 min., increases physical Accuracy by 5, physical and magic evasion by 5, and speed by 34. Decreases received critical damage by 30%. -->
+		<icon>icon.skill11521</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>BUFF_SPECIAL_HITAVOID</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<magicLvl>81</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>900</abnormalTime>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="23376" toLevel="1" name="Tree's Blessing - Harp Melody">
+		<!-- For 20 min., increases physical Accuracy by 5, physical and magic evasion by 5, and speed by 34. Decreases received critical damage by 30%. -->
+		<icon>icon.skill11521</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>BUFF_SPECIAL_HITAVOID</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<magicLvl>82</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>1200</abnormalTime>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="23377" toLevel="1" name="Tree's Blessing - Harp Melody">
+		<!-- For 25 min., increases physical Accuracy by 5, physical and magic evasion by 5, and speed by 34. Decreases received critical damage by 30%. -->
+		<icon>icon.skill11521</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>BUFF_SPECIAL_HITAVOID</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<magicLvl>83</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>1500</abnormalTime>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="23378" toLevel="1" name="Tree's Blessing - Harp Melody">
+		<!-- For 60 min., increases physical Accuracy by 5, physical and magic evasion by 5, and speed by 34. Decreases received critical damage by 30%. -->
+		<icon>icon.skill11521</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>BUFF_SPECIAL_HITAVOID</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<magicLvl>84</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="23379" toLevel="1" name="Elpy Master">
+		<!-- Transforms into a game Master. -->
+		<icon>icon.skilltransform1</icon>
+		<operateType>A2</operateType>
+		<hitTime>2500</hitTime>
+		<effectPoint>1</effectPoint>
+		<abnormalType>TRANSFORM</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<specialLevel>-2</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>-2</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>-1</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<staticReuse>true</staticReuse>
+		<reuseDelay>10000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CanTransform">
+				<transformId>20011</transformId>
+			</condition>
+		</conditions>
+	</skill>
+	<skill id="23380" toLevel="1" name="Jermann - Soul Blackmail">
+		<icon>BranchSys3.Icon.g_skill23380</icon>
+		<operateType>A1</operateType>
+		<castRange>1000</castRange>
+		<effectPoint>1</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<effectRange>1500</effectRange>
+		<magicLvl>99</magicLvl>
+		<staticReuse>true</staticReuse>
+		<isMagic>2</isMagic>
+		<reuseDelay>1200000</reuseDelay>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="23381" toLevel="3" name="Jermann - Flow of Destruction">
+		<!-- Magical damage on the enemy. -->
+		<icon>BranchSys3.Icon.g_skill23381</icon>
+		<operateType>A1</operateType>
+		<mpConsume>500</mpConsume>
+		<castRange>600</castRange>
+		<hitTime>500</hitTime>
+		<reuseDelay>5000</reuseDelay>
+		<isMagic>1</isMagic>
+		<effectPoint>-1000</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<effectRange>1100</effectRange>
+		<magicLvl>
+			<value level="1">88</value>
+			<value level="2">93</value>
+			<value level="3">98</value>
+		</magicLvl>
+		<trait>KNOCKDOWN</trait>
+		<staticReuse>true</staticReuse>
+		<isDebuff>true</isDebuff>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="23382" toLevel="1" name="Jermann - Swiftness">
+		<!-- Teleport 300 grids forward. -->
+		<icon>BranchSys3.Icon.g_skill23382</icon>
+		<operateType>DA1</operateType>
+		<mpConsume>250</mpConsume>
+		<castRange>700</castRange>
+		<hitTime>500</hitTime>
+		<reuseDelay>20000</reuseDelay>
+		<effectPoint>-1000</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<effectRange>1200</effectRange>
+		<magicLvl>95</magicLvl>
+		<staticReuse>true</staticReuse>
+		<isDebuff>true</isDebuff>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpBlink">
+				<direction>FRONT</direction>
+				<range>300</range>
+			</condition>
+		</conditions>
+	</skill>
+	<skill id="23383" toLevel="1" name="Jermann - Shadow of Darkness">
+		<!-- Summon your mirror image and Hide. -->
+		<icon>BranchSys3.Icon.g_skill23383</icon>
+		<operateType>A1</operateType>
+		<mpConsume>500</mpConsume>
+		<hitTime>500</hitTime>
+		<effectPoint>-800</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>90</magicLvl>
+		<staticReuse>true</staticReuse>
+		<reuseDelay>60000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="23384" toLevel="3" name="Jermann - Burning Darkness">
+		<!-- Quickly Recover $s1 HP. -->
+		<icon>BranchSys3.Icon.g_skill23384</icon>
+		<operateType>A1</operateType>
+		<mpConsume>500</mpConsume>
+		<castRange>600</castRange>
+		<hitTime>1500</hitTime>
+		<reuseDelay>50000</reuseDelay>
+		<effectPoint>200</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>1100</effectRange>
+		<magicLvl>
+			<value level="1">88</value>
+			<value level="2">93</value>
+			<value level="3">98</value>
+		</magicLvl>
+		<staticReuse>true</staticReuse>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="23385" toLevel="3" name="Jermann - Devourer of Nature">
+		<!-- Increases HP Recovery Bonus. -->
+		<icon>BranchSys3.Icon.g_skill23385</icon>
+		<operateType>A2</operateType>
+		<mpConsume>250</mpConsume>
+		<hitTime>800</hitTime>
+		<reuseDelay>30000</reuseDelay>
+		<effectPoint>100</effectPoint>
+		<abnormalType>HP_REGEN_UP</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-2</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>
+			<value level="1">88</value>
+			<value level="2">93</value>
+			<value level="3">98</value>
+		</magicLvl>
+		<abnormalLvl>10</abnormalLvl>
+		<abnormalTime>28</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<staticReuse>true</staticReuse>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="23386" toLevel="3" name="Jermann - Destruction Instinct">
+		<!-- Powerful strike on nearby enemies. -->
+		<icon>BranchSys3.Icon.g_skill23386</icon>
+		<operateType>A1</operateType>
+		<mpConsume>500</mpConsume>
+		<hitTime>500</hitTime>
+		<effectPoint>-800</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>
+			<value level="1">88</value>
+			<value level="2">93</value>
+			<value level="3">98</value>
+		</magicLvl>
+		<affectRange>200</affectRange>
+		<affectLimit>6-12</affectLimit>
+		<staticReuse>true</staticReuse>
+		<reuseDelay>12000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>POINT_BLANK</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+	</skill>
+	<skill id="23387" toLevel="1" name="Jermann">
+		<!-- Transform into Jermann. -->
+		<icon>icon.skilltransform1</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>TRANSFORM</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-3</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>-2</magicLvl>
+		<abnormalLvl>55</abnormalLvl>
+		<abnormalTime>900</abnormalTime>
+		<deleteAbnormalOnLeave>true</deleteAbnormalOnLeave>
+		<irreplacableBuff>true</irreplacableBuff>
+		<staticReuse>true</staticReuse>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CanTransform">
+				<transformId>20012</transformId>
+			</condition>
+		</conditions>
+	</skill>
+	<skill id="23388" toLevel="1" name="Jermann">
+		<!-- Transform into Jermann. -->
+		<icon>icon.skilltransform1</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>TRANSFORM</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-3</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>-2</magicLvl>
+		<abnormalLvl>55</abnormalLvl>
+		<abnormalTime>900</abnormalTime>
+		<deleteAbnormalOnLeave>true</deleteAbnormalOnLeave>
+		<irreplacableBuff>true</irreplacableBuff>
+		<staticReuse>true</staticReuse>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CanTransform">
+				<transformId>20013</transformId>
+			</condition>
+		</conditions>
+	</skill>
+	<skill id="23389" toLevel="1" name="Jermann">
+		<!-- Transform into Jermann. -->
+		<icon>icon.skilltransform1</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>TRANSFORM</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-3</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>-2</magicLvl>
+		<abnormalLvl>55</abnormalLvl>
+		<abnormalTime>900</abnormalTime>
+		<deleteAbnormalOnLeave>true</deleteAbnormalOnLeave>
+		<irreplacableBuff>true</irreplacableBuff>
+		<staticReuse>true</staticReuse>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CanTransform">
+				<transformId>20014</transformId>
+			</condition>
+		</conditions>
+	</skill>
+	<skill id="23390" toLevel="1" name="Mysterious Power of Ancient Kartia's Labyrinth">
+		<!-- Accept this mysterious power to make it yours. Refuse, and you will suffer the consequences. -->
+		<icon>BranchSys3.Icon.g_skill23380</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>POISON</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-2</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>-2</magicLvl>
+		<abnormalLvl>5</abnormalLvl>
+		<abnormalTime>30</abnormalTime>
+		<trait>POISON</trait>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>2</isMagic>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="23391" toLevel="1" name="Great Mysterious Power of Ancient Kartia's Labyrinth">
+		<!-- Accept this great power to make it yours. Refuse, and you will suffer grave consequences. -->
+		<icon>BranchSys3.Icon.g_skill23380</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>POISON</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-2</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>-2</magicLvl>
+		<abnormalLvl>6</abnormalLvl>
+		<abnormalTime>30</abnormalTime>
+		<trait>POISON</trait>
+		<irreplacableBuff>true</irreplacableBuff>
+		<isMagic>2</isMagic>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="23392" toLevel="1" name="Stabilized Power of Ancient Kartia's Labyrinth">
+		<!-- Stabilize the Ancient Kartia's Labyrinth to consistently increase your HP. -->
+		<icon>BranchSys3.Icon.g_skill23380</icon>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>POISON</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-2</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>-2</magicLvl>
+		<abnormalLvl>10</abnormalLvl>
+		<abnormalTime>30</abnormalTime>
+		<trait>POISON</trait>
+		<irreplacableBuff>true</irreplacableBuff>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="23393" toLevel="1" name="Self-destruction">
+		<!-- DD +DOT -->
+		<icon>icon.skill23393</icon>
+		<operateType>A1</operateType>
+		<reuseDelay>2000</reuseDelay>
+		<effectPoint>-100</effectPoint>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<magicLvl>97</magicLvl>
+		<attributeType>DARK</attributeType>
+		<attributeValue>50</attributeValue>
+		<affectRange>150</affectRange>
+		<staticReuse>true</staticReuse>
+		<isDebuff>true</isDebuff>
+		<targetType>SELF</targetType>
+		<affectScope>POINT_BLANK</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+	</skill>
+	<skill id="23394" toLevel="1" name="Jermann - Grave of the Sword">
+		<!-- Summon the Grave of the Sword to the designated area. -->
+		<icon>BranchSys3.Icon.g_skill23387</icon>
+		<operateType>A1</operateType>
+		<mpConsume>2000</mpConsume>
+		<reuseDelay>30000</reuseDelay>
+		<effectPoint>-500</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>91</magicLvl>
+		<affectRange>300</affectRange>
+		<staticReuse>true</staticReuse>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>POINT_BLANK</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+	</skill>
+	<skill id="23395" toLevel="1" name="Jermann - Death' Calling">
+		<!-- Can summon the Warriors of Death if the Grave of the Sword is nearby. -->
+		<icon>BranchSys3.Icon.g_skill23388</icon>
+		<operateType>A2</operateType>
+		<mpConsume>500</mpConsume>
+		<castRange>350</castRange>
+		<hitTime>500</hitTime>
+		<reuseDelay>60000</reuseDelay>
+		<isMagic>4</isMagic>
+		<effectPoint>-800</effectPoint>
+		<abnormalType>DEATH_CLACK</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<effectRange>550</effectRange>
+		<magicLvl>91</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>3</abnormalTime>
+		<staticReuse>true</staticReuse>
+		<isDebuff>true</isDebuff>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<targetConditions>
+			<condition name="OpCheckAbnormal">
+				<type>DOT_ATTR</type>
+				<level>1</level>
+				<hasAbnormal>true</hasAbnormal>
+			</condition>
+		</targetConditions>
+	</skill>
+	<skill id="23396" toLevel="1" name="Jermann - Freezing Cold">
+		<!-- Freeze the ground at the designated area. Enemies on the ice will have momentarily decreased Speed and consistently decreasing HP. -->
+		<icon>BranchSys3.Icon.g_skill23389</icon>
+		<operateType>A1</operateType>
+		<mpConsume>500</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>500</hitTime>
+		<reuseDelay>25000</reuseDelay>
+		<effectPoint>-500</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<effectRange>1100</effectRange>
+		<magicLvl>91</magicLvl>
+		<staticReuse>true</staticReuse>
+		<isMagic>1</isMagic>
+		<targetType>GROUND</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="23397" toLevel="1" name="Jermann - Shard of Ice">
+		<!-- Drop an ice shard at the designated area. Additional damage if the enemy is inflicted with Freezing Cold. -->
+		<icon>BranchSys3.Icon.g_skill23390</icon>
+		<operateType>A1</operateType>
+		<mpConsume>500</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>500</hitTime>
+		<reuseDelay>15000</reuseDelay>
+		<effectPoint>-800</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<effectRange>1100</effectRange>
+		<magicLvl>91</magicLvl>
+		<staticReuse>true</staticReuse>
+		<isMagic>1</isMagic>
+		<targetType>GROUND</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="23398" toLevel="3" name="Grave of the Sword">
+		<!-- Consistently decreases HP. -->
+		<icon>BranchSys3.Icon.g_skill23387</icon>
+		<operateType>A2</operateType>
+		<abnormalType>DOT_ATTR</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>
+			<value level="1">88</value>
+			<value level="2">93</value>
+			<value level="3">98</value>
+		</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>7</abnormalTime>
+		<trait>POISON</trait>
+		<affectRange>250</affectRange>
+		<affectLimit>5-12</affectLimit>
+		<staticReuse>true</staticReuse>
+		<isMagic>2</isMagic>
+		<isDebuff>true</isDebuff>
+		<targetType>SELF</targetType>
+		<affectScope>POINT_BLANK</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+	</skill>
+	<skill id="23399" toLevel="3" name="Freezing Cold">
+		<!-- Momentarily decreases Speed and consistently decreases HP. -->
+		<icon>BranchSys3.Icon.g_skill23389</icon>
+		<operateType>A2</operateType>
+		<abnormalType>ARMOR_WATER</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>
+			<value level="1">88</value>
+			<value level="2">93</value>
+			<value level="3">98</value>
+		</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>12</abnormalTime>
+		<trait>POISON</trait>
+		<affectRange>250</affectRange>
+		<affectLimit>5-12</affectLimit>
+		<staticReuse>true</staticReuse>
+		<isMagic>2</isMagic>
+		<isDebuff>true</isDebuff>
+		<targetType>SELF</targetType>
+		<affectScope>POINT_BLANK</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+	</skill>
+</list>

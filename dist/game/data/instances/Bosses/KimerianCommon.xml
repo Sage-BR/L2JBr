@@ -1,0 +1,1311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Kimerian (Common) -->
+<instance id="161" maxWorlds="20" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/instance.xsd">
+	<time duration="30" empty="0" />
+	<locations>
+		<enter type="FIXED">
+			<location x="215445" y="80010" z="816" />
+		</enter>
+		<exit type="FIXED">
+			<location x="208048" y="87324" z="-1024" />
+		</exit>
+	</locations>
+	<conditions>
+		<condition type="Level">
+			<param name="min" value="90" />
+			<param name="max" value="99" />
+		</condition>
+		<condition type="NoParty" showMessageAndHtml="true">
+			<param name="html" value="condParty.html" />
+		</condition>
+	</conditions>
+	<reenter apply="NONE">
+		<reset day="MONDAY" hour="6" minute="30" />
+		<reset day="TUESDAY" hour="6" minute="30" />
+		<reset day="WEDNESDAY" hour="6" minute="30" />
+		<reset day="THURSDAY" hour="6" minute="30" />
+		<reset day="FRIDAY" hour="6" minute="30" />
+		<reset day="SATURDAY" hour="6" minute="30" />
+		<reset day="SUNDAY" hour="6" minute="30" />
+	</reenter>
+	<doorlist>
+		<door id="26200100">
+			<openStatus default="close" />
+		</door>
+	</doorlist>
+	<spawnlist>
+		<group name="2620_timiniel_indunm1">
+			<territories>
+				<territory name="2620_timiniel_indun" minZ="676" maxZ="1176">
+					<node x="216208" y="80132" />
+					<node x="215692" y="80812" />
+					<node x="215020" y="80764" />
+					<node x="214620" y="80296" />
+					<node x="214848" y="79452" />
+					<node x="215184" y="79192" />
+					<node x="216060" y="79464" />
+					<node x="216060" y="79464" />
+				</territory>
+			</territories>
+			<npc id="33098" x="215609" y="79851" z="828" heading="26232" respawnTime="1min" /> <!-- Noeti Mimilead -->
+			<npc id="32914" x="215544" y="79980" z="832" heading="-13060" respawnTime="1min" /> <!-- Naomi Kasheron -->
+			<npc id="32913" x="215540" y="79980" z="832" heading="-13060" respawnTime="1min" /> <!-- Fairy Rebel -->
+			<npc id="32913" x="215548" y="79980" z="832" heading="-13060" respawnTime="1min" /> <!-- Fairy Rebel -->
+		</group>
+		<group name="indun1_timiniel_wispm1">
+			<territories>
+				<territory name="indun1_timiniel_wisp" minZ="752" maxZ="952">
+					<node x="215052" y="80128" />
+					<node x="215252" y="80412" />
+					<node x="215220" y="80568" />
+					<node x="215052" y="80780" />
+					<node x="214668" y="80116" />
+				</territory>
+			</territories>
+			<npc id="32916" respawnTime="30sec" /> <!-- Large Wisp -->
+		</group>
+		<group name="2620_fairy_id_1m1">
+			<territories>
+				<territory name="2620_fairy_id_1" minZ="888" maxZ="1388">
+					<node x="216952" y="76008" />
+					<node x="217360" y="76128" />
+					<node x="217720" y="76976" />
+					<node x="217464" y="77996" />
+					<node x="217304" y="77652" />
+					<node x="216944" y="77172" />
+				</territory>
+			</territories>
+			<npc id="25736" /> <!-- Fairy Rogue -->
+			<npc id="25739" /> <!-- Satyr Summoner -->
+		</group>
+		<group name="2620_fairy_id_2m1">
+			<territories>
+				<territory name="2620_fairy_id_2" minZ="976" maxZ="1476">
+					<node x="217964" y="76996" />
+					<node x="218640" y="77032" />
+					<node x="218536" y="77752" />
+					<node x="217852" y="78592" />
+					<node x="217528" y="78228" />
+				</territory>
+			</territories>
+			<npc id="25736" /> <!-- Fairy Rogue -->
+			<npc id="25739" /> <!-- Satyr Summoner -->
+		</group>
+		<group name="2620_fairy_id_3m1">
+			<territories>
+				<territory name="2620_fairy_id_3" minZ="840" maxZ="1340">
+					<node x="218836" y="77980" />
+					<node x="219444" y="78336" />
+					<node x="219816" y="79052" />
+					<node x="218892" y="79880" />
+					<node x="218056" y="78948" />
+				</territory>
+			</territories>
+			<npc id="25737" /> <!-- Fairy Knight -->
+			<npc id="25735" /> <!-- Fairy Warrior -->
+			<npc id="25743" /> <!-- Beorning Berserker -->
+		</group>
+		<group name="2620_fairy_id_4m1">
+			<territories>
+				<territory name="2620_fairy_id_4" minZ="856" maxZ="1356">
+					<node x="220952" y="78180" />
+					<node x="221052" y="78968" />
+					<node x="220960" y="79316" />
+					<node x="220104" y="79476" />
+					<node x="220384" y="78892" />
+				</territory>
+			</territories>
+			<npc id="25736" /> <!-- Fairy Rogue -->
+			<npc id="25740" /> <!-- Satyr Witch -->
+		</group>
+		<group name="2620_fairy_id_5m1">
+			<territories>
+				<territory name="2620_fairy_id_5" minZ="1072" maxZ="1572">
+					<node x="221588" y="76488" />
+					<node x="221860" y="76960" />
+					<node x="221960" y="77688" />
+					<node x="221612" y="78300" />
+					<node x="221076" y="77328" />
+					<node x="220828" y="76816" />
+				</territory>
+			</territories>
+			<npc id="25741" /> <!-- Treekin Defender -->
+			<npc id="25738" /> <!-- Satyr Wizard -->
+		</group>
+		<group name="2620_fairy_k_6m1">
+			<territories>
+				<territory name="2620_fairy_k_6" minZ="1060" maxZ="1560">
+					<node x="218472" y="75820" />
+					<node x="220628" y="75648" />
+					<node x="220772" y="76256" />
+					<node x="220420" y="76880" />
+				</territory>
+			</territories>
+			<npc id="25737" /> <!-- Fairy Knight -->
+			<npc id="25736" /> <!-- Fairy Rogue -->
+		</group>
+		<group name="2620_fairy_id_7m1">
+			<territories>
+				<territory name="2620_fairy_id_7" minZ="872" maxZ="1372">
+					<node x="218708" y="74612" />
+					<node x="220496" y="73712" />
+					<node x="220888" y="75568" />
+					<node x="219836" y="75356" />
+					<node x="218712" y="74824" />
+				</territory>
+			</territories>
+			<npc id="25736" /> <!-- Fairy Rogue -->
+			<npc id="25738" /> <!-- Satyr Wizard -->
+			<npc id="25739" /> <!-- Satyr Summoner -->
+		</group>
+		<group name="2620_fairy_id_8m1">
+			<territories>
+				<territory name="2620_fairy_id_8" minZ="924" maxZ="1424">
+					<node x="217512" y="75300" />
+					<node x="218588" y="74976" />
+					<node x="218528" y="75408" />
+					<node x="217816" y="75876" />
+				</territory>
+			</territories>
+			<npc id="25737" /> <!-- Fairy Knight -->
+			<npc id="25738" /> <!-- Satyr Wizard -->
+		</group>
+		<group name="2620_fairy_k_9m1">
+			<territories>
+				<territory name="2620_fairy_k_9" minZ="932" maxZ="1432">
+					<node x="218688" y="71584" />
+					<node x="219096" y="72104" />
+					<node x="219628" y="72560" />
+					<node x="218332" y="72856" />
+					<node x="218644" y="72232" />
+					<node x="218308" y="72032" />
+				</territory>
+			</territories>
+			<npc id="25735" /> <!-- Fairy Warrior -->
+			<npc id="25739" /> <!-- Satyr Summoner -->
+		</group>
+		<group name="2620_fairy_k_15m1">
+			<territories>
+				<territory name="2620_fairy_k_15" minZ="924" maxZ="1424">
+					<node x="217708" y="71224" />
+					<node x="219096" y="71200" />
+					<node x="218744" y="71464" />
+					<node x="218224" y="71696" />
+					<node x="217856" y="71508" />
+				</territory>
+			</territories>
+			<npc id="25738" /> <!-- Satyr Wizard -->
+			<npc id="25736" /> <!-- Fairy Rogue -->
+		</group>
+		<group name="2620_fairy_k_16m1">
+			<territories>
+				<territory name="2620_fairy_k_16" minZ="1284" maxZ="1784">
+					<node x="218648" y="69896" />
+					<node x="220028" y="70032" />
+					<node x="220028" y="70700" />
+					<node x="219444" y="70432" />
+				</territory>
+			</territories>
+			<npc id="25735" /> <!-- Fairy Warrior -->
+			<npc id="25740" /> <!-- Satyr Witch -->
+		</group>
+		<group name="2620_fairy_k_17m1">
+			<territories>
+				<territory name="2620_fairy_k_17" minZ="1116" maxZ="1616">
+					<node x="220348" y="70488" />
+					<node x="220612" y="70320" />
+					<node x="220616" y="71088" />
+					<node x="220124" y="71172" />
+					<node x="220140" y="70896" />
+				</territory>
+			</territories>
+			<npc id="25736" /> <!-- Fairy Rogue -->
+			<npc id="25738" /> <!-- Satyr Wizard -->
+		</group>
+		<group name="2620_fairy_mid_boss1m1">
+			<territories>
+				<territory name="2620_fairy_mid_boss1" minZ="1004" maxZ="1704">
+					<node x="222544" y="71680" />
+					<node x="223260" y="72308" />
+					<node x="223644" y="73172" />
+					<node x="222716" y="74888" />
+					<node x="222392" y="73016" />
+					<node x="221836" y="71912" />
+				</territory>
+			</territories>
+			<npc id="25744" x="222880" y="72376" z="1552" heading="19760" /> <!-- Double Nightmare -->
+			<npc id="25735" x="222756" y="72424" z="1516" heading="20012" /> <!-- Fairy Warrior -->
+			<npc id="25738" x="222936" y="72508" z="1512" heading="22248" /> <!-- Satyr Wizard -->
+			<npc id="25744" x="223320" y="72972" z="1520" heading="30896" /> <!-- Double Nightmare -->
+			<npc id="25737" x="223276" y="72792" z="1540" heading="31208" /> <!-- Fairy Knight -->
+			<npc id="25739" x="223344" y="73100" z="1504" heading="31524" /> <!-- Satyr Summoner -->
+		</group>
+		<group name="2620_fairy_k_32m1">
+			<territories>
+				<territory name="2620_fairy_k_32" minZ="860" maxZ="1360">
+					<node x="227480" y="76708" />
+					<node x="227984" y="76744" />
+					<node x="228064" y="77200" />
+					<node x="227472" y="77212" />
+				</territory>
+			</territories>
+			<npc id="25735" /> <!-- Fairy Warrior -->
+			<npc id="25739" /> <!-- Satyr Summoner -->
+		</group>
+		<group name="2620_fairy_k_33m1">
+			<territories>
+				<territory name="2620_fairy_k_33" minZ="848" maxZ="1348">
+					<node x="227404" y="75932" />
+					<node x="227604" y="75692" />
+					<node x="227792" y="76412" />
+					<node x="227404" y="76568" />
+				</territory>
+			</territories>
+			<npc id="25736" /> <!-- Fairy Rogue -->
+			<npc id="25738" /> <!-- Satyr Wizard -->
+		</group>
+		<group name="2620_fairy_k_34m1">
+			<territories>
+				<territory name="2620_fairy_k_34" minZ="912" maxZ="1412">
+					<node x="226616" y="74880" />
+					<node x="227452" y="75344" />
+					<node x="227300" y="75556" />
+					<node x="226424" y="75300" />
+				</territory>
+			</territories>
+			<npc id="25737" /> <!-- Fairy Knight -->
+			<npc id="25740" /> <!-- Satyr Witch -->
+		</group>
+		<group name="2620_fairy_k_35m1">
+			<territories>
+				<territory name="2620_fairy_k_35" minZ="1052" maxZ="1552">
+					<node x="225776" y="74444" />
+					<node x="226312" y="74672" />
+					<node x="226188" y="75620" />
+					<node x="225612" y="75740" />
+					<node x="225748" y="74984" />
+				</territory>
+			</territories>
+			<npc id="25735" /> <!-- Fairy Warrior -->
+			<npc id="25740" /> <!-- Satyr Witch -->
+		</group>
+		<group name="2620_fairy_k_36m1">
+			<territories>
+				<territory name="2620_fairy_k_36" minZ="1000" maxZ="1500">
+					<node x="225204" y="76248" />
+					<node x="226048" y="76412" />
+					<node x="226084" y="77252" />
+					<node x="225004" y="77352" />
+				</territory>
+			</territories>
+			<npc id="25736" /> <!-- Fairy Rogue -->
+			<npc id="25740" /> <!-- Satyr Witch -->
+		</group>
+		<group name="2620_fairy_k_37m1">
+			<territories>
+				<territory name="2620_fairy_k_37" minZ="796" maxZ="1296">
+					<node x="226916" y="77604" />
+					<node x="227980" y="77556" />
+					<node x="227536" y="78736" />
+					<node x="226880" y="78796" />
+				</territory>
+			</territories>
+			<npc id="25735" /> <!-- Fairy Warrior -->
+			<npc id="25739" /> <!-- Satyr Summoner -->
+		</group>
+		<group name="2620_fairy_mid_boss2m1">
+			<territories>
+				<territory name="2620_fairy_mid_boss2" minZ="1156" maxZ="1656">
+					<node x="220876" y="70308" />
+					<node x="221656" y="70216" />
+					<node x="221572" y="70788" />
+					<node x="221180" y="71124" />
+				</territory>
+			</territories>
+			<npc id="25744" x="221604" y="70336" z="1424" heading="32144" /> <!-- Double Nightmare -->
+			<npc id="25735" x="221504" y="70396" z="1412" heading="-32396" /> <!-- Fairy Warrior -->
+			<npc id="25740" x="221512" y="70272" z="1408" heading="31304" /> <!-- Satyr Witch -->
+		</group>
+		<group name="2620_fairy_mid_boss3m1">
+			<territories>
+				<territory name="2620_fairy_mid_boss3" minZ="1160" maxZ="1660">
+					<node x="225012" y="74028" />
+					<node x="225604" y="73852" />
+					<node x="225748" y="74352" />
+					<node x="224888" y="74680" />
+				</territory>
+			</territories>
+			<npc id="25744" x="225472" y="73972" z="1308" heading="16232" /> <!-- Double Nightmare -->
+			<npc id="25736" x="225372" y="74048" z="1312" heading="16476" /> <!-- Fairy Rogue -->
+			<npc id="25739" x="225576" y="74080" z="1288" heading="17116" /> <!-- Satyr Summoner -->
+		</group>
+		<group name="2620_fairy_final_bossm1">
+			<territories>
+				<territory name="2620_fairy_final_boss" minZ="1488" maxZ="1988">
+					<node x="223740" y="70400" />
+					<node x="224676" y="71280" />
+					<node x="223924" y="72388" />
+					<node x="223132" y="71244" />
+				</territory>
+			</territories>
+			<npc id="25745" x="223952" y="71136" z="1632" heading="22228" /> <!-- Kimerian -->
+			<npc id="25735" x="223953" y="71379" z="1644" heading="22800" /> <!-- Fairy Warrior -->
+			<npc id="25737" x="223734" y="71236" z="1640" heading="23140" /> <!-- Fairy Knight -->
+			<npc id="25738" x="223720" y="71088" z="1644" heading="22804" /> <!-- Satyr Wizard -->
+			<npc id="25740" x="224131" y="71378" z="1644" heading="23144" /> <!-- Satyr Witch -->
+		</group>
+		<group name="2620_indun1_wisp1m1">
+			<territories>
+				<territory name="2620_indun1_wisp1" minZ="1604" maxZ="2104">
+					<node x="222972" y="70268" />
+					<node x="223172" y="70268" />
+					<node x="223172" y="70468" />
+					<node x="222972" y="70468" />
+				</territory>
+			</territories>
+			<npc id="32916" respawnTime="90sec" respawnRandom="60sec" /> <!-- Large Wisp -->
+		</group>
+		<group name="2620_indun1_wisp2m1">
+			<territories>
+				<territory name="2620_indun1_wisp2" minZ="1572" maxZ="2072">
+					<node x="223676" y="72668" />
+					<node x="223876" y="72668" />
+					<node x="223876" y="72868" />
+					<node x="223676" y="72868" />
+				</territory>
+			</territories>
+			<npc id="32915" respawnTime="30sec" respawnRandom="60sec" /> <!-- Wisp -->
+		</group>
+		<group name="2620_indun1_wisp3m1">
+			<territories>
+				<territory name="2620_indun1_wisp3" minZ="1520" maxZ="2020">
+					<node x="224924" y="72092" />
+					<node x="225124" y="72092" />
+					<node x="225124" y="72292" />
+					<node x="224924" y="72292" />
+				</territory>
+			</territories>
+			<npc id="32916" respawnTime="90sec" respawnRandom="60sec" /> <!-- Large Wisp -->
+		</group>
+		<group name="2620_indun1_wisp4m1">
+			<territories>
+				<territory name="2620_indun1_wisp4" minZ="1432" maxZ="1632">
+					<node x="224892" y="72860" />
+					<node x="225092" y="72860" />
+					<node x="225092" y="73060" />
+					<node x="224892" y="73060" />
+				</territory>
+			</territories>
+			<npc id="32915" respawnTime="30sec" respawnRandom="60sec" /> <!-- Wisp -->
+		</group>
+		<group name="2620_indun1_wisp5m1">
+			<territories>
+				<territory name="2620_indun1_wisp5" minZ="1580" maxZ="1780">
+					<node x="222524" y="70644" />
+					<node x="222724" y="70644" />
+					<node x="222724" y="70844" />
+					<node x="222524" y="70844" />
+				</territory>
+			</territories>
+			<npc id="32915" respawnTime="30sec" respawnRandom="60sec" /> <!-- Wisp -->
+		</group>
+		<group name="2620_indun1_wisp6m1">
+			<territories>
+				<territory name="2620_indun1_wisp6" minZ="1584" maxZ="1784">
+					<node x="224720" y="71176" />
+					<node x="224920" y="71176" />
+					<node x="224920" y="71376" />
+					<node x="224720" y="71376" />
+				</territory>
+			</territories>
+			<npc id="32915" respawnTime="50sec" respawnRandom="60sec" /> <!-- Wisp -->
+		</group>
+		<group name="2620_indun1_wisp7m1">
+			<territories>
+				<territory name="2620_indun1_wisp7" minZ="980" maxZ="1180">
+					<node x="217952" y="76348" />
+					<node x="218152" y="76348" />
+					<node x="218152" y="76548" />
+					<node x="217952" y="76548" />
+				</territory>
+			</territories>
+			<npc id="32915" respawnTime="50sec" respawnRandom="60sec" /> <!-- Wisp -->
+		</group>
+		<group name="2620_indun1_wisp8m1">
+			<territories>
+				<territory name="2620_indun1_wisp8" minZ="920" maxZ="1120">
+					<node x="216908" y="75468" />
+					<node x="217108" y="75468" />
+					<node x="217108" y="75668" />
+					<node x="216908" y="75668" />
+				</territory>
+			</territories>
+			<npc id="32915" respawnTime="50sec" respawnRandom="60sec" /> <!-- Wisp -->
+		</group>
+		<group name="2620_indun1_wisp9m1">
+			<territories>
+				<territory name="2620_indun1_wisp9" minZ="1084" maxZ="1284">
+					<node x="218620" y="77756" />
+					<node x="218820" y="77756" />
+					<node x="218820" y="77956" />
+					<node x="218620" y="77956" />
+				</territory>
+			</territories>
+			<npc id="32915" respawnTime="50sec" respawnRandom="60sec" /> <!-- Wisp -->
+		</group>
+		<group name="2620_indun1_wisp10m1">
+			<territories>
+				<territory name="2620_indun1_wisp10" minZ="1132" maxZ="1332">
+					<node x="219416" y="77020" />
+					<node x="219616" y="77020" />
+					<node x="219616" y="77220" />
+					<node x="219416" y="77220" />
+				</territory>
+			</territories>
+			<npc id="32915" respawnTime="50sec" respawnRandom="60sec" /> <!-- Wisp -->
+		</group>
+		<group name="2620_indun1_wisp11m1">
+			<territories>
+				<territory name="2620_indun1_wisp11" minZ="916" maxZ="1116">
+					<node x="219996" y="78748" />
+					<node x="220196" y="78748" />
+					<node x="220196" y="78948" />
+					<node x="219996" y="78948" />
+				</territory>
+			</territories>
+			<npc id="32915" respawnTime="50sec" respawnRandom="60sec" /> <!-- Wisp -->
+		</group>
+		<group name="2620_indun1_wisp12m1">
+			<territories>
+				<territory name="2620_indun1_wisp12" minZ="996" maxZ="1196">
+					<node x="221000" y="75936" />
+					<node x="221200" y="75936" />
+					<node x="221200" y="76136" />
+					<node x="221000" y="76136" />
+				</territory>
+			</territories>
+			<npc id="32915" respawnTime="50sec" respawnRandom="60sec" /> <!-- Wisp -->
+		</group>
+		<group name="2620_indun1_wisp13m1">
+			<territories>
+				<territory name="2620_indun1_wisp13" minZ="932" maxZ="1132">
+					<node x="221228" y="74860" />
+					<node x="221428" y="74860" />
+					<node x="221428" y="75060" />
+					<node x="221228" y="75060" />
+				</territory>
+			</territories>
+			<npc id="32916" respawnTime="90sec" respawnRandom="60sec" /> <!-- Large Wisp -->
+		</group>
+		<group name="2620_indun1_wisp14m1">
+			<territories>
+				<territory name="2620_indun1_wisp14" minZ="924" maxZ="1124">
+					<node x="220332" y="74120" />
+					<node x="220532" y="74120" />
+					<node x="220532" y="74320" />
+					<node x="220332" y="74320" />
+				</territory>
+			</territories>
+			<npc id="32915" respawnTime="50sec" respawnRandom="60sec" /> <!-- Wisp -->
+		</group>
+		<group name="2620_indun1_wisp15m1">
+			<territories>
+				<territory name="2620_indun1_wisp15" minZ="1168" maxZ="1368">
+					<node x="221316" y="77912" />
+					<node x="221516" y="77912" />
+					<node x="221516" y="78112" />
+					<node x="221316" y="78112" />
+				</territory>
+			</territories>
+			<npc id="32915" respawnTime="50sec" respawnRandom="60sec" /> <!-- Wisp -->
+		</group>
+		<group name="2620_indun1_wisp16m1">
+			<territories>
+				<territory name="2620_indun1_wisp16" minZ="1160" maxZ="1360">
+					<node x="219260" y="75724" />
+					<node x="219460" y="75724" />
+					<node x="219460" y="75924" />
+					<node x="219260" y="75924" />
+				</territory>
+			</territories>
+			<npc id="32915" respawnTime="50sec" respawnRandom="60sec" /> <!-- Wisp -->
+		</group>
+		<group name="2620_indun1_wisp17m1">
+			<territories>
+				<territory name="2620_indun1_wisp17" minZ="1016" maxZ="1216">
+					<node x="216456" y="72172" />
+					<node x="216656" y="72172" />
+					<node x="216656" y="72372" />
+					<node x="216456" y="72372" />
+				</territory>
+			</territories>
+			<npc id="32915" respawnTime="50sec" respawnRandom="60sec" /> <!-- Wisp -->
+		</group>
+		<group name="2620_indun1_wisp18m1">
+			<territories>
+				<territory name="2620_indun1_wisp18" minZ="936" maxZ="1136">
+					<node x="218028" y="72492" />
+					<node x="218228" y="72492" />
+					<node x="218228" y="72692" />
+					<node x="218028" y="72692" />
+				</territory>
+			</territories>
+			<npc id="32915" respawnTime="50sec" respawnRandom="60sec" /> <!-- Wisp -->
+		</group>
+		<group name="2620_indun1_wisp19m1">
+			<territories>
+				<territory name="2620_indun1_wisp19" minZ="960" maxZ="1160">
+					<node x="217380" y="71296" />
+					<node x="217580" y="71296" />
+					<node x="217580" y="71496" />
+					<node x="217380" y="71496" />
+				</territory>
+			</territories>
+			<npc id="32915" respawnTime="50sec" respawnRandom="60sec" /> <!-- Wisp -->
+		</group>
+		<group name="2620_indun1_wisp20m1">
+			<territories>
+				<territory name="2620_indun1_wisp20" minZ="1252" maxZ="1452">
+					<node x="217340" y="70300" />
+					<node x="217540" y="70300" />
+					<node x="217540" y="70500" />
+					<node x="217340" y="70500" />
+				</territory>
+			</territories>
+			<npc id="32915" respawnTime="50sec" respawnRandom="60sec" /> <!-- Wisp -->
+		</group>
+		<group name="2620_indun1_wisp21m1">
+			<territories>
+				<territory name="2620_indun1_wisp21" minZ="1264" maxZ="1464">
+					<node x="218716" y="70988" />
+					<node x="218916" y="70988" />
+					<node x="218916" y="71188" />
+					<node x="218716" y="71188" />
+				</territory>
+			</territories>
+			<npc id="32915" respawnTime="50sec" respawnRandom="60sec" /> <!-- Wisp -->
+		</group>
+		<group name="2620_indun1_wisp22m1">
+			<territories>
+				<territory name="2620_indun1_wisp22" minZ="1120" maxZ="1320">
+					<node x="219596" y="71276" />
+					<node x="219796" y="71276" />
+					<node x="219796" y="71476" />
+					<node x="219596" y="71476" />
+				</territory>
+			</territories>
+			<npc id="32916" respawnTime="90sec" respawnRandom="60sec" /> <!-- Large Wisp -->
+		</group>
+		<group name="2620_indun1_wisp23m1">
+			<territories>
+				<territory name="2620_indun1_wisp23" minZ="1088" maxZ="1288">
+					<node x="220412" y="71212" />
+					<node x="220612" y="71212" />
+					<node x="220612" y="71412" />
+					<node x="220412" y="71412" />
+				</territory>
+			</territories>
+			<npc id="32915" respawnTime="50sec" respawnRandom="60sec" /> <!-- Wisp -->
+		</group>
+		<group name="2620_indun1_wisp24m1">
+			<territories>
+				<territory name="2620_indun1_wisp24" minZ="1144" maxZ="1344">
+					<node x="221788" y="72748" />
+					<node x="221988" y="72748" />
+					<node x="221988" y="72948" />
+					<node x="221788" y="72948" />
+				</territory>
+			</territories>
+			<npc id="32915" respawnTime="50sec" respawnRandom="60sec" /> <!-- Wisp -->
+		</group>
+		<group name="2620_indun1_wisp25m1">
+			<territories>
+				<territory name="2620_indun1_wisp25" minZ="1240" maxZ="1440">
+					<node x="222652" y="73724" />
+					<node x="222852" y="73724" />
+					<node x="222852" y="73924" />
+					<node x="222652" y="73924" />
+				</territory>
+			</territories>
+			<npc id="32915" respawnTime="50sec" respawnRandom="60sec" /> <!-- Wisp -->
+		</group>
+		<group name="2620_indun1_wisp26m1">
+			<territories>
+				<territory name="2620_indun1_wisp26" minZ="1076" maxZ="1276">
+					<node x="225240" y="75628" />
+					<node x="225440" y="75628" />
+					<node x="225440" y="75828" />
+					<node x="225240" y="75828" />
+				</territory>
+			</territories>
+			<npc id="32915" respawnTime="50sec" respawnRandom="60sec" /> <!-- Wisp -->
+		</group>
+		<group name="2620_indun1_wisp27m1">
+			<territories>
+				<territory name="2620_indun1_wisp27" minZ="1208" maxZ="1408">
+					<node x="225308" y="74572" />
+					<node x="225508" y="74572" />
+					<node x="225508" y="74772" />
+					<node x="225308" y="74772" />
+				</territory>
+			</territories>
+			<npc id="32916" respawnTime="50sec" respawnRandom="60sec" /> <!-- Large Wisp -->
+		</group>
+		<group name="2620_indun1_wisp28m1">
+			<territories>
+				<territory name="2620_indun1_wisp28" minZ="1088" maxZ="1288">
+					<node x="226448" y="74572" />
+					<node x="226648" y="74572" />
+					<node x="226648" y="74772" />
+					<node x="226448" y="74772" />
+				</territory>
+			</territories>
+			<npc id="32915" respawnTime="50sec" respawnRandom="60sec" /> <!-- Wisp -->
+		</group>
+		<group name="2620_indun1_wisp29m1">
+			<territories>
+				<territory name="2620_indun1_wisp29" minZ="1052" maxZ="1252">
+					<node x="226616" y="75956" />
+					<node x="226816" y="75956" />
+					<node x="226816" y="76156" />
+					<node x="226616" y="76156" />
+				</territory>
+			</territories>
+			<npc id="32915" respawnTime="50sec" respawnRandom="60sec" /> <!-- Wisp -->
+		</group>
+		<group name="2620_indun1_wisp30m1">
+			<territories>
+				<territory name="2620_indun1_wisp30" minZ="1004" maxZ="1204">
+					<node x="226764" y="77292" />
+					<node x="226964" y="77292" />
+					<node x="226964" y="77492" />
+					<node x="226764" y="77492" />
+				</territory>
+			</territories>
+			<npc id="32915" respawnTime="50sec" respawnRandom="60sec" /> <!-- Wisp -->
+		</group>
+		<group name="2620_indun1_wisp31m1">
+			<territories>
+				<territory name="2620_indun1_wisp31" minZ="1172" maxZ="1372">
+					<node x="224412" y="77324" />
+					<node x="224612" y="77324" />
+					<node x="224612" y="77524" />
+					<node x="224412" y="77524" />
+				</territory>
+			</territories>
+			<npc id="32915" respawnTime="50sec" respawnRandom="60sec" /> <!-- Wisp -->
+		</group>
+		<group name="2620_indun1_wardm1">
+			<territories>
+				<territory name="2620_indun1_ward" minZ="-348" maxZ="1652">
+					<node x="210860" y="70600" />
+					<node x="222824" y="67376" />
+					<node x="229140" y="74852" />
+					<node x="224512" y="87156" />
+				</territory>
+			</territories>
+			<npc id="33137" x="214784" y="73056" z="984"> <!-- Ant under Foot -->
+				<parameters>
+					<param name="say" value="1" />
+				</parameters>
+			</npc>
+			<npc id="33137" x="216144" y="72912" z="944"> <!-- Ant under Foot -->
+				<parameters>
+					<param name="say" value="1" />
+				</parameters>
+			</npc>
+			<npc id="33137" x="215228" y="71672" z="1280"> <!-- Ant under Foot -->
+				<parameters>
+					<param name="say" value="1" />
+				</parameters>
+			</npc>
+			<npc id="33137" x="222960" y="80560" z="1132"> <!-- Ant under Foot -->
+				<parameters>
+					<param name="say" value="1" />
+				</parameters>
+			</npc>
+			<npc id="33137" x="223152" y="81904" z="1064"> <!-- Ant under Foot -->
+				<parameters>
+					<param name="say" value="1" />
+				</parameters>
+			</npc>
+			<npc id="33137" x="223728" y="83328" z="932"> <!-- Ant under Foot -->
+				<parameters>
+					<param name="say" value="1" />
+				</parameters>
+			</npc>
+			<npc id="33137" x="225508" y="81120" z="868"> <!-- Ant under Foot -->
+				<parameters>
+					<param name="say" value="1" />
+				</parameters>
+			</npc>
+			<npc id="33137" x="219840" y="77312" z="1136"> <!-- Ant under Foot -->
+				<parameters>
+					<param name="say" value="2" />
+				</parameters>
+			</npc>
+			<npc id="33137" x="221472" y="74624" z="1168"> <!-- Ant under Foot -->
+				<parameters>
+					<param name="say" value="2" />
+				</parameters>
+			</npc>
+			<npc id="33137" x="220688" y="70332" z="1244"> <!-- Ant under Foot -->
+				<parameters>
+					<param name="say" value="2" />
+				</parameters>
+			</npc>
+			<npc id="33137" x="220160" y="71072" z="1192"> <!-- Ant under Foot -->
+				<parameters>
+					<param name="say" value="2" />
+				</parameters>
+			</npc>
+			<npc id="33137" x="224704" y="76112" z="1296"> <!-- Ant under Foot -->
+				<parameters>
+					<param name="say" value="2" />
+				</parameters>
+			</npc>
+			<npc id="33137" x="225600" y="74736" z="1228"> <!-- Ant under Foot -->
+				<parameters>
+					<param name="say" value="2" />
+				</parameters>
+			</npc>
+			<npc id="33137" x="222400" y="70304" z="1584"> <!-- Ant under Foot -->
+				<parameters>
+					<param name="say" value="3" />
+				</parameters>
+			</npc>
+			<npc id="33137" x="225008" y="72608" z="1564"> <!-- Ant under Foot -->
+				<parameters>
+					<param name="say" value="3" />
+				</parameters>
+			</npc>
+			<npc id="33137" x="215552" y="71024" z="1252"> <!-- Ant under Foot -->
+				<parameters>
+					<param name="say" value="1" />
+				</parameters>
+			</npc>
+			<npc id="33137" x="214336" y="71088" z="1340"> <!-- Ant under Foot -->
+				<parameters>
+					<param name="say" value="1" />
+				</parameters>
+			</npc>
+			<npc id="33137" x="214320" y="72352" z="1084"> <!-- Ant under Foot -->
+				<parameters>
+					<param name="say" value="1" />
+				</parameters>
+			</npc>
+			<npc id="33137" x="223568" y="80816" z="960"> <!-- Ant under Foot -->
+				<parameters>
+					<param name="say" value="1" />
+				</parameters>
+			</npc>
+			<npc id="33137" x="223024" y="81168" z="1024"> <!-- Ant under Foot -->
+				<parameters>
+					<param name="say" value="1" />
+				</parameters>
+			</npc>
+			<npc id="33137" x="222480" y="81360" z="1056"> <!-- Ant under Foot -->
+				<parameters>
+					<param name="say" value="1" />
+				</parameters>
+			</npc>
+			<npc id="33137" x="222544" y="81872" z="992"> <!-- Ant under Foot -->
+				<parameters>
+					<param name="say" value="1" />
+				</parameters>
+			</npc>
+			<npc id="33137" x="221760" y="81456" z="1120"> <!-- Ant under Foot -->
+				<parameters>
+					<param name="say" value="1" />
+				</parameters>
+			</npc>
+			<npc id="33137" x="222240" y="80640" z="1072"> <!-- Ant under Foot -->
+				<parameters>
+					<param name="say" value="1" />
+				</parameters>
+			</npc>
+			<npc id="33137" x="222640" y="80080" z="1056"> <!-- Ant under Foot -->
+				<parameters>
+					<param name="say" value="1" />
+				</parameters>
+			</npc>
+			<npc id="33137" x="223696" y="81440" z="960"> <!-- Ant under Foot -->
+				<parameters>
+					<param name="say" value="1" />
+				</parameters>
+			</npc>
+			<npc id="33137" x="223664" y="81968" z="1072"> <!-- Ant under Foot -->
+				<parameters>
+					<param name="say" value="1" />
+				</parameters>
+			</npc>
+			<npc id="33137" x="223360" y="82496" z="1072"> <!-- Ant under Foot -->
+				<parameters>
+					<param name="say" value="1" />
+				</parameters>
+			</npc>
+			<npc id="33137" x="222560" y="82912" z="896"> <!-- Ant under Foot -->
+				<parameters>
+					<param name="say" value="1" />
+				</parameters>
+			</npc>
+			<npc id="33137" x="223072" y="83472" z="880"> <!-- Ant under Foot -->
+				<parameters>
+					<param name="say" value="1" />
+				</parameters>
+			</npc>
+			<npc id="33137" x="224160" y="82832" z="944"> <!-- Ant under Foot -->
+				<parameters>
+					<param name="say" value="1" />
+				</parameters>
+			</npc>
+			<npc id="33137" x="224640" y="82592" z="928"> <!-- Ant under Foot -->
+				<parameters>
+					<param name="say" value="1" />
+				</parameters>
+			</npc>
+			<npc id="33137" x="225184" y="81904" z="896"> <!-- Ant under Foot -->
+				<parameters>
+					<param name="say" value="1" />
+				</parameters>
+			</npc>
+			<npc id="33137" x="224416" y="81056" z="944"> <!-- Ant under Foot -->
+				<parameters>
+					<param name="say" value="1" />
+				</parameters>
+			</npc>
+			<npc id="33137" x="224336" y="80400" z="896"> <!-- Ant under Foot -->
+				<parameters>
+					<param name="say" value="1" />
+				</parameters>
+			</npc>
+			<npc id="33137" x="224944" y="75184" z="1360"> <!-- Ant under Foot -->
+				<parameters>
+					<param name="say" value="2" />
+				</parameters>
+			</npc>
+			<npc id="33137" x="225388" y="73708" z="1352"> <!-- Ant under Foot -->
+				<parameters>
+					<param name="say" value="2" />
+				</parameters>
+			</npc>
+			<npc id="33137" x="222224" y="73424" z="1232"> <!-- Ant under Foot -->
+				<parameters>
+					<param name="say" value="2" />
+				</parameters>
+			</npc>
+			<npc id="33137" x="221712" y="73056" z="1216"> <!-- Ant under Foot -->
+				<parameters>
+					<param name="say" value="2" />
+				</parameters>
+			</npc>
+			<npc id="33137" x="222800" y="74240" z="1312"> <!-- Ant under Foot -->
+				<parameters>
+					<param name="say" value="2" />
+				</parameters>
+			</npc>
+			<npc id="33137" x="222640" y="72960" z="1324"> <!-- Ant under Foot -->
+				<parameters>
+					<param name="say" value="2" />
+				</parameters>
+			</npc>
+			<npc id="33137" x="220928" y="74448" z="976"> <!-- Ant under Foot -->
+				<parameters>
+					<param name="say" value="2" />
+				</parameters>
+			</npc>
+			<npc id="33137" x="220832" y="70960" z="1168"> <!-- Ant under Foot -->
+				<parameters>
+					<param name="say" value="2" />
+				</parameters>
+			</npc>
+			<npc id="33137" x="216688" y="70464" z="1232"> <!-- Ant under Foot -->
+				<parameters>
+					<param name="say" value="1" />
+				</parameters>
+			</npc>
+			<npc id="33137" x="216940" y="70148" z="1316"> <!-- Ant under Foot -->
+				<parameters>
+					<param name="say" value="1" />
+				</parameters>
+			</npc>
+			<npc id="33137" x="216112" y="71248" z="1152"> <!-- Ant under Foot -->
+				<parameters>
+					<param name="say" value="1" />
+				</parameters>
+			</npc>
+			<npc id="33137" x="217587" y="78419" z="1024"> <!-- Ant under Foot -->
+				<parameters>
+					<param name="say" value="2" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="2620_indun1_easter_eggm1">
+			<territories>
+				<territory name="2620_indun1_easter_egg" minZ="-348" maxZ="1652">
+					<node x="210860" y="70600" />
+					<node x="222824" y="67376" />
+					<node x="229140" y="74852" />
+					<node x="224512" y="87156" />
+				</territory>
+			</territories>
+			<npc id="33145" x="214144" y="70604" z="1368" respawnTime="1min" /> <!-- Rabbit -->
+			<npc id="33142" x="220988" y="82500" z="912" heading="-29480" respawnTime="1min" /> <!-- Taegong Kim -->
+			<npc id="33144" x="220448" y="72160" z="888" heading="13680" respawnTime="1min" /> <!-- Toad -->
+		</group>
+		<group name="2620_indun1_kimerian_hollow1m1">
+			<territories>
+				<territory name="2620_indun1_kimerian_hollow1" minZ="864"
+					maxZ="1164">
+					<node x="217084" y="78572" />
+					<node x="217284" y="78572" />
+					<node x="217284" y="78772" />
+					<node x="217084" y="78772" />
+				</territory>
+			</territories>
+			<npc id="33137" x="217184" y="78672" z="968"> <!-- Ant under Foot -->
+				<parameters>
+					<param name="hollow" value="1" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="2620_indun1_kimerian_trap1m1">
+			<territories>
+				<territory name="2620_indun1_kimerian_trap1" minZ="1168"
+					maxZ="1368">
+					<node x="221880" y="73960" />
+					<node x="222080" y="73960" />
+					<node x="222080" y="74160" />
+					<node x="221880" y="74160" />
+				</territory>
+			</territories>
+			<npc id="33137" x="221984" y="74060" z="1248"> <!-- Ant under Foot -->
+				<parameters>
+					<param name="trap" value="1" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="2620_indun1_kimerian_trap2m1">
+			<territories>
+				<territory name="2620_indun1_kimerian_trap2" minZ="1048"
+					maxZ="1248">
+					<node x="224348" y="76412" />
+					<node x="224548" y="76412" />
+					<node x="224548" y="76612" />
+					<node x="224348" y="76612" />
+				</territory>
+			</territories>
+			<npc id="33137" x="224464" y="76512" z="1136"> <!-- Ant under Foot -->
+				<parameters>
+					<param name="trap" value="2" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="2620_indun1_kimerian_trap3m1">
+			<territories>
+				<territory name="2620_indun1_kimerian_trap3" minZ="1148" maxZ="1348">
+					<node x="215612" y="71196" />
+					<node x="215812" y="71196" />
+					<node x="215812" y="71396" />
+					<node x="215612" y="71396" />
+				</territory>
+			</territories>
+			<npc id="33396" x="215712" y="71296" z="1200"> <!-- Kimerian -->
+				<parameters>
+					<param name="trap" value="3" />
+				</parameters>
+			</npc>
+		</group>
+		<group name="2620_indun1_kimerian_trap4m1">
+			<territories>
+				<territory name="2620_indun1_kimerian_trap4" minZ="-348" maxZ="1652">
+					<node x="210860" y="70600" />
+					<node x="222824" y="67376" />
+					<node x="229140" y="74852" />
+					<node x="224512" y="87156" />
+				</territory>
+			</territories>
+			<npc id="33148" x="220527" y="76347" z="1104" heading="12222" /> <!-- Large Cocoon -->
+			<npc id="33148" x="222248" y="72892" z="1312" /> <!-- Large Cocoon -->
+			<npc id="33148" x="220528" y="70224" z="1296" heading="-29343" /> <!-- Large Cocoon -->
+			<npc id="33148" x="217968" y="72864" z="992" /> <!-- Large Cocoon -->
+			<npc id="33148" x="226272" y="77296" z="1192" heading="13680" /> <!-- Large Cocoon -->
+			<npc id="33148" x="223044" y="72744" z="1484" /> <!-- Large Cocoon -->
+			<npc id="33147" x="223456" y="71200" z="1648" heading="-5943" /> <!-- Cocoon -->
+			<npc id="33147" x="224000" y="71744" z="1648" heading="-21343" /> <!-- Cocoon -->
+			<npc id="33147" x="223992" y="72515" z="1632" heading="-11111" /> <!-- Cocoon -->
+			<npc id="33147" x="224032" y="70884" z="1632" /> <!-- Cocoon -->
+			<npc id="33147" x="224188" y="71045" z="1632" heading="13680" /> <!-- Cocoon -->
+			<npc id="33147" x="226096" y="75200" z="1184" /> <!-- Cocoon -->
+			<npc id="33148" x="225216" y="74384" z="1324" /> <!-- Large Cocoon -->
+			<npc id="33148" x="219264" y="76256" z="1312" heading="-9494" /> <!-- Large Cocoon -->
+			<npc id="33148" x="220912" y="71120" z="1196" /> <!-- Large Cocoon -->
+		</group>
+		<group name="2620_fairy_stationary1m1">
+			<territories>
+				<territory name="2620_fairy_stationary1" minZ="924" maxZ="1424">
+					<node x="217020" y="76212" />
+					<node x="217428" y="76332" />
+					<node x="217788" y="77180" />
+					<node x="217532" y="78200" />
+					<node x="217372" y="78248" />
+					<node x="216872" y="77564" />
+				</territory>
+			</territories>
+			<npc id="25735" x="217536" y="77536" z="1024" /> <!-- Fairy Warrior -->
+			<npc id="25738" x="217408" y="77552" z="1040" /> <!-- Satyr Wizard -->
+			<npc id="25740" x="217120" y="77760" z="1120" /> <!-- Satyr Witch -->
+			<npc id="25735" x="217132" y="77676" z="1196" /> <!-- Fairy Warrior -->
+		</group>
+		<group name="2620_fairy_stationary2m1">
+			<territories>
+				<territory name="2620_fairy_stationary2" minZ="976" maxZ="1476">
+					<node x="217964" y="76996" />
+					<node x="218640" y="77032" />
+					<node x="218536" y="77752" />
+					<node x="217852" y="78592" />
+					<node x="217528" y="78228" />
+				</territory>
+			</territories>
+			<npc id="25737" x="218112" y="77760" z="1152" heading="22292" /> <!-- Fairy Knight -->
+			<npc id="25735" x="218240" y="77872" z="1152" /> <!-- Fairy Warrior -->
+			<npc id="25737" x="218176" y="77136" z="1120" heading="12222" /> <!-- Fairy Knight -->
+			<npc id="25738" x="218272" y="77152" z="1136" /> <!-- Satyr Wizard -->
+			<npc id="25740" x="218384" y="77168" z="1136" /> <!-- Satyr Witch -->
+		</group>
+		<group name="2620_fairy_stationary3m1">
+			<territories>
+				<territory name="2620_fairy_stationary3" minZ="796" maxZ="1296">
+					<node x="218836" y="77980" />
+					<node x="219936" y="77720" />
+					<node x="219816" y="79052" />
+					<node x="218892" y="79880" />
+					<node x="218056" y="78948" />
+				</territory>
+			</territories>
+			<npc id="25738" x="218972" y="78056" z="1104" /> <!-- Satyr Wizard -->
+			<npc id="25737" x="218544" y="78592" z="1008" /> <!-- Fairy Knight -->
+			<npc id="25739" x="219536" y="78080" z="1056" heading="22292" /> <!-- Satyr Summoner -->
+			<npc id="25740" x="219504" y="77936" z="1104" /> <!-- Satyr Witch -->
+			<npc id="25740" x="218368" y="79136" z="1120" /> <!-- Satyr Witch -->
+			<npc id="25737" x="218352" y="79200" z="1152" /> <!-- Fairy Knight -->
+			<npc id="25736" x="218920" y="78868" z="992" heading="59147" /> <!-- Fairy Rogue -->
+			<npc id="25736" x="218880" y="78920" z="992" /> <!-- Fairy Rogue -->
+			<npc id="25738" x="219776" y="78848" z="976" /> <!-- Satyr Wizard -->
+			<npc id="25735" x="219808" y="78736" z="976" /> <!-- Fairy Warrior -->
+			<npc id="25740" x="218992" y="78112" z="1072" heading="12222" /> <!-- Satyr Witch -->
+		</group>
+		<group name="2620_fairy_stationary4m1">
+			<territories>
+				<territory name="2620_fairy_stationary4" minZ="952" maxZ="1452">
+					<node x="218472" y="75820" />
+					<node x="220628" y="75648" />
+					<node x="220772" y="76256" />
+					<node x="220012" y="77516" />
+				</territory>
+			</territories>
+			<npc id="25736" x="220012" y="76909" z="1148" /> <!-- Fairy Rogue -->
+			<npc id="25740" x="219088" y="76128" z="1232" /> <!-- Satyr Witch -->
+		</group>
+		<group name="2620_fairy_stationary5m1">
+			<territories>
+				<territory name="2620_fairy_stationary5" minZ="852" maxZ="1352">
+					<node x="218708" y="74612" />
+					<node x="221476" y="73692" />
+					<node x="221512" y="75784" />
+					<node x="219836" y="75356" />
+					<node x="218712" y="74824" />
+				</territory>
+			</territories>
+			<npc id="25737" x="220176" y="74576" z="944" /> <!-- Fairy Knight -->
+			<npc id="25739" x="220240" y="74608" z="944" /> <!-- Satyr Summoner -->
+			<npc id="25735" x="220784" y="74832" z="972" heading="59147" /> <!-- Fairy Warrior -->
+			<npc id="25738" x="220832" y="74864" z="980" /> <!-- Satyr Wizard -->
+			<npc id="25736" x="220880" y="75488" z="992" /> <!-- Fairy Rogue -->
+			<npc id="25738" x="220960" y="75520" z="992" /> <!-- Satyr Wizard -->
+		</group>
+		<group name="2620_fairy_stationary7m1">
+			<territories>
+				<territory name="2620_fairy_stationary7" minZ="804" maxZ="1304">
+					<node x="217252" y="71888" />
+					<node x="220344" y="71492" />
+					<node x="219628" y="72560" />
+					<node x="216864" y="73232" />
+					<node x="216900" y="72456" />
+					<node x="217316" y="72300" />
+				</territory>
+			</territories>
+			<npc id="25736" x="218496" y="72008" z="1192" /> <!-- Fairy Rogue -->
+			<npc id="25740" x="218528" y="71956" z="1188" /> <!-- Satyr Witch -->
+			<npc id="25739" x="217936" y="72160" z="1040" /> <!-- Satyr Summoner -->
+			<npc id="25740" x="217888" y="72048" z="1040" /> <!-- Satyr Witch -->
+			<npc id="25736" x="219712" y="71968" z="1280" heading="59147" /> <!-- Fairy Rogue -->
+			<npc id="25737" x="219840" y="71984" z="1232" /> <!-- Fairy Knight -->
+			<npc id="25738" x="217872" y="72704" z="976" /> <!-- Satyr Wizard -->
+			<npc id="25735" x="217904" y="72784" z="960" /> <!-- Fairy Warrior -->
+		</group>
+		<group name="2620_fairy_stationary8m1">
+			<territories>
+				<territory name="2620_fairy_stationary8" minZ="1144" maxZ="1644">
+					<node x="219340" y="70212" />
+					<node x="220028" y="70032" />
+					<node x="220028" y="71096" />
+					<node x="219444" y="70872" />
+				</territory>
+			</territories>
+			<npc id="25737" x="219808" y="70416" z="1424" /> <!-- Fairy Knight -->
+			<npc id="25740" x="219840" y="70496" z="1424" /> <!-- Satyr Witch -->
+		</group>
+		<group name="2620_fairy_stationary9m1">
+			<territories>
+				<territory name="2620_fairy_stationary9" minZ="1116" maxZ="1816">
+					<node x="222544" y="71680" />
+					<node x="223260" y="72308" />
+					<node x="223644" y="73172" />
+					<node x="222716" y="74888" />
+					<node x="221144" y="73448" />
+					<node x="221836" y="71912" />
+				</territory>
+			</territories>
+			<npc id="25736" x="222720" y="72640" z="1424" heading="22292" /> <!-- Fairy Rogue -->
+			<npc id="25735" x="222848" y="72752" z="1408" /> <!-- Fairy Warrior -->
+			<npc id="25738" x="222976" y="72864" z="1408" heading="2117" /> <!-- Satyr Wizard -->
+			<npc id="25737" x="223112" y="72984" z="1424" /> <!-- Fairy Knight -->
+			<npc id="25736" x="221616" y="72848" z="1216" /> <!-- Fairy Rogue -->
+			<npc id="25739" x="221648" y="72928" z="1216" /> <!-- Satyr Summoner -->
+		</group>
+		<group name="2620_fairy_stationary10m1">
+			<territories>
+				<territory name="2620_fairy_stationary10" minZ="920" maxZ="1420">
+					<node x="225776" y="74444" />
+					<node x="226312" y="74672" />
+					<node x="226188" y="75620" />
+					<node x="224852" y="76220" />
+					<node x="224772" y="75056" />
+				</territory>
+			</territories>
+			<npc id="25737" x="225024" y="75392" z="1296" /> <!-- Fairy Knight -->
+			<npc id="25735" x="225152" y="75408" z="1280" /> <!-- Fairy Warrior -->
+			<npc id="25736" x="225936" y="75136" z="1184" /> <!-- Fairy Rogue -->
+			<npc id="25738" x="226032" y="75104" z="1184" /> <!-- Satyr Wizard -->
+			<npc id="25740" x="225712" y="74560" z="1248" heading="2117" /> <!-- Satyr Witch -->
+			<npc id="25737" x="225808" y="74496" z="1232" /> <!-- Fairy Knight -->
+		</group>
+		<group name="2620_fairy_stationary12m1">
+			<territories>
+				<territory name="2620_fairy_stationary12" minZ="1156" maxZ="1656">
+					<node x="220876" y="70308" />
+					<node x="221656" y="70216" />
+					<node x="221572" y="70788" />
+					<node x="221180" y="71124" />
+				</territory>
+			</territories>
+			<npc id="25735" x="221056" y="70416" z="1296" /> <!-- Fairy Warrior -->
+			<npc id="25736" x="221072" y="70480" z="1280" /> <!-- Fairy Rogue -->
+		</group>
+		<group name="2620_fairy_stationary13m1">
+			<territories>
+				<territory name="2620_fairy_stationary13" minZ="1160" maxZ="1660">
+					<node x="225012" y="74028" />
+					<node x="225604" y="73852" />
+					<node x="225748" y="74352" />
+					<node x="224888" y="74680" />
+				</territory>
+			</territories>
+			<npc id="25740" x="225040" y="74336" z="1264" /> <!-- Satyr Witch -->
+			<npc id="25736" x="225104" y="74304" z="1280" /> <!-- Fairy Rogue -->
+		</group>
+		<group name="2620_fairy_stationary14m1">
+			<territories>
+				<territory name="2620_fairy_stationary14" minZ="1488"
+					maxZ="1988">
+					<node x="223740" y="70400" />
+					<node x="224676" y="71280" />
+					<node x="223924" y="72388" />
+					<node x="223132" y="71244" />
+				</territory>
+			</territories>
+			<npc id="25735" x="223776" y="70912" z="1632" /> <!-- Fairy Warrior -->
+			<npc id="25738" x="224208" y="71200" z="1632" /> <!-- Satyr Wizard -->
+		</group>
+		<group name="2620_indun1_rebel_homem1">
+			<territories>
+				<territory name="2620_indun1_rebel_home" minZ="-348" maxZ="1652">
+					<node x="210860" y="70600" />
+					<node x="222824" y="67376" />
+					<node x="229140" y="74852" />
+					<node x="224512" y="87156" />
+				</territory>
+			</territories>
+			<npc id="32913" x="219196" y="71557" z="1216" heading="42158" /> <!-- Fairy Rebel -->
+			<npc id="32913" x="225939" y="78317" z="1160" heading="59147" /> <!-- Fairy Rebel -->
+			<npc id="32913" x="220020" y="77532" z="1112" heading="28639" /> <!-- Fairy Rebel -->
+			<npc id="32913" x="217036" y="71927" z="1024" heading="64268" /> <!-- Fairy Rebel -->
+			<npc id="32913" x="214181" y="72421" z="1104" heading="2117" /> <!-- Fairy Rebel -->
+			<npc id="32913" x="216388" y="70990" z="1176" heading="26923" /> <!-- Fairy Rebel -->
+			<npc id="32913" x="214431" y="71377" z="1320" heading="50616" /> <!-- Fairy Rebel -->
+			<npc id="32913" x="221600" y="75515" z="1096" heading="20292" /> <!-- Fairy Rebel -->
+		</group>
+		<group name="2620_indun1_falls1m1">
+			<territories>
+				<territory name="2620_indun1_falls1" minZ="768" maxZ="1168">
+					<node x="220844" y="71240" />
+					<node x="221884" y="71080" />
+					<node x="222316" y="71928" />
+					<node x="221616" y="72628" />
+				</territory>
+			</territories>
+			<npc id="25740" x="221507" y="71345" z="888" heading="19320" respawnTime="1min" /> <!-- Satyr Witch -->
+			<npc id="25736" x="221682" y="72012" z="896" heading="22292" respawnTime="1min" /> <!-- Fairy Rogue -->
+			<npc id="25739" x="221562" y="72099" z="904" heading="43359" respawnTime="1min" /> <!-- Satyr Summoner -->
+			<npc id="25737" x="221344" y="71528" z="872" respawnTime="1min" /> <!-- Fairy Knight -->
+			<npc id="25735" x="221472" y="71232" z="944" heading="26304" respawnTime="1min" /> <!-- Fairy Warrior -->
+			<npc id="25735" x="221536" y="72060" z="896" respawnTime="1min" /> <!-- Fairy Warrior -->
+		</group>
+		<group name="2620_indun1_falls2m1">
+			<territories>
+				<territory name="2620_indun1_falls2" minZ="744" maxZ="1144">
+					<node x="223724" y="72952" />
+					<node x="224744" y="72980" />
+					<node x="225068" y="74292" />
+					<node x="223384" y="74208" />
+				</territory>
+			</territories>
+			<npc id="25739" x="224288" y="73920" z="876" heading="23884" respawnTime="1min" /> <!-- Satyr Summoner -->
+			<npc id="25740" x="223776" y="73936" z="928" heading="19388" respawnTime="1min" /> <!-- Satyr Witch -->
+			<npc id="25736" x="224008" y="73784" z="872" respawnTime="1min" /> <!-- Fairy Rogue -->
+			<npc id="25737" x="223776" y="73776" z="992" heading="-24800" respawnTime="1min" /> <!-- Fairy Knight -->
+			<npc id="25735" x="224245" y="73600" z="848" heading="12484" respawnTime="1min" /> <!-- Fairy Warrior -->
+		</group>
+		<group name="2620_indun1_additonal_troop1m1">
+			<territories>
+				<territory name="2620_indun1_additonal_troop1" minZ="-348"
+					maxZ="1652">
+					<node x="210860" y="70600" />
+					<node x="222824" y="67376" />
+					<node x="229140" y="74852" />
+					<node x="224512" y="87156" />
+				</territory>
+			</territories>
+			<npc id="25736" x="225201" y="75985" z="1136" heading="17374" /> <!-- Fairy Rogue -->
+			<npc id="25740" x="224925" y="75754" z="1288" heading="18276" /> <!-- Satyr Witch -->
+			<npc id="25739" x="219133" y="74770" z="968" heading="14003" /> <!-- Satyr Summoner -->
+			<npc id="25737" x="219000" y="74550" z="952" heading="27130" /> <!-- Fairy Knight -->
+			<npc id="25738" x="218850" y="74165" z="912" heading="33636" /> <!-- Satyr Wizard -->
+			<npc id="25735" x="220274" y="73941" z="1016" heading="42441" /> <!-- Fairy Warrior -->
+			<npc id="25736" x="220465" y="73912" z="1048" heading="57102" /> <!-- Fairy Rogue -->
+			<npc id="25736" x="221858" y="73041" z="1232" heading="20213" /> <!-- Fairy Rogue -->
+			<npc id="25737" x="220870" y="73367" z="1144" heading="30708" /> <!-- Fairy Knight -->
+			<npc id="25737" x="218631" y="70908" z="1384" heading="33073" /> <!-- Fairy Knight -->
+			<npc id="25738" x="222878" y="72577" z="1472" heading="24746" /> <!-- Satyr Wizard -->
+			<npc id="25738" x="223155" y="73038" z="1440" heading="25419" /> <!-- Satyr Wizard -->
+			<npc id="25738" x="223046" y="72532" z="1512" heading="23774" /> <!-- Satyr Wizard -->
+			<npc id="25735" x="223114" y="73592" z="1344" heading="28764" /> <!-- Fairy Warrior -->
+			<npc id="25735" x="222619" y="72504" z="1480" heading="17374" /> <!-- Fairy Warrior -->
+			<npc id="25735" x="221652" y="70319" z="1448" heading="28456" /> <!-- Fairy Warrior -->
+			<npc id="25740" x="221239" y="70261" z="1352" heading="11877" /> <!-- Satyr Witch -->
+			<npc id="25740" x="225447" y="74024" z="1312" heading="14715" /> <!-- Satyr Witch -->
+			<npc id="25739" x="225780" y="74215" z="1264" heading="17398" /> <!-- Satyr Summoner -->
+		</group>
+	</spawnlist>
+</instance>

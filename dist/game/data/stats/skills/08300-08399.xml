@@ -1,0 +1,2545 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="8300" toLevel="1" name="Dynasty Sigil">
+		<icon>icon.dynasty_sigil_i01</icon>
+		<magicLvl>80</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MaxMp">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8301" toLevel="1" name="Vesper Heavy Armor Set - PvP">
+		<!-- Increases P. Atk./ P. Def. by 5.57%, Max HP by 531, and Sleep/ Hold Resistance by 70%. Decreases damage received during PvP and enemy's speed. -->
+		<icon>icon.armor_t94_u_i00</icon>
+		<magicLvl>1</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="TriggerSkillByDamage">
+				<!-- PvP Armor - Speed Down -->
+				<attackerType>Playable</attackerType>
+				<minAttackerLevel>1</minAttackerLevel>
+				<maxAttackerLevel>127</maxAttackerLevel>
+				<chance>10</chance>
+				<targetType>ENEMY</targetType>
+				<minDamage>50</minDamage>
+				<skillId>5693</skillId> <!-- PvP Armor - Speed Down -->
+				<skillLevel>1</skillLevel>
+			</effect>
+			<effect name="DefenceTrait">
+				<!-- P. Atk. +5.57% -->
+				<!-- P. Def. +5.57% -->
+				<!-- Max HP +531 -->
+				<SLEEP>70</SLEEP>
+				<HOLD>70</HOLD>
+			</effect>
+			<effect name="PAtk">
+				<amount>5.57</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>5.57</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDefenceBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpMagicalSkillDefenceBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDefenceBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>531</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8302" toLevel="1" name="Vesper Noble Heavy Armor Set - PvP">
+		<!-- When equipped, increases P. Atk./ P. Def. by 5.57%, Max HP by 540, Sleep/ Hold Resistance by 70%, Accuracy by 4, Speed by 5, and M. Def. by 1%. Decreases damage received during PvP and decreases all Speeds of the attacker by a certain rate when attacked. Can equip a cloak. -->
+		<icon>icon.armor_t94_u_i01</icon>
+		<magicLvl>1</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="TriggerSkillByDamage">
+				<!-- PvP Armor - Speed Down -->
+				<attackerType>Playable</attackerType>
+				<minAttackerLevel>1</minAttackerLevel>
+				<maxAttackerLevel>127</maxAttackerLevel>
+				<chance>10</chance>
+				<targetType>ENEMY</targetType>
+				<minDamage>50</minDamage>
+				<skillId>5693</skillId> <!-- PvP Armor - Speed Down -->
+				<skillLevel>1</skillLevel>
+			</effect>
+			<effect name="DefenceTrait">
+				<!-- P. Atk. +5.57% -->
+				<!-- P. Def. +5.57% -->
+				<!-- Max HP +540 -->
+				<!-- Increases Accuracy by 4 -->
+				<!-- Increases Speed by 5 -->
+				<!-- Resistance to magic damage by 1% -->
+				<SLEEP>70</SLEEP>
+				<HOLD>70</HOLD>
+			</effect>
+			<effect name="EnableCloak" />
+			<effect name="PAtk">
+				<amount>5.57</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Speed">
+				<amount>5</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>5.57</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Accuracy">
+				<amount>4</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDefenceBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpMagicalSkillDefenceBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDefenceBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="ResistDDMagic">
+				<amount>1</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>540</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8303" toLevel="1" name="Vesper Light Armor Set - PvP">
+		<!-- Increases P. Atk. by 5.57%, Atk. Spd./ MP Recovery by 5% and Max MP by 347. Decreases damage received during PvP and has a chance of canceling the enemy attacker's target. -->
+		<icon>icon.armor_t95_u_i00</icon>
+		<magicLvl>1</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="TriggerSkillByDamage">
+				<!-- PvP Armor - Mirage -->
+				<attackerType>Playable</attackerType>
+				<minAttackerLevel>1</minAttackerLevel>
+				<maxAttackerLevel>127</maxAttackerLevel>
+				<chance>25</chance>
+				<targetType>ENEMY</targetType>
+				<minDamage>50</minDamage>
+				<skillId>5694</skillId> <!-- PvP Armor - Mirage -->
+				<skillLevel>1</skillLevel>
+			</effect>
+			<effect name="PAtk">
+				<amount>5.57</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>347</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MpRegen">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDefenceBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpMagicalSkillDefenceBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDefenceBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8304" toLevel="1" name="Vesper Noble Light Armor Set - PvP">
+		<!-- When equipped, increases P. Atk. by 5.57%, Atk. Spd./ MP Recovery by 5%, Max MP by 354, Evasion by 3, Critical Damage by 172, and Paralysis Resistance by 50%. Decreases damage received during PvP and has a chance to cancel the attacker's target when attacked. Can equip a cloak. -->
+		<icon>icon.armor_t95_u_i01</icon>
+		<magicLvl>1</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="TriggerSkillByDamage">
+				<!-- PvP Armor - Mirage -->
+				<attackerType>Playable</attackerType>
+				<minAttackerLevel>1</minAttackerLevel>
+				<maxAttackerLevel>127</maxAttackerLevel>
+				<chance>25</chance>
+				<targetType>ENEMY</targetType>
+				<minDamage>50</minDamage>
+				<skillId>5694</skillId> <!-- PvP Armor - Mirage -->
+				<skillLevel>1</skillLevel>
+			</effect>
+			<effect name="EnableCloak" />
+			<effect name="PAtk">
+				<amount>5.57</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalEvasion">
+				<amount>3</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>354</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="CriticalDamage">
+				<amount>172</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MpRegen">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDefenceBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpMagicalSkillDefenceBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDefenceBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8305" toLevel="1" name="Vesper Robe Set - PvP">
+		<!-- Increases M. Atk. by 8.47%, Casting Spd. by 15%, MP Recovery by 5% and Stun Resistance by 50%. Decreases magic canceling damage by 30. Decreases damage received during PvP, as well as enemies' critical hit rate and Critical Damage. -->
+		<icon>icon.armor_t96_u_i00</icon>
+		<magicLvl>1</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="TriggerSkillByDamage">
+				<!-- PvP Armor - Critical Down -->
+				<attackerType>Playable</attackerType>
+				<minAttackerLevel>1</minAttackerLevel>
+				<maxAttackerLevel>127</maxAttackerLevel>
+				<chance>25</chance>
+				<targetType>SELF</targetType>
+				<minDamage>50</minDamage>
+				<skillId>5691</skillId> <!-- PvP Armor - Critical Down -->
+				<skillLevel>1</skillLevel>
+			</effect>
+			<effect name="DefenceTrait">
+				<!-- M. Atk. 8.47% -->
+				<!-- Casting Speed 15% -->
+				<!-- MP Recovery Rate by 5.57% -->
+				<!-- decreases the damage to be cancelled by magic by 30 -->
+				<SHOCK>50</SHOCK>
+			</effect>
+			<effect name="MAtk">
+				<amount>8.47</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MpRegen">
+				<amount>5.57</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDefenceBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpMagicalSkillDefenceBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDefenceBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="ReduceCancel">
+				<amount>-30</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8306" toLevel="1" name="Vesper Noble Robe Set - PvP">
+		<!-- When equipped, increases M. Atk. by 8.47%, Casting Spd. by 15%, MP Recovery by 5%, Stun Resistance by 50%, and Speed by 7. Decreases magic cancelling damage by 30 and MP Consumption for magic skills by 3%. Decreases damage received during PvP, Critical Rate received when attack at a fixed rate, and the damage incurred on a critical attack. Can equip a cloak. -->
+		<icon>icon.armor_t96_u_i01</icon>
+		<magicLvl>1</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="TriggerSkillByDamage">
+				<!-- PvP Armor - Critical Down -->
+				<attackerType>Playable</attackerType>
+				<minAttackerLevel>1</minAttackerLevel>
+				<maxAttackerLevel>127</maxAttackerLevel>
+				<chance>25</chance>
+				<targetType>SELF</targetType>
+				<minDamage>50</minDamage>
+				<skillId>5691</skillId> <!-- PvP Armor - Critical Down -->
+				<skillLevel>1</skillLevel>
+			</effect>
+			<effect name="DefenceTrait">
+				<SHOCK>50</SHOCK>
+			</effect>
+			<effect name="EnableCloak" />
+			<effect name="MAtk">
+				<amount>8.47</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Speed">
+				<amount>7</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MpRegen">
+				<amount>5.57</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDefenceBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpMagicalSkillDefenceBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDefenceBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="ReduceCancel">
+				<amount>-30</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicMpCost">
+				<amount>-3</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8307" toLevel="1" name="Boing Hammer's Mysterious Effect">
+		<!-- Has a chance to increase the size of the target's head during a general attack. -->
+		<icon>icon.weapon_bbyong_hammer_a_i00</icon>
+		<magicLvl>1</magicLvl>
+		<magicCriticalRate>5</magicCriticalRate>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="TriggerSkillByAttack">
+				<!-- Effect of Doubt -->
+				<attackerType>Playable</attackerType>
+				<minAttackerLevel>1</minAttackerLevel>
+				<maxAttackerLevel>127</maxAttackerLevel>
+				<minDamage>1</minDamage>
+				<chance>33</chance>
+				<targetType>TARGET</targetType>
+				<isCritical>false</isCritical>
+				<allowWeapons>ALL</allowWeapons>
+				<skillId>5994</skillId> <!-- Mysterious Effect -->
+				<skillLevel>1</skillLevel>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8308" toLevel="1" name="Red Talisman - Territory Guardian">
+		<!-- Instantly recovers 1200 CP and increases Max CP to 1200. -->
+		<icon>icon.etc_talisman_i00</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>120</abnormalTime>
+		<abnormalType>TALISMAN</abnormalType>
+		<effectPoint>532</effectPoint>
+		<hitTime>1200</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>55</magicLvl>
+		<mpConsume>40</mpConsume>
+		<mpInitialConsume>10</mpInitialConsume>
+		<operateType>A2</operateType>
+		<reuseDelay>360000</reuseDelay>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="CpHeal">
+				<power>1200</power>
+			</effect>
+			<effect name="MaxCp">
+				<amount>1200</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8309" toLevel="1" name="Red Talisman - Territory Escort">
+		<!-- Instantly recovers 800 CP and increases Max CP to 800. -->
+		<icon>icon.etc_talisman_i00</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>120</abnormalTime>
+		<abnormalType>TALISMAN</abnormalType>
+		<effectPoint>532</effectPoint>
+		<hitTime>1200</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>55</magicLvl>
+		<mpConsume>40</mpConsume>
+		<mpInitialConsume>10</mpInitialConsume>
+		<operateType>A2</operateType>
+		<reuseDelay>360000</reuseDelay>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="CpHeal">
+				<power>800</power>
+			</effect>
+			<effect name="MaxCp">
+				<amount>800</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8310" toLevel="1" name="Arcana Sigil">
+		<!-- Increases M. Def. by 2% and decreases magic canceling damage by 13. -->
+		<icon>icon.arcana_sigil_i00</icon>
+		<magicLvl>75</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="ResistDDMagic">
+				<amount>2</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="ReduceCancel">
+				<amount>-13</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8311" toLevel="1" name="Dynasty Sigil">
+		<!-- Increases Magic Resistance by 2% and Dark Resistance by 2. -->
+		<icon>icon.dynasty_sigil_i00</icon>
+		<magicLvl>80</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="ResistDDMagic">
+				<amount>2</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>2</amount>
+				<attribute>DARK</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8312" toLevel="2" name="Special Ability: Cheap Shot">
+		<!-- Decreases MP Consumption. -->
+		<icon>icon.skill0198</icon>
+		<magicLvl>
+			<value level="1">80</value>
+			<value level="2">84</value>
+		</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MagicMpCost">
+				<amount>
+					<value level="1">-4</value>
+					<value level="2">-8</value>
+				</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+			<effect name="MagicMpCost">
+				<amount>
+					<value level="1">-4</value>
+					<value level="2">-8</value>
+				</amount>
+				<mode>PER</mode>
+				<magicType>0</magicType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8314" toLevel="1" name="Release Agathion's Seal - Neolithica">
+		<!-- Removes the Agathion's seal. -->
+		<icon>icon.etc_summon_aga_agit_i00</icon>
+		<hitTime>3000</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>85</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="SummonAgathion">
+				<npcId>16063</npcId> <!-- Neolithica -->
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8315" toLevel="1" name="Santa's Blessed Weapon">
+		<!-- Santa's Blessed Weapon -->
+		<icon>icon.etc_x_mas_tree_i00</icon>
+		<magicLvl>10</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<passiveConditions>
+			<condition name="CheckLevel">
+				<minLevel>1</minLevel>
+				<maxLevel>19</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+		</passiveConditions>
+		<effects>
+			<effect name="PAtk">
+				<amount>10</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8316" toLevel="1" name="Santa's Blessed Weapon">
+		<!-- Santa's Blessed Weapon -->
+		<icon>icon.etc_x_mas_tree_i00</icon>
+		<magicLvl>20</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<passiveConditions>
+			<condition name="CheckLevel">
+				<minLevel>20</minLevel>
+				<maxLevel>39</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+		</passiveConditions>
+		<effects>
+			<effect name="PAtk">
+				<amount>90</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>200</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PAtk">
+				<amount>150</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>100</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8317" toLevel="1" name="Santa's Blessed Weapon">
+		<!-- Santa's Blessed Weapon -->
+		<icon>icon.etc_x_mas_tree_i00</icon>
+		<magicLvl>30</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<passiveConditions>
+			<condition name="CheckLevel">
+				<minLevel>40</minLevel>
+				<maxLevel>51</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+		</passiveConditions>
+		<effects>
+			<effect name="PAtk">
+				<amount>200</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>400</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PAtk">
+				<amount>300</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>200</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8318" toLevel="1" name="Santa's Blessed Weapon">
+		<!-- Santa's Blessed Weapon -->
+		<icon>icon.etc_x_mas_tree_i00</icon>
+		<magicLvl>40</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<passiveConditions>
+			<condition name="CheckLevel">
+				<minLevel>52</minLevel>
+				<maxLevel>60</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+		</passiveConditions>
+		<effects>
+			<effect name="PAtk">
+				<amount>300</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>600</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PAtk">
+				<amount>400</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>300</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8319" toLevel="1" name="Santa's Blessed Weapon">
+		<!-- Santa's Blessed Weapon -->
+		<icon>icon.etc_x_mas_tree_i00</icon>
+		<magicLvl>50</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<passiveConditions>
+			<condition name="CheckLevel">
+				<minLevel>61</minLevel>
+				<maxLevel>74</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+		</passiveConditions>
+		<effects>
+			<effect name="PAtk">
+				<amount>400</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>800</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PAtk">
+				<amount>450</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>450</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8320" toLevel="1" name="Santa's Blessed Weapon">
+		<!-- Santa's Blessed Weapon -->
+		<icon>icon.etc_x_mas_tree_i00</icon>
+		<magicLvl>60</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<passiveConditions>
+			<condition name="CheckLevel">
+				<minLevel>75</minLevel>
+				<maxLevel>79</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+		</passiveConditions>
+		<effects>
+			<effect name="PAtk">
+				<amount>500</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>1000</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PAtk">
+				<amount>500</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>500</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8321" toLevel="1" name="Santa's Blessed Weapon">
+		<!-- Santa's Blessed Weapon -->
+		<icon>icon.etc_x_mas_tree_i00</icon>
+		<magicLvl>70</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<passiveConditions>
+			<condition name="CheckLevel">
+				<minLevel>80</minLevel>
+				<maxLevel>81</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+		</passiveConditions>
+		<effects>
+			<effect name="PAtk">
+				<amount>500</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>1200</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PAtk">
+				<amount>650</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>1000</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8322" toLevel="1" name="Santa's Blessed Weapon">
+		<!-- Santa's Blessed Weapon -->
+		<icon>icon.etc_x_mas_tree_i00</icon>
+		<magicLvl>80</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<passiveConditions>
+			<condition name="CheckLevel">
+				<minLevel>82</minLevel>
+				<maxLevel>85</maxLevel>
+				<affectType>CASTER</affectType>
+			</condition>
+		</passiveConditions>
+		<effects>
+			<effect name="PAtk">
+				<amount>500</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>1200</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PAtk">
+				<amount>750</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>1000</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8323" toLevel="1" name="Notifier">
+		<!-- Notifies about the Agathion's New Year's gift resupply time. -->
+		<icon>icon.skill5239</icon>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>85</magicLvl>
+		<operateType>A1</operateType>
+		<reuseDelay>15000</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="8324" toLevel="1" name="Warrior's Shirt">
+		<!-- Increases Max CP. -->
+		<magicLvl>75</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MaxCp">
+				<amount>672</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8325" toLevel="1" name="Wild Rose Pig Candy">
+		<!-- Head is enlarged. -->
+		<icon>icon.etc_pig_candy_i00</icon>
+		<abnormalLvl>0</abnormalLvl>
+		<abnormalTime>1800</abnormalTime>
+		<abnormalType>BIG_HEAD</abnormalType>
+		<abnormalVisualEffect>BIG_HEAD</abnormalVisualEffect>
+		<activateRate>0</activateRate>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>1</magicLvl>
+		<operateType>A2</operateType>
+		<reuseDelay>20000</reuseDelay>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<trait>ETC</trait>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="8326" toLevel="1" name="Wild Rose Pig Candy">
+		<!-- Increases Speed by 20. -->
+		<icon>icon.etc_pig_candy_i00</icon>
+		<magicLvl>1</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+	</skill>
+	<skill id="8327" toLevel="1" name="Agathion Summon - Juju">
+		<!-- Summons Agathion. -->
+		<icon>icon.etc_summon_aga_agit_i00</icon>
+		<hitTime>3000</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>85</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="SummonAgathion">
+				<npcId>16064</npcId> <!-- Juju -->
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8328" toLevel="1" name="Release Agathion's Seal - Oink oink">
+		<!-- Removes the Agathion's seal. -->
+		<icon>icon.etc_summon_aga_agit_i00</icon>
+		<hitTime>3000</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>85</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="SummonAgathion">
+				<npcId>16065</npcId> <!-- Oink Oink -->
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8329" toLevel="1" name="Summon Friend">
+		<!-- Summons your friend. -->
+		<icon>icon.etc_summon_aga_agit_i00</icon>
+		<effectPoint>1000</effectPoint>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<reuseDelay>3600000</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>-2</effectRange>
+		<hitTime>10000</hitTime>
+		<targetType>OTHERS</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpCallPc" />
+			<condition name="TargetMyParty">
+				<includeMe>false</includeMe>
+			</condition>
+			<condition name="OpEquipItem">
+				<itemId>15208</itemId>
+				<affectType>BOTH</affectType>
+			</condition>
+		</conditions>
+	</skill>
+	<skill id="8330" toLevel="1" name="Release Agathion's Seal - Dawn">
+		<!-- Removes the Agathion's seal. -->
+		<icon>icon.etc_summon_aga_agit_i00</icon>
+		<hitTime>3000</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>85</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="SummonAgathion">
+				<npcId>16066</npcId> <!-- Light of Dawn -->
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8331" toLevel="1" name="Blue Talisman - Buff Cancel">
+		<!-- Cancels the buffs of nearby enemies by with the power of Talisman. -->
+		<icon>icon.etc_talisman_i01</icon>
+		<affectLimit>5-5</affectLimit>
+		<affectRange>150</affectRange>
+		<effectPoint>-532</effectPoint>
+		<hitTime>4000</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>55</magicLvl>
+		<mpConsume>40</mpConsume>
+		<mpInitialConsume>10</mpInitialConsume>
+		<operateType>A1</operateType>
+		<reuseDelay>360000</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<affectScope>POINT_BLANK</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<effects>
+			<effect name="DispelByCategory">
+				<slot>BUFF</slot>
+				<rate>25</rate>
+				<max>5</max>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8332" toLevel="1" name="Blue Talisman - Buff Steal">
+		<!-- Steals the enemy's abnormal status using the talisman's power. -->
+		<icon>icon.etc_talisman_i01</icon>
+		<castRange>600</castRange>
+		<effectPoint>-532</effectPoint>
+		<effectRange>1100</effectRange>
+		<hitTime>4000</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>55</magicLvl>
+		<mpConsume>40</mpConsume>
+		<mpInitialConsume>10</mpInitialConsume>
+		<operateType>A1</operateType>
+		<reuseDelay>360000</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<staticReuse>true</staticReuse>
+		<targetType>ENEMY_ONLY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="StealAbnormal">
+				<slot>BUFF</slot>
+				<rate>25</rate>
+				<max>3</max>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8333" toLevel="1" name="Red Talisman - Territory Royal Guard">
+		<!-- Increases Max CP 1500 and recovers CP by the increased amount with the power of Talisman. -->
+		<icon>icon.etc_talisman_i00</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>120</abnormalTime>
+		<abnormalType>TALISMAN</abnormalType>
+		<effectPoint>532</effectPoint>
+		<hitTime>1200</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>55</magicLvl>
+		<mpConsume>40</mpConsume>
+		<mpInitialConsume>10</mpInitialConsume>
+		<operateType>A2</operateType>
+		<reuseDelay>300000</reuseDelay>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="CpHeal">
+				<power>1500</power>
+			</effect>
+			<effect name="MaxCp">
+				<amount>1500</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8334" toLevel="1" name="Blue Talisman - Lord's Divine Protection">
+		<!-- Decreases damage received during PvP by 75% with the power of Talisman. -->
+		<icon>icon.etc_talisman_i01</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>10</abnormalTime>
+		<abnormalType>TALISMAN</abnormalType>
+		<effectPoint>532</effectPoint>
+		<hitTime>1200</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>55</magicLvl>
+		<mpConsume>40</mpConsume>
+		<mpInitialConsume>10</mpInitialConsume>
+		<operateType>A2</operateType>
+		<reuseDelay>360000</reuseDelay>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="PvpPhysicalAttackDefenceBonus">
+				<amount>75</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpMagicalSkillDefenceBonus">
+				<amount>75</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8335" toLevel="1" name="White Talisman - Attribute Resistance">
+		<!-- For 10 sec., increases Attribute Resistance by 15 with the power of Talisman. -->
+		<icon>icon.etc_talisman_i06</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>10</abnormalTime>
+		<abnormalType>TALISMAN</abnormalType>
+		<effectPoint>532</effectPoint>
+		<hitTime>1200</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>55</magicLvl>
+		<mpConsume>40</mpConsume>
+		<mpInitialConsume>10</mpInitialConsume>
+		<operateType>A2</operateType>
+		<reuseDelay>360000</reuseDelay>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="DefenceAttribute">
+				<amount>15</amount>
+				<attribute>FIRE</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>15</amount>
+				<attribute>WATER</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>15</amount>
+				<attribute>WIND</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>15</amount>
+				<attribute>EARTH</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>15</amount>
+				<attribute>HOLY</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>15</amount>
+				<attribute>DARK</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8336" toLevel="1" name="Ride Guardian's Strider">
+		<!-- Ride a Guardian's Strider. -->
+		<icon>icon.skilltransform3</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<abnormalType>TRANSFORM</abnormalType>
+		<effectPoint>1</effectPoint>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>-1</magicLvl>
+		<operateType>A2</operateType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CanTransform">
+				<transformId>123</transformId>
+			</condition>
+		</conditions>
+	</skill>
+	<skill id="8337" toLevel="1" name="Weight Up">
+		<!-- Increases Weight Limit by 5000. -->
+		<icon>icon.skill3238</icon>
+		<magicLvl>1</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="WeightPenalty">
+				<amount>5000</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8338" toLevel="4" name="Low-grade Magic Rune Clip Iron Belt">
+		<!-- Increases HP regeneration when equipped. -->
+		<icon>icon.skill0332</icon>
+		<magicLvl>1</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="StatByMoveType">
+				<stat>REGENERATE_MP_RATE</stat>
+				<type>SITTING</type>
+				<value>
+					<value level="1">0.3</value>
+					<value level="2">0.75</value>
+					<value level="3">1.05</value>
+					<value level="4">1.5</value>
+				</value>
+			</effect>
+			<effect name="HpRegen">
+				<amount>
+					<value level="1">0.4</value>
+					<value level="2">1</value>
+					<value level="3">1.4</value>
+					<value level="4">2</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8339" toLevel="4" name="Low-grade Magic Rune Clip Mithril Belt">
+		<!-- Increases HP regeneration when equipped. -->
+		<icon>icon.skill0332</icon>
+		<magicLvl>1</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="StatByMoveType">
+				<stat>REGENERATE_HP_RATE</stat>
+				<type>SITTING</type>
+				<value>
+					<value level="1">0.6</value>
+					<value level="2">1.5</value>
+					<value level="3">2.1</value>
+					<value level="4">3</value>
+				</value>
+			</effect>
+			<effect name="HpRegen">
+				<amount>
+					<value level="1">0.78</value>
+					<value level="2">1.95</value>
+					<value level="3">2.73</value>
+					<value level="4">3.9</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8340" toLevel="4" name="Low-grade Magic Rune Clip Iron Belt">
+		<!-- Increases MP regeneration when equipped. -->
+		<icon>icon.skill0332</icon>
+		<magicLvl>1</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="StatByMoveType">
+				<stat>REGENERATE_MP_RATE</stat>
+				<type>SITTING</type>
+				<value>
+					<value level="1">0.16</value>
+					<value level="2">0.4</value>
+					<value level="3">0.56</value>
+					<value level="4">0.8</value>
+				</value>
+			</effect>
+			<effect name="MpRegen">
+				<amount>
+					<value level="1">0.14</value>
+					<value level="2">0.35</value>
+					<value level="3">0.49</value>
+					<value level="4">0.7</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8341" toLevel="4" name="Low-grade Magic Rune Clip Mithril Belt">
+		<!-- Increases MP regeneration when equipped. -->
+		<icon>icon.skill0332</icon>
+		<magicLvl>1</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="StatByMoveType">
+				<stat>REGENERATE_MP_RATE</stat>
+				<type>SITTING</type>
+				<value>
+					<value level="1">0.3</value>
+					<value level="2">0.75</value>
+					<value level="3">1.05</value>
+					<value level="4">1.5</value>
+				</value>
+			</effect>
+			<effect name="MpRegen">
+				<amount>
+					<value level="1">0.3</value>
+					<value level="2">0.75</value>
+					<value level="3">1.05</value>
+					<value level="4">1.5</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8342" toLevel="4" name="Low-grade Magic Ornament Iron Belt">
+		<!-- Increases normal damage during PvP when equipped. -->
+		<icon>icon.skill0332</icon>
+		<magicLvl>1</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>
+					<value level="1">0.59999999999999</value>
+					<value level="2">1.5</value>
+					<value level="3">2.1</value>
+					<value level="4">3</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8343" toLevel="4" name="Low-grade Magic Ornament Iron Belt">
+		<!-- Increases skill/ magic damage during PvP when equipped. -->
+		<icon>icon.skill0332</icon>
+		<magicLvl>1</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>
+					<value level="1">0.59999999999999</value>
+					<value level="2">1.5</value>
+					<value level="3">2.1</value>
+					<value level="4">3</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>
+					<value level="1">0.59999999999999</value>
+					<value level="2">1.5</value>
+					<value level="3">2.1</value>
+					<value level="4">3</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8344" toLevel="4" name="Low-grade Magic Ornament Iron Belt">
+		<!-- Decreases damage received during PvP when equipped. -->
+		<icon>icon.skill0332</icon>
+		<magicLvl>1</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="PvpPhysicalAttackDefenceBonus">
+				<amount>
+					<value level="1">0.59999999999999</value>
+					<value level="2">1.5</value>
+					<value level="3">2.1</value>
+					<value level="4">3</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpMagicalSkillDefenceBonus">
+				<amount>
+					<value level="1">0.59999999999999</value>
+					<value level="2">1.5</value>
+					<value level="3">2.1</value>
+					<value level="4">3</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDefenceBonus">
+				<amount>
+					<value level="1">0.59999999999999</value>
+					<value level="2">1.5</value>
+					<value level="3">2.1</value>
+					<value level="4">3</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8345" toLevel="4" name="Low-grade Magic Ornament Mithril Belt">
+		<!-- Increases normal damage during PvP when equipped. -->
+		<icon>icon.skill0332</icon>
+		<magicLvl>1</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2.5</value>
+					<value level="3">3.5</value>
+					<value level="4">5</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8346" toLevel="4" name="Low-grade Magic Ornament Mithril Belt">
+		<!-- Increases skill/ magic damage during PvP when equipped. -->
+		<icon>icon.skill0332</icon>
+		<magicLvl>1</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2.5</value>
+					<value level="3">3.5</value>
+					<value level="4">5</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2.5</value>
+					<value level="3">3.5</value>
+					<value level="4">5</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8347" toLevel="4" name="Low-grade Magic Ornament Mithril Belt">
+		<!-- Decreases damage received during PvP when equipped. -->
+		<icon>icon.skill0332</icon>
+		<magicLvl>1</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="PvpPhysicalAttackDefenceBonus">
+				<amount>
+					<value level="1">1.2</value>
+					<value level="2">3</value>
+					<value level="3">4.2</value>
+					<value level="4">6</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpMagicalSkillDefenceBonus">
+				<amount>
+					<value level="1">1.2</value>
+					<value level="2">3</value>
+					<value level="3">4.2</value>
+					<value level="4">6</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDefenceBonus">
+				<amount>
+					<value level="1">1.2</value>
+					<value level="2">3</value>
+					<value level="3">4.2</value>
+					<value level="4">6</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8348" toLevel="2" name="Resistance Earring - Gludio">
+		<!-- Increases Bleed Resistance by $s1, Stun attack bonus by $s2, and Water Attribute Defense by $s3. -->
+		<icon>
+			<value level="1">icon.accessary_inferno_earing_i00</value>
+			<value level="2">icon.accessory_earring_of_domi_protection_i00</value>
+		</icon>
+		<magicLvl>80</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="AttackTrait">
+				<SHOCK>15</SHOCK>
+			</effect>
+			<effect name="DefenceTrait">
+				<BLEED>15</BLEED>
+			</effect>
+			<effect name="MaxCp">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">5</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8349" toLevel="2" name="Resistance Earring - Dion">
+		<!-- Increases Poison Resistance by $s1, effectiveness of Hold attacks by $s2 and Holy Resistance by $s3. -->
+		<icon>
+			<value level="1">icon.accessary_inferno_earing_i00</value>
+			<value level="2">icon.accessory_earring_of_domi_protection_i00</value>
+		</icon>
+		<magicLvl>80</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="AttackTrait">
+				<HOLD>15</HOLD>
+			</effect>
+			<effect name="DefenceTrait">
+				<POISON>15</POISON>
+			</effect>
+			<effect name="MaxCp">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">5</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8350" toLevel="2" name="Resistance Earring - Giran">
+		<!-- Increases Paralysis Resistance by $s1, effectiveness of Bleed attacks by $s2 and Wind Resistance by $s3. -->
+		<icon>
+			<value level="1">icon.accessary_inferno_earing_i00</value>
+			<value level="2">icon.accessory_earring_of_domi_protection_i00</value>
+		</icon>
+		<magicLvl>80</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="AttackTrait">
+				<BLEED>15</BLEED>
+			</effect>
+			<effect name="DefenceTrait">
+				<PARALYZE>15</PARALYZE>
+			</effect>
+			<effect name="MaxCp">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">5</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8351" toLevel="2" name="Resistance Earring - Oren">
+		<!-- Increases Hold Resistance by $s1, effectiveness of Paralysis attacks by $s2 and Dark Resistance by $s3. -->
+		<icon>
+			<value level="1">icon.accessary_inferno_earing_i00</value>
+			<value level="2">icon.accessory_earring_of_domi_protection_i00</value>
+		</icon>
+		<magicLvl>80</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="AttackTrait">
+				<PARALYZE>15</PARALYZE>
+			</effect>
+			<effect name="DefenceTrait">
+				<HOLD>15</HOLD>
+			</effect>
+			<effect name="MaxCp">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">5</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8352" toLevel="2" name="Resistance Earring - Aden">
+		<!-- Increases Stun Resistance by $s1, Mental attack bonus by $s2 and Earth Attribute Resistance by $s3. -->
+		<icon>
+			<value level="1">icon.accessary_inferno_earing_i00</value>
+			<value level="2">icon.accessory_earring_of_domi_protection_i00</value>
+		</icon>
+		<magicLvl>80</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="AttackTrait">
+				<DERANGEMENT>15</DERANGEMENT>
+			</effect>
+			<effect name="DefenceTrait">
+				<SHOCK>15</SHOCK>
+			</effect>
+			<effect name="MaxCp">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">5</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8353" toLevel="2" name="Resistance Earring - Innadril">
+		<!-- Increases Stun Resistance by $s1, Sleep attack bonus by $s2, and Water Attribute Resistance by $s3. -->
+		<icon>
+			<value level="1">icon.accessary_inferno_earing_i00</value>
+			<value level="2">icon.accessory_earring_of_domi_protection_i00</value>
+		</icon>
+		<magicLvl>80</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="AttackTrait">
+				<SLEEP>15</SLEEP>
+			</effect>
+			<effect name="DefenceTrait">
+				<SHOCK>15</SHOCK>
+			</effect>
+			<effect name="MaxCp">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">5</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8354" toLevel="2" name="Resistance Earring - Goddard">
+		<!-- Increases Sleep Resistance by $s1, Stun attack bonus by $s2, and Fire Attribute Resistance by $s3. -->
+		<icon>
+			<value level="1">icon.accessary_inferno_earing_i00</value>
+			<value level="2">icon.accessory_earring_of_domi_protection_i00</value>
+		</icon>
+		<magicLvl>80</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="AttackTrait">
+				<SHOCK>15</SHOCK>
+			</effect>
+			<effect name="DefenceTrait">
+				<SLEEP>15</SLEEP>
+			</effect>
+			<effect name="MaxCp">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">5</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8355" toLevel="2" name="Resistance Earring - Rune">
+		<!-- Increases Hold Resistance by $s1, effectiveness of Poison attacks by $s2 and Fire Resistance by $s3. -->
+		<icon>
+			<value level="1">icon.accessary_inferno_earing_i00</value>
+			<value level="2">icon.accessory_earring_of_domi_protection_i00</value>
+		</icon>
+		<magicLvl>80</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="AttackTrait">
+				<POISON>15</POISON>
+			</effect>
+			<effect name="DefenceTrait">
+				<HOLD>15</HOLD>
+			</effect>
+			<effect name="MaxCp">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">5</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8356" toLevel="2" name="Resistance Earring - Schuttgart">
+		<!-- Increases mental Attack Resistance by $s1, effectiveness of Hold attacks by $s2 and Wind Resistance by $s3. -->
+		<icon>
+			<value level="1">icon.accessary_inferno_earing_i00</value>
+			<value level="2">icon.accessory_earring_of_domi_protection_i00</value>
+		</icon>
+		<magicLvl>80</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="AttackTrait">
+				<HOLD>15</HOLD>
+			</effect>
+			<effect name="DefenceTrait">
+				<DERANGEMENT>15</DERANGEMENT>
+			</effect>
+			<effect name="MaxCp">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">5</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8357" toLevel="1" name="Einhasad's Strike">
+		<!-- Einhasad's sword bestowed by Emperor Shunaiman of Elmoreden. With the pride of being chosen, he can fiercely attack the enemies on the front line. -->
+		<icon>icon.weapon_the_sword_of_hero_i00</icon>
+		<affectLimit>5-15</affectLimit>
+		<affectRange>300</affectRange>
+		<castRange>200</castRange>
+		<coolTime>700</coolTime>
+		<effectPoint>-10000</effectPoint>
+		<effectRange>400</effectRange>
+		<fanRange>0;0;300;90</fanRange>
+		<hitTime>1300</hitTime>
+		<magicLvl>85</magicLvl>
+		<operateType>A1</operateType>
+		<reuseDelay>4000</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<isDebuff>true</isDebuff>
+		<targetType>ENEMY</targetType>
+		<affectScope>FAN</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<conditions>
+			<condition name="OpInstantzone">
+				<instanceId>112</instanceId>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RealDamage">
+				<power>10000</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8358" toLevel="1" name="Release Agathion's Seal - Towbat">
+		<!-- Removes the Agathion's seal. -->
+		<icon>icon.etc_summon_aga_agit_i00</icon>
+		<hitTime>3000</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>85</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="SummonAgathion">
+				<npcId>16070</npcId> <!-- Towbat -->
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8359" toLevel="1" name="Notifier">
+		<!-- It is time to return the Proof of Time and Space that the Agathion gave you. -->
+		<icon>icon.skill5239</icon>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>85</magicLvl>
+		<operateType>A1</operateType>
+		<reuseDelay>15000</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="8360" toLevel="1" name="Vitality Maintenance Effect">
+		<!-- Maintains Vitality for 30 min. -->
+		<icon>icon.event_energy_belt_i00</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>1800</abnormalTime>
+		<abnormalType>VP_KEEP</abnormalType>
+		<abnormalVisualEffect>VP_UP</abnormalVisualEffect>
+		<effectPoint>100</effectPoint>
+		<isMagic>4</isMagic> <!-- Item Skill -->
+		<magicLvl>-1</magicLvl>
+		<operateType>A2</operateType>
+		<reuseDelay>82800000</reuseDelay>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="VitalityPointsRate">
+				<amount>-100</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8361" toLevel="1" name="6th Anniversary Party Earring">
+		<!-- Recovers Stun/ Mental Resistance by 20%, Stun/ Mental attack bonus by 20%, and 4% of damage inflicted on the enemy as your HP at a certain probability. -->
+		<icon>icon.event_six_party_earing_i00</icon>
+		<magicLvl>75</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="AttackTrait">
+				<SHOCK>20</SHOCK>
+				<DERANGEMENT>20</DERANGEMENT>
+			</effect>
+			<effect name="DefenceTrait">
+				<SHOCK>20</SHOCK>
+				<DERANGEMENT>20</DERANGEMENT>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8362" toLevel="1" name="Beast Training - Release">
+		<!-- Release a beast. -->
+		<icon>icon.skill8362</icon>
+		<castRange>900</castRange>
+		<effectRange>1200</effectRange>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>85</magicLvl>
+		<operateType>A1</operateType>
+		<reuseDelay>1000</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<staticReuse>true</staticReuse>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<conditions>
+			<condition name="OpTargetNpc">
+				<npcIds>
+					<item>18869</item>
+					<item>18870</item>
+					<item>18871</item>
+					<item>18872</item>
+				</npcIds>
+			</condition>
+		</conditions>
+	</skill>
+	<skill id="8363" toLevel="1" name="Beast Training - Accompany">
+		<!-- Order a beast to accompany. -->
+		<icon>icon.skill8363</icon>
+		<affectRange>1000</affectRange>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>85</magicLvl>
+		<operateType>A1</operateType>
+		<reuseDelay>1000</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<affectScope>POINT_BLANK</affectScope>
+		<affectObject>FRIEND</affectObject>
+	</skill>
+	<skill id="8364" toLevel="1" name="Beast Training - Use Special Ability">
+		<!-- Order a beast to use special ability. -->
+		<icon>icon.skill8364</icon>
+		<affectRange>1000</affectRange>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>85</magicLvl>
+		<operateType>A1</operateType>
+		<reuseDelay>1000</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<affectScope>POINT_BLANK</affectScope>
+		<affectObject>FRIEND</affectObject>
+	</skill>
+	<skill id="8365" toLevel="1" name="Dynasty Tunic">
+		<!-- Increases Casting Spd./ Max MP/ Dark Resistance, and decreases MP Consumption/ magic cancel rate against damage. -->
+		<icon>icon.armor_t93_ue_i00</icon>
+		<magicLvl>1</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+	</skill>
+	<skill id="8366" toLevel="1" name="Dynasty Jewel Leather Armor">
+		<!-- Increases P. Atk./ Max HP/ Critical Rate/ Dark Resistance/ Critical Damage. -->
+		<icon>icon.armor_t91_uw_i00</icon>
+		<magicLvl>1</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+	</skill>
+	<skill id="8367" toLevel="1" name="Dynasty Jewel Leather Armor">
+		<!-- Increases P. Atk./ Max HP/ Dark Resistance, and decreases MP Consumption. -->
+		<icon>icon.armor_t91_uf_i00</icon>
+		<magicLvl>1</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+	</skill>
+	<skill id="8368" toLevel="1" name="Dynasty Jewel Leather Armor">
+		<!-- Increases Casting Spd./ Max MP/ Dark Resistance, and decreases MP Consumption/ magic cancel rate against damage. -->
+		<icon>icon.armor_t93_ue_i00</icon>
+		<magicLvl>1</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+	</skill>
+	<skill id="8369" toLevel="1" name="Halloween Pumpkin Card">
+		<!-- Showed the Halloween Pumpkin Card. -->
+		<icon>icon.ev_jack_ghost_i00</icon>
+		<effectPoint>-100</effectPoint>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<reuseDelay>3000</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<effectRange>400</effectRange>
+		<castRange>150</castRange>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="8370" toLevel="1" name="Rotten Pumpkin Card">
+		<!-- Showed the Rotten Pumpkin Card. -->
+		<icon>icon.ev_rotten_jack_ghost_i00</icon>
+		<effectPoint>-100</effectPoint>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<reuseDelay>3000</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<effectRange>400</effectRange>
+		<castRange>150</castRange>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="8371" toLevel="1" name="Transform Halloween Pumpkin">
+		<!-- Transforms into a pumpkin ghost. -->
+		<icon>icon.skilltransform3</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<abnormalType>TRANSFORM</abnormalType>
+		<effectPoint>1</effectPoint>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>-1</magicLvl>
+		<operateType>A2</operateType>
+		<reuseDelay>3000</reuseDelay>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CanTransform">
+				<transformId>108</transformId>
+			</condition>
+		</conditions>
+	</skill>
+	<skill id="8372" toLevel="1" name="Shiny Reanimated Corpse Mask">
+		<!-- Mask's effect. For 60 min., increases Max HP and Max MP by 10%, P. Atk. by 5%, and Earth Resistance by 5. -->
+		<icon>icon.ev_frankenstein_mask_i00</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<abnormalType>SIGNAL_D</abnormalType>
+		<blockedInOlympiad>true</blockedInOlympiad>
+		<effectPoint>1</effectPoint>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>1</magicLvl>
+		<operateType>A2</operateType>
+		<reuseDelay>7200000</reuseDelay>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitTime>4000</hitTime>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="MaxHp">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PAtk">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>5</amount>
+				<attribute>EARTH</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8373" toLevel="1" name="Shriek Mask">
+		<!-- Mask's effect. For 60 min., increases Max HP and Max MP by 10%, Critical rate by 5%, and Wind Resistance by 5. -->
+		<icon>icon.ev_scream_mask_i00</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<abnormalType>SIGNAL_D</abnormalType>
+		<blockedInOlympiad>true</blockedInOlympiad>
+		<effectPoint>1</effectPoint>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>1</magicLvl>
+		<operateType>A2</operateType>
+		<reuseDelay>7200000</reuseDelay>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitTime>4000</hitTime>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="MaxHp">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="CriticalRate">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicCriticalRate">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>5</amount>
+				<attribute>WIND</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8374" toLevel="1" name="Red Devil Mask">
+		<!-- Mask's effect. For 60 min., increases Max HP and Max MP by 10%, Speed by 5%, and Fire Resistance by 5. -->
+		<icon>icon.ev_doccabi_mask_i00</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<abnormalType>SIGNAL_D</abnormalType>
+		<blockedInOlympiad>true</blockedInOlympiad>
+		<effectPoint>1</effectPoint>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>1</magicLvl>
+		<operateType>A2</operateType>
+		<reuseDelay>7200000</reuseDelay>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitTime>4000</hitTime>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="MaxHp">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Speed">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>5</amount>
+				<attribute>FIRE</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8375" toLevel="1" name="Mummy Mask">
+		<!-- Mask's effect. For 60 min., increases Max HP and Max MP by 10%, skill's MP Consumption by 5%, and Dark Resistance by 5. -->
+		<icon>icon.ev_mummy_mask_i00</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<abnormalType>SIGNAL_D</abnormalType>
+		<blockedInOlympiad>true</blockedInOlympiad>
+		<effectPoint>1</effectPoint>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>1</magicLvl>
+		<operateType>A2</operateType>
+		<reuseDelay>7200000</reuseDelay>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitTime>4000</hitTime>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="MaxHp">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicMpCost">
+				<amount>-5</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+			<effect name="MagicMpCost">
+				<amount>-5</amount>
+				<mode>PER</mode>
+				<magicType>0</magicType>
+			</effect>
+			<effect name="MagicMpCost">
+				<amount>-5</amount>
+				<mode>PER</mode>
+				<magicType>3</magicType>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>5</amount>
+				<attribute>DARK</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8376" toLevel="1" name="Planet X235 Alien Mask's Effect">
+		<!-- Mask's effect. For 60 min., increases Max HP and Max MP by 10%, magic damage's Prominent Damage occurrence by 2, and Water Resistance by 5. -->
+		<icon>icon.ev_alien_mask_i00</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<abnormalType>SIGNAL_D</abnormalType>
+		<blockedInOlympiad>true</blockedInOlympiad>
+		<effectPoint>1</effectPoint>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>1</magicLvl>
+		<operateType>A2</operateType>
+		<reuseDelay>7200000</reuseDelay>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitTime>4000</hitTime>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="MaxHp">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="CriticalRate">
+				<amount>2</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicCriticalRate">
+				<amount>2</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>2</amount>
+				<attribute>WATER</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8377" toLevel="1" name="Golden Jack O'Lantern Mask's Effect">
+		<!-- Mask's effect. For 60 min., increases Max HP and Max MP by 20%, Speed by 20, and Debuff Resistance by 10%. -->
+		<icon>icon.ev_golden_jack0_mask_i00</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>3600</abnormalTime>
+		<abnormalType>SIGNAL_D</abnormalType>
+		<blockedInOlympiad>true</blockedInOlympiad>
+		<effectPoint>1</effectPoint>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>1</magicLvl>
+		<operateType>A2</operateType>
+		<reuseDelay>82800000</reuseDelay>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitTime>4000</hitTime>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="MaxHp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Speed">
+				<amount>20</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ResistAbnormalByCategory">
+				<amount>-10</amount>
+				<slot>DEBUFF</slot>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8378" toLevel="1" name="Beast Training - Release All">
+		<!-- Release all beasts. -->
+		<icon>icon.skill8378</icon>
+		<affectRange>1000</affectRange>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>85</magicLvl>
+		<operateType>A1</operateType>
+		<reuseDelay>1000</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<affectScope>POINT_BLANK</affectScope>
+		<affectObject>FRIEND</affectObject>
+	</skill>
+	<skill id="8379" toLevel="2" name="Protection Ring - Gludio">
+		<!-- Increases Earth Resistance by $s1. -->
+		<icon>
+			<value level="1">icon.accessary_inferno_ring_i00</value>
+			<value level="2">icon.accessory_ring_of_domi_protection_i00</value>
+		</icon>
+		<magicLvl>80</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">12</value>
+					<value level="2">15</value>
+				</amount>
+				<attribute>EARTH</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8380" toLevel="2" name="Protection Ring - Dion">
+		<!-- Increases Water Resistance by $s1. -->
+		<icon>
+			<value level="1">icon.accessary_inferno_ring_i00</value>
+			<value level="2">icon.accessory_ring_of_domi_protection_i00</value>
+		</icon>
+		<magicLvl>80</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">12</value>
+					<value level="2">15</value>
+				</amount>
+				<attribute>WATER</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8381" toLevel="2" name="Protection Ring - Giran">
+		<!-- Increases Fire Resistance by $s1. -->
+		<icon>
+			<value level="1">icon.accessary_inferno_ring_i00</value>
+			<value level="2">icon.accessory_ring_of_domi_protection_i00</value>
+		</icon>
+		<magicLvl>80</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">12</value>
+					<value level="2">15</value>
+				</amount>
+				<attribute>FIRE</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8382" toLevel="2" name="Protection Ring - Oren">
+		<!-- Increases Earth Resistance by $s1. -->
+		<icon>
+			<value level="1">icon.accessary_inferno_ring_i00</value>
+			<value level="2">icon.accessory_ring_of_domi_protection_i00</value>
+		</icon>
+		<magicLvl>80</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">12</value>
+					<value level="2">15</value>
+				</amount>
+				<attribute>EARTH</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8383" toLevel="2" name="Protection Ring - Aden">
+		<!-- Increases Holy Resistance by $s1. -->
+		<icon>
+			<value level="1">icon.accessary_inferno_ring_i00</value>
+			<value level="2">icon.accessory_ring_of_domi_protection_i00</value>
+		</icon>
+		<magicLvl>80</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">12</value>
+					<value level="2">15</value>
+				</amount>
+				<attribute>HOLY</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8384" toLevel="2" name="Protection Ring - Innadril">
+		<!-- Increases Holy Resistance by $s1. -->
+		<icon>
+			<value level="1">icon.accessary_inferno_ring_i00</value>
+			<value level="2">icon.accessory_ring_of_domi_protection_i00</value>
+		</icon>
+		<magicLvl>80</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">12</value>
+					<value level="2">15</value>
+				</amount>
+				<attribute>HOLY</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8385" toLevel="2" name="Protection Ring - Goddard">
+		<!-- Increases Dark Resistance by $s1. -->
+		<icon>
+			<value level="1">icon.accessary_inferno_ring_i00</value>
+			<value level="2">icon.accessory_ring_of_domi_protection_i00</value>
+		</icon>
+		<magicLvl>80</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">12</value>
+					<value level="2">15</value>
+				</amount>
+				<attribute>DARK</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8386" toLevel="2" name="Protection Ring - Rune">
+		<!-- Increases Wind Resistance by $s1. -->
+		<icon>
+			<value level="1">icon.accessary_inferno_ring_i00</value>
+			<value level="2">icon.accessory_ring_of_domi_protection_i00</value>
+		</icon>
+		<magicLvl>80</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">12</value>
+					<value level="2">15</value>
+				</amount>
+				<attribute>WIND</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8387" toLevel="2" name="Protection Ring - Schuttgart">
+		<!-- Increases Dark Resistance by $s1. -->
+		<icon>
+			<value level="1">icon.accessary_inferno_ring_i00</value>
+			<value level="2">icon.accessory_ring_of_domi_protection_i00</value>
+		</icon>
+		<magicLvl>80</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">12</value>
+					<value level="2">15</value>
+				</amount>
+				<attribute>DARK</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8388" toLevel="2" name="Protection Necklace - Gludio">
+		<!-- Increases Water Resistance by $s1. -->
+		<icon>
+			<value level="1">icon.accessary_inferno_necklace_i00</value>
+			<value level="2">icon.accessory_nectklace_of_domi_protection_i00</value>
+		</icon>
+		<magicLvl>80</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">26</value>
+					<value level="2">30</value>
+				</amount>
+				<attribute>WATER</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8389" toLevel="2" name="Protection Necklace - Dion">
+		<!-- Increases Holy Resistance by $s1. -->
+		<icon>
+			<value level="1">icon.accessary_inferno_necklace_i00</value>
+			<value level="2">icon.accessory_nectklace_of_domi_protection_i00</value>
+		</icon>
+		<magicLvl>80</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">26</value>
+					<value level="2">30</value>
+				</amount>
+				<attribute>HOLY</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8390" toLevel="2" name="Protection Necklace - Giran">
+		<!-- Increases Wind Resistance by $s1. -->
+		<icon>
+			<value level="1">icon.accessary_inferno_necklace_i00</value>
+			<value level="2">icon.accessory_nectklace_of_domi_protection_i00</value>
+		</icon>
+		<magicLvl>80</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">26</value>
+					<value level="2">30</value>
+				</amount>
+				<attribute>WIND</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8391" toLevel="2" name="Protection Necklace - Oren">
+		<!-- Increases Dark Resistance by $s1. -->
+		<icon>
+			<value level="1">icon.accessary_inferno_necklace_i00</value>
+			<value level="2">icon.accessory_nectklace_of_domi_protection_i00</value>
+		</icon>
+		<magicLvl>80</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">26</value>
+					<value level="2">30</value>
+				</amount>
+				<attribute>DARK</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8392" toLevel="2" name="Protection Necklace - Aden">
+		<!-- Increases Earth Resistance by $s1. -->
+		<icon>
+			<value level="1">icon.accessary_inferno_necklace_i00</value>
+			<value level="2">icon.accessory_nectklace_of_domi_protection_i00</value>
+		</icon>
+		<magicLvl>80</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">26</value>
+					<value level="2">30</value>
+				</amount>
+				<attribute>EARTH</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8393" toLevel="2" name="Protection Necklace - Innadril">
+		<!-- Increases Water Resistance by $s1. -->
+		<icon>
+			<value level="1">icon.accessary_inferno_necklace_i00</value>
+			<value level="2">icon.accessory_nectklace_of_domi_protection_i00</value>
+		</icon>
+		<magicLvl>80</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">26</value>
+					<value level="2">30</value>
+				</amount>
+				<attribute>WATER</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8394" toLevel="2" name="Protection Necklace - Goddard">
+		<!-- Increases Fire Resistance by $s1. -->
+		<icon>
+			<value level="1">icon.accessary_inferno_necklace_i00</value>
+			<value level="2">icon.accessory_nectklace_of_domi_protection_i00</value>
+		</icon>
+		<magicLvl>80</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">26</value>
+					<value level="2">30</value>
+				</amount>
+				<attribute>FIRE</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8395" toLevel="2" name="Protection Necklace - Rune">
+		<!-- Increases Fire Resistance by $s1. -->
+		<icon>
+			<value level="1">icon.accessary_inferno_necklace_i00</value>
+			<value level="2">icon.accessory_nectklace_of_domi_protection_i00</value>
+		</icon>
+		<magicLvl>80</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">26</value>
+					<value level="2">30</value>
+				</amount>
+				<attribute>FIRE</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8396" toLevel="2" name="Protection Necklace - Schuttgart">
+		<!-- Increases Wind Resistance by $s1. -->
+		<icon>
+			<value level="1">icon.accessary_inferno_necklace_i00</value>
+			<value level="2">icon.accessory_nectklace_of_domi_protection_i00</value>
+		</icon>
+		<magicLvl>80</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">26</value>
+					<value level="2">30</value>
+				</amount>
+				<attribute>WIND</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8397" toLevel="1" name="Moirai Heavy Armor Set">
+		<!-- Increases P. Atk. by 4.26%, Atk. Spd. by 4%, M. Def. by 2%, Stun Resistance by 50% and Fire/ Water/ Wind/ Earth Resistance by 3. Cloak equip possible. STR+2. CON-2 -->
+		<icon>icon.armor_t100_u_i00</icon>
+		<magicLvl>82</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="DefenceTrait">
+				<!-- Atk Power +4.26% -->
+				<!-- Atk. Spd. +4% -->
+				<!-- Resistance to Damage Magic +2% -->
+				<!-- resistance to fire attributes +3 -->
+				<!-- resistance to water attributes +3 -->
+				<!-- resistance to wind attributes +3 -->
+				<!-- resistance to earth attributes +3 -->
+				<SHOCK>50</SHOCK>
+			</effect>
+			<effect name="EnableCloak" />
+			<effect name="PAtk">
+				<amount>4.26</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>4</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="ResistDDMagic">
+				<amount>2</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>3</amount>
+				<attribute>FIRE</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>3</amount>
+				<attribute>WATER</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>3</amount>
+				<attribute>WIND</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>3</amount>
+				<attribute>EARTH</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8398" toLevel="1" name="Moirai Light Armor Set">
+		<!-- Increases P. Atk. by 4.26%, Atk. Spd. by 4%, Moving Spd. by 3%, Hold Resistance by 50% and Fire/ Water/ Wind/ Earth Resistance by 3. Cloak equip possible. DEX+2, CON-2 -->
+		<icon>icon.armor_t101_u_i00</icon>
+		<magicLvl>82</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="DefenceTrait">
+				<!-- P. Atk. +4.26% -->
+				<!-- Atk. Spd. +4% -->
+				<!-- Moving Spd. +3% -->
+				<!-- resistance to fire attributes +3 -->
+				<!-- resistance to water attributes +3 -->
+				<!-- resistance to wind attributes +3 -->
+				<!-- resistance to earth attributes +3 -->
+				<HOLD>50</HOLD>
+			</effect>
+			<effect name="EnableCloak" />
+			<effect name="PAtk">
+				<amount>4.26</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Speed">
+				<amount>3</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>4</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>3</amount>
+				<attribute>FIRE</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>3</amount>
+				<attribute>WATER</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>3</amount>
+				<attribute>WIND</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>3</amount>
+				<attribute>EARTH</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8399" toLevel="1" name="Moirai Robe Set">
+		<!-- Increases M. Atk. by 8.11%, Casting Spd. by 15%, Paralysis Resistance by 50% and Fire/ Water/ Wind/ Earth Resistance by 5. Cloak equip possible. WIT+2, MEN-2 -->
+		<icon>icon.armor_t102_u_i00</icon>
+		<magicLvl>82</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="DefenceTrait">
+				<!-- M. Power +8.11% -->
+				<!-- M. Spd. +15% -->
+				<!-- resistance to fire attributes +5 -->
+				<!-- resistance to water attributes +5 -->
+				<!-- resistance to wind attributes +5 -->
+				<!-- resistance to earth attributes +5 -->
+				<PARALYZE>50</PARALYZE>
+			</effect>
+			<effect name="EnableCloak" />
+			<effect name="MAtk">
+				<amount>8.11</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>5</amount>
+				<attribute>FIRE</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>5</amount>
+				<attribute>WATER</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>5</amount>
+				<attribute>WIND</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>5</amount>
+				<attribute>EARTH</attribute>
+			</effect>
+		</effects>
+	</skill>
+</list>

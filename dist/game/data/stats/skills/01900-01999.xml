@@ -1,0 +1,2435 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="1901" toLevel="1" name="Aim">
+		<!-- Elemental Resistance +10. -->
+		<icon>icon.skill1901</icon>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>99</magicLvl>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="DefenceAttribute">
+				<amount>10</amount>
+				<attribute>FIRE</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>10</amount>
+				<attribute>WATER</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>10</amount>
+				<attribute>WIND</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>10</amount>
+				<attribute>EARTH</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1902" toLevel="1" name="Mental Fortress">
+		<!-- Debuff Resistance +1%. -->
+		<icon>icon.skill1902</icon>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>99</magicLvl>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="ResistAbnormalByCategory">
+				<amount>-1</amount>
+				<slot>DEBUFF</slot>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1903" toLevel="1" name="Fitness">
+		<!-- Increases HP Recovery bonus by 1 and MP Recovery bonus by 1. -->
+		<icon>icon.skill1903</icon>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>99</magicLvl>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="HpRegen">
+				<amount>1</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MpRegen">
+				<amount>1</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1904" toLevel="2" name="Unbind">
+		<!-- Cancels all debuffs and renders immune for $s1. -->
+		<icon>icon.skill1904</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>
+			<value level="1">10</value>
+			<value level="2">12</value>
+		</abnormalTime>
+		<abnormalType>RACE_HUMAN1</abnormalType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>99</magicLvl>
+		<operateType>A2</operateType>
+		<hitTime>200</hitTime>
+		<reuseDelay>600000</reuseDelay>
+		<basicProperty>NONE</basicProperty>
+		<hitCancelTime>0</hitCancelTime>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<excludedFromCheck>true</excludedFromCheck>
+		<targetConditions>
+			<condition name="OpTargetPc" />
+		</targetConditions>
+		<effects>
+			<effect name="CallSkill">
+				<skillId>7002</skillId> <!-- Dispel Debuff -->
+				<skillLevel>1</skillLevel>
+			</effect>
+			<effect name="DebuffBlock" />
+		</effects>
+	</skill>
+	<skill id="1905" toLevel="1" name="Swiftness">
+		<!-- Increases Atk. Spd. by 4, Casting Spd. by 3, and Speed when not in combat by 13. -->
+		<icon>icon.skill1905</icon>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>99</magicLvl>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="PhysicalAttackSpeed">
+				<amount>4</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>3</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="Speed">
+				<amount>13</amount>
+				<mode>DIFF</mode>
+				<inCombat>false</inCombat>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1906" toLevel="1" name="Blessing of Water">
+		<!-- Increases Water resistance by 20. -->
+		<icon>icon.skill1906</icon>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>99</magicLvl>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="DefenceAttribute">
+				<amount>20</amount>
+				<attribute>WATER</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1907" toLevel="2" name="Prevision">
+		<!-- For $s1, P. Evasion/ M. Evasion +$s2, and Speed +$s3. -->
+		<icon>icon.skill1907</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>15</abnormalTime>
+		<abnormalType>RACE_ELF1</abnormalType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>99</magicLvl>
+		<operateType>A2</operateType>
+		<hitTime>200</hitTime>
+		<reuseDelay>600000</reuseDelay>
+		<basicProperty>NONE</basicProperty>
+		<hitCancelTime>0</hitCancelTime>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<excludedFromCheck>true</excludedFromCheck>
+		<effects>
+			<effect name="Speed">
+				<amount>50</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="PhysicalEvasion">
+				<amount>90</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">90</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">90</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicalEvasion">
+				<amount>90</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1908" toLevel="1" name="Delicacy">
+		<!-- P. Critical Rate +10 and M. Critical Rate +10. -->
+		<icon>icon.skill1908</icon>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>99</magicLvl>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="CriticalRate">
+				<amount>10</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicCriticalRate">
+				<amount>10</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1909" toLevel="1" name="Sharpness">
+		<!-- Increases P. Critical Damage and M. Critical Damage by 1%. -->
+		<icon>icon.skill1909</icon>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>99</magicLvl>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="CriticalDamage">
+				<amount>1</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicCriticalDamage">
+				<amount>1</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1910" toLevel="1" name="Dark Presence">
+		<!-- STR and INT +1 at night. -->
+		<icon>icon.skill1910</icon>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>99</magicLvl>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="StatUp">
+				<amount>1</amount>
+				<stat>STR</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>1</amount>
+				<stat>INT</stat>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1911" toLevel="1" name="Blessing of Wind">
+		<!-- Increases Wind resistance by 20. -->
+		<icon>icon.skill1911</icon>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>99</magicLvl>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="DefenceAttribute">
+				<amount>20</amount>
+				<attribute>WIND</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1912" toLevel="2" name="Disparition">
+		<!-- Cancels all your debuffs. For $s1, you cannot be targeted. -->
+		<icon>icon.skill1912</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>
+			<value level="1">5</value>
+			<value level="2">6</value>
+		</abnormalTime>
+		<abnormalType>RACE_DARKELF1</abnormalType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>99</magicLvl>
+		<operateType>A2</operateType>
+		<hitTime>200</hitTime>
+		<reuseDelay>600000</reuseDelay>
+		<basicProperty>NONE</basicProperty>
+		<hitCancelTime>0.2</hitCancelTime>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<excludedFromCheck>true</excludedFromCheck>
+		<effects>
+			<effect name="DebuffBlock" />
+			<effect name="DispelByCategory">
+				<slot>DEBUFF</slot>
+				<rate>100</rate>
+				<max>10</max>
+			</effect>
+			<effect name="Untargetable" />
+			<effect name="ResistDispelByCategory">
+				<amount>-80</amount>
+				<slot>BUFF</slot>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1913" toLevel="1" name="Life Siphon">
+		<!-- Absorbs 1% of the damage inflicted as HP. -->
+		<icon>icon.skill1913</icon>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>99</magicLvl>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="VampiricAttack">
+				<amount>1</amount>
+				<chance>80</chance>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1914" toLevel="2" name="Savage">
+		<!-- For $s1, P. Atk. +$s2, M. Atk. +$s3, Atk. Spd., +$s4, and Casting Spd. +$s5. P. Def./ M. Def. -$s6. -->
+		<icon>icon.skill1914</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>60</abnormalTime>
+		<abnormalType>RACE_ORC1</abnormalType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>99</magicLvl>
+		<operateType>A2</operateType>
+		<hitTime>200</hitTime>
+		<basicProperty>NONE</basicProperty>
+		<reuseDelay>600000</reuseDelay>
+		<hitCancelTime>0.2</hitCancelTime>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<excludedFromCheck>true</excludedFromCheck>
+		<effects>
+			<effect name="PAtk">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>
+					<value level="1">-10</value>
+					<value level="2">0</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>
+					<value level="1">-10</value>
+					<value level="2">0</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1915" toLevel="1" name="Blessing of Fire">
+		<!-- Increases Fire resistance by 20. -->
+		<icon>icon.skill1915</icon>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>99</magicLvl>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="DefenceAttribute">
+				<amount>20</amount>
+				<attribute>FIRE</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1916" toLevel="1" name="Energetic">
+		<!-- HP/ MP/ CP +1%. -->
+		<icon>icon.skill1916</icon>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>99</magicLvl>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="MaxHp">
+				<amount>1</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxCp">
+				<amount>1</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>1</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1917" toLevel="1" name="Undying Will">
+		<!-- When receiving damage while HP is below 30%, becomes invincible for 5 sec. 1 time every 5 min. only. -->
+		<icon>icon.skill1917</icon>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>99</magicLvl>
+		<operateType>P</operateType>
+		<excludedFromCheck>true</excludedFromCheck>
+		<effects>
+			<effect name="TriggerSkillByDamage">
+				<!-- Undying Will -->
+				<attackerType>Creature</attackerType>
+				<minAttackerLevel>1</minAttackerLevel>
+				<chance>100</chance>
+				<targetType>SELF</targetType>
+				<minDamage>1</minDamage>
+				<skillId>1918</skillId> <!-- Undying Will -->
+				<skillLevel>1</skillLevel>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1918" toLevel="2" name="Undying Will">
+		<!-- Becomes invincible. -->
+		<icon>icon.skill1917</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>5</abnormalTime>
+		<abnormalType>RACE_ORC2</abnormalType>
+		<abnormalVisualEffect>INVINCIBILITY</abnormalVisualEffect>
+		<operateType>A2</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>99</magicLvl>
+		<hitTime>200</hitTime>
+		<reuseDelay>300000</reuseDelay>
+		<basicProperty>NONE</basicProperty>
+		<hitCancelTime>0.2</hitCancelTime>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="RemainHpPer">
+				<amount>20</amount>
+				<percentType>LESS</percentType>
+				<affectType>CASTER</affectType>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="DamageBlock">
+				<type>BLOCK_HP</type>
+			</effect>
+			<effect name="DamageBlock">
+				<type>BLOCK_MP</type>
+			</effect>
+			<effect name="DebuffBlock" />
+			<effect name="DispelByCategory">
+				<slot>DEBUFF</slot>
+				<rate>100</rate>
+				<max>10</max>
+			</effect>
+			<effect name="ResistDispelByCategory">
+				<amount>-100</amount>
+				<slot>ALL</slot>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1919" toLevel="1" name="Dexterity">
+		<!-- Skill Cooldown -1%. -->
+		<icon>icon.skill1919</icon>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>99</magicLvl>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="Reuse">
+				<amount>-1</amount>
+				<mode>PER</mode>
+				<magicType>0</magicType>
+			</effect>
+			<effect name="Reuse">
+				<amount>-1</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1920" toLevel="2" name="Endurance">
+		<!-- For $s1, reflects $s2 of received damage to attacker and recovers s3 HP every second. -->
+		<icon>icon.skill1920</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>
+			<value level="1">5</value>
+			<value level="2">7</value>
+		</abnormalTime>
+		<abnormalType>RACE_DWAF1</abnormalType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>99</magicLvl>
+		<operateType>A2</operateType>
+		<hitTime>200</hitTime>
+		<basicProperty>NONE</basicProperty>
+		<reuseDelay>600000</reuseDelay>
+		<hitCancelTime>0.2</hitCancelTime>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<excludedFromCheck>true</excludedFromCheck>
+		<effects>
+			<effect name="HealOverTime">
+				<power>460</power>
+				<ticks>1</ticks>
+			</effect>
+			<effect name="DamageShield">
+				<amount>50</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1921" toLevel="1" name="Blessing of Earth">
+		<!-- Increases Earth resistance by 20. -->
+		<icon>icon.skill1921</icon>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>99</magicLvl>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="DefenceAttribute">
+				<amount>20</amount>
+				<attribute>EARTH</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1922" toLevel="2" name="Earth Tremor">
+		<!-- Knocks Down nearby enemies for $s1, and decreases their P. Def./ M. Def. by $s2. -->
+		<icon>icon.skill1922</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>
+			<value level="1">3</value>
+			<value level="2">5</value>
+		</abnormalTime>
+		<abnormalType>KNOCKDOWN</abnormalType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>99</magicLvl>
+		<operateType>A2</operateType>
+		<hitTime>200</hitTime>
+		<reuseDelay>300000</reuseDelay>
+		<effectPoint>-2</effectPoint>
+		<basicProperty>NONE</basicProperty>
+		<isDebuff>true</isDebuff>
+		<hitCancelTime>0.2</hitCancelTime>
+		<lvlBonusRate>20</lvlBonusRate>
+		<activateRate>100</activateRate>
+		<trait>KNOCKDOWN</trait>
+		<affectRange>200</affectRange>
+		<abnormalVisualEffect>KNOCKDOWN</abnormalVisualEffect>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<affectScope>POINT_BLANK</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<excludedFromCheck>true</excludedFromCheck>
+		<effects>
+			<effect name="KnockBack">
+				<distance>50</distance>
+				<speed>400</speed>
+				<knockDown>true</knockDown>
+			</effect>
+			<effect name="DefenceTrait">
+				<DERANGEMENT>100</DERANGEMENT>
+				<SLEEP>100</SLEEP>
+				<HOLD>100</HOLD>
+				<SHOCK>100</SHOCK>
+				<CHANGEBODY>100</CHANGEBODY>
+			</effect>
+			<effect name="BlockActions">
+				<allowedSkills>10279;10517;10025;10776;11770;1904;11264;11093;13314;1912</allowedSkills>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>-50</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>-50</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1923" toLevel="1" name="Battle Instinct">
+		<!-- PvP Damage +1%. -->
+		<icon>icon.skill1923</icon>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>99</magicLvl>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>1</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>1</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>1</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1924" toLevel="1" name="Dark Silence">
+		<!-- Increases Dark Attack Resistance by 20. -->
+		<icon>icon.skill1924</icon>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>99</magicLvl>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="DefenceAttribute">
+				<amount>20</amount>
+				<attribute>DARK</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1925" toLevel="2" name="Soul Protection">
+		<!-- For $s1, blocks debuff attacks $s2 times. -->
+		<icon>icon.skill1925</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>60</abnormalTime>
+		<abnormalType>RACE_KAMAEL1</abnormalType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>99</magicLvl>
+		<operateType>A2</operateType>
+		<hitTime>200</hitTime>
+		<effectPoint>2</effectPoint>
+		<basicProperty>NONE</basicProperty>
+		<reuseDelay>600000</reuseDelay>
+		<hitCancelTime>0.2</hitCancelTime>
+		<activateRate>0</activateRate>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<excludedFromCheck>true</excludedFromCheck>
+		<effects>
+			<effect name="AbnormalShield">
+				<times>
+					<value level="1">2</value>
+					<value level="2">3</value>
+				</times>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">15</value>
+				</amount>
+				<attribute>FIRE</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">15</value>
+				</amount>
+				<attribute>WATER</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">15</value>
+				</amount>
+				<attribute>WIND</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">15</value>
+				</amount>
+				<attribute>EARTH</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">15</value>
+				</amount>
+				<attribute>HOLY</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">15</value>
+				</amount>
+				<attribute>DARK</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1926" toLevel="1" name="Body Reinforcement">
+		<!-- For 5 min., transforms into ultimate combat form. -->
+		<icon>icon.skill1926</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>300</abnormalTime>
+		<abnormalType>TRANSFORM</abnormalType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<operateType>A2</operateType>
+		<hitTime>2500</hitTime>
+		<coolTime>200</coolTime>
+		<effectPoint>2</effectPoint>
+		<basicProperty>NONE</basicProperty>
+		<reuseDelay>3600000</reuseDelay>
+		<specialLevel>-1</specialLevel>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CanTransform">
+				<transformId>506</transformId>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="TargetCancel" />
+			<effect name="Transformation">
+				<transformationId>506</transformationId>
+			</effect>
+			<effect name="DispelBySlot">
+				<dispel>CHANGEBODY,-1;TURN_STONE,-1;BUFF_SPECIAL_MULTI,-1</dispel>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1927" toLevel="1" name="Sigel Aura">
+		<!-- Casts Sigel Force on entire party, which increases P Atk. by 1%. -->
+		<icon>icon.icon_sigel</icon>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<operateType>AU</operateType>
+		<reuseDelay>5000</reuseDelay>
+		<isMagic>3</isMagic>
+		<toggleGroupId>0</toggleGroupId>
+		<effects>
+			<effect name="CallSkillOnActionTime">
+				<!-- Sigel Force -->
+				<skillId>1928</skillId> <!-- Sigel Force -->
+				<skillLevel>1</skillLevel>
+				<ticks>5</ticks>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1928" toLevel="1" name="Sigel Force">
+		<!-- P. Atk. +1%. -->
+		<icon>icon.icon_sigel_01</icon>
+		<abnormallVL>1</abnormallVL>
+		<abnormalTime>6</abnormalTime>
+		<abnormalType>SYNERGY_SIGEL</abnormalType>
+		<affectRange>1600</affectRange>
+		<canBeDispelled>false</canBeDispelled>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<operateType>A6</operateType>
+		<reuseDelay>5000</reuseDelay>
+		<effectPoint>2</effectPoint>
+		<basicProperty>NONE</basicProperty>
+		<hitCancelTime>0</hitCancelTime>
+		<isMagic>3</isMagic>
+		<targetType>MY_PARTY</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<effects>
+			<effect name="PAtk">
+				<amount>1</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Synergy">
+				<!-- Party Solidarity -->
+				<optionalSlots>SYNERGY_FEOH;SYNERGY_LENKER;SYNERGY_OTHEL;SYNERGY_SEER;SYNERGY_TIR;SYNERGY_WYNN;SYNERGY_YR</optionalSlots>
+				<requiredSlots>SYNERGY_SIGEL;SYNERGY_EOLH</requiredSlots>
+				<partyBuffSkillId>1955</partyBuffSkillId>
+				<minSlot>2</minSlot>
+				<skillLevelScaleTo>3</skillLevelScaleTo>
+				<ticks>5</ticks>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1929" toLevel="1" name="Tyrr Aura">
+		<!-- Casts Tyrr Force on entire party, which increases P. Critical Rate by 1%. -->
+		<icon>icon.icon_tir</icon>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<operateType>AU</operateType>
+		<reuseDelay>5000</reuseDelay>
+		<isMagic>3</isMagic>
+		<toggleGroupId>0</toggleGroupId>
+		<effects>
+			<effect name="CallSkillOnActionTime">
+				<!-- Tyrr Force -->
+				<skillId>1930</skillId> <!-- Tyrr Force -->
+				<skillLevel>1</skillLevel>
+				<ticks>5</ticks>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1930" toLevel="1" name="Tyrr Force">
+		<!-- P. Critical Rate +1%. -->
+		<icon>icon.icon_tir_01</icon>
+		<abnormallVL>1</abnormallVL>
+		<abnormalTime>6</abnormalTime>
+		<abnormalType>SYNERGY_TIR</abnormalType>
+		<affectRange>1600</affectRange>
+		<canBeDispelled>false</canBeDispelled>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<operateType>A6</operateType>
+		<reuseDelay>5000</reuseDelay>
+		<effectPoint>2</effectPoint>
+		<basicProperty>NONE</basicProperty>
+		<hitCancelTime>0</hitCancelTime>
+		<isMagic>3</isMagic>
+		<targetType>MY_PARTY</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<effects>
+			<effect name="CriticalRate">
+				<amount>1</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1931" toLevel="1" name="Othell Aura">
+		<!-- Casts Othell Force on entire party, which increases Atk. Spd. by 1%. -->
+		<icon>icon.icon_othel</icon>
+		<magicCriticalRate>5</magicCriticalRate>
+		<toggleGroupId>0</toggleGroupId>
+		<operateType>AU</operateType>
+		<magicLvl>85</magicLvl>
+		<reuseDelay>5000</reuseDelay>
+		<isMagic>3</isMagic>
+		<effects>
+			<effect name="CallSkillOnActionTime">
+				<!-- Othell Force -->
+				<skillId>1932</skillId> <!-- Othell Force -->
+				<skillLevel>1</skillLevel>
+				<ticks>5</ticks>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1932" toLevel="1" name="Othell Force">
+		<!-- Atk. Spd. +1%. -->
+		<icon>icon.icon_othel_01</icon>
+		<abnormallVL>1</abnormallVL>
+		<abnormalTime>6</abnormalTime>
+		<abnormalType>SYNERGY_OTHEL</abnormalType>
+		<affectRange>1600</affectRange>
+		<canBeDispelled>false</canBeDispelled>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<operateType>A6</operateType>
+		<reuseDelay>5000</reuseDelay>
+		<effectPoint>2</effectPoint>
+		<basicProperty>NONE</basicProperty>
+		<hitCancelTime>0</hitCancelTime>
+		<isMagic>3</isMagic>
+		<targetType>MY_PARTY</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<effects>
+			<effect name="PhysicalAttackSpeed">
+				<amount>1</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1933" toLevel="1" name="Yul Aura">
+		<!-- Casts Yul Force on entire party, which increases MP Recovery Bonus by 50%. -->
+		<icon>icon.icon_yr</icon>
+		<magicCriticalRate>5</magicCriticalRate>
+		<toggleGroupId>0</toggleGroupId>
+		<magicLvl>85</magicLvl>
+		<operateType>AU</operateType>
+		<reuseDelay>5000</reuseDelay>
+		<isMagic>3</isMagic>
+		<effects>
+			<effect name="CallSkillOnActionTime">
+				<!-- Yul Force -->
+				<skillId>1934</skillId> <!-- Yul Force -->
+				<skillLevel>1</skillLevel>
+				<ticks>5</ticks>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1934" toLevel="1" name="Yul Force">
+		<!-- MP Recovery Bonus +50%. -->
+		<icon>icon.icon_yr_01</icon>
+		<abnormallVL>1</abnormallVL>
+		<abnormalTime>6</abnormalTime>
+		<abnormalType>SYNERGY_YR</abnormalType>
+		<affectRange>1600</affectRange>
+		<canBeDispelled>false</canBeDispelled>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<operateType>A6</operateType>
+		<reuseDelay>5000</reuseDelay>
+		<effectPoint>2</effectPoint>
+		<basicProperty>NONE</basicProperty>
+		<hitCancelTime>0</hitCancelTime>
+		<isMagic>3</isMagic>
+		<targetType>MY_PARTY</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<effects>
+			<effect name="MpRegen">
+				<amount>50</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1935" toLevel="1" name="Feoh Aura">
+		<!-- Casts Feoh Force on entire party, which increases Casting Spd. by 1%. -->
+		<icon>icon.icon_feoh</icon>
+		<magicCriticalRate>5</magicCriticalRate>
+		<toggleGroupId>0</toggleGroupId>
+		<operateType>AU</operateType>
+		<magicLvl>85</magicLvl>
+		<reuseDelay>5000</reuseDelay>
+		<isMagic>3</isMagic>
+		<effects>
+			<effect name="CallSkillOnActionTime">
+				<!-- Feoh Force -->
+				<skillId>1936</skillId> <!-- Feoh Force -->
+				<skillLevel>1</skillLevel>
+				<ticks>5</ticks>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1936" toLevel="1" name="Feoh Force">
+		<!-- Casting Spd. +1%. -->
+		<icon>icon.icon_feoh_01</icon>
+		<abnormallVL>1</abnormallVL>
+		<abnormalTime>6</abnormalTime>
+		<abnormalType>SYNERGY_FEOH</abnormalType>
+		<affectRange>1600</affectRange>
+		<canBeDispelled>false</canBeDispelled>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<operateType>A6</operateType>
+		<reuseDelay>5000</reuseDelay>
+		<effectPoint>2</effectPoint>
+		<basicProperty>NONE</basicProperty>
+		<hitCancelTime>0</hitCancelTime>
+		<isMagic>3</isMagic>
+		<targetType>MY_PARTY</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<effects>
+			<effect name="MagicalAttackSpeed">
+				<amount>1</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1937" toLevel="1" name="Wynn Aura">
+		<!-- Casts Wynn Force on entire party, which decreases P./ M. Skill MP Consumption by 3%. -->
+		<icon>icon.icon_wynn</icon>
+		<magicCriticalRate>5</magicCriticalRate>
+		<toggleGroupId>0</toggleGroupId>
+		<magicLvl>85</magicLvl>
+		<operateType>AU</operateType>
+		<reuseDelay>5000</reuseDelay>
+		<isMagic>3</isMagic>
+		<effects>
+			<effect name="CallSkillOnActionTime">
+				<!-- Wynn Force -->
+				<skillId>1938</skillId> <!-- Wynn Force -->
+				<skillLevel>1</skillLevel>
+				<ticks>5</ticks>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1938" toLevel="1" name="Wynn Force">
+		<!-- P./ M. Skill MP Consumption -3%. -->
+		<icon>icon.icon_wynn_01</icon>
+		<abnormallVL>1</abnormallVL>
+		<abnormalTime>6</abnormalTime>
+		<abnormalType>SYNERGY_WYNN</abnormalType>
+		<affectRange>1600</affectRange>
+		<canBeDispelled>false</canBeDispelled>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<operateType>A6</operateType>
+		<reuseDelay>5000</reuseDelay>
+		<effectPoint>2</effectPoint>
+		<basicProperty>NONE</basicProperty>
+		<hitCancelTime>0</hitCancelTime>
+		<isMagic>3</isMagic>
+		<targetType>MY_PARTY</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<effects>
+			<effect name="MagicMpCost">
+				<amount>-3</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+			<effect name="MagicMpCost">
+				<amount>-3</amount>
+				<mode>PER</mode>
+				<magicType>0</magicType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1939" toLevel="1" name="Aeore Aura">
+		<!-- Casts Aeore Force on entire party, which increases M. Atk. by 1%. -->
+		<icon>icon.icon_eolh</icon>
+		<magicCriticalRate>5</magicCriticalRate>
+		<toggleGroupId>0</toggleGroupId>
+		<magicLvl>85</magicLvl>
+		<operateType>AU</operateType>
+		<reuseDelay>5000</reuseDelay>
+		<isMagic>3</isMagic>
+		<effects>
+			<effect name="CallSkillOnActionTime">
+				<!-- Aeore Force -->
+				<skillId>1940</skillId> <!-- Aeore Force -->
+				<skillLevel>1</skillLevel>
+				<ticks>5</ticks>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1940" toLevel="1" name="Aeore Force">
+		<!-- M. Atk. +1%. -->
+		<icon>icon.icon_eolh_01</icon>
+		<abnormallVL>1</abnormallVL>
+		<abnormalTime>6</abnormalTime>
+		<abnormalType>SYNERGY_EOLH</abnormalType>
+		<affectRange>1600</affectRange>
+		<canBeDispelled>false</canBeDispelled>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<operateType>A6</operateType>
+		<reuseDelay>5000</reuseDelay>
+		<effectPoint>2</effectPoint>
+		<basicProperty>NONE</basicProperty>
+		<hitCancelTime>0</hitCancelTime>
+		<isMagic>3</isMagic>
+		<targetType>MY_PARTY</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<effects>
+			<effect name="MAtk">
+				<amount>1</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1941" toLevel="1" name="Physical Nail Attack">
+		<!-- Inflicts consecutive attacks using a Demon's claws. -->
+		<icon>icon.skill0539</icon>
+		<effectRange>400</effectRange>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<mpConsume>1</mpConsume>
+		<hitTime>1080</hitTime>
+		<coolTime>720</coolTime>
+		<effectPoint>-1</effectPoint>
+		<reuseDelay>3000</reuseDelay>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>13158</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1942" toLevel="1" name="Wing Storm">
+		<!-- Attacks nearby enemies with spread wings. -->
+		<icon>icon.skill0492</icon>
+		<affectLimit>5-12</affectLimit>
+		<affectRange>150</affectRange>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<mpConsume>1</mpConsume>
+		<castRange>40</castRange>
+		<effectRange>400</effectRange>
+		<hitTime>1080</hitTime>
+		<coolTime>720</coolTime>
+		<effectPoint>-1</effectPoint>
+		<reuseDelay>4000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>POINT_BLANK</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>9000</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1943" toLevel="1" name="Wing Rush">
+		<!-- Attacks with spread wings. Strikes all in target rush area. -->
+		<icon>icon.skill0540</icon>
+		<affectLimit>5-12</affectLimit>
+		<affectRange>150</affectRange>
+		<operateType>DA1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<mpConsume>1</mpConsume>
+		<castRange>600</castRange>
+		<effectRange>600</effectRange>
+		<hitTime>800</hitTime>
+		<coolTime>200</coolTime>
+		<effectPoint>-1</effectPoint>
+		<reuseDelay>5000</reuseDelay>
+		<targetType>ENEMY</targetType>
+		<affectScope>RANGE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<conditions>
+			<condition name="OpCheckCastRange">
+				<distance>200</distance>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>5841</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1944" toLevel="1" name="Death Arrow">
+		<!-- Shoots a death arrow at the enemy. -->
+		<icon>icon.skill1431</icon>
+		<attributeType>WIND</attributeType>
+		<attributeValue>20</attributeValue>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<mpConsume>1</mpConsume>
+		<castRange>600</castRange>
+		<effectRange>1100</effectRange>
+		<hitTime>1200</hitTime>
+		<reuseDelay>2000</reuseDelay>
+		<effectPoint>-1</effectPoint>
+		<isMagic>1</isMagic>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="MagicalAttackRange">
+				<power>182</power>
+				<shieldDefPercent>40</shieldDefPercent>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1945" toLevel="1" name="Power Death Beam">
+		<!-- Attack enemies at the front. -->
+		<icon>icon.skill1471</icon>
+		<affectLimit>5-12</affectLimit>
+		<affectRange>400</affectRange>
+		<attributeType>DARK</attributeType>
+		<attributeValue>20</attributeValue>
+		<operateType>A1</operateType>
+		<fanRange>0;0;400;180</fanRange>
+		<mpConsume>1</mpConsume>
+		<castRange>40</castRange>
+		<effectRange>400</effectRange>
+		<hitTime>1500</hitTime>
+		<reuseDelay>4000</reuseDelay>
+		<effectPoint>-1</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<isMagic>1</isMagic>
+		<targetType>ENEMY</targetType>
+		<affectScope>FAN</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<effects>
+			<effect name="MagicalAttackRange">
+				<power>212</power>
+				<shieldDefPercent>40</shieldDefPercent>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1946" toLevel="1" name="Block Sigel Force">
+		<!-- Sigel Momentum is not applied. -->
+		<icon>icon.icon_sigel</icon>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<operateType>P</operateType>
+	</skill>
+	<skill id="1947" toLevel="1" name="Block Tyrr Force">
+		<!-- Tyrr Momentum is not applied. -->
+		<icon>icon.icon_tir</icon>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<operateType>P</operateType>
+	</skill>
+	<skill id="1948" toLevel="1" name="Block Othell Force">
+		<!-- Othell Momentum is not applied. -->
+		<icon>icon.icon_othel</icon>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<operateType>P</operateType>
+	</skill>
+	<skill id="1949" toLevel="1" name="Block Yul Force">
+		<!-- Yul Momentum is not applied. -->
+		<icon>icon.icon_yr</icon>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<operateType>P</operateType>
+	</skill>
+	<skill id="1950" toLevel="1" name="Block Feoh Force">
+		<!-- Feoh Momentum is not applied. -->
+		<icon>icon.icon_feoh</icon>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<operateType>P</operateType>
+	</skill>
+	<skill id="1951" toLevel="1" name="Block Iss Force">
+		<!-- Iss Momentum is not applied. -->
+		<icon>icon.icon_is</icon>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<operateType>P</operateType>
+	</skill>
+	<skill id="1952" toLevel="1" name="Block Wynn Force">
+		<!-- Wynn Momentum is not applied. -->
+		<icon>icon.icon_wynn</icon>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<operateType>P</operateType>
+	</skill>
+	<skill id="1953" toLevel="1" name="Block Aeore Force">
+		<!-- Aeore Momentum is not applied. -->
+		<icon>icon.icon_eolh</icon>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>85</magicLvl>
+		<operateType>P</operateType>
+	</skill>
+	<skill id="1954" toLevel="1" name="Flying Body Reinforcement">
+		<!-- Transforms into final flying combat form. -->
+		<icon>icon.skill0840</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalType>TRANSFORM</abnormalType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<operateType>A2</operateType>
+		<hitTime>2500</hitTime>
+		<coolTime>200</coolTime>
+		<effectPoint>1</effectPoint>
+		<basicProperty>NONE</basicProperty>
+		<specialLevel>-2</specialLevel>
+		<magicLvl>-2</magicLvl>
+		<abnormalTime>-1</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<staticReuse>true</staticReuse>
+		<reuseDelay>10000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CanTransform">
+				<transformId>507</transformId>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="TargetCancel" />
+			<effect name="Transformation">
+				<transformationId>507</transformationId>
+			</effect>
+			<effect name="DispelBySlot">
+				<dispel>CHANGEBODY,-1;TURN_STONE,-1;BUFF_SPECIAL_MULTI,-1</dispel>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>-30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>-30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="ReduceDropPenalty">
+				<deathPenalty>-90</deathPenalty>
+				<mode>PER</mode>
+			</effect>
+			<effect name="ReduceDropPenalty">
+				<deathPenalty>-90</deathPenalty>
+				<mode>PER</mode>
+				<type>PK</type>
+			</effect>
+			<effect name="ReduceDropPenalty">
+				<deathPenalty>-90</deathPenalty>
+				<mode>RAID</mode>
+				<type>PK</type>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1955" toLevel="3" name="Party Solidarity">
+		<!-- Increases party members' P. Atk. by $s1, M. Atk. by $s2, P. Critical Rate by $s3, Atk. Spd. by $s4, and Casting Spd. by $s5. Decreases physical and magic skill Cooldown by $s6. Always includes Sigel and Aeore Force. When $s7 or more forces are applied, the Party Solidarity effect is activated. When the number of forces applied increases, the Party Solidarity effect is raised. -->
+		<icon>icon.skill1955</icon>
+		<abnormalTime>6</abnormalTime>
+		<abnormalType>SYNERGY_PARTY_BUF</abnormalType>
+		<affectRange>200</affectRange>
+		<magicLvl>
+			<value level="1">85</value>
+			<value level="2">90</value>
+			<value level="3">95</value>
+		</magicLvl>
+		<magicCriticalRate>5</magicCriticalRate>
+		<operateType>A5</operateType>
+		<!-- Target ONE on retail, will be PARTY here. -->
+		<reuseDelay>5000</reuseDelay>
+		<effectPoint>2</effectPoint>
+		<basicProperty>NONE</basicProperty>
+		<hitCancelTime>0</hitCancelTime>
+		<abnormalLvl>
+			<value level="1">1</value>
+			<value level="2">2</value>
+			<value level="3">3</value>
+		</abnormalLvl>
+		<isMagic>3</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="PAtk">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">5</value>
+					<value level="3">13</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">5</value>
+					<value level="3">13</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">4</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">4</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="CriticalRate">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">4</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Reuse">
+				<amount>
+					<value level="1">-1</value>
+					<value level="2">-2</value>
+					<value level="3">-5</value>
+				</amount>
+				<mode>PER</mode>
+				<magicType>0</magicType>
+			</effect>
+			<effect name="Reuse">
+				<amount>
+					<value level="1">-1</value>
+					<value level="2">-2</value>
+					<value level="3">-5</value>
+				</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1956" toLevel="4" name="Sub - P. Atk./ M. Atk. Increase">
+		<!-- P. Atk. +$s1, M. Atk. +$s2. -->
+		<icon>icon.skill0816</icon>
+		<operateType>P</operateType>
+		<magicLvl>1</magicLvl>
+		<magicCriticalRate>5</magicCriticalRate>
+		<excludedFromCheck>true</excludedFromCheck>
+		<effects>
+			<effect name="PAtk">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+					<value level="4">4</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">3</value>
+					<value level="3">4</value>
+					<value level="4">6</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1957" toLevel="4" name="Sub - P. Def./ M. Def. Increase">
+		<!-- P. Def. +$s1, M. Def. +$s2. -->
+		<icon>icon.skill0439</icon>
+		<operateType>P</operateType>
+		<magicLvl>1</magicLvl>
+		<magicCriticalRate>5</magicCriticalRate>
+		<excludedFromCheck>true</excludedFromCheck>
+		<effects>
+			<effect name="MagicalDefence">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+					<value level="4">4</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+					<value level="4">4</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1958" toLevel="4" name="Sub - Atk. Spd./ Casting Spd. Increase">
+		<!-- Atk. Spd. +$s1, Casting Spd. +$s2. -->
+		<icon>icon.skill0817</icon>
+		<operateType>P</operateType>
+		<magicLvl>1</magicLvl>
+		<magicCriticalRate>5</magicCriticalRate>
+		<excludedFromCheck>true</excludedFromCheck>
+		<effects>
+			<effect name="PhysicalAttackSpeed">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+					<value level="4">4</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+					<value level="4">4</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1959" toLevel="4" name="Sub - Critical Rate Increase">
+		<!-- P. Critical Rate/ M. Critical Rate +$s1. -->
+		<icon>icon.skill0814</icon>
+		<operateType>P</operateType>
+		<magicLvl>1</magicLvl>
+		<magicCriticalRate>5</magicCriticalRate>
+		<excludedFromCheck>true</excludedFromCheck>
+		<effects>
+			<effect name="CriticalRate">
+				<amount>
+					<value level="1">10</value>
+					<value level="2">20</value>
+					<value level="3">30</value>
+					<value level="4">40</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicCriticalRate">
+				<amount>
+					<value level="1">10</value>
+					<value level="2">20</value>
+					<value level="3">30</value>
+					<value level="4">40</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1960" toLevel="4" name="Sub - P. Accuracy/ M. Accuracy Increase">
+		<!-- P. Accuracy +$s1, M. Accuracy +$s2. -->
+		<icon>icon.skill1240</icon>
+		<operateType>P</operateType>
+		<magicLvl>1</magicLvl>
+		<magicCriticalRate>5</magicCriticalRate>
+		<excludedFromCheck>true</excludedFromCheck>
+		<effects>
+			<effect name="Accuracy">
+				<amount>
+					<value level="1">2</value>
+					<value level="2">4</value>
+					<value level="3">6</value>
+					<value level="4">8</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicAccuracy">
+				<amount>
+					<value level="1">2</value>
+					<value level="2">4</value>
+					<value level="3">6</value>
+					<value level="4">8</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1961" toLevel="4" name="Sub - P. Evasion/ M. Evasion Increase">
+		<!-- P. Evasion +$s1, M. Evasion +$s2. -->
+		<icon>icon.skill0198</icon>
+		<operateType>P</operateType>
+		<magicLvl>1</magicLvl>
+		<magicCriticalRate>5</magicCriticalRate>
+		<excludedFromCheck>true</excludedFromCheck>
+		<effects>
+			<effect name="PhysicalEvasion">
+				<amount>
+					<value level="1">2</value>
+					<value level="2">4</value>
+					<value level="3">6</value>
+					<value level="4">8</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicalEvasion">
+				<amount>
+					<value level="1">2</value>
+					<value level="2">4</value>
+					<value level="3">6</value>
+					<value level="4">8</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1962" toLevel="4" name="Dual Certification - Attack">
+		<!-- P. Atk. +$s1, M. Atk. +$s2. -->
+		<icon>icon.skill0816</icon>
+		<operateType>P</operateType>
+		<magicLvl>1</magicLvl>
+		<magicCriticalRate>5</magicCriticalRate>
+		<excludedFromCheck>true</excludedFromCheck>
+		<effects>
+			<effect name="PAtk">
+				<amount>
+					<value level="1">3</value>
+					<value level="2">6</value>
+					<value level="3">9</value>
+					<value level="4">12</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>
+					<value level="1">4</value>
+					<value level="2">9</value>
+					<value level="3">13</value>
+					<value level="4">18</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1963" toLevel="4" name="Dual Certification - Defense">
+		<!-- Increases P. Def./ M. Def. by $s1. -->
+		<icon>icon.skill0439</icon>
+		<operateType>P</operateType>
+		<magicLvl>1</magicLvl>
+		<magicCriticalRate>5</magicCriticalRate>
+		<excludedFromCheck>true</excludedFromCheck>
+		<effects>
+			<effect name="MagicalDefence">
+				<amount>
+					<value level="1">3</value>
+					<value level="2">6</value>
+					<value level="3">9</value>
+					<value level="4">12</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>
+					<value level="1">3</value>
+					<value level="2">6</value>
+					<value level="3">9</value>
+					<value level="4">12</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1964" toLevel="4" name="Dual Certification - Speed">
+		<!-- Increases Atk. Spd./ Casting Spd. by $s1. -->
+		<icon>icon.skill0817</icon>
+		<operateType>P</operateType>
+		<magicLvl>1</magicLvl>
+		<magicCriticalRate>5</magicCriticalRate>
+		<excludedFromCheck>true</excludedFromCheck>
+		<effects>
+			<effect name="PhysicalAttackSpeed">
+				<amount>
+					<value level="1">3</value>
+					<value level="2">6</value>
+					<value level="3">9</value>
+					<value level="4">12</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>
+					<value level="1">3</value>
+					<value level="2">6</value>
+					<value level="3">9</value>
+					<value level="4">12</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1965" toLevel="4" name="Dual Certification - Condition">
+		<!-- Increases Max HP/ MP/ CP by $s1. -->
+		<icon>icon.skill1501</icon>
+		<operateType>P</operateType>
+		<excludedFromCheck>true</excludedFromCheck>
+		<magicLvl>
+			<value level="1">85</value>
+			<value level="2">90</value>
+			<value level="3">95</value>
+			<value level="4">99</value>
+		</magicLvl>
+		<magicCriticalRate>5</magicCriticalRate>
+		<excludedFromCheck>true</excludedFromCheck>
+		<effects>
+			<effect name="MaxHp">
+				<amount>
+					<value level="1">5</value>
+					<value level="2">10</value>
+					<value level="3">15</value>
+					<value level="4">20</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>
+					<value level="1">5</value>
+					<value level="2">10</value>
+					<value level="3">15</value>
+					<value level="4">20</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxCp">
+				<amount>
+					<value level="1">5</value>
+					<value level="2">10</value>
+					<value level="3">15</value>
+					<value level="4">20</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1966" toLevel="4" name="Dual - Max MP Increase">
+		<!-- Max MP +$s1. -->
+		<icon>icon.skill0213</icon>
+		<operateType>P</operateType>
+		<magicLvl>
+			<value level="1">85</value>
+			<value level="2">90</value>
+			<value level="3">95</value>
+			<value level="4">99</value>
+		</magicLvl>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MaxMp">
+				<amount>
+					<value level="1">6</value>
+					<value level="2">12</value>
+					<value level="3">18</value>
+					<value level="4">24</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1967" toLevel="4" name="Dual - Max CP Increase">
+		<!-- Max CP +$s1. -->
+		<icon>icon.skill1397</icon>
+		<operateType>P</operateType>
+		<magicLvl>
+			<value level="1">85</value>
+			<value level="2">90</value>
+			<value level="3">95</value>
+			<value level="4">99</value>
+		</magicLvl>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="MaxCp">
+				<amount>
+					<value level="1">6</value>
+					<value level="2">12</value>
+					<value level="3">18</value>
+					<value level="4">24</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1968" toLevel="1" name="Dual Certification - Vampiric">
+		<!-- Has a chance of absorbing 5% of damage inflicted upon the enemy as HP during an attack. -->
+		<icon>icon.dual_hpsteal</icon>
+		<operateType>P</operateType>
+		<magicLvl>99</magicLvl>
+		<magicCriticalRate>5</magicCriticalRate>
+		<excludedFromCheck>true</excludedFromCheck>
+		<effects>
+			<effect name="VampiricAttack">
+				<amount>5</amount>
+				<chance>80</chance>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1969" toLevel="1" name="Dual - MP Drain">
+		<!-- Has a chance of recovering your own MP when attacking or using a skill. -->
+		<icon>icon.dual_mpsteal</icon>
+		<operateType>P</operateType>
+		<magicLvl>99</magicLvl>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="TriggerSkillByMagicType">
+				<!-- Dual - MP Drain -->
+				<magicTypes>0;1;2;3;4;22</magicTypes>
+				<skillId>1995</skillId> <!-- Dual - MP Drain -->
+				<skillLevel>1</skillLevel>
+				<chance>10</chance>
+				<targetType>SELF</targetType>
+			</effect>
+			<effect name="TriggerSkillByAttack">
+				<!-- Dual - MP Drain -->
+				<attackerType>Creature</attackerType>
+				<minAttackerLevel>1</minAttackerLevel>
+				<maxAttackerLevel>127</maxAttackerLevel>
+				<minDamage>1</minDamage>
+				<chance>10</chance>
+				<targetType>SELF</targetType>
+				<isCritical>true</isCritical>
+				<skillId>1995</skillId> <!-- Dual - MP Drain -->
+				<skillLevel>1</skillLevel>
+			</effect>
+			<effect name="TriggerSkillByAttack">
+				<!-- Dual - MP Drain -->
+				<isCritical>false</isCritical>
+				<skillId>1995</skillId> <!-- Dual - MP Drain -->
+				<skillLevel>1</skillLevel>
+				<attackerType>Creature</attackerType>
+				<minAttackerLevel>1</minAttackerLevel>
+				<maxAttackerLevel>127</maxAttackerLevel>
+				<targetType>SELF</targetType>
+				<minDamage>1</minDamage>
+				<chance>10</chance>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1970" toLevel="1" name="Dual Certification - Physical">
+		<!-- Increases P. Atk. by 9%, and decreases P. Def./ M. Def. by 6%. -->
+		<icon>icon.dual_atkup</icon>
+		<operateType>P</operateType>
+		<magicLvl>99</magicLvl>
+		<magicCriticalRate>5</magicCriticalRate>
+		<excludedFromCheck>true</excludedFromCheck>
+		<effects>
+			<effect name="PAtk">
+				<amount>9</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>-6</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>-6</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1971" toLevel="1" name="Dual Certification - Magical">
+		<!-- Increases M. Atk. by 13%, and decreases P. Def./ M. Def. by 6%. -->
+		<icon>icon.dual_defup</icon>
+		<operateType>P</operateType>
+		<magicLvl>99</magicLvl>
+		<magicCriticalRate>5</magicCriticalRate>
+		<excludedFromCheck>true</excludedFromCheck>
+		<effects>
+			<effect name="MAtk">
+				<amount>13</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>-6</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>-6</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1972" toLevel="1" name="Dual - Physical Trait Increase">
+		<!-- Increases success rate for physical attacks and physical defense by 20%. -->
+		<icon>icon.skill4084</icon>
+		<operateType>P</operateType>
+		<magicLvl>99</magicLvl>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="AttackTrait">
+				<SHOCK>20</SHOCK>
+				<KNOCKDOWN>20</KNOCKDOWN>
+				<PULL>20</PULL>
+				<PHYSICAL_BLOCKADE>20</PHYSICAL_BLOCKADE>
+				<DISARM>20</DISARM>
+				<KNOCKBACK>20</KNOCKBACK>
+			</effect>
+			<effect name="DefenceTrait">
+				<SHOCK>20</SHOCK>
+				<KNOCKDOWN>20</KNOCKDOWN>
+				<PULL>20</PULL>
+				<KNOCKBACK>20</KNOCKBACK>
+				<DISARM>20</DISARM>
+				<PHYSICAL_BLOCKADE>20</PHYSICAL_BLOCKADE>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1973" toLevel="1" name="Dual - Mental Trait Increase">
+		<!-- Increases success rate for mental attacks and mental defense by 20%. -->
+		<icon>icon.skill4116</icon>
+		<operateType>P</operateType>
+		<magicLvl>99</magicLvl>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="AttackTrait">
+				<HOLD>20</HOLD>
+				<DERANGEMENT>20</DERANGEMENT>
+				<AIRBIND>20</AIRBIND>
+				<DEPORT>20</DEPORT>
+				<SLEEP>20</SLEEP>
+				<CHANGEBODY>20</CHANGEBODY>
+				<PARALYZE>20</PARALYZE>
+				<TURN_STONE>20</TURN_STONE>
+			</effect>
+			<effect name="DefenceTrait">
+				<HOLD>20</HOLD>
+				<DERANGEMENT>20</DERANGEMENT>
+				<AIRBIND>20</AIRBIND>
+				<DEPORT>20</DEPORT>
+				<SLEEP>20</SLEEP>
+				<CHANGEBODY>20</CHANGEBODY>
+				<PARALYZE>20</PARALYZE>
+				<TURN_STONE>20</TURN_STONE>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1974" toLevel="1" name="Dual Certification - Berserker's Rage">
+		<!-- Has a chance of increasing P. Atk. by 27% during an attack. -->
+		<icon>icon.dual_t_atkup</icon>
+		<operateType>P</operateType>
+		<magicLvl>99</magicLvl>
+		<magicCriticalRate>5</magicCriticalRate>
+		<excludedFromCheck>true</excludedFromCheck>
+		<effects>
+			<effect name="TriggerSkillByAttack">
+				<!-- Dual - Berserker's Rage -->
+				<attackerType>Creature</attackerType>
+				<minAttackerLevel>1</minAttackerLevel>
+				<maxAttackerLevel>127</maxAttackerLevel>
+				<minDamage>1</minDamage>
+				<chance>2</chance>
+				<targetType>SELF</targetType>
+				<isCritical>true</isCritical>
+				<allowWeapons>ALL</allowWeapons>
+				<skillId>1975</skillId> <!-- Dual Certification - Berserker's Rage -->
+				<skillLevel>1</skillLevel>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1975" toLevel="1" name="Dual Certification - Berserker's Rage">
+		<!-- P. Atk. +27% for 15 sec. -->
+		<icon>icon.dual_t_atkup</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>15</abnormalTime>
+		<abnormalType>DUAL_ATTACK_UP</abnormalType>
+		<magicLvl>99</magicLvl>
+		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelay>20000</reuseDelay>
+		<basicProperty>NONE</basicProperty>
+		<operateType>A2</operateType>
+		<hitCancelTime>0</hitCancelTime>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="PAtk">
+				<amount>27</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1976" toLevel="1" name="Dual Certification - Master's Rage">
+		<!-- Has a chance of increasing Skill Power by 27% during skill use. -->
+		<icon>icon.dual_t_skup</icon>
+		<operateType>P</operateType>
+		<magicLvl>99</magicLvl>
+		<magicCriticalRate>5</magicCriticalRate>
+		<excludedFromCheck>true</excludedFromCheck>
+		<effects>
+			<effect name="TriggerSkillByMagicType">
+				<!-- Dual - Master's Rage -->
+				<magicTypes>0;1;2;3;4;22</magicTypes>
+				<skillId>1977</skillId> <!-- Dual Certification - Master's Rage -->
+				<skillLevel>1</skillLevel>
+				<chance>10</chance>
+				<targetType>SELF</targetType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1977" toLevel="1" name="Dual Certification - Master's Rage">
+		<!-- Skill Power +27% for 15 sec. -->
+		<icon>icon.dual_t_skup</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>15</abnormalTime>
+		<abnormalType>DUAL_SKILL_UP</abnormalType>
+		<operateType>A2</operateType>
+		<magicLvl>99</magicLvl>
+		<magicCriticalRate>5</magicCriticalRate>
+		<operateType>A2</operateType>
+		<basicProperty>NONE</basicProperty>
+		<reuseDelay>20000</reuseDelay>
+		<hitCancelTime>0</hitCancelTime>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="MagicalSkillPower">
+				<amount>27</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalSkillPower">
+				<amount>27</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1978" toLevel="1" name="Dual Certification - Light of Protection">
+		<!-- Has a chance of increasing P. Def./ M. Def. by 40% when attacked. -->
+		<icon>icon.dual_t_dmgdef</icon>
+		<operateType>P</operateType>
+		<magicLvl>99</magicLvl>
+		<magicCriticalRate>5</magicCriticalRate>
+		<excludedFromCheck>true</excludedFromCheck>
+		<effects>
+			<effect name="TriggerSkillByDamage">
+				<!-- Dual - Light of Protection -->
+				<attackerType>Playable</attackerType>
+				<minAttackerLevel>1</minAttackerLevel>
+				<maxAttackerLevel>127</maxAttackerLevel>
+				<skillId>1979</skillId> <!-- Dual Certification - Light of Protection -->
+				<skillLevel>1</skillLevel>
+				<minDamage>1</minDamage>
+				<chance>3</chance>
+				<targetType>SELF</targetType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1979" toLevel="1" name="Dual Certification - Light of Protection">
+		<!-- P. Def./ M. Def. +40% for 15 sec. -->
+		<icon>icon.dual_t_dmgdef</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>15</abnormalTime>
+		<abnormalType>DUAL_DEFENCE_UP</abnormalType>
+		<magicLvl>99</magicLvl>
+		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelay>20000</reuseDelay>
+		<basicProperty>NONE</basicProperty>
+		<operateType>A2</operateType>
+		<hitCancelTime>0</hitCancelTime>
+		<staticReuse>true</staticReuse>
+		<staticDelay>true</staticDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="MagicalDefence">
+				<amount>40</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>40</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1980" toLevel="1" name="Dual - Light of Blessing">
+		<!-- Has a chance of restoring 10 000 HP when attacked. -->
+		<icon>icon.dual_t_dmgheal</icon>
+		<operateType>P</operateType>
+		<magicLvl>99</magicLvl>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="TriggerSkillByDamage">
+				<!-- Dual - Light of Blessing -->
+				<attackerType>Playable</attackerType>
+				<minAttackerLevel>1</minAttackerLevel>
+				<maxAttackerLevel>127</maxAttackerLevel>
+				<skillId>1981</skillId> <!-- Dual - Light of Blessing -->
+				<skillLevel>1</skillLevel>
+				<minDamage>1000</minDamage>
+				<chance>20</chance>
+				<targetType>SELF</targetType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1981" toLevel="1" name="Dual - Light of Blessing">
+		<!-- Restores HP. -->
+		<icon>icon.dual_t_dmgheal</icon>
+		<magicLvl>99</magicLvl>
+		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelay>30000</reuseDelay>
+		<operateType>A1</operateType>
+		<hitCancelTime>0</hitCancelTime>
+		<staticReuse>true</staticReuse>
+		<staticDelay>true</staticDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="Heal">
+				<power>10000</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1982" toLevel="1" name="Dual - Shackles of the Giants">
+		<!-- Blocks target's Physical Skills for 5 sec. Can only use on PCs. -->
+		<icon>icon.dual_a_pblock</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>5</abnormalTime>
+		<abnormalType>SILENCE_PHYSICAL</abnormalType>
+		<abnormalVisualEffect>SILENCE</abnormalVisualEffect>
+		<magicCriticalRate>5</magicCriticalRate>
+		<operateType>A2</operateType>
+		<castRange>900</castRange>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>600000</reuseDelay>
+		<effectPoint>-1</effectPoint>
+		<basicProperty>NONE</basicProperty>
+		<effectRange>1100</effectRange>
+		<magicLvl>99</magicLvl>
+		<trait>DERANGEMENT</trait>
+		<isDebuff>true</isDebuff>
+		<staticReuse>true</staticReuse>
+		<targetType>ENEMY_ONLY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpTargetPc" />
+		</conditions>
+		<effects>
+			<effect name="PhysicalMute" />
+		</effects>
+	</skill>
+	<skill id="1983" toLevel="1" name="Dual - Silence of the Giants">
+		<!-- Blocks target's Magical Skills for 5 sec. Can only use on PCs. -->
+		<icon>icon.dual_a_mblock</icon>
+		<abnormalVisualEffect>SILENCE</abnormalVisualEffect>
+		<operateType>A2</operateType>
+		<castRange>900</castRange>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>600000</reuseDelay>
+		<effectPoint>-1</effectPoint>
+		<abnormalType>SILENCE</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>1100</effectRange>
+		<magicLvl>99</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>5</abnormalTime>
+		<trait>DERANGEMENT</trait>
+		<isDebuff>true</isDebuff>
+		<staticReuse>true</staticReuse>
+		<targetType>ENEMY_ONLY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpTargetPc" />
+		</conditions>
+		<effects>
+			<effect name="Mute" />
+		</effects>
+	</skill>
+	<skill id="1984" toLevel="1" name="Dual - Yoke of the Giants">
+		<!-- Decreases target and nearby enemies' Spd. by 90% for 5 sec. Can only use on PCs. -->
+		<icon>icon.dual_a_spdown</icon>
+		<operateType>A2</operateType>
+		<castRange>900</castRange>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>600000</reuseDelay>
+		<effectPoint>-1</effectPoint>
+		<abnormalType>ROOT_MAGICALLY</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>1100</effectRange>
+		<magicLvl>99</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>5</abnormalTime>
+		<trait>HOLD</trait>
+		<affectRange>200</affectRange>
+		<affectLimit>9-10</affectLimit>
+		<isDebuff>true</isDebuff>
+		<isMagic>2</isMagic>
+		<staticReuse>true</staticReuse>
+		<targetType>ENEMY_ONLY</targetType>
+		<affectScope>RANGE</affectScope>
+		<affectObject>NOT_FRIEND_PC</affectObject>
+		<conditions>
+			<condition name="OpTargetPc" />
+		</conditions>
+		<effects>
+			<effect name="Speed">
+				<amount>-90</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1985" toLevel="1" name="Dual - Shield of the Giants">
+		<!-- Damage Reflection Resistance becomes 100% for 30 sec. -->
+		<icon>icon.dual_a_refdmg</icon>
+		<operateType>A2</operateType>
+		<hitTime>1500</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>1</effectPoint>
+		<abnormalType>DUAL_DMG_SHIELD</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>99</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>30</abnormalTime>
+		<staticReuse>true</staticReuse>
+		<isMagic>2</isMagic>
+		<reuseDelay>600000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="DamageShieldResist">
+				<amount>100</amount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1986" toLevel="7" name="Dual Maximum HP">
+		<!-- Max HP +$s1. Can be used when the main/ dual class is Level $s2 or above. -->
+		<icon>icon.skill0917</icon>
+		<operateType>T</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<excludedFromCheck>true</excludedFromCheck>
+		<magicLvl>
+			<value level="1">85</value>
+			<value level="2">90</value>
+			<value level="3">95</value>
+			<value level="4">99</value>
+			<value level="5">101</value>
+			<value level="6">103</value>
+			<value level="7">105</value>
+		</magicLvl>
+		<effects>
+			<effect name="MaxHp">
+				<amount>
+					<value level="1">463</value>
+					<value level="2">972</value>
+					<value level="3">1458</value>
+					<value level="4">1926</value>
+					<value level="5">2394</value>
+					<value level="6">2862</value>
+					<value level="7">3330</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1987" toLevel="1" name="Sigel Armor Limit">
+		<!-- Stats decrease when equipped with armor that is not best suited for you. Atk. Spd./ Casting Spd. -50% when equipped with a Robe/ Light Armor. -->
+		<icon>icon.skill6213_4</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<effects>
+			<effect name="PhysicalAttackSpeed">
+				<amount>-50</amount>
+				<mode>PER</mode>
+				<armorType>
+					<item>MAGIC</item>
+					<item>LIGHT</item>
+				</armorType>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>-50</amount>
+				<mode>PER</mode>
+				<armorType>
+					<item>MAGIC</item>
+					<item>LIGHT</item>
+				</armorType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1988" toLevel="1" name="Tyrr Armor Limit">
+		<!-- Stats decrease when equipped with armor that is not best suited for you. Atk. Spd./ Casting Spd. -50% when equipped with a Robe. -->
+		<icon>icon.skill6213_4</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<effects>
+			<effect name="PhysicalAttackSpeed">
+				<amount>-50</amount>
+				<mode>PER</mode>
+				<armorType>
+					<item>MAGIC</item>
+				</armorType>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>-50</amount>
+				<mode>PER</mode>
+				<armorType>
+					<item>MAGIC</item>
+				</armorType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1989" toLevel="1" name="Yul Armor Limit">
+		<!-- Stats decrease when equipped with armor that is not best suited for you. Atk. Spd./ Casting Spd. -50% when equipped with a Robe/ Heavy Armor. -->
+		<icon>icon.skill6213_4</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<effects>
+			<effect name="PhysicalAttackSpeed">
+				<amount>-50</amount>
+				<mode>PER</mode>
+				<armorType>
+					<item>MAGIC</item>
+					<item>HEAVY</item>
+				</armorType>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>-50</amount>
+				<mode>PER</mode>
+				<armorType>
+					<item>MAGIC</item>
+					<item>HEAVY</item>
+				</armorType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1990" toLevel="1" name="Othell Armor Limit">
+		<!-- Stats decrease when equipped with armor that is not best suited for you. Atk. Spd./ Casting Spd. -50% when equipped with a Robe/ Heavy Armor. -->
+		<icon>icon.skill6213_4</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<effects>
+			<effect name="PhysicalAttackSpeed">
+				<amount>-50</amount>
+				<mode>PER</mode>
+				<armorType>
+					<item>MAGIC</item>
+					<item>HEAVY</item>
+				</armorType>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>-50</amount>
+				<mode>PER</mode>
+				<armorType>
+					<item>MAGIC</item>
+					<item>HEAVY</item>
+				</armorType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1991" toLevel="1" name="Feoh Armor Limit">
+		<!-- Stats decrease when equipped with armor that is not best suited for you. Atk. Spd./ Casting Spd. -50% when equipped with Light Armor/ Heavy Armor. -->
+		<icon>icon.skill6213_4</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<effects>
+			<effect name="PhysicalAttackSpeed">
+				<amount>-50</amount>
+				<mode>PER</mode>
+				<armorType>
+					<item>HEAVY</item>
+					<item>LIGHT</item>
+				</armorType>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>-50</amount>
+				<mode>PER</mode>
+				<armorType>
+					<item>HEAVY</item>
+					<item>LIGHT</item>
+				</armorType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1992" toLevel="1" name="Wynn Armor Limit">
+		<!-- Stats decrease when equipped with armor that is not best suited for you. Atk. Spd./ Casting Spd. -50% when equipped with Heavy Armor. -->
+		<icon>icon.skill6213_4</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<effects>
+			<effect name="PhysicalAttackSpeed">
+				<amount>-50</amount>
+				<mode>PER</mode>
+				<armorType>
+					<item>HEAVY</item>
+				</armorType>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>-50</amount>
+				<mode>PER</mode>
+				<armorType>
+					<item>HEAVY</item>
+				</armorType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1993" toLevel="1" name="Iss Armor Limit">
+		<!-- No Penalty. -->
+		<icon>icon.skill6213_4</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+	</skill>
+	<skill id="1994" toLevel="1" name="Aeore Armor Limit">
+		<!-- Stats decrease when equipped with armor that is not best suited for you. Atk. Spd./ Casting Spd. -50% when equipped with Heavy Armor. -->
+		<icon>icon.skill6213_4</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+		<effects>
+			<effect name="PhysicalAttackSpeed">
+				<amount>-50</amount>
+				<mode>PER</mode>
+				<armorType>
+					<item>HEAVY</item>
+				</armorType>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>-50</amount>
+				<mode>PER</mode>
+				<armorType>
+					<item>HEAVY</item>
+				</armorType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1995" toLevel="1" name="Dual - MP Drain">
+		<!-- Restores MP. -->
+		<icon>icon.dual_mpsteal</icon>
+		<operateType>A1</operateType>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>99</magicLvl>
+		<reuseDelay>6000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="Mp">
+				<amount>81</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1996" toLevel="2" name="Hurricane Shackle">
+		<!-- For $s1, blocks target from using escape items and skills. -->
+		<icon>icon.skill1996</icon>
+		<operateType>A3</operateType>
+		<castRange>600</castRange>
+		<hitTime>1000</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>600000</reuseDelay>
+		<effectPoint>-100</effectPoint>
+		<abnormalLvl>
+			<value level="1">1</value>
+			<value level="2">2</value>
+		</abnormalLvl>
+		<abnormalTime>60</abnormalTime>
+		<abnormalType>BLOCK_ESCAPE</abnormalType>
+		<isDebuff>true</isDebuff>
+		<targetType>ENEMY_ONLY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<excludedFromCheck>true</excludedFromCheck>
+		<magicLvl>4</magicLvl>
+		<effects>
+			<effect name="BlockEscape" />
+		</effects>
+		<selfEffects>
+			<effect name="CallSkill" fromLevel="2" toLevel="2">
+				<skillId>19199</skillId> <!-- Hurricane Sign -->
+				<skillLevel>1</skillLevel>
+			</effect>
+		</selfEffects>
+	</skill>
+	<skill id="1997" toLevel="2" name="Gravity Exile">
+		<!-- For $s1, blocks target from being resurrected by another character. -->
+		<icon>icon.skill1997</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>30</abnormalTime>
+		<abnormalType>BLOCK_RESURRECTION</abnormalType>
+		<operateType>A2</operateType>
+		<castRange>600</castRange>
+		<hitTime>1000</hitTime>
+		<coolTime>500</coolTime>
+		<reuseDelay>600000</reuseDelay>
+		<effectPoint>-100</effectPoint>
+		<abnormalTime>30</abnormalTime>
+		<isDebuff>true</isDebuff>
+		<magicLvl>-2</magicLvl>
+		<stayAfterDeath>true</stayAfterDeath>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<specialLevel>-2</specialLevel>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+		<excludedFromCheck>true</excludedFromCheck>
+		<conditions>
+			<condition name="OpTargetPc" />
+		</conditions>
+		<effects>
+			<effect name="BlockResurrection" />
+			<effect name="PhysicalDefence" fromLevel="2" toLevel="2">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence" fromLevel="2" toLevel="2">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1998" toLevel="1" name="Dual Certification - Vital">
+		<!-- Increases Acquired XP/ SP in Vitality state by 10%. -->
+		<icon>icon.skill10336</icon>
+		<operateType>P</operateType>
+		<excludedFromCheck>true</excludedFromCheck>
+		<effects>
+			<effect name="VitalityExpRate">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="1999" toLevel="1" name="Dual Certification - Recovery">
+		<!-- Decreases skill cooldown by 4%. -->
+		<icon>icon.skill11226</icon>
+		<operateType>P</operateType>
+		<excludedFromCheck>true</excludedFromCheck>
+		<effects>
+			<effect name="Reuse">
+				<amount>-4</amount>
+				<mode>PER</mode>
+				<magicType>0</magicType>
+			</effect>
+			<effect name="Reuse">
+				<amount>-4</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+		</effects>
+	</skill>
+</list>

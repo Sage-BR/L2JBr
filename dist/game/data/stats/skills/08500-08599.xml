@@ -1,0 +1,3237 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
+	<skill id="8500" toLevel="1" name="Pink Talisman - CON">
+		<!-- Increases when equipped. -->
+		<icon>icon.etc_talisman_event_i00</icon>
+		<magicLvl>55</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="StatUp">
+				<amount>2</amount>
+				<stat>CON</stat>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8501" toLevel="1" name="Pink Talisman - INT">
+		<!-- Increases INT when equipped. -->
+		<icon>icon.etc_talisman_event_i00</icon>
+		<magicLvl>55</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="StatUp">
+				<amount>2</amount>
+				<stat>INT</stat>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8502" toLevel="1" name="Pink Talisman - WIT">
+		<!-- Increases WIT when equipped. -->
+		<icon>icon.etc_talisman_event_i00</icon>
+		<magicLvl>55</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="StatUp">
+				<amount>2</amount>
+				<stat>WIT</stat>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8503" toLevel="1" name="Pink Talisman - MEN">
+		<!-- Increases MEN when equipped. -->
+		<icon>icon.etc_talisman_event_i00</icon>
+		<magicLvl>55</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="StatUp">
+				<amount>2</amount>
+				<stat>MEN</stat>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8504" toLevel="1" name="Pink Talisman - Stun Resistance">
+		<!-- Increases Stun Resistance when Talisman is equipped. -->
+		<icon>icon.etc_talisman_event_i01</icon>
+		<magicLvl>55</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="DefenceTrait">
+				<SHOCK>15</SHOCK>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8505" toLevel="1" name="Pink Talisman - Sleep Resistance">
+		<!-- Increases Sleep Resistance when equipped. -->
+		<icon>icon.etc_talisman_event_i01</icon>
+		<magicLvl>55</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="DefenceTrait">
+				<SLEEP>15</SLEEP>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8506" toLevel="1" name="Pink Talisman - Hold Resistance">
+		<!-- Increases Hold Resistance when equipped. -->
+		<icon>icon.etc_talisman_event_i01</icon>
+		<magicLvl>55</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="DefenceTrait">
+				<HOLD>15</HOLD>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8507" toLevel="1" name="Pink Talisman - Paralysis Resistance">
+		<!-- Increases Paralysis Resistance when equipped. -->
+		<icon>icon.etc_talisman_event_i01</icon>
+		<magicLvl>55</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="DefenceTrait">
+				<PARALYZE>15</PARALYZE>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8508" toLevel="1" name="Pink Talisman - All STAT">
+		<!-- Increases all stats when equipped. -->
+		<icon>icon.etc_talisman_event_i02</icon>
+		<magicLvl>55</magicLvl>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effects>
+			<effect name="StatUp">
+				<amount>1</amount>
+				<stat>STR</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>1</amount>
+				<stat>INT</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>1</amount>
+				<stat>CON</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>1</amount>
+				<stat>DEX</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>1</amount>
+				<stat>WIT</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>1</amount>
+				<stat>MEN</stat>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8509" toLevel="1" name="Blessed Escape">
+		<!-- Able to perform the High Angel Circlet power every h. -->
+		<icon>icon.accessory_highangel_circlet_i00</icon>
+		<blockedInOlympiad>true</blockedInOlympiad>
+		<hitTime>200</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<reuseDelay>3600000</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpCanEscape" />
+		</conditions>
+		<effects>
+			<effect name="Escape">
+				<escapeType>TOWN</escapeType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8510" toLevel="1" name="Summon Friend">
+		<!-- Summons your friend. -->
+		<icon>icon.etc_summon_aga_agit_i00</icon>
+		<effectPoint>1000</effectPoint>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>1</magicLvl>
+		<operateType>A1</operateType>
+		<reuseDelay>3600000</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>-2</effectRange>
+		<hitTime>10000</hitTime>
+		<targetType>OTHERS</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpCallPc" />
+			<condition name="TargetMyParty">
+				<includeMe>false</includeMe>
+			</condition>
+			<condition name="OpEquipItem">
+				<itemId>17050</itemId>
+				<affectType>BOTH</affectType>
+			</condition>
+		</conditions>
+	</skill>
+	<skill id="8511" toLevel="1" name="Blessing of Victory">
+		<!-- Increases Speed by 2%. -->
+		<icon>BranchSys2.icon.br_worldcup_hair_i02</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>1</magicLvl>
+	</skill>
+	<skill id="8512" toLevel="1" name="Olympic Athlete's Tenacity">
+		<!-- Use to obtain a 3-day/ 7-day/ 10-day/ 30-day/ unlimited National Warrior's Accessory Set. Using the skill consumes 10 Marks of Cheers, and the skill may be canceled when attacked. -->
+		<icon>BranchSys2.icon.br_spirit_of_brave_i00</icon>
+		<itemConsumeId>17201</itemConsumeId>
+		<itemConsumeCount>10</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>85</magicLvl>
+		<reuseDelay>2000</reuseDelay>
+		<staticReuse>true</staticReuse>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpNeedAgathion" />
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="50.5549">
+						<item id="17186" count="1" /> <!-- Olympic Athlete's Ring - 3-day] -->
+						<item id="17187" count="1" /> <!-- Olympic Athlete's Necklace - 3-day -->
+						<item id="17188" count="1" /> <!-- Olympic Athlete's Earring - 3-day -->
+					</item>
+					<item chance="29.7381">
+						<item id="17189" count="1" /> <!-- Olympic Athlete's Ring - 7-day] -->
+						<item id="17190" count="1" /> <!-- Olympic Athlete's Necklace - 7-day -->
+						<item id="17191" count="1" /> <!-- Olympic Athlete's Earring - 7-day -->
+					</item>
+					<item chance="16.6667">
+						<item id="17192" count="1" /> <!-- Olympic Athlete's Ring - 10-day] -->
+						<item id="17193" count="1" /> <!-- Olympic Athlete's Necklace - 10-day -->
+						<item id="17194" count="1" /> <!-- Olympic Athlete's Earring - 10-day -->
+					</item>
+					<item chance="3.0303">
+						<item id="17195" count="1" /> <!-- Olympic Athlete's Ring - 30-day] -->
+						<item id="17196" count="1" /> <!-- Olympic Athlete's Necklace - 30-day -->
+						<item id="17197" count="1" /> <!-- Olympic Athlete's Earring - 30-day -->
+					</item>
+					<item chance="0.01">
+						<item id="17198" count="1" /> <!-- Olympic Athlete's Ring -->
+						<item id="17199" count="1" /> <!-- Olympic Athlete's Necklace -->
+						<item id="17200" count="1" /> <!-- Olympic Athlete's Earring -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8513" toLevel="1" name="Olympic Athlete's Spell of Blessing">
+		<!-- When used, you can obtain at random a Blessed Scroll of Escape or a B~S-grade Blessed Weapon/ Armor Strengthening Scroll. Upon skill use, 10 Proofs of Cheers are consumed, and it can be cancelled when attacked. -->
+		<icon>BranchSys2.icon.br_spell_of_blessing_i00</icon>
+		<itemConsumeId>17201</itemConsumeId>
+		<itemConsumeCount>10</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>85</magicLvl>
+		<reuseDelay>2000</reuseDelay>
+		<staticReuse>true</staticReuse>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpNeedAgathion" />
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="20.1158">
+						<item id="9156" count="5" /> <!-- Blessed Scroll of Escape (Event) -->
+					</item>
+					<item chance="19.2014">
+						<item id="17258" count="1" /> <!-- Blessed Scroll: Enchant Armor (B-grade) - Event -->
+					</item>
+					<item chance="18.287">
+						<item id="17257" count="1" /> <!-- Blessed Scroll: Enchant Weapon (B-grade) - Event -->
+					</item>
+					<item chance="16.4583">
+						<item id="17256" count="1" /> <!-- Blessed Scroll: Enchant Armor (A-grade) - Event -->
+					</item>
+					<item chance="13.7153">
+						<item id="17255" count="1" /> <!-- Blessed Scroll: Enchant Weapon (A-grade) - Event -->
+					</item>
+					<item chance="10">
+						<item id="17264" count="1" /> <!-- Blessed Scroll: Enchant Armor (S-grade) - Event -->
+					</item>
+					<item chance="2.2222">
+						<item id="17263" count="1" /> <!-- Blessed Scroll: Enchant Weapon (S-grade) - Event -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8514" toLevel="1" name="Olympic Athlete's Energy of Victory">
+		<!-- When used, you can obtain at random one XP Buff 50% 1 (4-h.) and Nevit's Voice. Upon skill use, 10 Proofs of Cheers are consumed, and it can be cancelled when attacked. -->
+		<icon>BranchSys2.icon.br_obsession_of_winning_i00</icon>
+		<itemConsumeId>17201</itemConsumeId>
+		<itemConsumeCount>10</itemConsumeCount>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>85</magicLvl>
+		<reuseDelay>2000</reuseDelay>
+		<staticReuse>true</staticReuse>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpNeedAgathion" />
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="20.9127">
+						<item id="17206" count="1" /> <!-- XP Buff 50% (1-hour) -->
+						<item id="17212" count="1" /> <!-- Nevit's Voice -->
+					</item>
+					<item chance="20.9127">
+						<item id="17207" count="1" /> <!-- XP Buff 50% (1.5-hour) -->
+						<item id="17212" count="1" /> <!-- Nevit's Voice -->
+					</item>
+					<item chance="19.2262">
+						<item id="17208" count="1" /> <!-- XP Buff 50% (2-hour) -->
+						<item id="17212" count="1" /> <!-- Nevit's Voice -->
+					</item>
+					<item chance="18.5516">
+						<item id="17209" count="1" /> <!-- XP Buff 50% (2.5-hour) -->
+						<item id="17212" count="1" /> <!-- Nevit's Voice -->
+					</item>
+					<item chance="17.5397">
+						<item id="17210" count="1" /> <!-- XP Buff 50% (3-hour) -->
+						<item id="17212" count="1" /> <!-- Nevit's Voice -->
+					</item>
+					<item chance="2.8571">
+						<item id="17211" count="1" /> <!-- XP Buff 50% (4-hour) -->
+						<item id="17212" count="1" /> <!-- Nevit's Voice -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8515" toLevel="1" name="Release Agathion's Seal - Ball Trapping Gnosian">
+		<!-- Removes the Agathion's seal. -->
+		<icon>icon.etc_summon_aga_agit_i00</icon>
+		<blockedInOlympiad>false</blockedInOlympiad>
+		<hitTime>3000</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>85</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="SummonAgathion">
+				<npcId>1576</npcId> <!-- Ball Trapping Gnosian -->
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8516" toLevel="1" name="Release Agathion's Seal - Ball Trapping Orodriel">
+		<!-- Removes the Agathion's seal. -->
+		<icon>icon.etc_summon_aga_agit_i00</icon>
+		<blockedInOlympiad>false</blockedInOlympiad>
+		<hitTime>3000</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>85</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="SummonAgathion">
+				<npcId>1577</npcId> <!-- Ball Trapping Orodriel -->
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8517" toLevel="1" name="Release Agathion's Seal - Penalty Kick">
+		<!-- Removes the Agathion's seal. -->
+		<icon>icon.etc_summon_aga_agit_i00</icon>
+		<blockedInOlympiad>false</blockedInOlympiad>
+		<hitTime>3000</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>85</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="SummonAgathion">
+				<npcId>1578</npcId> <!-- Penalty Kick -->
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8518" toLevel="1" name="Notifier">
+		<!-- Informs you of the re-supply time of the gift given by the Agathion. -->
+		<icon>icon.skill5239</icon>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>85</magicLvl>
+		<reuseDelay>15000</reuseDelay>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpNeedAgathion" />
+		</conditions>
+	</skill>
+	<skill id="8519" toLevel="1" name="Notifier">
+		<!-- Informs you of the re-supply time of the gift given by the Agathion. -->
+		<icon>icon.skill5239</icon>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>85</magicLvl>
+		<reuseDelay>15000</reuseDelay>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpNeedAgathion" />
+		</conditions>
+	</skill>
+	<skill id="8520" toLevel="1" name="Notifier">
+		<!-- Informs you of the re-supply time of the gift given by the Agathion. -->
+		<icon>icon.skill5239</icon>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>85</magicLvl>
+		<reuseDelay>15000</reuseDelay>
+		<isMagic>2</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpNeedAgathion" />
+		</conditions>
+	</skill>
+	<skill id="8521" toLevel="1" name="Agathion Summon - Antharas">
+		<!-- Summons Agathion. -->
+		<icon>icon.etc_summon_aga_agit_i00</icon>
+		<hitTime>3000</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>85</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="SummonAgathion">
+				<npcId>16077</npcId> <!-- Antharas -->
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8522" toLevel="1" name="Agathion Summon - Nevit's Messenger Kanna">
+		<!-- Summons Agathion. -->
+		<icon>icon.etc_summon_aga_agit_i00</icon>
+		<hitTime>3000</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>85</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="SummonAgathion">
+				<npcId>16078</npcId> <!-- Nevit's Messenger Kanna -->
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8523" toLevel="1" name="Release Agathion's Seal - Guardian of Dawn Kallesin">
+		<!-- Removes the Agathion's seal. -->
+		<icon>icon.etc_summon_aga_agit_i00</icon>
+		<hitTime>3000</hitTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>85</magicLvl>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="SummonAgathion">
+				<npcId>16079</npcId> <!-- Guardian of Dawn Kallesin -->
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8524" toLevel="1" name="Hero's Holy Attack">
+		<!-- Increases Holy P. Atk. by 250. -->
+		<icon>icon.weapon_the_sword_of_hero_i00</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>80</magicLvl>
+		<effects>
+			<effect name="AttackAttribute">
+				<amount>250</amount>
+				<attribute>HOLY</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8525" toLevel="1" name="Hero's Holy Attack">
+		<!-- Increases Holy P. Atk. by 250. -->
+		<icon>icon.weapon_the_staff_of_hero_i00</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>80</magicLvl>
+		<effects>
+			<effect name="AttackAttribute">
+				<amount>250</amount>
+				<attribute>HOLY</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8526" toLevel="1" name="Shiny Bracelet">
+		<!-- 3 Talisman can be equipped. -->
+		<icon>icon.accessory_shiny_bracelet</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>52</magicLvl>
+		<effects>
+			<effect name="TalismanSlot">
+				<slots>3</slots>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8527" toLevel="1" name="Agathion Summon - Magmeld Fairy">
+		<!-- Summons Agathion. -->
+		<icon>icon.etc_summon_aga_agit_i00</icon>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLvl>85</magicLvl>
+		<operateType>A1</operateType>
+		<hitTime>3000</hitTime>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="SummonAgathion">
+				<npcId>16080</npcId> <!-- Magmeld Fairy -->
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8528" toLevel="1" name="Release Agathion's Seal">
+		<!-- Removes the Agathion's seal. -->
+		<icon>icon.etc_summon_aga_agit_i00</icon>
+		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLvl>75</magicLvl>
+		<isMagic>2</isMagic>
+		<hitTime>3000</hitTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
+	<skill id="8529" toLevel="1" name="Ring of Insolence">
+		<!-- Increases Max MP by 15 and Poison Resistance by 10%. -->
+		<icon>icon.ring_of_oman</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>80</magicLvl>
+		<effects>
+			<effect name="MaxMp">
+				<amount>15</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="DefenceTrait">
+				<POISON>10</POISON>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8530" toLevel="1" name="Ring of Insolence">
+		<!-- Increases Max MP by 15, Poison Resistance by 10%, and poison attack rate by 10%. -->
+		<icon>icon.ring_of_oman</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>80</magicLvl>
+		<effects>
+			<effect name="MaxMp">
+				<amount>15</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="DefenceTrait">
+				<POISON>10</POISON>
+			</effect>
+			<effect name="AttackTrait">
+				<POISON>10</POISON>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8531" toLevel="1" name="Ring of Insolence">
+		<!-- Increases Max MP by 15, Poison Resistance by 10%, poison attack rate by 10%, and Hold Resistance by 10%. -->
+		<icon>icon.ring_of_oman</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>80</magicLvl>
+		<effects>
+			<effect name="MaxMp">
+				<amount>15</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="DefenceTrait">
+				<POISON>10</POISON>
+				<HOLD>10</HOLD>
+			</effect>
+			<effect name="AttackTrait">
+				<POISON>10</POISON>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8532" toLevel="1" name="Ring of Insolence">
+		<!-- Increases Max MP by 15, Poison Resistance by 10%, poison attack rate by 10%, Hold Resistance by 10%, and hold attack rate by 10%. -->
+		<icon>icon.ring_of_oman</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>80</magicLvl>
+		<effects>
+			<effect name="MaxMp">
+				<amount>15</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="DefenceTrait">
+				<POISON>10</POISON>
+				<HOLD>10</HOLD>
+			</effect>
+			<effect name="AttackTrait">
+				<POISON>10</POISON>
+				<HOLD>10</HOLD>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8533" toLevel="1" name="Ring of Insolence">
+		<!-- Increases Max MP by 15, Poison Resistance by 10%, poison attack rate by 10%, Hold Resistance by 10%, hold attack rate by 10%, and accuracy. -->
+		<icon>icon.ring_of_oman</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>80</magicLvl>
+		<effects>
+			<effect name="MaxMp">
+				<amount>15</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="DefenceTrait">
+				<POISON>10</POISON>
+				<HOLD>10</HOLD>
+			</effect>
+			<effect name="AttackTrait">
+				<POISON>10</POISON>
+				<HOLD>10</HOLD>
+			</effect>
+			<effect name="Accuracy">
+				<amount>1</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8534" toLevel="1" name="Ring of Insolence">
+		<!-- Increases Max MP by 15, Poison Resistance by 10%, poison attack rate by 10%, Hold Resistance by 10%, hold attack rate by 10%, accuracy, and Atk. Spd. -->
+		<icon>icon.ring_of_oman</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>80</magicLvl>
+		<effects>
+			<effect name="MaxMp">
+				<amount>15</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="DefenceTrait">
+				<POISON>10</POISON>
+				<HOLD>10</HOLD>
+			</effect>
+			<effect name="AttackTrait">
+				<POISON>10</POISON>
+				<HOLD>10</HOLD>
+			</effect>
+			<effect name="Accuracy">
+				<amount>1</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>10</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8535" toLevel="1" name="Ring of Insolence">
+		<!-- Increases Max MP by 15, Poison Resistance by 10%, poison attack rate by 10%, Hold Resistance by 10%, hold attack rate by 10%, accuracy, Atk. Spd., and Casting Spd. -->
+		<icon>icon.ring_of_oman</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>80</magicLvl>
+		<effects>
+			<effect name="MaxMp">
+				<amount>15</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="DefenceTrait">
+				<POISON>10</POISON>
+				<HOLD>10</HOLD>
+			</effect>
+			<effect name="AttackTrait">
+				<POISON>10</POISON>
+				<HOLD>10</HOLD>
+			</effect>
+			<effect name="Accuracy">
+				<amount>1</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>10</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>10</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8536" toLevel="1" name="Ring of Insolence">
+		<!-- Increases Max MP by 15, Poison Resistance by 10%, poison attack rate by 10%, Hold Resistance by 10%, hold attack rate by 10%, accuracy, Atk. Spd., Casting Spd., and critical damage. -->
+		<icon>icon.ring_of_oman</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>80</magicLvl>
+		<effects>
+			<effect name="MaxMp">
+				<amount>15</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="DefenceTrait">
+				<POISON>10</POISON>
+				<HOLD>10</HOLD>
+			</effect>
+			<effect name="AttackTrait">
+				<POISON>10</POISON>
+				<HOLD>10</HOLD>
+			</effect>
+			<effect name="Accuracy">
+				<amount>1</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>10</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>10</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="CriticalDamage">
+				<amount>59</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8537" toLevel="1" name="T-shirt of Insolence">
+		<!-- Increases Max HP by 246. -->
+		<icon>icon.tshirt_of_oman</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>80</magicLvl>
+		<effects>
+			<effect name="MaxHp">
+				<amount>246</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8538" toLevel="1" name="Vengeance">
+		<!-- Provokes nearby enemies to switch targets and attack through Power 7987. For 30 sec., increases P. Def. by 5400, M. Def. by 4050, and Buff-canceling Attack Resistance by 50, and becomes unable to move. Requires a shield. -->
+		<icon>icon.skill0368</icon>
+		<operateType>A3</operateType>
+		<mpConsume>35</mpConsume>
+		<hitTime>1000</hitTime>
+		<effectPoint>-7985</effectPoint>
+		<abnormalType>PD_UP_SPECIAL</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>77</magicLvl>
+		<abnormalLvl>3</abnormalLvl>
+		<abnormalTime>30</abnormalTime>
+		<affectRange>200</affectRange>
+		<affectLimit>10-10</affectLimit>
+		<reuseDelay>900000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>POINT_BLANK</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<conditions>
+			<condition name="EquipShield" />
+		</conditions>
+		<effects>
+			<effect name="TargetMeProbability">
+				<chance>40</chance>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>5400</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>4050</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="BlockMove" />
+			<effect name="ResistDispelByCategory">
+				<amount>-50</amount>
+				<slot>BUFF</slot>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8539" toLevel="1" name="Spirit of the Phoenix">
+		<!-- Share Phoenix's spirit and yours. There is a chance that the Spirit of the Phoenix will expand when being attacked. Additional effects appear as it expands. Use requirements are complete through the ring's power. -->
+		<icon>icon.skill0784</icon>
+		<operateType>A2</operateType>
+		<mpConsume>37</mpConsume>
+		<hitTime>2500</hitTime>
+		<reuseDelay>15000</reuseDelay>
+		<effectPoint>138</effectPoint>
+		<abnormalType>SEED_OF_KNIGHT</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>81</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>60</abnormalTime>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="PhysicalDefence">
+				<amount>200</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="TriggerSkillByDamage">
+				<attackerType>Creature</attackerType>
+				<minAttackerLevel>1</minAttackerLevel>
+				<maxAttackerLevel>127</maxAttackerLevel>
+				<chance>20</chance>
+				<targetType>SELF</targetType>
+				<minDamage>1</minDamage>
+				<skillId>5562</skillId> <!-- Spirit of the Phoenix -->
+				<skillLevel>1</skillLevel>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8540" toLevel="1" name="Shield of Faith">
+		<!-- For 15 sec., increases party members' P. Def. by 3600 and M. Def. by 2700, and absorbs 90% of any damage received by a party member. -->
+		<icon>icon.skill0528</icon>
+		<operateType>A2</operateType>
+		<mpConsume>43</mpConsume>
+		<hitTime>1000</hitTime>
+		<effectPoint>673</effectPoint>
+		<abnormalType>TRANSFER_DAMAGE</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>79</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>15</abnormalTime>
+		<affectRange>1000</affectRange>
+		<reuseDelay>900000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<effects>
+			<effect name="TransferDamageToPlayer">
+				<amount>90</amount>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>3600</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>2700</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8541" toLevel="1" name="Seed of Revenge">
+		<!-- One sows a seed of wrath himself. There is a chance that the Seed of Wrath will grow when being attacked. P. Atk. increases with growth. -->
+		<icon>icon.skill0761</icon>
+		<operateType>A2</operateType>
+		<mpConsume>37</mpConsume>
+		<hitTime>2500</hitTime>
+		<reuseDelay>15000</reuseDelay>
+		<effectPoint>679</effectPoint>
+		<abnormalType>SEED_OF_KNIGHT</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>81</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>60</abnormalTime>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="TriggerSkillByDamage">
+				<attackerType>Creature</attackerType>
+				<minAttackerLevel>1</minAttackerLevel>
+				<maxAttackerLevel>127</maxAttackerLevel>
+				<chance>8</chance>
+				<targetType>SELF</targetType>
+				<minDamage>1</minDamage>
+				<skillId>5561</skillId> <!-- Seed of Revenge -->
+				<skillLevel>1</skillLevel>
+			</effect>
+			<effect name="PAtk">
+				<amount>100</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8542" toLevel="1" name="Touch of Eva">
+		<!-- Restores HP of party members by 50%. For 1 min., increases Buff-canceling Attack Resistance by 100% and the power of received HP recovery magic by 30%. Restores 50 HP every second. Use requirements are complete through the ring's power. -->
+		<icon>icon.skill0787</icon>
+		<operateType>A2</operateType>
+		<hpConsume>1253</hpConsume>
+		<castRange>40</castRange>
+		<hitTime>1800</hitTime>
+		<effectPoint>835</effectPoint>
+		<abnormalType>TOUCH_OF_LIFE</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>400</effectRange>
+		<magicLvl>81</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>60</abnormalTime>
+		<attributeType>HOLY</attributeType>
+		<attributeValue>20</attributeValue>
+		<affectRange>1000</affectRange>
+		<reuseDelay>150000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<effects>
+			<effect name="HealOverTime">
+				<power>50</power>
+				<ticks>5</ticks>
+			</effect>
+			<effect name="HealPercent">
+				<power>50</power>
+			</effect>
+			<effect name="HealEffect">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="ResistDispelByCategory">
+				<amount>-100</amount>
+				<slot>BUFF</slot>
+			</effect>
+			<effect name="ResistAbnormalByCategory">
+				<amount>-30</amount>
+				<slot>DEBUFF</slot>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8543" toLevel="1" name="Pain of Shilen">
+		<!-- Shilen's pain becomes your own. Shilen's suffering wracks your body, having a chance to increase when you're being attacked. Additional effects appear with each increase. When Lv. 3 is achieved, you can then use the Spirit of Shilen. -->
+		<icon>icon.skill0788</icon>
+		<operateType>A2</operateType>
+		<mpConsume>37</mpConsume>
+		<hitTime>2500</hitTime>
+		<reuseDelay>15000</reuseDelay>
+		<effectPoint>138</effectPoint>
+		<abnormalType>SEED_OF_KNIGHT</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>81</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>60</abnormalTime>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="TriggerSkillByDamage">
+				<attackerType>Creature</attackerType>
+				<minAttackerLevel>1</minAttackerLevel>
+				<maxAttackerLevel>127</maxAttackerLevel>
+				<chance>20</chance>
+				<targetType>SELF</targetType>
+				<minDamage>1</minDamage>
+				<skillId>5564</skillId> <!-- Pain of Shilen -->
+				<skillLevel>1</skillLevel>
+			</effect>
+			<effect name="CriticalDamage">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8544" toLevel="1" name="Prophecy of Fire">
+		<!-- For 5 min., receives help from a great spirit to increase a party member's Max MP by 20%, HP Recovery Bonus by 20%, the chance of prominent magic damage by 2, Critical Damage by 20%, P. Atk. by 10%, P. Def. by 20%, Atk. Spd. by 20%, M. Atk. by 20%, M. Def. by 20%, Casting Spd. by 20%, and Debuff Resistance by 10%. Decreases Speed by 20%. Consumes 10 Spirit Ore. -->
+		<icon>icon.skill1356</icon>
+		<operateType>A2</operateType>
+		<mpConsume>72</mpConsume>
+		<castRange>400</castRange>
+		<hitTime>4000</hitTime>
+		<reuseDelay>4000</reuseDelay>
+		<effectPoint>669</effectPoint>
+		<abnormalType>MULTI_BUFF</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>600</effectRange>
+		<magicLvl>78</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>300</abnormalTime>
+		<isMagic>1</isMagic>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="TargetMyParty">
+				<includeMe>true</includeMe>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="DispelBySlotProbability">
+				<dispel>BUFF_SPECIAL_ATTACK;BUFF_SPECIAL_CRITICAL;BUFF_SPECIAL_CONDITION;BUFF_SPECIAL_MOVE;BUFF_SPECIAL_CLASS</dispel>
+				<rate>100</rate>
+			</effect>
+			<effect name="BlockAbnormalSlot">
+				<slot>BUFF_SPECIAL_ATTACK;BUFF_SPECIAL_CRITICAL;BUFF_SPECIAL_CONDITION;BUFF_SPECIAL_MOVE;BUFF_SPECIAL_CLASS</slot>
+			</effect>
+			<effect name="PAtk">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Speed">
+				<amount>-20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Accuracy">
+				<amount>4</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="CriticalDamage">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="HpRegen">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="ResistAbnormalByCategory">
+				<amount>-10</amount>
+				<slot>DEBUFF</slot>
+			</effect>
+			<effect name="MagicCriticalRate">
+				<amount>2</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8545" toLevel="1" name="Turn to Stone">
+		<!-- Petrifies oneself for 8 sec. to avoid incurring damage. -->
+		<icon>icon.skill1540</icon>
+		<operateType>A2</operateType>
+		<hitTime>1200</hitTime>
+		<reuseDelay>600000</reuseDelay>
+		<effectPoint>343</effectPoint>
+		<abnormalType>TURN_STONE</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>81</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>8</abnormalTime>
+		<abnormalVisualEffect>FLESH_STONE</abnormalVisualEffect>
+		<isDebuff>true</isDebuff>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="BlockActions" />
+			<effect name="DamageBlock">
+				<type>BLOCK_HP</type>
+			</effect>
+			<effect name="DamageBlock">
+				<type>BLOCK_MP</type>
+			</effect>
+			<effect name="BuffBlock" />
+			<effect name="DebuffBlock" />
+			<effect name="HpRegen">
+				<amount>-100</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8546" toLevel="1" name="Arcane Wisdom">
+		<!-- Maximizes magic efficiency by decreasing MP Consumption by 30% and Casting Spd. by 10%. 50 HP is consumed per second. -->
+		<icon>icon.skill0336</icon>
+		<operateType>T</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>78</magicLvl>
+		<mpConsume>36</mpConsume>
+		<targetType>NONE</targetType>
+		<effects>
+			<effect name="DamOverTime">
+				<power>50</power>
+				<ticks>5</ticks>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>-10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicMpCost">
+				<amount>-30</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8547" toLevel="1" name="Song of Champion">
+		<!-- For 2 min., decreases all party members' physical/ sing/ dance skill use MP Consumption by 20% and physical/ sing/ dance skill reuse time by 10%. Additionally increases MP Consumption when singing while song/ dance is in effect. -->
+		<icon>icon.skill0364</icon>
+		<operateType>A2</operateType>
+		<mpConsume>60</mpConsume>
+		<hitTime>2500</hitTime>
+		<reuseDelay>3000</reuseDelay>
+		<effectPoint>669</effectPoint>
+		<abnormalType>SONG_OF_CHAMPION</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>78</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>120</abnormalTime>
+		<affectRange>1000</affectRange>
+		<isMagic>3</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<effects>
+			<effect name="MagicMpCost">
+				<amount>-20</amount>
+				<mode>PER</mode>
+				<magicType>0</magicType>
+			</effect>
+			<effect name="MagicMpCost">
+				<amount>-20</amount>
+				<mode>PER</mode>
+				<magicType>3</magicType>
+			</effect>
+			<effect name="Reuse">
+				<amount>-10</amount>
+				<mode>PER</mode>
+				<magicType>0</magicType>
+			</effect>
+			<effect name="Reuse">
+				<amount>-10</amount>
+				<mode>PER</mode>
+				<magicType>3</magicType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8548" toLevel="1" name="Song of Purification">
+		<!-- Provides an 80% chance of removing a party member's debuffs. And for the next 2 min., increases Debuff Resistance by 30% and increases the power of received HP recovery magic by 30%. -->
+		<icon>icon.skill0914</icon>
+		<operateType>A2</operateType>
+		<mpConsume>60</mpConsume>
+		<hitTime>2500</hitTime>
+		<reuseDelay>240000</reuseDelay>
+		<effectPoint>687</effectPoint>
+		<abnormalType>SONG_OF_PURIFICATION</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>81</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>120</abnormalTime>
+		<affectRange>1000</affectRange>
+		<isMagic>3</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<effects>
+			<effect name="DispelByCategory">
+				<slot>DEBUFF</slot>
+				<rate>80</rate>
+				<max>3</max>
+			</effect>
+			<effect name="HealEffect">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="ResistAbnormalByCategory">
+				<amount>-30</amount>
+				<slot>DEBUFF</slot>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8549" toLevel="1" name="Dance of Berserker">
+		<!-- Decreases a party member's P. Def., M. Def. and Evasion, and increases their P. Atk., M. Atk., Atk. Spd., Casting Spd. and Speed for 2 min. -->
+		<icon>icon.skill0915</icon>
+		<operateType>A2</operateType>
+		<mpConsume>60</mpConsume>
+		<hitTime>2500</hitTime>
+		<reuseDelay>240000</reuseDelay>
+		<effectPoint>687</effectPoint>
+		<abnormalType>DANCE_OF_BERSERKER</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>81</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>120</abnormalTime>
+		<affectRange>1000</affectRange>
+		<isMagic>3</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<conditions>
+			<condition name="EquipWeapon">
+				<weaponType>
+					<item>DUAL</item>
+					<item>DUALBLUNT</item>
+				</weaponType>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="PAtk">
+				<amount>8</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>16</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Speed">
+				<amount>8</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>-16</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>-8</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalEvasion">
+				<amount>-4</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>8</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>8</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8550" toLevel="1" name="Dance of Medusa">
+		<!-- Dances to stir up the illusion of Medusa. Petrifies nearby enemies for 30 sec. Requires a dual sword. -->
+		<icon>icon.skill0367</icon>
+		<operateType>A2</operateType>
+		<mpConsume>53</mpConsume>
+		<hitTime>2000</hitTime>
+		<reuseDelay>30000</reuseDelay>
+		<effectPoint>-666</effectPoint>
+		<abnormalType>TURN_STONE</abnormalType>
+		<basicProperty>MAGIC</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<lvlBonusRate>10</lvlBonusRate>
+		<activateRate>40</activateRate>
+		<magicLvl>77</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>30</abnormalTime>
+		<trait>TURN_STONE</trait>
+		<attributeType>EARTH</attributeType>
+		<attributeValue>20</attributeValue>
+		<affectRange>150</affectRange>
+		<affectLimit>10-10</affectLimit>
+		<abnormalVisualEffect>FLESH_STONE</abnormalVisualEffect>
+		<isDebuff>true</isDebuff>
+		<targetType>SELF</targetType>
+		<affectScope>POINT_BLANK</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<conditions>
+			<condition name="EquipWeapon">
+				<weaponType>
+					<item>DUAL</item>
+					<item>DUALBLUNT</item>
+				</weaponType>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="BlockActions" />
+			<effect name="DamageBlock">
+				<type>BLOCK_HP</type>
+			</effect>
+			<effect name="DamageBlock">
+				<type>BLOCK_MP</type>
+			</effect>
+			<effect name="BuffBlock" />
+			<effect name="DebuffBlock" />
+			<effect name="HpRegen">
+				<amount>-100</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DefenceTrait">
+				<TURN_STONE>100</TURN_STONE>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8551" toLevel="1" name="Chant of Victory">
+		<!-- Recovers all party members' HP by 20%, and for 5 min., receives help from a great spirit to increase Max HP by 20%, the chance of prominent magic damage by 2, Critical Damage by 20%, P. Atk. by 10%, P. Def. by 20%, Atk. Spd. by 20%, M. Atk. by 20%, M. Def. by 20%, Casting Spd. by 20%, Debuff Resistance by 10%, and Accuracy by 4. Decreases Speed by 20%. Consumes 40 Spirit Ore. -->
+		<icon>icon.skill1363</icon>
+		<operateType>A2</operateType>
+		<mpConsume>284</mpConsume>
+		<hitTime>2500</hitTime>
+		<reuseDelay>300000</reuseDelay>
+		<effectPoint>669</effectPoint>
+		<abnormalType>MULTI_BUFF</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>78</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>300</abnormalTime>
+		<affectRange>1000</affectRange>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<effects>
+			<effect name="DispelBySlotProbability">
+				<dispel>BUFF_SPECIAL_ATTACK;BUFF_SPECIAL_CRITICAL;BUFF_SPECIAL_CONDITION;BUFF_SPECIAL_MOVE;BUFF_SPECIAL_CLASS</dispel>
+				<rate>100</rate>
+			</effect>
+			<effect name="BlockAbnormalSlot">
+				<slot>BUFF_SPECIAL_ATTACK;BUFF_SPECIAL_CRITICAL;BUFF_SPECIAL_CONDITION;BUFF_SPECIAL_MOVE;BUFF_SPECIAL_CLASS</slot>
+			</effect>
+			<effect name="MaxHp">
+				<amount>20</amount>
+				<mode>PER</mode>
+				<heal>true</heal>
+			</effect>
+			<effect name="PAtk">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Speed">
+				<amount>-20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Accuracy">
+				<amount>4</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="CriticalDamage">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="ResistAbnormalByCategory">
+				<amount>-10</amount>
+				<slot>DEBUFF</slot>
+			</effect>
+			<effect name="MagicCriticalRate">
+				<amount>2</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8552" toLevel="1" name="Onslaught of Pa'agrio">
+		<!-- Attacks near the enemy with 4563 Power added to P. Atk., causes burns for 15 sec., and makes him consume 92 HP every second. Requires a blunt weapon. Over-hit is possible. -->
+		<icon>icon.skill0949</icon>
+		<operateType>A2</operateType>
+		<mpConsume>35</mpConsume>
+		<castRange>40</castRange>
+		<hitTime>1080</hitTime>
+		<coolTime>720</coolTime>
+		<reuseDelay>3000</reuseDelay>
+		<effectPoint>-346</effectPoint>
+		<abnormalType>DOT_ATTR</abnormalType>
+		<basicProperty>PHYSICAL</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>400</effectRange>
+		<lvlBonusRate>1</lvlBonusRate>
+		<activateRate>50</activateRate>
+		<magicLvl>81</magicLvl>
+		<abnormalLvl>9</abnormalLvl>
+		<abnormalTime>15</abnormalTime>
+		<trait>SHOCK</trait>
+		<attributeType>FIRE</attributeType>
+		<attributeValue>20</attributeValue>
+		<affectRange>150</affectRange>
+		<abnormalVisualEffect>DOT_BLEEDING</abnormalVisualEffect>
+		<isDebuff>true</isDebuff>
+		<targetType>ENEMY</targetType>
+		<affectScope>RANGE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<conditions>
+			<condition name="EquipWeapon">
+				<weaponType>
+					<item>BLUNT</item>
+				</weaponType>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>4563</power>
+				<overHit>true</overHit>
+			</effect>
+			<effect name="DamOverTime">
+				<power>92</power>
+				<ticks>1</ticks>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8553" toLevel="1" name="Arcane Power">
+		<!-- Maximizes magic efficiency by increasing M. Atk. by 30% and MP Consumption by 10%. Every second, 50 HP is consumed. -->
+		<icon>icon.skill0337</icon>
+		<operateType>T</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>78</magicLvl>
+		<mpConsume>36</mpConsume>
+		<targetType>NONE</targetType>
+		<effects>
+			<effect name="DamOverTime">
+				<power>50</power>
+				<ticks>5</ticks>
+			</effect>
+			<effect name="MAtk">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicMpCost">
+				<amount>10</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8554" toLevel="1" name="Lethal Blow">
+		<!-- Attacks the target's vital points with 5773 Power added to P. Atk. Requires a dagger. Over-hit is possible. Half-kill. -->
+		<icon>icon.skill0344</icon>
+		<operateType>A1</operateType>
+		<mpConsume>77</mpConsume>
+		<castRange>40</castRange>
+		<hitTime>1800</hitTime>
+		<effectPoint>-337</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>400</effectRange>
+		<magicLvl>76</magicLvl>
+		<trait>DEATH</trait>
+		<reuseDelay>4000</reuseDelay>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="EquipWeapon">
+				<weaponType>
+					<item>DAGGER</item>
+					<item>DUALDAGGER</item>
+				</weaponType>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="FatalBlow">
+				<power>5773</power>
+				<criticalChance>20</criticalChance>
+				<chanceBoost>300</chanceBoost>
+				<overHit>true</overHit>
+			</effect>
+			<effect name="Lethal">
+				<fullLethal>0</fullLethal>
+				<halfLethal>15</halfLethal>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8555" toLevel="1" name="Throwing Dagger">
+		<!-- Attacks the enemy by throwing a dagger with 3488 Power added to P. Atk. and decreases Speed by 80% for 10 sec. Requires a dagger to be equipped. -->
+		<icon>icon.skill0991</icon>
+		<operateType>A2</operateType>
+		<mpConsume>82</mpConsume>
+		<castRange>300</castRange>
+		<hitTime>1080</hitTime>
+		<reuseDelay>45000</reuseDelay>
+		<effectPoint>-345</effectPoint>
+		<abnormalType>SPEED_DOWN</abnormalType>
+		<basicProperty>MAGIC</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>450</effectRange>
+		<lvlBonusRate>10</lvlBonusRate>
+		<activateRate>80</activateRate>
+		<magicLvl>82</magicLvl>
+		<abnormalLvl>3</abnormalLvl>
+		<abnormalTime>10</abnormalTime>
+		<staticReuse>true</staticReuse>
+		<isDebuff>true</isDebuff>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="EquipWeapon">
+				<weaponType>
+					<item>DAGGER</item>
+					<item>DUALDAGGER</item>
+				</weaponType>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>3488</power>
+				<criticalChance>15</criticalChance>
+			</effect>
+			<effect name="Speed">
+				<amount>-80</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8556" toLevel="1" name="Exciting Adventure">
+		<!-- Feels extreme excitement during a melee. For 30 sec., increases Speed by 20, Evasion by 15, Vital Spot Attack Rate by 30%, physical skill Evasion Rate by 40%, and Buff-canceling Attack Resistance by 90. -->
+		<icon>icon.skill0768</icon>
+		<operateType>A2</operateType>
+		<mpConsume>36</mpConsume>
+		<hitTime>1000</hitTime>
+		<effectPoint>679</effectPoint>
+		<abnormalType>AVOID_UP_SPECIAL</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>81</magicLvl>
+		<abnormalLvl>2</abnormalLvl>
+		<abnormalTime>30</abnormalTime>
+		<abnormalVisualEffect>ULTIMATE_DEFENCE</abnormalVisualEffect>
+		<reuseDelay>900000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="SkillEvasion">
+				<magicType>0</magicType>
+				<amount>40</amount>
+			</effect>
+			<effect name="Speed">
+				<amount>20</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="PhysicalEvasion">
+				<amount>15</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="FatalBlowRate">
+				<amount>30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="ResistDispelByCategory">
+				<amount>-90</amount>
+				<slot>BUFF</slot>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8557" toLevel="1" name="Wind Riding">
+		<!-- Storms the battleground riding the Wind. For 30 sec., increases Speed by 50, Evasion by 20, Vital Spot Attack Rate by 20%, physical skill Evasion Rate by 75%, and Buff-canceling Attack Resistance by 80. -->
+		<icon>icon.skill0769</icon>
+		<operateType>A2</operateType>
+		<mpConsume>36</mpConsume>
+		<hitTime>1000</hitTime>
+		<effectPoint>679</effectPoint>
+		<abnormalType>AVOID_UP_SPECIAL</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>81</magicLvl>
+		<abnormalLvl>2</abnormalLvl>
+		<abnormalTime>30</abnormalTime>
+		<abnormalVisualEffect>ULTIMATE_DEFENCE</abnormalVisualEffect>
+		<reuseDelay>900000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="SkillEvasion">
+				<magicType>0</magicType>
+				<amount>75</amount>
+			</effect>
+			<effect name="Speed">
+				<amount>50</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="PhysicalEvasion">
+				<amount>20</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="FatalBlowRate">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="ResistDispelByCategory">
+				<amount>-80</amount>
+				<slot>BUFF</slot>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8558" toLevel="1" name="Ghost Walking">
+		<!-- Infiltrates the battleground like a ghost. For 30 sec., increases Speed by 33, Evasion by 15, Vital Spot Attack Rate by 40%, physical skill Evasion Rate by 60%, and Buff-canceling Attack Resistance by 90. -->
+		<icon>icon.skill0770</icon>
+		<operateType>A2</operateType>
+		<mpConsume>36</mpConsume>
+		<hitTime>1000</hitTime>
+		<effectPoint>679</effectPoint>
+		<abnormalType>AVOID_UP_SPECIAL</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>81</magicLvl>
+		<abnormalLvl>2</abnormalLvl>
+		<abnormalTime>30</abnormalTime>
+		<abnormalVisualEffect>ULTIMATE_DEFENCE</abnormalVisualEffect>
+		<reuseDelay>900000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="SkillEvasion">
+				<magicType>0</magicType>
+				<amount>60</amount>
+			</effect>
+			<effect name="Speed">
+				<amount>33</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="PhysicalEvasion">
+				<amount>15</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="FatalBlowRate">
+				<amount>40</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="ResistDispelByCategory">
+				<amount>-90</amount>
+				<slot>BUFF</slot>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8559" toLevel="1" name="Lethal Shot">
+		<!-- Shoots an arrow at a vital spot. Attacks the enemy with 7698 Power added to P. Atk. Requires a bow. Over-hit, Half-Kill, and Critical are possible. -->
+		<icon>icon.skill0343</icon>
+		<operateType>A1</operateType>
+		<mpConsume>153</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>4000</hitTime>
+		<effectPoint>-897</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>1400</effectRange>
+		<magicLvl>76</magicLvl>
+		<trait>DEATH</trait>
+		<reuseDelay>8000</reuseDelay>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="EquipWeapon">
+				<weaponType>
+					<item>BOW</item>
+				</weaponType>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>7698</power>
+				<overHit>true</overHit>
+				<criticalChance>15</criticalChance>
+			</effect>
+			<effect name="Lethal">
+				<halfLethal>10</halfLethal>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8560" toLevel="1" name="Flame Hawk">
+		<!-- Shoots an arrow filled with the energy of the phoenix to attack the enemies with 6084 Power added to P. Atk. Requires a bow. Over-hit and critical hit are possible. -->
+		<icon>icon.skill0771</icon>
+		<operateType>A1</operateType>
+		<mpConsume>164</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>3500</hitTime>
+		<coolTime>1000</coolTime>
+		<effectPoint>-686</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>1400</effectRange>
+		<magicLvl>81</magicLvl>
+		<affectLimit>5-12</affectLimit>
+		<fanRange>0;0;900;40</fanRange>
+		<reuseDelay>75000</reuseDelay>
+		<targetType>ENEMY</targetType>
+		<affectScope>FAN</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<conditions>
+			<condition name="EquipWeapon">
+				<weaponType>
+					<item>BOW</item>
+				</weaponType>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>8049</power>
+				<overHit>true</overHit>
+				<criticalChance>15</criticalChance>
+			</effect>
+			<effect name="CallSkill">
+				<skillId>23298</skillId> <!-- Flame Hawk -->
+				<skillLevel>1</skillLevel>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8561" toLevel="1" name="Arrow Rain">
+		<!-- Causes arrows to rain down from the sky to attack the target and nearby enemies with 4563 Power added to P. Atk. Requires a bow. Over-hit. Critical. -->
+		<icon>icon.skill0772</icon>
+		<operateType>A1</operateType>
+		<mpConsume>164</mpConsume>
+		<castRange>600</castRange>
+		<hitTime>4000</hitTime>
+		<coolTime>1000</coolTime>
+		<effectPoint>-686</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>1100</effectRange>
+		<magicLvl>81</magicLvl>
+		<affectRange>200</affectRange>
+		<affectLimit>5-12</affectLimit>
+		<reuseDelay>75000</reuseDelay>
+		<targetType>ENEMY</targetType>
+		<affectScope>RANGE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<conditions>
+			<condition name="EquipWeapon">
+				<weaponType>
+					<item>BOW</item>
+				</weaponType>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>7043</power>
+				<overHit>true</overHit>
+				<criticalChance>15</criticalChance>
+			</effect>
+			<effect name="CallSkill">
+				<skillId>23299</skillId> <!-- Arrow Rain -->
+				<skillLevel>1</skillLevel>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8562" toLevel="1" name="Ghost Piercing">
+		<!-- Shoots an arrow filled with the energy of a ghost to attack the enemies with 6388 Power added to P. Atk. Requires a bow. Over-hit and critical hit are possible. -->
+		<icon>icon.skill0773</icon>
+		<operateType>A1</operateType>
+		<mpConsume>164</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>3000</hitTime>
+		<coolTime>1000</coolTime>
+		<effectPoint>-686</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>1400</effectRange>
+		<magicLvl>81</magicLvl>
+		<affectLimit>5-12</affectLimit>
+		<fanRange>0;0;900;100</fanRange>
+		<reuseDelay>75000</reuseDelay>
+		<targetType>ENEMY</targetType>
+		<affectScope>SQUARE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<conditions>
+			<condition name="EquipWeapon">
+				<weaponType>
+					<item>BOW</item>
+				</weaponType>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>8452</power>
+				<overHit>true</overHit>
+				<criticalChance>15</criticalChance>
+			</effect>
+			<effect name="CallSkill">
+				<skillId>23300</skillId> <!-- Ghost Piercing -->
+				<skillLevel>1</skillLevel>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8563" toLevel="1" name="Death Shot">
+		<!-- Shoots an arrow to kill. Attacks the enemy with 24306 Power added to P. Atk. Over-hit possible. Critical hit possible. Requires a bow/ crossbow to be equipped. -->
+		<icon>icon.skill0990</icon>
+		<operateType>A1</operateType>
+		<mpConsume>165</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>3500</hitTime>
+		<coolTime>500</coolTime>
+		<effectPoint>-1387</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>1400</effectRange>
+		<magicLvl>83</magicLvl>
+		<staticReuse>true</staticReuse>
+		<reuseDelay>12000</reuseDelay>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="EquipWeapon">
+				<weaponType>
+					<item>BOW</item>
+					<item>CROSSBOW</item>
+				</weaponType>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>24306</power>
+				<overHit>true</overHit>
+				<criticalChance>30</criticalChance>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8564" toLevel="1" name="Rush Impact">
+		<!-- Charges forward to attack the enemies in front with 4040 power added to P. Attack and inflicts Stun for 9 sec. The power of the ring made it easier to use. -->
+		<icon>icon.skill0793</icon>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>9</abnormalTime>
+		<abnormalType>STUN</abnormalType>
+		<abnormalVisualEffect>STUN</abnormalVisualEffect>
+		<activateRate>60</activateRate>
+		<affectLimit>5-12</affectLimit>
+		<affectRange>600</affectRange>
+		<basicProperty>PHYSICAL</basicProperty>
+		<operateType>DA2</operateType>
+		<mpConsume>83</mpConsume>
+		<castRange>600</castRange>
+		<coolTime>200</coolTime>
+		<effectPoint>-679</effectPoint>
+		<effectRange>800</effectRange>
+		<hitTime>800</hitTime>
+		<isDebuff>true</isDebuff>
+		<lvlBonusRate>20</lvlBonusRate>
+		<magicLvl>83</magicLvl>
+		<mpConsume>82</mpConsume>
+		<nextAction>ATTACK</nextAction>
+		<operateType>DA2</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<fanRange>0;0;600;60</fanRange>
+		<trait>SHOCK</trait>
+		<targetType>ENEMY</targetType>
+		<affectScope>FAN</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<conditions>
+			<condition name="OpCheckCastRange">
+				<distance>200</distance>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>4040</power>
+			</effect>
+			<effect name="BlockActions">
+				<allowedSkills>10279;10517;10025;10776;11770;1904;11264;11093;13314;1912</allowedSkills>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8565" toLevel="1" name="Dread Pool">
+		<!-- Fear spreads around the area. Decreases nearby enemies' Speed by 33%. Inflicts fear and causes them to flee for 8 sec. -->
+		<icon>icon.skill0774</icon>
+		<operateType>A2</operateType>
+		<mpConsume>87</mpConsume>
+		<hitTime>1000</hitTime>
+		<reuseDelay>75000</reuseDelay>
+		<effectPoint>-655</effectPoint>
+		<abnormalType>TURN_FLEE</abnormalType>
+		<basicProperty>MAGIC</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<lvlBonusRate>10</lvlBonusRate>
+		<activateRate>70</activateRate>
+		<magicLvl>81</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>8</abnormalTime>
+		<trait>DERANGEMENT</trait>
+		<affectRange>200</affectRange>
+		<affectLimit>10-10</affectLimit>
+		<abnormalVisualEffect>TURN_FLEE</abnormalVisualEffect>
+		<isDebuff>true</isDebuff>
+		<targetType>SELF</targetType>
+		<affectScope>POINT_BLANK</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<effects>
+			<effect name="BlockControl" />
+			<effect name="Fear">
+			</effect>
+			<effect name="Speed">
+				<amount>-33</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8566" toLevel="1" name="Earthquake">
+		<!-- Wields a spear at neary by enemies with 4848 Power added to P. Atk. Requires a polearm. Over-hit and critical hit are possible. Ignores Shield Defense. Target may be canceled. -->
+		<icon>icon.skill0347</icon>
+		<operateType>A1</operateType>
+		<hpConsume>340</hpConsume>
+		<mpConsume>78</mpConsume>
+		<hitTime>1800</hitTime>
+		<effectPoint>-679</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>78</magicLvl>
+		<affectRange>150</affectRange>
+		<affectLimit>6-12</affectLimit>
+		<reuseDelay>8000</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>POINT_BLANK</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<conditions>
+			<condition name="EquipWeapon">
+				<weaponType>
+					<item>POLE</item>
+				</weaponType>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="TargetCancel">
+				<chance>60</chance>
+			</effect>
+			<effect name="PhysicalAttack">
+				<criticalChance>20</criticalChance>
+				<overHit>true</overHit>
+				<power>4848</power>
+				<ignoreShieldDefence>true</ignoreShieldDefence>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8567" toLevel="1" name="Maximum Force Focus">
+		<!-- Immediately increases Momentum to its maximum level. -->
+		<icon>icon.skill0918</icon>
+		<operateType>A1</operateType>
+		<hpConsume>80</hpConsume>
+		<mpConsume>20</mpConsume>
+		<hitTime>900</hitTime>
+		<effectPoint>150</effectPoint>
+		<reuseDelay>75000</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>81</magicLvl>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="EquipWeapon">
+				<weaponType>
+					<item>DUALFIST</item>
+				</weaponType>
+			</condition>
+			<condition name="OpEnergyMax">
+				<amount>8</amount>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="FocusMaxMomentum" />
+		</effects>
+	</skill>
+	<skill id="8568" toLevel="1" name="Maximum Sonic Focus">
+		<!-- Immediately increases Momentum to its maximum level. -->
+		<icon>icon.skill0919</icon>
+		<operateType>A1</operateType>
+		<hpConsume>80</hpConsume>
+		<mpConsume>20</mpConsume>
+		<hitTime>900</hitTime>
+		<effectPoint>150</effectPoint>
+		<reuseDelay>75000</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>81</magicLvl>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="EquipWeapon">
+				<weaponType>
+					<item>DUAL</item>
+					<item>DUALBLUNT</item>
+				</weaponType>
+			</condition>
+			<condition name="OpEnergyMax">
+				<amount>8</amount>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="FocusMaxMomentum" />
+		</effects>
+	</skill>
+	<skill id="8569" toLevel="1" name="Sonic Rage">
+		<!-- Attacks the enemy with a devastating momentum burst. Requires a dual sword. Possible up to stage 7. Over-hit and critical hit are possible. -->
+		<icon>icon.skill0345</icon>
+		<operateType>A1</operateType>
+		<hpConsume>50</hpConsume>
+		<mpConsume>5</mpConsume>
+		<castRange>600</castRange>
+		<effectPoint>-340</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>1100</effectRange>
+		<magicLvl>78</magicLvl>
+		<hitTime>1500</hitTime>
+		<nextAction>ATTACK</nextAction>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="EquipWeapon">
+				<weaponType>
+					<item>DUAL</item>
+					<item>DUALBLUNT</item>
+				</weaponType>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>1</power>
+				<overHit>true</overHit>
+				<criticalChance>10</criticalChance>
+			</effect>
+		</effects>
+		<selfEffects>
+			<effect name="FocusMomentum">
+				<maxCharges>7</maxCharges>
+			</effect>
+		</selfEffects>
+	</skill>
+	<skill id="8570" toLevel="1" name="Raging Force">
+		<!-- Attacks the enemy with a devastating burst of energy of wind. Requires a fist weapon. Possible up to stage 7. Over-hit and critical hit are possible. -->
+		<icon>icon.skill0346</icon>
+		<operateType>A1</operateType>
+		<hpConsume>50</hpConsume>
+		<mpConsume>5</mpConsume>
+		<castRange>600</castRange>
+		<effectPoint>-340</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>1100</effectRange>
+		<magicLvl>78</magicLvl>
+		<hitTime>1500</hitTime>
+		<nextAction>ATTACK</nextAction>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="EquipWeapon">
+				<weaponType>
+					<item>DUALFIST</item>
+				</weaponType>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>1</power>
+				<overHit>true</overHit>
+				<criticalChance>10</criticalChance>
+			</effect>
+		</effects>
+		<selfEffects>
+			<effect name="FocusMomentum">
+				<maxCharges>7</maxCharges>
+			</effect>
+		</selfEffects>
+	</skill>
+	<skill id="8571" toLevel="1" name="Demolition Impact">
+		<!-- Unleashes a destructive shock to attack enemies in front with 6084 Power added to P. Atk. Requires a two-handed sword or two-handed blunt. Over-hit and Critical are possible. -->
+		<icon>icon.skill0777</icon>
+		<operateType>A1</operateType>
+		<mpConsume>164</mpConsume>
+		<castRange>40</castRange>
+		<hitTime>1200</hitTime>
+		<effectPoint>-692</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>200</effectRange>
+		<magicLvl>81</magicLvl>
+		<affectLimit>5-12</affectLimit>
+		<reuseDelay>75000</reuseDelay>
+		<affectRange>500</affectRange>
+		<fanRange>0;0;500;60</fanRange>
+		<targetType>ENEMY</targetType>
+		<affectScope>FAN</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<conditions>
+			<condition name="Op2hWeapon">
+				<weaponType>
+					<item>SWORD</item>
+					<item>BLUNT</item>
+				</weaponType>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>6084</power>
+				<overHit>true</overHit>
+				<criticalChance>15</criticalChance>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8572" toLevel="1" name="Armor Crush">
+		<!-- Attacks the enemy with 3295 Power added to P. Atk. For 9 sec., inflicts Stun and decreases P. Def. by 30% and M. Def. by 30%. Requires a sword, blunt weapon, two-handed sword, or two-handed blunt weapon. Over-hit and Critical are possible. Ignores Shield Defense. -->
+		<icon>icon.skill0362</icon>
+		<operateType>A2</operateType>
+		<hpConsume>338</hpConsume>
+		<mpConsume>35</mpConsume>
+		<castRange>40</castRange>
+		<hitTime>1900</hitTime>
+		<coolTime>100</coolTime>
+		<reuseDelay>4000</reuseDelay>
+		<effectPoint>-507</effectPoint>
+		<abnormalType>STUN</abnormalType>
+		<basicProperty>PHYSICAL</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>400</effectRange>
+		<lvlBonusRate>10</lvlBonusRate>
+		<activateRate>40</activateRate>
+		<magicLvl>77</magicLvl>
+		<abnormalLvl>2</abnormalLvl>
+		<abnormalTime>9</abnormalTime>
+		<trait>SHOCK</trait>
+		<isDebuff>true</isDebuff>
+		<abnormalVisualEffect>STUN</abnormalVisualEffect>
+		<nextAction>ATTACK</nextAction>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="EquipWeapon">
+				<weaponType>
+					<item>BLUNT</item>
+					<item>SWORD</item>
+				</weaponType>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="BlockActions">
+				<allowedSkills>10279;10517;10025;10776;11770;1904;11264;11093;13314;1912</allowedSkills>
+			</effect>
+			<effect name="PhysicalAttack">
+				<criticalChance>20</criticalChance>
+				<overHit>true</overHit>
+				<power>3295</power>
+				<ignoreShieldDefence>true</ignoreShieldDefence>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>-30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>-30</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8573" toLevel="1" name="Soul Rage">
+		<!-- Gathers souls and attacks the enemy by hurling projectiles. Possible up to Lv. 40. Critical hit and over-hit are possible. -->
+		<icon>icon.skill0939</icon>
+		<operateType>A1</operateType>
+		<hpConsume>25</hpConsume>
+		<mpConsume>5</mpConsume>
+		<castRange>600</castRange>
+		<effectPoint>-340</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>1100</effectRange>
+		<magicLvl>78</magicLvl>
+		<hitTime>1500</hitTime>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="PhysicalAttack">
+				<criticalChance>10</criticalChance>
+				<overHit>true</overHit>
+			</effect>
+		</effects>
+		<selfEffects>
+			<effect name="FocusSouls">
+				<charge>1</charge>
+			</effect>
+		</selfEffects>
+	</skill>
+	<skill id="8574" toLevel="1" name="Enuma Elish">
+		<!-- Attacks enemies in front using the mighty Sword of Creation with 6468 Power added to P. Atk. Increases Power upon the consumption of up to 5 souls. Over-hit is possible. -->
+		<icon>icon.skill0526</icon>
+		<operateType>A1</operateType>
+		<mpConsume>80</mpConsume>
+		<castRange>40</castRange>
+		<hitTime>1080</hitTime>
+		<coolTime>720</coolTime>
+		<effectPoint>-343</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>400</effectRange>
+		<magicLvl>78</magicLvl>
+		<affectLimit>5-12</affectLimit>
+		<affectRange>400</affectRange>
+		<reuseDelay>75000</reuseDelay>
+		<soulMaxConsumeCount>5</soulMaxConsumeCount>
+		<fanRange>0;0;400;90</fanRange>
+		<targetType>ENEMY</targetType>
+		<affectScope>FAN</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<effects>
+			<effect name="PhysicalSoulAttack">
+				<power>6468</power>
+				<overHit>true</overHit>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8575" toLevel="1" name="Soul Vortex">
+		<!-- Stirs up a vortex connecting to the dimension of souls and inflicts non-attribute damage on the enemy with 112 Power added to M. Atk. For 30 sec., decreases Speed by 20%, Atk. Spd. by 30%, and Casting Spd. by 30%. Consumes 12 MP every second. Over-hit is possible. -->
+		<icon>icon.skill1512</icon>
+		<operateType>A2</operateType>
+		<mpConsume>105</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>3000</hitTime>
+		<reuseDelay>15000</reuseDelay>
+		<isMagic>1</isMagic>
+		<effectPoint>-999</effectPoint>
+		<abnormalType>MULTI_DEBUFF_SOUL</abnormalType>
+		<basicProperty>MAGIC</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>1400</effectRange>
+		<lvlBonusRate>10</lvlBonusRate>
+		<activateRate>80</activateRate>
+		<magicLvl>78</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>30</abnormalTime>
+		<isDebuff>true</isDebuff>
+		<soulMaxConsumeCount>5</soulMaxConsumeCount>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="MagicalSoulAttack">
+				<power>112</power>
+			</effect>
+			<effect name="ManaDamOverTime">
+				<power>-12</power>
+				<ticks>5</ticks>
+			</effect>
+			<effect name="Speed">
+				<amount>-20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>-30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>-30</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8576" toLevel="1" name="Soul Vortex Extinction">
+		<!-- Detonates an Soul Vortex to inflict non-attribute damage on the enemy with 195 Power added to M. Atk. Increases Power upon the consumption of up to 5 souls. -->
+		<icon>icon.skill1513</icon>
+		<operateType>A1</operateType>
+		<mpConsume>108</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>2000</hitTime>
+		<reuseDelay>15000</reuseDelay>
+		<effectPoint>-1009</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>1400</effectRange>
+		<magicLvl>79</magicLvl>
+		<isMagic>1</isMagic>
+		<soulMaxConsumeCount>5</soulMaxConsumeCount>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpCheckAbnormal">
+				<type>MULTI_DEBUFF_SOUL</type>
+				<level>1</level>
+				<hasAbnormal>true</hasAbnormal>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="DispelBySlot">
+				<dispel>MULTI_DEBUFF_SOUL,9</dispel>
+			</effect>
+			<effect name="MagicalSoulAttack">
+				<power>195</power>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8577" toLevel="1" name="Wild Shot">
+		<!-- Fires bolt at random to attack enemies in front with 6084 Power added to P. Atk. Requires a crossbow. Over-hit and Critical are possible. Increases Power upon the consumption of up to 5 souls. -->
+		<icon>icon.skill0790</icon>
+		<operateType>A1</operateType>
+		<mpConsume>123</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>3500</hitTime>
+		<coolTime>1000</coolTime>
+		<effectPoint>-692</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>1400</effectRange>
+		<magicLvl>81</magicLvl>
+		<affectLimit>5-12</affectLimit>
+		<reuseDelay>75000</reuseDelay>
+		<soulMaxConsumeCount>5</soulMaxConsumeCount>
+		<affectRange>900</affectRange>
+		<fanRange>0;0;900;40</fanRange>
+		<targetType>ENEMY</targetType>
+		<affectScope>FAN</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<conditions>
+			<condition name="EquipWeapon">
+				<weaponType>
+					<item>CROSSBOW</item>
+				</weaponType>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="PhysicalSoulAttack">
+				<power>6468</power>
+				<overHit>true</overHit>
+				<criticalChance>15</criticalChance>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8578" toLevel="1" name="Multiple Shot">
+		<!-- Attacks multiple enemies with 16667 Power added to P. Atk. Over-hit and Critical hit are possible. Requires a bow/ crossbow. -->
+		<icon>icon.skill0987</icon>
+		<operateType>A1</operateType>
+		<mpConsume>83</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>3000</hitTime>
+		<coolTime>1000</coolTime>
+		<effectPoint>-686</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>1400</effectRange>
+		<magicLvl>83</magicLvl>
+		<affectLimit>8-0-1</affectLimit>
+		<reuseDelay>12000</reuseDelay>
+		<staticReuse>true</staticReuse>
+		<affectRange>900</affectRange>
+		<fanRange>0;0;900;60</fanRange>
+		<targetType>ENEMY</targetType>
+		<affectScope>FAN</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<conditions>
+			<condition name="EquipWeapon">
+				<weaponType>
+					<item>BOW</item>
+					<item>CROSSBOW</item>
+				</weaponType>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>16667</power>
+				<overHit>true</overHit>
+				<criticalChance>15</criticalChance>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8579" toLevel="1" name="Fire Vortex">
+		<!-- Summons a dimensional vortex that inflicts Fire damage on the enemy, supplementing user's M. Atk. with 140 Power. For 30 sec., decreases Speed by 10%, Atk. Spd. by 30%, Casting Spd. by 10%, and Fire Resistance by 20. Consumes 12 MP every second. Over-hit is possible. -->
+		<icon>icon.skill1339</icon>
+		<operateType>A2</operateType>
+		<mpConsume>105</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>6000</hitTime>
+		<reuseDelay>15000</reuseDelay>
+		<isMagic>1</isMagic>
+		<effectPoint>-999</effectPoint>
+		<abnormalType>MULTI_DEBUFF_FIRE</abnormalType>
+		<basicProperty>MAGIC</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>1400</effectRange>
+		<lvlBonusRate>10</lvlBonusRate>
+		<activateRate>80</activateRate>
+		<magicLvl>77</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>30</abnormalTime>
+		<attributeType>FIRE</attributeType>
+		<attributeValue>20</attributeValue>
+		<isDebuff>true</isDebuff>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="MagicalAttack">
+				<power>140</power>
+				<overHit>true</overHit>
+			</effect>
+			<effect name="ManaDamOverTime">
+				<power>12</power>
+				<ticks>5</ticks>
+			</effect>
+			<effect name="Speed">
+				<amount>-10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>-30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>-10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>-20</amount>
+				<attribute>FIRE</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8580" toLevel="1" name="Fire Vortex Buster">
+		<!-- Detonates a Fire Vortex that inflicts Fire damage on the enemy with 195 Power added to user's M. Atk. -->
+		<icon>icon.skill1451</icon>
+		<operateType>A1</operateType>
+		<mpConsume>108</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>2000</hitTime>
+		<reuseDelay>15000</reuseDelay>
+		<effectPoint>-1009</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>1400</effectRange>
+		<magicLvl>79</magicLvl>
+		<attributeType>FIRE</attributeType>
+		<attributeValue>20</attributeValue>
+		<isMagic>1</isMagic>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpCheckAbnormal">
+				<type>MULTI_DEBUFF_FIRE</type>
+				<level>1</level>
+				<hasAbnormal>true</hasAbnormal>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="MagicalAttack">
+				<power>195</power>
+			</effect>
+			<effect name="DispelBySlot">
+				<dispel>MULTI_DEBUFF_FIRE,9</dispel>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8581" toLevel="1" name="Meteor">
+		<!-- Crashes down meteors to inflict continuous fire damage near the enemy with 117 Power added to M. Atk. -->
+		<icon>icon.skill1467</icon>
+		<operateType>CA1</operateType>
+		<mpConsume>72</mpConsume>
+		<castRange>600</castRange>
+		<hitTime>11000</hitTime>
+		<reuseDelay>900000</reuseDelay>
+		<effectPoint>-687</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>1100</effectRange>
+		<magicLvl>81</magicLvl>
+		<attributeType>FIRE</attributeType>
+		<attributeValue>20</attributeValue>
+		<affectRange>150</affectRange>
+		<channelingStart>1</channelingStart>
+		<affectLimit>10-10</affectLimit>
+		<mpPerChanneling>72</mpPerChanneling>
+		<channelingTickInterval>2</channelingTickInterval>
+		<isMagic>1</isMagic>
+		<targetType>ENEMY</targetType>
+		<affectScope>RANGE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<channelingEffects>
+			<effect name="MagicalAttack">
+				<power>117</power>
+			</effect>
+		</channelingEffects>
+	</skill>
+	<skill id="8582" toLevel="1" name="Dark Vortex">
+		<!-- Stirs up a vortex connecting to the dimension of darkness and inflicts dark damage on the enemy with 139 Power added to M. Atk. Absorbs 25% as HP. For 30 sec., decreases Accuracy by 6 and Dark Resistance by 30. Consumes 12 MP every second. -->
+		<icon>icon.skill1343</icon>
+		<operateType>A2</operateType>
+		<mpConsume>105</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>6000</hitTime>
+		<reuseDelay>15000</reuseDelay>
+		<isMagic>1</isMagic>
+		<effectPoint>-993</effectPoint>
+		<abnormalType>MULTI_DEBUFF_UNHOLY</abnormalType>
+		<basicProperty>MAGIC</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>1400</effectRange>
+		<lvlBonusRate>10</lvlBonusRate>
+		<activateRate>80</activateRate>
+		<magicLvl>76</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>30</abnormalTime>
+		<attributeType>DARK</attributeType>
+		<attributeValue>20</attributeValue>
+		<isDebuff>true</isDebuff>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="HpDrain">
+				<power>139</power>
+				<percentage>25</percentage>
+			</effect>
+			<effect name="ManaDamOverTime">
+				<power>12</power>
+				<ticks>5</ticks>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>-30</amount>
+				<attribute>DARK</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8583" toLevel="1" name="Day of Doom">
+		<!-- Creates a seal that casts a powerful curse that decreases all the abilities of nearby enemies. The seal's effect disappears upon leaving the area. Consumes 1 Magic Symbol. -->
+		<icon>icon.skill1422</icon>
+		<operateType>A1</operateType>
+		<mpConsume>74</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>5000</hitTime>
+		<reuseDelay>1800000</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>1000</effectRange>
+		<magicLvl>80</magicLvl>
+		<attributeType>FIRE</attributeType>
+		<attributeValue>20</attributeValue>
+		<staticReuse>true</staticReuse>
+		<isMagic>1</isMagic>
+		<targetType>GROUND</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpExistNpc">
+				<npcIds>
+					<item>13018</item>
+					<item>13019</item>
+					<item>13020</item>
+					<item>13021</item>
+					<item>13022</item>
+					<item>13023</item>
+					<item>13024</item>
+				</npcIds>
+				<range>200</range>
+				<isAround>false</isAround>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="DispelBySlotMyself">
+				<dispel>MAGICAL_STANCE</dispel>
+			</effect>
+			<effect name="SummonNpc">
+				<npcId>13028</npcId>
+				<npcCount>1</npcCount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8584" toLevel="1" name="Ice Vortex">
+		<!-- Stirs up a vortex connecting to the dimension of Water and inflicts Water damage on the enemy with 140 Power added to M. Atk. For 30 sec., decreases Speed by 30%, Atk. Spd. by 10%, Casting Spd. by 10%, and resistance against Water by 20. Consumes 12 MP every second. Over-hit is possible. -->
+		<icon>icon.skill1340</icon>
+		<operateType>A2</operateType>
+		<mpConsume>105</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>6000</hitTime>
+		<reuseDelay>15000</reuseDelay>
+		<isMagic>1</isMagic>
+		<effectPoint>-999</effectPoint>
+		<abnormalType>MULTI_DEBUFF_WATER</abnormalType>
+		<basicProperty>MAGIC</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>1400</effectRange>
+		<lvlBonusRate>10</lvlBonusRate>
+		<activateRate>80</activateRate>
+		<magicLvl>77</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>30</abnormalTime>
+		<attributeType>WATER</attributeType>
+		<attributeValue>20</attributeValue>
+		<isDebuff>true</isDebuff>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="MagicalAttack">
+				<power>140</power>
+				<overHit>true</overHit>
+			</effect>
+			<effect name="ManaDamOverTime">
+				<power>12</power>
+				<ticks>5</ticks>
+			</effect>
+			<effect name="Speed">
+				<amount>-30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>-10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>-10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>-20</amount>
+				<attribute>WATER</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8585" toLevel="1" name="Ice Vortex Crusher">
+		<!-- Detonates an Ice Vortex that inflicts Water damage on the enemy with 195 Power added to user's M. Atk. -->
+		<icon>icon.skill1453</icon>
+		<operateType>A1</operateType>
+		<mpConsume>108</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>2000</hitTime>
+		<reuseDelay>15000</reuseDelay>
+		<effectPoint>-1009</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>1400</effectRange>
+		<magicLvl>79</magicLvl>
+		<attributeType>WATER</attributeType>
+		<attributeValue>20</attributeValue>
+		<isMagic>1</isMagic>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpCheckAbnormal">
+				<type>MULTI_DEBUFF_WATER</type>
+				<level>1</level>
+				<hasAbnormal>true</hasAbnormal>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="MagicalAttack">
+				<power>195</power>
+			</effect>
+			<effect name="DispelBySlot">
+				<dispel>MULTI_DEBUFF_WATER,9</dispel>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8586" toLevel="1" name="Star Fall">
+		<!-- Crashes down meteors to inflict continuous non-type damage near the enemy with 117 Power added to M. Atk. -->
+		<icon>icon.skill1468</icon>
+		<operateType>CA1</operateType>
+		<mpConsume>72</mpConsume>
+		<castRange>600</castRange>
+		<hitTime>11000</hitTime>
+		<reuseDelay>900000</reuseDelay>
+		<effectPoint>-687</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>1100</effectRange>
+		<magicLvl>81</magicLvl>
+		<affectRange>150</affectRange>
+		<channelingStart>1</channelingStart>
+		<affectLimit>10-10</affectLimit>
+		<mpPerChanneling>72</mpPerChanneling>
+		<channelingTickInterval>2</channelingTickInterval>
+		<isMagic>1</isMagic>
+		<targetType>ENEMY</targetType>
+		<affectScope>RANGE</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<channelingEffects>
+			<effect name="MagicalAttack">
+				<power>117</power>
+			</effect>
+		</channelingEffects>
+	</skill>
+	<skill id="8587" toLevel="1" name="Wind Vortex">
+		<!-- Stirs up a vortex connecting to the dimension of Wind and inflicts Wind damage on the enemy with 140 Power added to M. Atk. For 30 sec., decreases Speed by 10%, Atk. Spd. by 10%, Casting Spd. by 30%, and resistance against Wind by 20. Consumes 12 MP every second. Over-hit is possible. -->
+		<icon>icon.skill1341</icon>
+		<operateType>A2</operateType>
+		<mpConsume>105</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>6000</hitTime>
+		<reuseDelay>15000</reuseDelay>
+		<isMagic>1</isMagic>
+		<effectPoint>-999</effectPoint>
+		<abnormalType>MULTI_DEBUFF_WIND</abnormalType>
+		<basicProperty>MAGIC</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>1400</effectRange>
+		<lvlBonusRate>10</lvlBonusRate>
+		<activateRate>80</activateRate>
+		<magicLvl>77</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>30</abnormalTime>
+		<attributeType>WIND</attributeType>
+		<attributeValue>20</attributeValue>
+		<isDebuff>true</isDebuff>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="MagicalAttack">
+				<power>140</power>
+				<overHit>true</overHit>
+			</effect>
+			<effect name="ManaDamOverTime">
+				<power>12</power>
+				<ticks>5</ticks>
+			</effect>
+			<effect name="Speed">
+				<amount>-10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>-10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>-30</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>-20</amount>
+				<attribute>WIND</attribute>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8588" toLevel="1" name="Wind Vortex Slug">
+		<!-- Creates a powerful Wind Vortex that inflicts Wind damage on the enemy with 195 Power added to user's M. Atk. -->
+		<icon>icon.skill1456</icon>
+		<operateType>A1</operateType>
+		<mpConsume>108</mpConsume>
+		<castRange>900</castRange>
+		<hitTime>2000</hitTime>
+		<reuseDelay>15000</reuseDelay>
+		<effectPoint>-1009</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>1400</effectRange>
+		<magicLvl>79</magicLvl>
+		<attributeType>WIND</attributeType>
+		<attributeValue>20</attributeValue>
+		<isMagic>1</isMagic>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpCheckAbnormal">
+				<type>MULTI_DEBUFF_WIND</type>
+				<level>1</level>
+				<hasAbnormal>true</hasAbnormal>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="MagicalAttack">
+				<power>195</power>
+			</effect>
+			<effect name="DispelBySlot">
+				<dispel>MULTI_DEBUFF_WIND,9</dispel>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8589" toLevel="1" name="Summon Feline King">
+		<!-- Summon the servitor Feline King. Requires 4 Spirit Ore and consumes 11 Spirit Ore at regular intervals up to 14 times. -->
+		<icon>icon.skill1406</icon>
+		<operateType>A1</operateType>
+		<mpConsume>60</mpConsume>
+		<hitTime>15000</hitTime>
+		<reuseDelay>5000</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>79</magicLvl>
+		<isMagic>1</isMagic>
+		<itemConsumeCount>4</itemConsumeCount>
+		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CanSummon" />
+		</conditions>
+		<effects>
+			<effect name="Summon">
+				<!-- Spirit Ore -->
+				<npcId>14836</npcId> <!-- Feline King -->
+				<lifeTime>3600</lifeTime>
+				<consumeItemId>3031</consumeItemId> <!-- Spirit Ore -->
+				<consumeItemCount>11</consumeItemCount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8590" toLevel="1" name="Final Servitor">
+		<!-- For 5 min., causes the servitor to be possessed with the spirit of an ancient hero, instantly recovering 20% of HP. Increases Max HP by 20%, Accuracy by 4, P. Atk. by 10%, P. Def. by 20%, Atk. Spd. by 20%, Critical Rate by 20%, Critical Damage by 20%, M. Def. by 20%, M. Atk. by 20%, Casting Spd. by 20%, and Debuff Resistance by 20. Decreases Speed by 20%. Consumes 20 Spirit Ore. -->
+		<icon>icon.skill1349</icon>
+		<operateType>A2</operateType>
+		<mpConsume>72</mpConsume>
+		<castRange>400</castRange>
+		<hitTime>4000</hitTime>
+		<reuseDelay>60000</reuseDelay>
+		<effectPoint>669</effectPoint>
+		<abnormalType>MULTI_BUFF</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>900</effectRange>
+		<magicLvl>78</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>300</abnormalTime>
+		<isMagic>1</isMagic>
+		<itemConsumeCount>20</itemConsumeCount>
+		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
+		<targetType>SUMMON</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="MaxHp">
+				<amount>20</amount>
+				<mode>PER</mode>
+				<heal>true</heal>
+			</effect>
+			<effect name="PAtk">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Speed">
+				<amount>-20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Accuracy">
+				<amount>4</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="CriticalDamage">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="ResistAbnormalByCategory">
+				<amount>-20</amount>
+				<slot>DEBUFF</slot>
+			</effect>
+			<effect name="CriticalRate">
+				<amount>120</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8591" toLevel="1" name="Summon Magnus the Unicorn">
+		<!-- Summons Magnus the Unicorn. Requires 4 Spirit Ore and additionally consumes 11 Spirit Ore up to 14 times. -->
+		<icon>icon.skill1407</icon>
+		<operateType>A1</operateType>
+		<mpConsume>60</mpConsume>
+		<hitTime>15000</hitTime>
+		<reuseDelay>5000</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>79</magicLvl>
+		<isMagic>1</isMagic>
+		<itemConsumeCount>4</itemConsumeCount>
+		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CanSummon" />
+		</conditions>
+		<effects>
+			<effect name="Summon">
+				<npcId>14837</npcId> <!-- Magnus the Unicorn -->
+				<lifeTime>3600</lifeTime>
+				<consumeItemId>3031</consumeItemId> <!-- Spirit Ore -->
+				<consumeItemCount>11</consumeItemCount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8592" toLevel="1" name="Summon Spectral Lord">
+		<!-- Summon the servitor Spectral Lord. Requires 4 Spirit Ore and consumes 11 Spirit Ore at regular intervals up to 14 times. -->
+		<icon>icon.skill1408</icon>
+		<operateType>A1</operateType>
+		<mpConsume>60</mpConsume>
+		<hitTime>15000</hitTime>
+		<reuseDelay>5000</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>79</magicLvl>
+		<isMagic>1</isMagic>
+		<itemConsumeCount>4</itemConsumeCount>
+		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CanSummon" />
+		</conditions>
+		<effects>
+			<effect name="Summon">
+				<npcId>14838</npcId> <!-- Spectral Lord -->
+				<lifeTime>3600</lifeTime>
+				<consumeItemId>3031</consumeItemId> <!-- Spirit Ore -->
+				<consumeItemCount>11</consumeItemCount>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8593" toLevel="1" name="Servitor Barrier">
+		<!-- Momentarily makes the servitor invincible. Consumes 5 Spirit Ore. -->
+		<icon>icon.skill1496</icon>
+		<operateType>A2</operateType>
+		<mpConsume>73</mpConsume>
+		<castRange>400</castRange>
+		<hitTime>2500</hitTime>
+		<reuseDelay>300000</reuseDelay>
+		<effectPoint>669</effectPoint>
+		<abnormalType>INVINCIBILITY</abnormalType>
+		<abnormalVisualEffect>INVINCIBILITY</abnormalVisualEffect>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>900</effectRange>
+		<magicLvl>81</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>30</abnormalTime>
+		<isMagic>1</isMagic>
+		<removedOnAnyActionExceptMove>true</removedOnAnyActionExceptMove>
+		<itemConsumeCount>5</itemConsumeCount>
+		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
+		<targetType>SUMMON</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="DamageBlock">
+				<type>BLOCK_HP</type>
+			</effect>
+			<effect name="DamageBlock">
+				<type>BLOCK_MP</type>
+			</effect>
+			<effect name="DebuffBlock" />
+			<effect name="ResistDispelByCategory">
+				<amount>-100</amount>
+				<slot>ALL</slot>
+			</effect>
+			<effect name="ResistAbnormalByCategory">
+				<amount>-100</amount>
+				<slot>DEBUFF</slot>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8594" toLevel="1" name="Cleanse">
+		<!-- Cancels the target's debuffs. Consumes 1 Einhasad's Holy Water. -->
+		<icon>icon.skill1409</icon>
+		<operateType>A1</operateType>
+		<mpConsume>59</mpConsume>
+		<castRange>600</castRange>
+		<hitTime>4000</hitTime>
+		<reuseDelay>8000</reuseDelay>
+		<effectPoint>679</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>1100</effectRange>
+		<magicLvl>78</magicLvl>
+		<isMagic>1</isMagic>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>8874</itemConsumeId> <!-- Einhasad's Holy Water -->
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="DispelByCategory">
+				<slot>DEBUFF</slot>
+				<rate>100</rate>
+				<max>10</max>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8595" toLevel="1" name="Prophecy of Water">
+		<!-- For 5 min., a powerful spirit acts to increase the damage caused by the targeted party member's magic damage by 2, MP Recovery Bonus by 20%, P. Atk. by 10%, P. Def. by 20%, Atk. Spd. by 20%, M. Atk. by 20%, M. Def. by 20%, Casting Spd. by 20%, and Debuff Resistance by 10%. Decreases Speed by 20% and MP Consumption for skill use by 5%. Consumes 10 Spirit Ore. -->
+		<icon>icon.skill1355</icon>
+		<operateType>A2</operateType>
+		<mpConsume>72</mpConsume>
+		<castRange>400</castRange>
+		<hitTime>4000</hitTime>
+		<reuseDelay>4000</reuseDelay>
+		<effectPoint>669</effectPoint>
+		<abnormalType>MULTI_BUFF</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>600</effectRange>
+		<magicLvl>78</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>300</abnormalTime>
+		<isMagic>1</isMagic>
+		<itemConsumeCount>10</itemConsumeCount>
+		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="TargetMyParty">
+				<includeMe>true</includeMe>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="DispelBySlotProbability">
+				<dispel>BUFF_SPECIAL_ATTACK;BUFF_SPECIAL_CRITICAL;BUFF_SPECIAL_CONDITION;BUFF_SPECIAL_MOVE;BUFF_SPECIAL_CLASS</dispel>
+				<rate>100</rate>
+			</effect>
+			<effect name="BlockAbnormalSlot">
+				<slot>BUFF_SPECIAL_ATTACK;BUFF_SPECIAL_CRITICAL;BUFF_SPECIAL_CONDITION;BUFF_SPECIAL_MOVE;BUFF_SPECIAL_CLASS</slot>
+			</effect>
+			<effect name="PAtk">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Speed">
+				<amount>-20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MpRegen">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="ResistAbnormalByCategory">
+				<amount>-10</amount>
+				<slot>DEBUFF</slot>
+			</effect>
+			<effect name="MagicCriticalRate">
+				<amount>2</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicMpCost">
+				<amount>-5</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+			<effect name="MagicMpCost">
+				<amount>-5</amount>
+				<mode>PER</mode>
+				<magicType>0</magicType>
+			</effect>
+			<effect name="MagicMpCost">
+				<amount>-5</amount>
+				<mode>PER</mode>
+				<magicType>3</magicType>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8596" toLevel="1" name="Prophecy of Wind">
+		<!-- For 5 min., a powerful spirit acts to increase a party member's Max HP by 20%, rate of critical attack by 20%, magic damage's Critical Rate by 20%, P. Atk. by 10%, P. Def. by 20%, Atk. Spd. by 20%, M. Atk. by 20%, M. Def. by 20%, Casting Spd. by 20%, and Debuff Resistance by 10%. Decreases Speed by 20%. Restores HP by using 5% of the damage inflicted upon the enemy with a certain probability. Consumes 10 Spirit Ore. -->
+		<icon>icon.skill1357</icon>
+		<operateType>A2</operateType>
+		<mpConsume>72</mpConsume>
+		<castRange>400</castRange>
+		<hitTime>4000</hitTime>
+		<reuseDelay>4000</reuseDelay>
+		<effectPoint>669</effectPoint>
+		<abnormalType>MULTI_BUFF</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>600</effectRange>
+		<magicLvl>78</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>300</abnormalTime>
+		<isMagic>1</isMagic>
+		<itemConsumeCount>10</itemConsumeCount>
+		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="TargetMyParty">
+				<includeMe>true</includeMe>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="DispelBySlotProbability">
+				<dispel>BUFF_SPECIAL_ATTACK;BUFF_SPECIAL_CRITICAL;BUFF_SPECIAL_CONDITION;BUFF_SPECIAL_MOVE;BUFF_SPECIAL_CLASS</dispel>
+				<rate>100</rate>
+			</effect>
+			<effect name="BlockAbnormalSlot">
+				<slot>BUFF_SPECIAL_ATTACK;BUFF_SPECIAL_CRITICAL;BUFF_SPECIAL_CONDITION;BUFF_SPECIAL_MOVE;BUFF_SPECIAL_CLASS</slot>
+			</effect>
+			<effect name="MaxHp">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="VampiricAttack">
+				<amount>5</amount>
+				<chance>30</chance>
+			</effect>
+			<effect name="PAtk">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="Speed">
+				<amount>-20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="ResistAbnormalByCategory">
+				<amount>-10</amount>
+				<slot>DEBUFF</slot>
+			</effect>
+			<effect name="CriticalRate">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicCriticalDamage">
+				<amount>20</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8597" toLevel="1" name="Dance of Siren">
+		<!-- Increases the Critical Rate of all party members' damage attack magic by 100% for 2 min. Additionally increases MP Consumption when dancing while song/ dance is in effect. Requires a dual sword. -->
+		<icon>icon.skill0365</icon>
+		<operateType>A2</operateType>
+		<mpConsume>60</mpConsume>
+		<hitTime>2500</hitTime>
+		<reuseDelay>3000</reuseDelay>
+		<effectPoint>2</effectPoint>
+		<abnormalType>DANCE_OF_SIREN</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLvl>78</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>120</abnormalTime>
+		<affectRange>1000</affectRange>
+		<isMagic>3</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<conditions>
+			<condition name="EquipWeapon">
+				<weaponType>
+					<item>DUAL</item>
+					<item>DUALBLUNT</item>
+				</weaponType>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="MagicCriticalRate">
+				<amount>100</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="8598" toLevel="1" name="Song of Silence">
+		<!-- Weaves a mystical song that blocks all the enemy's physical and magic skills for 2 min. -->
+		<icon>icon.skill0437</icon>
+		<operateType>A2</operateType>
+		<mpConsume>54</mpConsume>
+		<hitTime>2500</hitTime>
+		<reuseDelay>150000</reuseDelay>
+		<effectPoint>-2</effectPoint>
+		<abnormalType>SILENCE_ALL</abnormalType>
+		<abnormalVisualEffect>SILENCE</abnormalVisualEffect>
+		<basicProperty>MAGIC</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<lvlBonusRate>10</lvlBonusRate>
+		<activateRate>60</activateRate>
+		<magicLvl>79</magicLvl>
+		<abnormalLvl>1</abnormalLvl>
+		<abnormalTime>120</abnormalTime>
+		<trait>DERANGEMENT</trait>
+		<affectRange>150</affectRange>
+		<affectLimit>10-10</affectLimit>
+		<isDebuff>true</isDebuff>
+		<targetType>SELF</targetType>
+		<affectScope>POINT_BLANK</affectScope>
+		<affectObject>NOT_FRIEND</affectObject>
+		<effects>
+			<effect name="Mute" />
+			<effect name="PhysicalMute" />
+		</effects>
+	</skill>
+	<skill id="8599" toLevel="1" name="Chain Heal">
+		<!-- Recovers the target and the 10 most injured allies around the target by 30% of their Max HP. The recovery amount decreases starting from the most injured person. Requires 4 Spirit Ore. -->
+		<icon>icon.skill1553</icon>
+		<operateType>A1</operateType>
+		<mpConsume>155</mpConsume>
+		<mpInitialConsume>39</mpInitialConsume>
+		<castRange>900</castRange>
+		<hitTime>3000</hitTime>
+		<reuseDelay>5000</reuseDelay>
+		<effectPoint>2</effectPoint>
+		<magicCriticalRate>5</magicCriticalRate>
+		<effectRange>1400</effectRange>
+		<magicLvl>83</magicLvl>
+		<affectRange>300</affectRange>
+		<affectLimit>9-0</affectLimit>
+		<isMagic>1</isMagic>
+		<itemConsumeCount>4</itemConsumeCount>
+		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
+		<targetType>ENEMY_NOT</targetType>
+		<affectScope>RANGE_SORT_BY_HP</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<effects>
+			<effect name="HealPercent">
+				<power>30</power>
+			</effect>
+		</effects>
+	</skill>
+</list>

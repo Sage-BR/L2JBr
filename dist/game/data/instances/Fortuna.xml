@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Fortuna -->
+<instance id="179" maxWorlds="20" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/instance.xsd">
+	<time duration="60" empty="0" />
+	<locations>
+		<enter type="FIXED">
+			<location x="42104" y="-172712" z="-7980" />
+		</enter>
+		<exit type="ORIGIN" />
+	</locations>
+	<conditions>
+		<condition type="Party" showMessageAndHtml="true">
+			<param name="html" value="32894-4.htm" />
+		</condition>
+		<condition type="PartyLeader" showMessageAndHtml="true">
+			<param name="html" value="32894-4.htm" />
+		</condition>
+		<condition type="GroupMin">
+			<param name="limit" value="7" />
+		</condition>
+		<condition type="GroupMax">
+			<param name="limit" value="7" />
+		</condition>
+		<condition type="Level" showMessageAndHtml="true">
+			<param name="min" value="90" />
+			<param name="max" value="95" />
+			<param name="html" value="32894-3.htm" />
+		</condition>
+		<condition type="Distance" showMessageAndHtml="true">
+			<param name="html" value="32894-5.htm" />
+		</condition>
+		<condition type="Reenter" showMessageAndHtml="true">
+			<param name="html" value="32894-5.htm" />
+		</condition>
+	</conditions>
+	<reenter apply="ON_FINISH">
+		<reset day="MONDAY" hour="6" minute="30" />
+		<reset day="TUESDAY" hour="6" minute="30" />
+		<reset day="WEDNESDAY" hour="6" minute="30" />
+		<reset day="THURSDAY" hour="6" minute="30" />
+		<reset day="FRIDAY" hour="6" minute="30" />
+		<reset day="SATURDAY" hour="6" minute="30" />
+		<reset day="SUNDAY" hour="6" minute="30" />
+	</reenter>
+	<doorlist>
+		<door id="21120001">
+			<openStatus default="open" />
+		</door>
+	</doorlist>
+	<spawnlist>
+		<group>
+			<npc id="33153" x="42010" y="-173006" z="-7953" heading="14750" /> <!-- Izael -->
+		</group>
+		<group name="fortuna_1" spawnByDefault="false"> <!-- Stage 1 -->
+			<npc id="23077" x="42838" y="-175616" z="-7950" heading="17654" /> <!-- Nameless Lunacy -->
+			<npc id="23077" x="41383" y="-175381" z="-7950" heading="26934" /> <!-- Nameless Lunacy -->
+		</group>
+		<group name="fortuna_2" spawnByDefault="false"> <!-- Stage 1 -->
+			<npc id="23077" x="42110" y="-176730" z="-7950" heading="14684" /> <!-- Nameless Lunacy -->
+			<npc id="23077" x="42098" y="-176803" z="-7950" heading="52322" /> <!-- Nameless Lunacy -->
+			<npc id="23077" x="41749" y="-175617" z="-7950" heading="60459" /> <!-- Nameless Lunacy -->
+			<npc id="23077" x="41346" y="-175619" z="-7950" heading="46615" /> <!-- Nameless Lunacy -->
+		</group>
+		<group name="fortuna_3" spawnByDefault="false"> <!-- Stage 1 -->
+			<npc id="23077" x="41383" y="-175381" z="-7950" heading="26934" /> <!-- Nameless Lunacy -->
+			<npc id="23077" x="42102" y="-176794" z="-7950" heading="38674" /> <!-- Nameless Lunacy -->
+			<npc id="23077" x="42103" y="-176732" z="-7950" heading="16215" /> <!-- Nameless Lunacy -->
+			<npc id="23077" x="42101" y="-176669" z="-7950" heading="384" /> <!-- Nameless Lunacy -->
+		</group>
+		<group name="fortuna_4" spawnByDefault="false"> <!-- Stage 2 -->
+			<npc id="23076" x="42794" y="-175798" z="-7950" heading="31536" /> <!-- Restrained Soldier -->
+			<npc id="23076" x="41370" y="-175627" z="-7950" heading="65327" /> <!-- Restrained Soldier -->
+			<npc id="23077" x="41755" y="-175818" z="-7955" heading="26934" /> <!-- Nameless Lunacy -->
+			<npc id="23077" x="41863" y="-175817" z="-7949" heading="10334" /> <!-- Nameless Lunacy -->
+		</group>
+		<group name="fortuna_5" spawnByDefault="false"> <!-- Stage 2 -->
+			<npc id="23076" x="42158" y="-174730" z="-7950" heading="39326" /> <!-- Restrained Soldier -->
+			<npc id="23076" x="41914" y="-176242" z="-7955" heading="60207" /> <!-- Restrained Soldier -->
+			<npc id="23077" x="41715" y="-175709" z="-7951" heading="64680" /> <!-- Nameless Lunacy -->
+			<npc id="23077" x="41833" y="-175590" z="-7950" heading="30475" /> <!-- Nameless Lunacy -->
+			<npc id="23077" x="41694" y="-175526" z="-7950" heading="48145" /> <!-- Nameless Lunacy -->
+		</group>
+		<group name="fortuna_6" spawnByDefault="false"> <!-- Stage 3 -->
+			<npc id="23076" x="42780" y="-175627" z="-7950" heading="33790" /> <!-- Restrained Soldier -->
+			<npc id="23076" x="42841" y="-175621" z="-7950" heading="32351" /> <!-- Restrained Soldier -->
+			<npc id="23076" x="41290" y="-175612" z="-7950" heading="63219" /> <!-- Restrained Soldier -->
+			<npc id="23076" x="41432" y="-175612" z="-7950" heading="3140" /> <!-- Restrained Soldier -->
+			<npc id="23076" x="42102" y="-176798" z="-7950" heading="16954" /> <!-- Restrained Soldier -->
+		</group>
+		<group name="fortuna_7" spawnByDefault="false"> <!-- Stage 3 -->
+			<npc id="23076" x="42780" y="-175627" z="-7950" heading="33790" /> <!-- Restrained Soldier -->
+			<npc id="23076" x="42841" y="-175621" z="-7950" heading="32351" /> <!-- Restrained Soldier -->
+			<npc id="23076" x="41290" y="-175612" z="-7950" heading="63219" /> <!-- Restrained Soldier -->
+			<npc id="23076" x="41432" y="-175612" z="-7950" heading="3140" /> <!-- Restrained Soldier -->
+			<npc id="23076" x="42102" y="-176798" z="-7950" heading="16954" /> <!-- Restrained Soldier -->
+			<npc id="23077" x="41833" y="-175590" z="-7950" heading="30475" /> <!-- Nameless Lunacy -->
+			<npc id="23077" x="41694" y="-175526" z="-7950" heading="48145" /> <!-- Nameless Lunacy -->
+		</group>
+		<group name="fortuna_8" spawnByDefault="false"> <!-- Stage 3 -->
+			<npc id="23076" x="42158" y="-174730" z="-7950" heading="39326" /> <!-- Restrained Soldier -->
+			<npc id="23076" x="41914" y="-176242" z="-7955" heading="60207" /> <!-- Restrained Soldier -->
+			<npc id="23076" x="41290" y="-175612" z="-7950" heading="63219" /> <!-- Restrained Soldier -->
+			<npc id="23076" x="41432" y="-175612" z="-7950" heading="3140" /> <!-- Restrained Soldier -->
+			<npc id="23076" x="41432" y="-175612" z="-7950" heading="3140" /> <!-- Restrained Soldier -->
+			<npc id="23076" x="42794" y="-175798" z="-7950" heading="31536" /> <!-- Restrained Soldier -->
+			<npc id="23076" x="41370" y="-175627" z="-7950" heading="65327" /> <!-- Restrained Soldier -->
+			<npc id="23077" x="41755" y="-175818" z="-7955" heading="26934" /> <!-- Nameless Lunacy -->
+			<npc id="23077" x="41863" y="-175817" z="-7949" heading="10334" /> <!-- Nameless Lunacy -->
+		</group>
+		<group name="fortuna_9" spawnByDefault="false"> <!-- Stage 3 -->
+			<npc id="23077" x="42158" y="-174730" z="-7950" heading="39326" /> <!-- Nameless Lunacy -->
+			<npc id="23077" x="41914" y="-176242" z="-7955" heading="60207" /> <!-- Nameless Lunacy -->
+			<npc id="23077" x="41290" y="-175612" z="-7950" heading="63219" /> <!-- Nameless Lunacy -->
+			<npc id="23077" x="41432" y="-175612" z="-7950" heading="3140" /> <!-- Nameless Lunacy -->
+			<npc id="23077" x="41432" y="-175612" z="-7950" heading="3140" /> <!-- Nameless Lunacy -->
+			<npc id="23077" x="42794" y="-175798" z="-7950" heading="31536" /> <!-- Nameless Lunacy -->
+			<npc id="23077" x="41370" y="-175627" z="-7950" heading="65327" /> <!-- Nameless Lunacy -->
+			<npc id="23077" x="41755" y="-175818" z="-7955" heading="26934" /> <!-- Nameless Lunacy -->
+			<npc id="23077" x="41863" y="-175817" z="-7949" heading="10334" /> <!-- Nameless Lunacy -->
+		</group>
+		<group name="fortuna_10" spawnByDefault="false"> <!-- First Raid Boss -->
+			<npc id="25837" x="42104" y="-175320" z="-7974" heading="26675" /> <!-- Weeping Yul -->
+		</group>
+		<group name="fortuna_11" spawnByDefault="false"> <!-- Stage 4 -->
+			<npc id="23076" x="42780" y="-175627" z="-7950" heading="33790" /> <!-- Restrained Soldier -->
+			<npc id="23076" x="42841" y="-175621" z="-7950" heading="32351" /> <!-- Restrained Soldier -->
+			<npc id="23076" x="41290" y="-175612" z="-7950" heading="63219" /> <!-- Restrained Soldier -->
+			<npc id="23076" x="41432" y="-175612" z="-7950" heading="3140" /> <!-- Restrained Soldier -->
+			<npc id="23076" x="42102" y="-176798" z="-7950" heading="16954" /> <!-- Restrained Soldier -->
+			<npc id="23076" x="42716" y="-175480" z="-7955" heading="30164" /> <!-- Restrained Soldier -->
+			<npc id="23076" x="42664" y="-175691" z="-7955" heading="4277" /> <!-- Restrained Soldier -->
+			<npc id="23077" x="42823" y="-175643" z="-7950" heading="12964" /> <!-- Nameless Lunacy -->
+			<npc id="23077" x="42611" y="-175755" z="-7955" heading="24649" /> <!-- Nameless Lunacy -->
+			<npc id="23077" x="42731" y="-175737" z="-7955" heading="54441" /> <!-- Nameless Lunacy -->
+		</group>
+		<group name="fortuna_12" spawnByDefault="false"> <!-- Stage 4 -->
+			<npc id="23076" x="42852" y="-175606" z="-7950" heading="30402" /> <!-- Restrained Soldier -->
+			<npc id="23076" x="42774" y="-175603" z="-7950" heading="39557" /> <!-- Restrained Soldier -->
+			<npc id="23076" x="42105" y="-176477" z="-7950" heading="48297" /> <!-- Restrained Soldier -->
+			<npc id="23076" x="42115" y="-176619" z="-7950" heading="37861" /> <!-- Restrained Soldier -->
+			<npc id="23076" x="42116" y="-176713" z="-7950" heading="24272" /> <!-- Restrained Soldier -->
+			<npc id="23076" x="41408" y="-175607" z="-7950" heading="37604" /> <!-- Restrained Soldier -->
+			<npc id="23076" x="41513" y="-175589" z="-7950" heading="57592" /> <!-- Restrained Soldier -->
+			<npc id="23076" x="41327" y="-175611" z="-7950" heading="27353" /> <!-- Restrained Soldier -->
+		</group>
+		<group name="fortuna_13" spawnByDefault="false"> <!-- Stage 4 -->
+			<npc id="23076" x="42271" y="-175397" z="-7949" heading="59402" /> <!-- Restrained Soldier -->
+			<npc id="23078" x="42443" y="-175324" z="-7955" heading="62434" /> <!-- Restrained Wizard -->
+			<npc id="23081" x="42265" y="-174822" z="-7955" heading="23205" /> <!-- Restrained Vampire -->
+			<npc id="23078" x="41623" y="-175697" z="-7950" heading="19950" /> <!-- Restrained Wizard -->
+			<npc id="23078" x="41831" y="-175335" z="-7955" heading="41186" /> <!-- Restrained Wizard -->
+			<npc id="23081" x="42084" y="-176275" z="-7950" heading="57600" /> <!-- Restrained Vampire -->
+			<npc id="23076" x="42198" y="-176171" z="-7951" heading="12381" /> <!-- Restrained Soldier -->
+			<npc id="23078" x="42604" y="-175875" z="-7955" heading="26581" /> <!-- Restrained Wizard -->
+			<npc id="23076" x="42665" y="-175604" z="-7950" heading="48066" /> <!-- Restrained Soldier -->
+			<npc id="23078" x="42355" y="-175830" z="-7949" heading="59416" /> <!-- Restrained Wizard -->
+			<npc id="23078" x="42422" y="-175601" z="-7950" heading="64381" /> <!-- Restrained Wizard -->
+		</group>
+		<group name="fortuna_14" spawnByDefault="false"> <!-- Stage 4 -->
+			<npc id="23077" x="42271" y="-175397" z="-7949" heading="59402" /> <!-- Nameless Lunacy -->
+			<npc id="23078" x="42443" y="-175324" z="-7955" heading="62434" /> <!-- Restrained Wizard -->
+			<npc id="23081" x="42084" y="-176275" z="-7950" heading="57600" /> <!-- Restrained Vampire -->
+			<npc id="23076" x="42198" y="-176171" z="-7951" heading="12381" /> <!-- Nameless Lunacy -->
+			<npc id="23078" x="42604" y="-175875" z="-7955" heading="26581" /> <!-- Restrained Wizard -->
+			<npc id="23076" x="42665" y="-175604" z="-7950" heading="48066" /> <!-- Nameless Lunacy -->
+			<npc id="23078" x="42355" y="-175830" z="-7949" heading="59416" /> <!-- Restrained Wizard -->
+			<npc id="23077" x="42611" y="-175755" z="-7955" heading="24649" /> <!-- Nameless Lunacy -->
+			<npc id="23077" x="42731" y="-175737" z="-7955" heading="54441" /> <!-- Nameless Lunacy -->
+			<npc id="23076" x="42115" y="-176619" z="-7950" heading="37861" /> <!-- Restrained Soldier -->
+			<npc id="23076" x="42116" y="-176713" z="-7950" heading="24272" /> <!-- Restrained Soldier -->
+			<npc id="23081" x="42084" y="-176275" z="-7950" heading="57600" /> <!-- Restrained Vampire -->
+			<npc id="23076" x="41327" y="-175611" z="-7950" heading="27353" /> <!-- Restrained Soldier -->
+		</group>
+		<group name="fortuna_15" spawnByDefault="false"> <!-- Second Raid Boss -->
+			<npc id="25840" x="42104" y="-175320" z="-7974" heading="26675" /> <!-- Enraged Master Kinen -->
+		</group>
+		<group name="fortuna_16" spawnByDefault="false"> <!-- Stage 5 -->
+			<npc id="23076" x="42852" y="-175606" z="-7950" heading="30402" /> <!-- Restrained Soldier -->
+			<npc id="23076" x="42774" y="-175603" z="-7950" heading="39557" /> <!-- Restrained Soldier -->
+			<npc id="23076" x="42105" y="-176477" z="-7950" heading="48297" /> <!-- Restrained Soldier -->
+			<npc id="23076" x="42115" y="-176619" z="-7950" heading="37861" /> <!-- Restrained Soldier -->
+			<npc id="23076" x="42116" y="-176713" z="-7950" heading="24272" /> <!-- Restrained Soldier -->
+			<npc id="23076" x="41408" y="-175607" z="-7950" heading="37604" /> <!-- Restrained Soldier -->
+			<npc id="23076" x="41513" y="-175589" z="-7950" heading="57592" /> <!-- Restrained Soldier -->
+			<npc id="23076" x="41327" y="-175611" z="-7950" heading="27353" /> <!-- Restrained Soldier -->
+			<npc id="23076" x="42780" y="-175627" z="-7950" heading="33790" /> <!-- Restrained Soldier -->
+			<npc id="23076" x="42841" y="-175621" z="-7950" heading="32351" /> <!-- Restrained Soldier -->
+			<npc id="23076" x="41290" y="-175612" z="-7950" heading="63219" /> <!-- Restrained Soldier -->
+			<npc id="23078" x="42443" y="-175324" z="-7955" heading="62434" /> <!-- Restrained Wizard -->
+			<npc id="23078" x="42355" y="-175830" z="-7949" heading="59416" /> <!-- Restrained Wizard -->
+			<npc id="23078" x="42604" y="-175875" z="-7955" heading="26581" /> <!-- Restrained Wizard -->
+			<npc id="23078" x="41623" y="-175697" z="-7950" heading="19950" /> <!-- Restrained Wizard -->
+		</group>
+		<group name="fortuna_17" spawnByDefault="false"> <!-- Stage 5 -->
+			<npc id="23076" x="42665" y="-175604" z="-7950" heading="48066" /> <!-- Nameless Lunacy -->
+			<npc id="23077" x="42611" y="-175755" z="-7955" heading="24649" /> <!-- Nameless Lunacy -->
+			<npc id="23077" x="42731" y="-175737" z="-7955" heading="54441" /> <!-- Nameless Lunacy -->
+			<npc id="23077" x="42823" y="-175643" z="-7950" heading="12964" /> <!-- Nameless Lunacy -->
+			<npc id="23077" x="42611" y="-175755" z="-7955" heading="24649" /> <!-- Nameless Lunacy -->
+			<npc id="23077" x="42731" y="-175737" z="-7955" heading="54441" /> <!-- Nameless Lunacy -->
+			<npc id="23077" x="41432" y="-175612" z="-7950" heading="3140" /> <!-- Nameless Lunacy -->
+			<npc id="23077" x="42794" y="-175798" z="-7950" heading="31536" /> <!-- Nameless Lunacy -->
+		</group>
+		<group name="fortuna_18" spawnByDefault="false"> <!-- Third Raid Boss -->
+			<npc id="25843" x="42104" y="-175320" z="-7974" heading="26675" /> <!-- Magical Warrior Konyar -->
+			<npc id="23081" x="42405" y="-176249" z="-7955" heading="65442" /> <!-- Restrained Vampire -->
+			<npc id="23081" x="42454" y="-175079" z="-7955" heading="58635" /> <!-- Restrained Vampire -->
+		</group>
+		<group name="fortuna_19" spawnByDefault="false"> <!-- Bonus Stage (Mana)-->
+			<npc id="23081" x="41444" y="-175648" z="-7950" heading="13371" /> <!-- Restrained Vampire -->
+			<npc id="23081" x="41572" y="-175696" z="-7955" heading="7171" /> <!-- Restrained Vampire -->
+			<npc id="23081" x="41333" y="-175620" z="-7955" heading="56605" /> <!-- Restrained Vampire -->
+			<npc id="23081" x="41377" y="-175635" z="-7950" heading="7683" /> <!-- Restrained Vampire -->
+			<npc id="23081" x="41504" y="-175668" z="-7950" heading="106" /> <!-- Restrained Vampire -->
+			<npc id="23081" x="42232" y="-174929" z="-7955" heading="58475" /> <!-- Restrained Vampire -->
+			<npc id="23081" x="42179" y="-175007" z="-7950" heading="56808" /> <!-- Restrained Vampire -->
+			<npc id="23081" x="42693" y="-175617" z="-7950" heading="26537" /> <!-- Restrained Vampire -->
+			<npc id="23081" x="42796" y="-175601" z="-7950" heading="32845" /> <!-- Restrained Vampire -->
+			<npc id="23081" x="42741" y="-175611" z="-7950" heading="59074" /> <!-- Restrained Vampire -->
+			<npc id="23081" x="42632" y="-175633" z="-7950" heading="59309" /> <!-- Restrained Vampire -->
+		</group>
+		<group name="fortuna_20" spawnByDefault="false"> <!-- Stage 6 -->
+			<npc id="25822" x="42104" y="-175320" z="-7974" heading="26675" /> <!-- Lakielo -->
+			<npc id="23076" x="42808" y="-175608" z="-7974" heading="6404" /> <!-- Restrained Soldier -->
+			<npc id="23080" x="42309" y="-175048" z="-7955" heading="49552" /> <!-- Corrupted Poison Cloud -->
+			<npc id="23076" x="42852" y="-175606" z="-7950" heading="30402" /> <!-- Restrained Soldier -->
+			<npc id="23076" x="42774" y="-175603" z="-7950" heading="39557" /> <!-- Restrained Soldier -->
+			<npc id="23078" x="42443" y="-175324" z="-7955" heading="62434" /> <!-- Restrained Wizard -->
+			<npc id="23078" x="42355" y="-175830" z="-7949" heading="59416" /> <!-- Restrained Wizard -->
+			<npc id="23078" x="42604" y="-175875" z="-7955" heading="26581" /> <!-- Restrained Wizard -->
+			<npc id="23078" x="41623" y="-175697" z="-7950" heading="19950" /> <!-- Restrained Wizard -->
+			<npc id="23076" x="42115" y="-176619" z="-7950" heading="37861" /> <!-- Restrained Soldier -->
+			<npc id="23076" x="42116" y="-176713" z="-7950" heading="24272" /> <!-- Restrained Soldier -->
+			<npc id="23076" x="42841" y="-175621" z="-7950" heading="32351" /> <!-- Restrained Soldier -->
+			<npc id="23076" x="41290" y="-175612" z="-7950" heading="63219" /> <!-- Restrained Soldier -->
+			<npc id="23078" x="42355" y="-175830" z="-7949" heading="59416" /> <!-- Restrained Wizard -->
+			<npc id="23081" x="42074" y="-174950" z="-7950" heading="45755" /> <!-- Restrained Vampire -->
+			<npc id="23081" x="42100" y="-174873" z="-7950" heading="55928" /> <!-- Restrained Vampire -->
+			<npc id="23081" x="42168" y="-174725" z="-7950" heading="22723" /> <!-- Restrained Vampire -->
+			<npc id="23081" x="42188" y="-174659" z="-7950" heading="57128" /> <!-- Restrained Vampire -->
+			<npc id="23081" x="42135" y="-174807" z="-7950" heading="44067" /> <!-- Restrained Vampire -->
+		</group>
+		<group name="fortuna_21" spawnByDefault="false"> <!-- Stage 6 -->
+			<npc id="23082" x="41661" y="-175377" z="-7955" heading="62505" /> <!-- Restrained Elite Soldier -->
+			<npc id="23082" x="42283" y="-175058" z="-7955" heading="11889" /> <!-- Restrained Elite Soldier -->
+			<npc id="23082" x="41928" y="-176034" z="-7955" heading="54682" /> <!-- Restrained Elite Soldier -->
+			<npc id="23076" x="41491" y="-175575" z="-7950" heading="733" /> <!-- Restrained Soldier -->
+			<npc id="23076" x="41403" y="-175596" z="-7950" heading="35996" /> <!-- Restrained Soldier -->
+			<npc id="23076" x="41333" y="-175616" z="-7950" heading="14241" /> <!-- Restrained Soldier -->
+			<npc id="23082" x="41802" y="-175673" z="-7950" heading="13302" /> <!-- Restrained Elite Soldier -->
+			<npc id="23081" x="41613" y="-175721" z="-7955" heading="31710" /> <!-- Restrained Vampire -->
+			<npc id="23081" x="41532" y="-175781" z="-7955" heading="21904" /> <!-- Restrained Vampire -->
+			<npc id="23081" x="41690" y="-175652" z="-7955" heading="28949" /> <!-- Restrained Vampire -->
+			<npc id="23081" x="41444" y="-175648" z="-7950" heading="13371" /> <!-- Restrained Vampire -->
+			<npc id="23081" x="41572" y="-175696" z="-7955" heading="7171" /> <!-- Restrained Vampire -->
+			<npc id="23081" x="42870" y="-175612" z="-7950" heading="36188" /> <!-- Restrained Vampire -->
+			<npc id="23081" x="42811" y="-175611" z="-7950" heading="60121" /> <!-- Restrained Vampire -->
+			<npc id="23081" x="42744" y="-175587" z="-7950" heading="7643" /> <!-- Restrained Vampire -->
+			<npc id="23081" x="42685" y="-175572" z="-7950" heading="56915" /> <!-- Restrained Vampire -->
+			<npc id="23081" x="42619" y="-175560" z="-7950" heading="38630" /> <!-- Restrained Vampire -->
+			<npc id="23081" x="42166" y="-176443" z="-7950" heading="51037" /> <!-- Restrained Vampire -->
+			<npc id="23081" x="42176" y="-176370" z="-7950" heading="25919" /> <!-- Restrained Vampire -->
+			<npc id="23081" x="42152" y="-176546" z="-7950" heading="24776" /> <!-- Restrained Vampire -->
+			<npc id="23081" x="42131" y="-176702" z="-7950" heading="15247" /> <!-- Restrained Vampire -->
+			<npc id="23081" x="42133" y="-176634" z="-7950" heading="24973" /> <!-- Restrained Vampire -->
+			<npc id="23077" x="42611" y="-175755" z="-7955" heading="24649" /> <!-- Nameless Lunacy -->
+			<npc id="23077" x="42731" y="-175737" z="-7955" heading="54441" /> <!-- Nameless Lunacy -->
+			<npc id="23077" x="42823" y="-175643" z="-7950" heading="12964" /> <!-- Nameless Lunacy -->
+			<npc id="23077" x="42611" y="-175755" z="-7955" heading="24649" /> <!-- Nameless Lunacy -->
+			<npc id="23077" x="42731" y="-175737" z="-7955" heading="54441" /> <!-- Nameless Lunacy -->
+		</group>
+		<group name="fortuna_22" spawnByDefault="false"> <!-- Fourth Raid Boss -->
+			<npc id="25841" x="42104" y="-175320" z="-7974" heading="26675" /> <!-- Sir Lesynda of the Black Shadow -->
+		</group>
+		<group name="fortuna_23" spawnByDefault="false"> <!-- Stage 7 -->
+			<npc id="23084" x="41440" y="-175627" z="-7950" heading="28701" /> <!-- Restrained Elite Wizard -->
+			<npc id="23084" x="42408" y="-175104" z="-7955" heading="36229" /> <!-- Restrained Elite Wizard -->
+			<npc id="23084" x="42414" y="-175549" z="-7950" heading="10926" /> <!-- Restrained Elite Wizard -->
+			<npc id="23082" x="41601" y="-175653" z="-7950" heading="58766" /> <!-- Restrained Elite Soldier -->
+			<npc id="23082" x="42360" y="-174967" z="-7955" heading="33778" /> <!-- Restrained Elite Soldier -->
+			<npc id="23082" x="42271" y="-174766" z="-7955" heading="27315" /> <!-- Restrained Elite Soldier -->
+			<npc id="23084" x="41588" y="-175516" z="-7950" heading="51786" /> <!-- Restrained Elite Wizard -->
+			<npc id="23084" x="41687" y="-175316" z="-7953" heading="46389" /> <!-- Restrained Elite Wizard -->
+			<npc id="23084" x="42798" y="-175577" z="-7950" heading="56579" /> <!-- Restrained Elite Wizard -->
+			<npc id="23084" x="42591" y="-175501" z="-7955" heading="25387" /> <!-- Restrained Elite Wizard -->
+			<npc id="23084" x="42139" y="-176428" z="-7950" heading="51748" /> <!-- Restrained Elite Wizard -->
+			<npc id="23084" x="42110" y="-176659" z="-7950" heading="55699" /> <!-- Restrained Elite Wizard -->
+			<npc id="19084" x="41884" y="-175579" z="-7949" heading="25582" /> <!-- Cursed Priest -->
+			<npc id="19084" x="42106" y="-175349" z="-7949" heading="60250" /> <!-- Cursed Priest -->
+			<npc id="19084" x="42362" y="-175558" z="-7949" heading="62574" /> <!-- Cursed Priest -->
+			<npc id="23083" x="41759" y="-175705" z="-7951" heading="63174" /> <!-- Nameless Berserker -->
+			<npc id="23083" x="41802" y="-175607" z="-7950" heading="38323" /> <!-- Nameless Berserker -->
+			<npc id="23083" x="41867" y="-175878" z="-7951" heading="13242" /> <!-- Nameless Berserker -->
+			<npc id="23083" x="42335" y="-175331" z="-7954" heading="28733" /> <!-- Nameless Berserker -->
+			<npc id="23083" x="42508" y="-175490" z="-7955" heading="57343" /> <!-- Nameless Berserker -->
+			<npc id="23083" x="42502" y="-175779" z="-7955" heading="61867" /> <!-- Nameless Berserker -->
+			<npc id="23083" x="42591" y="-175462" z="-7955" heading="7662" /> <!-- Nameless Berserker -->
+			<npc id="23083" x="42432" y="-175459" z="-7955" heading="23615" /> <!-- Nameless Berserker -->
+			<npc id="23083" x="42390" y="-175338" z="-7954" heading="22124" /> <!-- Nameless Berserker -->
+			<npc id="23080" x="41752" y="-176041" z="-7955" heading="26591" /> <!-- Corrupted Poison Cloud -->
+			<npc id="23080" x="41828" y="-175045" z="-7955" heading="18966" /> <!-- Corrupted Poison Cloud -->
+			<npc id="23080" x="42226" y="-175089" z="-7955" heading="11984" /> <!-- Corrupted Poison Cloud -->
+		</group>
+		<group name="fortuna_24" spawnByDefault="false"> <!-- Stage 7 -->
+			<npc id="23084" x="41440" y="-175627" z="-7950" heading="28701" /> <!-- Restrained Elite Wizard -->
+			<npc id="23084" x="41588" y="-175516" z="-7950" heading="51786" /> <!-- Restrained Elite Wizard -->
+			<npc id="23084" x="42591" y="-175501" z="-7955" heading="25387" /> <!-- Restrained Elite Wizard -->
+			<npc id="23084" x="42110" y="-176659" z="-7950" heading="55699" /> <!-- Restrained Elite Wizard -->
+			<npc id="23083" x="41759" y="-175705" z="-7951" heading="63174" /> <!-- Nameless Berserker -->
+			<npc id="23083" x="41802" y="-175607" z="-7950" heading="38323" /> <!-- Nameless Berserker -->
+			<npc id="23083" x="41867" y="-175878" z="-7951" heading="13242" /> <!-- Nameless Berserker -->
+			<npc id="23083" x="42335" y="-175331" z="-7954" heading="28733" /> <!-- Nameless Berserker -->
+			<npc id="23083" x="42508" y="-175490" z="-7955" heading="57343" /> <!-- Nameless Berserker -->
+			<npc id="23083" x="42502" y="-175779" z="-7955" heading="61867" /> <!-- Nameless Berserker -->
+			<npc id="23083" x="42591" y="-175462" z="-7955" heading="7662" /> <!-- Nameless Berserker -->
+			<npc id="23083" x="42432" y="-175459" z="-7955" heading="23615" /> <!-- Nameless Berserker -->
+			<npc id="23083" x="42390" y="-175338" z="-7954" heading="22124" /> <!-- Nameless Berserker -->
+			<npc id="23083" x="41882" y="-175331" z="-7955" heading="1215" /> <!-- Nameless Berserker -->
+			<npc id="23083" x="41788" y="-175342" z="-7955" heading="21880" /> <!-- Nameless Berserker -->
+			<npc id="23083" x="41807" y="-175400" z="-7955" heading="63578" /> <!-- Nameless Berserker -->
+			<npc id="23083" x="42147" y="-175288" z="-7950" heading="8711" /> <!-- Nameless Berserker -->
+			<npc id="23083" x="42497" y="-175418" z="-7955" heading="30289" /> <!-- Nameless Berserker -->
+			<npc id="23083" x="42423" y="-175404" z="-7955" heading="19809" /> <!-- Nameless Berserker -->
+			<npc id="23083" x="42205" y="-175374" z="-7949" heading="23440" /> <!-- Nameless Berserker -->
+			<npc id="23083" x="42298" y="-175409" z="-7949" heading="61064" /> <!-- Nameless Berserker -->
+			<npc id="23083" x="42424" y="-175540" z="-7950" heading="7350" /> <!-- Nameless Berserker -->
+			<npc id="23080" x="41752" y="-176041" z="-7955" heading="26591" /> <!-- Corrupted Poison Cloud -->
+			<npc id="23080" x="41828" y="-175045" z="-7955" heading="18966" /> <!-- Corrupted Poison Cloud -->
+			<npc id="23080" x="42226" y="-175089" z="-7955" heading="11984" /> <!-- Corrupted Poison Cloud -->
+			<npc id="23081" x="41973" y="-176101" z="-7955" heading="38513" /> <!-- Restrained Vampire -->
+			<npc id="23081" x="42870" y="-175612" z="-7950" heading="36188" /> <!-- Restrained Vampire -->
+			<npc id="23081" x="42811" y="-175611" z="-7950" heading="60121" /> <!-- Restrained Vampire -->
+		</group>
+		<group name="fortuna_25" spawnByDefault="false"> <!-- Fifth Raid Boss -->
+			<npc id="25839" x="42104" y="-175320" z="-7974" heading="26675" /> <!-- Blind Hornah -->
+			<npc id="19084" x="41884" y="-175579" z="-7949" heading="25582" /> <!-- Cursed Priest -->
+			<npc id="19084" x="42106" y="-175349" z="-7949" heading="60250" /> <!-- Cursed Priest -->
+			<npc id="19084" x="42362" y="-175558" z="-7949" heading="62574" /> <!-- Cursed Priest -->
+		</group>
+		<group name="fortuna_26" spawnByDefault="false"> <!-- Sixth Raid Boss -->
+			<npc id="25846" x="42104" y="-175320" z="-7974" heading="26675" /> <!-- Yoentumak the Waiter -->
+		</group>
+		<group name="fortuna_last_boss" spawnByDefault="false">
+			<npc id="25825" x="42104" y="-175320" z="-7974" heading="26675" /> <!-- Ron -->
+		</group>
+	</spawnlist>
+</instance>

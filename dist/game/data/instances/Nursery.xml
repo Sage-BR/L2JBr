@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Nursery -->
+<instance id="171" maxWorlds="100" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/instance.xsd">
+	<time duration="60" empty="3" />
+	<locations>
+		<enter type="FIXED">
+			<location x="-185854" y="147882" z="-15314" />
+		</enter>
+		<exit type="FIXED">
+			<location x="-178262" y="153430" z="2477" />
+		</exit>
+	</locations>
+	<conditions>
+		<condition type="GroupMax">
+			<param name="limit" value="1" />
+		</condition>
+		<condition type="Level">
+			<param name="min" value="85" />
+		</condition>
+		<condition type="Reenter" />
+	</conditions>
+	<reenter apply="NONE">
+		<reset time="720"/> <!-- 12 hours -->
+	</reenter>
+	<spawnlist>
+		<group name="GAME_NPC">
+			<npc id="33152" x="-185857" y="147420" z="-15296" heading="11632" respawnTime="2min" respawnRandom="30sec" /> <!-- Tie -->
+		</group>
+		<group name="GAME_MONSTERS" spawnByDefault="false">
+			<territories>
+				<territory name="kadif02_1423_m_room01" minZ="-15350" maxZ="-15290">
+					<node x="-186598" y="146101" />
+					<node x="-185859" y="145945" />
+					<node x="-185123" y="146101" />
+					<node x="-184498" y="146521" />
+					<node x="-184072" y="147150" />
+					<node x="-183913" y="147880" />
+					<node x="-184055" y="148621" />
+					<node x="-184481" y="149261" />
+					<node x="-185106" y="149687" />
+					<node x="-185847" y="149840" />
+					<node x="-186597" y="149678" />
+					<node x="-187223" y="149258" />
+					<node x="-187657" y="148624" />
+					<node x="-187805" y="147886" />
+					<node x="-187651" y="147145" />
+					<node x="-187217" y="146516" />
+				</territory>
+				<banned_territory name="kadif02_1423_m_room01_b" minZ="-15350" maxZ="-15290">
+					<node x="-186293" y="146864" />
+					<node x="-185854" y="146785" />
+					<node x="-185311" y="146918" />
+					<node x="-185035" y="147051" />
+					<node x="-184762" y="147454" />
+					<node x="-184666" y="147872" />
+					<node x="-184765" y="148341" />
+					<node x="-185020" y="148717" />
+					<node x="-185413" y="148972" />
+					<node x="-185859" y="149063" />
+					<node x="-186303" y="148969" />
+					<node x="-186682" y="148728" />
+					<node x="-186937" y="148335" />
+					<node x="-187031" y="147894" />
+					<node x="-186946" y="147434" />
+					<node x="-186690" y="147058" />
+				</banned_territory>
+			</territories>
+			<npc id="23033" count="10" respawnTime="60sec" /> <!-- Failed Creation -->
+			<npc id="23034" count="10" respawnTime="60sec" /> <!-- Failed Creation -->
+			<npc id="23035" count="10" respawnTime="60sec" /> <!-- Failed Creation -->
+			<npc id="23036" count="10" respawnTime="60sec" /> <!-- Failed Creation -->
+			<npc id="23037" count="10" respawnTime="60sec" /> <!-- Failed Creation -->
+		</group>
+	</spawnlist>
+</instance>

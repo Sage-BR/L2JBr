@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/npcs.xsd">
+	<npc id="21438" level="65" type="Monster" name="Heathen Warrior">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="80" />
+			<param name="MoveAroundSocial1" value="80" />
+			<param name="MoveAroundSocial2" value="80" />
+			<param name="SoulShot" value="100" />
+			<param name="SoulShotRate" value="30" />
+			<param name="LongRangeGuardRate" value="5" />
+			<skill name="PhysicalSpecial" id="4032" level="6" />
+		</parameters>
+		<race>UNDEAD</race>
+		<sex>MALE</sex>
+		<equipment rhand="946" lhand="945" /> <!-- Skeleton Dagger / Skeleton Buckler -->
+		<acquire exp="1342" sp="0" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="548.265135" hpRegen="7.5" mp="1199.469" mpRegen="2.7" />
+			<attack physical="582.81759" magical="397.98887" random="5" critical="8" accuracy="0" attackSpeed="253" type="DAGGER" range="40" distance="80" width="120" />
+			<defence physical="271.89033" magical="198.95754" shield="136" shieldRate="20" />
+			<speed>
+				<walk ground="80" />
+				<run ground="175" />
+			</speed>
+			<hitTime>520</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4032" level="6" /> <!-- NPC Strike -->
+			<skill id="4416" level="1" /> <!-- Undead -->
+			<skill id="4410" level="13" /> <!-- Slightly Strong P. Atk. -->
+			<skill id="4411" level="13" /> <!-- Slightly Strong M. Atk. -->
+			<skill id="4412" level="9" /> <!-- Slightly Weak P. Def. -->
+			<skill id="4413" level="9" /> <!-- Slightly Weak M. Def. -->
+			<skill id="4274" level="1" /> <!-- Blunt Weapon Vulnerability -->
+		</skillList>
+		<shots shotChance="30" spiritChance="30" />
+		<exCrtEffect>false</exCrtEffect>
+		<sNpcPropHpRate>0.25</sNpcPropHpRate>
+		<ai aggroRange="300" clanHelpRange="300" isAggressive="true">
+			<clanList>
+				<clan>UNDEAD</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="11" />
+			<height normal="28.5" />
+		</collision>
+		<dropLists>
+			<drop>
+				<item id="57" min="10" max="24" chance="70" /> <!-- Adena -->
+				<item id="729" min="1" max="1" chance="0.003" /> <!-- Scroll: Enchant Weapon (A-grade) -->
+			</drop>
+			<spoil>
+				<item id="729" min="1" max="1" chance="0.003" /> <!-- Scroll: Enchant Weapon (A-grade) -->
+			</spoil>
+		</dropLists>
+	</npc>
+	<npc id="21439" level="66" type="Monster" name="Heathen Inmate">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="130" />
+			<param name="MoveAroundSocial1" value="130" />
+			<param name="MoveAroundSocial2" value="130" />
+			<param name="SoulShot" value="100" />
+			<param name="SoulShotRate" value="30" />
+			<param name="LongRangeGuardRate" value="5" />
+			<skill name="PhysicalSpecial" id="4073" level="6" />
+		</parameters>
+		<race>UNDEAD</race>
+		<sex>MALE</sex>
+		<acquire exp="1384" sp="0" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="560.883435" hpRegen="7.5" mp="1231.098" mpRegen="2.7" />
+			<attack physical="603.79903" magical="412.31647" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="276.72752" magical="202.49719" />
+			<speed>
+				<walk ground="15" />
+				<run ground="175" />
+			</speed>
+			<hitTime>450</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4073" level="6" /> <!-- Stun -->
+			<skill id="4416" level="1" /> <!-- Undead -->
+			<skill id="4410" level="13" /> <!-- Slightly Strong P. Atk. -->
+			<skill id="4411" level="13" /> <!-- Slightly Strong M. Atk. -->
+			<skill id="4412" level="9" /> <!-- Slightly Weak P. Def. -->
+			<skill id="4413" level="9" /> <!-- Slightly Weak M. Def. -->
+			<skill id="4414" level="3" /> <!-- Light Armor Type -->
+		</skillList>
+		<shots shotChance="30" spiritChance="30" />
+		<exCrtEffect>false</exCrtEffect>
+		<sNpcPropHpRate>0.25</sNpcPropHpRate>
+		<ai aggroRange="300" clanHelpRange="300" isAggressive="true">
+			<clanList>
+				<clan>UNDEAD</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="30" grown="15.5" />
+			<height normal="40" grown="48.5" />
+		</collision>
+		<dropLists>
+			<drop>
+				<item id="57" min="11" max="25" chance="70" /> <!-- Adena -->
+				<item id="730" min="1" max="1" chance="0.03" /> <!-- Scroll: Enchant Armor (A-grade) -->
+			</drop>
+			<spoil>
+				<item id="730" min="1" max="1" chance="0.03" /> <!-- Scroll: Enchant Armor (A-grade) -->
+			</spoil>
+		</dropLists>
+	</npc>
+	<npc id="21440" level="67" type="Monster" name="Heathen Archer">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="157" />
+			<param name="MoveAroundSocial1" value="157" />
+			<param name="MoveAroundSocial2" value="157" />
+			<param name="SoulShot" value="100" />
+			<param name="SoulShotRate" value="30" />
+			<param name="LongRangeGuardRate" value="5" />
+			<skill name="PhysicalSpecial" id="4040" level="6" />
+		</parameters>
+		<race>UNDEAD</race>
+		<sex>MALE</sex>
+		<equipment rhand="284" /> <!-- Dark Elven Longbow -->
+		<acquire exp="1515" sp="0" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="573.501735" hpRegen="7.5" mp="1263.538" mpRegen="2.7" />
+			<attack physical="624.93199" magical="426.74754" random="5" critical="8" accuracy="0" attackSpeed="253" reuseDelay="1500" type="BOW" range="1100" distance="10" width="0" />
+			<defence physical="281.55251" magical="206.02791" />
+			<speed>
+				<walk ground="40" />
+				<run ground="155" />
+			</speed>
+			<hitTime>800</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4040" level="6" /> <!-- NPC Bow Attack -->
+			<skill id="4416" level="1" /> <!-- Undead -->
+			<skill id="4410" level="13" /> <!-- Slightly Strong P. Atk. -->
+			<skill id="4411" level="13" /> <!-- Slightly Strong M. Atk. -->
+			<skill id="4412" level="9" /> <!-- Slightly Weak P. Def. -->
+			<skill id="4413" level="9" /> <!-- Slightly Weak M. Def. -->
+			<skill id="4414" level="3" /> <!-- Light Armor Type -->
+			<skill id="4274" level="1" /> <!-- Blunt Weapon Vulnerability -->
+			<skill id="4071" level="3" /> <!-- Bow/ Crossbow Resistance -->
+		</skillList>
+		<shots shotChance="30" spiritChance="30" />
+		<exCrtEffect>false</exCrtEffect>
+		<sNpcPropHpRate>0.25</sNpcPropHpRate>
+		<ai type="ARCHER" clanHelpRange="300" dodge="15" aggroRange="300">
+			<clanList>
+				<clan>UNDEAD</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="11" />
+			<height normal="27" />
+		</collision>
+		<dropLists>
+			<drop>
+				<item id="57" min="11" max="27" chance="70" /> <!-- Adena -->
+				<item id="730" min="1" max="1" chance="0.03" /> <!-- Scroll: Enchant Armor (A-grade) -->
+			</drop>
+			<spoil>
+				<item id="730" min="1" max="1" chance="0.03" /> <!-- Scroll: Enchant Armor (A-grade) -->
+			</spoil>
+		</dropLists>
+	</npc>
+	<npc id="21441" level="68" type="Monster" name="Heathen Soldier">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="0" />
+			<param name="MoveAroundSocial1" value="0" />
+			<param name="MoveAroundSocial2" value="0" />
+			<param name="SoulShot" value="100" />
+			<param name="SoulShotRate" value="30" />
+			<param name="LongRangeGuardRate" value="5" />
+			<skill name="PhysicalSpecial" id="4072" level="6" />
+		</parameters>
+		<race>UNDEAD</race>
+		<sex>MALE</sex>
+		<equipment rhand="96" /> <!-- Scythe -->
+		<acquire exp="1469" sp="0" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="586.120035" hpRegen="7.5" mp="1295.167" mpRegen="2.7" />
+			<attack physical="646.17968" magical="441.25696" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="286.3615" magical="209.54692" />
+			<speed>
+				<walk ground="50" />
+				<run ground="170" />
+			</speed>
+			<hitTime>210</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4072" level="6" /> <!-- Stun -->
+			<skill id="4416" level="1" /> <!-- Undead -->
+			<skill id="4410" level="13" /> <!-- Slightly Strong P. Atk. -->
+			<skill id="4411" level="13" /> <!-- Slightly Strong M. Atk. -->
+			<skill id="4412" level="9" /> <!-- Slightly Weak P. Def. -->
+			<skill id="4413" level="9" /> <!-- Slightly Weak M. Def. -->
+			<skill id="4274" level="1" /> <!-- Blunt Weapon Vulnerability -->
+		</skillList>
+		<shots shotChance="30" spiritChance="30" />
+		<exCrtEffect>false</exCrtEffect>
+		<sNpcPropHpRate>0.25</sNpcPropHpRate>
+		<ai aggroRange="300" clanHelpRange="300" isAggressive="true">
+			<clanList>
+				<clan>UNDEAD</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="10" grown="12" />
+			<height normal="28" grown="33" />
+		</collision>
+		<dropLists>
+			<drop>
+				<item id="57" min="11" max="26" chance="70" /> <!-- Adena -->
+				<item id="729" min="1" max="1" chance="0.003" /> <!-- Scroll: Enchant Weapon (A-grade) -->
+			</drop>
+			<spoil>
+				<item id="729" min="1" max="1" chance="0.003" /> <!-- Scroll: Enchant Weapon (A-grade) -->
+			</spoil>
+		</dropLists>
+	</npc>
+	<npc id="21442" level="69" type="Monster" name="Heathen Knight">
+		<!-- Confirmed CT2.5 -->
+		<parameters>
+			<param name="MoveAroundSocial" value="215" />
+			<param name="MoveAroundSocial1" value="215" />
+			<param name="MoveAroundSocial2" value="215" />
+			<param name="SoulShot" value="100" />
+			<param name="SoulShotRate" value="30" />
+			<param name="LongRangeGuardRate" value="5" />
+			<skill name="PhysicalSpecial" id="4232" level="6" />
+		</parameters>
+		<race>UNDEAD</race>
+		<sex>MALE</sex>
+		<equipment rhand="150" lhand="103" /> <!-- Elemental Sword / Tower Shield -->
+		<acquire exp="1512" sp="0" />
+		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
+			<vitals hp="598.738335" hpRegen="7.5" mp="1326.796" mpRegen="2.7" />
+			<attack physical="667.50361" magical="455.81844" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="291.15063" magical="213.05139" shield="146" shieldRate="20" />
+			<speed>
+				<walk ground="40" />
+				<run ground="165" />
+			</speed>
+			<hitTime>170</hitTime>
+			<abnormalResist physical="10" magical="10" />
+		</stats>
+		<status undying="false" canBeSown="true" />
+		<skillList>
+			<skill id="4232" level="6" /> <!-- NPC AE Strike -->
+			<skill id="4416" level="1" /> <!-- Undead -->
+			<skill id="4410" level="13" /> <!-- Slightly Strong P. Atk. -->
+			<skill id="4411" level="13" /> <!-- Slightly Strong M. Atk. -->
+			<skill id="4412" level="9" /> <!-- Slightly Weak P. Def. -->
+			<skill id="4413" level="9" /> <!-- Slightly Weak M. Def. -->
+			<skill id="4274" level="1" /> <!-- Blunt Weapon Vulnerability -->
+		</skillList>
+		<shots shotChance="30" spiritChance="30" />
+		<exCrtEffect>false</exCrtEffect>
+		<sNpcPropHpRate>0.25</sNpcPropHpRate>
+		<ai aggroRange="300" clanHelpRange="300" isAggressive="true">
+			<clanList>
+				<clan>UNDEAD</clan>
+			</clanList>
+		</ai>
+		<collision>
+			<radius normal="10" />
+			<height normal="25" />
+		</collision>
+		<dropLists>
+			<drop>
+				<item id="57" min="12" max="27" chance="70" /> <!-- Adena -->
+				<item id="730" min="1" max="1" chance="0.03" /> <!-- Scroll: Enchant Armor (A-grade) -->
+			</drop>
+			<spoil>
+				<item id="730" min="1" max="1" chance="0.03" /> <!-- Scroll: Enchant Armor (A-grade) -->
+			</spoil>
+		</dropLists>
+	</npc>
+</list>
