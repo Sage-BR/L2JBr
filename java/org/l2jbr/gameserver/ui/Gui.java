@@ -301,10 +301,10 @@ public class Gui
 		
 		// Set icons.
 		List<Image> icons = new ArrayList<>();
-		icons.add(new ImageIcon("..\\images\\l2jmobius_16x16.png").getImage());
-		icons.add(new ImageIcon("..\\images\\l2jmobius_32x32.png").getImage());
-		icons.add(new ImageIcon("..\\images\\l2jmobius_64x64.png").getImage());
-		icons.add(new ImageIcon("..\\images\\l2jmobius_128x128.png").getImage());
+		icons.add(new ImageIcon("..\\images\\l2s_16x16.png").getImage());
+		icons.add(new ImageIcon("..\\images\\l2s_32x32.png").getImage());
+		icons.add(new ImageIcon("..\\images\\l2s_64x64.png").getImage());
+		icons.add(new ImageIcon("..\\images\\l2s_128x128.png").getImage());
 		
 		// Set Panels.
 		JPanel systemPanel = new SystemPanel();

@@ -5,96 +5,11 @@ Use MegaSync for Try
 
 Client mirror 2: https://drive.google.com/uc?id=1yeYwrQEIcmAz5Ha1R05c3QgntRPy9y0V&export=download
 System: https://mega.nz/#!xolCkYjD!TpdBo8SwYpPYJN86H_r5AxZljTZAfyj-o2H9cfy2bNc
-Geodata: http://www.mediafire.com/file/w6f0r5opnlopzbq/L2JMobius_Geodata.zip
+Geodata: http://www.mediafire.com/file/w6f0r5opnlopzbq/l2s_Geodata.zip
 JDK: https://download.java.net/java/GA/jdk14/076bab302c7b4508975440c56f6cc26a/36/GPL/openjdk-14_windows-x64_bin.zip
 
 
 Working features...
-
-Before Goddess of Destruction:
--Fantasy Isle Parade
--Pailaka Injured Dragon
--All Seven Sign Quests
--Imperial Tomb
--Gracia Area
--Kamaloka
--Castle Dungeons
--Fortress Dungeons
--Prime Shop
-
-Goddess of Destruction:
--New Talking Island
--Ancient City Arcan
--Bloody Swampland
--Fairy Settlement
--Garden of Genesis
--Guillotine Fortress
--Orbis Temple
--Kartia
--Fortuna
--Nursery
--Altar of Shilen
--Kimerian
--Istina
--Octavis
--Spezion
--Tauti
--Teredor
--Trasken
--Lindvior
--Appearance stones
--Beauty Shop
--Mentoring
--Goddess class changes
--Harnak Underground Ruins
--Sayune Jump System
--Agent of Chaos
--Attribute Crystals
--Ability Points
--Training Camp
-
-Ertheia:
--Ertheia Race
--Alchemy
--Brooch system
--Luck system
--Auto fishing
--Dimensional Warp
-
-Infinite Odyssey:
--Garden of Spirits
--Isabella
--Atelia Fortress
--Kelbim
--Enchanted Valley
--Ashen Shadow Revolutionaries
-
-Underground:
--Underground Gainak
--Automated soulshots
--Daily rewards
--Attendance rewards
-
-Helios:
--Dimensional Rift
--Dimensional Crack
--Giants Cave
--Superion Fortress
--Ramona
--Helios
--Faction system
-
-Grand Crusade:
--Monster Book
--Live world map information
-
-Salvation:
--New Agathion item support
--New clan system support
-
-Etina's Fate:
--Parsed new items from client
--Artifact item support
 
 Fafurion:
 -Support for R110 items
