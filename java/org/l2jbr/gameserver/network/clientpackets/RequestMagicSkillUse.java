@@ -70,6 +70,21 @@ public class RequestMagicSkillUse implements IClientIncomingPacket
 			}
 		}
 		
+		if (player.isInSiege())
+		{
+			// Proibe usar Shadow Step, Blink e Warp com Ward
+			if ((_magicId > 628) || (_magicId > 1448) || (_magicId > 821))
+			{
+				// Verifica se o player está segurando uma ward
+				if (player.isCombatFlagEquipped())
+				{
+					player.sendMessage("Proibido utilizar esta skill segurando uma ward!");
+					player.sendPacket(ActionFailed.STATIC_PACKET);
+					return;
+				}
+			}
+		}
+		
 		// Skill is blocked from player use.
 		if (skill.isBlockActionUseSkill())
 		{
