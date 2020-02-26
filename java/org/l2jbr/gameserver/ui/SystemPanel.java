@@ -50,37 +50,37 @@ public class SystemPanel extends JPanel
 		setLayout(null);
 		
 		JLabel lblProtocol = new JLabel("Protocol");
-		lblProtocol.setFont(new Font("Monospaced", Font.PLAIN, 16));
+		lblProtocol.setFont(new Font("Monospaced", Font.PLAIN, 13));
 		lblProtocol.setBounds(10, 5, 264, 17);
 		add(lblProtocol);
 		
 		JLabel lblConnected = new JLabel("Connected");
-		lblConnected.setFont(new Font("Monospaced", Font.PLAIN, 16));
+		lblConnected.setFont(new Font("Monospaced", Font.PLAIN, 13));
 		lblConnected.setBounds(10, 23, 264, 17);
 		add(lblConnected);
 		
 		JLabel lblMaxConnected = new JLabel("Max connected");
-		lblMaxConnected.setFont(new Font("Monospaced", Font.PLAIN, 16));
+		lblMaxConnected.setFont(new Font("Monospaced", Font.PLAIN, 13));
 		lblMaxConnected.setBounds(10, 41, 264, 17);
 		add(lblMaxConnected);
 		
 		JLabel lblOfflineShops = new JLabel("Offline trade");
-		lblOfflineShops.setFont(new Font("Monospaced", Font.PLAIN, 16));
+		lblOfflineShops.setFont(new Font("Monospaced", Font.PLAIN, 13));
 		lblOfflineShops.setBounds(10, 59, 264, 17);
 		add(lblOfflineShops);
 		
 		JLabel lblElapsedTime = new JLabel("Elapsed time");
-		lblElapsedTime.setFont(new Font("Monospaced", Font.PLAIN, 16));
+		lblElapsedTime.setFont(new Font("Monospaced", Font.PLAIN, 13));
 		lblElapsedTime.setBounds(10, 77, 264, 17);
 		add(lblElapsedTime);
 		
 		JLabel lblJavaVersion = new JLabel("Build JDK");
-		lblJavaVersion.setFont(new Font("Monospaced", Font.PLAIN, 16));
+		lblJavaVersion.setFont(new Font("Monospaced", Font.PLAIN, 13));
 		lblJavaVersion.setBounds(10, 95, 264, 17);
 		add(lblJavaVersion);
 		
 		JLabel lblBuildDate = new JLabel("Build date");
-		lblBuildDate.setFont(new Font("Monospaced", Font.PLAIN, 16));
+		lblBuildDate.setFont(new Font("Monospaced", Font.PLAIN, 13));
 		lblBuildDate.setBounds(10, 113, 264, 17);
 		add(lblBuildDate);
 		

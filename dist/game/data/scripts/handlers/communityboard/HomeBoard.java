@@ -94,10 +94,10 @@ public class HomeBoard implements IParseBoardHandler
 			}
 		}
 		
-		return commandCheck && (player.isCastingNow() || player.isInCombat() || player.isInDuel() || player.isInOlympiadMode() || player.isInsideZone(ZoneId.SIEGE) || player.isInsideZone(ZoneId.PVP));
+		return commandCheck && (player.isCastingNow() || (player.getPvpFlag() > 0) || player.isInCombat() || player.isInDuel() || player.isInOlympiadMode() || player.isInsideZone(ZoneId.SIEGE) || player.isInsideZone(ZoneId.PVP));
 	};
 	
-	private static final Predicate<PlayerInstance> KARMA_CHECK = player -> Config.COMMUNITYBOARD_KARMA_DISABLED && (player.getReputation() < 0);
+	private static final Predicate<PlayerInstance> KARMA_CHECK = player -> ((Config.COMMUNITYBOARD_KARMA_DISABLED && (player.getReputation() < 0)));
 	
 	@Override
 	public String[] getCommunityBoardCommands()
@@ -180,6 +180,11 @@ public class HomeBoard implements IParseBoardHandler
 			{
 				player.sendMessage("Not enough currency!");
 			}
+			else if (player.getPvpFlag() > 0)
+			{
+				player.sendMessage("Don't run from PvP!");
+				return false;
+			}
 			else if (Config.COMMUNITY_AVAILABLE_TELEPORTS.get(teleBuypass) != null)
 			{
 				player.disableAllSkills();
@@ -244,6 +249,11 @@ public class HomeBoard implements IParseBoardHandler
 			if (player.getInventory().getInventoryItemCount(Config.COMMUNITYBOARD_CURRENCY, -1) < (Config.COMMUNITYBOARD_HEAL_PRICE))
 			{
 				player.sendMessage("Not enough currency!");
+			}
+			else if (player.getPvpFlag() > 0)
+			{
+				player.sendMessage("Don't heal on PvP!");
+				return false;
 			}
 			else
 			{
