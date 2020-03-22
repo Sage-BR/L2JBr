@@ -29,6 +29,7 @@ public enum AnnouncementType
 	EVENT,
 	AUTO_NORMAL,
 	AUTO_CRITICAL;
+	
 	private static final Logger LOGGER = Logger.getLogger(AnnouncementType.class.getName());
 	
 	public static AnnouncementType findById(int id)

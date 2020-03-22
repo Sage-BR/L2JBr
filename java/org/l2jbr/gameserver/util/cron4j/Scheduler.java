@@ -162,7 +162,7 @@ public class Scheduler
 			{
 				throw new IllegalStateException("Scheduler already started");
 			}
-			this.daemon = on;
+			daemon = on;
 		}
 	}
 	

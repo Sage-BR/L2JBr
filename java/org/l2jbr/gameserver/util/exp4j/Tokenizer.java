@@ -39,7 +39,7 @@ public class Tokenizer
 	public Tokenizer(String expression, Map<String, Function> userFunctions, Map<String, Operator> userOperators, Set<String> variableNames, boolean implicitMultiplication)
 	{
 		this.expression = expression.trim().toCharArray();
-		this.expressionLength = this.expression.length;
+		expressionLength = this.expression.length;
 		this.userFunctions = userFunctions;
 		this.userOperators = userOperators;
 		this.variableNames = variableNames;
@@ -49,16 +49,16 @@ public class Tokenizer
 	public Tokenizer(String expression, Map<String, Function> userFunctions, Map<String, Operator> userOperators, Set<String> variableNames)
 	{
 		this.expression = expression.trim().toCharArray();
-		this.expressionLength = this.expression.length;
+		expressionLength = this.expression.length;
 		this.userFunctions = userFunctions;
 		this.userOperators = userOperators;
 		this.variableNames = variableNames;
-		this.implicitMultiplication = true;
+		implicitMultiplication = true;
 	}
 	
 	public boolean hasNext()
 	{
-		return this.expression.length > pos;
+		return expression.length > pos;
 	}
 	
 	public Token nextToken()
@@ -124,8 +124,8 @@ public class Tokenizer
 	
 	private Token parseArgumentSeparatorToken(char ch)
 	{
-		this.pos++;
-		this.lastToken = new ArgumentSeparatorToken();
+		pos++;
+		lastToken = new ArgumentSeparatorToken();
 		return lastToken;
 	}
 	
@@ -138,13 +138,13 @@ public class Tokenizer
 	{
 		if (open)
 		{
-			this.lastToken = new OpenParenthesesToken();
+			lastToken = new OpenParenthesesToken();
 		}
 		else
 		{
-			this.lastToken = new CloseParenthesesToken();
+			lastToken = new CloseParenthesesToken();
 		}
-		this.pos++;
+		pos++;
 		return lastToken;
 	}
 	
@@ -160,14 +160,14 @@ public class Tokenizer
 	
 	private Token parseFunctionOrVariable()
 	{
-		final int offset = this.pos;
+		final int offset = pos;
 		int testPos;
 		int lastValidLen = 1;
 		Token lastValidToken = null;
 		int len = 1;
 		if (isEndOfExpression(offset))
 		{
-			this.pos++;
+			pos++;
 		}
 		testPos = (offset + len) - 1;
 		while (!isEndOfExpression(testPos) && isVariableOrFunctionCharacter(expression[testPos]))
@@ -202,9 +202,9 @@ public class Tokenizer
 	private Function getFunction(String name)
 	{
 		Function f = null;
-		if (this.userFunctions != null)
+		if (userFunctions != null)
 		{
-			f = this.userFunctions.get(name);
+			f = userFunctions.get(name);
 		}
 		if (f == null)
 		{
@@ -215,7 +215,7 @@ public class Tokenizer
 	
 	private Token parseOperatorToken(char firstChar)
 	{
-		final int offset = this.pos;
+		final int offset = pos;
 		int len = 1;
 		final StringBuilder symbol = new StringBuilder();
 		Operator lastValid = null;
@@ -248,9 +248,9 @@ public class Tokenizer
 	private Operator getOperator(String symbol)
 	{
 		Operator op = null;
-		if (this.userOperators != null)
+		if (userOperators != null)
 		{
-			op = this.userOperators.get(symbol);
+			op = userOperators.get(symbol);
 		}
 		if ((op == null) && (symbol.length() == 1))
 		{
@@ -283,9 +283,9 @@ public class Tokenizer
 	
 	private Token parseNumberToken(char firstChar)
 	{
-		final int offset = this.pos;
+		final int offset = pos;
 		int len = 1;
-		this.pos++;
+		pos++;
 		if (isEndOfExpression(offset + len))
 		{
 			lastToken = new NumberToken(Double.parseDouble(String.valueOf(firstChar)));
@@ -294,7 +294,7 @@ public class Tokenizer
 		while (!isEndOfExpression(offset + len) && isNumeric(expression[offset + len], (expression[(offset + len) - 1] == 'e') || (expression[(offset + len) - 1] == 'E')))
 		{
 			len++;
-			this.pos++;
+			pos++;
 		}
 		// check if the e is at the end
 		if ((expression[(offset + len) - 1] == 'e') || (expression[(offset + len) - 1] == 'E'))
@@ -324,6 +324,6 @@ public class Tokenizer
 	
 	private boolean isEndOfExpression(int offset)
 	{
-		return this.expressionLength <= offset;
+		return expressionLength <= offset;
 	}
 }

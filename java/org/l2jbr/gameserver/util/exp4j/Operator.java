@@ -93,7 +93,7 @@ public abstract class Operator
 	public Operator(String symbol, int numberOfOperands, boolean leftAssociative, int precedence)
 	{
 		super();
-		this.numOperands = numberOfOperands;
+		numOperands = numberOfOperands;
 		this.leftAssociative = leftAssociative;
 		this.symbol = symbol;
 		this.precedence = precedence;

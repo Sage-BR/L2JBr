@@ -237,7 +237,7 @@ public class PunishmentTask implements Runnable
 			}
 		}
 		
-		if (_type == PunishmentType.CHAT_BAN && _affect == PunishmentAffect.CHARACTER)
+		if ((_type == PunishmentType.CHAT_BAN) && (_affect == PunishmentAffect.CHARACTER))
 		{
 			final PlayerInstance player = World.getInstance().getPlayer(Integer.valueOf(_key));
 			if (player != null)

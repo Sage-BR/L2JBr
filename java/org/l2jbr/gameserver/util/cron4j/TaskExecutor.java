@@ -100,7 +100,7 @@ public class TaskExecutor
 	{
 		this.scheduler = scheduler;
 		this.task = task;
-		this.context = new MyContext();
+		context = new MyContext();
 	}
 	
 	/**

@@ -636,7 +636,7 @@ public class InstanceTemplate extends ListenersContainer implements IIdentifiabl
 		// player < party < command channel
 		for (GroupType t : GroupType.values())
 		{
-			if (t != playerGroup && groupMaskContains(t))
+			if ((t != playerGroup) && groupMaskContains(t))
 			{
 				return t;
 			}

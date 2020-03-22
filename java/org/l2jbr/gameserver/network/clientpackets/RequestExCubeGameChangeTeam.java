@@ -60,7 +60,7 @@ public class RequestExCubeGameChangeTeam implements IClientIncomingPacket
 			}
 			case -1:
 			{
-			// Remove Player (me)
+				// Remove Player (me)
 			}
 			{
 				final int team = HandysBlockCheckerManager.getInstance().getHolder(_arena).getPlayerTeam(player);

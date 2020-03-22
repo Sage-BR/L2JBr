@@ -487,6 +487,7 @@ public class Q00663_SeductiveWhispers extends Quest
 	{
 		SUN("Sun card"),
 		MOON("Moon card");
+		
 		private String _name;
 		
 		Side(String name)

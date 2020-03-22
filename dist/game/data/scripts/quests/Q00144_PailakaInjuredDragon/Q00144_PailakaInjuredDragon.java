@@ -294,7 +294,7 @@ public class Q00144_PailakaInjuredDragon extends Quest
 	public String onKill(Npc npc, PlayerInstance killer, boolean isSummon)
 	{
 		final QuestState qs = getQuestState(killer, false);
-		if (qs != null && qs.isCond(3))
+		if ((qs != null) && qs.isCond(3))
 		{
 			qs.setCond(4, true);
 		}

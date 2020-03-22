@@ -33,7 +33,7 @@ public class OperatorToken extends Token
 		{
 			throw new IllegalArgumentException("Operator is unknown for token.");
 		}
-		this.operator = op;
+		operator = op;
 	}
 	
 	/**

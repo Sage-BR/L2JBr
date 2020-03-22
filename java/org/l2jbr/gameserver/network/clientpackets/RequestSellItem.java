@@ -123,7 +123,7 @@ public class RequestSellItem implements IClientIncomingPacket
 			}
 		}
 		
-		if ((merchant == null) && !player.isGM())
+		if ((merchant == null) && !player.isGM() && (_listId != CUSTOM_CB_SELL_LIST))
 		{
 			client.sendPacket(ActionFailed.STATIC_PACKET);
 			return;

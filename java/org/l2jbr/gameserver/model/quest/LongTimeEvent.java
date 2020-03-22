@@ -60,7 +60,7 @@ public class LongTimeEvent extends Quest
 	// Messages
 	protected String _onEnterMsg = "";
 	protected String _endMsg = "";
-	private int _enterAnnounceId = -1;
+	int _enterAnnounceId = -1;
 	
 	protected DateRange _eventPeriod = null;
 	protected DateRange _dropPeriod;
