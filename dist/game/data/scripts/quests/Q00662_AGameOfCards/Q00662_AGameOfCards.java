@@ -713,7 +713,7 @@ public class Q00662_AGameOfCards extends Quest
 			if (MONSTERS.get(npc.getId()) < getRandom(1000))
 			{
 				final QuestState qs = getQuestState(player, false);
-				if(qs != null)
+				if (qs != null)
 				{
 					giveItems(player, RED_GEM, 1);
 					playSound(player, QuestSound.ITEMSOUND_QUEST_ITEMGET);

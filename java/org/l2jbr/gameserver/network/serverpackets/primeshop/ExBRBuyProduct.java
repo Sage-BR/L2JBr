@@ -43,6 +43,7 @@ public class ExBRBuyProduct implements IClientOutgoingPacket
 		NOT_DAY_OF_WEEK(-12),
 		NOT_TIME_OF_DAY(-13),
 		SOLD_OUT(-14);
+		
 		private final int _id;
 		
 		ExBrProductReplyType(int id)

@@ -66,7 +66,7 @@ class StreamBridge
 	{
 		this.in = in;
 		this.out = out;
-		this.thread = new Thread(new Runner());
+		thread = new Thread(new Runner());
 		synchronized (traced)
 		{
 			traced.add(this);

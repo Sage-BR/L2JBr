@@ -199,7 +199,7 @@ public class SchedulingPattern
 	 */
 	public SchedulingPattern(String pattern) throws InvalidPatternException
 	{
-		this.asString = pattern;
+		asString = pattern;
 		StringTokenizer st1 = new StringTokenizer(pattern, "|");
 		if (st1.countTokens() < 1)
 		{

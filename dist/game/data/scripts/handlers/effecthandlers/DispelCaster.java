@@ -34,7 +34,7 @@ import org.l2jbr.gameserver.model.skills.Skill;
 public class DispelCaster extends AbstractEffect
 {
 	private final Set<AbnormalType> _dispelAbnormals;
-
+	
 	public DispelCaster(StatsSet params)
 	{
 		String dispel = params.getString("dispel");
@@ -51,19 +51,19 @@ public class DispelCaster extends AbstractEffect
 			_dispelAbnormals = Collections.<AbnormalType> emptySet();
 		}
 	}
-
+	
 	@Override
 	public EffectType getEffectType()
 	{
 		return EffectType.DISPEL_BY_SLOT;
 	}
-
+	
 	@Override
 	public boolean isInstant()
 	{
 		return true;
 	}
-
+	
 	@Override
 	public void instant(Creature effector, Creature effected, Skill skill, ItemInstance item)
 	{
@@ -71,7 +71,7 @@ public class DispelCaster extends AbstractEffect
 		{
 			return;
 		}
-
+		
 		// The effectlist should already check if it has buff with this abnormal type or not.
 		effector.getEffectList().stopEffects(info -> !info.getSkill().isIrreplacableBuff() && _dispelAbnormals.contains(info.getSkill().getAbnormalType()), true, true);
 	}

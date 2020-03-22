@@ -70,8 +70,8 @@ public class ProductList
 		return (_allowedNpcs != null) && _allowedNpcs.contains(npcId);
 	}
 	
-	//public Set<Integer> getNpcsAllowed()
-	//{
-	//	return _allowedNpcs;
-	//}
+	// public Set<Integer> getNpcsAllowed()
+	// {
+	// return _allowedNpcs;
+	// }
 }

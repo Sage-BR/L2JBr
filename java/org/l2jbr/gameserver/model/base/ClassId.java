@@ -140,7 +140,7 @@ public enum ClassId implements IIdentifiable
 	
 	FORTUNE_SEEKER(117, false, Race.DWARF, BOUNTY_HUNTER),
 	MAESTRO(118, false, Race.DWARF, WARSMITH),
-
+	
 	MALE_SOLDIER(123, false, Race.KAMAEL, null),
 	FEMALE_SOLDIER(124, false, Race.KAMAEL, null),
 	TROOPER(125, false, Race.KAMAEL, MALE_SOLDIER),
@@ -155,7 +155,7 @@ public enum ClassId implements IIdentifiable
 	TRICKSTER(134, false, Race.KAMAEL, ARBALESTER),
 	INSPECTOR(135, false, Race.KAMAEL, WARDER),
 	JUDICATOR(136, false, Race.KAMAEL, INSPECTOR),
-
+	
 	SIGEL_KNIGHT(139, false, null, null),
 	TYRR_WARRIOR(140, false, null, null),
 	OTHELL_ROGUE(141, false, null, null),
@@ -164,7 +164,7 @@ public enum ClassId implements IIdentifiable
 	ISS_ENCHANTER(144, false, null, null),
 	WYNN_SUMMONER(145, false, null, null),
 	AEORE_HEALER(146, false, null, null),
-
+	
 	SIGEL_PHOENIX_KNIGHT(148, false, Race.HUMAN, PHOENIX_KNIGHT),
 	SIGEL_HELL_KNIGHT(149, false, Race.HUMAN, HELL_KNIGHT),
 	SIGEL_EVA_TEMPLAR(150, false, Race.ELF, EVA_TEMPLAR),
